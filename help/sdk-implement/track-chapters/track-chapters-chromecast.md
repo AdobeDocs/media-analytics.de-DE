@@ -1,0 +1,65 @@
+---
+seo-title: Tracking von Kapiteln und Segmenten in Chromecast
+title: Tracking von Kapiteln und Segmenten in Chromecast
+uuid: 5 ea 562 b 9-0 e 07-4 fbb -9 a 3 b -213 d 746304 f 5
+translation-type: tm+mt
+source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
+
+---
+
+
+# Tracking von Kapiteln und Segmenten in Chromecast{#track-chapters-and-segments-on-chromecast}
+
+>[!IMPORTANT]
+>
+>Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit 2. x sdks. Wenn Sie Version 1.x des SDKs implementieren möchten, können Sie hier das Entwicklerhandbuch herunterladen: [SDKs herunterladen.](../../sdk-implement/download-sdks.md)
+
+1. Ermitteln Sie, wann das Kapitel beginnt, und erstellen Sie die `ChapterObject`-Instanz mithilfe dieser Kapitelinformationen.
+
+   `ChapterObject` Kapitelverfolgungsreferenz:
+
+   >[!NOTE]
+   >
+   >Diese Variablen sind nur erforderlich, wenn Sie die Kapitel verfolgen möchten.
+
+   | Variablenname | Beschreibung | erforderlich |
+   | --- | --- | :---: |
+   | `name` | Kapitelname | Ja |
+   | `position` | Kapitelposition | Ja |
+   | `length` | Kapitellänge | Ja |
+   | `startTime` | Startzeit des Kapitels | Ja |
+
+   Kapitelobjekt:[ createChapterObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createChapterObject)
+
+   ```js
+   chapterInfo = ADBMobile.media.createChapterObject("First Chapter", 1, CHAPTER1_LENGTH, CHAPTER1_START_POS);
+   ```
+
+1. Wenn Sie anwenderspezifische Metadaten für das Kapitel hinzufügen, erstellen Sie die Kontextdaten-Variablen für die Metadaten:
+
+   ```js
+   var chapterContextData = { 
+       segmentType: "Sample segment type" 
+   };
+   ```
+
+1. Um das Tracking der Kapitelwiedergabe zu starten, starten Sie das `ChapterStart`-Ereignis: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent).
+
+   ```js
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, ChapterInfo, chapterContextData); 
+   ```
+
+1. Wenn die Wiedergabe das Kapitelende nach Definition Ihres anwenderspezifischen Codes erreicht, rufen Sie das `ChapterComplete`-Ereignis in der `MediaHeartbeat`-Instanz auf: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent).
+
+   ```js
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterComplete);
+   ```
+
+1. Wenn die Kapitelwiedergabe nicht abgeschlossen wurde, weil der Anwender das Kapitel übersprungen hat (z. B. zu einer Position außerhalb des Kapitels springt), rufen Sie das `ChapterSkip`-Ereignis auf: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent).
+
+   ```js
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterSkip); 
+   ```
+
+1. Wiederholen Sie die Schritte 1 bis 5, wenn es weitere Kapitel gibt.
+
