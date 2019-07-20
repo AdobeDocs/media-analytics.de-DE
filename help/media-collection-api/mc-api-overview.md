@@ -1,0 +1,102 @@
+---
+seo-title: Überblick
+title: Überblick
+uuid: c 14 bdbef -5846-4 d 31-8 a 14-8 e 9 e 0 e 9 c 9861
+translation-type: tm+mt
+source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
+
+---
+
+
+# Überblick{#overview}
+
+Die Mediensammlungs-API wird von Adobe als RESTful-Alternative zum Client-seitigen Medien-SDK angeboten. Mit der Mediensammlungs-API kann Ihr Player Audio- und Videoereignisse mithilfe von RESTful-HTTP-Anfragen verfolgen. Die Mediensammlung-API bietet die gleiche Echtzeit-Verfolgung des Media SDK sowie eine zusätzliche Funktion:
+
+* **Heruntergeladene Inhaltsverfolgung**
+
+   Diese Funktion bietet Ihnen die Möglichkeit, Medien zu verfolgen, während ein Benutzer offline ist und über die lokale Speicherung von Ereignisdaten informiert wird, bis das Gerät des Benutzers online zurückkehrt. (Weitere Details unter [Tracking heruntergeladener Inhalte](track-downloaded-content.md).)
+
+Die Mediensammlungs-API ist im Grunde ein Adapter, der als serverseitige Version des Medien-SDK fungiert. Dies bedeutet, dass einige Aspekte der Media SDK-Dokumentation auch für die Media Collection API relevant sind. For example, both solutions use the same [Audio and Video Parameters](../metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](../media-reports/media-reports-enable.md)
+
+## Datenfluss beim Medien-Tracking {#section_pwq_n34_qbb}
+
+Ein Medienplayer, der die Mediencollection-API implementiert, führt die restful-API-Verfolgung direkt an den Medienverfolgungs-Server weiter, während ein Player, der das Media SDK implementiert, Tracking-Aufrufe an die SDK-apis innerhalb der Player-App vornimmt. Da der Player mit der Mediensammlungs-API Aufrufe über das Internet sendet, muss er einen Teil der Verarbeitung übernehmen, den das Medien-SDK automatisch vornimmt. (Details in [Media Collection Implementation.](mc-api-impl/mc-api-quick-start.md))
+
+Die mit der Mediencollection-API erfassten Verfolgungsdaten werden gesendet und anfänglich anders verarbeitet als die in einem Media SDK-Player erfassten Verfolgungsdaten, aber dieselbe Verarbeitungs-Engine wird für beide Lösungen verwendet.
+
+![](assets/col_api_overview_simple.png)
+
+## API Overview {#section_y4n_mcl_kcb}
+
+**URI:** Diese erhalten Sie von Ihrem Adobe-Support-Mitarbeiter.
+
+**HTTP-Methode:** POST mit JSON-Anfrageinhalt.
+
+### API-Aufrufe {#mc-api-calls}
+
+* **`sessions`-** Erstellt eine Sitzung mit dem Server und gibt eine Sitzungs-ID zurück, die in nachfolgenden `events` Aufrufen verwendet wird. Ihre Anwendung führt diesen Aufruf zu Beginn einer Tracking-Sitzung durch.
+
+   ```
+   {uri}/api/v1/sessions
+   ```
+
+* **`events`-** Sendet Medienverfolgungsdaten.
+
+   ```
+   {uri}/api/v1/sessions/{session-id}/events
+   ```
+
+### Anfrageinhalt {#mc-api-request-body}
+
+```
+{ 
+    "playerTime": { 
+        "playhead": {playhead position in seconds}, 
+        "ts": {timestamp in milliseconds} 
+    }, 
+    "eventType": {event-type}, 
+    "params": { 
+        {parameter-name}: {parameter-value}, 
+        ... 
+        {parameter-name}: {parameter-value} 
+    }, 
+    "qoeData" : { 
+        {parameter-name}: {parameter-value}, 
+        ... 
+        {parameter-name}: {parameter-value} 
+    }, 
+    "customMetadata": { 
+        {parameter-name}: {parameter-value}, 
+        ... 
+        {parameter-name}: {parameter-value} 
+    } 
+} 
+```
+
+* `playerTime` - Obligatorisch für alle Anforderungen.
+* `eventType` - Obligatorisch für alle Anforderungen.
+* `params`: Erforderlich für bestimmte `eventTypes`. Überprüfen Sie anhand des [JSON-Validierungsschemas](mc-api-ref/mc-api-json-validation.md), welche eventTypes erforderlich und welche optional sind.
+
+* `qoeData` - Optional für alle Anforderungen.
+* `customMetadata` - Optional für alle Anforderungen, aber nur gesendet mit `sessionStart`und `adStart``chapterStart` Ereignistypen.
+
+Für jeden `eventType` gibt es ein öffentlich verfügbares [JSON-Validierungsschema](mc-api-ref/mc-api-json-validation.md), mit dessen Hilfe Sie die Parametertypen überprüfen und herausfinden können, welche Parameter für die einzelnen Ereignisse erforderlich sind.
+
+### Ereignistypen {#mc-api-event-types}
+
+* `sessionStart`
+* `play`
+* `ping`
+* `pauseStart`
+* `bufferStart`
+* `adStart`
+* `adComplete`
+* `adSkip`
+* `adBreakStart`
+* `adBreakComplete`
+* `chapterStart`
+* `chapterSkip`
+* `chapterComplete`
+* `sessionEnd`
+* `sessionComplete`
+
