@@ -1,0 +1,110 @@
+---
+seo-title: SDK-Debugging
+title: SDK-Debugging
+uuid: a 5972 d 87-c 593-4 b 4 f-a 56 f-dca 6 e 25268 e 1
+translation-type: tm+mt
+source-git-commit: 6b6caa59ac9ea14a42337e2f133ecb31f30491c7
+
+---
+
+
+# SDK-Debugging{#sdk-debugging}
+
+Sie können die Protokollierung aktivieren und deaktivieren. Das Media SDK bietet einen umfangreichen Tracing-/Protokollierungsmechanismus, der im gesamten Videoverfolgungsstapel eingerichtet wird. You can enable or disable this logging by setting the `debugLogging` flag on the Config object.
+
+## Beispielcode für die Debug-Protokollierung
+
+### Android
+
+```java
+// Media Heartbeat initialization 
+MediaHeartbeatConfig config = new MediaHeartbeatConfig(); 
+config.debugLogging = true; 
+
+// Use this space for setting other config values 
+MediaHeartbeat _heartbeat = new MediaHeartbeat(this, config); 
+```
+
+### iOS
+
+```
+// Media Heartbeat Initialization 
+ADBMediaHeartbeatConfig *config = [[ADBMediaHeartbeatConfig alloc] init]; 
+config.debugLogging = YES; 
+
+// Use this space for setting other config values 
+ADBMediaHeartbeat *_mediaHeartbeat =  
+[[ADBMediaHeartbeat alloc] initWithDelegate:self config:config]; 
+```
+
+### JavaScript
+
+```js
+// Media Heartbeat initialization 
+var mediaConfig = new MediaHeartbeatConfig(); 
+mediaConfig.debugLogging = true; 
+this._mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement); 
+```
+
+### OTT (Chromecast, Roku)
+
+Die ADBMobile-Bibliothek bietet Debug-Protokollierung über die Methode `setDebugLogging`. Die Debug-Protokollierung sollte für alle Produktionsanwendungen auf `false` festgelegt werden.
+
+#### Roku
+
+```
+ADBMobile().setDebugLogging(true)
+```
+
+#### Chromecast
+
+```
+ADBMobile.config.setDebugLogging(true)
+```
+
+**Testen von Chromecast-Anwendungen mit Adobe Bloodhound -**
+
+Bei der Anwendungsentwicklung können Sie in Bloodhound die Server-Aufrufe lokal anzeigen und die Daten optional an Adobe-Erfassungsserver weiterleiten. Weitere Informationen zu Bloodhound finden Sie in den folgenden Anleitungen:
+
+* [Bloodhound 3.x für Mac](https://marketing.adobe.com/resources/help/en_US/mobile/bloodhound/)
+* [Bloodhound 2.2 für Windows](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&sig2=K0waTKxdMj_2kfNXdMI2yg)
+
+>[!IMPORTANT]
+>
+>Seit dem 30. April 2017 wurde Adobe Bloodhound unterlegt. Seit dem 1. Mai 2017 wurde keine Verbesserung mehr vorgenommen und es wird kein zusätzlicher Engineering- oder Adobe Expert Care-Support mehr angeboten.
+
+### Protokollmeldungen
+
+Protokollmeldungen haben folgendes Format:
+
+```js
+Format: [<timestamp>] [<level>] [<tag>] [<message>] 
+Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.startupTime: 0
+```
+
+* **timestamp:** Dies ist die aktuelle CPU-Zeit (mit GMT als Zeitzone)
+* **level:** Es gibt vier Meldungsebenen:
+   * INFO: Normalerweise die Eingabedaten aus der Anwendung (Player-Namen, Video-ID usw. validieren)
+   * DEBUG: Debug-Protokolle, mit denen Entwickler komplexere Probleme debuggen
+   * WARN: Weist auf potenzielle Integrations-/Konfigurationsfehler bzw. Heartbeats-SDK-Bugs hin
+   * ERROR: Weist auf schwerwiegende Integrationsfehler oder Heartbeats-SDK-Bugs hin
+* **tag:** Der Name der Unterkomponente, von der die Protokollmeldung ausgegeben wurde (normalerweise der Klassenname)
+* **message:** Die eigentliche Trace-Meldung
+
+Sie können die Implementierung anhand der ausgegebenen Protokolle der Video Heartbeat-Bibliothek überprüfen. A good strategy is to search through the logs for the string `#track`. This will highlight all the `track*()` calls made by your application.
+
+For instance, this is what the logs filtered for `#track` could look like:
+
+```js
+[16:10:29 GMT­0700 (PDT).222] [INFO] [plugin::player] #trackVideoLoad() 
+[16:10:29 GMT­0700 (PDT).230] [INFO] [plugin::player] #trackSessionStart() 
+[16:10:29 GMT­0700 (PDT).250] [INFO] [plugin::player] #trackPlay() 
+[16:10:29 GMT­0700 (PDT).759] [INFO] [plugin::player] #trackChapterStart() 
+[16:10:44 GMT­0700 (PDT).769] [INFO] [plugin::player] #trackAdStart() 
+[16:10:59 GMT­0700 (PDT).752] [INFO] [plugin::player] #trackAdComplete() 
+[16:10:59 GMT­0700 (PDT).770] [INFO] [plugin::player] #trackChapterStart() 
+[16:11:29 GMT­0700 (PDT).734] [INFO] [plugin::player] #trackPause() 
+[16:11:29 GMT­0700 (PDT).764] [INFO] [plugin::player] #trackComplete() 
+[16:11:29 GMT­0700 (PDT).766] [INFO] [plugin::player] #trackVideoUnload()
+```
+
