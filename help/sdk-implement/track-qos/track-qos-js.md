@@ -1,0 +1,63 @@
+---
+seo-title: Tracking der Erlebnisqualität auf JavaScript
+title: Tracking der Erlebnisqualität auf JavaScript
+uuid: 3 bc 762 a 2-9706-4 b 62-aa 91-747 f 461 dd 13 d
+translation-type: tm+mt
+source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
+
+---
+
+
+# Tracking der Erlebnisqualität auf JavaScript{#track-quality-of-experience-on-javascript}
+
+>[!IMPORTANT]
+>
+>Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie hier die 1.x-Entwicklerhandbücher herunterladen.[SDKs herunterladen.](../../sdk-implement/download-sdks.md)
+
+## Implementierungs-QOS
+
+1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
+
+   QoSObject-Variablen:
+
+   >[!TIP]
+   >
+   >Diese Variablen sind nur erforderlich, wenn Sie planen, qos zu verfolgen.
+
+   | Variable | Beschreibung | erforderlich |
+   | --- | --- | :---: |
+   | `bitrate` | Aktuelle Bitrate | Ja |
+   | `startupTime` | Startzeit | Ja |
+   | `fps` | FPS-Wert | Ja |
+   | `droppedFrames` | Anzahl der Dropped Frames | Ja |
+
+   Erstellung von QoS-Objekten:
+
+   ```js
+   // Replace <bitrate>, <startuptime>, <fps> and  
+   // <droppeFrames> with the current playback QoS values.  
+   var qosObject = MediaHeartbeat.createQoSObject(<bitrate>,  
+                                                  <startuptime>,  
+                                                  <fps>,  
+                                                  <droppedFrames>); 
+   ```
+
+1. Wenn sich die Bitrate der Wiedergabe ändert, rufen Sie das `BitrateChange`-Ereignis in der Media Heartbeat-Instanz auf:
+
+   ```js
+   _onBitrateChange = function() { 
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject); 
+   };
+   ```
+
+   >[!IMPORTANT]
+   >
+   >Aktualisieren Sie das qos-Objekt und rufen Sie das Bitratenänderungsereignis bei jeder Bitratenänderung auf. So erhalten Sie möglichst präzise Daten.
+
+1. Stellen Sie sicher, dass die `getQoSObject()`-Methode die neuesten QoS-Informationen zurückgibt.
+1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (Siehe [Übersicht](../../sdk-implement/track-errors/track-errors-overview.md).)
+
+   >[!TIP]
+   >
+   >Die Verfolgung von Fehlern im Medienplayer stoppt die Medienverfolgungssitzung nicht. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+
