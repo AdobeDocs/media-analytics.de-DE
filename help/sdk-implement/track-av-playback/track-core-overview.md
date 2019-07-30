@@ -3,7 +3,7 @@ seo-title: Tracking-Übersicht
 title: Tracking-Übersicht
 uuid: 7 b 8 e 2 f 76-bc 4 e -4721-8933-3 e 4453 b 01788
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
 >[!IMPORTANT]
 >
->Diese Dokumentation enthält die Verfolgung in Version 2. x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](../../sdk-implement/download-sdks.md)
+>Diese Dokumentation enthält die Verfolgung in Version 2. x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Player-Ereignisse
 
@@ -59,7 +59,7 @@ Das Tracking der Core-Wiedergabe umfasst die Verfolgung der Medienladung, des Me
 
 >[!TIP]
 >
->Die Position der Abspielleiste wird als Teil des Konfigurationscodes und des Konfigurationscodes festgelegt. For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](../../sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>Die Position der Abspielleiste wird als Teil des Konfigurationscodes und des Konfigurationscodes festgelegt. For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## Implementierung {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -105,7 +105,7 @@ Das Tracking der Core-Wiedergabe umfasst die Verfolgung der Medienladung, des Me
 
       Instanziieren Sie ein Standard-Metadatenobjekt, füllen Sie die gewünschten Variablen aus und setzen Sie das Metadatenobjekt auf das Media Heartbeat-Objekt.
 
-      Sehen Sie hier die umfassende Liste der verfügbaren-Metadaten: [Audio- und Videoparameter.](../../metrics-and-metadata/audio-video-parameters.md)
+      Sehen Sie hier die umfassende Liste der verfügbaren-Metadaten: [Audio- und Videoparameter.](/help/metrics-and-metadata/audio-video-parameters.md)
 
    * **Anwenderdefinierte Metadaten:** Erstellen Sie ein Variablenobjekt für die anwenderspezifischen Variablen und fügen Sie die Daten für diesen Inhalt ein.
 
