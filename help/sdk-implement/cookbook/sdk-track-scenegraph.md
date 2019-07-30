@@ -3,7 +3,7 @@ seo-title: Tracking in SceneGraph (Roku)
 title: Tracking in SceneGraph (Roku)
 uuid: fa 85 e 546-c 79 b -4 df 4-8 c 03-d 6593 fa 296 d 5
 translation-type: tm+mt
-source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -186,8 +186,8 @@ Rückgabetyp: `SceneGraphConstants`
 | Versionierung | `version` | Konstante zum Abrufen der AdobeMobileLibrary-Versionsinformationen |
 | Datenschutz/Opt-out | `PRIVACY_STATUS_OPT_IN` | Konstante für den Datenschutz-Opt-in-Status |
 |  | `PRIVACY_STATUS_OPT_OUT` | Konstante für den Datenschutz-Opt-out-Status |
-| MediaHeartbeat-Konstanten | Die Konstanten finden Sie auf dieser Seite: <br/><br/>[Media Heartbeat-Methoden.](../../sdk-implement/track-av-playback/track-core/track-core-roku.md) | Verwenden Sie diese Konstanten mit mediaheartbeat-apis. |
-| Standardmetadaten | Die Konstanten finden Sie auf dieser Seite: <br/><br/>[Standard-Metadatenparameter.](../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | Verwenden Sie diese Konstanten zum Anhängen standardmäßiger Video-/Anzeigenmetadaten in MediaHeartbeat-APIs. |
+| MediaHeartbeat-Konstanten | Die Konstanten finden Sie auf dieser Seite: <br/><br/>[Media Heartbeat-Methoden.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | Verwenden Sie diese Konstanten mit mediaheartbeat-apis. |
+| Standardmetadaten | Die Konstanten finden Sie auf dieser Seite: <br/><br/>[Standard-Metadatenparameter.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | Verwenden Sie diese Konstanten zum Anhängen standardmäßiger Video-/Anzeigenmetadaten in MediaHeartbeat-APIs. |
 
 Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary are accessible *as is* in the SceneGraph enviromnent because they do not use any Brightscript components that are unavailable in SceneGraph nodes. Weitere Informationen zu diesen Methoden finden Sie in der unten stehenden Tabelle:
 
