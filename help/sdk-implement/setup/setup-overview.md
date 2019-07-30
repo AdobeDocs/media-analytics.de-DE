@@ -3,7 +3,7 @@ seo-title: Übersicht einrichten
 title: Übersicht einrichten
 uuid: 06 fefedb-b 0 c 8-4 f 7 d -90 c 8-e 374 cdde 1695
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
 >[!IMPORTANT]
 >
->Die folgenden Anweisungen gelten für die 2. x Media sdks. Wenn Sie eine 1.x-Version des Medien-SDK implementieren, lesen Sie die Dokumentation zum [Medien-SDK 1.x.](../download-sdks.md) Weitere Informationen zu Primetime Integrators finden Sie unten in _der Primetime-Media SDK-Dokumentation_ .
+>Die folgenden Anweisungen gelten für die 2. x Media sdks. Wenn Sie eine 1.x-Version des Medien-SDK implementieren, lesen Sie die Dokumentation zum [Medien-SDK 1.x.](/help/sdk-implement/download-sdks.md) Weitere Informationen zu Primetime Integrators finden Sie unten in _der Primetime-Media SDK-Dokumentation_ .
 
 
 ## Minimum Platform Version Support {#minimum-platform-version}
