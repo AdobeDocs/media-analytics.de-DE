@@ -3,7 +3,7 @@ seo-title: Aktivierung von Medienberichten
 title: Aktivierung von Medienberichten
 uuid: d 306068 d-a 308-4 b 6 e -8 a 72-742 dda 0 de 428
 translation-type: tm+mt
-source-git-commit: ae51df03ef9e57508a50f6928fee140f3b136b58
+source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
 ---
 
@@ -65,4 +65,4 @@ Jede Report Suite, die Medienmetriken erfasst, muss konfiguriert werden, bevor M
 
 >[!IMPORTANT]
 >
->Do not change the classification names for any variables listed in the Metrics and metadata tables (e.g., [Audio and video parameters](../metrics-and-metadata/audio-video-parameters.md)) that are described there under Reporting/Reserved Variable as "classification". Die Medienklassifizierungen werden definiert, wenn eine Report Suite für die Medienverfolgung aktiviert ist. Von Zeit zu Zeit fügt Adobe neue Eigenschaften hinzu. Wenn dies eintritt, müssen Kunden ihre Report Suites erneut aktivieren, um Zugriff auf die neuen Medieneigenschaften zu erhalten. Während des Aktualisierungsprozesses bestimmt Adobe, ob die Klassifizierungen durch Überprüfen der Namen der Variablen aktiviert werden. Wenn eine davon fehlt, fügt Adobe die fehlenden Felder wieder hinzu.
+>Do not change the classification names for any variables listed in the Metrics and metadata tables (e.g., [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)) that are described there under Reporting/Reserved Variable as "classification". Die Medienklassifizierungen werden definiert, wenn eine Report Suite für die Medienverfolgung aktiviert ist. Von Zeit zu Zeit fügt Adobe neue Eigenschaften hinzu. Wenn dies eintritt, müssen Kunden ihre Report Suites erneut aktivieren, um Zugriff auf die neuen Medieneigenschaften zu erhalten. Während des Aktualisierungsprozesses bestimmt Adobe, ob die Klassifizierungen durch Überprüfen der Namen der Variablen aktiviert werden. Wenn eine davon fehlt, fügt Adobe die fehlenden Felder wieder hinzu.
