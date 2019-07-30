@@ -3,7 +3,7 @@ seo-title: 'Zeitlicher Ablauf 1: Wiedergabe bis zum Ende des Inhalts'
 title: 'Zeitlicher Ablauf 1: Wiedergabe bis zum Ende des Inhalts'
 uuid: 0 ff 591 d 3-fa 99-4123-9 e 09-c 4 e 71 ea 1060 b
 translation-type: tm+mt
-source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -31,7 +31,7 @@ Die folgenden Diagramme illustrieren die Timeline der Abspielleiste und die Zeit
 
 **Implementierungsdetails**
 
-Dieser Aufruf signalisiert _die Anwenderintention, ein Video abzuspielen_. <br/><br/>Er gibt eine Sitzungs-ID ( `{sid}`) an den Client zurück, mit dem alle nachfolgenden Verfolgungsaufrufe innerhalb der Sitzung identifiziert werden. Der Player-Status lautet noch nicht „Playing“ (Wiedergabe), sondern „Starting“ (Start). <br/><br/>[Erforderliche Sitzungsparameter](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) müssen in der `params`-Map des Anfrageinhalts angegeben werden. <br/><br/>Am Backend generiert dieser Aufruf einen Adobe Analytics-Initiationsaufruf.
+Dieser Aufruf signalisiert _die Anwenderintention, ein Video abzuspielen_. <br/><br/>Er gibt eine Sitzungs-ID ( `{sid}`) an den Client zurück, mit dem alle nachfolgenden Verfolgungsaufrufe innerhalb der Sitzung identifiziert werden. Der Player-Status lautet noch nicht „Playing“ (Wiedergabe), sondern „Starting“ (Start). <br/><br/>[Erforderliche Sitzungsparameter](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) müssen in der `params`-Map des Anfrageinhalts angegeben werden. <br/><br/>Am Backend generiert dieser Aufruf einen Adobe Analytics-Initiationsaufruf.
 
 **Beispiel-Anfrageinhalt**
 
