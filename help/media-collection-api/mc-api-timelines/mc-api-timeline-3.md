@@ -3,7 +3,7 @@ seo-title: 'Zeitlicher Ablauf 3: Kapitel'
 title: 'Zeitlicher Ablauf 3: Kapitel'
 uuid: 41 b 52072-e 1 cd -4 dda -9253-31 f 3408924 f 6
 translation-type: tm+mt
-source-git-commit: 6ada4d04824a3e501ecc58a9ca719cc9445aee12
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -33,7 +33,7 @@ Die folgenden Diagramme illustrieren die Zeitleiste der Abspielleiste und die da
 
 **Implementierungsdetails**
 
-This call signals _the intention of the user to play_ a video. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. Der Player-Status lautet noch nicht „Playing“ (Wiedergabe), sondern „Starting“ (Start). [Erforderliche Sitzungsparameter](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) müssen in der `params`-Map des Anfrageinhalts angegeben werden.  Am Backend generiert dieser Aufruf einen Adobe Analytics-Initiationsaufruf.
+This call signals _the intention of the user to play_ a video. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. Der Player-Status lautet noch nicht „Playing“ (Wiedergabe), sondern „Starting“ (Start). [Erforderliche Sitzungsparameter](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) müssen in der `params`-Map des Anfrageinhalts angegeben werden.  Am Backend generiert dieser Aufruf einen Adobe Analytics-Initiationsaufruf.
 
 **Beispiel-Anfrageinhalt**
 
