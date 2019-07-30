@@ -3,7 +3,7 @@ seo-title: 'Zeitlicher Ablauf 2: Verlassen der Sitzung durch Anwender'
 title: 'Zeitlicher Ablauf 2: Verlassen der Sitzung durch Anwender'
 uuid: 74 b 89 e 8 f-ef 56-4 e 0 c-b 9 a 8-40739 e 15 b 4 cf
 translation-type: tm+mt
-source-git-commit: 69057b2abf7140d52b1897af3dc9d9fd01ca87ad
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -31,7 +31,7 @@ Die folgenden Diagramme illustrieren die Zeitleiste der Abspielleiste und die da
 
 **Implementierungsdetails**
 
-Dieser Aufruf signalisiert _die Anwenderintention, ein Video abzuspielen_. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. Der Player-Status lautet noch nicht „Playing“ (Wiedergabe), sondern „Starting“ (Start). [Erforderliche Sitzungsparameter](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) müssen in der `params`-Map des Anfrageinhalts angegeben werden.  Am Backend generiert dieser Aufruf einen Adobe Analytics-Initiationsaufruf.
+Dieser Aufruf signalisiert _die Anwenderintention, ein Video abzuspielen_. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. Der Player-Status lautet noch nicht „Playing“ (Wiedergabe), sondern „Starting“ (Start). [Erforderliche Sitzungsparameter](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) müssen in der `params`-Map des Anfrageinhalts angegeben werden.  Am Backend generiert dieser Aufruf einen Adobe Analytics-Initiationsaufruf.
 
 **Beispiel-Anfrageinhalt**
 
