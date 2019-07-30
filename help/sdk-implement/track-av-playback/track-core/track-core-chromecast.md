@@ -3,7 +3,7 @@ seo-title: Tracking von Core-Wiedergaben auf Chromecast
 title: Tracking von Core-Wiedergaben auf Chromecast
 uuid: a 9 fc 59 d 8-a 2 f 4-4889-bdec -55 c 42 a 835 d 06
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 >[!IMPORTANT]
 >
->Diese Dokumentation enthält die Verfolgung in Version 2. x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](../../../sdk-implement/download-sdks.md)
+>Diese Dokumentation enthält die Verfolgung in Version 2. x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
 
 1. **Initiales Tracking-Setup**
 
@@ -40,7 +40,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **Standard-Videometadaten**
 
-      [Standard-Metadaten in Chromecast implementieren](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
+      [Standard-Metadaten in Chromecast implementieren](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
 
       >[!NOTE]
       >
@@ -130,6 +130,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
    >
    >Dies kann dieselbe Ereignisquelle sein, die in Schritt 4 verwendet wurde. Stellen Sie sicher, dass jeder `trackPause()`-API-Aufruf mit einem nachfolgenden `trackPlay()`-API-Aufruf gepaart wird, wenn die Videowiedergabe wiederaufgenommen wird.
 
-* Tracking-Szenarios: [VOD-Wiedergabe ohne Werbung](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Tracking-Szenarios: [VOD-Wiedergabe ohne Werbung](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Der im Chromecast-SDK enthaltene Beispiel-Player zeigt ein komplettes Tracking-Beispiel.
 
