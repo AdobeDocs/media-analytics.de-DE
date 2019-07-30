@@ -3,7 +3,7 @@ seo-title: Migration von Milestone zu Custom Link
 title: Migration von Milestone zu Custom Link
 uuid: 1 c 8 edde 5-0 ef 1-4 bc 0-a 62 d -1747 f 4907 f 09
 translation-type: tm+mt
-source-git-commit: 530973abc12fcb2567a3742c202d992944048b8b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 530973abc12fcb2567a3742c202d992944048b8b
 
 ## Überblick {#section_xlc_fc2_dfb}
 
-Die grundlegenden Prinzipien der Videomessung sind die gleichen wie beim Milestone- und Custom Link-Tracking, bei denen Videoplayer-Ereignisse aufgenommen und auf Analysemethoden übertragen werden, während gleichzeitig Playermetadaten und -werte erfasst und auf Analysevariablen übertragen werden. Der Custom Link-Ansatz sollte als eine Verschlankung und Vereinfachung sowohl der Implementierung als auch der erfassten Daten betrachtet werden. Bei der Custom Link-Lösung sind keine Variablen oder Methoden für die Videomessung vordefiniert, sondern es ist eine vollständige anwenderdefinierte Einrichtung erforderlich. Es sollte möglich sein, den Player-Ereigniscode zu aktualisieren, um auf die anwenderdefinierten Linktracking-Aufrufe für grundlegende Spielereignisse wie Start und Ende zu verweisen. Siehe [Custom Link-Implementierungsleitfaden](../../measurement-options/cl-in-aa/cl-impl-guide.md) und [Manuelles Linktracking mithilfe des benutzerdefinierten Link-Codes](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) für weitere Details.
+Die grundlegenden Prinzipien der Videomessung sind die gleichen wie beim Milestone- und Custom Link-Tracking, bei denen Videoplayer-Ereignisse aufgenommen und auf Analysemethoden übertragen werden, während gleichzeitig Playermetadaten und -werte erfasst und auf Analysevariablen übertragen werden. Der Custom Link-Ansatz sollte als eine Verschlankung und Vereinfachung sowohl der Implementierung als auch der erfassten Daten betrachtet werden. Bei der Custom Link-Lösung sind keine Variablen oder Methoden für die Videomessung vordefiniert, sondern es ist eine vollständige anwenderdefinierte Einrichtung erforderlich. Es sollte möglich sein, den Player-Ereigniscode zu aktualisieren, um auf die anwenderdefinierten Linktracking-Aufrufe für grundlegende Spielereignisse wie Start und Ende zu verweisen. Siehe [Custom Link-Implementierungsleitfaden](/help/measurement-options/cl-in-aa/cl-impl-guide.md) und [Manuelles Linktracking mithilfe des benutzerdefinierten Link-Codes](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) für weitere Details.
 
 Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone-Lösung und der Custom Link-Lösung.
 
