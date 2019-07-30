@@ -3,7 +3,7 @@ seo-title: Test 1 Standard-Wiedergabe
 title: Test 1 Standard-Wiedergabe
 uuid: c 4 b 3 fead -1 b 27-484 b-ab 6 a -39 f 1 ae 0 f 03 f 2
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -83,7 +83,7 @@ Sie müssen die Aktionen in folgender Reihenfolge abschließen und aufzeichnen:
    1. Video Analytics-Start
    1. Heartbeat-Start
    1. Heartbeat-Analyse-Start
-   Die ersten beiden Aufrufe enthalten zusätzliche Metadaten und Variablen. For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md)
+   Die ersten beiden Aufrufe enthalten zusätzliche Metadaten und Variablen. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
 1. **Werbeunterbrechung anzeigen (sofern verfügbar)**
 
@@ -93,7 +93,7 @@ Sie müssen die Aktionen in folgender Reihenfolge abschließen und aufzeichnen:
    1. Start der Anzeigenanalyse
    1. Heartbeat-Anzeigenstart
    1. Start der Heartbeat-Anzeigenanalyse
-   Die ersten beiden Aufrufe enthalten zusätzliche Metadaten und Variablen. For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b)
+   Die ersten beiden Aufrufe enthalten zusätzliche Metadaten und Variablen. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b)
 
    * **Ad Play**
 
@@ -122,7 +122,7 @@ Sie müssen die Aktionen in folgender Reihenfolge abschließen und aufzeichnen:
    * Die Position der Abspielleiste sollte bei jedem Abspielanruf um 10 erhöht werden.
    * Der Wert `l:event:duration` zeigt die Anzahl der Millisekunden seit dem letzten Tracking-Aufruf und sollte bei jedem 10-Sekunden-Aufruf ungefähr gleich bleiben.
 
-      For call parameters and metadata, see [Test call details](../../sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
+      For call parameters and metadata, see [Test call details](/help/sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
 
 1. **Wiedergabe mindestens 30 Sekunden lang anhalten.** Wird das Video angehalten, werden alle zehn Sekunden entsprechende Aufrufe gesendet. Wird das Video fortgesetzt, sollten erneut Wiedergabeereignisse gesendet werden.
 
