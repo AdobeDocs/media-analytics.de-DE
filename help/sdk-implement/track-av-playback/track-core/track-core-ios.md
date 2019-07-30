@@ -3,7 +3,7 @@ seo-title: Tracking von Core-Wiedergaben auf iOS
 title: Tracking von Core-Wiedergaben auf iOS
 uuid: bdc 0 e 05 c -4 fe 5-430 e-aee 2-f 331 bc 59 ac 6 b
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 # Tracking von Core-Wiedergaben auf iOS{#track-core-playback-on-ios}
 
 >[!IMPORTANT]
->Diese Dokumentation enthält die Verfolgung in Version 2. x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](../../../sdk-implement/download-sdks.md)
+>Diese Dokumentation enthält die Verfolgung in Version 2. x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
 
 1. **Initiales Tracking-Setup**
 
@@ -62,11 +62,11 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **Standard-Videometadaten**
 
-      * [Standard-Metadaten in iOS implementieren](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+      * [Standard-Metadaten in iOS implementieren](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
       * **Videometadatenschlüssel**
-         [iOS-Metadataschlüssel](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+         [iOS-Metadataschlüssel](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
-      * Sehen Sie hier die umfassende Liste der verfügbaren Video-Metadaten: [Audio- und Videoparameter](../../../metrics-and-metadata/audio-video-parameters.md)
+      * Sehen Sie hier die umfassende Liste der verfügbaren Video-Metadaten: [Audio- und Videoparameter](/help/metrics-and-metadata/audio-video-parameters.md)
       >[!NOTE]
       >
       >Das Anhängen des Standard-Videometadatenobjekts an das Medienobjekt ist optional.
@@ -172,6 +172,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 Im Folgenden finden Sie weitere Informationen zum Tracking der Core-Wiedergabe:
 
-* Tracking-Szenarios: [VOD-Wiedergabe ohne Werbung](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Tracking-Szenarios: [VOD-Wiedergabe ohne Werbung](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Der im iOS-SDK enthaltene Beispiel-Player zeigt ein komplettes Tracking-Beispiel.
 
