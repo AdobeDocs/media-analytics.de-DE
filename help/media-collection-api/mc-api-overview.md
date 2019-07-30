@@ -3,7 +3,7 @@ seo-title: Überblick
 title: Überblick
 uuid: c 14 bdbef -5846-4 d 31-8 a 14-8 e 9 e 0 e 9 c 9861
 translation-type: tm+mt
-source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -16,7 +16,7 @@ Die Mediensammlungs-API wird von Adobe als RESTful-Alternative zum Client-seitig
 
    Diese Funktion bietet Ihnen die Möglichkeit, Medien zu verfolgen, während ein Benutzer offline ist und über die lokale Speicherung von Ereignisdaten informiert wird, bis das Gerät des Benutzers online zurückkehrt. (Weitere Details unter [Tracking heruntergeladener Inhalte](track-downloaded-content.md).)
 
-Die Mediensammlungs-API ist im Grunde ein Adapter, der als serverseitige Version des Medien-SDK fungiert. Dies bedeutet, dass einige Aspekte der Media SDK-Dokumentation auch für die Media Collection API relevant sind. For example, both solutions use the same [Audio and Video Parameters](../metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](../media-reports/media-reports-enable.md)
+Die Mediensammlungs-API ist im Grunde ein Adapter, der als serverseitige Version des Medien-SDK fungiert. Dies bedeutet, dass einige Aspekte der Media SDK-Dokumentation auch für die Media Collection API relevant sind. For example, both solutions use the same [Audio and Video Parameters](/help/metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](/help/media-reports/media-reports-enable.md)
 
 ## Datenfluss beim Medien-Tracking {#section_pwq_n34_qbb}
 
