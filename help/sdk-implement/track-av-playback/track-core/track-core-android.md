@@ -3,7 +3,7 @@ seo-title: Tracking von Core-Wiedergaben auf Android
 title: Tracking von Core-Wiedergaben auf Android
 uuid: ab 5 fab 95-76 ed -4 ae 6-aedb -2 e 66 eece 7607
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 # Tracking von Core-Wiedergaben auf Android{#track-core-playback-on-android}
 
 >[!IMPORTANT]
->Diese Dokumentation enthält die Verfolgung in Version 2. x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie hier das 1.x-Entwicklerhandbuch für Android herunterladen: [SDKs herunterladen](../../../sdk-implement/download-sdks.md).
+>Diese Dokumentation enthält die Verfolgung in Version 2. x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie hier das 1.x-Entwicklerhandbuch für Android herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md).
 
 1. **Initiales Tracking-Setup**
 
@@ -56,14 +56,14 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **Standardmetadaten**
 
-      [Standard-Metadaten in Android implementieren](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+      [Standard-Metadaten in Android implementieren](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
 
       >[!NOTE]
       >
       >Das Hinzufügen des Standard-Metadatenobjekts zum Medienobjekt ist optional.
 
       * Medien-Metadatenschlüssel API-Referenz: [Standard-Metadatenschlüssel - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-      * Hier sehen Sie den umfassenden Satz der verfügbaren Video-Metadaten: [Audio- und Videoparameter](../../../metrics-and-metadata/audio-video-parameters.md)
+      * Hier sehen Sie den umfassenden Satz der verfügbaren Video-Metadaten: [Audio- und Videoparameter](/help/metrics-and-metadata/audio-video-parameters.md)
    * **Benutzerspezifische Metadaten**
 
       Erstellen Sie ein Wörterbuch für die benutzerdefinierten Variablen und füllen Sie die Daten für diese Medien aus. Beispiel:
@@ -170,6 +170,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 Im Folgenden finden Sie weitere Informationen zum Tracking der Core-Wiedergabe:
 
-* Tracking-Szenarios: [VOD-Wiedergabe ohne Werbung](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Tracking-Szenarios: [VOD-Wiedergabe ohne Werbung](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Der im Android-SDK enthaltene Beispiel-Player zeigt ein komplettes Tracking-Beispiel.
 
