@@ -3,7 +3,7 @@ seo-title: Überblick
 title: Überblick
 uuid: 3 fe 32425-5 e 2 a -4886-8 fea-d 91 d 15671 bb 0
 translation-type: tm+mt
-source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
 
 >[!IMPORTANT]
 >
->Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit 2. x sdks. Wenn Sie Version 1.x des SDKs implementieren möchten, können Sie hier das Entwicklerhandbuch herunterladen: [SDKs herunterladen.](../../sdk-implement/download-sdks.md)
+>Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit 2. x sdks. Wenn Sie Version 1.x des SDKs implementieren möchten, können Sie hier das Entwicklerhandbuch herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 Kapitel- und Segmentverfolgung ist für benutzerdefinierte Medienkapitel oder Segmente verfügbar. Einige gängige Einsatzmöglichkeiten für die Kapitelverfolgung sind die Definition benutzerdefinierter Segmente basierend auf Medieninhalten (wie z. B. Baseball-Schriften) oder die Definition von Inhaltssegmenten zwischen Werbeunterbrechungen. Chapter tracking is **not** required for core media tracking implementations.
 
