@@ -3,7 +3,7 @@ seo-title: Qualitätsparameter
 title: Qualitätsparameter
 uuid: 0 d 9 fa 764-edef -4178-8650-90 c 9 a 0852 a 57
 translation-type: tm+mt
-source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
+source-git-commit: aca428989370037efcb82ca9af342c904c3d9bce
 
 ---
 
@@ -224,7 +224,7 @@ Beschreibung der Tabellendaten:
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung   |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zeichenfolge </li> <li> **Gesendet mit:**<br/> Medien schließen </li> <li> **Min. SDK-Version:** beliebig </li> <li> **Beispielwert:**<br/> TRUE </li><li> **Beschreibung:**<br/>Die Anzahl der Streams, in denen Bitratenänderungen aufgetreten sind. Diese Metrik wird auf 1 gesetzt, wenn mindestens ein Bitratenänderungs-Ereignis während einer Wiedergabesitzung aufgetreten ist.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a. media. qoe.<br/>error) </li> <li> **Heartbeat:**<br/> (s: Ereignis:<br/>type = error) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/>Von Fehlern betroffene Streams </li> <li> **Kontextdaten:**<br/> (a. media. qoe.<br/>error) </li> <li> **Datenfeed:**<br/>videoqoeerror </li> <li> **Audience Manager:**<br/> (c_ contextdata.<br/>a. media. qoe.<br/>error) </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zeichenfolge </li> <li> **Gesendet mit:**<br/> Medien schließen </li> <li> **Min. SDK-Version:** beliebig </li> <li> **Beispielwert:**<br/> TRUE </li><li> **Beschreibung:**<br/>Die Anzahl der Streams, in denen ein Fehlerereignis aufgetreten ist, `trackError` wurde während der Wiedergabesitzung aufgerufen und ein `type=error` Heartbeat-Aufruf wurde generiert. </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a. media. qoe.<br/>error) </li> <li> **Heartbeat:**<br/> (s: Ereignis:<br/>type = error) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/>Von Fehlern betroffene Streams </li> <li> **Kontextdaten:**<br/> (a. media. qoe.<br/>error) </li> <li> **Datenfeed:**<br/>videoqoeerror </li> <li> **Audience Manager:**<br/> (c_ contextdata.<br/>a. media. qoe.<br/>error) </li> </ul> |
 
 
 
