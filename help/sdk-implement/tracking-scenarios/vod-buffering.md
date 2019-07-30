@@ -3,7 +3,7 @@ seo-title: VOD-Wiedergabe mit Pufferung
 title: VOD-Wiedergabe mit Pufferung
 uuid: 958 f 7692-7193-40 fb-a 8 e 7-2 ff 4 fa 805330
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 In diesem Szenario tritt Pufferung bei der Wiedergabe des VOD-Inhalts auf.
 
-Wenn nichts anderes angegeben ist, sind die Netzwerkaufrufe in diesem Szenario mit den Aufrufen im Szenario [VOD-Wiedergabe ohne Anzeigen](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch.
+Wenn nichts anderes angegeben ist, sind die Netzwerkaufrufe in diesem Szenario mit den Aufrufen im Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch.
 
 | Auslöser   | Heartbeat-Methode   | Netzwerkaufrufe   | Hinweise   |
 |---|---|---|---|
