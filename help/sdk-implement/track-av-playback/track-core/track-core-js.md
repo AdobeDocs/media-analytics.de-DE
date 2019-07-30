@@ -3,7 +3,7 @@ seo-title: Tracking von Core-Wiedergaben auf JavaScript
 title: Tracking von Core-Wiedergaben auf JavaScript
 uuid: 3 d 6 e 0 ab 1-899 a -43 c 3-b 632-8276 e 84345 ab
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 # Tracking von Core-Wiedergaben auf JavaScript{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
->Diese Dokumentation enthält die Verfolgung in Version 2. x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](../../../sdk-implement/download-sdks.md)
+>Diese Dokumentation enthält die Verfolgung in Version 2. x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
 
 1. **Initiales Tracking-Setup**
 
@@ -60,7 +60,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **Standardmetadaten**
 
-      [Standard-Metadaten in JavaScript implementieren](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
+      [Standard-Metadaten in JavaScript implementieren](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
 
       >[!NOTE]
       >
@@ -68,7 +68,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
       * Medien-Metadatenschlüssel API-Referenz: [Standard-Metadatenschlüssel - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         See the comprehensive set of available metadata here: [Audio and video parameters](../../../metrics-and-metadata/audio-video-parameters.md)
+         See the comprehensive set of available metadata here: [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)
    * **Benutzerspezifische Metadaten**
 
       Erstellen Sie ein Variablenobjekt für die benutzerdefinierten Variablen und füllen Sie die Daten für diese Medien aus. Beispiel:
@@ -158,6 +158,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
    >
    >Dies kann dieselbe Ereignisquelle sein, die in Schritt 4 verwendet wurde. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
 
-* Tracking-Szenarios: [VOD-Wiedergabe ohne Werbung](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Tracking-Szenarios: [VOD-Wiedergabe ohne Werbung](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Der im JavaScript-SDK enthaltene Beispiel-Player zeigt ein komplettes Tracking-Beispiel.
 
