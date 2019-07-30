@@ -3,7 +3,7 @@ seo-title: VOD-Wiedergabe mit einem übersprungenen Kapitel
 title: VOD-Wiedergabe mit einem übersprungenen Kapitel
 uuid: 19 fb 020 c-eb 7 a -4942-9212-94 f 4 d 47195 b 9
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 In diesem Szenario überspringt der Anwender ein Kapitel im Hauptinhalt.
 
-Dies ist dasselbe Szenario wie [VOD-Wiedergabe mit einem Kapitel](../../sdk-implement/tracking-scenarios/vod-one-chapter.md), mit der Ausnahme, dass der Anwender in diesem Fall das Kapitel über die Suche verlässt und es somit überspringt, um den Hauptinhalt zu erreichen.
+Dies ist dasselbe Szenario wie [VOD-Wiedergabe mit einem Kapitel](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md), mit der Ausnahme, dass der Anwender in diesem Fall das Kapitel über die Suche verlässt und es somit überspringt, um den Hauptinhalt zu erreichen.
 
 | Auslöser | Heartbeat-Methode | Netzwerkaufrufe   | Hinweise |
 |---|---|---|---|
@@ -31,7 +31,7 @@ Dies ist dasselbe Szenario wie [VOD-Wiedergabe mit einem Kapitel](../../sdk-impl
 
 ## Parameter {#section_1874F6B7880B43C5856BD11FF85B382E}
 
-Die Parameter, die bei der Kapitelwiedergabe verwendet werden, sind mit den Parametern im Szenario  [VOD-Wiedergabe mit einem Kapitel](../../sdk-implement/tracking-scenarios/vod-one-chapter.md) identisch, bis auf die Tatsache, dass kein Kapitelbeendigungsnetzwerkaufruf gesendet wird.
+Die Parameter, die bei der Kapitelwiedergabe verwendet werden, sind mit den Parametern im Szenario  [VOD-Wiedergabe mit einem Kapitel](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) identisch, bis auf die Tatsache, dass kein Kapitelbeendigungsnetzwerkaufruf gesendet wird.
 
 ## Beispielcode {#section_fyl_ncj_x2b}
 
