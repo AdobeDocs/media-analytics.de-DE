@@ -3,7 +3,7 @@ seo-title: Client-seitig
 title: Client-seitig
 uuid: ba 0496 e 2-585 a -4176-b 583-c 705726 realc 6
 translation-type: tm+mt
-source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ Bei Media Analytics (Heartbeats) handelt es sich um die standardisierte Medien-T
 
 Client-seitige Integrationen werden nur mit Media Analytics implementiert. Sie können wählen, ob Sie entweder das Medien-SDK oder die Mediensammlungs-API (oder beide) implementieren möchten. Der Client-seitige Pfad kann über alle Player hinweg verwendet werden, einschließlich Kunden- und/oder OVP-Player, z. B. Brightcove, Ooyala, thePlatform usw.
 
-If Media Analytics is your intended path, see [Media SDK Implementation](../../sdk-implement/setup/setup-overview.md) and [Media Collection API.](../../media-collection-api/mc-api-overview.md)
+If Media Analytics is your intended path, see [Media SDK Implementation](/help/sdk-implement/setup/setup-overview.md) and [Media Collection API.](/help/media-collection-api/mc-api-overview.md)
 
 >[!IMPORTANT]
 >
