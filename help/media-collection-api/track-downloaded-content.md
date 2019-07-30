@@ -3,7 +3,7 @@ seo-title: Tracking heruntergeladener Inhalte
 title: Tracking heruntergeladener Inhalte
 uuid: 7186689 d -9602-4 e 3 f -833 c -8297 aae 1 d 009
 translation-type: tm+mt
-source-git-commit: 501bbfe8b44a2a8e9b2ac2caab49b2317f9ea0f3
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -30,7 +30,7 @@ Jeder Ansatz hat seine Vor- und Nachteile: Die Mediensammlungs-API verfolgt in E
 
 ### Ereignisschemata
 
-Die heruntergeladene Inhalts-API basiert auf der Mediensammlungs-API. Die Ereignisdaten, die von Ihren Player-Batches und -senden gesendet werden, müssen daher dieselben Ereignisschemas wie in der Media Collection API verwenden. For information on these schemas, see: [Overview;](../media-collection-api/mc-api-overview.md) and [Validating event requests.](../media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+Die heruntergeladene Inhalts-API basiert auf der Mediensammlungs-API. Die Ereignisdaten, die von Ihren Player-Batches und -senden gesendet werden, müssen daher dieselben Ereignisschemas wie in der Media Collection API verwenden. For information on these schemas, see: [Overview;](/help/media-collection-api/mc-api-overview.md) and [Validating event requests.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 ### Reihenfolge der Ereignisse
 
