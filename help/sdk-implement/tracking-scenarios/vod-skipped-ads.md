@@ -3,7 +3,7 @@ seo-title: VOD-Wiedergabe mit übersprungenen Anzeigen
 title: VOD-Wiedergabe mit übersprungenen Anzeigen
 uuid: f 3 ab 3524-abcb -4051-b 64 e-a 1 aad 6 e 3 dd 3 f
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -16,22 +16,22 @@ Dieses Szenario umfasst eine VOD-Inhaltswiedergabe mit einer übersprungenen Anz
 
 ### Ein VOD mit einer übersprungenen Pre-Roll-Anzeige
 
-This is the same scenario as [VOD playback with pre-roll ads](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md), except the application has a provision to let the user skip the ad, on the click of a skip button perhaps.
+This is the same scenario as [VOD playback with pre-roll ads](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md), except the application has a provision to let the user skip the ad, on the click of a skip button perhaps.
 
 | Auslöser   | Heartbeat-Methode  | Netzwerkaufrufe   | Hinweise   |
 | --- | --- | --- | --- |
-| Anwender klickt auf [!UICONTROL Abspielen] | `trackSessionStart()` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Diese Netzwerkaufrufe sind noch mit dem Szenario  [VOD-Wiedergabe ohne Anzeigen](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. |
+| Anwender klickt auf [!UICONTROL Abspielen] | `trackSessionStart()` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Diese Netzwerkaufrufe sind noch mit dem Szenario  [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. |
 | Die Anzeige beginnt. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start, Heartbeat Ad Start |  |
 | Das erste Bild der Anzeige wird wiedergegeben. | `trackPlay()` | Heartbeat Ad Play | Wenn Anzeigeninhalt vor dem Hauptinhalt wiedergegeben wird, beginnen die Heartbeats mit dem Start der Anzeigenwiedergabe. |
 | Die Anzeige wird wiedergegeben. |  | Ad Heartbeats |  |
 | Die Anzeige wird übersprungen. | `trackEvent:trackAdSkip` |  | Es wird kein Ad Complete-Netzwerkaufruf gesendet. |
-| Der Inhalt wird wiedergegeben. |  | Content Heartbeats | These network calls are exactly the same as the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
-| Die Inhaltswiedergabe ist abgeschlossen. | `trackComplete()` | Heartbeat Content Complete | Dieser Netzwerkaufruf ist mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. |
+| Der Inhalt wird wiedergegeben. |  | Content Heartbeats | These network calls are exactly the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| Die Inhaltswiedergabe ist abgeschlossen. | `trackComplete()` | Heartbeat Content Complete | Dieser Netzwerkaufruf ist mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. |
 | Die Sitzung ist beendet. | `trackSessionEnd()` |  | `SessionEnd` |
 
 ## Parameter {#section_4A0F92BF3DDD4623A1EE61C76582A4A6}
 
-The parameters are identical to the parameters in the [VOD playback with pre-roll ads](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md) scenario, except there is no ad complete and no ad-break complete call.
+The parameters are identical to the parameters in the [VOD playback with pre-roll ads](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md) scenario, except there is no ad complete and no ad-break complete call.
 
 ## Beispielcode {#section_lxt_qz3_x2b}
 
