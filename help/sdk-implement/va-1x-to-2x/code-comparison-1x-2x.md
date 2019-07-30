@@ -3,7 +3,7 @@ seo-title: Codevergleich 1. x bis 2. x
 title: Codevergleich 1. x bis 2. x
 uuid: 9 f 0 a 1660-2100-446 d-ab 75-afdf 666478 b 3
 translation-type: tm+mt
-source-git-commit: ee073531814b446ba0ae4a86fc1011f063886561
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -840,4 +840,4 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 };
 ```
 
-Weitere Informationen zum Tracking von Videos mit 2.x finden Sie unter [Tracking von Kernvideowiedergabe](../../sdk-implement/track-av-playback/track-core-overview.md).
+Weitere Informationen zum Tracking von Videos mit 2.x finden Sie unter [Tracking von Kernvideowiedergabe](/help/sdk-implement/track-av-playback/track-core-overview.md).
