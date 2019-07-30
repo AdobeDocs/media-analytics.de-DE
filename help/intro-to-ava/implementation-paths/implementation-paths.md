@@ -3,7 +3,7 @@ seo-title: Implementierungspfade
 title: Implementierungspfade
 uuid: 8400 c 938-e 77 e -4 c 88-b 23 b -5 f 5977 a 5316 c
 translation-type: tm+mt
-source-git-commit: ca7e63d9af1f84c7d5d620c72df5f62555f68c03
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -16,7 +16,7 @@ Für jedes dieser Implementierungspfade müssen Kunden ihren Vertriebsvertreter/
 
 * **Clientseitig -** Es handelt sich hierbei um Integrationen von Media Analytics. Sie können zwischen dem Video Heartbeat SDK und/oder den Mediensammlungs-API-Integrationen wählen. Dieser Pfad kann über alle Videoplayer hinweg verwendet werden, einschließlich Kunden- und/oder OVP-Player, z. B. Brightcove, Ooyala, thePlatform usw.
 
-   If Media Analytics is your intended path, see the [Media SDK Implementation](../../sdk-implement/setup/setup-overview.md) and the [Media Collection API.](../../media-collection-api/mc-api-overview.md)
+   If Media Analytics is your intended path, see the [Media SDK Implementation](/help/sdk-implement/setup/setup-overview.md) and the [Media Collection API.](/help/media-collection-api/mc-api-overview.md)
 
    >[!IMPORTANT]
    >
@@ -34,6 +34,6 @@ Für jedes dieser Implementierungspfade müssen Kunden ihren Vertriebsvertreter/
    * Das nahtlose Ad-Insertion-Modell von TVSDK ermöglicht Analysen, die die Anzeigenwiedergabe direkt messen und so die Genauigkeit steigern können.
    * Umfangreiche Ereignisse und Metadaten, um die Genauigkeit bei der Messung von QoS, Puffern und Unterbrechungen mobiler Datenverbindungen sowie von Anwenderinteraktionen, z. B. Suche, Pause und das Ausführen der App im Hintergrund, zu gewährleisten.
    * Integrierte Unterstützung für Nielsen DTVR (linear) mit ID3- und DCR mit CMS-Metadaten.
-   TVSDK ist bereits in das Media Analtyics (Heartbeats) SDK integriert, wodurch die Implementierung für jede unterstützte Plattform viel einfacher und schneller wird. Primetime unterstützt darüber hinaus die Partnerschaft mit Nielsen. Um Primetime zu verwenden, beachten Sie die Anweisungen und Voraussetzungen in  [ Client-seitig](../../intro-to-ava/implementation-paths/client-side-path.md) sowie die folgenden Dokumente für Ihre Plattform(en): [Primetime-Benutzerhandbuch.](https://helpx.adobe.com/primetime/user-guide.html)
+   TVSDK ist bereits in das Media Analtyics (Heartbeats) SDK integriert, wodurch die Implementierung für jede unterstützte Plattform viel einfacher und schneller wird. Primetime unterstützt darüber hinaus die Partnerschaft mit Nielsen. Um Primetime zu verwenden, beachten Sie die Anweisungen und Voraussetzungen in  [ Client-seitig](/help/intro-to-ava/implementation-paths/client-side-path.md) sowie die folgenden Dokumente für Ihre Plattform(en): [Primetime-Benutzerhandbuch.](https://helpx.adobe.com/primetime/user-guide.html)
 
    Von Ihrem Support-Mitarbeiter/Account-Manager erhalten Sie Informationen zum Kauf von TVSDK.
