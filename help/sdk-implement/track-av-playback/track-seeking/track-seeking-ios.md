@@ -3,7 +3,7 @@ seo-title: Suchen-Tracking in iOS
 title: Suchen-Tracking in iOS
 uuid: 1 d 31 ae 99-384 f -4 b 4 d-b 557-4018 db 177349
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 >[!IMPORTANT]
 >
->Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie hier die 1.x-Entwicklerhandbücher herunterladen.[SDKs herunterladen.](../../../sdk-implement/download-sdks.md)
+>Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie hier die 1.x-Entwicklerhandbücher herunterladen.[SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Suchverfolgungskonstanten
 
@@ -43,4 +43,4 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
    }
    ```
 
-Weitere Informationen finden Sie im Tracking-Szenario [VOD-Wiedergabe mit Suche im Hauptinhalt](../../../sdk-implement/tracking-scenarios/vod-seeking.md).
+Weitere Informationen finden Sie im Tracking-Szenario [VOD-Wiedergabe mit Suche im Hauptinhalt](/help/sdk-implement/tracking-scenarios/vod-seeking.md).
