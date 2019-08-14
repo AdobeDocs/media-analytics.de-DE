@@ -3,7 +3,7 @@ product: Media Analytics
 audience: Endanwender
 user-guide-title: Adobe Analytics für Audio und Video
 translation-type: tm+mt
-source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
+source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
       + [Migration von Milestone zu Custom Link](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Custom Link in Analytics {#cl-in-aa}
       + [Implementierungshandbuch für benutzerspezifische Links](measurement-options/cl-in-aa/cl-impl-guide.md)
-+ Introduction to Audio and Video Analytics {#intro-to-ava}
++ Einführung in Audio und Video-Analyse {#intro-to-ava}
    + [Voraussetzungen](intro-to-ava/prereqs.md)
    + Implementierungspfade {#implementation-paths}
       + [Übersicht](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -113,7 +113,7 @@ source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
    + Validierung {#validation}
       + [Validierungsübersicht](sdk-implement/validation/validation-overview.md)
       + [Test 1: Standardwiedergabe](sdk-implement/validation/test1-standard-playback.md)
-      + [Test 2: Videounterbrechung](sdk-implement/validation/test2-video-interrupt.md)
+      + [Test 2: Medienunterbrechung](sdk-implement/validation/test2-media-interrupt.md)
       + [Testaufruf-Details](sdk-implement/validation/test-call-details.md)
       + [Beschreibungen der Heartbeat-Parameter](sdk-implement/validation/heartbeat-params.md)
       + Debugging {#debugging}
@@ -136,7 +136,7 @@ source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
       + [Migrationsübersicht](sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
       + [Codevergleich: 1. x bis 2. x](sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md)
       + [API-Konversion von  1.x zu 2.x](sdk-implement/va-1x-to-2x/1x-2x-api-change.md)
-+ Media Collection API (RESTful) {#media-collection-api}
++ Mediensammlungs-API (restful) {#media-collection-api}
    + [Übersicht](media-collection-api/mc-api-overview.md)
    + API-Referenz {#mc-api-ref}
       + [Sitzungsanfrage](media-collection-api/mc-api-ref/mc-api-sessions-req.md)
