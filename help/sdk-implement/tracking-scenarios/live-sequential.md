@@ -3,7 +3,7 @@ seo-title: Live-Hauptinhalt mit sequentieller Verfolgung
 title: Live-Hauptinhalt mit sequentieller Verfolgung
 uuid: b 03477 b 6-9 be 8-4 b 67-a 5 a 0-4 cef 3 cf 262 ab
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -53,7 +53,7 @@ Dies sollte fast genauso wie der Heartbeat Content Start-Aufruf aussehen, aber d
 
 ## Content Heartbeats {#section_7B387303851A43E5993F937AE2B146FE}
 
-Während der Medienwiedergabe gibt es einen Timer, der alle zehn Sekunden Heartbeats sendet. Diese Heartbeats enthalten Informationen zu Wiedergabe, Anzeigen, Pufferung und vielen weiteren Aspekten. Der genaue Inhalt jedes Heartbeats wird in diesem Dokument nicht behandelt. Wichtig ist vor allem, sicherzustellen, dass Heartbeats konsistent ausgelöst werden, während die Wiedergabe läuft.
+Während der Medienwiedergabe gibt es einen Timer, der alle zehn Sekunden Heartbeats für den Hauptinhalt sendet, und alle eine Sekunde für Anzeigen. Diese Heartbeats enthalten Informationen zu Wiedergabe, Anzeigen, Pufferung und vielen weiteren Aspekten. Der genaue Inhalt jedes Heartbeats wird in diesem Dokument nicht behandelt. Wichtig ist vor allem, sicherzustellen, dass Heartbeats konsistent ausgelöst werden, während die Wiedergabe läuft.
 
 Suchen Sie in den Inhalts-Heartbeats nach einigen speziellen Elementen:
 
