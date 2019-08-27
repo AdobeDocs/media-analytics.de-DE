@@ -3,12 +3,12 @@ seo-title: Tracking-Übersicht
 title: Tracking-Übersicht
 uuid: 7 b 8 e 2 f 76-bc 4 e -4721-8933-3 e 4453 b 01788
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
 
-# Tracking Overview{#tracking-overview}
+# Tracking-Übersicht{#tracking-overview}
 
 >[!IMPORTANT]
 >
@@ -22,7 +22,7 @@ Das Tracking der Core-Wiedergabe umfasst die Verfolgung der Medienladung, des Me
 
 * Erstellen Sie das Medienobjekt.
 * Metadaten ausfüllen
-* Call `trackSessionStart`; For example: `trackSessionStart(mediaObject, contextData)`
+* Aufruf `trackSessionStart`; Beispiel: `trackSessionStart(mediaObject, contextData)`
 
 ### Beim Medienstart
 
@@ -59,7 +59,7 @@ Das Tracking der Core-Wiedergabe umfasst die Verfolgung der Medienladung, des Me
 
 >[!TIP]
 >
->Die Position der Abspielleiste wird als Teil des Konfigurationscodes und des Konfigurationscodes festgelegt. For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>Die Position der Abspielleiste wird als Teil des Konfigurationscodes und des Konfigurationscodes festgelegt. Weitere Informationen finden `getCurrentPlayheadTime`Sie unter [Übersicht: Allgemeine Implementierungsrichtlinien.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## Implementierung {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -234,32 +234,5 @@ if (e.type == “buffered”) {
 
 ## Überprüfen {#section_ABCFB92C587B4CAABDACF93452EFA78F}
 
-### Inhaltsstart
+Informationen zur Validierung Ihrer Implementierung finden Sie unter [Validierung.](/help/sdk-implement/validation/validation-overview.md)
 
-Beim Start der Medienanzeige werden diese wichtigen Aufrufe in der folgenden Reihenfolge gesendet:
-
-1. Media Analytics-Start
-1. Heartbeat-Start
-1. Heartbeat-Analyse-Start
-
-Die Aufrufe 1 und 2 enthalten zusätzliche Metadatenvariablen für anwenderspezifische und standardmäßige Metadaten.
-
-### Content Play
-
-Während der normalen Wiedergabe des Hauptinhalts werden alle zehn Sekunden Heartbeat-Aufrufe an den Heartbeat-Server gesendet.
-
-### Inhaltsbeendigung
-
-Erreicht die Wiedergabe eines Inhalts oder eines linearen Streams 100 %, wird ein Heartbeat-Abschlussaufruf gesendet.
-
-### Content Pause
-
-Wenn der Player angehalten wird, werden alle 10 Sekunden Aufrufe mit Pausenereignissen gesendet. Wird das Video fortgesetzt, sollten erneut Wiedergabeereignisse gesendet werden.
-
-### Content Scrub/Seek
-
-Beim Verschieben der Abspielleiste durch den Anwender werden keine speziellen Tracking-Aufrufe gesendet. Wenn die Wiedergabe nach einer solchen Verschiebung jedoch wiederaufgenommen wird, sollte der Wert der Abspielleiste die neue Position im Hauptinhalt widerspiegeln.
-
-### Content Buffer
-
-Wenn der Media-Player puffert, werden alle 10 Sekunden Aufrufe von Player-Puffer-Ereignissen gesendet. Wenn der Puffervorgang endet, sollten die Abspielereignisse fortgesetzt werden.
