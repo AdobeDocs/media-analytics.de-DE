@@ -3,7 +3,7 @@ seo-title: Neuen Debug-Bericht erstellen
 title: Neuen Debug-Bericht erstellen
 uuid: 438 fde 3 d -98 f 9-46 d 1-9672-75 d 204361568
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
 ---
 
@@ -29,7 +29,7 @@ So erstellen Sie einen neuen Debug-Bericht:
          * [!UICONTROL Analytics &gt; Admin &gt; Anwenderverwaltung &gt; Anwender &gt; Individuelle Anwendereinstellungen] Um Webservice-API-Anmeldedaten für einen neuen Anwender zu erstellen, fügen Sie den Anwender unter [!UICONTROL Anwenderverwaltung] zur Anwendergruppe **Zugriff auf Webdienste** hinzu.
       * [!UICONTROL Standardendpunkt] : Die Daten in diesem Feld werden von Adobe bereitgestellt und können nicht geändert werden.
       * [!UICONTROL Extra Endpoint] - Hinzufügen `CNAMES`, wenn Sie sie verwenden, für Tracking-Server wie `metrics.companyname.com`
-   * **Media Heartbeats**
+   * **Video Heartbeats (Media Analytics)**
 
       * [!UICONTROL Standardendpunkt] : Die Daten in diesem Feld werden von Adobe bereitgestellt und können nicht geändert werden.
       * [!UICONTROL Zusätzlicher Endpunkt] - Wenn `CNAMES`Sie sie verwenden, für Ihren Tracking-Server, z. `metrics.companyname.com`B.
