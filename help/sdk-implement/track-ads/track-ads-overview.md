@@ -3,7 +3,7 @@ seo-title: Überblick
 title: Überblick
 uuid: 1607798 b-c 6 ef -4 d 60-8 e 40-e 958 c 345 b 09 c
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -14,9 +14,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit den 2. x sdks. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
-Die Wiedergabe von Anzeigen beinhaltet das Tracking von Werbeunterbrechungen, Anzeigenstarts, -beendigungen und übersprungenen Anzeigen. Verwenden Sie die API des Medienplayers, um wichtige Player-Ereignisse herauszufinden und die erforderlichen und optionalen Anzeigenvariablen auszufüllen. See the comprehensive list of metadata here: [Ad parameters.](/help/metrics-and-metadata/ad-parameters.md)
+Die Wiedergabe von Anzeigen beinhaltet das Tracking von Werbeunterbrechungen, Anzeigenstarts, -beendigungen und übersprungenen Anzeigen. Verwenden Sie die API des Medienplayers, um wichtige Player-Ereignisse herauszufinden und die erforderlichen und optionalen Anzeigenvariablen auszufüllen. Eine umfassende Liste der Metadaten finden Sie hier: [Anzeigenparameter.](/help/metrics-and-metadata/ad-parameters.md)
 
-## Player events {#player-events}
+## Player-Ereignisse {#player-events}
 
 
 ### Beim Werbeunterbrechungsstart
@@ -46,7 +46,7 @@ Die Wiedergabe von Anzeigen beinhaltet das Tracking von Werbeunterbrechungen, An
 
 * Rufen Sie `trackEvent` für das Ende der Werbeunterbrechung auf.
 
-## Implement ad tracking {#section_83E0F9406A7743E3B57405D4CDA66F68}
+## Implementierung der Anzeigenverfolgung {#section_83E0F9406A7743E3B57405D4CDA66F68}
 
 ### Anzeigen-Tracking-Konstanten
 
@@ -100,7 +100,7 @@ Die Wiedergabe von Anzeigen beinhaltet das Tracking von Werbeunterbrechungen, An
 
 >[!IMPORTANT]
 >
->Make sure you do NOT increment the content player playhead (`l:event:playhead`) during ad playback (`s:asset:type=ad`). Wenn Sie dies tun, werden die Metriken "Besuchszeit pro Inhalt" negativ beeinflusst.
+>Stellen Sie sicher, dass Sie die Playhead für den Inhalts-Player (`l:event:playhead`) bei der Wiedergabe der Anzeige NICHT erhöhen (`s:asset:type=ad`). Wenn Sie dies tun, werden die Metriken "Besuchszeit pro Inhalt" negativ beeinflusst.
 
 Der folgende Beispielcode nutzt das javascript 2. x SDK für einen HTML 5-Medienplayer.
 
@@ -139,32 +139,4 @@ if (e.type == "ad break complete") {
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
 }; 
 ```
-
-## Überprüfen {#section_5F1783F5FE2644F1B94B0101F73D57EB}
-
-### Werbung gestartet
-
-Beim Start einer Anzeigenwiedergabe werden drei wichtige Aufrufe in folgender Reihenfolge gesendet:
-
-1. Start der Anzeigenanalyse
-1. Heartbeat-Anzeigenstart
-1. Heartbeat-Analyse-Start
-
-Die Aufrufe 1 und 2 enthalten zusätzliche Metadatenvariablen für anwenderspezifische und standardmäßige Metadaten.
-
-### Ad Play
-
-Während der Anzeigenwiedergabe werden im Sekundentakt Heartbeat Ad Play-Aufrufe an den Heartbeat-Server gesendet.
-
-### Werbung beendet
-
-Wenn eine Anzeige vollständig abgespielt wurde, wird ein Heartbeat Ad Complete-Aufruf gesendet.
-
-### Ad Skip
-
-Wenn eine Anzeige übersprungen wird, werden keine Ereignisse gesendet. Tracking-Aufrufe enthalten also keine Anzeigeninformationen.
-
->[!TIP]
->
->Es werden keine eindeutigen Aufrufe an Werbeunterbrechung und Werbeunterbrechung gesendet.
 
