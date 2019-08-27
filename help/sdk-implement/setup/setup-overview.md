@@ -3,7 +3,7 @@ seo-title: Übersicht einrichten
 title: Übersicht einrichten
 uuid: 06 fefedb-b 0 c 8-4 f 7 d -90 c 8-e 374 cdde 1695
 translation-type: tm+mt
-source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -121,15 +121,13 @@ Führen Sie die folgenden Implementierungsschritte aus:
 
 ## Überprüfen {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
 
-Medienimplementierungen bestehen aus zwei Arten von Tracking-Aufrufen:
+Die Implementierungen von Media Analytics-Verfolgung generieren zwei Arten von Tracking-Aufrufen:
 
-* Medien-Start- und Ad Start-Aufrufe werden direkt an den AppMeasurement-Server gesendet.
-* Heartbeat-Aufrufe werden beim Start an den Heartbeat-Tracking-Server gesendet, alle zehn Sekunden für Inhalte und jede Sekunde für Anzeigen.
+* Medien- und Anzeigenstartanrufe werden direkt an den Adobe Analytics-Server (appmeasurement) gesendet.
+* Heartbeat-Aufrufe werden an den Media Analytics-Tracking-Server (Heartbeats) gesendet, dort verarbeitet und an den Adobe Analytics-Server weitergegeben.
 
-Das Medien-Tracking verhält sich auf allen Plattformen – Desktop oder Mobilgeräte – gleich. Die Audioverfolgung funktioniert derzeit auf mobilen Plattformen. Es gibt einige universelle Variablen, die für alle Tracking-Aufrufe überprüft werden müssen:
-
-* **Appmeasurement (Analytics)**
-Weitere Informationen zu den Tracking-Serveroptionen finden Sie unter [Korrektes Füllen der Variablen trackingserver und trackingserversecure.](https://marketing.adobe.com/resources/help/kb/en_US/analytics/kb/determining-data-center.html)
+* **Adobe Analytics (appmeasurement)-Server**
+Weitere Informationen zu den Tracking-Serveroptionen finden Sie unter [Korrektes Füllen der Variablen trackingserver und trackingserversecure.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
 
    >[!IMPORTANT]
    >
@@ -137,8 +135,10 @@ Weitere Informationen zu den Tracking-Serveroptionen finden Sie unter [Korrektes
 
    The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-* ** Media Analytics (Heartbeats)**
+* ** Media Analytics (Heartbeats) server**
 Dies hat immer das Format "`[your_namespace].hb.omtrdc.net`. Der Wert von "`[your_namespace]`specifies your company" und wird von Adobe bereitgestellt.
+
+Das Medien-Tracking verhält sich auf allen Plattformen – Desktop oder Mobilgeräte – gleich. Die Audioverfolgung funktioniert derzeit auf mobilen Plattformen. Es gibt einige universelle Variablen, die für alle Tracking-Aufrufe überprüft werden müssen:
 
 ## Dokumentation zu SDK 1. x {#section_acj_tkk_t2b}
 
