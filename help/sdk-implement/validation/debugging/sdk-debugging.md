@@ -3,14 +3,14 @@ seo-title: SDK-Debugging
 title: SDK-Debugging
 uuid: a 5972 d 87-c 593-4 b 4 f-a 56 f-dca 6 e 25268 e 1
 translation-type: tm+mt
-source-git-commit: 6b6caa59ac9ea14a42337e2f133ecb31f30491c7
+source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
 ---
 
 
 # SDK-Debugging{#sdk-debugging}
 
-Sie können die Protokollierung aktivieren und deaktivieren. Das Media SDK bietet einen umfangreichen Tracing-/Protokollierungsmechanismus, der im gesamten Videoverfolgungsstapel eingerichtet wird. You can enable or disable this logging by setting the `debugLogging` flag on the Config object.
+Sie können die Protokollierung aktivieren und deaktivieren. Das Media-SDK bietet im Medienverfolgungsstapel einen umfangreichen Tracing-/Protokollierungsmechanismus. You can enable or disable logging by setting the `debugLogging` flag on the Config object.
 
 ## Beispielcode für die Debug-Protokollierung
 
@@ -62,7 +62,7 @@ ADBMobile().setDebugLogging(true)
 ADBMobile.config.setDebugLogging(true)
 ```
 
-**Testen von Chromecast-Anwendungen mit Adobe Bloodhound -**
+## Testen von Chromecast-Anwendungen mit Adobe Bloodhound
 
 Bei der Anwendungsentwicklung können Sie in Bloodhound die Server-Aufrufe lokal anzeigen und die Daten optional an Adobe-Erfassungsserver weiterleiten. Weitere Informationen zu Bloodhound finden Sie in den folgenden Anleitungen:
 
@@ -73,7 +73,7 @@ Bei der Anwendungsentwicklung können Sie in Bloodhound die Server-Aufrufe lokal
 >
 >Seit dem 30. April 2017 wurde Adobe Bloodhound unterlegt. Seit dem 1. Mai 2017 wurde keine Verbesserung mehr vorgenommen und es wird kein zusätzlicher Engineering- oder Adobe Expert Care-Support mehr angeboten.
 
-### Protokollmeldungen
+## Protokollmeldungen
 
 Protokollmeldungen haben folgendes Format:
 
@@ -91,7 +91,7 @@ Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.s
 * **tag:** Der Name der Unterkomponente, von der die Protokollmeldung ausgegeben wurde (normalerweise der Klassenname)
 * **message:** Die eigentliche Trace-Meldung
 
-Sie können die Implementierung anhand der ausgegebenen Protokolle der Video Heartbeat-Bibliothek überprüfen. A good strategy is to search through the logs for the string `#track`. This will highlight all the `track*()` calls made by your application.
+Sie können die Implementierung anhand der Protokolle der Media SDK-Bibliothek überprüfen. A good strategy is to search through the logs for the string `#track`. This will highlight all the `track*()` calls made by your application.
 
 For instance, this is what the logs filtered for `#track` could look like:
 
