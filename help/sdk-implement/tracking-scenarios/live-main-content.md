@@ -3,7 +3,7 @@ seo-title: Live-Hauptinhalt
 title: Live-Hauptinhalt
 uuid: e 92 e 99 f 4-c 395-48 aa -8 a 30-cbdd 2 f 5 fc 07 c
 translation-type: tm+mt
-source-git-commit: 9dbd621e10ba198b9331e5a7579fcbd3b6173ecd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -40,7 +40,7 @@ Viele der Werte bei Adobe Analytics Content Start-Aufrufen sind auch bei Heartbe
 
 ## Content Heartbeats {#section_7B387303851A43E5993F937AE2B146FE}
 
-Während der Medienwiedergabe gibt es einen Timer, der alle zehn Sekunden Heartbeats sendet. Diese Heartbeats enthalten Informationen zu Wiedergabe, Anzeigen, Pufferung und vielen weiteren Aspekten. Der genaue Inhalt jedes Heartbeats wird in diesem Dokument nicht behandelt. Wichtig ist vor allem, sicherzustellen, dass Heartbeats konsistent ausgelöst werden, während die Wiedergabe läuft.
+Während der Medienwiedergabe gibt es einen Timer, der einen oder mehrere Heartbeats (oder Pings) alle 10 Sekunden für den Hauptinhalt sendet und jede zweite für Anzeigen. Diese Heartbeats enthalten Informationen zu Wiedergabe, Anzeigen, Pufferung und vielen weiteren Aspekten. Der genaue Inhalt jedes Heartbeats wird in diesem Dokument nicht behandelt. Wichtig ist vor allem, sicherzustellen, dass Heartbeats konsistent ausgelöst werden, während die Wiedergabe läuft.
 
 Suchen Sie in den Inhalts-Heartbeats nach einigen speziellen Elementen:
 
@@ -59,13 +59,13 @@ Bei LIVE-Streams müssen Sie die Abspielleiste auf einen Offset festlegen, von d
 
 ### Beim Start
 
-For LIVE media, when a user starts playing the stream, you need to set `l:event:playhead` to the current offset, in seconds. Dies ist im Gegensatz zu VOD, bei dem Sie die Abspielleiste auf "0" setzen würden.
+Wenn ein Benutzer für LIVE-Medien die Wiedergabe des Streams startet, müssen Sie den `l:event:playhead` aktuellen Offset in Sekunden festlegen. Dies ist im Gegensatz zu VOD, bei dem Sie die Abspielleiste auf "0" setzen würden.
 
-For example, say a LIVE streaming event starts at midnight and runs for 24 hours (`a.media.length=86400`; `l:asset:length=86400`). Angenommen, ein Benutzer beginnt mit dem Live-Stream um 12:00 Uhr. In this scenario, you should set `l:event:playhead` to 43200 (12 hours into the stream).
+Angenommen, ein LIVE-Streaming-Ereignis beginnt um Mitternacht und läuft 24 Stunden (`a.media.length=86400`; `l:asset:length=86400`). Angenommen, ein Benutzer beginnt mit dem Live-Stream um 12:00 Uhr. In diesem Szenario sollten Sie auf `l:event:playhead` 43200 (12 Stunden im Stream) setzen.
 
 ### Anhalten
 
-Die gleiche "Live Playhead" -Logik, die am Anfang der Wiedergabe angewendet wird, muss angewendet werden, wenn ein Benutzer die Wiedergabe hält. When the user returns to playing the LIVE stream, you must set the `l:event:playhead` value to the new offset playhead position, _not_ to the point where the user paused the LIVE stream.
+Die gleiche "Live Playhead" -Logik, die am Anfang der Wiedergabe angewendet wird, muss angewendet werden, wenn ein Benutzer die Wiedergabe hält. Wenn der Benutzer zum Wiedergeben des LIVE-Streams zurückkehrt, müssen Sie den `l:event:playhead` Wert auf die neue Position des Offset-Abspielkopfs festlegen und _nicht_ an den Punkt, an dem der Benutzer den LIVE-Stream angehalten hat.
 
 ## Beispielcode {#section_vct_j2j_x2b}
 
