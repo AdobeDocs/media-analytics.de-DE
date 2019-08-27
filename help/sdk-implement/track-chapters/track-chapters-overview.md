@@ -3,7 +3,7 @@ seo-title: Überblick
 title: Überblick
 uuid: 3 fe 32425-5 e 2 a -4886-8 fea-d 91 d 15671 bb 0
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -34,7 +34,7 @@ Das Kapitel-Tracking beinhaltet Kapitelstarts, -beendigungen und übersprungene 
 
 * Aufruf    `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
 
-## Implement chapter tracking {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
+## Kapitelverfolgung implementieren {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
 
 1. Ermitteln Sie, wann das Kapitel beginnt, und erstellen Sie die `ChapterObject`-Instanz mithilfe dieser Kapitelinformationen.
 
@@ -85,18 +85,3 @@ if (e.type == "chapter skip") {
 }; 
 ```
 
-## Überprüfen {#section_07EC2811BE3249249494596BFE9BF869}
-
-### Chapter Start
-
-Beim Start einer einzelnen Kapitelwiedergabe wird ein Schlüsselaufruf gesendet:
-
-* Heartbeat Chapter Start (Dieser Aufruf enthält zusätzliche Kapitelmetadatenvariablen.)
-
-### Kapitelbeendigung
-
-Nach Abschluss der Kapitelwiedergabe wird ein Heartbeat-Chapter-Complete-Aufruf gesendet.
-
-### Übersprungenes Kapitel
-
-Wenn ein Kapitel übersprungen wird, wird ein Heartbeat-Chapter-Skip-Aufruf gesendet.
