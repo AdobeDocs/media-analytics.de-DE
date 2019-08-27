@@ -3,37 +3,37 @@ seo-title: Details zum Testaufruf
 title: Details zum Testaufruf
 uuid: d 3 a 0 e 62 f -2 fc 3-413 d-ac 56-adbbc 9 b 3 e 983
 translation-type: tm+mt
-source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
+source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 ---
 
 
 # Details zum Testaufruf{#test-call-details}
 
-## Videoplayer starten {#section_qts_xff_f2b}
+## Starten des Medienplayers {#start-the-media-player}
 
-### Media Analytics-Startanruf
+### Adobe Analytics (appmeasurement) Start-Aufruf {#aa-start-call}
 
-| Parameter | Wert (Beispiel)   |
+| Parameter |  Wert (Beispiel)  |
 |---|---|
 | `pev2` | ms_s |
 | `a.media.friendlyName` | Episode Title |
-| `a.media.name` | 123456 |
-| `a.media.length` | 120 |
+| _**`a.media.name`**_ | _**123456**_ |
+| _**`a.media.length`**_ | _**120**_ |
 | `a.media.playerName` | HTML5 |
-| `a.media.view` | wahr |
+| _**`a.media.view`**_ | _**wahr**_ |
 | `a.contentType` | vod |
-| `custom.[value]` | Anwenderspezifische Metadatenfelder |
-| `a.media.[value]` | Standardmäßige Metadatenfelder |
+| _**`custom.[value]`**_ | _**Anwenderspezifische Metadatenfelder**_ |
+| _**`a.media.[value]`**_ | _**Standardmäßige Metadatenfelder**_ |
 
 **Hinweise:**
 
 * Zusätzliche Kontextdatenvariablen sollten vorhanden sein und Metadaten enthalten. Siehe unten zu Details für Metadaten.
 * Die Länge für lineare Streams sollte auf die beste Schätzung für die aktuelle Sendung eingestellt werden.
 
-### Standard-Metadaten in Media Analytics starten
+### Standardmäßige Metadaten in Adobe Analytics (appmeasurement) Starten von {#std-metadata-aa}
 
-| Parameter | Wert (Beispiel)   |
+| Parameter |  Wert (Beispiel)  |
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
@@ -50,56 +50,36 @@ source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Heartbeat-Startaufruf
+### Benutzerdefinierte Metadaten in Adobe Analytics (appmeasurement) Starten {#custom-metadata-aa}
 
-| Parameter | Wert (Beispiel)   |
+| Parameter |  Wert (Beispiel)  |
+|---|---|
+| `custom.metadataA` | value |
+| `custom.metadataB` | value |
+
+### Media Analytics (Heartbeats) Start-Aufruf {#ma-start-call}
+
+| Parameter |  Wert (Beispiel)  |
 |---|---|
 | `s:event:type` | start |
-| `l:event:playhead` | 0 |
+| _**`l:event:playhead`**_ | _**0**_ |
 | `l:event:duration` | 4 |
 | `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
 | `s:asset:type` | main |
-| `s:meta:custom.[value]` | Anwenderspezifische Metadatenfelder |
-| `s:meta:a.media.[value]` | Standardmäßige Metadatenfelder |
-
-### Medienmetadaten in Media Analytics starten
-
-| Parameter | Wert (Beispiel)   |
-|---|---|
-| `custom.metadataA` | value |
-| `custom.metadataB` | value |
+| _**`s:meta:custom.[value]`**_ | _**Anwenderspezifische Metadatenfelder**_ |
+| _**`s:meta:a.media.[value]`**_ | _**Standardmäßige Metadatenfelder**_ |
 
 **Hinweise:**
 
 * Zusätzliche Kontextdatenvariablen sollten vorhanden sein und Metadaten enthalten. Siehe unten zu Details für Metadaten.
 * Die Position der Abspielleiste für lineare Streams sollte beim Videostart auf die Sekunden eingestellt werden, die seit Beginn der aktuellen Sendung verstrichen sind, nicht auf 0.
 
-### Heartbeat Analytics-Startaufruf
+### Standard-Metadaten in Media Analytics (Heartbeats) Starten von Aufrufen {#std-metadata-ma}
 
-| Parameter | Wert (Beispiel)   |
-|---|---|
-| `s:event:type` | aa_start |
-| `l:event:playhead` | 0 |
-| `l:event:duration` | 4 |
-| `s:asset:name` | Episode Title |
-| `s:asset:video_id` | 123456 |
-| `l:asset:length` | 120 |
-| `s:stream:type` | vod |
-| `s:asset:type` | main |
-
-### Medienmetadaten im Heartbeat-Startaufruf
-
-| Parameter | Wert (Beispiel)   |
-|---|---|
-| `s:meta:custom.metadata` | value |
-| `s:meta:custom.metadata` | value |
-
-### Standardmäßige Metadaten im Heartbeat-Startaufruf
-
-| Parameter | Wert (Beispiel)   |
+| Parameter |  Wert (Beispiel)  |
 |---|---|
 | `s:meta:a.media.show` | Show |
 | `s:meta:a.media.season` | 6 |
@@ -116,57 +96,59 @@ source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
+### Benutzerdefinierte Metadaten in Media Analytics (Heartbeats) Starten von Aufrufen {#custom-metadata-ma}
+
+| Parameter |  Wert (Beispiel)  |
+|---|---|
+| `s:meta:custom.metadata` | value |
+| `s:meta:custom.metadata` | value |
+
+### Media Analytics (Heartbeats) Adobe Analytics Start-Aufruf {#ma-aa-start}
+
+| Parameter |  Wert (Beispiel)  |
+|---|---|
+| _**`s:event:type`**_ | _**aa_start**_ |
+| `l:event:playhead` | 0 |
+| `l:event:duration` | 4 |
+| `s:asset:name` | Episode Title |
+| `s:asset:video_id` | 123456 |
+| `l:asset:length` | 120 |
+| `s:stream:type` | vod |
+| `s:asset:type` | main |
+
 **Hinweise:**
 
-* Dieser Aufruf zeigt an, dass die Heartbeat-Bibliothek angefordert hat, einen Analytics-pev2=ms_s-Aufruf an den Analyseserver zu senden.
+* Dieser Aufruf weist darauf hin, dass das Media SDK einen Adobe Analytics `pev2=ms_s` -Aufruf an den Adobe Analytics-Server (appmeasurement) anfordert.
 * Dieser Aufruf enthält keine anwenderdefinierten Metadaten.
 
-## Werbung wiedergeben {#section_wz3_yff_f2b}
+## Werbung wiedergeben {#view-ad-playback}
 
-### Media Analytics-Anzeigenstart-Aufruf
+### Adobe Analytics (appmeasurement) Ad Start-Aufruf {#aa-ad-start-call}
 
-| Parameter | Wert (Beispiel)   |
+| Parameter |  Wert (Beispiel)  |
 |---|---|
-| `pev2` | msa_s |
+| _**`pev2`**_ | _**msa_s**_ |
 | `a.media.name` | 123456 |
-| `a.media.ad.name` | 9378 |
+| _**`a.media.ad.name`**_ | _**9378**_ |
 | `a.media.ad.friendlyName` | Video_VPAID_DFA |
 | `a.media.ad.podFriendlyName` | preroll |
-| `a.media.ad.length` | 15 |
+| _**`a.media.ad.length`**_ | _**15**_ |
 | `a.media.ad.playerName` | HTML5 |
 | `a.media.ad.pod` | c27aaf3ff8224bb6b9ebfe1b2e79073d_1 |
 | `a.media.ad.podPosition` | 1 |
 | `a.media.ad.podSecond` | 0,0 |
-| `a.media.ad.view` | True |
-| `custom.[value]` | Metadatenfelder |
-| `a.media.[value]` | Standardmäßige Metadatenfelder |
+| _**`a.media.ad.view`**_ | _**True**_ |
+| _**`custom.[value]`**_ | _**Metadatenfelder**_ |
+| _**`a.media.[value]`**_ | _**Standardmäßige Metadatenfelder**_ |
 
-**Hinweis:** Zusätzliche Kontextdatenvariablen sollten vorhanden sein und Metadaten enthalten. Siehe unten zu Details für Metadaten.
+**Hinweise:**
 
-### Heartbeat-Anzeigenstartaufruf
+* Zusätzliche Kontextdatenvariablen sollten vorhanden sein und Metadaten enthalten. Siehe unten zu Details für Metadaten.
+* Die Anzeigenlänge kann auf -1 gesetzt werden, wenn sie beim Anzeigenstart nicht verfügbar ist.
 
-| Parameter | Wert (Beispiel)   |
-|---|---|
-| `s:event:type` | start |
-| `l:event:playhead` | 0 |
-| `l:event:duration` | 4 |
-| `s:asset:ad_id` | 9378 |
-| `l:asset:length` | 120 |
-| `s:stream:type` | vod |
-| `s:asset:type` | ad |
-| `s:meta:custom.[value]` | Anwenderspezifische Metadatenfelder |
-| `s:meta:a.media.[value]` | Standardmäßige Metadatenfelder |
+### Standard metadata in Adobe Analytics (AppMeasurement) Ad Start call {#std-metadata-aa-ad-start}
 
-### Medienmetadaten im Media Analytics-Anzeigenaufruf
-
-| Parameter | Wert (Beispiel)   |
-|---|---|
-| `custom.metadata` | value |
-| `custom.metadata` | value |
-
-### Standard-Metadaten im Media Analytics-Anzeigenstartaufruf
-
-| Parameter | Wert (Beispiel)   |
+| Parameter |  Wert (Beispiel)  |
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
@@ -183,33 +165,35 @@ source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
+### Benutzerdefinierte Metadaten in Adobe Analytics (appmeasurement) Ad Start-Aufruf {#custom-metadata-aa-ad-start}
+
+| Parameter |  Wert (Beispiel)  |
+|---|---|
+| `custom.metadata` | value |
+| `custom.metadata` | value |
+
+### Media Analytics (Heartbeats) Ad Start-Aufruf {#ma-ad-start-call}
+
+| Parameter |  Wert (Beispiel)  |
+|---|---|
+| _**`s:event:type`**_ | _**start**_ |
+| `l:event:playhead` | 0 |
+| `l:event:duration` | 4 |
+| `s:asset:ad_id` | 9378 |
+| _**`l:asset:length`**_ | _**120**_ |
+| `s:stream:type` | vod |
+| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:meta:custom.[value]`**_ | _**Anwenderspezifische Metadatenfelder**_ |
+| _**`s:meta:a.media.[value]`**_ | _**Standardmäßige Metadatenfelder**_ |
+
 **Hinweise:**
 
 * Zusätzliche Kontextdatenvariablen sollten vorhanden sein und Metadaten enthalten. Siehe unten zu Details für Metadaten.
 * Die Anzeigenlänge kann auf -1 gesetzt werden, wenn sie beim Anzeigenstart nicht verfügbar ist.
 
-### Heartbeat Analytics-Anzeigenstartaufruf
+### Standard metadata in Media Analytics (heartbeats) Ad Start call {#std-metadata-ma-ad-start}
 
-| Parameter | Wert (Beispiel)   |
-|---|---|
-| `s:event:type` | aa_ad_start |
-| `l:event:playhead` | 0 |
-| `l:event:duration` | 0 |
-| `s:asset:ad_id` | 9378 |
-| `l:asset:ad_length` | 15 |
-| `s:stream:type` | vod |
-| `s:asset:type` | ad |
-
-### Medienmetadaten im Heartbeat Ad Start-Aufruf
-
-| Parameter | Wert (Beispiel)   |
-|---|---|
-| `s:meta:custom.metadata` | value |
-| `s:meta:custom.metadata` | value |
-
-### Standardmäßige Metadaten im Heartbeat-Anzeigenstartaufruf
-
-| Parameter | Wert (Beispiel)   |
+| Parameter |  Wert (Beispiel)  |
 |---|---|
 | `s:meta:a.media.show` | Show |
 | `s:meta:a.media.season` | 6 |
@@ -226,43 +210,89 @@ source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
+### Benutzerdefinierte Metadaten in Media Analytics (Heartbeats) Ad Start-Aufruf {#custom-metadata-ma-ad-start}
+
+| Parameter |  Wert (Beispiel)  |
+|---|---|
+| `s:meta:custom.metadata` | value |
+| `s:meta:custom.metadata` | value |
+
+### Media Analytics (Heartbeats) Adobe Analytics Ad Start-Aufruf {#ma-aa-ad-start-call}
+
+| Parameter |  Wert (Beispiel)  |
+|---|---|
+| _**`s:event:type`**_ | _**aa_ad_start**_ |
+| `l:event:playhead` | 0 |
+| `l:event:duration` | 0 |
+| `s:asset:ad_id` | 9378 |
+| `l:asset:ad_length` | 15 |
+| `s:stream:type` | vod |
+| `s:asset:type` | ad |
+
+### Ad-Play-Aufruf für Media Analytics (Heartbeats) {#ma-ad-play-call}
+
+| Parameter |  Wert (Beispiel)  |
+|---|---|
+| _**`s:event:type`**_ | _**play**_ |
+| `l:event:playhead` | 15 |
+| `l:event:duration` | 0 |
+| `s:asset:ad_id` | 9378 |
+| `l:asset:ad_length` | 15 |
+| `s:stream:type` | vod |
+| _**`s:asset:type`**_ | _**ad**_ |
+
+### Media Analytics-Anzeigenaufrufe (Heartbeats) {#ma-ad-pause-call}
+
+| Parameter |  Wert (Beispiel)  |
+|---|---|
+| _**`s:event:type`**_ | _**pause**_ |
+| `l:event:playhead` | 15 |
+| `l:event:duration` | 0 |
+| `s:asset:ad_id` | 9378 |
+| `l:asset:ad_length` | 15 |
+| `s:stream:type` | vod |
+| _**`s:asset:type`**_ | _**ad**_ |
+
+### Media Analytics (Heartbeats) Adobe Analytics Ad Complete-Aufruf {#ma-aa-ad-complete-call}
+
+| Parameter |  Wert (Beispiel)  |
+|---|---|
+| _**`s:event:type`**_ | _**complete**_ |
+| `l:event:playhead` | 15 |
+| `l:event:duration` | 0 |
+| `s:asset:ad_id` | 9378 |
+| `l:asset:ad_length` | 15 |
+| `s:stream:type` | vod |
+| _**`s:asset:type`**_ | _**ad**_ |
+
+## Hauptinhalt abspielen {#play-main-content}
+
+### Media Analytics (Heartbeats) Play-Aufruf {#ma-play-call}
+
+| Parameter |  Wert (Beispiel)  |
+|---|---|
+| `s:event:type` | play |
+| _**`l:event:playhead`**_ | _**29**_ |
+| _**`l:event:duration`**_ | _**10189**_ |
+| `s:asset:name` | Episode Title |
+| `s:asset:video_id` | 123456 |
+| `l:asset:length` | 120 |
+| `s:stream:type` | vod |
+| `s:asset:type` | main |
+
 **Hinweise:**
 
-* Zusätzliche Kontextdatenvariablen sollten vorhanden sein und Metadaten enthalten. Siehe unten zu Details für Metadaten.
-* Die Anzeigenlänge kann auf -1 gesetzt werden, wenn sie beim Anzeigenstart nicht verfügbar ist.
+* Die Position der Abspielleiste sollte bei jedem play-Aufruf um 10 Sekunden erhöht werden.
+* Der Wert `l:event:duration` zeigt die Anzahl der Millisekunden seit dem letzten Tracking-Aufruf und sollte bei jedem 10-Sekunden-Aufruf ungefähr gleich bleiben.
 
-### Heartbeat Anzeigenendeaufruf
+## Hauptinhalt anhalten {#pause-main-content}
 
-| Parameter | Wert (Beispiel)   |
+### Media Analytics (Heartbeats) Pause-Aufruf {#ma-pause-call}
+
+| Parameter |  Wert (Beispiel)  |
 |---|---|
-| `s:event:type` | complete |
-| `l:event:playhead` | 15 |
-| `l:event:duration` | 0 |
-| `s:asset:ad_id` | 9378 |
-| `l:asset:ad_length` | 15 |
-| `s:stream:type` | vod |
-| `s:asset:type` | ad |
-
-### Heartbeat Anzeigenabspielaufruf
-
-| Parameter | Wert (Beispiel)   |
-|---|---|
-| `s:event:type` | play |
-| `l:event:playhead` | 15 |
-| `l:event:duration` | 0 |
-| `s:asset:ad_id` | 9378 |
-| `l:asset:ad_length` | 15 |
-| `s:stream:type` | vod |
-| `s:asset:type` | ad |
-
-## Hauptinhalt abspielen {#section_u1l_1gf_f2b}
-
-### Heartbeat Abspielaufruf
-
-| Parameter | Wert (Beispiel)   |
-|---|---|
-| `s:event:type` | play |
-| `l:event:playhead` | 29 |
+| _**`s:event:type`**_ | _**pause**_ |
+| _**`l:event:playhead`**_ | _**29**_ |
 | `l:event:duration` | 10189 |
 | `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
@@ -270,8 +300,4 @@ source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 | `s:stream:type` | vod |
 | `s:asset:type` | main |
 
-**Hinweise:**
-
-* Die Position der Abspielleiste sollte bei jedem Abspielanruf um 10 erhöht werden.
-* Der Wert `l:event:duration` zeigt die Anzahl der Millisekunden seit dem letzten Tracking-Aufruf und sollte bei jedem 10-Sekunden-Aufruf ungefähr gleich bleiben.
 
