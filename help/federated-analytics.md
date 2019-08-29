@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a 82 ace 81-c 2 f 6-4799-9 a 62-4 c 6 a 737 a 7 dab
 translation-type: tm+mt
-source-git-commit: a9e1c8ba7c8a95120e4c66460ff6d742c0855652
+source-git-commit: e95fc2867ecdb874998e259cf10d33c724f4e15b
 
 ---
 
@@ -41,7 +41,7 @@ Der Federated Analytics-Service stellt ein System zur Weitergabe von Adobe Media
 
 1. Sender und Empfänger arbeiten zusammen, um das Formular der Vereinbarung zu Föderierungsregeln auszufüllen.
 
-   **Laden Sie die aktuelle Version des Formulars hier herunter:**[Vereinbarung zu Vereinigungsregeln](./federated_analytics_form.pdf)
+   **Laden Sie die aktuelle Version des Formulars hier herunter = = &gt;:**[Vereinbarung zu Vereinigungsregeln](/help/federated_analytics_form.pdf)
 
    >[!NOTE]
    >
