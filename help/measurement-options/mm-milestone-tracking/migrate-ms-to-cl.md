@@ -119,21 +119,27 @@ Media.contextDataMapping
 <td>
 <pre>
 s.Media.
-  Contextdatamapping = {"a. media. name":
- " Evar 2, prop 2 ","
- a. media. segment ":
- " Evar 3 ","
- a. contenttype ":
- " Evar 1 ","
- a. media. timeplayed ":
- " event 3 ","
- a. media. view ":
- " event 1 ","
- a. media. segmentview ":
- " event 2 ","
- a. media. complete ":
- " event 7 ","
- a. media. milestones ": {25: " event 4 ", 50: " event 5 ", 75: " event 6 "}};
+  contextDataMapping = {
+  "a.media.name":
+    "eVar2,prop2",
+  "a.media.segment":
+    "eVar3",
+  "a.contentType":
+    "eVar1",
+  "a.media.timePlayed":
+    "event3",
+  "a.media.view":
+    "event1",
+  "a.media.segmentView":
+    "event2",
+  "a.media.complete":
+    "event7",
+  "a.media.milestones":{
+    25:"event4",
+    50:"event5",
+    75:"event6"
+  }
+};
 </pre>
 </td>
 <td>nicht angegeben
@@ -147,12 +153,12 @@ Media.trackVars
 </td>
 <td>
 <pre>
-s. Media. trackvars
- = "events,
- prop 2,
- evar 1,
- evar 2,
- evar 3";
+s.Media.trackVars
+  = "events,
+     prop2,
+     eVar1,
+     eVar2,
+     eVar3";
 </pre>
 </td>
 <td>
@@ -160,17 +166,17 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s. linktrackvars
- =' events,
- prop 10,
- evar 10,
- evar 12,
- evar 13,
- evar 15,
- contextdata.
- video. name,
- contextdata.
- video. view ';
+s.linkTrackVars
+  = 'events,
+     prop10,
+     eVar10,
+     eVar12,
+     eVar13,
+     eVar15,
+     contextData.
+       video.name,
+     contextData.
+       video.view';
 </pre>
 </td>
 </tr>
@@ -180,14 +186,14 @@ Media.trackEvents
 </td>
 <td>
 <pre>
-s. Media. trackevents
- = "event 1,
- event 2,
- event 3,
- event 4,
- event 5,
- event 6,
- event 7"
+s.Media.trackEvents
+  = "event1,
+     event2,
+     event3,
+     event4,
+     event5,
+     event6,
+     event7"
 </pre>
 </td>
 <td>
@@ -195,8 +201,8 @@ linkTrackEvents
 </td>
 <td>
 <pre>
-s. linktrackevents
- =' event 2 ';
+s.linkTrackEvents
+  = 'event2';
 </pre>
 </td>
 </tr>
@@ -233,11 +239,11 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s. linktrackvars
- =' events, 
-contextdata. video. name '; 
-s. contextdata [' video. name ']
- = medianame;
+s.linkTrackVars
+  = 'events, 
+contextData.video.name’; 
+s.contextData[‘video.name']
+  = mediaName;
 </pre>
 </td>
 </tr>
@@ -247,14 +253,20 @@ Media.contextDataMapping
 </td>
 <td>
 <pre>
-s. Media. contextdatamapping = {"a. media. name": " Evar 2, prop 2 ","
- a. media. segment ": " Evar 3 ","
- a. contenttype ": " Evar 1 ","
- a. media. timeplayed ": " event 3 ","
- a. media. view ": " event 1 ","
- a. media. segmentview ": " event 2 ","
- a. media. complete ": " event 7 ","
- a. media. milestones ": {25: " event 4 ", 50: " event 5 ", 75: " event 6 "}};
+s.Media.contextDataMapping = {
+  "a.media.name":"eVar2,prop2",
+  "a.media.segment":"eVar3",
+  "a.contentType":"eVar1",
+  "a.media.timePlayed":"event3",
+  "a.media.view":"event1",
+  "a.media.segmentView":"event2",
+  "a.media.complete":"event7",
+  "a.media.milestones":{
+    25:"event4",
+    50:"event5",
+    75:"event6"
+  }
+};
 </pre>
 </td>
 <td>nicht angegeben
@@ -268,12 +280,12 @@ Media.trackVars
 </td>
 <td>
 <pre>
-s. Media. trackvars
- = "events,
- prop 2,
- evar 1,
- evar 2,
- evar 3";
+s.Media.trackVars
+  = "events,
+     prop2,
+     eVar1,
+     eVar2,
+     eVar3";
 </pre>
 </td>
 <td>
@@ -281,17 +293,17 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s. linktrackvars
- =' events,
- prop 10,
- evar 10,
- evar 12,
- evar 13,
- evar 15,
- contextdata.
- video. name,
- contextdata.
- video. view ';
+s.linkTrackVars
+  = 'events,
+     prop10,
+     eVar10,
+     eVar12,
+     eVar13,
+     eVar15,
+     contextData.
+       video.name,
+     contextData.
+       video.view';
 </pre>
 </td>
 </tr>
@@ -301,14 +313,14 @@ Media.trackEvents
 </td>
 <td>
 <pre>
-s. Media. trackevents
- = "event 1,
- event 2,
- event 3,
- event 4,
- event 5,
- event 6,
- event 7"
+s.Media.trackEvents
+  = "event1,
+     event2,
+     event3,
+     event4,
+     event5,
+     event6,
+     event7"
 </pre>
 </td>
 <td>
@@ -316,8 +328,8 @@ linkTrackEvents
 </td>
 <td>
 <pre>
-s. linktrackevents
- =' event 2 ';
+s.linkTrackEvents
+  = 'event2';
 </pre>
 </td>
 </tr>
