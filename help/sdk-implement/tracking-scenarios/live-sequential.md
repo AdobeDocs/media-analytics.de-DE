@@ -1,9 +1,9 @@
 ---
 seo-title: Live-Hauptinhalt mit sequentieller Verfolgung
 title: Live-Hauptinhalt mit sequentieller Verfolgung
-uuid: b 03477 b 6-9 be 8-4 b 67-a 5 a 0-4 cef 3 cf 262 ab
+uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 
 ---
 
@@ -16,16 +16,16 @@ In diesem Szenario gibt es ein Live-Asset ohne Wiedergabe von Anzeigen für 40 
 
 Dieses Szenario ist mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch, allerdings wird ein Teil des Inhalts vorgespult und es wird eine Suche von einem Punkt im Hauptinhalt zu einem anderen Punkt vorgenommen.
 
-| Auslöser | Heartbeat-Methode | Netzwerkaufrufe   | Hinweise   |
+| Auslöser | Heartbeat-Methode |  Netzwerkaufrufe |  Hinweise   |
 | --- | --- | --- | --- |
-| Anwender klickt auf [!UICONTROL Abspielen] | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Daher sind diese Netzwerkaufrufe mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. |
-| Das erste Bild des Inhalts wird wiedergegeben. | `trackPlay` | Heartbeat Content Play | Wenn Kapitelinhalt vor dem Hauptinhalt wiedergegeben wird, beginnen die Heartbeats mit dem Kapitelstart. |
+| Anwender klickt auf [!UICONTROL Abspielen] | trackSessionStart | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Daher sind diese Netzwerkaufrufe mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. |
+| Das erste Bild des Inhalts wird wiedergegeben. | trackPlay | Heartbeat Content Play | Wenn Kapitelinhalt vor dem Hauptinhalt wiedergegeben wird, beginnen die Heartbeats mit dem Kapitelstart. |
 | Inhalt wird wiedergegeben. |  | Content Heartbeats | Dieser Netzwerkaufruf ist mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. |
-| Sitzung 1 beendet (Folge 1 beendet) | `trackComplete` `trackSessionEnd` | Heartbeat Content Complete | „Complete“ bedeutet, dass Sitzung 1 für die erste Folge erreicht und vollständig angeschaut wurde. Bevor die Sitzung für die nächste Folge gestartet werden kann, muss diese Sitzung beendet werden. |
-| Folge 2 gestartet (Start von Sitzung 2) | `trackSessionStart` | Analytics Content Start Heartbeat Content Start | Dies tritt auf, wenn der Anwender die erste Folge geschaut und direkt mit einer weiteren Folge begonnen hat. |
-| Erstes Medienbild | `trackPlay` | Heartbeat Content Play | Durch diese Methode wird der Timer ausgelöst. Daraufhin werden während der Wiedergabedauer alle zehn Sekunden Heartbeats gesendet. |
+| Sitzung1 beendet (Folge1 endete) | trackComplete/trackSessionEnd | Heartbeat Content Complete | „Complete“ bedeutet, dass Sitzung 1 für die erste Folge erreicht und vollständig angeschaut wurde. Bevor die Sitzung für die nächste Folge gestartet werden kann, muss diese Sitzung beendet werden. |
+| Folge 2 gestartet (Start von Sitzung 2) | trackSessionStart | Analytics Content Start Heartbeat Content Start | Dies tritt auf, wenn der Anwender die erste Folge geschaut und direkt mit einer weiteren Folge begonnen hat. |
+| 1. Medienrahmen | trackPlay | Heartbeat Content Play | Durch diese Methode wird der Timer ausgelöst. Daraufhin werden während der Wiedergabedauer alle zehn Sekunden Heartbeats gesendet. |
 | Inhalt wird wiedergegeben. |  | Content Heartbeats |  |
-| Sitzung beendet (Folge 2 beendet) | `trackComplete` `trackSessionEnd` | Heartbeat Content Complete | „Complete“ bedeutet, dass Sitzung 2 für die zweite Folge erreicht und vollständig angeschaut wurde. Bevor die Sitzung für die nächste Folge gestartet werden kann, muss diese Sitzung beendet werden. |
+| Sitzung beendet (Folge 2 beendet) | trackComplete / trackSessionEnd | Heartbeat Content Complete | „Complete“ bedeutet, dass Sitzung 2 für die zweite Folge erreicht und vollständig angeschaut wurde. Bevor die Sitzung für die nächste Folge gestartet werden kann, muss diese Sitzung beendet werden. |
 
 ## Parameter {#section_D52B325B99DA42108EF560873907E02C}
 
@@ -38,9 +38,9 @@ Dieses Szenario ist mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-im
 | `s:user:mid` | `s:user:mid` | Sollte mit dem mid-Wert beim Adobe Analytics Content Start-Aufruf übereinstimmen |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt; Ihr Medienname &gt; |  |
+| `s:asset:media_id` | &lt;Ihr Medienname&gt; |  |
 | `s:stream:type` | `live` |  |
-| `s:meta:*` | *optional* | Benutzerspezifischer Metadatensatz, der auf den Medien eingestellt ist |
+| `s:meta:*` | *optional* | Benutzerdefinierte Metadaten, die auf dem Medium festgelegt wurden |
 
 ## Heartbeat Content Play {#section_B6AD9225747943F881DCA8E6A1D5710E}
 
@@ -53,7 +53,7 @@ Dies sollte fast genauso wie der Heartbeat Content Start-Aufruf aussehen, aber d
 
 ## Content Heartbeats {#section_7B387303851A43E5993F937AE2B146FE}
 
-Während der Medienwiedergabe gibt es einen Timer, der alle zehn Sekunden Heartbeats für den Hauptinhalt sendet, und alle eine Sekunde für Anzeigen. Diese Heartbeats enthalten Informationen zu Wiedergabe, Anzeigen, Pufferung und vielen weiteren Aspekten. Der genaue Inhalt jedes Heartbeats wird in diesem Dokument nicht behandelt. Wichtig ist vor allem, sicherzustellen, dass Heartbeats konsistent ausgelöst werden, während die Wiedergabe läuft.
+Während der Medienwiedergabe gibt es einen Timer, der alle 10 Sekunden einen oder mehrere Heartbeats für den Hauptinhalt und jede Sekunde für Anzeigen sendet. Diese Heartbeats enthalten Informationen zu Wiedergabe, Anzeigen, Pufferung und vielen weiteren Aspekten. Der genaue Inhalt jedes Heartbeats wird in diesem Dokument nicht behandelt. Wichtig ist vor allem, sicherzustellen, dass Heartbeats konsistent ausgelöst werden, während die Wiedergabe läuft.
 
 Suchen Sie in den Inhalts-Heartbeats nach einigen speziellen Elementen:
 
