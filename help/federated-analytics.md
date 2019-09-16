@@ -1,9 +1,9 @@
 ---
 seo-title: Federated Analytics
 title: Federated Analytics
-uuid: a 82 ace 81-c 2 f 6-4799-9 a 62-4 c 6 a 737 a 7 dab
+uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 9d456d26caf4adf0a4688425251c798b15d1e7ef
+source-git-commit: fd7adbe328171a1f7773b2e65f80eccefc6fb34d
 
 ---
 
@@ -39,13 +39,11 @@ Der Federated Analytics-Service stellt ein System zur Weitergabe von Adobe Media
 
 ## Verarbeitung {#section_byb_kb3_vbb}
 
-1. Sender und Empfänger arbeiten zusammen, um das Formular der Vereinbarung zu Föderierungsregeln auszufüllen.
-
-   _Laden Sie die aktuelle Version des Formulars hier herunter:_[ Vereinbarung zu Vereinigungsregeln](federated_analytics_form.pdf)
+1. Sender und Empfänger arbeiten zusammen, um das Formular der Vereinbarung zu Föderierungsregeln auszufüllen. **** Laden Sie die aktuelle Version des Formulars hier herunter: Vertragsformular [für Föderationsregeln](/assets/federated_analytics_form.pdf)
 
    >[!NOTE]
    >
-   >Dieses Formular enthält spezielle Felder für unser Technikteam und sollte nur mit Adobe Acrobat bearbeitet werden. [Laden Sie Acrobat kostenlos herunter.](https://get.adobe.com/reader/)
+   >Dieses Formular enthält spezielle Felder für unser Entwicklungsteam und sollte NUR mit Adobe Acrobat bearbeitet werden. [Laden Sie Acrobat kostenlos herunter.](https://get.adobe.com/reader/)
 
 1. Sofern Datendateien verfügbar sind, stellt der Beratungsservice dem Empfänger eine Beispieldatei mit echten Daten aus den Playern des Senders bereit, um zu gewährleisten, dass die richtigen Regeln zur Datenweitergabe definiert wurden.
 1. Sender und Empfänger stellen sicher, dass die Datenweitergabe-Vereinbarung alle vertraglichen Anforderungen zwischen den beiden Parteien erfüllt.
