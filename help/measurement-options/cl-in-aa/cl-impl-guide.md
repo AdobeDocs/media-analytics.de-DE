@@ -1,29 +1,29 @@
 ---
 seo-title: Handbuch zur Implementierung von Custom Link
 title: Handbuch zur Implementierung von Custom Link
-uuid: 83315 e 73-20 ca -4 db 5-9 d 43-33 daade 45 a 13
+uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: fe245e766ab8ee48a8e8aaf247cfd552fed816e9
 
 ---
 
 
 # Handbuch zur Implementierung von Custom Link{#custom-link-implementation-guide}
 
-Das anwenderdefinierte Video-Tracking verwendet das [manuelle Link-Tracking mit Custom Link-Code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) im Analytics `appMeasurement`. Meistens wird das anwenderdefinierte Video-Tracking auf Plattformen und Geräten verwendet, bei denen eine minimale Videomessung erforderlich ist.
+Custom Video Tracking utilizes [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. Meistens wird das anwenderdefinierte Video-Tracking auf Plattformen und Geräten verwendet, bei denen eine minimale Videomessung erforderlich ist.
 
-* In JavaScript: `s.tl()` function
+* In JavaScript: die `s.tl()` Funktion
 * In mobilen Apps: [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 
 * In Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
-**Anforderungen:**
+## Voraussetzungen
 
 * Zugriff auf Ereignisse und Daten der Video-Player-APIs
 * Möglichkeit, Skripte hinzuzufügen, wenn das Analytics-SDK verwendet wird
 * Möglichkeit, Tracking Beacons (anwenderdefiniertes Skripting oder Hardcode) hinzuzufügen, wenn Sie die Data Insertion API verwenden
 
-**Metadaten:**
+## Metadaten
 
 * Metadaten können zu jedem Tracking-Aufruf als Teil der Verknüpfungsdaten hinzugefügt werden.
 * Remember to update the `linkTrackVars` and `linkTrackEvents`
@@ -44,7 +44,7 @@ if (e.type == "ended") {
 };
 ```
 
-**Warum sollte man Custom Link verwenden?**
+## Warum benutzerspezifischen Link verwenden
 
 * Es sind nur minimale Voraussetzungen erforderlich
 * Es funktioniert auf jeder Plattform, einschließlich NoScript
@@ -53,7 +53,7 @@ if (e.type == "ended") {
 * Sie haben volle Kontrolle über jeden Aspekt der Videodaten
 * Link zum Beispiel-Player entfernen
 
-**Beispiel für JavaScript für HTML5 Player**
+## Beispiel für JavaScript für HTML5 Player
 
 ```javascript
 <script type="text/javascript"> 
