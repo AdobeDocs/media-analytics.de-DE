@@ -1,9 +1,9 @@
 ---
 seo-title: Tracking der Erlebnisqualität auf Roku
 title: Tracking der Erlebnisqualität auf Roku
-uuid: a 8 b 242 ab-da 3 c -4297-9 eef-f 0 b 9684 ef 56 a
+uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a8e8ac5a808ff785a348b456dd7d183540c1d594
 
 ---
 
@@ -14,15 +14,15 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie hier die 1.x-Entwicklerhandbücher herunterladen.[SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
-## Implementierungs-QOS
+## Implementierung von QOS
 
-1. Identify when the bitrate changes during media playback, and use the `mediaUpdateQoS` API to update the QoS info on the Media SDK.
+1. Identifizieren Sie, wann sich die Bitrate während der Medienwiedergabe ändert, und verwenden Sie die `mediaUpdateQoS` API, um die Servicequalitätsinformationen im Media SDK zu aktualisieren.
 
    QoSObject-Variablen:
 
    >[!TIP]
    >
-   >Diese Variablen sind nur erforderlich, wenn Sie qos verfolgen.
+   >Diese Variablen sind nur erforderlich, wenn Sie QoS verfolgen.
 
    | Variable | Beschreibung | erforderlich |
    | --- | --- | :---: |
@@ -55,15 +55,15 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
     ```
     -->
 
-1. When playback switches bitrates, call `trackEvent(BitrateChange)` to notify the Media SDK that the Bitrate changed.
+1. Wenn die Wiedergabe die Bitrate wechselt, rufen Sie das Media SDK `trackEvent(BitrateChange)` auf, um mitzuteilen, dass die Bitrate geändert wurde.
 
    ```
-   ADBMobile().trackMediaEvent(ADBMobile().MEDIA_BITRATE_CHANGE)
+   ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_BITRATE_CHANGE)
    ```
 
    >[!NOTE]
    >
-   >You need to call `updateQoSObject` with the updated bitrate value.
+   >Sie müssen `updateQoSObject` mit dem aktualisierten Bitratenwert aufrufen.
 
    <!--
     ```
@@ -80,5 +80,5 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >Die Verfolgung von Fehlern im Medienplayer stoppt die Medienverfolgungssitzung nicht. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >Die Verfolgung von Medienplayer-Fehlern beendet die Medienverfolgungssitzung nicht. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
 
