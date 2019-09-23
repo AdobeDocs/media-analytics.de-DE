@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
+source-git-commit: ef6e37791cd365b12d964b2a06831a563f605104
 
 ---
 
@@ -33,14 +33,14 @@ Der Federated Analytics-Service stellt ein System zur Weitergabe von Adobe Media
 
 * **Medien-Stream-Vertrag:** Empfänger und Sender müssen über einen Adobe Analytics-Vertrag für Medien-Streams verfügen, bevor sie auf Audio- und Videodaten in Adobe Analytics zugreifen können. Weitere Informationen erhalten Sie von Ihrem Account-Team.
 * **Föderierungs-Zusatzvereinbarung:** Für jeden Sender und Empfänger muss eine unterzeichnete Zusatzvereinbarung bei Adobe vorliegen, bevor Daten gesendet oder empfangen werden. Hierbei ist pro Kunde, nicht pro Partnerschaft eine Zusatzvereinbarung erforderlich. Weitere Informationen erhalten Sie von Ihrem Account-Team.
-* **Media Analytics-Implementierung:** Der Sender muss Media Analytics in allen Playern implementiert haben, die Teil der föderierten Daten sind. Es stehen nur die Media Analytics-Daten zum Teilen zur Verfügung. See documentation: [Measuring audio and video in Adobe Analytics](media-overview.md)
+* **Media Analytics-Implementierung:** Der Sender muss Media Analytics in allen Playern implementiert haben, die Teil der föderierten Daten sind. Es stehen nur die Media Analytics-Daten zum Teilen zur Verfügung. See documentation: [Measuring audio and video in Adobe Analytics](/help/media-overview.md)
 
 * **Adobe-Consulting-Vertrag:** Für die Ersteinrichtung der Föderierungsregeln zwischen Empfänger und Sender stehen Ihnen hilfreiche Beratungsservices zur Datenüberprüfung und zur Erstellung der Datenweitergabe-Vereinbarung zur Verfügung.
 
 ## Verarbeitung {#section_byb_kb3_vbb}
 
 1. Sender und Empfänger arbeiten zusammen, um das Formular der Vereinbarung zu Föderierungsregeln auszufüllen.
-1. Laden Sie die aktuelle Version des Formulars hier herunter: Vertragsformular für [Föderationsregeln.](/assets/federated_analytics_form.pdf)
+1. Download the current version of the form here: [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf)
 1. Das Teilformular "Federated Rules Agreement"enthält spezielle Felder für unser Entwicklungsteam und sollte NUR mit Adobe Acrobat bearbeitet werden. [Laden Sie Acrobat kostenlos herunter.](https://get.adobe.com/reader/)
 1. Sofern Datendateien verfügbar sind, stellt der Beratungsservice dem Empfänger eine Beispieldatei mit echten Daten aus den Playern des Senders bereit, um zu gewährleisten, dass die richtigen Regeln zur Datenweitergabe definiert wurden.
 1. Sender und Empfänger stellen sicher, dass die Datenweitergabe-Vereinbarung alle vertraglichen Anforderungen zwischen den beiden Parteien erfüllt.
