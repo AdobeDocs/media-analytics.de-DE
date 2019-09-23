@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: dd88b69bdbb33e48585f32de5a6a78fbbdc4bd2a
+source-git-commit: 4ffdc10559c7c25072bb7cd34165c9df9311a65e
 
 ---
 
@@ -37,14 +37,13 @@ Der Federated Analytics-Service stellt ein System zur Weitergabe von Adobe Media
 
 * **Adobe-Consulting-Vertrag:** Für die Ersteinrichtung der Föderierungsregeln zwischen Empfänger und Sender stehen Ihnen hilfreiche Beratungsservices zur Datenüberprüfung und zur Erstellung der Datenweitergabe-Vereinbarung zur Verfügung.
 
-## Federated Analytics-Formular herunterladen
+## Download the Federated Analytics Form
 
-**Download the current version of the form here:**  [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf)
+**Laden Sie die aktuelle Version des Formulars hier herunter:**[Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf)
 
 ## Verarbeitung {#section_byb_kb3_vbb}
 
-1. Sender und Empfänger arbeiten zusammen, um das Formular der Vereinbarung zu Föderierungsregeln auszufüllen.
-1. Das Teilformular "Federated Rules Agreement"enthält spezielle Felder für unser Entwicklungsteam und sollte NUR mit Adobe Acrobat bearbeitet werden. [Laden Sie Acrobat kostenlos herunter.](https://get.adobe.com/reader/)
+1. Sender und Empfänger arbeiten zusammen, um das Formular der Vereinbarung zu Föderierungsregeln auszufüllen. The Federated Rules Agreement form contains special fields for our engineering team and should ONLY be edited using Adobe Acrobat. [Laden Sie Acrobat kostenlos herunter.](https://get.adobe.com/reader/)
 1. Sofern Datendateien verfügbar sind, stellt der Beratungsservice dem Empfänger eine Beispieldatei mit echten Daten aus den Playern des Senders bereit, um zu gewährleisten, dass die richtigen Regeln zur Datenweitergabe definiert wurden.
 1. Sender und Empfänger stellen sicher, dass die Datenweitergabe-Vereinbarung alle vertraglichen Anforderungen zwischen den beiden Parteien erfüllt.
 1. Der Beratungsservice sendet das ausgefüllte Formular zur Einrichtung der Regeln zur Datenweitergabe an Adobe Engineering.
