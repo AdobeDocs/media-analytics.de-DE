@@ -1,9 +1,9 @@
 ---
 seo-title: Messen von Audio und Video in Adobe Analytics
 title: Messen von Audio und Video in Adobe Analytics
-uuid: b 3 cbe 240-b 94 d -42 b 8-a 99 c -2803334 aaa 14
+uuid: b3cbe240-b94d-42b8-a99c-0280334aa14
 translation-type: tm+mt
-source-git-commit: 1915261ec21679f510350663a472096abe7fdf63
+source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 1915261ec21679f510350663a472096abe7fdf63
 
 >[!IMPORTANT]
 >
->The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. Es enthält keine Anweisungen um die ältere Milestone-Videoimplementierung. Wir empfehlen Kunden, eine der beiden aktuellen Medien-Tracking-Lösungen zu verwenden, um die Verbesserungen und die erweiterte Messung nutzen zu können. Die [Vorteile der neuen Lösungen](media-overview.md#section_cnj_5st_p1b) werden unten beschrieben. Obwohl wir weiterhin die Meilensteinmethode für Videoverfolgung unterstützen, sind keine geplanten Updates, Fehlerbehebungen oder Funktionsverbesserungen geplant. Wenden Sie sich an Ihren Adobe-Account-Manager, wenn Sie weitere Fragen haben.
+>The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. It does not include instructions around the legacy Milestone video implementation. Wir empfehlen Kunden, eine der beiden aktuellen Medien-Tracking-Lösungen zu verwenden, um die Verbesserungen und die erweiterte Messung nutzen zu können. Die [Vorteile der neuen Lösungen](media-overview.md#section_cnj_5st_p1b) werden unten beschrieben. While we will continue to support the Milestone method of tracking videos, there will not be any planned updates, fixes, or feature improvements. Wenden Sie sich an Ihren Adobe-Account-Manager, wenn Sie weitere Fragen haben.
 
 ## Überblick {#section_8BFE4F8DA64B4A5F826A4940B11AA466}
 
@@ -39,14 +39,14 @@ Zu den Vorteilen der Adobe-Medienmessungslösungen zählen folgende Punkte:
 
 * **Schnelle Analyse:** Treffen Sie Entscheidungen anhand von aussagekräftigen Echtzeitmetriken zur Performance (z. B. Dauer) über verschiedene Kanäle hinweg. Hauptinhaltereignisse werden in **10-Sekunden**-Intervallen gemessen, um Aktivitäten zu erfassen, sobald sie auftreten. Ereignisse zum Anzeigen-Tracking treten in **1-Sekunden**-Intervallen auf.
 * **Gesteigerte Interaktion:** Binden Sie die Anwender durch weniger Pufferereignisse und durch das Verständnis, wo und wann Anzeigen innerhalb der Inhalte abgespielt werden sollten, ein, um ein reibungsloses, weniger störendes Erlebnis zu bieten, das die Anwender zur Rückkehr bewegt und wiederholte Besuche fördert.
-* **Holistische Bild:** Kombinieren Sie mehrere Datenpunkte aus allen Ihren Content-Verteilern, um eine vollständige Ansicht aller Ihrer Medienaktivitäten zu erhalten, und messen Sie die Interaktion und Ansichten bzw. die Anzahl aller möglichen Kanäle über die [Federated Analytics](federated-analytics.md) -Funktion.
+* **Ganzheitliches Bild -** Kombinieren Sie mehrere Datenpunkte über all Ihre Content-Distributoren hinweg, um einen vollständigen Überblick über Ihre gesamte Medienaktivität zu erhalten und mithilfe der Funktion " [Federated Analytics](data-sharing/federated-analytics.md) "Interaktionen und Ansichten/Listening über alle möglichen Kanäle zu messen.
 * **Umfangreiche Details:** Untersuchen Sie das Besucherverhalten so detailliert wie möglich, einschließlich der individuellen Besuchszeit, der gleichzeitigen Besucher pro Minute und der durchschnittlichen Wiedergabezeit von Inhalten.
 * **Präzise Messung:** Untersuchen Sie verschiedenste Geräte zur Mediennutzung, einschließlich OTT, Smartphone, Tablet, Desktop und mehr, um Anwenderinteraktionen und Verhaltensmuster zu analysieren.
 * **Segmentierung:** Wenden Sie auf Player, Geräte, Genres, Kapitel und Sendungen Klassifizierungen an, um herauszufinden, wie sie sich auf die Aufrufe und die Kundeninteraktion mit Inhalten und Anzeigen auswirken.
 
 ## Vorteile von Heartbeat gegenüber Milestone {#section_cnj_5st_p1b}
 
-Adobe Analytics für Medien kann über zwei Methoden gemessen werden: die alte Meilensteinmethode (nur Video) und die aktuelle Heartbeats-Methode (Audio und Video, sowohl im Media SDK als auch in der Media Collection API). Wir empfehlen für die Messung die Heartbeat-Methode und raten allen Kunden, diese Methode zu implementieren, sofern noch nicht geschehen, um die unten beschriebenen Vorteile nutzen zu können.
+Adobe Analytics für Media lässt sich auf zwei Arten messen: die alte Milestone-Methode (nur Video) und die aktuelle Heartbeats-Methode (Audio und Video, sowohl im Media SDK als auch in der Media Collection-API verfügbar). Wir empfehlen für die Messung die Heartbeat-Methode und raten allen Kunden, diese Methode zu implementieren, sofern noch nicht geschehen, um die unten beschriebenen Vorteile nutzen zu können.
 
 Die veraltete Meilenstein-Methode basiert auf individuellen Serveraufrufen des Analytics-Servers für Videostarts, -quartile, -dauer und-abschlüsse. Die Heartbeat-Methode bietet eine bessere Performance beim Medien-Tracking: Die Lösung misst den Hauptinhalt in 10-Sekunden-Intervallen, um aussagekräftige, standardisierte Metriken bereitzustellen. Darüber hinaus hat Adobe hier Verbesserungen gegenüber der Milestone-Methode implementiert, die einen optimierten und reibungslosen Implementierungsprozess über das von Heartbeats verwendete Medien-SDK bzw. die Mediensammlungs-API ermöglichen.
 
@@ -106,8 +106,8 @@ For Media SDK, also see [Minimum Platform Version Support](./sdk-implement/setup
 
 ## Transport Layer Security {#transport-layer-security}
 
-**TLS-Hinweis —** Adobe verfügt über Sicherheitsstandards, mit denen ältere Sicherheitsprotokolle beendet werden müssen. Um die sich entwickelnden Sicherheitsstandards des Sicherheitsprotokolls weiterhin zu erfüllen, wechselt Adobe zur Verwendung von TLS 1.2, um die aktuellste und sichere Version zu verwenden. Ab dem 20. Februar 2019 unterstützt Adobe nur TLS 1.1 oder höher. Mit dieser Änderung erfasst Adobe keine Daten mehr von Endbenutzern mit älteren Geräten oder Webbrowsern, die TLS 1.0 bereitstellen. Die Migration zu TLS 1.2 bietet eine verbesserte Sicherheit. Für einen reibungslosen Übergang sollten Sie die Details zu diesem Thema genau durchlesen und die Änderungen entsprechend planen.
+**TLS Notice —** Adobe verfügt über Sicherheitsstandards, die das Ende der Lebensdauer älterer Sicherheitsprotokolle erfordern. Um weiterhin die sich entwickelnden Sicherheitsprotokollstandards zu erfüllen, entwickelt Adobe den Einsatz von TLS 1.2, um die aktuellste und sicherste Version zu verwenden. Ab dem 20. Februar 2019 unterstützt Adobe nur TLS 1.1 oder höher. Mit dieser Änderung erfasst Adobe keine Daten mehr von Endbenutzern mit älteren Geräten oder Webbrowsern, die TLS 1.0 bereitstellen. Die Migration auf TLS 1.2 bietet eine verbesserte Sicherheit. Für einen reibungslosen Übergang sollten Sie die Details zu diesem Thema genau durchlesen und die Änderungen entsprechend planen.
 
 >[!NOTE]
 >
->TLS ist derzeit das am häufigsten bereitgestellte Sicherheitsprotokoll, das in Webbrowsern und anderen Anwendungen verwendet wird, die Daten sicher über ein Netzwerk austauschen müssen.
+>TLS ist derzeit das am häufigsten verwendete Sicherheitsprotokoll, das in Webbrowsern und anderen Anwendungen verwendet wird, bei denen Daten sicher über ein Netzwerk ausgetauscht werden müssen.
