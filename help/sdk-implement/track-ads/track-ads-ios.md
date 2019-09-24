@@ -1,7 +1,7 @@
 ---
 seo-title: Tracking von Anzeigen in iOS
 title: Tracking von Anzeigen in iOS
-uuid: e 979 e 679-cde 5-4 c 30-8 f 34-867 feceac 13 a
+uuid: e979e679-cde5-4c30-8f34-867feceac13a
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit den 2. x sdks. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit den 2.x SDKs. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Anzeigen-Tracking-Konstanten
 
@@ -74,7 +74,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
                                     length:[LENGTH]];
    ```
 
-1. Fügen Sie standardmäßig Standard- und/oder Anzeigenmetadaten über Kontextdatenvariablen an die Medienverfolgungssitzung an.
+1. Fügen Sie der Medienverfolgungssitzung optional Standard- und/oder Anzeigenmetadaten über Kontextdatenvariablen hinzu.
 
    * [Standard-Anzeigenmetadaten in iOS implementieren](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
    * **Anwenderspezifische Anzeigenmetadaten:** Erstellen Sie für anwenderdefinierte Metadaten ein variables Objekt für die anwenderspezifischen Datenvariablen und füllen Sie es mit den Daten für aktuelle Anzeigen:
