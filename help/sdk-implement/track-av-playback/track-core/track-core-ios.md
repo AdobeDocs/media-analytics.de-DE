@@ -1,7 +1,7 @@
 ---
 seo-title: Tracking von Core-Wiedergaben auf iOS
 title: Tracking von Core-Wiedergaben auf iOS
-uuid: bdc 0 e 05 c -4 fe 5-430 e-aee 2-f 331 bc 59 ac 6 b
+uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -11,9 +11,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 # Tracking von Core-Wiedergaben auf iOS{#track-core-playback-on-ios}
 
 >[!IMPORTANT]
->Diese Dokumentation enthält die Verfolgung in Version 2. x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
+>Diese Dokumentation behandelt die Verfolgung in Version 2.x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
 
-1. **Initiales Tracking-Setup**
+1. **Einrichtung der anfänglichen Verfolgung**
 
    Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
@@ -24,8 +24,8 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `name` | Videoname | Ja |
    | `mediaid` | Eindeutige ID des Videos | Ja |
    | `length` | Videolänge | Ja |
-   | `streamType` | Stream type (see _StreamType constants_ below) | Ja |
-   | `mediaType` | Media type (see _MediaType constants_ below) | Ja |
+   | `streamType` | Stream-Typ (siehe _StreamType-Konstanten_ unten) | Ja |
+   | `mediaType` | Medientyp (siehe _MediaType-Konstanten_ unten) | Ja |
 
    **`StreamType`Konstanten:**
 
@@ -58,7 +58,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. **Anhängen von Videometadaten**
 
-   Fügen Sie optional standardmäßige und/oder benutzerdefinierte Videometadatenobjekte über Kontextdatenvariablen an die Videoverfolgungssitzung an.
+   Fügen Sie der Videoverfolgungssitzung optional Standard- und/oder benutzerdefinierte Videometadatenobjekte über Kontextdatenvariablen hinzu.
 
    * **Standard-Videometadaten**
 
@@ -69,7 +69,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       * Sehen Sie hier die umfassende Liste der verfügbaren Video-Metadaten: [Audio- und Videoparameter](/help/metrics-and-metadata/audio-video-parameters.md)
       >[!NOTE]
       >
-      >Das Anhängen des Standard-Videometadatenobjekts an das Medienobjekt ist optional.
+      >Das Anhängen des Videometadatenobjekts an das Medienobjekt ist optional.
 
    * **Benutzerspezifische Metadaten**
 
@@ -82,13 +82,13 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       ```
 
 
-1. **Verfolgen Sie die Absicht, die Wiedergabe zu starten.**
+1. **Verfolgung der Absicht, die Wiedergabe zu starten**
 
-   To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance.
+   Rufen Sie zur Verfolgung einer Mediensitzung die Media Heartbeat-Instanz `trackSessionStart` auf.
 
    >[!TIP]
    >
-   >Der zweite Wert ist der benutzerdefinierte Videometadatenname, den Sie in Schritt 2 erstellt haben.
+   >Der zweite Wert ist der benutzerdefinierte Videometadatenobjektname, den Sie in Schritt 2 erstellt haben.
 
    ```
    - (void)onMainVideoLoaded:(NSNotification *)notification { 
@@ -105,7 +105,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    >
    >If you are not using custom video metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
 
-1. **Verfolgen der tatsächlichen Wiedergabe**
+1. **Den tatsächlichen Start der Wiedergabe verfolgen**
 
    Identifizieren Sie das Ereignis für den Anfang der Videowiedergabe im Videoplayer (wenn das erste Videobild auf dem Bildschirm angezeigt wird) und rufen Sie `trackPlay` () auf:
 
@@ -115,7 +115,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    }
    ```
 
-1. **Rückverfolgung der Wiedergabe**
+1. **Verfolgen Sie den Abschluss der Wiedergabe.**
 
    Identifizieren Sie das Ereignis für den Abschluss der Videowiedergabe im Videoplayer (wenn der Inhalt bis zum Ende angesehen wurde) und rufen Sie `trackComplete` () auf:
 
@@ -139,7 +139,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    >
    >`trackSessionEnd` markiert das Ende einer Videoverfolgungssitzung. Wenn die Sitzung erfolgreich bis zum Ende wiedergegeben wurde und der Anwender den Inhalt bis zum Schluss angesehen hat, müssen Sie `trackComplete` vor `trackSessionEnd` aufrufen. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new video tracking session.
 
-1. **Verfolgen Sie alle möglichen Pausenereignisse.**
+1. **Alle möglichen Pausenszenarien verfolgen**
 
    Identify the event from the video player for video pause and call `trackPause`:
 
@@ -149,7 +149,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    }
    ```
 
-   **Anhalten-Szenarios**
+   **Szenarios anhalten**
 
    Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. In allen folgenden Szenarios muss Ihre App `trackPause()` () aufrufen:
 
