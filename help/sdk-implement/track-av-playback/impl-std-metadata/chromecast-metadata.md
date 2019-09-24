@@ -1,7 +1,7 @@
 ---
 seo-title: Chromecast-Metadatenelemente
 title: Chromecast-Metadatenelemente
-uuid: c 446 ad 41-51 b 8-46 d 6-9 bc 1-abfae 666023 f
+uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
@@ -45,7 +45,7 @@ Standardmäßige Video- und Anzeigenmetadaten können in den Medien- bzw. Anzeig
 | Site-ID | `a.media.ad.site` | `ADBMobile.media.AdMetadataKeys.SITE_ID` |
 | Creative-URL | `a.media.ad.creativeURL` | `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` |
 
-## Sample implementations for Chromecast {#section_wvy_bdn_w2b}
+## Beispielimplementierungen für Chromecast {#section_wvy_bdn_w2b}
 
 ### Video
 
