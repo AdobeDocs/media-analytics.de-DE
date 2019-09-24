@@ -1,7 +1,7 @@
 ---
 seo-title: Puffer-Tracking in Android
 title: Puffer-Tracking in Android
-uuid: f 16 ce 76 d -1 db 3-4 b 51-8 c 98-54 cb 781 f 71 d 7
+uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -20,7 +20,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `MediaHeartbeat.Event.BufferStart` | Konstante für die Verfolgung des Pufferstartereignisses |
 | `MediaHeartbeat.Event.BufferComplete` | Konstante für die Verfolgung des Pufferabschlussereignisses |
 
-## Pufferung implementieren
+## Implementierung der Pufferung
 
 1. Suchen Sie nach den Wiedergabepufferereignissen aus dem Medienplayer. Wenn Sie die Benachrichtigung zum Pufferstartereignis erhalten, verfolgen Sie die Pufferung mit dem `BufferStart`-Ereignis:
 
