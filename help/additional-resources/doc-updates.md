@@ -1,7 +1,7 @@
 ---
 seo-title: Dokumentationsaktualisierungen
 title: Dokumentationsaktualisierungen
-uuid: 1 f 3 e 48 df -83 b 6-418 c -8 cf 7-d 79466481 f 79
+uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
 snippet: y
@@ -15,8 +15,8 @@ source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
 
 ## Zuletzt aktualisiert: 7. März 2019 {#March-2019-update}
 
-* Dieses Update betraf hauptsächlich die Version 2.2 Media SDK auf den javascript- und OTT-Plattformen.
-* Die Version 2.2 von Media SDK auf javascript- und OTT-Plattformen bietet dieselbe Unterstützung wie unten beschrieben für die ios- und Android-Plattformen (1. November 2018).
+* Dieses Update wurde hauptsächlich für die Version 2.2 Media SDK auf den JavaScript- und OTT-Plattformen entwickelt.
+* Die Version 2.2 Media SDK auf JavaScript- und OTT-Plattformen bietet dieselbe Unterstützung wie unten beschrieben für iOS- und Android-Plattformen (Update vom 1. November 2018).
 
 ## Letzte Aktualisierung: 1. November 2018 {#November-2018-update}
 
@@ -38,7 +38,7 @@ source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
 ## Aktualisierung: 10. Oktober 2018 {#October-2018-update}
 
 * Die Dokumentenstruktur wurde im Bereich SDK-Implementierung überarbeitet, indem die einzelnen (aber weitgehend identischen) Plattform-Implementierungshandbücher in einem SDK-Implementierungsabschnitt zusammengefasst wurden, wobei plattformspezifische Tracking-Beispiele in Unterabschnitten bei den bekannten Tracking-Themen vorgestellt werden.
-* In Erwartung einer Migration auf ein neues Dokumentensystem wurden die Dateien vollständig umbenannt. Alle DITA-Präfixe (c_, r_, t_), die Konzept, Referenz und Aufgabenthementypen angeben, wurden entfernt. Alle Unterstriche (_) wurden durch Bindestriche (-) ersetzt. Außerdem ähneln die Dateinamen nun weitgehend den Bezeichnungen der Themen.
+* In Erwartung einer Migration auf ein neues Dokumentensystem wurden die Dateien vollständig umbenannt. Alle DITA-Präfixe ( c_, r_, t_ ), die Konzept-, Referenz- und Aufgabenthementypen angeben, wurden entfernt. Alle Unterstriche (_) wurden durch Bindestriche (-) ersetzt. Außerdem ähneln die Dateinamen nun weitgehend den Bezeichnungen der Themen.
 * Aktualisierungen zu allgemeinen Validierungs- und Zertifizierungsthemen.
 * Neues Einführungsmaterial mit einer Darstellung der Messoptionen sowie Aktualisierungen der Voraussetzungen, Implementierungspfade und der Audience Manager-Fähigkeiten.
 * Aktualisierungen der Abschnitte Metriken und Metadaten sowie Reporting und Analysen, die die Erweiterung um Audioanalysefunktionen widerspiegeln.
