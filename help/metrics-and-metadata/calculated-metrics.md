@@ -1,7 +1,7 @@
 ---
 seo-title: Berechnete Metriken
 title: Berechnete Metriken
-uuid: 9 dd 35155-58 aa -4 f 5-896 e-c 5 cbc 4 b 13 d 59
+uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 translation-type: tm+mt
 source-git-commit: 5582243074a712e53dd23071d319a9ad1f89e10e
 
@@ -12,13 +12,13 @@ source-git-commit: 5582243074a712e53dd23071d319a9ad1f89e10e
 
 >[!NOTE]
 >
->Diese berechneten Metriken wurden am 13.09.18 eingeführt.
+>Diese berechneten Metriken wurden am 13.9.18 eingeführt.
 
 | Metrik | Beschreibung | Formel |
 |---|---|---|
-| Durchschn. Anzeigen pro Medien-Stream | Anzeigenstarts pro Medienstart | `Ad Starts / Media Starts` |
-| Durchschn. Kapitel pro Medien-Stream | Kapitelstarts pro Medienstart | `Chapter Start / Media Starts` |
-| Durchschn. Besuchszeit für Medien | Gesamtbesuchszeit pro Medienstart (HH: MM: SS) | `Media Time Spent / Media Starts` |
+| Durchschn. Anzeigen pro Medien-Stream | Anzeigenstarts pro Medienstarts | `Ad Starts / Media Starts` |
+| Durchschn. Kapitel pro Medien-Stream | Kapitelstarts pro Medienstarts | `Chapter Start / Media Starts` |
+| Durchschn. Besuchszeit für Medien | Gesamtbesuchszeit pro Medienstart (HH:MM:SS) | `Media Time Spent / Media Starts` |
 | Durchschn. Inhaltsbesuchszeit | Inhaltsbesuchszeit pro Inhaltsstart (HH:MM:SS) | `Content Time Spent / Content Start` |
 | Durchschn. Besuchszeit für Anzeige | Anzeigenbesuchszeit pro Anzeigenstart (HH:MM:SS) | `Ad Time Spent / Ad Start` |
 | Durchschn. Besuchszeit für Kapitel | Kapitelbesuchszeit pro Kapitelstart (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
