@@ -1,7 +1,7 @@
 ---
 seo-title: Tracking von Anzeigen auf Roku
 title: Tracking von Anzeigen auf Roku
-uuid: b 1567265-7043-4 efa-a 313-aaaa 91 c 4 bb 01
+uuid: b1567265-7043-4efa-a313-aaa91c4bb01
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit den 2. x sdks. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit den 2.x SDKs. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Anzeigen-Tracking-Konstanten
 
@@ -61,7 +61,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
                            ad.duration) 
    ```
 
-1. Fügen Sie standardmäßig Standard- und/oder Anzeigenmetadaten über Kontextdatenvariablen an die Medienverfolgungssitzung an.
+1. Fügen Sie der Medienverfolgungssitzung optional Standard- und/oder Anzeigenmetadaten über Kontextdatenvariablen hinzu.
 
    * [Standard-Anzeigenmetadaten in Roku implementieren](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    * **Anwenderspezifische Anzeigenmetadaten:** Erstellen Sie für anwenderdefinierte Metadaten ein variables Objekt für die anwenderspezifischen Datenvariablen und füllen Sie es mit den Daten für das aktuelle Anzeigen-Asset:
