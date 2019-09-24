@@ -1,9 +1,9 @@
 ---
-description: 'null '
-seo-description: 'null '
+description: 'null'
+seo-description: 'null'
 seo-title: Standardmäßige Anzeigenmetadaten in Android implementieren
 title: Standardmäßige Anzeigenmetadaten in Android implementieren
-uuid: 19 b 98 bc 1-c 659-4182-a 4 ff-b 3340 fe 2453 c
+uuid: 19b98bc1-c659-4182-a4ff-b3340fe2453c
 translation-type: tm+mt
 source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
@@ -18,9 +18,9 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 |---|---|
 | `MediaHeartbeat.MediaObjectKey.StandardAdMetadata` | Konstante für das Anhängen von Standard-Anzeigenmetadaten an das Anzeigen-`MediaObject`. |
 
-## Implementierung standardmäßiger Anzeigenmetadaten
+## Implementieren von Standard-Anzeigenmetadaten
 
-Erstellen Sie für Standard-Anzeigenmetadaten ein Wörterbuch mit Schlüssel/Wert-Paaren für Standard-Anzeigenmetadaten mithilfe der Schlüssel für Ihre Plattform:
+Erstellen Sie für Standard-Anzeigenmetadaten ein Wörterbuch mit Schlüssel/Wert-Paaren für Standard-Anzeigenmetadaten anhand der Schlüssel für Ihre Plattform:
 
 ```java
 // Setting standard Ad Metadata 
