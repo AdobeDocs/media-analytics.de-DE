@@ -1,7 +1,7 @@
 ---
 seo-title: VOD-Wiedergabe mit übersprungenen Anzeigen
 title: VOD-Wiedergabe mit übersprungenen Anzeigen
-uuid: f 3 ab 3524-abcb -4051-b 64 e-a 1 aad 6 e 3 dd 3 f
+uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -31,7 +31,7 @@ This is the same scenario as [VOD playback with pre-roll ads](/help/sdk-implemen
 
 ## Parameter {#section_4A0F92BF3DDD4623A1EE61C76582A4A6}
 
-The parameters are identical to the parameters in the [VOD playback with pre-roll ads](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md) scenario, except there is no ad complete and no ad-break complete call.
+Die Parameter sind mit den Parametern im Szenario [VOD-Wiedergabe mit Pre-Roll-Anzeigen](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md) identisch, es sei denn, es gibt keinen Ad Complete- und keinen Ad-Break Complete-Aufruf.
 
 ## Beispielcode {#section_lxt_qz3_x2b}
 
