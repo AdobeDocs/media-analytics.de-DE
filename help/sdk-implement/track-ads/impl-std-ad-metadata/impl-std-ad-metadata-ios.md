@@ -1,9 +1,9 @@
 ---
-description: 'null '
-seo-description: 'null '
+description: 'null'
+seo-description: 'null'
 seo-title: Standard-Anzeigenmetadaten in iOS implementieren
 title: Standard-Anzeigenmetadaten in iOS implementieren
-uuid: f 15 fb 727-5 a 5 b -46 c 5-bf 12-93 b 376 c 10 fd 1
+uuid: f15fb727-5a5b-46c5-bf12-93b376c10fd1
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -18,9 +18,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 |---|---|
 | `ADBMediaObjectKeyStandardAdMetadata` | Constant for attaching standard ad metadata on `AdInfo ADBMediaObject` |
 
-## Implementierung standardmäßiger Anzeigenmetadaten
+## Implementieren von Standard-Anzeigenmetadaten
 
-Erstellen Sie für Standard-Anzeigenmetadaten ein Wörterbuch mit Schlüssel/Wert-Paaren für Standard-Anzeigenmetadaten mithilfe der Schlüssel für Ihre Plattform:
+Erstellen Sie für Standard-Anzeigenmetadaten ein Wörterbuch mit Schlüssel/Wert-Paaren für Standard-Anzeigenmetadaten anhand der Schlüssel für Ihre Plattform:
 
 ```
 // Sample implementation for using standard metadata keys for Ad 
