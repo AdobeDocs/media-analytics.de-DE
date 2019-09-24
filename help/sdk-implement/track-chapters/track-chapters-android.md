@@ -1,7 +1,7 @@
 ---
 seo-title: Tracking von Kapiteln und Segmenten in Android
 title: Tracking von Kapiteln und Segmenten in Android
-uuid: 13815 d 7-4 d 9 e -48 f 4-a 2 b 9-3 b 70 cb 1149 d 3
+uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit 2. x sdks. Wenn Sie Version 1.x des SDKs implementieren möchten, können Sie hier das Entwicklerhandbuch herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit 2.x SDKs. Wenn Sie Version 1.x des SDKs implementieren möchten, können Sie hier das Entwicklerhandbuch herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Kapitelverfolgung implementieren
 
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!NOTE]
    >
-   >Diese Variablen sind nur erforderlich, wenn Sie die Kapitel verfolgen möchten.
+   >Diese Variablen sind nur erforderlich, wenn Sie planen, Kapitel zu verfolgen.
 
    | Variablenname | Beschreibung | erforderlich |
    | --- | --- | :---: |
