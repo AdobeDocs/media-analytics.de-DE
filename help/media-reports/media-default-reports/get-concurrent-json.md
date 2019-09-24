@@ -1,7 +1,7 @@
 ---
 seo-title: JSON-Daten des Berichts „Gleichzeitige Videozuschauer“ abrufen
 title: JSON-Daten des Berichts „Gleichzeitige Videozuschauer“ abrufen
-uuid: 9168 f 114-2459-4951-a 06 c -57 b 735 d 09 dc 0
+uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 translation-type: tm+mt
 source-git-commit: 82317dfd0e6eaef20890d03c32fe088a7574ead2
 
@@ -10,19 +10,20 @@ source-git-commit: 82317dfd0e6eaef20890d03c32fe088a7574ead2
 
 # JSON-Daten des Berichts „Gleichzeitige Besucher“ abrufen{#get-concurrent-viewers-json-report-data}
 
-You can obtain concurrent viewers report data using the _* 1.4 version *_ of the Analytics APIs:
-* [Analytics-apis](https://github.com/AdobeDocs/analytics-1.4-apis)
+Sie können gleichzeitig erscheinende Viewer-Berichtsdaten mit der Version _* 1.4 *_ der Analytics-APIs abrufen:
+* [Analytics-APIs](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
 1. Filtern Sie die Daten mit einem beliebigen Segment, das auf der Benutzeroberfläche basiert. Um nach einer bestimmten Inhalts-ID zu filtern, erstellen Sie ein neues Segment.
-1. Set the `elements` -&gt; `id` in the request body to `videoconcurrentviewers`.
-1. Fordern Sie eine ausreichende Datenmenge an. Adobe empfiehlt 3200 Datenpunkte, um sicherzustellen, dass keine Lücken in den Daten vorliegen.
+1. Setzen Sie das `elements` -&gt; `id` im Anforderungstext auf `videoconcurrentviewers`.
+1. Fordern Sie eine ausreichende Datenmenge an. Adobe empfiehlt 3200 Datenpunkte, um sicherzustellen, dass keine Datenlücken bestehen.
 
-   * The data range you specify in the report gathers all concurrent viewer data _at the time the video session ended._ Sie müssen also Sitzungen berücksichtigen, die an einem Tag beginnen und nach Mitternacht (d. h. am nächsten Tag) enden.
+   * Der im Bericht angegebene Datenbereich erfasst alle gleichzeitigen Viewer-Daten _zum Zeitpunkt des Endes der Videositzung._
+Sie müssen also Sitzungen berücksichtigen, die an einem Tag beginnen und nach Mitternacht enden (d.h. am nächsten Tag).
 
-   * Request more than one day of data, but in your analysis _* use only the first day of the data.*_
+   * Fordern Sie mehr als einen Tag Daten an, aber in Ihrer Analyse _* verwenden Sie nur den ersten Tag der Daten.*_
 
-Eine Beispielnutzlast für dieses Szenario würde wie folgt aussehen:
+Eine Musteranforderung-Nutzlast für dieses Szenario würde wie folgt aussehen:
 
 ```
 {
