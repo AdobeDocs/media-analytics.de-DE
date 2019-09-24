@@ -1,9 +1,9 @@
 ---
-description: 'null '
-seo-description: 'null '
+description: 'null'
+seo-description: 'null'
 seo-title: Standard-Metadaten in Roku implementieren
 title: Standard-Metadaten in Roku implementieren
-uuid: ae 14 d 809-343 f -452 c -832 a-f 94 bd 3 d 83 a 90
+uuid: ae14d809-343f-452c-832a-f94bd3d83a90
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
