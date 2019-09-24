@@ -1,7 +1,7 @@
 ---
 seo-title: JSON-Validierungsschemata
 title: JSON-Validierungsschemata
-uuid: 7 c 9 d 5 ce 4-f 5 d 2-4129-900 e -4 d 02800907 d 1
+uuid: 7c9d5ce4-f5d2-4129-900e-4d02800907d1
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -10,7 +10,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 # JSON-Validierungsschemata{#json-validation-schemas}
 
-Das Back-End für die Media Analytics überprüft die Anforderungsparameter für jeden Ereignistyp mithilfe von JSON-Validierungsschemata. Diese Schemata stehen Ihnen zur Verfügung und dienen als aktuelle Stelle für Parametertypen, die in der MA-API verwendet werden.
+Das Media Analytics-Back-End validiert die Anforderungsparameter für jeden Ereignistyp mithilfe von JSON-Überprüfungsschemata. Diese Schemata stehen Ihnen zur Verfügung und dienen als aktuelle Autorität für Parametertypen, die in der MA-API verwendet werden.
 
 ```
 POST
