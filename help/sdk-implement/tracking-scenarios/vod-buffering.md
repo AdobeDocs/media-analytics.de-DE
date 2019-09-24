@@ -1,7 +1,7 @@
 ---
 seo-title: VOD-Wiedergabe mit Pufferung
 title: VOD-Wiedergabe mit Pufferung
-uuid: 958 f 7692-7193-40 fb-a 8 e 7-2 ff 4 fa 805330
+uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
