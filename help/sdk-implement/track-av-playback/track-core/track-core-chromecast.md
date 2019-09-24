@@ -1,7 +1,7 @@
 ---
 seo-title: Tracking von Core-Wiedergaben auf Chromecast
 title: Tracking von Core-Wiedergaben auf Chromecast
-uuid: a 9 fc 59 d 8-a 2 f 4-4889-bdec -55 c 42 a 835 d 06
+uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,15 +12,15 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->Diese Dokumentation enthält die Verfolgung in Version 2. x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
+>Diese Dokumentation behandelt die Verfolgung in Version 2.x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
 
-1. **Initiales Tracking-Setup**
+1. **Einrichtung der anfänglichen Verfolgung**
 
    Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
    **`MediaObject`API-Referenz:**
 
-   [Createmediaobject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createMediaObject)
+   [createMediaObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createMediaObject)
 
    ```
    mediaObject = ADBMobile.media.createMediaObject(<name>, <id>, <duration>, <streamType>, <mediaType>); 
@@ -28,15 +28,15 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    **`StreamType`Konstanten:**
 
-   [Adbmobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.StreamType)
+   [ADBMobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.StreamType)
 
    **`MediaType`Konstanten:**
 
-   [Adbmobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.MediaType)
+   [ADBMobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.MediaType)
 
 1. **Anhängen von Videometadaten**
 
-   Fügen Sie optional standardmäßige und/oder benutzerdefinierte Videometadatenobjekte über Kontextdatenvariablen an die Videoverfolgungssitzung an.
+   Fügen Sie der Videoverfolgungssitzung optional Standard- und/oder benutzerdefinierte Videometadatenobjekte über Kontextdatenvariablen hinzu.
 
    * **Standard-Videometadaten**
 
@@ -44,7 +44,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
       >[!NOTE]
       >
-      >Das Anhängen des Standard-Videometadatenobjekts an das Medienobjekt ist optional.
+      >Das Anhängen des Videometadatenobjekts an das Medienobjekt ist optional.
 
    * **Benutzerspezifische Metadaten**
 
@@ -59,9 +59,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       };
       ```
 
-1. **Verfolgen Sie die Absicht, die Wiedergabe zu starten.**
+1. **Verfolgung der Absicht, die Wiedergabe zu starten**
 
-   To begin tracking a media session, call [trackSessionStart](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackSessionStart) on the `media` object.
+   Um eine Mediensitzung zu verfolgen, rufen Sie [trackSessionStart](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackSessionStart) für das `media` Objekt auf.
 
    ```
    ADBMobile.media.trackSessionStart(mediaObject, customVideoMetadata);
@@ -73,9 +73,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!NOTE]
    >
-   >Der zweite Wert ist der benutzerdefinierte Videometadatenname, den Sie in Schritt 2 erstellt haben. If you are not using custom video metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
+   >Der zweite Wert ist der benutzerdefinierte Videometadatenobjektname, den Sie in Schritt 2 erstellt haben. If you are not using custom video metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
 
-1. **Verfolgen der tatsächlichen Wiedergabe**
+1. **Den tatsächlichen Start der Wiedergabe verfolgen**
 
    Identify the event from the video player for the beginning of the video playback, where the first frame of the video is rendered on the screen, and call [trackPlay:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackPlay)
 
@@ -83,7 +83,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    ADBMobile.media.trackPlay();
    ```
 
-1. **Rückverfolgung der Wiedergabe**
+1. **Verfolgen Sie den Abschluss der Wiedergabe.**
 
    Identify the event from the video player for the completion of the video playback, where the user has watched the content until the end, and call [trackComplete:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackComplete)
 
@@ -103,7 +103,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    >
    >`trackSessionEnd` markiert das Ende einer Videoverfolgungssitzung. Wenn die Sitzung erfolgreich bis zum Ende wiedergegeben wurde und der Anwender den Inhalt bis zum Schluss angesehen hat, müssen Sie `trackComplete` vor `trackSessionEnd` aufrufen. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new video tracking session.
 
-1. **Verfolgen Sie alle möglichen Pausenereignisse.**
+1. **Alle möglichen Pausenszenarien verfolgen**
 
    Identify the event from the video player for video pause and call [trackPause:](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackPause)
 
@@ -111,7 +111,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    ADBMobile.media.trackPause();
    ```
 
-   **Anhalten-Szenarios**
+   **Szenarios anhalten**
 
    Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. In allen folgenden Szenarios muss Ihre App `trackPause()` () aufrufen:
 
