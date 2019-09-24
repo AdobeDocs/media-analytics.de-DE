@@ -1,32 +1,32 @@
 ---
-seo-title: Übersicht einrichten
-title: Übersicht einrichten
-uuid: 06 fefedb-b 0 c 8-4 f 7 d -90 c 8-e 374 cdde 1695
+seo-title: Setup-Übersicht
+title: Setup-Übersicht
+uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
 
-# Übersicht einrichten{#setup-overview}
+# Setup-Übersicht{#setup-overview}
 
 >[!IMPORTANT]
 >
->Die folgenden Anweisungen gelten für die 2. x Media sdks. Wenn Sie eine 1.x-Version des Medien-SDK implementieren, lesen Sie die Dokumentation zum [Medien-SDK 1.x.](/help/sdk-implement/download-sdks.md) Weitere Informationen zu Primetime Integrators finden Sie unten in _der Primetime-Media SDK-Dokumentation_ .
+>Die folgenden Anweisungen gelten für die 2.x Media SDKs. Wenn Sie eine 1.x-Version des Medien-SDK implementieren, lesen Sie die Dokumentation zum [Medien-SDK 1.x.](/help/sdk-implement/download-sdks.md) Informationen zu Primetime-Integratoren finden Sie in der unten stehenden Dokumentation zum _Primetime Media SDK_ .
 
 
-## Mindestunterstützung für Plattformversionen {#minimum-platform-version}
+## Unterstützung der Plattformversion {#minimum-platform-version}
 
-Die folgende Tabelle beschreibt die für jedes SDK unterstützten Plattformversionen, ab dem 19. Februar 2019.
+In der folgenden Tabelle werden die Mindestplattformversionen beschrieben, die ab dem 19. Februar 2019 für jedes SDK unterstützt werden.
 
 | OS/Browser | Min. Version erforderlich |
 | --- | --- |
 | iOS | iOS 6+ |
-| Android | Android 5.0 + - Lollipop |
-| Chrome | v 22 + |
-| Mozilla | v 27 + |
-| Safari | v 7 + |
-| IE | v 11 + |
+| Android | Android 5.0+ - Lollipop |
+| Chrome | v22+ |
+| Mozilla | v27+ |
+| Safari | v7+ |
+| IE | v11+ |
 
 ## Allgemeine Implementierungsrichtlinien {#section_965A3B699A8248DDB9B2B3EA3CC20E41}
 
@@ -58,7 +58,7 @@ Führen Sie die folgenden Implementierungsschritte aus:
 
    >[!TIP]
    >
-   >Das Servicequalitätsobjekt (Servicequalität) ist optional. Wenn QoS-Daten für Ihren Player verfügbar sind und Sie diese Daten verfolgen möchten, sind die folgenden Variablen erforderlich:
+   >Das Quality of Service (QoS)-Objekt ist optional. Wenn QoS-Daten für Ihren Player verfügbar sind und Sie diese Daten verfolgen möchten, sind die folgenden Variablen erforderlich:
 
    | Variablenname | Beschreibung   | erforderlich |
    | --- | --- | :---: |
@@ -77,7 +77,7 @@ Führen Sie die folgenden Implementierungsschritte aus:
 
    >[!TIP]
    >
-   >`MediaHeartbeat` erfordert eine Instanz `AppMeasurement` von Aufrufen an Adobe Analytics.
+   >`MediaHeartbeat` erfordert eine Instanz von , `AppMeasurement` um Aufrufe an Adobe Analytics zu senden.
 
 1. Kombinieren Sie die verschiedenen Elemente.
 
@@ -121,28 +121,26 @@ Führen Sie die folgenden Implementierungsschritte aus:
 
 ## Überprüfen {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
 
-Die Implementierungen von Media Analytics-Verfolgung generieren zwei Arten von Tracking-Aufrufen:
+Media Analytics-Verfolgungsimplementierungen generieren zwei Arten von Verfolgungsaufrufen:
 
-* Medien- und Anzeigenstartanrufe werden direkt an den Adobe Analytics-Server (appmeasurement) gesendet.
-* Heartbeat-Aufrufe werden an den Media Analytics-Tracking-Server (Heartbeats) gesendet, dort verarbeitet und an den Adobe Analytics-Server weitergegeben.
+* Media- und Anzeigenstartaufrufe werden direkt an den Adobe Analytics-Server (AppMeasurement) gesendet.
+* Heartbeat-Aufrufe werden an den Media Analytics-Tracking-Server (Heartbeats) gesendet, dort verarbeitet und an den Adobe Analytics-Server weitergeleitet.
 
-* **Adobe Analytics (appmeasurement)-Server**
-Weitere Informationen zu den Tracking-Serveroptionen finden Sie unter [Korrektes Füllen der Variablen trackingserver und trackingserversecure.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
+* **Adobe Analytics-Server (AppMeasurement)** Weitere Informationen zu den Optionen für Tracking-Server finden Sie unter [Korrektes Füllen der Variablen trackingServer und trackingServerSecure.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
 
    >[!IMPORTANT]
    >
-   >Für den Experience Cloud Besucher-ID-Dienst ist ein RDC-Tracking-Server oder eine CNAME-Auflösung auf einem RDC-Server erforderlich.
+   >Für den Experience Cloud-Besucher-ID-Dienst ist ein RDC-Tracking-Server oder CNAME erforderlich, der auf einem RDC-Server aufgelöst wird.
 
    The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-* ** Media Analytics (Heartbeats) server**
-Dies hat immer das Format "`[your_namespace].hb.omtrdc.net`. Der Wert von "`[your_namespace]`specifies your company" und wird von Adobe bereitgestellt.
+* ** Media Analytics (Heartbeats) server**Dies hat immer das Format "`[your_namespace].hb.omtrdc.net`". Der Wert "`[your_namespace]`"gibt Ihr Unternehmen an und wird von Adobe bereitgestellt.
 
 Das Medien-Tracking verhält sich auf allen Plattformen – Desktop oder Mobilgeräte – gleich. Die Audioverfolgung funktioniert derzeit auf mobilen Plattformen. Es gibt einige universelle Variablen, die für alle Tracking-Aufrufe überprüft werden müssen:
 
-## Dokumentation zu SDK 1. x {#section_acj_tkk_t2b}
+## SDK 1.x-Dokumentation {#section_acj_tkk_t2b}
 
-| Video Analytics 1. x sdks  | Entwicklerhandbücher (nur pdfs) |
+| Video Analytics 1.x SDKs |  Entwicklerhandbücher (nur PDFs) |
 | --- | --- |
 | Android | [Android-Konfiguration ](vhl-dev-guide-v15_android.pdf) |
 | Apple TV | [Apple TV-Konfiguration ](vhl-dev-guide-v1x_appletv.pdf) |
