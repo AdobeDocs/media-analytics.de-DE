@@ -1,7 +1,7 @@
 ---
 seo-title: Voraussetzungen
 title: Voraussetzungen
-uuid: 4 c 0 b 37 f 3-8615-4 cc 0-b 9 c 9-eeb 290067064
+uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -10,7 +10,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 # Voraussetzungen{#prerequisites}
 
-## Decisions {#decision}
+## Beschlüsse {#decision}
 
 Bevor Sie mit der Tracking-Implementierung beginnen, müssen Sie einige Entscheidungen bezüglich der optimalen Implementierung für Ihre Situation treffen:
 
@@ -20,13 +20,13 @@ Bevor Sie mit der Tracking-Implementierung beginnen, müssen Sie einige Entschei
 
 ## Aufgaben {#prereq-tasks}
 
-For a *Media Analytics* implementation, here are the tasks you must complete before you begin:
+Für eine Implementierung von *Media Analytics* müssen Sie vor dem Start die folgenden Aufgaben ausführen:
 
 1. **Aktivieren Sie die Experience Cloud.**
 
-   Sie müssen den Adobe Experience Platform Identity Service implementieren.
+   Sie müssen den Identitätsdienst für Adobe Experience Platform implementieren.
 
-   Der Identitätsdienst aktiviert das allgemeine Identifizierungsframework für die Experience Cloud Core Services, Lösungen und Kundenattribute und Zielgruppen im Core-Core-Service von Personen. Es funktioniert durch die Zuweisung einer eindeutigen, dauerhaften ID zu einem Sitebesucher. Wenn Ihre Organisation den ID-Dienst implementiert, können Sie mit dieser ID denselben Site-Besucher und seine Daten in unterschiedlichen Experience Cloud-Lösungen identifizieren.
+   Der Identitätsdienst ermöglicht das gemeinsame Identifizierungsframework für die Experience Cloud Core Services, Lösungen sowie Kundenattribute und -zielgruppen im Hauptdienst "People". Es funktioniert durch die Zuweisung einer eindeutigen, dauerhaften ID zu einem Sitebesucher. Wenn Ihre Organisation den ID-Dienst implementiert, können Sie mit dieser ID denselben Site-Besucher und seine Daten in unterschiedlichen Experience Cloud-Lösungen identifizieren.
 
    ![](assets/mc_id_service_graphic.png)
 
@@ -36,7 +36,7 @@ For a *Media Analytics* implementation, here are the tasks you must complete bef
 
    >[!IMPORTANT]
    >
-   >Zur Teilnahme an der Adobe Experience Cloud Device Kooperation ist der Experience Cloud ID-Dienst erforderlich.
+   >Um an der Adobe Experience Cloud Device Co-op teilzunehmen, ist der Experience Cloud ID-Dienst erforderlich.
 
    Wenn Sie den ID-Dienst nicht implementiert haben, ist es nun an der Zeit, eine Migrationsstrategie in Erwägung zu ziehen. For more information about the importance and role of the ID service, see [Why the Identity Service Should be on Your Radar.](https://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
 
