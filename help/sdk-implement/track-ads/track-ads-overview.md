@@ -1,7 +1,7 @@
 ---
 seo-title: Überblick
 title: Überblick
-uuid: 1607798 b-c 6 ef -4 d 60-8 e 40-e 958 c 345 b 09 c
+uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -12,17 +12,17 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit den 2. x sdks. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit den 2.x SDKs. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
-Die Wiedergabe von Anzeigen beinhaltet das Tracking von Werbeunterbrechungen, Anzeigenstarts, -beendigungen und übersprungenen Anzeigen. Verwenden Sie die API des Medienplayers, um wichtige Player-Ereignisse herauszufinden und die erforderlichen und optionalen Anzeigenvariablen auszufüllen. Eine umfassende Liste der Metadaten finden Sie hier: [Anzeigenparameter.](/help/metrics-and-metadata/ad-parameters.md)
+Die Wiedergabe von Anzeigen beinhaltet das Tracking von Werbeunterbrechungen, Anzeigenstarts, -beendigungen und übersprungenen Anzeigen. Verwenden Sie die API des Medienplayers, um wichtige Player-Ereignisse zu identifizieren und die erforderlichen und optionalen Anzeigenvariablen zu füllen. Die vollständige Liste der Metadaten finden Sie hier: [Anzeigenparameter.](/help/metrics-and-metadata/ad-parameters.md)
 
 ## Player-Ereignisse {#player-events}
 
 
-### Beim Werbeunterbrechungsstart
+### Beim Start der Werbeunterbrechung
 
 >[!NOTE]
->Einschließen von Pre-Roll
+>Einschließlich Pre-Roll
 
 * Erstellen Sie eine `adBreak`-Objektinstanz für die Werbepause. Beispiel, `adBreakObject`.
 
@@ -100,9 +100,9 @@ Die Wiedergabe von Anzeigen beinhaltet das Tracking von Werbeunterbrechungen, An
 
 >[!IMPORTANT]
 >
->Stellen Sie sicher, dass Sie die Playhead für den Inhalts-Player (`l:event:playhead`) bei der Wiedergabe der Anzeige NICHT erhöhen (`s:asset:type=ad`). Wenn Sie dies tun, werden die Metriken "Besuchszeit pro Inhalt" negativ beeinflusst.
+>Stellen Sie sicher, dass Sie die Abspielleiste (`l:event:playhead`) des Inhaltsplayers während der Wiedergabe der Anzeige NICHT inkrementieren (`s:asset:type=ad`). In diesem Fall werden die Metriken zur Besuchszeit für Inhalte negativ beeinflusst.
 
-Der folgende Beispielcode nutzt das javascript 2. x SDK für einen HTML 5-Medienplayer.
+Im folgenden Beispielcode wird das JavaScript 2.x SDK für einen HTML5-Medienplayer verwendet.
 
 ```js
 /* Call on ad break start */ 
