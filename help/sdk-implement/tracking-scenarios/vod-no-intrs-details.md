@@ -1,7 +1,7 @@
 ---
 seo-title: VOD-Wiedergabe ohne Anzeigen
 title: VOD-Wiedergabe ohne Anzeigen
-uuid: ee 2 a 1 b 79-2 c 2 f -42 e 1-8 e 81-b 62 bbdd 0 d 8 cb
+uuid: ee2a1b79-2c2f-42e1-8e81-b62bbd0d8cb
 translation-type: tm+mt
 source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
@@ -17,13 +17,13 @@ Diese Szenario umfasst ein VOD-Asset ohne Anzeigen, das einmal von Anfang bis En
 | Auslöser | Heartbeat-Methode | Netzwerkaufrufe | Hinweise   |
 |---|---|---|---|
 | User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Dies kann ein Benutzer sein, der auf „Abspielen“ klickt, oder ein Ereignis bei automatischer Wiedergabe. |
-| Erstes Bild des Mediums | `trackPlay` | Heartbeat Content Play | Durch diese Methode wird der Timer ausgelöst. Daraufhin werden während der Wiedergabe alle 10 Sekunden Heartbeats gesendet. |
+| Erstes Medienbild | `trackPlay` | Heartbeat Content Play | Durch diese Methode wird der Timer ausgelöst. Daraufhin werden während der Wiedergabe alle 10 Sekunden Heartbeats gesendet. |
 | Inhalt wird wiedergegeben. |  | Content Heartbeats |  |
 | Inhalt ist abgeschlossen. | `trackComplete` | Heartbeat Content Complete | *Complete* bedeutet, dass das Ende der Abspielleiste erreicht wurde. |
 
 ## Parameter {#section_45D7B10031524411B91E2C569F7818B0}
 
-Viele der Werte bei Heartbeat Content Start-Aufrufen sind auch in Adobe Analytics `Content Start`-Aufrufen vorhanden. Adobe verwendet viele Parameter, um die verschiedenen Medienberichte zu füllen, jedoch werden nur die wichtigsten Parameter in der folgenden Tabelle aufgeführt:
+Viele der Werte bei Heartbeat Content Start-Aufrufen sind auch in Adobe Analytics `Content Start`-Aufrufen vorhanden. Es gibt viele Parameter, mit denen Adobe die verschiedenen Medienberichte füllt. In der folgenden Tabelle sind jedoch nur die wichtigsten Parameter aufgeführt:
 
 ### Heartbeat Content Start
 
@@ -34,8 +34,8 @@ Viele der Werte bei Heartbeat Content Start-Aufrufen sind auch in Adobe Analytic
 | `s:user:mid` | muss festgelegt werden | Should match the mid value on the `Adobe Analytics Content Start` call. |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt; Ihr Medienname &gt; |  |
-| `s:meta:*` | optional | Benutzerspezifische Metadaten, die auf den Medien eingestellt werden. |
+| `s:asset:media_id` | &lt;Ihr Medienname&gt; |  |
+| `s:meta:*` | optional | Benutzerdefinierte Metadaten, die auf den Medien festgelegt werden. |
 
 ## Heartbeat Content Play {#section_2ABBD51D3A6D45ABA92CC516E414417A}
 
