@@ -1,7 +1,7 @@
 ---
 seo-title: Puffer-Tracking in Chromecast
 title: Puffer-Tracking in Chromecast
-uuid: f 6 fa 3 a 1 a-d 7 de -4293-bd 11-ebe 9 e 130 badd
+uuid: f6fa3a1a-d7de-4293-bd11-ebe9e130badd
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `BufferStart` | Konstante für die Verfolgung des Pufferstartereignisses |
 | `BufferComplete` | Konstante für die Verfolgung des Pufferabschlussereignisses |
 
-## Pufferung implementieren
+## Implementierung der Pufferung
 
 1. Suchen Sie nach den Wiedergabepufferereignissen aus dem Medienplayer. Wenn Sie die Benachrichtigung zum Pufferstartereignis erhalten, verfolgen Sie die Pufferung mit dem `BufferStart`-Ereignis: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
