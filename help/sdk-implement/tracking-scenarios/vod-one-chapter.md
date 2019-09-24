@@ -1,7 +1,7 @@
 ---
 seo-title: VOD-Wiedergabe mit einem Kapitel
 title: VOD-Wiedergabe mit einem Kapitel
-uuid: 1566 a 6 f 5-cf 22-42 e 7-8 e 1 a -6976 c 6 c 4 e 649
+uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -25,7 +25,7 @@ Wenn nichts anderes angegeben ist, sind die Netzwerkaufrufe in diesem Szenario m
 | Das Kapitel ist abgeschlossen. | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | Dies ist der Punkt, an dem das Ende des Kapitels erreicht wird. |
 | Der Inhalt wird wiedergegeben. |  | Content Heartbeats | Dieser Netzwerkaufruf ist mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. |
 | Der Inhalt ist abgeschlossen. | `trackComplete` | Heartbeat Content Complete | Dieser Netzwerkaufruf ist mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. |
-| Die Sitzung ist beendet. | `trackSessionEnd` |  | `SessionEnd` bedeutet, dass das Ende einer Wiedergabesitzung erreicht wurde. Diese API muss auch dann aufgerufen werden, wenn der Benutzer die Medien nicht bis zum Ende angesehen hat. |
+| Die Sitzung ist beendet. | `trackSessionEnd` |  | `SessionEnd` bedeutet, dass das Ende einer Wiedergabesitzung erreicht wurde. Diese API muss auch dann aufgerufen werden, wenn der Benutzer die Medien nicht bis zum Abschluss ansieht. |
 
 ## Parameter {#section_869319D99A474FEA8EA840415EA97FBD}
 
