@@ -1,9 +1,9 @@
 ---
-description: 'null '
-seo-description: 'null '
+description: 'null'
+seo-description: 'null'
 seo-title: Standard-Metadaten in Android implementieren
 title: Standard-Metadaten in Android implementieren
-uuid: c 48 b 4190-b 062-4 c 4 e -9 c 40-8 dde 4598 a 50 e
+uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
 translation-type: tm+mt
 source-git-commit: 46797deb402fed1c4d4781507c279407f8c13f2e
 
@@ -18,11 +18,11 @@ source-git-commit: 46797deb402fed1c4d4781507c279407f8c13f2e
 |---|---|
 | `MediaHeartbeat.MediaObjectKey.StandardMediaMetadata` | Konstante für das Anhängen von Standard-Metadaten an `MediaObject`. |
 
-## API-Referenz zu Metadatenschlüssel
+## API-Referenz zu Metadatenschlüsseln
 
-* Create a `HashMap` of standard metadata key value pairs.
-   * [Schlüssel für Videometadaten](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-   * [Schlüssel für Audio-Metadaten](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
+* Erstellen Sie eine `HashMap` Liste mit Schlüssel/Wert-Paaren für Standard-Metadaten.
+   * [Schlüssel zu Videometadaten](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+   * [Audio-Metadatenschlüssel](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
 * Legen Sie die `HashMap` für Standard-Metadaten bei `MediaInfo` mit der Standard-Metadatenkonstante fest.
 * Provide this `MediaInfo` object while invoking the `trackSessionStart()` API.
 
