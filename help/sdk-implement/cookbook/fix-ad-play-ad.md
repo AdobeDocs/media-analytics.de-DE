@@ -1,7 +1,7 @@
 ---
-seo-title: Beheben der Hauptinhaltswiedergabe zwischen Anzeigen
-title: Beheben der Hauptinhaltswiedergabe zwischen Anzeigen
-uuid: 228 b 4812-c 23 e -40 c 8-ae 2 b-e 15 ca 69 b 0 bc 2
+seo-title: Beheben des Hauptspiels, das zwischen Anzeigen angezeigt wird
+title: Beheben des Hauptspiels, das zwischen Anzeigen angezeigt wird
+uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 translation-type: tm+mt
 source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
 
@@ -18,18 +18,18 @@ Eine Lücke zwischen Anzeigen wie die oben beschriebene wird vom Medien-SDK als 
 
 ## ERKENNUNG
 
-Wenn Sie Adobe Debug oder einen Netzwerkpaket-Sniffer wie Charles verwenden, wenn in einer Pre-Roll-Werbeunterbrechung die folgenden Heartbeat-Aufrufe angezeigt werden:
+Wenn Sie Adobe Debug oder einen Netzwerkpaket-Sniffer wie Charles verwenden, sehen Sie die folgenden Heartbeat-Aufrufe in dieser Reihenfolge während einer Pre-Roll-Werbeunterbrechung:
 
 * Sitzungsstart: `s:event:type=start` &amp; `s:asset:type=main`
 * Ad Start: `s:event:type=start` &amp; `s:asset:type=ad`
 * Ad Play: `s:event:type=play` &amp; `s:asset:type=ad`
 * Ad Complete: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Main Content Play: `s:event:type=play` &amp; `s:asset:type=main` **(unexpected)**
+* Hauptinhalt spielen: `s:event:type=play` &amp; `s:asset:type=main`**(unerwartet)**
 
 * Ad Start: `s:event:type=start` &amp; `s:asset:type=ad`
 * Ad Play: `s:event:type=play` &amp; `s:asset:type=ad`
 * Ad Complete: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Main Content Play: `s:event:type=play` &amp; `s:asset:type=main` **(expected)**
+* Hauptinhalt spielen: `s:event:type=play` &amp; `s:asset:type=main`**(erwartet)**
 
 ## LÖSUNG
 
@@ -49,7 +49,7 @@ Beseitigen Sie die Lücke innerhalb des Players, indem Sie `trackEvent:AdComplet
 
    >[!NOTE]
    >
-   >Rufen Sie dies nur auf, wenn die vorherige Anzeige nicht abgeschlossen war. Erwägen Sie hierzu einen booleschen Wert, um einen `isinAd`-Status für die vorherige Anzeige festzulegen.
+   >Rufen Sie dies nur auf, wenn die vorherige Anzeige nicht abgeschlossen wurde. Erwägen Sie hierzu einen booleschen Wert, um einen `isinAd`-Status für die vorherige Anzeige festzulegen.
 
 * Erstellen Sie die Anzeigen-Objektinstanz für das Anzeigen-Asset, z. B. `adObject`.
 * Populate the ad metadata, `adCustomMetadata`.
@@ -58,7 +58,7 @@ Beseitigen Sie die Lücke innerhalb des Players, indem Sie `trackEvent:AdComplet
 
 **Bei jedem Abschluss eines Anzeigen-Assets:**
 
-* **Kein Aufruf tätigen**
+* **Ruf nicht an**
 
    >[!NOTE]
    >
