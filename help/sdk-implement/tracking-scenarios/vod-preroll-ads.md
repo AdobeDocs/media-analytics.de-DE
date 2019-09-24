@@ -2,8 +2,8 @@
 seo-title: VOD-Wiedergabe mit Pre-roll-Anzeigen
 title: VOD-Wiedergabe mit Pre-roll-Anzeigen
 description: In diesem Szenario wurde eine Pre-roll-Anzeige vor dem Hauptinhalt eingefügt.
-seo-description: In diesem Szenario in Adobe Media Analytics wurden Pre-Roll-Anzeigen vor dem Hauptinhalt eingefügt.
-uuid: 5 d 1022 a 8-88 cb -40 aa -919 c -60 dd 592 a 639 e
+seo-description: In diesem Szenario wurden in Adobe Media Analytics Pre-Roll-Anzeigen vor dem Hauptinhalt eingefügt.
+uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -24,8 +24,8 @@ In diesem Szenario wurde eine Pre-roll-Anzeige vor dem Hauptinhalt eingefügt. W
 | Das erste Bild der Anzeige 2 wird wiedergegeben. | `trackEvent:AdStart` | Analytics Ad Start, Heartbeat Ad Start |  |
 | Die Anzeige wird wiedergegeben. |  | Ad Heartbeats |  |
 | Wiedergabe von Anzeige 2 ist abgeschlossen. | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Heartbeat Ad Complete | Das Ende der Anzeige und der Werbeunterbrechung wird erreicht. |
-| Der Inhalt wird wiedergegeben. |  | Content Heartbeats | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
-| Der Inhalt ist abgeschlossen. | `trackComplete` | Heartbeat Content Complete | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| Der Inhalt wird wiedergegeben. |  | Content Heartbeats | Dieser Netzwerkaufruf ist identisch mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
+| Der Inhalt ist abgeschlossen. | `trackComplete` | Heartbeat Content Complete | Dieser Netzwerkaufruf ist identisch mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
 | Die Sitzung ist beendet. | `trackSessionEnd` |  | `SessionEnd` |
 
 ## Parameter {#section_33CDFB6CB230437480B67A3D149EC44E}
@@ -74,7 +74,7 @@ In diesem Szenario besteht der VOD aus einer Pre-roll-Anzeige und einer zweiten 
 
 ![](assets/preroll-regular-playback.png)
 
-* **Android** um dieses Szenario unter Android anzuzeigen, richten Sie folgenden Code ein:
+* **Android** Richten Sie den folgenden Code ein, um dieses Szenario in Android anzuzeigen:
 
    ```java
    // Set up  mediaObject 
@@ -178,7 +178,7 @@ In diesem Szenario besteht der VOD aus einer Pre-roll-Anzeige und einer zweiten 
    ........ 
    ```
 
-* **Ios -** Um dieses Szenario unter ios anzuzeigen, richten Sie folgenden Code ein:
+* **iOS -** Um dieses Szenario unter iOS anzuzeigen, richten Sie den folgenden Code ein:
 
    ```
    //  Set up mediaObject 
@@ -282,7 +282,7 @@ In diesem Szenario besteht der VOD aus einer Pre-roll-Anzeige und einer zweiten 
    ....... 
    ```
 
-* **Javascript** Um dieses Szenario in javascript anzuzeigen, geben Sie folgenden Text ein:
+* **JavaScript** Geben Sie den folgenden Text ein, um dieses Szenario in JavaScript anzuzeigen:
 
    ```js
    // Set up mediaObject 
@@ -384,7 +384,7 @@ In diesem Szenario wird VOD-Inhalt mit einer Pre-Roll-Anzeige, dem Inhalt, einer
 
 ![](assets/ad-content-regular-playback.png)
 
-* **Android** um dieses Szenario unter Android anzuzeigen, richten Sie folgenden Code ein:
+* **Android** Richten Sie den folgenden Code ein, um dieses Szenario in Android anzuzeigen:
 
    ```java
    // Set up mediaObject 
@@ -561,7 +561,7 @@ In diesem Szenario wird VOD-Inhalt mit einer Pre-Roll-Anzeige, dem Inhalt, einer
    ........ 
    ```
 
-* **Ios** Um dieses Szenario unter ios anzuzeigen, richten Sie folgenden Code ein:
+* **iOS** Richten Sie den folgenden Code ein, um dieses Szenario unter iOS anzuzeigen:
 
    ```
    //  Set up mediaObject 
@@ -748,7 +748,7 @@ In diesem Szenario wird VOD-Inhalt mit einer Pre-Roll-Anzeige, dem Inhalt, einer
    ....... 
    ```
 
-* **Javascript** Um dieses Szenario in javascript anzuzeigen, geben Sie folgenden Text ein:
+* **JavaScript** Geben Sie den folgenden Text ein, um dieses Szenario in JavaScript anzuzeigen:
 
    ```js
    // Set up mediaObject 
