@@ -1,7 +1,7 @@
 ---
 seo-title: 'Zeitlicher Ablauf 1: Wiedergabe bis zum Ende des Inhalts'
 title: 'Zeitlicher Ablauf 1: Wiedergabe bis zum Ende des Inhalts'
-uuid: 0 ff 591 d 3-fa 99-4123-9 e 09-c 4 e 71 ea 1060 b
+uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## VOD, Pre-Roll-Anzeigen, Pausen, Puffern, Wiedergabe des Inhalts bis zum Ende
 
-Die folgenden Diagramme illustrieren die Timeline der Abspielleiste und die Zeitschiene der Zeitleiste eines Benutzers. Die Details zu den einzelnen Aktionen und den zugehörigen Anforderungen werden unten angezeigt.
+Die folgenden Diagramme illustrieren die Zeitleiste der Abspielleiste und die zugehörige Zeitleiste der Aktionen eines Benutzers. Die Einzelheiten zu den einzelnen Maßnahmen und den zugehörigen Anträgen werden nachstehend dargestellt.
 
 
 ![](assets/va_api_content.png)
@@ -23,7 +23,7 @@ Die folgenden Diagramme illustrieren die Timeline der Abspielleiste und die Zeit
 
 ## Aktionsdetails
 
-### Action 1 - Start session {#Action-1}
+### Aktion 1: Sitzung starten {#Action-1}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -31,7 +31,7 @@ Die folgenden Diagramme illustrieren die Timeline der Abspielleiste und die Zeit
 
 **Implementierungsdetails**
 
-Dieser Aufruf signalisiert _die Anwenderintention, ein Video abzuspielen_. <br/><br/>Er gibt eine Sitzungs-ID ( `{sid}`) an den Client zurück, mit dem alle nachfolgenden Verfolgungsaufrufe innerhalb der Sitzung identifiziert werden. Der Player-Status lautet noch nicht „Playing“ (Wiedergabe), sondern „Starting“ (Start). <br/><br/>[Erforderliche Sitzungsparameter](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) müssen in der `params`-Map des Anfrageinhalts angegeben werden. <br/><br/>Am Backend generiert dieser Aufruf einen Adobe Analytics-Initiationsaufruf.
+Dieser Aufruf signalisiert _die Anwenderintention, ein Video abzuspielen_. <br/><br/>Gibt eine Sitzungs-ID ( `{sid}`) an den Client zurück, mit der alle nachfolgenden Verfolgungsaufrufe innerhalb der Sitzung identifiziert werden. Der Player-Status lautet noch nicht „Playing“ (Wiedergabe), sondern „Starting“ (Start). <br/><br/>[Erforderliche Sitzungsparameter](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) müssen in der `params`-Map des Anfrageinhalts angegeben werden. <br/><br/>Am Backend generiert dieser Aufruf einen Adobe Analytics-Initiationsaufruf.
 
 **Beispiel-Anfrageinhalt**
 
@@ -57,7 +57,7 @@ Dieser Aufruf signalisiert _die Anwenderintention, ein Video abzuspielen_. <br/>
 }
 ```
 
-### Action 2 - Ping timer start {#Action-2}
+### Aktion 2: Start des Ping-Timers {#Action-2}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -65,9 +65,9 @@ Dieser Aufruf signalisiert _die Anwenderintention, ein Video abzuspielen_. <br/>
 
 **Implementierungsdetails**
 
-Starten Sie den Ping-Timer Ihrer App. Das erste ping-Ereignis sollte dann 1 Sekunde in auslösen, wenn Pre-Roll-Anzeigen vorhanden sind, andernfalls 10 Sekunden.
+Starten Sie den Ping-Timer Ihrer App. Das erste Ping-Ereignis sollte dann 1 Sekunde in ausgelöst werden, wenn Pre-Roll-Anzeigen vorhanden sind, andernfalls 10 Sekunden.
 
-### Action 3 - Ad break start {#Action-3}
+### Aktion 3: Anzeigenunterbrechungsstart {#Action-3}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -93,7 +93,7 @@ Anzeigen können nur innerhalb einer Werbeunterbrechung verfolgt werden.
 }
 ```
 
-### Action 4 - Ad start {#Action-4}
+### Aktion 4 - Anzeigenstart {#Action-4}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -133,9 +133,9 @@ Beginnen Sie mit dem Tracking der ersten Pre-Roll-Anzeige, die 15 Sekunden daue
 }
 ```
 
-### Action 5 - Ad pings {#Action-5}
+### Aktion 5: Werbeanzeigen {#Action-5}
 
-#### Action 5.1 - Ad ping 1 {#Action-5-1}
+#### Aktion 5.1 - Anzeigenping 1 {#Action-5-1}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -143,7 +143,7 @@ Beginnen Sie mit dem Tracking der ersten Pre-Roll-Anzeige, die 15 Sekunden daue
 
 **Implementierungsdetails**
 
-Ping des Backend alle 1 Sekunde innerhalb einer Anzeige.
+Ping des Backends alle 1 Sekunde innerhalb einer Anzeige
 
 **Beispiel-Anfrageinhalt**
 
@@ -157,7 +157,7 @@ Ping des Backend alle 1 Sekunde innerhalb einer Anzeige.
 }
 ```
 
-#### Action 5.2 - Ad ping 2 {#Action-5-2}
+#### Aktion 5.2 - Werbeping 2 {#Action-5-2}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -165,7 +165,7 @@ Ping des Backend alle 1 Sekunde innerhalb einer Anzeige.
 
 **Implementierungsdetails**
 
-Ping des Backend alle 1 Sekunde innerhalb einer Anzeige.
+Ping des Backends alle 1 Sekunde innerhalb einer Anzeige
 
 **Beispiel-Anfrageinhalt**
 
@@ -179,7 +179,7 @@ Ping des Backend alle 1 Sekunde innerhalb einer Anzeige.
 }
 ```
 
-#### Action 5.3 - Ad ping 3 {#Action-5-3}
+#### Aktion 5.3 - Werbeping 3 {#Action-5-3}
 
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
@@ -188,12 +188,12 @@ Ping des Backend alle 1 Sekunde innerhalb einer Anzeige.
 
 **Implementierungsdetails**
 
-Ping des Backend alle 1 Sekunde innerhalb einer Anzeige.
+Ping des Backends alle 1 Sekunde innerhalb einer Anzeige
 
 >[!NOTE]
 >
->Nachfolgende Anzeigen in der Zeitleiste überspringen die Anzeige der einzweiseligen Pings.
->im Interesse der Treue…
+>Nachfolgende Anzeigen in der Zeitleiste überspringen die Anzeige der Serie von 1-Sekunden-Pings
+>im Interesse der Kürze...
 
 **Beispiel-Anfrageinhalt**
 
@@ -207,7 +207,7 @@ Ping des Backend alle 1 Sekunde innerhalb einer Anzeige.
 }
 ```
 
-### Action 6 - Ad complete {#Action-6}
+### Aktion 6: Anzeigenbeendigung {#Action-6}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -229,7 +229,7 @@ Verfolgen Sie das Ende der ersten Pre-Roll-Anzeige.
 }
 ```
 
-### Action 7 - Ad start {#Action-7}
+### Aktion 7 - Anzeigenstart {#Action-7}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -264,7 +264,7 @@ Verfolgen Sie den Start der zweiten Pre-Roll-Anzeige, die 7 Sekunden lang ist.
 }
 ```
 
-### Action 8 - Ad pings {#Action-8}
+### Aktion 8: Werbeanzeigen {#Action-8}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -272,7 +272,7 @@ Verfolgen Sie den Start der zweiten Pre-Roll-Anzeige, die 7 Sekunden lang ist.
 
 **Implementierungsdetails**
 
-Ping des Backend alle 1 Sekunde.
+Ping des Backends alle 1 Sekunde
 
 **Beispiel-Anfrageinhalt**
 
@@ -286,7 +286,7 @@ Ping des Backend alle 1 Sekunde.
 }
 ```
 
-### Action 9 - Ad complete {#Action-9}
+### Aktion 9 - Anzeigenbeendigung {#Action-9}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -308,7 +308,7 @@ Verfolgen Sie das Ende der zweiten Pre-Roll-Anzeige.
 }
 ```
 
-### Action 10 - Ad break complete {#Action-10}
+### Aktion 10 - Abschluss der Werbeunterbrechung {#Action-10}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -330,7 +330,7 @@ Die Werbeunterbrechung ist vorüber. Während der Werbeunterbrechung wurde der S
 }
 ```
 
-### Action 11 - Play content {#Action-11}
+### Aktion 11 - Inhalt abspielen {#Action-11}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -352,7 +352,7 @@ Versetzen Sie den Player nach dem Ereignis `adBreakComplete` mit dem Ereignis `p
 }
 ```
 
-### Action 12 - Ping {#Action-12}
+### Aktion 12 - Ping {#Action-12}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -374,7 +374,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 }
 ```
 
-### Action 13 - Buffer start {#Action-13}
+### Aktion 13 - Pufferstart {#Action-13}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -395,7 +395,7 @@ Verfolgen Sie den Wechsel des Players zum Status „Buffering“ (Puffern).
 }
 ```
 
-### Action 14 - Buffer end {#Action-14}
+### Aktion 14 - Pufferende {#Action-14}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -403,7 +403,7 @@ Verfolgen Sie den Wechsel des Players zum Status „Buffering“ (Puffern).
 
 **Implementierungsdetails**
 
-Puffern endet nach 3 Sekunden, sodass der Player wieder zum Status „Playing“ (Wiedergabe) wechselt. Sie müssen am Ende des Puffervorgangs ein weiteres Ereignis zum Verfolgen der Wiedergabe senden.  **Der`play`Aufruf nach dem`bufferStart`Aufrufen eines "buffstext" -Aufrufs am Backend, sodass** kein `bufferEnd` Ereignis benötigt wird.
+Puffern endet nach 3 Sekunden, sodass der Player wieder zum Status „Playing“ (Wiedergabe) wechselt. Sie müssen am Ende des Puffervorgangs ein weiteres Ereignis zum Verfolgen der Wiedergabe senden.  **Der`play`Aufruf nach einem`bufferStart`Aufruf von "bufferEnd"an das Backend,** sodass kein `bufferEnd` Ereignis erforderlich ist.
 
 **Beispiel-Anfrageinhalt**
 
@@ -417,7 +417,7 @@ Puffern endet nach 3 Sekunden, sodass der Player wieder zum Status „Playing�
 }
 ```
 
-### Action 15 - Ping {#Action-15}
+### Aktion 15 - Ping {#Action-15}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -438,7 +438,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 }
 ```
 
-### Action 16 - Ad break start {#Action-16}
+### Aktion 16 - Anzeigenunterbrechungsstart {#Action-16}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -465,7 +465,7 @@ Mid-Roll-Anzeige mit einer Dauer von 8 Sekunden: Senden Sie `adBreakStart` .
 }
 ```
 
-### Action 17 - Ad start {#Action-17}
+### Aktion 17 - Anzeigenstart {#Action-17}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -500,7 +500,7 @@ Verfolgen Sie die Mid-Roll-Anzeige.
 }
 ```
 
-### Action 18 - Ad ping {#Action-18}
+### Aktion 18 - Werbeping {#Action-18}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -521,7 +521,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 }
 ```
 
-### Action 19 - Ad complete {#Action-19}
+### Aktion 19 - Anzeigenbeendigung {#Action-19}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -543,7 +543,7 @@ Die Mid-Roll-Anzeige ist abgeschlossen.
 }
 ```
 
-### Action 20 - Ad break complete {#Action-20}
+### Aktion 20 - Abschluss der Werbeunterbrechung {#Action-20}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -565,7 +565,7 @@ Die Werbeunterbrechung ist abgeschlossen.
 }
 ```
 
-### Action 21 - Ping {#Action-21}
+### Aktion 21 - Ping {#Action-21}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -587,7 +587,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 }
 ```
 
-### Action 22 - Pause {#Action-22}
+### Aktion 22 - Pause {#Action-22}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -609,7 +609,7 @@ Durch die Anwenderaktion wechselt der Wiedergabestatus zu „Paused“ (Pause).
 }
 ```
 
-### Action 23 - Ping {#Action-23}
+### Aktion 23 - Ping {#Action-23}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -630,7 +630,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend. Der Player befindet
 }
 ```
 
-### Action 24 - Play {#Action-24}
+### Aktion 24 - Wiedergabe {#Action-24}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -638,7 +638,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend. Der Player befindet
 
 **Implementierungsdetails**
 
-Ändern Sie den Wiedergabestatus zu „playing“ (Wiedergabe).  **Der`play`Aufruf nach dem`pauseStart`Aufrufen eines "Fortsetzen" -Aufrufs an das Backend,** sodass kein `resume` Ereignis benötigt wird.
+Ändern Sie den Wiedergabestatus zu „playing“ (Wiedergabe).  **Der`play`Aufruf nach einem`pauseStart`Aufruf "Wieder aufnehmen"wird an das Backend gesendet,** sodass kein `resume` Ereignis erforderlich ist.
 
 **Beispiel-Anfrageinhalt**
 
@@ -651,7 +651,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend. Der Player befindet
 }
 ```
 
-### Action 25 - Ping {#Action-25}
+### Aktion 25 - Ping {#Action-25}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -672,7 +672,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 }
 ```
 
-### Action 26 - Session complete {#Action-26}
+### Aktion 26 - Sitzung abgeschlossen {#Action-26}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
