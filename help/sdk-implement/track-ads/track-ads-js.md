@@ -1,7 +1,7 @@
 ---
 seo-title: Tracking von Anzeigen in JavaScript
 title: Tracking von Anzeigen in JavaScript
-uuid: 4 d 81 d 29 c-c 55 d -4 d 48-b 505-3260922712 ff
+uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit den 2. x sdks. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit den 2.x SDKs. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Anzeigen-Tracking-Konstanten
 
@@ -72,7 +72,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
                                    <LENGTH>);
    ```
 
-1. Fügen Sie standardmäßig Standard- und/oder Anzeigenmetadaten über Kontextdatenvariablen an die Medienverfolgungssitzung an.
+1. Fügen Sie der Medienverfolgungssitzung optional Standard- und/oder Anzeigenmetadaten über Kontextdatenvariablen hinzu.
 
    * [Standard-Anzeigenmetadaten in JavaScript implementieren](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
    * **Anwenderspezifische Anzeigenmetadaten:** Erstellen Sie für anwenderdefinierte Metadaten ein variables Objekt für die anwenderspezifischen Datenvariablen und füllen Sie es mit den Daten für aktuelle Anzeigen:
