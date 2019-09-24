@@ -1,7 +1,7 @@
 ---
 seo-title: Puffer-Tracking in iOS
 title: Puffer-Tracking in iOS
-uuid: 4 f 4 db 23 a -489 b -4 b 41-bb 6 e -393 ec 64 d 52 a 2
+uuid: 4f4db23a-489b-4b41-bb6e-393ec64d52a2
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `ADBMediaHeartbeatEventBufferStart` | Konstante für die Verfolgung des Pufferstartereignisses |
 | `ADBMediaHeartbeatEventBufferComplete` | Konstante für die Verfolgung des Pufferabschlussereignisses |
 
-## Pufferung implementieren
+## Implementierung der Pufferung
 
 1. Suchen Sie nach den Wiedergabepufferereignissen aus dem Medienplayer. Wenn Sie die Benachrichtigung zum Pufferstartereignis erhalten, verfolgen Sie die Pufferung mit dem `BufferStart`-Ereignis:
 
