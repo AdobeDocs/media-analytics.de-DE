@@ -1,7 +1,7 @@
 ---
 seo-title: Puffer-Tracking in Roku
 title: Puffer-Tracking in Roku
-uuid: 6666 b 270-9 aa 3-42 ff -95 a 8-f 12502022 d 47
+uuid: 6666b270-9aa3-42ff-95a8-f12502022d47
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -21,7 +21,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `BufferStart` | Konstante für die Verfolgung des Pufferstartereignisses |
 | `BufferComplete` | Konstante für die Verfolgung des Pufferabschlussereignisses |
 
-## Pufferung implementieren
+## Implementierung der Pufferung
 
 1. Suchen Sie nach den Wiedergabepufferereignissen aus dem Medienplayer. Wenn Sie die Benachrichtigung zum Pufferstartereignis erhalten, verfolgen Sie die Pufferung mit dem `BufferStart`-Ereignis.
 
