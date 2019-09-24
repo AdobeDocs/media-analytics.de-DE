@@ -1,9 +1,9 @@
 ---
-description: 'null '
-seo-description: 'null '
+description: 'null'
+seo-description: 'null'
 seo-title: Standard-Metadaten in Chromecast implementieren
 title: Standard-Metadaten in Chromecast implementieren
-uuid: 1560 d 3 e 0-29 f 5-4678-9 f 01-c 672 e 0 ae 547 b
+uuid: 1560d3e0-29f5-4678-9f01-c672e0ae547b
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
