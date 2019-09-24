@@ -1,7 +1,7 @@
 ---
 seo-title: Opt-out und Datenschutz
 title: Opt-out und Datenschutz
-uuid: 7 e 60 c 7 bd -8 dba -4 c 7 a -9 c 3 c -0 c 634 b 815397
+uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 translation-type: tm+mt
 source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
 
@@ -16,17 +16,17 @@ Sie können steuern, ob die Tracking-Aktivität auf einem bestimmten Gerät zul�
 
 * **Mobile Apps:** Die VA-Bibliothek respektiert die Datenschutz- und Opt-out-Einstellungen der `AdobeMobile`-Bibliothek. Zum Abmelden vom Tracking müssen Sie die `AdobeMobile`-Bibliothek verwenden. Weitere Informationen zu den Opt-out- und Datenschutzeinstellungen der `AdobeMobile`-Bibliothek finden Sie unter [Opt-out- und Datenschutzeinstellungen](https://docs.adobe.com/content/help/en/mobile-services/android/gdpr-privacy-android/privacy.html).
 * **JavaScript/Browser-Apps:** Die VA-Bibliothek respektiert die Datenschutz- und Optout-Einstellungen der `VisitorAPI`. Um das-Tracking zu deaktivieren, müssen Sie über den Besucher-API-Dienst die entsprechende Einstellung vornehmen. For further information on opt­out and privacy, see [Adobe Experience Platform Identity Service.](https://marketing.adobe.com/resources/help/en_US/mcvid/).
-* **OTT-Apps (Chromecast, Roku) -** Die OTT sdks stellen allgemeine GDPR (Data Protection Protection)-apis bereit, mit denen `opt` Sie Statusflags für die Datenerfassung und -übertragung festlegen und lokal gespeicherte Identitäten abrufen können.
+* **OTT-Apps (Chromecast, Roku) -** Die OTT-SDKs bieten APIs für den Schutz von Daten (General Data Protection Regulation, GDPR), mit denen Sie `opt` Status-Flags für die Datenerfassung und -übertragung festlegen und lokal gespeicherte Identitäten abrufen können.
 
    >[!NOTE]
    >
-   >Media Heartbeat-Verfolgungsaufrufe sind ebenfalls deaktiviert, wenn der Datenschutzstatus auf "Opt-out" eingestellt ist.
+   >Media Heartbeat-Verfolgungsaufrufe sind ebenfalls deaktiviert, wenn der Datenschutzstatus auf "Abmeldung"festgelegt ist.
 
    Sie können wie folgt steuern, ob Analytics-Daten vom jeweiligen Gerät gesendet werden:
 
-   * `privacyDefault` Die Einstellung in der `ADBMobile.json` Konfigurationsdatei. Dies steuert die Grundeinstellung und bleibt bestehen, bis es im Code geändert wird.
+   * The `privacyDefault` setting in the `ADBMobile.json` config file. Dies steuert die Grundeinstellung und bleibt bestehen, bis es im Code geändert wird.
 
-   * The `ADBMobile().setPrivacyStatus()` method.
+   * Die `ADBMobile().setPrivacyStatus()` Methode.
 
       * **Opt-out:**
 
@@ -43,7 +43,7 @@ Sie können steuern, ob die Tracking-Aktivität auf einem bestimmten Gerät zul�
             ```
          >[!IMPORTANT]
          >
-         >Wenn ein Benutzer die Verfolgung ablehnt, werden alle Daten und IDs des beibehaltenen Geräts bereinigt, bis der Benutzer sich wieder anmeldet.
+         >Wenn ein Benutzer die Verfolgung ablehnt, werden alle dauerhaft gespeicherten Gerätedaten und IDs bereinigt, bis der Benutzer sich wieder anmeldet.
 
       * **Wiederanmeldung in:**
 
@@ -79,7 +79,7 @@ Mit diesen Informationen können Sie lokal gespeicherte Anwenderidentitäten von
 
 >[!IMPORTANT]
 >
->Die Methode zum Abrufen aller Identifikatoren ruft alle bekannten Benutzer ab und bleibt vom SDK erhalten. Diese Methode muss **vor** einem Opt-out des Anwenders aufgerufen werden.
+>Die Methode zum Abrufen aller Bezeichner ruft alle vom SDK bekannten und beständigen Benutzerkennungen ab. Diese Methode muss **vor** einem Opt-out des Anwenders aufgerufen werden.
 
 Die lokal gespeicherten Identitäten werden in einer JSON-Zeichenfolge zurückgegeben, die folgende Elemente enthalten kann:
 
