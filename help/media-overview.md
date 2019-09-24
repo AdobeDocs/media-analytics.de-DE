@@ -14,7 +14,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 >[!IMPORTANT]
 >
->The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. It does not include instructions around the legacy Milestone video implementation. Wir empfehlen Kunden, eine der beiden aktuellen Medien-Tracking-Lösungen zu verwenden, um die Verbesserungen und die erweiterte Messung nutzen zu können. Die [Vorteile der neuen Lösungen](media-overview.md#section_cnj_5st_p1b) werden unten beschrieben. While we will continue to support the Milestone method of tracking videos, there will not be any planned updates, fixes, or feature improvements. Wenden Sie sich an Ihren Adobe-Account-Manager, wenn Sie weitere Fragen haben.
+>The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. Es enthält keine Anweisungen zur alten Milestone-Videoimplementierung. Wir empfehlen Kunden, eine der beiden aktuellen Medien-Tracking-Lösungen zu verwenden, um die Verbesserungen und die erweiterte Messung nutzen zu können. Die [Vorteile der neuen Lösungen](media-overview.md#section_cnj_5st_p1b) werden unten beschrieben. Während wir weiterhin die Meilensteinmethode zum Verfolgen von Videos unterstützen, sind keine geplanten Aktualisierungen, Fehlerbehebungen oder Verbesserungen der Funktionen geplant. Wenden Sie sich an Ihren Adobe-Account-Manager, wenn Sie weitere Fragen haben.
 
 ## Überblick {#section_8BFE4F8DA64B4A5F826A4940B11AA466}
 
@@ -102,9 +102,9 @@ Die unten stehende Tabelle enthält eine Liste der Geräte, die aktuell über di
 | **Sony PS3/PS4** |  | ![](assets/icon-blue-check.png) |
 | **(Andere/neue vernetzte Geräte)** |  | ![](assets/icon-blue-check.png) |
 
-For Media SDK, also see [Minimum Platform Version Support](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
+Weitere Informationen zu Media SDK finden Sie unter Unterstützung für [Plattformversionen.](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
 
-## Transport Layer Security {#transport-layer-security}
+## Sicherheit der Transportebene {#transport-layer-security}
 
 **TLS Notice —** Adobe verfügt über Sicherheitsstandards, die das Ende der Lebensdauer älterer Sicherheitsprotokolle erfordern. Um weiterhin die sich entwickelnden Sicherheitsprotokollstandards zu erfüllen, entwickelt Adobe den Einsatz von TLS 1.2, um die aktuellste und sicherste Version zu verwenden. Ab dem 20. Februar 2019 unterstützt Adobe nur TLS 1.1 oder höher. Mit dieser Änderung erfasst Adobe keine Daten mehr von Endbenutzern mit älteren Geräten oder Webbrowsern, die TLS 1.0 bereitstellen. Die Migration auf TLS 1.2 bietet eine verbesserte Sicherheit. Für einen reibungslosen Übergang sollten Sie die Details zu diesem Thema genau durchlesen und die Änderungen entsprechend planen.
 
