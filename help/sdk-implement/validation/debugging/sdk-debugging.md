@@ -1,7 +1,7 @@
 ---
 seo-title: SDK-Debugging
 title: SDK-Debugging
-uuid: a 5972 d 87-c 593-4 b 4 f-a 56 f-dca 6 e 25268 e 1
+uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 translation-type: tm+mt
 source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
@@ -10,7 +10,7 @@ source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
 # SDK-Debugging{#sdk-debugging}
 
-Sie können die Protokollierung aktivieren und deaktivieren. Das Media-SDK bietet im Medienverfolgungsstapel einen umfangreichen Tracing-/Protokollierungsmechanismus. You can enable or disable logging by setting the `debugLogging` flag on the Config object.
+Sie können die Protokollierung aktivieren und deaktivieren. Das Media SDK bietet einen umfassenden Verfolgungs-/Protokollierungsmechanismus für den gesamten Medienverfolgungsstapel. You can enable or disable logging by setting the `debugLogging` flag on the Config object.
 
 ## Beispielcode für die Debug-Protokollierung
 
@@ -71,7 +71,7 @@ Bei der Anwendungsentwicklung können Sie in Bloodhound die Server-Aufrufe lokal
 
 >[!IMPORTANT]
 >
->Seit dem 30. April 2017 wurde Adobe Bloodhound unterlegt. Seit dem 1. Mai 2017 wurde keine Verbesserung mehr vorgenommen und es wird kein zusätzlicher Engineering- oder Adobe Expert Care-Support mehr angeboten.
+>Seit dem 30. April 2017 verfällt Adobe Bloodhound. Seit dem 1. Mai 2017 wurde keine Verbesserung mehr vorgenommen und es wird kein zusätzlicher Engineering- oder Adobe Expert Care-Support mehr angeboten.
 
 ## Protokollmeldungen
 
@@ -91,7 +91,7 @@ Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.s
 * **tag:** Der Name der Unterkomponente, von der die Protokollmeldung ausgegeben wurde (normalerweise der Klassenname)
 * **message:** Die eigentliche Trace-Meldung
 
-Sie können die Implementierung anhand der Protokolle der Media SDK-Bibliothek überprüfen. A good strategy is to search through the logs for the string `#track`. This will highlight all the `track*()` calls made by your application.
+Sie können die Protokollausgabe der Media SDK-Bibliothek verwenden, um die Implementierung zu überprüfen. A good strategy is to search through the logs for the string `#track`. This will highlight all the `track*()` calls made by your application.
 
 For instance, this is what the logs filtered for `#track` could look like:
 
