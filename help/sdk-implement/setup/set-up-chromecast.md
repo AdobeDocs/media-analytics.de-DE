@@ -1,7 +1,7 @@
 ---
 seo-title: Einrichten von Chromecast
 title: Einrichten von Chromecast
-uuid: d 664 e 394-02 a 2-4985-bbad-be 1 bcc 44 fb 2 b
+uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 translation-type: tm+mt
 source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
@@ -14,14 +14,13 @@ source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
 _Sollte ich das Chromecast JavaScript SDK verwenden oder kann ich das standardmäßige JavaScript SDK verwenden?_
 
-Die richtige Antwort lautet "Chromecast" aus folgenden Gründen:
+Die richtige Antwort lautet "Chromecast", und zwar aus folgenden Gründen:
 * Die AppMeasurement- und VisitorAPI-Bibliotheken im standardmäßigen JavaScript SDK sind nicht für die Arbeit auf OTT-Plattformen zertifiziert. Im Chromecast JavaScript SDK sind die Video Heartbeats-Bibliothek (VHL), Analytics und VisitorAPI in das einzige, einheitliche und für Chromecast zertifizierte SDK integriert.
 * Das Chromecast SDK ist viel leichter als das standardmäßige JS SDK. Das ist sehr wichtig für die Low-End-Hardware, die von OTT-Plattformen verwendet wird.
 
 ## Voraussetzungen
 
-* **Beziehen Sie gültige Konfigurationsparameter für Heartbeats**
-Diese Parameter können von einem Adobe-Vertreter erhalten werden, nachdem Sie Ihr Medienanalysekonto eingerichtet haben.
+* **Abrufen gültiger Konfigurationsparameter für Heartbeats** Diese Parameter können Sie von einem Adobe-Kundenbetreuer erhalten, nachdem Sie Ihr Medienanalysekonto eingerichtet haben.
 * **Stellen Sie in Ihrem Medienplayer folgende Funktionen bereit:**
    * *Eine API, um Player-Ereignisse zu abonnieren:* Die Medien-SDK erfordert, dass Sie einige einfache APIs aufrufen, wenn Ereignisse in Ihrem Player auftreten.
    * *Eine API, die Playerinformationen bereitstellt:* Diese Informationen enthalten Details wie z. B. Medienname und Abspielposition.
