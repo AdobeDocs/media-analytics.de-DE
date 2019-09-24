@@ -1,7 +1,7 @@
 ---
 seo-title: 'Zeitlicher Ablauf 2: Verlassen der Sitzung durch Anwender'
 title: 'Zeitlicher Ablauf 2: Verlassen der Sitzung durch Anwender'
-uuid: 74 b 89 e 8 f-ef 56-4 e 0 c-b 9 a 8-40739 e 15 b 4 cf
+uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## VOD, Pre-Roll-Anzeige, Mid-Roll-Anzeigen, Anwender verlässt Inhalt schnell
 
-Die folgenden Diagramme illustrieren die Zeitleiste der Abspielleiste und die dazugehörige Zeitschiene der Aktionen eines Benutzers. Die Details zu den einzelnen Aktionen und den zugehörigen Anforderungen werden unten angezeigt.
+Die folgenden Diagramme illustrieren die Zeitleiste der Abspielleiste und die entsprechende Zeitschiene der Aktionen eines Benutzers. Die Einzelheiten zu den einzelnen Maßnahmen und den zugehörigen Anträgen werden nachstehend dargestellt.
 
 
 ![](assets/va_api_content_2.png)
@@ -23,7 +23,7 @@ Die folgenden Diagramme illustrieren die Zeitleiste der Abspielleiste und die da
 
 ## Aktionsdetails
 
-### Action 1 - Start session {#Action-1}
+### Aktion 1: Sitzung starten {#Action-1}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -58,7 +58,7 @@ Dieser Aufruf signalisiert _die Anwenderintention, ein Video abzuspielen_. It re
 }
 ```
 
-### Action 2 - Ping timer start {#Action-2}
+### Aktion 2: Start des Ping-Timers {#Action-2}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -66,9 +66,9 @@ Dieser Aufruf signalisiert _die Anwenderintention, ein Video abzuspielen_. It re
 
 **Implementierungsdetails**
 
-Starten Sie den Ping-Timer Ihrer App. Das erste ping-Ereignis sollte dann 1 Sekunde in auslösen, wenn Pre-Roll-Anzeigen vorhanden sind, andernfalls 10 Sekunden.
+Starten Sie den Ping-Timer Ihrer App. Das erste Ping-Ereignis sollte dann 1 Sekunde in ausgelöst werden, wenn Pre-Roll-Anzeigen vorhanden sind, andernfalls 10 Sekunden.
 
-### Action 3 - Ad break start {#Action-3}
+### Aktion 3: Anzeigenunterbrechungsstart {#Action-3}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -94,7 +94,7 @@ Pre-Roll-Anzeigen müssen verfolgt werden. Anzeigen können nur innerhalb einer 
 }
 ```
 
-### Action 4 - Ad start {#Action-4}
+### Aktion 4 - Anzeigenstart {#Action-4}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -129,7 +129,7 @@ Es startet eine 12-sekündige Anzeige.
 }
 ```
 
-### Action 5 - Ad pings {#Action-5}
+### Aktion 5: Werbeanzeigen {#Action-5}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -137,7 +137,7 @@ Es startet eine 12-sekündige Anzeige.
 
 **Implementierungsdetails**
 
-Ping des Backend alle 1 Sekunde. (Nachfolgende Anzeige nicht angezeigt, im Interesse laut.)
+Ping des Backends alle 1 Sekunde (Nachfolgende Werbeanzeigen werden im Interesse der Kürze nicht angezeigt.)
 
 **Beispiel-Anfrageinhalt**
 
@@ -151,7 +151,7 @@ Ping des Backend alle 1 Sekunde. (Nachfolgende Anzeige nicht angezeigt, im Inter
 }
 ```
 
-### Action 6 - Ad complete {#Action-6}
+### Aktion 6: Anzeigenbeendigung {#Action-6}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -173,7 +173,7 @@ Die erste Pre-Roll-Anzeige ist vorüber.
 }
 ```
 
-### Action 7 - Ad break complete {#Action-7}
+### Aktion 7: Anzeigenumbruch abgeschlossen {#Action-7}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -195,7 +195,7 @@ Die Werbeunterbrechung ist vorüber. Während der Werbeunterbrechung wurde der P
 }
 ```
 
-### Action 8 - Play content {#Action-8}
+### Aktion 8: Inhalt abspielen {#Action-8}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -218,7 +218,7 @@ Die Werbeunterbrechung ist vorüber. Während der Werbeunterbrechung wurde der P
 }
 ```
 
-### Action 9 - Ping {#Action-9}
+### Aktion 9 - Ping {#Action-9}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -240,7 +240,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 }
 ```
 
-### Action 10 - Ping {#Action-10}
+### Aktion 10 - Ping {#Action-10}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -262,7 +262,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 }
 ```
 
-### Action 11 - Error {#Action-11}
+### Aktion 11 - Fehler {#Action-11}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -283,7 +283,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 }
 ```
 
-### Action 12 - Play content {#Action-12}
+### Aktion 12 - Inhalt abspielen {#Action-12}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -305,7 +305,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 }
 ```
 
-### Action 13 - Ping {#Action-13}
+### Aktion 13 - Ping {#Action-13}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -327,7 +327,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 }
 ```
 
-### Action 14 - Ad break start {#Action-14}
+### Aktion 14 - Anzeigenunterbrechungsstart {#Action-14}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -353,7 +353,7 @@ Mid-Roll-Anzeige mit einer Dauer von 8 Sekunden: Senden Sie `adBreakStart` .
 }
 ```
 
-### Action 15 - Ad start {#Action-15}
+### Aktion 15 - Anzeigenstart {#Action-15}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
@@ -386,7 +386,7 @@ Verfolgen Sie die Mid-Roll-Anzeige.
 }
 ```
 
-### Action 16 - Close app {#Action-16}
+### Aktion 16 - App schließen {#Action-16}
 
 | Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
 | --- | :---: | :---: | --- |
