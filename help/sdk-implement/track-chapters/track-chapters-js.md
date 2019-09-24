@@ -1,7 +1,7 @@
 ---
 seo-title: Tracking von Kapiteln und Segmenten in JavaScript
 title: Tracking von Kapiteln und Segmenten in JavaScript
-uuid: ef 99 eef 7-7 a 77-46 c 4-8429-bc 9 a 856 b 98 d 6
+uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit 2. x sdks. Wenn Sie Version 1.x des SDKs implementieren möchten, können Sie hier das Entwicklerhandbuch herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit 2.x SDKs. Wenn Sie Version 1.x des SDKs implementieren möchten, können Sie hier das Entwicklerhandbuch herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 1. Ermitteln Sie, wann das Kapitel beginnt, und erstellen Sie die `ChapterObject`-Instanz mithilfe dieser Kapitelinformationen.
 
@@ -20,7 +20,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!NOTE]
    >
-   >Diese Variablen sind nur erforderlich, wenn Sie die Kapitel verfolgen möchten.
+   >Diese Variablen sind nur erforderlich, wenn Sie planen, Kapitel zu verfolgen.
 
    | Variablenname | Beschreibung | erforderlich |
    | --- | --- | :---: |
