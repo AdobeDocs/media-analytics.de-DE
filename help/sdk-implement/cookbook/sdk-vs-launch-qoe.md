@@ -1,6 +1,6 @@
 ---
-seo-title: Verstehen Sie die Unterschiede zwischen dem Start und dem Media SDK.
-title: Verstehen Sie die Unterschiede zwischen dem Start und dem Media SDK.
+seo-title: Unterschiede zwischen Start und Media SDK verstehen
+title: Unterschiede zwischen Start und Media SDK verstehen
 uuid: null
 translation-type: tm+mt
 source-git-commit: 932af09a0692ef35ab46fb6f34b2dec5f2e1e562
@@ -8,50 +8,50 @@ source-git-commit: 932af09a0692ef35ab46fb6f34b2dec5f2e1e562
 ---
 
 
-# Verstehen Sie die Unterschiede zwischen dem Start und dem Media SDK.
+# Unterschiede zwischen Start und Media SDK verstehen
 
 ## Funktionsunterschiede
 
-* *Launch* - Launch bietet Ihnen eine Benutzeroberfläche, die Sie durch die Einrichtung, Konfiguration und Bereitstellung Ihrer webbasierten Medienverfolgungslösungen begleitet. Der Start wird unter dem dynamischen Tag-Management (DTM) verbessert.
-* *Media SDK* - Das Media SDK stellt Ihnen Medienverfolgungsbibliotheken zur Verfügung, die für bestimmte Plattformen entwickelt wurden (z. B.: Android, ios usw.). Adobe empfiehlt Media SDK zur Verfolgung der Mediennutzung in Ihren mobilen Apps.
+* *Start* - Launch bietet eine Benutzeroberfläche, die Sie durch Einrichten, Konfigurieren und Bereitstellen Ihrer webbasierten Medienverfolgungslösungen führt. Der Start verbessert sich beim dynamischen Tag-Management (DTM).
+* *Media SDK* - Das Media SDK bietet Ihnen Medienverfolgungsbibliotheken für bestimmte Plattformen (z. B.: Android, iOS usw.). Adobe empfiehlt Media SDK zur Verfolgung der Mediennutzung in Ihren mobilen Apps.
 
 ## Unterschiede bei der Trackererstellung
 
 ### Launch
 
-Start bietet zwei Ansätze zum Erstellen der Verfolgungsinfrastruktur. Beide Ansätze verwenden die Media Analytics-Starterweiterung:
+Launch bietet zwei Ansätze zum Erstellen der Tracking-Infrastruktur. Beide Ansätze verwenden die Media Analytics Launch Extension:
 
-1. Verwenden Sie die Medienverfolgungs-apis auf einer Webseite.
+1. Verwenden Sie die Medienverfolgungs-APIs einer Webseite.
 
-   In diesem Szenario exportiert die Media Analytics Extension die Medienverfolgungs-apis in eine konfigurierte Variable im globalen Fensterobjekt:
+   In diesem Szenario exportiert die Media Analytics-Erweiterung die Medienverfolgungs-APIs in eine konfigurierte Variable im globalen Fensterobjekt:
 
    ```
    window["CONFIGURED_VARIABLE_NAME"].MediaHeartbeat.getInstance
    ```
 
-1. Verwenden Sie die Medienverfolgungs-apis aus einer anderen Starterweiterung.
+1. Verwenden Sie die Medienverfolgungs-APIs einer anderen Starterweiterung.
 
-   In diesem Szenario verwenden Sie die Medienverfolgungs-apis, die von `get-instance` den und `media-heartbeat` freigegebenen Modulen offen gelegt werden.
+   In diesem Szenario verwenden Sie die Medienverfolgungs-APIs, die von den `get-instance` und `media-heartbeat` freigegebenen Modulen bereitgestellt werden.
 
    >[!NOTE]
    >
-   >Freigegebene Module sind nicht für Webseiten verfügbar. Sie können freigegebene Module nur aus einer anderen Erweiterung verwenden.
+   >Freigegebene Module sind nicht für die Verwendung auf Webseiten verfügbar. Sie können freigegebene Module nur von einer anderen Erweiterung verwenden.
 
-   Erstellen Sie eine `MediaHeartbeat` Instanz mit `get-instance` dem freigegebenen Modul.
-Übergeben Sie ein Delegationsobjekt, an `get-instance` das diese verfügbar `getQoSObject()``getCurrentPlaybackTime()` sind.
+   Erstellen Sie eine `MediaHeartbeat` Instanz mit dem `get-instance` Shared Module.
+Übergeben Sie ein Delegate-Objekt an `get-instance` das `getQoSObject()` und `getCurrentPlaybackTime()` Funktionen verfügbar macht.
 
    ```
    var getMediaHeartbeatInstance =
    turbine.getSharedModule('adobe-video-analytics', 'get-instance');
    ```
 
-   Greifen Sie auf `MediaHeartbeat` Konstanten über das `media-heartbeat` freigegebene Modul zu.
+   Zugriff auf `MediaHeartbeat` Konstanten über das `media-heartbeat` freigegebene Modul.
 
 ### Medien-SDK
 
-1. Fügen Sie die Media Analytics-Bibliothek zu Ihrem Entwicklungsprojekt hinzu.
+1. Fügen Sie Ihrem Entwicklungsprojekt die Medienanalysebibliothek hinzu.
 1. Erstellen Sie ein config-Objekt (`MediaHeartbeatConfig`).
-1. Implementieren Sie das Delegationsprotokoll und stellen Sie die `getQoSObject()` Funktionen und `getCurrentPlaybackTime()` Funktionen bereit.
+1. Implementieren Sie das Delegate-Protokoll, und stellen Sie die `getQoSObject()` Funktionen und `getCurrentPlaybackTime()` Funktionen offen.
 1. Erstellen Sie eine Media Heartbeat-Instanz (`MediaHeartbeat`).
 
 ```
@@ -77,7 +77,7 @@ this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurem
 
 ### Launch
 
-* [Startübersicht](https://docs.adobe.com/content/help/en/launch/using/overview.html)
+* [Übersicht über den Start](https://docs.adobe.com/content/help/en/launch/using/overview.html)
 * [MA-Erweiterung](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
 
 ### Medien-SDK
