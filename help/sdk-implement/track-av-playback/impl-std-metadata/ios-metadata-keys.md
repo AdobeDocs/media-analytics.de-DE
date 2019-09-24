@@ -1,7 +1,7 @@
 ---
 seo-title: iOS-Metadatenelemente
 title: iOS-Metadatenelemente
-uuid: 8 eb 90111-c 9 dd -4 ca 7-9766-91530 a 8 ae 6 cf
+uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
@@ -14,7 +14,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 Von `ADBStandardMetadataKeys.h`:
 
-## Schlüssel für Videometadaten
+## Schlüssel zu Videometadaten
 
 | Konstantenname | Beschreibung | Typ |
 |---|---|---|
@@ -36,7 +36,7 @@ Von `ADBStandardMetadataKeys.h`:
 | `ADBVideoMetadataKeyFEED` | Feed | Video |
 | `ADBVideoMetadataKeySTREAM_FORMAT` | Stream-Format | Video |
 
-## Schlüssel für Audio-Metadaten
+## Audio-Metadatenschlüssel
 
 | Konstantenname | Beschreibung | Typ |
 |---|---|---|
@@ -47,7 +47,7 @@ Von `ADBStandardMetadataKeys.h`:
 | `ADBAudioMetadataKeyPUBLISHER` | Asset | Audio |
 | `ADBAudioMetadataKeySTATION` | Genre | Audio |
 
-## Anzeigenmetadatenschlüssel
+## Ad Metadata Keys
 
 | Konstantenname | Beschreibung | Typ |
 |---|---|---|
