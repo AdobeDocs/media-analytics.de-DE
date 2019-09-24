@@ -1,7 +1,7 @@
 ---
 seo-title: VOD-Wiedergabe mit einem übersprungenen Kapitel
 title: VOD-Wiedergabe mit einem übersprungenen Kapitel
-uuid: 19 fb 020 c-eb 7 a -4942-9212-94 f 4 d 47195 b 9
+uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -18,7 +18,7 @@ Dies ist dasselbe Szenario wie [VOD-Wiedergabe mit einem Kapitel](/help/sdk-impl
 
 | Auslöser | Heartbeat-Methode | Netzwerkaufrufe   | Hinweise |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Diese Netzwerkaufrufe sind noch mit dem Szenario  [Wiedergabe ohne Unterbrechungen im ios](vod-no-intrs-details.md) -Szenario. |
+| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Diese Netzwerkaufrufe sind noch mit dem Szenario  [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
 | Das Kapitel beginnt. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
 | Das erste Bild des Kapitels wird wiedergegeben. | `trackPlay` | Heartbeat Chapter Play | Wenn Kapitelinhalt vor dem Hauptinhalt wiedergegeben wird, sollen die Heartbeats mit Beginn des Kapitels gestartet werden. |
 | Das Kapitel wird wiedergegeben. |  | Chapter Heartbeats |  |
@@ -27,7 +27,7 @@ Dies ist dasselbe Szenario wie [VOD-Wiedergabe mit einem Kapitel](/help/sdk-impl
 | Die Anwendung erkennt, dass der Benutzer die reguläre Kapitelgrenze bei der Suche überschritten hat. | `trackEvent:trackChapterSkip` |  |  |
 | Der Inhalt wird wiedergegeben. |  | Content Heartbeats |  |
 | Die Inhaltswiedergabe ist abgeschlossen. | `trackComplete` | Heartbeat Content Complete | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
-| Die Sitzung ist beendet. | `trackSessionEnd` |  | `SessionEnd` steht für das Ende einer Anzeigesitzung. Diese API muss auch dann aufgerufen werden, wenn der Benutzer die Medien nicht bis zum Ende angesehen hat. |
+| Die Sitzung ist beendet. | `trackSessionEnd` |  | `SessionEnd` steht für das Ende einer Anzeigesitzung. Diese API muss auch dann aufgerufen werden, wenn der Benutzer die Medien nicht bis zum Abschluss ansieht. |
 
 ## Parameter {#section_1874F6B7880B43C5856BD11FF85B382E}
 
