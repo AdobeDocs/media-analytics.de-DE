@@ -1,7 +1,7 @@
 ---
 seo-title: Einrichten von iOS
 title: Einrichten von iOS
-uuid: a 1 c 6 be 79-a 6 dc -47 b 6-93 b 3-ac 7 b 42 f 1 f 3 eb
+uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,14 +12,12 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Voraussetzungen
 
-* **Beziehen Sie gültige Konfigurationsparameter für das Media SDK**
-Diese Parameter können von einem Adobe-Vertreter erhalten werden, nachdem Sie Ihr Analytics-Konto eingerichtet haben.
-* **Adbmobile for ios in Ihrer Anwendung**
-implementieren. Weitere Informationen zur Adobe Mobile SDK-Dokumentation finden Sie unter [ios SDK 4. x für Experience Cloud-Lösungen.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/)
+* **Abrufen gültiger Konfigurationsparameter für das Media SDK** Diese Parameter können Sie von einem Adobe-Kundenbetreuer erhalten, nachdem Sie Ihr Analytics-Konto eingerichtet haben.
+* **Implementieren von ADBMobile für iOS in Ihre Anwendung** Weitere Informationen zur Adobe Mobile SDK-Dokumentation finden Sie unter [iOS SDK 4.x für Experience Cloud-Lösungen.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/)
 
    >[!IMPORTANT]
    >
-   >Mit ios 9 hat Apple eine Funktion namens App Transport Security (ATS) eingeführt. Diese Funktion soll die Netzwerksicherheit steigern, indem sie gewährleistet, dass Ihre Anwendungen nur branchenübliche Protokolle und Chiffren verwenden. Die Funktion ist standardmäßig aktiviert, Ihnen stehen jedoch einige Konfigurationsoptionen für die Arbeit mit ATS zur Verfügung. For details on ATS, see [App Transport Security.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
+   >Seit iOS 9 hat Apple eine Funktion namens App Transport Security (ATS) eingeführt. Diese Funktion soll die Netzwerksicherheit steigern, indem sie gewährleistet, dass Ihre Anwendungen nur branchenübliche Protokolle und Chiffren verwenden. Die Funktion ist standardmäßig aktiviert, Ihnen stehen jedoch einige Konfigurationsoptionen für die Arbeit mit ATS zur Verfügung. Weitere Informationen zu ATS finden Sie unter [App Transport Security.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
 
 * **Stellen Sie in Ihrem Medienplayer folgende Funktionen bereit:**
 
