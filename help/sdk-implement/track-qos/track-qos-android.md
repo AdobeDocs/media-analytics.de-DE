@@ -1,7 +1,7 @@
 ---
 seo-title: Tracking der Erlebnisqualität auf Android
 title: Tracking der Erlebnisqualität auf Android
-uuid: 81 ff 3939-48 a 6-45 c 1-8837-ddfa 33490559
+uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -14,7 +14,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie hier die 1.x-Entwicklerhandbücher herunterladen.[SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
-## Implementierungs-Servicequalität
+## Implementierungs-QoS
 
 1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
 
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >Diese Variablen sind nur erforderlich, wenn Sie planen, qos zu verfolgen.
+   >Diese Variablen sind nur erforderlich, wenn Sie planen, QoS zu verfolgen.
 
    | Variable | Beschreibung | erforderlich |
    | --- | --- | :---: |
@@ -52,5 +52,5 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >Aktualisieren Sie das qos-Objekt und rufen Sie das Bitratenänderungsereignis bei jeder Bitratenänderung auf. So erhalten Sie möglichst präzise Daten.
+   >Aktualisieren Sie das QoS-Objekt und rufen Sie bei jeder Bitratenänderung das Bitratenänderungsereignis auf. So erhalten Sie möglichst präzise Daten.
 
