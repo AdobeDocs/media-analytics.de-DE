@@ -1,7 +1,7 @@
 ---
 seo-title: Wiederaufnehmen von inaktiven Sitzungen
 title: Wiederaufnehmen von inaktiven Sitzungen
-uuid: 3 ff 1205 d -7 bbe -4016-9 bd 7-6 e 34 b 7862 c 4 c
+uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,18 +12,18 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Lange Pausen
 
-Das Media SDK verfolgt automatisch, wie lange die Medienwiedergabe in einem der folgenden inaktiven Status ist:
+Das Media SDK verfolgt automatisch, wie lange die Medienwiedergabe in einem der folgenden inaktiven Status erfolgt:
 
 * angehalten
 * Suche
 * Unterbrochen
 * Puffern
 
-Wenn eine Medienverfolgungssitzung länger als 30 Minuten lang inaktiv bleibt, wird die Sitzung automatisch geschlossen. Wenn der Anwender eine zuvor inaktive Tracking-Sitzung wiederaufnimmt (`trackPlay`), erstellt Media Heartbeat automatisch eine neue Videositzung mit den zuvor verwendeten Videoinformationen und Metadaten und sendet ein Heartbeat-Ereignis zur Wiederaufnahme. Weitere Informationen finden Sie unter [Audio- und Videoparameter.](/help/metrics-and-metadata/audio-video-parameters.md)
+Wenn eine Medienverfolgungssitzung länger als 30 Minuten inaktiv bleibt, wird die Sitzung automatisch geschlossen. Wenn der Anwender eine zuvor inaktive Tracking-Sitzung wiederaufnimmt (`trackPlay`), erstellt Media Heartbeat automatisch eine neue Videositzung mit den zuvor verwendeten Videoinformationen und Metadaten und sendet ein Heartbeat-Ereignis zur Wiederaufnahme. Weitere Informationen finden Sie unter [Audio- und Videoparameter.](/help/metrics-and-metadata/audio-video-parameters.md)
 
-## Zuvor geschlossene Sitzung manuell fortsetzen
+## Manuelles Wiederaufnehmen einer zuvor geschlossenen Sitzung
 
-Das Media-SDK nimmt Sitzungen nur automatisch wieder auf, wenn die Anwendung nicht geschlossen wurde. Wenn die Anwendung Benutzerdaten speichert und die Möglichkeit hat, zuvor geschlossene Medien fortzusetzen, kann ein Wiederaufnahmeereignis manuell ausgelöst werden. Wenn Sie die Video-Tracking-Sitzung starten, legen Sie die optionale Eigenschaft zur Videowiederaufnahme fest.
+Das Media SDK nimmt Sitzungen nur dann automatisch wieder auf, wenn die Anwendung nicht geschlossen wurde. Wenn die Anwendung Benutzerdaten speichert und in der Lage ist, einen zuvor geschlossenen Datenträger wiederaufzunehmen, kann ein Wiederaufnahmeereignis manuell ausgelöst werden. Wenn Sie die Video-Tracking-Sitzung starten, legen Sie die optionale Eigenschaft zur Videowiederaufnahme fest.
 
 ### Android
 
