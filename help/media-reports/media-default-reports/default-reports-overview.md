@@ -1,7 +1,7 @@
 ---
 seo-title: Übersicht über die Standardberichte
 title: Übersicht über die Standardberichte
-uuid: a 078 aa 59-3 b 2 d -45 b 2-9 e 66-3 d 9 c 29 c 82 f 0 c
+uuid: a078aa59-3b2d-45b2-9e66-3d9c29c82f0c
 translation-type: tm+mt
 source-git-commit: 36d65c188e341e18f55d0d0f8b84833f76f07392
 
@@ -18,8 +18,8 @@ Medienberichte werden auf der Registerkarte **[!UICONTROL Berichte]aufgelistet.*
 
 | Medienbericht | Beschreibung     | Allgemeine geschäftliche Einblicke       |
 | --- | --- | --- |
-| [Medienübersicht](media-reports-overview.md) | Zeigt eine Ansammlung von Messwerten an, um schnell überprüfen zu können, ob das Medium die Erwartungen erfüllt. In einem Diagramm werden Medien neben Anzeigenimpressionen angezeigt, damit Sie diese Metriken schnell anzeigen und vergleichen können. | <ul> <li>Zu den Summen gehören für die wichtigsten Kennzahlen wie Inhaltsbeginn, Abschlussrate, durchschnittliche Zeit im Streaming und durchschnittliche Medienelemente pro Besuch.  </li> <li>Gesamtinhalts- und Anzeigenstarts für Medien gefiltert nach Gerätetyp oder Land.  </li> </ul> |
-| [Mediendetails](media-reports-detail.md) | Enthält detaillierte Metriken für alle Medien, einschließlich gleichzeitiger Besucher, Starts, Abschlussrate, Wiedergabe in Prozent und Anzeigenaufrufe. | <ul> <li>Gesamtwerte für Top-Metriken, einschließlich Medien-Starts, Inhalts- und Anzeigenstarts und durchschnittlicher Inhalt pro Besuch  </li> <li>Gesamtinhalts- und Anzeigenstarts für Medien gefiltert nach Gerätetyp oder Land.  </li> </ul> |
+| [Medienübersicht](media-reports-overview.md) | Zeigt eine Ansammlung von Messwerten an, um schnell überprüfen zu können, ob das Medium die Erwartungen erfüllt. In einem Diagramm werden die Medienstarts neben den Anzeigenimpressionen angezeigt, damit Sie diese Metriken schnell anzeigen und vergleichen können. | <ul> <li>Zu den Summen gehören für die wichtigsten Kennzahlen wie Inhaltsbeginn, Abschlussrate, durchschnittliche Zeit im Streaming und durchschnittliche Medienelemente pro Besuch.  </li> <li>Gesamtinhalts- und Anzeigenstarts für Medien gefiltert nach Gerätetyp oder Land.  </li> </ul> |
+| [Mediendetails](media-reports-detail.md) | Enthält detaillierte Metriken für alle Medien, einschließlich gleichzeitiger Besucher, Starts, Abschlussrate, Wiedergabe in Prozent und Anzeigenaufrufe. | <ul> <li>Gesamtwerte für Top-Metriken, einschließlich Medienstarts, Inhalt und Anzeigenstarts, sowie durchschnittlicher Inhalt pro Besuch.  </li> <li>Gesamtinhalts- und Anzeigenstarts für Medien gefiltert nach Gerätetyp oder Land.  </li> </ul> |
 | [Medientagesabschnitt](media-reports-daypart.md) | Zeigt Inhaltsstarts nach Tageszeit an, damit Sie schnell ermitteln können, wann Ihre Zielgruppe mit Videos interagiert. | <ul> <li>Zielgruppeninteraktion nach Tageszeit  </li> <li>Zielgruppeninteraktion im Vergleich zu vorherigen Datumsbereichen  </li> </ul> |
 | [Gleichzeitige Medienbesucher](media-concurrent-viewers.md) | Zeigt die gleichzeitigen Zuschauer während eines Tages an. Die Daten können nach Inhalt, Gerätetyp und Land gefiltert werden. | <ul> <li>Zielgruppeninteraktion pro Minute über einen 24-Stunden-Zeitraum.  </li> </ul> |
 | Medienereignisse und Medienvariablen | Weitere Berichte sind verfügbar. Die Medienkennzahlen und -dimensionen sind standardmäßige Analytics-Variablen, die direkt gemeldet und anderen Analytics-Berichten hinzugefügt werden können. | <ul> <li>Medienkonversion (Ereignisse, die nach der Wiedergabe des Mediums stattfinden) durch Generierung eines Berichts mit Besuchen, die den Content-Typ „Medien“ umfassen.  </li> <li>Nächster/vorheriger Medienfluss über die Mediennamenseigenschaft.  </li> </ul> |
