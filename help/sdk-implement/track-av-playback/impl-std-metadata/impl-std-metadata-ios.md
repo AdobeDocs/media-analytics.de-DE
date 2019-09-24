@@ -1,9 +1,9 @@
 ---
-description: 'null '
-seo-description: 'null '
+description: 'null'
+seo-description: 'null'
 seo-title: Standard-Metadaten in iOS implementieren
 title: Standard-Metadaten in iOS implementieren
-uuid: 75 a 80 f 08-4 a 95-49 d 4-a 27 a -8 ce 531 d 64 d 31
+uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
