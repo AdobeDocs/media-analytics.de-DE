@@ -1,7 +1,7 @@
 ---
 seo-title: Primetime
 title: Primetime
-uuid: 3 d 5 a 5 ebd-b 97-40 f 6-ba 75-bba 1 bae 3 a 081
+uuid: 3d5a5ebd-b897-40f6-ba75-bba1bae3a081
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -26,5 +26,5 @@ TVSDK ist bereits in das Medien-SDK integriert, was die Implementierung auf alle
 
 >[!NOTE]
 >
->Für diesen Implementierungspfad müssen Kunden ihren Kundenbetreuer/Kundenbetreuer kontaktieren, um eine neue Verkaufsbestellung zu signieren, da Media Analytics über eine eindeutige SKU und Änderungen von einem Preismodell basiert, das auf Serveraufrufen basiert, die auf Medienstreams basieren. Von Ihrem Support-Mitarbeiter/Account-Manager erhalten Sie Informationen zum Kauf von TVSDK.
+>Für diesen Implementierungspfad müssen Kunden sich an ihren Vertriebsmitarbeiter/Kundenbetreuer wenden, um eine neue Verkaufsbestellung zu unterzeichnen, da Media Analytics eine eindeutige SKU besitzt und Änderungen von einem Preismodell auf der Grundlage von Serveraufrufen zu einem auf Medienströmen basierenden Modell vorgenommen werden. Von Ihrem Support-Mitarbeiter/Account-Manager erhalten Sie Informationen zum Kauf von TVSDK.
 
