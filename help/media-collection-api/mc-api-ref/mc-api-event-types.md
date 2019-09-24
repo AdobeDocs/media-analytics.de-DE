@@ -1,7 +1,7 @@
 ---
 seo-title: Ereignistypen und -beschreibungen
 title: Ereignistypen und -beschreibungen
-uuid: bc 4 f 75 a 7-ea 22-47 eb-a 50 d -5 f 41274 c 6 d 41
+uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## sessionStart
 
-Sent with the `sessions` call. Wenn die Antwort zurückgegeben wird, extrahieren Sie die Sitzungs-ID aus dem Location-Header und verwenden Sie sie für nachfolgende Aufrufe an den Sammlungsserver.
+Gesendet mit dem `sessions` Anruf. Wenn die Antwort zurückgegeben wird, extrahieren Sie die Sitzungs-ID aus dem Location-Header und verwenden Sie sie für nachfolgende Aufrufe an den Sammlungsserver.
 
 ## play
 
@@ -25,63 +25,63 @@ Sent when the player changes state to "playing" from another state (i.e., the `o
 
 Ping-Ereignisse sollten *nicht* die `params`-Map im Anfrageinhalt enthalten.
 
-## Bitratechange
+## bitrateChange
 
-Wird gesendet, wenn sich die Bitrage ändert.
+Wird gesendet, wenn sich die Bitrate ändert.
 
 ## bufferStart
 
-Wird gesendet, wenn Pufferung beginnt. Es gibt keinen Ereignistyp `bufferResume`. A `bufferResume` is inferred when you send a `play` event after `bufferStart`.
+Wird gesendet, wenn die Pufferung beginnt. Es gibt keinen Ereignistyp `bufferResume`. A `bufferResume` is inferred when you send a `play` event after `bufferStart`.
 
 ## pauseStart
 
-Wird gesendet, wenn der Benutzer auf Anhalten klickt. Es gibt keinen Ereignistyp `resume`. A `resume` is inferred when you send a `play` event after a `pauseStart`.
+Wird gesendet, wenn der Benutzer Pause drückt. Es gibt keinen Ereignistyp `resume`. A `resume` is inferred when you send a `play` event after a `pauseStart`.
 
 ## adBreakStart
 
-Signalisiert den Start einer Werbeunterbrechung
+Gibt den Beginn einer Werbeunterbrechung an
 
 ## adStart
 
-Signalisiert den Start einer Anzeige
+Gibt den Beginn einer Anzeige an
 
 ## adComplete
 
-Signalisiert den Abschluss einer Werbeunterbrechung
+Gibt den Abschluss einer Werbeunterbrechung an
 
 ## adSkip
 
-Signalisiert, dass eine Anzeige übersprungen wird
+Signiert eine übersprungene Anzeige
 
 ## adBreakComplete
 
-Signalisiert den Abschluss einer Werbeunterbrechung
+Gibt den Abschluss einer Werbeunterbrechung an
 
 ## chapterStart
 
-Signalisiert den Start eines Kapitelsegments
+Gibt den Beginn eines Kapitelsegments an
 
 ## chapterSkip
 
-Signalisiert ein Kapitel überspringen
+Signiert eine Kapitelüberspringe
 
 ## chapterComplete
 
-Signalisiert den Abschluss eines Kapitels
+Gibt den Abschluss eines Kapitels an
 
 ## error
 
-Signalisiert einen Fehler.
+Gibt einen Fehler an.
 
 ## sessionEnd
 
-Dies wird dazu verwendet, die Media Analytics-Sicherung zu benachrichtigen, um die Sitzung sofort zu schließen, wenn der Benutzer die Anzeige des Inhalts abgebrochen hat und er nicht zurückkehrt.
+Dadurch wird das Media Analytics-Back-End benachrichtigt, dass die Sitzung sofort geschlossen wird, wenn der Benutzer die Anzeige des Inhalts abgebrochen hat und wahrscheinlich keine Rückkehr erfolgt.
 
 If you don't send a `sessionEnd`, an abandoned session will time-out normally (after no events are received for 10 minutes, or when no playhead movement occurs for 30 minutes), and the session is deleted by the backend.
 
 ## sessionComplete
 
-Wird gesendet, wenn das Ende des Hauptinhalts erreicht wird.
+Wird gesendet, wenn das Ende des Hauptinhalts erreicht wird
 
 >[!IMPORTANT]
 >
