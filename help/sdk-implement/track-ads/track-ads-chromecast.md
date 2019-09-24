@@ -1,7 +1,7 @@
 ---
 seo-title: Tracking von Anzeigen in Chromecast
 title: Tracking von Anzeigen in Chromecast
-uuid: 7 b 1 f 584 a -3472-416 c -944 c -5 f 5 ea 0 ee 5529
+uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit den 2. x sdks. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit den 2.x SDKs. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Anzeigen-Tracking-Konstanten
 
@@ -48,7 +48,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH); 
    ```
 
-1. Fügen Sie standardmäßig Standard- und/oder Anzeigenmetadaten über Kontextdatenvariablen an die Medienverfolgungssitzung an.
+1. Fügen Sie der Medienverfolgungssitzung optional Standard- und/oder Anzeigenmetadaten über Kontextdatenvariablen hinzu.
 
    * **Metadaten für Standardanzeigen:** Erstellen Sie für Metadaten für Standardanzeigen ein Wörterbuch der Schlüsselwertepaare für Standardanzeigenmetadaten unter Verwendung der Schlüssel für Ihre Plattform:
    * **Anwenderspezifische Anzeigenmetadaten:** Erstellen Sie für anwenderdefinierte Metadaten ein variables Objekt für die anwenderspezifischen Datenvariablen und füllen Sie es mit den Daten für das aktuelle Anzeigen-Asset:
