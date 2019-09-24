@@ -1,7 +1,7 @@
 ---
 seo-title: Roku-Metadatenelemente
 title: Roku-Metadatenelemente
-uuid: 2 ca 6 bb 1 d-c 545-43 d 3-9 c 3 e -63 b 890 aa 268 d
+uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
@@ -10,7 +10,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 # Roku-Metadatenschlüssel{#roku-metadata-keys}
 
-Standard-Video-, Audio- und Anzeigenmetadaten können für Medien- und Anzeigeninformationen festgelegt werden. Geben Sie mithilfe der Konstantenschlüssel für Video-/Anzeigen-Metadaten das Wörterbuch an, das die Standardmetadaten zum Informationsobjekt enthält, bevor Sie die APIs verfolgen. Eine vollständige Liste der standardmäßigen Metadaten-Konstanten finden Sie unten in den Tabellen mit Beispielen.
+Standard-Metadaten für Video, Audio und Anzeige können für Medien- bzw. Anzeigeninfo-Objekte festgelegt werden. Geben Sie mithilfe der Konstantenschlüssel für Video-/Anzeigen-Metadaten das Wörterbuch an, das die Standardmetadaten zum Informationsobjekt enthält, bevor Sie die APIs verfolgen. Eine vollständige Liste der standardmäßigen Metadaten-Konstanten finden Sie unten in den Tabellen mit Beispielen.
 
 ## Video-Metadaten-Konstanten {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
 
@@ -34,7 +34,7 @@ Standard-Video-, Audio- und Anzeigenmetadaten können für Medien- und Anzeigeni
 | Feed | `a.media.feed` | `MEDIA_VideoMetadataKeyFEED` |
 | Stream-Format | `a.media.format` | `MEDIA_VideoMetadataKeySTREAM_FORMAT` |
 
-## Audio metadata constants {#audio-metadata-constants}
+## Audio-Metadatenkonstanten {#audio-metadata-constants}
 
 | Metadatenname | Kontextdatenschlüssel | Konstantenname |
 | --- | --- | --- |
@@ -70,8 +70,8 @@ Sie können folgende Konstanten verwenden, um Medienereignisse zu verfolgen:
 
 | Konstante | Beschreibung   |
 | --- | --- |
-| `MEDIA_STANDARD_MEDIA_METADATA` | Constant to set metadata on the `MediaInfo` `trackLoad` |
-| `MEDIA_STANDARD_AD_METADATA` | Constant to set the ad metadata on the `EventData` `trackEvent` |
+| `MEDIA_STANDARD_MEDIA_METADATA` | Konstante zum Festlegen von Metadaten auf der `MediaInfo``trackLoad` |
+| `MEDIA_STANDARD_AD_METADATA` | Konstante zum Festlegen der Anzeigenmetadaten auf der `EventData``trackEvent` |
 | `MEDIA_RESUMED` | Konstante für das Senden eines Heartbeats zur Videowiederaufnahme. To resume video tracking of previously stopped content, you need to set the `MEDIA_RESUMED` property on the `mediaInfo` object when you call `mediaTrackLoad`. (`MEDIA_RESUMED` is not an event that you can track using the `mediaTrackEvent` API.) `MEDIA_RESUMED` sollte auf true festgelegt werden, wenn die Anwendung das Tracking des Inhalts wiederaufnehmen möchte, nachdem ein Anwender die Wiedergabe angehalten hat und sie nun fortsetzen möchte. <br/><br/>Beispiel: Ein Anwender sieht sich 30 % des Inhalts an und schließt dann die App. Hierdurch wird die Sitzung beendet. Later, if the same user returns to the same content, and the application allows that user to resume from the same point where they left off, then the application should set `MEDIA_RESUMED` to "true" while calling the `mediaTrackLoad` API. So lassen sich die beiden unterschiedlichen Mediensitzungen für denselben Videoinhalt verknüpfen. Im Folgenden finden Sie ein Implementierungsbeispiel: <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>So erstellen Sie eine neue Sitzung für das Medium, jedoch sendet das SDK hierdurch auch eine Heartbeat-Anfrage mit dem Ereignistyp „resume“ (Fortsetzen), die in Berichten verwendet werden kann, um die beiden Mediensitzungen zu verknüpfen. |
 
 ### Content-Typ-Konstanten
