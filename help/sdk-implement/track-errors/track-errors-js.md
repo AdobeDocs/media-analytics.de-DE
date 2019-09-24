@@ -1,7 +1,7 @@
 ---
 seo-title: Tracking von Fehlern in JavaScript
 title: Tracking von Fehlern in JavaScript
-uuid: 5 a 4 fc 5 df -2677-4189-92 af -5 cd 074847 b 39
+uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -16,7 +16,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Fehlerverfolgung implementieren
 
-1. Verfolgen Sie Medienplayer-Fehler:
+1. Medienplayer-Fehler verfolgen:
 
    ```js
    onPlayerError = function() { 
@@ -26,5 +26,5 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!NOTE]
 >
->Die Verfolgung von Fehlern im Medienplayer stoppt die Medienverfolgungssitzung nicht. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd` after calling `trackError`.
+>Die Verfolgung von Medienplayer-Fehlern beendet die Medienverfolgungssitzung nicht. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd` after calling `trackError`.
 
