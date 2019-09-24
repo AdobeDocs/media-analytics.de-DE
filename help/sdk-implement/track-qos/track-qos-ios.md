@@ -1,7 +1,7 @@
 ---
 seo-title: Tracking der Erlebnisqualität auf iOS
 title: Tracking der Erlebnisqualität auf iOS
-uuid: cae 2 c 142-ed 39-4234-a 711-765 dcabc 5415
+uuid: cae2c142-ed39-4234-a711-765dcabc5415
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -14,7 +14,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie hier die 1.x-Entwicklerhandbücher herunterladen.[SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
-## Implementierungs-QOS
+## Implementierung von QOS
 
 1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
 
@@ -29,7 +29,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >Diese Variablen sind nur erforderlich, wenn Sie planen, qos zu verfolgen.
+   >Diese Variablen sind nur erforderlich, wenn Sie planen, QoS zu verfolgen.
 
    Erstellung von QoS-Objekten:
 
@@ -53,5 +53,5 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >Aktualisieren Sie das qos-Objekt und rufen Sie das Bitratenänderungsereignis bei jeder Bitratenänderung auf. So erhalten Sie möglichst präzise Daten.
+   >Aktualisieren Sie das QoS-Objekt und rufen Sie bei jeder Bitratenänderung das Bitratenänderungsereignis auf. So erhalten Sie möglichst präzise Daten.
 
