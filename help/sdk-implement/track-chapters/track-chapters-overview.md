@@ -1,7 +1,7 @@
 ---
 seo-title: Überblick
 title: Überblick
-uuid: 3 fe 32425-5 e 2 a -4886-8 fea-d 91 d 15671 bb 0
+uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -12,11 +12,11 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit 2. x sdks. Wenn Sie Version 1.x des SDKs implementieren möchten, können Sie hier das Entwicklerhandbuch herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit 2.x SDKs. Wenn Sie Version 1.x des SDKs implementieren möchten, können Sie hier das Entwicklerhandbuch herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
-Kapitel- und Segmentverfolgung ist für benutzerdefinierte Medienkapitel oder Segmente verfügbar. Einige gängige Einsatzmöglichkeiten für die Kapitelverfolgung sind die Definition benutzerdefinierter Segmente basierend auf Medieninhalten (wie z. B. Baseball-Schriften) oder die Definition von Inhaltssegmenten zwischen Werbeunterbrechungen. Chapter tracking is **not** required for core media tracking implementations.
+Die Kapitel- und Segmentverfolgung ist für benutzerdefinierte Medienkapitel oder Segmente verfügbar. Einige gängige Verwendungszwecke für die Kapitelverfolgung sind die Definition benutzerspezifischer Segmente auf der Grundlage von Medieninhalten (wie z. B. Baseballeinführungen) oder die Definition von Inhaltssegmenten zwischen Werbeunterbrechungen. Chapter tracking is **not** required for core media tracking implementations.
 
-Das Kapitel-Tracking beinhaltet Kapitelstarts, -beendigungen und übersprungene Kapitel. Sie können die Media Player-API mit angepasster Segmentierungslogik verwenden, um Kapitelereignisse zu identifizieren und die erforderlichen und optionalen Kapitelvariablen auszufüllen.
+Das Kapitel-Tracking beinhaltet Kapitelstarts, -beendigungen und übersprungene Kapitel. Sie können die Medienplayer-API mit angepasster Segmentierungslogik verwenden, um Kapitelereignisse zu identifizieren und die erforderlichen und optionalen Kapitelvariablen zu füllen.
 
 ## Player-Ereignisse
 
@@ -42,7 +42,7 @@ Das Kapitel-Tracking beinhaltet Kapitelstarts, -beendigungen und übersprungene 
 
    >[!NOTE]
    >
-   >Diese Variablen sind nur erforderlich, wenn Sie die Kapitel verfolgen möchten.
+   >Diese Variablen sind nur erforderlich, wenn Sie planen, Kapitel zu verfolgen.
 
    | Variablenname | Beschreibung | erforderlich |
    | --- | --- | :---: |
@@ -57,7 +57,7 @@ Das Kapitel-Tracking beinhaltet Kapitelstarts, -beendigungen und übersprungene 
 1. Wenn die Kapitelwiedergabe nicht abgeschlossen wurde, weil der Anwender das Kapitel übersprungen hat (z. B. zu einer Position außerhalb des Kapitels springt), rufen Sie das `ChapterSkip`-Ereignis in der MediaHeartbeat-Instanz auf.
 1. Wiederholen Sie die Schritte 1 bis 5, wenn es weitere Kapitel gibt.
 
-Der folgende Beispielcode verwendet das javascript 2. x SDK für einen HTML 5-Medienplayer. Sie sollten diesen Code mit dem Core-Media-Wiedergabecode verwenden.
+Im folgenden Beispielcode wird das JavaScript 2.x SDK für einen HTML5-Medienplayer verwendet. Sie sollten diesen Code mit dem Core-Media-Wiedergabecode verwenden.
 
 ```js
 /* Call on chapter start */ 
