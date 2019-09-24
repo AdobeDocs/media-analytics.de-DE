@@ -1,7 +1,7 @@
 ---
 seo-title: Sitzungsanfrage
 title: Sitzungsanfrage
-uuid: 9609192 d -4 f 7 f -4 fb 5-844 f-ea 89 d 47 c 4 e 30
+uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 translation-type: tm+mt
 source-git-commit: f1c9f5f4cbcd4c043e1c7b4a5037c134b2bdd380
 
@@ -21,7 +21,7 @@ Keine
 
 ## Anfrageinhalt
 
-Der Anforderungstext muss JSON sein und muss dieselbe Struktur haben wie dieser Beispielanforderungskörper:
+Die Anforderungsstelle muss JSON sein und die gleiche Struktur wie die folgende MusteranforderungsTextstelle haben:
 
 ```
 { 
@@ -84,7 +84,7 @@ Age: 0
 Via: 1.1 wsg.sanjose08
 ```
 
-`Location:` header - Der `/api/v1/` Teil stellt die API-Version bereit. The part after `[…]sessions/` is the Session ID.
+`Location:` header - Der `/api/v1/` Teil enthält die API-Version. Der nachfolgende Teil `[…]sessions/` ist die Sitzungs-ID.
 
 ## Antwortcodes
 
