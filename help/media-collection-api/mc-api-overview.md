@@ -1,7 +1,7 @@
 ---
 seo-title: Überblick
 title: Überblick
-uuid: c 14 bdbef -5846-4 d 31-8 a 14-8 e 9 e 0 e 9 c 9861
+uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -10,23 +10,23 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 # Überblick{#overview}
 
-Die Mediensammlungs-API wird von Adobe als RESTful-Alternative zum Client-seitigen Medien-SDK angeboten. Mit der Mediensammlungs-API kann Ihr Player Audio- und Videoereignisse mithilfe von RESTful-HTTP-Anfragen verfolgen. Die Mediensammlung-API bietet die gleiche Echtzeit-Verfolgung des Media SDK sowie eine zusätzliche Funktion:
+Die Mediensammlungs-API wird von Adobe als RESTful-Alternative zum Client-seitigen Medien-SDK angeboten. Mit der Mediensammlungs-API kann Ihr Player Audio- und Videoereignisse mithilfe von RESTful-HTTP-Anfragen verfolgen. Die Media Collection API bietet die gleiche Echtzeitverfolgung des Media SDK sowie eine zusätzliche Funktion:
 
-* **Heruntergeladene Inhaltsverfolgung**
+* **Nachverfolgung heruntergeladener Inhalte**
 
-   Diese Funktion bietet Ihnen die Möglichkeit, Medien zu verfolgen, während ein Benutzer offline ist und über die lokale Speicherung von Ereignisdaten informiert wird, bis das Gerät des Benutzers online zurückkehrt. (Weitere Details unter [Tracking heruntergeladener Inhalte](track-downloaded-content.md).)
+   Diese Funktion bietet Ihnen die Möglichkeit, Medien zu verfolgen, während ein Benutzer offline ist, indem Sie Ereignisdaten lokal speichern, bis das Gerät des Benutzers online zurückkehrt. (Weitere Details unter [Tracking heruntergeladener Inhalte](track-downloaded-content.md).)
 
-Die Mediensammlungs-API ist im Grunde ein Adapter, der als serverseitige Version des Medien-SDK fungiert. Dies bedeutet, dass einige Aspekte der Media SDK-Dokumentation auch für die Media Collection API relevant sind. For example, both solutions use the same [Audio and Video Parameters](/help/metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](/help/media-reports/media-reports-enable.md)
+Die Mediensammlungs-API ist im Grunde ein Adapter, der als serverseitige Version des Medien-SDK fungiert. Das bedeutet, dass einige Aspekte der Media SDK-Dokumentation auch für die Media Collection-API relevant sind. Beispielsweise verwenden beide Lösungen dieselben [Audio- und Video-Parameter](/help/metrics-and-metadata/audio-video-parameters.md), und die erfassten Audio- und Videoverfolgungsdaten führen zu derselben [Berichterstellung und Analyse.](/help/media-reports/media-reports-enable.md)
 
 ## Datenfluss beim Medien-Tracking {#section_pwq_n34_qbb}
 
-Ein Medienplayer, der die Mediencollection-API implementiert, führt die restful-API-Verfolgung direkt an den Medienverfolgungs-Server weiter, während ein Player, der das Media SDK implementiert, Tracking-Aufrufe an die SDK-apis innerhalb der Player-App vornimmt. Da der Player mit der Mediensammlungs-API Aufrufe über das Internet sendet, muss er einen Teil der Verarbeitung übernehmen, den das Medien-SDK automatisch vornimmt. (Details in [Media Collection Implementation.](mc-api-impl/mc-api-quick-start.md))
+Ein Medienplayer, der die Media Collection-API implementiert, führt RESTful-API-Verfolgungsaufrufe direkt an den MedienverfolgungsBack-End-Server, während ein Player, der das Media SDK implementiert, Verfolgungsaufrufe an die SDK-APIs in der Player-App durchführt. Da der Player mit der Mediensammlungs-API Aufrufe über das Internet sendet, muss er einen Teil der Verarbeitung übernehmen, den das Medien-SDK automatisch vornimmt. (Details zur Implementierung der [Medienerfassung.](mc-api-impl/mc-api-quick-start.md))
 
-Die mit der Mediencollection-API erfassten Verfolgungsdaten werden gesendet und anfänglich anders verarbeitet als die in einem Media SDK-Player erfassten Verfolgungsdaten, aber dieselbe Verarbeitungs-Engine wird für beide Lösungen verwendet.
+Die mit der Media Collection-API erfassten Verfolgungsdaten werden zunächst anders gesendet und verarbeitet als die in einem Media SDK-Player erfassten Verfolgungsdaten. Für beide Lösungen wird jedoch dieselbe Verarbeitungsengine verwendet.
 
 ![](assets/col_api_overview_simple.png)
 
-## API Overview {#section_y4n_mcl_kcb}
+## API-Übersicht {#section_y4n_mcl_kcb}
 
 **URI:** Diese erhalten Sie von Ihrem Adobe-Support-Mitarbeiter.
 
@@ -34,7 +34,7 @@ Die mit der Mediencollection-API erfassten Verfolgungsdaten werden gesendet und 
 
 ### API-Aufrufe {#mc-api-calls}
 
-* **`sessions`-** Erstellt eine Sitzung mit dem Server und gibt eine Sitzungs-ID zurück, die in nachfolgenden `events` Aufrufen verwendet wird. Ihre Anwendung führt diesen Aufruf zu Beginn einer Tracking-Sitzung durch.
+* **`sessions`-** Legt eine Sitzung mit dem Server fest und gibt eine Sitzungs-ID zurück, die bei nachfolgenden `events` Aufrufen verwendet wird. Ihre Anwendung führt diesen Aufruf zu Beginn einer Tracking-Sitzung durch.
 
    ```
    {uri}/api/v1/sessions
@@ -73,12 +73,12 @@ Die mit der Mediencollection-API erfassten Verfolgungsdaten werden gesendet und 
 } 
 ```
 
-* `playerTime` - Obligatorisch für alle Anforderungen.
-* `eventType` - Obligatorisch für alle Anforderungen.
+* `playerTime` - Obligatorisch für alle Anfragen.
+* `eventType` - Obligatorisch für alle Anfragen.
 * `params`: Erforderlich für bestimmte `eventTypes`. Überprüfen Sie anhand des [JSON-Validierungsschemas](mc-api-ref/mc-api-json-validation.md), welche eventTypes erforderlich und welche optional sind.
 
 * `qoeData` - Optional für alle Anforderungen.
-* `customMetadata` - Optional für alle Anforderungen, aber nur gesendet mit `sessionStart`und `adStart``chapterStart` Ereignistypen.
+* `customMetadata` - Optional für alle Anforderungen, aber nur mit `sessionStart`, `adStart`und `chapterStart` Ereignistypen gesendet.
 
 Für jeden `eventType` gibt es ein öffentlich verfügbares [JSON-Validierungsschema](mc-api-ref/mc-api-json-validation.md), mit dessen Hilfe Sie die Parametertypen überprüfen und herausfinden können, welche Parameter für die einzelnen Ereignisse erforderlich sind.
 
