@@ -1,7 +1,7 @@
 ---
 seo-title: Schnellstart
 title: Schnellstart
-uuid: ca 20 bad 4-2 c 8 f -406 b -833 e-b 4883 a 9 aa 534
+uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,12 +12,12 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!TIP]
 >
->Gather the request data necessary for completing a successful [Session request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) to the Media Analytics (MA) Collection API back-end server. Sie können Ihre Anfragedaten schnell überprüfen, indem Sie Anfragen manuell senden (mit `curl`, Postman usw.). So erhalten Sie umgehend Feedback dazu, ob in Ihrer Anfrage Probleme mit falschen Datentypen oder Informationen vorliegen. Verwenden Sie die [JSON-Validierungsschemas](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md), um zu überprüfen, ob Sie die richtigen Anfragedaten bereitstellen.
+>Erfassen Sie die Anforderungsdaten, die zum Abschluss einer erfolgreichen [Sitzungsanfrage](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) beim Media Analytics (MA) Collection API-Back-End-Server erforderlich sind. Sie können Ihre Anfragedaten schnell überprüfen, indem Sie Anfragen manuell senden (mit `curl`, Postman usw.). So erhalten Sie umgehend Feedback dazu, ob in Ihrer Anfrage Probleme mit falschen Datentypen oder Informationen vorliegen. Verwenden Sie die [JSON-Validierungsschemas](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md), um zu überprüfen, ob Sie die richtigen Anfragedaten bereitstellen.
 
 1. Sammeln Sie standardmäßige, erforderliche Adobe Analytics- und Besucherdaten, die Sie für die Ausführung von Experience Cloud-Anwendungen bereitstellen müssen:
 
    * Experience Cloud-Organisations-ID des Besuchers
-   * Besucher-ID für Besucher-Experience Cloud
+   * Visitor Experience Cloud-Benutzer-ID
    * Analytics Report Suite-ID
    * Analytics-Tracking-Server-URL
 
@@ -49,9 +49,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!NOTE]
    >
-   >Sie müssen im JSON-Anforderungstext die richtigen Datentypen verwenden. `analytics.enableSSL` Erfordert z. B. ein boolesches, `media.length` es ist numerisch usw. You can check parameter types and mandatory versus optional requirements by checking the [JSON validation schemas.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+   >Sie müssen die richtigen Datentypen im JSON-Anforderungstext verwenden. E.g., `analytics.enableSSL` requires a boolean, `media.length` is numeric, etc. You can check parameter types and mandatory versus optional requirements by checking the [JSON validation schemas.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
-1. Senden Sie Anforderungen an den MA Collection API-Endpunkt. Wenn die Anfrage-Payload ungültig ist, ermitteln Sie das Problem und versuchen es erneut, bis Sie eine `201 Created`-Antwort erhalten. In this `curl` example, the JSON request body is in a file named `sample_data_session`:
+1. Senden von Sitzungsanfragen an den API-Endpunkt für die MA-Sammlung. Wenn die Anfrage-Payload ungültig ist, ermitteln Sie das Problem und versuchen es erneut, bis Sie eine `201 Created`-Antwort erhalten. In this `curl` example, the JSON request body is in a file named `sample_data_session`:
 
    ```
    $ curl -i -d \ 
