@@ -1,7 +1,7 @@
 ---
 seo-title: Android einrichten
 title: Android einrichten
-uuid: 3 ffe 3276-a 104-4182-9220-038729 e 9 f 3 d 5
+uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,10 +12,8 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Voraussetzungen
 
-* **Beziehen Sie gültige Konfigurationsparameter für das Media SDK**
-Diese Parameter können von einem Adobe-Vertreter erhalten werden, nachdem Sie Ihr Analytics-Konto eingerichtet haben.
-* **Adbmobile for Android in Ihrer Anwendung**
-implementieren. Weitere Informationen zur Adobe Mobile SDK-Dokumentation finden Sie unter [Android SDK 4. x für Experience Cloud-Lösungen.](https://marketing.adobe.com/resources/help/en_US/mobile/android/)
+* **Abrufen gültiger Konfigurationsparameter für das Media SDK** Diese Parameter können Sie von einem Adobe-Kundenbetreuer erhalten, nachdem Sie Ihr Analytics-Konto eingerichtet haben.
+* **Implementieren von ADBMobile für Android in Ihre Anwendung** Weitere Informationen zur Adobe Mobile SDK-Dokumentation finden Sie unter [Android SDK 4.x für Experience Cloud-Lösungen.](https://marketing.adobe.com/resources/help/en_US/mobile/android/)
 * **Stellen Sie in Ihrem Medienplayer folgende Funktionen bereit:**
    * *Eine API, um Player-Ereignisse zu abonnieren:* Die Medien-SDK erfordert, dass Sie einige einfache APIs aufrufen, wenn Ereignisse in Ihrem Player auftreten.
    * *Eine API, die Playerinformationen bereitstellt:* Diese Informationen enthalten Details wie z. B. Medienname und Abspielposition.
