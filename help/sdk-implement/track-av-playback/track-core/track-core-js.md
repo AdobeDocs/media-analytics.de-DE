@@ -1,7 +1,7 @@
 ---
 seo-title: Tracking von Core-Wiedergaben auf JavaScript
 title: Tracking von Core-Wiedergaben auf JavaScript
-uuid: 3 d 6 e 0 ab 1-899 a -43 c 3-b 632-8276 e 84345 ab
+uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -11,9 +11,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 # Tracking von Core-Wiedergaben auf JavaScript{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
->Diese Dokumentation enthält die Verfolgung in Version 2. x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
+>Diese Dokumentation behandelt die Verfolgung in Version 2.x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
 
-1. **Initiales Tracking-Setup**
+1. **Einrichtung der anfänglichen Verfolgung**
 
    Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
@@ -24,8 +24,8 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `name` | Medienname | Ja |
    | `mediaid` | Eindeutige Medienkennung | Ja |
    | `length` | Medienlänge | Ja |
-   | `streamType` | Stream type (see _StreamType constants_ below) | Ja |
-   | `mediaType` | Media type (see _MediaType constants_ below) | Ja |
+   | `streamType` | Stream-Typ (siehe _StreamType-Konstanten_ unten) | Ja |
+   | `mediaType` | Medientyp (siehe _MediaType-Konstanten_ unten) | Ja |
 
    **`StreamType`Konstanten:**
 
@@ -56,22 +56,22 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. **Anhängen von Metadaten**
 
-   Fügen Sie optional standardmäßige und/oder benutzerdefinierte Metadatenobjekte über Kontextdatenvariablen an die Verfolgungssitzung an.
+   Fügen Sie der Verfolgungssitzung optional Standard- und/oder benutzerdefinierte Metadatenobjekte über Kontextdatenvariablen hinzu.
 
-   * **Standardmetadaten**
+   * **Standard-Metadaten**
 
       [Standard-Metadaten in JavaScript implementieren](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
 
       >[!NOTE]
       >
-      >Das Hinzufügen des Standard-Metadatenobjekts zum Medienobjekt ist optional.
+      >Das Anhängen des Standard-Metadatenobjekts an das Medienobjekt ist optional.
 
       * Medien-Metadatenschlüssel API-Referenz: [Standard-Metadatenschlüssel - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
          See the comprehensive set of available metadata here: [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)
    * **Benutzerspezifische Metadaten**
 
-      Erstellen Sie ein Variablenobjekt für die benutzerdefinierten Variablen und füllen Sie die Daten für diese Medien aus. Beispiel:
+      Erstellen Sie ein Variablenobjekt für die benutzerdefinierten Variablen und füllen Sie die Daten für dieses Medium aus. Beispiel:
 
       ```js
       /* Set custom context data */ 
@@ -83,9 +83,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       ```
 
 
-1. **Verfolgen Sie die Absicht, die Wiedergabe zu starten.**
+1. **Verfolgung der Absicht, die Wiedergabe zu starten**
 
-   To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance:
+   Um mit der Verfolgung einer Mediensitzung zu beginnen, rufen Sie `trackSessionStart` die Media Heartbeat-Instanz auf:
 
    ```js
    mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
@@ -103,7 +103,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    >
    >If you are not using custom metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
 
-1. **Verfolgen der tatsächlichen Wiedergabe**
+1. **Den tatsächlichen Start der Wiedergabe verfolgen**
 
    Identify the event from the media player for the beginning of the playback, where the first frame of the media is rendered on the screen, and call `trackPlay`:
 
@@ -111,7 +111,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    mediaHeartbeat.trackPlay();
    ```
 
-1. **Rückverfolgung der Wiedergabe**
+1. **Verfolgen Sie den Abschluss der Wiedergabe.**
 
    Identify the event from the media player for the completion of the playback, where the user has watched the content until the end, and call `trackComplete`:
 
@@ -129,17 +129,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` markiert das Ende einer Verfolgungssitzung. Wenn die Sitzung erfolgreich bis zum Ende wiedergegeben wurde und der Anwender den Inhalt bis zum Schluss angesehen hat, müssen Sie `trackComplete` vor `trackSessionEnd` aufrufen. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+   >`trackSessionEnd` markiert das Ende einer Tracking-Sitzung. Wenn die Sitzung erfolgreich bis zum Ende wiedergegeben wurde und der Anwender den Inhalt bis zum Schluss angesehen hat, müssen Sie `trackComplete` vor `trackSessionEnd` aufrufen. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
 
-1. **Verfolgen Sie alle möglichen Pausenereignisse.**
+1. **Alle möglichen Pausenszenarien verfolgen**
 
-   Identify the event from the media player for pause and call `trackPause`:
+   Identifizieren Sie das Ereignis zum Anhalten und Aufrufen im Medienplayer `trackPause`:
 
    ```js
    mediaHeartbeat.trackPause();
    ```
 
-   **Anhalten-Szenarios**
+   **Szenarios anhalten**
 
    Identify any scenario in which the media player will pause and make sure that `trackPause` is properly called. In allen folgenden Szenarios muss Ihre App `trackPause()` () aufrufen:
 
