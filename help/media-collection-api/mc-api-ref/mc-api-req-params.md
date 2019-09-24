@@ -17,14 +17,14 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 | `analytics.trackingServer` | Y | `sessionStart` | Die URL Ihres Adobe Analytics-Servers |
 | `analytics.reportSuite` | Y | `sessionStart` | Die ID, die Ihre Analytics-Reporting-Daten identifiziert |
 | `analytics.enableSSL` | N | `sessionStart` | True oder False für die SSL-Aktivierung |
-| `analytics.visitorId` | N | `sessionStart` | The Adobe Visitor ID is a custom ID you can use across multiple Adobe applications. The Heartbeat  equals the Analytics `visitorId``VID.` |
+| `analytics.visitorId` | N | `sessionStart` | Die Adobe-Besucher-ID ist eine benutzerdefinierte ID, die Sie in mehreren Adobe-Anwendungen verwenden können. Heartbeat `visitorId` entspricht Analytics `VID.` |
 
 ## Besucherdaten
 
 | Anforderungsschlüssel | Erforderlich | Festgelegt in |  Beschreibung  |
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | `sessionStart` | Die Experience Cloud-Organisations-ID, die Ihre Organisation innerhalb der Adobe Experience Cloud-Umgebung identifiziert |
-| `visitor.marketingCloudUserId` | N | `sessionStart` | This is the Experience Cloud User ID (ECID). In most scenarios this is the ID you should use to identify a user. The Heartbeat `marketingCloudUserId` equals the `MID` in Adobe Analytics. While not technically required, this parameter is necessary for accessing the Experience Cloud family of apps. |
+| `visitor.marketingCloudUserId` | N | `sessionStart` | Dies ist die Experience Cloud-Benutzer-ID (ECID). In den meisten Fällen ist dies die ID, die Sie zur Identifizierung eines Benutzers verwenden sollten. Der Heartbeat `marketingCloudUserId` entspricht dem `MID` in Adobe Analytics. Dieser Parameter ist zwar technisch nicht erforderlich, aber für den Zugriff auf die Apps der Experience Cloud-Familie erforderlich. |
 | `visitor.aamLocationHint` | N | `sessionStart` | Stellt Adobe Audience Manager-Edge-Daten bereit |
 | `appInstallationId` | N | `sessionStart` | Die appInstallationId identifiziert Anwendung und Gerät eindeutig. |
 
@@ -38,7 +38,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 | `media.contentType` | Y | `sessionStart` | Format des Streams (hierbei kann es sich um eine beliebige Zeichenfolge handeln, empfohlen werden jedoch Werte wie „Live“, „VOD“ oder „Linear“) |
 | `media.playerName` | Y | `sessionStart` | Der Name des Players, der für das Rendering des Inhalts verantwortlich ist |
 | `media.channel` | Y | `sessionStart` | Der Verbreitungskanal für den Inhalt. Hierbei kann es sich um den Namen einer App, einer Website oder eines anderen Assets handeln. |
-| `media.resume` | N | `sessionStart` | Indicates whether or not a user is resuming a previous session (as opposed to starting a new session) |
+| `media.resume` | N | `sessionStart` | Gibt an, ob ein Benutzer eine vorherige Sitzung wiederaufnimmt (statt eine neue Sitzung zu starten) |
 | `media.sdkVersion` | N | `sessionStart` | Die vom Player verwendete SDK-Version |
 
 ## Standardmäßige Inhaltsmetadaten
@@ -112,7 +112,7 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 >[!NOTE]
 >
->Media Analytics (MA) ist in die Apps der Experience Cloud-Familie (Adobe Analytics, Audience Manager, Target usw.) integriert. Sie benötigen eine Experience Cloud ID, um auf diese Anwendungen zuzugreifen. _The ECID is what you should use to identify users in most scenarios._
+>Media Analytics (MA) ist in die Apps der Experience Cloud-Familie (Adobe Analytics, Audience Manager, Target usw.) integriert. Sie benötigen eine Experience Cloud ID, um auf diese Anwendungen zuzugreifen. _Mit der ECID können Sie Benutzer in den meisten Szenarien identifizieren._
 
 ### appInstallationId
 
@@ -153,7 +153,7 @@ Beachten Sie, dass der Wert `visitor.customerIDs` über mehrere Objekte im angeg
 
 ### visitor.aamLocationHint
 
-This parameter indicates which Adobe Audience Manager (AAM) Edge would be hit when Adobe Analytics sends the customer data to Audience Manager. Wenn Sie diesen Parameter nicht übergeben, wird er von Adobe fest auf 1 codiert. Das ist insbesondere dann wichtig, wenn Endanwender ihre Geräte an geografisch weit entfernten Standorten verwenden (z. B. US-Ost- und -Westküste, Europa, Asien). Andernfalls werden die Daten auf verschiedene AAM-Edges aufgeteilt.
+Dieser Parameter gibt an, welcher Adobe Audience Manager (AAM) Edge betroffen sein würde, wenn Adobe Analytics die Kundendaten an Audience Manager sendet. Wenn Sie diesen Parameter nicht übergeben, wird er von Adobe fest auf 1 codiert. Das ist insbesondere dann wichtig, wenn Endanwender ihre Geräte an geografisch weit entfernten Standorten verwenden (z. B. US-Ost- und -Westküste, Europa, Asien). Andernfalls werden die Daten auf verschiedene AAM-Edges aufgeteilt.
 
 ### media.resume
 
