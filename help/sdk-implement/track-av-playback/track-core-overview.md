@@ -1,18 +1,18 @@
 ---
-seo-title: Tracking-Übersicht
-title: Tracking-Übersicht
-uuid: 7 b 8 e 2 f 76-bc 4 e -4721-8933-3 e 4453 b 01788
+seo-title: Verfolgungsübersicht
+title: Verfolgungsübersicht
+uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
 
-# Tracking-Übersicht{#tracking-overview}
+# Verfolgungsübersicht{#tracking-overview}
 
 >[!IMPORTANT]
 >
->Diese Dokumentation enthält die Verfolgung in Version 2. x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Diese Dokumentation behandelt die Verfolgung in Version 2.x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Player-Ereignisse
 
@@ -22,7 +22,7 @@ Das Tracking der Core-Wiedergabe umfasst die Verfolgung der Medienladung, des Me
 
 * Erstellen Sie das Medienobjekt.
 * Metadaten ausfüllen
-* Aufruf `trackSessionStart`; Beispiel: `trackSessionStart(mediaObject, contextData)`
+* Aufruf `trackSessionStart`;Beispiel: `trackSessionStart(mediaObject, contextData)`
 
 ### Beim Medienstart
 
@@ -59,7 +59,7 @@ Das Tracking der Core-Wiedergabe umfasst die Verfolgung der Medienladung, des Me
 
 >[!TIP]
 >
->Die Position der Abspielleiste wird als Teil des Konfigurationscodes und des Konfigurationscodes festgelegt. Weitere Informationen finden `getCurrentPlayheadTime`Sie unter [Übersicht: Allgemeine Implementierungsrichtlinien.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>Die Position der Abspielleiste wird als Teil des Einrichtungs- und Konfigurationscodes festgelegt. Weitere Informationen `getCurrentPlayheadTime`finden Sie unter [Übersicht: Allgemeine Umsetzungsleitlinien.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## Implementierung {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -101,7 +101,7 @@ Das Tracking der Core-Wiedergabe umfasst die Verfolgung der Medienladung, des Me
 
       >[!NOTE]
       >
-      >Das Hinzufügen des Standard-Metadatenobjekts zum Medienobjekt ist optional.
+      >Das Anhängen des Standard-Metadatenobjekts an das Medienobjekt ist optional.
 
       Instanziieren Sie ein Standard-Metadatenobjekt, füllen Sie die gewünschten Variablen aus und setzen Sie das Metadatenobjekt auf das Media Heartbeat-Objekt.
 
@@ -127,7 +127,7 @@ Das Tracking der Core-Wiedergabe umfasst die Verfolgung der Medienladung, des Me
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` markiert das Ende einer Verfolgungssitzung. Wenn die Sitzung erfolgreich bis zum Ende wiedergegeben wurde und der Anwender den Inhalt bis zum Schluss angesehen hat, müssen Sie `trackComplete` vor `trackSessionEnd` aufrufen. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+   >`trackSessionEnd` markiert das Ende einer Tracking-Sitzung. Wenn die Sitzung erfolgreich bis zum Ende wiedergegeben wurde und der Anwender den Inhalt bis zum Schluss angesehen hat, müssen Sie `trackComplete` vor `trackSessionEnd` aufrufen. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
 
 1. **Tracking aller möglichen Pausenszenarien:** Identifizieren Sie das Ereignis aus dem Medienplayer, das das Anhalten verursacht, und rufen Sie `trackPause` auf.
 
