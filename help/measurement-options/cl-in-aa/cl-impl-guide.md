@@ -3,16 +3,16 @@ seo-title: Handbuch zur Implementierung von Custom Link
 title: Handbuch zur Implementierung von Custom Link
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 translation-type: tm+mt
-source-git-commit: ca44520b532aee7a0647f0c5be69af58ead61444
+source-git-commit: 8727044729eb98634eaab129cbfdc88f90892a51
 
 ---
 
 
 # Custom Link Implementation Guide{#custom-link-implementation-guide}
 
-Custom Video Tracking utilizes [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. Meistens wird das anwenderdefinierte Video-Tracking auf Plattformen und Geräten verwendet, bei denen eine minimale Videomessung erforderlich ist.
+Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. Meistens wird das anwenderdefinierte Video-Tracking auf Plattformen und Geräten verwendet, bei denen eine minimale Videomessung erforderlich ist.
 
-* In JavaScript: die `s.tl()` Funktion
+* In JavaScript: the  function`s.tl()`
 * In mobilen Apps: [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 * In the Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
@@ -43,7 +43,7 @@ if (e.type == "ended") {
 };
 ```
 
-## Why use Custom Link
+## Warum benutzerspezifischen Link verwenden
 
 * Es sind nur minimale Voraussetzungen erforderlich
 * Es funktioniert auf jeder Plattform, einschließlich NoScript
