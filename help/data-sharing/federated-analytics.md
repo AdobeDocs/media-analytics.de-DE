@@ -3,14 +3,17 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: ca44520b532aee7a0647f0c5be69af58ead61444
+source-git-commit: 8727044729eb98634eaab129cbfdc88f90892a51
 
 ---
 
 
 # Federated Analytics{#federated-analytics}
 
-Der Federated Analytics-Service stellt ein System zur Weitergabe von Adobe Media Analytics-Daten (Audio und Video) zwischen zwei Partnern bereit. Die von Media Analytics erstellten standardisierten Messdaten sind das Markenzeichen für Federated Analytics, so dass dieselben Daten aus mehreren Quellen in einen einzigen Bericht fließen können. Über die Regeln und die Logik von Federated Analytics können die Daten einfach kontrolliert und individualisiert werden, um die Anforderungen der jeweiligen Partnerschaft zu erfüllen. Federated Analytics sorgt für eine optimierte Audio- und Videomessung mit gesteigerter Effizienz und aussagekräftigeren Daten.
+The Federated Analytics service provides a system for sharing Adobe Media Analytics data (audio and video) between two partners.
+Die von Media Analytics erstellten standardisierten Messdaten sind das Markenzeichen für Federated Analytics, so dass dieselben Daten aus mehreren Quellen in einen einzigen Bericht fließen können.
+Über die Regeln und die Logik von Federated Analytics können die Daten einfach kontrolliert und individualisiert werden, um die Anforderungen der jeweiligen Partnerschaft zu erfüllen.
+Federated Analytics sorgt für eine optimierte Audio- und Videomessung mit gesteigerter Effizienz und aussagekräftigeren Daten.
 
 ## Vorteile {#section_804FFE8671594A6FB769CBE79EF9D627}
 
@@ -39,7 +42,7 @@ Der Federated Analytics-Service stellt ein System zur Weitergabe von Adobe Media
 
 ## Federated Analytics-Formular herunterladen
 
-**`===>`Laden Sie die aktuelle Version hier herunter: Vertragsformular**[ für](/assets/federated_analytics_form.pdf)Föderationsregeln. **`<===`**
+**Download the current version here:`===>`**  [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf) **`<===`**
 
 ## Verarbeitung {#section_byb_kb3_vbb}
 
