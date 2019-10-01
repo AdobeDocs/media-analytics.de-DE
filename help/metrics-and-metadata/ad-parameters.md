@@ -3,7 +3,7 @@ seo-title: Anzeigenparameter
 title: Anzeigenparameter
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 translation-type: tm+mt
-source-git-commit: af8da9da6cbe36e56f13cd7819f3682522e169bf
+source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 
 ---
 
@@ -79,7 +79,7 @@ Beschreibung der Tabellendaten:
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung   |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/>  [name](./ad-parameters.md#section_Related_APIs) </li> <li> **API-Schlüssel:**<br/>media.ad.podFriendlyName </li> <li> ****<br/> Erforderlich: SDK: Ja; API: Anzahl </li> <li> **Typ:**<br/>Zeichenfolge </li> <li> **Gesendet mit:**<br/>Ad Start, Ad Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: "Pre-Roll" </li><li> **Beschreibung:**<br/>Der Anzeigenumbruch.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad)<br/>podFriendlyName) </li> <li> ****<br/> Heartbeat: (s:asset:pod_name) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Classification </li> <li> **Berichtsname:**<br/>Name der Werbeunterbrechung </li> <li> ****<br/> Kontextdaten: (a.media.ad)<br/>podFriendlyName) </li> <li> **Datenfeed:**<br/>videoadpod </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.podFriendlyName) </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/>  [name](./ad-parameters.md#section_Related_APIs) </li> <li> **API-Schlüssel:**<br/>media.ad.podFriendlyName </li> <li> ****<br/> Erforderlich: SDK: Ja; API: Anzahl </li> <li> **Typ:**<br/>Zeichenfolge </li> <li> **Gesendet mit:**<br/>Ad Start, Ad Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: "Pre-Roll" </li><li> **Beschreibung:**<br/>Der Anzeigenumbruch.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad)<br/>podFriendlyName) </li> <li> ****<br/> Heartbeat: (s:asset:pod_name) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Classification </li> <li> **Berichtsname:**<br/>Name der Werbeunterbrechung </li> <li> ****<br/> Kontextdaten: (a.media.ad)<br/>podFriendlyName) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.podFriendlyName) </li> </ul> |
 
 
 
@@ -87,7 +87,7 @@ Beschreibung der Tabellendaten:
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung   |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/>  [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API-Schlüssel:**<br/>media.ad.podPosition </li> <li> **Erforderlich:**<br/>ja </li> <li> **Typ:**<br/>Zahl </li> <li> **Gesendet mit:**<br/> </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: 1 </li><li> **Beschreibung:**<br/>Der Index der Werbeunterbrechung im Inhalt, beginnend mit 1. Diese Eigenschaft wird **nur** vom Medien-SDK verwendet, um die ID der Werbeunterbrechung zu generieren.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **Heartbeat:**<br/> </li> </ul> | <ul> <li> **Verfügbar:**<br/>nein </li> <li> **Reservierte Variable:**<br/>nicht verfügbar </li> <li> **Berichtsname:**<br/>nicht verfügbar </li> <li> **Kontextdaten:**<br/> </li> <li> **Datenfeed:**<br/> </li> <li> **Audience Manager:**<br/> </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/>  [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API-Schlüssel:**<br/>media.ad.podPosition </li> <li> **Erforderlich:**<br/>ja </li> <li> **Typ:**<br/>Zahl </li> <li> **Gesendet mit:**<br/> </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: 1 </li><li> **Beschreibung:**<br/>Der Index der Werbeunterbrechung im Inhalt, beginnend mit 1. Diese Eigenschaft wird **nur** vom Medien-SDK verwendet, um die ID der Werbeunterbrechung zu generieren.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **Heartbeat:**<br/> </li> </ul> | <ul> <li> **Verfügbar:**<br/>nein </li> <li> **Reservierte Variable:**<br/>nicht verfügbar </li> <li> **Berichtsname:**<br/>nicht verfügbar </li> <li> **Kontextdaten:**<br/> </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> **Audience Manager:**<br/> </li> </ul> |
 
 
 
@@ -95,7 +95,7 @@ Beschreibung der Tabellendaten:
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung   |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/>  [startTime](./ad-parameters.md#section_Related_APIs) </li> <li> **API-Schlüssel:**<br/>media.ad.podSecond </li> <li> **Erforderlich:**<br/>ja </li> <li> **Typ:**<br/>Zahl </li> <li> **Gesendet mit:**<br/>Ad Start, Ad Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: 90 </li><li> **Beschreibung:**<br/>Der Versatz der Werbeunterbrechung im Inhalt in Sekunden.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad)<br/>podSecond) </li> <li> ****<br/> Heartbeat: (l:asset:pod_offset) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Classification </li> <li> **Berichtsname:**<br/>Position der Werbeunterbrechung </li> <li> ****<br/> Kontextdaten: (a.media.ad)<br/>podSecond) </li> <li> **Datenfeed:**<br/> </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.podSecond) </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/>  [startTime](./ad-parameters.md#section_Related_APIs) </li> <li> **API-Schlüssel:**<br/>media.ad.podSecond </li> <li> **Erforderlich:**<br/>ja </li> <li> **Typ:**<br/>Zahl </li> <li> **Gesendet mit:**<br/>Ad Start, Ad Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: 90 </li><li> **Beschreibung:**<br/>Der Versatz der Werbeunterbrechung im Inhalt in Sekunden.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad)<br/>podSecond) </li> <li> ****<br/> Heartbeat: (l:asset:pod_offset) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Classification </li> <li> **Berichtsname:**<br/>Position der Werbeunterbrechung </li> <li> ****<br/> Kontextdaten: (a.media.ad)<br/>podSecond) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.podSecond) </li> </ul> |
 
 
 
@@ -172,7 +172,7 @@ Beschreibung der Tabellendaten:
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung   |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>ja </li> <li> **Typ:**<br/>Zeichenfolge </li> <li> **Gesendet mit:**<br/>Ad Start </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: TRUE </li><li> **Beschreibung:**<br/>Anzahl der Videoanzeigenstarts.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad)<br/>view) </li> <li> ****<br/> Heartbeat:  (s:event:type=start)<br/> (s:asset:type=ad) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/>Anzeigenstarts </li> <li> **Datenfeed:**<br/>videoadstart </li> <li> ****<br/> Kontextdaten: (a.media.ad)<br/>view) </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.view) </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>ja </li> <li> **Typ:**<br/>Zeichenfolge </li> <li> **Gesendet mit:**<br/>Ad Start </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: TRUE </li><li> **Beschreibung:**<br/>Anzahl der Videoanzeigenstarts.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad)<br/>view) </li> <li> ****<br/> Heartbeat:  (s:event:type=start)<br/> (s:asset:type=ad) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/>Anzeigenstarts </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Kontextdaten: (a.media.ad)<br/>view) </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.view) </li> </ul> |
 
 
 
@@ -180,7 +180,7 @@ Beschreibung der Tabellendaten:
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung   |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>ja </li> <li> **Typ:**<br/>Zeichenfolge </li> <li> **Gesendet mit:**<br/>Ad Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: TRUE </li><li> **Beschreibung:**<br/>Anzahl der Videoanzeigen abgeschlossen.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad)<br/>complete) </li> <li> ****<br/> Heartbeat: (s:event:type=complete)<br/> (s:asset:type=ad)  </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/>Anzeigenbeendigungen </li> <li> **Datenfeed:**<br/>videoadcomplete </li> <li> ****<br/> Kontextdaten: (a.media.ad)<br/>complete) </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.complete) </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>ja </li> <li> **Typ:**<br/>Zeichenfolge </li> <li> **Gesendet mit:**<br/>Ad Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: TRUE </li><li> **Beschreibung:**<br/>Anzahl der Videoanzeigen abgeschlossen.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad)<br/>complete) </li> <li> ****<br/> Heartbeat: (s:event:type=complete)<br/> (s:asset:type=ad)  </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/>Anzeigenbeendigungen </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Kontextdaten: (a.media.ad)<br/>complete) </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.complete) </li> </ul> |
 
 
 
@@ -188,7 +188,7 @@ Beschreibung der Tabellendaten:
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung   |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>ja </li> <li> **Typ:**<br/>Zeichenfolge </li> <li> **Gesendet mit:**<br/>Ad Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: 15 </li><li> **Beschreibung:**<br/>Die Gesamtdauer der Anzeige in Sekunden (d. h. die Anzahl der abgespielten Sekunden).  Der Wert wird im Zeitformat (HH:MM:SS) im Analysis Workspace und in Reports &amp; Analytics angezeigt. In Datenfeeds, Data Warehouse und Reporting APIs werden die Werte in Sekundenschnelle angezeigt.  <br/>**Releasedatum: 13.09.2018**  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad)<br/>timePlayed) </li> <li> **Heartbeat:**<br/> </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/>Besuchszeit für Anzeige </li> <li> **Datenfeed:**<br/>videoadtime </li> <li> ****<br/> Kontextdaten: (a.media.ad)<br/>timePlayed) </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.timePlayed) </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>ja </li> <li> **Typ:**<br/>Zeichenfolge </li> <li> **Gesendet mit:**<br/>Ad Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: 15 </li><li> **Beschreibung:**<br/>Die Gesamtdauer der Anzeige in Sekunden (d. h. die Anzahl der abgespielten Sekunden).  Der Wert wird im Zeitformat (HH:MM:SS) im Analysis Workspace und in Reports &amp; Analytics angezeigt. In Datenfeeds, Data Warehouse und Reporting APIs werden die Werte in Sekundenschnelle angezeigt.  <br/>**Releasedatum: 13.09.2018**  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad)<br/>timePlayed) </li> <li> **Heartbeat:**<br/> </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/>Besuchszeit für Anzeige </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Kontextdaten: (a.media.ad)<br/>timePlayed) </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.timePlayed) </li> </ul> |
 
 
 
