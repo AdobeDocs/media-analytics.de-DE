@@ -3,7 +3,7 @@ seo-title: Messen von Audio und Video in Adobe Analytics
 title: Messen von Audio und Video in Adobe Analytics
 uuid: b3cbe240-b94d-42b8-a99c-0280334aa14
 translation-type: tm+mt
-source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
+source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 
 ---
 
@@ -24,10 +24,6 @@ Das Medien-Tracking wird durch eines der folgenden Elemente ermöglicht:
 
 * **Medien-SDK:** Integriert mit den am häufigsten verwendeten Medienplayern.
 * **Mediensammlungs-API -** (RESTful API) Integriert mit Playern, für die es keine SDK-Unterstützung gibt (oder mit Playern, für die keine SDK-Integration gewünscht wird).
-
-   Die Mediensammlungs-API bietet zudem eine weitere Funktion, die im SDK noch nicht verfügbar ist:
-
-   * **Tracking heruntergeladener Inhalte:** Unterstützt das Tracking von Medieninhalten (Video und Audio), die unabhängig von der Internetverbindung heruntergeladen und über ein Gerät abgespielt werden. Diese Fähigkeit basiert auf der Mediensammlungs-API und befolgt dieselbe Spezifikation für das Tracking von Abspielgeräten. (Derzeit werden keine SDKs unterstützt.)
 
 Mit Adobe Analytics for Media können Kunden die gesamte Customer Journey über ihre Site hinweg verfolgen, einschließlich der Mediennutzung, und diese Messungen einfach in Analytics-Berichte und andere Experience Cloud-Produkte integrieren. Die Medienmessung ermöglicht die Unterteilung der Daten nach verschiedenen Dimensionen und Segmenten und erfasst alle Metadaten, die Sie für eine ausführliche Analyse sowie für die Zuordnung von Erfolgskriterien für komplett wiedergegebene Medien, durchschnittliche Besuchszeiten und abgeschlossene Anzeigen benötigen.
 
@@ -57,6 +53,7 @@ Zu den Vorteilen der Heartbeat-Methode zählen folgende Punkte:
 * **Kombinierte Daten dank Federated Analytics:** Nutzen Sie unsere branchenweit ersten Funktionen zur Weitergabe von Mediendaten, um die Daten ganzheitlich über all Ihre Distributionspartner (Betreiber, Programmersteller und Distributoren) zu evaluieren.
 * **Partnerschaften mit zertifizierten Partnern zur Bewertung:** Adobe arbeitet mit dem Zielgruppenbewertungsexperten Nielsen zusammen, um neutrale, vertrauenswürdige und zertifizierte Drittanbietermessungen bereitzustellen.
 * **Standardisierte Lösung für alle Plattformen:** Nutzen Sie über alle Medienplattformen hinweg einheitliche und standardisierte Variablen, um effizientere Vergleiche zwischen Kampagnen, Geräten und Anbietern zu ermöglichen.
+* **Nachverfolgung heruntergeladener Inhalte - Verfolgen Sie Medieninhalte (Video und Audio), die unabhängig von ihrer Konnektivität auf ein Gerät heruntergeladen und wiedergegeben werden.**
 
 ### Vergleichstabelle
 
