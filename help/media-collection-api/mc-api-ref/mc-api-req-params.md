@@ -3,7 +3,7 @@ seo-title: Anfrageparameter
 title: Anfrageparameter
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 translation-type: tm+mt
-source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
+source-git-commit: 8eb9ccc9229a0b430f3628054b960441660a8683
 
 ---
 
@@ -103,6 +103,13 @@ source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
 | `media.qoe.droppedFrames` | N | Alle | Die Anzahl der Dropped Frames im Stream |
 | `media.qoe.framesPerSecond` | N | Alle | Die Anzahl der Frames pro Sekunde |
 | `media.qoe.timeToStart` | N | Alle | Die Zeit (in Millisekunden), die zwischen dem Start des Videos durch den Anwender und der tatsächlichen Wiedergabe des Inhalts vergeht |
+
+## Parameter des California Consumer Privacy Act (CCPA) {#ccpa-params}
+
+| Anforderungsschlüssel | Erforderlich | Festgelegt in |  Beschreibung  |
+| --- | :---: | :---: | --- |
+| `analytics.optOutServerSideForwarding` | N | `sessionStart` | Auf "true"setzen, wenn der Endbenutzer die Freigabe seiner Daten für Adobe Analytics und andere Experience Cloud-Lösungen (z. B. Audience Manager) abgelehnt hat |
+| `analytics.optOutShare` | N | `sessionStart` | Auf "true"setzen, wenn der Endbenutzer sich für die Verknüpfung seiner Daten (z. B. mit anderen Adobe Analytics-Clients) entschieden hat. |
 
 ## Zusätzliche Details {#section_ryt_ccy_lcb}
 
