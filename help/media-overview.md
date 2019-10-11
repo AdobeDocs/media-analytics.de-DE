@@ -3,7 +3,7 @@ seo-title: Messen von Audio und Video in Adobe Analytics
 title: Messen von Audio und Video in Adobe Analytics
 uuid: b3cbe240-b94d-42b8-a99c-0280334aa14
 translation-type: tm+mt
-source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
+source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
 
 ---
 
@@ -35,7 +35,7 @@ Zu den Vorteilen der Adobe-Medienmessungslösungen zählen folgende Punkte:
 
 * **Schnelle Analyse:** Treffen Sie Entscheidungen anhand von aussagekräftigen Echtzeitmetriken zur Performance (z. B. Dauer) über verschiedene Kanäle hinweg. Hauptinhaltereignisse werden in **10-Sekunden**-Intervallen gemessen, um Aktivitäten zu erfassen, sobald sie auftreten. Ereignisse zum Anzeigen-Tracking treten in **1-Sekunden**-Intervallen auf.
 * **Gesteigerte Interaktion:** Binden Sie die Anwender durch weniger Pufferereignisse und durch das Verständnis, wo und wann Anzeigen innerhalb der Inhalte abgespielt werden sollten, ein, um ein reibungsloses, weniger störendes Erlebnis zu bieten, das die Anwender zur Rückkehr bewegt und wiederholte Besuche fördert.
-* **Ganzheitliches Bild -** Kombinieren Sie mehrere Datenpunkte über all Ihre Content-Distributoren hinweg, um einen vollständigen Überblick über Ihre gesamte Medienaktivität zu erhalten und mithilfe der Funktion " [Federated Analytics](data-sharing/federated-analytics.md) "Interaktionen und Ansichten/Listening über alle möglichen Kanäle zu messen.
+* **Ganzheitliches Bild -** Kombinieren Sie mehrere Datenpunkte über all Ihre Content-Distributoren hinweg, um einen vollständigen Überblick über Ihre gesamte Medienaktivität zu erhalten und mithilfe der Funktion " [Federated Analytics](/help/federated-analytics.md) "Interaktionen und Ansichten/Listening über alle möglichen Kanäle zu messen.
 * **Umfangreiche Details:** Untersuchen Sie das Besucherverhalten so detailliert wie möglich, einschließlich der individuellen Besuchszeit, der gleichzeitigen Besucher pro Minute und der durchschnittlichen Wiedergabezeit von Inhalten.
 * **Präzise Messung:** Untersuchen Sie verschiedenste Geräte zur Mediennutzung, einschließlich OTT, Smartphone, Tablet, Desktop und mehr, um Anwenderinteraktionen und Verhaltensmuster zu analysieren.
 * **Segmentierung:** Wenden Sie auf Player, Geräte, Genres, Kapitel und Sendungen Klassifizierungen an, um herauszufinden, wie sie sich auf die Aufrufe und die Kundeninteraktion mit Inhalten und Anzeigen auswirken.
