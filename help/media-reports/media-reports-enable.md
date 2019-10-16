@@ -3,7 +3,7 @@ seo-title: Aktivierung von Medienberichten
 title: Aktivierung von Medienberichten
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
 translation-type: tm+mt
-source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
+source-git-commit: c8aa81660fe55dba673d3d53f780f3533a50cc93
 
 ---
 
@@ -16,12 +16,12 @@ Jede Report Suite, die Medienmetriken erfasst, muss konfiguriert werden, bevor M
 >
 >Um die neuen Funktionen nutzen zu können, sollten bestehende Media Analytics-Kunden die Medienverfolgung für ihre RSIDs erneut aktivieren.
 
-1. In [Reports &amp; Analytics](https://my.omniture.com/login/) click [!UICONTROL Admin] &gt; [!UICONTROL Report Suites].
-1. Select the report suite(s) where you are collecting media data and click [!UICONTROL Edit Settings] &gt; [!UICONTROL Media Management] &gt; [!UICONTROL Media Reporting].
+1. In [Reports &amp; Analytics](https://my.omniture.com/login/) click **[!UICONTROL Admin &gt; Report Suites].**
+1. Select the report suite(s) where you are collecting media data and click **[!UICONTROL Edit Settings &gt; Media Management &gt; Media Reporting].**
 
    ![](assets/media-reporting.png){width="400px"}
 
-1. On the **[!UICONTROL Media Reporting]** page, enable **[!UICONTROL Media Core]**, and optionally enable **[!UICONTROL Media Ads]**, **[!UICONTROL Media Chapters]**, and **[!UICONTROL Media Quality]**.
+1. On the **[!UICONTROL Media Reporting]** page, enable **[!UICONTROL Media Core],** and optionally enable **[!UICONTROL Media Ads],** **[!UICONTROL Media Chapters],** and **[!UICONTROL Media Quality].**
 
    Die Medienmessung enthält folgende Module:
 
@@ -52,16 +52,16 @@ Jede Report Suite, die Medienmetriken erfasst, muss konfiguriert werden, bevor M
 
    Wenn Sie die Qualität von Anzeigen, Kapiteln oder Wiedergabe noch nicht verfolgen, können Sie später jederzeit weitere Optionen aktivieren.
 
-1. Klicken Sie auf **[!UICONTROL Speichern]**.
+1. Klicken Sie auf **[!UICONTROL Speichern].**
 
-   If this report suite is already configured to collect media data, after you click **[!UICONTROL Save]**, an additional configuration page is displayed. Wenn die Seite [!UICONTROL Media-Core-Messung] angezeigt wird, fahren Sie mit dem nächsten Schritt fort.
+   If this report suite is already configured to collect media data, after you click **[!UICONTROL Save]**, an additional configuration page is displayed. Wenn die Seite **[!UICONTROL Media-Core-Messung]angezeigt wird, fahren Sie mit dem nächsten Schritt fort.**
 
-1. (Conditional) On the [!UICONTROL Media Core measurement] page, choose to continue using custom variables or choose to use solution variables.
+1. (Conditional) On the **[!UICONTROL Media Core measurement]** page, choose to continue using custom variables or choose to use solution variables.
 
    | Option | Hinweise |
    | --- | --- |
-   | Weiterhin benutzerspezifische Variablen verwenden | Vorteile und Nachteile:<ul> <li> **Vorteile**: Die Inhaltstrend-Erstellung funktioniert auch nach der Migration. </li> <li> **** Nachteile: Erfordert, dass zwei benutzerspezifische eVars und drei benutzerspezifische Ereignisse Medien zugeordnet werden. Eine anwenderspezifische eVar und ein anwenderspezifisches Ereignis werden freigegeben. </li> </ul> So verwenden Sie weiterhin anwenderspezifische Variablen: <ol> <li>Wählen Sie Benutzerspezifische Variablen verwenden und klicken Sie auf Speichern. </li> <li>Wenn Sie dazu aufgefordert werden, ordnen Sie die aktuellen anwenderspezifischen eVars und Ereignisse zu und klicken Sie auf Speichern: </li> </ol> |
-   | Zu Lösungsvariablen migrieren | Vorteile und Nachteile:<ul> <li> **Vorteile**: Drei anwenderspezifische eVars und vier anwenderspezifische Ereignisse werden freigegeben. </li> <li> **Nachteile**: **Alle** Verlaufstrends und -vergleiche für Medienberichte gehen verloren. Das bedeutet, dass Sie keine Trends für Inhaltsansichten oder Inhaltszeiten erstellen können, die vor der Migration in Heartbeat stattgefunden haben. </li> </ul> **Einschränkung:** Migrieren Sie nur dann zu Lösungsvariablen, wenn Sie sicher sind, dass Sie diese Trends nicht beibehalten möchten. Alle Kunden sollten nur dann Lösungsvariablen verwenden und Mediendaten anhand von Verarbeitungsregeln an vorhandene Props und eVars übergeben, wenn sie den Verlauf beibehalten müssen. So migrieren Sie zu Lösungsvariablen: Wählen Sie [!UICONTROL Lösungsvariablen] verwenden und klicken Sie auf [!UICONTROL Speichern]. <br><br> WICHTIG: Wenn Sie zu Lösungsvariablen migrieren, gehen **alle** historischen Trends und Vergleiche für Medienberichte verloren. |
+   | Weiterhin benutzerspezifische Variablen verwenden | Vorteile und Nachteile:<ul> <li> **Vorteile**: Die Inhaltstrend-Erstellung funktioniert auch nach der Migration. </li> <li> **** Nachteile: Erfordert, dass zwei benutzerspezifische eVars und drei benutzerspezifische Ereignisse Medien zugeordnet werden. Eine anwenderspezifische eVar und ein anwenderspezifisches Ereignis werden freigegeben. </li> </ul> So verwenden Sie weiterhin anwenderspezifische Variablen: <ol> <li>Select **[!UICONTROL Use Custom Variables,]** then click **[!UICONTROL Save.]** </li> <li>When prompted, map your current custom eVars and events and then click **[!UICONTROL Save:]** </li> </ol> |
+   | Zu Lösungsvariablen migrieren | Vorteile und Nachteile:<ul> <li> **Vorteile**: Drei anwenderspezifische eVars und vier anwenderspezifische Ereignisse werden freigegeben. </li> <li> **Nachteile**: **Alle** Verlaufstrends und -vergleiche für Medienberichte gehen verloren. Das bedeutet, dass Sie keine Trends für Inhaltsansichten oder Inhaltszeiten erstellen können, die vor der Migration in Heartbeat stattgefunden haben. </li> </ul> **Einschränkung:** Migrieren Sie nur dann zu Lösungsvariablen, wenn Sie sicher sind, dass Sie diese Trends nicht beibehalten möchten. Alle Kunden sollten nur dann Lösungsvariablen verwenden und Mediendaten anhand von Verarbeitungsregeln an vorhandene Props und eVars übergeben, wenn sie den Verlauf beibehalten müssen. So migrieren Sie zu Lösungsvariablen: Wählen Sie **[!UICONTROL Lösungsvariablen]** verwenden und klicken Sie auf **[!UICONTROL Speichern].** <br><br> WICHTIG: Wenn Sie zu Lösungsvariablen migrieren, gehen **alle** historischen Trends und Vergleiche für Medienberichte verloren. |
 
 >[!IMPORTANT]
 >
