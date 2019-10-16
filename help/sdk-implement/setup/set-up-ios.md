@@ -3,7 +3,7 @@ seo-title: Einrichten von iOS
 title: Einrichten von iOS
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: f745d64c9cf843ef7237ee3c3c96c63d7edbc1c2
 
 ---
 
@@ -140,7 +140,7 @@ Weitere Informationen zur Migration von 1.x zu 2.x finden Sie unter [Migration v
 
 ## Native App für tvOS konfigurieren
 
-Mit der neuen Apple TV-Version können Sie Anwendungen erstellen, die in der nativen tvOS-Umgebung ausgeführt werden. Sie können entweder eine rein native App mit verschiedenen in iOS verfügbaren Frameworks erstellen oder eine App über XML-Vorlagen und JavaScript erstellen. Ab MediaSDK-Version 2.0 wird tvOS unterstützt. Weitere Informationen zu tvOS finden Sie auf der [tvOS-Entwickler-Site.](https://developer.apple.com/tvos/documentation/)
+Mit der neuen Apple TV-Version können Sie Anwendungen erstellen, die in der nativen tvOS-Umgebung ausgeführt werden. Sie können entweder eine rein native App mit verschiedenen in iOS verfügbaren Frameworks erstellen oder eine App über XML-Vorlagen und JavaScript erstellen. Ab MediaSDK-Version 2.0 wird tvOS unterstützt. Weitere Informationen zu tvOS finden Sie auf der [tvOS-Entwickler-Site.](https://developer.apple.com/tvos/)
 
 Führen Sie die folgenden Schritte in Ihrem Xcode-Projekt aus. In dieser Anleitung wird davon ausgegangen, dass das Projekt eine Apple TV-App zum Ziel hat, die auf tvOS ausgerichtet ist:
 
