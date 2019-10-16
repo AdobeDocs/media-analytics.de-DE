@@ -3,7 +3,7 @@ seo-title: Vorlagen für Media Workspace
 title: Vorlagen für Media Workspace
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: c8aa81660fe55dba673d3d53f780f3533a50cc93
 
 ---
 
@@ -18,7 +18,7 @@ Sie arbeiten in Adobe Analytics mit Vorlagen aus der Registerkarte Workspace, we
 
    ![](assets/all-templates-audio.png)
 
-   Wenn Sie beispielsweise die Vorlage Audionutzung auswählen, wird ein Projekt mit dem folgenden audioorientierten Dashboard angezeigt:
+   For example, if you choose the **[!UICONTROL Audio Consumption]** template, a project with the following audio-oriented dashboard is presented:
 
    ![](assets/aa-workspace.png)
 
