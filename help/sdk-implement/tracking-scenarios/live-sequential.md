@@ -3,14 +3,14 @@ seo-title: Live-Hauptinhalt mit sequentieller Verfolgung
 title: Live-Hauptinhalt mit sequentieller Verfolgung
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 translation-type: tm+mt
-source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Live-Hauptinhalt mit sequentieller Verfolgung{#live-main-content-with-sequential-tracking}
 
-## Szenario {#section_E4B558253AD84ED59256EDB60CED02AE}
+## Szenario {#scenario}
 
 In diesem Szenario gibt es ein Live-Asset ohne Wiedergabe von Anzeigen für 40 Sekunden nach Beitritt zum Live-Stream.
 
@@ -27,7 +27,7 @@ Dieses Szenario ist mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-im
 | Inhalt wird wiedergegeben. |  | Content Heartbeats |  |
 | Sitzung beendet (Folge 2 beendet) | trackComplete / trackSessionEnd | Heartbeat Content Complete | „Complete“ bedeutet, dass Sitzung 2 für die zweite Folge erreicht und vollständig angeschaut wurde. Bevor die Sitzung für die nächste Folge gestartet werden kann, muss diese Sitzung beendet werden. |
 
-## Parameter {#section_D52B325B99DA42108EF560873907E02C}
+## Parameter {#parameters}
 
 ### Heartbeat Content Start
 
@@ -42,7 +42,7 @@ Dieses Szenario ist mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-im
 | `s:stream:type` | `live` |  |
 | `s:meta:*` | *optional* | Benutzerdefinierte Metadaten, die auf dem Medium festgelegt wurden |
 
-## Heartbeat Content Play {#section_B6AD9225747943F881DCA8E6A1D5710E}
+## Heartbeat Content Play {#heartbeat-content-play}
 
 Dies sollte fast genauso wie der Heartbeat Content Start-Aufruf aussehen, aber den Hauptunterschied im Parameter „s:event:type“ aufweisen. Alle Parameter sollten hier weiterhin vorhanden sein.
 
@@ -51,7 +51,7 @@ Dies sollte fast genauso wie der Heartbeat Content Start-Aufruf aussehen, aber d
 | `s:event:type` | `"play"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## Content Heartbeats {#section_7B387303851A43E5993F937AE2B146FE}
+## Content Heartbeats {#content-heartbeats}
 
 Während der Medienwiedergabe gibt es einen Timer, der alle 10 Sekunden einen oder mehrere Heartbeats für den Hauptinhalt und jede Sekunde für Anzeigen sendet. Diese Heartbeats enthalten Informationen zu Wiedergabe, Anzeigen, Pufferung und vielen weiteren Aspekten. Der genaue Inhalt jedes Heartbeats wird in diesem Dokument nicht behandelt. Wichtig ist vor allem, sicherzustellen, dass Heartbeats konsistent ausgelöst werden, während die Wiedergabe läuft.
 
@@ -62,7 +62,7 @@ Suchen Sie in den Inhalts-Heartbeats nach einigen speziellen Elementen:
 | `s:event:type` | `"play"` |  |
 | `l:event:playhead` | &lt;Position der Abspielleiste&gt;, z. B. 50, 60, 70 | Dies sollte die aktuelle Position der Abspielleiste widerspiegeln. |
 
-## Heartbeat Content Complete {#section_2CA970213AF2457195901A93FC9D4D0D}
+## Heartbeat Content Complete {#heartbeat-content-complete}
 
 Wenn die Wiedergabe einer Folge abgeschlossen ist (die Abspielleiste überschreitet die Grenze zwischen Folgen), wird ein Heartbeat Content Complete-Aufruf gesendet. Dieser Aufruf sieht wie andere Heartbeat-Aufrufe aus, enthält aber einige spezielle Elemente:
 
@@ -71,7 +71,7 @@ Wenn die Wiedergabe einer Folge abgeschlossen ist (die Abspielleiste überschrei
 | `s:event:type` | `"complete"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## Beispielcode {#section_mpx_q2j_x2b}
+## Beispielcode {#sample-code}
 
 ![](assets/ios-live-noads-multiplesessions.png)
 
