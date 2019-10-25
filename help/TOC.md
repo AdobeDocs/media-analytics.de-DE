@@ -3,7 +3,7 @@ product: Media Analytics
 audience: Endanwender
 user-guide-title: Adobe Analytics für Audio und Video
 translation-type: tm+mt
-source-git-commit: 44b12731c4a701f0f2536c1c83a9ad4a8b27b49b
+source-git-commit: cc067b31066aa5d7e254167e32429c6c56e40c77
 
 ---
 
@@ -186,3 +186,4 @@ source-git-commit: 44b12731c4a701f0f2536c1c83a9ad4a8b27b49b
 + [Federated Analytics](federated-analytics.md)
 + Zusätzliche Ressourcen {#additional-resources}
    + [Ressourcen](additional-resources/doc-updates.md)
+
