@@ -3,7 +3,7 @@ seo-title: Verfolgungsübersicht
 title: Verfolgungsübersicht
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -59,9 +59,9 @@ Das Tracking der Core-Wiedergabe umfasst die Verfolgung der Medienladung, des Me
 
 >[!TIP]
 >
->Die Position der Abspielleiste wird als Teil des Einrichtungs- und Konfigurationscodes festgelegt. Weitere Informationen `getCurrentPlayheadTime`finden Sie unter [Übersicht: Allgemeine Umsetzungsleitlinien.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>Die Position der Abspielleiste wird als Teil des Einrichtungs- und Konfigurationscodes festgelegt. Weitere Informationen `getCurrentPlayheadTime`finden Sie unter [Übersicht: Allgemeine Umsetzungsleitlinien.](/help/sdk-implement/setup/setup-overview.md#general-implementation-guidelines)
 
-## Implementierung {#section_BB217BE6585D4EDEB34C198559575004}
+## Implementierung {#implement}
 
 1. **Tracking-Ersteinrichtung:** Ermitteln Sie, wann der Anwender die Wiedergabe auslöst (wenn er die Play-Schaltfläche betätigt und/oder die automatische Wiedergabe aktiviert ist), und erstellen Sie eine `MediaObject`-Instanz mithilfe der folgenden Medieninformationen: Inhaltsname, Inhalts-ID, Inhaltsdauer und Streamtyp.
 
@@ -232,7 +232,7 @@ if (e.type == “buffered”) {
 };
 ```
 
-## Überprüfen {#section_ABCFB92C587B4CAABDACF93452EFA78F}
+## Überprüfen {#validate}
 
 Informationen zur Validierung Ihrer Implementierung finden Sie unter [Validierung.](/help/sdk-implement/validation/validation-overview.md)
 
