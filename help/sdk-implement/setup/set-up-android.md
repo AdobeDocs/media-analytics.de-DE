@@ -3,7 +3,7 @@ seo-title: Android einrichten
 title: Android einrichten
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## SDK-Implementierung
 
-1. Fügen Sie Ihr [heruntergeladenes](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Medien-SDK zu Ihrem Projekt hinzu.
+1. Fügen Sie Ihr [heruntergeladenes](/help/sdk-implement/download-sdks.md#download-2x-sdks) Medien-SDK zu Ihrem Projekt hinzu.
 
    1. Expand the Android zip file (e.g., `MediaSDK-android-v2.*.zip`).
    1. Verify that the `MediaSDK.jar` file exists in the `libs/` directory.
@@ -41,7 +41,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       **Eclipse:**
 
       1. Klicken Sie in der Eclipse IDE mit der rechten Maustaste auf den Projektnamen.
-      1. Click  **[!UICONTROL Build Path]** &gt; **[!UICONTROL Add External Archives]** .
+      1. Klicken Sie auf **[!UICONTROL Pfad aufbauen]** &gt; **[!UICONTROL Externe Archive hinzufügen]** .
       1. Auswählen `MediaSDK.jar`.
       1. Klicken Sie auf **[!UICONTROL Öffnen]**.
       1. Right-click the project again, and click  **[!UICONTROL Build Path]** &gt; **[!UICONTROL Configure Build Path]** .
