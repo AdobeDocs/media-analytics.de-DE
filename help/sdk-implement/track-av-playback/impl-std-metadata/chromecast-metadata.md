@@ -3,7 +3,7 @@ seo-title: Chromecast-Metadatenelemente
 title: Chromecast-Metadatenelemente
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 Standardmäßige Video- und Anzeigenmetadaten können in den Medien- bzw. Anzeigen-Informationsobjekten festgelegt werden. Geben Sie mithilfe der Konstantenschlüssel für Video-/Anzeigen-Metadaten das Wörterbuch an, das die Standardmetadaten zum Informationsobjekt enthält, bevor Sie die APIs verfolgen. Eine vollständige Liste der standardmäßigen Metadaten-Konstanten finden Sie unten in den Tabellen mit Beispielen.
 
-## Metadaten-Konstanten {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
+## Metadaten-Konstanten {#video-metadata-constants}
 
 | Metadatenname | Kontextdatenschlüssel | Konstantenname |
 | --- | --- | --- |
@@ -34,7 +34,7 @@ Standardmäßige Video- und Anzeigenmetadaten können in den Medien- bzw. Anzeig
 | Feed | `a.media.feed` | `ADBMobile.media.VideoMetadataKeys.FEED` |
 | Stream-Format | `a.media.format` | `ADBMobile.media.VideoMetadataKeys.STREAM_FORMAT` |
 
-## Anzeigenmetadaten-Konstanten {#section_5290E1BA54A24D30875F4F55C6CF9458}
+## Anzeigenmetadaten-Konstanten {#ad-metadata-constants}
 
 | Metadatenname | Kontextdatenschlüssel | Konstantenname |
 | --- | --- | --- |
@@ -45,7 +45,7 @@ Standardmäßige Video- und Anzeigenmetadaten können in den Medien- bzw. Anzeig
 | Site-ID | `a.media.ad.site` | `ADBMobile.media.AdMetadataKeys.SITE_ID` |
 | Creative-URL | `a.media.ad.creativeURL` | `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` |
 
-## Beispielimplementierungen für Chromecast {#section_wvy_bdn_w2b}
+## Beispielimplementierungen für Chromecast {#sample-implementations-for-chromecast}
 
 ### Video
 
