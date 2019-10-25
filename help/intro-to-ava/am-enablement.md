@@ -3,7 +3,7 @@ seo-title: Audience Manager-Aktivierung
 title: Audience Manager-Aktivierung
 uuid: 8a7f9343-ebc3-4087-9d7e-5972640d2455
 translation-type: tm+mt
-source-git-commit: 8ae15f1e14731a97d212ab66816a777b4dcc897e
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -22,7 +22,7 @@ Mit AAM sind Sie nicht an einen Datenanbieter, eine Datenaustauschplattform oder
 
 Federated Data unterstützt die Datenweitergabe an AAM vollständig. Arbeiten Sie mit Ihrem Adobe-Team zusammen, um die Federated Data-Einstellungen zu bestätigen.
 
-## OTT-/AAM-Methoden {#section_yqq_5br_v2b}
+## OTT-/AAM-Methoden {#ott-aam-methods}
 
 Sie können diese Methoden verwenden, um Signale zu senden und Besuchersegmente von Audience Manager abzurufen:
 
