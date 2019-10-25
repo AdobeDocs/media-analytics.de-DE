@@ -3,20 +3,20 @@ seo-title: Ein VOD-Tracker für mehrere Sitzungen
 title: Ein VOD-Tracker für mehrere Sitzungen
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: e24dbf0ab08b9e148f887ef19903ad2d157822ad
 
 ---
 
 
 # Ein VOD-Tracker für mehrere Sitzungen{#vod-one-tracker-for-multiple-sessions}
 
-## Szenario {#section_45D7B10031524411B91E2C569F7818B0}
+## Szenario {#scenario}
 
 In diesem Szenario wird die `MediaHeartbeat`-Instanz dazu verwendet, zwei separate Sitzungen nacheinander zu erstellen.
 
 Dieses Szenario ist mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch.
 
-## Parameter {#section_D52B325B99DA42108EF560873907E02C}
+## Parameter {#parameters}
 
 ### Heartbeat-Sitzung
 
@@ -24,11 +24,11 @@ Dieses Szenario ist mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-im
 | --- | --- | --- |
 | `s:event:sid` | Eindeutige Sitzungs-ID | A unique session ID that exists in all the heartbeat network calls until `trackSessionEnd` |
 
-## Beispielcode {#section_ndg_wdj_x2b}
+## Beispielcode {#sample-code}
 
 ![](assets/multi-sessions-one-at-a-time.png)
 
-### Android
+### Android {#android}
 
 To create two instances of `MediaHeartbeat` for two media players, set up the following code:
 
@@ -183,7 +183,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-### iOS
+### iOS {#ios}
 
 To create two instances of `MediaHeartbeat` for two media players, enter the following:
 
@@ -329,7 +329,7 @@ NSMutableDictionary *mediaContextData = [[NSMutableDictionary alloc] init];
 ....... 
 ```
 
-### JavaScript
+### JavaScript {#javascript}
 
 ```js
 var MediaHeartbeat = ADB.va.MediaHeartbeat; 
