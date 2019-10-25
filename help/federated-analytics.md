@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 498546566d1dcb8c4ad84482332d46142eecd1ca
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -15,7 +15,7 @@ Die von Media Analytics erstellten standardisierten Messdaten sind das Markenzei
 Über die Regeln und die Logik von Federated Analytics können die Daten einfach kontrolliert und individualisiert werden, um die Anforderungen der jeweiligen Partnerschaft zu erfüllen.
 Federated Analytics sorgt für eine optimierte Audio- und Videomessung mit gesteigerter Effizienz und aussagekräftigeren Daten.
 
-## Vorteile {#section_804FFE8671594A6FB769CBE79EF9D627}
+## Vorteile {#benefits}
 
 * **Transparent:** Beseitigen Sie die Blackbox der Datenerstellung, indem Sie dieselbe Logik in allen Unternehmen verwenden.
 * **Breit gefasst:** Analysieren Sie die vollständige Reichweite und die Auswirkungen der Audio- und Videonutzung über Partnerschaften, Plattformen und Geräte hinweg.
@@ -27,12 +27,12 @@ Federated Analytics sorgt für eine optimierte Audio- und Videomessung mit geste
 * **Rechtzeitig:** Senden und empfangen Sie Daten nahezu in Echtzeit.
 * **Einfach:** Taggen Sie Player einmal mit Adobe-SDKs und geben Sie Daten an verschiedenste Partner weiter.
 
-## Definitionen {#section_ypl_mb3_vbb}
+## Definitionen {#definitions}
 
 * **Sender:** Kunden, die Audio- und Videoanalysedaten in eigenen Playern generieren
 * **Empfänger:** Kunden, die Audio- und Videoanalysedaten von Sendern empfangen
 
-## Voraussetzungen {#section_4758843A8941441B9A4D0D7A61077A6E}
+## Voraussetzungen {#requirements}
 
 * **Medien-Stream-Vertrag:** Empfänger und Sender müssen über einen Adobe Analytics-Vertrag für Medien-Streams verfügen, bevor sie auf Audio- und Videodaten in Adobe Analytics zugreifen können. Weitere Informationen erhalten Sie von Ihrem Account-Team.
 * **Föderierungs-Zusatzvereinbarung:** Für jeden Sender und Empfänger muss eine unterzeichnete Zusatzvereinbarung bei Adobe vorliegen, bevor Daten gesendet oder empfangen werden. Hierbei ist pro Kunde, nicht pro Partnerschaft eine Zusatzvereinbarung erforderlich. Weitere Informationen erhalten Sie von Ihrem Account-Team.
@@ -44,7 +44,7 @@ Federated Analytics sorgt für eine optimierte Audio- und Videomessung mit geste
 
 Laden Sie die aktuelle Version dieses Formulars hier herunter: Abkommen über [Föderationsregeln](https://github.com/AdobeDocs/media-analytics.en/blob/master/help/federated-analytics-form.pdf)
 
-## Verarbeitung {#section_byb_kb3_vbb}
+## Verarbeitung {#process}
 
 1. Sender und Empfänger arbeiten zusammen, um das Formular der Vereinbarung zu Föderierungsregeln auszufüllen. Das Teilformular "Federated Rules Agreement"enthält spezielle Felder für unser Entwicklungsteam und sollte NUR mit Adobe Acrobat bearbeitet werden. [Laden Sie Acrobat kostenlos herunter.](https://get.adobe.com/reader/)
 1. Sofern Datendateien verfügbar sind, stellt der Beratungsservice dem Empfänger eine Beispieldatei mit echten Daten aus den Playern des Senders bereit, um zu gewährleisten, dass die richtigen Regeln zur Datenweitergabe definiert wurden.
