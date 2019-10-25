@@ -3,7 +3,7 @@ seo-title: Anzeigenparameter
 title: Anzeigenparameter
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 translation-type: tm+mt
-source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -41,7 +41,7 @@ Beschreibung der Tabellendaten:
 >Klassifizierungen werden aktiviert, indem die Namen der Variablen überprüft werden. Falls einer von
 >fehlen, fügt Adobe die fehlenden erneut hinzu.
 
-## Videoanzeigendaten {#section_hq3_nbv_51b}
+## Videoanzeigendaten {#ad-video-data}
 
 ### Anzeigen-ID
 
@@ -79,7 +79,7 @@ Beschreibung der Tabellendaten:
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung   |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/>  [name](./ad-parameters.md#section_Related_APIs) </li> <li> **API-Schlüssel:**<br/>media.ad.podFriendlyName </li> <li> ****<br/> Erforderlich: SDK: Ja; API: Anzahl </li> <li> **Typ:**<br/>Zeichenfolge </li> <li> **Gesendet mit:**<br/>Ad Start, Ad Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: "Pre-Roll" </li><li> **Beschreibung:**<br/>Der Anzeigenumbruch.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad)<br/>podFriendlyName) </li> <li> ****<br/> Heartbeat: (s:asset:pod_name) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Classification </li> <li> **Berichtsname:**<br/>Name der Werbeunterbrechung </li> <li> ****<br/> Kontextdaten: (a.media.ad)<br/>podFriendlyName) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.podFriendlyName) </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/>  [name](./ad-parameters.md#section_Related_APIs) </li> <li> **API-Schlüssel:**<br/>media.ad.podFriendlyName </li> <li> ****<br/> Erforderlich: SDK: Ja; API:Anzahl </li> <li> **Typ:**<br/>Zeichenfolge </li> <li> **Gesendet mit:**<br/>Ad Start, Ad Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: "Pre-Roll" </li><li> **Beschreibung:**<br/>Der Anzeigenumbruch.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.ad)<br/>podFriendlyName) </li> <li> ****<br/> Heartbeat: (s:asset:pod_name) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Classification </li> <li> **Berichtsname:**<br/>Name der Werbeunterbrechung </li> <li> ****<br/> Kontextdaten: (a.media.ad)<br/>podFriendlyName) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.ad.podFriendlyName) </li> </ul> |
 
 
 
@@ -115,7 +115,7 @@ Beschreibung der Tabellendaten:
 
 
 
-## Standard-Anzeigenmetadaten {#section_EFB805867916411E84DE1BA5A183D86A}
+## Standard-Anzeigenmetadaten {#standard-ad-metadata}
 
 ### Advertiser
 
@@ -166,7 +166,7 @@ Beschreibung der Tabellendaten:
 
 
 
-## Anzeigenmetriken {#section_22AA1565F11C4F3990E2AB51CD3213F7}
+## Anzeigenmetriken {#ad-metrics}
 
 ### Werbung gestartet
 
