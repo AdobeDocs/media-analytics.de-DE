@@ -3,7 +3,7 @@ seo-title: Client-seitig
 title: Client-seitig
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -22,5 +22,4 @@ If Media Analytics is your intended path, see [Media SDK Implementation](/help/s
 
 >[!NOTE]
 >
->Kunden müssen sich an ihren Kundenbetreuer/Account-Manager wenden, um einen neuen Kundenauftrag zu unterzeichnen, da Media Analytics über eine eigene SKU verfügt und sich der Preis hier nicht aus den Server-Aufrufen, sondern aus den Medien-Streams ergibt.
-
+>Kunden müssen sich an ihren Vertriebsmitarbeiter/Kundenbetreuer wenden, um eine neue Bestellung zu unterzeichnen, da Media Analytics über eine eindeutige SKU verfügt und sich von einem Preismodell, das auf Serveraufrufen basiert, zu einem auf Medienströmen basierenden Modell ändert.
