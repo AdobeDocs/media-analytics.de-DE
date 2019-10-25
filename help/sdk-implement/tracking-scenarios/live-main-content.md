@@ -3,14 +3,14 @@ seo-title: Live-Hauptinhalt
 title: Live-Hauptinhalt
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Live-Hauptinhalt{#live-main-content}
 
-## Szenario {#section_13BD203CBF7546D2A6AD0129B1EEB735}
+## Szenario {#scenario}
 
 In diesem Szenario gibt es ein Live-Asset ohne Wiedergabe von Anzeigen für 40 Sekunden nach Beitritt zum Live-Stream.
 
@@ -21,7 +21,7 @@ In diesem Szenario gibt es ein Live-Asset ohne Wiedergabe von Anzeigen für 40 
 | Der Inhalt wird wiedergegeben. |  | Content Heartbeats |  |
 | Die Sitzung ist beendet. | `trackSessionEnd` |  | `SessionEnd` steht für das Ende einer Anzeigesitzung. Diese API muss auch dann aufgerufen werden, wenn der Benutzer die Medien nicht bis zum Abschluss verbraucht. |
 
-## Parameter {#section_D52B325B99DA42108EF560873907E02C}
+## Parameter {#parameters}
 
 Viele der Werte bei Adobe Analytics Content Start-Aufrufen sind auch bei Heartbeat Content Start-Aufrufen vorhanden. Außerdem werden Ihnen viele weitere Parameter angezeigt, die Adobe zum Füllen der verschiedenen Medienberichte in Adobe Analytics verwendet. Davon werden im Folgenden nur die wichtigsten Parameter behandelt.
 
@@ -38,7 +38,7 @@ Viele der Werte bei Adobe Analytics Content Start-Aufrufen sind auch bei Heartbe
 | `s:stream:type` | live |  |
 | `s:meta:*` | optional | Benutzerdefinierte Metadaten, die auf dem Medium festgelegt wurden |
 
-## Content Heartbeats {#section_7B387303851A43E5993F937AE2B146FE}
+## Content Heartbeats {#content-heartbeats}
 
 Während der Medienwiedergabe gibt es einen Timer, der alle 10 Sekunden einen oder mehrere Heartbeats (oder Pings) für Hauptinhalte und jede Sekunde für Anzeigen sendet. Diese Heartbeats enthalten Informationen zu Wiedergabe, Anzeigen, Pufferung und vielen weiteren Aspekten. Der genaue Inhalt jedes Heartbeats wird in diesem Dokument nicht behandelt. Wichtig ist vor allem, sicherzustellen, dass Heartbeats konsistent ausgelöst werden, während die Wiedergabe läuft.
 
@@ -49,7 +49,7 @@ Suchen Sie in den Inhalts-Heartbeats nach einigen speziellen Elementen:
 | `s:event:type` | "play" |  |
 | `l:event:playhead` | &lt;Position der Abspielleiste&gt;, z. B. 50, 60, 70 | Dies sollte die aktuelle Position der Abspielleiste widerspiegeln. |
 
-## Heartbeat Content Complete {#section_2CA970213AF2457195901A93FC9D4D0D}
+## Heartbeat Content Complete {#heartbeat-content-complete}
 
 In diesem Szenario gibt es keinen vollständigen Aufruf, da der Live-Stream nie abgeschlossen wurde.
 
@@ -67,7 +67,7 @@ Beispiel: Ein LIVE-Streaming-Ereignis beginnt um Mitternacht und dauert 24 Stund
 
 Bei Unterbrechung der Wiedergabe muss dieselbe Logik wie bei der Live-Abspielleiste angewendet werden. Wenn der Benutzer zum Abspielen des LIVE-Streams zurückkehrt, müssen Sie den `l:event:playhead` Wert auf die neue Position der Offset-Abspielleiste festlegen, _nicht_ auf den Punkt, an dem der Benutzer den LIVE-Stream angehalten hat.
 
-## Beispielcode {#section_vct_j2j_x2b}
+## Beispielcode {#sample-code}
 
 ![](assets/live-content-playback.png)
 
