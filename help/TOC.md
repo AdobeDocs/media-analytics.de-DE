@@ -3,7 +3,7 @@ product: Media Analytics
 audience: Endanwender
 user-guide-title: Adobe Analytics für Audio und Video
 translation-type: tm+mt
-source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
+source-git-commit: 1f9fe870b906246c3959eead2d23301f9a64f99c
 
 ---
 
@@ -128,6 +128,7 @@ source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
       + [OTT und Audience Manager](sdk-implement/analytics-with-ott/ott-am.md)
       + [OTT und Experience Cloud](sdk-implement/analytics-with-ott/ott-experience-cloud.md)
    + Cookbook {#cookbook}
+      + [SDK Cookbook](sdk-implement/cookbook/sdk-cookbook-overview.md)
       + [Behandlung von Anwendungsunterbrechungen während der Wiedergabe](sdk-implement/cookbook/app-interrupts.md)
       + [Beheben von „main:play“ zwischen Anzeigen](sdk-implement/cookbook/fix-ad-play-ad.md)
       + [Wiederaufnehmen inaktiver Sitzungen](sdk-implement/cookbook/resuming-inactive.md)
@@ -162,6 +163,9 @@ source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
       + [Zeitlicher Ablauf 2: Verlassen der Sitzung durch Anwender](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [Zeitlicher Ablauf 3: Kapitel](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
    + [Heruntergeladene Inhalte verfolgen](media-collection-api/track-downloaded-content.md)
++ Cookbook {#media-analytics-cookbook}
+   + [Übersicht über Cookbooks](media-analytics-cookbook/cookbook-overview.md)
+   + [Mediendimensionen außerhalb der Medienverfolgung](media-analytics-cookbook/media-dimensions.md)
 + Metriken und Metadaten {#metrics-and-metadata}
    + [Audio- und Videoparameter](metrics-and-metadata/audio-video-parameters.md)
    + [Anzeigenparameter](metrics-and-metadata/ad-parameters.md)
@@ -181,4 +185,4 @@ source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
    + [Vorlagen für den Arbeitsbereich](media-reports/media-workspace-templates.md)
 + [Federated Analytics](federated-analytics.md)
 + Zusätzliche Ressourcen {#additional-resources}
-   + [Dokumentation – Aktualisierungen](additional-resources/doc-updates.md)
+   + [Ressourcen](additional-resources/doc-updates.md)
