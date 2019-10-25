@@ -6,19 +6,31 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
+source-git-commit: b0816d87f66f95f347cf391176b5c46457c9a790
 
 ---
 
 
-# Dokumentationsaktualisierungen{#documentation-updates}
+# Ressourcen{#resources}
 
-## Zuletzt aktualisiert: 7. März 2019 {#March-2019-update}
+## Versionshinweise{#release-notes}
+
+* [Versionshinweise](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
+
+## Dokumentation – Aktualisierungen{#documentation-updates}
+
+### Last updated: October, 2019 {#October-2019-update}
+
+Zahlreiche Bearbeitungs- und Formatierungskorrekturen.
+Cookbook-Themen wurden über das Media SDK hinaus erweitert, einschließlich eines neuen allgemeinen Cookbook-Themas zu "Mediendimensionen außerhalb der Medienverfolgung".
+
+
+### Zuletzt aktualisiert: 7. März 2019 {#March-2019-update}
 
 * Dieses Update wurde hauptsächlich für die Version 2.2 Media SDK auf den JavaScript- und OTT-Plattformen entwickelt.
 * Die Version 2.2 Media SDK auf JavaScript- und OTT-Plattformen bietet dieselbe Unterstützung wie unten beschrieben für iOS- und Android-Plattformen (Update vom 1. November 2018).
 
-## Letzte Aktualisierung: 1. November 2018 {#November-2018-update}
+### Letzte Aktualisierung: 1. November 2018 {#November-2018-update}
 
 * Dieses Update wurde in erster Linie zur Veröffentlichung des Medien-SDK 2.2 auf den Plattformen Android und iOS durchgeführt.
 * Die Medien-SDK-Version 2.2 für Android und iOS liefert Unterstützung für das Audio-Tracking auf diesen Plattformen sowie interne Verbesserungen.
@@ -35,11 +47,10 @@ source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
 
 * Das Federated Analytics-Formular wurde auf Version 3.2 aktualisiert, um neue Parameter für das Audio-Tracking zu berücksichtigen.
 
-## Aktualisierung: 10. Oktober 2018 {#October-2018-update}
+### Aktualisierung: 10. Oktober 2018 {#October-2018-update}
 
 * Die Dokumentenstruktur wurde im Bereich SDK-Implementierung überarbeitet, indem die einzelnen (aber weitgehend identischen) Plattform-Implementierungshandbücher in einem SDK-Implementierungsabschnitt zusammengefasst wurden, wobei plattformspezifische Tracking-Beispiele in Unterabschnitten bei den bekannten Tracking-Themen vorgestellt werden.
 * In Erwartung einer Migration auf ein neues Dokumentensystem wurden die Dateien vollständig umbenannt. Alle DITA-Präfixe ( c_, r_, t_ ), die Konzept-, Referenz- und Aufgabenthementypen angeben, wurden entfernt. Alle Unterstriche (_) wurden durch Bindestriche (-) ersetzt. Außerdem ähneln die Dateinamen nun weitgehend den Bezeichnungen der Themen.
 * Aktualisierungen zu allgemeinen Validierungs- und Zertifizierungsthemen.
 * Neues Einführungsmaterial mit einer Darstellung der Messoptionen sowie Aktualisierungen der Voraussetzungen, Implementierungspfade und der Audience Manager-Fähigkeiten.
 * Aktualisierungen der Abschnitte Metriken und Metadaten sowie Reporting und Analysen, die die Erweiterung um Audioanalysefunktionen widerspiegeln.
-
