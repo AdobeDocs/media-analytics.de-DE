@@ -3,20 +3,20 @@ seo-title: Migration von Milestone zu Media Analytics
 title: Migration von Milestone zu Media Analytics
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Migration von Milestone zu Media Analytics {#migrating-from-milestone-to-media-analytics}
 
-## Überblick {#section_ihl_nbz_cfb}
+## Überblick {#overview}
 
 Die grundlegenden Prinzipien der Videomessung sind bei Milestone und Media Analytics gleich: Es werden Videoplayer-Ereignisse aufgenommen und auf Analysemethoden übertragen, während gleichzeitig Playermetadaten und -werte erfasst und auf Analysevariablen übertragen werden. Die Media Analytics-Lösung ist aus Milestone hervorgegangen, sodass viele der Methoden und Kennzahlen gleich sind, aber der Konfigurationsansatz und der Code haben sich stark verändert. Es sollte möglich sein, den Player-Ereigniscode zu aktualisieren, um auf die neuen Methoden von Media Analytics zu verweisen. Weitere Informationen zur Implementierung von Media Analytics finden Sie unter [SDK-Übersicht](/help/sdk-implement/setup/setup-overview.md) und [Verfolgungsübersicht](/help/sdk-implement/track-av-playback/track-core-overview.md) .
 
 Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone- und der Media Analytics-Lösung.
 
-## Migrationsleitfaden {#section_iyb_pbz_cfb}
+## Migrationsleitfaden {#migration-guide}
 
 ### Variablenreferenz
 
@@ -188,8 +188,7 @@ s.Media.playerName = "Custom Player Name"
 </pre>
 </td>
 <td>
-SDK-Schlüssel: playerName; 
-API-Schlüssel: media.playerName
+SDK-Schlüssel: playerName;API-Schlüssel: media.playerName
 </td>
 <td>
 <pre>
@@ -485,7 +484,7 @@ trackEvent
 <pre>
 mediaHeartbeat.trackEvent( MediaHeartbeat.
     Ereignis.
-    AdBreakStart, adBreakObject); ...
+    AdBreakStart, adBreakObject);...
 trackEvent( MediaHeartbeat.
     Ereignis.
     AdStart, adObject, adCustomMetadata);
@@ -722,11 +721,13 @@ trackPause()
 </pre> 
 oder
 <pre>
+
 trackEvent( MediaHeartbeat.
   Ereignis.
   SeekStart)
 </pre> oder
 <pre>
+
 trackEvent( MediaHeartbeat.
   Ereignis.
   BufferStart);
@@ -751,14 +752,14 @@ s.Media.monitor(s, media)
 var customVideoMetadata = { isUserLoggedIn: 
     "false", tvStation: 
     "Sample TV station", Programmierer: 
-    "Beispielprogrammierer"}; ...
+    "Beispielprogrammierer"};...
 var standardVideoMetadata = {};
 standardVideoMetadata [MediaHeartbeat.
    VideoMetadataKeys.
    EPISODE] = "Beispielauftritt";
 standardVideoMetadata [MediaHeartbeat.
    VideoMetadataKeys.
-   SHOW] = "Beispielanzeige"; ...
+   SHOW] = "Beispielanzeige";...
 mediaObject.setValue( MediaHeartbeat.
   MediaObjectKey.
   StandardVideoMetadata, standardVideoMetadata);
