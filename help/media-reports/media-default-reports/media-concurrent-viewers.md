@@ -3,7 +3,7 @@ seo-title: Gleichzeitige Medienbetrachter
 title: Gleichzeitige Medienbetrachter
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -18,7 +18,7 @@ Das Dashboard „Gleichzeitige Medienbetrachter“ gibt die Anzahl der gleichzei
 
 ![](assets/video-concurrent-viewers.png)
 
-## Berichtsfunktionen {#section_11F8BCB98042490DAD0EA0B7EDA80569}
+## Berichtsfunktionen {#report-features}
 
 Im Folgenden finden Sie einige Funktionen dieses Berichts:
 
@@ -30,7 +30,7 @@ Im Folgenden finden Sie einige Funktionen dieses Berichts:
 * Der Bericht bezieht sich nur auf einen Tag.
 * Der Kunde kann sich Verlaufsberichte zu gleichzeitigen Zuschauern anzeigen (beschränkt auf einzelne Tage).
 
-## Einschränkungen {#section_F159BC0213134FE4A997E52EECC7BB9D}
+## Einschränkungen {#limitations}
 
 Im Folgenden finden Sie die Einschränkungen dieses Berichts:
 
