@@ -3,7 +3,7 @@ seo-title: Medienübersicht
 title: Medienübersicht
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -14,13 +14,13 @@ Im Dashboard „Medienübersicht“ können Sie die Medien auf Ihrer Site überw
 
 ![](assets/media_overview.png){width="672px"}
 
-## Schnellfilter {#section_8DF3E4A6734145B082657C6BECFA0BBE}
+## Schnellfilter {#quick-filters}
 
 Zeigen Sie Medienmetriken schnell nach Gerät oder Land an:
 
 ![](assets/video-overview-report-filters.png){width="400px"}
 
-## Medienperformance {#section_288FB476EDA44761BB8A86551F0A110C}
+## Medienperformance {#media-performance}
 
 Zoomen Sie durch Klicken und Ziehen und zeigen Sie dann mit dem Mauszeiger auf Elemente, um granulare Metriken für bestimmte Medien anzuzeigen. Klicken  ![](assets/video-overview-report-revert.png)
 
