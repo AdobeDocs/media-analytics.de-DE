@@ -3,14 +3,14 @@ seo-title: Tracking in SceneGraph (Roku)
 title: Tracking in SceneGraph (Roku)
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Tracking in SceneGraph (Roku){#tracking-in-scenegraph-roku}
 
-## Einführung {#section_vfr_zcz_y2b}
+## Einführung {#introduction}
 
 Roku hat ein neues Programmierungs-Framework für die Anwendungsentwicklung eingeführt: das SceneGraph-XML-Framework. Dieses neue Framework umfasst zwei wichtige Aspekte:
 
@@ -19,7 +19,7 @@ Roku hat ein neues Programmierungs-Framework für die Anwendungsentwicklung eing
 
 Das  Adobe Mobile SDK for Roku wurde in BrightScript geschrieben. Das SDK nutzt viele Komponenten, die nicht für Anwendungen in SceneGraph verfügbar sind (z. B. Threads). Deshalb können Roku-Anwendungsentwickler, die das SceneGraph-Framework nutzen wollen, die Adobe Mobile-SDK-APIs nicht aufrufen (letztere ähneln den in Legacy-BrightScript-Anwendungen verfügbaren APIs).
 
-## Architektur {#section_dj5_1dz_y2b}
+## Architektur {#architecture}
 
 Damit das AdobeMobile-SDK SceneGraph unterstützt, hat Adobe eine neue API hinzugefügt, die eine Connector-Verbindung zwischen dem AdobeMobile-SDK und `adbmobileTask` herstellt. Letzterer ist ein SceneGraph-Knoten, der für die API-Ausführung des SDK verwendet wird. (Die Verwendung von `adbmobileTask` wird im Rest dieses Dokuments ausführlich erklärt.)
 
@@ -31,7 +31,7 @@ Die Connector-Verbindung funktioniert wie folgt:
 
 ![](assets/SceneGraph_arch.png)
 
-## Komponenten {#section_jwl_wqx_1bb}
+## Komponenten {#components}
 
 **SceneGraph-Anwendung:**
 
@@ -49,7 +49,7 @@ Die Connector-Verbindung funktioniert wie folgt:
 * Ein SceneGraph-Aufgabenknoten, der `AdobeMobileLibrary`-APIs im Hintergrund-Thread ausführt.
 * Dient als Delegate, der Daten an die Anwendungsszenen zurückgeben kann.
 
-## Öffentliche SceneGraph-APIs {#section_jyd_hdz_y2b}
+## Öffentliche SceneGraph-APIs {#public-scenegraph-apis}
 
 ### ADBMobileConnector
 
@@ -195,7 +195,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
 | `adb_media_init_adbreakinfo` | Diese Methode gibt ein initialisiertes Objekt mit AdBreak-informationen zurück.  `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
 | `adb_media_init_qosinfo` | Diese Methode gibt ein initialisiertes Objekt mit QoS-Informationen zurück.  `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
 
-## Implementierung {#section_dbz_ydz_y2b}
+## Implementierung {#implementation}
 
 1. **Laden Sie die Roku-Bibliothek herunter -** Laden Sie die [neueste Roku-Bibliothek herunter.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0)
 
@@ -295,7 +295,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
       end function 
       ```
 
-## Beispielimplementierung {#section_mld_lfz_y2b}
+## Beispielimplementierung {#sample-implementation}
 
 ### API-Beispielaufrufe im Legacy-SDK
 
