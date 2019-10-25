@@ -3,7 +3,7 @@ seo-title: Überblick
 title: Überblick
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -18,7 +18,7 @@ Die Mediensammlungs-API wird von Adobe als RESTful-Alternative zum Client-seitig
 
 Die Mediensammlungs-API ist im Grunde ein Adapter, der als serverseitige Version des Medien-SDK fungiert. Das bedeutet, dass einige Aspekte der Media SDK-Dokumentation auch für die Media Collection-API relevant sind. Beispielsweise verwenden beide Lösungen dieselben [Audio- und Video-Parameter](/help/metrics-and-metadata/audio-video-parameters.md), und die erfassten Audio- und Videoverfolgungsdaten führen zu derselben [Berichterstellung und Analyse.](/help/media-reports/media-reports-enable.md)
 
-## Datenfluss beim Medien-Tracking {#section_pwq_n34_qbb}
+## Datenfluss beim Medien-Tracking {#media-tracking-data-flows}
 
 Ein Medienplayer, der die Media Collection-API implementiert, führt RESTful-API-Verfolgungsaufrufe direkt an den MedienverfolgungsBack-End-Server, während ein Player, der das Media SDK implementiert, Verfolgungsaufrufe an die SDK-APIs in der Player-App durchführt. Da der Player mit der Mediensammlungs-API Aufrufe über das Internet sendet, muss er einen Teil der Verarbeitung übernehmen, den das Medien-SDK automatisch vornimmt. (Details zur Implementierung der [Medienerfassung.](mc-api-impl/mc-api-quick-start.md))
 
@@ -26,7 +26,7 @@ Die mit der Media Collection-API erfassten Verfolgungsdaten werden zunächst and
 
 ![](assets/col_api_overview_simple.png)
 
-## API-Übersicht {#section_y4n_mcl_kcb}
+## API-Übersicht {#api-overview}
 
 **URI:** Diese erhalten Sie von Ihrem Adobe-Support-Mitarbeiter.
 
