@@ -3,14 +3,14 @@ seo-title: VOD-Wiedergabe mit übersprungenen Anzeigen
 title: VOD-Wiedergabe mit übersprungenen Anzeigen
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # VOD-Wiedergabe mit übersprungenen Anzeigen{#vod-playback-with-skipped-ads}
 
-## Szenario {#section_DAC4BCE25F4A4C4991AD0AE495D15B00}
+## Szenario {#scenario}
 
 Dieses Szenario umfasst eine VOD-Inhaltswiedergabe mit einer übersprungenen Anzeige.
 
@@ -29,11 +29,11 @@ This is the same scenario as [VOD playback with pre-roll ads](/help/sdk-implemen
 | Die Inhaltswiedergabe ist abgeschlossen. | `trackComplete()` | Heartbeat Content Complete | Dieser Netzwerkaufruf ist mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. |
 | Die Sitzung ist beendet. | `trackSessionEnd()` |  | `SessionEnd` |
 
-## Parameter {#section_4A0F92BF3DDD4623A1EE61C76582A4A6}
+## Parameter {#parameters}
 
 Die Parameter sind mit den Parametern im Szenario [VOD-Wiedergabe mit Pre-Roll-Anzeigen](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md) identisch, es sei denn, es gibt keinen Ad Complete- und keinen Ad-Break Complete-Aufruf.
 
-## Beispielcode {#section_lxt_qz3_x2b}
+## Beispielcode {#sample-code}
 
 ![](assets/ad-skip.png)
 
