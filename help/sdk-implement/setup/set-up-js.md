@@ -3,7 +3,7 @@ seo-title: JavaScript einrichten
 title: JavaScript einrichten
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    * *Eine API, um Player-Ereignisse zu abonnieren:* Die Medien-SDK erfordert, dass Sie einige einfache APIs aufrufen, wenn Ereignisse in Ihrem Player auftreten.
    * *Eine API, die Playerinformationen bereitstellt:* Diese Informationen enthalten Details wie z. B. Medienname und Abspielposition.
 
-1. Fügen Sie Ihre [heruntergeladene](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Bibliothek zu Ihrem Projekt hinzu. Erstellen Sie aus Gründen der Übersichtlichkeit lokale Referenzen auf die Klassen.
+1. Fügen Sie Ihre [heruntergeladene](/help/sdk-implement/download-sdks.md#download-2x-sdks) Bibliothek zu Ihrem Projekt hinzu. Erstellen Sie aus Gründen der Übersichtlichkeit lokale Referenzen auf die Klassen.
 
    1. Erweitern Sie die `MediaSDK-js-v2.*.zip` heruntergeladene Datei.
    1. Verify that the `MediaSDK.min.js` file exists in the `libs` directory:
