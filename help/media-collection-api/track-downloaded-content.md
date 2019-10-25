@@ -3,14 +3,14 @@ seo-title: Tracking heruntergeladener Inhalte
 title: Tracking heruntergeladener Inhalte
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 translation-type: tm+mt
-source-git-commit: b9298de98eeb85c0e2ea0a456c98eac479f43b51
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Tracking heruntergeladener Inhalte{#track-downloaded-content}
 
-## Überblick {#section_hcy_3pk_cfb}
+## Überblick {#overview}
 
 Die Funktion "Heruntergeladene Inhalte"bietet die Möglichkeit, den Medienkonsum zu verfolgen, während ein Benutzer offline ist. Beispielsweise lädt ein Anwender eine App herunter und installiert sie auf einem Mobilgerät. Der Anwender lädt dann mit der App Inhalte in den lokalen Speicher auf dem Gerät herunter. Um diese heruntergeladenen Daten zu verfolgen, hat Adobe die Funktion für heruntergeladene Inhalte entwickelt. Mit dieser Funktion werden beim Abspielen von Inhalten aus dem Speicher eines Geräts Verfolgungsdaten auf dem Gerät gespeichert, unabhängig von der Konnektivität des Geräts. Wenn der Benutzer die Wiedergabesitzung beendet und das Gerät online zurückgibt, werden die gespeicherten Verfolgungsinformationen innerhalb einer einzigen Nutzlast an das Media Collection API-Back-End gesendet. Von dort erfolgt die Verarbeitung und Berichterstellung wie gewohnt in der Medienerfassungs-API.
 
@@ -28,12 +28,12 @@ Jeder Ansatz hat seine Vor- und Nachteile:
 * Das Online-Szenario verfolgt sich in Echtzeit. dies erfordert eine Verbindungsprüfung vor jedem Netzwerkaufruf.
 * Für das Offline-Szenario (Funktion für heruntergeladene Inhalte) ist nur eine Prüfung der Netzwerkverbindung erforderlich, es ist jedoch auch ein größerer Speicherbedarf auf dem Gerät erforderlich.
 
-## Implementierung {#section_jhp_jpk_cfb}
+## Implementierung {#implementation}
 
 ### Ereignisschemata
 
 Bei der Funktion für heruntergeladene Inhalte handelt es sich lediglich um die Offline-Version der (Standard-)Online-Medienerfassungs-API. Daher müssen die Ereignisdaten, die Ihr Player stapelt und an das Back-End sendet, dieselben Ereignisschemata verwenden, die Sie auch bei Online-Aufrufen verwenden. Informationen zu diesen Schemata finden Sie unter:
-* [Übersicht;](/help/media-collection-api/mc-api-overview.md)
+* [Überblick;](/help/media-collection-api/mc-api-overview.md)
 * [Validieren von Ereignisanfragen](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 ### Reihenfolge der Ereignisse
@@ -47,11 +47,11 @@ Bei der Funktion für heruntergeladene Inhalte handelt es sich lediglich um die 
 * 201 - Created: Successful Request; die Daten sind gültig und die Sitzung wurde erstellt und wird verarbeitet.
 * 400 - Bad Request; die Schemavalidierung ist fehlgeschlagen, alle Daten werden verworfen, es werden keine Sitzungsdaten verarbeitet.
 
-## Integration mit Adobe Analtyics {#section_cty_kpk_cfb}
+## Integration mit Adobe Analtyics {#integration-with-adobe-analtyics}
 
 Bei der Berechnung der Analytics-Start-/Schließen-Aufrufe für das heruntergeladene Inhaltsszenario legt das Back-End ein zusätzliches Analytics-Feld namens `ts.` "Diese Zeitstempel sind für das erste und letzte empfangene Ereignis (Start und Abschluss) fest. Auf diese Weise kann eine abgeschlossene Mediensitzung zum richtigen Zeitpunkt platziert werden (d. h., selbst wenn der Benutzer mehrere Tage lang nicht wieder online ist, wird berichtet, dass die Mediensitzung zum Zeitpunkt der tatsächlichen Anzeige stattgefunden hat). Sie müssen dieses Verfahren auf der Seite von Adobe Analytics aktivieren, indem Sie einen _optionalen Zeitstempel für die Report Suite erstellen._ Informationen zum Aktivieren eines optionalen Zeitstempel für die Report Suite finden Sie unter [Optionale Zeitstempel.](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/timestamp-optional.html)
 
-## Vergleich von Beispielsitzungen {#section_qnk_lpk_cfb}
+## Vergleich von Beispielsitzungen {#sample-session-comparison}
 
 ```
 [url]/api/v1/sessions
