@@ -3,14 +3,14 @@ seo-title: VOD-Wiedergabe mit Suche im Hauptinhalt
 title: VOD-Wiedergabe mit Suche im Hauptinhalt
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # VOD-Wiedergabe mit Suche im Hauptinhalt{#vod-playback-with-seeking-in-the-main-content}
 
-## Szenario {#section_E4B558253AD84ED59256EDB60CED02AE}
+## Szenario {#scenario}
 
 Dieses Szenario umfasst die Suche im Hauptinhalt während der Wiedergabe.
 
@@ -26,7 +26,7 @@ Dieses Szenario ist mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-im
 | Inhalt ist abgeschlossen. | `trackComplete` | Heartbeat Content Complete | Dieser Netzwerkaufruf ist mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. |
 | Sitzung beendet | `trackSessionEnd` |  | `SessionEnd` |
 
-## Beispielcode {#section_q2d_wcj_x2b}
+## Beispielcode {#sample-code}
 
 In diesem Szenario führt der Anwender eine Suche aus, während der Hauptinhalt abgespielt wird.
 
