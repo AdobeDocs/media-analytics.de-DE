@@ -3,7 +3,7 @@ seo-title: Anfrageparameter
 title: Anfrageparameter
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 translation-type: tm+mt
-source-git-commit: 8eb9ccc9229a0b430f3628054b960441660a8683
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -111,7 +111,7 @@ source-git-commit: 8eb9ccc9229a0b430f3628054b960441660a8683
 | `analytics.optOutServerSideForwarding` | N | `sessionStart` | Auf "true"setzen, wenn der Endbenutzer die Freigabe seiner Daten für Adobe Analytics und andere Experience Cloud-Lösungen (z. B. Audience Manager) abgelehnt hat |
 | `analytics.optOutShare` | N | `sessionStart` | Auf "true"setzen, wenn der Endbenutzer sich für die Verknüpfung seiner Daten (z. B. mit anderen Adobe Analytics-Clients) entschieden hat. |
 
-## Zusätzliche Details {#section_ryt_ccy_lcb}
+## Zusätzliche Details {#additional-details}
 
 ### visitor.marketingCloudUserId
 
