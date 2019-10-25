@@ -3,14 +3,14 @@ seo-title: VOD-Wiedergabe mit einem Kapitel
 title: VOD-Wiedergabe mit einem Kapitel
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # VOD-Wiedergabe mit einem Kapitel{#vod-playback-with-one-chapter}
 
-## Szenario {#section_E4B558253AD84ED59256EDB60CED02AE}
+## Szenario {#scenario}
 
 In diesem Szenario wurde ein Teil des VOD-Inhalts als Kapitel markiert.
 
@@ -27,7 +27,7 @@ Wenn nichts anderes angegeben ist, sind die Netzwerkaufrufe in diesem Szenario m
 | Der Inhalt ist abgeschlossen. | `trackComplete` | Heartbeat Content Complete | Dieser Netzwerkaufruf ist mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. |
 | Die Sitzung ist beendet. | `trackSessionEnd` |  | `SessionEnd` bedeutet, dass das Ende einer Wiedergabesitzung erreicht wurde. Diese API muss auch dann aufgerufen werden, wenn der Benutzer die Medien nicht bis zum Abschluss ansieht. |
 
-## Parameter {#section_869319D99A474FEA8EA840415EA97FBD}
+## Parameter {#parameters}
 
 When chapter playback begins, a `Heartbeat Chapter Start` call is sent. Wenn der Anfang des Kapitels nicht auf den 10-Sekunden-Timer fällt, wird der `Heartbeat Chapter Start`-Aufruf um einige Sekunden verzögert. Der Aufruf wird dann mit dem nächsten 10-Sekunden-Intervall gesendet.
 
@@ -42,7 +42,7 @@ In diesem Fall wird ein `Content Heartbeat`-Aufruf in demselben Intervall gesend
 | `s:stream:chapter_*` |  | Spezielle Stream-Informationen für die Kapiteldaten. |
 | `s:meta:*` |  | Kapitel mit speziellen Kontextdaten. |
 
-## Beispielcode, Kapitel in der Mitte {#section_icd_5bj_x2b}
+## Beispielcode, Kapitel in der Mitte {#sample-code-chapter-in-the-middle}
 
 In diesem Szenario ist ein Teil des VOD-Inhalts ein Kapitel.
 
@@ -254,7 +254,7 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-## Beispielcode, Kapitel am Anfang {#section_flj_5bj_x2b}
+## Beispielcode, Kapitel am Anfang {#sample-code-chapter-at-the-beginning}
 
 In diesem Szenario wird VOD-Inhalt mit einem Kapitel am Anfang der Wiedergabe wiedergegeben.
 
