@@ -3,14 +3,14 @@ seo-title: Opt-out und Datenschutz
 title: Opt-out und Datenschutz
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 translation-type: tm+mt
-source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Opt-out und Datenschutz{#opt-out-and-privacy}
 
-## Opt-out/Opt-in {#section_zfb_syq_v2b}
+## Opt-out/Opt-in {#opt-out-opt-in}
 
 Sie können steuern, ob die Tracking-Aktivität auf einem bestimmten Gerät zulässig ist:
 
@@ -26,7 +26,7 @@ Sie können steuern, ob die Tracking-Aktivität auf einem bestimmten Gerät zul�
 
    * The `privacyDefault` setting in the `ADBMobile.json` config file. Dies steuert die Grundeinstellung und bleibt bestehen, bis es im Code geändert wird.
 
-   * Die `ADBMobile().setPrivacyStatus()` Methode.
+   * Die `ADBMobile().setPrivacyStatus()`-Methode.
 
       * **Opt-out:**
 
@@ -73,7 +73,7 @@ Sie können steuern, ob die Tracking-Aktivität auf einem bestimmten Gerät zul�
             ```
    Nachdem die Datenschutzeinstellung mit `setPrivacyStatus` geändert wurde, ist die Änderung dauerhaft, bis sie mit dieser Methode erneut geändert wird, es sei denn, die App wird deinstalliert und neu installiert.
 
-## Abrufen von gespeicherten Kennungen (OTT-Apps) {#section_mky_2yq_v2b}
+## Abrufen von gespeicherten Kennungen (OTT-Apps) {#retrieving-stored-identifiers-ott-apps}
 
 Mit diesen Informationen können Sie lokal gespeicherte Anwenderidentitäten von Ihrer Roku-Anwendung abrufen.
 
