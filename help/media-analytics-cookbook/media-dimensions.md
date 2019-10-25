@@ -1,17 +1,19 @@
 ---
-title: Mediendimensionen außerhalb der Medienverfolgung
-seo-title: Mediendimensionen außerhalb der Medienverfolgung
+title: Medienstream-Zuordnung
+seo-title: Medienstream-Zuordnung
 translation-type: tm+mt
-source-git-commit: 5d20df537cd244a10f6c2e66cea622e98aa17a16
+source-git-commit: 44b12731c4a701f0f2536c1c83a9ad4a8b27b49b
 
 ---
 
 
-# Mediendimensionen außerhalb der Medienverfolgung
+# Medienstream-Zuordnung
 
 Mit dieser Funktion können Sie Anwendungsaktionen mit Medienverfolgungsdaten verknüpfen, ohne dass zusätzliche Verarbeitungsregeln und benutzerdefinierte Variablen erforderlich sind.
 
-Kunden können jetzt alle Mediendimensionen zu allen anderen Analytics-Aufrufen hinzufügen, z. B. Seitenansichten und benutzerspezifische Links. Während der Implementierung müssen Sie die Parameter für Medienkontextdaten zu den Analytics-Verfolgungsaufrufen hinzufügen. Die vollständige Liste der für Medien verwendeten Kontextdatenparameter finden Sie hier: Parameter [für Audio und Video.](/help/metrics-and-metadata/audio-video-parameters.md)
+## Mediendimensionen außerhalb der Medienverfolgung
+
+Mit der Media Stream-Zuordnung können Kunden jetzt alle Mediendimensionen zu allen anderen Analytics-Aufrufen hinzufügen, z. B. Seitenansichten und benutzerspezifische Links. Während der Implementierung müssen Sie die Parameter für Medienkontextdaten zu den Analytics-Verfolgungsaufrufen hinzufügen. Die vollständige Liste der für Medien verwendeten Kontextdatenparameter finden Sie hier: Parameter [für Audio und Video.](/help/metrics-and-metadata/audio-video-parameters.md)
 
 Außerdem müssen Sie die Medienverfolgungskonfiguration für jeden Bericht, für den Sie diese Funktion aktivieren möchten, über die Admin-Konsole erneut aktivieren.
 
