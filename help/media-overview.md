@@ -3,7 +3,7 @@ seo-title: Messen von Audio und Video in Adobe Analytics
 title: Messen von Audio und Video in Adobe Analytics
 uuid: b3cbe240-b94d-42b8-a99c-0280334aa14
 translation-type: tm+mt
-source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
+source-git-commit: d339ae295af89a1c2ba2e8c938e1650d82507e2b
 
 ---
 
@@ -14,9 +14,9 @@ source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
 
 >[!IMPORTANT]
 >
->The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. Es enthält keine Anweisungen zur alten Milestone-Videoimplementierung. Wir empfehlen Kunden, eine der beiden aktuellen Medien-Tracking-Lösungen zu verwenden, um die Verbesserungen und die erweiterte Messung nutzen zu können. Die [Vorteile der neuen Lösungen](media-overview.md#section_cnj_5st_p1b) werden unten beschrieben. Während wir weiterhin die Meilensteinmethode zum Verfolgen von Videos unterstützen, sind keine geplanten Aktualisierungen, Fehlerbehebungen oder Verbesserungen der Funktionen geplant. Wenden Sie sich an Ihren Adobe-Account-Manager, wenn Sie weitere Fragen haben.
+>The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. Es enthält keine Anweisungen zur alten Milestone-Videoimplementierung. Wir empfehlen Kunden, eine der beiden aktuellen Medien-Tracking-Lösungen zu verwenden, um die Verbesserungen und die erweiterte Messung nutzen zu können. Die [Vorteile der neuen Lösungen](media-overview.md#heartbeat-versus-milestone-benefits) werden unten beschrieben. Während wir weiterhin die Meilensteinmethode zum Verfolgen von Videos unterstützen, sind keine geplanten Aktualisierungen, Fehlerbehebungen oder Verbesserungen der Funktionen geplant. Wenden Sie sich an Ihren Adobe-Account-Manager, wenn Sie weitere Fragen haben.
 
-## Überblick {#section_8BFE4F8DA64B4A5F826A4940B11AA466}
+## Überblick {#overview}
 
 Adobe Analytics for Media (auch als Media Analytics bezeichnet) ist ein Add-on zum Basis-Analytics-Angebot, das Kunden eine robuste Medienmessung für Inhalte, Audio und Werbung liefert. Media Analytics bietet Kunden viele Vorteile, z. B. Echtzeitüberwachung, detaillierte Analysen, aussagekräftige Einblicke und Monetarisierungsmöglichkeiten.
 
@@ -29,7 +29,7 @@ Mit Adobe Analytics for Media können Kunden die gesamte Customer Journey über 
 
 Die Medienlösungen messen nicht nur wichtige Lieferkennzahlen im Zusammenhang mit QoS, wie z. B. abgebrochene Frames, Zeitaufwand für die Pufferung und durchschnittliche Bitrate. Sie können auch mit Ihren Website- oder App-Daten kombiniert werden, um den Kundenverkehr und die Kundeninteressen zu visualisieren, um Empfehlungen aussprechen und um Erlebnisse über die Adobe Experience Cloud personalisieren zu können.
 
-## Vorteile {#section_7712BA90EAE64C118218D1C581EF68B7}
+## Vorteile {#benefits}
 
 Zu den Vorteilen der Adobe-Medienmessungslösungen zählen folgende Punkte:
 
@@ -40,7 +40,7 @@ Zu den Vorteilen der Adobe-Medienmessungslösungen zählen folgende Punkte:
 * **Präzise Messung:** Untersuchen Sie verschiedenste Geräte zur Mediennutzung, einschließlich OTT, Smartphone, Tablet, Desktop und mehr, um Anwenderinteraktionen und Verhaltensmuster zu analysieren.
 * **Segmentierung:** Wenden Sie auf Player, Geräte, Genres, Kapitel und Sendungen Klassifizierungen an, um herauszufinden, wie sie sich auf die Aufrufe und die Kundeninteraktion mit Inhalten und Anzeigen auswirken.
 
-## Vorteile von Heartbeat gegenüber Milestone {#section_cnj_5st_p1b}
+## Vorteile von Heartbeat gegenüber Milestone {#heartbeat-versus-milestone-benefits}
 
 Adobe Analytics für Media lässt sich auf zwei Arten messen: die alte Milestone-Methode (nur Video) und die aktuelle Heartbeats-Methode (Audio und Video, sowohl im Media SDK als auch in der Media Collection-API verfügbar). Wir empfehlen für die Messung die Heartbeat-Methode und raten allen Kunden, diese Methode zu implementieren, sofern noch nicht geschehen, um die unten beschriebenen Vorteile nutzen zu können.
 
@@ -51,7 +51,6 @@ Zu den Vorteilen der Heartbeat-Methode zählen folgende Punkte:
 * **Optimierter Implementierungsprozess:** Ordnen Sie Variablen über die Player-API einfacher zu und validieren Sie Implementierungen über das Adobe-Debugging-Tool, um sicherzustellen, dass alle erforderlichen Variablen richtig verfolgt werden.
 * **Automatische Adobe Experience Cloud-Integration:** Nutzen Sie die automatische Integration in die Adobe Experience Cloud mithilfe der Experience Cloud ID, segmentieren Sie Ihre Medienzielgruppen, sprechen Sie sie gezielt an und stellen Sie basierend auf Anwendervorlieben Medienempfehlungen bereit.
 * **Kombinierte Daten dank Federated Analytics:** Nutzen Sie unsere branchenweit ersten Funktionen zur Weitergabe von Mediendaten, um die Daten ganzheitlich über all Ihre Distributionspartner (Betreiber, Programmersteller und Distributoren) zu evaluieren.
-* **Partnerschaften mit zertifizierten Partnern zur Bewertung:** Adobe arbeitet mit dem Zielgruppenbewertungsexperten Nielsen zusammen, um neutrale, vertrauenswürdige und zertifizierte Drittanbietermessungen bereitzustellen.
 * **Standardisierte Lösung für alle Plattformen:** Nutzen Sie über alle Medienplattformen hinweg einheitliche und standardisierte Variablen, um effizientere Vergleiche zwischen Kampagnen, Geräten und Anbietern zu ermöglichen.
 * **Nachverfolgung heruntergeladener Inhalte - Verfolgen Sie Medieninhalte (Video und Audio), die unabhängig von ihrer Konnektivität auf ein Gerät heruntergeladen und wiedergegeben werden.**
 
@@ -67,7 +66,7 @@ Zu den Vorteilen der Heartbeat-Methode zählen folgende Punkte:
 | **Weitergabe an Partner** | – | Federated Analytics und zertifizierte Metriken |
 | **Erweitertes Tracking** | – | Tracking von Fehlerbehebungen und gleichzeitigen Zuschauern |
 
-## Unterstützte Geräte {#section_lkm_l5t_p1b}
+## Unterstützte Geräte {#devices-supported}
 
 Adobe Analytics for Media hat sich mit der Branche weiterentwickelt und bietet leistungsstarke Datensammlungstools, um zu gewährleisten, dass jeder Medien-Stream erfasst wird und über alle wichtigen Geräte hinweg zu Berichten hinzugefügt werden kann. Unser Medien-SDK wurde für die am häufigsten verwendeten Geräte entwickelt, darunter:
 
