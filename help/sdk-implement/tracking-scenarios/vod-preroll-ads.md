@@ -5,7 +5,7 @@ description: In diesem Szenario wurde eine Pre-roll-Anzeige vor dem Hauptinhalt 
 seo-description: In diesem Szenario wurden in Adobe Media Analytics Pre-Roll-Anzeigen vor dem Hauptinhalt eingefügt.
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -28,7 +28,7 @@ In diesem Szenario wurde eine Pre-roll-Anzeige vor dem Hauptinhalt eingefügt. W
 | Der Inhalt ist abgeschlossen. | `trackComplete` | Heartbeat Content Complete | Dieser Netzwerkaufruf ist identisch mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
 | Die Sitzung ist beendet. | `trackSessionEnd` |  | `SessionEnd` |
 
-## Parameter {#section_33CDFB6CB230437480B67A3D149EC44E}
+## Parameter {#parameters}
 
 When ad playback begins, a `Heartbeat Ad Start` call is sent. Wenn der Anfang der Anzeige nicht auf den 10-Sekunden-Timer fällt, wird der `Heartbeat Ad Start`-Aufruf um einige Sekunden verzögert. Der Aufruf wird dann mit dem nächsten 10-Sekunden-Intervall gesendet. In diesem Fall wird ein `Content Heartbeat`-Aufruf in demselben Intervall gesendet. Sie können zwischen den beiden Aufrufen unterscheiden, indem Sie den Ereignistyp und den Assettyp untersuchen:
 
@@ -68,7 +68,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 | `s:event:type` | `complete` |  |
 | `s:asset:type` | `ad` |  |
 
-## Beispielcode für eine Pre-roll-Werbeunterbrechung {#section_nwf_xy3_x2b}
+## Beispielcode für eine Pre-roll-Werbeunterbrechung {#sample-code-for-a-pre-roll-ad-break}
 
 In diesem Szenario besteht der VOD aus einer Pre-roll-Anzeige und einer zweiten Pre-roll-Anzeige vor der Wiedergabe des Inhalts.
 
@@ -378,7 +378,7 @@ In diesem Szenario besteht der VOD aus einer Pre-roll-Anzeige und einer zweiten 
    .......
    ```
 
-## Beispielcode für mehrere Werbeunterbrechungen {#section_ojy_zy3_x2b}
+## Beispielcode für mehrere Werbeunterbrechungen {#sample-code-for-multiple-ad-breaks}
 
 In diesem Szenario wird VOD-Inhalt mit einer Pre-Roll-Anzeige, dem Inhalt, einer Mid-Roll-Anzeige, dem Inhalt und einer Post-Roll-Anzeige wiedergegeben.
 
