@@ -3,20 +3,20 @@ seo-title: Migration von Milestone zu Custom Link
 title: Migration von Milestone zu Custom Link
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Migration von Milestone zu Custom Link{#migrating-from-milestone-to-custom-link}
 
-## Überblick {#section_xlc_fc2_dfb}
+## Überblick {#overview}
 
 Die grundlegenden Prinzipien der Videomessung sind die gleichen wie beim Milestone- und Custom Link-Tracking, bei denen Videoplayer-Ereignisse aufgenommen und auf Analysemethoden übertragen werden, während gleichzeitig Playermetadaten und -werte erfasst und auf Analysevariablen übertragen werden. Der Custom Link-Ansatz sollte als eine Verschlankung und Vereinfachung sowohl der Implementierung als auch der erfassten Daten betrachtet werden. Bei der Custom Link-Lösung sind keine Variablen oder Methoden für die Videomessung vordefiniert, sondern es ist eine vollständige anwenderdefinierte Einrichtung erforderlich. Es sollte möglich sein, den Player-Ereigniscode zu aktualisieren, um auf die anwenderdefinierten Linktracking-Aufrufe für grundlegende Spielereignisse wie Start und Ende zu verweisen. Siehe [Custom Link-Implementierungsleitfaden](/help/measurement-options/cl-in-aa/cl-impl-guide.md) und [Manuelles Linktracking mithilfe des benutzerdefinierten Link-Codes](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) für weitere Details.
 
 Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone-Lösung und der Custom Link-Lösung.
 
-## Migrationsleitfaden {#section_btt_fc2_dfb}
+## Migrationsleitfaden {#migration-guide}
 
 ### Videovariablenreferenz
 
