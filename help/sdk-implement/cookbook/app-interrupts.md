@@ -3,7 +3,7 @@ seo-title: Behandlung von Anwendungsunterbrechungen während der Wiedergabe
 title: Behandlung von Anwendungsunterbrechungen während der Wiedergabe
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -19,7 +19,7 @@ Die Wiedergabe in einer Medienanwendung kann auf verschiedene Arten unterbrochen
 >
 >The Media Analytics team has seen instances where customers called `trackSessionStart` when their app returned from the background. Auf diese Weise wird die Wiedergabe bis zu diesem Punkt nicht in Bezug auf die Gesamtwiedergabezeit gezählt, sondern es gehen auch frühere Fortschrittsmarkierungen, Segmente usw. verloren. Instead, call `trackPlay` when the app returns and/or the media resumes playing.
 
-## Häufige Fragen zur Behandlung von Anwendungsunterbrechungen: {#section_osf_xqs_h2b}
+## Häufige Fragen zur Behandlung von Anwendungsunterbrechungen: {#faq-about-handling-application-interrupts}
 
 * _Wie lange sollte eine App im Hintergrund laufen, bevor die Sitzung beendet wird?_
 
