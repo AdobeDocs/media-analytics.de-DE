@@ -3,7 +3,7 @@ seo-title: Übersicht zu Milestone
 title: Übersicht zu Milestone
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
 translation-type: tm+mt
-source-git-commit: 7eb14c8e4da742fb426a6e5d0d60ebf8c2063bb6
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 7eb14c8e4da742fb426a6e5d0d60ebf8c2063bb6
 
 [Alte Milestone-Dokumentation](milestone_analytics_video.pdf)
 
-## Konfiguration {#section_rzx_j1z_cfb}
+## Konfiguration {#configuration}
 
 ### Milestone-Videokonfiguration
 
@@ -47,7 +47,7 @@ Wählen Sie auf dem letzten Bildschirm die beiden eVars und drei Ereignisse aus,
 <!--![](assets/0clip_image008_-92166399.png)-->
 ![](assets/rs3.png)
 
-## Videovariablenreferenz {#section_emg_c1z_cfb}
+## Videovariablenreferenz {#video-variable-reference}
 
 Die folgende Tabelle enthält zusätzliche Details zu den Commerce-Variablen und anwenderspezifischen Ereignissen für Videos:
 
@@ -59,7 +59,7 @@ Die folgende Tabelle enthält zusätzliche Details zu den Commerce-Variablen und
 | Videoaufrufe | Ereignis- <br/>Typ: Zähler | Gibt an, dass ein Besucher einen Teil eines Videos betrachtet hat. Es werden aber keine Informationen zu der Länge oder dem Ausschnitt eines vom Besucher angesehenen Videos bereitgestellt. |
 | Videobeendigungen | Ereignis- <br/>Typ: Zähler | Gibt an, dass ein Besucher ein Video vollständig angesehen hat. Standardmäßig wird das complete-Ereignis 1 Sekunde vor dem Ende des Videos gemessen.  <br/>Bei der Implementierung können Sie festlegen, wie viele Sekunden vor dem Ende des Videos eine Ansicht als vollständig betrachtet werden soll. Bei Live-Videos und anderen Streams ohne definiertes Ende können Sie einen eigenen Punkt angeben, an dem Beendigungen gemessen werden sollen (z. B. nach einer bestimmten Wiedergabedauer). |
 
-## Medienmodulvariablen {#section_ts5_11z_cfb}
+## Medienmodulvariablen {#media-module-variables}
 
 Mit den folgenden Variablen können Sie die Videomessung konfigurieren. Für die Variablen in der Tabelle „Erforderliche Variablen“ müssen Sie Werte definieren. Um Ereignisse in Ihrem Videoplayer zu verfolgen, müssen Sie darüber hinaus autoTrack (für unterstützte Player) aktivieren oder die Verfolgung anwenderspezifischer Player-Ereignisse über die Methoden open, play, stop und close implementieren.
 
@@ -70,7 +70,7 @@ Mit den folgenden Variablen können Sie die Videomessung konfigurieren. Für die
 | `Media.trackVars` | **Syntax:** <br/><br/> `s.Media.trackVars =` <br/>    `"events,` `prop2,` `eVar1,` `eVar2,` `eVar3";` <br/><br/>Eine durch Komma getrennte Liste aller Variablen, die im Video-Trackingcode festgelegt sind. |
 | `Media.trackEvents` | **Syntax:** <br/><br/> `s.Media.trackEvents =` <br/>    `"event1,` `event2,` `event3,` `event4,` `event5,` `event6,` `event7"` <br/><br/>Eine durch Komma getrennte Liste aller Ereignisse, die im Video-Trackingcode festgelegt sind. |
 
-## Optionale Variablen {#section_ufg_zzy_cfb}
+## Optionale Variablen {#optional-variables}
 
 |  Variable    | Beschreibung |
 | --- | --- |
@@ -85,7 +85,7 @@ Mit den folgenden Variablen können Sie die Videomessung konfigurieren. Für die
 | `Media.segmentByMilestones` | **Syntax:** <br/><br/> `s.Media.segmentByMilestones = true;` Generiert <br/><br/>automatisch Daten zu Segmentname, Segmentnummer und Segmentlänge basierend auf der Länge des Mediums und den in `Media.trackMilestones` Segmentierung durch Meilensteine angegebenen Meilensteinen ist die einzige Möglichkeit, Segmente bei Verwendung <br/><br/>`autoTrack`zu definieren. <br/><br/>Standardwert: `false` |
 | `Media.segmentByOffsetMilestones` | **Syntax:** <br/><br/> `s.Media.segmentByOffsetMilestones = true;` Generiert <br/><br/>automatisch Daten zu Segmentname, Segmentnummer und Segmentlänge basierend auf der Länge des Mediums und den in `Media.trackOffsetMilestones` Segmentierung durch Meilensteine angegebenen Meilensteinen ist die einzige Möglichkeit, Segmente bei Verwendung <br/><br/>`autoTrack`zu definieren.  <br/><br/>Standardwert: `false` |
 
-## Anzeigenverfolgungsvariablen {#section_bhv_xzy_cfb}
+## Anzeigenverfolgungsvariablen {#ad-tracking-variables}
 
 Mit diesen Variablen können Sie Anzeigeninformationen zusammen mit der openAd-Methode senden. Siehe [VAST-Videoanzeigenverfolgung.](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/video_ads.html)
 
@@ -97,7 +97,7 @@ Mit diesen Variablen können Sie Anzeigeninformationen zusammen mit der openAd-M
 | `Media.adSegmentByMilestones` | **Syntax:** <br/><br/> `s.Media.adSegmentByMilestones = true;` Generiert <br/><br/>automatisch Daten zu Segmentname, Segmentnummer und Segmentlänge basierend auf der Länge des Mediums und den in `Media.adTrackMilestones` Segmentierung durch Meilensteine angegebenen Meilensteinen ist die einzige Möglichkeit, Segmente bei Verwendung <br/><br/>`autoTrack`zu definieren.  <br/><br/>Standardwert: `false` |
 | `Media.adSegmentByOffsetMilestones` | **Syntax:** <br/><br/> `s.Media.adSegmentByOffsetMilestones = true;` Generiert <br/><br/>automatisch Daten zu Segmentname, Segmentnummer und Segmentlänge basierend auf der Länge des Mediums und den in `Media.adTrackOffsetMilestones` Segmentierung durch Meilensteine angegebenen Meilensteinen ist die einzige Möglichkeit, Segmente bei Verwendung <br/><br/>`autoTrack`zu definieren. <br/><br/>Standardwert: `false` |
 
-## Medienmodulmethoden {#section_xp1_wzy_cfb}
+## Medienmodulmethoden {#media-module-methods}
 
 Mit den Medienmodulmethoden können Sie Playerereignisse sowie weitere Metriken, die nicht zu den Standardvideoberichten gehören, manuell verfolgen.
 
@@ -117,7 +117,7 @@ Wenn Sie `Media.autoTrack` verwenden und keine zusätzlichen Metriken verfolgen,
 | `Media.track` | **Syntax:** <br/><br/> `s.Media.track(mediaName)` <br/><br/>Sendet umgehend den aktuellen Videostatus zusammen mit allen definierten `Media.trackVars` und Media.trackEvents. Diese Methode wird innerhalb von `Media.monitor` verwendet. <br/><br/>Siehe [Zusätzliche Metriken mit Media.monitor messen.](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/video_mediamonitor.html) <br/><br/>Rufen Sie `Media.open` und `Media.play` das Video auf, bevor Sie diese Methode aufrufen. Diese Methode akzeptiert den folgenden Parameter: <ul> <li> **mediaName**: Name des Videos. Dieser Name muss mit dem in `Media.open` verwendeten Namen übereinstimmen.</li> </ul> Diese Methode stellt die einzige Möglichkeit dar, zusätzliche Variablen während der Wiedergabe des Videos zu senden. Dies setzt das Sekundenintervall und die gezählten Prozentsatz-Milestones auf null zurück, um mehrere Tracking-Hits zu vermeiden. |
 
 
-## Videoplayer-Ereignisse verfolgen {#section_dsg_rzy_cfb}
+## Videoplayer-Ereignisse verfolgen {#track-video-player-events}
 
 Sie können Medienplayer verfolgen, indem Sie Funktionen erstellen und an die Ereignishandler des Videoplayers anhängen. This lets you call `Media.open`, `Media.play`, `Media.stop`, and `Media.close` at the appropriate times. Beispiel:
 
@@ -158,7 +158,7 @@ function endMovie() {
 } 
 ```
 
-## JavaScript-AutoTrack {#section_ahz_pzy_cfb}
+## JavaScript-AutoTrack {#javascript-autotrack}
 
 The JavaScript media module identifies all `<embed>` or `<object>` tags in the page HTML. Dann werden die Daten in jedem Tag durchsucht, um zu bestimmen, welcher Medienplayer verwendet wird. Wenn der Player Windows Media Player, Quicktime oder Real Player ist, kann `autoTrack` verwendet werden. `autoTrack` für Windows Media Player funktioniert allerdings nur mit Internet Explorer. Um andere Browser zu unterstützen, ist die manuelle Verfolgung für Windows Media Player erforderlich.
 
@@ -168,7 +168,7 @@ Sie müssen das Attribut `classid` am Objekt festlegen, das Sie verfolgen möcht
 s.Media.autoTrack = true
 ```
 
-## JavaScript-Beispielcode {#section_i4g_4zy_cfb}
+## JavaScript-Beispielcode {#javascript-sample-code}
 
 ```javascript
 // Sample implementation 
