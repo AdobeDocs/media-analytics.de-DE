@@ -3,7 +3,7 @@ seo-title: Setup-Übersicht
 title: Setup-Übersicht
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -28,7 +28,7 @@ In der folgenden Tabelle werden die Mindestplattformversionen beschrieben, die a
 | Safari | v7+ |
 | IE | v11+ |
 
-## Allgemeine Implementierungsrichtlinien {#section_965A3B699A8248DDB9B2B3EA3CC20E41}
+## Allgemeine Implementierungsrichtlinien {#general-implementation-guidelines}
 
 Es gibt drei Hauptkomponenten des SDK, die für die Medienverfolgung relevant sind:
 * Media Heartbeat Config: Diese Konfiguration enthält die grundlegenden Reporting-Einstellungen.
@@ -49,7 +49,7 @@ Führen Sie die folgenden Implementierungsschritte aus:
    | `ssl` | Gibt an, ob die Aufrufe über HTTPS erfolgen sollen | Nein | false |
    | `debugLogging` | Gibt an, ob die Debugging-Protokollierung aktiviert ist. | Nein | false |
 
-1. Implementieren Sie die `MediaHeartbeatDelegate`.
+1. Implementieren des `MediaHeartbeatDelegate`.
 
    |  Name der Methode  |  Beschreibung  | erforderlich |
    | --- | --- | :---: |
@@ -119,7 +119,7 @@ Führen Sie die folgenden Implementierungsschritte aus:
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
    ```
 
-## Überprüfen {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
+## Überprüfen {#validate}
 
 Media Analytics-Verfolgungsimplementierungen generieren zwei Arten von Verfolgungsaufrufen:
 
@@ -138,7 +138,7 @@ Media Analytics-Verfolgungsimplementierungen generieren zwei Arten von Verfolgun
 
 Das Medien-Tracking verhält sich auf allen Plattformen – Desktop oder Mobilgeräte – gleich. Die Audioverfolgung funktioniert derzeit auf mobilen Plattformen. Es gibt einige universelle Variablen, die für alle Tracking-Aufrufe überprüft werden müssen:
 
-## SDK 1.x-Dokumentation {#section_acj_tkk_t2b}
+## SDK 1.x-Dokumentation {#sdk-1x-documentation}
 
 | Video Analytics 1.x SDKs |  Entwicklerhandbücher (nur PDFs) |
 | --- | --- |
