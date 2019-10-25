@@ -3,7 +3,7 @@ seo-title: Kapitelparameter
 title: Kapitelparameter
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 translation-type: tm+mt
-source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -35,7 +35,7 @@ Beschreibung der Tabellendaten:
 >Ändern Sie nicht die Klassifizierungsnamen für die unten aufgeführten Variablen, die unter Berichterstellung/Reservierte Variable als "Klassifizierung"beschrieben werden.\
 >Die Medienklassifizierungen werden definiert, wenn eine Report Suite für die Medienverfolgung aktiviert ist. Adobe fügt von Zeit zu Zeit neue Eigenschaften hinzu. In diesem Fall müssen Kunden ihre Report Suites erneut aktivieren, um Zugriff auf die neuen Medieneigenschaften zu erhalten. Während des Aktualisierungsvorgangs ermittelt Adobe, ob die Klassifizierungen aktiviert sind, indem die Namen der Variablen überprüft werden. Wenn eines der Elemente fehlt, fügt Adobe die fehlenden erneut hinzu.
 
-## Kapitelmetadaten {#section_534D3A6BFEB24D1884F80AD6A50BF13C}
+## Kapitelmetadaten {#chapter-metadata}
 
 ### Kapitelname
 
@@ -47,19 +47,19 @@ Beschreibung der Tabellendaten:
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung   |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/>  [position](./chapter-parameters.md#related_apis_section) </li> <li> **API-Schlüssel:**<br/>media.chapter.index </li> <li> ****<br/> Erforderlich: SDK: Nein; API: Ja. </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Kapitelbeendigung </li> <li> **Min. SDK-Version:** 1.3 </li> <li> ****<br/> Beispielwert: 2 </li><li> **Beschreibung:**<br/>Die Position (Index, Ganzzahl) des Kapitels im Inhalt.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.chapter)<br/>position) </li> <li> ****<br/> Heartbeat: (l:stream:chapter_pos) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Classification </li> <li> **Berichtsname:**<br/>Kapitelposition </li> <li> ****<br/> Kontextdaten: (a.media.chapter)<br/>position) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.chapter<br/>position) </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/>  [position](./chapter-parameters.md#related_apis_section) </li> <li> **API-Schlüssel:**<br/>media.chapter.index </li> <li> ****<br/> Erforderlich: SDK: Nein; API:Ja. </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Kapitelbeendigung </li> <li> **Min. SDK-Version:** 1.3 </li> <li> ****<br/> Beispielwert: 2 </li><li> **Beschreibung:**<br/>Die Position (Index, Ganzzahl) des Kapitels im Inhalt.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.chapter)<br/>position) </li> <li> ****<br/> Heartbeat: (l:stream:chapter_pos) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Classification </li> <li> **Berichtsname:**<br/>Kapitelposition </li> <li> ****<br/> Kontextdaten: (a.media.chapter)<br/>position) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.chapter<br/>position) </li> </ul> |
 
 ### Kapiteloffset
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung   |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/>  [startTime](./chapter-parameters.md#related_apis_section) </li> <li> **API-Schlüssel:**<br/>media.chapter.offset </li> <li> ****<br/> Erforderlich: SDK: Nein; API: Ja. </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Kapitelbeendigung </li> <li> **Min. SDK-Version:** 1.3 </li> <li> ****<br/> Beispielwert: 58 </li><li> **Beschreibung:**<br/>Der Offset des Kapitels im Inhalt (in Sekunden) ab dem Start.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.chapter)<br/>offset) </li> <li> ****<br/> Heartbeat: (l:stream:chapter_offset) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Classification </li> <li> **Berichtsname:**<br/>Kapiteloffset </li> <li> ****<br/> Kontextdaten: (a.media.chapter)<br/>offset) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.chapter<br/>offset) </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/>  [startTime](./chapter-parameters.md#related_apis_section) </li> <li> **API-Schlüssel:**<br/>media.chapter.offset </li> <li> ****<br/> Erforderlich: SDK: Nein; API:Ja. </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Kapitelbeendigung </li> <li> **Min. SDK-Version:** 1.3 </li> <li> ****<br/> Beispielwert: 58 </li><li> **Beschreibung:**<br/>Der Offset des Kapitels im Inhalt (in Sekunden) ab dem Start.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.chapter)<br/>offset) </li> <li> ****<br/> Heartbeat: (l:stream:chapter_offset) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Classification </li> <li> **Berichtsname:**<br/>Kapiteloffset </li> <li> ****<br/> Kontextdaten: (a.media.chapter)<br/>offset) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.chapter<br/>offset) </li> </ul> |
 
 ### Kapitellänge
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung   |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/> </li> <li> **API-Schlüssel:**<br/>media.chapter.length </li> <li> ****<br/> Erforderlich: SDK: Nein; API: Ja. </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Kapitelbeendigung </li> <li> **Min. SDK-Version:** 1.3 </li> <li> ****<br/> Beispielwert: 486 </li><li> **Beschreibung:**<br/>Die Länge des Kapitels in Sekunden.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.chapter)<br/>length) </li> <li> ****<br/> Heartbeat: (l:stream:chapter_length) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Classification </li> <li> **Berichtsname:**<br/>Kapitellänge </li> <li> ****<br/> Kontextdaten: (a.media.chapter)<br/>length) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.chapter<br/>length) </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/> </li> <li> **API-Schlüssel:**<br/>media.chapter.length </li> <li> ****<br/> Erforderlich: SDK: Nein; API:Ja. </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Kapitelbeendigung </li> <li> **Min. SDK-Version:** 1.3 </li> <li> ****<br/> Beispielwert: 486 </li><li> **Beschreibung:**<br/>Die Länge des Kapitels in Sekunden.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.chapter)<br/>length) </li> <li> ****<br/> Heartbeat: (l:stream:chapter_length) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Classification </li> <li> **Berichtsname:**<br/>Kapitellänge </li> <li> ****<br/> Kontextdaten: (a.media.chapter)<br/>length) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.chapter<br/>length) </li> </ul> |
 
 ### Kapitel
 
@@ -67,7 +67,7 @@ Beschreibung der Tabellendaten:
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zeichenfolge </li> <li> ****<br/> Gesendet mit: Kapitelbeendigung </li> <li> **Min. SDK-Version:** 1.3 </li> <li> **Beispielwert:**<br/> </li><li> **Beschreibung:**<br/>Die automatisch generierte ID des Kapitels.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.chapter)<br/>name) </li> <li> ****<br/> Heartbeat: (s:stream:chapter_id) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>eVar </li> <li> **Ablauf:**<br/>bei HIT </li> <li> **Berichtsname:**<br/>Kapitel </li> <li> ****<br/> Kontextdaten: (a.media.chapter)<br/>name) </li> <li> **Datenfeed:**<br/>videochapter </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.chapter<br/>name) </li> </ul> |
 
-## Kapitelmetriken {#section_1C47D6FB1DF343C39CE7A8F724406F33}
+## Kapitelmetriken {#chapter-Metrics}
 
 ### Chapter Start
 
