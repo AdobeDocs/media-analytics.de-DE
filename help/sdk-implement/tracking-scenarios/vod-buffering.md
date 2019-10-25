@@ -3,14 +3,14 @@ seo-title: VOD-Wiedergabe mit Pufferung
 title: VOD-Wiedergabe mit Pufferung
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # VOD-Wiedergabe mit Pufferung{#vod-playback-with-buffering}
 
-## Szenario {#section_13BD203CBF7546D2A6AD0129B1EEB735}
+## Szenario {#scenario}
 
 In diesem Szenario tritt Pufferung bei der Wiedergabe des VOD-Inhalts auf.
 
@@ -28,7 +28,7 @@ Wenn nichts anderes angegeben ist, sind die Netzwerkaufrufe in diesem Szenario m
 | Die Inhaltswiedergabe ist abgeschlossen. | `trackComplete` | Heartbeat Content Complete | Das Ende der Abspielleiste wurde erreicht. |
 | Die Sitzung ist beendet. | `trackSessionEnd` |  | `SessionEnd` steht für das Ende einer Anzeigesitzung. Diese API muss auch dann aufgerufen werden, wenn der Anwender das Video nicht bis zum Ende anschaut. |
 
-## Parameter {#section_A52A57C9FB1C41CEA6C0E2D53E01048E}
+## Parameter {#parameters}
 
 ### Heartbeat Buffer
 
@@ -36,7 +36,7 @@ Wenn nichts anderes angegeben ist, sind die Netzwerkaufrufe in diesem Szenario m
 |---|---|---|
 | `s:event:type` | `"buffer"` |  |
 
-## Beispielcode {#section_hxn_fdj_x2b}
+## Beispielcode {#sample-code}
 
 In diesem Szenario tritt Pufferung bei der Wiedergabe des VOD-Inhalts auf.
 
