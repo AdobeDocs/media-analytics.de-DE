@@ -3,14 +3,14 @@ seo-title: VOD-Wiedergabe mit einem übersprungenen Kapitel
 title: VOD-Wiedergabe mit einem übersprungenen Kapitel
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # VOD-Wiedergabe mit einem übersprungenen Kapitel{#vod-playback-with-a-skipped-chapter}
 
-## Szenario {#section_34DCAFE0E64949C4A6DF2D98F8A12B41}
+## Szenario {#scenario}
 
 In diesem Szenario überspringt der Anwender ein Kapitel im Hauptinhalt.
 
@@ -29,11 +29,11 @@ Dies ist dasselbe Szenario wie [VOD-Wiedergabe mit einem Kapitel](/help/sdk-impl
 | Die Inhaltswiedergabe ist abgeschlossen. | `trackComplete` | Heartbeat Content Complete | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
 | Die Sitzung ist beendet. | `trackSessionEnd` |  | `SessionEnd` steht für das Ende einer Anzeigesitzung. Diese API muss auch dann aufgerufen werden, wenn der Benutzer die Medien nicht bis zum Abschluss ansieht. |
 
-## Parameter {#section_1874F6B7880B43C5856BD11FF85B382E}
+## Parameter {#parameters}
 
 Die Parameter, die bei der Kapitelwiedergabe verwendet werden, sind mit den Parametern im Szenario  [VOD-Wiedergabe mit einem Kapitel](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) identisch, bis auf die Tatsache, dass kein Kapitelbeendigungsnetzwerkaufruf gesendet wird.
 
-## Beispielcode {#section_fyl_ncj_x2b}
+## Beispielcode {#sample-code}
 
 ![](assets/chapter-skip.png)
 
