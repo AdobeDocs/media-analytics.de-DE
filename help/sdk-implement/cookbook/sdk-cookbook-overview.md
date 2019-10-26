@@ -4,14 +4,14 @@ seo-title: Übersicht über SDK Cookbook
 description: 'SDK-spezifische Cookbook-Themen '
 seo-description: 'SDK-spezifische Cookbook-Themen '
 translation-type: tm+mt
-source-git-commit: cafe29452f5c0a14849b15aaf2af557dc4721d9f
+source-git-commit: 9736c939b40ecdf72d3faa6d25cc9f3ee6e14419
 
 ---
 
 
 # Übersicht über SDK Cookbook
 
-Allgemeine Themen des Media Analytics-Cookbooks, die sowohl für das Media SDK als auch für die Media Collection-API gelten, finden Sie hier: Cookbook [für Medienanalysen.](/help/media-analytics-cookbook/cookbook-overview.md)
+Allgemeine Themen des Media Analytics-Cookbooks, die sowohl für das Media SDK als auch für die Media Collection-API gelten, finden Sie hier: Cookbook [für Medienanalysen.](/help/media-analytics-cookbook/media-analytics-cookbook.md)
 
 Die folgenden Cookbook-Themen beziehen sich auf die Media SDK-Version von Media Analytics:
 
