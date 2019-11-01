@@ -1,9 +1,9 @@
 ---
-seo-title: Suchen-Tracking in Chromecast
 title: Suchen-Tracking in Chromecast
+description: In diesem Thema wird die Implementierung der Suchverfolgung mit dem Media SDK on Chromecast beschrieben.
 uuid: 8018e6c4-feed9-4de7-9eae-c720da55ad8c
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
