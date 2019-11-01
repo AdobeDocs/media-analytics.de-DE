@@ -1,9 +1,9 @@
 ---
-seo-title: Überblick
 title: Überblick
+description: Eine Übersicht über die Qualität der Verfolgung von Erlebnissen (QoE, QoS) mit dem Media SDK.
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
