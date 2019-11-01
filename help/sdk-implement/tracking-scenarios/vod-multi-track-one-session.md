@@ -1,9 +1,9 @@
 ---
-seo-title: Ein VOD-Tracker für mehrere Sitzungen
 title: Ein VOD-Tracker für mehrere Sitzungen
+description: Ein Beispiel für die Verwendung eines Trackers zur Verfolgung mehrerer Sitzungen mit dem Media SDK.
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 translation-type: tm+mt
-source-git-commit: e24dbf0ab08b9e148f887ef19903ad2d157822ad
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
