@@ -1,11 +1,9 @@
 ---
-seo-title: VOD-Wiedergabe mit Pre-roll-Anzeigen
 title: VOD-Wiedergabe mit Pre-roll-Anzeigen
-description: In diesem Szenario wurde eine Pre-roll-Anzeige vor dem Hauptinhalt eingefügt.
-seo-description: In diesem Szenario wurden in Adobe Media Analytics Pre-Roll-Anzeigen vor dem Hauptinhalt eingefügt.
+description: Ein Beispiel für die Verfolgung von VOD-Inhalten, die Pre-Roll-Anzeigen mit dem Media SDK enthalten.
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
