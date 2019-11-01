@@ -1,9 +1,9 @@
 ---
-seo-title: App-Zustände verfolgen
 title: App-Zustände verfolgen
+description: 'App-Zustände sind die verschiedenen Bildschirme oder Ansichten in Ihrer Anwendung, die bei der Anzeige zu einem trackState-Aufruf führen sollten. '
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 translation-type: tm+mt
-source-git-commit: 9cdf69e30fa727aeb974213769a7ab61fb05b756
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
