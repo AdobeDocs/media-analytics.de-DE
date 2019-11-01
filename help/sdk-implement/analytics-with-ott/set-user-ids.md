@@ -1,9 +1,9 @@
 ---
-seo-title: Anwender-IDs festlegen
 title: Anwender-IDs festlegen
+description: APIs zum Festlegen von Benutzer-IDs, welche Server als eindeutige Kundenkennung dienen.
 uuid: fdd54fec-79cd-4bf8-b17e-4d61d84f6310
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -14,7 +14,7 @@ Die Anwender-ID ist eine eindeutige anwenderspezifische Besucherkennung, die von
 
 Legen Sie die eindeutige Unique User-ID im ADBMobile-SDK wie folgt fest und rufen Sie sie ab:
 
-* **Festlegen:**
+* **Legen Sie:**
 
    * **Roku:**
 
