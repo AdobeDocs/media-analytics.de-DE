@@ -1,9 +1,9 @@
 ---
-seo-title: Tracking von Fehlern in JavaScript
 title: Tracking von Fehlern in JavaScript
+description: In diesem Thema wird die Implementierung der Fehlerverfolgung mit dem Media SDK in Browser-Apps (JS) beschrieben.
 uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
