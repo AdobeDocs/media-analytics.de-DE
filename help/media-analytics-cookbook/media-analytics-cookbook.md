@@ -1,10 +1,8 @@
 ---
 title: Medienanalysen-Cookbook
-seo-title: Medienanalysen-Cookbook
 description: Top-Level-Cookbook-Seite mit allgemeinen MA-Cookbook-Links und SDK-spezifischen Links.
-seo-description: Top-Level-Cookbook-Seite mit allgemeinen MA-Cookbook-Links und SDK-spezifischen Links.
 translation-type: tm+mt
-source-git-commit: fa72eba07a06adbd7c278282bd69d0b336529ac8
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
