@@ -1,11 +1,9 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Standard-Metadaten in JavaScript implementieren
 title: Standard-Metadaten in JavaScript implementieren
+description: Beschreibt das Festlegen von Standard-Video- und Anzeigenmetadaten, die mit Verfolgungsaufrufen in Browser-Apps (JS) gesendet werden.
 uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
