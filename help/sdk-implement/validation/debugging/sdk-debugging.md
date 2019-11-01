@@ -1,9 +1,9 @@
 ---
-seo-title: SDK-Debugging
 title: SDK-Debugging
+description: In diesem Thema wird die im Media SDK verfügbare Verfolgung/Protokollierung beschrieben.
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 translation-type: tm+mt
-source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -71,7 +71,7 @@ Bei der Anwendungsentwicklung können Sie in Bloodhound die Server-Aufrufe lokal
 
 >[!IMPORTANT]
 >
->Seit dem 30. April 2017 verfällt Adobe Bloodhound. Seit dem 1. Mai 2017 wurde keine Verbesserung mehr vorgenommen und es wird kein zusätzlicher Engineering- oder Adobe Expert Care-Support mehr angeboten.
+>Am 30. April 2017 wurde die Entwicklung von Adobe Bloodhound eingestellt. Seit dem 1. Mai 2017 wurde keine Verbesserung mehr vorgenommen und es wird kein zusätzlicher Engineering- oder Adobe Expert Care-Support mehr angeboten.
 
 ## Protokollmeldungen
 
