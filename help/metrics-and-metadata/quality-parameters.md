@@ -1,9 +1,9 @@
 ---
-seo-title: Qualitätsparameter
 title: Qualitätsparameter
+description: null
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 translation-type: tm+mt
-source-git-commit: 44b12731c4a701f0f2536c1c83a9ad4a8b27b49b
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -34,21 +34,21 @@ Beschreibung der Tabellendaten:
 
 ### Durchschnittliche Bitrate
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>  [bitrate](./quality-parameters.md#related_apis_section) </li> <li> **API-Schlüssel:**<br/>media.qoe.bitrate </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zahl </li> <li> **Gesendet mit:**<br/>Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: 800-899 </li><li> **Beschreibung:**<br/>Die durchschnittliche Bitrate (in Kbit/s). Der Wert besteht aus vordefinierten Gruppen mit Intervallen von 100 Kbit/s. Die durchschnittliche Bitrate wird als gewichteter Durchschnitt aller Bitratenwerte im Zusammenhang mit der Wiedergabedauer berechnet, die während einer Wiedergabesitzung aufgetreten sind..  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>bitrateAverageBucket) </li> <li> ****<br/> Heartbeat: (l:stream:bitrate) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>eVar </li> <li> **Ablauf:**<br/>bei HIT </li> <li> **Berichtsname:**<br/>Durchschnittliche Bitrate </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>bitrateAverageBucket) </li> <li> **Datenfeed:**<br/>videoqoebitrateaverageevar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>bitrateAverageBucket) </li> </ul> |
 
 
 ### Zeit bis Start
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/> </li> <li> **API-Schlüssel:**<br/>media.qoe.timeToStart </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Media Start, Media Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: 30.000 </li><li> **Beschreibung:**<br/>Dieser Wert ist standardmäßig auf null gesetzt, wenn Sie ihn nicht über das QoSObject festlegen. Sie stellen diesen Wert in Millisekunden ein. Der Wert wird im Zeitformat (HH:MM:SS) im Analysis Workspace und in Reports &amp; Analytics angezeigt. In Datenfeeds, Data Warehouse und Reporting APIs werden die Werte in Sekundenschnelle angezeigt.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>timeToStart) </li> <li> ****<br/> Heartbeat: (l:stream:startup_time) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>eVar </li> <li> **Ablauf:**<br/>bei HIT </li> <li> **Berichtsname:**<br/>Zeit bis Start </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>timeToStart) </li> <li> **Datenfeed:**<br/>videoqoetimetostartevar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>timeToStart) </li> </ul> |
 
 
 ### FPS
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/> </li> <li> **API-Schlüssel:**<br/>media.qoe.framesPerSecond </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Media Start, Media Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: 24 </li><li> **Beschreibung:**<br/>Der aktuelle Wert der Stream-Framerate (in Bildern pro Sekunde).  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> ****<br/> Heartbeat: (l:stream:fps) </li> </ul> | <ul> <li> **Verfügbar:**<br/>nein </li> <li> **Reservierte Variable:**<br/>nicht verfügbar </li> <li> **Berichtsname:**<br/>nicht verfügbar </li> <li> **Kontextdaten:**<br/> </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> **Audience Manager:**<br/> </li> </ul> |
 
@@ -56,7 +56,7 @@ Beschreibung der Tabellendaten:
 
 ### Dropped Frames
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>droppedFrames </li> <li> **API-Schlüssel:**<br/>media.qoe.droppedFrames </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: 3 </li><li> **Beschreibung:**<br/>Die Anzahl der Dropped Frames (Int). Dieser Wert wird als Summe aller Dropped Frames berechnet, die während einer Wiedergabesitzung aufgetreten sind. Dieser Wert wird dem letzten Wert von (l:stream:dropped_frames) entnommen.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>droppedFrameCount) </li> <li> ****<br/> Heartbeat: (l:stream:<br/>dropped_frames) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>eVar </li> <li> **Ablauf:**<br/>bei HIT </li> <li> **Berichtsname:**<br/>Dropped Frames </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>droppedFrameCount) </li> <li> **Datenfeed:**<br/>videoqoedroppedframecountevar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>droppedFrameCount) </li> </ul> |
 
@@ -64,7 +64,7 @@ Beschreibung der Tabellendaten:
 
 ### Pufferereignisse
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: 2 </li><li> **Beschreibung:**<br/>Die Anzahl der Pufferereignisse. Diese Metrik wird als Anzahl der verschiedenen Pufferereignisse berechnet, die während einer Wiedergabesitzung aufgetreten sind. So wird festgehalten, wie oft der Player aus anderen Status, z. B. Wiedergabe oder Pause, in einen Pufferstatus übergegangen ist.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>bufferCount) </li> <li> ****<br/> Heartbeat: (s:event:<br/>type=buffer) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>eVar </li> <li> **Ablauf:**<br/>bei HIT </li> <li> **Berichtsname:**<br/>Pufferereignisse </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>bufferCount) </li> <li> **Datenfeed:**<br/>videoqoebuffercountevar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>bufferCount) </li> </ul> |
 
@@ -72,7 +72,7 @@ Beschreibung der Tabellendaten:
 
 ### Gesamtpufferdauer
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** </li> <li> ****<br/> Beispielwert: 30 </li><li> **Beschreibung:**<br/>Die Gesamtdauer der Pufferung in Sekunden. Dieser Wert wird als Summe aller Pufferereignis-Zeitspannen berechnet, die während einer Wiedergabesitzung aufgetreten sind. Der Wert wird im Zeitformat (HH:MM:SS) im Analysis Workspace und in Reports &amp; Analytics angezeigt. In Datenfeeds, Data Warehouse und Reporting APIs werden die Werte in Sekundenschnelle angezeigt. <br/>**Releasedatum: 13.09.2018**  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>bufferTime) </li> <li> ****<br/> Heartbeat: (l:event:duration) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>eVar </li> <li> **Ablauf:**<br/>bei HIT </li> <li> **Berichtsname:**<br/>Gesamtpufferdauer </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>bufferTime) </li> <li> **Datenfeed:**<br/>videoqoebuffertimeevar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>bufferTime) </li> </ul> |
 
@@ -80,7 +80,7 @@ Beschreibung der Tabellendaten:
 
 ### Bitratenänderungen
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/> </li> <li> **API-Schlüssel:**<br/>media.qoe.bitrateChange </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: 3 </li><li> **Beschreibung:**<br/>Die Anzahl der Bitratenänderungen (Integer). Dieser Wert wird als Summe aller Bitratenänderungs-Ereignisse berechnet, die während einer Wiedergabesitzung aufgetreten sind.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>bitrateChangeCount) </li> <li> ****<br/> Heartbeat: (s:event:<br/>type=bitrate_change) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>eVar </li> <li> **Ablauf:**<br/>bei HIT </li> <li> **Berichtsname:**<br/>Bitratenänderungen </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>bitrateChangeCount) </li> <li> **Datenfeed:**<br/>videoqoebitratechangecountevar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>bitrateChangeCount) </li> </ul> |
 
@@ -88,7 +88,7 @@ Beschreibung der Tabellendaten:
 
 ### Fehler/Fehlerereignisse
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/> </li> <li> **API-Schlüssel:**<br/> </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: 1 </li><li> **Beschreibung:**<br/>Die Anzahl der aufgetretenen Fehler (Integer). Dieser Wert wird als Summe aller Fehlerereignisse berechnet, die während einer Wiedergabesitzung aufgetreten sind.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>errorCount) </li> <li> ****<br/> Heartbeat: (s:event:<br/>type=error) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>eVar </li> <li> **Ablauf:**<br/>bei HIT </li> <li> **Berichtsname:**<br/>Fehler </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>errorCount) </li> <li> **Datenfeed:**<br/>videoqoeerrorcountevar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>errorCount) </li> </ul> |
 
@@ -96,7 +96,7 @@ Beschreibung der Tabellendaten:
 
 ### Player SDK Fehler-IDs
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** beliebig </li> <li> **Beispielwert:**<br/> </li><li> **Beschreibung:**<br/>Die vom Player-SDK generierten eindeutigen Fehler-IDs. Der Kunde muss die Fehlercodes/-IDs zur Implementierungszeit über die bereitgestellten Fehler-APIs bereitstellen.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>playerSdkErrors) </li> <li> ****<br/> Heartbeat: (s:event:<br/>type=error) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>eVar </li> <li> **Ablauf:**<br/>bei HIT </li> <li> **Berichtsname:**<br/>Fehler </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>playerSdkErrors) </li> <li> ****<br/> Datenfeed: videoqoeplayersdkerrors </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>playerSdkErrors) </li> </ul> |
 
@@ -104,7 +104,7 @@ Beschreibung der Tabellendaten:
 
 ### Externe Fehler-IDs
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** beliebig </li> <li> **Beispielwert:**<br/> </li><li> **Beschreibung:**<br/>Die eindeutigen Fehler-IDs einer externen Quelle, z. B. CDN-Fehler. Der Kunde muss die Fehlercodes/-IDs zur Implementierungszeit über die bereitgestellten Fehler-APIs bereitstellen.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>externalErrors) </li> <li> ****<br/> Heartbeat: (s:event:<br/>type=error) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>eVar </li> <li> **Ablauf:**<br/>bei HIT </li> <li> **Berichtsname:**<br/>Fehler </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>externalErrors) </li> <li> ****<br/> Datenfeed: videoqoeextneralerrors </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>externalErrors) </li> </ul> |
 
@@ -112,7 +112,7 @@ Beschreibung der Tabellendaten:
 
 ### Medien-SDK Fehler-IDs
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** beliebig </li> <li> **Beispielwert:**<br/> </li><li> **Beschreibung:**<br/>Die eindeutigen Fehler-IDs, die vom Media SDK während der Wiedergabe generiert wurden.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>mediaSdkErrors) </li> <li> ****<br/> Heartbeat: (s:event:<br/>type=error) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>eVar </li> <li> **Ablauf:**<br/>bei HIT </li> <li> **Berichtsname:**<br/>Fehler </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>mediaSdkErrors) </li> <li> **Datenfeed:** <br/>mediaqoeexternalerrors </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>mediaSdkErrors) </li> </ul> |
 
@@ -121,7 +121,7 @@ Beschreibung der Tabellendaten:
 
 ### Sitzungsende {#session-end}
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> </li> <li> **Typ:**<br/>Zeichenfolge </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** 2.1 </li> <li> ****<br/> Beispielwert: end </li><li> **Beschreibung:**<br/>Das end-Ereignis bedeutet, dass das SDK einen close-Aufruf an das Backend sendet. Bei Empfang dieses Ereignisses schließt das Backend die Sitzung für dieses Video und führt keine weitere Verarbeitung durch. <br/>Wenn das Medium auf 100 % abgeschlossen wurde, sollte dies nach `s:event:type=complete.` Siehe [Inhaltsbeendigung](audio-video-parameters.md#content-complete) gesendet werden. </li> </ul> | <ul> <li> **Adobe Analytics:**<br/>nicht verfügbar </li> <li> ****<br/> Heartbeats: (s:event:type=end) </li> </ul> | <ul> <li> **Verfügbar:**<br/>Verwenden Sie eine anwenderspezifische Verarbeitungsregel. </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/>nicht verfügbar </li> <li> **Kontextdaten:**<br/> </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> **Audience Manager:**<br/> </li> </ul> |
 
@@ -131,7 +131,7 @@ Beschreibung der Tabellendaten:
 
 ### Zeit bis Start
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: 30.000 </li><li> **Beschreibung:**<br/>Dieser Wert ist standardmäßig auf null gesetzt, wenn Sie ihn nicht über das QoSObject festlegen. Sie stellen diesen Wert in Millisekunden ein. Der Wert wird im Zeitformat (HH:MM:SS) im Analysis Workspace und in Reports &amp; Analytics angezeigt. In Datenfeeds, Data Warehouse und Reporting APIs werden die Werte in Sekundenschnelle angezeigt. <br/>**Releasedatum: 13.09.2018**  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>timeToStart) </li> <li> ****<br/> Heartbeat: (l:stream:startup_time) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/>Zeit bis Start </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>timeToStart) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>timeToStart) </li> </ul> |
 
@@ -139,7 +139,7 @@ Beschreibung der Tabellendaten:
 
 ### Pufferereignisse
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>  [startupTime](./quality-parameters.md#related_apis_section) </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: 2 </li><li> **Beschreibung:**<br/>Die Anzahl der Pufferereignisse (Integer). Diese Metrik wird als Anzahl der Pufferereignisse berechnet, die während einer Wiedergabesitzung aufgetreten sind.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>bufferCount) </li> <li> ****<br/> Heartbeat: (s:event:<br/>type=buffer) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/>Pufferereignisse </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>bufferCount) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>bufferCount) </li> </ul> |
 
@@ -147,7 +147,7 @@ Beschreibung der Tabellendaten:
 
 ### Gesamtpufferdauer
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: 15 </li><li> **Beschreibung:**<br/>Die Gesamtdauer der Pufferung (Sekunden; integer). Dieser Wert wird als Summe aller Pufferereignis-Zeitspannen berechnet, die während einer Wiedergabesitzung aufgetreten sind. Der Wert wird im Zeitformat (HH:MM:SS) im Analysis Workspace und in Reports &amp; Analytics angezeigt. In Datenfeeds, Data Warehouse und Reporting APIs werden die Werte in Sekundenschnelle angezeigt. <br/>**Releasedatum: 13.09.2018**  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>bufferTime) </li> <li> ****<br/> Heartbeat: (l:event:duration) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/>Gesamtpufferdauer </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>bufferTime) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>bufferTime) </li> </ul> |
 
@@ -155,7 +155,7 @@ Beschreibung der Tabellendaten:
 
 ### Bitratenänderungen
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Ereignis </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: "3" </li><li> **Beschreibung:**<br/>Die Anzahl der Bitratenänderungen. Dieser Wert wird als Summe aller Bitratenänderungs-Ereignisse berechnet, die während einer Wiedergabesitzung aufgetreten sind.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>bitrateChangeCount) </li> <li> ****<br/> Heartbeat: (s:event:<br/>type=bitrate_change) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/>Bitratenänderungen </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>bitrateChangeCount) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>bitrateChangeCount) </li> </ul> |
 
@@ -163,7 +163,7 @@ Beschreibung der Tabellendaten:
 
 ### Fehler
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: 1 </li><li> **Beschreibung:**<br/>Die Anzahl der aufgetretenen Fehler (Integer). Dieser Wert wird als Summe aller Fehlerereignisse berechnet, die während einer Wiedergabesitzung aufgetreten sind.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>errorCount) </li> <li> ****<br/> Heartbeat: (s:event:<br/>type=error) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/>Fehlerereignisse </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>errorCount) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>errorCount) </li> </ul> |
 
@@ -171,7 +171,7 @@ Beschreibung der Tabellendaten:
 
 ### Dropped Frames
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: 1 </li><li> **Beschreibung:**<br/>Die Anzahl der Dropped Frames (Ganzzahl). Dieser Wert wird als Summe aller Dropped Frames berechnet, die während einer Wiedergabesitzung aufgetreten sind.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>droppedFrameCount) </li> <li> ****<br/> Heartbeat: (l:stream:<br/>dropped_frames) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/>Dropped Frames </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>droppedFrameCount) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>droppedFrameCount) </li> </ul> |
 
@@ -179,7 +179,7 @@ Beschreibung der Tabellendaten:
 
 ### Drops vor Start
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zeichenfolge </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: TRUE </li><li> **Beschreibung:**<br/>Wie oft ein Benutzer das Video vor dem Start beendet hat. Diese Metrik wird auf 1 gesetzt, wenn kein Inhalt gerendert wurde, unabhängig von Werbeanzeigen.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>dropBeforeStart) </li> <li> ****<br/> Heartbeat: (s:event:<br/>type=aa_start) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/>Drops vor Start </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>dropBeforeStart) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>dropBeforeStart) </li> </ul> |
 
@@ -190,7 +190,7 @@ Beschreibung der Tabellendaten:
 
 ### Von Puffer betroffene Streams
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zeichenfolge </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: TRUE </li><li> **Beschreibung:**<br/>Die Anzahl der von der Pufferung betroffenen Streams. Diese Metrik wird auf 1 gesetzt, wenn mindestens ein Pufferereignis während einer Wiedergabesitzung aufgetreten ist.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>buffer) </li> <li> ****<br/> Heartbeat: (s:event:<br/>type=buffer) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/>Von Puffer betroffene Streams </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>buffer) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>buffer) </li> </ul> |
 
@@ -201,7 +201,7 @@ Beschreibung der Tabellendaten:
 
 ### Von Bitratenänderung betroffene Streams
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zeichenfolge </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: TRUE </li><li> **Beschreibung:**<br/>Die Anzahl der Streams, in denen Bitratenänderungen aufgetreten sind. Diese Metrik wird auf 1 gesetzt, wenn mindestens ein Bitratenänderungs-Ereignis während einer Wiedergabesitzung aufgetreten ist.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>bitrateChange) </li> <li> ****<br/> Heartbeat: (s:event:<br/>type=bitrate_change) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> ****<br/> Berichtsname: Von Bitratenänderungen betroffene Streams </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>bitrateChange) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>bitrateChange) </li> </ul> |
 
@@ -212,7 +212,7 @@ Beschreibung der Tabellendaten:
 
 ### Durchschnittliche Bitrate
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: 3200 </li><li> **Beschreibung:**<br/>Die durchschnittliche Bitrate (in Kbit/s, Ganzzahl). Diese Metrik wird als gewichteter Durchschnitt aller Bitratenwerte im Zusammenhang mit der Wiedergabedauer berechnet, die während einer Wiedergabesitzung aufgetreten sind.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>bitrateAverage) </li> <li> ****<br/> Heartbeat: (l:stream:bitrate) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/>Durchschnittliche Bitrate </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>bitrateAverage) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>bitrateAverage) </li> </ul> |
 
@@ -220,7 +220,7 @@ Beschreibung der Tabellendaten:
 
 ### Von Fehlern betroffene Streams
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zeichenfolge </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: TRUE </li><li> **Beschreibung:**<br/>Die Anzahl der Streams, in denen ein Fehlerereignis auftrat (d. h. während der Wiedergabesitzung aufgerufen wurde und ein `trackError` `type=error` Heartbeat-Aufruf generiert wurde). </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>error) </li> <li> ****<br/> Heartbeat: (s:event:<br/>type=error) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/>Von Fehlern betroffene Streams </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>error) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>error) </li> </ul> |
 
@@ -231,7 +231,7 @@ Beschreibung der Tabellendaten:
 
 ### Von Dropped Frames betroffene Streams
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zeichenfolge </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** beliebig </li> <li> ****<br/> Beispielwert: TRUE </li><li> **Beschreibung:**<br/>Die Anzahl der Streams, in denen Frames abgelegt wurden. Diese Metrik wird auf 1 gesetzt, wenn mindestens ein Dropped Frame während einer Wiedergabesitzung aufgetreten ist.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>droppedFrames) </li> <li> ****<br/> Heartbeat: (l:stream:<br/>dropped_frames) </li> </ul> | <ul> <li> **Verfügbar:**<br/>ja </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/>Von Dropped Frames betroffene Streams </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>droppedFrames) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>droppedFrames) </li> </ul> |
 
@@ -242,7 +242,7 @@ Beschreibung der Tabellendaten:
 
 ### Von Unterbrechung betroffene Streams
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zeichenfolge </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** 1.5 (oder höher) </li> <li> ****<br/> Beispielwert: TRUE </li><li> **Beschreibung:**<br/>Die Anzahl der Streams, in denen ein angehaltenes Ereignis aufgetreten ist. Diese Metrik wird auf 1 gesetzt, wenn während der Wiedergabe mindestens ein Unterbrechungsereignis aufgetreten ist. Kunden müssen eigene Verarbeitungsregeln erstellen, damit der Wert für Berichte zur Verfügung steht.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>stall) </li> <li> ****<br/> Heartbeat: (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **Verfügbar:**<br/>Verwenden Sie eine anwenderspezifische Verarbeitungsregel. </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/> </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>stall) </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>stall) </li> </ul> |
 
@@ -253,7 +253,7 @@ Beschreibung der Tabellendaten:
 
 ### Unterbrechungsereignisse
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zeichenfolge </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** 1.5 (oder höher) </li> <li> ****<br/> Beispielwert: "3" </li><li> **Beschreibung:**<br/>Wie oft die Wiedergabe während einer Wiedergabesitzung angehalten wurde. Kunden müssen eigene Verarbeitungsregeln erstellen, damit der Wert für Berichte zur Verfügung steht.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>stallCount) </li> <li> ****<br/> Heartbeat: (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **Verfügbar:**<br/>Verwenden Sie eine anwenderspezifische Verarbeitungsregel. </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/> </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>stallCount) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>stallCount) </li> </ul> |
 
@@ -261,7 +261,7 @@ Beschreibung der Tabellendaten:
 
 ### Gesamt-Unterbrechungsdauer
 
-|   Implementierung   | Netzwerkparameter | Berichterstellung   |
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/>automatisch festgelegt </li> <li> **API-Schlüssel:**<br/>nicht verfügbar </li> <li> **Erforderlich:**<br/>nein </li> <li> **Typ:**<br/>Zahl </li> <li> ****<br/> Gesendet mit: Medienschließen </li> <li> **Min. SDK-Version:** 1.5 (oder höher) </li> <li> ****<br/> Beispielwert: 12 </li><li> **Beschreibung:**<br/>Gesamtdauer (Sekunden) integer) die Wiedergabe während einer Wiedergabesitzung angehalten wurde. Kunden müssen eigene Verarbeitungsregeln erstellen, damit der Wert für Berichte zur Verfügung steht.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics: (a.media.qoe)<br/>stallTime) </li> <li> ****<br/> Heartbeat: (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **Verfügbar:**<br/>Verwenden Sie eine anwenderspezifische Verarbeitungsregel. </li> <li> **Reservierte Variable:**<br/>Ereignis </li> <li> **Berichtsname:**<br/> </li> <li> ****<br/> Kontextdaten: (a.media.qoe)<br/>stallTime) </li> <li> **Datenfeed:**<br/>nicht verfügbar </li> <li> ****<br/> Audience Manager: (c_contextdata.<br/>a.media.qoe.<br/>stallTime) </li> </ul> |
 
