@@ -1,9 +1,9 @@
 ---
-seo-title: Einrichten von iOS
 title: Einrichten von iOS
+description: Einrichtung der Media SDK-Anwendung für die Implementierung unter iOS.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
-source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
