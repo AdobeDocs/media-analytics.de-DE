@@ -1,9 +1,9 @@
 ---
-seo-title: Codevergleich 1.x bis 2.x
 title: Codevergleich 1.x bis 2.x
+description: In diesem Thema wird Code in den Versionen 1.x und 2.x des Media SDK verglichen.
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
