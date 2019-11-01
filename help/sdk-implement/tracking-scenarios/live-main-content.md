@@ -1,9 +1,9 @@
 ---
-seo-title: Live-Hauptinhalt
 title: Live-Hauptinhalt
+description: Ein Beispiel für die Verfolgung von Live-Inhalten mit dem Media SDK.
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
