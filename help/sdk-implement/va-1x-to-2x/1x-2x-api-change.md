@@ -1,9 +1,9 @@
 ---
-seo-title: API-Konversion von 1.x zu 2.x
 title: API-Konversion von 1.x zu 2.x
+description: Dieses Thema enthält Links zu API-Verweisen und listet erforderliche und optionale Tracking-APIs für die Versionen 1.x und 2.x des Media SDK auf.
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
