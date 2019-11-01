@@ -1,9 +1,9 @@
 ---
-seo-title: Medien-Unterbrechung testen 2
 title: Medien-Unterbrechung testen 2
+description: In diesem Thema wird der Medienunterbrechungstest beschrieben, der bei der Überprüfung verwendet wird.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
 translation-type: tm+mt
-source-git-commit: 5822e634c51cb53a60400623d115c6d862dad44f
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
