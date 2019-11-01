@@ -1,9 +1,9 @@
 ---
-seo-title: VOD-Wiedergabe mit Suche im Hauptinhalt
 title: VOD-Wiedergabe mit Suche im Hauptinhalt
+description: Ein Beispiel für die Verfolgung von VOD-Inhalten, bei denen die Suche mithilfe des Media SDK stattgefunden hat.
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
