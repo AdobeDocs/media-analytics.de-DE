@@ -1,9 +1,9 @@
 ---
-seo-title: Details zum Testaufruf
 title: Details zum Testaufruf
+description: In diesem Thema werden die Aufrufe beschrieben, die Sie zur Validierung Ihrer Implementierung ausführen müssen.
 uuid: d3a0e62f-2fc3-413d-ac56-adbc9b3e983
 translation-type: tm+mt
-source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
