@@ -1,9 +1,9 @@
 ---
-seo-title: Android einrichten
 title: Android einrichten
+description: Einrichtung der Media SDK-Anwendung für die Implementierung unter Android.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
-source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
