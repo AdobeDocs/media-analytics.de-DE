@@ -1,9 +1,9 @@
 ---
-seo-title: VOD-Wiedergabe mit Pufferung
 title: VOD-Wiedergabe mit Pufferung
+description: Ein Beispiel für die Verfolgung von VOD-Inhalten mit dem Media SDK.
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
