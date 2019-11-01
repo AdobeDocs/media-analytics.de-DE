@@ -1,9 +1,9 @@
 ---
-seo-title: Debug-Dashboard und -Berichte
 title: Debug-Dashboard und -Berichte
+description: In diesem Thema werden die Adobe-Debug-Dashboards beschrieben.
 uuid: 8e6f6245-d8bd-4329-89e1-4c5595e04ec5
 translation-type: tm+mt
-source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
