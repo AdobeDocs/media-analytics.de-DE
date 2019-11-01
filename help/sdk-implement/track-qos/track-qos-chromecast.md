@@ -1,9 +1,9 @@
 ---
-seo-title: Tracking der Erlebnisqualität auf Chromecast
 title: Tracking der Erlebnisqualität auf Chromecast
+description: In diesem Thema wird beschrieben, wie Sie die QoE- und QoS-Verfolgung mithilfe des Media SDK on Chromecast implementieren.
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 translation-type: tm+mt
-source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
