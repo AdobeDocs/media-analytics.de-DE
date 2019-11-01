@@ -1,9 +1,9 @@
 ---
-seo-title: Tracking von Core-Wiedergaben auf Roku
 title: Tracking von Core-Wiedergaben auf Roku
+description: In diesem Thema wird beschrieben, wie Sie die Kernverfolgung mit dem Media SDK unter Roku implementieren.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
