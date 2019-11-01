@@ -1,9 +1,9 @@
 ---
-seo-title: Adobe Debug konfigurieren
 title: Adobe Debug konfigurieren
+description: In diesem Thema wird beschrieben, wie Sie Adobe Debug konfigurieren, mit dem Sie eine Fehlerbehebung bei Media SDK-Implementierungen durchführen können.
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 translation-type: tm+mt
-source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
