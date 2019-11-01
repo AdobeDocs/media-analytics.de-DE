@@ -2,7 +2,7 @@
 title: Übersicht über SDK Cookbook
 description: 'SDK-spezifische Cookbook-Themen '
 translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: b807835875594a2acfc79ec9cbffce4aadbaac84
 
 ---
 
@@ -17,4 +17,3 @@ Die folgenden Cookbook-Themen beziehen sich auf die Media SDK-Version von Media 
 * [Beheben von „main:play“ zwischen Anzeigen](/help/sdk-implement/cookbook/fix-ad-play-ad.md)
 * [Wiederaufnehmen inaktiver Sitzungen](/help/sdk-implement/cookbook/resuming-inactive.md)
 * [Tracking in SceneGraph (Roku)](/help/sdk-implement/cookbook/sdk-track-scenegraph.md)
-* [Unterschiede bei SDK und Start](/help/sdk-implement/cookbook/sdk-vs-launch-qoe.md)
