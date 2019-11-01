@@ -1,9 +1,9 @@
 ---
-seo-title: VOD-Wiedergabe mit einem übersprungenen Kapitel
 title: VOD-Wiedergabe mit einem übersprungenen Kapitel
+description: Ein Beispiel dafür, wie VOD-Inhalte verfolgt werden, bei denen der Benutzer ein Kapitel mit dem Media SDK übersprungen hat.
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
