@@ -1,9 +1,9 @@
 ---
-seo-title: Tracking der Erlebnisqualität auf Android
 title: Tracking der Erlebnisqualität auf Android
+description: In diesem Thema wird beschrieben, wie Sie die QoE- und QoS-Verfolgung mithilfe des Media SDK unter Android implementieren.
 uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
