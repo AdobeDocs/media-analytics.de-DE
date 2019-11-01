@@ -1,9 +1,9 @@
 ---
-seo-title: Tracking der Erlebnisqualität auf iOS
 title: Tracking der Erlebnisqualität auf iOS
+description: In diesem Thema wird beschrieben, wie Sie die QoE- und QoS-Verfolgung mithilfe des Media SDK unter iOS implementieren.
 uuid: cae2c142-ed39-4234-a711-765dcabc5415
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
