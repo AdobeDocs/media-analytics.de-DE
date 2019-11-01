@@ -1,9 +1,9 @@
 ---
-seo-title: VOD-Wiedergabe ohne Anzeigen
 title: VOD-Wiedergabe ohne Anzeigen
+description: Ein Beispiel für die Verfolgung der VOD-Wiedergabe ohne Anzeigen.
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbd0d8cb
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
