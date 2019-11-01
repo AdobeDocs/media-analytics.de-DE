@@ -1,9 +1,9 @@
 ---
-seo-title: Tracking von Core-Wiedergaben auf JavaScript
 title: Tracking von Core-Wiedergaben auf JavaScript
+description: In diesem Thema wird beschrieben, wie Sie die Core-Tracking mit dem Media SDK in Browser-Apps (JS) implementieren.
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
