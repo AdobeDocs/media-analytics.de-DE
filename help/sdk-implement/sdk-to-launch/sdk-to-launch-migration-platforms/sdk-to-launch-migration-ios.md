@@ -1,10 +1,8 @@
 ---
-seo-title: Migration vom eigenständigen Media SDK zum Adobe Launch - iOS
 title: Migration vom eigenständigen Media SDK zum Adobe Launch - iOS
-seo-description: Anweisungen und Codebeispiele, die bei der Migration vom Media SDK zum Launch für iOS helfen.
 description: Anweisungen und Codebeispiele, die bei der Migration vom Media SDK zum Launch für iOS helfen.
 translation-type: tm+mt
-source-git-commit: b479f6623566b6a6989f625b757a97bba5f6aafd
+source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
 
 ---
 
@@ -12,15 +10,6 @@ source-git-commit: b479f6623566b6a6989f625b757a97bba5f6aafd
 # Migration vom eigenständigen Media SDK zum Adobe Launch - iOS
 
 ## Konfiguration
-
-### Erweiterung starten
-
-1. Klicken Sie im Experience Platform Launch für Ihre mobile Eigenschaft auf die Registerkarte [!UICONTROL Erweiterungen] .
-1. Suchen Sie auf der Registerkarte " [!UICONTROL Katalog] "die Erweiterung Adobe Media Analytics for Audio and Video und klicken Sie auf [!UICONTROL Installieren].
-1. Konfigurieren Sie auf der Seite "Erweiterungseinstellungen"die Verfolgungsparameter.
-Die Media-Erweiterung verwendet die konfigurierten Parameter für die Verfolgung.
-
-[Media Analytics-Erweiterung konfigurieren](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
 ### Eigenständiges Media SDK
 
@@ -42,40 +31,18 @@ ADBMediaHeartbeat* tracker =
   [[ADBMediaHeartbeat alloc] initWithDelegate:self config:config]; 
 ```
 
-## Trackererstellung
-
 ### Erweiterung starten
 
-[Media API-Referenz - Medienverfolgung erstellen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+1. Klicken Sie im Experience Platform Launch für Ihre mobile Eigenschaft auf die Registerkarte [!UICONTROL Erweiterungen] .
+1. Suchen Sie auf der Registerkarte " [!UICONTROL Katalog] "die Erweiterung Adobe Media Analytics for Audio and Video und klicken Sie auf [!UICONTROL Installieren].
+1. Konfigurieren Sie auf der Seite "Erweiterungseinstellungen"die Verfolgungsparameter.
+Die Media-Erweiterung verwendet die konfigurierten Parameter für die Verfolgung.
 
-Bevor Sie den Tracker erstellen, registrieren Sie die Medienerweiterung und die abhängigen Erweiterungen mit dem mobilen Kern.
+   ![](assets/launch_config_mobile.png)
 
-```objective-c
-// Register the extension once during app launch
-#import <ACPCore.h>
-#import <ACPAnalytics.h>
-#import <ACPMedia.h>
-#import <ACPIdentity.h>
+[Media Analytics-Erweiterung konfigurieren](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [ACPCore setLogLevel:ACPMobileLogLevelDebug];
-    [ACPCore configureWithAppId:@"your-launch-app-id"];
-    [ACPMedia registerExtension];
-    [ACPAnalytics registerExtension];
-    [ACPIdentity registerExtension];
-    [ACPCore start:nil];
-    return YES;
-}
-```
-
-Nachdem die Medienerweiterung registriert wurde, kann der Tracker mit der folgenden API erstellt werden.
-Der Tracker wählt die Konfiguration automatisch aus der konfigurierten Eigenschaft launch aus.
-
-```objective-c
-[ACPMedia createTracker:^(ACPMediaTracker * _Nullable mediaTracker) {
-    // Use the instance for tracking media.
-}];
-```
+## Trackererstellung
 
 ### Eigenständiges Media SDK
 
@@ -116,7 +83,45 @@ ADBMediaHeartbeat* tracker =
   [[ADBMediaHeartbeat alloc] initWithDelegate:delegate config:config];
 ```
 
+### Erweiterung starten
+
+[Media API-Referenz - Medienverfolgung erstellen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+
+Bevor Sie den Tracker erstellen, registrieren Sie die Medienerweiterung und die abhängigen Erweiterungen mit dem mobilen Kern.
+
+```objective-c
+// Register the extension once during app launch
+#import <ACPCore.h>
+#import <ACPAnalytics.h>
+#import <ACPMedia.h>
+#import <ACPIdentity.h>
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [ACPCore setLogLevel:ACPMobileLogLevelDebug];
+    [ACPCore configureWithAppId:@"your-launch-app-id"];
+    [ACPMedia registerExtension];
+    [ACPAnalytics registerExtension];
+    [ACPIdentity registerExtension];
+    [ACPCore start:nil];
+    return YES;
+}
+```
+
+Nachdem die Medienerweiterung registriert wurde, kann der Tracker mit der folgenden API erstellt werden.
+Der Tracker wählt die Konfiguration automatisch aus der konfigurierten Eigenschaft launch aus.
+
+```objective-c
+[ACPMedia createTracker:^(ACPMediaTracker * _Nullable mediaTracker) {
+    // Use the instance for tracking media.
+}];
+```
+
 ## Aktualisieren von Playhead und Qualität der Erlebniswerte.
+
+### Eigenständiges Media SDK
+
+Im eigenständigen Media SDK wird ein Delegate-Objekt, das das`ADBMediaHeartbeartDelegate` Protokoll implementiert, während der Trackererstellung übergeben.
+Die Implementierung sollte die neueste QoE und die Abspielleiste zurückgeben, wenn der Tracker die `getQoSObject()` und die `getCurrentPlaybackTime()` Schnittstellen-Methoden aufruft.
 
 ### Erweiterung starten
 
@@ -128,59 +133,7 @@ Die Implementierung sollte die QoE-Informationen aktualisieren, indem die`update
 
 [Media API-Referenz - QoE-Objekt aktualisieren](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
 
-### Eigenständiges Media SDK
-
-Im eigenständigen Media SDK wird ein Delegate-Objekt, das das`ADBMediaHeartbeartDelegate` Protokoll implementiert, während der Trackererstellung übergeben.
-Die Implementierung sollte die neueste QoE und die Abspielleiste zurückgeben, wenn der Tracker die `getQoSObject()` und die `getCurrentPlaybackTime()` Schnittstellen-Methoden aufruft.
-
 ## Übergeben von Standardmedien/Anzeigenmetadaten
-
-### Erweiterung starten
-
-* Standard-Medienmetadaten:
-
-   ```objective-c
-   NSDictionary *mediaObject = 
-     [ACPMedia createMediaObjectWithName:@"media-name" 
-               mediaId:@"media-id" 
-               length:60 
-               streamType:ACPMediaStreamTypeVod 
-               mediaType:ACPMediaTypeVideo];
-   
-   NSMutableDictionary *mediaMetadata = 
-     [[NSMutableDictionary alloc] init];
-   
-   // Standard metadata keys provided by adobe.
-   [mediaMetadata setObject:@"Sample show" forKey:ACPVideoMetadataKeyShow];
-   [mediaMetadata setObject:@"Sample season" forKey:ACPVideoMetadataKeySeason];
-   
-   // Custom metadata keys
-   [mediaMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
-   [mediaMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
-   [_tracker trackSessionStart:mediaObject data:mediaMetadata];
-   ```
-
-* Standard-Anzeigenmetadaten:
-
-   ```objective-c
-   NSDictionary* adObject = 
-     [ACPMedia createAdObjectWithName:@"ad-name" 
-               adId:@"ad-id" 
-               position:1 
-               length:15];
-   
-   NSMutableDictionary* adMetadata = 
-     [[NSMutableDictionary alloc] init];
-   
-   // Standard metadata keys provided by adobe.
-   [adMetadata setObject:@"Sample Advertiser" forKey:ACPAdMetadataKeyAdvertiser];
-   [adMetadata setObject:@"Sample Campaign" forKey:ACPAdMetadataKeyCampaignId];
-   
-   // Custom metadata keys
-   [adMetadata setObject:@"Sample affiliate" forKey:@"affiliate"];
-   
-   [tracker trackEvent:ACPMediaEventAdStart mediaObject:adObject data:adMetadata];
-   ```
 
 ### Eigenständiges Media SDK
 
@@ -236,3 +189,49 @@ Die Implementierung sollte die neueste QoE und die Abspielleiste zurückgeben, w
             data:adDictionary];
    ```
 
+### Erweiterung starten
+
+* Standard-Medienmetadaten:
+
+   ```objective-c
+   NSDictionary *mediaObject = 
+     [ACPMedia createMediaObjectWithName:@"media-name" 
+               mediaId:@"media-id" 
+               length:60 
+               streamType:ACPMediaStreamTypeVod 
+               mediaType:ACPMediaTypeVideo];
+   
+   NSMutableDictionary *mediaMetadata = 
+     [[NSMutableDictionary alloc] init];
+   
+   // Standard metadata keys provided by adobe.
+   [mediaMetadata setObject:@"Sample show" forKey:ACPVideoMetadataKeyShow];
+   [mediaMetadata setObject:@"Sample season" forKey:ACPVideoMetadataKeySeason];
+   
+   // Custom metadata keys
+   [mediaMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
+   [mediaMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
+   [_tracker trackSessionStart:mediaObject data:mediaMetadata];
+   ```
+
+* Standard-Anzeigenmetadaten:
+
+   ```objective-c
+   NSDictionary* adObject = 
+     [ACPMedia createAdObjectWithName:@"ad-name" 
+               adId:@"ad-id" 
+               position:1 
+               length:15];
+   
+   NSMutableDictionary* adMetadata = 
+     [[NSMutableDictionary alloc] init];
+   
+   // Standard metadata keys provided by adobe.
+   [adMetadata setObject:@"Sample Advertiser" forKey:ACPAdMetadataKeyAdvertiser];
+   [adMetadata setObject:@"Sample Campaign" forKey:ACPAdMetadataKeyCampaignId];
+   
+   // Custom metadata keys
+   [adMetadata setObject:@"Sample affiliate" forKey:@"affiliate"];
+   
+   [tracker trackEvent:ACPMediaEventAdStart mediaObject:adObject data:adMetadata];
+   ```
