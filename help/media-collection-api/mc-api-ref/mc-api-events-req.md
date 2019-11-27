@@ -2,13 +2,13 @@
 title: Ereignisanfrage
 description: null
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Ereignisanfrage{#events-request}
+# Ereignisanfrage {#events-request}
 
 ```
 POST 
@@ -17,11 +17,11 @@ https://{uri}/api/v1/sessions/{sid}/events
 
 ## URI-Parameter
 
-`sid`: Die Sitzungs-ID, die von einer [Sitzungsanfrage zurückgegeben wird.](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
+`sid`: Die Sitzungs-ID, die von einer [Sitzungsanforderung](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) zurückgegeben wird.
 
 ## Anfrageinhalt
 
-Die Anforderungsstelle muss JSON sein und die gleiche Struktur wie die folgende MusteranforderungsTextstelle haben:
+Der Anforderungstext muss im JSON-Format vorliegen und die gleiche Struktur aufweisen wie dieser Beispiel-Anforderungstext:
 
 ```
 { 
@@ -41,14 +41,14 @@ Die Anforderungsstelle muss JSON sein und die gleiche Struktur wie die folgende 
    * `ts`: Zeitstempel, der in Millisekunden angegeben werden muss.
 * `eventType` (Obligatorisch)
 * `params` (Optional)
-* `customMetadata` (Optional) Nur senden mit `adStart` und `chapterStart` Ereignistypen)
+* `customMetadata` (Optional, nur mit den Ereignistypen `adStart` und `chapterStart` senden)
 * `qoeData` (Optional)
 
 Eine Liste gültiger Ereignistypen für diese Version finden Sie unter [Ereignistypen und -beschreibungen.](/help/media-collection-api/mc-api-ref/mc-api-event-types.md)
 
 >[!IMPORTANT]
 >
->***Anzeigenverfolgung -**Sie können Anzeigen nur innerhalb eines`adBreak`*.
+>***Anzeigen-Tracking –**Sie können Anzeigen nur innerhalb einer`adBreak`* verfolgen.
 >
 >Wenn Anzeigen nicht durch `adBreakStart` und `adBreakComplete` eingeschlossen sind, werden die Ereignisse `adStart` und `adComplete` einfach ignoriert und die Werbedauer wird der Dauer des Hauptinhalts angerechnet. Das kann deutliche Auswirkungen auf die aggregierten Daten haben, die in Adobe Analytics zur Verfügung stehen.
 
@@ -71,7 +71,7 @@ Access-Control-Expose-Headers Location
 |---|---|---|
 | **204** | **Kein Inhalt.** <br/><br/>Der Heartbeat-Aufruf war erfolgreich. | nicht angegeben |
 | **400** | **Unzulässige Anfrage.**<br/><br/>Die Anfrage hatte ein unzulässiges Format. | Überprüfen Sie die [JSON-Validierungsschemata](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) für den Anfragetyp. |
-| **404** | **nicht gefunden.** <br/><br/>Die Sitzungs-ID für die Mediensitzung wurde im Backend-Dienst nicht gefunden. | Die Client-Anwendung sollte die [Sitzungsanfrage-API](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) verwenden, um eine weitere Mediensitzung und einen Tracking-Bericht zu erstellen. |
-| **410** | **Vorbei.** <br/><br/>Die Mediensitzung wurde im Back-End-Dienst gefunden, der Client kann jedoch keine Aktivität mehr darauf melden. | Die Client-Anwendung sollte die [Sitzungsanfrage-API](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) verwenden, um eine weitere Mediensitzung und einen Tracking-Bericht zu erstellen. |
+| **404** | **nicht gefunden.** <br/><br/>Die Sitzungs-ID für die Mediensitzung wurde im Backend-Service nicht gefunden. | Die Client-Anwendung sollte die [Sitzungsanfrage-API](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) verwenden, um eine weitere Mediensitzung und einen Tracking-Bericht zu erstellen. |
+| **410** | **Vorbei.** <br/><br/>Die Mediensitzung wurde im Backend-Service gefunden, aber der Client kann die Aktivität nicht mehr berichten. | Die Client-Anwendung sollte die [Sitzungsanfrage-API](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) verwenden, um eine weitere Mediensitzung und einen Tracking-Bericht zu erstellen. |
 | **500** | **Serverfehler** | nicht angegeben |
 
