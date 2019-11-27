@@ -2,13 +2,13 @@
 title: Berechnete Metriken
 description: null
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Berechnete Metriken{#calculated-metrics}
+# Berechnete Metriken {#calculated-metrics}
 
 >[!NOTE]
 >
@@ -16,8 +16,8 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | Metrik | Beschreibung | Formel |
 |---|---|---|
-| Durchschn. Anzeigen pro Medien-Stream | Anzeigenstarts pro Medienstarts | `Ad Starts / Media Starts` |
-| Durchschn. Kapitel pro Medien-Stream | Kapitelstarts pro Medienstarts | `Chapter Start / Media Starts` |
+| Durchschn. Anzeigen pro Medien-Stream | Anzeigenstarts pro Medienstart | `Ad Starts / Media Starts` |
+| Durchschn. Kapitel pro Medien-Stream | Kapitelstarts pro Medienstart | `Chapter Start / Media Starts` |
 | Durchschn. Besuchszeit für Medien | Gesamtbesuchszeit pro Medienstart (HH:MM:SS) | `Media Time Spent / Media Starts` |
 | Durchschn. Inhaltsbesuchszeit | Inhaltsbesuchszeit pro Inhaltsstart (HH:MM:SS) | `Content Time Spent / Content Start` |
 | Durchschn. Besuchszeit für Anzeige | Anzeigenbesuchszeit pro Anzeigenstart (HH:MM:SS) | `Ad Time Spent / Ad Start` |
@@ -28,6 +28,6 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | Kapitelabschlussrate | Rate der abgeschlossenen Kapitel im Vergleich zu den Kapitelstarts (%) | `Chapter Completes / Chapter Starts` |
 | Drop-vor-Start-Rate | Drop-Rate vor Starts und Medienstarts im Vergleich (%) | `Drops before Starts / Media Starts` |
 | Rate der Länge der Inhaltsunterbrechungen | Rate der Länge der Inhaltsunterbrechungen im Vergleich zur Inhaltsbesuchszeit (%) | `Total Pause Duration / Content Time Spent` |
-| Rate der Länge der Inhaltspufferungen | Rate der Länge der Inhaltspufferungen im Vergleich zur Inhaltsbesuchszeit (% ) | `Total Buffer Duration / Content Time Spent` |
+| Rate der Länge der Inhaltspufferungen | Rate der Länge der Inhaltspufferungen im Vergleich zur Inhaltsbesuchszeit (%) | `Total Buffer Duration / Content Time Spent` |
 | Rate der Inhaltsladezeit | Rate der Ladezeit im Vergleich zur Inhaltsbesuchszeit (%) | `Time to Start / Content Time Spent` |
 | Rate der Anzeigenbesuchszeit | Rate der Anzeigenbesuchszeit im Vergleich zur Inhaltsbesuchszeit (%) | `Ad Time Spent / Content Time Spent` |
