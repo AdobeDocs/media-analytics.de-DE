@@ -1,16 +1,16 @@
 ---
 title: SDK-Debugging
-description: In diesem Thema wird die im Media SDK verfügbare Verfolgung/Protokollierung beschrieben.
+description: Hier wird die im Media SDK verfügbare Verfolgung (Tracking)/Protokollierung beschrieben.
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# SDK-Debugging{#sdk-debugging}
+# SDK-Debugging {#sdk-debugging}
 
-Sie können die Protokollierung aktivieren und deaktivieren. Das Media SDK bietet einen umfassenden Verfolgungs-/Protokollierungsmechanismus für den gesamten Medienverfolgungsstapel. You can enable or disable logging by setting the `debugLogging` flag on the Config object.
+Sie können die Protokollierung aktivieren und deaktivieren. Das Media SDK bietet einen umfassenden Tracking-/Protokollierungsmechanismus im gesamten Medien-Tracking-Stapel. Sie können diese Protokollierung aktivieren bzw. deaktivieren, indem Sie die `debugLogging`-Markierung im Config-Objekt festlegen.
 
 ## Beispielcode für die Debug-Protokollierung
 
@@ -67,7 +67,7 @@ ADBMobile.config.setDebugLogging(true)
 Bei der Anwendungsentwicklung können Sie in Bloodhound die Server-Aufrufe lokal anzeigen und die Daten optional an Adobe-Erfassungsserver weiterleiten. Weitere Informationen zu Bloodhound finden Sie in den folgenden Anleitungen:
 
 * [Bloodhound 3.x für Mac](https://marketing.adobe.com/resources/help/en_US/mobile/bloodhound/)
-* [Bloodhound 2.2 für Windows](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&sig2=K0waTKxdMj_2kfNXdMI2yg)
+* [Bloodhound 2.2 für Windows](https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&amp;url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&amp;usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&amp;sig2=K0waTKxdMj_2kfNXdMI2yg)
 
 >[!IMPORTANT]
 >
@@ -91,9 +91,9 @@ Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.s
 * **tag:** Der Name der Unterkomponente, von der die Protokollmeldung ausgegeben wurde (normalerweise der Klassenname)
 * **message:** Die eigentliche Trace-Meldung
 
-Sie können die Protokollausgabe der Media SDK-Bibliothek verwenden, um die Implementierung zu überprüfen. A good strategy is to search through the logs for the string `#track`. This will highlight all the `track*()` calls made by your application.
+Sie können die Implementierung anhand der ausgegebenen Protokolle der Media SDK-Bibliothek überprüfen. Dabei bietet es sich an, in den Protokollen nach der Zeichenfolge `#track` zu suchen. Dadurch werden alle `track*()`-Aufrufe hervorgehoben, die von der Anwendung durchgeführt wurden.
 
-For instance, this is what the logs filtered for `#track` could look like:
+Nach `#track` gefilterte Protokolle könnten beispielsweise so aussehen:
 
 ```js
 [16:10:29 GMT­0700 (PDT).222] [INFO] [plugin::player] #trackVideoLoad() 
