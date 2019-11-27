@@ -1,22 +1,22 @@
 ---
 title: Tracking von Fehlern in iOS
-description: In diesem Thema wird die Implementierung der Fehlerverfolgung mit dem Media SDK unter iOS beschrieben.
+description: Hier wird die Implementierung des Fehler-Trackings mit dem Media SDK in iOS beschrieben.
 uuid: 18ea93d3-5948-4375-bcdb-72309268e38d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Tracking von Fehlern in iOS{#track-errors-on-ios}
+# Tracking von Fehlern in iOS {#track-errors-on-ios}
 
 >[!IMPORTANT]
 >
 >Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie hier die 1.x-Entwicklerhandbücher herunterladen.[SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
-## Fehlerverfolgung implementieren
+## Implementieren des Fehler-Trackings
 
-1. Medienplayer-Fehler verfolgen:
+1. Tracking von Fehlern im Medienplayer:
 
    ```
    - (void)onPlayerError:(NSNotification *)notification { 
@@ -26,5 +26,5 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!NOTE]
 >
->Die Verfolgung von Medienplayer-Fehlern beendet die Medienverfolgungssitzung nicht. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd` after calling `trackError`.
+>Das Tracking von Fehlern im Medienplayer beendet die Medien-Tracking-Sitzung nicht. Wenn der Medienplayer-Fehler verhindert, dass die Wiedergabe fortgesetzt wird, müssen Sie sicherstellen, dass die Medien-Tracking-Sitzung geschlossen wird. Rufen Sie dazu `trackSessionEnd` nach `trackError` auf.
 
