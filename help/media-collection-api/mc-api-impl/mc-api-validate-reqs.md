@@ -2,17 +2,17 @@
 title: Validieren von Ereignisanfragen
 description: null
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Validieren von Ereignisanfragen{#validating-event-requests}
+# Validieren von Ereignisanfragen {#validating-event-requests}
 
 Der JSON-Anfrageinhalt für die einzelnen Ereignistypen muss am Backend mit JSON-Schemas validiert werden. Dem HTTP-Anfrageinhalt wird eine Fehlermeldung hinzugefügt, wenn die Validierung für einen API-Aufruf fehlschlägt.
 
-JSON validation schemas for each event type are publicly accessible here: `{uri}/api/v1/schemas/{eventType}` (e.g., `{uri}/api/v1/schemas/sessionEnd`). Diese JSON-Überprüfungsschemata sind die absolute Autorität für die Bestimmung der richtigen Parameter des Anforderungskörpers für jeden Ereignistyp.
+Die JSON-Validierungschemas für die verschiedenen Ereignistypen finden Sie unter `{uri}/api/v1/schemas/{eventType}` (z. B. `{uri}/api/v1/schemas/sessionEnd`). Diese JSON-Validierungsschemas sind ausschlaggebend für die Bestimmung der richtigen Anforderungstextparameter für die jeweiligen Ereignistypen.
 
 Die Antwort auf eine Anfrage für das Validierungsschema `sessionStart` sieht beispielsweise ungefähr wie folgt aus (Formatierung zwecks Lesbarkeit leicht geändert):
 
@@ -125,5 +125,5 @@ Connection: keep-alive
 
 >[!NOTE]
 >
->Die Überprüfung auf Sitzungsebene ist nicht möglich, da der Sitzungskontext in der Sammlungsebene nicht verfügbar ist.
+>Die Validierung auf Sitzungsebene ist nicht möglich, da der Sitzungskontext nicht auf Sammlungsebene verfügbar ist.
 
