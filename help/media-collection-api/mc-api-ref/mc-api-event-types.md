@@ -2,21 +2,21 @@
 title: Ereignistypen und -beschreibungen
 description: null
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Ereignistypen und -beschreibungen{#event-types-and-descriptions}
+# Ereignistypen und -beschreibungen {#event-types-and-descriptions}
 
 ## sessionStart
 
-Gesendet mit dem `sessions` Anruf. Wenn die Antwort zurückgegeben wird, extrahieren Sie die Sitzungs-ID aus dem Location-Header und verwenden Sie sie für nachfolgende Aufrufe an den Sammlungsserver.
+Wird mit dem `sessions`-Aufruf gesendet. Wenn die Antwort zurückgegeben wird, extrahieren Sie die Sitzungs-ID aus dem Location-Header und verwenden Sie sie für nachfolgende Aufrufe an den Sammlungsserver.
 
 ## play
 
-Sent when the player changes state to "playing" from another state (i.e., the `on('Playing')` callback is triggered by the player). Andere Status, von denen der Player zu „Playing“ wechseln kann, beinhalten „Buffering“ (Puffern), die Wiederaufnahme der Wiedergabe nach „Paused“ (Pause) oder Fehlermeldungen, die automatische Wiedergabe usw.
+Wird gesendet, wenn der Player den Status zu „Playing“ (Wiedergabe) ändert (z. B. wenn der `on('Playing')`-Callback vom Player ausgelöst wird). Andere Status, von denen der Player zu „Playing“ wechseln kann, beinhalten „Buffering“ (Puffern), die Wiederaufnahme der Wiedergabe nach „Paused“ (Pause) oder Fehlermeldungen, die automatische Wiedergabe usw.
 
 ## ping
 
@@ -31,59 +31,59 @@ Wird gesendet, wenn sich die Bitrate ändert.
 
 ## bufferStart
 
-Wird gesendet, wenn die Pufferung beginnt. Es gibt keinen Ereignistyp `bufferResume`. A `bufferResume` is inferred when you send a `play` event after `bufferStart`.
+Wird gesendet, wenn ein Puffervorgang beginnt. Es gibt keinen Ereignistyp `bufferResume`. `bufferResume` wird erkannt, wenn Sie ein `play`-Ereignis nach `bufferStart` senden.
 
 ## pauseStart
 
-Wird gesendet, wenn der Benutzer Pause drückt. Es gibt keinen Ereignistyp `resume`. A `resume` is inferred when you send a `play` event after a `pauseStart`.
+Wird gesendet, wenn der Benutzer die Wiedergabe anhält. Es gibt keinen Ereignistyp `resume`. `resume` wird erkannt, wenn Sie ein `play`-Ereignis nach `pauseStart` senden.
 
 ## adBreakStart
 
-Gibt den Beginn einer Werbeunterbrechung an
+Signalisiert den Start einer Werbeunterbrechung.
 
 ## adStart
 
-Gibt den Beginn einer Anzeige an
+Signalisiert den Start einer Werbeanzeige.
 
 ## adComplete
 
-Gibt den Abschluss einer Werbeunterbrechung an
+Signalisiert den Abschluss einer Werbeunterbrechung.
 
 ## adSkip
 
-Signiert eine übersprungene Anzeige
+Signalisiert das Überspringen einer Werbeanzeige.
 
 ## adBreakComplete
 
-Gibt den Abschluss einer Werbeunterbrechung an
+Signalisiert den Abschluss einer Werbeunterbrechung.
 
 ## chapterStart
 
-Gibt den Beginn eines Kapitelsegments an
+Signalisiert den Start eines Kapitelsegments.
 
 ## chapterSkip
 
-Signiert eine Kapitelüberspringe
+Signalisiert das Überspringen eines Kapitels.
 
 ## chapterComplete
 
-Gibt den Abschluss eines Kapitels an
+Signalisiert den Abschluss eines Kapitels.
 
 ## error
 
-Gibt einen Fehler an.
+Signalisiert, dass ein Fehler aufgetreten ist.
 
 ## sessionEnd
 
-Dadurch wird das Media Analytics-Back-End benachrichtigt, dass die Sitzung sofort geschlossen wird, wenn der Benutzer die Anzeige des Inhalts abgebrochen hat und wahrscheinlich keine Rückkehr erfolgt.
+Dieser Parameter wird verwendet, um das Media Analytics-Backend aufzufordern, die Sitzung umgehend zu schließen, wenn der Benutzer die Wiedergabe verlassen hat und wahrscheinlich nicht zurückkehren wird.
 
-If you don't send a `sessionEnd`, an abandoned session will time-out normally (after no events are received for 10 minutes, or when no playhead movement occurs for 30 minutes), and the session is deleted by the backend.
+Wenn Sie `sessionEnd` nicht senden, gelten die normalen Timeout-Bedingungen (nachdem zehn Minuten lang keine Ereignisse eingegangen sind oder die Abspielleiste sich 30 Minuten lang nicht verändert hat).
 
 ## sessionComplete
 
-Wird gesendet, wenn das Ende des Hauptinhalts erreicht wird
+Wird gesendet, wenn das Ende des Hauptinhalts erreicht ist.
 
 >[!IMPORTANT]
 >
->You should refer to the [JSON validation schemas](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) for each event type, to verify correct event parameter types and requirements.
+>In den [JSON-Validierungsschemas](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) für die jeweiligen Ereignistypen finden Sie Informationen zur Überprüfung der Parametertypen und -anforderungen.
 
