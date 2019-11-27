@@ -1,20 +1,20 @@
 ---
 title: App-Zustände verfolgen
-description: 'App-Zustände sind die verschiedenen Bildschirme oder Ansichten in Ihrer Anwendung, die bei der Anzeige zu einem trackState-Aufruf führen sollten. '
+description: 'App-Status sind die verschiedenen Bildschirme oder Ansichten in Ihrer App, deren Anzeige zu einem trackState-Aufruf führen sollte. '
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# App-Zustände verfolgen{#track-app-states}
+# App-Zustände verfolgen {#track-app-states}
 
-Zustände sind die verschiedenen Bildschirme oder Ansichten in der Anwendung. Jedes Mal, wenn in Ihrer Anwendung ein neuer Status angezeigt wird, sollten Sie einen `trackState` Aufruf senden. Wenn ein Benutzer beispielsweise von der Startseite zum Videodetailbildschirm navigiert, senden Sie einen `trackState` Aufruf. Status werden für gewöhnlich mithilfe eines Pfadsetzungsberichts angezeigt. Auf diese Weise können Sie sehen, wie Anwender in Ihrer App navigieren und welche Status am häufigsten angezeigt werden.
+Zustände sind die verschiedenen Bildschirme oder Ansichten in der Anwendung. Jedes Mal, wenn in Ihrer App ein neuer Status angezeigt wird, sollten Sie einen `trackState`-Aufruf senden. Wenn ein Benutzer beispielsweise von der Startseite zum Videodetailbildschirm navigiert, senden Sie einen `trackState`-Aufruf. Status werden für gewöhnlich mithilfe eines Pfadsetzungsberichts angezeigt. Auf diese Weise können Sie sehen, wie Anwender in Ihrer App navigieren und welche Status am häufigsten angezeigt werden.
 
 ## trackState-Aufrufe
 
-Normalerweise rufen Sie `trackState` jedes Mal, wenn die App einen neuen Bildschirm lädt, an.
+Normalerweise rufen Sie `trackState` jedes Mal auf, wenn die App einen neuen Bildschirm lädt.
 
 ### Roku
 
@@ -28,11 +28,11 @@ ADBMobile().trackState("State Name", {})
 ADBMobile.analytics.trackState("State Name",{});
 ```
 
-The state name is reported in the "View State" variable in Adobe Mobile services, and a view is recorded for each `trackState` call. In anderen Analytics-Schnittstellen wird "Anzeigestatus"als "Seitenname"gemeldet. "Statusansichten"wird als "Seitenansichten"gemeldet.
+Der Statusname wird dann in der Variablen „Status anzeigen“ in Adobe Mobile Services gemeldet und für jeden `trackState`-Aufruf wird eine Ansicht aufgezeichnet. In anderen Analytics-Oberflächen wird „Status anzeigen“ als „Seitenname“ und „Statusansichten“ als „Seitenansichten“ gemeldet.
 
-## Kontextdaten senden
+## Senden der Kontextdaten
 
-Neben "Statusname"können Sie bei jedem Verfolgungsstatusaufruf zusätzliche Kontextdaten senden.
+Zusätzlich zum „Statusnamen“ können Sie mit jedem track state-Aufruf zusätzliche Kontextdaten senden.
 
 ### Roku
 
