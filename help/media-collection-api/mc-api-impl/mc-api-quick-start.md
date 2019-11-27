@@ -2,22 +2,22 @@
 title: Schnellstart
 description: null
 uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Schnellstart{#quick-start}
+# Schnellstart {#quick-start}
 
 >[!TIP]
 >
->Erfassen Sie die Anforderungsdaten, die zum Abschluss einer erfolgreichen [Sitzungsanfrage](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) beim Media Analytics (MA) Collection API-Back-End-Server erforderlich sind. Sie können Ihre Anfragedaten schnell überprüfen, indem Sie Anfragen manuell senden (mit `curl`, Postman usw.). So erhalten Sie umgehend Feedback dazu, ob in Ihrer Anfrage Probleme mit falschen Datentypen oder Informationen vorliegen. Verwenden Sie die [JSON-Validierungsschemas](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md), um zu überprüfen, ob Sie die richtigen Anfragedaten bereitstellen.
+>Erfassen Sie die Anforderungsdaten, die zum Abschluss einer erfolgreichen [Sitzungsanforderung](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) beim Backend-Server der Media Analytics (MA) Collection API erforderlich sind. Sie können Ihre Anfragedaten schnell überprüfen, indem Sie Anfragen manuell senden (mit `curl`, Postman usw.). So erhalten Sie umgehend Feedback dazu, ob in Ihrer Anfrage Probleme mit falschen Datentypen oder Informationen vorliegen. Verwenden Sie die [JSON-Validierungsschemas](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md), um zu überprüfen, ob Sie die richtigen Anfragedaten bereitstellen.
 
 1. Sammeln Sie standardmäßige, erforderliche Adobe Analytics- und Besucherdaten, die Sie für die Ausführung von Experience Cloud-Anwendungen bereitstellen müssen:
 
    * Experience Cloud-Organisations-ID des Besuchers
-   * Visitor Experience Cloud-Benutzer-ID
+   * Experience Cloud-Benutzer-ID des Besuchers
    * Analytics Report Suite-ID
    * Analytics-Tracking-Server-URL
 
@@ -49,9 +49,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
    >[!NOTE]
    >
-   >Sie müssen die richtigen Datentypen im JSON-Anforderungstext verwenden. E.g., `analytics.enableSSL` requires a boolean, `media.length` is numeric, etc. You can check parameter types and mandatory versus optional requirements by checking the [JSON validation schemas.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+   >Sie müssen die richtigen Datentypen im JSON-Anforderungstext verwenden. So erfordert `analytics.enableSSL` beispielsweise einen booleschen Wert, `media.length` einen numerischen usw. Sie können die Parametertypen sowie ihre Erforderlichkeit anhand der [JSON-Validierungsschemas](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md) überprüfen.
 
-1. Senden von Sitzungsanfragen an den API-Endpunkt für die MA-Sammlung. Wenn die Anfrage-Payload ungültig ist, ermitteln Sie das Problem und versuchen es erneut, bis Sie eine `201 Created`-Antwort erhalten. In this `curl` example, the JSON request body is in a file named `sample_data_session`:
+1. Senden Sie Sitzungsanforderungen an den MA Collection API-Endpunkt. Wenn die Anfrage-Payload ungültig ist, ermitteln Sie das Problem und versuchen es erneut, bis Sie eine `201 Created`-Antwort erhalten. In diesem `curl`-Beispiel befindet sich der JSON-Anforderungstext in einer Datei namens `sample_data_session`:
 
    ```
    $ curl -i -d \ 
@@ -72,4 +72,4 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
    Access-Control-Expose-Headers: Location
    ```
 
-Wenn die [Sitzungsanfrage](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) erfolgreich ist, erhalten Sie eine `201 Created`-Antwort ähnlich der oben aufgeführten. Die Antwort enthält eine Sitzungs-ID im Location-Header. Die Sitzungs-ID stellt eine wichtige Information in der Antwort dar, da sie für alle nachfolgenden Tracking-Aufrufe erforderlich ist. After a successful return of a [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md), you can confidently proceed with implementing video tracking using the MA API in your video player.
+Wenn die [Sitzungsanfrage](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) erfolgreich ist, erhalten Sie eine `201 Created`-Antwort ähnlich der oben aufgeführten. Die Antwort enthält eine Sitzungs-ID im Location-Header. Die Sitzungs-ID stellt eine wichtige Information in der Antwort dar, da sie für alle nachfolgenden Tracking-Aufrufe erforderlich ist. Nach der erfolgreichen Rückgabe einer [Sitzungsanforderung](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) können Sie mit der Implementierung des Video-Trackings mithilfe der MA-API in Ihrem Videoplayer fortfahren.
