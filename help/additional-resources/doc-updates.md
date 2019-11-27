@@ -1,34 +1,34 @@
 ---
-title: Dokumentationsaktualisierungen
+title: Dokumentation-Aktualisierungen
 description: null
 uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Ressourcen{#resources}
+# Ressourcen {#resources}
 
-## Versionshinweise{#release-notes}
+## Versionshinweise {#release-notes}
 
-* [Versionshinweise](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
+* [Versionshinweise](https://docs.adobe.com/content/help/de-DE/release-notes/experience-cloud/current.html)
 
-## Dokumentation – Aktualisierungen{#documentation-updates}
+## Dokumentation – Aktualisierungen {#documentation-updates}
 
-### Last updated: October, 2019 {#October-2019-update}
+### Zuletzt aktualisiert: Oktober 2019 {#October-2019-update}
 
 Zahlreiche Bearbeitungs- und Formatierungskorrekturen.
-Cookbook-Themen wurden über das Media SDK hinaus erweitert, einschließlich eines neuen allgemeinen Cookbook-Themas zu "Mediendimensionen außerhalb der Medienverfolgung".
+Über das Media SDK hinausgehende Cookbook-Themen, einschließlich eines neuen allgemeinen Cookbook-Themas zu „Mediendimensionen außerhalb des Media-Trackings“.
 
 
 ### Zuletzt aktualisiert: 7. März 2019 {#March-2019-update}
 
-* Dieses Update wurde hauptsächlich für die Version 2.2 Media SDK auf den JavaScript- und OTT-Plattformen entwickelt.
-* Die Version 2.2 Media SDK auf JavaScript- und OTT-Plattformen bietet dieselbe Unterstützung wie unten beschrieben für iOS- und Android-Plattformen (Update vom 1. November 2018).
+* Dieses Update war hauptsächlich für die Media SDK-Version 2.2. auf den Plattformen JavaScript und OTT bestimmt.
+* Die Media SDK-Version 2.2 für JavaScript- und OTT-Plattformen bietet dieselbe Unterstützung im Folgenden für iOS- und Android-Plattformen beschrieben (Update vom 1. November 2018).
 
 ### Letzte Aktualisierung: 1. November 2018 {#November-2018-update}
 
@@ -50,7 +50,7 @@ Cookbook-Themen wurden über das Media SDK hinaus erweitert, einschließlich ein
 ### Aktualisierung: 10. Oktober 2018 {#October-2018-update}
 
 * Die Dokumentenstruktur wurde im Bereich SDK-Implementierung überarbeitet, indem die einzelnen (aber weitgehend identischen) Plattform-Implementierungshandbücher in einem SDK-Implementierungsabschnitt zusammengefasst wurden, wobei plattformspezifische Tracking-Beispiele in Unterabschnitten bei den bekannten Tracking-Themen vorgestellt werden.
-* In Erwartung einer Migration auf ein neues Dokumentensystem wurden die Dateien vollständig umbenannt. Alle DITA-Präfixe ( c_, r_, t_ ), die Konzept-, Referenz- und Aufgabenthementypen angeben, wurden entfernt. Alle Unterstriche (_) wurden durch Bindestriche (-) ersetzt. Außerdem ähneln die Dateinamen nun weitgehend den Bezeichnungen der Themen.
+* In Erwartung einer Migration auf ein neues Dokumentensystem wurden die Dateien vollständig umbenannt. Alle DITA-Präfixe (c_, r_, t_ für Konzept, Referenz und Aufgabenthementypen) wurden eliminiert. Alle Unterstriche (_) wurden durch Bindestriche (-) ersetzt. Außerdem ähneln die Dateinamen nun weitgehend den Bezeichnungen der Themen.
 * Aktualisierungen zu allgemeinen Validierungs- und Zertifizierungsthemen.
 * Neues Einführungsmaterial mit einer Darstellung der Messoptionen sowie Aktualisierungen der Voraussetzungen, Implementierungspfade und der Audience Manager-Fähigkeiten.
 * Aktualisierungen der Abschnitte Metriken und Metadaten sowie Reporting und Analysen, die die Erweiterung um Audioanalysefunktionen widerspiegeln.
