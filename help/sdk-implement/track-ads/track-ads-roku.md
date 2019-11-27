@@ -1,18 +1,18 @@
 ---
 title: Tracking von Anzeigen auf Roku
-description: Implementieren Sie die Anzeigenverfolgung in Roku-Anwendungen mit dem Media SDK.
-uuid: b1567265-7043-4efa-a313-aaa91c4bb01
-translation-type: tm+mt
+description: Implementieren des Anzeigen-Trackings in Roku-Anwendungen mit dem Media SDK.
+uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Tracking von Anzeigen mit Roku{#track-ads-on-roku}
+# Tracking von Anzeigen mit Roku {#track-ads-on-roku}
 
 >[!IMPORTANT]
 >
->Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit den 2.x SDKs. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Anzeigen-Tracking-Konstanten
 
@@ -28,7 +28,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. Ermitteln Sie, wann die Werbeunterbrechung beginnt, einschließlich Pre-Roll, und erstellen Sie ein `AdBreakObject` mithilfe dieser Pauseninformationen.
 
-   `AdBreakObject` Referenz:
+   `AdBreakObject`-Referenz:
 
    | Variablenname | Beschreibung | erforderlich |
    | --- | --- | :---: |
@@ -44,7 +44,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    adBreakInfo.position = <POSITION>
    ```
 
-1. Call `trackEvent()` with `AdBreakStart` in the `MediaHeartbeat` instance to begin tracking the ad break:
+1. Rufen Sie `trackEvent()` mit `AdBreakStart` in der `MediaHeartbeat`-Instanz auf, um das Tracking der Werbeunterbrechung zu starten:
 
    ```
    contextData = {} 
@@ -61,7 +61,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
                            ad.duration) 
    ```
 
-1. Fügen Sie der Medienverfolgungssitzung optional Standard- und/oder Anzeigenmetadaten über Kontextdatenvariablen hinzu.
+1. Optional können Standard- und/oder Anzeigenmetadaten über Kontextdatenvariablen an die Medien-Tracking-Sitzung angehängt werden.
 
    * [Standard-Anzeigenmetadaten in Roku implementieren](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    * **Anwenderspezifische Anzeigenmetadaten:** Erstellen Sie für anwenderdefinierte Metadaten ein variables Objekt für die anwenderspezifischen Datenvariablen und füllen Sie es mit den Daten für das aktuelle Anzeigen-Asset:
@@ -72,13 +72,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       contextData["adinfo2"] = "adinfo2"
       ```
 
-1. Call `trackEvent()` with the `AdStart` event in the `MediaHeartbeat` instance to begin tracking the ad playback:
+1. Rufen Sie `trackEvent()` mit dem `AdStart`-Ereignis in der `MediaHeartbeat`-Instanz auf, um das Tracking der Anzeigenwiedergabe zu starten:
 
    ```
    ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_AD_START, adInfo, contextData)
    ```
 
-1. When the ad asset playback reaches the end of the ad, call `trackEvent()` with the `AdComplete` event.
+1. Wenn die Wiedergabe des Anzeigen-Assets das Ende der Anzeige erreicht, rufen Sie `trackEvent()` mit dem `AdComplete`-Ereignis auf.
 
    ```
    standardAdMetadata = {} 
