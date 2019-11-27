@@ -1,20 +1,20 @@
 ---
 title: Suchen-Tracking in Android
-description: In diesem Thema wird die Implementierung der Suchverfolgung mit dem Media SDK unter Android beschrieben.
+description: Hier wird die Implementierung des Suchen-Trackings mit dem Media SDK in Android beschrieben.
 uuid: 65addd99-eebf-4a80-8b4a-d5fbdff8ab06
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Suchen-Tracking in Android{#track-seeking-on-android}
+# Suchen-Tracking in Android {#track-seeking-on-android}
 
 >[!IMPORTANT]
 >
 >Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie hier die 1.x-Entwicklerhandbücher herunterladen.[SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
-## Suchverfolgungskonstanten
+## Suchen-Tracking-Konstanten
 
 | Konstantenname | Beschreibung     |
 |---|---|
