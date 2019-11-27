@@ -1,28 +1,28 @@
 ---
 title: Tracking von Kapiteln und Segmenten in Roku
-description: In diesem Thema wird die Implementierung der Kapitel- und Segmentverfolgung mit dem Media SDK unter Roku beschrieben.
+description: Hier wird die Implementierung des Kapitel- und Segment-Trackings mit dem Media SDK in Roku beschrieben.
 uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Tracking von Kapiteln und Segmenten in Roku{#track-chapters-and-segments-on-roku}
+# Tracking von Kapiteln und Segmenten in Roku {#track-chapters-and-segments-on-roku}
 
 >[!IMPORTANT]
 >
->Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit 2.x SDKs. Wenn Sie Version 1.x des SDKs implementieren möchten, können Sie hier das Entwicklerhandbuch herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDKs implementieren möchten, können Sie hier das Entwicklerhandbuch herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
-## Implementieren von Standard-Anzeigenmetadaten
+## Implementieren der Standard-Anzeigenmetadaten
 
 1. Ermitteln Sie, wann das Kapitel beginnt, und erstellen Sie die `ChapterObject`-Instanz mithilfe dieser Kapitelinformationen.
 
-   `ChapterObject` Kapitelverfolgungsreferenz:
+   Kapitel-Tracking-Referenz `ChapterObject`:
 
    >[!NOTE]
    >
-   >Diese Variablen sind nur erforderlich, wenn Sie planen, Kapitel zu verfolgen.
+   >Diese Variablen sind nur erforderlich, wenn Sie Kapitel verfolgen möchten.
 
    | Variablenname | Beschreibung | erforderlich |
    | --- | --- | :---: |
