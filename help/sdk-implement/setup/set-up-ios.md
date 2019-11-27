@@ -1,23 +1,23 @@
 ---
 title: Einrichten von iOS
-description: Einrichtung der Media SDK-Anwendung für die Implementierung unter iOS.
+description: Einrichten der Media SDK-Anwendung für die Implementierung in iOS.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# iOS einrichten{#set-up-ios}
+# iOS einrichten {#set-up-ios}
 
 ## Voraussetzungen
 
-* **Abrufen gültiger Konfigurationsparameter für das Media SDK** Diese Parameter können Sie von einem Adobe-Kundenbetreuer erhalten, nachdem Sie Ihr Analytics-Konto eingerichtet haben.
-* **Implementieren von ADBMobile für iOS in Ihre Anwendung** Weitere Informationen zur Adobe Mobile SDK-Dokumentation finden Sie unter [iOS SDK 4.x für Experience Cloud-Lösungen.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/)
+* **Gültige Konfigurationsparameter für Media SDK festlegen:** Diese Parameter erhalten Sie nach der Einrichtung Ihres Analytics-Kontos von einem Adobe-Support-Mitarbeiter.
+* **ADBMobile für iOS in Ihre Anwendung implementieren:** Weitere Informationen zur Adobe Mobile-SDK-Dokumentation finden Sie unter [iOS-SDK 4.x für Experience Cloud-Lösungen.](https://marketing.adobe.com/resources/help/de_DE/mobile/ios/)
 
    >[!IMPORTANT]
    >
-   >Seit iOS 9 hat Apple eine Funktion namens App Transport Security (ATS) eingeführt. Diese Funktion soll die Netzwerksicherheit steigern, indem sie gewährleistet, dass Ihre Anwendungen nur branchenübliche Protokolle und Chiffren verwenden. Die Funktion ist standardmäßig aktiviert, Ihnen stehen jedoch einige Konfigurationsoptionen für die Arbeit mit ATS zur Verfügung. Weitere Informationen zu ATS finden Sie unter [App Transport Security.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
+   >Mit iOS 9 hat Apple eine Funktion namens App Transport Security (ATS) eingeführt. Diese Funktion soll die Netzwerksicherheit steigern, indem sie gewährleistet, dass Ihre Anwendungen nur branchenübliche Protokolle und Chiffren verwenden. Die Funktion ist standardmäßig aktiviert, Ihnen stehen jedoch einige Konfigurationsoptionen für die Arbeit mit ATS zur Verfügung. Weitere Informationen zu ATS finden Sie unter [App Transport Security.](https://marketing.adobe.com/resources/help/de_DE/mobile/ios/app_transport_security.html)
 
 * **Stellen Sie in Ihrem Medienplayer folgende Funktionen bereit:**
 
@@ -44,12 +44,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       1. Starten Sie die XCode IDE und öffnen Sie die App.
       1. Ziehen Sie im **[!UICONTROL Project Navigator]** (Projektnavigator) das Verzeichnis `libs` per Drag-and-drop in das Projekt.
 
-      1. Stellen Sie sicher, dass das Kontrollkästchen **[!UICONTROL Copy Items if Needed]** (Elemente bei Bedarf kopieren) aktiviert ist, die Option **[!UICONTROL Create Groups](Gruppen erstellen) ausgewählt wurde und keines der Kontrollkästchen in** Add to Target] (Zu Ziel hinzufügen) aktiviert ist.**[!UICONTROL **
+      1. Stellen Sie sicher, dass das Kontrollkästchen **[!UICONTROL Copy Items if Needed]** (Elemente bei Bedarf kopieren) aktiviert ist, die Option **[!UICONTROL Create Groups]** (Gruppen erstellen) ausgewählt wurde und keines der Kontrollkästchen in **[!UICONTROL Add to Target]** (Zu Ziel hinzufügen) aktiviert ist.
 
          ![](assets/choose-options_ios.png)
 
       1. Klicken Sie auf **[!UICONTROL Fertigstellen]**.
-      1. In **[!UICONTROL Project Navigator]**, select your app and select your targets.
+      1. Wählen Sie im **[!UICONTROL Project Navigator]** Ihre App und Ziele aus.
       1. Verknüpfen Sie im Bereich **[!UICONTROL Verknüpfte Frameworks]** und **[!UICONTROL Bibliotheken]** im Tab **[!UICONTROL Allgemein]** die erforderlichen Frameworks und Bibliotheken.
 
          **iOS-App-Ziele:**
@@ -75,7 +75,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    #import "ADBMediaHeartbeatConfig.h" 
    ```
 
-1. Create a `ADBMediaHeartbeatConfig` instance.
+1. Erstellen Sie eine `ADBMediaHeartbeatConfig`-Instanz.
 
    In diesem Abschnitt erhalten Sie Informationen zu den `MediaHeartbeat`-Konfigurationsparametern und zum Festlegen der richtigen Konfigurationswerte für die `MediaHeartbeat`-Instanz, um Ereignisse genau zu verfolgen.
 
@@ -93,7 +93,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    config.debugLogging   = <YES/NO>; 
    ```
 
-1. Implement the `ADBMediaHeartbeatDelegate` protocol.
+1. Implementieren Sie das `ADBMediaHeartbeatDelegate`-Protokoll.
 
    ```
    @interface VideoAnalyticsProvider : NSObject <ADBMediaHeartbeatDelegate> 
@@ -120,7 +120,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    @end
    ```
 
-1. Use the `ADBMediaHeartBeatConfig` and `ADBMediaHeartBeatDelegate` to create the `ADBMediaHeartbeat` instance.
+1. Verwenden Sie `ADBMediaHeartBeatConfig` und `ADBMediaHeartBeatDelegate`, um die `ADBMediaHeartbeat`-Instanz zu erstellen.
 
    ```
    //Replace <ADBMediaHeartBeatDelegate> with your delegate instance 
@@ -130,7 +130,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >Make sure that your `ADBMediaHeartbeat` instance is accessible and *does not get deallocated until the end of the session*. Diese Instanz wird für alle der folgenden-Tracking-Ereignisse verwendet.
+   >Stellen Sie sicher, dass die `ADBMediaHeartbeat`-Instanz zugänglich ist und ihre Zuweisung *nicht vor Ende der Sitzung aufgehoben wird*. Diese Instanz wird für alle der folgenden-Tracking-Ereignisse verwendet.
 
 ## Migration von Version 1.x auf 2.x in iOS {#migrate-to-two-x}
 
@@ -144,7 +144,7 @@ Mit der neuen Apple TV-Version können Sie Anwendungen erstellen, die in der na
 
 Führen Sie die folgenden Schritte in Ihrem Xcode-Projekt aus. In dieser Anleitung wird davon ausgegangen, dass das Projekt eine Apple TV-App zum Ziel hat, die auf tvOS ausgerichtet ist:
 
-1. Drag the `VideoHeartbeat_TV.a` library file into your project’s `lib` folder.
+1. Ziehen Sie die Bibliotheksdatei `VideoHeartbeat_TV.a` in den `lib`-Ordner Ihres Projekts.
 
 1. Erweitern Sie im Tab **[!UICONTROL Build-Phasen]** des Ziels Ihrer tvOS-App den Bereich **[!UICONTROL Binär mit Bibliotheken verknüpfen]** und fügen Sie die folgenden Bibliotheken hinzu:
 
