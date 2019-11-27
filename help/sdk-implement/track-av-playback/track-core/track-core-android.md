@@ -1,21 +1,21 @@
 ---
 title: Tracking von Core-Wiedergaben auf Android
-description: In diesem Thema wird beschrieben, wie Sie die Kernverfolgung mit dem Media SDK unter Android implementieren.
+description: Hier wird die Implementierung des Core-Trackings mit dem Media SDK in Android beschrieben.
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Tracking von Core-Wiedergaben auf Android{#track-core-playback-on-android}
+# Tracking von Core-Wiedergaben auf Android {#track-core-playback-on-android}
 
 >[!IMPORTANT]
->Diese Dokumentation behandelt die Verfolgung in Version 2.x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie hier das 1.x-Entwicklerhandbuch für Android herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md).
+>Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie hier das 1.x-Entwicklerhandbuch für Android herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md).
 
-1. **Einrichtung der anfänglichen Verfolgung**
+1. **Tracking-Ersteinrichtung**
 
-   Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
+   Identifizieren Sie, wenn der Benutzer die Wiedergabe auslöst (Benutzer klickt auf „Abspielen“ und/oder die automatische Wiedergabe ist aktiviert), und erstellen Sie eine `MediaObject`-Instanz.
 
    [createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createMediaObject-java.lang.String-java.lang.String-java.lang.Double-java.lang.String-com.adobe.primetime.va.simple.MediaHeartbeat.MediaType-)
 
@@ -24,10 +24,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `name` | Medienname | Ja |
    | `mediaId` | Eindeutige Medienkennung | Ja |
    | `length` | Medienlänge | Ja |
-   | `streamType` | Stream-Typ (siehe _StreamType-Konstanten_ unten) | Ja |
+   | `streamType` | Streamtyp (siehe _StreamType-Konstanten_ unten) | Ja |
    | `mediaType` | Medientyp (siehe _MediaType-Konstanten_ unten) | Ja |
 
-   **`StreamType`Konstanten:**
+   **`StreamType`-Konstanten:**
 
    | Konstantenname | Beschreibung |
    |---|---|
@@ -38,7 +38,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `AUDIOBOOK` | Streamtyp für Hörbuch |
    | `PODCAST` | Streamtyp für Podcast |
 
-   **`MediaType`Konstanten:**
+   **`MediaType`-Konstanten:**
 
    | Konstantenname | Beschreibung |
    |---|---|
@@ -50,9 +50,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
      <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>, <MEDIA_TYPE>);
    ```
 
-1. **Anhängen von Metadaten**
+1. **Metadaten anhängen**
 
-   Fügen Sie der Verfolgungssitzung optional Standard- und/oder benutzerdefinierte Metadatenobjekte über Kontextdatenvariablen hinzu.
+   Optional können Standard- bzw. benutzerdefinierte Metadatenobjekte über Kontextdatenvariablen an die Tracking-Sitzung angehängt werden.
 
    * **Standard-Metadaten**
 
@@ -66,7 +66,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       * Hier sehen Sie den umfassenden Satz der verfügbaren Video-Metadaten: [Audio- und Videoparameter](/help/metrics-and-metadata/audio-video-parameters.md)
    * **Benutzerspezifische Metadaten**
 
-      Erstellen Sie ein Wörterbuch für die benutzerdefinierten Variablen und füllen Sie die Daten für dieses Medium aus. Beispiel:
+      Erstellen Sie ein Wörterbuch für die benutzerdefinierten Variablen und fügen Sie die Daten für dieses Medium ein. Beispiel:
 
       ```java
       HashMap<String, String> mediaMetadata =  
@@ -77,9 +77,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       ```
 
 
-1. **Verfolgung der Absicht, die Wiedergabe zu starten**
+1. **Absicht, die Wiedergabe zu starten, verfolgen**
 
-   Rufen Sie zur Verfolgung einer Mediensitzung die Media Heartbeat-Instanz `trackSessionStart` auf. Beispiel:
+   Rufen Sie `trackSessionStart` in der Media Heartbeat-Instanz auf, um eine Mediensitzung zu verfolgen. Beispiel:
 
    ```java
    public void onVideoLoad(Observable observable, Object data) {  
@@ -89,7 +89,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!TIP]
    >
-   >Der zweite Wert ist der benutzerdefinierte Medienmetadatenobjektname, den Sie in Schritt 2 erstellt haben.
+   >Der zweite Wert ist der Name des benutzerdefinierten Medienmetadatenobjekts, den Sie in Schritt 2 erstellt haben.
 
    >[!IMPORTANT]
    >
@@ -97,11 +97,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!NOTE]
    >
-   >If you are not using custom media metadata, simply send an empty object for the second argument in `trackSessionStart`.
+   >Wenn Sie keine benutzerdefinierten Medienmetadaten verwenden, senden Sie einfach ein leeres Objekt für das zweite Argument in `trackSessionStart`.
 
-1. **Den tatsächlichen Start der Wiedergabe verfolgen**
+1. **Tatsächlichen Wiedergabebeginn verfolgen**
 
-   Identify the event from the media player for the beginning of the media playback, where the first frame of the media is rendered on the screen, and call `trackPlay`:
+   Identifizieren Sie das Ereignis für den Anfang der Medienwiedergabe im Medienplayer, sobald der erste Frame des Mediums auf dem Bildschirm angezeigt wird, und rufen Sie `trackPlay` auf:
 
    ```java
    // Video is rendered on the screen) and call trackPlay.  
@@ -110,9 +110,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-1. **Verfolgen Sie den Abschluss der Wiedergabe.**
+1. **Ende der Wiedergabe verfolgen**
 
-   Identify the event from the media player for the completion of the media playback, where the user has watched the content until the end, and call `trackComplete`:
+   Identifizieren Sie das Ereignis für den Abschluss der Medienwiedergabe im Medienplayer, wenn der Inhalt bis zum Ende angesehen wurde, und rufen Sie `trackComplete` auf:
 
    ```java
    public void onVideoComplete(Observable observable, Object data) { 
@@ -122,7 +122,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. **Ende der Sitzung verfolgen**
 
-   Identify the event from the media player for the unloading/closing of the media playback, where the user closes the media and/or the media is completed and has been unloaded, and call `trackSessionEnd`:
+   Identifizieren Sie das Ereignis für das Entladen/Schließen der Medienwiedergabe im Medienplayer, wenn der Benutzer das Medium schließt bzw. das Medium abgeschlossen ist und entladen wird, und rufen Sie `trackSessionEnd` auf:
 
    ```java
    // Closes the media and/or the media completed and unloaded,  
@@ -134,11 +134,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` markiert das Ende einer Medienverfolgungssitzung. Wenn die Sitzung erfolgreich bis zum Ende wiedergegeben wurde und der Anwender den Inhalt bis zum Schluss angesehen hat, müssen Sie `trackComplete` vor `trackSessionEnd` aufrufen. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new media tracking session.
+   >`trackSessionEnd` markiert das Ende einer Medien-Tracking-Sitzung. Wenn die Sitzung erfolgreich bis zum Ende wiedergegeben wurde und der Anwender den Inhalt bis zum Schluss angesehen hat, müssen Sie `trackComplete` vor `trackSessionEnd` aufrufen. Jeder andere `track*`-API-Aufruf nach `trackSessionEnd` wird ignoriert, mit Ausnahme von `trackSessionStart` für eine neue Medien-Tracking-Sitzung.
 
 1. **Alle möglichen Pausenszenarien verfolgen**
 
-   Identifizieren Sie das Ereignis für Medienpause und -aufruf im Medienplayer `trackPause`:
+   Identifizieren Sie das Ereignis im Medienplayer für angehaltene Videos und rufen Sie `trackPause` auf:
 
    ```java
    public void onVideoPause(Observable observable, Object data) {  
@@ -146,9 +146,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-   **Szenarios anhalten**
+   **Pausenszenarien**
 
-   Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. In allen folgenden Szenarios muss Ihre App `trackPause()` () aufrufen:
+   Identifizieren Sie alle Szenarios, in denen der Videoplayer angehalten wird, und stellen Sie sicher, dass `trackPause` korrekt aufgerufen wird. In allen folgenden Szenarios muss Ihre App `trackPause()` () aufrufen:
 
    * Der Anwender betätigt in der App die Pause-Schaltfläche.
    * Der Player geht selbstständig in den Pausenstatus über.
@@ -166,7 +166,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!TIP]
    >
-   >Dies kann dieselbe Ereignisquelle sein, die in Schritt 4 verwendet wurde. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the media playback resumes.
+   >Diese Ereignisquelle kann mit der in Schritt 4 verwendeten identisch sein. Stellen Sie sicher, dass jeder `trackPause()`API-Aufruf mit einem nachfolgenden `trackPlay()`-API-Aufruf gepaart wird, wenn die Medienwiedergabe fortgesetzt wird.
 
 Im Folgenden finden Sie weitere Informationen zum Tracking der Core-Wiedergabe:
 
