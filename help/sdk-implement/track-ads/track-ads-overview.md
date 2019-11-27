@@ -1,37 +1,37 @@
 ---
 title: Überblick
-description: Übersicht über die Implementierung der Anzeigenverfolgung mit dem Media SDK.
+description: Überblickt über die Implementierung des Anzeigen-Trackings mit dem Media SDK.
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Überblick{#overview}
+# Überblick {#overview}
 
 >[!IMPORTANT]
 >
->Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit den 2.x SDKs. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
-Die Wiedergabe von Anzeigen beinhaltet das Tracking von Werbeunterbrechungen, Anzeigenstarts, -beendigungen und übersprungenen Anzeigen. Verwenden Sie die API des Medienplayers, um wichtige Player-Ereignisse zu identifizieren und die erforderlichen und optionalen Anzeigenvariablen zu füllen. Die vollständige Liste der Metadaten finden Sie hier: [Anzeigenparameter.](/help/metrics-and-metadata/ad-parameters.md)
+Die Wiedergabe von Anzeigen beinhaltet das Tracking von Werbeunterbrechungen, Anzeigenstarts, -beendigungen und übersprungenen Anzeigen. Verwenden Sie die API des Medienplayers, um wichtige Player-Ereignisse zu ermitteln und die erforderlichen und optionalen Anzeigenvariablen hinzuzufügen. Sehen Sie hier die umfassende Liste der verfügbaren-Metadaten: [Anzeigenparameter.](/help/metrics-and-metadata/ad-parameters.md)
 
 ## Player-Ereignisse {#player-events}
 
 
-### Beim Start der Werbeunterbrechung
+### Beim Start einer Werbeunterbrechung
 
 >[!NOTE]
 >Einschließlich Pre-Roll
 
 * Erstellen Sie eine `adBreak`-Objektinstanz für die Werbepause. Beispiel, `adBreakObject`.
 
-* Call `trackEvent` for the ad break start with your `adBreakObject`.
+* Rufen Sie `trackEvent` für den Start einer Werbeunterbrechung mit Ihrem `adBreakObject` auf.
 
 ### Bei jedem Start eines Anzeigen-Assets
 
 * Erstellen Sie eine Anzeigenobjektinstanz für das Anzeigen-Asset. Beispiel, `adObject`.
-* Populate the ad metadata, `adCustomMetadata`.
+* Fügen Sie die Anzeigenmetadaten hinzu: `adCustomMetadata`.
 * Rufen Sie `trackEvent` für den Anzeigenstart auf.
 
 ### Bei jedem Ende einer Anzeige:
@@ -46,7 +46,7 @@ Die Wiedergabe von Anzeigen beinhaltet das Tracking von Werbeunterbrechungen, An
 
 * Rufen Sie `trackEvent` für das Ende der Werbeunterbrechung auf.
 
-## Implementierung der Anzeigenverfolgung {#implement-ad-tracking}
+## Implementieren des Anzeigen-Trackings {#implement-ad-tracking}
 
 ### Anzeigen-Tracking-Konstanten
 
@@ -62,7 +62,7 @@ Die Wiedergabe von Anzeigen beinhaltet das Tracking von Werbeunterbrechungen, An
 
 1. Ermitteln Sie, wann die Werbeunterbrechung beginnt, einschließlich Pre-Roll, und erstellen Sie ein `AdBreakObject` mithilfe dieser Pauseninformationen.
 
-   `AdBreakObject` Referenz:
+   `AdBreakObject`-Referenz:
 
    | Variablenname | Beschreibung | erforderlich |
    | --- | --- | :---: |
@@ -70,11 +70,11 @@ Die Wiedergabe von Anzeigen beinhaltet das Tracking von Werbeunterbrechungen, An
    | `position` | Positionsnummer der Werbeunterbrechung innerhalb des Inhalts, beginnend bei 1. | Ja |
    | `startTime` | Abspielpositionswert bei Start der Werbeunterbrechung. | Ja |
 
-1. Call `trackEvent()` with `AdBreakStart` in the `MediaHeartbeat` instance to begin tracking the ad break.
+1. Rufen Sie `trackEvent()` mit `AdBreakStart` in der `MediaHeartbeat`-Instanz auf, um das Tracking der Werbeunterbrechung zu starten.
 
 1. Ermitteln Sie, wann die Anzeige startet und erstellen Sie die `AdObject`-Instanz mithilfe dieser Anzeigeninformationen.
 
-   `AdObject` Referenz:
+   `AdObject`-Referenz:
 
    | Variablenname | Beschreibung | erforderlich |
    | --- | --- | :---: |
@@ -88,11 +88,11 @@ Die Wiedergabe von Anzeigen beinhaltet das Tracking von Werbeunterbrechungen, An
    * **Metadaten für Standardanzeigen:** Erstellen Sie für Metadaten für Standardanzeigen ein Wörterbuch der Schlüsselwertepaare für Standardanzeigenmetadaten unter Verwendung der Schlüssel für Ihre Plattform.
    * **Anwenderspezifische Anzeigenmetadaten:** Erstellen Sie für anwenderdefinierte Metadaten ein variables Objekt für die anwenderspezifischen Datenvariablen und füllen Sie es mit den Daten für aktuelle Anzeigen.
 
-1. Call `trackEvent()` with the `AdStart` event in the `MediaHeartbeat` instance to begin tracking the ad playback.
+1. Rufen Sie `trackEvent()` mit dem `AdStart`-Ereignis in der `MediaHeartbeat`-Instanz auf, um das Tracking der Anzeigenwiedergabe zu starten.
 
    Fügen Sie als dritten Parameter im Ereignisaufruf eine Referenz auf Ihre anwenderdefinierte Metadatenvariable (oder ein leeres Objekt) ein.
 
-1. When the ad playback reaches the end of the ad, call `trackEvent()` with the `AdComplete` event.
+1. Wenn die Wiedergabe der Anzeige das Ende der Anzeige erreicht, rufen Sie `trackEvent()` mit dem `AdComplete`-Ereignis auf.
 
 1. Wenn die Anzeigenwiedergabe nicht abgeschlossen wurde, weil der Benutzer die Anzeige überspringt, verfolgen Sie das `AdSkip`-Ereignis.
 1. Wiederholen Sie die Schritte 3 bis 7, wenn dieselbe `AdBreak` weitere Anzeigen enthält.
@@ -100,9 +100,9 @@ Die Wiedergabe von Anzeigen beinhaltet das Tracking von Werbeunterbrechungen, An
 
 >[!IMPORTANT]
 >
->Stellen Sie sicher, dass Sie die Abspielleiste (`l:event:playhead`) des Inhaltsplayers während der Wiedergabe der Anzeige NICHT inkrementieren (`s:asset:type=ad`). In diesem Fall werden die Metriken zur Besuchszeit für Inhalte negativ beeinflusst.
+>Stellen Sie sicher, dass Sie die Abspielleiste (`l:event:playhead`) des Inhaltsplayers während der Wiedergabe der Anzeige NICHT erhöhen (`s:asset:type=ad`). In diesem Fall werden die Metriken zur Besuchszeit für Inhalte negativ beeinflusst.
 
-Im folgenden Beispielcode wird das JavaScript 2.x SDK für einen HTML5-Medienplayer verwendet.
+Der folgende Beispielcode nutzt das JavaScript 2.x-SDK für einen HTML5-Medienplayer.
 
 ```js
 /* Call on ad break start */ 
