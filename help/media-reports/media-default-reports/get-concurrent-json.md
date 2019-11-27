@@ -2,28 +2,28 @@
 title: JSON-Daten des Berichts „Gleichzeitige Videozuschauer“ abrufen
 description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# JSON-Daten des Berichts „Gleichzeitige Besucher“ abrufen{#get-concurrent-viewers-json-report-data}
+# JSON-Daten des Berichts „Gleichzeitige Besucher“ abrufen {#get-concurrent-viewers-json-report-data}
 
-Sie können gleichzeitig erscheinende Viewer-Berichtsdaten mit der Version _* 1.4 *_ der Analytics-APIs abrufen:
+Mit der _* Version 1.4 *_ der Analytics APIs können Sie Berichtsdaten für gleichzeitige Betrachter abrufen:
 * [Analytics APIs](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
 1. Filtern Sie die Daten mit einem beliebigen Segment, das auf der Benutzeroberfläche basiert. Um nach einer bestimmten Inhalts-ID zu filtern, erstellen Sie ein neues Segment.
-1. Setzen Sie das `elements` -&gt; `id` im Anforderungstext auf `videoconcurrentviewers`.
+1. Setzen Sie `elements` -&gt; `id` im Anforderungstext auf `videoconcurrentviewers`.
 1. Fordern Sie eine ausreichende Datenmenge an. Adobe empfiehlt 3200 Datenpunkte, um sicherzustellen, dass keine Datenlücken bestehen.
 
-   * Der im Bericht angegebene Datenbereich erfasst alle gleichzeitigen Viewer-Daten _zum Zeitpunkt des Endes der Videositzung._
+   * In dem von Ihnen im Bericht angegebenen Datenbereich werden die Daten aller gleichzeitigen Betrachter _zum Zeitpunkt des Endes der Videositzung erfasst._
 Sie müssen also Sitzungen berücksichtigen, die an einem Tag beginnen und nach Mitternacht enden (d.h. am nächsten Tag).
 
-   * Fordern Sie mehr als einen Tag Daten an, aber in Ihrer Analyse _* verwenden Sie nur den ersten Tag der Daten.*_
+   * Fordern Sie mehr als einen Tag Daten an, aber verwenden Sie in Ihrer Analyse _* nur den ersten Tag der Daten.*_
 
-Eine Musteranforderung-Nutzlast für dieses Szenario würde wie folgt aussehen:
+Eine beispielhafte Anforderungsnutzlast für dieses Szenario würde wie folgt aussehen:
 
 ```
 {
