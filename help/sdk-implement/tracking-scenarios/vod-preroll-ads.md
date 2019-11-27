@@ -1,20 +1,20 @@
 ---
 title: VOD-Wiedergabe mit Pre-roll-Anzeigen
-description: Ein Beispiel für die Verfolgung von VOD-Inhalten, die Pre-Roll-Anzeigen mit dem Media SDK enthalten.
+description: Ein Beispiel für das Tracking von VOD-Inhalten, die Pre-Roll-Anzeigen enthalten, mit dem Media SDK.
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# VOD-Wiedergabe mit Pre-Roll-Anzeigen{#vod-playback-with-pre-roll-ads}
+# VOD-Wiedergabe mit Pre-Roll-Anzeigen {#vod-playback-with-pre-roll-ads}
 
 In diesem Szenario wurde eine Pre-roll-Anzeige vor dem Hauptinhalt eingefügt. Wenn nichts anderes angegeben ist, sind die Netzwerkaufrufe mit den Aufrufen im Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. Die Netzwerkaufrufe erfolgen gleichzeitig, aber die Payload unterscheidet sich.
 
 | Auslöser | Heartbeat-Methode | Netzwerkaufrufe   | Hinweise   |
 | --- | --- | --- | --- |
-| Der Anwender klickt auf [!UICONTROL Abspielen]. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | The measurement library does not know that there is a pre-roll ad, so these network calls are still identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| Der Anwender klickt auf [!UICONTROL Abspielen]. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Daher sind diese Netzwerkaufrufe noch mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. |
 | Die Anzeige beginnt. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start, Heartbeat Ad Start |  |
 | Das Bild der Anzeige 1 wird wiedergegeben. | `trackPlay` | Heartbeat Ad Play | Der Anzeigeninhalt wird vor dem Hauptinhalt wiedergegeben und die Heartbeats beginnen mit dem Start der Anzeige. |
 | Die Anzeige wird wiedergegeben. |  | Ad Heartbeats |  |
@@ -22,13 +22,13 @@ In diesem Szenario wurde eine Pre-roll-Anzeige vor dem Hauptinhalt eingefügt. W
 | Das erste Bild der Anzeige 2 wird wiedergegeben. | `trackEvent:AdStart` | Analytics Ad Start, Heartbeat Ad Start |  |
 | Die Anzeige wird wiedergegeben. |  | Ad Heartbeats |  |
 | Wiedergabe von Anzeige 2 ist abgeschlossen. | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Heartbeat Ad Complete | Das Ende der Anzeige und der Werbeunterbrechung wird erreicht. |
-| Der Inhalt wird wiedergegeben. |  | Content Heartbeats | Dieser Netzwerkaufruf ist identisch mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
-| Der Inhalt ist abgeschlossen. | `trackComplete` | Heartbeat Content Complete | Dieser Netzwerkaufruf ist identisch mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
+| Der Inhalt wird wiedergegeben. |  | Content Heartbeats | Dieser Netzwerkaufruf ist identisch mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| Der Inhalt ist abgeschlossen. | `trackComplete` | Heartbeat Content Complete | Dieser Netzwerkaufruf ist identisch mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | Die Sitzung ist beendet. | `trackSessionEnd` |  | `SessionEnd` |
 
 ## Parameter {#parameters}
 
-When ad playback begins, a `Heartbeat Ad Start` call is sent. Wenn der Anfang der Anzeige nicht auf den 10-Sekunden-Timer fällt, wird der `Heartbeat Ad Start`-Aufruf um einige Sekunden verzögert. Der Aufruf wird dann mit dem nächsten 10-Sekunden-Intervall gesendet. In diesem Fall wird ein `Content Heartbeat`-Aufruf in demselben Intervall gesendet. Sie können zwischen den beiden Aufrufen unterscheiden, indem Sie den Ereignistyp und den Assettyp untersuchen:
+Bei Beginn der Anzeigenwiedergabe wird ein `Heartbeat Ad Start`-Aufruf gesendet. Wenn der Anfang der Anzeige nicht auf den 10-Sekunden-Timer fällt, wird der `Heartbeat Ad Start`-Aufruf um einige Sekunden verzögert. Der Aufruf wird dann mit dem nächsten 10-Sekunden-Intervall gesendet. In diesem Fall wird ein `Content Heartbeat`-Aufruf in demselben Intervall gesendet. Sie können zwischen den beiden Aufrufen unterscheiden, indem Sie den Ereignistyp und den Assettyp untersuchen:
 
 ### Heartbeat Ad Start
 
@@ -37,7 +37,7 @@ When ad playback begins, a `Heartbeat Ad Start` call is sent. Wenn der Anfang de
 | `s:event:type` | `start` |  |
 | `s:asset:type` | `ad` |  |
 
-Ads follow the same basic model as `Content Heartbeats`, so the `Ad Play` call is similar to the `Content Play` call.
+Anzeigen folgen demselben grundlegenden Modell wie `Content Heartbeats`. Daher ähnelt der `Ad Play`-Aufruf dem `Content Play`-Aufruf.
 
 ### Heartbeat Ad Play-Aufruf
 
@@ -46,7 +46,7 @@ Ads follow the same basic model as `Content Heartbeats`, so the `Ad Play` call i
 | `s:event:type` | `play` |  |
 | `s:asset:type` | `ad` |  |
 
-These parameters are similar to the `Content Heartbeats` call, but the `Ad Heartbeats` call contains a few extra parameters:
+Diese Parameter ähneln dem `Content Heartbeats`-Aufruf. Der `Ad Heartbeats`-Aufruf enthält allerdings einige zusätzliche Parameter:
 
 ### Ad Heartbeats
 
@@ -57,7 +57,7 @@ These parameters are similar to the `Content Heartbeats` call, but the `Ad Heart
 | `s:asset:ad_id` | &lt;Anzeigen-ID&gt; |  |
 | `s:asset:pod_id` | &lt;Anzeigen-Pod-ID&gt; |  |
 
-Similar to `Heartbeat Content Complete` calls, when ad playback has completed, and the end of the playhead is reached, a `Heartbeat Ad Complete` call is sent. Dieser Aufruf sieht wie andere `Heartbeat Ad`-Aufrufe aus, enthält aber einige spezielle Elemente:
+Ähnlich wie bei `Heartbeat Content Complete`-Aufrufen wird ein `Heartbeat Ad Complete`-Aufruf gesendet, wenn die Wiedergabe der Anzeige abgeschlossen ist und das Ende der Abspielleiste erreicht wird. Dieser Aufruf sieht wie andere `Heartbeat Ad`-Aufrufe aus, enthält aber einige spezielle Elemente:
 
 ### Heartbeat Ad Complete-Aufruf
 
@@ -72,7 +72,7 @@ In diesem Szenario besteht der VOD aus einer Pre-roll-Anzeige und einer zweiten 
 
 ![](assets/preroll-regular-playback.png)
 
-* **Android** Richten Sie den folgenden Code ein, um dieses Szenario in Android anzuzeigen:
+* **Android:** Um dieses Szenario in Android anzuzeigen, verwenden Sie folgenden Code:
 
    ```java
    // Set up  mediaObject 
@@ -176,7 +176,7 @@ In diesem Szenario besteht der VOD aus einer Pre-roll-Anzeige und einer zweiten 
    ........ 
    ```
 
-* **iOS -** Um dieses Szenario unter iOS anzuzeigen, richten Sie den folgenden Code ein:
+* **iOS:** Um dieses Szenario in iOS anzuzeigen, verwenden Sie folgenden Code:
 
    ```
    //  Set up mediaObject 
@@ -280,7 +280,7 @@ In diesem Szenario besteht der VOD aus einer Pre-roll-Anzeige und einer zweiten 
    ....... 
    ```
 
-* **JavaScript** Geben Sie den folgenden Text ein, um dieses Szenario in JavaScript anzuzeigen:
+* **JavaScript:** Geben Sie den folgenden Text ein, um dieses Szenario in JavaScript anzuzeigen:
 
    ```js
    // Set up mediaObject 
@@ -382,7 +382,7 @@ In diesem Szenario wird VOD-Inhalt mit einer Pre-Roll-Anzeige, dem Inhalt, einer
 
 ![](assets/ad-content-regular-playback.png)
 
-* **Android** Richten Sie den folgenden Code ein, um dieses Szenario in Android anzuzeigen:
+* **Android:** Um dieses Szenario in Android anzuzeigen, verwenden Sie folgenden Code:
 
    ```java
    // Set up mediaObject 
@@ -559,7 +559,7 @@ In diesem Szenario wird VOD-Inhalt mit einer Pre-Roll-Anzeige, dem Inhalt, einer
    ........ 
    ```
 
-* **iOS** Richten Sie den folgenden Code ein, um dieses Szenario unter iOS anzuzeigen:
+* **iOS:** Um dieses Szenario in iOS anzuzeigen, verwenden Sie folgenden Code:
 
    ```
    //  Set up mediaObject 
@@ -746,7 +746,7 @@ In diesem Szenario wird VOD-Inhalt mit einer Pre-Roll-Anzeige, dem Inhalt, einer
    ....... 
    ```
 
-* **JavaScript** Geben Sie den folgenden Text ein, um dieses Szenario in JavaScript anzuzeigen:
+* **JavaScript:** Geben Sie den folgenden Text ein, um dieses Szenario in JavaScript anzuzeigen:
 
    ```js
    // Set up mediaObject 
