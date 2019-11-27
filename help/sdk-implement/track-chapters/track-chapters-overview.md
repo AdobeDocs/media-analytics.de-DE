@@ -1,40 +1,40 @@
 ---
 title: Überblick
-description: Implementieren der Kapitel- und Segmentverfolgung mit dem Media SDK.
+description: Implementieren des Kapitel- und Segment-Trackings mit dem Media SDK.
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Überblick{#overview}
+# Überblick {#overview}
 
 >[!IMPORTANT]
 >
->Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit 2.x SDKs. Wenn Sie Version 1.x des SDKs implementieren möchten, können Sie hier das Entwicklerhandbuch herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDKs implementieren möchten, können Sie hier das Entwicklerhandbuch herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
-Die Kapitel- und Segmentverfolgung ist für benutzerdefinierte Medienkapitel oder Segmente verfügbar. Einige gängige Verwendungszwecke für die Kapitelverfolgung sind die Definition benutzerspezifischer Segmente auf der Grundlage von Medieninhalten (wie z. B. Baseballeinführungen) oder die Definition von Inhaltssegmenten zwischen Werbeunterbrechungen. Chapter tracking is **not** required for core media tracking implementations.
+Das Tracking von Kapiteln und Segmenten ist für benutzerdefinierte Medienkapitel oder -segmente verfügbar. Zu den Anwendungsfällen für Kapitel-Tracking zählt die Definition von Kundensegmenten basierend auf Medieninhalten, z. B. Baseball-Innings, oder die Definition von Inhaltssegmenten zwischen Werbeunterbrechungen. Das Kapitel-Tracking ist **nicht** für die Implementierung des Core-Medien-Trackings erforderlich.
 
-Das Kapitel-Tracking beinhaltet Kapitelstarts, -beendigungen und übersprungene Kapitel. Sie können die Medienplayer-API mit angepasster Segmentierungslogik verwenden, um Kapitelereignisse zu identifizieren und die erforderlichen und optionalen Kapitelvariablen zu füllen.
+Das Kapitel-Tracking beinhaltet Kapitelstarts, -beendigungen und übersprungene Kapitel. Sie können die Medienplayer-API mit einer benutzerdefinierten Segmentierungslogik verwenden, um Kapitelereignisse zu erkennen und die erforderlichen und optionalen Kapitelvariablen hinzuzufügen.
 
 ## Player-Ereignisse
 
 ### Beim Kapitelstart
 
 * Erstellen Sie die Kapitelobjektinstanz für das Kapitel, `chapterObject`.
-* Populate the chapter metadata, `chapterCustomMetadata`
-* Aufruf    `trackEvent(MediaHeartbeat.Event.ChapterStart, chapterObject, chapterCustomMetadata);`
+* Fügen Sie die Kapitelmetadaten, `chapterCustomMetadata`, hinzu.
+* Aufruf `trackEvent(MediaHeartbeat.Event.ChapterStart, chapterObject, chapterCustomMetadata);`
 
 ### Beim Abschluss eines Kapitels
 
-* Aufruf    `trackEvent(MediaHeartbeat.Event.ChapterComplete);`
+* Aufruf `trackEvent(MediaHeartbeat.Event.ChapterComplete);`
 
 ### Beim Überspringen eines Kapitels
 
-* Aufruf    `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
+* Aufruf `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
 
-## Kapitelverfolgung implementieren {#implement-chapter-tracking}
+## Implementieren des Kapitel-Trackings {#implement-chapter-tracking}
 
 1. Ermitteln Sie, wann das Kapitel beginnt, und erstellen Sie die `ChapterObject`-Instanz mithilfe dieser Kapitelinformationen.
 
@@ -42,7 +42,7 @@ Das Kapitel-Tracking beinhaltet Kapitelstarts, -beendigungen und übersprungene 
 
    >[!NOTE]
    >
-   >Diese Variablen sind nur erforderlich, wenn Sie planen, Kapitel zu verfolgen.
+   >Diese Variablen sind nur erforderlich, wenn Sie Kapitel verfolgen möchten.
 
    | Variablenname | Beschreibung | erforderlich |
    | --- | --- | :---: |
@@ -57,7 +57,7 @@ Das Kapitel-Tracking beinhaltet Kapitelstarts, -beendigungen und übersprungene 
 1. Wenn die Kapitelwiedergabe nicht abgeschlossen wurde, weil der Anwender das Kapitel übersprungen hat (z. B. zu einer Position außerhalb des Kapitels springt), rufen Sie das `ChapterSkip`-Ereignis in der MediaHeartbeat-Instanz auf.
 1. Wiederholen Sie die Schritte 1 bis 5, wenn es weitere Kapitel gibt.
 
-Im folgenden Beispielcode wird das JavaScript 2.x SDK für einen HTML5-Medienplayer verwendet. Sie sollten diesen Code mit dem Core-Media-Wiedergabecode verwenden.
+Der folgende Beispielcode nutzt das JavaScript 2.x-SDK für einen HTML5-Medienplayer. Sie sollten diesen Code mit dem Code zur Core-Medienwiedergabe verwenden.
 
 ```js
 /* Call on chapter start */ 
