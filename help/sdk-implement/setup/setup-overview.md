@@ -1,25 +1,25 @@
 ---
 title: Setup-Übersicht
-description: Übersicht über die Einrichtung des Media SDK für die Medienverfolgung in Ihren Mobil-, OTT- und Browser-Anwendungen (JS).
+description: Übersicht über die Einrichtung des Media SDK für das Medien-Tracking in Ihren mobilen, OTT- und Browser-Anwendungen (JS).
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Setup-Übersicht{#setup-overview}
+# Setup-Übersicht {#setup-overview}
 
 >[!IMPORTANT]
 >
->Die folgenden Anweisungen gelten für die 2.x Media SDKs. Wenn Sie eine 1.x-Version des Medien-SDK implementieren, lesen Sie die Dokumentation zum [Medien-SDK 1.x.](/help/sdk-implement/download-sdks.md) Informationen zu Primetime-Integratoren finden Sie in der unten stehenden Dokumentation zum _Primetime Media SDK_ .
+>Die folgenden Anweisungen gelten für die 2.x Media SDKs. Wenn Sie eine 1.x-Version des Medien-SDK implementieren, lesen Sie die Dokumentation zum [Medien-SDK 1.x.](/help/sdk-implement/download-sdks.md) Informationen zu Primetime-Integratoren finden Sie weiter unten in der _Primetime Media SDK-Dokumentation_.
 
 
-## Unterstützung der Plattformversion {#minimum-platform-version}
+## Unterstützte Mindestplattformversionen {#minimum-platform-version}
 
-In der folgenden Tabelle werden die Mindestplattformversionen beschrieben, die ab dem 19. Februar 2019 für jedes SDK unterstützt werden.
+In der folgenden Tabelle werden die für jedes SDK ab dem 19. Februar 2019 unterstützten Mindestplattformversionen beschrieben.
 
-| OS/Browser | Min. Version erforderlich |
+| OS/Browser | Erforderliche Mindestversion |
 | --- | --- |
 | iOS | iOS 6+ |
 | Android | Android 5.0+ - Lollipop |
@@ -37,7 +37,7 @@ Es gibt drei Hauptkomponenten des SDK, die für die Medienverfolgung relevant si
 
 Führen Sie die folgenden Implementierungsschritte aus:
 
-1. Create a `MediaHeartbeatConfig` instance and set your config parameter values.
+1. Erstellen Sie eine `MediaHeartbeatConfig`-Instanz und legen Sie Ihre Konfigurationsparameterwerte fest.
 
    |  Variablenname  | Beschreibung  | erforderlich |  Standardwert  |
    |---|---|:---:|---|
@@ -58,7 +58,7 @@ Führen Sie die folgenden Implementierungsschritte aus:
 
    >[!TIP]
    >
-   >Das Quality of Service (QoS)-Objekt ist optional. Wenn QoS-Daten für Ihren Player verfügbar sind und Sie diese Daten verfolgen möchten, sind die folgenden Variablen erforderlich:
+   >Das Quality-of-Service (QoS)-Objekt ist optional. Wenn QoS-Daten für Ihren Player verfügbar sind und Sie diese Daten verfolgen möchten, sind die folgenden Variablen erforderlich:
 
    | Variablenname | Beschreibung   | erforderlich |
    | --- | --- | :---: |
@@ -67,17 +67,17 @@ Führen Sie die folgenden Implementierungsschritte aus:
    | `fps` | Die pro Sekunde angezeigten Frames. | Ja |
    | `droppedFrames` | Die Anzahl der bisher abgebrochenen Bilder. | Ja |
 
-1. Create the `MediaHeartbeat` instance.
+1. Erstellen Sie die `MediaHeartbeat`-Instanz.
 
-   Use the `MediaHertbeatConfig` and `MediaHertbeatDelegate` to create the `MediaHeartbeat` instance.
+   Verwenden Sie `MediaHertbeatConfig` und `MediaHertbeatDelegate`, um die `MediaHeartbeat`-Instanz zu erstellen.
 
    >[!IMPORTANT]
    >
-   >Make sure that your `MediaHeartbeat` instance is accessible and does not get deallocated until the end of the session. Diese Instanz wird für alle der folgenden Medien-Tracking-Ereignisse verwendet.
+   >Stellen Sie sicher, dass die `MediaHeartbeat`-Instanz zugänglich ist und ihre Zuweisung nicht vor Ende der Sitzung aufgehoben wird. Diese Instanz wird für alle der folgenden Medien-Tracking-Ereignisse verwendet.
 
    >[!TIP]
    >
-   >`MediaHeartbeat` erfordert eine Instanz von , `AppMeasurement` um Aufrufe an Adobe Analytics zu senden.
+   >`MediaHeartbeat` erfordert eine `AppMeasurement`-Instanz, um Aufrufe an Adobe Analytics senden zu können.
 
 1. Kombinieren Sie die verschiedenen Elemente.
 
@@ -121,35 +121,36 @@ Führen Sie die folgenden Implementierungsschritte aus:
 
 ## Überprüfen {#validate}
 
-Media Analytics-Verfolgungsimplementierungen generieren zwei Arten von Verfolgungsaufrufen:
+Media Analytics-Tracking-Implementierungen generieren zwei Arten von Tracking-Aufrufen:
 
-* Media- und Anzeigenstartaufrufe werden direkt an den Adobe Analytics-Server (AppMeasurement) gesendet.
+* Medien- und Anzeigenstartaufrufe werden direkt an den Adobe Analytics-Server (AppMeasurement) gesendet.
 * Heartbeat-Aufrufe werden an den Media Analytics-Tracking-Server (Heartbeats) gesendet, dort verarbeitet und an den Adobe Analytics-Server weitergeleitet.
 
-* **Adobe Analytics-Server (AppMeasurement)** Weitere Informationen zu den Optionen für Tracking-Server finden Sie unter [Korrektes Füllen der Variablen trackingServer und trackingServerSecure.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
+* **Adobe Analytics-Server (AppMeasurement)** Weitere Informationen zu den Optionen für Tracking-Server finden Sie unter [Korrektes Ausfüllen der Variablen trackingServer und trackingServerSecure.](https://helpx.adobe.com/de/analytics/kb/determining-data-center.html)
 
    >[!IMPORTANT]
    >
-   >Für den Experience Cloud-Besucher-ID-Dienst ist ein RDC-Tracking-Server oder CNAME erforderlich, der auf einem RDC-Server aufgelöst wird.
+   >Für den Experience Cloud Visitor ID-Dienst ist ein RDC-Tracking-Server oder CNAME erforderlich, der in einen RDC-Server aufgelöst wird.
 
-   The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
+   Der Analytics-Tracking-Server sollte auf „`.sc.omtrdc.net`“ enden oder ein CNAME sein.
 
-* ** Media Analytics (Heartbeats) server**Dies hat immer das Format "`[your_namespace].hb.omtrdc.net`". Der Wert "`[your_namespace]`"gibt Ihr Unternehmen an und wird von Adobe bereitgestellt.
+* ** Media Analytics-Server (Heartbeats)**
+Dieser hat immer das Format „`[your_namespace].hb.omtrdc.net`“. Der Wert „`[your_namespace]`“gibt Ihr Unternehmen an und wird von Adobe bereitgestellt.
 
-Das Medien-Tracking verhält sich auf allen Plattformen – Desktop oder Mobilgeräte – gleich. Die Audioverfolgung funktioniert derzeit auf mobilen Plattformen. Es gibt einige universelle Variablen, die für alle Tracking-Aufrufe überprüft werden müssen:
+Das Medien-Tracking verhält sich auf allen Plattformen – Desktop oder Mobilgeräte – gleich. Das Audio-Tracking funktioniert derzeit auf mobilen Plattformen. Es gibt einige universelle Variablen, die für alle Tracking-Aufrufe überprüft werden müssen:
 
-## SDK 1.x-Dokumentation {#sdk-1x-documentation}
+## Dokumentation zum SDK 1.x {#sdk-1x-documentation}
 
-| Video Analytics 1.x SDKs |  Entwicklerhandbücher (nur PDFs) |
+| Video Analytics-SDKs 1.x  |  Entwicklerhandbücher (nur PDFs) |
 | --- | --- |
 | Android | [Android-Konfiguration ](vhl-dev-guide-v15_android.pdf) |
 | Apple TV | [Apple TV-Konfiguration ](vhl-dev-guide-v1x_appletv.pdf) |
 | Chromecast | [Chromecast-Konfiguration ](chromecast_1.x_sdk.pdf) |
 | iOS | [iOS-Konfiguration ](vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [JavaScript-Konfiguration ](vhl-dev-guide-v15_js.pdf) |
-| Primetime | <ul> <li> Android:   [Configure Media Analytics](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> DHLS:   [Configure Media Analytics](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS:   [Configure Media Analytics](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
+| Primetime | <ul> <li> Android:   [Media Analytics-Konfiguration](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> DHLS:   [Media Analytics-Konfiguration](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS:   [Media Analytics-Konfiguration](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [TVML-Konfiguration ](vhl_tvml.pdf) |
 
 ## Primetime Medien-SDK-Dokumentation {#primetime-docs}
 
-* [Primetime-Benutzerhandbücher](https://helpx.adobe.com/primetime/user-guide.html)
+* [Primetime-Benutzerhandbücher](https://helpx.adobe.com/de/primetime/user-guide.html)
