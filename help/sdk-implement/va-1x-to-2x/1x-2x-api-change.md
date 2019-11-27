@@ -1,25 +1,25 @@
 ---
 title: API-Konversion von 1.x zu 2.x
-description: Dieses Thema enthält Links zu API-Verweisen und listet erforderliche und optionale Tracking-APIs für die Versionen 1.x und 2.x des Media SDK auf.
+description: In diesem Thema finden Sie API-Referenzen sowie erforderliche und optionale Tracking-APIs für die Versionen 1.x und 2.x des Media SDK.
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# API 1.x zu 2.x-Konvertierung {#one-x-to-two-x-conv}
+# Konvertierung von API 1.x zu 2.x {#one-x-to-two-x-conv}
 
-## Media SDK 2.x API-Verweise
+## API-Referenzen für Media SDK 2.x
 
 * [Android-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/index.html)
 * [iOS-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/index.html)
 * [JavaScript-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/index.html)
 * [ Chromecast-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/index.html)
 
-## Erforderliche Track*-APIs:
+## Erforderliche Tracking*-APIs:
 
-|  VHL 1.x | VHL 2.x |
+|  VHL 1.x  | VHL 2.x |
 |---|---|
 | `videoPlayerPlugin.trackVideoLoad()` | nicht angegeben |
 | `videoPlayerPlugin.trackSessionStart()` | [mediaHeartbeat.trackSessionStart(mediaObject, mediaCustomMetadata)](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#trackSessionStart) |
@@ -36,14 +36,14 @@ Alle optionalen Tracking-APIs, z. B. Anzeigen, Kapitel, Bitratenänderungen, Ä
 
 | VHL 1.x | VHL 2.x |
 |---|---|
-| Return a valid `AdBreakInfo` in `VideoPlayerPlugin.getAdBreakInfo()` | `trackEvent(Event.AdBreakStart)` |
-| Return null in `VideoPlayerPlugin.getAdBreakInfo()` | `trackEvent(Event.AdBreakComplete)` |
+| Gültige `AdBreakInfo` in `VideoPlayerPlugin.getAdBreakInfo()` zurückgeben | `trackEvent(Event.AdBreakStart)` |
+| Null in `VideoPlayerPlugin.getAdBreakInfo()` zurückgeben | `trackEvent(Event.AdBreakComplete)` |
 | `playerPlugin.trackAdStart()` | `trackEvent(Event.AdStart, adObject, adCustomMetadata)` |
 | `playerPlugin.trackAdComplete()` | `trackEvent(Event.AdComplete)` |
-| Return null in `VideoPlayerPlugin.getAdInfo()` | `trackEvent(Event.AdSkip)` |
+| Null in `VideoPlayerPlugin.getAdInfo()` zurückgeben | `trackEvent(Event.AdSkip)` |
 | `playerPlugin.trackChapterStart()` | `trackEvent(Event.ChapterStart, chapterObject, chapterCustomMetadata)` |
 | `playerPlugin.trackChapterComplete()` | `trackEvent(Event.ChapterComplete)` |
-| Return null in `VideoPlayerPlugin.getChapterInfo()` | `trackEvent(Event.ChapterSkip)` |
+| Null in `VideoPlayerPlugin.getChapterInfo()` zurückgeben | `trackEvent(Event.ChapterSkip)` |
 | `playerPlugin.trackSeekStart()` | `trackEvent(Event.SeekStart)` |
 | `playerPlugin.trackSeekComplete()` | `trackEvent(Event.SeekComplete)` |
 | `playerPlugin.trackBufferStart()` | `trackEvent(Event.BufferStart)` |
