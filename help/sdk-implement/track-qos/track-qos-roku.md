@@ -1,28 +1,28 @@
 ---
 title: Tracking der Erlebnisqualität auf Roku
-description: In diesem Thema wird beschrieben, wie Sie die QoE- und QoS-Verfolgung mithilfe des Media SDK unter Roku implementieren.
+description: Hier wird die Implementierung des Trackings der Erlebnisqualität (QoE, QoS) mit dem Media SDK in Roku beschrieben.
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Tracking der Erlebnisqualität auf Roku{#track-quality-of-experience-on-roku}
+# Tracking der Erlebnisqualität auf Roku {#track-quality-of-experience-on-roku}
 
 >[!IMPORTANT]
 >
 >Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie hier die 1.x-Entwicklerhandbücher herunterladen.[SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
-## Implementierung von QOS
+## Implementierung von QoS
 
-1. Identifizieren Sie, wann sich die Bitrate während der Medienwiedergabe ändert, und verwenden Sie die `mediaUpdateQoS` API, um die Servicequalitätsinformationen im Media SDK zu aktualisieren.
+1. Ermitteln Sie, wann sich die Bitrate während der Medienwiedergabe ändert, und verwenden Sie die `mediaUpdateQoS`-API, um die QoS-Informationen im Media SDK zu aktualisieren.
 
    QoSObject-Variablen:
 
    >[!TIP]
    >
-   >Diese Variablen sind nur erforderlich, wenn Sie QoS verfolgen.
+   >Diese Variablen sind nur erforderlich, wenn Sie die Erlebnisqualität (QoS) verfolgen.
 
    | Variable | Beschreibung | erforderlich |
    | --- | --- | :---: |
@@ -55,7 +55,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
     ```
     -->
 
-1. Wenn die Wiedergabe die Bitrate wechselt, rufen Sie das Media SDK `trackEvent(BitrateChange)` auf, um mitzuteilen, dass die Bitrate geändert wurde.
+1. Wenn sich die Bitrate der Wiedergabe ändert, rufen Sie `trackEvent(BitrateChange)` auf, um dem Media SDK mitzuteilen, dass die Bitrate geändert wurde.
 
    ```
    ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_BITRATE_CHANGE)
@@ -76,9 +76,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
     >Update the QoS object and call the bitrate change event on every bitrate change. This provides the most accurate QoS data.
     -->
 
-1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (Siehe [Übersicht](/help/sdk-implement/track-errors/track-errors-overview.md).)
+1. Wenn im Medienplayer ein Fehler auftritt und das Fehlerereignis der Player-API zur Verfügung steht, verwenden Sie `trackError()`, um die Fehlerinformationen zu erfassen. (Siehe [Übersicht](/help/sdk-implement/track-errors/track-errors-overview.md).)
 
    >[!TIP]
    >
-   >Die Verfolgung von Medienplayer-Fehlern beendet die Medienverfolgungssitzung nicht. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >Das Tracking von Fehlern im Medienplayer beendet die Medien-Tracking-Sitzung nicht. Wenn der Medienplayer-Fehler verhindert, dass die Wiedergabe fortgesetzt wird, müssen Sie sicherstellen, dass die Medien-Tracking-Sitzung geschlossen wird. Rufen Sie dazu `trackSessionEnd()` nach `trackError()` auf.
 
