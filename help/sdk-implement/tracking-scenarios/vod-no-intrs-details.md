@@ -1,14 +1,14 @@
 ---
 title: VOD-Wiedergabe ohne Anzeigen
-description: Ein Beispiel für die Verfolgung der VOD-Wiedergabe ohne Anzeigen.
-uuid: ee2a1b79-2c2f-42e1-8e81-b62bbd0d8cb
-translation-type: tm+mt
+description: Ein Beispiel für das Tracking der VOD-Wiedergabe ohne Anzeigen.
+uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# VOD-Wiedergabe ohne Anzeigen{#vod-playback-with-no-ads}
+# VOD-Wiedergabe ohne Anzeigen {#vod-playback-with-no-ads}
 
 ## Szenario {#scenario}
 
@@ -16,14 +16,14 @@ Diese Szenario umfasst ein VOD-Asset ohne Anzeigen, das einmal von Anfang bis En
 
 | Auslöser | Heartbeat-Methode | Netzwerkaufrufe | Hinweise   |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Dies kann ein Benutzer sein, der auf „Abspielen“ klickt, oder ein Ereignis bei automatischer Wiedergabe. |
+| Benutzer klickt auf **[!UICONTROL Abspielen]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Dies kann ein Benutzer sein, der auf „Abspielen“ klickt, oder ein Ereignis bei automatischer Wiedergabe. |
 | Erstes Medienbild | `trackPlay` | Heartbeat Content Play | Durch diese Methode wird der Timer ausgelöst. Daraufhin werden während der Wiedergabe alle 10 Sekunden Heartbeats gesendet. |
 | Inhalt wird wiedergegeben. |  | Content Heartbeats |  |
 | Inhalt ist abgeschlossen. | `trackComplete` | Heartbeat Content Complete | *Complete* bedeutet, dass das Ende der Abspielleiste erreicht wurde. |
 
 ## Parameter {#parameters}
 
-Viele der Werte bei Heartbeat Content Start-Aufrufen sind auch in Adobe Analytics `Content Start`-Aufrufen vorhanden. Es gibt viele Parameter, mit denen Adobe die verschiedenen Medienberichte füllt. In der folgenden Tabelle sind jedoch nur die wichtigsten Parameter aufgeführt:
+Viele der Werte bei Heartbeat Content Start-Aufrufen sind auch in Adobe Analytics `Content Start`-Aufrufen vorhanden. Adobe verwendet zahlreiche Parameter zum Füllen der verschiedenen Medienberichte. Es werden allerdings nur die wichtigsten Parameter in der folgenden Tabelle aufgelistet:
 
 ### Heartbeat Content Start
 
@@ -31,15 +31,15 @@ Viele der Werte bei Heartbeat Content Start-Aufrufen sind auch in Adobe Analytic
 |---|---|---|
 | `s:sc:rsid` | &lt;Adobe-Report Suite-ID&gt; |  |
 | `s:sc:tracking_server` | &lt;Analytics-Tracking-Server-URL&gt; |  |
-| `s:user:mid` | muss festgelegt werden | Should match the mid value on the `Adobe Analytics Content Start` call. |
+| `s:user:mid` | muss festgelegt werden | Sollte mit dem mid-Wert beim `Adobe Analytics Content Start`-Aufruf übereinstimmen. |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
 | `s:asset:media_id` | &lt;Ihr Medienname&gt; |  |
-| `s:meta:*` | optional | Benutzerdefinierte Metadaten, die auf den Medien festgelegt werden. |
+| `s:meta:*` | optional | Benutzerdefinierte Metadaten, die für die Medien festgelegt wurden. |
 
 ## Heartbeat Content Play {#heartbeat-content-play}
 
-These parameters should look nearly identical to the `Heartbeat Content Start` call, but the key difference is the `s:event:type` parameter. Alle anderen Parameter sollten weiterhin vorhanden sein.
+Diese Parameter sollten fast genauso wie der `Heartbeat Content Start`-Aufruf aussehen, aber den Hauptunterschied im Parameter `s:event:type` aufweisen. Alle anderen Parameter sollten weiterhin vorhanden sein.
 
 | Parameter | Wert | Hinweise   |
 |---|---|---|
@@ -48,7 +48,7 @@ These parameters should look nearly identical to the `Heartbeat Content Start` c
 
 ## Content Heartbeats {#content-heartbeats}
 
-Während der Medienwiedergabe sendet ein Timer mindestens einen Heartbeat alle 10 Sekunden. Diese Heartbeats enthalten Informationen zur Wiedergabe, zu Anzeigen, zur Pufferung usw. Der genaue Inhalt jedes Heartbeats wird in diesem Dokument nicht behandelt. Wichtig ist vor allem, dass Heartbeats konsistent ausgelöst werden, während die Wiedergabe läuft.
+Während der Medienwiedergabe sendet ein Timer mindestens einen Heartbeat alle 10 Sekunden. Diese Heartbeats enthalten Informationen zur Wiedergabe, zu Anzeigen, zur Pufferung usw. Der genaue Inhalt jedes Heartbeats wird in diesem Dokument nicht behandelt. Wichtig ist vor allem, dass Heartbeats konsistent ausgelöst werden, während die Wiedergabe läuft.
 
 Suchen Sie in den Inhalts-Heartbeats nach den folgenden Parametern:
 
