@@ -2,13 +2,13 @@
 title: Primetime
 description: null
 uuid: 3d5a5ebd-b897-40f6-ba75-bba1bae3a081
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Primetime{#primetime}
+# Primetime {#primetime}
 
 Bei Media Analytics (Heartbeats) handelt es sich um die standardisierte Medien-Tracking-Lösung von Adobe. Sie hat das ältere Meilensteinmodell ersetzt.
 
@@ -24,8 +24,8 @@ Mithilfe einer modularen Plattform für Medien-Publishing, Werbung, Personalisie
 * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
 
-TVSDK ist bereits in das Medien-SDK integriert, was die Implementierung auf allen unterstützen Plattformen deutlich vereinfacht und beschleunigt. <!--Primetime also supports the partnership with Nielsen.--> Um Primetime zu nutzen, befolgen Sie die gleichen Richtlinien und Voraussetzungen wie [clientseitig](/help/intro-to-ava/implementation-paths/client-side-path.md) und die folgenden Dokumente für Ihre Plattform(en): [Primetime-Benutzerhandbuch.](https://helpx.adobe.com/primetime/user-guide.html)
+TVSDK ist bereits in das Medien-SDK integriert, was die Implementierung auf allen unterstützen Plattformen deutlich vereinfacht und beschleunigt. <!--Primetime also supports the partnership with Nielsen.--> Befolgen Sie zur Nutzung von Primetime die gleichen Richtlinien und Voraussetzungen wie auf der [Clientseite](/help/intro-to-ava/implementation-paths/client-side-path.md) sowie die folgenden Dokumente für Ihre Plattform(en): [Primetime-Benutzerhandbuch.](https://helpx.adobe.com/de/primetime/user-guide.html)
 
 >[!NOTE]
 >
->Für diesen Implementierungspfad müssen Kunden sich an ihren Vertriebsmitarbeiter/Kundenbetreuer wenden, um eine neue Verkaufsbestellung zu unterzeichnen, da Media Analytics eine eindeutige SKU aufweist und Änderungen von einem Preismodell, das auf Serveraufrufen basiert, zu einem auf Medienströmen basierenden Modell vorgenommen werden. Von Ihrem Support-Mitarbeiter/Account-Manager erhalten Sie Informationen zum Kauf von TVSDK.
+>Für diesen Implementierungspfad müssen sich Kunden an ihren Kundenbetreuer/Account-Manager wenden, um einen neuen Kundenauftrag zu unterzeichnen, da Media Analytics über eine eigene SKU verfügt und sich der Preis hier nicht aus den Server-Aufrufen, sondern aus den Medien-Streams ergibt. Von Ihrem Support-Mitarbeiter/Account-Manager erhalten Sie Informationen zum Kauf von TVSDK.
