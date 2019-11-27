@@ -2,44 +2,44 @@
 title: Tracking heruntergeladener Inhalte
 description: null
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Tracking heruntergeladener Inhalte{#track-downloaded-content}
+# Tracking heruntergeladener Inhalte {#track-downloaded-content}
 
 ## Überblick {#overview}
 
-Die Funktion "Heruntergeladene Inhalte"bietet die Möglichkeit, den Medienkonsum zu verfolgen, während ein Benutzer offline ist. Beispielsweise lädt ein Anwender eine App herunter und installiert sie auf einem Mobilgerät. Der Anwender lädt dann mit der App Inhalte in den lokalen Speicher auf dem Gerät herunter. Um diese heruntergeladenen Daten zu verfolgen, hat Adobe die Funktion für heruntergeladene Inhalte entwickelt. Mit dieser Funktion werden beim Abspielen von Inhalten aus dem Speicher eines Geräts Verfolgungsdaten auf dem Gerät gespeichert, unabhängig von der Konnektivität des Geräts. Wenn der Benutzer die Wiedergabesitzung beendet und das Gerät online zurückgibt, werden die gespeicherten Verfolgungsinformationen innerhalb einer einzigen Nutzlast an das Media Collection API-Back-End gesendet. Von dort erfolgt die Verarbeitung und Berichterstellung wie gewohnt in der Medienerfassungs-API.
+Die Funktion für heruntergeladene Inhalte bietet die Möglichkeit, die Mediennutzung zu verfolgen, während ein Benutzer offline ist. Beispielsweise lädt ein Anwender eine App herunter und installiert sie auf einem Mobilgerät. Der Anwender lädt dann mit der App Inhalte in den lokalen Speicher auf dem Gerät herunter. Um das Tracking dieser heruntergeladenen Daten zu ermöglichen, hat Adobe eine Funktion für heruntergeladene Inhalte entwickelt. Mit dieser Funktion werden Tracking-Daten unabhängig von der Konnektivität des Geräts gespeichert, wenn der Benutzer Inhalte aus dem Speicher des Geräts wiedergibt. Wenn der Benutzer die Wiedergabesitzung beendet hat und das Gerät wieder online ist, werden die gespeicherten Tracking-Informationen in einer einzelnen Nutzlast an das Backend der Media Collection API gesendet. Danach erfolgt die Verarbeitung und Berichterstellung wie gewohnt in der Media Collection API.
 
 Vergleichen Sie die beiden Ansätze:
 
 * Online
 
-   Bei diesem Echtzeitansatz sendet der Medienplayer bei jedem Player-Ereignis Verfolgungsdaten und sendet alle zehn Sekunden (bei Anzeigen alle eine Sekunde) Netzwerkpings nacheinander an das Backend.
+   Bei diesem Echtzeit-Ansatz sendet der Medienplayer Tracking-Daten zu jedem Player-Ereignis. Außerdem sendet er alle zehn Sekunden (bei Anzeigen jede Sekunde) jeweils einen einzelnen Netzwerk-Ping an das Backend.
 
 * Offline (Funktion für heruntergeladene Inhalte)
 
-   Bei diesem Verfahren der Stapelverarbeitung müssen dieselben Sitzungsereignisse generiert werden, sie werden jedoch auf dem Gerät gespeichert, bis sie als einzelne Sitzung an das Back-End gesendet werden (siehe Beispiel unten).
+   Bei diesem Ansatz der Stapelverarbeitung müssen dieselben Sitzungsereignisse generiert werden, die jedoch auf dem Gerät gespeichert werden, bis sie als einzelne Sitzung an das Backend gesendet werden (siehe Beispiel unten).
 
 Jeder Ansatz hat seine Vor- und Nachteile:
-* Das Online-Szenario verfolgt sich in Echtzeit. dies erfordert eine Verbindungsprüfung vor jedem Netzwerkaufruf.
-* Für das Offline-Szenario (Funktion für heruntergeladene Inhalte) ist nur eine Prüfung der Netzwerkverbindung erforderlich, es ist jedoch auch ein größerer Speicherbedarf auf dem Gerät erforderlich.
+* Das Online-Szenario verfolgt in Echtzeit. Dies erfordert eine Konnektivitätsprüfung vor jedem Netzwerkaufruf.
+* Für das Offline-Szenario (Funktion für heruntergeladene Inhalte) ist nur eine Prüfung der Netzwerkverbindung erforderlich, es ist jedoch ein größerer Speicherbedarf auf dem Gerät erforderlich.
 
 ## Implementierung {#implementation}
 
-### Ereignisschemata
+### Ereignisschemas
 
-Bei der Funktion für heruntergeladene Inhalte handelt es sich lediglich um die Offline-Version der (Standard-)Online-Medienerfassungs-API. Daher müssen die Ereignisdaten, die Ihr Player stapelt und an das Back-End sendet, dieselben Ereignisschemata verwenden, die Sie auch bei Online-Aufrufen verwenden. Informationen zu diesen Schemata finden Sie unter:
+Bei der Funktion für heruntergeladene Inhalte handelt es sich lediglich um die Offline-Version der (standardmäßigen) Online-Media Collection API. Daher müssen die Ereignisdaten, die Ihr Player stapelt und an das Backend sendet, dieselben Ereignisschemas verwenden, die Sie auch bei Online-Aufrufen verwenden. Informationen zu diesen Schemas finden Sie unter:
 * [Überblick;](/help/media-collection-api/mc-api-overview.md)
 * [Validieren von Ereignisanfragen](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 ### Reihenfolge der Ereignisse
 
-* Das erste Ereignis in der Batch-Nutzlast muss mit der Media Collection-API wie gewohnt `sessionStart` sein.
-* **Sie müssen`media.downloaded: true`** in die Standard-Metadatenparameter (`params` `sessionStart` -Schlüssel) für das Ereignis einschließen, um dem Back-End anzuzeigen, dass Sie heruntergeladene Inhalte senden. Wenn dieser Parameter beim Senden von heruntergeladenen Daten nicht vorhanden ist oder auf "false"gesetzt ist, gibt die API einen 400-Antwortcode (Ungültige Anforderung) zurück. Dieser Parameter unterscheidet heruntergeladene und Live-Inhalte bis zum Back-End. (Note that if `media.downloaded: true` is set on a live session, this will likewise result in a 400 response from the API.)
+* Das erste Ereignis in der Stapel-Nutzlast muss wie bei der Media Collection API üblich `sessionStart` sein.
+* **Sie müssen`media.downloaded: true`** in die Standard-Metadatenparameter (`params` `sessionStart`-Schlüssel) für das Ereignis einschließen, um dem Backend anzuzeigen, dass Sie heruntergeladene Inhalte senden. Wenn dieser Parameter nicht vorhanden ist oder auf „false“ (falsch) gesetzt ist, wenn Sie heruntergeladene Daten senden, antwortet die API mit dem Antwortcode 400 („Bad Request“ (ungültige Anforderung)). Dieser Parameter unterscheidet zwischen heruntergeladenen und Live-Inhalten im Backend. (Beachten Sie: wenn `media.downloaded: true` auf eine Live-Sitzung eingestellt ist, wird dies ebenfalls zu einer Antwort mit dem Code 400 von der API führen.)
 * Es liegt an einer korrekten Implementierung, Abspielereignisse in der Reihenfolge ihres Auftretens richtig zu speichern.
 
 ### Antwortcodes
@@ -49,7 +49,7 @@ Bei der Funktion für heruntergeladene Inhalte handelt es sich lediglich um die 
 
 ## Integration mit Adobe Analtyics {#integration-with-adobe-analtyics}
 
-Bei der Berechnung der Analytics-Start-/Schließen-Aufrufe für das heruntergeladene Inhaltsszenario legt das Back-End ein zusätzliches Analytics-Feld namens `ts.` "Diese Zeitstempel sind für das erste und letzte empfangene Ereignis (Start und Abschluss) fest. Auf diese Weise kann eine abgeschlossene Mediensitzung zum richtigen Zeitpunkt platziert werden (d. h., selbst wenn der Benutzer mehrere Tage lang nicht wieder online ist, wird berichtet, dass die Mediensitzung zum Zeitpunkt der tatsächlichen Anzeige stattgefunden hat). Sie müssen dieses Verfahren auf der Seite von Adobe Analytics aktivieren, indem Sie einen _optionalen Zeitstempel für die Report Suite erstellen._ Informationen zum Aktivieren eines optionalen Zeitstempel für die Report Suite finden Sie unter [Optionale Zeitstempel.](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/timestamp-optional.html)
+Bei der Berechnung der Analytics-Start-/Schließen-Aufrufe für das Szenario mit heruntergeladenen Inhalten verwendet das Backend ein zusätzliches Analytics-Feld `ts.`. Dabei handelt es sich um Zeitstempel für das erste und letzte empfangene Ereignis (Start und Abschluss). Dieses Verfahren ermöglicht es, eine abgeschlossene Mediensitzung am richtigen Zeitpunkt zu platzieren (d. h., selbst wenn der Benutzer mehrere Tage lang nicht online war, erfährt er, dass die Mediensitzung zum Zeitpunkt der tatsächlichen Betrachtung des Inhalts stattgefunden hat). Sie müssen dieses Verfahren auf der Seite von Adobe Analytics aktivieren, indem Sie einen _optionalen Zeitstempel für die Report Suite erstellen._ Informationen zum Aktivieren eines optionalen Zeitstempel für die Report Suite finden Sie unter [Optionale Zeitstempel.](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/timestamp-optional.html)
 
 ## Vergleich von Beispielsitzungen {#sample-session-comparison}
 
