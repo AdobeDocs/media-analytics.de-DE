@@ -1,20 +1,20 @@
 ---
 title: Suchen-Tracking in Roku
-description: In diesem Thema wird die Implementierung der Suchverfolgung mit dem Media SDK unter Roku beschrieben.
+description: Hier wird die Implementierung des Suchen-Trackings mit dem Media SDK in Roku beschrieben.
 uuid: 0572252b-397f-4aa2-b4b5-c5346b75244a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Suchen-Tracking in Roku{#track-seeking-on-roku}
+# Suchen-Tracking in Roku {#track-seeking-on-roku}
 
 >[!IMPORTANT]
 >
 >Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie hier die 1.x-Entwicklerhandbücher herunterladen.[SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
-## Suchverfolgungskonstanten
+## Suchen-Tracking-Konstanten
 
 | Konstantenname | Beschreibung     |
 |---|---|
