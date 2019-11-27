@@ -2,19 +2,19 @@
 title: Gleichzeitige Medienbetrachter
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Gleichzeitige Medienbesucher{#media-concurrent-viewers}
+# Gleichzeitige Medienbesucher {#media-concurrent-viewers}
 
 Das Dashboard „Gleichzeitige Medienbetrachter“ gibt die Anzahl der gleichzeitigen Betrachter an einem Tag an. Die Daten können nach Inhalt, Gerätetyp und Land gefiltert werden.
 
 >[!TIP]
 >
->Es werden keine Daten angezeigt, wenn das ausgewählte Intervall kein ganzer Tag ist.
+>Es werden keine Daten angezeigt, wenn das ausgewählte Intervall keinen gesamten Tag darstellt.
 
 ![](assets/video-concurrent-viewers.png)
 
