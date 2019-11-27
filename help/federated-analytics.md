@@ -1,16 +1,16 @@
 ---
 title: Federated Analytics
-description: 'Der Federated Analytics-Dienst bietet ein System zur Freigabe von Adobe Media Analytics-Daten (Audio und Video) zwischen zwei Partnern. '
+description: 'Der Federated Analytics-Dienst stellt ein System zur Freigabe von Adobe Media Analytics-Daten (Audio und Video) zwischen zwei Partnern bereit. '
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Federated Analytics{#federated-analytics}
+# Federated Analytics {#federated-analytics}
 
-Der Federated Analytics-Dienst bietet ein System zur Freigabe von Adobe Media Analytics-Daten (Audio und Video) zwischen zwei Partnern.
+Der Federated Analytics-Dienst stellt ein System zur Freigabe von Adobe Media Analytics-Daten (Audio und Video) zwischen zwei Partnern bereit.
 Die von Media Analytics erstellten standardisierten Messdaten sind das Markenzeichen für Federated Analytics, so dass dieselben Daten aus mehreren Quellen in einen einzigen Bericht fließen können.
 Über die Regeln und die Logik von Federated Analytics können die Daten einfach kontrolliert und individualisiert werden, um die Anforderungen der jeweiligen Partnerschaft zu erfüllen.
 Federated Analytics sorgt für eine optimierte Audio- und Videomessung mit gesteigerter Effizienz und aussagekräftigeren Daten.
@@ -36,17 +36,17 @@ Federated Analytics sorgt für eine optimierte Audio- und Videomessung mit geste
 
 * **Medien-Stream-Vertrag:** Empfänger und Sender müssen über einen Adobe Analytics-Vertrag für Medien-Streams verfügen, bevor sie auf Audio- und Videodaten in Adobe Analytics zugreifen können. Weitere Informationen erhalten Sie von Ihrem Account-Team.
 * **Föderierungs-Zusatzvereinbarung:** Für jeden Sender und Empfänger muss eine unterzeichnete Zusatzvereinbarung bei Adobe vorliegen, bevor Daten gesendet oder empfangen werden. Hierbei ist pro Kunde, nicht pro Partnerschaft eine Zusatzvereinbarung erforderlich. Weitere Informationen erhalten Sie von Ihrem Account-Team.
-* **Media Analytics-Implementierung:** Der Sender muss Media Analytics in allen Playern implementiert haben, die Teil der föderierten Daten sind. Es stehen nur die Media Analytics-Daten zum Teilen zur Verfügung. See documentation: [Measuring audio and video in Adobe Analytics](/help/media-overview.md)
+* **Media Analytics-Implementierung:** Der Sender muss Media Analytics in allen Playern implementiert haben, die Teil der föderierten Daten sind. Es stehen nur die Media Analytics-Daten zum Teilen zur Verfügung. Siehe die Dokumentation: [Messen von Audio und Video in Adobe Analytics](/help/media-overview.md)
 
 * **Adobe-Consulting-Vertrag:** Für die Ersteinrichtung der Föderierungsregeln zwischen Empfänger und Sender stehen Ihnen hilfreiche Beratungsservices zur Datenüberprüfung und zur Erstellung der Datenweitergabe-Vereinbarung zur Verfügung.
 
-## Federated Analytics-Formular herunterladen
+## Herunterladen des Federated Analytics-Formulars
 
-Laden Sie die aktuelle Version dieses Formulars hier herunter: Abkommen über [Föderationsregeln](https://github.com/AdobeDocs/media-analytics.en/blob/master/help/federated-analytics-form.pdf)
+Laden Sie die aktuelle Version dieses Formulars hier herunter: [Vereinbarung über die Verknüpfungsregeln](https://github.com/AdobeDocs/media-analytics.en/blob/master/help/federated-analytics-form.pdf)
 
 ## Verarbeitung {#process}
 
-1. Sender und Empfänger arbeiten zusammen, um das Formular der Vereinbarung zu Föderierungsregeln auszufüllen. Das Teilformular "Federated Rules Agreement"enthält spezielle Felder für unser Entwicklungsteam und sollte NUR mit Adobe Acrobat bearbeitet werden. [Laden Sie Acrobat kostenlos herunter.](https://get.adobe.com/reader/)
+1. Sender und Empfänger arbeiten zusammen, um das Formular der Vereinbarung zu Föderierungsregeln auszufüllen. Das Formular zur Vereinbarung über die Verknüpfungsregeln enthält spezielle Felder für unser Engineering-Team und sollte NUR mit Adobe Acrobat bearbeitet werden. [Laden Sie Acrobat kostenlos herunter.](https://get.adobe.com/de/reader/)
 1. Sofern Datendateien verfügbar sind, stellt der Beratungsservice dem Empfänger eine Beispieldatei mit echten Daten aus den Playern des Senders bereit, um zu gewährleisten, dass die richtigen Regeln zur Datenweitergabe definiert wurden.
 1. Sender und Empfänger stellen sicher, dass die Datenweitergabe-Vereinbarung alle vertraglichen Anforderungen zwischen den beiden Parteien erfüllt.
 1. Der Beratungsservice sendet das ausgefüllte Formular zur Einrichtung der Regeln zur Datenweitergabe an Adobe Engineering.
