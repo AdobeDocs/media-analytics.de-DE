@@ -2,20 +2,20 @@
 title: Handbuch zur Implementierung von Custom Link
 description: null
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Custom Link Implementation Guide{#custom-link-implementation-guide}
+# Implementierungshandbuch für benutzerdefinierte Links {#custom-link-implementation-guide}
 
-Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`.
+Das benutzerdefinierte Video-Tracking verwendet das [manuelle Link-Tracking mit benutzerdefiniertem Link-Code](https://marketing.adobe.com/resources/help/de_DE/sc/implement/link_manual.html) im `appMeasurement` in Analytics.
 Meistens wird das anwenderdefinierte Video-Tracking auf Plattformen und Geräten verwendet, bei denen eine minimale Videomessung erforderlich ist.
 
-* In JavaScript: die `s.tl()` Funktion
-* In mobilen Apps: [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
-* In the Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
+* In JavaScript: die Funktion `s.tl()`
+* In mobilen Apps: [trackAction() Android](https://marketing.adobe.com/resources/help/de_DE/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/de_DE/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* In der Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## Voraussetzungen
 
@@ -26,7 +26,7 @@ Meistens wird das anwenderdefinierte Video-Tracking auf Plattformen und Geräten
 ## Metadaten
 
 * Metadaten können zu jedem Tracking-Aufruf als Teil der Verknüpfungsdaten hinzugefügt werden.
-* Remember to update the `linkTrackVars` and `linkTrackEvents`
+* Denken Sie daran, `linkTrackVars` und `linkTrackEvents` zu aktualisieren
 
 ```javascript
 /* Call on video complete */ 
@@ -44,7 +44,7 @@ if (e.type == "ended") {
 };
 ```
 
-## Warum benutzerspezifischen Link verwenden
+## Warum sollte man benutzerdefinierte Links verwenden?
 
 * Es sind nur minimale Voraussetzungen erforderlich
 * Es funktioniert auf jeder Plattform, einschließlich NoScript
