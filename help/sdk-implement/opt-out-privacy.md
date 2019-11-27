@@ -1,30 +1,30 @@
 ---
 title: Opt-out und Datenschutz
-description: Handhabung von "opt-in", "opt-out"und Datenschutz.
+description: Handhabung von Opt-In, Opt-out und Datenschutz
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Opt-out und Datenschutz{#opt-out-and-privacy}
+# Opt-out und Datenschutz {#opt-out-and-privacy}
 
 ## Opt-out/Opt-in {#opt-out-opt-in}
 
 Sie können steuern, ob die Tracking-Aktivität auf einem bestimmten Gerät zulässig ist:
 
-* **Mobile Apps:** Die VA-Bibliothek respektiert die Datenschutz- und Opt-out-Einstellungen der `AdobeMobile`-Bibliothek. Zum Abmelden vom Tracking müssen Sie die `AdobeMobile`-Bibliothek verwenden. Weitere Informationen zu den Opt-out- und Datenschutzeinstellungen der `AdobeMobile`-Bibliothek finden Sie unter [Opt-out- und Datenschutzeinstellungen](https://docs.adobe.com/content/help/en/mobile-services/android/gdpr-privacy-android/privacy.html).
-* **JavaScript/Browser-Apps:** Die VA-Bibliothek respektiert die Datenschutz- und Optout-Einstellungen der `VisitorAPI`. Um das-Tracking zu deaktivieren, müssen Sie über den Besucher-API-Dienst die entsprechende Einstellung vornehmen. For further information on opt­out and privacy, see [Adobe Experience Platform Identity Service.](https://marketing.adobe.com/resources/help/en_US/mcvid/).
-* **OTT-Apps (Chromecast, Roku) -** Die OTT-SDKs bieten APIs für den Schutz von Daten (General Data Protection Regulation, GDPR), mit denen Sie `opt` Status-Flags für die Datenerfassung und -übertragung festlegen und lokal gespeicherte Identitäten abrufen können.
+* **Mobile Apps:** Die VA-Bibliothek respektiert die Datenschutz- und Opt-out-Einstellungen der `AdobeMobile`-Bibliothek. Zum Abmelden vom Tracking müssen Sie die `AdobeMobile`-Bibliothek verwenden. Weitere Informationen zu den Opt-out- und Datenschutzeinstellungen der `AdobeMobile`-Bibliothek finden Sie unter [Opt-out- und Datenschutzeinstellungen](https://docs.adobe.com/content/help/de-DE/mobile-services/android/gdpr-privacy-android/privacy.html).
+* **JavaScript/Browser-Apps:** Die VA-Bibliothek respektiert die Datenschutz- und Optout-Einstellungen der `VisitorAPI`. Um das-Tracking zu deaktivieren, müssen Sie über den Besucher-API-Dienst die entsprechende Einstellung vornehmen. Weitere Informationen zu Opt-out und Datenschutz finden Sie unter [Adobe Experience Platform-ID-Dienst](https://marketing.adobe.com/resources/help/de_DE/mcvid/).
+* **OTT-Apps (Chromecast, Roku):** Die OTT-SDKs bieten APIs, die mit der Datenschutz-Grundverordnung (DSGVO) konform sind und es Ihnen ermöglichen, `opt`-Statuskennzeichen für die Datenerfassung und -übertragung zu setzen und lokal gespeicherte Identitäten abzurufen.
 
    >[!NOTE]
    >
-   >Media Heartbeat-Verfolgungsaufrufe sind ebenfalls deaktiviert, wenn der Datenschutzstatus auf "Abmeldung"festgelegt ist.
+   >Media Heartbeat-Tracking-Aufrufe werden ebenfalls deaktiviert, wenn der Datenschutzstatus auf „Opt-out“ festgelegt ist.
 
    Sie können wie folgt steuern, ob Analytics-Daten vom jeweiligen Gerät gesendet werden:
 
-   * The `privacyDefault` setting in the `ADBMobile.json` config file. Dies steuert die Grundeinstellung und bleibt bestehen, bis es im Code geändert wird.
+   * über die `privacyDefault`-Einstellung in der Konfigurationsdatei `ADBMobile.json`. Dies steuert die Grundeinstellung und bleibt bestehen, bis es im Code geändert wird.
 
    * Die `ADBMobile().setPrivacyStatus()`-Methode.
 
@@ -43,7 +43,7 @@ Sie können steuern, ob die Tracking-Aktivität auf einem bestimmten Gerät zul�
             ```
          >[!IMPORTANT]
          >
-         >Wenn ein Benutzer die Verfolgung ablehnt, werden alle dauerhaft gespeicherten Gerätedaten und IDs bereinigt, bis der Benutzer sich wieder anmeldet.
+         >Wenn ein Benutzer das Tracking deaktiviert, werden alle vorhandenen Gerätedaten und -IDs gelöscht, bis das Tracking erneut aktiviert wird.
 
       * **Wiederanmeldung in:**
 
@@ -79,7 +79,7 @@ Mit diesen Informationen können Sie lokal gespeicherte Anwenderidentitäten von
 
 >[!IMPORTANT]
 >
->Die Methode zum Abrufen aller Bezeichner ruft alle vom SDK bekannten und beständigen Benutzerkennungen ab. Diese Methode muss **vor** einem Opt-out des Anwenders aufgerufen werden.
+>Die Methode zum Abrufen aller Kennungen ruft alle dem SDK bekannten und beibehaltenen Benutzeridentitäten ab. Diese Methode muss **vor** einem Opt-out des Anwenders aufgerufen werden.
 
 Die lokal gespeicherten Identitäten werden in einer JSON-Zeichenfolge zurückgegeben, die folgende Elemente enthalten kann:
 
