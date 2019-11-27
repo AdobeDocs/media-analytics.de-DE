@@ -1,20 +1,20 @@
 ---
 title: iOS-Metadatenelemente
-description: In diesem Thema werden die verfügbaren iOS-Metadatenschlüssel beschrieben.
+description: Hier werden die verfügbaren iOS-Metadatenschlüssel beschrieben.
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# iOS-Metadataschlüssel{#ios-metadata-keys}
+# iOS-Metadataschlüssel {#ios-metadata-keys}
 
 [iOS-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/)
 
 Von `ADBStandardMetadataKeys.h`:
 
-## Schlüssel zu Videometadaten
+## Schlüssel für Video-Metadaten
 
 | Konstantenname | Beschreibung | Typ |
 |---|---|---|
@@ -36,7 +36,7 @@ Von `ADBStandardMetadataKeys.h`:
 | `ADBVideoMetadataKeyFEED` | Feed | Video |
 | `ADBVideoMetadataKeySTREAM_FORMAT` | Stream-Format | Video |
 
-## Audio-Metadatenschlüssel
+## Schlüssel für Audio-Metadaten
 
 | Konstantenname | Beschreibung | Typ |
 |---|---|---|
@@ -47,7 +47,7 @@ Von `ADBStandardMetadataKeys.h`:
 | `ADBAudioMetadataKeyPUBLISHER` | Asset | Audio |
 | `ADBAudioMetadataKeySTATION` | Genre | Audio |
 
-## Ad Metadata Keys
+## Schlüssel für Anzeigen-Metadaten
 
 | Konstantenname | Beschreibung | Typ |
 |---|---|---|
