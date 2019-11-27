@@ -1,33 +1,33 @@
 ---
 title: Tracking von Core-Wiedergaben auf Roku
-description: In diesem Thema wird beschrieben, wie Sie die Kernverfolgung mit dem Media SDK unter Roku implementieren.
+description: Hier wird die Implementierung des Core-Trackings mit dem Media SDK in Roku beschrieben.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Tracking von Core-Wiedergaben auf Roku{#track-core-playback-on-roku}
+# Tracking von Core-Wiedergaben auf Roku {#track-core-playback-on-roku}
 
 >[!IMPORTANT]
->Diese Dokumentation behandelt die Verfolgung in Version 2.x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
+>Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
 
-1. **Einrichtung der anfänglichen Verfolgung**
+1. **Tracking-Ersteinrichtung**
 
-   Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
+   Identifizieren Sie, wenn der Benutzer die Wiedergabe auslöst (Benutzer klickt auf „Abspielen“ und/oder die automatische Wiedergabe ist aktiviert), und erstellen Sie eine `MediaObject`-Instanz.
 
-   **`MediaObject`Referenz:**
+   **`MediaObject`-Referenz:**
 
    | Variablenname | Beschreibung | erforderlich |
    | --- | --- | :---: |
    | `name` | Videoname | Ja |
    | `mediaid` | Eindeutige ID des Videos | Ja |
    | `length` | Videolänge | Ja |
-   | `streamType` | Stream-Typ (siehe _StreamType-Konstanten_ unten) | Ja |
+   | `streamType` | Streamtyp (siehe _StreamType-Konstanten_ unten) | Ja |
    | `mediaType` | Medientyp (siehe _MediaType-Konstanten_ unten) | Ja |
 
-   **`StreamType`Konstanten:**
+   **`StreamType`-Konstanten:**
 
    | Konstantenname | Beschreibung   |
    |---|---|
@@ -38,14 +38,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `MEDIA_STREAM_TYPE_AUDIOBOOK` | Streamtyp für Hörbuch |
    | `MEDIA_STREAM_TYPE_PODCAST` | Streamtyp für Podcast |
 
-   **`MediaType`Konstanten:**
+   **`MediaType`-Konstanten:**
 
    | Konstantenname | Beschreibung |
    |---|---|
    | `MEDIA_STREAM_TYPE_AUDIO` | Medientyp für Audiostreams. |
    | `MEDIA_STREAM_TYPE_VIDEO` | Medientyp für Videostreams. |
 
-   **Medieninfo-Objekt für Video mit VOD-Inhalt erstellen:**
+   **Erstellen Sie ein Medieninformationsobjekt für Videos mit VOD-Inhalt:**
 
    ```
     mediaInfo = adb_media_init_mediainfo(
@@ -68,7 +68,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    mediaInfo.mediaType = ADBMobile().MEDIA_TYPE_VIDEO
    ```
 
-   **Erstellen Sie ein Medieninfo-Objekt für Videos mit AOD-Inhalt:**
+   **Erstellen Sie ein Medieninformationsobjekt für Videos mit AOD-Inhalt:**
 
    ```
    mediaInfo = adb_media_init_mediainfo(
@@ -91,9 +91,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    mediaInfo.mediaType = ADBMobile().MEDIA_TYPE_AUDIO
    ```
 
-1. **Anhängen von Metadaten**
+1. **Metadaten anhängen**
 
-   Fügen Sie der Verfolgungssitzung optional Standard- und/oder benutzerdefinierte Metadatenobjekte über Kontextdatenvariablen hinzu.
+   Optional können Standard- bzw. benutzerdefinierte Metadatenobjekte über Kontextdatenvariablen an die Tracking-Sitzung angehängt werden.
 
    * **Standard-Metadaten**
 
@@ -105,10 +105,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       * Medien-Metadatenschlüssel API-Referenz: [Standard-Metadatenschlüssel - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         See the comprehensive set of available metadata here: [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)
+         Hier sehen Sie den umfassenden Satz der verfügbaren Metadaten: [Audio- und Videoparameter](/help/metrics-and-metadata/audio-video-parameters.md)
    * **Benutzerspezifische Metadaten**
 
-      Erstellen Sie ein Variablenobjekt für die benutzerdefinierten Variablen und füllen Sie die Daten für dieses Medium aus. Beispiel:
+      Erstellen Sie ein Variablenobjekt für die benutzerdefinierten Variablen und fügen Sie die Daten für dieses Medium ein. Beispiel:
 
       ```js
       /* Set custom context data */ 
@@ -120,9 +120,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       ```
 
 
-1. **Verfolgung der Absicht, die Wiedergabe zu starten**
+1. **Absicht, die Wiedergabe zu starten, verfolgen**
 
-   Um mit der Verfolgung einer Mediensitzung zu beginnen, rufen Sie `trackSessionStart` die Media Heartbeat-Instanz auf:
+   Rufen Sie `trackSessionStart` in der Media Heartbeat-Instanz auf, um eine Mediensitzung zu verfolgen:
 
    ```js
    mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
@@ -130,7 +130,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!TIP]
    >
-   >Der zweite Wert ist der benutzerdefinierte Medienmetadatenobjektname, den Sie in Schritt 2 erstellt haben.
+   >Der zweite Wert ist der Name des benutzerdefinierten Medienmetadatenobjekts, den Sie in Schritt 2 erstellt haben.
 
    >[!IMPORTANT]
    >
@@ -138,19 +138,19 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!NOTE]
    >
-   >If you are not using custom metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
+   >Wenn Sie keine benutzerdefinierten Metadaten verwenden, senden Sie einfach ein leeres Objekt für das `data`-Argument in `trackSessionStart`, wie in der Kommentarzeile im obigen iOS-Beispiel gezeigt.
 
-1. **Den tatsächlichen Start der Wiedergabe verfolgen**
+1. **Tatsächlichen Wiedergabebeginn verfolgen**
 
-   Identify the event from the media player for the beginning of the playback, where the first frame of the media is rendered on the screen, and call `trackPlay`:
+   Identifizieren Sie das Ereignis für den Anfang der Wiedergabe im Medienplayer, sobald der erste Frame des Mediums auf dem Bildschirm angezeigt wird, und rufen Sie `trackPlay` auf:
 
    ```js
    mediaHeartbeat.trackPlay();
    ```
 
-1. **Verfolgen Sie den Abschluss der Wiedergabe.**
+1. **Ende der Wiedergabe verfolgen**
 
-   Identify the event from the media player for the completion of the playback, where the user has watched the content until the end, and call `trackComplete`:
+   Identifizieren Sie das Ereignis für den Abschluss der Wiedergabe im Medienplayer, wenn der Inhalt bis zum Ende angesehen wurde, und rufen Sie `trackComplete` auf:
 
    ```js
    mediaHeartbeat.trackComplete();
@@ -158,7 +158,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. **Ende der Sitzung verfolgen**
 
-   Identify the event from the media player for the unloading/closing of the playback, where the user closes the media and/or the media is completed and has been unloaded, and call `trackSessionEnd`:
+   Identifizieren Sie das Ereignis für das Entladen/Schließen der Wiedergabe im Medienplayer, wenn der Benutzer das Medium schließt bzw. das Medium abgeschlossen ist und entladen wird, und rufen Sie `trackSessionEnd` auf:
 
    ```js
    mediaHeartbeat.trackSessionEnd();
@@ -166,7 +166,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >A `trackSessionEnd` marks the end of a tracking session. Wenn die Sitzung erfolgreich bis zum Ende wiedergegeben wurde und der Anwender den Inhalt bis zum Schluss angesehen hat, müssen Sie `trackComplete` vor `trackSessionEnd` aufrufen. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.  Tracking-Methode für die Medienwiedergabe, bei der das Laden der Medien und das Aktivieren der aktuellen Sitzung verfolgt wird:
+   >`trackSessionEnd` markiert das Ende einer Tracking-Sitzung. Wenn die Sitzung erfolgreich bis zum Ende wiedergegeben wurde und der Anwender den Inhalt bis zum Schluss angesehen hat, müssen Sie `trackComplete` vor `trackSessionEnd` aufrufen. Jeder andere `track*`-API-Aufruf nach `trackSessionEnd` wird ignoriert, mit Ausnahme von `trackSessionStart` für eine neue Tracking-Sitzung.  Tracking-Methode für die Medienwiedergabe, bei der das Laden der Medien und das Aktivieren der aktuellen Sitzung verfolgt wird:
 
    ```
    ‘ Create a media info object
@@ -176,20 +176,20 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    mediaInfo.length = "600"
    ```
 
-1. **Anhängen von Videometadaten**
+1. **Video-Metadaten anhängen**
 
-   Fügen Sie der Videoverfolgungssitzung optional Standard- und/oder benutzerdefinierte Videometadatenobjekte über Kontextdatenvariablen hinzu.
+   Optional können Standard- bzw. benutzerdefinierte Video-Metadatenobjekte über Kontextdatenvariablen an die Video-Tracking-Sitzung angehängt werden.
 
-   * **Standard-Videometadaten**
+   * **Standard-Video-Metadaten**
 
       [Standard-Metadaten in Roku implementieren](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
-      >Das Anhängen des Videometadatenobjekts an das Medienobjekt ist optional.
+      >Das Anhängen des Standard-Video-Metadatenobjekts an das Medienobjekt ist optional.
 
    * **Benutzerspezifische Metadaten**
 
-      Erstellen Sie ein Variablenobjekt für die benutzerdefinierten Variablen und füllen Sie die Daten für dieses Video aus. Beispiel:
+      Erstellen Sie ein Variablenobjekt für die benutzerdefinierten Variablen und fügen Sie die Daten für dieses Video ein. Beispiel:
 
       ```
       mediaContextData = {}
@@ -197,24 +197,24 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       mediaContextData["cmk2"] = "cmv2"
       ```
 
-1. **Verfolgung der Absicht, die Wiedergabe zu starten**
+1. **Absicht, die Wiedergabe zu starten, verfolgen**
 
-   Um mit der Verfolgung einer Mediensitzung zu beginnen, rufen Sie `trackSessionStart` die Media Heartbeat-Instanz auf:
+   Rufen Sie `trackSessionStart` in der Media Heartbeat-Instanz auf, um eine Mediensitzung zu verfolgen:
 
    ```
    ADBMobile().mediaTrackSessionStart(mediaInfo,mediaContextData)
    ```
 
    >[!TIP]
-   >Der zweite Wert ist der benutzerdefinierte Videometadatenobjektname, den Sie in Schritt 2 erstellt haben.
+   >Der zweite Wert ist der Name des benutzerdefinierten Video-Metadatenobjekts, den Sie in Schritt 2 erstellt haben.
 
    >[!IMPORTANT]
    >`trackSessionStart` verfolgt die Absicht des Benutzers, die Wiedergabe zu starten, und nicht den Anfang der Wiedergabe. Mit dieser API können Sie die Videodaten/-Metadaten laden und die QoS-Metrik zur Ladezeit (zeitlicher Abstand zwischen `trackSessionStart` () und `trackPlay`) schätzen.
 
    >[!NOTE]
-   >If you are not using custom video metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
+   >Wenn Sie keine benutzerdefinierten Video-Metadaten verwenden, senden Sie einfach ein leeres Objekt für das `data`-Argument in `trackSessionStart`, wie in der Kommentarzeile im obigen iOS-Beispiel gezeigt.
 
-1. **Den tatsächlichen Start der Wiedergabe verfolgen**
+1. **Tatsächlichen Wiedergabebeginn verfolgen**
 
    Identifizieren Sie das Ereignis für den Anfang der Videowiedergabe im Videoplayer (wenn das erste Videobild auf dem Bildschirm angezeigt wird) und rufen Sie `trackPlay` () auf:
 
@@ -222,7 +222,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ADBMobile().mediaTrackPlay()
    ```
 
-1. **Verfolgen Sie den Abschluss der Wiedergabe.**
+1. **Ende der Wiedergabe verfolgen**
 
    Identifizieren Sie das Ereignis für den Abschluss der Videowiedergabe im Videoplayer (wenn der Inhalt bis zum Ende angesehen wurde) und rufen Sie `trackComplete` () auf:
 
@@ -239,19 +239,19 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ```
 
    >[!IMPORTANT]
-   >`trackSessionEnd` markiert das Ende einer Videoverfolgungssitzung. Wenn die Sitzung erfolgreich bis zum Ende wiedergegeben wurde und der Anwender den Inhalt bis zum Schluss angesehen hat, müssen Sie `trackComplete` vor `trackSessionEnd` aufrufen. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new video tracking session.
+   >`trackSessionEnd` markiert das Ende einer Video-Tracking-Sitzung. Wenn die Sitzung erfolgreich bis zum Ende wiedergegeben wurde und der Anwender den Inhalt bis zum Schluss angesehen hat, müssen Sie `trackComplete` vor `trackSessionEnd` aufrufen. Jeder andere `track*`-API-Aufruf nach `trackSessionEnd` wird ignoriert, mit Ausnahme von `trackSessionStart` für eine neue Video-Tracking-Sitzung.
 
 1. **Alle möglichen Pausenszenarien verfolgen**
 
-   Identify the event from the video player for video pause and call `trackPause`:
+   Identifizieren Sie das Ereignis im Videoplayer für angehaltene Videos und rufen Sie `trackPause` auf:
 
    ```
    ADBMobile().mediaTrackPause()
    ```
 
-   **Szenarios anhalten**
+   **Pausenszenarien**
 
-   Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. In allen folgenden Szenarios muss Ihre App `trackPause()` () aufrufen:
+   Identifizieren Sie alle Szenarios, in denen der Videoplayer angehalten wird, und stellen Sie sicher, dass `trackPause` korrekt aufgerufen wird. In allen folgenden Szenarios muss Ihre App `trackPause()` () aufrufen:
 
    * Der Anwender betätigt in der App die Pause-Schaltfläche.
    * Der Player geht selbstständig in den Pausenstatus über.
@@ -265,7 +265,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ```
 
    >[!TIP]
-   >Dies kann dieselbe Ereignisquelle sein, die in Schritt 4 verwendet wurde. Stellen Sie sicher, dass jeder `trackPause()`-API-Aufruf mit einem nachfolgenden `trackPlay()`-API-Aufruf gepaart wird, wenn die Videowiedergabe wiederaufgenommen wird.
+   >Diese Ereignisquelle kann mit der in Schritt 4 verwendeten identisch sein. Stellen Sie sicher, dass jeder `trackPause()`-API-Aufruf mit einem nachfolgenden `trackPlay()`-API-Aufruf gepaart wird, wenn die Videowiedergabe wiederaufgenommen wird.
 
 * Tracking-Szenarios: [VOD-Wiedergabe ohne Werbung](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Der im Roku-SDK enthaltene Beispiel-Player zeigt ein komplettes Tracking-Beispiel.
