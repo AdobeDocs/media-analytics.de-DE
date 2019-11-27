@@ -1,20 +1,20 @@
 ---
 title: Mehrere parallele VOD-Tracker
-description: Ein Beispiel für die parallele Verfolgung von VOD mit mehreren Trackern.
+description: Ein Beispiel für das Tracking von VOD mit mehreren parallelen Trackern.
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Mehrere parallele VOD-Tracker{#vod-multiple-trackers-in-parallel}
+# Mehrere parallele VOD-Tracker {#vod-multiple-trackers-in-parallel}
 
 ## Szenario {#scenario}
 
-In this scenario, there are two sessions running in parallel for two separate medias and using two separate instances of `MediaHeartbeat`.
+In diesem Szenario werden zwei Sitzungen für zwei verschiedene Medien parallel ausgeführt und zwei separate Instanzen von `MediaHeartbeat` verwendet.
 
-This scenario is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, except there are two sessions that are running in parallel for two separate medias. Jede dieser Sitzungen verwendet eine eigene Instanz von `MediaHeartbeat`.
+Dieses Szenario ist mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch, allerdings werden hierbei zwei parallele Sitzungen für zwei separate Medien ausgeführt. Jede dieser Sitzungen verwendet eine eigene Instanz von `MediaHeartbeat`.
 
 Wenn nichts anderes angegeben ist, sind die Netzwerkaufrufe mit denen im Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch.
 
