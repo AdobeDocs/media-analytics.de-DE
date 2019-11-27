@@ -2,16 +2,16 @@
 title: Implementieren einer Ereignisanfrage
 description: null
 uuid: 3bfa313c-ff74-4e2e-bbde-6f4a6221d85b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Implementieren einer Ereignisanfrage{#implementing-an-events-request}
+# Implementieren einer Ereignisanfrage {#implementing-an-events-request}
 
 **`{uri}/api/v1/sessions/{sid}/events`**
 
-Use the [Events request](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) for all subsequent tracking calls after you obtain a Session ID using the [Sessions request.](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) Geben Sie die Position und den Zeitstempel der Abspielleiste, den Ereignistyp und alle optionalen Parameter, die Sie einbeziehen möchten, im JSON-Hauptteil der Anforderung an.
+Verwenden Sie die [Ereignisanforderung](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) für alle nachfolgenden Tracking-Aufrufe, nachdem Sie mithilfe der Sitzungsanforderung [ eine Sitzungs-ID erhalten haben.](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) Geben Sie die Abspielleistenposition und den Zeitstempel, den Ereignistyp sowie sämtliche optionalen Parameter, die Sie hinzufügen möchten, im JSON-Text der Anforderung an.
 
-The JSON request body for the [Events request](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) has the same structure as that of the Sessions request, however check the [JSON validation schemas](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) for parameter requirements and types.
+Der JSON-Anforderungstext für die [Ereignisanforderung](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) weist dieselbe Struktur wie die Sitzungsanforderung auf. Sie sollten jedoch die [JSON-Validierungsschemas](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) überprüfen, um mehr über die Parameteranforderungen und -typen zu erfahren.
