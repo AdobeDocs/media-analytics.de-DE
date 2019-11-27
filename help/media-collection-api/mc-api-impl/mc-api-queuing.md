@@ -2,17 +2,17 @@
 title: Einreihen von Ereignissen in die Warteschlange bei langsamer Sitzungsantwort
 description: null
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Einreihen von Ereignissen in die Warteschlange bei langsamer Sitzungsantwort{#queueing-events-when-sessions-response-is-slow}
+# Einreihen von Ereignissen in die Warteschlange bei langsamer Sitzungsantwort {#queueing-events-when-sessions-response-is-slow}
 
-Bei der Mediensammlungs-API handelt es sich um eine RESTful-API. Das heißt, Sie stellen eine HTTP-Anfrage und warten auf die Antwort. This is an important point only for when you make a [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) to obtain a Session ID at the beginning of video playback. Dies ist wichtig, da die Sitzungs-ID für alle nachfolgenden Verfolgungsaufrufe erforderlich ist.
+Bei der Mediensammlungs-API handelt es sich um eine RESTful-API. Das heißt, Sie stellen eine HTTP-Anfrage und warten auf die Antwort. Das ist nur wichtig, wenn Sie zu Beginn der Videowiedergabe eine [Sitzungsanforderung](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) stellen, um eine Sitzungs-ID abzurufen. Dies ist wichtig, da die Sitzungs-ID für alle nachfolgenden Tracking-Anrufe erforderlich ist.
 
-It is possible that your player may fire events _before the Sessions response returns_ (with the Session ID parameter) from the backend. If this occurs, your app must queue any tracking events that arrive between the [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) and its response. When the Sessions response arrives, you should first process any queued [events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md), then you can start processing _live_ events with the [Events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) calls.
+Der Player löst möglicherweise Ereignisse aus, _bevor Sitzungsantwort_ (mit dem Sitzungs-ID-Parameter) vom Backend zurückgegeben wird. In diesem Fall muss Ihre Anwendung sämtliche Tracking-Ereignisse in die Warteschlange einreihen, die zwischen der [Sitzungsanforderung](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) und ihrer Antwort eingehen. Wenn die Sitzungsantwort eingeht, sollten Sie zunächst alle [Ereignisse](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) in der Warteschlange verarbeiten. Anschließend können Sie mit den [Ereignisaufrufen](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) mit der Verarbeitung von _Live_-Ereignissen beginnen.
 
 >[!NOTE]
 >
