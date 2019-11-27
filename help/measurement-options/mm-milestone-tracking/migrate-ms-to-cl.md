@@ -2,17 +2,17 @@
 title: Migration von Milestone zu Custom Link
 description: null
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Migration von Milestone zu Custom Link{#migrating-from-milestone-to-custom-link}
+# Migration von Milestone zu Custom Link {#migrating-from-milestone-to-custom-link}
 
 ## Überblick {#overview}
 
-Die grundlegenden Prinzipien der Videomessung sind die gleichen wie beim Milestone- und Custom Link-Tracking, bei denen Videoplayer-Ereignisse aufgenommen und auf Analysemethoden übertragen werden, während gleichzeitig Playermetadaten und -werte erfasst und auf Analysevariablen übertragen werden. Der Custom Link-Ansatz sollte als eine Verschlankung und Vereinfachung sowohl der Implementierung als auch der erfassten Daten betrachtet werden. Bei der Custom Link-Lösung sind keine Variablen oder Methoden für die Videomessung vordefiniert, sondern es ist eine vollständige anwenderdefinierte Einrichtung erforderlich. Es sollte möglich sein, den Player-Ereigniscode zu aktualisieren, um auf die anwenderdefinierten Linktracking-Aufrufe für grundlegende Spielereignisse wie Start und Ende zu verweisen. Siehe [Custom Link-Implementierungsleitfaden](/help/measurement-options/cl-in-aa/cl-impl-guide.md) und [Manuelles Linktracking mithilfe des benutzerdefinierten Link-Codes](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) für weitere Details.
+Die grundlegenden Prinzipien der Videomessung sind die gleichen wie beim Milestone- und Custom Link-Tracking, bei denen Videoplayer-Ereignisse aufgenommen und auf Analysemethoden übertragen werden, während gleichzeitig Playermetadaten und -werte erfasst und auf Analysevariablen übertragen werden. Der Custom Link-Ansatz sollte als eine Verschlankung und Vereinfachung sowohl der Implementierung als auch der erfassten Daten betrachtet werden. Bei der Custom Link-Lösung sind keine Variablen oder Methoden für die Videomessung vordefiniert, sondern es ist eine vollständige anwenderdefinierte Einrichtung erforderlich. Es sollte möglich sein, den Player-Ereigniscode zu aktualisieren, um auf die anwenderdefinierten Linktracking-Aufrufe für grundlegende Spielereignisse wie Start und Ende zu verweisen. Siehe [Custom Link-Implementierungsleitfaden](/help/measurement-options/cl-in-aa/cl-impl-guide.md) und [Manuelles Linktracking mithilfe des benutzerdefinierten Link-Codes](https://marketing.adobe.com/resources/help/de_DE/sc/implement/link_manual.html) für weitere Details.
 
 Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone-Lösung und der Custom Link-Lösung.
 
@@ -83,7 +83,7 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone-Lösung u
 </th>
 <th>Benutzerspezifischer Link
 </th>
-<th>Benutzerspezifischer Link  Syntax
+<th>Benutzerspezifischer Link Syntax
 </th>
 </tr>
 </thead>
@@ -95,7 +95,8 @@ Media.trackUsingContextData
 <td>
 <pre>
 s.Media.
-  trackUsingContextData = true;
+  trackUsingContextData 
+  = true;
 </pre>
 </td>
 <td>
@@ -103,8 +104,11 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s.linkTrackVars = 'events, contextData.video.name'; 
-s.contextData["video.name"] = mediaName;
+s.linkTrackVars
+  = 'events, 
+contextData.video.name’; 
+s.contextData[‘video.name']
+  = mediaName;
 </pre>
 </td>
 </tr>
@@ -115,14 +119,27 @@ Media.contextDataMapping
 <td>
 <pre>
 s.Media.
-  contextDataMapping = { "a.media.name":
-    "eVar2,prop2", "a.media.segment":
-    "eVar3", "a.contentType":
-    "eVar1", "a.media.timePlayed":
-    "event3", "a.media.view":
-    "event1", "a.media.segmentView":
-    "event2", "a.media.complete":
-    "event7", "a.media.milestones":{ 25:"event4", 50:"event5", 75:"event6" }};
+  contextDataMapping = {
+  "a.media.name":
+    "eVar2,prop2",
+  "a.media.segment":
+    "eVar3",
+  "a.contentType":
+    "eVar1",
+  "a.media.timePlayed":
+    "event3",
+  "a.media.view":
+    "event1",
+  "a.media.segmentView":
+    "event2",
+  "a.media.complete":
+    "event7",
+  "a.media.milestones":{
+    25:"event4",
+    50:"event5",
+    75:"event6"
+  }
+};
 </pre>
 </td>
 <td>nicht angegeben
@@ -136,7 +153,12 @@ Media.trackVars
 </td>
 <td>
 <pre>
-s.Media.trackVars = "events, prop2, eVar1, eVar2, eVar3";
+s.Media.trackVars
+  = "events,
+     prop2,
+     eVar1,
+     eVar2,
+     eVar3";
 </pre>
 </td>
 <td>
@@ -144,8 +166,16 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar13, eVar15, contextData.
-       video.name, contextData.
+s.linkTrackVars
+  = 'events,
+     prop10,
+     eVar10,
+     eVar12,
+     eVar13,
+     eVar15,
+     contextData.
+       video.name,
+     contextData.
        video.view';
 </pre>
 </td>
@@ -156,7 +186,14 @@ Media.trackEvents
 </td>
 <td>
 <pre>
-s.Media.trackEvents = "event1, event2, event3, event4, event5, event6, event7"
+s.Media.trackEvents
+  = "event1,
+     event2,
+     event3,
+     event4,
+     event5,
+     event6,
+     event7"
 </pre>
 </td>
 <td>
@@ -164,7 +201,8 @@ linkTrackEvents
 </td>
 <td>
 <pre>
-s.linkTrackEvents = 'event2';
+s.linkTrackEvents
+  = 'event2';
 </pre>
 </td>
 </tr>
@@ -180,7 +218,7 @@ s.linkTrackEvents = 'event2';
 </th>
 <th>Benutzerspezifischer Link
 </th>
-<th>Benutzerspezifischer Link  Syntax
+<th>Benutzerspezifischer Link Syntax
 </th>
 </tr>
 </thead>
@@ -192,7 +230,8 @@ Media.trackUsingContextData
 <td>
 <pre>
 s.Media.
-  trackUsingContextData = true;
+  trackUsingContextData 
+  = true;
 </pre>
 </td>
 <td>
@@ -200,8 +239,11 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s.linkTrackVars = 'events, contextData.video.name'; 
-s.contextData["video.name"] = mediaName;
+s.linkTrackVars
+  = 'events, 
+contextData.video.name’; 
+s.contextData[‘video.name']
+  = mediaName;
 </pre>
 </td>
 </tr>
@@ -211,7 +253,20 @@ Media.contextDataMapping
 </td>
 <td>
 <pre>
-s.Media.contextDataMapping = { "a.media.name":"eVar2,prop2", "a.media.segment":"eVar3", "a.contentType":"eVar1", "a.media.timePlayed":"event3", "a.media.view":"event1", "a.media.segment View":"event2", "a.media.complete":"event7", "a.media.milestones":{ 25:"event4", 50:"event5", 75:"event6" }};
+s.Media.contextDataMapping = {
+  "a.media.name":"eVar2,prop2",
+  "a.media.segment":"eVar3",
+  "a.contentType":"eVar1",
+  "a.media.timePlayed":"event3",
+  "a.media.view":"event1",
+  "a.media.segmentView":"event2",
+  "a.media.complete":"event7",
+  "a.media.milestones":{
+    25:"event4",
+    50:"event5",
+    75:"event6"
+  }
+};
 </pre>
 </td>
 <td>nicht angegeben
@@ -225,7 +280,12 @@ Media.trackVars
 </td>
 <td>
 <pre>
-s.Media.trackVars = "events, prop2, eVar1, eVar2, eVar3";
+s.Media.trackVars
+  = "events,
+     prop2,
+     eVar1,
+     eVar2,
+     eVar3";
 </pre>
 </td>
 <td>
@@ -233,8 +293,16 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar13, eVar15, contextData.
-       video.name, contextData.
+s.linkTrackVars
+  = 'events,
+     prop10,
+     eVar10,
+     eVar12,
+     eVar13,
+     eVar15,
+     contextData.
+       video.name,
+     contextData.
        video.view';
 </pre>
 </td>
@@ -245,7 +313,14 @@ Media.trackEvents
 </td>
 <td>
 <pre>
-s.Media.trackEvents = "event1, event2, event3, event4, event5, event6, event7"
+s.Media.trackEvents
+  = "event1,
+     event2,
+     event3,
+     event4,
+     event5,
+     event6,
+     event7"
 </pre>
 </td>
 <td>
@@ -253,7 +328,8 @@ linkTrackEvents
 </td>
 <td>
 <pre>
-s.linkTrackEvents = 'event2';
+s.linkTrackEvents
+  = 'event2';
 </pre>
 </td>
 </tr>
@@ -271,7 +347,7 @@ s.linkTrackEvents = 'event2';
 </th>
 <th>Benutzerspezifischer Link
 </th>
-<th>Benutzerspezifischer Link  Syntax
+<th>Benutzerspezifischer Link Syntax
 </th>
 </tr>
 </thead>
@@ -325,7 +401,8 @@ Media.completeCloseOffsetThreshold
 <td>
 <pre>
 s.Media.
-  completeCloseOffsetThreshold = 1
+  completeCloseOffsetThreshold
+    = 1
 </pre>
 </td>
 <td>nicht angegeben
@@ -347,7 +424,8 @@ Setzen von eVar- oder Kontextdatenvariablen im Link-Aufruf
 </td>
 <td>
 <pre>
-s.contextData['video.player'] ="CustomPlayer-Name";
+s.contextData['video.player']
+  = ”CustomPlayer Name”;
 </pre>
 </td>
 </tr>
@@ -385,7 +463,8 @@ Media.trackOffsetMilestones
 </td>
 <td>
 <pre>
-s.Media.trackOffsetMilestones = "20,40,60";
+s.Media.trackOffsetMilestones 
+  = "20,40,60";
 </pre>
 </td>
 <td>nicht angegeben
@@ -414,7 +493,8 @@ Media.segmentByOffsetMilestones
 <td>
 <pre>
 s.Media.
-  segmentByOffsetMilestones = true;
+  segmentByOffsetMilestones
+  = true;
 </pre>
 </td>
 <td>nicht angegeben
@@ -436,7 +516,7 @@ s.Media.
 </th>
 <th>Benutzerspezifischer Link
 </th>
-<th>Benutzerspezifischer Link  Syntax
+<th>Benutzerspezifischer Link Syntax
 </th>
 </tr>
 </thead>
@@ -476,7 +556,8 @@ Media.adTrackOffsetMilestones
 <td>
 <pre>
 s.Media.
-  adTrackOffsetMilestones = "20,40,60";
+  adTrackOffsetMilestones 
+    = "20,40,60";
 </pre>
 </td>
 <td>nicht angegeben
@@ -491,7 +572,8 @@ Media.adSegmentByMilestones
 <td>
 <pre>
 s.Media.
-  adSegmentByMilestones = true;
+  adSegmentByMilestones
+    = true;
 </pre>
 </td>
 <td>nicht angegeben
@@ -506,7 +588,8 @@ Media.adSegmentByOffsetMilestones
 <td>
 <pre>
 s.Media.
-  adSegmentByOffsetMilestones = true;
+  adSegmentByOffsetMilestones
+    = true;
 </pre>
 </td>
 <td>nicht angegeben
@@ -528,7 +611,7 @@ s.Media.
 </th>
 <th>Benutzerspezifischer Link
 </th>
-<th>Benutzerspezifischer Link  Syntax
+<th>Benutzerspezifischer Link Syntax
 </th>
 </tr>
 </thead>
@@ -543,28 +626,44 @@ s.Media.open(mediaName,mediaLength,mediaPlayerName)
 <td>s.tl()</td>
 <td>
 <pre>
-s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar15, contextData.video.name, contextData.video.view';
-s.linkTrackEvents = 'event2';
-s.prop10 = mediaName;
-s.eVar10 = mediaName;
-s.eVar12 = "video";
-s.eVar15 = mediaPlayerName;
-s.events = 'event2';
-s.contextData['video.name'] = mediaName;
-s.contextData['video.view'] = 'true';
-s.tl(this,'o','Videostart');
+s.linkTrackVars
+  = 'events,
+     prop10,
+     eVar10,
+     eVar12,
+     eVar15,
+     contextData.video.name,
+     contextData.video.view';
+s.linkTrackEvents 
+  = 'event2';
+s.prop10 
+  = mediaName;
+s.eVar10 
+  = mediaName;
+s.eVar12 
+  = "video";
+s.eVar15 
+  = mediaPlayerName;
+s.events 
+  = 'event2';
+s.contextData['video.name'] 
+  = mediaName;
+s.contextData['video.view'] 
+  = 'true';
+s.tl(this,'o','Video Start');
 </pre>
 </td>
 </tr>
 <tr>
 <td>mediaName</td>
-<td><b></b> mediaName: (Erforderlich) Der Name des Videos, wie er in Videoberichten angezeigt werden soll.</td>
+<td><b>mediaName</b> (erforderlich): Der Name des Videos, wie er in Videoberichten angezeigt werden soll.</td>
 <td>Setzen von eVar- oder Kontextdatenvariablen im Link-Aufruf</td>
 <td>
 <pre>
 s.prop10 = mediaName;
 s.eVar10 = mediaName;
-s.contextData['video.name'] = mediaName;
+s.contextData['video.name']
+  = mediaName;
 </pre>
 </td>
 </tr>
@@ -573,14 +672,15 @@ s.contextData['video.name'] = mediaName;
 mediaLength
 </td>
 <td>
-<b></b> mediaLength: (Erforderlich) Die Länge des Videos in Sekunden.
+<b>mediaLength</b> (erforderlich): Die Länge des Videos in Sekunden.
 </td>
 <td>
 Setzen von eVar- oder Kontextdatenvariablen im Link-Aufruf
 </td>
 <td>
 <pre>
-s.contextData['video.length'] ="90";
+s.contextData['video.length']
+  = ”90”;
 </pre>
 </td>
 </tr>
@@ -589,14 +689,15 @@ s.contextData['video.length'] ="90";
 mediaPlayerName
 </td>
 <td>
-<b></b> mediaPlayerName: (Erforderlich) Der Name des Medienplayers, der zum Anzeigen des Videos verwendet wird, wie er in Videoberichten angezeigt werden soll.
+<b>mediaPlayerName</b> (erforderlich): Der Name des Medienplayers, mit dem das Video wiedergegeben wird, wie er in Videoberichten angezeigt werden soll.
 </td>
 <td>
 Setzen von eVar- oder Kontextdatenvariablen im Link-Aufruf
 </td>
 <td>
 <pre>
-s.contextData['video.player'] ="CustomPlayer-Name";
+s.contextData['video.player']
+  = ”CustomPlayer Name”;
 </pre>
 </td>
 </tr>
@@ -615,7 +716,7 @@ s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM
 </tr>
 <tr>
 <td>name</td>
-<td><b></b> name: (erforderlich) Name oder ID der Anzeige.</td>
+<td><b>name</b> (erforderlich): Name oder ID der Anzeige.</td>
 <td>nicht angegeben</td>
 <td>nicht verfügbar</td>
 </tr>
@@ -624,7 +725,7 @@ s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM
 length
 </td>
 <td>
-<b></b> length: (Erforderlich) Die Länge der Anzeige.
+<b>length</b> (erforderlich): Länge der Anzeige.
 </td>
 <td>nicht angegeben
 </td>
@@ -636,7 +737,7 @@ length
 playerName
 </td>
 <td>
-<b></b> playerName: (Erforderlich) Der Name des Medienplayers, der zum Anzeigen der Anzeige verwendet wird.
+<b>playerName</b> (erforderlich): Name des Medienplayers, mit dem die Anzeige wiedergegeben wird.
 </td>
 <td>nicht angegeben
 </td>
@@ -736,17 +837,32 @@ s.tl()
 </td>
 <td>
 <pre>
-s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar15, contextData.
-       video.name, contextData.
+s.linkTrackVars
+  = 'events,
+     prop10,
+     eVar10,
+     eVar12,
+     eVar15,
+     contextData.
+       video.name,
+     contextData.
        video.complete';
-s.linkTrackEvents = 'event3';
-s.prop10 = mediaName;
-s.eVar10 = mediaName;
-s.eVar12 = "video";
-s.eVar15 = mediaPlayerName;
-s.events = 'event3';
-s.contextData['video.name'] = mediaName;
-s.contextData['video.complete'] = 'true';
+s.linkTrackEvents 
+  = 'event3';
+s.prop10 
+  = mediaName;
+s.eVar10 
+  = mediaName;
+s.eVar12 
+  = "video";
+s.eVar15 
+  = mediaPlayerName;
+s.events 
+  = 'event3';
+s.contextData['video.name']
+ =  mediaName;
+s.contextData['video.complete']
+ = 'true';
 s.tl(this,'o','Video Complete');
 </pre>
 </td>
@@ -793,8 +909,15 @@ Setzen von eVar- oder Kontextdatenvariablen im Link-Aufruf
 </td>
 <td>
 <pre>
-s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar15, contextData.
-       video.name, contextData.
+s.linkTrackVars
+  = 'events,
+     prop10,
+     eVar10,
+     eVar12,
+     eVar15,
+     contextData.
+       video.name,
+     contextData.
        video.view';
 s.linkTrackEvents = 'event2';
 </pre>
