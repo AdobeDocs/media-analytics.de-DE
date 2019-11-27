@@ -1,18 +1,18 @@
 ---
 title: Tracking von Anzeigen in JavaScript
-description: Implementieren Sie die Anzeigenverfolgung in Browseranwendungen (JS) mit dem Media SDK.
+description: Implementieren des Anzeigen-Trackings in Browser-Anwendungen (JS) mit dem Media SDK.
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Tracking von Anzeigen in JavaScript{#track-ads-on-javascript}
+# Tracking von Anzeigen in JavaScript {#track-ads-on-javascript}
 
 >[!IMPORTANT]
 >
->Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit den 2.x SDKs. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Anzeigen-Tracking-Konstanten
 
@@ -28,7 +28,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. Ermitteln Sie, wann die Werbeunterbrechung beginnt, einschließlich Pre-Roll, und erstellen Sie ein `AdBreakObject` mithilfe dieser Pauseninformationen.
 
-   `AdBreakObject` Referenz:
+   `AdBreakObject`-Referenz:
 
    | Variablenname | Beschreibung | erforderlich |
    | --- | --- | :---: |
@@ -45,7 +45,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
                                         <START_TIME>);
    ```
 
-1. Call `trackEvent()` with `AdBreakStart` in the `MediaHeartbeat` instance to begin tracking the ad break:
+1. Rufen Sie `trackEvent()` mit `AdBreakStart` in der `MediaHeartbeat`-Instanz auf, um das Tracking der Werbeunterbrechung zu starten:
 
    ```js
    mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakStart, adBreakObject);
@@ -53,7 +53,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. Ermitteln Sie, wann die Anzeige startet und erstellen Sie die `AdObject`-Instanz mithilfe dieser Anzeigeninformationen.
 
-   `AdObject` Referenz:
+   `AdObject`-Referenz:
 
    | Variablenname | Beschreibung | erforderlich |
    | --- | --- | :---: |
@@ -72,7 +72,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
                                    <LENGTH>);
    ```
 
-1. Fügen Sie der Medienverfolgungssitzung optional Standard- und/oder Anzeigenmetadaten über Kontextdatenvariablen hinzu.
+1. Optional können Standard- und/oder Anzeigenmetadaten über Kontextdatenvariablen an die Medien-Tracking-Sitzung angehängt werden.
 
    * [Standard-Anzeigenmetadaten in JavaScript implementieren](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
    * **Anwenderspezifische Anzeigenmetadaten:** Erstellen Sie für anwenderdefinierte Metadaten ein variables Objekt für die anwenderspezifischen Datenvariablen und füllen Sie es mit den Daten für aktuelle Anzeigen:
@@ -86,7 +86,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       };
       ```
 
-1. Call `trackEvent()` with the `AdStart` event in the `MediaHeartbeat` instance to begin tracking the ad playback.
+1. Rufen Sie `trackEvent()` mit dem `AdStart`-Ereignis in der `MediaHeartbeat`-Instanz auf, um das Tracking der Anzeigenwiedergabe zu starten.
 
    Fügen Sie als dritten Parameter im Ereignisaufruf eine Referenz auf Ihre anwenderdefinierte Metadatenvariable (oder ein leeres Objekt) ein:
 
@@ -98,7 +98,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    };
    ```
 
-1. When the ad playback reaches the end of the ad, call `trackEvent()` with the `AdComplete` event:
+1. Wenn die Wiedergabe der Anzeige das Ende der Anzeige erreicht, rufen Sie `trackEvent()` mit dem `AdComplete`-Ereignis auf:
 
    ```js
    _onAdComplete = function() { 
