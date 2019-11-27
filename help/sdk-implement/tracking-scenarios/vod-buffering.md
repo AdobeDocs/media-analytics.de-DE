@@ -1,14 +1,14 @@
 ---
 title: VOD-Wiedergabe mit Pufferung
-description: Ein Beispiel für die Verfolgung von VOD-Inhalten mit dem Media SDK.
+description: Ein Beispiel für das Tracking von VOD-Inhalten mit dem Media SDK.
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# VOD-Wiedergabe mit Pufferung{#vod-playback-with-buffering}
+# VOD-Wiedergabe mit Pufferung {#vod-playback-with-buffering}
 
 ## Szenario {#scenario}
 
@@ -18,7 +18,7 @@ Wenn nichts anderes angegeben ist, sind die Netzwerkaufrufe in diesem Szenario m
 
 | Auslöser   | Heartbeat-Methode   | Netzwerkaufrufe   | Hinweise   |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Dies kann ein Anwender sein, der auf **[!UICONTROL Abspielen]klickt, oder ein Ereignis bei automatischer Wiedergabe.** |
+| Benutzer klickt auf **[!UICONTROL Abspielen]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Dies kann ein Anwender sein, der auf **[!UICONTROL Abspielen]** klickt, oder ein Ereignis bei automatischer Wiedergabe. |
 | Das erste Videobild wird wiedergegeben. | `trackPlay` | Heartbeat Content Play | Diese Methode löst den Timer aus. Heartbeats werden während der Dauer der Wiedergabe alle zehn Sekunden gesendet. |
 | Der Inhalt wird wiedergegeben. |  | Content Heartbeats |  |
 | Die Pufferung wird gestartet. | `trackEvent:BufferStart` | Heartbeat Buffer |  |
