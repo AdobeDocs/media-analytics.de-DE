@@ -1,26 +1,26 @@
 ---
 title: Puffer-Tracking in Android
-description: Beschreibt die Verfolgung von Pufferereignissen unter Android.
+description: Beschreibt das Tracking von Pufferereignissen in Android.
 uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Puffer-Tracking in Android{#track-buffering-on-android}
+# Puffer-Tracking in Android {#track-buffering-on-android}
 
 >[!IMPORTANT]
->Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen. If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDks.](/help/sdk-implement/download-sdks.md)
+>Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie die 1.x-Entwicklerhandbücher hier herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
-## Pufferverfolgungskonstanten
+## Puffer-Tracking-Konstanten
 
 | Konstantenname | Beschreibung     |
 |---|---|
 | `MediaHeartbeat.Event.BufferStart` | Konstante für die Verfolgung des Pufferstartereignisses |
 | `MediaHeartbeat.Event.BufferComplete` | Konstante für die Verfolgung des Pufferabschlussereignisses |
 
-## Implementierung der Pufferung
+## Implementieren der Pufferung
 
 1. Suchen Sie nach den Wiedergabepufferereignissen aus dem Medienplayer. Wenn Sie die Benachrichtigung zum Pufferstartereignis erhalten, verfolgen Sie die Pufferung mit dem `BufferStart`-Ereignis:
 
