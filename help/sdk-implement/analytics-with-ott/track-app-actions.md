@@ -1,22 +1,22 @@
 ---
 title: App-Aktionen verfolgen
-description: App-Aktionen sind die Ereignisse, die in Ihrer App auftreten und die Sie messen möchten.
+description: App-Aktionen sind die Ereignisse in der App, die Sie messen möchten.
 uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# App-Aktionen verfolgen{#track-app-actions}
+# App-Aktionen verfolgen {#track-app-actions}
 
 Aktionen sind die Ereignisse in der App, die Sie messen möchten.
 
-Jede Aktion weist mindestens eine zugehörige Metrik auf, die bei jedem Vorkommen des Ereignisses erhöht wird. For example, you might send a `trackAction` call for each new subscription, or each time content is rated, or each time a level is completed.
+Jede Aktion weist mindestens eine zugehörige Metrik auf, die bei jedem Vorkommen des Ereignisses erhöht wird. So könnten Sie z. B. einen `trackAction`-Aufruf für jedes neue Abonnement, jede Inhaltsbewertung oder jeden Abschluss einer Ebene senden.
 
 Aktionen werden nicht automatisch verfolgt. Rufen Sie also `trackAction` auf, wenn ein zu verfolgendes Ereignis auftritt, und ordnen Sie die Aktion dann einem anwenderspezifischen Ereignis zu.
 
-1. When an event that you want to track occurs, call `trackAction`.
+1. Wenn ein Ereignis auftritt, das Sie verfolgen möchten, rufen Sie `trackAction` auf.
 
    * **Roku:**
 
