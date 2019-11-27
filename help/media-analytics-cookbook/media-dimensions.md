@@ -1,36 +1,36 @@
 ---
-title: Medienstream-Zuordnung
+title: Medien-Stream-Zuordnung
 description: null
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Medienstream-Zuordnung
+# Medien-Stream-Zuordnung
 
-Mit dieser Funktion können Sie Anwendungsaktionen mit Medienverfolgungsdaten verknüpfen, ohne dass zusätzliche Verarbeitungsregeln und benutzerdefinierte Variablen erforderlich sind.
+Mit dieser Funktion können Sie Anwendungsaktionen mit Medien-Tracking-Daten verknüpfen, ohne dass zusätzliche Verarbeitungsregeln und benutzerdefinierte Variablen erforderlich sind.
 
-## Mediendimensionen außerhalb der Medienverfolgung
+## Mediendimensionen außerhalb des Media-Trackings
 
-Mit der Media Stream-Zuordnung können Kunden jetzt alle Mediendimensionen zu allen anderen Analytics-Aufrufen hinzufügen, z. B. Seitenansichten und benutzerspezifische Links. Während der Implementierung müssen Sie die Parameter für Medienkontextdaten zu den Analytics-Verfolgungsaufrufen hinzufügen. Die vollständige Liste der für Medien verwendeten Kontextdatenparameter finden Sie hier: Parameter [für Audio und Video.](/help/metrics-and-metadata/audio-video-parameters.md)
+Mit der Medien-Stream-Zuordnung können Kunden jetzt beliebige Mediendimensionen zu allen anderen Analytics-Aufrufen hinzufügen, wie z. B. Seitenansichten und benutzerdefinierten Links. Während der Implementierung müssen Sie den Tracking-Aufrufen für Analytics die Parameter für die Kontextdaten der Medien hinzufügen. Die vollständige Liste der für Medien verwendeten Kontextdatenparameter finden Sie hier: [Audio- und Videoparameter.](/help/metrics-and-metadata/audio-video-parameters.md)
 
-Außerdem müssen Sie die Medienverfolgungskonfiguration für jeden Bericht, für den Sie diese Funktion aktivieren möchten, über die Admin-Konsole erneut aktivieren.
+Außerdem müssen Sie die Konfiguration für das Medien-Tracking für jeden Bericht, für den Sie diese Funktion aktivieren möchten, über die Admin-Konsole erneut aktivieren.
 
 >[!NOTE]
->Die Medienmetriken stehen _nicht_ zur Verwendung außerhalb der Medienverfolgung zur Verfügung, da die meisten dieser Metriken von Media Analytics berechnet werden
->basierend auf Heartbeat-Ereignissen. Außerdem ist es wichtig, dass die Medienmetriken nicht durch verschiedene Implementierungen in die Höhe getrieben werden.
+>Die Medienmetriken stehen _nicht_ zur Verwendung außerhalb des Medien-Trackings zur Verfügung, da die meisten dieser Metriken von Media Analytics
+>Anhand von Heartbeat-Ereignissen berechnet werden. Außerdem ist es wichtig, dass die Medienmetriken nicht durch verschiedene Implementierungen in die Höhe getrieben werden.
 
 ## Schritte
 
-Im folgenden JavaScript-Beispiel wird ein benutzerspezifischer Link-Verfolgungsaufruf generiert, bei dem der Name auf "Hero Banner"eingestellt ist.
+Im folgenden JavaScript-Beispiel wird ein Tracking-Aufruf für einen benutzerdefinierten Link erstellt, bei dem der Name auf „Hero Banner“ eingestellt ist.
 
 ```javascript
 s.contextData["a.media.show"]="Mi Amore"
 s.tl(this,'o','Hero Banner');
 ```
 
-In der Analytics-Berichterstellung können Sie die `Show` eVar verwenden, um die Daten aufzuschlüsseln, und Sie können die Instanzen von Nachverfolgungslinks zählen. Die Berichte sehen ähnlich aus:
+In der Analytics-Berichterstellung können Sie die `Show`-eVar verwenden, um die Daten aufzuschlüsseln. Außerdem können Sie die Instanzen des Link-Trackings zählen. Die Berichterstellung sieht in etwa wie folgt aus:
 
 ![](/assets/myShow-rpt-1.png)
 
