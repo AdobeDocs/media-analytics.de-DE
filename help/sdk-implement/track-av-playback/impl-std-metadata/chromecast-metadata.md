@@ -1,14 +1,14 @@
 ---
 title: Chromecast-Metadatenelemente
-description: Beschreibt das Festlegen von Standard-Video- und Anzeigenmetadaten, die mit Verfolgungsaufrufen bei Chromecast gesendet werden.
+description: Beschreibt das Festlegen von Standard-Video- und Anzeigenmetadaten, die mit Tracking-Aufrufen in Chromecast gesendet werden.
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Chromecast-Metadatenschlüssel{#chromecast-metadata-keys}
+# Chromecast-Metadatenschlüssel {#chromecast-metadata-keys}
 
 Standardmäßige Video- und Anzeigenmetadaten können in den Medien- bzw. Anzeigen-Informationsobjekten festgelegt werden. Geben Sie mithilfe der Konstantenschlüssel für Video-/Anzeigen-Metadaten das Wörterbuch an, das die Standardmetadaten zum Informationsobjekt enthält, bevor Sie die APIs verfolgen. Eine vollständige Liste der standardmäßigen Metadaten-Konstanten finden Sie unten in den Tabellen mit Beispielen.
 
