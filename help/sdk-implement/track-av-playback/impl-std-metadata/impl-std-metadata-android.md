@@ -1,14 +1,14 @@
 ---
 title: Standard-Metadaten in Android implementieren
-description: Beschreibt das Festlegen von Standard-Video- und Anzeigenmetadaten, die mit Verfolgungsaufrufen unter Android gesendet werden.
+description: Beschreibt das Festlegen von Standard-Video- und Anzeigenmetadaten, die mit Tracking-Aufrufen in Android gesendet werden.
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Standard-Metadaten in Android implementieren{#implement-standard-metadata-on-android}
+# Standard-Metadaten in Android implementieren {#implement-standard-metadata-on-android}
 
 ## Standardmetadaten-Konstanten
 
@@ -16,13 +16,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 |---|---|
 | `MediaHeartbeat.MediaObjectKey.StandardMediaMetadata` | Konstante für das Anhängen von Standard-Metadaten an `MediaObject`. |
 
-## API-Referenz zu Metadatenschlüsseln
+## API-Referenz für Metadatenschlüssel
 
-* Erstellen Sie eine `HashMap` Liste mit Schlüssel/Wert-Paaren für Standard-Metadaten.
-   * [Schlüssel zu Videometadaten](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-   * [Audio-Metadatenschlüssel](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
+* Erstellen Sie eine `HashMap` mit Schlüssel-Wert-Paaren für Standard-Metadaten.
+   * [Schlüssel für Video-Metadaten](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+   * [Schlüssel für Audio-Metadaten](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
 * Legen Sie die `HashMap` für Standard-Metadaten bei `MediaInfo` mit der Standard-Metadatenkonstante fest.
-* Provide this `MediaInfo` object while invoking the `trackSessionStart()` API.
+* Geben Sie dieses `MediaInfo`-Objekt an, während Sie die `trackSessionStart()`-API aufrufen.
 
 ## Beispielimplementierungen
 
