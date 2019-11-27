@@ -1,26 +1,26 @@
 ---
 title: Tracking von Kapiteln und Segmenten in JavaScript
-description: In diesem Thema wird die Implementierung der Kapitel- und Segmentverfolgung mit dem Media SDK in Browser-Apps (JS) beschrieben.
+description: Hier wird die Implementierung des Kapitel- und Segment-Trackings mit dem Media SDK in Browser-Apps (JS) beschrieben.
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Tracking von Kapiteln und Segmenten in JavaScript{#track-chapters-and-segments-on-javascript}
+# Tracking von Kapiteln und Segmenten in JavaScript {#track-chapters-and-segments-on-javascript}
 
 >[!IMPORTANT]
 >
->Die folgenden Anweisungen enthalten Anleitungen zur Implementierung mit 2.x SDKs. Wenn Sie Version 1.x des SDKs implementieren möchten, können Sie hier das Entwicklerhandbuch herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDKs implementieren möchten, können Sie hier das Entwicklerhandbuch herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 1. Ermitteln Sie, wann das Kapitel beginnt, und erstellen Sie die `ChapterObject`-Instanz mithilfe dieser Kapitelinformationen.
 
-   `ChapterObject` Kapitelverfolgungsreferenz:
+   Kapitel-Tracking-Referenz `ChapterObject`:
 
    >[!NOTE]
    >
-   >Diese Variablen sind nur erforderlich, wenn Sie planen, Kapitel zu verfolgen.
+   >Diese Variablen sind nur erforderlich, wenn Sie Kapitel verfolgen möchten.
 
    | Variablenname | Beschreibung | erforderlich |
    | --- | --- | :---: |
