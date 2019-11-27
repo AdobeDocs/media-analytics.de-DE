@@ -1,21 +1,21 @@
 ---
 title: Tracking von Core-Wiedergaben auf iOS
-description: In diesem Thema wird beschrieben, wie Sie die Kernverfolgung mit dem Media SDK unter iOS implementieren.
+description: Hier wird die Implementierung des Core-Trackings mit dem Media SDK in iOS beschrieben.
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Tracking von Core-Wiedergaben auf iOS{#track-core-playback-on-ios}
+# Tracking von Core-Wiedergaben auf iOS {#track-core-playback-on-ios}
 
 >[!IMPORTANT]
->Diese Dokumentation behandelt die Verfolgung in Version 2.x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
+>Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
 
-1. **Einrichtung der anfänglichen Verfolgung**
+1. **Tracking-Ersteinrichtung**
 
-   Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
+   Identifizieren Sie, wenn der Benutzer die Wiedergabe auslöst (Benutzer klickt auf „Abspielen“ und/oder die automatische Wiedergabe ist aktiviert), und erstellen Sie eine `MediaObject`-Instanz.
 
    [createMediaObjectWithName API](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/Classes/ADBMediaHeartbeat.html#//api/name/createMediaObjectWithName:mediaId:length:streamType:mediaType:)
 
@@ -24,10 +24,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `name` | Videoname | Ja |
    | `mediaid` | Eindeutige ID des Videos | Ja |
    | `length` | Videolänge | Ja |
-   | `streamType` | Stream-Typ (siehe _StreamType-Konstanten_ unten) | Ja |
+   | `streamType` | Streamtyp (siehe _StreamType-Konstanten_ unten) | Ja |
    | `mediaType` | Medientyp (siehe _MediaType-Konstanten_ unten) | Ja |
 
-   **`StreamType`Konstanten:**
+   **`StreamType`-Konstanten:**
 
    | Konstantenname | Beschreibung |
    |---|---|
@@ -38,7 +38,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `ADBMediaHeartbeatStreamTypeAUDIOBOOK` | Streamtyp für Hörbuch |
    | `ADBMediaHeartbeatStreamTypePODCAST` | Streamtyp für Podcast |
 
-   **`MediaType`Konstanten:**
+   **`MediaType`-Konstanten:**
 
    | Konstantenname | Beschreibung |
    |---|---|
@@ -56,24 +56,24 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
                                         mediaType: <MEDIA_TYPE>];
    ```
 
-1. **Anhängen von Videometadaten**
+1. **Video-Metadaten anhängen**
 
-   Fügen Sie der Videoverfolgungssitzung optional Standard- und/oder benutzerdefinierte Videometadatenobjekte über Kontextdatenvariablen hinzu.
+   Optional können Standard- bzw. benutzerdefinierte Video-Metadatenobjekte über Kontextdatenvariablen an die Video-Tracking-Sitzung angehängt werden.
 
-   * **Standard-Videometadaten**
+   * **Standard-Video-Metadaten**
 
       * [Standard-Metadaten in iOS implementieren](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
-      * **Videometadatenschlüssel**
+      * **Schlüssel für Video-Metadaten**
          [iOS-Metadataschlüssel](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
       * Sehen Sie hier die umfassende Liste der verfügbaren Video-Metadaten: [Audio- und Videoparameter](/help/metrics-and-metadata/audio-video-parameters.md)
       >[!NOTE]
       >
-      >Das Anhängen des Videometadatenobjekts an das Medienobjekt ist optional.
+      >Das Anhängen des Standard-Video-Metadatenobjekts an das Medienobjekt ist optional.
 
    * **Benutzerspezifische Metadaten**
 
-      Erstellen Sie ein Variablenobjekt für die benutzerdefinierten Variablen und füllen Sie die Daten für dieses Video aus. Beispiel:
+      Erstellen Sie ein Variablenobjekt für die benutzerdefinierten Variablen und fügen Sie die Daten für dieses Video ein. Beispiel:
 
       ```
       NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init]; 
@@ -82,13 +82,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       ```
 
 
-1. **Verfolgung der Absicht, die Wiedergabe zu starten**
+1. **Absicht, die Wiedergabe zu starten, verfolgen**
 
-   Rufen Sie zur Verfolgung einer Mediensitzung die Media Heartbeat-Instanz `trackSessionStart` auf.
+   Rufen Sie `trackSessionStart` in der Media Heartbeat-Instanz auf, um eine Mediensitzung zu verfolgen.
 
    >[!TIP]
    >
-   >Der zweite Wert ist der benutzerdefinierte Videometadatenobjektname, den Sie in Schritt 2 erstellt haben.
+   >Der zweite Wert ist der Name des benutzerdefinierten Video-Metadatenobjekts, den Sie in Schritt 2 erstellt haben.
 
    ```
    - (void)onMainVideoLoaded:(NSNotification *)notification { 
@@ -103,9 +103,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!NOTE]
    >
-   >If you are not using custom video metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
+   >Wenn Sie keine benutzerdefinierten Video-Metadaten verwenden, senden Sie einfach ein leeres Objekt für das `data`-Argument in `trackSessionStart`, wie in der Kommentarzeile im obigen iOS-Beispiel gezeigt.
 
-1. **Den tatsächlichen Start der Wiedergabe verfolgen**
+1. **Tatsächlichen Wiedergabebeginn verfolgen**
 
    Identifizieren Sie das Ereignis für den Anfang der Videowiedergabe im Videoplayer (wenn das erste Videobild auf dem Bildschirm angezeigt wird) und rufen Sie `trackPlay` () auf:
 
@@ -115,7 +115,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-1. **Verfolgen Sie den Abschluss der Wiedergabe.**
+1. **Ende der Wiedergabe verfolgen**
 
    Identifizieren Sie das Ereignis für den Abschluss der Videowiedergabe im Videoplayer (wenn der Inhalt bis zum Ende angesehen wurde) und rufen Sie `trackComplete` () auf:
 
@@ -137,11 +137,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` markiert das Ende einer Videoverfolgungssitzung. Wenn die Sitzung erfolgreich bis zum Ende wiedergegeben wurde und der Anwender den Inhalt bis zum Schluss angesehen hat, müssen Sie `trackComplete` vor `trackSessionEnd` aufrufen. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new video tracking session.
+   >`trackSessionEnd` markiert das Ende einer Video-Tracking-Sitzung. Wenn die Sitzung erfolgreich bis zum Ende wiedergegeben wurde und der Anwender den Inhalt bis zum Schluss angesehen hat, müssen Sie `trackComplete` vor `trackSessionEnd` aufrufen. Jeder andere `track*`-API-Aufruf nach `trackSessionEnd` wird ignoriert, mit Ausnahme von `trackSessionStart` für eine neue Video-Tracking-Sitzung.
 
 1. **Alle möglichen Pausenszenarien verfolgen**
 
-   Identify the event from the video player for video pause and call `trackPause`:
+   Identifizieren Sie das Ereignis im Videoplayer für angehaltene Videos und rufen Sie `trackPause` auf:
 
    ```
    - (void)onVideoPause:(NSNotification *)notification { 
@@ -149,9 +149,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-   **Szenarios anhalten**
+   **Pausenszenarien**
 
-   Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. In allen folgenden Szenarios muss Ihre App `trackPause()` () aufrufen:
+   Identifizieren Sie alle Szenarios, in denen der Videoplayer angehalten wird, und stellen Sie sicher, dass `trackPause` korrekt aufgerufen wird. In allen folgenden Szenarios muss Ihre App `trackPause()` () aufrufen:
 
    * Der Anwender betätigt in der App die Pause-Schaltfläche.
    * Der Player geht selbstständig in den Pausenstatus über.
@@ -168,7 +168,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!TIP]
    >
-   >Dies kann dieselbe Ereignisquelle sein, die in Schritt 4 verwendet wurde. Stellen Sie sicher, dass jeder `trackPause()`-API-Aufruf mit einem nachfolgenden `trackPlay()`-API-Aufruf gepaart wird, wenn die Videowiedergabe wiederaufgenommen wird.
+   >Diese Ereignisquelle kann mit der in Schritt 4 verwendeten identisch sein. Stellen Sie sicher, dass jeder `trackPause()`-API-Aufruf mit einem nachfolgenden `trackPlay()`-API-Aufruf gepaart wird, wenn die Videowiedergabe wiederaufgenommen wird.
 
 Im Folgenden finden Sie weitere Informationen zum Tracking der Core-Wiedergabe:
 
