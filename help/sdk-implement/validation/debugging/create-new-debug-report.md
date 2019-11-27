@@ -1,18 +1,18 @@
 ---
 title: Neuen Debug-Bericht erstellen
-description: In diesem Thema wird das Erstellen eines neuen Debug-Berichts beschrieben.
+description: Hier wird das Erstellen eines neuen Debug-Berichts beschrieben.
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Neuen Debugging-Bericht erstellen{#create-a-new-debug-report}
+# Neuen Debugging-Bericht erstellen {#create-a-new-debug-report}
 
 So erstellen Sie einen neuen Debug-Bericht:
 
-1. In [!UICONTROL Create New Debug Report] select the following:
+1. Wählen Sie unter [!UICONTROL Neuen Debug-Bericht erstellen] Folgendes aus:
 
    ![](assets/create-new-debug-report.png)
 
@@ -26,13 +26,13 @@ So erstellen Sie einen neuen Debug-Bericht:
          Ihnen stehen folgende Zugriffsmöglichkeiten zur Verfügung:
 
          * [!UICONTROL Analytics &gt; Admin &gt; Unternehmenseinstellungen &gt; Webdienste]
-         * [!UICONTROL Analytics &gt; Admin &gt; Anwenderverwaltung &gt; Anwender &gt; Individuelle Anwendereinstellungen] Um Webservice-API-Anmeldedaten für einen neuen Anwender zu erstellen, fügen Sie den Anwender unter [!UICONTROL Anwenderverwaltung] zur Anwendergruppe **Zugriff auf Webdienste** hinzu.
-      * [!UICONTROL Standardendpunkt] - Die Daten in diesem Feld werden von Adobe bereitgestellt und können nicht geändert werden.
-      * [!UICONTROL Extra-Endpunkt] - Fügen Sie `CNAMES`, falls Sie sie verwenden, für Tracking-Server wie `metrics.companyname.com`
-   * **Video Heartbeats (Medienanalyse)**
+         * [!UICONTROL Analytics &gt; Admin &gt; Anwenderverwaltung &gt; Anwender &gt; Individuelle Anwendereinstellungen] Um Webservice-API-Anmeldedaten für einen neuen Benutzer zu erstellen, fügen Sie den Benutzer unter [!UICONTROL Anwenderverwaltung] zur Benutzergruppe **Zugriff auf Webdienste** hinzu.
+      * [!UICONTROL Standardendpunkt]: Die Daten in diesem Feld werden von Adobe angegeben und können nicht geändert werden.
+      * [!UICONTROL Zusätzlicher Endpunkt]: Fügen Sie `CNAMES` (sofern Sie diese verwenden) für Tracking-Server wie `metrics.companyname.com` hinzu.
+   * **Video-Heartbeats (Media Analytics)**
 
-      * [!UICONTROL Standardendpunkt] - Die Daten in diesem Feld werden von Adobe bereitgestellt und können nicht geändert werden.
-      * [!UICONTROL Extra-Endpunkt] - Fügen Sie `CNAMES`bei Verwendung für Ihren Tracking-Server, z. B. `metrics.companyname.com`hinzu.
+      * [!UICONTROL Standardendpunkt]: Die Daten in diesem Feld werden von Adobe angegeben und können nicht geändert werden.
+      * [!UICONTROL Zusätzlicher Endpunkt:] Fügen Sie `CNAMES` (sofern Sie diese verwenden) für Ihren Tracking-Server wie `metrics.companyname.com` hinzu.
 
 
 
