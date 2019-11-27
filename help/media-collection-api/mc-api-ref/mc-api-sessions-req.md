@@ -2,13 +2,13 @@
 title: Sitzungsanfrage
 description: null
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Sitzungsanfrage{#sessions-request}
+# Sitzungsanfrage {#sessions-request}
 
 ```
 POST 
@@ -21,7 +21,7 @@ Keine
 
 ## Anfrageinhalt
 
-Die Anforderungsstelle muss JSON sein und die gleiche Struktur wie die folgende MusteranforderungsTextstelle haben:
+Der Anforderungstext muss im JSON-Format vorliegen und die gleiche Struktur aufweisen wie dieser Beispiel-Anforderungstext:
 
 ```
 { 
@@ -62,7 +62,7 @@ Die Anforderungsstelle muss JSON sein und die gleiche Struktur wie die folgende 
    * `ts`: Zeitstempel, der in Millisekunden angegeben werden muss.
 * `eventType` (Obligatorisch)
 
-   **Gültiger Wert:**`sessionStart`
+   **Gültiger Wert:** `sessionStart`
 * `params` (Obligatorisch)
 * `customMetadata` (Optional)
 * `qoeData` (Optional)
@@ -84,7 +84,7 @@ Age: 0
 Via: 1.1 wsg.sanjose08
 ```
 
-`Location:` header - Der `/api/v1/` Teil enthält die API-Version. Der nachfolgende Teil `[…]sessions/` ist die Sitzungs-ID.
+`Location:`-Header: Der Teil `/api/v1/` enthält die API-Version. Der nachfolgende Teil `[…]sessions/` ist die Sitzungs-ID.
 
 ## Antwortcodes
 
