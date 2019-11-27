@@ -1,35 +1,35 @@
 ---
-title: Beheben des Hauptspiels, das zwischen Anzeigen angezeigt wird
-description: Vorgehensweise bei unerwarteten Haupt-/Wiedergabe-Aufrufen zwischen Anzeigen.
+title: Beheben von „main:play“ zwischen Anzeigen
+description: Vorgehensweise bei unerwarteten „main:play“-Aufrufen zwischen Anzeigen.
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Beheben von „main:play“ zwischen Anzeigen{#resolving-main-play-appearing-between-ads}
+# Beheben von „main:play“ zwischen Anzeigen {#resolving-main-play-appearing-between-ads}
 
 ## PROBLEM
 
-In einigen Tracking-Szenarios treten möglicherweise zwischen dem Ende der einen und dem Anfang der nächsten Anzeige unerwartete `main:play`-Aufrufe auf. If the delay between the ad complete call and the next ad start call is greater than 250 milliseconds, the Media SDK will fall back to sending `main:play` calls. Wenn diese `main:play`-Aufrufe während einer Pre-Roll-Werbeunterbrechung auftreten, wird die Metrik zum Inhaltsstart möglicherweise zu früh festgelegt.
+In einigen Tracking-Szenarios treten möglicherweise zwischen dem Ende der einen und dem Anfang der nächsten Anzeige unerwartete `main:play`-Aufrufe auf. Wenn die Verzögerung zwischen dem Aufruf zum Abschluss der ersten Anzeige und dem Start der nächsten mehr als 250 Millisekunden beträgt, sendet das Medien-SDK `main:play`-Aufrufe. Wenn diese `main:play`-Aufrufe während einer Pre-Roll-Werbeunterbrechung auftreten, wird die Metrik zum Inhaltsstart möglicherweise zu früh festgelegt.
 
 Eine Lücke zwischen Anzeigen wie die oben beschriebene wird vom Medien-SDK als Hauptinhalt interpretiert, da keine Überlappung mit Anzeigeninhalten besteht. Dem Medien-SDK liegen keine Anzeigeninformationen vor und der Player befindet sich im Wiedergabestatus. Wenn keine Anzeigeninformationen vorliegen und der Player im Wiedergabestatus ist, rechnet das Medien-SDK die Dauer der Lücke standardmäßig dem Hauptinhalt zu. Es kann die Wiedergabedauer nicht den fehlenden Anzeigeninformationen zuordnen.
 
 ## ERKENNUNG
 
-Wenn Sie Adobe Debug oder einen Netzwerkpaket-Sniffer wie Charles verwenden, sehen Sie die folgenden Heartbeat-Aufrufe in dieser Reihenfolge während einer Pre-Roll-Werbeunterbrechung:
+Wenn Sie Adobe Debug oder einen Netzwerk-Packet-Sniffer wie Charles verwenden und während einer Pre-Roll-Werbeunterbrechung folgende Heartbeat-Aufrufe in dieser Reihenfolge angezeigt werden:
 
 * Sitzungsstart: `s:event:type=start` &amp; `s:asset:type=main`
 * Ad Start: `s:event:type=start` &amp; `s:asset:type=ad`
 * Ad Play: `s:event:type=play` &amp; `s:asset:type=ad`
 * Ad Complete: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Hauptinhalt spielen: `s:event:type=play` &amp; `s:asset:type=main`**(unerwartet)**
+* Main Content Play: `s:event:type=play` &amp; `s:asset:type=main` **(unerwartet)**
 
 * Ad Start: `s:event:type=start` &amp; `s:asset:type=ad`
 * Ad Play: `s:event:type=play` &amp; `s:asset:type=ad`
 * Ad Complete: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Hauptinhalt spielen: `s:event:type=play` &amp; `s:asset:type=main`**(erwartet)**
+* Main Content Play: `s:event:type=play` &amp; `s:asset:type=main` **(erwartet)**
 
 ## LÖSUNG
 
@@ -45,24 +45,24 @@ Beseitigen Sie die Lücke innerhalb des Players, indem Sie `trackEvent:AdComplet
 
 **Bei jedem Start eines Anzeigen-Assets:**
 
-* **Aufruf`trackEvent(MediaHeartbeat.Event.AdComplete);`**
+* **Rufen Sie`trackEvent(MediaHeartbeat.Event.AdComplete);`** auf
 
    >[!NOTE]
    >
-   >Rufen Sie dies nur auf, wenn die vorherige Anzeige nicht abgeschlossen wurde. Erwägen Sie hierzu einen booleschen Wert, um einen `isinAd`-Status für die vorherige Anzeige festzulegen.
+   >Führen Sie diesen Aufruf nur durch, wenn die vorherige Anzeige nicht abgeschlossen wurde. Erwägen Sie hierzu einen booleschen Wert, um einen `isinAd`-Status für die vorherige Anzeige festzulegen.
 
 * Erstellen Sie die Anzeigen-Objektinstanz für das Anzeigen-Asset, z. B. `adObject`.
-* Populate the ad metadata, `adCustomMetadata`.
+* Fügen Sie die Anzeigenmetadaten hinzu: `adCustomMetadata`.
 * Aufruf `trackEvent(MediaHeartbeat.Event.AdStart, adObject, adCustomMetadata);`.
-* Call `trackPlay()` if this is the first ad in a pre-roll ad break.
+* Rufen Sie `trackPlay()` auf, wenn es sich um die erste Anzeige in einer Pre-Roll-Werbeunterbrechung handelt.
 
 **Bei jedem Abschluss eines Anzeigen-Assets:**
 
-* **Ruf nicht an**
+* **Führen Sie keinen Aufruf durch**
 
    >[!NOTE]
    >
-   >If the application knows it is the last ad in the ad break, call `trackEvent:AdComplete` here and skip setting `trackEvent:AdComplete` in the `trackEvent:AdBreakComplete`
+   >Wenn die Anwendung weiß, dass es sich um die letzte Anzeige in der Werbeunterbrechung handelt, rufen Sie `trackEvent:AdComplete` hier auf und überspringen Sie `trackEvent:AdComplete` in `trackEvent:AdBreakComplete`.
 
 **Beim Überspringen einer Anzeige:**
 
@@ -70,11 +70,11 @@ Beseitigen Sie die Lücke innerhalb des Players, indem Sie `trackEvent:AdComplet
 
 **Beim Abschluss einer Werbeunterbrechung:**
 
-* **Aufruf`trackEvent(MediaHeartbeat.Event.AdComplete);`**
+* **Rufen Sie`trackEvent(MediaHeartbeat.Event.AdComplete);`** auf
 
    >[!NOTE]
    >
-   >If this step is already performed above as part of the last `trackEvent:AdComplete` call then this can be skipped.
+   >Wenn dieser Schritt bereits weiter oben im Rahmen des letzten `trackEvent:AdComplete`-Aufrufs durchgeführt wurde, können Sie ihn hier überspringen.
 
 * Aufruf `trackEvent(MediaHeartbeat.Event.AdBreakComplete);`.
 
