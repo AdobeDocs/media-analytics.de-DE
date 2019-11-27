@@ -1,18 +1,18 @@
 ---
-title: Verfolgungsübersicht
-description: 'In diesem Thema wird die Verfolgung der Kernwiedergabe beschrieben, einschließlich der Verfolgung von Medienladevorgang, Medienstart, Medienpause und Medienbeendigung. '
+title: Tracking-Übersicht
+description: 'Hier wird das Tracking der Core-Wiedergabe beschrieben, einschließlich des Trackings der Medienladung, des Medienstarts, der Medienpause und des Medienabschlusses. '
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Verfolgungsübersicht{#tracking-overview}
+# Tracking-Übersicht {#tracking-overview}
 
 >[!IMPORTANT]
 >
->Diese Dokumentation behandelt die Verfolgung in Version 2.x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Player-Ereignisse
 
@@ -22,50 +22,50 @@ Das Tracking der Core-Wiedergabe umfasst die Verfolgung der Medienladung, des Me
 
 * Erstellen Sie das Medienobjekt.
 * Metadaten ausfüllen
-* Aufruf `trackSessionStart`;Beispiel: `trackSessionStart(mediaObject, contextData)`
+* Aufruf `trackSessionStart`. Beispiel: `trackSessionStart(mediaObject, contextData)`
 
 ### Beim Medienstart
 
-* Aufruf    `trackPlay`
+* Aufruf `trackPlay`
 
 ### Bei Pause/Fortsetzung
 
-* Aufruf    `trackPause`
-* Call `trackPlay`   _when playback resumes_
+* Aufruf `trackPause`
+* Aufruf `trackPlay`   _, wenn die Wiedergabe fortgesetzt wird_
 
 ### Bei Medienende
 
-* Aufruf    `trackComplete`
+* Aufruf `trackComplete`
 
 ### Bei Medienabbruch
 
-* Aufruf    `trackSessionEnd`
+* Aufruf `trackSessionEnd`
 
 ### Wenn das Scrubbing beginnt
 
-* Aufruf    `trackEvent(SeekStart)`
+* Aufruf `trackEvent(SeekStart)`
 
 ### Wenn das Scrubbing endet
 
-* Aufruf    `trackEvent(SeekComplete)`
+* Aufruf `trackEvent(SeekComplete)`
 
 ### Wenn die Pufferung beginnt
 
-* Aufruf    `trackEvent(BufferStart);`
+* Aufruf `trackEvent(BufferStart);`
 
 ### Wenn die Pufferung endet
 
-* Aufruf    `trackEvent(BufferComplete);`
+* Aufruf `trackEvent(BufferComplete);`
 
 >[!TIP]
 >
->Die Position der Abspielleiste wird als Teil des Einrichtungs- und Konfigurationscodes festgelegt. Weitere Informationen `getCurrentPlayheadTime`finden Sie unter [Übersicht: Allgemeine Umsetzungsleitlinien.](/help/sdk-implement/setup/setup-overview.md#general-implementation-guidelines)
+>Die Abspielleistenposition wird als Teil des Einrichtungs- und Konfigurationscodes festgelegt. Weitere Informationen zu `getCurrentPlayheadTime` finden Sie unter [Überblick: Allgemeine Implementierungsrichtlinien.](/help/sdk-implement/setup/setup-overview.md#general-implementation-guidelines)
 
 ## Implementierung {#implement}
 
 1. **Tracking-Ersteinrichtung:** Ermitteln Sie, wann der Anwender die Wiedergabe auslöst (wenn er die Play-Schaltfläche betätigt und/oder die automatische Wiedergabe aktiviert ist), und erstellen Sie eine `MediaObject`-Instanz mithilfe der folgenden Medieninformationen: Inhaltsname, Inhalts-ID, Inhaltsdauer und Streamtyp.
 
-   **`MediaObject`Referenz:**
+   **`MediaObject`-Referenz:**
 
    | Variablenname | Beschreibung | erforderlich |
    |---|---|---|
@@ -75,7 +75,7 @@ Das Tracking der Core-Wiedergabe umfasst die Verfolgung der Medienladung, des Me
    | `streamType` | Streamtyp | Ja |
    | `mediaType` | Medientyp (Audio- oder Videoinhalt) | Ja |
 
-   **`StreamType`Konstanten:**
+   **`StreamType`-Konstanten:**
 
    | Konstantenname | Beschreibung |
    |---|---|
@@ -86,14 +86,14 @@ Das Tracking der Core-Wiedergabe umfasst die Verfolgung der Medienladung, des Me
    | `AUDIOBOOK` | Streamtyp für Hörbuch |
    | `PODCAST` | Streamtyp für Podcast |
 
-   **`MediaType`Konstanten:**
+   **`MediaType`-Konstanten:**
 
    | Konstantenname | Beschreibung |
    |---|---|
    | `Audio` | Medientyp für Audiostreams. |
    | `Video` | Medientyp für Videostreams. |
 
-   The general format for creating the `MediaObject` is `MediaHeartbeat.createMediaObject(<MEDIA_NAME>, <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>, <MEDIA_TYPE>);`
+   Das allgemeine Format für die Erstellung von `MediaObject` ist `MediaHeartbeat.createMediaObject(<MEDIA_NAME>, <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>, <MEDIA_TYPE>);`
 
 1. **Metadaten anhängen:** Optional können standardmäßige und/oder anwenderdefinierte Metadatenobjekte über Kontextdatenvariablen an die Tracking-Sitzung angehängt werden.
 
@@ -117,7 +117,7 @@ Das Tracking der Core-Wiedergabe umfasst die Verfolgung der Medienladung, des Me
 
    >[!NOTE]
    >
-   >If you are not using custom metadata, simply send an empty object for the `data` argument in `trackSessionStart`.
+   >Wenn Sie keine benutzerdefinierten Metadaten verwenden, senden Sie einfach ein leeres Objekt für das `data`-Argument in `trackSessionStart`.
 
 1. **Tatsächlichen Wiedergabebeginn verfolgen:** Identifizieren Sie das Ereignis für den Anfang der Wiedergabe im Medienplayer, sobald der erste Frame des Inhalts auf dem Bildschirm angezeigt wird, und rufen Sie `trackPlay` auf.
 
@@ -127,7 +127,7 @@ Das Tracking der Core-Wiedergabe umfasst die Verfolgung der Medienladung, des Me
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` markiert das Ende einer Tracking-Sitzung. Wenn die Sitzung erfolgreich bis zum Ende wiedergegeben wurde und der Anwender den Inhalt bis zum Schluss angesehen hat, müssen Sie `trackComplete` vor `trackSessionEnd` aufrufen. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+   >`trackSessionEnd` markiert das Ende einer Tracking-Sitzung. Wenn die Sitzung erfolgreich bis zum Ende wiedergegeben wurde und der Anwender den Inhalt bis zum Schluss angesehen hat, müssen Sie `trackComplete` vor `trackSessionEnd` aufrufen. Jeder andere `track*`-API-Aufruf nach `trackSessionEnd` wird ignoriert, mit Ausnahme von `trackSessionStart` für eine neue Tracking-Sitzung.
 
 1. **Tracking aller möglichen Pausenszenarien:** Identifizieren Sie das Ereignis aus dem Medienplayer, das das Anhalten verursacht, und rufen Sie `trackPause` auf.
 
@@ -142,7 +142,7 @@ Das Tracking der Core-Wiedergabe umfasst die Verfolgung der Medienladung, des Me
 
    >[!TIP]
    >
-   >Dies kann dieselbe Ereignisquelle sein, die in Schritt 4 verwendet wurde. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
+   >Diese Ereignisquelle kann mit der in Schritt 4 verwendeten identisch sein. Stellen Sie sicher, dass jeder `trackPause()`API-Aufruf mit einem nachfolgenden `trackPlay()`-API-Aufruf gepaart wird, wenn die Wiedergabe fortgesetzt wird.
 
 1. Suchen Sie nach den Wiedergabesuchereignissen vom Medienplayer. Wenn Sie die Benachrichtigung zum Suchstartereignis erhalten, verfolgen Sie die Suche mit dem `SeekStart`-Ereignis.
 1. Wenn Sie die Benachrichtigung zum Suchabschluss vom Medienplayer erhalten, zeichnen Sie das Suchende mit dem `SeekComplete`-Ereignis auf.
