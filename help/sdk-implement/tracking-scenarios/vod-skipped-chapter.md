@@ -1,14 +1,14 @@
 ---
 title: VOD-Wiedergabe mit einem übersprungenen Kapitel
-description: Ein Beispiel dafür, wie VOD-Inhalte verfolgt werden, bei denen der Benutzer ein Kapitel mit dem Media SDK übersprungen hat.
+description: Ein Beispiel für das Tracking von VOD-Inhalten, in denen der Benutzer ein Kapitel übersprungen hat, mithilfe des Media SDK.
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# VOD-Wiedergabe mit einem übersprungenen Kapitel{#vod-playback-with-a-skipped-chapter}
+# VOD-Wiedergabe mit einem übersprungenen Kapitel {#vod-playback-with-a-skipped-chapter}
 
 ## Szenario {#scenario}
 
@@ -18,7 +18,7 @@ Dies ist dasselbe Szenario wie [VOD-Wiedergabe mit einem Kapitel](/help/sdk-impl
 
 | Auslöser | Heartbeat-Methode | Netzwerkaufrufe   | Hinweise |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Diese Netzwerkaufrufe sind noch mit dem Szenario  [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
+| Benutzer klickt auf **[!UICONTROL Abspielen]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Diese Netzwerkaufrufe sind noch mit dem Szenario [Wiedergabe ohne Unterbrechungen in iOS](vod-no-intrs-details.md) identisch. |
 | Das Kapitel beginnt. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
 | Das erste Bild des Kapitels wird wiedergegeben. | `trackPlay` | Heartbeat Chapter Play | Wenn Kapitelinhalt vor dem Hauptinhalt wiedergegeben wird, sollen die Heartbeats mit Beginn des Kapitels gestartet werden. |
 | Das Kapitel wird wiedergegeben. |  | Chapter Heartbeats |  |
@@ -26,12 +26,12 @@ Dies ist dasselbe Szenario wie [VOD-Wiedergabe mit einem Kapitel](/help/sdk-impl
 | Die Suche ist abgeschlossen. | `trackEvent:trackSeekComplete` |  | Anschließend werden die Heartbeats wiederaufgenommen. |
 | Die Anwendung erkennt, dass der Benutzer die reguläre Kapitelgrenze bei der Suche überschritten hat. | `trackEvent:trackChapterSkip` |  |  |
 | Der Inhalt wird wiedergegeben. |  | Content Heartbeats |  |
-| Die Inhaltswiedergabe ist abgeschlossen. | `trackComplete` | Heartbeat Content Complete | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
-| Die Sitzung ist beendet. | `trackSessionEnd` |  | `SessionEnd` steht für das Ende einer Anzeigesitzung. Diese API muss auch dann aufgerufen werden, wenn der Benutzer die Medien nicht bis zum Abschluss ansieht. |
+| Die Inhaltswiedergabe ist abgeschlossen. | `trackComplete` | Heartbeat Content Complete | Dieser Netzwerkaufruf ist mit dem Szenario [Wiedergabe ohne Unterbrechungen in iOS](vod-no-intrs-details.md) identisch. |
+| Die Sitzung ist beendet. | `trackSessionEnd` |  | `SessionEnd` steht für das Ende einer Anzeigesitzung. Diese API muss auch dann aufgerufen werden, wenn der Benutzer die Medien nicht bis zum Ende anschaut. |
 
 ## Parameter {#parameters}
 
-Die Parameter, die bei der Kapitelwiedergabe verwendet werden, sind mit den Parametern im Szenario  [VOD-Wiedergabe mit einem Kapitel](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) identisch, bis auf die Tatsache, dass kein Kapitelbeendigungsnetzwerkaufruf gesendet wird.
+Die Parameter, die bei der Kapitelwiedergabe verwendet werden, sind mit den Parametern im Szenario [VOD-Wiedergabe mit einem Kapitel](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) identisch, bis auf die Tatsache, dass kein Kapitelbeendigungsnetzwerkaufruf gesendet wird.
 
 ## Beispielcode {#sample-code}
 
