@@ -1,14 +1,14 @@
 ---
 title: Live-Hauptinhalt
-description: Ein Beispiel für die Verfolgung von Live-Inhalten mit dem Media SDK.
+description: Ein Beispiel für das Tracking von Live-Inhalten mit dem Media SDK.
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Live-Hauptinhalt{#live-main-content}
+# Live-Hauptinhalt {#live-main-content}
 
 ## Szenario {#scenario}
 
@@ -16,14 +16,14 @@ In diesem Szenario gibt es ein Live-Asset ohne Wiedergabe von Anzeigen für 40 
 
 | Auslöser | Heartbeat-Methode | Netzwerkaufrufe | Hinweise   |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Dies kann ein Anwender sein, der auf **[!UICONTROL Abspielen]klickt, oder ein Ereignis bei automatischer Wiedergabe.** |
-| Das erste Bild des Mediums wird wiedergegeben. | `trackPlay` | Heartbeat Content Play | Diese Methode löst den Timer aus. Heartbeats werden während der Dauer der Wiedergabe alle zehn Sekunden gesendet. |
+| Benutzer klickt auf **[!UICONTROL Abspielen]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Dies kann ein Anwender sein, der auf **[!UICONTROL Abspielen]** klickt, oder ein Ereignis bei automatischer Wiedergabe. |
+| Das erste Medienbild wird wiedergegeben. | `trackPlay` | Heartbeat Content Play | Diese Methode löst den Timer aus. Heartbeats werden während der Dauer der Wiedergabe alle zehn Sekunden gesendet. |
 | Der Inhalt wird wiedergegeben. |  | Content Heartbeats |  |
-| Die Sitzung ist beendet. | `trackSessionEnd` |  | `SessionEnd` steht für das Ende einer Anzeigesitzung. Diese API muss auch dann aufgerufen werden, wenn der Benutzer die Medien nicht bis zum Abschluss verbraucht. |
+| Die Sitzung ist beendet. | `trackSessionEnd` |  | `SessionEnd` steht für das Ende einer Anzeigesitzung. Diese API muss auch dann aufgerufen werden, wenn der Benutzer die Medien nicht bis zum Ende konsumiert. |
 
 ## Parameter {#parameters}
 
-Viele der Werte bei Adobe Analytics Content Start-Aufrufen sind auch bei Heartbeat Content Start-Aufrufen vorhanden. Außerdem werden Ihnen viele weitere Parameter angezeigt, die Adobe zum Füllen der verschiedenen Medienberichte in Adobe Analytics verwendet. Davon werden im Folgenden nur die wichtigsten Parameter behandelt.
+Viele der Werte bei Adobe Analytics Content Start-Aufrufen sind auch bei Heartbeat Content Start-Aufrufen vorhanden. Außerdem verwendet Adobe noch viele weitere Parameter, um die verschiedenen Medienberichte in Adobe Analytics zu füllen. Davon werden im Folgenden nur die wichtigsten Parameter behandelt.
 
 ### Heartbeat Content Start
 
@@ -36,7 +36,7 @@ Viele der Werte bei Adobe Analytics Content Start-Aufrufen sind auch bei Heartbe
 | `s:asset:type` | "main" |  |
 | `s:asset:mediao_id` | &lt;Ihr Medienname&gt; |  |
 | `s:stream:type` | live |  |
-| `s:meta:*` | optional | Benutzerdefinierte Metadaten, die auf dem Medium festgelegt wurden |
+| `s:meta:*` | optional | Im Medium festgelegte benutzerdefinierte Metadaten |
 
 ## Content Heartbeats {#content-heartbeats}
 
@@ -51,21 +51,21 @@ Suchen Sie in den Inhalts-Heartbeats nach einigen speziellen Elementen:
 
 ## Heartbeat Content Complete {#heartbeat-content-complete}
 
-In diesem Szenario gibt es keinen vollständigen Aufruf, da der Live-Stream nie abgeschlossen wurde.
+In diesem Szenario wird kein Abschlussaufruf gesendet, da der Live-Stream nie abgeschlossen wurde.
 
-## Abspielkopfwerteinstellungen
+## Einstellungen der Abspielleistenwerte
 
-Bei LIVE-Streams müssen Sie die Abspielleiste auf einen Offset vom Beginn der Programmierung einstellen, damit Analytiker in der Berichterstellung bestimmen können, zu welchem Zeitpunkt Benutzer den LIVE-Stream innerhalb einer 24-Stunden-Ansicht verbinden und verlassen.
+Bei LIVE-Streams müssen Sie die Abspielleiste auf einen Versatz von Beginn der Programmierung einstellen, damit Analytiker in der Berichterstellung innerhalb einer 24-Stunden-Ansicht bestimmen können, an welchem Punkt Benutzer dem LIVE-Stream beitreten und ihn verlassen.
 
 ### Am Anfang
 
-Bei LIVE-Medien müssen Sie, wenn ein Benutzer mit der Wiedergabe des Streams beginnt, den aktuellen Offset in Sekunden `l:event:playhead` festlegen. Dies ist im Gegensatz zu VOD, wo Sie die Abspielleiste auf "0"setzen würden.
+Bei LIVE-Medien müssen Sie, wenn ein Benutzer mit der Wiedergabe des Streams beginnt, `l:event:playhead` auf den aktuellen Versatz in Sekunden festlegen. Dies ist im Gegensatz zu VOD, wo Sie die Abspielleiste auf „0“ festlegen würden.
 
-Beispiel: Ein LIVE-Streaming-Ereignis beginnt um Mitternacht und dauert 24 Stunden (`a.media.length=86400`; `l:asset:length=86400`). Nehmen wir an, ein Benutzer beginnt um 22.00 Uhr mit der Wiedergabe des LIVE-Streams. In diesem Szenario sollten Sie `l:event:playhead` auf 43200 (12 Stunden bis zum Stream) einstellen.
+Beispiel: Ein LIVE-Streaming-Ereignis beginnt um Mitternacht und dauert 24 Stunden (`a.media.length=86400`; `l:asset:length=86400`). Nehmen wir an, ein Benutzer beginnt um 12:00 Uhr mit der Wiedergabe des LIVE-Streams. In diesem Szenario sollten Sie `l:event:playhead` auf 43200 (12 Stunden bis zum Stream) festlegen.
 
-### Bei Anhalten
+### Beim Anhalten
 
-Bei Unterbrechung der Wiedergabe muss dieselbe Logik wie bei der Live-Abspielleiste angewendet werden. Wenn der Benutzer zum Abspielen des LIVE-Streams zurückkehrt, müssen Sie den `l:event:playhead` Wert auf die neue Position der Offset-Abspielleiste festlegen, _nicht_ auf den Punkt, an dem der Benutzer den LIVE-Stream angehalten hat.
+Dieselbe Live-Abspielleistenlogik, die zu Beginn der Wiedergabe angewendet wurde, muss angewendet werden, wenn ein Benutzer die Wiedergabe anhält. Wenn der Benutzer zum Abspielen des LIVE-Streams zurückkehrt, müssen Sie den `l:event:playhead`-Wert auf die neue versetzte Position der Abspielleiste festlegen, _nicht_ auf den Punkt, an dem der Benutzer den LIVE-Stream angehalten hat.
 
 ## Beispielcode {#sample-code}
 
