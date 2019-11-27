@@ -9,7 +9,7 @@ tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/de/analytics/kt/index/analytics-videos.html
 git-repo: https://github.com/AdobeDocs/media-analytics.en
 index: true
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e074a77406f907ad66ac8e8ed1b44300596c065a
 
 ---
@@ -19,7 +19,7 @@ source-git-commit: e074a77406f907ad66ac8e8ed1b44300596c065a
 
 Die Datei metadata.md enthält Metadaten auf Repo-Ebene, die an die TOC.md-Dateien des Benutzerhandbuchs im Repo weitergegeben werden. Wenn Sie den Inhalt von metadata.md für ein Benutzerhandbuch ändern möchten, tun Sie dies in einer beliebigen TOC.md-Datei.
 
-| Metadaten | was es macht |
+| metadata | was es macht |
 |--- |--- |
 | solution-title | Wird in der Artikelkopfzeile als Link verwendet. Halten Sie sich kurz. |
 | solution-hub-url | Öffnet die helpx-Hub-Seite |
