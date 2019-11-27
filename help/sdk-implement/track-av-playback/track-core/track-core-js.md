@@ -1,21 +1,21 @@
 ---
 title: Tracking von Core-Wiedergaben auf JavaScript
-description: In diesem Thema wird beschrieben, wie Sie die Core-Tracking mit dem Media SDK in Browser-Apps (JS) implementieren.
+description: Hier wird die Implementierung des Core-Trackings mit dem Media SDK in Browser-Anwendungen (JS) beschrieben.
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Tracking von Core-Wiedergaben auf JavaScript{#track-core-playback-on-javascript}
+# Tracking von Core-Wiedergaben auf JavaScript {#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
->Diese Dokumentation behandelt die Verfolgung in Version 2.x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
+>Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
 
-1. **Einrichtung der anfänglichen Verfolgung**
+1. **Tracking-Ersteinrichtung**
 
-   Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
+   Identifizieren Sie, wenn der Benutzer die Wiedergabe auslöst (Benutzer klickt auf „Abspielen“ und/oder die automatische Wiedergabe ist aktiviert), und erstellen Sie eine `MediaObject`-Instanz.
 
    [createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createMediaObject)
 
@@ -24,21 +24,21 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `name` | Medienname | Ja |
    | `mediaid` | Eindeutige Medienkennung | Ja |
    | `length` | Medienlänge | Ja |
-   | `streamType` | Stream-Typ (siehe _StreamType-Konstanten_ unten) | Ja |
+   | `streamType` | Streamtyp (siehe _StreamType-Konstanten_ unten) | Ja |
    | `mediaType` | Medientyp (siehe _MediaType-Konstanten_ unten) | Ja |
 
-   **`StreamType`Konstanten:**
+   **`StreamType`-Konstanten:**
 
    | Konstantenname | Beschreibung   |
    |---|---|
    | `VOD` | Streamtyp für Video on Demand |
    | `LIVE` | Streamtyp für Live-Inhalt |
    | `LINEAR` | Streamtyp für Linear-Inhalt |
-   | `AOD` | Stream-Typ für Audio on Demand. |
+   | `AOD` | Streamtyp für Audio on Demand. |
    | `AUDIOBOOK` | Streamtyp für Hörbuch. |
    | `PODCAST` | Streamtyp für Podcast. |
 
-   **`MediaType`Konstanten:**
+   **`MediaType`-Konstanten:**
 
    | Konstantenname | Beschreibung |
    |---|---|
@@ -54,9 +54,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
                                      <MEDIA_TYPE>);
    ```
 
-1. **Anhängen von Metadaten**
+1. **Metadaten anhängen**
 
-   Fügen Sie der Verfolgungssitzung optional Standard- und/oder benutzerdefinierte Metadatenobjekte über Kontextdatenvariablen hinzu.
+   Optional können Standard- bzw. benutzerdefinierte Metadatenobjekte über Kontextdatenvariablen an die Tracking-Sitzung angehängt werden.
 
    * **Standard-Metadaten**
 
@@ -68,10 +68,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       * Medien-Metadatenschlüssel API-Referenz: [Standard-Metadatenschlüssel - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         See the comprehensive set of available metadata here: [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)
+         Hier sehen Sie den umfassenden Satz der verfügbaren Metadaten: [Audio- und Videoparameter](/help/metrics-and-metadata/audio-video-parameters.md)
    * **Benutzerspezifische Metadaten**
 
-      Erstellen Sie ein Variablenobjekt für die benutzerdefinierten Variablen und füllen Sie die Daten für dieses Medium aus. Beispiel:
+      Erstellen Sie ein Variablenobjekt für die benutzerdefinierten Variablen und fügen Sie die Daten für dieses Medium ein. Beispiel:
 
       ```js
       /* Set custom context data */ 
@@ -83,9 +83,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       ```
 
 
-1. **Verfolgung der Absicht, die Wiedergabe zu starten**
+1. **Absicht, die Wiedergabe zu starten, verfolgen**
 
-   Um mit der Verfolgung einer Mediensitzung zu beginnen, rufen Sie `trackSessionStart` die Media Heartbeat-Instanz auf:
+   Rufen Sie `trackSessionStart` in der Media Heartbeat-Instanz auf, um eine Mediensitzung zu verfolgen:
 
    ```js
    mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
@@ -93,7 +93,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!TIP]
    >
-   >Der zweite Wert ist der benutzerdefinierte Medienmetadatenobjektname, den Sie in Schritt 2 erstellt haben.
+   >Der zweite Wert ist der Name des benutzerdefinierten Medienmetadatenobjekts, den Sie in Schritt 2 erstellt haben.
 
    >[!IMPORTANT]
    >
@@ -101,19 +101,19 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!NOTE]
    >
-   >If you are not using custom metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
+   >Wenn Sie keine benutzerdefinierten Metadaten verwenden, senden Sie einfach ein leeres Objekt für das `data`-Argument in `trackSessionStart`, wie in der Kommentarzeile im obigen iOS-Beispiel gezeigt.
 
-1. **Den tatsächlichen Start der Wiedergabe verfolgen**
+1. **Tatsächlichen Wiedergabebeginn verfolgen**
 
-   Identify the event from the media player for the beginning of the playback, where the first frame of the media is rendered on the screen, and call `trackPlay`:
+   Identifizieren Sie das Ereignis für den Anfang der Wiedergabe im Medienplayer, sobald der erste Frame des Mediums auf dem Bildschirm angezeigt wird, und rufen Sie `trackPlay` auf:
 
    ```js
    mediaHeartbeat.trackPlay();
    ```
 
-1. **Verfolgen Sie den Abschluss der Wiedergabe.**
+1. **Ende der Wiedergabe verfolgen**
 
-   Identify the event from the media player for the completion of the playback, where the user has watched the content until the end, and call `trackComplete`:
+   Identifizieren Sie das Ereignis für den Abschluss der Wiedergabe im Medienplayer, wenn der Inhalt bis zum Ende angesehen wurde, und rufen Sie `trackComplete` auf:
 
    ```js
    mediaHeartbeat.trackComplete();
@@ -121,7 +121,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. **Ende der Sitzung verfolgen**
 
-   Identify the event from the media player for the unloading/closing of the playback, where the user closes the media and/or the media is completed and has been unloaded, and call `trackSessionEnd`:
+   Identifizieren Sie das Ereignis für das Entladen/Schließen der Wiedergabe im Medienplayer, wenn der Benutzer das Medium schließt bzw. das Medium abgeschlossen ist und entladen wird, und rufen Sie `trackSessionEnd` auf:
 
    ```js
    mediaHeartbeat.trackSessionEnd();
@@ -129,26 +129,26 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` markiert das Ende einer Tracking-Sitzung. Wenn die Sitzung erfolgreich bis zum Ende wiedergegeben wurde und der Anwender den Inhalt bis zum Schluss angesehen hat, müssen Sie `trackComplete` vor `trackSessionEnd` aufrufen. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+   >`trackSessionEnd` markiert das Ende einer Tracking-Sitzung. Wenn die Sitzung erfolgreich bis zum Ende wiedergegeben wurde und der Anwender den Inhalt bis zum Schluss angesehen hat, müssen Sie `trackComplete` vor `trackSessionEnd` aufrufen. Jeder andere `track*`-API-Aufruf nach `trackSessionEnd` wird ignoriert, mit Ausnahme von `trackSessionStart` für eine neue Tracking-Sitzung.
 
 1. **Alle möglichen Pausenszenarien verfolgen**
 
-   Identifizieren Sie das Ereignis zum Anhalten und Aufrufen im Medienplayer `trackPause`:
+   Identifizieren Sie das Ereignis im Medienplayer für Anhalten und rufen Sie `trackPause` auf:
 
    ```js
    mediaHeartbeat.trackPause();
    ```
 
-   **Szenarios anhalten**
+   **Pausenszenarien**
 
-   Identify any scenario in which the media player will pause and make sure that `trackPause` is properly called. In allen folgenden Szenarios muss Ihre App `trackPause()` () aufrufen:
+   Identifizieren Sie alle Szenarios, in denen der Medienplayer angehalten wird, und stellen Sie sicher, dass `trackPause` korrekt aufgerufen wird. In allen folgenden Szenarios muss Ihre App `trackPause()` () aufrufen:
 
    * Der Anwender betätigt in der App die Pause-Schaltfläche.
    * Der Player geht selbstständig in den Pausenstatus über.
    * (*Mobile Apps*): Der Anwender setzt die App in den Hintergrund, Sie möchten die Sitzung jedoch geöffnet halten.
    * (*Mobile Apps*): Es tritt eine Systemunterbrechung auf, die dafür sorgt, dass die Anwendung im Hintergrund ausgeführt wird. Wenn der Anwender beispielsweise einen Anruf erhält oder eine Popup-Nachricht einer anderen App angezeigt wird, die Anwendung die Sitzung jedoch aktiv halten soll, damit der Anwender das Medium fortsetzen kann.
 
-1. Identify the event from the player for play and/or resume from pause and call `trackPlay`:
+1. Identifizieren Sie das Ereignis aus dem Player bei Wiedergabe und/oder Fortsetzen nach Pause und rufen Sie `trackPlay` auf:
 
    ```js
    mediaHeartbeat.trackPlay();
@@ -156,7 +156,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!TIP]
    >
-   >Dies kann dieselbe Ereignisquelle sein, die in Schritt 4 verwendet wurde. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
+   >Diese Ereignisquelle kann mit der in Schritt 4 verwendeten identisch sein. Stellen Sie sicher, dass jeder `trackPause()`API-Aufruf mit einem nachfolgenden `trackPlay()`-API-Aufruf gepaart wird, wenn die Wiedergabe fortgesetzt wird.
 
 * Tracking-Szenarios: [VOD-Wiedergabe ohne Werbung](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Der im JavaScript-SDK enthaltene Beispiel-Player zeigt ein komplettes Tracking-Beispiel.
