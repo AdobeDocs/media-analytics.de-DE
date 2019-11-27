@@ -1,14 +1,14 @@
 ---
 title: Standard-Metadaten in iOS implementieren
-description: Beschreibt das Festlegen von Standard-Video- und Anzeigenmetadaten, die mit Verfolgungsaufrufen unter iOS gesendet werden.
+description: Beschreibt das Festlegen von Standard-Video- und Anzeigenmetadaten, die mit Tracking-Aufrufen in iOS gesendet werden.
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Standard-Metadaten in iOS implementieren{#implement-standard-metadata-on-ios}
+# Standard-Metadaten in iOS implementieren {#implement-standard-metadata-on-ios}
 
 ## Metadaten-Konstanten
 
@@ -18,12 +18,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Implementierung
 
-1. Create a dictionary of standard metadata key value pairs using the `ADBStandardMetadataKeys`
-   [IOS-Metadatenschlüssel](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+1. Erstellen Sie mit `ADBStandardMetadataKeys` ein Wörterbuch mit Schlüssel-Wert-Paaren für Standard-Metadaten.
+   [iOS-Metadatenschlüssel](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
-1. Legen Sie das Wörterbuch für Standard-Metadaten bei der `MediaInfo``ADBMediaObject` --Instanz mit der Standard-Metadatenkonstante fest.
+1. Legen Sie das Wörterbuch für Standard-Metadaten bei der `MediaInfo``ADBMediaObject`-Instanz mit der Standard-Metadatenkonstante fest.
 
-1. Provide this `MediaInfo` object while invoking the `trackSessionStart` API.
+1. Geben Sie dieses `MediaInfo`-Objekt an, während Sie die `trackSessionStart`-API aufrufen.
 
 ### Beispielimplementierung
 
