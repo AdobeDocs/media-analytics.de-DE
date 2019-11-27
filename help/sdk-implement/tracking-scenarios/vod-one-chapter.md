@@ -1,14 +1,14 @@
 ---
 title: VOD-Wiedergabe mit einem Kapitel
-description: Ein Beispiel für die Verfolgung der VOD-Wiedergabe, das ein Kapitel enthält.
+description: Ein Beispiel für das Tracking der VOD-Wiedergabe, die ein Kapitel enthält.
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# VOD-Wiedergabe mit einem Kapitel{#vod-playback-with-one-chapter}
+# VOD-Wiedergabe mit einem Kapitel {#vod-playback-with-one-chapter}
 
 ## Szenario {#scenario}
 
@@ -18,18 +18,18 @@ Wenn nichts anderes angegeben ist, sind die Netzwerkaufrufe in diesem Szenario m
 
 | Auslöser   | Heartbeat-Methode   | Netzwerkaufrufe   | Hinweise   |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist noch nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Daher sind diese Netzwerkaufrufe noch mit denen im Einzel-VoD-Szenario identisch. |
+| Benutzer klickt auf **[!UICONTROL Abspielen]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist noch nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Daher sind diese Netzwerkaufrufe noch mit denen im Einzel-VoD-Szenario identisch. |
 | Das Kapitel beginnt. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
 | Das erste Bild des Kapitels wird wiedergegeben. | `trackPlay` | Heartbeat Content Play | Wenn Kapitelinhalt vor dem Hauptinhalt wiedergegeben wird, beginnen die Heartbeats mit dem Kapitelstart. |
 | Das Kapitel wird wiedergegeben. |  | Chapter Heartbeats |  |
 | Das Kapitel ist abgeschlossen. | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | Dies ist der Punkt, an dem das Ende des Kapitels erreicht wird. |
 | Der Inhalt wird wiedergegeben. |  | Content Heartbeats | Dieser Netzwerkaufruf ist mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. |
 | Der Inhalt ist abgeschlossen. | `trackComplete` | Heartbeat Content Complete | Dieser Netzwerkaufruf ist mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. |
-| Die Sitzung ist beendet. | `trackSessionEnd` |  | `SessionEnd` bedeutet, dass das Ende einer Wiedergabesitzung erreicht wurde. Diese API muss auch dann aufgerufen werden, wenn der Benutzer die Medien nicht bis zum Abschluss ansieht. |
+| Die Sitzung ist beendet. | `trackSessionEnd` |  | `SessionEnd` bedeutet, dass das Ende einer Wiedergabesitzung erreicht wurde. Diese API muss auch dann aufgerufen werden, wenn der Benutzer die Medien nicht bis zum Ende anschaut. |
 
 ## Parameter {#parameters}
 
-When chapter playback begins, a `Heartbeat Chapter Start` call is sent. Wenn der Anfang des Kapitels nicht auf den 10-Sekunden-Timer fällt, wird der `Heartbeat Chapter Start`-Aufruf um einige Sekunden verzögert. Der Aufruf wird dann mit dem nächsten 10-Sekunden-Intervall gesendet.
+Bei Beginn der Kapitelwiedergabe wird ein `Heartbeat Chapter Start`-Aufruf gesendet. Wenn der Anfang des Kapitels nicht auf den 10-Sekunden-Timer fällt, wird der `Heartbeat Chapter Start`-Aufruf um einige Sekunden verzögert. Der Aufruf wird dann mit dem nächsten 10-Sekunden-Intervall gesendet.
 
 In diesem Fall wird ein `Content Heartbeat`-Aufruf in demselben Intervall gesendet. Sie können zwischen diesen beiden Aufrufen unterscheiden, indem Sie den Ereignistyp und den Assettyp untersuchen:
 
