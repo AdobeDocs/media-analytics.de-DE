@@ -1,20 +1,20 @@
 ---
 title: Suchen-Tracking in JavaScript
-description: In diesem Thema wird die Implementierung der Suchverfolgung mit dem Media SDK in Browser-Apps (JS) beschrieben.
+description: Hier wird die Implementierung des Suchen-Trackings mit dem Media SDK in Browser-Apps (JS) beschrieben.
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Suchen-Tracking in JavaScript{#track-seeking-on-javascript}
+# Suchen-Tracking in JavaScript {#track-seeking-on-javascript}
 
 >[!IMPORTANT]
 >
 >Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie hier die 1.x-Entwicklerhandbücher herunterladen.[SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
-## Suchverfolgungskonstanten
+## Suchen-Tracking-Konstanten
 
 | Konstantenname | Beschreibung     |
 |---|---|
