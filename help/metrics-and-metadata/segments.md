@@ -16,9 +16,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | Segment | Beschreibung | Regel |
 |---|---|---|
-| Medien-Streamtyp: Alle | Segmentieren aller Daten des *Medienstreams* | „Content (ID) exists“ |
-| Medien-Streamtyp: Audio | Segmentieren aller Daten des *Audiostreams* | „Content (ID) exists“ UND „Media Stream Type = `audio`“ |
-| Medien-Streamtyp: Video | Segmentieren aller Daten des *Videostreams* | „Content (ID) exists“ UND „Media Stream Type != `audio`“ |
+| Medien-Streamtyp: Alle | Segmentieren aller Daten des *Medienstreams* | "Content (ID) exists" |
+| Medien-Streamtyp: Audio | Segmentieren aller Daten des *Audiostreams* | "Content (ID) exists" UND "Media Stream Type = `audio`" |
+| Medien-Streamtyp: Video | Segmentieren aller Daten des *Videostreams* | "Content (ID) exists" UND "Media Stream Type != `audio`" |
 | Medien-Content-Typ: VoD | Segmentieren aller VoD-Inhalte | "Content-Typ = `vod`" |
 | Medien-Content-Typ: Live | Segmentieren aller Live-Inhalte | "Content-Typ = `live`" |
 | Medien-Content-Typ: Linear | Segmentieren aller linearen Inhalte | "Content-Typ = `linear`" |
