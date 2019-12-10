@@ -24,7 +24,7 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone- und der 
 | --- | --- | --- |
 | Inhalt | eVar<br/><br/> Standardgültigkeit: Besuch | Inhalt |
 | Content-Typ | eVar<br/><br/> Standardgültigkeit: Seitenansicht | Content-Typ |
-| Inhaltsbesuchszeit | Ereignis-<br/><br/> Typ: Zähler | Inhaltsbesuchszeit |
+| Inhaltsbesuchszeit | Ereignistyp<br/><br/>: Zähler | Inhaltsbesuchszeit |
 | Videoaufrufe | Ereignis-<br/><br/> Typ: Zähler | Videoaufrufe |
 | Videobeendigungen | Ereignis-<br/><br/> Typ: Zähler | Inhaltsbeendigung |
 
