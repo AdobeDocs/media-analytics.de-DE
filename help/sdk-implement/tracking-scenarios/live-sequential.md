@@ -25,7 +25,7 @@ Dieses Szenario ist mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-im
 | Folge 2 gestartet (Start von Sitzung 2) | trackSessionStart | Analytics Content Start Heartbeat Content Start | Dies tritt auf, wenn der Anwender die erste Folge geschaut und direkt mit einer weiteren Folge begonnen hat. |
 | Erstes Medienbild | trackPlay | Heartbeat Content Play | Durch diese Methode wird der Timer ausgelöst. Daraufhin werden während der Wiedergabedauer alle zehn Sekunden Heartbeats gesendet. |
 | Inhalt wird wiedergegeben. |  | Content Heartbeats |  |
-| Sitzung beendet (Folge 2 beendet) | trackComplete / trackSessionEnd | Heartbeat Content Complete | „Complete“ bedeutet, dass Sitzung 2 für die zweite Folge erreicht und vollständig angeschaut wurde. Bevor die Sitzung für die nächste Folge gestartet werden kann, muss diese Sitzung beendet werden. |
+| Sitzung beendet (Folge 2 beendet) | trackComplete / trackSessionEnd | Heartbeat Content Complete | „Complete“ bedeutet, dass Sitzung 2 für die zweite Folge erreicht und vollständig angeschaut wurde. Bevor die Sitzung für die nächste Folge gestartet werden kann, muss diese Sitzung beendet werden. |
 
 ## Parameter {#parameters}
 
