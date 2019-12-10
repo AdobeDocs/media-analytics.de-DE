@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Analytics-Daten
 
-| Anforderungsschlüssel  | Erforderlich | Festgelegt in |  Beschreibung  |
+| Anforderungsschlüssel  | erforderlich | Festgelegt in |  Beschreibung  |
 | --- | :---: | :---: | --- |
 | `analytics.trackingServer` | Y | `sessionStart` | Die URL Ihres Adobe Analytics-Servers |
 | `analytics.reportSuite` | Y | `sessionStart` | Die ID, die Ihre Analytics-Reporting-Daten identifiziert |
@@ -21,7 +21,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Besucherdaten
 
-| Anforderungsschlüssel  | Erforderlich | Festgelegt in |  Beschreibung  |
+| Anforderungsschlüssel  | erforderlich | Festgelegt in |  Beschreibung  |
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | `sessionStart` | Die Experience Cloud-Organisations-ID, die Ihre Organisation innerhalb der Adobe Experience Cloud-Umgebung identifiziert |
 | `visitor.marketingCloudUserId` | N | `sessionStart` | Dies ist die Experience Cloud-Benutzer-ID (ECID). In den meisten Szenarien ist dies die ID, die Sie zur Identifizierung eines Benutzers verwenden sollten. Die `marketingCloudUserId` in Heartbeat entspricht der `MID` in Adobe Analytics. Dieser Parameter ist zwar technisch nicht erforderlich, aber für den Zugriff auf die Apps der Experience Cloud-Familie erforderlich. |
@@ -30,7 +30,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Inhaltsdaten
 
-| Anforderungsschlüssel  | Erforderlich | Festgelegt in |  Beschreibung  |
+| Anforderungsschlüssel  | erforderlich | Festgelegt in |  Beschreibung  |
 | --- | :---: | :---: | --- |
 | `media.id` | Y | `sessionStart` | Eindeutige Kennung für den Inhalt |
 | `media.name` | N | `sessionStart` | Lesbarer Name für den Inhalt |
@@ -43,7 +43,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Standardmäßige Inhaltsmetadaten
 
-| Anforderungsschlüssel  | Erforderlich | Festgelegt in |  Beschreibung  |
+| Anforderungsschlüssel  | erforderlich | Festgelegt in |  Beschreibung  |
 | --- | :---: | :---: | --- |
 | `media.show` | N | `sessionStart` | Der Name des Programms oder der Serie |
 | `media.season` | N | `sessionStart` | Die Staffelnummer der Sendung oder Serie |
@@ -64,7 +64,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Anzeigedaten
 
-| Anforderungsschlüssel  | Erforderlich | Festgelegt in |  Beschreibung  |
+| Anforderungsschlüssel  | erforderlich | Festgelegt in |  Beschreibung  |
 | --- | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | N | `adBreakStart` | Der Anzeigename der Werbeunterbrechung |
 | `media.ad.podIndex` | Y | `adBreakStart` | Der Index der Anzeigen-Pods im Video |
@@ -77,7 +77,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Standardmäßige Anzeigenmetadaten
 
-| Anforderungsschlüssel  | Erforderlich | Festgelegt in |  Beschreibung  |
+| Anforderungsschlüssel  | erforderlich | Festgelegt in |  Beschreibung  |
 | --- | :---: | :---: | --- |
 | `media.ad.advertiser` | N | `adStart` | Das Unternehmen oder die Marke des Produkts, das in der Anzeige vorgestellt wird |
 | `media.ad.campaignId` | N | `adStart` | Die ID der Anzeigenkampagne |
@@ -88,7 +88,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Kapiteldaten
 
-| Anforderungsschlüssel  | Erforderlich | Festgelegt in |  Beschreibung  |
+| Anforderungsschlüssel  | erforderlich | Festgelegt in |  Beschreibung  |
 | --- | :---: | :---: | --- |
 | `media.chapter.index` | Y | `chapterStart` | Identifiziert die Position des Kapitels im Inhalt |
 | `media.chapter.offset` | Y | `chapterStart` | Die Sekunde, in der die Wiedergabe des Kapitels beginnt |
@@ -97,7 +97,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Qualitätsdaten
 
-| Anforderungsschlüssel  | Erforderlich | Festgelegt in |  Beschreibung  |
+| Anforderungsschlüssel  | erforderlich | Festgelegt in |  Beschreibung  |
 | --- | :---: | :---: | --- |
 | `media.qoe.bitrate` | N | Alle | Die Bitrate des Streams |
 | `media.qoe.droppedFrames` | N | Alle | Die Anzahl der Dropped Frames im Stream |
@@ -106,7 +106,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Parameter des California Consumer Privacy Act (CCPA) {#ccpa-params}
 
-| Anforderungsschlüssel  | Erforderlich | Festgelegt in |  Beschreibung  |
+| Anforderungsschlüssel  | erforderlich | Festgelegt in |  Beschreibung  |
 | --- | :---: | :---: | --- |
 | `analytics.optOutServerSideForwarding` | N | `sessionStart` | Auf „true“ (wahr) setzen, wenn der Endbenutzer die Freigabe seiner Daten für Adobe Analytics und andere Experience Cloud-Lösungen (z. B. Audience Manager) abgelehnt hat. |
 | `analytics.optOutShare` | N | `sessionStart` | Auf „true“ (wahr) setzen, wenn der Endbenutzer die Verknüpfung seiner Daten (z. B. mit anderen Adobe Analytics-Clients) abgelehnt hat. |
