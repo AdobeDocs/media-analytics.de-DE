@@ -18,7 +18,7 @@ Von `ADBStandardMetadataKeys.h`:
 
 | Konstantenname | Beschreibung | Typ |
 |---|---|---|
-| `ADBVideoMetadataKeySHOW` | Serie | Video |
+| `ADBVideoMetadataKeySHOW` | Show | Video |
 | `ADBVideoMetadataKeySEASON` | Staffel | Video |
 | `ADBVideoMetadataKeyEPISODE` | Episode | Video |
 | `ADBVideoMetadataKeyASSET_ID` | Asset | Video |
