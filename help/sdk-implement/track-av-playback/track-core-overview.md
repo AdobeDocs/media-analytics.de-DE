@@ -97,7 +97,7 @@ Das Tracking der Core-Wiedergabe umfasst die Verfolgung der Medienladung, des Me
 
 1. **Metadaten anhängen:** Optional können standardmäßige und/oder anwenderdefinierte Metadatenobjekte über Kontextdatenvariablen an die Tracking-Sitzung angehängt werden.
 
-   * **Standardmetadaten:**
+   * **Standard-Metadaten -**
 
       >[!NOTE]
       >
