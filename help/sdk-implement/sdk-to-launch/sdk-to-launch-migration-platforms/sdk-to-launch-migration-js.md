@@ -1,24 +1,24 @@
 ---
-title: Migration vom eigenständigen Media SDK zu Adobe Launch - Web (JS)
-description: Anweisungen und Codebeispiele, die bei der Migration vom Media SDK zum Start helfen.
-translation-type: tm+mt
+title: Migration vom Standalone Media SDK zu Adobe Launch – Web (JS)
+description: Anleitungen und Code-Beispiele für die Migration vom Media SDK zu Launch
+translation-type: ht
 source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
 
 ---
 
 
-# Migration vom eigenständigen Media SDK zu Adobe Launch - Web (JS)
+# Migration vom Standalone Media SDK zu Adobe Launch – Web (JS)
 
 ## Funktionsunterschiede
 
-* *Start* - Launch bietet eine Benutzeroberfläche, die Sie durch Einrichten, Konfigurieren und Bereitstellen Ihrer webbasierten Medienverfolgungslösungen führt. Der Start verbessert sich beim dynamischen Tag-Management (DTM).
-* *Media SDK* - Das Media SDK bietet Ihnen Medienverfolgungsbibliotheken für bestimmte Plattformen (z. B.: Android, iOS usw.). Adobe empfiehlt Media SDK zur Verfolgung der Mediennutzung in Ihren mobilen Apps.
+* *Launch* – Launch bietet eine Benutzeroberfläche, die Sie durch den Einrichtungs-, Konfigurations- und Bereitstellungsvorgang für Ihre webbasierten Medien-Tracking-Lösungen führt. Launch wird durch das Dynamic Tag Management (DTM) optimiert.
+* *Media SDK* – Das Media SDK bietet Ihnen Medien-Tracking-Bibliotheken für bestimmte Plattformen (z. B.: Android und iOS). Adobe empfiehlt das Media SDK zum Tracking der Mediennutzung in Ihren mobilen Apps.
 
 ## Konfiguration
 
-### Eigenständiges Media SDK
+### Standalone Media SDK
 
-Im eigenständigen Media SDK konfigurieren Sie die Verfolgungskonfiguration in der App und übergeben sie an das SDK, wenn Sie den Tracker erstellen.
+Im Standalone Media SDK konfigurieren Sie das Tracking in der App und diese Konfiguration wird beim Erstellen des Trackers an das SDK übergeben.
 
 ```javascript
 //Media Heartbeat initialization
@@ -32,26 +32,25 @@ mediaConfig.ssl = true;
 mediaConfig.debugLogging = true;
 ```
 
-Zusätzlich zur `MediaHeartbeat` Konfiguration muss die Seite die `AppMeasurement` `VisitorAPI` Instanz und Instanz für die Medienverfolgung konfigurieren und übergeben, damit sie ordnungsgemäß funktioniert.
+Zusätzlich zur `MediaHeartbeat`-Konfiguration muss auf der Seite die `AppMeasurement` und `VisitorAPI` -Instanz für das Medien-Tracking konfiguriert und bereitgestellt werden, damit die Seite ordnungsgemäß funktioniert.
 
-### Erweiterung starten
+### Launch-Erweiterung
 
-1. Klicken Sie unter "Experience Platform Launch"für Ihre Webeigenschaft auf die Registerkarte [!UICONTROL Erweiterungen] .
-1. Suchen Sie auf der Registerkarte " [!UICONTROL Katalog] "die Erweiterung Adobe Media Analytics for Audio and Video und klicken Sie auf [!UICONTROL Installieren].
-1. Konfigurieren Sie auf der Seite "Erweiterungseinstellungen"die Verfolgungsparameter.
-Die Media-Erweiterung verwendet die konfigurierten Parameter für die Verfolgung.
+1. Klicken Sie unter „Experience Platform Launch“ für Ihre Web-Eigenschaft auf die Registerkarte [!UICONTROL Erweiterungen].
+1. Suchen Sie auf der Registerkarte [!UICONTROL Katalog] die Erweiterung „Adobe Media Analytics for Audio and Video“ und klicken Sie auf [!UICONTROL Installieren].
+1. Konfigurieren Sie auf der Seite „Erweiterungseinstellungen“ die Tracking-Parameter. Die Media-Erweiterung verwendet zum Tracking die konfigurierten Parameter.
 
    ![](assets/launch_config_js.png)
 
-[Benutzerhandbuch starten - Medienerweiterung installieren und konfigurieren](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
+[Launch-Benutzerhandbuch – Installieren und Konfigurieren der Media-Erweiterung](https://docs.adobe.com/content/help/de-DE/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
 
-## Unterschiede bei der Trackererstellung
+## Unterschiede bei der Tracker-Erstellung
 
-### Medien-SDK
+### Media SDK
 
-1. Fügen Sie Ihrem Entwicklungsprojekt die Medienanalysebibliothek hinzu.
+1. Fügen Sie Ihrem Projekt die Media Analytics-Bibliothek hinzu.
 1. Erstellen Sie ein config-Objekt (`MediaHeartbeatConfig`).
-1. Implementieren Sie das Delegate-Protokoll, und stellen Sie die `getQoSObject()` Funktionen und `getCurrentPlaybackTime()` Funktionen offen.
+1. Implementieren Sie das Delegate-Protokoll, das die Funktionen `getQoSObject()` und `getCurrentPlaybackTime()` verfügbar macht.
 1. Erstellen Sie eine Media Heartbeat-Instanz (`MediaHeartbeat`).
 
 ```
@@ -73,46 +72,46 @@ mediaDelegate.getQoSObject = function() {
 this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
 ```
 
-[Media SDK - Trackererstellung](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html)
+[Media SDK – Tracker-Erstellung](https://docs.adobe.com/content/help/de-DE/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html)
 
 ### Launch
 
-Launch bietet zwei Ansätze zum Erstellen der Tracking-Infrastruktur. Beide Ansätze verwenden die Media Analytics Launch Extension:
+Launch bietet zwei Methoden zum Erstellen der Tracking-Infrastruktur. Beide Methoden verwenden die Media Analytics Launch-Erweiterung:
 
-1. Verwenden Sie die Medienverfolgungs-APIs einer Webseite.
+1. Verwenden der Medien-Tracking-APIs einer Webseite
 
-   In diesem Szenario exportiert die Media Analytics-Erweiterung die Medienverfolgungs-APIs in eine konfigurierte Variable im globalen Fensterobjekt:
+   In diesem Szenario exportiert die Media Analytics-Erweiterung die Medien-Tracking-APIs in eine konfigurierte Variable im globalen Fensterobjekt:
 
    ```
    window["CONFIGURED_VARIABLE_NAME"].MediaHeartbeat.getInstance
    ```
 
-1. Verwenden Sie die Medienverfolgungs-APIs einer anderen Starterweiterung.
+1. Verwenden der Medien-Tracking-APIs einer anderen Launch-Erweiterung
 
-   In diesem Szenario verwenden Sie die Medienverfolgungs-APIs, die von den `get-instance` und `media-heartbeat` freigegebenen Modulen bereitgestellt werden.
+   In diesem Szenario verwenden Sie die Medien-Tracking-APIs, die von den Shared Modules `get-instance` und `media-heartbeat` bereitgestellt werden.
 
    >[!NOTE]
    >
-   >Freigegebene Module sind nicht für die Verwendung auf Webseiten verfügbar. Sie können freigegebene Module nur von einer anderen Erweiterung verwenden.
+   >Shared Modules können nicht auf Webseiten verwendet werden. Sie werden nur in anderen Erweiterungen zur Verfügung gestellt.
 
-   Erstellen Sie eine `MediaHeartbeat` Instanz mit dem `get-instance` Shared Module.
-Übergeben Sie ein Delegate-Objekt an `get-instance` das `getQoSObject()` und `getCurrentPlaybackTime()` Funktionen verfügbar macht.
+   Erstellen Sie eine `MediaHeartbeat`-Instanz mit dem Shared Module `get-instance`.
+Übergeben Sie ein Delegate-Objekt an `get-instance`, das die Funktionen `getQoSObject()` und `getCurrentPlaybackTime()` verfügbar macht.
 
    ```
    var getMediaHeartbeatInstance =
    turbine.getSharedModule('adobe-video-analytics', 'get-instance');
    ```
 
-   Zugriff auf `MediaHeartbeat` Konstanten über das `media-heartbeat` freigegebene Modul.
+   Greifen Sie auf die `MediaHeartbeat`-Konstanten über das Shared Module `media-heartbeat` zu.
 
 ## Verwandte Dokumentation
 
-### Medien-SDK
+### Media SDK
 
-* [JS einrichten](/help/sdk-implement/setup/set-up-js.md)
+* [Einrichten von JS](/help/sdk-implement/setup/set-up-js.md)
 * [Media SDK JS API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 
 ### Launch
 
-* [Übersicht über den Start](https://docs.adobe.com/content/help/en/launch/using/overview.html)
-* [Media Analytics Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+* [Launch-Übersicht](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html)
+* [Media Analytics-Erweiterung](https://docs.adobe.com/content/help/de-DE/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
