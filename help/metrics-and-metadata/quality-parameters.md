@@ -28,7 +28,7 @@ Beschreibung der Tabellendaten:
    * *Berichtsname:* Name des Adobe Analytics-Berichts für die Variable.
    * *Kontextdaten:* Name der Adobe Analytics-Kontextdaten, die an den Reporting-Server übergeben und in Verarbeitungsregeln verwendet werden.
    * *Datenfeed:* Spaltenname für die Variable in Clickstream- oder Live-Stream-Datenfeeds
-   * *Audience Manager:* Eigenschaftsname in Adobe Audience Manager.
+   * *Audience Manager:* Eigenschaftsname in Adobe Audience Manager
 
 ## Qualitätsmetadaten {#quality-metadata}
 
