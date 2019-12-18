@@ -3,7 +3,7 @@ title: 'Zeitlicher Ablauf 3: Kapitel'
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 translation-type: tm+mt
-source-git-commit: 22f7c21feb55f54c0c92db17eadc509966715cf3
+source-git-commit: 5107de22c2388e8ac5b15b8d28fa974e97363fdf
 
 ---
 
@@ -287,7 +287,7 @@ Die Werbeunterbrechung ist vorüber. Während der Werbeunterbrechung wurde der S
 
 **Implementierungsdetails**
 
-Versetzen Sie den Player nach dem Ereignis `adBreakComplete` mit dem Ereignis `play`-Ereignis in den Status „Playing“ (Wiedergabe).
+After the `adBreakComplete` event, put the player in the "playing" state using the `play` event.
 
 **Beispiel-Anfrageinhalt**
 
