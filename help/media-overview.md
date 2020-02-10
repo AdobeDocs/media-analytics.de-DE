@@ -2,7 +2,7 @@
 title: Messen von Audio und Video in Adobe Analytics
 description: 'Adobe Analytics for Media (auch als Media Analytics bezeichnet) bietet Clients eine robuste Medienmessung für Inhalte, Audio und Werbung. '
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 689b7d4ce632d3ddba6704bb8040eec52bfc326f
 
 ---
