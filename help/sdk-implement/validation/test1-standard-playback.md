@@ -2,21 +2,15 @@
 title: 'Test 1: Standardwiedergabe'
 description: Hier wird der Standardwiedergabetest beschrieben, der bei der Validierung verwendet wird.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
 # Test 1: Standardwiedergabe {#test-standard-playback}
 
-In diesem Testfall werden die allgemeine Wiedergabe und Sequenzierung validiert. Dies ist ein erforderliches Element Ihrer Zertifizierungsanfrage.
-
-## Zertifizierungsanfrageformular
-
-**Das Anfrageformular für die Zertifizierung können Sie hier herunterladen ==&gt;**  [Anfrageformular für die Zertifizierung.](cert_req_form.docx)
-
-## Überblick über Zertifizierungstest 1
+In diesem Testfall werden die allgemeine Wiedergabe und Sequenzierung validiert.
 
 Media Analytics-Implementierungen umfassen zwei Arten von Tracking-Aufrufen:
 * Aufrufe, die direkt an Ihren Adobe Analytics (AppMeasurement)-Server gesendet werden. Diese Aufrufe erfolgen bei „Media Start“- und „Ad Start“-Ereignissen.
@@ -145,4 +139,3 @@ Führen Sie die folgenden Aktionen aus und zeichnen Sie sie auf (in der angegebe
 1. **Nächstes Medium in der Wiedergabeliste anzeigen.** Wird das nächste Medium in der Wiedergabeliste gestartet, sollte eine neue Reihe von Medienstart-Aufrufen gesendet werden.
 
 1. **Zwischen Medien oder Streams wechseln.** Beim Wechseln von Live-Streams sollte für den ersten Stream kein Abgeschlossen-Aufruf für Media Analytics gesendet werden. Die Medienstart- und Abspielaufrufe sollten mit dem neuen Sendungs- und Stream-Namen sowie mit den richtigen Werten für Abspielleiste und Dauer für die neue Sendung beginnen.
-
