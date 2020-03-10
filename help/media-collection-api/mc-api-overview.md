@@ -1,20 +1,17 @@
 ---
+seo-title: Überblick
 title: Überblick
 description: null
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
 # Überblick {#overview}
 
-Die Mediensammlungs-API wird von Adobe als RESTful-Alternative zum Client-seitigen Medien-SDK angeboten. Mit der Mediensammlungs-API kann Ihr Player Audio- und Videoereignisse mithilfe von RESTful-HTTP-Anfragen verfolgen. Die Mediensammlungs-API bietet das gleiche Echtzeit-Tracking wie das Medien-SDK sowie eine zusätzliche Funktion:
-
-* **Tracking heruntergeladener Inhalte**
-
-   Diese Funktion gibt Ihnen die Möglichkeit, Medien durch lokale Speicherung von Ereignisdaten zu verfolgen, während ein Benutzer offline ist, bis das Gerät des Benutzers wieder online ist. (Weitere Details unter [Tracking heruntergeladener Inhalte](track-downloaded-content.md).)
+Die Mediensammlungs-API wird von Adobe als RESTful-Alternative zum Client-seitigen Medien-SDK angeboten. Mit der Mediensammlungs-API kann Ihr Player Audio- und Videoereignisse mithilfe von RESTful-HTTP-Anfragen verfolgen.
 
 Die Mediensammlungs-API ist im Grunde ein Adapter, der als serverseitige Version des Medien-SDK fungiert. Das bedeutet, dass einige Aspekte der Medien-SDK-Dokumentation auch für die Mediensammlungs-API relevant sind. Beispielsweise verwenden beide Lösungen dieselben [Audio- und Video-Parameter](/help/metrics-and-metadata/audio-video-parameters.md), und die erfassten Audio- und Video-Tracking-Daten führen zu derselben [Berichterstellung und Analyse](/help/media-reports/media-reports-enable.md).
 
@@ -34,13 +31,13 @@ Die über die Mediensammlungs-API erfassten Tracking-Daten werden gesendet und z
 
 ### API-Aufrufe {#mc-api-calls}
 
-* **`sessions`**: Stellt eine Sitzung mit dem Server her und gibt eine Sitzungs-ID zurück, die in nachfolgenden `events`-Aufrufen verwendet wird. Ihre Anwendung führt diesen Aufruf zu Beginn einer Tracking-Sitzung durch.
+* **`sessions`-**Legt eine Sitzung mit dem Server fest und gibt eine Sitzungs-ID zurück, die bei nachfolgenden`events`Aufrufen verwendet wird. Ihre Anwendung führt diesen Aufruf zu Beginn einer Tracking-Sitzung durch.
 
    ```
    {uri}/api/v1/sessions
    ```
 
-* **`events`**: Sendet Medien-Tracking-Daten.
+* **`events`-**Sendet Medienverfolgungsdaten.
 
    ```
    {uri}/api/v1/sessions/{session-id}/events
@@ -49,28 +46,28 @@ Die über die Mediensammlungs-API erfassten Tracking-Daten werden gesendet und z
 ### Anfrageinhalt {#mc-api-request-body}
 
 ```
-{ 
-    "playerTime": { 
-        "playhead": {playhead position in seconds}, 
-        "ts": {timestamp in milliseconds} 
-    }, 
-    "eventType": {event-type}, 
-    "params": { 
-        {parameter-name}: {parameter-value}, 
-        ... 
-        {parameter-name}: {parameter-value} 
-    }, 
-    "qoeData" : { 
-        {parameter-name}: {parameter-value}, 
-        ... 
-        {parameter-name}: {parameter-value} 
-    }, 
-    "customMetadata": { 
-        {parameter-name}: {parameter-value}, 
-        ... 
-        {parameter-name}: {parameter-value} 
-    } 
-} 
+{
+    "playerTime": {
+        "playhead": {playhead position in seconds},
+        "ts": {timestamp in milliseconds}
+    },
+    "eventType": {event-type},
+    "params": {
+        {parameter-name}: {parameter-value},
+        ...
+        {parameter-name}: {parameter-value}
+    },
+    "qoeData" : {
+        {parameter-name}: {parameter-value},
+        ...
+        {parameter-name}: {parameter-value}
+    },
+    "customMetadata": {
+        {parameter-name}: {parameter-value},
+        ...
+        {parameter-name}: {parameter-value}
+    }
+}
 ```
 
 * `playerTime`: Erforderlich für alle Anforderungen.
@@ -99,4 +96,3 @@ Für jeden `eventType` gibt es ein öffentlich verfügbares [JSON-Validierungssc
 * `chapterComplete`
 * `sessionEnd`
 * `sessionComplete`
-
