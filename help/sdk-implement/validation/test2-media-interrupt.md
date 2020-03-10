@@ -2,19 +2,15 @@
 title: 'Test 2: Medienunterbrechung'
 description: Hier wird der Medienunterbrechnungstest beschrieben, der bei der Validierung verwendet wird.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
 # Test 2: Medienunterbrechung {#test-media-interruption}
 
-In diesem Testfall wird das Verhalten von Mobilgeräten bei Unterbrechungen überprüft. Dies ist ein erforderliches Element Ihrer Zertifizierungsanfrage.
-
-## Zertifizierungsanfrageformular
-
-**Das Anfrageformular für die Zertifizierung können Sie hier herunterladen ==&gt;**  [Anfrageformular für die Zertifizierung.](cert_req_form.docx)
+In diesem Testfall wird das Verhalten von Mobilgeräten bei Unterbrechungen überprüft.
 
 ## Testverfahren
 
@@ -56,4 +52,3 @@ Sie müssen diese Aufgaben in folgender Reihenfolge abschließen und aufzeichnen
 1. **Medienplayer schließen**
 
    Nachdem der Medienplayer geschlossen wurde, sollten keine zusätzlichen Tracking-Aufrufe mehr ausgelöst werden.
-
