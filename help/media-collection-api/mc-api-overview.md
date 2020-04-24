@@ -3,7 +3,7 @@ seo-title: Überblick
 title: Überblick
 description: null
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
@@ -11,9 +11,9 @@ source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 # Überblick {#overview}
 
-Die Mediensammlungs-API wird von Adobe als RESTful-Alternative zum Client-seitigen Medien-SDK angeboten. Mit der Mediensammlungs-API kann Ihr Player Audio- und Videoereignisse mithilfe von RESTful-HTTP-Anfragen verfolgen.
+Die Mediensammlungs-API ist die RESTful-Alternative von Adobe zum Client-seitigen Media SDK. Mit der Mediensammlungs-API kann Ihr Player Audio- und Video-Ereignisse mit REST-fähigen HTTP-Aufrufen tracken.
 
-Die Mediensammlungs-API ist im Grunde ein Adapter, der als serverseitige Version des Medien-SDK fungiert. Das bedeutet, dass einige Aspekte der Medien-SDK-Dokumentation auch für die Mediensammlungs-API relevant sind. Beispielsweise verwenden beide Lösungen dieselben [Audio- und Video-Parameter](/help/metrics-and-metadata/audio-video-parameters.md), und die erfassten Audio- und Video-Tracking-Daten führen zu derselben [Berichterstellung und Analyse](/help/media-reports/media-reports-enable.md).
+Die Mediensammlungs-API ist im Wesentlichen ein Adapter, der als Server-seitige Version des Media SDK fungiert. Das bedeutet, dass einige Aspekte der Medien-SDK-Dokumentation auch für die Mediensammlungs-API relevant sind. Beispielsweise verwenden beide Lösungen dieselben [Audio- und Video-Parameter](/help/metrics-and-metadata/audio-video-parameters.md), und die erfassten Audio- und Video-Tracking-Daten führen zu derselben [Berichterstellung und Analyse](/help/media-reports/media-reports-enable.md).
 
 ## Datenfluss beim Medien-Tracking {#media-tracking-data-flows}
 
@@ -25,19 +25,19 @@ Die über die Mediensammlungs-API erfassten Tracking-Daten werden gesendet und z
 
 ## API-Übersicht {#api-overview}
 
-**URI:** Diese erhalten Sie von Ihrem Adobe-Support-Mitarbeiter.
+**URI:** Besorgen Sie sich dies von Ihrem Adobe-Support-Mitarbeiter.
 
-**HTTP-Methode:** POST mit JSON-Anfrageinhalt.
+**HTTP-Methode:** POST mit JSON-Anfragetext.
 
 ### API-Aufrufe {#mc-api-calls}
 
-* **`sessions`-**Legt eine Sitzung mit dem Server fest und gibt eine Sitzungs-ID zurück, die bei nachfolgenden`events`Aufrufen verwendet wird. Ihre Anwendung führt diesen Aufruf zu Beginn einer Tracking-Sitzung durch.
+* **`sessions`**- Stellt eine Sitzung mit dem Server her und gibt eine Sitzungs-ID zurück, die in nachfolgenden`events`-Aufrufen verwendet wird. Ihre Anwendung führt diesen Aufruf zu Beginn einer Tracking-Sitzung durch.
 
    ```
    {uri}/api/v1/sessions
    ```
 
-* **`events`-**Sendet Medienverfolgungsdaten.
+* **`events`**- Sendet Medien-Tracking-Daten.
 
    ```
    {uri}/api/v1/sessions/{session-id}/events
@@ -75,7 +75,7 @@ Die über die Mediensammlungs-API erfassten Tracking-Daten werden gesendet und z
 * `params`: Erforderlich für bestimmte `eventTypes`. Überprüfen Sie anhand des [JSON-Validierungsschemas](mc-api-ref/mc-api-json-validation.md), welche eventTypes erforderlich und welche optional sind.
 
 * `qoeData`: Optional für alle Anforderungen.
-* `customMetadata`: Optional für alle Anforderungen, wird jedoch nur mit den Ereignistypen `adStart``sessionStart` und `chapterStart` gesendet.
+* `customMetadata`: Optional für alle Anforderungen, wird jedoch nur mit den Ereignistypen `sessionStart`, `adStart` und `chapterStart` gesendet.
 
 Für jeden `eventType` gibt es ein öffentlich verfügbares [JSON-Validierungsschema](mc-api-ref/mc-api-json-validation.md), mit dessen Hilfe Sie die Parametertypen überprüfen und herausfinden können, welche Parameter für die einzelnen Ereignisse erforderlich sind.
 
