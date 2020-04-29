@@ -2,8 +2,8 @@
 title: Medienübersicht
 description: null
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 5a4f15616712ee91bc028258991fc4e7359698a5
 
 ---
 
@@ -12,13 +12,21 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 Im Dashboard „Medienübersicht“ können Sie die Medien auf Ihrer Site überwachen. Die Anzeige „Medienübersicht“ zeigt mehrere aggregierte Messungen an, so dass Sie schnell erkennen können, ob die Medien wie erwartet funktionieren. In einem Diagramm werden die Inhaltsstarts neben Anzeigenstarts angezeigt, damit Sie diese Metriken schnell für jedes Medium anzeigen können.
 
-![](assets/media_overview.png){width="672px"}
+![](assets/media_overview.png)
+
+<!--
+![](assets/media_overview.png){width="672px"} 
+-->
 
 ## Schnellfilter {#quick-filters}
 
 Zeigen Sie Medienmetriken schnell nach Gerät oder Land an:
 
+![](assets/video-overview-report-filters.png)
+
+<!--
 ![](assets/video-overview-report-filters.png){width="400px"}
+-->
 
 ## Medienperformance {#media-performance}
 
@@ -26,5 +34,8 @@ Zoomen Sie durch Klicken und Ziehen und zeigen Sie dann mit dem Mauszeiger auf E
 
 , um die Ansicht nach dem Zoomen zurückzusetzen.
 
-![](assets/media_overview_zoom.png){width="400px"}
+![](assets/media_overview_zoom.png)
 
+<!--
+![](assets/media_overview_zoom.png){width="400px"}
+-->
