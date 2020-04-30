@@ -19,9 +19,9 @@ Meistens wird das anwenderdefinierte Video-Tracking auf Plattformen und Geräten
 
 ## Voraussetzungen
 
-* Zugriff auf Ereignisse und Daten der Video-Player-APIs
-* Möglichkeit, Skripte hinzuzufügen, wenn das Analytics-SDK verwendet wird
-* Möglichkeit, Tracking Beacons (anwenderdefiniertes Skripting oder Hardcode) hinzuzufügen, wenn Sie die Data Insertion API verwenden
+* Zugriff auf API-Ereignisse und -Daten für Videoplayer
+* Möglichkeit zum Hinzufügen von Skripts bei Verwendung des Analytics SDK
+* Möglichkeit zum Hinzufügen von Tracking-Beacons (benutzerdefiniertes Skript oder fester Code) bei Verwendung der Data Insertion API
 
 ## Metadaten
 
@@ -46,11 +46,11 @@ if (e.type == "ended") {
 
 ## Warum sollte man benutzerdefinierte Links verwenden?
 
-* Es sind nur minimale Voraussetzungen erforderlich
-* Es funktioniert auf jeder Plattform, einschließlich NoScript
-* Alle Berechnungen, wie z. B. Verweildauern oder Quartile, müssen in einem anwenderdefinierten Skript berechnet werden
-* Es ist äußerst unkompliziert ohne versteckte Bibliotheken oder Skripte
-* Sie haben volle Kontrolle über jeden Aspekt der Videodaten
+* Minimale Voraussetzungen sind erforderlich.
+* Funktioniert auf jeder Plattform, auch solchen ohne Skript.
+* Alle Berechnungen wie Zeitdauer oder Quartil müssen in einem benutzerdefinierten Skript berechnet werden.
+* Einfache Nutzung ohne verborgene Bibliotheken oder Skripts
+* Gesamtkontrolle über jeden Aspekt der Videodaten
 
 ## Beispiel für JavaScript für HTML5 Player
 
