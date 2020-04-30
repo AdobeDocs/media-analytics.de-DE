@@ -16,30 +16,30 @@ Jede Report Suite, die Medienmetriken erfasst, muss konfiguriert werden, bevor M
 >
 >Um neue Funktionen nutzen zu können, sollten Bestandskunden von Media Analytics das Medien-Tracking für ihre RSIDs erneut aktivieren.
 
-1. Klicken Sie in [Reports &amp; Analytics](https://my.omniture.com/login/) auf **[!UICONTROL Admin &gt; Report Suites].**
-1. Wählen Sie die Report Suites aus, in denen Sie Mediendaten erfassen, und klicken Sie anschließend auf **[!UICONTROL Einstellungen bearbeiten &gt; Medienmanagement &gt; Medienberichte].**
+1. Klicken Sie in [Reports &amp; Analytics](https://my.omniture.com/login/) auf **[!UICONTROL Admin > Report Suites].**
+1. Wählen Sie die Report Suites aus, in denen Sie Mediendaten erfassen, und klicken Sie anschließend auf **[!UICONTROL Einstellungen bearbeiten > Medienmanagement > Medienberichte].**
 
-   ![](assets/media-reporting.png){width="400px"}
+   ![](assets/media-reporting.png){width=&quot;400px&quot;}
 
-1. Aktivieren Sie auf der Seite **[!UICONTROL Medienberichte]** die Option **[!UICONTROL Media- Core],** und aktivieren Sie optional **[!UICONTROL Medienanzeigen],** **[!UICONTROL Medienkapitel],** und **[!UICONTROL Medienqualität].**
+1. Aktivieren Sie auf der Seite **[!UICONTROL Medienberichte]** die Option **[!UICONTROL Media-Core],**und aktivieren Sie optional**[!UICONTROL Medienanzeigen],** **[!UICONTROL Medienkapitel],**und**[!UICONTROL Medienqualität].**
 
    Die Medienmessung enthält folgende Module:
 
    * **Medien-Core**
 
-      Die Core-Medienmessung wird für Medieninhalte verwendet. Dabei werden Lösungs- (oder benutzerdefinierte) eVars verwendet, um Inhalt, Inhaltstyp, Inhalts-Player-Name und Inhaltskanal nachzuverfolgen. Lösungs- (oder benutzerdefinierte) Ereignisse werden für Medienstarts, Inhaltsstarts, Inhaltsbeendigungen und Besuchszeit für Inhalt verwendet.
+      Die Core-Medienmessung wird für Medieninhalte verwendet. Dabei werden Lösungs- (oder benutzerdefinierte) eVars verwendet, um Inhalt, Content-Typ, Inhalts-Player-Name und Inhaltskanal nachzuverfolgen. Lösungs- (oder benutzerdefinierte) Ereignisse werden für Medienstarts, Inhaltsstarts, Inhaltsbeendigungen und Besuchszeit für Inhalt verwendet.
 
    * **Medienanzeigen**
 
-      Die Medienanzeigenmessung wird für die Messung von Anzeigen im Medieninhalt verwendet. Dabei werden Lösungs-eVars verwendet, um Anzeige, Name des Anzeigenplayers, Anzeigen-Pod und Anzeigenposition innerhalb der Werbeunterbrechung zu messen. Lösungsereignisse werden für Anzeigenstarts, Anzeigenbeendigungen, Besuchszeit für Anzeige und Besuchszeit für Video verwendet.
+      Die Medienanzeigenmessung wird für die Messung von Anzeigen im Medieninhalt verwendet. Dabei werden Lösungs-eVars verwendet, um Anzeige, Name des Anzeigenplayers, Anzeigen-Pod und Anzeigenposition innerhalb der Werbeunterbrechung zu messen. Lösungsereignisse werden für Anzeigenstarts, Anzeigenbeendigungen, Besuchszeit für Anzeigen und Besuchszeit für Videos verwendet.
 
    * **Medienkapitel**
 
-      Die Medienkapitelmessung wird für die Messung von Kapiteln verwendet. Ein Kapitel ist eine Unterteilung von Inhalt in einem einzelnen Medium. Dabei wird die Kapitel-ID über eine Lösungs-eVar gespeichert. Lösungsereignisse werden für Kapitelstarts, Kapitelbeendigungen und Besuchszeit für Kapitel verwendet. Zusätzliche Kapitelmetadaten für Kapitelname und Kapitelposition werden als Classifications der Kapitel-ID bereitgestellt.
+      Die Medienkapitelmessung wird für die Messung von Kapiteln verwendet. Ein Kapitel ist eine Unterteilung von Inhalt in einem einzelnen Medium. Dabei wird ein Lösungs-eVar zum Speichern der Kapitel-ID verwendet. Lösungsereignisse werden für Kapitelstarts, Kapitelbeendigungen, und Besuchszeit für Kapitel verwendet. Zusätzliche Kapitelmetadaten des Kapitelnamens und der Kapitelposition werden als Klassifizierungen der Kapitel-ID bereitgestellt.
 
    * **Medienqualität**
 
-      Anhand der Videoqualitätsmessung wird die Qualität der Inhaltswiedergabe gemessen. Dabei werden die Zeit bis zum Start, die Pufferereignisse, die Gesamtpufferdauer, Bitratenwechsel, die durchschnittliche Bitrate, Fehler und Dropped Frames über Lösungs-eVars gespeichert. Lösungsereignisse werden für die Zeit bis zum Start, die Drops vor dem Start, von Puffer betroffene Streams, Pufferereignisse, die Gesamtpufferdauer, von Bitratenänderungen betroffene Streams, Bitratenänderungen, die durchschnittliche Bitrate, von Fehlern betroffene Streams, Fehlerereignisse, von Dropped Frames betroffene Streams und Dropped Frames verwendet.
+      Anhand der Videoqualitätsmessung wird die Qualität der Inhaltswiedergabe gemessen. Dabei werden Lösungs-eVars verwendet, um Zeit bis Start, Pufferereignisse, Gesamtpufferdauer, die Bitratenwechsel, durchschnittliche Bitrate, Fehler und Dropped Frames zu speichern. Die Lösungsereignisse werden für Folgendes verwendet: Zeit bis zum Start, vor dem Start übersprungen, vom Puffer betroffene Streams, Pufferereignisse, gesamte Pufferdauer, von Bitratenänderungen betroffene Streams, Bitratenänderungen, mittlere Bitrate, von Fehlern betroffene Streams, Fehlerereignisse, von übersprungenen Bildern betroffene Streams und übersprungene Bilder.
 
    * **Video und Videoanzeigenmetadaten**
 
@@ -48,20 +48,20 @@ Jede Report Suite, die Medienmetriken erfasst, muss konfiguriert werden, bevor M
    * **Audio und Audio-Anzeigemetadaten**
 
       Sie können einer Audiodatei und/oder einer Anzeige Metadaten hinzufügen, um die Audiodatei/die Anzeige näher zu beschreiben und zu kategorisieren. Standardisierte Audio- und Anzeigenmetadaten werden über Lösungsvariablen und Klassifizierungen gesammelt. Einzuschließende Werte: Künstler, Album, Bezeichnung, Autor, Herausgeber, Station, Sendung, Staffel, Episode, Asset-ID, Genre, Erstes Sendedatum, Erstes digitales Veröffentlichungsdatum, Inhaltsbewertung, Urheber, Sendungstyp, Anzeige-Ladevorgänge, Tagesteil, Mediensitzungs-ID, Advertiser, Kampagnen-ID und Creative-ID.
-   Wenn Sie ein Modul aktivieren, wird jeweils eine Reihe von Variablen reserviert und ein neuer Satz an Berichten erstellt. Mit Ausnahme der Qualität enthalten Berichte nur dann Daten, wenn die zugehörige Implementierung abgeschlossen wurde. Bei Implementierung des Core-Moduls wird auch das Qualitätsmodul implementiert, wenn Sie es aktivieren.
+   Durch die Aktivierung jedes Moduls wird ein Variablensatz reserviert und ein neuer Satz von Berichten erstellt. Mit Ausnahme der Qualitätsberichte enthalten Berichte keine Daten, es sei denn, die entsprechende Implementierung wurde durchgeführt. Bei Implementierung des Kernmoduls wird auch das Qualitätsmodul implementiert, wenn Sie es aktivieren.
 
-   Wenn Sie die Qualität von Anzeigen, Kapiteln oder Wiedergabe noch nicht verfolgen, können Sie später jederzeit weitere Optionen aktivieren.
+   Wenn Sie noch keine Anzeigen-, Kapitel- oder Wiedergabequalität verfolgen, können Sie jederzeit weitere Optionen aktivieren.
 
 1. Klicken Sie auf **[!UICONTROL Speichern].**
 
    Wenn diese Report Suite bereits zur Erfassung von Mediendaten konfiguriert ist, wird eine zusätzliche Konfigurationsseite angezeigt, nachdem Sie auf **[!UICONTROL Speichern]** klicken. Wenn die Seite **[!UICONTROL Media-Core-Messung]** angezeigt wird, fahren Sie mit dem nächsten Schritt fort.
 
-1. (Bedingt) Legen Sie auf der Seite **[!UICONTROL Media-Core-Messung]** fest, ob Sie weiterhin benutzerdefinierte Variablen oder Lösungsvariablen verwenden möchten.
+1. (Situationsabhängig) Legen Sie auf der Seite **[!UICONTROL Media-Core-Messung]** fest, ob Sie weiterhin benutzerdefinierte Variablen oder Lösungsvariablen verwenden möchten.
 
    | Option | Hinweise |
    | --- | --- |
-   | Weiterhin benutzerspezifische Variablen verwenden | Vorteile und Nachteile:<ul> <li> **Vorteile**: Die Inhaltstrend-Erstellung funktioniert auch nach der Migration. </li> <li> **Nachteile:** Erfordert die Beibehaltung von zwei benutzerdefinierten eVars und drei benutzerdefinierten Ereignissen für Medien. Eine anwenderspezifische eVar und ein anwenderspezifisches Ereignis werden freigegeben. </li> </ul> So verwenden Sie weiterhin anwenderspezifische Variablen: <ol> <li>Wählen Sie **[!UICONTROL Benutzerdefinierte Variablen verwenden]** aus und klicken Sie auf **[!UICONTROL Speichern.]** </li> <li>Wenn Sie dazu aufgefordert werden, ordnen Sie die aktuellen benutzerdefinierten eVars und Ereignisse zu und klicken Sie auf **[!UICONTROL Speichern:]** </li> </ol> |
-   | Zu Lösungsvariablen migrieren | Vorteile und Nachteile:<ul> <li> **Vorteile**: Drei anwenderspezifische eVars und vier anwenderspezifische Ereignisse werden freigegeben. </li> <li> **Nachteile**: **Alle** Verlaufstrends und -vergleiche für Medienberichte gehen verloren. Das bedeutet, dass Sie keine Trends für Inhaltsansichten oder Inhaltszeiten erstellen können, die vor der Migration in Heartbeat stattgefunden haben. </li> </ul> **Einschränkung:** Migrieren Sie nur dann zu Lösungsvariablen, wenn Sie sicher sind, dass Sie diese Trends nicht beibehalten möchten. Alle Kunden sollten nur dann Lösungsvariablen verwenden und Mediendaten anhand von Verarbeitungsregeln an vorhandene Props und eVars übergeben, wenn sie den Verlauf beibehalten müssen. Migrieren der Lösungsvariablen: Wählen Sie **[!UICONTROL Lösungsvariablen verwenden]** aus und klicken Sie auf **[!UICONTROL Speichern].** <br><br> WICHTIG: Bei der Migration zu Lösungsvariablen gehen **alle** Verlaufstrends und -vergleiche für Medienberichte verloren. |
+   | Weiterhin benutzerspezifische Variablen verwenden | Vorteile und Nachteile:<ul> <li> **Vorteile**: Die Inhaltstrend-Erstellung funktioniert auch nach der Migration. </li> <li> **Nachteile:** Erfordert die Beibehaltung von zwei benutzerdefinierten eVars und drei benutzerdefinierten Ereignissen für Medien. Sie können ein einziges benutzerspezifisches eVar und ein einziges benutzerspezifisches Ereignis erneut verwenden. </li> </ul> Wenn Sie weiterhin benutzerspezifische Variablen verwenden möchten: <ol> <li>Wählen Sie **[!UICONTROL Benutzerdefinierte Variablen verwenden]** aus und klicken Sie auf **[!UICONTROL Speichern.]** </li> <li>Wenn Sie dazu aufgefordert werden, ordnen Sie die aktuellen benutzerdefinierten eVars und Ereignisse zu und klicken Sie auf **[!UICONTROL Speichern:]** </li> </ol> |
+   | Zu Lösungsvariablen migrieren | Vorteile und Nachteile:<ul> <li> **Vorteile:** Sie können drei benutzerspezifische eVars und vier benutzerspezifische Ereignisse erneut verwenden. </li> <li> **Nachteile:** Sie verlieren **alle** historischen Trends und Vergleiche für Medienberichte. Das bedeutet, dass Sie keine Trendansicht für Inhaltsdaten oder Inhaltszeiten erstellen können, die vor der Migration zu Heartbeats wiedergegeben wurden. </li> </ul> **Einschränkung:** Migrieren Sie nur dann zu Lösungsvariablen, wenn Sie sicher sind, dass Sie diese Trends nicht beibehalten möchten. Alle Kunden sollten nur dann Lösungsvariablen verwenden und Mediendaten anhand von Verarbeitungsregeln an vorhandene Props und eVars übergeben, wenn sie den Verlauf beibehalten müssen. Migrieren der Lösungsvariablen: Wählen Sie **[!UICONTROL Lösungsvariablen verwenden]** aus und klicken Sie auf **[!UICONTROL Speichern].**<br><br>WICHTIG: Bei der Migration zu Lösungsvariablen gehen **alle ** Verlaufstrends und -vergleiche für Medienberichte verloren. |
 
 >[!IMPORTANT]
 >
