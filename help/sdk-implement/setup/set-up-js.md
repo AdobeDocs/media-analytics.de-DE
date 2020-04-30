@@ -15,10 +15,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * **Gültige Konfigurationsparameter festlegen:** Diese Parameter erhalten Sie nach der Einrichtung Ihres Analytics-Kontos von einem Adobe-Support-Mitarbeiter.
 * **`AppMeasurement`für JavaScript in Ihre Medienanwendung implementieren:** Weitere Informationen zur Adobe Mobile-SDK-Dokumentation finden Sie unter [Analytics-Implementierung mit JavaScript.](https://marketing.adobe.com/resources/help/de_DE/sc/implement/js_implementation.html)
 
-* **Stellen Sie in Ihrem Medienplayer folgende Funktionen bereit:**
+* **Stellen Sie die folgenden Funktionen in Ihrem Medienplayer bereit:**
 
-   * *Eine API, um Player-Ereignisse zu abonnieren:* Die Medien-SDK erfordert, dass Sie einige einfache APIs aufrufen, wenn Ereignisse in Ihrem Player auftreten.
-   * *Eine API, die Playerinformationen bereitstellt:* Diese Informationen enthalten Details wie z. B. Medienname und Abspielposition.
+   * *Eine API zum Abonnieren von Player-Ereignissen*: Das Media SDK erfordert den Aufruf einer Reihe einfacher APIs, wenn Ereignisse im Player auftreten.
+   * *Eine API, die Player-Informationen* bereitstellt: Diese Informationen enthalten Details wie den Mediennamen und die Abspielposition.
 
 1. Fügen Sie Ihre [heruntergeladene](/help/sdk-implement/download-sdks.md#download-2x-sdks) Bibliothek zu Ihrem Projekt hinzu. Erstellen Sie aus Gründen der Übersichtlichkeit lokale Referenzen auf die Klassen.
 
@@ -27,7 +27,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    1. Hosten Sie die Datei `MediaSDK.min.js`.
 
-      Diese Core-JavaScript-Datei muss auf einem Webserver gehostet werden, der für alle Seiten Ihrer Website zugänglich ist. Für den nächsten Schritt benötigen Sie den Pfad zu diesen Dateien.
+      Diese Core-JavaScript-Datei muss auf einem Webserver gehostet werden, auf den alle Seiten Ihrer Site zugreifen können. Sie benötigen den Pfad zu diesen Dateien für den nächsten Schritt.
 
    1. Referenzieren Sie `MediaSDK.min.js` auf allen Webseiten.
 
