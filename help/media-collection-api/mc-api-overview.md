@@ -11,7 +11,7 @@ source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 # Überblick {#overview}
 
-Die Mediensammlungs-API ist die RESTful-Alternative von Adobe zum Client-seitigen Media SDK. Mit der Mediensammlungs-API kann Ihr Player Audio- und Video-Ereignisse mit REST-fähigen HTTP-Aufrufen tracken.
+Die Mediensammlungs-API ist die RESTful-Alternative von Adobe zum Client-seitigen Media SDK. Mit der Mediensammlungs-API kann Ihr Player Audio- und Videoereignisse mit RESTful HTTP-Aufrufen tracken.
 
 Die Mediensammlungs-API ist im Wesentlichen ein Adapter, der als Server-seitige Version des Media SDK fungiert. Das bedeutet, dass einige Aspekte der Medien-SDK-Dokumentation auch für die Mediensammlungs-API relevant sind. Beispielsweise verwenden beide Lösungen dieselben [Audio- und Video-Parameter](/help/metrics-and-metadata/audio-video-parameters.md), und die erfassten Audio- und Video-Tracking-Daten führen zu derselben [Berichterstellung und Analyse](/help/media-reports/media-reports-enable.md).
 
@@ -27,17 +27,17 @@ Die über die Mediensammlungs-API erfassten Tracking-Daten werden gesendet und z
 
 **URI:** Besorgen Sie sich dies von Ihrem Adobe-Support-Mitarbeiter.
 
-**HTTP-Methode:** POST mit JSON-Anfragetext.
+**HTTP-Methode:** POST, mit JSON-Anforderungstext.
 
 ### API-Aufrufe {#mc-api-calls}
 
-* **`sessions`**- Stellt eine Sitzung mit dem Server her und gibt eine Sitzungs-ID zurück, die in nachfolgenden`events`-Aufrufen verwendet wird. Ihre Anwendung führt diesen Aufruf zu Beginn einer Tracking-Sitzung durch.
+* **`sessions`-** : Stellt eine Sitzung mit dem Server her und gibt eine Sitzungs-ID zurück, die in nachfolgenden`events`-Aufrufen verwendet wird. Ihre Anwendung führt diesen Aufruf zu Beginn einer Tracking-Sitzung durch.
 
    ```
    {uri}/api/v1/sessions
    ```
 
-* **`events`**- Sendet Medien-Tracking-Daten.
+* **`events`-** : Sendet Medien-Tracking-Daten.
 
    ```
    {uri}/api/v1/sessions/{session-id}/events
