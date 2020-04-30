@@ -13,11 +13,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 ## Voraussetzungen
 
 * **Gültige Konfigurationsparameter für Heartbeats festlegen:** Diese Parameter erhalten Sie nach der Einrichtung Ihres Media Analytics-Kontos von einem Adobe-Support-Mitarbeiter.
-* **Stellen Sie in Ihrem Medienplayer folgende Funktionen bereit:**
-   * _Eine API, um Player-Ereignisse zu abonnieren:_ Die Medien-SDK erfordert, dass Sie einige einfache APIs aufrufen, wenn Ereignisse in Ihrem Player auftreten.
-   * _Eine API, die Playerinformationen bereitstellt:_ Diese Informationen enthalten Details wie z. B. Medienname und Abspielposition.
+* **Stellen Sie die folgenden Funktionen in Ihrem Medienplayer bereit:**
+   * _Eine API zum Abonnieren von Player-Ereignissen_ - Das Media SDK erfordert den Aufruf einer Reihe einfacher APIs, wenn im Player Ereignisse auftreten.
+   * _Eine API, die Player-Informationen bereitstellt_ - Diese Informationen enthalten Details wie den Mediennamen und die Abspielposition.
 
-Adobe Mobile Services bietet eine neue Anwenderoberfläche, auf der mobile Marketingfunktionen für mobile Anwendungen aus der gesamten Adobe Experience Cloud kombiniert werden. Mobile Services ermöglicht die nahtlose Integration der App-Analyse- und Targeting-Funktionen der Adobe Analytics- und Adobe Target-Lösungen.
+Adobe Mobile Services bietet eine neue Anwenderoberfläche, auf der mobile Marketingfunktionen für mobile Anwendungen aus der gesamten Adobe Experience Cloud kombiniert werden. Zunächst bietet der Mobile Service eine nahtlose Integration von App-Analyse- und Targeting-Funktionen für die Lösungen Adobe Analytics und Adobe Target.
 
 Weitere Informationen finden Sie in der [Dokumentation zu Adobe Mobile Services.](https://marketing.adobe.com/resources/help/de_DE/mobile/)
 
@@ -100,7 +100,7 @@ Mit Roku-SDK 2.x für Experience Cloud-Lösungen können Sie in BrightScript ge
 
 1. Konfigurieren der Experience Cloud-Besucher-ID.
 
-   Der Experience Cloud-Besucher-ID-Dienst stellt eine universale Besucher-ID für alle Experience Cloud-Lösungen bereit. Der Besucher-ID-Dienst ist für Video Heartbeat- und andere Experience Cloud-Integrationen erforderlich.
+   Der Besucher-ID-Dienst für Experience Platform stellt eine universale Besucher-ID für alle Experience Cloud-Lösungen bereit. Der Besucher-ID-Dienst ist für Video Heartbeat und andere Experience Cloud-Integrationen erforderlich.
 
    Stellen Sie sicher, dass Ihre `ADBMobileConfig`-Konfiguration Ihre `marketingCloud`-Organisations-ID enthält.
 
@@ -126,7 +126,7 @@ Mit Roku-SDK 2.x für Experience Cloud-Lösungen können Sie in BrightScript ge
 
    |  Methode   | Beschreibung |
    | --- | --- |
-   | `visitorMarketingCloudID` | Ruft die Experience Cloud-Besucher-ID vom Besucher-ID-Dienst ab.  <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
+   | `visitorMarketingCloudID` | Ruft die Experience Cloud-Besucher-ID aus dem Besucher-ID-Dienst ab.  <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
    | `visitorSyncIdentifiers` | Mit der Experience Cloud-Besucher-ID können Sie zusätzliche Kunden-IDs festlegen, die jedem Besucher zugeordnet werden können. Die Besucher-API akzeptiert mehrere Kunden-IDs für denselben Besucher sowie eine Kundentypkennung, die den Umfang der einzelnen Kunden-IDs abgrenzt. Diese Methode entspricht `setCustomerIDs`. Beispiel: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
    | `setAdvertisingIdentifier` | Wird verwendet, um die Roku-ID für Werbung (RIDA) im SDK festzulegen. Beispiel: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>Rufen Sie die Roku-ID für Werbung (RIDA) mit der [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic)-API des Roku-SDK ab. |
 
