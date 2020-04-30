@@ -10,17 +10,17 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 # Vorlagen für Media Workspace {#media-workspace-templates}
 
-Adobe Analytics Workspace gibt Ihnen die Möglichkeit, schnell Dashboards zur Analyse Ihrer Tracking-Daten einzurichten. Wenn Sie ein neues Projekt erstellen oder wenn Sie in Workspace gehen, um ein bestehendes Projekt zu verwalten, können Sie aus Standardvorlagen wählen, die gängige allgemeine Tracking-Szenarios wie Akquise, Audio- und Videonutzung und mehr abdecken. Sie können auch Ihre eigenen anwenderdefinierten Vorlagen erstellen, ändern und speichern.
+Adobe Analytics Workspace bietet Ihnen die Möglichkeit, schnell Dashboards zur Analyse Ihrer Tracking-Daten einzurichten. Wenn Sie ein neues Projekt erstellen oder Workspace öffnen, um ein vorhandenes Projekt zu verwalten, können Sie aus Standardvorlagen wählen, die allgemeine Tracking-Szenarien wie die Akquise sowie den Audio- und Videokonsum beinhalten. Sie können auch eigene benutzerdefinierte Vorlagen erstellen, ändern und speichern.
 
-Sie arbeiten in Adobe Analytics mit Vorlagen aus der Registerkarte Workspace, wenn Sie ein Projekt erstellen oder verwalten. Wenn Sie erstmals in Workspace gehen, werden Ihnen Optionen zum Erstellen eines neuen Projekts oder zum Öffnen eines bestehenden Projekts angeboten:
+Zum Erstellen oder Verwalten von Projekten verwenden Sie Vorlagen von der Workspace-Registerkarte in Adobe Analytics. Wenn Sie Workspace öffnen, werden Ihnen die Optionen zum Erstellen eines neuen Projekts oder zum Öffnen eines vorhandenen Projekts angezeigt:
 
-* **Neues Projekt erstellen:** Wenn Sie in Workspace auf die Schaltfläche **[!UICONTROL Neues Projekt erstellen]** klicken, wird Ihnen ein Dialogfeld angezeigt, in dem Sie aus Ihrer Vorlagensammlung (einschließlich Standard- und anwenderdefinierte Vorlagen) auswählen können:
+* **Neues Projekt erstellen:** Wenn Sie in Workspace auf die Schaltfläche **[!UICONTROL Neues Projekt erstellen]** klicken, wird Ihnen ein Dialogfeld angezeigt, in dem Sie aus Ihrer Vorlagensammlung (einschließlich Standard- und benutzerdefinierter Vorlagen) auswählen können:
 
    ![](assets/all-templates-audio.png)
 
-   Wenn Sie beispielsweise die Vorlage **[!UICONTROL Audionutzung]** auswählen, wird ein Projekt mit dem folgenden audioorientierten Dashboard angezeigt:
+   Wenn Sie beispielsweise die Vorlage **[!UICONTROL Audionutzung]** auswählen, wird ein Projekt mit dem folgenden Audio-Dashboard angezeigt:
 
    ![](assets/aa-workspace.png)
 
-* **Projekte verwalten:** In einem bestehenden Projekt können Sie die Datendarstellung ändern und speichern, um Ihre eigene Sammlung von anwenderdefinierten Vorlagen zu erstellen.
+* **Projekte verwalten:** Sie können in einem bestehenden Projekt die Datendarstellung ändern und speichern, um Ihre eigenen benutzerdefinierten Vorlagen zu erstellen.
 
