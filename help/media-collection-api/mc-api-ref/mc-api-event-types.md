@@ -20,8 +20,8 @@ Wird gesendet, wenn der Player den Status zu „Playing“ (Wiedergabe) ändert 
 
 ## ping
 
-* **Hauptinhalt:** Muss während der Wiedergabe des Hauptinhalts unabhängig von anderen gesendeten API-Ereignissen alle zehn Sekunden gesendet werden. Der erste Ping sollte zehn Sekunden nach Beginn der Wiedergabe des Hauptinhalts ausgelöst werden.
-* **Werbeinhalt:** Muss während des Anzeigen-Trackings jede Sekunde gesendet werden.
+* **Hauptinhalt:** Muss während der Wiedergabe des Hauptinhalts unabhängig von anderen gesendeten API-Ereignissen alle zehn Sekunden gesendet werden. Das erste Ping-Ereignis sollte 10 Sekunden nach Beginn der Wiedergabe des Hauptinhalts ausgelöst werden.
+* **Anzeigeninhalt -** Muss während dem Anzeigen-Tracking jede Sekunde gesendet werden.
 
 Ping-Ereignisse sollten *nicht* die `params`-Map im Anfrageinhalt enthalten.
 
