@@ -2,8 +2,8 @@
 title: Voraussetzungen
 description: null
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -30,7 +30,7 @@ Für eine Implementierung von *Media Analytics* müssen Sie die folgenden Aufgab
 
    ![](assets/mc_id_service_graphic.png)
 
-   Der ID-Dienst kann auch die verschiedenen lösungsspezifischen IDs ersetzen (z. B. Analytics AID). Mit der Funktion [Kunden-IDs und Authentifizierungsstatus](https://marketing.adobe.com/resources/help/de_DE/mcvid/mcvid-authenticated-state.html) ermöglicht es Ihnen der ID-Dienst, eigene Kunden-IDs an Experience Cloud zu übergeben. Beachten Sie jedoch, dass der ID-Dienst nur mit den Lösungen funktioniert, für die Sie bereits ein Abonnement abgeschlossen haben. Wenn Sie nicht für den Zugriff auf andere Produkte angemeldet sind, bietet der ID-Dienst keinen Zugriff.
+   Der ID-Dienst kann auch die verschiedenen lösungsspezifischen IDs ersetzen (z. B. Analytics AID). Mit der Funktion [Kunden-IDs und Authentifizierungsstatus](https://docs.adobe.com/content/help/de-DE/id-service/using/reference/authenticated-state.html) ermöglicht es Ihnen der ID-Dienst, eigene Kunden-IDs an Experience Cloud zu übergeben. Beachten Sie jedoch, dass der ID-Dienst nur mit den Lösungen funktioniert, für die Sie bereits ein Abonnement abgeschlossen haben. Wenn Sie nicht für den Zugriff auf andere Produkte angemeldet sind, bietet der ID-Dienst keinen Zugriff.
 
    Der ID-Dienst wird in Zukunft eine integrale Komponente von vielen aktuellen und künftigen Experience Cloud-Features, -Erweiterungen und -Services sein. Der ID-Dienst unterstützt derzeit [Analytics,](https://www.adobe.com/de/marketing-cloud/web-analytics.html) [Audience Manager,](https://www.adobe.com/de/marketing-cloud/data-management-platform.html) und [Target.](https://www.adobe.com/de/marketing-cloud/testing-targeting.html)
 
@@ -44,7 +44,7 @@ Für eine Implementierung von *Media Analytics* müssen Sie die folgenden Aufgab
    >
    >Wenn in den medienspezifischen Aufrufen keine Benutzer-ID-Informationen vorhanden sind, gelten die standardmäßigen [Fallback-ID-Methoden](https://docs-author.corp.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-fallback.html) für die Analyse.
 
-   Weitere Informationen zur Experience Cloud-ID finden Sie unter [Überblick über die Experience Cloud-ID](https://marketing.adobe.com/resources/help/de_DE/mcvid/mcvid-overview.html) und unter [Adobe Experience Platform-ID-Dienst.](https://marketing.adobe.com/resources/help/de_DE/mcvid/)
+   Weitere Informationen zur Experience Cloud-ID finden Sie unter [Überblick über die Experience Cloud-ID](https://docs.adobe.com/content/help/de-DE/id-service/using/intro/overview.html) und unter [Adobe Experience Platform-ID-Dienst.](https://docs.adobe.com/content/help/de-DE/id-service/using/home.html)
 
 1. **Aktivieren Sie die Adobe Analytics-Berichte.**
 
