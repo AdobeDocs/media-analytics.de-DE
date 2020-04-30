@@ -19,7 +19,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    [createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createMediaObject)
 
-   | Variablenname | Beschreibung | erforderlich |
+   | Variablenname | Beschreibung | Erforderlich |
    | --- | --- | :---: |
    | `name` | Medienname | Ja |
    | `mediaid` | Eindeutige Medienkennung | Ja |
@@ -143,10 +143,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    Identifizieren Sie alle Szenarios, in denen der Medienplayer angehalten wird, und stellen Sie sicher, dass `trackPause` korrekt aufgerufen wird. In allen folgenden Szenarios muss Ihre App `trackPause()` () aufrufen:
 
-   * Der Anwender betätigt in der App die Pause-Schaltfläche.
-   * Der Player geht selbstständig in den Pausenstatus über.
-   * (*Mobile Apps*): Der Anwender setzt die App in den Hintergrund, Sie möchten die Sitzung jedoch geöffnet halten.
-   * (*Mobile Apps*): Es tritt eine Systemunterbrechung auf, die dafür sorgt, dass die Anwendung im Hintergrund ausgeführt wird. Wenn der Anwender beispielsweise einen Anruf erhält oder eine Popup-Nachricht einer anderen App angezeigt wird, die Anwendung die Sitzung jedoch aktiv halten soll, damit der Anwender das Medium fortsetzen kann.
+   * Der Benutzer drückt in der App die Pausetaste.
+   * Die Wiedergabe wird vom Player selbst pausiert.
+   * (*Mobile Apps*) - Der Benutzer bewegt die App in den Hintergrund, aber Sie möchten, dass die Sitzung der App geöffnet bleibt.
+   * (*Mobile Apps*) - Eine beliebige Systemunterbrechung tritt ein, die dazu führt, dass eine App im Hintergrund ausgeführt wird. Beispielsweise erhält der Benutzer einen Anruf oder ein Pop-up aus einer anderen App, aber Sie möchten, dass die App-Sitzung fortgeführt wird, damit der Benutzer die Medien ab dem Zeitpunkt der Unterbrechung wieder fortsetzen kann.
 
 1. Identifizieren Sie das Ereignis aus dem Player bei Wiedergabe und/oder Fortsetzen nach Pause und rufen Sie `trackPlay` auf:
 
@@ -158,6 +158,6 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >
    >Diese Ereignisquelle kann mit der in Schritt 4 verwendeten identisch sein. Stellen Sie sicher, dass jeder `trackPause()`API-Aufruf mit einem nachfolgenden `trackPlay()`-API-Aufruf gepaart wird, wenn die Wiedergabe fortgesetzt wird.
 
-* Tracking-Szenarios: [VOD-Wiedergabe ohne Werbung](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
-* Der im JavaScript-SDK enthaltene Beispiel-Player zeigt ein komplettes Tracking-Beispiel.
+* Tracking-Szenarien: [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* JavaScript-SDK mit Beispiel-Player für ein vollständiges Tracking-Beispiel.
 
