@@ -14,9 +14,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * **Gültige Konfigurationsparameter für Media SDK festlegen:** Diese Parameter erhalten Sie nach der Einrichtung Ihres Analytics-Kontos von einem Adobe-Support-Mitarbeiter.
 * **ADBMobile für Android in Ihre Anwendung implementieren:** Weitere Informationen zur Adobe Mobile-SDK-Dokumentation finden Sie unter [Android-SDK 4.x für Experience Cloud-Lösungen.](https://marketing.adobe.com/resources/help/de_DE/mobile/android/)
-* **Stellen Sie in Ihrem Medienplayer folgende Funktionen bereit:**
-   * *Eine API, um Player-Ereignisse zu abonnieren:* Die Medien-SDK erfordert, dass Sie einige einfache APIs aufrufen, wenn Ereignisse in Ihrem Player auftreten.
-   * *Eine API, die Playerinformationen bereitstellt:* Diese Informationen enthalten Details wie z. B. Medienname und Abspielposition.
+* **Stellen Sie die folgenden Funktionen in Ihrem Medienplayer bereit:**
+   * *Eine API zum Abonnieren von Player-Ereignissen*: Das Media SDK erfordert den Aufruf einer Reihe einfacher APIs, wenn im Player Ereignisse auftreten.
+   * *Eine API, die Player-Informationen* bereitstellt. Diese Informationen enthalten Details wie den Mediennamen und die Abspielposition.
 
 ## SDK-Implementierung
 
@@ -41,10 +41,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       **Eclipse:**
 
       1. Klicken Sie in der Eclipse IDE mit der rechten Maustaste auf den Projektnamen.
-      1. Klicken Sie auf **[!UICONTROL Pfad aufbauen]** &gt; **[!UICONTROL Externe Archive hinzufügen]** .
+      1. Klicken Sie auf **[!UICONTROL Pfad aufbauen]** > **[!UICONTROL Externe Archive hinzufügen]** .
       1. Auswählen `MediaSDK.jar`.
       1. Klicken Sie auf **[!UICONTROL Öffnen]**.
-      1. Klicken Sie erneut mit der rechten Maustaste auf das Projekt und klicken Sie dann auf  **[!UICONTROL Pfad aufbauen]** &gt; **[!UICONTROL Pfadaufbau konfigurieren]**.
+      1. Klicken Sie erneut mit der rechten Maustaste auf das Projekt und klicken Sie dann auf  **[!UICONTROL Pfad aufbauen]** > **[!UICONTROL Pfadaufbau konfigurieren]**.
       1. Klicken Sie auf die Tabs **[!UICONTROL Sortierung]** und **[!UICONTROL Export]**.
 
       1. Stellen Sie sicher, dass die Datei `MediaSDK.jar` ausgewählt ist.
@@ -112,9 +112,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >
    >Stellen Sie sicher, dass die `MediaHeartbeat`-Instanz zugänglich ist und ihre Zuweisung *nicht vor Ende der Sitzung aufgehoben wird*. Diese Instanz wird für alle der folgenden-Tracking-Ereignisse verwendet.
 
-**App-Berechtigungen hinzufügen**
+**Hinzufügen von App-Berechtigungen**
 
-Ihre App, die das Medien-SDK verwendet, benötigt die folgenden Berechtigungen, um Daten in Tracking-Aufrufen zu senden:
+Ihre App, die das Media SDK verwendet, benötigt die folgenden Berechtigungen, um Daten bei Tracking-Aufrufen zu senden:
 
 * `INTERNET`
 * `ACCESS_NETWORK_STATE`
