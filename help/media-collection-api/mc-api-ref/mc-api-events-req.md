@@ -48,7 +48,7 @@ Eine Liste gültiger Ereignistypen für diese Version finden Sie unter [Ereignis
 
 >[!IMPORTANT]
 >
->***Anzeigen-Tracking –**Sie können Anzeigen nur innerhalb einer`adBreak`* verfolgen.
+>***Anzeigen-Tracking –** Sie können Anzeigen nur innerhalb einer`adBreak`*verfolgen.
 >
 >Wenn Anzeigen nicht durch `adBreakStart` und `adBreakComplete` eingeschlossen sind, werden die Ereignisse `adStart` und `adComplete` einfach ignoriert und die Werbedauer wird der Dauer des Hauptinhalts angerechnet. Das kann deutliche Auswirkungen auf die aggregierten Daten haben, die in Adobe Analytics zur Verfügung stehen.
 
@@ -67,11 +67,11 @@ Access-Control-Expose-Headers Location
 
 ## HTTP-Antwortcodes
 
-| HTTP-Antwortcode | Beschreibung | Clientaktionselemente |
+| HTTP-Antwortcode | Beschreibung | Client-Aktionen |
 |---|---|---|
 | **204** | **Kein Inhalt.** <br/><br/>Der Heartbeat-Aufruf war erfolgreich. | nicht angegeben |
-| **400** | **Unzulässige Anfrage.**<br/><br/>Die Anfrage hatte ein unzulässiges Format. | Überprüfen Sie die [JSON-Validierungsschemata](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) für den Anfragetyp. |
-| **404** | **nicht gefunden.** <br/><br/>Die Sitzungs-ID für die Mediensitzung wurde im Backend-Service nicht gefunden. | Die Client-Anwendung sollte die [Sitzungsanfrage-API](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) verwenden, um eine weitere Mediensitzung und einen Tracking-Bericht zu erstellen. |
-| **410** | **Vorbei.** <br/><br/>Die Mediensitzung wurde im Backend-Service gefunden, aber der Client kann die Aktivität nicht mehr berichten. | Die Client-Anwendung sollte die [Sitzungsanfrage-API](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) verwenden, um eine weitere Mediensitzung und einen Tracking-Bericht zu erstellen. |
+| **400** | **Ungültige Anfrage.**<br/><br/>Die Anfrage hatte ein unzulässiges Format. | Überprüfen Sie die [JSON-Validierungs-Schemata](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) für den Anfragetyp. |
+| **404** | **Nicht gefunden.** <br/><br/>Die Sitzungs-ID für die Mediensitzung wurde im Backend-Service nicht gefunden. | Die Client-Anwendung sollte die [Sitzungsanfrage](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API verwenden, um eine weitere Mediensitzung und Berichte dazu zu erstellen. |
+| **410** | **Nicht mehr auffindbar.** <br/><br/>Die Mediensitzung wurde im Backend-Service gefunden, aber der Client kann einen Bericht mehr über die Aktivität bereitstellen. | Die Client-Anwendung sollte die [Sitzungsanfrage](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API verwenden, um eine weitere Mediensitzung und Berichte dazu zu erstellen. |
 | **500** | **Serverfehler** | nicht angegeben |
 
