@@ -16,12 +16,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Player-Ereignisse
 
-Das Tracking der Core-Wiedergabe umfasst die Verfolgung der Medienladung, des Medienstarts, der Medienpause und des Medienabschlusses. Obwohl nicht zwingend erforderlich, sind das Tracking von Puffern und Suchen ebenfalls Kernkomponenten für die Verfolgung der Inhaltswiedergabe. Identifizieren Sie in Ihrer Medienplayer-API die Player-Ereignisse, die mit den Tracking-Aufrufen des Medien-SDK übereinstimmen, und kodieren Sie Ihre Ereignishandler, um Tracking-APIs aufzurufen und erforderliche und optionale Variablen zu füllen.
+Das Tracking der Core-Wiedergabe beinhaltet das Tracking des Ladens des Mediums, den Medienstart, die Medienpause und den Medienabschluss. Obwohl dies nicht obligatorisch ist, sind die Tracking-Pufferung und -Suche auch Kernkomponenten, die zum Tracking der Inhaltswiedergabe verwendet werden. Identifizieren Sie in Ihrer Medienplayer-API die Player-Ereignisse, die den Media SDK-Tracking-Aufrufen entsprechen, und codieren Sie Ihre Ereignis-Handler, um Tracking-APIs aufzurufen und erforderliche und optionale Variablen zu füllen.
 
 ### Beim Laden der Medien
 
-* Erstellen Sie das Medienobjekt.
-* Metadaten ausfüllen
+* Medienobjekt erstellen
+* Metadaten befüllen
 * Aufruf `trackSessionStart`. Beispiel: `trackSessionStart(mediaObject, contextData)`
 
 ### Beim Medienstart
@@ -67,12 +67,12 @@ Das Tracking der Core-Wiedergabe umfasst die Verfolgung der Medienladung, des Me
 
    **`MediaObject`-Referenz:**
 
-   | Variablenname | Beschreibung | erforderlich |
+   | Variablenname | Beschreibung | Erforderlich |
    |---|---|---|
    | `name` | Inhaltsname | Ja |
-   | `mediaid` | Eindeutige Inhaltskennung | Ja |
-   | `length` | Inhaltsdauer | Ja |
-   | `streamType` | Streamtyp | Ja |
+   | `mediaid` | Eindeutige Kennung des Inhalts | Ja |
+   | `length` | Länge des Inhalts | Ja |
+   | `streamType` | Stream-Typ | Ja |
    | `mediaType` | Medientyp (Audio- oder Videoinhalt) | Ja |
 
    **`StreamType`-Konstanten:**
@@ -95,7 +95,7 @@ Das Tracking der Core-Wiedergabe umfasst die Verfolgung der Medienladung, des Me
 
    Das allgemeine Format für die Erstellung von `MediaObject` ist `MediaHeartbeat.createMediaObject(<MEDIA_NAME>, <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>, <MEDIA_TYPE>);`
 
-1. **Metadaten anhängen:** Optional können standardmäßige und/oder anwenderdefinierte Metadatenobjekte über Kontextdatenvariablen an die Tracking-Sitzung angehängt werden.
+1. **Metadaten anhängen -** Optional können Standard- bzw. benutzerdefinierte Metadatenobjekte über Kontextdatenvariablen an die Tracking-Sitzung angehängt werden.
 
    * **Standard-Metadaten -**
 
@@ -133,10 +133,10 @@ Das Tracking der Core-Wiedergabe umfasst die Verfolgung der Medienladung, des Me
 
    **Pausenszenarios:** Identifizieren Sie alle Szenarios, in denen der Player angehalten wird, und stellen Sie sicher, dass `trackPause` ordnungsgemäß aufgerufen wird. In allen folgenden Szenarios muss Ihre App `trackPause()` () aufrufen:
 
-   * Der Anwender betätigt in der App die Pause-Schaltfläche.
-   * Der Player geht selbstständig in den Pausenstatus über.
-   * (*Mobile Apps*): Der Anwender setzt die App in den Hintergrund, Sie möchten die Sitzung jedoch geöffnet halten.
-   * (*Mobile Apps*): Es tritt eine Systemunterbrechung auf, die dafür sorgt, dass die Anwendung im Hintergrund ausgeführt wird. Wenn der Anwender beispielsweise einen Anruf erhält oder eine Popup-Nachricht einer anderen App angezeigt wird, die Anwendung die Sitzung jedoch aktiv halten soll, damit der Anwender den Inhalt fortsetzen kann.
+   * Der Benutzer drückt in der App die Pausetaste.
+   * Die Wiedergabe wird vom Player selbst pausiert.
+   * (*Mobile Apps*) - Der Benutzer bewegt die App in den Hintergrund, aber Sie möchten, dass die Sitzung der App geöffnet bleibt.
+   * (*Mobile Apps*) - Eine beliebige Systemunterbrechung tritt ein, die dazu führt, dass eine App im Hintergrund ausgeführt wird. Beispielsweise erhält der Benutzer einen Anruf oder ein Pop-up aus einer anderen App, aber Sie möchten, dass die App-Sitzung fortgeführt wird, damit der Benutzer den Inhalt ab dem Zeitpunkt der Unterbrechung wieder fortsetzen kann.
 
 1. Identifizieren Sie das Ereignis aus dem Player bei Wiedergabe und/oder Fortsetzen nach Pause und rufen Sie `trackPlay` auf.
 
@@ -149,9 +149,9 @@ Das Tracking der Core-Wiedergabe umfasst die Verfolgung der Medienladung, des Me
 1. Suchen Sie nach den Wiedergabepufferereignissen aus dem Medienplayer. Wenn Sie die Benachrichtigung zum Pufferstartereignis erhalten, verfolgen Sie die Pufferung mit dem `BufferStart`-Ereignis.
 1. Wenn Sie die Benachrichtigung zum Pufferabschluss vom Medienplayer erhalten, verfolgen Sie das Ende der Pufferung mit dem `BufferComplete`-Ereignis.
 
-In den folgenden plattformspezifischen Themen finden Sie Beispiele für jeden Schritt und die in Ihren SDKs enthaltenen Beispielplayer.
+In den folgenden plattformspezifischen Themen finden Sie Beispiele für jeden Schritt. Außerdem enthalten Ihre SDKs Beispiel-Player.
 
-Ein einfaches Beispiel für das Playback-Tracking finden Sie unter dieser Verwendung mit dem JavaScript 2.x-SDK auf einem HTML5-Player:
+Ein einfaches Beispiel für das Wiedergabe-Tracking finden Sie in der Verwendung des JavaScript 2.x SDK in einem HTML5-Player:
 
 ```js
 /* Call on media start */ 
