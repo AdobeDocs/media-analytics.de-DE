@@ -64,10 +64,10 @@ ADBMobile.config.setDebugLogging(true)
 
 ## Testen von Chromecast-Anwendungen mit Adobe Bloodhound
 
-Bei der Anwendungsentwicklung können Sie in Bloodhound die Server-Aufrufe lokal anzeigen und die Daten optional an Adobe-Erfassungsserver weiterleiten. Weitere Informationen zu Bloodhound finden Sie in den folgenden Anleitungen:
+Bei der Anwendungsentwicklung können Sie in Bloodhound die Server-Aufrufe lokal anzeigen und die Daten optional an Adobe-Erfassungsserver weiterleiten. Weitere Informationen zu Bloodhound finden Sie in folgenden Handbüchern:
 
-* [Bloodhound 3.x für Mac](https://marketing.adobe.com/resources/help/en_US/mobile/bloodhound/)
-* [Bloodhound 2.2 für Windows](https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&amp;url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&amp;usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&amp;sig2=K0waTKxdMj_2kfNXdMI2yg)
+* [Bloodhound 3.x für Mac](https://marketing.adobe.com/resources/help/en_US/mobile/bloodhound/)
+* [Bloodhound 2.2 für Windows](https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&amp;url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&amp;usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&amp;sig2=K0waTKxdMj_2kfNXdMI2yg)
 
 >[!IMPORTANT]
 >
@@ -82,14 +82,14 @@ Format: [<timestamp>] [<level>] [<tag>] [<message>]
 Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.startupTime: 0
 ```
 
-* **timestamp:** Dies ist die aktuelle CPU-Zeit (mit GMT als Zeitzone)
-* **level:** Es gibt vier Meldungsebenen:
-   * INFO: Normalerweise die Eingabedaten aus der Anwendung (Player-Namen, Video-ID usw. validieren)
-   * DEBUG: Debug-Protokolle, mit denen Entwickler komplexere Probleme debuggen
-   * WARN: Weist auf potenzielle Integrations-/Konfigurationsfehler bzw. Heartbeats-SDK-Bugs hin
-   * ERROR: Weist auf schwerwiegende Integrationsfehler oder Heartbeats-SDK-Bugs hin
-* **tag:** Der Name der Unterkomponente, von der die Protokollmeldung ausgegeben wurde (normalerweise der Klassenname)
-* **message:** Die eigentliche Trace-Meldung
+* **timestamp:** Dies ist die aktuelle CPU-Zeit (Zeitzone GMT)
+* **level:** Es sind vier Meldungsebenen definiert:
+   * INFO - Normalerweise die Eingabedaten aus der Anwendung (Player-Namen, Video-ID usw. validieren)
+   * DEBUG - Debug-Protokolle, die von den Entwicklern zum Debugging komplexerer Probleme verwendet werden
+   * WARN - Gibt potenzielle Integrations-/Konfigurationsfehler oder Heartbeats-SDK-Fehler an
+   * ERROR - Zeigt wichtige Integrationsfehler oder Heartbeats-SDK-Fehler an
+* **tag:** Der Name der Unterkomponente, die die Protokollmeldung ausgegeben hat (normalerweise der Name der Klasse)
+* **message:** Die tatsächliche Trace-Meldung
 
 Sie können die Implementierung anhand der ausgegebenen Protokolle der Media SDK-Bibliothek überprüfen. Dabei bietet es sich an, in den Protokollen nach der Zeichenfolge `#track` zu suchen. Dadurch werden alle `track*()`-Aufrufe hervorgehoben, die von der Anwendung durchgeführt wurden.
 
