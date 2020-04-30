@@ -10,19 +10,19 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # VOD-Wiedergabe mit Pre-Roll-Anzeigen {#vod-playback-with-pre-roll-ads}
 
-In diesem Szenario wurde eine Pre-roll-Anzeige vor dem Hauptinhalt eingefügt. Wenn nichts anderes angegeben ist, sind die Netzwerkaufrufe mit den Aufrufen im Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. Die Netzwerkaufrufe erfolgen gleichzeitig, aber die Payload unterscheidet sich.
+In diesem Szenario wurde eine Pre-roll-Anzeige vor dem Hauptinhalt eingefügt. Wenn nichts anderes angegeben ist, sind die Netzwerkaufrufe mit den Aufrufen im Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. Der Netzwerkaufrufe erfolgen gleichzeitig, aber die Payload ist anders.
 
 | Auslöser | Heartbeat-Methode | Netzwerkaufrufe   | Hinweise   |
 | --- | --- | --- | --- |
 | Der Anwender klickt auf [!UICONTROL Abspielen]. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Daher sind diese Netzwerkaufrufe noch mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. |
-| Die Anzeige beginnt. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start, Heartbeat Ad Start |  |
-| Das Bild der Anzeige 1 wird wiedergegeben. | `trackPlay` | Heartbeat Ad Play | Der Anzeigeninhalt wird vor dem Hauptinhalt wiedergegeben und die Heartbeats beginnen mit dem Start der Anzeige. |
+| Die Anzeige beginnt. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Die Analytics-Anzeige beginnt, die Heartbeat-Anzeige beginnt. |  |
+| Das Bild der Anzeige 1 wird wiedergegeben. | `trackPlay` | Heartbeat Ad Play | Der Anzeigeninhalt wird vor dem Hauptinhalt wiedergegeben und die Heartbeats beginnen, wenn die Anzeige beginnt. |
 | Die Anzeige wird wiedergegeben. |  | Ad Heartbeats |  |
 | Wiedergabe von Anzeige 2 ist abgeschlossen. | `trackEvent:trackAdComplete` | Heartbeat Ad Complete | Das Ende der Anzeige wird erreicht. |
-| Das erste Bild der Anzeige 2 wird wiedergegeben. | `trackEvent:AdStart` | Analytics Ad Start, Heartbeat Ad Start |  |
+| Das erste Bild der Anzeige 2 wird wiedergegeben. | `trackEvent:AdStart` | Die Analytics-Anzeige beginnt, die Heartbeat-Anzeige beginnt. |  |
 | Die Anzeige wird wiedergegeben. |  | Ad Heartbeats |  |
 | Wiedergabe von Anzeige 2 ist abgeschlossen. | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Heartbeat Ad Complete | Das Ende der Anzeige und der Werbeunterbrechung wird erreicht. |
-| Der Inhalt wird wiedergegeben. |  | Content Heartbeats | Dieser Netzwerkaufruf ist identisch mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| Der Inhalt wird abgespielt. |  | Content Heartbeats | Dieser Netzwerkaufruf ist identisch mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | Der Inhalt ist abgeschlossen. | `trackComplete` | Heartbeat Content Complete | Dieser Netzwerkaufruf ist identisch mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | Die Sitzung ist beendet. | `trackSessionEnd` |  | `SessionEnd` |
 
@@ -54,8 +54,8 @@ Diese Parameter ähneln dem `Content Heartbeats`-Aufruf. Der `Ad Heartbeats`-Auf
 |---|---|---|
 | `s:event:type` | `play` |  |
 | `s:asset:type` | `ad` |  |
-| `s:asset:ad_id` | &lt;Anzeigen-ID&gt; |  |
-| `s:asset:pod_id` | &lt;Anzeigen-Pod-ID&gt; |  |
+| `s:asset:ad_id` | &lt;Anzeigen-ID> |  |
+| `s:asset:pod_id` | &lt;Anzeigen-Pod-ID> |  |
 
 Ähnlich wie bei `Heartbeat Content Complete`-Aufrufen wird ein `Heartbeat Ad Complete`-Aufruf gesendet, wenn die Wiedergabe der Anzeige abgeschlossen ist und das Ende der Abspielleiste erreicht wird. Dieser Aufruf sieht wie andere `Heartbeat Ad`-Aufrufe aus, enthält aber einige spezielle Elemente:
 
