@@ -2,8 +2,8 @@
 title: Einrichten von iOS
 description: Einrichten der Media SDK-Anwendung für die Implementierung in iOS.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -13,15 +13,15 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 ## Voraussetzungen
 
 * **Gültige Konfigurationsparameter für Media SDK festlegen:** Diese Parameter erhalten Sie nach der Einrichtung Ihres Analytics-Kontos von einem Adobe-Support-Mitarbeiter.
-* **ADBMobile für iOS in Ihre Anwendung implementieren:** Weitere Informationen zur Adobe Mobile-SDK-Dokumentation finden Sie unter [iOS-SDK 4.x für Experience Cloud-Lösungen.](https://marketing.adobe.com/resources/help/de_DE/mobile/ios/)
+* **ADBMobile für iOS in Ihre Anwendung implementieren:** Weitere Informationen zur Adobe Mobile-SDK-Dokumentation finden Sie unter [iOS-SDK 4.x für Experience Cloud-Lösungen.](https://docs.adobe.com/content/help/de-DE/mobile-services/ios/overview.html)
 
    >[!IMPORTANT]
    >
-   >Mit iOS 9 hat Apple eine Funktion namens App Transport Security (ATS) eingeführt. Mit dieser Funktion soll die Netzwerksicherheit verbessert werden, indem sichergestellt wird, dass Ihre Apps nur Protokolle und Codes des Industriestandards verwenden. Diese Funktion ist standardmäßig aktiviert, Sie haben jedoch Konfigurationsoptionen, in denen Sie die Verwendung von ATS auswählen können. Weitere Informationen zu ATS finden Sie unter [App Transport Security.](https://marketing.adobe.com/resources/help/de_DE/mobile/ios/app_transport_security.html)
+   >Mit iOS 9 hat Apple eine Funktion namens App Transport Security (ATS) eingeführt. Mit dieser Funktion soll die Netzwerksicherheit verbessert werden, indem sichergestellt wird, dass Ihre Apps nur Protokolle und Codes des Industriestandards verwenden. Diese Funktion ist standardmäßig aktiviert, Sie haben jedoch Konfigurationsoptionen, in denen Sie die Verwendung von ATS auswählen können. Weitere Informationen zu ATS finden Sie unter [App Transport Security.](https://docs.adobe.com/content/help/en/mobile-services/ios/config-ios/app-transport-security.html)
 
 * **Stellen Sie die folgenden Funktionen in Ihrem Medienplayer bereit:**
 
-   * _Eine API zum Abonnieren von Player-Ereignissen_: Das Media SDK erfordert den Aufruf einer Reihe einfacher APIs, wenn Ereignisse im Player auftreten.
+   * _Eine API zum Abonnieren von Player-Ereignissen_: Das Media SDK erfordert den Aufruf einer Reihe einfacher APIs, wenn im Player Ereignisse auftreten.
    * _Eine API, die Player-Informationen bereitstellt_: Diese Informationen enthalten Details wie den Mediennamen und die Abspielposition.
 
 ## SDK-Implementierung
@@ -44,13 +44,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       1. Starten Sie die XCode IDE und öffnen Sie die App.
       1. Ziehen Sie im **[!UICONTROL Project Navigator]** (Projektnavigator) das Verzeichnis `libs` per Drag-and-drop in das Projekt.
 
-      1. Stellen Sie sicher, dass das Kontrollkästchen **[!UICONTROL Copy Items if Needed]** (Elemente bei Bedarf kopieren) aktiviert ist, die Option **[!UICONTROL Create Groups]** (Gruppen erstellen) ausgewählt wurde und keines der Kontrollkästchen in **[!UICONTROL Add to Target]** (Zu Ziel hinzufügen) aktiviert ist.
+      1. Ensure that the **[!UICONTROL Copy Items if Needed]** checkbox is selected, the **[!UICONTROL Create Groups]** is selected, and none of the checkboxes in **[!UICONTROL Add to Target]** are selected.
 
          ![](assets/choose-options_ios.png)
 
-      1. Klicken Sie auf **[!UICONTROL Fertigstellen]**.
-      1. Wählen Sie im **[!UICONTROL Project Navigator]** Ihre App und Ziele aus.
-      1. Verknüpfen Sie im Bereich **[!UICONTROL Verknüpfte Frameworks]** und **[!UICONTROL Bibliotheken]** im Tab **[!UICONTROL Allgemein]** die erforderlichen Frameworks und Bibliotheken.
+      1. Klicken Sie auf **[!UICONTROL Finish]**.
+      1. In **[!UICONTROL Project Navigator]**, select your app and select your targets.
+      1. Link the required frameworks and libraries in the **[!UICONTROL Linked Frameworks]** and **[!UICONTROL Libraries]** section on the **[!UICONTROL General]** tab.
 
          **iOS-App-Ziele:**
 
@@ -146,7 +146,7 @@ Führen Sie die folgenden Schritte in Ihrem Xcode-Projekt aus. Bei dieser Anleit
 
 1. Ziehen Sie die Bibliotheksdatei `VideoHeartbeat_TV.a` in den `lib`-Ordner Ihres Projekts.
 
-1. Erweitern Sie im Tab **[!UICONTROL Build-Phasen]** des Ziels Ihrer tvOS-App den Bereich **[!UICONTROL Binär mit Bibliotheken verknüpfen]** und fügen Sie die folgenden Bibliotheken hinzu:
+1. In the **[!UICONTROL Build Phases]** tab of your tvOS app’s target, expand the **[!UICONTROL Link Binary with Libraries]** section and add the following libraries:
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`
