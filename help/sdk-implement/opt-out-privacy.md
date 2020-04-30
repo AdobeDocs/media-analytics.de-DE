@@ -28,7 +28,7 @@ Sie können steuern, ob die Tracking-Aktivität auf einem bestimmten Gerät zul�
 
    * Die `ADBMobile().setPrivacyStatus()`-Methode.
 
-      * **Opt-out:**
+      * **Deaktivieren:**
 
          * **Chromecast:**
 
@@ -45,7 +45,7 @@ Sie können steuern, ob die Tracking-Aktivität auf einem bestimmten Gerät zul�
          >
          >Wenn ein Benutzer das Tracking deaktiviert, werden alle vorhandenen Gerätedaten und -IDs gelöscht, bis das Tracking erneut aktiviert wird.
 
-      * **Wiederanmeldung in:**
+      * **Wieder aktivieren:**
 
          * **Chromecast:**
 
@@ -58,7 +58,7 @@ Sie können steuern, ob die Tracking-Aktivität auf einem bestimmten Gerät zul�
             ```
             ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
             ```
-      * **Zurücksetzen der aktuellen Einstellung:**
+      * **Die aktuelle Einstellung zurückgeben:**
 
          * **Chromecast:**
 
@@ -79,15 +79,15 @@ Mit diesen Informationen können Sie lokal gespeicherte Anwenderidentitäten von
 
 >[!IMPORTANT]
 >
->Die Methode zum Abrufen aller Kennungen ruft alle dem SDK bekannten und beibehaltenen Benutzeridentitäten ab. Diese Methode muss **vor** einem Opt-out des Anwenders aufgerufen werden.
+>Die Methode zum Abrufen aller Kennungen ruft alle dem SDK bekannten und beibehaltenen Benutzeridentitäten ab. Sie müssen diese Methode aufrufen, **bevor** sich ein Benutzer abmeldet.
 
-Die lokal gespeicherten Identitäten werden in einer JSON-Zeichenfolge zurückgegeben, die folgende Elemente enthalten kann:
+Die lokal gespeicherten Identitäten werden in einer JSON-Zeichenfolge zurückgegeben, die Folgendes enthalten kann:
 
-* Unternehmenskontext – IMS-Org-ID
-* Anwender-IDs
-* Experience Cloud ID (MCID)
+* Firmeninformationen: IMS-Org-IDs
+* Benutzer-IDs
+* Experience Cloud-ID (MCID)
 * Datenquellen-IDs (DPID, DPUUID)
-* Analytics-IDs (AVID, AID, VID und verbundene RSIDs)
+* Analytics-IDs (AVID, AID, VID und zugehörige RSIDs)
 * Audience Manager-ID (UUID)
 
 Beispiel:
