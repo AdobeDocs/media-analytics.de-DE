@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Überblick {#overview}
 
-Die grundlegenden Prinzipien der Videomessung sind bei Milestone und Media Analytics gleich: Es werden Videoplayer-Ereignisse aufgenommen und auf Analysemethoden übertragen, während gleichzeitig Playermetadaten und -werte erfasst und auf Analysevariablen übertragen werden. Die Media Analytics-Lösung ist aus Milestone hervorgegangen, sodass viele der Methoden und Kennzahlen gleich sind, aber der Konfigurationsansatz und der Code haben sich stark verändert. Es sollte möglich sein, den Player-Ereigniscode zu aktualisieren, um auf die neuen Methoden von Media Analytics zu verweisen. Weitere Informationen zur Implementierung von Media Analytics finden Sie unter [SDK-Übersicht](/help/sdk-implement/setup/setup-overview.md) und [Tracking-Übersicht](/help/sdk-implement/track-av-playback/track-core-overview.md).
+Die Hauptkonzepte der Videomessung sind bei Milestone und Media Analytics identisch. Dabei werden Videoplayer-Ereignisse verwendet und Analysemethoden zugeordnet. Außerdem werden Player-Metadaten und -Werte erfasst und Analytics-Variablen zugeordnet. Die Media Analytics-Lösung wurde aus Milestone entwickelt. Viele der Methoden und Metriken sind identisch. Konfigurationsansätze und Code wurden jedoch erheblich geändert. Es sollte möglich sein, den Player-Ereignis-Code so zu aktualisieren, dass er auf die neuen Media Analytics-Methoden verweist. Weitere Informationen zur Implementierung von Media Analytics finden Sie unter [SDK-Übersicht](/help/sdk-implement/setup/setup-overview.md) und [Tracking-Übersicht](/help/sdk-implement/track-av-playback/track-core-overview.md).
 
 Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone- und der Media Analytics-Lösung.
 
@@ -22,11 +22,11 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone- und der 
 
 | Milestone-Metrik | Variablentyp | Media Analytics-Metrik |
 | --- | --- | --- |
-| Inhalt | eVar<br/><br/> Standardgültigkeit: Besuch | Inhalt |
+| Inhalt | eVar <br/><br/>Standardgültigkeit: Besuch | Inhalt |
 | Content-Typ | eVar<br/><br/> Standardgültigkeit: Seitenansicht | Content-Typ |
-| Inhaltsbesuchszeit | Ereignistyp<br/><br/>: Zähler | Inhaltsbesuchszeit |
-| Videoaufrufe | Ereignis-<br/><br/> Typ: Zähler | Videoaufrufe |
-| Videobeendigungen | Ereignis-<br/><br/> Typ: Zähler | Inhaltsbeendigung |
+| Inhaltsbesuchszeit | Ereignistyp <br/><br/>: Zähler | Inhaltsbesuchszeit |
+| Videoaufrufe | Ereignistyp <br/><br/>: Zähler | Videoaufrufe |
+| Videobeendigungen | Ereignistyp <br/><br/>: Zähler | Inhaltsbeendigung |
 
 ### Medienmodulvariablen
 
@@ -39,7 +39,7 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone- und der 
 </th>
 <th>Media Analytics
 </th>
-<th>Media Analytics-Syntax
+<th>Syntax von Media Analytics
 </th>
 </tr>
 </thead>
@@ -50,12 +50,13 @@ Media.trackUsingContextData
 </td>
 <td>
 <pre>
-s.Media.trackUsingContextData = true;
+s.Media.trackUsingContextData
+  = true;
 </pre>
 </td>
 <td>nicht angegeben
 </td>
-<td>Alle Media Analytics-Daten werden nur über Kontextdaten gesendet.
+<td>Alle Medienanalysedaten werden nur mit Kontextdaten gesendet.
 </td>
 </tr>
 <tr>
@@ -139,7 +140,7 @@ s.Media.trackEvents =
 </th>
 <th>Media Analytics
 </th>
-<th>Media Analytics-Syntax
+<th>Syntax von Media Analytics
 </th>
 </tr>
 </thead>
@@ -150,12 +151,13 @@ Media.autoTrack
 </td>
 <td>
 <pre>
-s.Media.autoTrack = true;
+s.Media.autoTrack
+  = true;
 </pre>
 </td>
 <td>nicht angegeben
 </td>
-<td>Wir bieten keine vorkonfigurierten Playerzuordnungen mehr an.
+<td>Wir bieten keine vordefinierten Player-Zuordnungen mehr an.
 </td>
 </tr>
 <tr>
@@ -171,7 +173,7 @@ s.Media.
 </td>
 <td>nicht angegeben
 </td>
-<td>Wir bieten keine vorkonfigurierten Playerzuordnungen mehr an.
+<td>Wir bieten keine vordefinierten Player-Zuordnungen mehr an.
 </td>
 </tr>
 <tr>
@@ -187,7 +189,7 @@ s.Media.
 </td>
 <td>nicht angegeben
 </td>
-<td>Content Complete unterstützt nur eine 100 %-Fortschrittsmarkierung.
+<td>Inhaltsbeendigung unterstützt nur eine 100%ige Fortschrittsmarkierung.
 </td>
 </tr>
 <tr>
@@ -203,7 +205,7 @@ s.Media.
 </td>
 <td>nicht angegeben
 </td>
-<td>Content Complete unterstützt nur eine 100 %-Fortschrittsmarkierung.
+<td>Inhaltsbeendigung unterstützt nur eine 100%ige Fortschrittsmarkierung.
 </td>
 </tr>
 <tr>
@@ -212,7 +214,8 @@ Media.playerName
 </td>
 <td>
 <pre>
-s.Media.playerName = "Custom Player Name"
+s.Media.playerName
+  = "Custom Player Name"
 </pre>
 </td>
 <td>
@@ -281,12 +284,13 @@ Media.segmentByMilestones
 </td>
 <td>
 <pre>
-s.Media.segmentByMilestones = true;
+s.Media.segmentByMilestones
+  = true;
 </pre>
 </td>
 <td>nicht angegeben
 </td>
-<td>Automatisches Tracking ist nicht mehr verfügbar.
+<td>Das automatische Tracking ist nicht mehr verfügbar
 </td>
 </tr>
 <tr>
@@ -302,7 +306,7 @@ s.Media.
 </td>
 <td>nicht angegeben
 </td>
-<td>Automatisches Tracking ist nicht mehr verfügbar.
+<td>Das automatische Tracking ist nicht mehr verfügbar
 </td>
 </tr>
 </tbody>
@@ -319,7 +323,7 @@ s.Media.
 </th>
 <th>Media Analytics
 </th>
-<th>Media Analytics-Syntax
+<th>Syntax von Media Analytics
 </th>
 </tr>
 </thead>
@@ -353,7 +357,7 @@ s.Media.
 </td>
 <td>nicht angegeben
 </td>
-<td>Fortschrittsmarkierungen werden standardmäßig nicht für Anzeigen angeboten. Verwenden Sie berechnete Metriken, um Anzeigenfortschrittsmarken zu erstellen.
+<td>Fortschrittsmarkierungen werden nicht standardmäßig für Anzeigen bereitgestellt. Verwenden Sie berechnete Metriken, um Anzeigenfortschrittsmarken zu erstellen.
 </td>
 </tr>
 <tr>
@@ -385,7 +389,7 @@ s.Media.
 </td>
 <td>nicht angegeben
 </td>
-<td>Automatisches Tracking ist nicht mehr verfügbar.
+<td>Das automatische Tracking ist nicht mehr verfügbar
 </td>
 </tr>
 <tr>
@@ -401,7 +405,7 @@ s.Media.
 </td>
 <td>nicht angegeben
 </td>
-<td>Automatisches Tracking ist nicht mehr verfügbar.
+<td>Das automatische Tracking ist nicht mehr verfügbar
 </td>
 </tr>
 </tbody>
@@ -418,7 +422,7 @@ s.Media.
 </th>
 <th>Media Analytics
 </th>
-<th>Media Analytics-Syntax
+<th>Syntax von Media Analytics
 </th>
 </tr>
 </thead>
@@ -429,7 +433,10 @@ Media.open
 </td>
 <td>
 <pre>
-s.Media.open(mediaName,mediaLength,mediaPlayerName)
+s.Media.open(
+  mediaName,
+  mediaLength,
+  mediaPlayerName)
 </pre>
 </td>
 <td>
@@ -520,7 +527,14 @@ Media.openAd
 </td>
 <td>
 <pre>
-s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM)
+s.Media.openAd(
+  name,
+  length,
+  playerName,
+  parentName,
+  parentPod,
+  parentPodPosition,
+  CPM)
 </pre>
 </td>
 <td>
@@ -625,7 +639,7 @@ parentName
 </td>
 <td>nicht angegeben
 </td>
-<td>Automatisch vererbt
+<td>Automatisch geerbt
 </td>
 </tr>
 <tr>
@@ -695,7 +709,9 @@ Media.click
 </td>
 <td>
 <pre>
-s.Media.click(name,offset)
+s.Media.click(
+  name,
+  offset)
 </pre>
 </td>
 <td>nicht angegeben
@@ -709,7 +725,8 @@ Media.close
 </td>
 <td>
 <pre>
-s.Media.close(mediaName)
+s.Media.close(
+  mediaName)
 </pre>
 </td>
 <td>
@@ -729,7 +746,9 @@ Media.complete
 </td>
 <td>
 <pre>
-s.Media.complete(name,offset)
+s.Media.complete(
+  name,
+  offset)
 </pre>
 </td>
 <td>
@@ -751,7 +770,12 @@ Media.play
 </td>
 <td>
 <pre>
-s.Media.play(name,offset,segmentNum,segment,segmentLength)
+s.Media.play(
+  name,
+  offset,
+  segmentNum,
+  segment,
+  segmentLength)
 </pre>
 </td>
 <td>
@@ -773,7 +797,9 @@ Media.stop
 </td>
 <td>
 <pre>
-s.Media.stop(mediaName,mediaOffset)
+s.Media.stop(
+  mediaName,
+  mediaOffset)
 </pre>
 </td>
 <td>
@@ -856,12 +882,13 @@ Media.track
 </td>
 <td>
 <pre>
-s.Media.track(mediaName)
+s.Media.track(
+  mediaName)
 </pre>
 </td>
 <td>nicht angegeben
 </td>
-<td>Die Frequenz des Tracking-Aufrufs wird automatisch eingestellt.
+<td>Die Tracking-Aufrufhäufigkeit wird automatisch festgelegt.
 </td>
 </tr>
 </tbody>
