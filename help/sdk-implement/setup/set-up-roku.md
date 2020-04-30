@@ -2,8 +2,8 @@
 title: Roku einrichten
 description: Einrichten der Media SDK-Anwendung für die Implementierung in Roku.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -14,12 +14,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * **Gültige Konfigurationsparameter für Heartbeats festlegen:** Diese Parameter erhalten Sie nach der Einrichtung Ihres Media Analytics-Kontos von einem Adobe-Support-Mitarbeiter.
 * **Stellen Sie die folgenden Funktionen in Ihrem Medienplayer bereit:**
-   * _Eine API zum Abonnieren von Player-Ereignissen_ - Das Media SDK erfordert den Aufruf einer Reihe einfacher APIs, wenn im Player Ereignisse auftreten.
-   * _Eine API, die Player-Informationen bereitstellt_ - Diese Informationen enthalten Details wie den Mediennamen und die Abspielposition.
+   * _Eine API zum Abonnieren von Player-Ereignissen_: Das Media SDK erfordert den Aufruf einer Reihe einfacher APIs, wenn im Player Ereignisse auftreten.
+   * _Eine API, die Player-Informationen bereitstellt_: Diese Informationen enthalten Details wie den Mediennamen und die Abspielposition.
 
 Adobe Mobile Services bietet eine neue Anwenderoberfläche, auf der mobile Marketingfunktionen für mobile Anwendungen aus der gesamten Adobe Experience Cloud kombiniert werden. Zunächst bietet der Mobile Service eine nahtlose Integration von App-Analyse- und Targeting-Funktionen für die Lösungen Adobe Analytics und Adobe Target.
 
-Weitere Informationen finden Sie in der [Dokumentation zu Adobe Mobile Services.](https://marketing.adobe.com/resources/help/de_DE/mobile/)
+Weitere Informationen finden Sie in der [Dokumentation zu Adobe Mobile Services.](https://docs.adobe.com/content/help/de-DE/mobile-services/using/home.html)
 
 Mit Roku-SDK 2.x für Experience Cloud-Lösungen können Sie in BrightScript geschriebene Roku-Anwendungen messen, Zielgruppendaten über das Zielgruppen-Management nutzen und erfassen und Videointeraktionen über Video-Heartbeats messen.
 
@@ -136,4 +136,4 @@ Mit Roku-SDK 2.x für Experience Cloud-Lösungen können Sie in BrightScript ge
     * [GetRIDA()](https://sdkdocs.roku.com/display/sdkdoc/ifDeviceInfo#ifDeviceInfo-GetRIDA())
     -->
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
