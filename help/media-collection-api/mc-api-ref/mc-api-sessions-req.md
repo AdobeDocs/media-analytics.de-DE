@@ -91,6 +91,6 @@ Via: 1.1 wsg.sanjose08
 | HTTP-Antwortcode | Beschreibung |
 |---|---|
 | 201 | Sitzung erstellt |
-| 400 | Unzulässige Anfrage |
-| 500 | Serverfehler |
+| 400 | Ungültige Anfrage |
+| 500 | Server-Fehler |
 
