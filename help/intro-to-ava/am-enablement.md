@@ -10,17 +10,17 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 # Audience Manager-Aktivierung {#audience-manager-enablement}
 
-Mit Adobe Audience Manager (AAM), einer Daten-Management-Plattform (DMP), können Sie Ihre verschiedenen Assets mit Zielgruppendaten zusammenführen, um so die Erfassung geschäftlich relevanter Zahlen zu Site-Besuchern zu vereinfachen, marktfähige Segmente zu erstellen und dem richtigen Publikum gezielte Werbeanzeigen und Inhalte bereitzustellen.
+Adobe Audience Manager (AAM) ist eine Data Management Platform (DMP), die Ihnen hilft, Ihre Zielgruppen-Assets zu kombinieren. So können Sie ganz einfach geschäftlich relevante Informationen über Site-Besucher sammeln, vermarktbare Segmente erstellen und spezifische Werbung und Inhalte für die richtige Zielgruppe bereitstellen.
 
-Mit AAM sind Sie nicht an einen Datenanbieter, eine Datenaustauschplattform oder eine Demand Side Platform gebunden. Darüber hinaus ist AAM mit allen Daten-Assets Ihrer Partner kompatibel. Dank des Zugriffs auf verschiedene Datenquellen bietet AAM digitalen Publishern die Möglichkeit, neben unserer privaten Datenkooperation verschiedenste Drittanbieterdaten zu verwenden. Weitere Informationen zu AAM finden Sie in der AAM-Dokumentation der [Audience Manager-Produktdokumentation.](https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/aam-home.html)
+Mit AAM sind Sie nicht an eine Datenverkaufs-, Datenaustausch- oder Nachfrage-Plattform gebunden. Darüber hinaus ist AAM vollkommen unabhängig, wenn es um die Datenbestände Ihrer Partner geht. Mit Zugriff auf mehrere Datenquellen bietet AAM Publishern die Möglichkeit, eine Vielzahl von Drittanbieterdaten und unsere private Datenkooperation zu nutzen. Weitere Informationen zu AAM finden Sie in der AAM-Dokumentation der [Audience Manager-Produktdokumentation.](https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/aam-home.html)
 
-**Datenübertragung von VA nach AAM:** Sowohl bei Videoinhalten als auch bei -anzeigen können die Metriken und Metadaten, die mit (reservierten) Lösungsvariablen erfasst werden, automatisch an AAM gesendet werden. Die Datenübertragung ist auf allen Plattformen verfügbar, einschließlich Desktop, Mobile und OTT. Um die serverseitige Datenübertragung zu aktivieren, müssen Sie dies beim Adobe-Kundendienst anfordern.
+**VA-Datenübertragung an AAM -** Sowohl bei Videoinhalten als auch bei Videoanzeigen können die Metriken und Metadaten, die mit (reservierten) Lösungsvariablen erfasst werden, automatisch an AAM gesendet werden. Die Datenübertragung ist auf allen Plattformen verfügbar, einschließlich Desktop, Mobile und OTT. Um diese Server-seitige Datenübertragung zu aktivieren, müssen Sie sich an den Adobe-Kundendienst wenden und die Aktivierung dieses Feeds beantragen.
 
 >[!IMPORTANT]
 >
 >Um die reibungslose Übertragung der Daten an AAM zu gewährleisten, sollten Sie die neuesten Versionen der Media SDK-Bibliotheken verwenden.
 
-Federated Data unterstützt die Datenweitergabe an AAM vollständig. Arbeiten Sie mit Ihrem Adobe-Team zusammen, um die Federated Data-Einstellungen zu bestätigen.
+Federated Data unterstützt die Datenweitergabe an AAM vollständig. Wenden Sie sich an Ihr Adobe-Team, um die Einstellungen für Federated Data zu prüfen.
 
 ## OTT-/AAM-Methoden {#ott-aam-methods}
 
@@ -30,7 +30,7 @@ Sie können diese Methoden verwenden, um Signale zu senden und Besuchersegmente 
 
 * `getVisitorProfile() -`
 
-   Gibt das zuletzt erfasste Besucherprofil zurück. Gibt ein leeres Objekt zurück, wenn bisher kein Signal eingegangen ist.
+   Gibt das zuletzt erfasste Besucherprofil zurück. Gibt ein leeres Objekt zurück, wenn noch kein Signal gesendet wurde.
 
    ```js
    ADBMobile.audienceManager.getVisitorProfile();
@@ -38,7 +38,7 @@ Sie können diese Methoden verwenden, um Signale zu senden und Besuchersegmente 
 
 * `getDpid() -`
 
-   Gibt das zuletzt erfasste Besucherprofil zurück. Gibt ein leeres Objekt zurück, wenn bisher kein Signal eingegangen ist.
+   Gibt das zuletzt erfasste Besucherprofil zurück. Gibt ein leeres Objekt zurück, wenn noch kein Signal gesendet wurde.
 
    ```js
    ADBMobile.audienceManager.getDpid();
@@ -54,7 +54,7 @@ Sie können diese Methoden verwenden, um Signale zu senden und Besuchersegmente 
 
 * `setDpidAndDpuuid() -`
 
-   Legt die DPID und die DPUUID fest. Wenn die DPID und die DPUUID festgelegt sind, werden sie mit jedem Signal gesendet.
+   Legt die DPID und die DPUUID fest. Wenn DPID und DPUUID festgelegt sind, werden sie mit jedem Signal gesendet.
 
    ```js
    ADBMobile.audienceManager.SetDpidAndDpuuid("myDpid", "myDpuuid");
@@ -72,7 +72,7 @@ Sie können diese Methoden verwenden, um Signale zu senden und Besuchersegmente 
 
 * `audienceVisitorProfile -`
 
-   Gibt das zuletzt erfasste Besucherprofil zurück. Gibt ein leeres Objekt zurück, wenn bisher kein Signal eingegangen ist.
+   Gibt das zuletzt erfasste Besucherprofil zurück. Gibt ein leeres Objekt zurück, wenn noch kein Signal gesendet wurde.
 
    ```js
    ADBMobile().audienceVisitorProfile()
@@ -80,7 +80,7 @@ Sie können diese Methoden verwenden, um Signale zu senden und Besuchersegmente 
 
 * `audienceDpid -`
 
-   Gibt das zuletzt erfasste Besucherprofil zurück. Gibt ein leeres Objekt zurück, wenn bisher kein Signal eingegangen ist.
+   Gibt das zuletzt erfasste Besucherprofil zurück. Gibt ein leeres Objekt zurück, wenn noch kein Signal gesendet wurde.
 
    ```js
    ADBMobile().audienceDpid()
@@ -96,7 +96,7 @@ Sie können diese Methoden verwenden, um Signale zu senden und Besuchersegmente 
 
 * `audienceSetDpidAndDpuuid -`
 
-   Legt die DPID und die DPUUID fest. Wenn die DPID und die DPUUID festgelegt sind, werden sie mit jedem Signal gesendet.
+   Legt die DPID und die DPUUID fest. Wenn DPID und DPUUID festgelegt sind, werden sie mit jedem Signal gesendet.
 
    ```js
    ADBMobile().audienceSetDpidAndDpuuid("myDpid", "myDpuuid")
