@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Analytics-Daten
 
-| Anforderungsschlüssel  | erforderlich | Festgelegt in |  Beschreibung  |
+| Anforderungsschlüssel  | erforderlich | Eingerichtet auf... |  Beschreibung  |
 | --- | :---: | :---: | --- |
 | `analytics.trackingServer` | Y | `sessionStart` | Die URL Ihres Adobe Analytics-Servers |
 | `analytics.reportSuite` | Y | `sessionStart` | Die ID, die Ihre Analytics-Reporting-Daten identifiziert |
@@ -21,7 +21,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Besucherdaten
 
-| Anforderungsschlüssel  | erforderlich | Festgelegt in |  Beschreibung  |
+| Anforderungsschlüssel  | erforderlich | Eingerichtet auf... |  Beschreibung  |
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | `sessionStart` | Die Experience Cloud-Organisations-ID, die Ihre Organisation innerhalb der Adobe Experience Cloud-Umgebung identifiziert |
 | `visitor.marketingCloudUserId` | N | `sessionStart` | Dies ist die Experience Cloud-Benutzer-ID (ECID). In den meisten Szenarien ist dies die ID, die Sie zur Identifizierung eines Benutzers verwenden sollten. Die `marketingCloudUserId` in Heartbeat entspricht der `MID` in Adobe Analytics. Dieser Parameter ist zwar technisch nicht erforderlich, aber für den Zugriff auf die Apps der Experience Cloud-Familie erforderlich. |
@@ -30,32 +30,32 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Inhaltsdaten
 
-| Anforderungsschlüssel  | erforderlich | Festgelegt in |  Beschreibung  |
+| Anforderungsschlüssel  | erforderlich | Eingerichtet auf... |  Beschreibung  |
 | --- | :---: | :---: | --- |
 | `media.id` | Y | `sessionStart` | Eindeutige Kennung für den Inhalt |
 | `media.name` | N | `sessionStart` | Lesbarer Name für den Inhalt |
 | `media.length` | Y | `sessionStart` | Inhaltsdauer (in Sekunden) |
 | `media.contentType` | Y | `sessionStart` | Format des Streams (hierbei kann es sich um eine beliebige Zeichenfolge handeln, empfohlen werden jedoch Werte wie „Live“, „VOD“ oder „Linear“) |
 | `media.playerName` | Y | `sessionStart` | Der Name des Players, der für das Rendering des Inhalts verantwortlich ist |
-| `media.channel` | Y | `sessionStart` | Der Verbreitungskanal für den Inhalt. Hierbei kann es sich um den Namen einer App, einer Website oder eines anderen Assets handeln. |
+| `media.channel` | Y | `sessionStart` | Der Verbreitungskanal für den Inhalt. Dabei kann es sich um den Namen einer App, einer Website oder einer Eigenschaft handeln. |
 | `media.resume` | N | `sessionStart` | Gibt an, ob ein Benutzer eine vorherige Sitzung fortsetzt (statt eine neue Sitzung zu starten) |
 | `media.sdkVersion` | N | `sessionStart` | Die vom Player verwendete SDK-Version |
 
 ## Standardmäßige Inhaltsmetadaten
 
-| Anforderungsschlüssel  | erforderlich | Festgelegt in |  Beschreibung  |
+| Anforderungsschlüssel  | erforderlich | Eingerichtet auf... |  Beschreibung  |
 | --- | :---: | :---: | --- |
 | `media.show` | N | `sessionStart` | Der Name des Programms oder der Serie |
 | `media.season` | N | `sessionStart` | Die Staffelnummer der Sendung oder Serie |
 | `media.episode` | N | `sessionStart` | Die Folge der Sendung oder Serie |
-| `media.assetId` | N | `sessionStart` | Die eindeutige ID für den Inhalt des Video-Assets, z. B. die Kennung einer Serienfolge, eines Film-Assets oder eines Live-Events. In der Regel werden diese IDs von Metadaten-Anbietern wie EIDR, TMS/Gracenote oder Rovi abgerufen. Diese IDs können auch von anderen speziellen oder internen Systemen stammen. |
+| `media.assetId` | N | `sessionStart` | Die eindeutige ID für den Inhalt des Video-Assets, z. B. die Kennung einer Serienfolge, eines Film-Assets oder eines Live-Events. Normalerweise stammen diese IDs von Metadatensystemen wie EIDR, TMS/Gracenote oder Rovi. Diese Kennungen können auch von anderen proprietären oder internen Systemen stammen. |
 | `media.genre` | N | `sessionStart` | Die Art des Inhalts nach Definition des Inhaltserstellers |
 | `media.firstAirDate` | N | `sessionStart` | Das Datum der Erstausstrahlung des Inhalts im Fernsehen |
 | `media.firstDigitalDate` | N | `sessionStart` | Das Datum der Erstausstrahlung des Inhalts auf einer digitalen Plattform |
 | `media.rating` | N | `sessionStart` | Die Alterseinstufung nach der Definition von TV Parental Guidelines |
 | `media.originator` | N | `sessionStart` | Der Ersteller des Inhalts |
 | `media.network` | N | `sessionStart` | Der Name des Netzwerks/Senders |
-| `media.showType` | N | `sessionStart` | Die Art des Inhalts, angegeben als Integer-Wert zwischen 0 und 3: <ul> <li>0: Vollständige Folge </li> <li>1: Vorschau </li> <li>2: Clip </li> <li>3: Sonstiges </li> </ul> |
+| `media.showType` | N | `sessionStart` | Der Inhaltstyp, angegeben als Integer-Wert zwischen 0 und 3: <ul> <li>0 - Vollständige Folge </li> <li>1 - Vorschau </li> <li>2 - Clip </li> <li>3 - Sonstiges </li> </ul> |
 | `media.adLoad` | N | `sessionStart` | Die Art der geladenen Anzeige |
 | `media.pass.mvpd` | N | `sessionStart` | Der von der Adobe-Authentifizierung bereitgestellte MVPD |
 | `media.pass.auth` | N | `sessionStart` | Zeigt an, dass der Anwender durch die Adobe-Authentifizierung autorisiert wurde (dieser Parameter kann nur true lauten, wenn er festgelegt wurde). |
@@ -64,7 +64,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Anzeigedaten
 
-| Anforderungsschlüssel  | erforderlich | Festgelegt in |  Beschreibung  |
+| Anforderungsschlüssel  | erforderlich | Eingerichtet auf... |  Beschreibung  |
 | --- | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | N | `adBreakStart` | Der Anzeigename der Werbeunterbrechung |
 | `media.ad.podIndex` | Y | `adBreakStart` | Der Index der Anzeigen-Pods im Video |
@@ -77,7 +77,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Standardmäßige Anzeigenmetadaten
 
-| Anforderungsschlüssel  | erforderlich | Festgelegt in |  Beschreibung  |
+| Anforderungsschlüssel  | erforderlich | Eingerichtet auf... |  Beschreibung  |
 | --- | :---: | :---: | --- |
 | `media.ad.advertiser` | N | `adStart` | Das Unternehmen oder die Marke des Produkts, das in der Anzeige vorgestellt wird |
 | `media.ad.campaignId` | N | `adStart` | Die ID der Anzeigenkampagne |
@@ -88,7 +88,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Kapiteldaten
 
-| Anforderungsschlüssel  | erforderlich | Festgelegt in |  Beschreibung  |
+| Anforderungsschlüssel  | erforderlich | Eingerichtet auf... |  Beschreibung  |
 | --- | :---: | :---: | --- |
 | `media.chapter.index` | Y | `chapterStart` | Identifiziert die Position des Kapitels im Inhalt |
 | `media.chapter.offset` | Y | `chapterStart` | Die Sekunde, in der die Wiedergabe des Kapitels beginnt |
@@ -97,16 +97,16 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Qualitätsdaten
 
-| Anforderungsschlüssel  | erforderlich | Festgelegt in |  Beschreibung  |
+| Anforderungsschlüssel  | erforderlich | Eingerichtet auf... |  Beschreibung  |
 | --- | :---: | :---: | --- |
-| `media.qoe.bitrate` | N | Alle | Die Bitrate des Streams |
-| `media.qoe.droppedFrames` | N | Alle | Die Anzahl der Dropped Frames im Stream |
-| `media.qoe.framesPerSecond` | N | Alle | Die Anzahl der Frames pro Sekunde |
-| `media.qoe.timeToStart` | N | Alle | Die Zeit (in Millisekunden), die zwischen dem Start des Videos durch den Anwender und der tatsächlichen Wiedergabe des Inhalts vergeht |
+| `media.qoe.bitrate` | N | Eines | Die Bitrate des Streams |
+| `media.qoe.droppedFrames` | N | Eines | Die Anzahl der Dropped Frames im Stream |
+| `media.qoe.framesPerSecond` | N | Eines | Die Anzahl der Frames pro Sekunde |
+| `media.qoe.timeToStart` | N | Eines | Die Dauer (in Millisekunden) zwischen der Aktivierung der Wiedergabetaste durch den Benutzer und dem Laden und Abspielen des Inhalts |
 
 ## Parameter des California Consumer Privacy Act (CCPA) {#ccpa-params}
 
-| Anforderungsschlüssel  | erforderlich | Festgelegt in |  Beschreibung  |
+| Anforderungsschlüssel  | erforderlich | Eingerichtet auf... |  Beschreibung  |
 | --- | :---: | :---: | --- |
 | `analytics.optOutServerSideForwarding` | N | `sessionStart` | Auf „true“ (wahr) setzen, wenn der Endbenutzer die Freigabe seiner Daten für Adobe Analytics und andere Experience Cloud-Lösungen (z. B. Audience Manager) abgelehnt hat. |
 | `analytics.optOutShare` | N | `sessionStart` | Auf „true“ (wahr) setzen, wenn der Endbenutzer die Verknüpfung seiner Daten (z. B. mit anderen Adobe Analytics-Clients) abgelehnt hat. |
@@ -160,7 +160,7 @@ Beachten Sie, dass der Wert `visitor.customerIDs` über mehrere Objekte im angeg
 
 ### visitor.aamLocationHint
 
-Dieser Parameter gibt an, welcher AAM-Edge (Adobe Audience Manager) angesteuert wird, wenn Adobe Analytics die Kundendaten an Audience Manager sendet. Wenn Sie diesen Parameter nicht übergeben, wird er von Adobe fest auf 1 codiert. Das ist insbesondere dann wichtig, wenn Endanwender ihre Geräte an geografisch weit entfernten Standorten verwenden (z. B. US-Ost- und -Westküste, Europa, Asien). Andernfalls werden die Daten auf verschiedene AAM-Edges aufgeteilt.
+Dieser Parameter gibt an, welcher AAM-Edge (Adobe Audience Manager) angesteuert wird, wenn Adobe Analytics die Kundendaten an Audience Manager sendet. Wenn Sie diesen Parameter nicht übergeben, wird er von Adobe auf 1 fest codiert. Das ist insbesondere dann wichtig, wenn Endanwender ihre Geräte an geografisch weit entfernten Standorten verwenden (z. B. US-Ost- und -Westküste, Europa, Asien). Andernfalls werden die Benutzerdaten über mehrere AAM-Edges verteilt.
 
 ### media.resume
 
