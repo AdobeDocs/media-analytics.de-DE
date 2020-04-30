@@ -17,12 +17,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >Mit iOS 9 hat Apple eine Funktion namens App Transport Security (ATS) eingeführt. Diese Funktion soll die Netzwerksicherheit steigern, indem sie gewährleistet, dass Ihre Anwendungen nur branchenübliche Protokolle und Chiffren verwenden. Die Funktion ist standardmäßig aktiviert, Ihnen stehen jedoch einige Konfigurationsoptionen für die Arbeit mit ATS zur Verfügung. Weitere Informationen zu ATS finden Sie unter [App Transport Security.](https://marketing.adobe.com/resources/help/de_DE/mobile/ios/app_transport_security.html)
+   >Mit iOS 9 hat Apple eine Funktion namens App Transport Security (ATS) eingeführt. Mit dieser Funktion soll die Netzwerksicherheit verbessert werden, indem sichergestellt wird, dass Ihre Apps nur Protokolle und Codes des Industriestandards verwenden. Diese Funktion ist standardmäßig aktiviert, Sie haben jedoch Konfigurationsoptionen, in denen Sie die Verwendung von ATS auswählen können. Weitere Informationen zu ATS finden Sie unter [App Transport Security.](https://marketing.adobe.com/resources/help/de_DE/mobile/ios/app_transport_security.html)
 
-* **Stellen Sie in Ihrem Medienplayer folgende Funktionen bereit:**
+* **Stellen Sie die folgenden Funktionen in Ihrem Medienplayer bereit:**
 
-   * _Eine API, um Player-Ereignisse zu abonnieren:_ Die Medien-SDK erfordert, dass Sie einige einfache APIs aufrufen, wenn Ereignisse in Ihrem Player auftreten.
-   * _Eine API, die Playerinformationen bereitstellt:_ Diese Informationen enthalten Details wie z. B. Medienname und Abspielposition.
+   * _Eine API zum Abonnieren von Player-Ereignissen_: Das Media SDK erfordert den Aufruf einer Reihe einfacher APIs, wenn Ereignisse im Player auftreten.
+   * _Eine API, die Player-Informationen bereitstellt_: Diese Informationen enthalten Details wie den Mediennamen und die Abspielposition.
 
 ## SDK-Implementierung
 
@@ -38,8 +38,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       * `MediaSDK_TV.a`: Eine Bitcode-fähige Fat Binary, die die Bibliotheks-Builds für neue Apple TV-Geräte (arm64) und Simulatoren (x86_64) enthält.
 
-         Diese Binärdatei sollte verknüpft werden, wenn das Ziel eine Apple TV-(tvOS-)App ist.
-   1. Bibliothek zu Ihrem Projekt hinzufügen:
+         Diese Binärdatei sollte verknüpft werden, wenn das Ziel für eine Apple TV (tvOS)-App vorgesehen ist.
+   1. Fügen Sie die Bibliothek zu Ihrem Projekt hinzu:
 
       1. Starten Sie die XCode IDE und öffnen Sie die App.
       1. Ziehen Sie im **[!UICONTROL Project Navigator]** (Projektnavigator) das Verzeichnis `libs` per Drag-and-drop in das Projekt.
@@ -57,13 +57,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
          * **AdobeMobileLibrary.a**
          * **MediaSDK.a**
          * **libsqlite3.0.tbd**
-         **Apple TV (tvOS)-Targets:**
+         **Apple TV (tvOS)-Ziele:**
 
          * **AdobeMobileLibrary_TV.a**
          * **MediaSDK_TV.a**
          * **libsqlite3.0.tbd**
          * **SystemConfiguration.framework**
-      1. Überprüfen Sie, ob die App fehlerfrei erstellt wird.
+      1. Überprüfen Sie, ob Ihre App ohne Fehler erstellt wird.
 
 
 
@@ -140,9 +140,9 @@ Weitere Informationen zur Migration von 1.x zu 2.x finden Sie unter [Migration v
 
 ## Native App für tvOS konfigurieren
 
-Mit der neuen Apple TV-Version können Sie Anwendungen erstellen, die in der nativen tvOS-Umgebung ausgeführt werden. Sie können entweder eine rein native App mit verschiedenen in iOS verfügbaren Frameworks erstellen oder eine App über XML-Vorlagen und JavaScript erstellen. Ab MediaSDK-Version 2.0 wird tvOS unterstützt. Weitere Informationen zu tvOS finden Sie auf der [tvOS-Entwickler-Site.](https://developer.apple.com/tvos/)
+Mit der Veröffentlichung des neuen Apple TV können Sie jetzt Anwendungen erstellen, die in der nativen tvOS-Umgebung ausgeführt werden. Sie können entweder eine rein native App mit einem der verschiedenen in iOS verfügbaren Frameworks oder eine App mit XML-Vorlagen und JavaScript erstellen. Ab MediaSDK Version 2.0 wird tvOS unterstützt. Weitere Informationen zu tvOS finden Sie auf der [tvOS-Entwickler-Site.](https://developer.apple.com/tvos/)
 
-Führen Sie die folgenden Schritte in Ihrem Xcode-Projekt aus. In dieser Anleitung wird davon ausgegangen, dass das Projekt eine Apple TV-App zum Ziel hat, die auf tvOS ausgerichtet ist:
+Führen Sie die folgenden Schritte in Ihrem Xcode-Projekt aus. Bei dieser Anleitung wird angenommen, dass Ihr Projekt als Ziel eine Apple TV-App hat, die tvOS auswählt:
 
 1. Ziehen Sie die Bibliotheksdatei `VideoHeartbeat_TV.a` in den `lib`-Ordner Ihres Projekts.
 
