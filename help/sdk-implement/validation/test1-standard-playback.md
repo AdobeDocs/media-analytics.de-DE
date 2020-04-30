@@ -2,7 +2,7 @@
 title: 'Test 1: Standardwiedergabe'
 description: Hier wird der Standardwiedergabetest beschrieben, der bei der Validierung verwendet wird.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 In diesem Testfall werden die allgemeine Wiedergabe und Sequenzierung validiert.
 
 Media Analytics-Implementierungen umfassen zwei Arten von Tracking-Aufrufen:
-* Aufrufe, die direkt an Ihren Adobe Analytics (AppMeasurement)-Server gesendet werden. Diese Aufrufe erfolgen bei „Media Start“- und „Ad Start“-Ereignissen.
+* Aufrufe, die direkt an Ihren Adobe Analytics (AppMeasurement)-Server gesendet werden. Diese Aufrufe erfolgen bei „Medienstart“- und „Anzeigenstart“-Ereignissen.
 * Aufrufe an den Media Analytics (Heartbeats)-Server. Dazu gehören In-Band- und Out-of-Band-Aufrufe:
    * In-Band-Aufrufe: Das SDK sendet zeitgesteuerte Wiedergabeaufrufe oder „Pings“ in Intervallen von 10 Sekunden während der Inhaltswiedergabe und in Intervallen von einer Sekunde während Anzeigen.
    * Out-of-Band-Aufrufe: Diese Aufrufe können zu jedem beliebigen Zeitpunkt erfolgen und umfassen Pause, Pufferung, Fehler, Inhaltsbeendigung, Anzeigenbeendigung usw.
@@ -107,7 +107,7 @@ Führen Sie die folgenden Aktionen aus und zeichnen Sie sie auf (in der angegebe
 
 
 
-1. **Werbewiedergabe mindestens 30 Sekunden lang anhalten, sofern verfügbar.**  **Ad Pause**
+1. **Werbewiedergabe mindestens 30 Sekunden lang anhalten, sofern verfügbar.** **Ad Pause**
 
    Während der Werbeunterbrechung sendet das SDK jede Sekunde einen Heartbeat oder „Ping“-Aufruf für Media Analytics an den Media Analytics-Server.
 
@@ -117,7 +117,7 @@ Führen Sie die folgenden Aktionen aus und zeichnen Sie sie auf (in der angegebe
 
    Informationen zu Aufrufparametern und Metadaten finden Sie unter [Details zum Testaufruf.](/help/sdk-implement/validation/test-call-details.md#ma-ad-pause-call)
 
-1. **Hauptinhalt mindestens 10 Minuten lang unterbrechungsfrei wiedergeben.**  **Content Play**
+1. **Hauptinhalt mindestens 10 Minuten lang unterbrechungsfrei wiedergeben.** **Content Play**
 
    Während der Wiedergabe des Hauptinhalts sendet das Media SDK alle 10 Sekunden Heartbeats (Abspielaufrufe) an den Media Analytics-Server.
 
