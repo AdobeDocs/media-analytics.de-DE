@@ -2,7 +2,7 @@
 audience: end-user
 user-guide-title: Adobe Analytics for Audio and Video
 product: adobe analytics
-sub-product: media analytics
+sub-product: Media Analytics
 translation-type: ht
 source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
 
@@ -175,8 +175,8 @@ source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
 + Metriken und Metadaten {#metrics-and-metadata}
    + [Audio- und Videoparameter](metrics-and-metadata/audio-video-parameters.md)
    + [Anzeigenparameter](metrics-and-metadata/ad-parameters.md)
-   + [Kapitelparameter](metrics-and-metadata/chapter-parameters.md)
-   + [Qualitätsparameter](metrics-and-metadata/quality-parameters.md)
+   + [Kapitelparameter ](metrics-and-metadata/chapter-parameters.md)
+   + [Qualitätsparameter ](metrics-and-metadata/quality-parameters.md)
    + [Segmente](metrics-and-metadata/segments.md)
    + [Berechnete Metriken](metrics-and-metadata/calculated-metrics.md)
 + Berichterstattung und Analyse {#media-reports}
