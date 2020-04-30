@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Überblick {#overview}
 
-Die Funktion für heruntergeladene Inhalte bietet die Möglichkeit, die Mediennutzung zu verfolgen, während ein Benutzer offline ist. Beispielsweise lädt ein Anwender eine App herunter und installiert sie auf einem Mobilgerät. Der Anwender lädt dann mit der App Inhalte in den lokalen Speicher auf dem Gerät herunter. Um das Tracking dieser heruntergeladenen Daten zu ermöglichen, hat Adobe eine Funktion für heruntergeladene Inhalte entwickelt. Mit dieser Funktion werden Tracking-Daten unabhängig von der Konnektivität des Geräts gespeichert, wenn der Benutzer Inhalte aus dem Speicher des Geräts wiedergibt. Wenn der Benutzer die Wiedergabesitzung beendet hat und das Gerät wieder online ist, werden die gespeicherten Tracking-Informationen in einer einzelnen Nutzlast an das Backend der Media Collection API gesendet. Danach erfolgt die Verarbeitung und Berichterstellung wie gewohnt in der Media Collection API.
+Die Funktion für heruntergeladene Inhalte bietet die Möglichkeit, die Mediennutzung zu verfolgen, während ein Benutzer offline ist. Ein Benutzer lädt beispielsweise eine App auf ein Mobilgerät herunter und installiert sie. Der Benutzer lädt dann mit der App Inhalte in den lokalen Datenspeicher des Geräts herunter. Um das Tracking dieser heruntergeladenen Daten zu ermöglichen, hat Adobe eine Funktion für heruntergeladene Inhalte entwickelt. Mit dieser Funktion werden Tracking-Daten unabhängig von der Konnektivität des Geräts gespeichert, wenn der Benutzer Inhalte aus dem Speicher des Geräts wiedergibt. Wenn der Benutzer die Wiedergabesitzung beendet hat und das Gerät wieder online ist, werden die gespeicherten Tracking-Informationen in einer einzelnen Nutzlast an das Backend der Media Collection API gesendet. Danach erfolgt die Verarbeitung und Berichterstellung wie gewohnt in der Media Collection API.
 
 Vergleichen Sie die beiden Ansätze:
 
@@ -39,13 +39,13 @@ Bei der Funktion für heruntergeladene Inhalte handelt es sich lediglich um die 
 ### Reihenfolge der Ereignisse
 
 * Das erste Ereignis in der Stapel-Nutzlast muss wie bei der Media Collection API üblich `sessionStart` sein.
-* **Sie müssen`media.downloaded: true`** in die Standard-Metadatenparameter (`params` `sessionStart`-Schlüssel) für das Ereignis einschließen, um dem Backend anzuzeigen, dass Sie heruntergeladene Inhalte senden. Wenn dieser Parameter nicht vorhanden ist oder auf „false“ (falsch) gesetzt ist, wenn Sie heruntergeladene Daten senden, antwortet die API mit dem Antwortcode 400 („Bad Request“ (ungültige Anforderung)). Dieser Parameter unterscheidet zwischen heruntergeladenen und Live-Inhalten im Backend. (Beachten Sie: wenn `media.downloaded: true` auf eine Live-Sitzung eingestellt ist, wird dies ebenfalls zu einer Antwort mit dem Code 400 von der API führen.)
+* **Sie müssen`media.downloaded: true`** in die Standard-Metadatenparameter (`params``sessionStart`-Schlüssel) für das Ereignis einschließen, um dem Backend anzuzeigen, dass Sie heruntergeladene Inhalte senden. Wenn dieser Parameter nicht vorhanden ist oder auf „false“ (falsch) gesetzt ist, wenn Sie heruntergeladene Daten senden, antwortet die API mit dem Antwortcode 400 („Bad Request“ (ungültige Anforderung)). Dieser Parameter unterscheidet zwischen heruntergeladenen und Live-Inhalten im Backend. (Beachten Sie: wenn`media.downloaded: true`auf eine Live-Sitzung eingestellt ist, wird dies ebenfalls zu einer Antwort mit dem Code 400 von der API führen.)
 * Es liegt an einer korrekten Implementierung, Abspielereignisse in der Reihenfolge ihres Auftretens richtig zu speichern.
 
 ### Antwortcodes
 
-* 201 - Created: Successful Request; die Daten sind gültig und die Sitzung wurde erstellt und wird verarbeitet.
-* 400 - Bad Request; die Schemavalidierung ist fehlgeschlagen, alle Daten werden verworfen, es werden keine Sitzungsdaten verarbeitet.
+* 201 - Erstellt: die Anfrage ist erfolgreich; die Daten sind gültig und die Sitzung wurde erstellt wurde und wird verarbeitet.
+* 400 - Ungültige Anfrage; die Validierung des Schemas ist fehlgeschlagen, alle Daten werden verworfen, keine Sitzungsdaten werden verarbeitet.
 
 ## Integration mit Adobe Analtyics {#integration-with-adobe-analtyics}
 
