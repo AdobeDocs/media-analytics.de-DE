@@ -12,13 +12,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Szenario {#scenario}
 
-Diese Szenario umfasst ein VOD-Asset ohne Anzeigen, das einmal von Anfang bis Ende wiedergegeben wird.
+Dieses Szenario enthält ein einziges VOD-Asset ohne Anzeigen, das einmal von Anfang bis Ende wiedergegeben wird.
 
 | Auslöser | Heartbeat-Methode | Netzwerkaufrufe | Hinweise   |
 |---|---|---|---|
-| Benutzer klickt auf **[!UICONTROL Abspielen]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Dies kann ein Benutzer sein, der auf „Abspielen“ klickt, oder ein Ereignis bei automatischer Wiedergabe. |
-| Erstes Medienbild | `trackPlay` | Heartbeat Content Play | Durch diese Methode wird der Timer ausgelöst. Daraufhin werden während der Wiedergabe alle 10 Sekunden Heartbeats gesendet. |
-| Inhalt wird wiedergegeben. |  | Content Heartbeats |  |
+| Anwender klickt auf **[!UICONTROL Abspielen]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Dies kann ein Benutzer sein, der auf „Abspielen“ klickt, oder ein Ereignis bei automatischer Wiedergabe. |
+| Erstes Medienbild | `trackPlay` | Heartbeat Content Play | Diese Methode löst den Timer aus. Ab diesem Zeitpunkt werden alle 10 Sekunden Heartbeats während der Wiedergabe gesendet. |
+| Inhaltswiedergaben |  | Content Heartbeats |  |
 | Inhalt ist abgeschlossen. | `trackComplete` | Heartbeat Content Complete | *Complete* bedeutet, dass das Ende der Abspielleiste erreicht wurde. |
 
 ## Parameter {#parameters}
@@ -29,12 +29,12 @@ Viele der Werte bei Heartbeat Content Start-Aufrufen sind auch in Adobe Analytic
 
 | Parameter | Wert | Hinweise   |
 |---|---|---|
-| `s:sc:rsid` | &lt;Adobe-Report Suite-ID&gt; |  |
-| `s:sc:tracking_server` | &lt;Analytics-Tracking-Server-URL&gt; |  |
+| `s:sc:rsid` | &lt;Adobe-Report Suite-ID> |  |
+| `s:sc:tracking_server` | &lt;Analytics-Tracking-Server-URL> |  |
 | `s:user:mid` | muss festgelegt werden | Sollte mit dem mid-Wert beim `Adobe Analytics Content Start`-Aufruf übereinstimmen. |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;Ihr Medienname&gt; |  |
+| `s:asset:media_id` | &lt;Ihr Medienname> |  |
 | `s:meta:*` | optional | Benutzerdefinierte Metadaten, die für die Medien festgelegt wurden. |
 
 ## Heartbeat Content Play {#heartbeat-content-play}
@@ -48,18 +48,18 @@ Diese Parameter sollten fast genauso wie der `Heartbeat Content Start`-Aufruf au
 
 ## Content Heartbeats {#content-heartbeats}
 
-Während der Medienwiedergabe sendet ein Timer mindestens einen Heartbeat alle 10 Sekunden. Diese Heartbeats enthalten Informationen zur Wiedergabe, zu Anzeigen, zur Pufferung usw. Der genaue Inhalt jedes Heartbeats wird in diesem Dokument nicht behandelt. Wichtig ist vor allem, dass Heartbeats konsistent ausgelöst werden, während die Wiedergabe läuft.
+Während der Medienwiedergabe sendet ein Timer mindestens einen Heartbeat alle 10 Sekunden. Diese Heartbeats enthalten Informationen zur Wiedergabe, zu Anzeigen, zur Pufferung usw. Eine genaue Erklärung von Heartbeats würde über den Rahmen dieses Dokuments hinausgehen, aber das entscheidende Punkt ist, dass Heartbeats konsistent ausgelöst werden, während die Wiedergabe fortgesetzt wird.
 
-Suchen Sie in den Inhalts-Heartbeats nach den folgenden Parametern:
+Suchen Sie in den Content-Heartbeats nach den folgenden Parametern:
 
 | Parameter | Wert | Hinweise   |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
-| `l:event:playhead` | &lt;Position der Abspielleiste&gt;, z. B. 50,60,70 | Dieser Parameter spiegelt die aktuelle Position der Abspielleiste wider. |
+| `l:event:playhead` | &lt;Position der Abspielleiste>, z. B. 50,60,70 | Dieser Parameter spiegelt die aktuelle Position der Abspielleiste wider. |
 
 ## Heartbeat Content Complete {#heartbeat-content-complete}
 
-Nach Abschluss der Wiedergabe (wenn also das Ende der Abspielleiste erreicht wird), wird ein `Heartbeat Content Complete`-Aufruf gesendet. Dieser Aufruf sieht wie andere Heartbeat-Aufrufe aus, enthält aber einige spezifische Parameter:
+Nach Abschluss der Wiedergabe (wenn also das Ende der Abspielleiste erreicht wird), wird ein `Heartbeat Content Complete`-Aufruf gesendet. Dieser Aufruf sieht wie andere Heartbeat-Aufrufe aus, enthält jedoch einige spezifische Parameter:
 
 | Parameter | Wert | Hinweise   |
 |---|---|---|
@@ -68,7 +68,7 @@ Nach Abschluss der Wiedergabe (wenn also das Ende der Abspielleiste erreicht wir
 
 ## Beispielcode {#sample-code}
 
-In diesem Szenario ist der Inhalt 40 Sekunden lang. Er wird ohne Unterbrechungen bis zum Ende abgespielt.
+In diesem Szenario ist der Inhalt 40 Sekunden lang. Er wird bis zum Ende ohne Unterbrechungen wiedergegeben.
 
 ![](assets/main-content-regular-playback.png)
 
