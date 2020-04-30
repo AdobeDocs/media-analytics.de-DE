@@ -15,17 +15,17 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 _Sollte ich das Chromecast JavaScript SDK verwenden oder kann ich das standardmäßige JavaScript SDK verwenden?_
 
 Die richtige Antwort lautet „Chromecast“, und zwar aus den folgenden Gründen:
-* Die AppMeasurement- und VisitorAPI-Bibliotheken im standardmäßigen JavaScript SDK sind nicht für die Arbeit auf OTT-Plattformen zertifiziert. Im Chromecast JavaScript SDK sind die Video Heartbeats-Bibliothek (VHL), Analytics und VisitorAPI in das einzige, einheitliche und für Chromecast zertifizierte SDK integriert.
-* Das Chromecast SDK ist viel leichter als das standardmäßige JS SDK. Das ist sehr wichtig für die Low-End-Hardware, die von OTT-Plattformen verwendet wird.
+* Die AppMeasurement- und VisitorAPI-Bibliotheken im Standard-JS-SDK sind nicht für die Verwendung auf OTT-Plattformen zertifiziert. Im Chromecast JS SDK sind die Video Heartbeats Library (VHL), Analytics und VisitorAPI im einheitlichen, für Chromecast zertifizierten SDK integriert.
+* Das Chromecast SDK ist wesentlich weniger umfangreich als das standardmäßige JS SDK. Dies ist für die von OTT-Plattformen verwendete kostengünstige Hardware von entscheidender Bedeutung.
 
 ## Voraussetzungen
 
 * **Gültige Konfigurationsparameter für Heartbeats festlegen:** Diese Parameter erhalten Sie nach der Einrichtung Ihres Media Analytics-Kontos von einem Adobe-Support-Mitarbeiter.
-* **Stellen Sie in Ihrem Medienplayer folgende Funktionen bereit:**
-   * *Eine API, um Player-Ereignisse zu abonnieren:* Die Medien-SDK erfordert, dass Sie einige einfache APIs aufrufen, wenn Ereignisse in Ihrem Player auftreten.
-   * *Eine API, die Playerinformationen bereitstellt:* Diese Informationen enthalten Details wie z. B. Medienname und Abspielposition.
+* **Stellen Sie die folgenden Funktionen in Ihrem Medienplayer bereit:**
+   * *Eine API zum Abonnieren von Player-Ereignissen*: Das Media SDK erfordert den Aufruf einer Reihe einfacher APIs, wenn im Player Ereignisse auftreten.
+   * *Eine API, die Player-Informationen bereitstellt*: Diese Informationen enthalten Details wie den Mediennamen und die Abspielposition.
 
-Adobe Mobile Services bietet eine neue Anwenderoberfläche, auf der mobile Marketingfunktionen für mobile Anwendungen aus der gesamten Adobe Experience Cloud kombiniert werden. Mobile Services ermöglicht die nahtlose Integration der App-Analyse- und Targeting-Funktionen der Adobe Analytics- und Adobe Target-Lösungen. Weitere Informationen finden Sie in der [Dokumentation zu Adobe Mobile Services.](https://marketing.adobe.com/resources/help/de_DE/mobile/)
+Adobe Mobile Services bietet eine neue Anwenderoberfläche, auf der mobile Marketingfunktionen für mobile Anwendungen aus der gesamten Adobe Experience Cloud kombiniert werden. Zunächst bietet der Mobile Service eine nahtlose Integration von App-Analyse- und Targeting-Funktionen für die Lösungen Adobe Analytics und Adobe Target. Weitere Informationen finden Sie in der [Dokumentation zu Adobe Mobile Services.](https://marketing.adobe.com/resources/help/de_DE/mobile/)
 
 Mit Chromecast-SDK 2.x für Experience Cloud-Lösungen können Sie in JavaScript geschriebene Chromecast-Anwendungen messen, Zielgruppendaten über das Zielgruppen-Management nutzen und erfassen und Videointeraktionen über Video-Heartbeats messen.
 
@@ -103,7 +103,7 @@ Mit Chromecast-SDK 2.x für Experience Cloud-Lösungen können Sie in JavaScrip
 
 1. Konfigurieren der Experience Cloud-Besucher-ID.
 
-   Der Experience Cloud-Besucher-ID-Dienst stellt eine universale Besucher-ID für alle Experience Cloud-Lösungen bereit. Der Besucher-ID-Dienst ist für Video Heartbeat- und andere Experience Cloud-Integrationen erforderlich.
+   Der Besucher-ID-Dienst für Experience Platform stellt eine universale Besucher-ID für alle Experience Cloud-Lösungen bereit. Der Besucher-ID-Dienst ist für Video Heartbeat und andere Experience Cloud-Integrationen erforderlich.
 
    Stellen Sie sicher, dass Ihre `ADBMobileConfig`-Konfiguration Ihre `marketingCloud`-Organisations-ID enthält.
 
