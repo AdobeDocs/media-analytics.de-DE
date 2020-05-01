@@ -2,8 +2,8 @@
 title: 'Zeitlicher Ablauf 2: Verlassen der Sitzung durch Anwender'
 description: null
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
 
 ---
 
@@ -407,5 +407,3 @@ Senden Sie `sessionEnd` an das VA-Backend, um anzugeben, dass die Sitzung umgehe
     eventType:sessionEnd
 }
 ```
-
-
