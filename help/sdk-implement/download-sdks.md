@@ -2,13 +2,21 @@
 title: SDKs herunterladen
 description: Links zu SDK-Downloads für die verfügbaren Plattformen, einschließlich Android, iOS, JavaScript, Chromecast und Roku.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
-translation-type: ht
-source-git-commit: 8589a89847f4c3cc38317c1fe65e4e2efb9d8875
+translation-type: tm+mt
+source-git-commit: 06e32cbea61ed56220787e2bcb822f6bf02b44ac
 
 ---
 
 
 # SDKs herunterladen {#download-sdks}
+
+>[!IMPORTANT]
+>
+>Ab Oktober 2020 beendet Adobe die Unterstützung für die Mobile SDKs der Version 4 und die eigenständigen Medienanalysen-SDKs für iOS und Android. Sie können die SDKs der Version 4 weiterhin herunterladen und verwenden, aber der Kundendienst und der Zugriff auf Foren werden eingestellt. Sie sollten zu den Adobe Experience Platform (AEP) SDKs für iOS oder Android migrieren. Das AEP Mobile SDK (früher als v5 bezeichnet) unterstützt ausschließlich Adobe Experience Cloud-Funktionen. Weitere Informationen zu dieser Änderung finden Sie unter Häufig gestellte Fragen zum Ende der Unterstützung für [Version 4 Mobile SDKs](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq). Es wird empfohlen, zum neuen AEP Mobile SDK zu migrieren.
+Nach der Migration zum AEP Mobile SDK müssen Sie die Analytics-Startererweiterung und die Media Analytics-Startererweiterung implementieren, um Adobe Analytics für Audio und Video zu aktivieren. Weitere Informationen zur Migration auf das neue AEP Mobile SDK finden Sie unter [Migration vom eigenständigen Media SDK zum Adobe Launch ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
+
+
+
 
 ## 2.x Medien-SDKs herunterladen {#download-2x-sdks}
 
