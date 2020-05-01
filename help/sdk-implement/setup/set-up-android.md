@@ -3,17 +3,25 @@ title: Android einrichten
 description: Einrichten der Media SDK-Anwendung für die Implementierung in Android.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
 ---
 
 
 # Android einrichten {#set-up-android}
 
+>[!IMPORTANT]
+>
+>Ab Oktober 2020 beendet Adobe die Unterstützung für die SDKs der Version 4 Mobile und die eigenständigen Medienanalysen-SDKs für Android. Sie können die SDKs der Version 4 weiterhin herunterladen und verwenden, aber der Kundendienst und der Zugriff auf Foren werden eingestellt. Sie sollten zu den Adobe Experience Platform (AEP) SDKs für Android migrieren. Das AEP Mobile SDK (früher als v5 bezeichnet) unterstützt ausschließlich Adobe Experience Cloud-Funktionen. Weitere Informationen zu dieser Änderung finden Sie unter Häufig gestellte Fragen zum Ende der Unterstützung für [Version 4 Mobile SDKs](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq). Es wird empfohlen, zum neuen AEP Mobile SDK zu migrieren.
+Nach der Migration zum AEP Mobile SDK müssen Sie die Analytics-Startererweiterung und die Media Analytics-Startererweiterung implementieren, um Adobe Analytics für Audio und Video zu aktivieren. Weitere Informationen zur Migration auf das neue AEP Mobile SDK finden Sie unter [Migration vom eigenständigen Media SDK zum Adobe Launch ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
+
+
 ## Voraussetzungen
+
 
 * **Gültige Konfigurationsparameter für Media SDK festlegen:** Diese Parameter erhalten Sie nach der Einrichtung Ihres Analytics-Kontos von einem Adobe-Support-Mitarbeiter.
 * **ADBMobile für Android in Ihre Anwendung implementieren:** Weitere Informationen zur Adobe Mobile-SDK-Dokumentation finden Sie unter [Android-SDK 4.x für Experience Cloud-Lösungen.](https://docs.adobe.com/content/help/de-DE/mobile-services/android/overview.html)
+
 * **Stellen Sie die folgenden Funktionen in Ihrem Medienplayer bereit:**
    * *Eine API zum Abonnieren von Player-Ereignissen*: Das Media SDK erfordert den Aufruf einer Reihe einfacher APIs, wenn im Player Ereignisse auftreten.
    * *Eine API, die Player-Informationen bereitstellt*: Diese Informationen enthalten Details wie den Mediennamen und die Abspielposition.
@@ -53,10 +61,10 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 1. Importieren Sie die Bibliothek.
 
    ```java
-   import com.adobe.primetime.va.simple.MediaHeartbeat; 
-   import com.adobe.primetime.va.simple.MediaHeartbeat.MediaHeartbeatDelegate; 
-   import com.adobe.primetime.va.simple.MediaHeartbeatConfig; 
-   import com.adobe.primetime.va.simple.MediaObject; 
+   import com.adobe.primetime.va.simple.MediaHeartbeat;
+   import com.adobe.primetime.va.simple.MediaHeartbeat.MediaHeartbeatDelegate;
+   import com.adobe.primetime.va.simple.MediaHeartbeatConfig;
+   import com.adobe.primetime.va.simple.MediaObject;
    ```
 
 1. Erstellen Sie die `MediaHeartbeatConfig`-Instanz.
@@ -64,14 +72,14 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
    Hier finden Sie eine Beispielinitialisierung für `MediaHeartbeatConfig`:
 
    ```java
-   // Media Heartbeat Initialization 
-   config.trackingServer = _<SAMPLE_HEARTBEAT_TRACKING_SERVER>_; 
-   config.channel = <SAMPLE_HEARTBEAT_CHANNEL>; 
-   config.appVersion = <SAMPLE_HEARTBEAT_SDK_VERSION>; 
-   config.ovp =  <SAMPLE_HEARTBEAT_OVP_NAME>; 
-   config.playerName = <SAMPLE_PLAYER_NAME>; 
-   config.ssl = <true/false>; 
-   config.debugLogging = <true/false>; 
+   // Media Heartbeat Initialization
+   config.trackingServer = _<SAMPLE_HEARTBEAT_TRACKING_SERVER>_;
+   config.channel = <SAMPLE_HEARTBEAT_CHANNEL>;
+   config.appVersion = <SAMPLE_HEARTBEAT_SDK_VERSION>;
+   config.ovp =  <SAMPLE_HEARTBEAT_OVP_NAME>;
+   config.playerName = <SAMPLE_PLAYER_NAME>;
+   config.ssl = <true/false>;
+   config.debugLogging = <true/false>;
    ```
 
 1. Implementieren Sie die `MediaHeartbeatDelegate`-Schnittstelle.
@@ -83,18 +91,18 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
    ```java
    // Replace <bitrate>, <startupTime>, <fps>, and  
    // <droppeFrames> with the current playback QoS values.  
-   @Override 
-   public MediaObject getQoSObject() { 
+   @Override
+   public MediaObject getQoSObject() {
        return MediaHeartbeat.createQoSObject(<bitrate>,  
                                              <startupTime>,  
                                              <fps>,  
-                                             <droppedFrames>); 
-   } 
+                                             <droppedFrames>);
+   }
    
-   //Replace <currentPlaybackTime> with the video player current playback time 
-   @Override 
-   public Double getCurrentPlaybackTime() { 
-       return <currentPlaybackTime>; 
+   //Replace <currentPlaybackTime> with the video player current playback time
+   @Override
+   public Double getCurrentPlaybackTime() {
+       return <currentPlaybackTime>;
    }
    ```
 
@@ -103,7 +111,7 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
    Verwenden Sie die `MediaHeartbeatConfig`- und die `MediaHertbeatDelegate`-Instanz, um die `MediaHeartbeat`-Instanz zu erstellen.
 
    ```java
-   // Replace <MediaHertbeatDelegate> with your delegate instance 
+   // Replace <MediaHertbeatDelegate> with your delegate instance
    MediaHeartbeat _heartbeat =  
      new MediaHeartbeat(<MediaHeartbeatDelegate>, config);
    ```
