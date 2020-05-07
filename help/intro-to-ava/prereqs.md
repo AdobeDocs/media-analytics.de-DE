@@ -3,7 +3,10 @@ title: Voraussetzungen
 description: null
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 translation-type: tm+mt
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
+workflow-type: tm+mt
+source-wordcount: '424'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +41,7 @@ Für eine Implementierung von *Media Analytics* müssen Sie die folgenden Aufgab
    >
    >Um an der Adobe Experience Cloud-Gerätekooperation teilzunehmen, ist der Experience Cloud-ID-Dienst erforderlich.
 
-   Wenn Sie den ID-Dienst nicht implementiert haben, ist es nun an der Zeit, eine Migrationsstrategie in Erwägung zu ziehen. Weitere Informationen über die Bedeutung und die Rolle des ID-Dienstes finden Sie unter [Warum Sie den ID-Dienst im Auge behalten sollten.](https://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
+   Wenn Sie den ID-Dienst nicht implementiert haben, ist es nun an der Zeit, eine Migrationsstrategie in Erwägung zu ziehen. Weitere Informationen über die Bedeutung und die Rolle des ID-Dienstes finden Sie unter [Warum Sie den ID-Dienst im Auge behalten sollten.](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
 
    >[!IMPORTANT]
    >
