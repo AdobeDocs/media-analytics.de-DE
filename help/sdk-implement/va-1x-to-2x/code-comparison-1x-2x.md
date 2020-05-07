@@ -2,8 +2,11 @@
 title: 'Codevergleich: 1.x gegenüber 2.x'
 description: Hier wird der Code in den Versionen 1.x und 2.x des Media SDK verglichen.
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
+workflow-type: tm+mt
+source-wordcount: '567'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +30,7 @@ Alle Konfigurationsparameter und Tracking-APIs wurden in den `MediaHeartbeats`- 
 **Links zu 1.x- und 2.x-Beispielplayern:**
 
 * [1.x-Beispiel-Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
-* [2.x-Beispiel-Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
+* [2.x-Beispiel-Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
 In den folgenden Abschnitten finden Sie einen Codevergleich zwischen 1.x und 2.x. Dieser Vergleich deckt die Initialisierung, Core-Wiedergabe, Anzeigenwiedergabe, Kapitelwiedergabe und einige zusätzliche Ereignisse ab.
 
