@@ -12,12 +12,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Szenario {#scenario}
 
-In diesem Szenario gibt es ein Live-Asset ohne Wiedergabe von Anzeigen für 40 Sekunden nach Beitritt zum Live-Stream.
+In diesem Szenario gibt es ein einziges Live-Asset ohne Anzeigen, das 40 Sekunden nach Eintritt eines Benutzers in den Live-Stream wiedergegeben wird.
 
 | Auslöser | Heartbeat-Methode | Netzwerkaufrufe | Hinweise   |
 |---|---|---|---|
-| Benutzer klickt auf **[!UICONTROL Abspielen]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Dies kann ein Anwender sein, der auf **[!UICONTROL Abspielen]** klickt, oder ein Ereignis bei automatischer Wiedergabe. |
-| Das erste Medienbild wird wiedergegeben. | `trackPlay` | Heartbeat Content Play | Diese Methode löst den Timer aus. Heartbeats werden während der Dauer der Wiedergabe alle zehn Sekunden gesendet. |
+| Anwender klickt auf **[!UICONTROL Abspielen]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Dies kann ein Anwender sein, der auf **[!UICONTROL Abspielen]** klickt, oder ein Ereignis bei automatischer Wiedergabe. |
+| Das erste Medienbild wird wiedergegeben. | `trackPlay` | Heartbeat Content Play | Diese Methode löst den Timer aus. Heartbeats werden alle 10 Sekunden gesendet, solange die Wiedergabe läuft. |
 | Der Inhalt wird wiedergegeben. |  | Content Heartbeats |  |
 | Die Sitzung ist beendet. | `trackSessionEnd` |  | `SessionEnd` steht für das Ende einer Anzeigesitzung. Diese API muss auch dann aufgerufen werden, wenn der Benutzer die Medien nicht bis zum Ende konsumiert. |
 
@@ -29,25 +29,25 @@ Viele der Werte bei Adobe Analytics Content Start-Aufrufen sind auch bei Heartbe
 
 | Parameter | Wert | Hinweise |
 |---|---|---|
-| `s:sc:rsid` | &lt;Adobe-Report Suite-ID&gt; |  |
-| `s:sc:tracking_serve` | &lt;Analytics-Tracking-Server-URL&gt; |  |
+| `s:sc:rsid` | &lt;Adobe-Report Suite-ID> |  |
+| `s:sc:tracking_serve` | &lt;Analytics-Tracking-Server-URL> |  |
 | `s:user:mid` | `s:user:mid` | Sollte mit dem mid-Wert beim Adobe Analytics Content Start-Aufruf übereinstimmen |
-| `s:event:type` | "start" |  |
-| `s:asset:type` | "main" |  |
-| `s:asset:mediao_id` | &lt;Ihr Medienname&gt; |  |
+| `s:event:type` | &quot;start&quot; |  |
+| `s:asset:type` | &quot;main&quot; |  |
+| `s:asset:mediao_id` | &lt;Ihr Medienname> |  |
 | `s:stream:type` | live |  |
 | `s:meta:*` | optional | Im Medium festgelegte benutzerdefinierte Metadaten |
 
 ## Content Heartbeats {#content-heartbeats}
 
-Während der Medienwiedergabe gibt es einen Timer, der alle 10 Sekunden einen oder mehrere Heartbeats (oder Pings) für Hauptinhalte und jede Sekunde für Anzeigen sendet. Diese Heartbeats enthalten Informationen zu Wiedergabe, Anzeigen, Pufferung und vielen weiteren Aspekten. Der genaue Inhalt jedes Heartbeats wird in diesem Dokument nicht behandelt. Wichtig ist vor allem, sicherzustellen, dass Heartbeats konsistent ausgelöst werden, während die Wiedergabe läuft.
+Während der Medienwiedergabe gibt es einen Timer, der alle 10 Sekunden einen oder mehrere Heartbeats (oder Pings) für Hauptinhalte und jede Sekunde für Anzeigen sendet. Diese Heartbeats enthalten Informationen über Wiedergabe, Anzeigen, Pufferung und eine Reihe anderer Dinge. Der genaue Inhalt eines jeden Heartbeat geht über den Rahmen dieses Dokuments hinaus. Wichtig ist, dass Heartbeats laufend während der Wiedergabe ausgelöst werden.
 
-Suchen Sie in den Inhalts-Heartbeats nach einigen speziellen Elementen:
+Suchen Sie in den Content Heartbeats nach einigen spezifischen Elementen:
 
 | Parameter | Wert | Hinweise |
 |---|---|---|
-| `s:event:type` | "play" |  |
-| `l:event:playhead` | &lt;Position der Abspielleiste&gt;, z. B. 50, 60, 70 | Dies sollte die aktuelle Position der Abspielleiste widerspiegeln. |
+| `s:event:type` | &quot;play&quot; |  |
+| `l:event:playhead` | &lt;Position der Abspielleiste>, z. B. 50, 60, 70 | Dies sollte die aktuelle Position der Abspielleiste widerspiegeln. |
 
 ## Heartbeat Content Complete {#heartbeat-content-complete}
 
