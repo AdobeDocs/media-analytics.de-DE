@@ -18,9 +18,9 @@ Wenn nichts anderes angegeben ist, sind die Netzwerkaufrufe in diesem Szenario m
 
 | Auslöser   | Heartbeat-Methode   | Netzwerkaufrufe   | Hinweise   |
 |---|---|---|---|
-| Benutzer klickt auf **[!UICONTROL Abspielen]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist noch nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Daher sind diese Netzwerkaufrufe noch mit denen im Einzel-VoD-Szenario identisch. |
+| Anwender klickt auf **[!UICONTROL Abspielen]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Wir haben der Measurement Library noch nicht mitgeteilt, dass es eine Pre-Roll-Anzeige gibt. Daher sind diese Netzwerkaufrufe immer noch mit denen von Single VoD identisch. |
 | Das Kapitel beginnt. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
-| Das erste Bild des Kapitels wird wiedergegeben. | `trackPlay` | Heartbeat Content Play | Wenn Kapitelinhalt vor dem Hauptinhalt wiedergegeben wird, beginnen die Heartbeats mit dem Kapitelstart. |
+| Das erste Bild des Kapitels wird wiedergegeben. | `trackPlay` | Heartbeat Content Play | Wenn Kapitelinhalte vor dem Hauptinhalt wiedergegeben werden, starten Heartbeats beim Beginn des Kapitels. |
 | Das Kapitel wird wiedergegeben. |  | Chapter Heartbeats |  |
 | Das Kapitel ist abgeschlossen. | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | Dies ist der Punkt, an dem das Ende des Kapitels erreicht wird. |
 | Der Inhalt wird wiedergegeben. |  | Content Heartbeats | Dieser Netzwerkaufruf ist mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. |
