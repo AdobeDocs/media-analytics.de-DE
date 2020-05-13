@@ -108,7 +108,7 @@ protected void onCreate(Bundle savedInstanceState) {
 } 
 ```
 
-Beide Instanzen von `MediaAnalyticsProvider` und `MediaHeartbeat` verfolgen zwei separate Sitzungen, von denen jede eine eigene eindeutige Sitzungs-ID aufweist. Die beiden Sitzungen können im Charles-Debugging-Tool oder in den Debugging-Protokollen anhand des Sitzungs-ID-Wertes identifiziert werden. Um dieses Szenario in Android anzuzeigen, verwenden Sie folgenden Code:
+Beide Instanzen von `MediaAnalyticsProvider` und `MediaHeartbeat` verfolgen zwei separate Sitzungen, von denen jede eine eigene eindeutige Sitzungs-ID aufweist. Die beiden Sitzungen im Charles-Debugging-Tool oder im Debugging-Protokoll können mithilfe des Sitzungs-ID-Werts identifiziert werden. Um dieses Szenario in Android anzuzeigen, verwenden Sie folgenden Code:
 
 ```java
 // Set up mediaObject 
@@ -272,7 +272,7 @@ _mediaHeartbeat.trackSessionEnd();
 } 
 ```
 
-Beide Instanzen von `MediaAnalyticsProvider` und `ADBMediaHeartbeat` verfolgen zwei separate Sitzungen, von denen jede eine eigene eindeutige Sitzungs-ID aufweist. Die beiden Sitzungen können im Charles-Debugging-Tool oder in den Debugging-Protokollen anhand des Sitzungs-ID-Wertes identifiziert werden.
+Beide Instanzen von `MediaAnalyticsProvider` und `ADBMediaHeartbeat` verfolgen zwei separate Sitzungen, von denen jede eine eigene eindeutige Sitzungs-ID aufweist. Die beiden Sitzungen im Charles-Debugging-Tool oder im Debugging-Protokoll können mithilfe des Sitzungs-ID-Werts identifiziert werden.
 
 Um dieses Szenario in iOS anzuzeigen, verwenden Sie folgenden Code:
 
