@@ -12,19 +12,19 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Szenario {#scenario}
 
-In diesem Szenario überspringt der Anwender ein Kapitel im Hauptinhalt.
+In diesem Szenario überspringt der Benutzer ein Kapitel im Hauptinhalt.
 
-Dies ist dasselbe Szenario wie [VOD-Wiedergabe mit einem Kapitel](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md), mit der Ausnahme, dass der Anwender in diesem Fall das Kapitel über die Suche verlässt und es somit überspringt, um den Hauptinhalt zu erreichen.
+Dies ist dasselbe Szenario wie die [VOD-Wiedergabe mit einem Kapitel](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md), mit der Ausnahme, dass der Benutzer in diesem Fall versucht, in dem Kapitel zu suchen, es dadurch überspringt und in den Hauptinhalt gelangt.
 
 | Auslöser | Heartbeat-Methode | Netzwerkaufrufe   | Hinweise |
 |---|---|---|---|
-| Benutzer klickt auf **[!UICONTROL Abspielen]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Diese Netzwerkaufrufe sind noch mit dem Szenario [Wiedergabe ohne Unterbrechungen in iOS](vod-no-intrs-details.md) identisch. |
+| Anwender klickt auf **[!UICONTROL Abspielen]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Diese Netzwerkaufrufe sind noch mit dem Szenario [Wiedergabe ohne Unterbrechungen in iOS](vod-no-intrs-details.md) identisch. |
 | Das Kapitel beginnt. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
-| Das erste Bild des Kapitels wird wiedergegeben. | `trackPlay` | Heartbeat Chapter Play | Wenn Kapitelinhalt vor dem Hauptinhalt wiedergegeben wird, sollen die Heartbeats mit Beginn des Kapitels gestartet werden. |
+| Der erste Frame des Kapitels wird wiedergegeben. | `trackPlay` | Heartbeat Chapter Play | Wenn Kapitelinhalte vor dem Hauptinhalt wiedergegeben werden, sollten die Heartbeats beim Beginn des Kapitels Beginn werden. |
 | Das Kapitel wird wiedergegeben. |  | Chapter Heartbeats |  |
-| Suche beginnt, das erste Kapitel zu überspringen. | `trackEvent:trackSeekStart` |  | Keine Heartbeats während der Suche |
-| Die Suche ist abgeschlossen. | `trackEvent:trackSeekComplete` |  | Anschließend werden die Heartbeats wiederaufgenommen. |
-| Die Anwendung erkennt, dass der Benutzer die reguläre Kapitelgrenze bei der Suche überschritten hat. | `trackEvent:trackChapterSkip` |  |  |
+| Die Suche beginnt damit, das erste Kapitel zu überspringen. | `trackEvent:trackSeekStart` |  | Keine Heartbeats während der Suche |
+| Die Suche ist abgeschlossen. | `trackEvent:trackSeekComplete` |  | Heartbeats werden nach diesem Vorgang fortgesetzt. |
+| Die Anwendung erkennt, dass der Benutzer die normale Kapitelgrenze überschritten hat. | `trackEvent:trackChapterSkip` |  |  |
 | Der Inhalt wird wiedergegeben. |  | Content Heartbeats |  |
 | Die Inhaltswiedergabe ist abgeschlossen. | `trackComplete` | Heartbeat Content Complete | Dieser Netzwerkaufruf ist mit dem Szenario [Wiedergabe ohne Unterbrechungen in iOS](vod-no-intrs-details.md) identisch. |
 | Die Sitzung ist beendet. | `trackSessionEnd` |  | `SessionEnd` steht für das Ende einer Anzeigesitzung. Diese API muss auch dann aufgerufen werden, wenn der Benutzer die Medien nicht bis zum Ende anschaut. |
