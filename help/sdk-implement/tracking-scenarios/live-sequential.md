@@ -12,20 +12,20 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Szenario {#scenario}
 
-In diesem Szenario gibt es ein Live-Asset ohne Wiedergabe von Anzeigen für 40 Sekunden nach Beitritt zum Live-Stream.
+In diesem Szenario gibt es ein einziges Live-Asset ohne Anzeigen, das 40 Sekunden nach Eintritt eines Benutzers in den Live-Stream wiedergegeben wird.
 
-Dieses Szenario ist mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch, allerdings wird ein Teil des Inhalts vorgespult und es wird eine Suche von einem Punkt im Hauptinhalt zu einem anderen Punkt vorgenommen.
+Dieses Szenario ist mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch, allerdings wird hierbei ein Teil des Inhalts durchsucht und die Suche wird von einem Punkt im Hauptinhalt bis zu einem anderen Punkt durchgeführt.
 
 | Auslöser | Heartbeat-Methode |  Netzwerkaufrufe  |  Hinweise   |
 | --- | --- | --- | --- |
 | Anwender klickt auf [!UICONTROL Abspielen] | trackSessionStart | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Daher sind diese Netzwerkaufrufe mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. |
-| Das erste Bild des Inhalts wird wiedergegeben. | trackPlay | Heartbeat Content Play | Wenn Kapitelinhalt vor dem Hauptinhalt wiedergegeben wird, beginnen die Heartbeats mit dem Kapitelstart. |
-| Inhalt wird wiedergegeben. |  | Content Heartbeats | Dieser Netzwerkaufruf ist mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. |
-| Sitzung 1 beendet (Folge 1 beendet) | trackComplete / trackSessionEnd | Heartbeat Content Complete | „Complete“ bedeutet, dass Sitzung 1 für die erste Folge erreicht und vollständig angeschaut wurde. Bevor die Sitzung für die nächste Folge gestartet werden kann, muss diese Sitzung beendet werden. |
+| Das erste Bild des Inhalts wird wiedergegeben. | trackPlay | Heartbeat Content Play | Wenn Kapitelinhalte vor dem Hauptinhalt wiedergegeben werden, starten Heartbeats beim Beginn des Kapitels. |
+| Inhalt wird wiedergegeben |  | Content Heartbeats | Dieser Netzwerkaufruf ist mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. |
+| Sitzung 1 beendet (Folge 1 beendet) | trackComplete / trackSessionEnd | Heartbeat Content Complete | „Complete“ bedeutet, dass Sitzung 1 für die erste Folge erreicht und vollständig angesehen wurde. Vor dem Start der Sitzung für die nächste Folge muss diese Sitzung beendet sein. |
 | Folge 2 gestartet (Start von Sitzung 2) | trackSessionStart | Analytics Content Start Heartbeat Content Start | Dies tritt auf, wenn der Anwender die erste Folge geschaut und direkt mit einer weiteren Folge begonnen hat. |
-| Erstes Medienbild | trackPlay | Heartbeat Content Play | Durch diese Methode wird der Timer ausgelöst. Daraufhin werden während der Wiedergabedauer alle zehn Sekunden Heartbeats gesendet. |
-| Inhalt wird wiedergegeben. |  | Content Heartbeats |  |
-| Sitzung beendet (Folge 2 beendet) | trackComplete / trackSessionEnd | Heartbeat Content Complete | „Complete“ bedeutet, dass Sitzung 2 für die zweite Folge erreicht und vollständig angeschaut wurde. Bevor die Sitzung für die nächste Folge gestartet werden kann, muss diese Sitzung beendet werden. |
+| Erstes Medienbild | trackPlay | Heartbeat Content Play | Diese Methode löst den Timer aus. Ab diesem Zeitpunkt werden alle 10 Sekunden Heartbeats gesendet, solange die Wiedergabe läuft. |
+| Inhalt wird wiedergegeben |  | Content Heartbeats |  |
+| Sitzung beendet (Folge 2 beendet) | trackComplete / trackSessionEnd | Heartbeat Content Complete | „Complete“ bedeutet, dass Sitzung 2 für die zweite Folge erreicht und vollständig angesehen wurde. Vor dem Start der Sitzung für die nächste Folge muss diese Sitzung beendet sein. |
 
 ## Parameter {#parameters}
 
@@ -33,18 +33,18 @@ Dieses Szenario ist mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-im
 
 | Parameter | Wert | Hinweise |
 |---|---|---|
-| `s:sc:rsid` | &lt;Adobe-Report Suite-ID&gt; |  |
-| `s:sc:tracking_serve` | &lt;Analytics-Tracking-Server-URL&gt; |  |
+| `s:sc:rsid` | &lt;Adobe-Report Suite-ID> |  |
+| `s:sc:tracking_serve` | &lt;Analytics-Tracking-Server-URL> |  |
 | `s:user:mid` | `s:user:mid` | Sollte mit dem mid-Wert beim Adobe Analytics Content Start-Aufruf übereinstimmen |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;Ihr Medienname&gt; |  |
+| `s:asset:media_id` | &lt;Ihr Medienname> |  |
 | `s:stream:type` | `live` |  |
 | `s:meta:*` | *optional* | Im Medium festgelegte benutzerdefinierte Metadaten |
 
 ## Heartbeat Content Play {#heartbeat-content-play}
 
-Dies sollte fast genauso wie der Heartbeat Content Start-Aufruf aussehen, aber den Hauptunterschied im Parameter „s:event:type“ aufweisen. Alle Parameter sollten hier weiterhin vorhanden sein.
+Dies sollte fast genauso aussehen wie der „Heartbeat Content Start“-Aufruf, der Hauptunterschied liegt im Parameter „s:event:type“. Alle Parameter sollten hier weiterhin vorhanden sein.
 
 | Parameter | Wert | Hinweise |
 |---|---|---|
@@ -53,18 +53,18 @@ Dies sollte fast genauso wie der Heartbeat Content Start-Aufruf aussehen, aber d
 
 ## Content Heartbeats {#content-heartbeats}
 
-Während der Medienwiedergabe gibt es einen Timer, der alle 10 Sekunden einen oder mehrere Heartbeats für Hauptinhalte und jede Sekunde für Anzeigen sendet. Diese Heartbeats enthalten Informationen zu Wiedergabe, Anzeigen, Pufferung und vielen weiteren Aspekten. Der genaue Inhalt jedes Heartbeats wird in diesem Dokument nicht behandelt. Wichtig ist vor allem, sicherzustellen, dass Heartbeats konsistent ausgelöst werden, während die Wiedergabe läuft.
+Während der Medienwiedergabe gibt es einen Timer, der alle 10 Sekunden einen oder mehrere Heartbeats für Hauptinhalte und jede Sekunde für Anzeigen sendet. Diese Heartbeats enthalten Informationen über Wiedergabe, Anzeigen, Pufferung und eine Reihe anderer Dinge. Der genaue Inhalt eines jeden Heartbeat geht über den Rahmen dieses Dokuments hinaus. Wichtig ist, dass Heartbeats laufend während der Wiedergabe ausgelöst werden.
 
-Suchen Sie in den Inhalts-Heartbeats nach einigen speziellen Elementen:
+Suchen Sie in den Content Heartbeats nach einigen spezifischen Elementen:
 
 | Parameter | Wert | Hinweise |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
-| `l:event:playhead` | &lt;Position der Abspielleiste&gt;, z. B. 50, 60, 70 | Dies sollte die aktuelle Position der Abspielleiste widerspiegeln. |
+| `l:event:playhead` | &lt;Position der Abspielleiste>, z. B. 50, 60, 70 | Dies sollte die aktuelle Position der Abspielleiste widerspiegeln. |
 
 ## Heartbeat Content Complete {#heartbeat-content-complete}
 
-Wenn die Wiedergabe einer Folge abgeschlossen ist (die Abspielleiste überschreitet die Grenze zwischen Folgen), wird ein Heartbeat Content Complete-Aufruf gesendet. Dieser Aufruf sieht wie andere Heartbeat-Aufrufe aus, enthält aber einige spezielle Elemente:
+Wenn die Wiedergabe für eine bestimmte Folge abgeschlossen ist (Abspielleiste überschreitet die Begrenzung für die Folge), wird ein „Heartbeat Content Complete“-Aufruf gesendet. Dies sieht wie andere Heartbeat-Aufrufe aus, enthält aber einige spezielle Dinge:
 
 | Parameter | Wert | Hinweise |
 |---|---|---|
