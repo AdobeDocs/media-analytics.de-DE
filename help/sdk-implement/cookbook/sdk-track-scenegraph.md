@@ -12,22 +12,22 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Einführung {#introduction}
 
-Roku hat ein neues Programmierungs-Framework für die Anwendungsentwicklung eingeführt: das SceneGraph-XML-Framework. Dieses neue Framework umfasst zwei wichtige Aspekte:
+Roku hat ein neues Programmier-Framework für die Entwicklung von Anwendungen herausgebracht: das SceneGraph XML-Programmier-Framework. Dieses neue Framework umfasst zwei neue Schlüsselkonzepte:
 
-* SceneGraph-Rendering der Anwendungsbildschirme
-* XML-Konfiguration der SceneGraph-Bildschirme
+* SceneGraph-Rendering der Anwendungsszenen
+* XML-Konfiguration der SceneGraph-Screens
 
-Das Adobe Mobile SDK for Roku wurde in BrightScript geschrieben. Das SDK nutzt viele Komponenten, die nicht für Anwendungen in SceneGraph verfügbar sind (z. B. Threads). Deshalb können Roku-Anwendungsentwickler, die das SceneGraph-Framework nutzen wollen, die Adobe Mobile-SDK-APIs nicht aufrufen (letztere ähneln den in Legacy-BrightScript-Anwendungen verfügbaren APIs).
+Das Adobe Mobile SDK for Roku wurde in BrightScript geschrieben. Das SDK verwendet viele Komponenten, die nicht für eine App verfügbar sind, die auf SceneGraph ausgeführt wird (z. B. Threads). Daher kann ein Roku-App-Entwickler, der das SceneGraph-Framework verwenden möchte, Adobe Mobile SDK-APIs nicht aufrufen (letztere sind ähnlich wie die in älteren BrightScript-Apps verfügbaren APIs).
 
 ## Architektur {#architecture}
 
 Damit das AdobeMobile-SDK SceneGraph unterstützt, hat Adobe eine neue API hinzugefügt, die eine Connector-Verbindung zwischen dem AdobeMobile-SDK und `adbmobileTask` herstellt. Letzterer ist ein SceneGraph-Knoten, der für die API-Ausführung des SDK verwendet wird. (Die Verwendung von `adbmobileTask` wird im Rest dieses Dokuments ausführlich erklärt.)
 
-Die Connector-Verbindung funktioniert wie folgt:
+Die Connector-Verbindung ist wie folgt ausgelegt:
 
-* Die Verbindung gibt eine SceneGraph-kompatible Instanz des AdobeMobile-SDK zurück. Das SceneGraph-kompatible SDK verfügt über alle APIs, die beim Legacy-SDK verfügbar sind.
-* Sie verwenden die AdobeMobile-SDK-APIs in SceneGraph auf ähnliche Weise wie die Legacy-APIs.
-* Die Verbindung stellt darüber hinaus einen Mechanismus bereit, um Callbacks von APIs zu überwachen, die Daten zurückgeben.
+* Die Verbindung gibt eine SceneGraph-kompatible Instanz des AdobeMobile SDK zurück. Das SceneGraph-kompatible SDK verfügt über alle APIs, die vom alten SDK bereitgestellt werden.
+* Sie verwenden die AdobeMobile SDK-APIs in SceneGraph ähnlich wie die alten APIs.
+* Die Verbindung stellt auch einen Mechanismus zum Abhören von Callbacks für APIs, die Daten zurückgeben, bereit.
 
 ![](assets/SceneGraph_arch.png)
 
@@ -40,8 +40,8 @@ Die Connector-Verbindung funktioniert wie folgt:
 
 **AdobeMobileLibrary:**
 
-* Stellt eine Gruppe öffentlicher APIs (Legacy) bereit, einschließlich der Connector-Verbindungs-API.
-* Gibt eine SceneGraph-Connector-Instanz zurück, die alle öffentlichen Legacy-APIs beinhaltet.
+* Stellt eine Reihe öffentlicher APIs (Legacy) bereit, einschließlich der Connector Bridge-API.
+* Gibt eine SceneGraph-Connector-Instanz zurück, die alle älteren öffentlichen APIs einpackt.
 * Kommuniziert mit einem SceneGraph-`adbmobileTask`-Knoten für die Ausführung der APIs.
 
 **adbmobileTask-Knoten:**
@@ -79,7 +79,7 @@ Die Connector-Verbindung funktioniert wie folgt:
 |  |  |  |
 | **Experience Cloud** |  |  |
 |  | `visitorSyncIdentifiers` | SceneGraph-API zur Synchronisierung von Experience Cloud IDs im ADBMobile-SDK. |
-|  | `visitorMarketingCloudID` | SceneGraph-API zum Abrufen der Experience Cloud-Besucher-ID vom ADBMobile-SDK. |
+|  | `visitorMarketingCloudID` | SceneGraph-API zum Abrufen der Experience Cloud-ID vom ADBMobile-SDK. |
 |  | Weitere Informationen finden Sie im Abschnitt „Experience Cloud“ des Legacy-SDK. |  |
 |  |  |  |
 | **Audience Manager** |  |  |
@@ -92,13 +92,13 @@ Die Connector-Verbindung funktioniert wie folgt:
 |  |  |  |
 | **MediaHeartbeat** |  |  |
 |  | `mediaTrackLoad` | SceneGraph-API zum Laden des Videoinhalts für MediaHeartbeat-Tracking. |
-|  | mediaTrackStart | SceneGraph-API zum Starten einer Video-Tracking-Sitzung während der Verwendung von MediaHeartbeat. |
+|  | mediaTrackStart | SceneGraph-API zum Starten von Video-Tracking-Sitzungen mit MediaHeartbeat. |
 |  | `mediaTrackUnload` | SceneGraph-API zum Entfernen des Videoinhalts vom MediaHeartbeat-Tracking. |
-|  | `mediaTrackPlay` | SceneGraph-API zum Verfolgen der Wiedergabe von Videoinhalt. |
-|  | mediaTrackPause | SceneGraph-API zum Verfolgen von Pausen des Videoinhalts. |
+|  | `mediaTrackPlay` | SceneGraph-API zum Verfolgen der Wiedergabe des Videoinhalts. |
+|  | mediaTrackPause | SceneGraph-API zur Verfolgung pausierter Videoinhalte. |
 |  | `mediaTrackComplete` | SceneGraph-API zum Verfolgen abgeschlossener Wiedergaben des Videoinhalts. |
-|  | `mediaTrackError` | SceneGraph-API zum Verfolgen von Wiedergabefehlern. |
-|  | mediaTrackEvent | SceneGraph-API zum Verfolgen von Wiedergabeereignissen während des Trackings. Beispiel: Anzeigen, Kapitel. |
+|  | `mediaTrackError` | SceneGraph-API zur Verfolgung von Wiedergabefehlern. |
+|  | mediaTrackEvent | SceneGraph-API zur Verfolgung von Wiedergabe-Ereignissen während des Trackings. Beispiel: Anzeigen, Kapitel. |
 |  | `mediaUpdatePlayhead` | SceneGraph-API zum Senden von Änderungen der Abspielleiste an MediaHeartbeat während des Video-Trackings. |
 |  | `mediaUpdateQoS` | SceneGraph-API zum Senden von QoS-Änderungen an MediaHeartbeat während des Video-Trackings. |
 |  | Weitere Informationen finden Sie im Abschnitt „MediaHeartbeat“ des Legacy-SDK. |  |
@@ -122,7 +122,7 @@ Die Connector-Verbindung funktioniert wie folgt:
 <table>
 <thead>
 <tr>
-<td> Feld </td><td> Typ </td><td> Standardeinstellung </td><td> Nutzung </td>
+<td> Feld </td><td> Typ </td><td> Standard </td><td> Nutzung </td>
 </tr>
 </thead>
 <tbody>
@@ -136,7 +136,7 @@ Die Connector-Verbindung funktioniert wie folgt:
 <td> adbmobileApiResponse </td>
 <td> assocarray </td>
 <td> Ungültig </td>
-<td> Nur lesen. Alle APIs, die im AdobeMobileSDK ausgeführt werden, geben Antworten in diesem Feld zurück. Registrieren Sie sich für einen Rückruf, um nach Aktualisierungen dieses Feldes zum Erhalt von Antwortobjekten zu suchen. Im Folgenden finden Sie das Format des Antwortobjekts:  
+<td> Nur lesen. Alle APIs, die im AdobeMobileSDK ausgeführt werden, geben Antworten in diesem Feld zurück. Registrieren Sie einen Callback, der auf Aktualisierungen dieses Felds wartet, um Antwortobjekte zu empfangen. Das Antwortobjekt hat folgendes Format:  
 <codeblock>
 response = {
   "apiName" : &lt;SceneGraphConstants.
@@ -188,7 +188,7 @@ Rückgabetyp: `SceneGraphConstants`
 
 |  Funktion  | Konstantenname | Beschreibung   |
 |---|---|---|
-| Versionierung | `version` | Konstante zum Abrufen der AdobeMobileLibrary-Versionsinformationen |
+| Versionierung | `version` | Konstante für das Abrufen von Versionsinformationen von AdobeMobileLibrary |
 | Datenschutz/Opt-out | `PRIVACY_STATUS_OPT_IN` | Konstante für den Datenschutz-Opt-in-Status |
 |  | `PRIVACY_STATUS_OPT_OUT` | Konstante für den Datenschutz-Opt-out-Status |
 | MediaHeartbeat-Konstanten | Die Konstanten finden Sie auf dieser Seite: <br/><br/>[Media Heartbeat-Methoden.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | Verwenden Sie diese Konstanten mit den MediaHeartbeat-APIs |
