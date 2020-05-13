@@ -18,12 +18,12 @@ Wenn nichts anderes angegeben ist, sind die Netzwerkaufrufe in diesem Szenario m
 
 | Auslöser   | Heartbeat-Methode   | Netzwerkaufrufe   | Hinweise   |
 |---|---|---|---|
-| Benutzer klickt auf **[!UICONTROL Abspielen]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Dies kann ein Anwender sein, der auf **[!UICONTROL Abspielen]** klickt, oder ein Ereignis bei automatischer Wiedergabe. |
-| Das erste Videobild wird wiedergegeben. | `trackPlay` | Heartbeat Content Play | Diese Methode löst den Timer aus. Heartbeats werden während der Dauer der Wiedergabe alle zehn Sekunden gesendet. |
+| Anwender klickt auf **[!UICONTROL Abspielen]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Dies kann ein Anwender sein, der auf **[!UICONTROL Abspielen]** klickt, oder ein Ereignis bei automatischer Wiedergabe. |
+| Das erste Videobild wird wiedergegeben. | `trackPlay` | Heartbeat Content Play | Diese Methode löst den Timer aus. Heartbeats werden alle 10 Sekunden gesendet, solange die Wiedergabe läuft. |
 | Der Inhalt wird wiedergegeben. |  | Content Heartbeats |  |
 | Die Pufferung wird gestartet. | `trackEvent:BufferStart` | Heartbeat Buffer |  |
 | Der Inhalt wird gepuffert. |  | Content Heartbeats |  |
-| Die Pufferung ist abgeschlossen. | `trackEvent:BufferComplete` | Heartbeat Puffer, Heartbeat Abspielen |  |
+| Die Pufferung ist abgeschlossen. | `trackEvent:BufferComplete` | Heartbeat Buffer, Heartbeat Play |  |
 | Der Inhalt wird wiedergegeben. |  | Content Heartbeats |  |
 | Die Inhaltswiedergabe ist abgeschlossen. | `trackComplete` | Heartbeat Content Complete | Das Ende der Abspielleiste wurde erreicht. |
 | Die Sitzung ist beendet. | `trackSessionEnd` |  | `SessionEnd` steht für das Ende einer Anzeigesitzung. Diese API muss auch dann aufgerufen werden, wenn der Anwender das Video nicht bis zum Ende anschaut. |
