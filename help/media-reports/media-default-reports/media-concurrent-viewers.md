@@ -10,7 +10,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 # Gleichzeitige Medienbesucher {#media-concurrent-viewers}
 
-Das Dashboard „Gleichzeitige Medienbetrachter“ gibt die Anzahl der gleichzeitigen Betrachter an einem Tag an. Die Daten können nach Inhalt, Gerätetyp und Land gefiltert werden.
+Im Dashboard „Gleichzeitige Medienbetrachter“ werden gleichzeitige Viewer an einem Tag angezeigt. Die Daten können nach Inhalt, Gerätetyp und Land gefiltert werden.
 
 >[!TIP]
 >
@@ -20,23 +20,23 @@ Das Dashboard „Gleichzeitige Medienbetrachter“ gibt die Anzahl der gleichzei
 
 ## Berichtsfunktionen {#report-features}
 
-Im Folgenden finden Sie einige Funktionen dieses Berichts:
+Hier sind einige Funktionen des Berichts:
 
-* Die Daten werden nicht in Echtzeit angezeigt. Dies ist die normale Latenzzeit von Adobe Analytics.
-* Der Bericht deckt einen Zeitrahmen von 24 Stunden ab. Die X-Achse beschreibt die Tageszeit in der Zeitzone der Report Suite.
-* Der Bericht zeigt die gleichzeitigen Zuschauer pro Minute an.
-* Der *Bericht „Gleichzeitige Medienbetrachter“* zeigt, wie viele Betrachter über alle Inhalte hinweg zusehen oder zuhören.
-* Im *Mediendetailbericht* gibt es einen Bericht über gleichzeitige Betrachter, der anzeigt, wie viele Betrachter ein bestimmtes Medienelement ansehen oder anhören.
-* Der Bericht bezieht sich nur auf einen Tag.
+* Die Daten werden nicht in Echtzeit angezeigt. Der Bericht weist eine normale Adobe Analytics-Latenz auf.
+* Der Bericht deckt einen Zeitraum von 24 Stunden ab. Die X-Achse ist die Tageszeit, die auf der Zeitzone der Report Suite basiert.
+* Dadurch werden gleichzeitige Betrachter mit extrem hoher Granularität angezeigt.
+* Es gibt einen *Bericht über gleichzeitige Medienbetrachter*, der zeigt, wie viele Betrachter den gesamten Inhalt ansehen oder ihm zuhören.
+* Es gibt einen Bericht über gleichzeitige Medienbetrachter innerhalb des *Berichts über Mediendetails*, der angibt, wie viele Betrachter ein bestimmtes Medienelement ansehen oder ihm zuhören.
+* Der Bericht betrachtet jeweils nur einen einzigen Tag.
 * Der Kunde kann sich Verlaufsberichte zu gleichzeitigen Zuschauern anzeigen (beschränkt auf einzelne Tage).
 
 ## Einschränkungen {#limitations}
 
-Im Folgenden finden Sie die Einschränkungen dieses Berichts:
+Für diesen Bericht gelten folgende Einschränkungen:
 
-* Sie können keine Daten exportieren, z. B. in ReportBuilder.
-* Sie können die Daten nicht im Tabellenformat anzeigen.
-* Sie können den Bericht nicht per E-Mail senden.
-* Selbst wenn Sie Anzeigen nicht verfolgen, müssen Sie das Medien-Tracking erneut aktivieren und das Medienanzeigenmodul auswählen.
-* Diese Funktion stellt bei Verwendung einer Heartbeat-Bibliothek mit Pausen-Tracking präzise Daten bereit.
+* Sie können die Daten nicht exportieren, z. B. ReportBuilder.
+* Sie können die Daten nicht in einem Tabellenformat darstellen.
+* Sie können keinen Bericht per E-Mail senden.
+* Auch wenn Sie keine Anzeigen verfolgen, müssen Sie die Medienverfolgung erneut aktivieren und das Medienanzeigemodul auswählen.
+* Diese Funktion bietet genaue Daten, wenn eine Heartbeats-Bibliothek verwendet wird, in die eine Funktion für Pausenverfolgung integriert ist.
 
