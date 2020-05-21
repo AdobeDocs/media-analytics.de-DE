@@ -1,8 +1,11 @@
 ---
 title: Migration vom Standalone Media SDK zu Adobe Launch – Web (JS)
 description: Anleitungen und Code-Beispiele für die Migration vom Media SDK zu Launch
-translation-type: ht
-source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
+translation-type: tm+mt
+source-git-commit: 0f9a985d04969eeca837a2655c666259ce30aee4
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 100%
 
 ---
 
@@ -72,7 +75,8 @@ mediaDelegate.getQoSObject = function() {
 this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
 ```
 
-[Media SDK – Tracker-Erstellung](https://docs.adobe.com/content/help/de-DE/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html)
+<!--  Dead Link - from 2019 - can't locate where this should go
+[Media SDK - Tracker Creation](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html) -->
 
 ### Launch
 
