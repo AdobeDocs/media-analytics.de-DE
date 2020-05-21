@@ -2,8 +2,11 @@
 title: 'Zeitlicher Ablauf 3: Kapitel'
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
-translation-type: ht
-source-git-commit: 5107de22c2388e8ac5b15b8d28fa974e97363fdf
+translation-type: tm+mt
+source-git-commit: 197041df4c985cdc572564652a976bd733448787
+workflow-type: tm+mt
+source-wordcount: '1219'
+ht-degree: 100%
 
 ---
 
@@ -745,4 +748,3 @@ Senden Sie `sessionComplete` an das Backend, um anzugeben, dass der Anwender den
 >[!NOTE]
 >
 >**Keine Suchereignisse? -** Die Mediensammlungs-API unterstützt die Ereignisse `seekStart` und `seekComplete` nicht explizit. Das liegt daran, dass bestimmte Player eine große Anzahl solcher Ereignisse generieren, wenn der Anwender durch das Video springt. So können einige Hunderte von Anwendern schnell die Netzwerkbandbreite des Backend-Service überlasten. Adobe unterstützt explizite Suchvorgänge für Ereignisse, indem die Heartbeat-Dauer basierend auf dem Geräte-Zeitstempel und nicht auf der Abspielposition berechnet wird.
-
