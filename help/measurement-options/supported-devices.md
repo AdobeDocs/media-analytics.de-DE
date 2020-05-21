@@ -1,16 +1,20 @@
 ---
-title: Unterstützte Geräte
-description: null
-uuid: null
+title: Unterstützte Geräte und Plattformen
+description: Adobe Analytics für Audio und Video stellt sicher, dass jeder Medienstream auf allen Geräten erfasst und in Berichten aufgeführt wird.
 translation-type: tm+mt
-source-git-commit: 3a237ee31412784f708e772cc3a58047630e2184
+source-git-commit: a8fec1747e688473af7a5eabbc4f9968772b5db3
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 15%
 
 ---
 
 
-# Unterstützte Geräte {#devices-supported}
+# Unterstützte Geräte und Plattformen {#devices-supported}
 
-Adobe Analytics für Audio und Video stellt sicher, dass jeder Medienstream auf allen Geräten erfasst und in Berichten aufgeführt wird.
+>[!IMPORTANT]
+>
+>Ab dem 31. August 2021, dem Ende der Unterstützung für Version 4 Mobile-SDKs, stellt Adobe auch die Unterstützung für das Media Analytics-SDK für iOS und Android ein.  Weitere Informationen finden Sie unter Häufig gestellte Fragen zum Ende der Unterstützung für [Media Analytics SDK](/help/sdk-implement/end-of-support-faqs.md).
 
 Adobe Analytics für Audio und Video unterstützt alle wichtigen Geräte, darunter:
 
@@ -18,32 +22,32 @@ Adobe Analytics für Audio und Video unterstützt alle wichtigen Geräte, darunt
 * OTT-Geräte für ROKU, AppleTV, FireTV und Android-TV
 * JavaScript-Browser für Desktop und Laptop
 
-Das Media SDK wird routinemäßig aktualisiert, wenn neue Versionen von Geräten veröffentlicht werden. Sie können das SDK verwenden, um sich mit den größten Medienplayern von heute, einschließlich Brightcove und Ooyala, zu integrieren.
+Die Media SDKs werden routinemäßig aktualisiert, wenn neue Versionen von Geräten veröffentlicht werden. Sie können das SDK verwenden, um sich mit den größten Medienplayern von heute, einschließlich Brightcove und Ooyala, zu integrieren.
 
 Für Geräte oder Plattformen, die derzeit keine SDK-Unterstützung haben, oder in Situationen, in denen Sie kein SDK verwenden möchten, können Sie die Media Collection-API implementieren. Mit der Media Collection-API können Sie RESTful-API-Aufrufe direkt von einem Gerät oder einer Plattform zum Media Analytics-Backend durchführen.
 
-Die folgende Tabelle zeigt die derzeit unterstützten Listen. Hier können Sie die neueste Version des SDK herunterladen: [SDKs herunterladen](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/download-sdks.html). Wenn ein Gerät nicht aufgeführt ist, wenden Sie sich an Ihren Kundendienst oder Lösungsberater, um den Status des Geräts zu erfahren.
+Die folgende Tabelle zeigt Listen, die derzeit von Geräten und Plattformen unterstützt werden. Hier können Sie die neueste Version des SDK herunterladen: [SDKs herunterladen](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/download-sdks.html). Wenn ein Gerät nicht aufgeführt ist, wenden Sie sich an Ihren Kundendienst oder Lösungsberater, um den Status des Geräts zu erfahren.
 
-
-| Streaming-Plattform/-Gerät |  | Media Launch Extension mit AEP SDK | Medien-SDK | Mediensammlungs-API |
-|---------------------------|-----------------------------------------------|:----------------------------:|:-------------------:|:--------------------:|
+| Streaming-Plattformen und -Geräte |  | Media Launch Extension mit AEP SDK | Medien-SDK | Mediensammlungs-API |
+|:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | Web/Mobile Web |  |  |  |  |
-|  | JavaScript-Browser | X | X | X |
+|  | JavaScript-Browser | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
 | Mobile App |  |  |  |  |
-|  | iOS-Geräte | X | X | X |
-|  | Android-Geräte | X | X | X |
-|  | Windows-Geräte |  |  | X |
+|  | iOS-Geräte | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Android-Geräte | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Windows-Geräte |  |  | ![](/help/assets/icon-blue-check.png) |
 | OTT |  |  |  |  |
-|  | Apple TV (veraltet, TVOS) |  | X | X |
-|  | ROKU |  | X<br>(BrightScript) | X<br>(nativ) |
-|  | Fire TV (Fire OS) |  | X | X |
-|  | Android TV |  | X | X |
-|  | Chromecast |  | X | X |
-|  | Spielekonsolen (z. B. Xbox ONE, Sony PS3/PS4) |  |  | X |
-|  | Top-Boxen festlegen (z. B. xfinity X1) |  |  | X |
-|  | Smart-TVs (z. B. Samsung, LG, Sony, Vizio) |  | X<br>(webbasiert) | X |
+|  | Apple TV (tvOS) | Für 2020 geplant | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | ROKU |  | ![](/help/assets/icon-blue-check.png)   <br>(BrightScript)    | ![](/help/assets/icon-blue-check.png)<br>(native) |
+|  | Fire TV (Fire OS) | Für 2020 geplant | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Android TV | Für 2020 geplant | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Chromecast |  | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
+|  | Spielekonsolen (z. B. Xbox ONE, Sony PS3/PS4) |  |  | ![](/help/assets/icon-blue-check.png) |
+|  | Top-Boxen festlegen (z. B. xfinity X1) |  |  | ![](/help/assets/icon-blue-check.png) |
+|  | Smart-TVs (z. B. Samsung, LG, Sony, Vizio) |  | ![](/help/assets/icon-blue-check.png)   <br>(webbasiert)    | ![](/help/assets/icon-blue-check.png) |
 | Sonstige |  |  |  |  |
-|  | Neue verbundene Geräte |  |  | X |
+|  | Neue verbundene Geräte |  |  | ![](/help/assets/icon-blue-check.png) |
 
+1. Die Unterstützung für diese SDKs endet am 31. August 2021. Weitere Informationen finden Sie unter Häufig gestellte Fragen zum Ende der Unterstützung für [Media Analytics SDK](/help/sdk-implement/end-of-support-faqs.md).
 
-Weitere Informationen zum Media SDK finden unter [Unterstützte Mindestversionen der Plattformen](/help/sdk-implement/setup/setup-overview.md#minimum-platform-version).
+Weitere Informationen zu den Mindestanforderungen an die Plattformversionen, die für jedes SDK unterstützt werden, finden Sie unter Unterstützung der [Mindestplattformversion](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html)
