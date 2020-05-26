@@ -2,11 +2,11 @@
 title: Voraussetzungen
 description: null
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '424'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Für eine Implementierung von *Media Analytics* müssen Sie die folgenden Aufgab
 
    >[!IMPORTANT]
    >
-   >Wenn in den medienspezifischen Aufrufen keine Benutzer-ID-Informationen vorhanden sind, gelten die standardmäßigen [Fallback-ID-Methoden](https://docs-author.corp.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-fallback.html) für die Analyse.
+   >Wenn in den medienspezifischen Aufrufen keine Benutzer-ID-Informationen vorhanden sind, gelten die standardmäßigen [Fallback-ID-Methoden](https://docs.adobe.com/content/help/de-DE/analytics/technotes/visitor-identification.translate.html) für die Analyse.
 
    Weitere Informationen zur Experience Cloud-ID finden Sie unter [Überblick über die Experience Cloud-ID](https://docs.adobe.com/content/help/de-DE/id-service/using/intro/overview.html) und unter [Adobe Experience Platform-ID-Dienst.](https://docs.adobe.com/content/help/de-DE/id-service/using/home.html)
 
