@@ -2,8 +2,11 @@
 title: Einrichten von Chromecast
 description: Einrichten der Media SDK-Anwendung für die Implementierung in Chromecast.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: be82be2eb58f89344f2125288599fef461db441e
+workflow-type: ht
+source-wordcount: '630'
+ht-degree: 100%
 
 ---
 
