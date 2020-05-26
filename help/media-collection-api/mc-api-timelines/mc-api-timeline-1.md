@@ -2,8 +2,11 @@
 title: 'Zeitlicher Ablauf 1: Wiedergabe bis zum Ende des Inhalts'
 description: null
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
+workflow-type: ht
+source-wordcount: '1164'
+ht-degree: 100%
 
 ---
 
@@ -25,9 +28,9 @@ Die folgenden Diagramme illustrieren die Zeitleiste der Abspielleiste und die zu
 
 ### Aktion 1: Sitzung starten {#Action-1}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| Automatische Wiedergabe oder Betätigung der Play-Schaltfläche; Video wird geladen. | 0 | 0 | `/api/v1/sessions` |
+| Button zur automatischen Wiedergabe oder zur Wiedergabe gedrückt, Video wird geladen. | 0 | 0 | `/api/v1/sessions` |
 
 **Implementierungsdetails**
 
@@ -59,9 +62,9 @@ Dieser Aufruf signalisiert _die Anwenderintention, ein Video abzuspielen_. <br/>
 
 ### Aktion 2: Start des Ping-Timers {#Action-2}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| Anwendung startet Ping-Ereignis-Timer. | 0 | 0 | `/api/v1/sessions/{sid}/events` |  |
+| App startet Ping-Ereignis-Timer | 0 | 0 | `/api/v1/sessions/{sid}/events` |  |
 
 **Implementierungsdetails**
 
@@ -69,9 +72,9 @@ Starten Sie den Ping-Timer Ihrer App. Das erste Ping-Ereignis sollte dann nach 1
 
 ### Aktion 3: Start der Werbeunterbrechung {#Action-3}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| Start der Pre-Roll-Werbeunterbrechung wird verfolgt. | 0 | 0 | `/api/v1/sessions/{sid}/events` |
+| Verfolgen des Starts der Pre-Roll-Anzeigenunterbrechung | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Implementierungsdetails**
 
@@ -95,9 +98,9 @@ Anzeigen können nur innerhalb einer Werbeunterbrechung verfolgt werden.
 
 ### Aktion 4: Anzeigenstart {#Action-4}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| Start der ersten Pre-Roll-Anzeige wird verfolgt. | 0 | 0 | `/api/v1/sessions/{sid}/events` |
+| Verfolgen des Starts der Pre-Roll-Anzeige Nr. 1 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Implementierungsdetails**
 
@@ -137,7 +140,7 @@ Beginnen Sie mit dem Tracking der ersten Pre-Roll-Anzeige, die 15 Sekunden daue
 
 #### Aktion 5.1 - Anzeigen-Ping 1 {#Action-5-1}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 1 | 0 | `/api/v1/sessions/{sid}/events` |
 
@@ -159,7 +162,7 @@ Senden Sie innerhalb einer Anzeige jede Sekunde ein Ping-Ereignis an das Backend
 
 #### Aktion 5.2 - Anzeigen-Ping 2 {#Action-5-2}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 2 | 0 | `/api/v1/sessions/{sid}/events` |
 
@@ -182,7 +185,7 @@ Senden Sie innerhalb einer Anzeige jede Sekunde ein Ping-Ereignis an das Backend
 #### Aktion 5.3 - Anzeigen-Ping 3 {#Action-5-3}
 
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 3 | 0 | `/api/v1/sessions/{sid}/events` |
 
@@ -209,9 +212,9 @@ Senden Sie innerhalb einer Anzeige jede Sekunde ein Ping-Ereignis an das Backend
 
 ### Aktion 6: Abschluss der Anzeige {#Action-6}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| Abschluss der ersten Pre-Roll-Anzeige wird verfolgt. | 15 | 0 | `/api/v1/sessions/{sid}/events` |
+| Verfolgen des Abschlusses der Pre-Roll-Anzeige Nr. 1 | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Implementierungsdetails**
 
@@ -231,9 +234,9 @@ Verfolgen Sie das Ende der ersten Pre-Roll-Anzeige.
 
 ### Aktion 7: Anzeigenstart {#Action-7}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| Start der zweiten Pre-Roll-Anzeige wird verfolgt. | 15 | 0 | `/api/v1/sessions/{sid}/events` |
+| Verfolgen des Starts der Pre-Roll-Anzeige Nr. 2 | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Implementierungsdetails**
 
@@ -266,7 +269,7 @@ Verfolgen Sie den Start der zweiten Pre-Roll-Anzeige, die 7 Sekunden lang ist.
 
 ### Aktion 8: Anzeigen-Pings {#Action-8}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 20 | 0 | `/api/v1/sessions/{sid}/events` |
 
@@ -288,9 +291,9 @@ Senden Sie jede Sekunde ein Ping-Ereignis an das Backend.
 
 ### Aktion 9: Abschluss der Anzeige {#Action-9}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| Abschluss der zweiten Pre-Roll-Anzeige wird verfolgt. | 22 | 0 | `/api/v1/sessions/{sid}/events` |
+| Verfolgen des Abschlusses der Pre-Roll-Anzeige Nr. 2 | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Implementierungsdetails**
 
@@ -310,13 +313,13 @@ Verfolgen Sie das Ende der zweiten Pre-Roll-Anzeige.
 
 ### Aktion 10: Abschluss der Werbeunterbrechung {#Action-10}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| Abschluss der Pre-Roll-Werbeunterbrechung wird verfolgt. | 22 | 0 | `/api/v1/sessions/{sid}/events` |
+| Verfolgen des Abschlusses der Pre-Roll-Anzeigenunterbrechung | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Implementierungsdetails**
 
-Die Werbeunterbrechung ist vorüber. Während der Werbeunterbrechung wurde der Status „Playing“ (Wiedergabe) beibehalten.
+Die Werbeunterbrechung ist vorüber. Während der Anzeigenunterbrechung blieb der Wiedergabestatus auf „Abspielen“.
 
 **Beispiel-Anfrageinhalt**
 
@@ -332,9 +335,9 @@ Die Werbeunterbrechung ist vorüber. Während der Werbeunterbrechung wurde der S
 
 ### Aktion 11: Inhalt abspielen {#Action-11}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| Wiedergabeereignis wird verfolgt. | 22 | 0 | `/api/v1/sessions/{sid}/events` |
+| Verfolgen des Wiedergabe-Ereignisses | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Implementierungsdetails**
 
@@ -354,7 +357,7 @@ Versetzen Sie den Player nach dem Ereignis `adBreakComplete` mit dem Ereignis `p
 
 ### Aktion 12: Ping {#Action-12}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 30 | 8 | `/api/v1/sessions/{sid}/events` |
 
@@ -376,9 +379,9 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 
 ### Aktion 13: Start der Pufferung {#Action-13}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| Pufferstartereignis aufgetreten. | 33 | 11 | `/api/v1/sessions/{sid}/events` |
+| Pufferstart-Ereignis aufgetreten | 33 | 11 | `/api/v1/sessions/{sid}/events` |
 
 **Implementierungsdetails**
 
@@ -397,9 +400,9 @@ Verfolgen Sie den Wechsel des Players zum Status „Buffering“ (Puffern).
 
 ### Aktion 14: Ende der Pufferung {#Action-14}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| Puffern abgeschlossen; die Anwendung setzt den Inhalt fort. | 36 | 11 | `/api/v1/sessions/{sid}/events` |
+| Pufferung abgeschlossen, die App verfolgt die Wiederaufnahme des Inhalts | 36 | 11 | `/api/v1/sessions/{sid}/events` |
 
 **Implementierungsdetails**
 
@@ -419,7 +422,7 @@ Puffern endet nach 3 Sekunden, sodass der Player wieder zum Status „Playing�
 
 ### Aktion 15: Ping {#Action-15}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 40 | 15 | `/api/v1/sessions/{sid}/events` |
 
@@ -440,9 +443,9 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 
 ### Aktion 16: Start der Werbeunterbrechung {#Action-16}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| Start der Mid-Roll-Werbeunterbrechung wird verfolgt. | 46 | 21 | `/api/v1/sessions/{sid}/events` |
+| Verfolgen des Starts der Mid-Roll-Anzeigenunterbrechung | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
 **Implementierungsdetails**
 
@@ -467,9 +470,9 @@ Mid-Roll-Anzeige mit einer Dauer von 8 Sekunden: Senden Sie `adBreakStart` .
 
 ### Aktion 17: Anzeigenstart {#Action-17}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| Start der dritten Mid-Roll-Anzeige wird verfolgt. | 46 | 21 | `/api/v1/sessions/{sid}/events` |
+| Verfolgen des Starts der Mid-Roll-Anzeige Nr. 3 | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
 **Implementierungsdetails**
 
@@ -502,7 +505,7 @@ Verfolgen Sie die Mid-Roll-Anzeige.
 
 ### Aktion 18: Anzeigen-Ping {#Action-18}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 50 | 21 | `/api/v1/sessions/{sid}/events` |
 
@@ -523,9 +526,9 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 
 ### Aktion 19: Abschluss der Anzeige {#Action-19}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| Abschluss der ersten Mid-Roll-Anzeige wird verfolgt. | 54 | 21 | `/api/v1/sessions/{sid}/events` |
+| Verfolgen des Abschlusses der Mid-Roll-Anzeige Nr. 1 | 54 | 21 | `/api/v1/sessions/{sid}/events` |
 
 **Implementierungsdetails**
 
@@ -545,9 +548,9 @@ Die Mid-Roll-Anzeige ist abgeschlossen.
 
 ### Aktion 20: Abschluss der Werbeunterbrechung {#Action-20}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| Abschluss der Mid-Roll-Werbeunterbrechung wird verfolgt. | 54 | 21 | `/api/v1/sessions/{sid}/events` |
+| Verfolgen des Abschlusses der Mid-Roll-Anzeigenunterbrechung. | 54 | 21 | `/api/v1/sessions/{sid}/events` |
 
 **Implementierungsdetails**
 
@@ -567,7 +570,7 @@ Die Werbeunterbrechung ist abgeschlossen.
 
 ### Aktion 21: Ping {#Action-21}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 60 | 27 | `/api/v1/sessions/{sid}/events` |
 
@@ -589,9 +592,9 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 
 ### Aktion 22: Anhalten {#Action-22}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| Anwender betätigt Pause-Schaltfläche. | 64 | 31 | `/api/v1/sessions/{sid}/events` |
+| Benutzer hat Pause gedrückt | 64 | 31 | `/api/v1/sessions/{sid}/events` |
 
 **Implementierungsdetails**
 
@@ -611,13 +614,13 @@ Durch die Anwenderaktion wechselt der Wiedergabestatus zu „Paused“ (Pause).
 
 ### Aktion 23: Ping {#Action-23}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 70 | 31 | `/api/v1/sessions/{sid}/events` |
 
 **Implementierungsdetails**
 
-Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend. Der Player befindet sich weiterhin im Status „buffering“ (Puffern); der Nutzer hängt bei 20 Sekunden des Inhalts fest und ist frustriert.
+Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend. Der Player befindet sich weiterhin im Status „buffering“ (Puffern); der Nutzer hängt bei 20 Sekunden des Inhalts fest und ist würtend.
 
 **Beispiel-Anfrageinhalt**
 
@@ -632,9 +635,9 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend. Der Player befindet
 
 ### Aktion 24: Abspielen {#Action-24}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| Anwender betätigt Play-Schaltfläche, um Hauptinhalt fortzusetzen. | 74 | 31 | `/api/v1/sessions/{sid}/events` |
+| Der Benutzer drückte „Play“, um mit dem Hauptinhalt fortzufahren | 74 | 31 | `/api/v1/sessions/{sid}/events` |
 
 **Implementierungsdetails**
 
@@ -653,7 +656,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend. Der Player befindet
 
 ### Aktion 25: Ping {#Action-25}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 80 | 37 | `/api/v1/sessions/{sid}/events` |
 
@@ -674,9 +677,9 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 
 ### Aktion 26: Abschluss der Sitzung {#Action-26}
 
-| Aktion | Aktionsablauf (Sekunden) | Abspielposition (Sekunden) | Clientanfrage |
+| Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| Anwender sieht sich Inhalt bis zum Ende an. | 88 | 45 | `/api/v1/sessions/{sid}/events` |
+| Der Benutzer sieht sich den Inhalt bis zum Ende an. | 88 | 45 | `/api/v1/sessions/{sid}/events` |
 
 **Implementierungsdetails**
 
@@ -695,4 +698,4 @@ Senden Sie `sessionComplete` an das Backend, um anzugeben, dass der Anwender den
 
 >[!NOTE]
 >
->**Keine Suchereignisse? -** Die Mediensammlungs-API unterstützt die Ereignisse `seekStart` und `seekComplete` nicht explizit. Das liegt daran, dass bestimmte Player eine große Anzahl solcher Ereignisse generieren, wenn der Anwender durch das Video springt. So können einige Hunderte von Anwendern schnell die Netzwerkbandbreite des Backend-Service überlasten. Adobe umgeht die explizite Unterstützung von Suchereignissen durch die Berechnung einer Heartbeat-Dauer basierend auf dem Gerätezeitstempel statt auf der Abspielposition.
+>**Keine Suchereignisse? -** Die Mediensammlungs-API unterstützt die Ereignisse `seekStart` und `seekComplete` nicht explizit. Das liegt daran, dass bestimmte Player eine große Anzahl solcher Ereignisse generieren, wenn der Anwender durch das Video springt. So können einige Hunderte von Anwendern schnell die Netzwerkbandbreite des Backend-Service überlasten. Adobe unterstützt explizite Suchvorgänge für Ereignisse, indem die Heartbeat-Dauer basierend auf dem Geräte-Zeitstempel und nicht auf der Abspielposition berechnet wird.
