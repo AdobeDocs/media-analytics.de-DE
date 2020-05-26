@@ -2,22 +2,22 @@
 title: Handbuch zur Implementierung von Custom Link
 description: null
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '203'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
 # Implementierungshandbuch für benutzerdefinierte Links {#custom-link-implementation-guide}
 
-Das benutzerdefinierte Video-Tracking verwendet das [manuelle Link-Tracking mit benutzerdefiniertem Link-Code](https://docs.adobe.com/content/help/en/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html) im `appMeasurement` in Analytics.
+Das benutzerdefinierte Video-Tracking verwendet das [manuelle Link-Tracking mit benutzerdefiniertem Link-Code](https://docs.adobe.com/content/help/de-DE/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html) im `appMeasurement` in Analytics.
 Meistens wird das anwenderdefinierte Video-Tracking auf Plattformen und Geräten verwendet, bei denen eine minimale Videomessung erforderlich ist.
 
 * In JavaScript: die Funktion `s.tl()`
-* In mobilen Apps: [trackAction() Android](https://docs.adobe.com/content/help/en/mobile-services/android/analytics-android/actions.html), [trackAction() iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/analytics-ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* In mobilen Apps: [trackAction() Android](https://docs.adobe.com/content/help/de-DE/mobile-services/android/analytics-android/actions.html), [trackAction() iOS](https://docs.adobe.com/content/help/de-DE/mobile-services/ios/analytics-ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 * In der Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## Voraussetzungen
