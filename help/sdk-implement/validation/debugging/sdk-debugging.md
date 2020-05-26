@@ -2,8 +2,11 @@
 title: SDK-Debugging
 description: Hier wird die im Media SDK verfügbare Verfolgung (Tracking)/Protokollierung beschrieben.
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+workflow-type: ht
+source-wordcount: '271'
+ht-degree: 100%
 
 ---
 
@@ -64,7 +67,7 @@ ADBMobile.config.setDebugLogging(true)
 
 ## Testen von Chromecast-Anwendungen mit Adobe Bloodhound
 
-Bei der Anwendungsentwicklung können Sie in Bloodhound die Server-Aufrufe lokal anzeigen und die Daten optional an Adobe-Erfassungsserver weiterleiten.
+Bei der Anwendungsentwicklung können Sie in Bloodhound die Server-Aufrufe lokal anzeigen und die Daten optional an Adobe-Erfassungs-Server weiterleiten.
 
 <!--
 For more information about Bloodhound, see the following guides:
