@@ -1,14 +1,17 @@
 ---
-title: Puffer-Tracking in JavaScript
+title: Verfolgen der Pufferung mit JavaScript 2.x
 description: Beschreibt das Tracking von Pufferereignissen in Browser-Anwendungen (JS).
 uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 8235fee973623c168dbf83f43aa85f13b4e06cff
+workflow-type: tm+mt
+source-wordcount: '116'
+ht-degree: 91%
 
 ---
 
 
-# Puffer-Tracking in JavaScript {#track-buffering-on-javascript}
+# Verfolgen der Pufferung mit JavaScript 2.x{#track-buffering-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -26,16 +29,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. Suchen Sie nach den Wiedergabepufferereignissen aus dem Medienplayer. Wenn Sie die Benachrichtigung zum Pufferstartereignis erhalten, verfolgen Sie die Pufferung mit dem `BufferStart`-Ereignis.
 
    ```js
-   _onBufferStart = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart); 
+   _onBufferStart = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart);
    };
    ```
 
 1. Wenn Sie die Benachrichtigung zum Pufferabschluss vom Medienplayer erhalten, verfolgen Sie das Ende der Pufferung mit dem `BufferComplete`-Ereignis.
 
    ```js
-   _onBufferComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete); 
+   _onBufferComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete);
    };
    ```
 
