@@ -1,14 +1,17 @@
 ---
-title: Tracking der Erlebnisqualität auf JavaScript
-description: Hier wird die Implementierung des Trackings der Erlebnisqualität (QoE, QoS) mit dem Media SDK in Browser-Apps (JS) beschrieben.
+title: Verfolgen Sie die Qualität der Erfahrung mit JavaScript 2.x
+description: In diesem Thema wird beschrieben, wie Sie die QoE- und QoS-Verfolgung mithilfe des Media SDK in Browser-Apps mit JavaScript 2.x implementieren.
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: b165c9d133637fd0f1c529a98a936f8f31b72465
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 84%
 
 ---
 
 
-# Tracking der Erlebnisqualität auf JavaScript {#track-quality-of-experience-on-javascript}
+# Verfolgen Sie die Qualität der Erfahrung mit JavaScript 2.x{#track-quality-of-experience-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -39,14 +42,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    var qosObject = MediaHeartbeat.createQoSObject(<bitrate>,  
                                                   <startuptime>,  
                                                   <fps>,  
-                                                  <droppedFrames>); 
+                                                  <droppedFrames>);
    ```
 
 1. Wenn sich die Bitrate der Wiedergabe ändert, rufen Sie das `BitrateChange`-Ereignis in der Media Heartbeat-Instanz auf:
 
    ```js
-   _onBitrateChange = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject); 
+   _onBitrateChange = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject);
    };
    ```
 
@@ -60,4 +63,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >[!TIP]
    >
    >Das Tracking von Fehlern im Medienplayer beendet die Medien-Tracking-Sitzung nicht. Wenn der Medienplayer-Fehler verhindert, dass die Wiedergabe fortgesetzt wird, müssen Sie sicherstellen, dass die Medien-Tracking-Sitzung geschlossen wird. Rufen Sie dazu `trackSessionEnd()` nach `trackError()` auf.
-
