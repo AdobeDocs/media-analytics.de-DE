@@ -3,10 +3,10 @@ title: Player-Statusparameter
 description: In diesem Thema werden Player-Status-Tracking-Parameter beschrieben.
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 translation-type: tm+mt
-source-git-commit: 3c24b69265287084393be830193da14ae85cc5ba
+source-git-commit: c23a8787a8f59746665702eb5e2e74dde2c213e8
 workflow-type: tm+mt
-source-wordcount: '2103'
-ht-degree: 28%
+source-wordcount: '2167'
+ht-degree: 29%
 
 ---
 
@@ -38,98 +38,75 @@ Beschreibung der Tabellendaten:
 >Ändern Sie nicht die Klassifizierungsnamen für Variablen, die unter Berichterstellung/Reservierte Variable als „Klassifizierung“ beschrieben sind.\
 >Die Medienklassifizierungen werden definiert, wenn eine Report Suite für das Medien-Tracking aktiviert ist. Adobe fügt von Zeit zu Zeit neue Eigenschaften hinzu. In diesem Fall müssen Kunden ihre Report Suites erneut aktivieren, um Zugriff auf die neuen Medieneigenschaften zu erhalten. Während des Aktualisierungsvorgangs ermittelt Adobe anhand der Namen der Variablen, ob die Klassifizierungen aktiviert sind. Wenn eine fehlt, fügt Adobe die fehlenden erneut hinzu.
 
-
-
 ## Player-Statuseigenschaften {#player-state-properties}
 
-Die Tabelle mit den Player-Statusverfolgungseigenschaften ist in die folgenden fünf Abschnitte unterteilt:
-
-* Vollbild
-   * Von Vollbild betroffene Streams
-   * Vollbildanzahl
-   * Gesamtdauer im Vollbildmodus
-* Beschriftung schließen
-   * Von Untertiteln betroffene Streams
-   * Anzahl der Untertitel
-   * Untertitel - Dauer gesamt
-* Stumm
-   * Von Mute betroffene Streams
-   * Stummzähler
-   * Gesamtdauer der Stummschaltung
-* Bild in Bild
-   * Von Picture in Picture betroffene Streams
-   * Picture-in-Picture-Zähler
-   * Gesamtdauer des Bilds
-* Im Brennpunkt
-   * Von InFocus betroffene Streams
-   * Fokusanzahl
-   * Im Fokus Gesamtdauer
+Die Player-Statusverfolgungsfunktionen können an einen Audio- oder Videostream angehängt werden. Standardisierte Player-Statusverfolgungsmetriken werden als Lösungsvariablen gespeichert. Die Standardzustände sind: fullScreen, mute, closeCaption, pictureInPicture und inFocus.
 
 ### Vollbildeigenschaften
 
-#### Von Vollbild betroffene Streams
+#### Vom Vollbildmodus betroffene Streams
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Anzahl der Streams, die vom Vollbildmodus betroffen sind. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **Wichtig** Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.fullscreen.set)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Von Vollbild betroffene Berichtsnamenstreams **<br/></li> <li> **Kontextdaten **<br/>(a.media.states.fullscreen.set)<br/> </li> <li> **Datenfeed **<br/>videostatefullscreen</li> <li> **Audience Manager **<br/>(c_contextData.a.media.states.fullscreen.set)</li> </ul> |
+| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Anzahl der Streams, die vom Vollbildmodus betroffen sind. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **Wichtig** <br/> Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.fullscreen.set)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Von Vollbild betroffene Berichtsnamenstreams **<br/></li> <li> **Kontextdaten **<br/>(a.media.states.fullscreen.set)<br/> </li> <li> **Datenfeed **<br/>media.states.fullscreen</li> <li> **Audience Manager **<br/>(c_contextData.a.media.states.fullscreen.set)</li> </ul> |
 
-#### Vollbildanzahl
-
-|   Implementierung   | Netzwerkparameter | Berichterstellung |
-| --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Häufigkeit, mit der ein Vollbild angezeigt wurde. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **Wichtig** Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostatefullscreencount)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Berichtsname **<br/>Vollbildanzahl</li> <li> **Kontextdaten **<br/>(videostatefullscreencount)<br/> </li> <li> **Datenfeed **<br/>videostatefullscreenCount</li> <li> **Audience Manager **<br/>(c_contextdata.videostatefullscreen-count)</li> </ul> |
-
-
-
-#### Gesamtdauer im Vollbildmodus
+#### Anzahl der Vollbildmodi
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Dauer der Anzeige eines Vollbilds. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **Wichtig** Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostatefullscreen-time)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Dauer des Berichtsnamens **<br/>im Vollbildmodus</li> <li> **Kontextdaten **<br/>(videostatefullscreen-time)<br/> </li> <li> **Datenfeed **<br/>videostatefullscreentime</li> <li> **Audience Manager **<br/>(c_contextdata.videostatefullscreen-time)</li> </ul> |
+| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Häufigkeit, mit der ein Vollbild angezeigt wurde. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **Wichtig **<br/>Wenn dieses Ereignis eingestellt ist, entspricht die Anzahl der Videowiedergaben der Anzahl der Videowiedergaben im Vollbildmodus. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.fullscreen.count)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Berichtsname **<br/>Vollbildanzahl</li> <li> **Kontextdaten **<br/>(media.states.fullscreen.count)<br/> </li> <li> **Datenfeed **<br/>media.stats.fullscreen.count</li> <li> **Audience Manager **<br/>(c_contextData.media.states.fullscreen.count)</li> </ul> |
+
+
+
+#### Gesamtdauer der Vollbildmodi
+
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
+| --- | --- | --- |
+| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Dauer der Anzeige eines Vollbilds. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **Wichtig **<br/>Wenn dieses Ereignis eingestellt ist, ist die Zeit gleich der Länge des Videos im Vollbildmodus. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.fullscreen.time)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Gesamtdauer des **<br/>Berichts im Vollbildmodus</li> <li> **Kontextdaten **<br/>(media.states.fullscreen.time)<br/> </li> <li> **Datenfeed **<br/>media.states.fullscreen.time</li> <li> **Audience Manager **<br/>(c_contextData.media.states.fullscreen.time)</li> </ul> |
 
 
 ### Untertiteleigenschaften schließen
 
-#### Von Untertiteln betroffene Streams
+#### Von verdeckten Untertiteln betroffene Streams
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Anzahl der Streams, die von der Untertitel-Funktion betroffen sind. This metric is set to 1 only if at least one Closed Caption State occurred during a playback session.<br/> **Wichtig** Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.closedcaptioning.set)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Von Untertitelung betroffene Berichtnamenstreams **<br/></li> <li> **Kontextdaten **<br/>(a.media.states.closedcaptioning.set)<br/> </li> <li> **Datenfeed **<br/>videostateclosedcaptionierung</li> <li> **Audience Manager **<br/>(c_contextData.a.media.states.closedcaptioning.set)</li> </ul> |
+| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Anzahl der Streams, die von der Untertitel-Funktion betroffen sind. This metric is set to 1 only if at least one Closed Caption State occurred during a playback session.<br/> **Wichtig** <br/> Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.closedcaptioning.set)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Von Untertitelung betroffene Berichtnamenstreams **<br/></li> <li> **Kontextdaten **<br/>(a.media.states.closedcaptioning.set)<br/> </li> <li> **Datenfeed **<br/>media.states.closeDcaptioning</li> <li> **Audience Manager **<br/>(c_contextData.a.media.states.closedcaptioning.set)</li> </ul> |
 
 
-#### Anzahl der Untertitel
-
-|   Implementierung   | Netzwerkparameter | Berichterstellung |
-| --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Häufigkeit, mit der Untertitel ausgewählt wurden. This metric is set to 1 only if at least one Closed Captioning State occurred during a playback session.<br/> **Wichtig** Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostateclosedcaptioningcount)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Anzahl der Untertitel für **<br/>Berichtname</li> <li> **Kontextdaten **<br/>(videostateclosedcaptioningcount)<br/> </li> <li> **Datenfeed **<br/>videostateclosedcaptioningcount</li> <li> **Audience Manager **<br/>(c_contextdata.videostateclosedcaptioningcount)</li> </ul> |
-
-
-#### Untertitel - Dauer gesamt
+#### Anzahl der verdeckten Untertitel
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Zeitdauer der Auswahl von &quot;Untertitel&quot;. This metric is set to 1 only if at least one Closed Caption State occurred during a playback session.<br/> **Wichtig** Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostateclosedcaptioningtime)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Dauer der **<br/>Untertitel des Berichts</li> <li> **Kontextdaten **<br/>(videostateclosedcaptioningtime)<br/> </li> <li> **Datenfeed **<br/>videostateclosedcaptiontime</li> <li> **Audience Manager **<br/>(c_contextdata.videostateclosedcaptioningtime)</li> </ul> |
+| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Häufigkeit, mit der Untertitel angezeigt wurden. This metric is set to 1 only if at least one Closed Captioning State occurred during a playback session.<br/> **Wichtig **<br/>Wenn dieses Ereignis eingestellt ist, entspricht die Anzahl der Videowiedergaben dem Status &quot;Untertitel&quot;. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(C19)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Anzahl der Untertitel für **<br/>Berichtname</li> <li> **Kontextdaten **<br/>(media.states.closedcaptioning.count)<br/> </li> <li> **Datenfeed **<br/>media.states.closedcaptioning.count</li> <li> **Audience Manager **<br/>(c_contextData.media.states.closedcaptioning.count)</li> </ul> |
+
+
+#### Gesamtdauer der verdeckten Untertitel
+
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
+| --- | --- | --- |
+| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Dauer der Anzeige von Untertiteln. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **Wichtig **<br/>Wenn dieses Ereignis eingestellt ist, ist die Zeit gleich der Länge des Videos im Status &quot;Untertitel&quot;. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.closedcaptioning.time)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Berichtname **<br/>- Untertitel - Gesamtdauer</li> <li> **Kontextdaten **<br/>(media.states.closedcaptioning.time)<br/> </li> <li> **Datenfeed **<br/>media.states.closedcaptioning.time</li> <li> **Audience Manager **<br/>(c_contextData.media.states.closedcaptioning.time)</li> </ul> |
 
 
 ### Stummeigenschaften
 
-#### Von Mute betroffene Streams
+#### Von der Stummschaltung betroffene Streams
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Anzahl der von Mute betroffenen Streams. This metric is set to 1 only if at least one Mute State occurred during a playback session.<br/> **Wichtig** Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.mute.set)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Von Stummschaltung betroffene Berichtsnamenstreams **<br/></li> <li> **Kontextdaten **<br/>(a.media.states.mute.set)<br/> </li> <li> **Datenfeed **<br/>-Videostatusdatei</li> <li> **Audience Manager **<br/>(c_contextData.a.media.states.mute.set)</li> </ul> |
+| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Anzahl der von Mute betroffenen Streams. This metric is set to 1 only if at least one Mute State occurred during a playback session.<br/> **Wichtig** <br/> Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.mute.set)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Von Stummschaltung betroffene Berichtsnamenstreams **<br/></li> <li> **Kontextdaten **<br/>(a.media.states.mute.set)<br/> </li> <li> **Datenfeed **<br/>media.states.mute</li> <li> **Audience Manager **<br/>(c_contextData.a.media.states.mute.set)</li> </ul> |
 
-#### Stummzähler
-
-|   Implementierung   | Netzwerkparameter | Berichterstellung |
-| --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Häufigkeit, mit der Mute ausgewählt wurde. This metric is set to 1 only if at least one Mute State occurred during a playback session.<br/> **Wichtig** Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostatemutecount)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Name **<br/>der Stummzahl</li> <li> **Kontextdaten **<br/>(videostatemutecount)<br/> </li> <li> **Datenfeed **<br/>videostatemutecount</li> <li> **Audience Manager **<br/>(c_contextdata.videostatemutecount)</li> </ul> |
-
-#### Gesamtdauer der Stummschaltung
+#### Anzahl der Stummschaltungen
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Zeitdauer, für die Mute ausgewählt wurde. This metric is set to 1 only if at least one Mute State occurred during a playback session.<br/> **Wichtig** Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostatemutetime)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Berichtname **<br/>- Täuschungsdauer</li> <li> **Kontextdaten **<br/>(videostatemutetime)<br/> </li> <li> **Datenfeed **<br/>videostatemutetime</li> <li> **Audience Manager **<br/>(c_contextdata.videostatemutetime)</li> </ul> |
+| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Häufigkeit, mit der Mute angezeigt wurde. This metric is set to 1 only if at least one Mute State occurred during a playback session.<br/> **Wichtig **<br/>Wenn dieses Ereignis eingestellt ist, entspricht die Anzahl der Mute-Status des Videos. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.mute.count)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Name **<br/>der Stummzahl</li> <li> **Kontextdaten **<br/>(media.states.mute.count)<br/> </li> <li> **Datenfeed **<br/>media.states.mute.count</li> <li> **Audience Manager **<br/>(c_contextData.media.states.mute.count)</li> </ul> |
+
+#### Gesamtdauer der Stummschaltungen
+
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
+| --- | --- | --- |
+| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Zeitdauer, in der Mute angezeigt wurde. This metric is set to 1 only if at least one Mute State occurred during a playback session.<br/> **Wichtig **<br/>Wenn dieses Ereignis eingestellt ist, ist die Zeit gleich der Länge des Videos im Status &quot;Stumm&quot;. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.mute.time)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Berichtsname **<br/>Gesamtdauer der Ton</li> <li> **Kontextdaten **<br/>(media.states.mute.time)<br/> </li> <li> **Datenfeed **<br/>media.states.mute.time</li> <li> **Audience Manager **<br/>(c_contextData.media.states.mute.time)</li> </ul> |
 
 
 ### Picture in Picture Properties
@@ -139,50 +116,49 @@ Die Tabelle mit den Player-Statusverfolgungseigenschaften ist in die folgenden f
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Anzahl der von Picture in Picture betroffenen Streams. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **Wichtig** Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.pictureinpicture.set)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Von Bild in Bild betroffene Berichtnamenstreams **<br/></li> <li> **Kontextdaten **<br/>(a.media.states.pictureinpicture.set)<br/> </li> <li> **Datenfeed **<br/>videostatepictureinpicture</li> <li> **Audience Manager **<br/>(c_contextData.a.media.states.pictureinpicture.set)</li> </ul> |
+| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Anzahl der von Picture in Picture betroffenen Streams. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **Wichtig** <br/> Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.pictureinpicture.set)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Von Bild in Bild betroffene Berichtnamenstreams **<br/></li> <li> **Kontextdaten **<br/>(a.media.states.pictureinpicture.set)<br/> </li> <li> **Datenfeed **<br/>media.states.pictureinpicture</li> <li> **Audience Manager **<br/>(c_contextData.a.media.states.pictureinpicture.set)</li> </ul> |
 
 
 #### Picture-in-Picture-Zähler
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Häufigkeit, mit der Bild in Bild angezeigt wurde. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **Wichtig** Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostatepictureinpicturecount)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Bild des Berichtnamens **<br/>in der Bildanzahl</li> <li> **Kontextdaten **<br/>(videostatepictureinpicturecount)<br/> </li> <li> **Datenfeed **<br/>videostatepictureinpicturecount</li> <li> **Audience Manager **<br/>(c_contextdata.videostatepictureinpicturecount)</li> </ul> |
+| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Häufigkeit, mit der Bild in Bild angezeigt wurde. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **Wichtig** <br/> Wenn dieses Ereignis eingestellt ist, entspricht die Anzahl der Videoaufnahmen der Anzahl der Aufnahmen im Status &quot;Bild in Bild&quot;. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.pictureinpicture.count)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Bild des Berichtnamens **<br/>in der Bildanzahl</li> <li> **Kontextdaten **<br/>(media.states.pictureinpicture.count)<br/> </li> <li> **Datenfeed **<br/>media.stats.pictureinpicture.count</li> <li> **Audience Manager **<br/>(c_contextData.media.states.pictureinpicture.count)</li> </ul> |
 
 
 #### Gesamtdauer des Bilds
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Zeitdauer, in der Bild in Bild angezeigt wurde. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **Wichtig** Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostatepictureinpicturetime)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Berichtsnamenbild **<br/>in Bilddauer</li> <li> **Kontextdaten **<br/>(videostatepictureinpicturetime)<br/> </li> <li> **Datenfeed **<br/>videostatepictureinpicturetime</li> <li> **Audience Manager **<br/>(c_contextdata.videostatepictureinpicturetime)</li> </ul> |
+| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Zeitdauer, in der Bild in Bild angezeigt wurde. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **Wichtig** <br/> Wenn dieses Ereignis eingestellt ist, ist die Zeit gleich der Länge des Videos im Status &quot;Bild im Bild&quot;. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet..   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.pictureinpicture.time)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Berichtsnamenbild **<br/>in Gesamtbilddauer</li> <li> **Kontextdaten **<br/>(media.states.pictureinpicture.time)<br/> </li> <li> **Datenfeed **<br/>media.states.pictureinpicture.time</li> <li> **Audience Manager **<br/>(c_contextData.media.states.pictureinpicture.time)</li> </ul> |
 
 
 ### In Fokuseigenschaften
 
-#### Von InFocus betroffene Streams
+#### Vom Fokusmodus betroffene Streams
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Anzahl der von InFocus betroffenen Streams. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **Wichtig** Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.infocus.set)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Von InFocus betroffene Berichtnamenstreams **<br/></li> <li> **Kontextdaten **<br/>(a.media.states.infocus.set)<br/> </li> <li> **Datenfeed **<br/>videostateinfocus</li> <li> **Audience Manager **<br/>(c_contextData.a.media.states.infocus.set)</li> </ul> |
+| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Anzahl der von InFocus betroffenen Streams. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **Wichtig** <br/> Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.infocus.set)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Von InFocus betroffene Berichtnamenstreams **<br/></li> <li> **Kontextdaten **<br/>(a.media.states.infocus.set)<br/> </li> <li> **Datenfeed **<br/>media.states.infocus</li> <li> **Audience Manager **<br/>(c_contextData.a.media.states.infocus.set)</li> </ul> |
 
 
-#### Fokusanzahl
-
-|   Implementierung   | Netzwerkparameter | Berichterstellung |
-| --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Häufigkeit, mit der im Fokus angezeigt wurde. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **Wichtig** Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostateinfocuscount)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Berichtsname **<br/>in Fokuszahl</li> <li> **Kontextdaten **<br/>(videostateinfocuscount)<br/> </li> <li> **Datenfeed **<br/>videostateinfocuscount</li> <li> **Audience Manager **<br/>(c_contextdata.videostateinfocuscount)</li> </ul> |
-
-
-#### Im Fokus Gesamtdauer
+#### Anzahl der Fokusmodi
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Zeitdauer im Fokus wurde angezeigt. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **Wichtig** Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostateinfocustime)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Berichtsname **<br/>in Fokusdauer</li> <li> **Kontextdaten **<br/>(videostateinfocustime)<br/> </li> <li> **Datenfeed **<br/>videostateinfocustime</li> <li> **Audience Manager **<br/>(c_contextdata.videostateinfocustime)</li> </ul> |
+| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Häufigkeit, mit der im Fokus angezeigt wurde. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **Wichtig **<br/>Wenn dieses Ereignis eingestellt ist, entspricht die Anzahl der Anzahl der Fälle, in denen sich das Video im Fokus befindet. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.infocus.count)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Berichtsname **<br/>in Fokuszahl</li> <li> **Kontextdaten **<br/>(media.states.infocus.count)<br/> </li> <li> **Datenfeed **<br/>media.states.infocus.count</li> <li> **Audience Manager **<br/>(c_contextData.media.states.infocus.count)</li> </ul> |
+
+
+#### Gesamtdauer der Fokusmodi
+
+|   Implementierung   | Netzwerkparameter | Berichterstellung |
+| --- | --- | --- |
+| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Zeitdauer im Fokus wurde angezeigt. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **Wichtig** <br/> Wenn dieses Ereignis eingestellt ist, ist die Zeit gleich der Länge des Videos im Fokuszustand. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.infocus.time)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Berichtsname **<br/>in Fokusdauer insgesamt</li> <li> **Kontextdaten **<br/>(media.states.infocus.time)<br/> </li> <li> **Datenfeed **<br/>media.states.infocus.time</li> <li> **Audience Manager **<br/>(c_contextData.media.states.infocus.time)</li> </ul> |
 
 
 
 ## Verwandte APIs {#related_apis_section}
 
-BENÖTIGT: Hinzufügen API-Links zu Dokumenten:
-* Android - [createStateObject](https://need)
-* iOS - [createStateObjectWithName](https://need)
-* Javascript - [createStateObject](https://need)
+* Android - [createStateObject](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
+* iOS - [createStateObjectWithName](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
+* Javascript - [createStateObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html)
