@@ -2,10 +2,10 @@
 title: Migration vom Standalone Media SDK zu Adobe Launch – Web (JS)
 description: Anleitungen und Code-Beispiele für die Migration vom Media SDK zu Launch
 translation-type: tm+mt
-source-git-commit: 0f9a985d04969eeca837a2655c666259ce30aee4
+source-git-commit: fe109e9d670bf7fb6379f3c3631d10cecd2d48ac
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 100%
+source-wordcount: '409'
+ht-degree: 98%
 
 ---
 
@@ -112,7 +112,8 @@ Launch bietet zwei Methoden zum Erstellen der Tracking-Infrastruktur. Beide Meth
 
 ### Media SDK
 
-* [Einrichten von JS](/help/sdk-implement/setup/set-up-js.md)
+* [Einrichten von JavaScript 2.x](/help/sdk-implement/setup/setup-javascript/set-up-js-2.md)
+* [Einrichten von JavaScript 3.x](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md)
 * [Media SDK JS API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 
 ### Launch
