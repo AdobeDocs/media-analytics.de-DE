@@ -2,9 +2,9 @@
 title: Implementierung und Berichte
 description: In diesem Thema wird beschrieben, wie Sie die Player-Statusverfolgungsfunktion implementieren, einschließlich .
 translation-type: tm+mt
-source-git-commit: b0bfe74d1f6083e700dbf98f504a17518bd19ecb
+source-git-commit: 614780a121eac6d5f822d439365fa59f85959ce2
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Das Media SDK umfasst zwei neue Methoden zur Verfolgung benutzerdefinierter Zust
 `trackStateClose("state_name")`
 
 
-Die Media Collection-API enthält zwei neue Ereignis mit dem erforderlichen Parameter &quot;media.stateName&quot;:
+Die Media Collection-API enthält zwei neue Ereignis, die `media.stateName` als erforderlichen Parameter verwendet werden:
 
 `stateStart` und `stateEnd`
 
@@ -84,14 +84,19 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 Die für die einzelnen Statusangaben bereitgestellten Metriken werden berechnet, als Kontextdatenparameter an Adobe Analytics gesendet und zu Berichte gespeichert. Für jeden Status stehen drei Metriken zur Verfügung:
 
-* `a.media.states.(media.state.name).set = true` — Auf &quot;true&quot;setzen, wenn der Status für jede einzelne Wiedergabe eines Streams mindestens einmal festgelegt wurde.
-* `a.media.states.(media.state.name).count = 4` — Identifiziert die Anzahl der Vorkommen eines Status während jeder einzelnen Wiedergabe eines Streams
-* `a.media.states.(media.state.name).time = 240` — Identifiziert die Gesamtstatusdauer in Sekunden pro einzelner Wiedergabe eines Streams
+* `a.media.states.[state.name].set = true` — Auf &quot;true&quot;setzen, wenn der Status für jede einzelne Wiedergabe eines Streams mindestens einmal festgelegt wurde.
+* `a.media.states.[state.name].count = 4` — Identifiziert die Anzahl der Vorkommen eines Status während jeder einzelnen Wiedergabe eines Streams
+* `a.media.states.[state.name].time = 240` — Identifiziert die Gesamtstatusdauer in Sekunden pro einzelner Wiedergabe eines Streams
 
 ## Berichterstellung
 
-Alle Statusmetriken können für jede beliebige Visualisierung oder Komponente (Berichte, berechnete Metriken) verwendet werden.
-TBD - Quelle/Wiki für aktuelle Informationen überprüfen - für Screenshot von AW
+Alle Player-Statusmetriken können für jede in Analyse Workspace oder einer  verfügbare Visualisierung von Berichten (Segment, berechnete Metriken) verwendet werden, sobald eine Report Suite für die Player-Statusverfolgung aktiviert ist. Die neuen Metriken können in der Admin-Konsole für jeden einzelnen Bericht über Media Berichte Setup (Einstellungen bearbeiten > Medienverwaltung > Media Berichte) aktiviert werden.
+
+![](assets/report-setup.png)
+
+In Analytics Workspace befinden sich alle neuen Eigenschaften im Metrikbedienfeld. Sie können z. B. `full screen` nach den Vollbilddaten im Metrikbedienfeld suchen.
+
+![](assets/full-screen-report.png)
 
 ## Importieren von vom Player angegebenen Metriken in Adobe Experience Platform
 
