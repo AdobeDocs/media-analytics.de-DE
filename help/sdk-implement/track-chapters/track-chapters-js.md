@@ -1,14 +1,17 @@
 ---
-title: Tracking von Kapiteln und Segmenten in JavaScript
+title: Kapitel und Segmente mit JavaScript 2.x verfolgen
 description: Hier wird die Implementierung des Kapitel- und Segment-Trackings mit dem Media SDK in Browser-Apps (JS) beschrieben.
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: b14b56aea4a1821a2a160b9cd301cd181f1ba8dd
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 92%
 
 ---
 
 
-# Tracking von Kapiteln und Segmenten in JavaScript {#track-chapters-and-segments-on-javascript}
+# Kapitel und Segmente mit JavaScript 2.x verfolgen{#track-chapters-and-segments-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -42,38 +45,37 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. Wenn Sie anwenderspezifische Metadaten für das Kapitel hinzufügen, erstellen Sie die Kontextdaten-Variablen für die Metadaten:
 
    ```js
-   var chapterCustomMetadata = { 
+   var chapterCustomMetadata = {
        segmentType: "Sample segment type",  
        segmentName: "Sample segment name",  
-       segmentInfo: "Sample segment info" 
+       segmentInfo: "Sample segment info"
    };
    ```
 
 1. Um das Tracking der Kapitelwiedergabe zu starten, rufen Sie das `ChapterStart`-Ereignis in der `MediaHeartbeat`-Instanz auf:
 
    ```js
-   _onChapterStart = function() { 
+   _onChapterStart = function() {
        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart,  
                                        chapterObject,  
-                                       chapterCustomMetadata); 
+                                       chapterCustomMetadata);
    };
    ```
 
 1. Wenn die Wiedergabe das Kapitelende nach Definition Ihres anwenderspezifischen Codes erreicht, rufen Sie das `ChapterComplete`-Ereignis in der `MediaHeartbeat`-Instanz auf:
 
    ```js
-   _onChapterComplete = function() { 
-      this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete); 
+   _onChapterComplete = function() {
+      this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete);
    };
    ```
 
 1. Wenn die Kapitelwiedergabe nicht abgeschlossen wurde, weil der Anwender das Kapitel übersprungen hat (z. B. zu einer Position außerhalb des Kapitels springt), rufen Sie das `ChapterSkip`-Ereignis in der MediaHeartbeat-Instanz auf:
 
    ```js
-   _onChapterSkip = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip); 
+   _onChapterSkip = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip);
    };
    ```
 
 1. Wiederholen Sie die Schritte 1 bis 5, wenn es weitere Kapitel gibt.
-
