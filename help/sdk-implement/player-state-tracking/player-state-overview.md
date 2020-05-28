@@ -2,19 +2,19 @@
 title: Player-Statusverfolgung
 description: In diesem Thema wird die Player-Statusverfolgungsfunktion beschrieben, einschließlich Anforderungen und Richtlinien für die Implementierung und den Berichte-Player-Status.
 translation-type: tm+mt
-source-git-commit: 1cf11a6b8971f5be490998bbd855a27bfe366e48
+source-git-commit: d317188ef664c836c7125e8bbe195baa924c0d80
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 0%
+source-wordcount: '359'
+ht-degree: 1%
 
 ---
 
 
 # Player-Statusverfolgung
 
-Um Ihre Produkterfahrung zu optimieren und den Wert für Ihr Unternehmen zu steigern, ist es wichtig, das Kundenverhalten bei der Anzeige von Videos zu verstehen. Dies schließt die Zeit ein, die in verschiedenen Player-Status verbracht wird.  Um Ihr Verständnis zu optimieren, benötigen Sie die Flexibilität, um nach Bedarf neue Player-Status und -Ereignis zu erstellen und zu messen.
+Um Ihre Produkterfahrung zu optimieren und den Wert für Ihr Unternehmen zu steigern, ist es wichtig, das Kundenverhalten bei der Anzeige von Videos zu verstehen. Dies schließt die Zeit ein, die in verschiedenen Player-Status verbracht wird.  Es ist auch wichtig, die Flexibilität zu haben, um neue Player-Status und -Ereignis nach Bedarf zu erstellen und zu messen.
 
-Die Player-Statusverfolgung bietet die Möglichkeit, die Interaktion des Viewers während der Wiedergabe mit einem Standardsatz von Lösungsvariablen für Vollbild, Untertitel, Stummschalten, Bild im Bild und Fokus zu erfassen.  Die Player-Statusverfolgung bietet außerdem die Flexibilität, benutzerdefinierte Player-Status zu erstellen.  Die Player-Statusverfolgungsvariablen sind für den Berichte in Analyse Workspace verfügbar.
+Die Player-Statusverfolgung bietet die Möglichkeit, die Interaktion des Viewers während der Wiedergabe mit einem Standardsatz von Lösungsvariablen für Vollbild, Untertitel, Stummschalten, Bild im Bild und Fokus zu erfassen.  Die Player-Statusverfolgung bietet außerdem die Flexibilität, benutzerdefinierte Player-Status zu erstellen. Sie können Player-Statusverfolgungsvariablen für den Berichte in Analyse Workspace verwenden.
 
 Um Änderungen am Player-Status zu erfassen, aktualisiert die Player-Statusverfolgung die Videomessungsmetadaten. Um beispielsweise die Videointeraktion &quot;true&quot;zu ermitteln, misst die Player-Statusverfolgung die mit dem Sound verbrachte Zeit im Vergleich zu den passiven oder nicht aktiven Ansichten, wenn der Ton deaktiviert ist oder die  im Modus &quot;Normal&quot;im Vergleich zum Vollbildmodus abgelaufen ist.
 
@@ -29,13 +29,12 @@ Die Player-Statusverfolgung bietet folgende Vorteile:
 
 ## Voraussetzungen
 
-Zur Player-Statusverfolgung ist Folgendes für die Media Analytics-Erweiterung zur Verwendung mit Adobe Experience Platform (AEP SDK) erforderlich:
-* Web: Adobe Media Analytics (3.x SDK) für Audio und Video, Version 1.0+
-* Mobil: Adobe Media Analytics for Audio and Video v2.0+
-
-Wenn Sie sich entscheiden, das AEP SDK nicht zu verwenden, können Sie Folgendes bei der Player-Statusverfolgung verwenden:
+Zur Player-Statusverfolgung ist bei der Datenerfassung eine der folgenden Voraussetzungen erforderlich:
 * Media JS SDK 3.0+
-* Media Collection API-Version?
+* Media Analytics Extension (zur Verwendung mit dem Adobe Experience Platform (AEP) SDK)
+   * Web: Adobe Media Analytics (3.x SDK) für Audio und Video, Version 1.0+
+   * Mobil: Adobe Media Analytics for Audio and Video v2.0+
+* Mediensammlungs-API
 
 ## Richtlinien
 
