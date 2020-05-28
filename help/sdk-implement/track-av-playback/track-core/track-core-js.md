@@ -1,14 +1,17 @@
 ---
-title: Tracking von Core-Wiedergaben auf JavaScript
-description: Hier wird die Implementierung des Core-Trackings mit dem Media SDK in Browser-Anwendungen (JS) beschrieben.
+title: Core-Wiedergabe mit JavaScript 2.x verfolgen
+description: In diesem Thema wird beschrieben, wie Sie die Kernverfolgung mit dem Media SDK in einem Browser implementieren, der JavaScript 2.x-Apps verwendet.
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 30ed54924c75a9c33e6122b2d7ddbb84c06b8c0c
+workflow-type: tm+mt
+source-wordcount: '688'
+ht-degree: 95%
 
 ---
 
 
-# Tracking von Core-Wiedergaben auf JavaScript {#track-core-playback-on-javascript}
+# Core-Wiedergabe mit JavaScript 2.x verfolgen{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
 >Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
@@ -19,7 +22,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    [createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createMediaObject)
 
-   | Variablenname | Beschreibung | Erforderlich |
+   | Variablenname | Beschreibung | erforderlich |
    | --- | --- | :---: |
    | `name` | Medienname | Ja |
    | `mediaid` | Eindeutige Medienkennung | Ja |
@@ -49,7 +52,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    var mediaObject =  
      MediaHeartbeat.createMediaObject(<MEDIA_NAME>,  
                                      <MEDIA_ID,  
-                                     <MEDIA_LENGTH>, 
+                                     <MEDIA_LENGTH>,
                                      MediaHeartbeat.StreamType.VOD,
                                      <MEDIA_TYPE>);
    ```
@@ -74,11 +77,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       Erstellen Sie ein Variablenobjekt für die benutzerdefinierten Variablen und fügen Sie die Daten für dieses Medium ein. Beispiel:
 
       ```js
-      /* Set custom context data */ 
-      var customVideoMetadata = { 
-          isUserLoggedIn: "false", 
-          tvStation: "Sample TV station", 
-          programmer: "Sample programmer" 
+      /* Set custom context data */
+      var customVideoMetadata = {
+          isUserLoggedIn: "false",
+          tvStation: "Sample TV station",
+          programmer: "Sample programmer"
       };
       ```
 
@@ -160,4 +163,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * Tracking-Szenarien: [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * JavaScript-SDK mit Beispiel-Player für ein vollständiges Tracking-Beispiel.
-
