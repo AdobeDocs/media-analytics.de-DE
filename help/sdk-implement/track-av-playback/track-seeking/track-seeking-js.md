@@ -1,14 +1,17 @@
 ---
-title: Suchen-Tracking in JavaScript
+title: Verfolgung der Suche mit JavaScript 2.x
 description: Hier wird die Implementierung des Suchen-Trackings mit dem Media SDK in Browser-Apps (JS) beschrieben.
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 5f274452b9ff5770908f7e2e450935be572a22ea
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 92%
 
 ---
 
 
-# Suchen-Tracking in JavaScript {#track-seeking-on-javascript}
+# Verfolgung der Suche mit JavaScript 2.x{#track-seeking-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -26,16 +29,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. Suchen Sie nach den Wiedergabesuchereignissen aus dem Medienplayer. Wenn Sie die Benachrichtigung zum Suchstartereignis erhalten, verfolgen Sie die Suche mit dem `SeekStart`-Ereignis:
 
    ```js
-   _onSeekStart = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekStart); 
+   _onSeekStart = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekStart);
    };
    ```
 
 1. Wenn Sie die Benachrichtigung zum Suchabschluss vom Medienplayer erhalten, zeichnen Sie das Suchende mit dem `SeekComplete`-Ereignis auf:
 
    ```js
-   _onSeekComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete); 
+   _onSeekComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete);
    };
    ```
 
