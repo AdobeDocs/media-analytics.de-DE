@@ -1,14 +1,17 @@
 ---
-title: Tracking von Fehlern in JavaScript
+title: Verfolgen von Fehlern mit JavaScript 2.x
 description: Hier wird die Implementierung des Fehler-Trackings mit dem Media SDK in Browser-Apps (JS) beschrieben.
 uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 5f274452b9ff5770908f7e2e450935be572a22ea
+workflow-type: tm+mt
+source-wordcount: '96'
+ht-degree: 89%
 
 ---
 
 
-# Tracking von Fehlern in JavaScript {#track-errors-on-javascript}
+# Verfolgen von Fehlern mit JavaScript 2.x{#track-errors-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -19,12 +22,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. Tracking von Fehlern im Medienplayer:
 
    ```js
-   onPlayerError = function() { 
-       this._mediaHeartbeat.trackError("mediaErrorId"); 
+   onPlayerError = function() {
+       this._mediaHeartbeat.trackError("mediaErrorId");
    };
    ```
 
 >[!NOTE]
 >
 >Das Tracking von Fehlern im Medienplayer beendet die Medien-Tracking-Sitzung nicht. Wenn der Medienplayer-Fehler verhindert, dass die Wiedergabe fortgesetzt wird, müssen Sie sicherstellen, dass die Medien-Tracking-Sitzung geschlossen wird. Rufen Sie dazu `trackSessionEnd` nach `trackError` auf.
-
