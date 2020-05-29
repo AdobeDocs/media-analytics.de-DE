@@ -3,10 +3,10 @@ title: Player-Statusparameter
 description: In diesem Thema werden Player-Status-Tracking-Parameter beschrieben.
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 translation-type: tm+mt
-source-git-commit: c23a8787a8f59746665702eb5e2e74dde2c213e8
+source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
 workflow-type: tm+mt
-source-wordcount: '2167'
-ht-degree: 29%
+source-wordcount: '2236'
+ht-degree: 28%
 
 ---
 
@@ -85,7 +85,7 @@ Die Player-Statusverfolgungsfunktionen können an einen Audio- oder Videostream 
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Dauer der Anzeige von Untertiteln. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **Wichtig **<br/>Wenn dieses Ereignis eingestellt ist, ist die Zeit gleich der Länge des Videos im Status &quot;Untertitel&quot;. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.closedcaptioning.time)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Berichtname **<br/>- Untertitel - Gesamtdauer</li> <li> **Kontextdaten **<br/>(media.states.closedcaptioning.time)<br/> </li> <li> **Datenfeed **<br/>media.states.closedcaptioning.time</li> <li> **Audience Manager **<br/>(c_contextData.media.states.closedcaptioning.time)</li> </ul> |
+| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Dauer der Anzeige von Untertiteln. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **Wichtig **<br/>Wenn dieses Ereignis eingestellt ist, ist die Zeit gleich der Dauer des Videos im Status &quot;Untertitel&quot;. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.closedcaptioning.time)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Berichtname **<br/>- Untertitel - Gesamtdauer</li> <li> **Kontextdaten **<br/>(media.states.closedcaptioning.time)<br/> </li> <li> **Datenfeed **<br/>media.states.closedcaptioning.time</li> <li> **Audience Manager **<br/>(c_contextData.media.states.closedcaptioning.time)</li> </ul> |
 
 
 ### Stummeigenschaften
@@ -116,7 +116,7 @@ Die Player-Statusverfolgungsfunktionen können an einen Audio- oder Videostream 
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Anzahl der von Picture in Picture betroffenen Streams. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **Wichtig** <br/> Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.pictureinpicture.set)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Von Bild in Bild betroffene Berichtnamenstreams **<br/></li> <li> **Kontextdaten **<br/>(a.media.states.pictureinpicture.set)<br/> </li> <li> **Datenfeed **<br/>media.states.pictureinpicture</li> <li> **Audience Manager **<br/>(c_contextData.a.media.states.pictureinpicture.set)</li> </ul> |
+| <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Anzahl der von Picture in Picture betroffenen Streams. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **Wichtig** <br/> Wenn dieses Ereignis eingestellt ist, ist der einzig mögliche Wert TRUE. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.pictureinpicture.set)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Von Bild in Bild betroffene Berichtnamenstreams **<br/></li> <li> **Kontextdaten **<br/>(a.media.states.pictureinpicture.set)<br/> </li> <li> **Datenfeed **<br/>media.stats.pictureinpicture</li> <li> **Audience Manager **<br/>(c_contextData.a.media.states.pictureinpicture.set)</li> </ul> |
 
 
 #### Picture-in-Picture-Zähler
@@ -155,7 +155,27 @@ Die Player-Statusverfolgungsfunktionen können an einen Audio- oder Videostream 
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel **<br/>automatisch eingestellt</li> <li> **API-Schlüssel **<br/>- K/A</li> <li> **Erforderliche **<br/>Nr.</li> <li> **Typ **<br/>Nummer</li> <li> **Mit **<br/>Medienabschluss gesendet</li> <li> **Min. SDK Version **<br/>3.0</li> <li> **Beispielwert **<br/>TRUE</li><li> ****<br/>BeschreibungDie Zeitdauer im Fokus wurde angezeigt. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **Wichtig** <br/> Wenn dieses Ereignis eingestellt ist, ist die Zeit gleich der Länge des Videos im Fokuszustand. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.infocus.time)<br/></li> <li> **Heartbeat **<br/>N/A</li> </ul> | <ul> <li> **Verfügbar **<br/>Ja</li> <li> **Ereignis für reservierte Variablen **<br/></li> <li> **Berichtsname **<br/>in Fokusdauer insgesamt</li> <li> **Kontextdaten **<br/>(media.states.infocus.time)<br/> </li> <li> **Datenfeed **<br/>media.states.infocus.time</li> <li> **Audience Manager **<br/>(c_contextData.media.states.infocus.time)</li> </ul> |
 
+## Eigenschaften-Liste für XDM-Identitäten
 
+In Analytics gespeicherte Daten können für jeden Zweck verwendet werden. Die Player-Statusmetriken können mithilfe von XDM in Adobe Experience Platform importiert und mit Customer Journey Analytics verwendet werden.
+
+| Player-Statuseigenschaft | Zuordnen |
+|---------------------------------------|------------------------------------|
+| a.media.states.fullScreen.set | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateSet |
+| a.media.states.fullScreen.count | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateCount |
+| a.media.states.fullScreen.time | media.mediaTimed.primaryAssetViewDetails.fullScreen.playerStateTime |
+| a.media.states.mute.set | media.mediaTimed.primaryAssetViewDetails.mute.playerStateSet |
+| a.media.states.mute.count | media.mediaTimed.primaryAssetViewDetails.mute.playerStateCount |
+| a.media.states.mute.time | media.mediaTimed.primaryAssetViewDetails.mute.playerStateTime |
+| a.media.states.closeCaption.set | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateSet |
+| a.media.states.closeCaption.count | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateCount |
+| a.media.states.closeCaption.time | media.mediaTimed.primaryAssetViewDetails.closeCaption.playerStateTime |
+| a.media.states.pictureInPicture.set | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateSet |
+| a.media.states.pictureInPicture.count | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateCount |
+| a.media.states.pictureInPicture.time | media.mediaTimed.primaryAssetViewDetails.pictureInPicture.playerStateTime |
+| a.media.states.inFocus.set | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateSet |
+| a.media.states.inFocus.count | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateCount |
+| a.media.states.inFocus.time | media.mediaTimed.primaryAssetViewDetails.inFocus.playerStateTime |
 
 ## Verwandte APIs {#related_apis_section}
 
