@@ -2,9 +2,9 @@
 title: Implementierung und Berichte
 description: In diesem Thema wird beschrieben, wie Sie die Player-Statusverfolgungsfunktion implementieren, einschließlich .
 translation-type: tm+mt
-source-git-commit: 614780a121eac6d5f822d439365fa59f85959ce2
+source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
@@ -100,4 +100,4 @@ In Analytics Workspace befinden sich alle neuen Eigenschaften im Metrikbedienfel
 
 ## Importieren von vom Player angegebenen Metriken in Adobe Experience Platform
 
-In Analytics gespeicherte Daten können für jeden Zweck verwendet werden. Die Player-Statusmetriken können mithilfe von XDM in Adobe Experience Platform importiert und mit Customer Journey Analytics verwendet werden. Die Standardstatuseigenschaften haben bestimmte Eigenschaften, während die benutzerdefinierten Status Eigenschaften über die benutzerdefinierten Ereignis verfügbar sind. Weitere Informationen finden Sie in der Liste Eigenschaften für XDM-Identitäten unter ?LINK TO METRIC-LISTE?.
+In Analytics gespeicherte Daten können für jeden Zweck verwendet werden. Die Player-Statusmetriken können mithilfe von XDM in Adobe Experience Platform importiert und mit Customer Journey Analytics verwendet werden. Die Standardstatuseigenschaften haben bestimmte Eigenschaften, während die benutzerdefinierten Status Eigenschaften über die benutzerdefinierten Ereignis verfügbar sind.
