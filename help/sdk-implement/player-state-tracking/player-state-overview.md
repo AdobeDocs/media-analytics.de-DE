@@ -2,9 +2,9 @@
 title: Player-Statusverfolgung
 description: In diesem Thema wird die Player-Statusverfolgungsfunktion beschrieben, einschließlich Anforderungen und Richtlinien für die Implementierung und den Berichte-Player-Status.
 translation-type: tm+mt
-source-git-commit: d317188ef664c836c7125e8bbe195baa924c0d80
+source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '397'
 ht-degree: 1%
 
 ---
@@ -40,8 +40,9 @@ Zur Player-Statusverfolgung ist bei der Datenerfassung eine der folgenden Voraus
 
 Beachten Sie vor der Implementierung der Player-Statusverfolgung die folgenden Richtlinien.
 
-* Der Player-Status wird über alle Wiedergabestufen berechnet - (keine Aufteilung)
-* Sie können mehrere Player-Status gleichzeitig messen
-* Die maximale Anzahl von Player-Status, die während einer Wiedergabe verfolgt werden können, beträgt 10 
-* Player-Statusmetriken werden NUR beim Media Close-Aufruf an Analytics zum Berichte gesendet
-* Der Player-Status wird für jede einzelne Wiedergabesitzung erfasst. Der Player-Status wird nicht über die Wiedergabe hinweg berechnet 
+* Der Player-Status wird über alle Wiedergabestufen berechnet (keine Aufteilung).
+* Sie können mehrere Player-Status gleichzeitig messen.
+* Die maximale Anzahl von Player-Status, die während einer Wiedergabe verfolgt werden können, beträgt 10.
+* Player-Statusmetriken werden nur beim Media Close-Aufruf zum Berichte an Analytics gesendet.
+* Die Kenntnis des Anwendungsstatus wird nach dem Beenden eines Status nicht beibehalten. Nach dem Ende eines Status muss der Status erneut gestartet werden, um die Verfolgung fortzusetzen. Für jeden neuen Wiedergabestatus muss der Player-Status erneut gestartet werden.
+* Der Player-Status wird für jede einzelne Wiedergabesitzung erfasst. Der Player-Status wird nicht für alle Wiedergaben berechnet.
