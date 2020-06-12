@@ -2,28 +2,28 @@
 title: Implementierungspfade
 description: null
 uuid: 8400c938-e77e-4c88-b23b-5f5977a5316c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0bc3928b8e3076feb8e9a16e005cd0415f723408
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '489'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
 
 # Implementierungspfade {#implementation-paths}
 
-Für jeden Implementierungspfad müssen Kunden sich an ihren Vertriebsmitarbeiter/Kundenbetreuer wenden, um eine neue Verkaufsbestellung zu unterzeichnen, da Media Analytics eine eindeutige SKU aufweist und Änderungen von einem Preismodell auf der Grundlage von Serveraufrufen zu einem auf Video-Streams basierenden Modell vorgenommen werden.
+Für jeden Implementierungspfad müssen sich Kunden an ihren Kundenbetreuer/Account-Manager wenden, um einen neuen Kundenauftrag zu unterzeichnen, da Media Analytics über eine eigene SKU verfügt und sich der Preis hier nicht aus den Server-Aufrufen, sondern aus den Video-Streams ergibt.
 
 * **Adobe Launch mit der Adobe Media Analytics-Erweiterung**
 
-   Adobe Launch ist die nächste Generation der Tag-Management-Lösung von Adobe. &quot;Launch&quot;bietet eine einfache Möglichkeit, alle Analyse-, Marketing- und Werbetags bereitzustellen und zu verwalten, die zur Nutzung relevanter Kundenerlebnisse erforderlich sind. Um Ihre eigenen Integrationen mit Launch zu erstellen und zu pflegen, verwenden Sie Erweiterungen. Bei einer Erweiterung handelt es sich um ein JavaScript-, HTML- und CSS-Paket, das die Benutzeroberfläche für den Start und die Clientfunktion erweitert. Weitere Informationen finden Sie im Benutzerhandbuch zur [Erlebnisplattform](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html)
+   Adobe Launch ist die Adobe-Tag-Management-Lösung der nächsten Generation von Adobe. Launch bietet eine einfache Möglichkeit, alle Analyse-, Marketing- und Werbe-Tags bereitzustellen und zu verwalten, die für relevante Kundenerlebnisse erforderlich sind. Um Ihre eigenen Integrationen mit Launch zu erstellen und zu pflegen, verwenden Sie Erweiterungen. Eine Erweiterung ist ein JavaScript-, HTML- und CSS-Package, das die Launch-Benutzeroberfläche und die Client-Funktionen ausbaut. Weitere Informationen finden Sie im [Benutzerhandbuch zu Experience Platform Launch](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html)
 
-   Mit der Adobe Media Analytics (MA)-Erweiterung wird das JavaScript Media SDK (Media 2.x SDK) für Audio und Video hinzugefügt. Diese Erweiterung bietet die Funktionalität zum Hinzufügen der `MediaHeartbeat`-Tracker-Instanz zu einer Launch-Site oder einem Projekt.
+   Mit der Adobe Media Analytics-Erweiterung (MA) wird das JavaScript Media SDK (Media 2.x SDK) für Audio und Video hinzugefügt. Diese Erweiterung bietet die Funktionalität zum Hinzufügen der `MediaHeartbeat`-Tracker-Instanz zu einer Launch-Site oder einem Projekt.
 
    Adobe Launch mit der Media Analytics-Erweiterung erfordert Folgendes:
    * Sie müssen Adobe Experience Cloud-Kunde sein.
-   * Sie müssen den Einbettungscode &quot;Start&quot;oder &quot;DTM&quot;auf Ihren Webseiten bereitstellen.
+   * Sie müssen den Launch- oder DTM-Einbettungscode auf Ihren Websites bereitstellen.
    * [Analytics-Erweiterung](https://docs.adobe.com/content/help/de-DE/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
    * [Experience Cloud ID-Erweiterung](https://docs.adobe.com/content/help/de-DE/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)
 
@@ -48,6 +48,6 @@ Für jeden Implementierungspfad müssen Kunden sich an ihren Vertriebsmitarbeite
    * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
 
-TVSDK ist bereits in das Media Analytics-SDK (Heartbeats) integriert, was die Implementierung auf allen unterstützen Plattformen deutlich vereinfacht und beschleunigt. <!--Primetime also supports the partnership with Nielsen.--> Befolgen Sie zur Nutzung von Primetime die gleichen Richtlinien und Voraussetzungen wie auf der [Clientseite](/help/intro-to-ava/implementation-paths/client-side-path.md) sowie die folgenden Dokumente für Ihre Plattform(en): [Primetime-Benutzerhandbuch.](https://helpx.adobe.com/de/primetime/user-guide.html)
+TVSDK ist bereits in das Media Analytics-SDK (Heartbeats) integriert, was die Implementierung auf allen unterstützen Plattformen deutlich vereinfacht und beschleunigt. <!--Primetime also supports the partnership with Nielsen.--> Befolgen Sie zur Nutzung von Primetime die gleichen Richtlinien und Voraussetzungen wie auf der [Clientseite](/help/intro-to-ava/implementation-paths/client-side-path.md) sowie die folgenden Dokumente für Ihre Plattform(en): [Primetime-Benutzerhandbuch.](https://helpx.adobe.com/de/support/primetime.html)
 
 Von Ihrem Support-Mitarbeiter/Account-Manager erhalten Sie Informationen zum Kauf von TVSDK.
