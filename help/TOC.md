@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: f90eec31389431fe5275760d510926fb01c33d9a
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 79%
+ht-degree: 83%
 
 ---
 
@@ -22,8 +22,8 @@ ht-degree: 79%
       + [Überblick](intro-to-ava/implementation-paths/implementation-paths.md)
       + [Client-seitig](intro-to-ava/implementation-paths/client-side-path.md)
       + Andere Implementierungspfade {#other-paths}
-         + Meilenstein-Tracking des Medienmoduls {#mm-milestone-tracking}
-            + [Meilensteinübersicht](measurement-options/mm-milestone-tracking/milestone-overview.md)
+         + Milestone-Tracking des Medienmoduls {#mm-milestone-tracking}
+            + [Übersicht zu Milestone](measurement-options/mm-milestone-tracking/milestone-overview.md)
             + [Migrieren von Meilensteinen zu Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
             + [Migration von Milestone zu Custom Link](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
          + Custom Link in Analytics {#cl-in-aa}
@@ -32,7 +32,7 @@ ht-degree: 79%
             + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
          + [Audience Manager-Aktivierung](intro-to-ava/am-enablement.md)
 + Media Analytics-SDK {#sdk-implement}
-   + [Häufig gestellte Fragen zum Ende der Unterstützung für Medienanalysen-SDK](sdk-implement/end-of-support-faqs.md)
+   + [Häufig gestellte Fragen zum Ende der Unterstützung für das Media Analytics-SDK](sdk-implement/end-of-support-faqs.md)
    + [SDKs herunterladen](sdk-implement/download-sdks.md)
    + Einrichtung und Konfiguration {#setup}
       + [Überblick](sdk-implement/setup/setup-overview.md)
@@ -43,7 +43,7 @@ ht-degree: 79%
          + [Einrichten von JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Chromecast einrichten ](sdk-implement/setup/set-up-chromecast.md)
       + [Roku einrichten ](sdk-implement/setup/set-up-roku.md)
-   + Track Audio and Video Playback {#track-av-playback}
+   + Tracking von Audio- und Videowiedergaben {#track-av-playback}
       + [Überblick](sdk-implement/track-av-playback/track-core-overview.md)
       + Tracking von Core-Audio- und Videowiedergaben {#track-core}
          + [Tracking von Core-Wiedergaben in Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
@@ -69,7 +69,7 @@ ht-degree: 79%
             + [Suche nach JavaScript 3.x verfolgen](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
          + [Suchen-Tracking in Chromecast](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [Suchen-Tracking in Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
-      + Implement Standard Metadata {#impl-std-metadata}
+      + Standard-Metadaten implementieren {#impl-std-metadata}
          + [Standard-Metadaten in Android implementieren](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [Standard-Metadaten in iOS implementieren](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [iOS-Metadatenschlüssel](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
@@ -89,7 +89,7 @@ ht-degree: 79%
          + [Anzeigen auf JavaScript 3.x verfolgen](sdk-implement/track-ads/track-ads-js/track-ads-js3.md)
       + [Tracking von Anzeigen in Chromecast](sdk-implement/track-ads/track-ads-chromecast.md)
       + [Tracking von Anzeigen in Roku](sdk-implement/track-ads/track-ads-roku.md)
-      + Implement Standard ad Metadata {#impl-std-ad-metadata}
+      + Standard-Anzeigenmetadaten implementieren {#impl-std-ad-metadata}
          + [Standard-Anzeigenmetadaten in Android implementieren](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [Standard-Anzeigenmetadaten in iOS implementieren](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
          + Implement Standard ad Metadata on JavaScript {#impl-std-ad-md-js}
@@ -219,7 +219,7 @@ ht-degree: 79%
 + Player-Status-Tracking {#player-state-tracking}
    + [Überblick](sdk-implement/player-state-tracking/player-state-overview.md)
    + [Standard- und benutzerdefinierte Status](sdk-implement/player-state-tracking/standard-and-custom-states.md)
-   + [Implementierung und Berichte](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+   + [Implementierung und Reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [Player-Statusverfolgungsbeispiele](sdk-implement/player-state-tracking/player-state-examples.md)
 + Zusätzliche Ressourcen {#additional-resources}
    + [Versionshinweise](additional-resources/doc-updates.md)
