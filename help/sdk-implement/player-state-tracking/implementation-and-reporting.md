@@ -1,33 +1,33 @@
 ---
-title: Implementierung und Berichte
-description: In diesem Thema wird beschrieben, wie Sie die Player-Statusverfolgungsfunktion implementieren, einschließlich .
+title: Implementierung und Reporting
+description: In diesem Kapitel wird beschrieben, wie Sie die Player-Status-Tracking-Funktion implementieren, einschließlich .
 translation-type: tm+mt
 source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 0%
+ht-degree: 58%
 
 ---
 
 
-# Implementierung und Berichte
+# Implementierung und Reporting
 
-Während einer Wiedergabesitzung muss jedes Zustandsereignis (von Beginn zu Ende) einzeln verfolgt werden. Das Media SDK und die Media Collection API bieten neue Verfolgungsmethoden für diese Funktion.
+Während einer Wiedergabesitzung muss jedes Statusereignis (vom Beginn bis zum Ende) einzeln getrackt werden. Das Medien-SDK und die Mediensammlungs-API bieten neue Tracking-Methoden für diese Funktion.
 
-Das Media SDK umfasst zwei neue Methoden zur Verfolgung benutzerdefinierter Zustände:
+Das Medien-SDK beinhaltet zwei neue Methoden zum Tracking benutzerdefinierter Status:
 
 `trackStateStart("state_name")`
 
 `trackStateClose("state_name")`
 
 
-Die Media Collection-API enthält zwei neue Ereignis, die `media.stateName` als erforderlichen Parameter verwendet werden:
+The Media Collection API includes two new events that have `media.stateName` as the required parameter:
 
 `stateStart` und `stateEnd`
 
-## Media SDK-Implementierung
+## Implementierung des Medien-SDK
 
-Player State-Beginn
+Player-Status beginnt
 
 ```
 // StateStart (ex: Mute is switched on)
@@ -35,7 +35,7 @@ var stateObject = ADB.Media.createStateObject(ADB.Media.PlayerState.Mute);
 tracker.trackEvent(ADB.Media.Event.StateStart, stateObject);
 ```
 
-Player-Status beendet
+Player-Status endet
 
 ```
 // StateEnd (ex: Mute is switched off)
@@ -43,9 +43,9 @@ tracker.trackEvent(ADB.Media.Event.StateEnd, stateObject);
 ```
 
 
-## API-Implementierung für die Medienerfassung
+## Implementierung der Mediensammlungs-API
 
-Player State-Beginn
+Player-Status beginnt
 
 ```
 // StateStart (ex: Mute is switched on)
@@ -62,7 +62,7 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 }
 ```
 
-Player-Status beendet
+Player-Status endet
 
 ```
 // StateEnd (ex: Mute is switched off)
@@ -82,15 +82,15 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 ## Statusmetriken
 
-Die für die einzelnen Statusangaben bereitgestellten Metriken werden berechnet, als Kontextdatenparameter an Adobe Analytics gesendet und zu Berichte gespeichert. Für jeden Status stehen drei Metriken zur Verfügung:
+Die für die einzelnen Status bereitgestellten Metriken werden berechnet, als Kontextdatenparameter an Adobe Analytics gesendet und für das Reporting gespeichert. Für jeden Status stehen drei Metriken zur Verfügung:
 
-* `a.media.states.[state.name].set = true` — Auf &quot;true&quot;setzen, wenn der Status für jede einzelne Wiedergabe eines Streams mindestens einmal festgelegt wurde.
-* `a.media.states.[state.name].count = 4` — Identifiziert die Anzahl der Vorkommen eines Status während jeder einzelnen Wiedergabe eines Streams
-* `a.media.states.[state.name].time = 240` — Identifiziert die Gesamtstatusdauer in Sekunden pro einzelner Wiedergabe eines Streams
+* `a.media.states.[state.name].set = true` – ist auf „true“ gesetzt, wenn der Status für jede einzelne Wiedergabe eines Streams mindestens einmal festgelegt wurde.
+* `a.media.states.[state.name].count = 4` – Identifiziert die Anzahl der Vorkommnisse eines Status während jeder einzelnen Wiedergabe eines Streams
+* `a.media.states.[state.name].time = 240` – Identifiziert die Gesamtstatusdauer in Sekunden für jede einzelne Wiedergabe eines Streams
 
 ## Berichterstellung
 
-Alle Player-Statusmetriken können für jede in Analyse Workspace oder einer  verfügbare Visualisierung von Berichten (Segment, berechnete Metriken) verwendet werden, sobald eine Report Suite für die Player-Statusverfolgung aktiviert ist. Die neuen Metriken können in der Admin-Konsole für jeden einzelnen Bericht über Media Berichte Setup (Einstellungen bearbeiten > Medienverwaltung > Media Berichte) aktiviert werden.
+Alle Player-Zustandsmetriken können für jede in Analysis Workspace verfügbare Visualisierung von Berichten oder für eine Komponente (Segment, berechnete Metriken) verwendet werden, sobald eine Report Suite für die Player-Zustandsverfolgung aktiviert ist. Die neuen Metriken können in der Admin-Konsole für jeden einzelnen Bericht über Media Berichte Setup (Einstellungen bearbeiten > Medienverwaltung > Media Berichte) aktiviert werden.
 
 ![](assets/report-setup.png)
 
@@ -98,6 +98,6 @@ In Analytics Workspace befinden sich alle neuen Eigenschaften im Metrikbedienfel
 
 ![](assets/full-screen-report.png)
 
-## Importieren von vom Player angegebenen Metriken in Adobe Experience Platform
+## Importieren der vom Player angegebenen Metriken in Adobe Experience Platform
 
 In Analytics gespeicherte Daten können für jeden Zweck verwendet werden. Die Player-Statusmetriken können mithilfe von XDM in Adobe Experience Platform importiert und mit Customer Journey Analytics verwendet werden. Die Standardstatuseigenschaften haben bestimmte Eigenschaften, während die benutzerdefinierten Status Eigenschaften mit den benutzerdefinierten Ereignissen verfügbar sind. Weitere Informationen zu den Standardstatuseigenschaften finden Sie im Abschnitt *Eigenschaften-Liste für XDM-Identitäten* auf der Seite [Player-Statusparameter](/help/metrics-and-metadata/player-state-parameters.md) .
