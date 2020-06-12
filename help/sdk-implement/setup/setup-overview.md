@@ -2,11 +2,11 @@
 title: Setup-Übersicht
 description: Übersicht über die Einrichtung des Media SDK für das Medien-Tracking in Ihren mobilen, OTT- und Browser-Anwendungen (JS).
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '734'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 95%
 
 >[!IMPORTANT]
 >
->Ab dem 31. August 2021, dem Ende der Unterstützung für Version 4 Mobile-SDKs, stellt Adobe auch die Unterstützung für die Media Analytics-SDKs für iOS und Android ein.  Weitere Informationen finden Sie unter Häufig gestellte Fragen zum Ende der Unterstützung für [Media Analytics SDK](/help/sdk-implement/end-of-support-faqs.md).
+>Ab dem 31. August 2021, dem Ende der Unterstützung für Mobile-SDKs der Version 4, stellt Adobe auch die Unterstützung für das Media Analytics-SDK für iOS und Android ein.  Weitere Informationen finden Sie unter den [häufig gestellten Fragen zum Ende der Unterstützung für das Media Analytics-SDK](/help/sdk-implement/end-of-support-faqs.md).
 
 Die folgenden Anweisungen gelten für die 2.x Media SDKs. Wenn Sie eine 1.x-Version des Medien-SDK implementieren, lesen Sie die Dokumentation zum [Medien-SDK 1.x.](/help/sdk-implement/download-sdks.md) Informationen zu Primetime-Integratoren finden Sie weiter unten in der _Primetime Media SDK-Dokumentation_.
 
@@ -47,7 +47,7 @@ Führen Sie die folgenden Implementierungsschritte aus:
    |---|---|:---:|---|
    | `trackingServer` | Tracking-Server für Medienanalyse. Dies unterscheidet sich von Ihrem Analytics-Tracking-Server. | Ja | Leere Zeichenfolge |
    | `channel` | Kanalname | Nein | Leere Zeichenfolge |
-   | `ovp` | Name der Online-Medienplattform, über die der Inhalt verteilt wird | Nein | Leere Zeichenfolge |
+   | `ovp` | Name der Online-Medienplattform, über die der Inhalt verteilt wird. | Nein | Leere Zeichenfolge |
    | `appVersion` | Version der Medienplayer-App bzw. des SDK | Nein | Leere Zeichenfolge |
    | `playerName` | Name des verwendeten Medienplayers, d. h. „AVPlayer“, „HTML5-Player“, „Mein benutzerspezifischer Player“. | Nein | Leere Zeichenfolge |
    | `ssl` | Gibt an, ob HTTPS-Aufrufe durchgeführt werden sollen | Nein | false |
@@ -123,14 +123,14 @@ Führen Sie die folgenden Implementierungsschritte aus:
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
    ```
 
-## Überprüfen {#validate}
+## Überprüfen  {#validate}
 
 Media Analytics-Tracking-Implementierungen generieren zwei Arten von Tracking-Aufrufen:
 
-* Medien- und Anzeigenstartaufrufe werden direkt an den Adobe Analytics-Server (AppMeasurement) gesendet.
-* Heartbeat-Aufrufe werden an den Media Analytics-Tracking-Server (Heartbeats) gesendet, dort verarbeitet und an den Adobe Analytics-Server weitergeleitet.
+* Medien- und Anzeigenstartaufrufe werden direkt an den Adobe Analytics-Server (AppMeasurement) gesendet.
+* Heartbeat-Aufrufe werden an den Media Analytics-Tracking-Server (Heartbeats) gesendet, dort verarbeitet und an den Adobe Analytics-Server weitergeleitet.
 
-* **Adobe Analytics-Server (AppMeasurement)** Weitere Informationen zu den Optionen für Tracking-Server finden Sie unter [Korrektes Ausfüllen der Variablen trackingServer und trackingServerSecure.](https://helpx.adobe.com/de/analytics/kb/determining-data-center.html)
+* **Adobe Analytics-Server (AppMeasurement)** Weitere Informationen zu den Optionen für Tracking-Server finden Sie unter [Korrektes Ausfüllen der Variablen trackingServer und trackingServerSecure.](https://helpx.adobe.com/de/analytics/kb/determining-data-center.html)
 
    >[!IMPORTANT]
    >
@@ -157,4 +157,4 @@ Das Medien-Tracking verhält sich auf allen Plattformen – Desktop oder Mobilg
 
 ## Primetime Medien-SDK-Dokumentation {#primetime-docs}
 
-* [Primetime-Benutzerhandbücher](https://helpx.adobe.com/de/primetime/user-guide.html)
+* [Primetime-Benutzerhandbücher](https://helpx.adobe.com/de/support/primetime.html)
