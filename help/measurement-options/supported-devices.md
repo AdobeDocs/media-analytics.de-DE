@@ -1,10 +1,10 @@
 ---
 title: Unterstützte Geräte und Plattformen
 description: Adobe Analytics für Audio und Video stellt sicher, dass jeder Medien-Stream auf allen Geräten erfasst und in Berichten aufgeführt wird.
-translation-type: ht
-source-git-commit: a8fec1747e688473af7a5eabbc4f9968772b5db3
-workflow-type: ht
-source-wordcount: '341'
+translation-type: tm+mt
+source-git-commit: 4db4e4281ba9c7af078c18d03f73b6e1e007a0e8
+workflow-type: tm+mt
+source-wordcount: '338'
 ht-degree: 100%
 
 ---
@@ -37,10 +37,10 @@ Die folgende Tabelle zeigt die derzeit unterstützten Geräte und Plattformen. H
 |  | Android-Geräte | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Windows-Geräte |  |  | ![](/help/assets/icon-blue-check.png) |
 | OTT |  |  |  |  |
-|  | Apple TV (tvOS) | Geplant 2020 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Apple TV (tvOS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Roku |  | ![](/help/assets/icon-blue-check.png)   <br>(BrightScript) | ![](/help/assets/icon-blue-check.png)<br>(nativ) |
-|  | Fire TV (Fire OS) | Geplant 2020 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | Android TV | Geplant 2020 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Fire TV (Fire OS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Android TV | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Chromecast |  | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
 |  | Spielekonsolen (z. B. Xbox ONE, Sony PS3/PS4) |  |  | ![](/help/assets/icon-blue-check.png) |
 |  | Set-Top-Boxen (z. B. xfinity X1) |  |  | ![](/help/assets/icon-blue-check.png) |
