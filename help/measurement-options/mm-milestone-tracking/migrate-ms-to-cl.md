@@ -2,9 +2,9 @@
 title: Migration von Milestone zu Custom Link
 description: null
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '908'
 ht-degree: 100%
 
@@ -625,7 +625,10 @@ s.Media.
 <td>Media.open</td>
 <td>
 <pre>
-s.Media.open(mediaName,mediaLength,mediaPlayerName)
+s.Media.open(
+  mediaName,
+  mediaLength,
+  mediaPlayerName)
 </pre>
 </td>
 <td>s.tl()</td>
@@ -712,7 +715,14 @@ Media.openAd
 </td>
 <td>
 <pre>
-s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM)
+s.Media.openAd(
+  name,
+  length,
+  playerName,
+  parentName,
+  parentPod,
+  parentPodPosition,
+  CPM)
 </pre>
 </td>
 <td>nicht angegeben
@@ -834,7 +844,9 @@ Media.complete
 </td>
 <td>
 <pre>
-s.Media.complete(name,offset)
+s.Media.complete(
+  name,
+  offset)
 </pre>
 </td>
 <td>
@@ -878,7 +890,12 @@ Media.play
 </td>
 <td>
 <pre>
-s.Media.play(name,offset,segmentNum,segment,segmentLength)
+s.Media.play(
+  name,
+  offset,
+  segmentNum,
+  segment,
+  segmentLength)
 </pre>
 </td>
 <td>nicht angegeben
@@ -892,7 +909,9 @@ Media.stop
 </td>
 <td>
 <pre>
-s.Media.stop(mediaName,mediaOffset)
+s.Media.stop(
+  mediaName,
+  mediaOffset)
 </pre>
 </td>
 <td>nicht angegeben 
