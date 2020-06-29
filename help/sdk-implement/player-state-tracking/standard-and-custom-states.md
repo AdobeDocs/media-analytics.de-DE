@@ -1,11 +1,11 @@
 ---
 title: Über Standard- und benutzerdefinierte Status
 description: In diesem Kapitel wird die Player-Status-Tracking-Funktion beschrieben, einschließlich Anforderungen und Richtlinien für die Implementierung und das Reporting von Standard- und benutzerdefinierten Player-Status.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7a45dfbabe71fa9e1de7a4f4b2a7e64849e4ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -30,15 +30,15 @@ Die Daten werden für Standard- und benutzerdefinierte Status auf dieselbe Weise
 
 ## Richtlinien
 
-* Eine Videositzung ist auf 10 Player-Status beschränkt.
+* Eine Videositzung ist auf zehn Player-Status beschränkt.
 * Jede Statuskombination ist zulässig.
-* Wenn mehrere Player-Zustände bestehen, werden nur die ersten 10 beibehalten und an die VA-Verarbeitungskomponente weitergeleitet.
+* Wenn mehrere Player-Status vorhanden sind, werden nur die ersten zehn beibehalten und an die VA-Verarbeitungskomponente (Videoanalyse) weitergeleitet.
 * Die maximale Anzahl von zehn Status wird auf alle Status angewendet, unabhängig davon, ob sie abgeschlossen sind oder nicht.
-* Ein Status kann mehrmals Beginn und beendet werden und wird als ein Status gezählt. Beispielsweise `closedCapationing` kann fünfmal gestartet und beendet werden, es wird jedoch als einzelner Status gezählt.
-* Jeder Status, der die maximal zulässige Anzahl von 10 Status überschreitet, wird verworfen.
+* Ein Status kann mehrmals gestartet und beendet werden und wird als ein Status gezählt. `closedCapationing` kann beispielsweise fünfmal gestartet und beendet werden, es wird jedoch als einzelner Status gezählt.
+* Alle Status, die die maximal zulässige Anzahl von 10 Status überschreiten, werden verworfen.
 
 ## Benutzerdefinierte Status
 
 Mit der Möglichkeit, benutzerdefinierte Status zu erstellen, können Sie benutzerdefinierte Aktionen erfassen und benutzerdefinierte Metadaten während einer Wiedergabesitzung aktualisieren.
 
-Weitere Informationen zum Erstellen benutzerdefinierter Status finden Sie im Handbuch [Media API Reference: `createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
+Weitere Informationen zum Erstellen benutzerdefinierter Status finden Sie im [Leitfaden zur Medien-API-Referenz: `createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
