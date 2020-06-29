@@ -1,11 +1,11 @@
 ---
 title: Häufig gestellte Fragen zum Ende der Unterstützung für das Media Analytics-SDK
 description: In diesem Kapitel finden Sie häufig gestellte Fragen zum Ende der Unterstützung für das Media Analytics-SDK.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 38adc54438f85ca8ece8c77d9ff0d0aa14eb6605
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '703'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Ab dem 31. August 2021, dem Ende der Unterstützung für Mobile-SDKs der Version
 
 ## Die fünf wichtigsten Dinge
 
-1. Mobile SDKs der Version 4 werden nach dem 31. August 2021 nicht mehr unterstützt. Wir empfehlen, zu den Adobe Experience Platform-SDKs (AEP) für iOS und Android zu migrieren. Weitere Informationen finden Sie unter Häufig gestellte Fragen zum Ende der Unterstützung für [Version 4 Mobile SDKs](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq).
+1. Mobile SDKs der Version 4 werden nach dem 31. August 2021 nicht mehr unterstützt. Wir empfehlen, zu den Adobe Experience Platform-SDKs (AEP) für iOS und Android zu migrieren. Weitere Informationen finden Sie in den [häufig gestellten Fragen zum Ende der Unterstützung für Mobile SDKs der Version 4](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq).
 
 1. Für die Implementierung von Analytics für Audio und Video sind das AEP-SDK und die Verwendung der Analytics- und Media Analytics-Erweiterungen erforderlich. Ab dem 1. September 2021 sollten Sie die neuen AEP SDKs und Erweiterungen verwenden.  Media Analytics-Erweiterungen werden über Adobe Launch konfiguriert.  Weitere Informationen finden Sie unter [Migration vom eigenständigen Medien-SDK zu Adobe Launch](https://docs.adobe.com/content/help/de-DE/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html).
 
@@ -49,7 +49,7 @@ Wenden Sie sich an Ihren Adobe-Success-Manager, wenn Sie Fragen haben.
 
 1. **Muss ich Launch als Tag-Management-System haben? Was ist, wenn ich Launch nicht verwenden möchte?**
 
-   Bei der Verwendung für mobile Apps wird Launch nicht als Tag-Management-System wie für das Web verwendet.  Die Verwendung der Benutzeroberfläche zum Starten ist zum Konfigurieren der SDK-Erweiterungen erforderlich. Dies ähnelt der Verwendung der Benutzeroberfläche von Adobe Mobile Services zum Konfigurieren des mobilen v4-SDK. Bei der Installation bietet die Verwendung von Launch benutzerdefinierte Installationsanweisungen, die auf der von Ihnen gewählten Erweiterung basieren.
+   Bei der Verwendung für mobile Anwendungen wird Launch nicht wie für das Web als Tag-Management-System verwendet.  Zum Konfigurieren der SDK-Erweiterungen muss die Launch-Benutzeroberfläche verwendet werden. Dies ähnelt der Verwendung der Benutzeroberfläche von Adobe Mobile Services zum Konfigurieren des mobilen SDK der Version 4. Bei der Installation liegt der Vorteil der Verwendung von Launch darin, dass Sie benutzerdefinierte Installationsanweisungen anhand der von Ihnen ausgewählten Erweiterung erhalten.
 
 1. **Hat dieses Ende der Unterstützung Auswirkungen auf das SDK für tvOS?**
 
