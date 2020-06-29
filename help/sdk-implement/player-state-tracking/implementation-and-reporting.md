@@ -1,11 +1,11 @@
 ---
 title: Implementierung und Reporting
 description: In diesem Kapitel wird beschrieben, wie Sie die Player-Status-Tracking-Funktion implementieren, einschließlich .
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '333'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Das Medien-SDK beinhaltet zwei neue Methoden zum Tracking benutzerdefinierter St
 `trackStateClose("state_name")`
 
 
-The Media Collection API includes two new events that have `media.stateName` as the required parameter:
+Die Mediensammlungs-API enthält zwei neue Ereignisse mit dem erforderlichen Parameter `media.stateName`:
 
 `stateStart` und `stateEnd`
 
@@ -90,14 +90,14 @@ Die für die einzelnen Status bereitgestellten Metriken werden berechnet, als Ko
 
 ## Berichterstellung
 
-Alle Player-Zustandsmetriken können für jede in Analysis Workspace verfügbare Visualisierung von Berichten oder für eine Komponente (Segment, berechnete Metriken) verwendet werden, sobald eine Report Suite für die Player-Zustandsverfolgung aktiviert ist. Die neuen Metriken können in der Admin-Konsole für jeden einzelnen Bericht über Media Berichte Setup (Einstellungen bearbeiten > Medienverwaltung > Media Berichte) aktiviert werden.
+Alle Player-Statusmetriken können für jede in Analysis Workspace verfügbare Visualisierung von Berichten oder für eine Komponente (Segment, berechnete Metriken) verwendet werden, sobald eine Report Suite für das Player-Status-Tracking aktiviert wurde. Die neuen Metriken können in der Admin Console für jeden einzelnen Bericht über die Einrichtung der Medienberichte (Einstellungen bearbeiten > Medienverwaltung > Medienberichte) aktiviert werden.
 
 ![](assets/report-setup.png)
 
-In Analytics Workspace befinden sich alle neuen Eigenschaften im Metrikbedienfeld. Sie können z. B. `full screen` nach den Vollbilddaten im Metrikbedienfeld suchen.
+In Analytics Workspace befinden sich alle neuen Eigenschaften im Metrikbedienfeld. Sie können beispielsweise nach `full screen` suchen, um die Vollbilddaten im Metrikbedienfeld anzuzeigen.
 
 ![](assets/full-screen-report.png)
 
 ## Importieren der vom Player angegebenen Metriken in Adobe Experience Platform
 
-In Analytics gespeicherte Daten können für jeden Zweck verwendet werden. Die Player-Statusmetriken können mithilfe von XDM in Adobe Experience Platform importiert und mit Customer Journey Analytics verwendet werden. Die Standardstatuseigenschaften haben bestimmte Eigenschaften, während die benutzerdefinierten Status Eigenschaften mit den benutzerdefinierten Ereignissen verfügbar sind. Weitere Informationen zu den Standardstatuseigenschaften finden Sie im Abschnitt *Eigenschaften-Liste für XDM-Identitäten* auf der Seite [Player-Statusparameter](/help/metrics-and-metadata/player-state-parameters.md) .
+In Analytics gespeicherte Daten können für jeden Zweck verwendet werden. Die Player-Statusmetriken können mithilfe von XDM in Adobe Experience Platform importiert und mit Customer Journey Analytics verwendet werden. Die Standardstatuseigenschaften haben bestimmte Eigenschaften, während die benutzerdefinierten Statuseigenschaften über die benutzerdefinierten Ereignisse verfügbar sind. Zusätzliche Informationen zu den Standardstatuseigenschaften finden Sie im Abschnitt mit der *Eigenschaftenliste für XDM-Identitäten* auf der Seite [Player-Statusparameter](/help/metrics-and-metadata/player-state-parameters.md).
