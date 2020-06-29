@@ -3,9 +3,9 @@ seo-title: Migration vom Standalone Media SDK zu Adobe Launch
 title: Migration vom Standalone Media SDK zu Adobe Launch
 seo-description: Anleitungen und Code-Beispiele für die Migration vom Media SDK zu Launch
 description: Anleitungen und Code-Beispiele für die Migration vom Media SDK zu Launch
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fde203bab895c9a49ebc0d1dadb2c96697dea509
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '184'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ In dieser Dokumentation werden die Unterschiede bei der Implementierung des Stan
 Launch bietet Kunden eine einfache Möglichkeit, alle Analyse-, Marketing- und Werbelösungen bereitzustellen und zu verwalten, die zur Unterstützung entsprechender Kundenerfahrungen im Bereich Web und Mobile erforderlich sind. Mit Launch kann jeder eigene Integrationen erstellen und verwalten. Diese Integrationen werden Erweiterungen genannt.
 Erweiterungen stehen Launch-Kunden in einer App-Store-Oberfläche zur Verfügung, damit sie ihre Lösungen schnell installieren, konfigurieren und bereitstellen können.
 
-Adobe Media Analytics for Audio and Video ist als Launch-Erweiterung für die Bereiche Web und Mobile verfügbar:
+Adobe Media Analytics für Audio und Video ist als Launch-Erweiterung für die Bereiche Web und Mobile verfügbar:
 
 * [Dokumentation zu Launch für Web](https://docs.adobe.com/content/help/de-DE/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
 * [Dokumentation zu Launch für Mobile](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
