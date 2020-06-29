@@ -1,17 +1,17 @@
 ---
-title: Einrichten von JavaScript 2.x
-description: Einrichtung der Media SDK-Anwendung für die Implementierung unter JavaScript 2.x.
+title: Einrichten von JavaScript 2.x
+description: Einrichten der Media SDK-Anwendung für die Implementierung auf JavaScript 2.x.
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a73536bd7a818ac23ad322a15f109644e75ee0d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '394'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# Einrichten von JavaScript 2.x{#set-up-javascript}
+# Einrichten von JavaScript 2.x{#set-up-javascript}
 
 ## Voraussetzungen
 
@@ -114,7 +114,7 @@ ht-degree: 94%
    appMeasurement.charSet = "UTF­8";
    ```
 
-## Migrieren von JavaScript 1.x zu 2.x
+## Migrieren von JavaScript 1.x zu 2.x
 
 In Version 2.x sind alle öffentlichen Methoden in der Klasse `ADB.va.MediaHeartbeat` konsolidiert, um die Arbeit der Entwickler zu erleichtern. Außerdem sind alle Konfigurationen nun in der `ADB.va.MediaHeartbeatConfig`-Klasse konsolidiert.
 
