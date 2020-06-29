@@ -1,19 +1,19 @@
 ---
-title: Core-Wiedergabe mit JavaScript v3.x verfolgen
-description: In diesem Thema wird beschrieben, wie Sie die Kernverfolgung mit dem Media SDK in einem Browser implementieren, der JavaScript 3.x-Apps verwendet.
-translation-type: tm+mt
+title: Tracking von Core-Wiedergaben mit JavaScript 3.x
+description: Hier wird die Implementierung des Core-Trackings mit dem Media SDK in einem Browser mit JavaScript 3.x-Anwendungen beschrieben.
+translation-type: ht
 source-git-commit: 40d75ef32596e915ac07c173b4595bb78db3688d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 
-# Core-Wiedergabe mit JavaScript 3.x verfolgen{#track-core-playback-on-javascript}
+# Tracking von Core-Wiedergaben mit JavaScript 3.x{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
->Diese Dokumentation behandelt das Tracking in der Version 3.x des SDK. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs](/help/sdk-implement/download-sdks.md)
+>Diese Dokumentation behandelt das Tracking in der Version 3.x des SDK. Wenn Sie vorherige Versionen des SDK implementieren möchten, können Sie hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
 
 1. **Tracking-Ersteinrichtung**
 
@@ -53,7 +53,7 @@ ht-degree: 81%
 
 1. **Metadaten anhängen**
 
-   Fügen Sie der Tracking-Sitzung optional Standard- und/oder benutzerdefinierte Metadaten über Kontextdatenvariablen hinzu.
+   Optional können standardmäßige bzw. benutzerdefinierte Metadaten über Kontextdatenvariablen an die Tracking-Sitzung angehängt werden.
 
    * **Standard-Metadaten**
 
@@ -112,7 +112,7 @@ ht-degree: 81%
 
    >[!NOTE]
    >
-   >If you are not using contextData, simply send an empty object for the `data` argument in `trackSessionStart`.
+   >Wenn Sie keine Kontextdaten verwenden, senden Sie einfach ein leeres Objekt für das `data`-Argument in `trackSessionStart`.
 
 1. **Tatsächlichen Wiedergabebeginn verfolgen**
 
