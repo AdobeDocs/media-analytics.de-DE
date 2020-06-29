@@ -1,26 +1,27 @@
 ---
-title: Einrichten von JavaScript 3.x
-description: Einrichtung der Media SDK-Anwendung für die Implementierung unter JavaScript 3.x.
-translation-type: tm+mt
+title: Einrichten von JavaScript 3.x
+description: Einrichten der Media SDK-Anwendung für die Implementierung auf JavaScript 3.x.
+translation-type: ht
 source-git-commit: b642bd1a136e62901847f2a8cf004d05282fca01
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '398'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
 
-# Einrichten von JavaScript 3.x{#set-up-javascript}
+# Einrichten von JavaScript 3.x{#set-up-javascript}
 
 ## Voraussetzungen
 
 * **Gültige Konfigurationsparameter festlegen:** Diese Parameter erhalten Sie nach der Einrichtung Ihres Analytics-Kontos von einem Adobe-Support-Mitarbeiter.
-* **Implementieren`AppMeasurement`und`Experience Cloud Identity Service`für JavaScript in Ihrer Medienanwendung** Weitere Informationen finden Sie unter [Implementieren von Analytics mit JavaScript](https://docs.adobe.com/content/help/de-DE/analytics/implementation/js/overview.html) und [Implementieren des Experience Cloud-Identitätsdienstes.](https://docs.adobe.com/content/help/en/id-service/using/implementation/setup-analytics.html)
+* **Implementieren Sie`AppMeasurement`und`Experience Cloud Identity Service`für JavaScript in Ihrer Medienanwendung**
+Weitere Informationen finden Sie unter [Analytics-Implementierung mit JavaScript](https://docs.adobe.com/content/help/de-DE/analytics/implementation/js/overview.html) und [Implementieren des Experience Cloud-Identitätsdiensts](https://docs.adobe.com/content/help/de-DE/id-service/using/implementation/setup-analytics.html).
 
 * **Stellen Sie die folgenden Funktionen in Ihrem Medienplayer bereit:**
 
    * *Eine API zum Abonnieren von Player-Ereignissen*: Das Media SDK erfordert den Aufruf einer Reihe einfacher APIs, wenn im Player Ereignisse auftreten.
-   * *Eine API, die Player-Informationen* bereitstellt. Dazu gehören Informationen über die aktuelle Wiedergabe von Medien, Anzeigen und Kapiteln.
+   * *Eine API, die Player-Informationen bereitstellt*: Dazu gehören Informationen zur aktuellen Wiedergabe von Medien, Anzeigen und Kapiteln.
 
 1. Fügen Sie Ihre [heruntergeladene](/help/sdk-implement/download-sdks.md#download-3x-sdks) Bibliothek zu Ihrem Projekt hinzu. Erstellen Sie aus Gründen der Übersichtlichkeit lokale Referenzen auf die Klassen.
 
@@ -39,15 +40,15 @@ ht-degree: 47%
       <script type="text/javascript" src="https://INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/MediaSDK.js"></script>
       ```
 
-   1. Um schnell zu überprüfen, ob die Bibliothek erfolgreich importiert wurde, überprüfen Sie, ob sie für das Window-Objekt exportiert `ADB.Media` wird.
+   1. Um schnell zu überprüfen, ob die Bibliothek erfolgreich importiert wurde, prüfen Sie, ob `ADB.Media` für das Window-Objekt exportiert wurde.
 
       >[!NOTE]
       >
-      >The JavaScript SDK is compliant with the AMD and CommonJS module specifications, and `MediaSDK.js` can also be used with compatible module loaders.
+      >Das JavaScript-SDK entspricht den AMD- und CommonJS-Modulspezifikationen und `MediaSDK.js` kann auch mit kompatiblen Module Loaders verwendet werden.
 
 1. Erstellen Sie eine Instanz von `AppMeasurement` und konfigurieren Sie `visitor`.
 
-   Die Media SDK-Konfiguration erfordert eine Instanz von `AppMeasurement` mit `visitor` Konfiguration.
+   Für die Media SDK-Konfiguration muss eine Instanz von `AppMeasurement` mit `visitor` konfiguriert sein.
 
    ```js
     var appMeasurement = new AppMeasurement(“<rsid>”);
@@ -55,13 +56,13 @@ ht-degree: 47%
     appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
    ```
 
-1. Media SDK konfigurieren
+1. Konfigurieren von Media SDK
 
    Media SDK sollte einmal pro Webseite konfiguriert werden und die Konfiguration gilt für alle erstellten Trackerinstanzen.
 
    >[!IMPORTANT]
    >
-   > Media SDK (3.x) verwendet zur Verfolgung von Medien die Media Collection API, die sich vom HB-Endpunkt unterscheidet, der in 2.x-SDKs verwendet wird. Wenden Sie sich an Ihren Adobe-Kundenbetreuer, um weitere Informationen zu erhalten.
+   > Media SDK (3.x) verwendet für das Tracking von Medien die Mediensammlungs-API, die sich vom HB-Endpunkt unterscheidet, der in 2.x-SDKs verwendet wird. Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, um weitere Informationen zu erhalten.
 
    Hier finden Sie eine Beispielinitialisierung für `MediaConfig`:
 
@@ -80,7 +81,7 @@ ht-degree: 47%
 
 1. Erstellen Sie die `MediaTracker`-Instanz.
 
-   Nach der Konfiguration von Media SDK können Trackerinstanzen zur Verfolgung von Medieninhalten mit der `getInstance` API erstellt werden.
+   Nach dem Konfigurieren von Media SDK können Trackerinstanzen für das Tracking von Medieninhalten mit der `getInstance`-API erstellt werden.
 
    ```js
    var tracker = ADB.Media.getInstance();
@@ -88,8 +89,8 @@ ht-degree: 47%
 
    >[!IMPORTANT]
    >
-   >Stellen Sie sicher, dass die `tracker`-Instanz zugänglich ist und ihre Zuweisung nicht vor Ende der Mediensitzung aufgehoben wird. Diese Instanz wird zur Verfolgung aller folgenden Ereignis für diese Sitzung verwendet.
+   >Stellen Sie sicher, dass die `tracker`-Instanz zugänglich ist und ihre Zuweisung nicht vor Ende der Mediensitzung aufgehoben wird. Diese Instanz wird für das Tracking aller folgenden Ereignisse für diese Sitzung verwendet.
 
-## Migrieren von JavaScript 2.x zu 3.x
+## Migrieren von JavaScript 2.x zu 3.x
 
-Ausführliche Informationen zur Migration von 2.x zu 3.x finden Sie unter [Migration von  2.x zu 3.x.](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)
+Ausführliche Informationen zur Migration von 2.x zu 3.x finden Sie unter [Migration von 2.x zu 3.x.](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)
