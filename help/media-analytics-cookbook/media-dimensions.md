@@ -1,8 +1,11 @@
 ---
 title: Medien-Stream-Zuordnung
 description: null
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: cab9724476f7864ac23c4293e402e0443771cb1e
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 100%
 
 ---
 
@@ -18,8 +21,8 @@ Mit der Medien-Stream-Zuordnung können Kunden jetzt beliebige Mediendimensionen
 Außerdem müssen Sie die Konfiguration für das Medien-Tracking für jeden Bericht, für den Sie diese Funktion aktivieren möchten, über die Admin-Konsole erneut aktivieren.
 
 >[!NOTE]
->Die Medienmetriken stehen _nicht_ zur Verwendung außerhalb des Medien-Trackings zur Verfügung, da die meisten dieser Metriken von Media Analytics
->Anhand von Heartbeat-Ereignissen berechnet werden. Außerdem ist es wichtig, dass die Medienmetriken nicht durch verschiedene Implementierungen in die Höhe getrieben werden.
+>
+>Die Medienmetriken stehen _nicht_ zur Verwendung außerhalb des Medien-Trackings zur Verfügung, da die meisten dieser Metriken von Media Analytics Anhand von Heartbeat-Ereignissen berechnet werden. Außerdem ist es wichtig, dass die Medienmetriken nicht durch verschiedene Implementierungen in die Höhe getrieben werden.
 
 ## Schritte
 
