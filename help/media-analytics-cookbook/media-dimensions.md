@@ -1,9 +1,9 @@
 ---
 title: Medien-Stream-Zuordnung
 description: null
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cab9724476f7864ac23c4293e402e0443771cb1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '209'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Außerdem müssen Sie die Konfiguration für das Medien-Tracking für jeden Beri
 
 >[!NOTE]
 >
->Die Medienmetriken stehen _nicht_ zur Verwendung außerhalb des Medien-Trackings zur Verfügung, da die meisten dieser Metriken von Media Analytics Anhand von Heartbeat-Ereignissen berechnet werden. Außerdem ist es wichtig, dass die Medienmetriken nicht durch verschiedene Implementierungen in die Höhe getrieben werden.
+>Die Medienmetriken stehen _nicht_ zur Verwendung außerhalb des Medien-Trackings zur Verfügung, da die meisten dieser Metriken von Media Analytics anhand von Heartbeat-Ereignissen berechnet werden. Außerdem ist es wichtig, dass die Medienmetriken nicht durch verschiedene Implementierungen in die Höhe getrieben werden.
 
 ## Schritte
 
