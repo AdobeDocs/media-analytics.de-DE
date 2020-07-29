@@ -3,10 +3,10 @@ title: Migration von Milestone zu Media Analytics
 description: null
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 translation-type: tm+mt
-source-git-commit: aa2a230daa96b823f9963345ac4578799e59d3f5
+source-git-commit: e25c4d0add969ad31393f2eeb33b1a12b7205586
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 77%
+ht-degree: 96%
 
 ---
 
@@ -27,9 +27,9 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone- und der 
 | --- | --- | --- |
 | Inhalt | eVar <br>Standardgültigkeit: Besuch | Inhalt |
 | Content-Typ | eVar<br> Standardgültigkeit: Seitenansicht | Content-Typ |
-| Inhaltsbesuchszeit | Ereignistyp <br>: Zähler | Inhaltsbesuchszeit |
-| Videoaufrufe | Ereignistyp <br>: Zähler | Videoaufrufe |
-| Videobeendigungen | Ereignistyp <br>: Zähler | Inhaltsbeendigung |
+| Inhaltsbesuchszeit | Ereignistyp<br>: Zähler | Inhaltsbesuchszeit |
+| Videoaufrufe | Ereignistyp<br>: Zähler | Videoaufrufe |
+| Videobeendigungen | Ereignistyp<br>: Zähler | Inhaltsbeendigung |
 
 ### Medienmodulvariablen
 
@@ -42,22 +42,22 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone- und der 
 
 ### Optionale Variablen
 
-| Milestone | Milestone-Syntax | Media Analytics | Syntax von Media Analytics |
+| Meilenstein | Milestone-Syntax | Media Analytics | Syntax von Media Analytics |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | nicht angegeben | Wir bieten keine vordefinierten Player-Zuordnungen mehr an. |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | nicht angegeben | Wir bieten keine vordefinierten Player-Zuordnungen mehr an. |
 | Media.completeByCloseOffset | `s.Media.` <br> `  completeByCloseOffset` <br> `  = true` | nicht angegeben | Inhaltsbeendigung unterstützt nur eine 100%ige Fortschrittsmarkierung. |
 | Media.completeCloseOffsetThreshold | `s.Media.` <br> `  completeCloseOffsetThreshold` <br> `  = 1` | nicht angegeben | Inhaltsbeendigung unterstützt nur eine 100%ige Fortschrittsmarkierung. |
-| Media.playerName | `s.Media.playerName` <br> `  = "Custom Player Name"` | SDK Key: playerName;<br> API Key: media.playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
+| Media.playerName | `s.Media.playerName` <br> `  = "Custom Player Name"` | SDK-Schlüssel: playerName;<br> API-Schlüssel: media.playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.trackSeconds | `s.Media.` <br> `  trackSeconds` <br> `  = 15` | nicht angegeben | Media Analytics ist auf 10 Sekunden für Inhalte und 1 Sekunde für Anzeigen eingestellt. Es sind keine weiteren Optionen verfügbar. |
-| Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | nicht angegeben | Media Analytics verfolgt die Fortschrittsmarkierungen immer bei 10, 25, 50, 75 und 95 %. |
-| Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | nicht angegeben | Media Analytics verfolgt die Fortschrittsmarkierungen immer bei 10, 25, 50, 75 und 95 %. |
+| Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | nicht angegeben | Media Analytics verfolgt die Fortschrittsmarkierungen immer bei 10, 25, 50, 75 und 95 %.. |
+| Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | nicht angegeben | Media Analytics verfolgt die Fortschrittsmarkierungen immer bei 10, 25, 50, 75 und 95 %.. |
 | Media.segmentByMilestones | `s.Media.segmentByMilestones` <br> `  = true;` | nicht angegeben | Das automatische Tracking ist nicht mehr verfügbar. |
 | Media.segmentByOffsetMilestones | `s.Media.` <br> `  segmentByOffsetMilestones` <br> `  = true;` | nicht angegeben | Das automatische Tracking ist nicht mehr verfügbar. |
 
 ### Anzeigenverfolgungsvariablen
 
-| Milestone | Milestone-Syntax | Media Analytics | Syntax von Media Analytics |
+| Meilenstein | Milestone-Syntax | Media Analytics | Syntax von Media Analytics |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | nicht angegeben | Media Analytics ist auf 10 Sekunden für Inhalte und 1 Sekunde für Anzeigen eingestellt. Es sind keine weiteren Optionen verfügbar. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | nicht angegeben | Fortschrittsmarkierungen werden nicht standardmäßig für Anzeigen bereitgestellt. Verwenden Sie berechnete Metriken, um Anzeigenfortschrittsmarken zu erstellen. |
@@ -67,25 +67,24 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone- und der 
 
 ### Medienmodulmethoden
 
-| Milestone | Milestone-Syntax | Media Analytics | Syntax von Media Analytics |
+| Meilenstein | Milestone-Syntax | Media Analytics | Syntax von Media Analytics |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
-| mediaName - (Required) <br> The name of the video as you want it to appear in video reports. | `mediaName` | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
-| mediaLength - (Required) <br> The length of the video in seconds. | `mediaLength` | length | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
-| mediaPlayerName - (Required) <br> The name of the media player used to view the video, as you want it to appear in video reports. | `mediaPlayerName` | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
+| mediaName | `mediaName` (erforderlich): Der Name des Videos, wie er in Videoberichten angezeigt werden soll. | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
+| mediaLength | `mediaLength` (erforderlich): Die Länge des Videos in Sekunden. | length | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
+| mediaPlayerName | `mediaPlayerName` (erforderlich): Der Name des Medienplayers, mit dem das Video wiedergegeben wird, wie er in Videoberichten angezeigt werden soll. | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.openAd | `s.Media.openAd(` <br> `  name,` <br> `  length,` <br> `  playerName,` <br> `  parentName,` <br> `  parentPod,` <br> `  parentPodPosition,` <br> `  CPM)` | trackEvent | `mediaHeartbeat.trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdBreakStart, ` <br> `  adBreakObject);` <br> `...` <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdStart, ` <br> `  adObject, ` <br> `  adCustomMetadata);` |
-| name - (Required) <br> The name or ID of the ad. | `name` | name | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| length - (Required) <br> The length of the ad. | `length` | length | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| playerName - (Required) <br> The name of the media player used to view the ad. | `playerName` | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
-| parentName <br> The name or ID of the primary content where the ad is embedded. | `parentName` | nicht angegeben | Automatisch geerbt |
-| parentPod <br> The position in the primary content the ad was played. | `parentPod` | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
-| parentPodPosition <br> The position within the pod where the ad is played. | `parentPodPosition` | position | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| CPM <br> The CPM or encrypted CPM (prefixed with a &quot;~&quot;) that applies to this playback. | `CPM` | nicht angegeben | In Media Analytics nicht standardmäßig verfügbar.. |
-| Media.click | `s.Media.click(` <br> `  name,` <br> `  offset)` | nicht angegeben | Verwenden Sie einen benutzerdefinierten Link-Analyseaufruf, um Klicks zu verfolgen. |
-| Media.close | `s.Media.close(` <br> `  mediaName)` | trackSessionEnd | `trackSessionEnd()` |
-| Media.complete | `s.Media.complete(` <br> `  name,` <br> `  offset)` | trackComplete | `trackComplete()` |
+| name | `name`: (erforderlich) Name oder ID der Anzeige. | name | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| length | `length`: (erforderlich) Länge der Anzeige. | length | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| playerName | `playerName`: (erforderlich) Name des Medienplayers, mit dem die Anzeige wiedergegeben wird. | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
+| parentName | `parentName`: Name oder ID des Hauptinhalts, in den die Anzeige eingebettet ist. | nicht angegeben | Automatisch geerbt. |
+| parentPod | `parentPod`: Die Position im Hauptinhalt, an der die Anzeige wiedergegeben wurde. | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
+| parentPodPosition | `parentPodPosition`: Die Position in der Werbeunterbrechung, an der die Anzeige wiedergegeben wurde. | position | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| CPM | `CPM`: CPM oder verschlüsselter CPM (mit „~“ als Präfix) für diese Wiedergabe. | nicht angegeben | In Media Analytics nicht standardmäßig verfügbar.. |
+| Media.click | `s.Media.click(name, offset)` | nicht angegeben | Verwenden Sie einen benutzerdefinierten Link-Analyseaufruf, um Klicks zu verfolgen. |
+| Media.close | `s.Media.close(mediaName)` | trackSessionEnd | `trackSessionEnd()` |
+| Media.complete | `s.Media.complete(name, offset)` | trackComplete | `trackComplete()` |
 | Media.play | `s.Media.play(` <br> `  name,` <br> `  offset,` <br> `  segmentNum,` <br> `  segment, ` <br> `  segmentLength)` | trackPlay | `trackPlay()` |
-| Media.stop | `s.Media.stop(` <br> `  mediaName,` <br> `  mediaOffset)` | trackPause<br> oder <br>trackEvent | `trackPause()` <br> oder `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  SeekStart)` <br> oder <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  BufferStart);` |
+| Media.stop | `s.Media.stop(mediaName, mediaOffset)` | trackPause<br> oder <br>trackEvent | `trackPause()` <br> oder `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  SeekStart)` <br> oder <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  BufferStart);` |
 | Media.monitor | `s.Media.monitor(s, media)` | Verwenden Sie benutzerspezifische oder standardmäßige Metadaten, um zusätzliche Variablen festzulegen. | `var customVideoMetadata = ` <br> `{` <br> `  isUserLoggedIn: ` <br> `    "false",` <br> `  tvStation: ` <br> `    "Sample TV station",` <br> `  programmer: ` <br> `    "Sample programmer"` <br> `};` <br> `...` <br> `var standardVideoMetadata ` <br> `  = {};` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   EPISODE] = ` <br> `  "Sample Episode";` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   SHOW] = "Sample Show";` <br> `...` <br> `mediaObject.setValue(` <br> `  MediaHeartbeat.` <br> `  MediaObjectKey.` <br> `  StandardVideoMetadata, ` <br> `  standardVideoMetadata);` |
-| Media.track | `s.Media.track(` <br> `  mediaName)` | nicht angegeben | Die Tracking-Aufrufhäufigkeit wird automatisch festgelegt. |
-
+| Media.track | `s.Media.track(mediaName)` | nicht angegeben | Die Tracking-Aufrufhäufigkeit wird automatisch festgelegt. |
