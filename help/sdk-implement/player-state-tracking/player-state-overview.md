@@ -1,11 +1,11 @@
 ---
 title: Über das Player-Status-Tracking
 description: In diesem Kapitel wird die Player-Status-Tracking-Funktion beschrieben, einschließlich der Anforderungen und Richtlinien für die Implementierung und die Reporting-Player-Status.
-translation-type: ht
-source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
-workflow-type: ht
-source-wordcount: '397'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 4c11efd0b8bb457246c746621e7fbb9fbda621b2
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 98%
 
 ---
 
@@ -31,6 +31,7 @@ Das Player-Status-Tracking bietet folgende Vorteile:
 
 Für das Player-Status-Tracking ist bei der Datenerfassung eine der folgenden Voraussetzungen erforderlich:
 * Media JS-SDK 3.0+
+* Chromecast 3.0 SDK für Adobe Marketing Cloud Solutions
 * Media Analytic-Erweiterung (zur Verwendung für das Adobe Experience Platform-SDK (AEP))
    * Web: Adobe Media Analytics (3.x SDK) für Audio und Video, Version 1.0+
    * Mobile: Adobe Media Analytics für Audio und Video, Version 2.0+
