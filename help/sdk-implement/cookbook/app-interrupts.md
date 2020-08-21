@@ -2,8 +2,11 @@
 title: Behandlung von Anwendungsunterbrechungen während der Wiedergabe
 description: Handhabung von Unterbrechungen beim Tracking während der Medienwiedergabe.
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 29b0d38e904a561d467ba0432b255fdb17d6b829
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 100%
 
 ---
 
@@ -31,5 +34,5 @@ Die Wiedergabe in einer Medienanwendung kann auf verschiedene Weise unterbrochen
 
 * _Wie sieht es mit einem Neustart der gleichen Sitzung aus?_
 
-   Detaillierte Anweisungen zum Neustart einer Tracking-Sitzung finden Sie auf dieser Seite: [Fortsetzen inaktiver Sitzungen.](/help/sdk-implement/cookbook/resuming-inactive.md) Das SDK sendet ein „Fortsetzen“-Ping, um das Backend darüber zu informieren, dass der Anwender die Sitzung manuell fortsetzt.
+   Detaillierte Anweisungen zum Neustart einer Tracking-Sitzung finden Sie auf dieser Seite: [Fortsetzen inaktiver Sitzungen](/help/sdk-implement/cookbook/resuming-inactive.md). Das SDK sendet ein „Fortsetzen“-Ping, um das Backend darüber zu informieren, dass der Anwender die Sitzung manuell fortsetzt.
 
