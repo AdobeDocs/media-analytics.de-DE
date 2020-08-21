@@ -2,8 +2,11 @@
 title: Tracking in SceneGraph (Roku)
 description: Verfolgen von Medien mit dem Roku SceneGraph XML-Programmierframework.
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 305f97d6d1350a3bb8b0ad9c4c58e0a5fefca045
+workflow-type: tm+mt
+source-wordcount: '1171'
+ht-degree: 100%
 
 ---
 
@@ -137,31 +140,30 @@ Die Connector-Verbindung ist wie folgt ausgelegt:
 <td> assocarray </td>
 <td> Ungültig </td>
 <td> Nur lesen. Alle APIs, die im AdobeMobileSDK ausgeführt werden, geben Antworten in diesem Feld zurück. Registrieren Sie einen Callback, der auf Aktualisierungen dieses Felds wartet, um Antwortobjekte zu empfangen. Das Antwortobjekt hat folgendes Format:  
-<codeblock>
+<pre>
 response = {
   "apiName" : &lt;SceneGraphConstants.
                API_NAME&gt; 
   "returnValue : &lt;API_RESPONSE&gt; 
-} 
-</codeblock>
+}</pre>
 Eine Instanz dieses Antwortobjekts wird für jeden API-Aufruf des AdobeMobileSDK gesendet, bei dem gemäß API-Referenzhandbuch die Rückgabe eines Wertes erwartet wird. Ein API-Aufruf für visitorMarketingCloudID() gibt beispielsweise folgendes Antwortobjekt zurück: 
-<codeblock>
+<pre>
 response = {
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
   "returnValue : "07050x25671x33760x72644x14"  
 } 
-</codeblock>
+</pre>
 Auch Antwortdaten können ungültig sein: 
-<codeblock>
+<pre>
 response = {  
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
   "returnValue : invalid 
 } 
-</codeblock>
+</pre>
 </td>
 </tr>
 </tbody>
