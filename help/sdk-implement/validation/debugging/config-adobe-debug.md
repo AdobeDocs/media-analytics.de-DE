@@ -2,8 +2,11 @@
 title: Adobe Debug konfigurieren
 description: Hier wird beschrieben, wie Sie Adobe Debug konfigurieren, um Fehler in Media SDK-Implementierungen beheben zu können.
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: f0f04ffab851999becb2b7771eef36ad7477c9f3
+workflow-type: tm+mt
+source-wordcount: '653'
+ht-degree: 95%
 
 ---
 
@@ -42,6 +45,7 @@ Herunterladen und Konfigurieren des Debug-Proxy:
    Folgende Betriebssysteme werden unterstützt:
    * OS X 10.7 64 Bit oder höher
    * Windows 7.1 64 Bit oder höher
+
    ![](assets/debug-proxy-app.png)
 
 1. Der Debug-Proxy-Server wird auf Ihrem lokalen Computer an Port 33284 ausgeführt und als Systemproxy festgelegt.
@@ -63,23 +67,23 @@ Laden Sie das SSL-Zertifikat herunter und installieren Sie es:
    1. Ziehen Sie das CA-Stammzertifikat in System.
    1. Sie müssen das Zertifikat nach System kopieren, um sicherzustellen, dass es von allen Benutzern und lokalen Systemprozessen als vertrauenswürdig eingestuft wird.
    1. Öffnen Sie das CA-Stammzertifikat, erweitern Sie „Trust“ (Vertrauen), wählen Sie „Always Trust“(Immer vertrauen) und speichern Sie Ihre Änderungen.
+
    **Windows**
    1. Führen Sie einen der folgenden Schritte aus:
 
       * [Hinzufügen von Zertifikaten zum Speicher der vertrauenswürdigen Stammzertifizierungsstellen für einen lokalen Computer](https://technet.microsoft.com/de-de/library/cc754841.aspx#BKMK_addlocal)
-<!--        * [How To Import a Trusted Root Certification Authority In Windows 7/Vista/XP](https://www.sqlservermart.com/HowTo/Windows_Import_Certificate.aspx) You might need to quit and reopen your browser to see the change.
--->
+   1. Für Firefox führen Sie das Verfahren unter [Installieren des Stammzertifikats in Mozilla Firefox.](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
 
-    1. Führen Sie für Firefox die Schritte unter [Installation des Stammzertifikats in Mozilla Firefox aus.](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
-    
-    Möglicherweise müssen Sie Firefox beenden und erneut öffnen, um die Änderung zu sehen.
-    
-    **iOS-Geräte**
-    1. Legen Sie auf Ihrem iOS-Gerät Adobe Debug als HTTP-Proxy fest, indem Sie auf **[!UICONTROL Einstellungen]** **>** **[!UICONTROL WLAN-Einstellungen]** klicken.
-    
-    1. Gehen Sie in Safari zu [Debuggen.](https://proxy.debug.adobe.com/ssl)
-    
-    Safari fordert Sie zur Installation des SSL-Zertifikats auf.
+      Sie müssen Firefox möglicherweise erneut öffnen, damit die Änderung übernommen wird.
+   **iOS-Geräte**
+   1. Legen Sie auf Ihrem iOS-Gerät Adobe Debug als HTTP-Proxy fest, indem Sie auf **[!UICONTROL Einstellungen]** **>** **[!UICONTROL WLAN-Einstellungen]** klicken.
+
+   1. Gehen Sie in Safari zu [Debuggen.](https://proxy.debug.adobe.com/ssl)
+
+      Safari fordert Sie zur Installation des SSL-Zertifikats auf.
+
+
+
 
 ## SSL-Zertifikat auf Ihrem Mobilgerät installieren {#install-sSL-for-mobile-device}
 
