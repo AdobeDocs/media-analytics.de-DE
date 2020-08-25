@@ -2,9 +2,9 @@
 title: Tracking in SceneGraph (Roku)
 description: Verfolgen von Medien mit dem Roku SceneGraph XML-Programmierframework.
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 305f97d6d1350a3bb8b0ad9c4c58e0a5fefca045
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1171'
 ht-degree: 100%
 
@@ -82,7 +82,7 @@ Die Connector-Verbindung ist wie folgt ausgelegt:
 |  |  |  |
 | **Experience Cloud** |  |  |
 |  | `visitorSyncIdentifiers` | SceneGraph-API zur Synchronisierung von Experience Cloud IDs im ADBMobile-SDK. |
-|  | `visitorMarketingCloudID` | SceneGraph-API zum Abrufen der Experience Cloud-ID vom ADBMobile-SDK. |
+|  | `visitorMarketingCloudID` | SceneGraph-API zum Abrufen der Experience Cloud ID vom ADBMobile-SDK. |
 |  | Weitere Informationen finden Sie im Abschnitt „Experience Cloud“ des Legacy-SDK. |  |
 |  |  |  |
 | **Audience Manager** |  |  |
@@ -194,7 +194,7 @@ Rückgabetyp: `SceneGraphConstants`
 | Datenschutz/Opt-out | `PRIVACY_STATUS_OPT_IN` | Konstante für den Datenschutz-Opt-in-Status |
 |  | `PRIVACY_STATUS_OPT_OUT` | Konstante für den Datenschutz-Opt-out-Status |
 | MediaHeartbeat-Konstanten | Die Konstanten finden Sie auf dieser Seite: <br/><br/>[Media Heartbeat-Methoden.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | Verwenden Sie diese Konstanten mit den MediaHeartbeat-APIs |
-| Standardmetadaten | Die Konstanten finden Sie auf dieser Seite: <br/><br/>[Standard-Metadatenparameter.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | Verwenden Sie diese Konstanten zum Anhängen standardmäßiger Video-/Anzeigenmetadaten in MediaHeartbeat-APIs. |
+| Standardmetadaten | Die Konstanten finden Sie auf dieser Seite: <br/><br/>[Standard-Metadatenparameter.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | Verwenden Sie diese Konstanten zum Anhängen standardmäßiger Video-/Anzeigenmetadaten in MediaHeartbeat-APIs |
 
 Auf global definierte `MediaHeartbeat`-APIs für Dienstprogramme in der älteren AdobeMobileLibrary kann *wie* in der SceneGraph-Umgebung zugegriffen werden, da keine in SceneGraph-Knoten nicht verfügbaren Brightscript-Komponenten verwendet werden. Weitere Informationen zu diesen Methoden finden Sie in der unten stehenden Tabelle:
 
@@ -202,11 +202,11 @@ Auf global definierte `MediaHeartbeat`-APIs für Dienstprogramme in der älteren
 
 | Methode | Beschreibung |
 | --- | --- |
-| `adb_media_init_mediainfo` | Diese Methode gibt ein initialisiertes Objekt mit Medieninformationen zurück.`Function adb_media_init_mediainfo(name As String, id As String, length As Double, streamType As String) As Object` |
-| `adb_media_init_adinfo` | Diese Methode gibt ein initialisiertes Objekt mit Anzeigeninformationen zurück.`Function adb_media_init_adinfo(name As String, id As String, position As Double, length As Double) As Object` |
-| `adb_media_init_chapterinfo` | Diese Methode gibt ein initialisiertes Objekt mit Kapitelinformationen zurück.  `Function adb_media_init_adbreakinfo(name As String, startTime as Double, position as Double) As Object` |
-| `adb_media_init_adbreakinfo` | Diese Methode gibt ein initialisiertes Objekt mit AdBreak-informationen zurück.  `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
-| `adb_media_init_qosinfo` | Diese Methode gibt ein initialisiertes Objekt mit QoS-Informationen zurück.  `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
+| `adb_media_init_mediainfo` | Diese Methode gibt ein initialisiertes Objekt mit Medieninformationen zurück.  `Function adb_media_init_mediainfo(name As String, id As String, length As Double, streamType As String) As Object` |
+| `adb_media_init_adinfo` | Diese Methode gibt ein initialisiertes Objekt mit Anzeigeninformationen zurück.  `Function adb_media_init_adinfo(name As String, id As String, position As Double, length As Double) As Object` |
+| `adb_media_init_chapterinfo` | Diese Methode gibt ein initialisiertes Objekt mit Kapitelinformationen zurück.  `Function adb_media_init_adbreakinfo(name As String, startTime as Double, position as Double) As Object` |
+| `adb_media_init_adbreakinfo` | Diese Methode gibt ein initialisiertes Objekt mit AdBreak-informationen zurück.  `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
+| `adb_media_init_qosinfo` | Diese Methode gibt ein initialisiertes Objekt mit QoS-Informationen zurück.  `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
 
 ## Implementierung {#implementation}
 
