@@ -2,11 +2,11 @@
 title: Adobe Debug konfigurieren
 description: Hier wird beschrieben, wie Sie Adobe Debug konfigurieren, um Fehler in Media SDK-Implementierungen beheben zu können.
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f0f04ffab851999becb2b7771eef36ad7477c9f3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '653'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -72,13 +72,13 @@ Laden Sie das SSL-Zertifikat herunter und installieren Sie es:
    1. Führen Sie einen der folgenden Schritte aus:
 
       * [Hinzufügen von Zertifikaten zum Speicher der vertrauenswürdigen Stammzertifizierungsstellen für einen lokalen Computer](https://technet.microsoft.com/de-de/library/cc754841.aspx#BKMK_addlocal)
-   1. Für Firefox führen Sie das Verfahren unter [Installieren des Stammzertifikats in Mozilla Firefox.](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
+   1. Führen Sie bei Verwendung von Firefox den Prozess zur [Installation des Stammzertifikats in Mozilla Firefox](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox) aus.
 
       Sie müssen Firefox möglicherweise erneut öffnen, damit die Änderung übernommen wird.
    **iOS-Geräte**
    1. Legen Sie auf Ihrem iOS-Gerät Adobe Debug als HTTP-Proxy fest, indem Sie auf **[!UICONTROL Einstellungen]** **>** **[!UICONTROL WLAN-Einstellungen]** klicken.
 
-   1. Gehen Sie in Safari zu [Debuggen.](https://proxy.debug.adobe.com/ssl)
+   1. Gehen Sie in Safari zu [Debuggen](https://proxy.debug.adobe.com/ssl).
 
       Safari fordert Sie zur Installation des SSL-Zertifikats auf.
 
@@ -93,13 +93,13 @@ Wenn die HTTPS-Aufrufe in Adobe Debug fehlen, müssen Sie das SSL-Zertifikat fü
 
 So installieren Sie das SSL-Zertifikat auf einem iOS-Gerät:
 
-1. Deaktivieren Sie auf Ihrem Laptop den Debug-Proxy und öffnen Sie [Adobe Debug.](https://debug.adobe.com)
+1. Deaktivieren Sie auf Ihrem Laptop den Debug-Proxy und öffnen Sie [Adobe Debug](https://debug.adobe.com).
 1. Führen Sie die folgenden Schritte auf Ihrem iOS-Gerät aus:
    1. Aktivieren Sie auf Ihrem Gerät in den Flugmodus.
    1. Wählen Sie dasselbe WLAN-Signal aus, das auch von Ihrem Laptop verwendet wird.
    1. Geben Sie auf Ihrem Laptop manuell die IP-Adresse und den Port ein, die in der Debug-Proxy-App angezeigt werden.
    1. Öffnen Sie ein Apple Safari-Browserfenster.
-   1. Gehen Sie zu [https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
+   1. Gehen Sie zu [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl).
    1. Laden Sie das SSL-Zertifikat herunter und installieren Sie es.
 
 1. Starten Sie auf Ihrem Laptop Ihre Adobe Debug-Sitzung.
@@ -109,13 +109,13 @@ So installieren Sie das SSL-Zertifikat auf einem iOS-Gerät:
 
 So installieren Sie das SSL-Zertifikat auf einem Android-Gerät:
 
-1. Deaktivieren Sie auf Ihrem Laptop den Debug-Proxy und öffnen Sie [Adobe Debug.](https://debug.adobe.com)
+1. Deaktivieren Sie auf Ihrem Laptop den Debug-Proxy und öffnen Sie [Adobe Debug](https://debug.adobe.com).
 1. Führen Sie die folgenden Schritte auf Ihrem Android-Gerät aus:
    1. Wählen Sie auf Ihrem Gerät den Flugmodus aus.
    1. Wählen Sie dasselbe WLAN-Signal aus, das auch von Ihrem Laptop verwendet wird.
    1. Geben Sie auf Ihrem Laptop manuell die IP-Adresse und den Port ein, die in der Debug-Proxy-App angezeigt werden.
    1. Öffnen Sie ein Browserfenster.
-   1. Gehen Sie zu [https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
+   1. Gehen Sie zu [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl).
    1. Laden Sie das SSL-Zertifikat herunter und installieren Sie es.
 
 1. Starten Sie auf Ihrem Laptop Ihre Adobe Debug-Sitzung.
