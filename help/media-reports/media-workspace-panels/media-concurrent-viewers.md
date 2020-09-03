@@ -2,7 +2,7 @@
 title: Media Concurrent Viewers Berichte
 description: Für Media Analytics-Kunden können Sie mit dem Bedienfeld "Media Concurrent Viewers"in Analysis Workspace gleichzeitige Viewer analysieren, um zu verstehen, wo Spitzenzeitzeitäquivalenzen aufgetreten sind oder wo es zu Abbrüchen gekommen ist.
 translation-type: tm+mt
-source-git-commit: 9c87109477518dd647b263edfa6bcf89be3e067d
+source-git-commit: 5d6f2c35f11b14222b704888a80e08e7217b33e9
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 10%
@@ -10,7 +10,7 @@ ht-degree: 10%
 ---
 
 
-# Berichte für Medienkonforme Viewer{#media-concurrent-viewers}
+# Media Concurrent Viewers Berichte{#media-concurrent-viewers}
 
 >[!IMPORTANT]
 >
