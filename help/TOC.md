@@ -5,10 +5,10 @@ user-guide-description: Implement Analytics on audio or video sources. Includes 
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: 25920c9c01e67f9e5d969495a03f23fcf80d6493
+source-git-commit: 126b54173b8b488e53fe27fbc99ad9e83fb2c078
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 97%
+source-wordcount: '816'
+ht-degree: 99%
 
 ---
 
@@ -215,7 +215,7 @@ ht-degree: 97%
       + [Gleichzeitige Medienbetrachter](media-reports/media-default-reports/media-concurrent-viewers.md)
       + [JSON-Daten des Berichts „Gleichzeitige Videozuschauer“ abrufen](media-reports/media-default-reports/get-concurrent-json.md)
    + Media Workspace-Bedienfelder {#media-workspace-panels}
-      + [Medienkonforme Viewer-Bedienfeld](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
+      + [Medienkonforme Viewer-Bedienfeld](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [Vorlagen für Media Workspace](media-reports/media-workspace-templates.md)
 + [Tracking heruntergeladener Inhalte](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
