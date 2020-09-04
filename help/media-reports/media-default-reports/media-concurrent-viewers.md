@@ -2,8 +2,11 @@
 title: Gleichzeitige Medienbetrachter
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 420d17294f8f4b5c38d960e4e4ebd0b2ee80a60b
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 85%
 
 ---
 
@@ -13,8 +16,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 Im Dashboard „Gleichzeitige Medienbetrachter“ werden gleichzeitige Viewer an einem Tag angezeigt. Die Daten können nach Inhalt, Gerätetyp und Land gefiltert werden.
 
 >[!TIP]
->
->Es werden keine Daten angezeigt, wenn das ausgewählte Intervall keinen gesamten Tag darstellt.
+> 
+> Tipp: Dieser Bericht basiert auf gleichzeitigen aktiven Mediensitzungen.  Verwenden Sie die Variable [Medienkonforme Viewer-Bedienfeld in Analysis Workspace](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+
 
 ![](assets/video-concurrent-viewers.png)
 
@@ -34,6 +38,7 @@ Hier sind einige Funktionen des Berichts:
 
 Für diesen Bericht gelten folgende Einschränkungen:
 
+* Es werden keine Daten angezeigt, wenn das ausgewählte Intervall keinen gesamten Tag darstellt.
 * Sie können die Daten nicht exportieren, z. B. ReportBuilder.
 * Sie können die Daten nicht in einem Tabellenformat darstellen.
 * Sie können keinen Bericht per E-Mail senden.
