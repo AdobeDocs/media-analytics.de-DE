@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 5d6f2c35f11b14222b704888a80e08e7217b33e9
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 10%
+ht-degree: 14%
 
 ---
 
@@ -20,7 +20,7 @@ Durch die Analyse von gleichzeitigen Viewern können Sie erkennen, wo Spitzenzei
 
 ## Medienkonforme Viewer-Bedienfeld in Analysis Workspace
 
-In Analysis Workspace bezeichnet der Begriff &quot;Concurrent Viewers&quot;die Anzahl der individuellen Besucher, die Ihre Medienstreams zu einem bestimmten Zeitpunkt anzeigen, unabhängig von der Anzahl der Sitzungen. Das Bedienfeld &quot;Medienbegleitende Viewer&quot;ist verfügbar, um gleichzeitige Viewer zu visualisieren, aufzuschlüsseln und zu vergleichen. [Weitere Informationen ...](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
+In Analysis Workspace bezeichnet der Begriff &quot;Concurrent Viewers&quot;die Anzahl der individuellen Besucher, die Ihre Medienstreams zu einem bestimmten Zeitpunkt anzeigen, unabhängig von der Anzahl der Sitzungen. Das Bedienfeld &quot;Medienbegleitende Viewer&quot;ist verfügbar, um gleichzeitige Viewer zu visualisieren, aufzuschlüsseln und zu vergleichen. [Weitere Informationen ...](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
 
 ## Gleichzeitige Viewer über die Analytics Berichte API abrufen
 
