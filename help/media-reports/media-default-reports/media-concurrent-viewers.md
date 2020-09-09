@@ -3,10 +3,10 @@ title: Gleichzeitige Medienbetrachter
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 translation-type: tm+mt
-source-git-commit: 420d17294f8f4b5c38d960e4e4ebd0b2ee80a60b
+source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 85%
+source-wordcount: '267'
+ht-degree: 86%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 85%
 Im Dashboard „Gleichzeitige Medienbetrachter“ werden gleichzeitige Viewer an einem Tag angezeigt. Die Daten können nach Inhalt, Gerätetyp und Land gefiltert werden.
 
 >[!TIP]
-> 
-> Tipp: Dieser Bericht basiert auf gleichzeitigen aktiven Mediensitzungen.  Verwenden Sie die Variable [Medienkonforme Viewer-Bedienfeld in Analysis Workspace](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+>
+> Dieser Bericht basiert auf gleichzeitigen aktiven Mediensitzungen.  Verwenden Sie die Variable [Medienkonforme Viewer-Bedienfeld in Analysis Workspace](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
 
 
 ![](assets/video-concurrent-viewers.png)
@@ -44,4 +44,3 @@ Für diesen Bericht gelten folgende Einschränkungen:
 * Sie können keinen Bericht per E-Mail senden.
 * Auch wenn Sie keine Anzeigen verfolgen, müssen Sie die Medienverfolgung erneut aktivieren und das Medienanzeigemodul auswählen.
 * Diese Funktion bietet genaue Daten, wenn eine Heartbeats-Bibliothek verwendet wird, in die eine Funktion für Pausenverfolgung integriert ist.
-
