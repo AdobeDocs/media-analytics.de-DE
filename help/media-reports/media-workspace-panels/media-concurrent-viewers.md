@@ -1,27 +1,27 @@
 ---
-title: Media Concurrent Viewers Berichte
-description: Für Media Analytics-Kunden können Sie mit dem Bedienfeld "Media Concurrent Viewers"in Analysis Workspace gleichzeitige Viewer analysieren, um zu verstehen, wo Spitzenzeitzeitäquivalenzen aufgetreten sind oder wo es zu Abbrüchen gekommen ist.
+title: Reporting über gleichzeitige Medienbetrachter
+description: Kunden von Media Analytics können mit dem Bedienfeld „Gleichzeitige Medienbetrachter“ in Analysis Workspace gleichzeitige Betrachter analysieren, um zu verstehen, wo Spitzenzeiten von gleichzeitigen Ansichten auftraten oder wo es zu Abbrüchen kam.
 translation-type: tm+mt
 source-git-commit: 687ae6f2037590b58b30ea776635898c93ca144f
 workflow-type: tm+mt
 source-wordcount: '212'
-ht-degree: 13%
+ht-degree: 97%
 
 ---
 
 
-# Media Concurrent Viewers Berichte{#media-concurrent-viewers}
+# Reporting über gleichzeitige Medienbetrachter {#media-concurrent-viewers}
 
 >[!IMPORTANT]
 >
->Diese Funktion ist in Limited Testing for Media Analytics-Kunden verfügbar. [Weitere Informationen ...](https://docs.adobe.com/content/help/de-DE/analytics/landing/an-releases.html)
+>Diese Funktion ist im beschränkten Testmodus für Media Analytics-Kunden verfügbar. [Weitere Informationen ...](https://docs.adobe.com/content/help/de-DE/analytics/landing/an-releases.html)
 
-Durch die Analyse von gleichzeitigen Viewern können Sie erkennen, wo Spitzenzeitäquivalenzen aufgetreten sind oder wo es zu Dropdown-Listen gekommen ist, um wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Viewern zu erhalten und bei der Fehlerbehebung oder Planung für Volumen und Größe zu helfen.
+Die Analyse gleichzeitiger Betrachter ermöglicht Ihnen zu verstehen, wo Spitzenzeiten von gleichzeitigen Ansichten auftraten oder wo es zu Abbrüchen kam. So erhalten Sie wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern, die bei der Fehlerbehebung oder Planung von Volumen und Größe helfen.
 
-## Medienkonforme Viewer-Bedienfeld in Analysis Workspace
+## Bedienfeld für gleichzeitige Medienbetrachter in Analysis Workspace
 
-In Analysis Workspace bezeichnet der Begriff &quot;Concurrent Viewers&quot;die Anzahl der individuellen Besucher, die Ihre Medienstreams zu einem bestimmten Zeitpunkt anzeigen, unabhängig von der Anzahl der Sitzungen. Das Bedienfeld &quot;Medienbegleitende Viewer&quot;ist verfügbar, um gleichzeitige Viewer zu visualisieren, aufzuschlüsseln und zu vergleichen. [Weitere Informationen ...](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
+In Analysis Workspace bezeichnet der Begriff „Gleichzeitige Betrachter“ die Anzahl der individuellen Besucher, die sich Ihre Medien-Streams unabhängig von der Anzahl der Sitzungen zu einem bestimmten Zeitpunkt ansehen. Das Bedienfeld „Gleichzeitige Medienbetrachter“ ist verfügbar, um gleichzeitige Betrachter zu visualisieren, aufzuschlüsseln und zu vergleichen. [Weitere Informationen ...](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
 
-## Gleichzeitige Viewer über die Analytics Berichte API abrufen
+## Gleichzeitige Betrachter über die Analytics Reporting-API abrufen
 
-Mit der Analytics Berichte-API 2.0 können Sie auch gleichzeitig gleichzeitige Viewer-Daten für bis zu 1 Monat auf Minutenebene abrufen. Die Berichte-API verwendet die gleiche Definition für gleichzeitige Viewer wie Analysis Workspace.  Weitere Informationen finden Sie unter [_*Analytics 2.0-APIs*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
+Mit der Analytics Reporting-API 2.0 können Sie Daten zu gleichzeitigen Betrachtern für bis zu einen Monat auf Minutenebene abrufen. Die Reporting-API verwendet die gleiche Definition für gleichzeitige Betrachter wie Analysis Workspace.  Weitere Informationen finden Sie unter [_*Analytics 2.0-APIs*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
