@@ -1,11 +1,11 @@
 ---
 title: Reporting über gleichzeitige Medienbetrachter
 description: Kunden von Media Analytics können mit dem Bedienfeld „Gleichzeitige Medienbetrachter“ in Analysis Workspace gleichzeitige Betrachter analysieren, um zu verstehen, wo Spitzenzeiten von gleichzeitigen Ansichten auftraten oder wo es zu Abbrüchen kam.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ee925e7bf2d32431679dd1b82e46c7c124256d13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '224'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -24,4 +24,4 @@ In Analysis Workspace bezeichnet der Begriff „Gleichzeitige Betrachter“ die 
 
 ## Gleichzeitige Betrachter über die Analytics Reporting-API abrufen
 
-Mit der Analytics Reporting-API 2.0 können Sie Daten zu gleichzeitigen Betrachtern für bis zu einen Monat auf Minutenebene abrufen. Die Reporting-API verwendet die gleiche Definition für gleichzeitige Betrachter wie Analysis Workspace.  Weitere Informationen finden Sie unter [_*Abrufen gleichzeitiger JSON-Berichtsdaten von Viewern mit Analytics 2.0-APIs*_](https://docs.adobe.com/content/help/en/media-analytics/using/media-reports/media-default-reports/get-concurrent-json20.html).
+Mit der Analytics Reporting-API 2.0 können Sie Daten zu gleichzeitigen Betrachtern für bis zu einen Monat auf Minutenebene abrufen. Die Reporting-API verwendet die gleiche Definition für gleichzeitige Betrachter wie Analysis Workspace.  Weitere Informationen finden Sie unter [_*Abrufen von JSON-Berichtsdaten zu gleichzeitigen Betrachtern mit Analytics 2.0-APIs*_](https://docs.adobe.com/content/help/en/media-analytics/using/media-reports/media-default-reports/get-concurrent-json20.html).
