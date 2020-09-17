@@ -1,30 +1,30 @@
 ---
-title: Abrufen von JSON-Berichtsdaten für gleichzeitige Viewer mit Analytics 2.0-APIs
+title: Abrufen von JSON-Berichtsdaten zu gleichzeitigen Betrachtern mit Analytics 2.0-APIs
 description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e93a39fb76c3ccca2c05e5d1590a53394e50b29b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '167'
-ht-degree: 32%
+ht-degree: 100%
 
 ---
 
 
-# Abrufen von JSON-Berichtsdaten für gleichzeitige Viewer mit Analytics 2.0-APIs{#get-concurrent-viewers-json-report-data}
+# Abrufen von JSON-Berichtsdaten zu gleichzeitigen Betrachtern mit Analytics 2.0-APIs {#get-concurrent-viewers-json-report-data}
 
-Sie können die Berichtsdaten von gleichzeitigen Viewern mit der [_*Analytics 2.0-APIs*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
+Mit den [_*Analytics 2.0-APIs*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) können Sie Berichtsdaten zu gleichzeitigen Betrachtern abrufen.
 
 1. Filtern Sie die Daten mit einem beliebigen Segment, das auf der Benutzeroberfläche basiert. Um nach einer bestimmten Inhalts-ID zu filtern, erstellen Sie ein neues Segment.
 1. Setzen Sie `elements` -> `id` im Anforderungstext auf `metrics/concurrent_viewers_visitors`.
 1. Fordern Sie eine ausreichende Datenmenge an.
 
    * In dem von Ihnen im Bericht angegebenen Datenbereich werden die Daten aller gleichzeitigen Betrachter _zum Zeitpunkt des Endes der Videositzung erfasst._
-Sie müssen die Sitzungen des Beginns an einem Tag und nach Mitternacht, dem nächsten Tag, abschließen.
+Es gilt, Sitzungen zu berücksichtigen, die an einem Tag beginnen und nach Mitternacht enden, also am nächsten Tag.
 
-   * Fordern Sie einen weiteren Datentag für den vorgesehenen Zeitraum in Ihrer Anforderung, aber in Ihrer Analyse an _*nur die vorgesehenen Daten verwenden.*_
+   * Geben Sie bei Ihrer Anfrage für den vorgesehenen Zeitraum einen weiteren Tag für die Daten an, nutzen Sie aber in Ihrer Analyse _*nur die vorgesehenen Daten.*_
 
-Die Nutzlast einer Musteranforderung für einen Tag würde wie im folgenden Beispiel aussehen. Die Anfrage wird an zwei aufeinander folgenden Tagen durchgeführt, im Berichte wird nur der erste Tag verwendet.
+Die Beispielanforderung für einen Datentag würde wie im folgenden Beispiel aussehen. Die Anfrage wird für zwei aufeinander folgende Tagen durchgeführt, für den Bericht wird jedoch nur der erste Tag verwendet.
 
 ## Beispielanforderung
 
