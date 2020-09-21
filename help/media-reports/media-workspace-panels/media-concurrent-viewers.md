@@ -1,20 +1,16 @@
 ---
 title: Reporting über gleichzeitige Medienbetrachter
 description: Kunden von Media Analytics können mit dem Bedienfeld „Gleichzeitige Medienbetrachter“ in Analysis Workspace gleichzeitige Betrachter analysieren, um zu verstehen, wo Spitzenzeiten von gleichzeitigen Ansichten auftraten oder wo es zu Abbrüchen kam.
-translation-type: ht
-source-git-commit: ee925e7bf2d32431679dd1b82e46c7c124256d13
-workflow-type: ht
-source-wordcount: '224'
+translation-type: tm+mt
+source-git-commit: eb69c5c68b7bc367a944ce441a196f45791bcb53
+workflow-type: tm+mt
+source-wordcount: '204'
 ht-degree: 100%
 
 ---
 
 
 # Reporting über gleichzeitige Medienbetrachter {#media-concurrent-viewers}
-
->[!IMPORTANT]
->
->Diese Funktion ist im beschränkten Testmodus für Media Analytics-Kunden verfügbar. [Weitere Infos...](https://docs.adobe.com/content/help/de-DE/analytics/landing/an-releases.html)
 
 Die Analyse gleichzeitiger Betrachter ermöglicht Ihnen zu verstehen, wo Spitzenzeiten von gleichzeitigen Ansichten auftraten oder wo es zu Abbrüchen kam. So erhalten Sie wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern, die bei der Fehlerbehebung oder Planung von Volumen und Größe helfen.
 
