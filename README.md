@@ -1,9 +1,16 @@
 ---
-source-git-commit: 18d6b140df7211190dd9597ef03059d8b9285fe9
+source-git-commit: 7dbbd8b77801243a4a557be811dc678156c39d31
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '568'
+ht-degree: 72%
 
 ---
 # Artikel beitragen
+
+| EXL-PR | EXL | Vorschau | Aktivieren | Veröffentlicht | Hilfe |
+|--- |--- |--- |--- |--- |--- |
+| [![Build-Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_pr-exl/lastBuild/) | [![Build-Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/media-analytics.en_exl/lastBuild/lastBuild) | [Vorschauen-URL](https://experienceleague.corp.adobe.com/docs/media-analytics/using/media-overview.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Live-URL](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=en) | [Autorenanleitung](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 | Produktion | Phase |
 |---|---|
@@ -38,7 +45,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Umfangreiche Änderungen von Adobe-Mitarbeitern
 
-If you are a technical writer, program manager, or developer from the product team for an Adobe Experience Cloud solution and it&#39;s your job to contribute to or author technical articles, you should use the private repository [git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs). <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
+Wenn Sie ein technischer Autor, Programm Manager oder Entwickler des Produktteams für eine Adobe Experience Cloud-Lösung sind und es Ihre Aufgabe ist, technische Artikel zu erstellen oder beizutragen, sollten Sie das private Repository verwenden [git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs). <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
 ## Werkzeuge und Einrichtung
 
