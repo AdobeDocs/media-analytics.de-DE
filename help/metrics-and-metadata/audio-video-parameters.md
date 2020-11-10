@@ -2,11 +2,11 @@
 title: Audio- und Videoparameter
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
-translation-type: ht
-source-git-commit: abb2cd2d056ffbefa72126061b11286cc10ec1ca
-workflow-type: ht
-source-wordcount: '6237'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 4dad6507966e30accfb4f6c2eb5f1d6a5507d29d
+workflow-type: tm+mt
+source-wordcount: '6234'
+ht-degree: 99%
 
 ---
 
@@ -47,7 +47,7 @@ Beschreibung der Tabellendaten:
 >Ändern Sie nicht die Classification-Namen für Variablen, die unter Berichterstellung/Reservierte Variable als „Classification“ beschrieben sind.\
 >Die Medienklassifizierungen werden definiert, wenn eine Report Suite für das Medien-Tracking aktiviert ist. Adobe fügt von Zeit zu Zeit neue Eigenschaften hinzu. In diesem Fall müssen Kunden ihre Report Suites erneut aktivieren, um Zugriff auf die neuen Medieneigenschaften zu erhalten. Während des Aktualisierungsvorgangs ermittelt Adobe anhand der Namen der Variablen, ob die Classifications aktiviert sind. Wenn eine fehlt, fügt Adobe die fehlenden erneut hinzu.
 
-## Core-Audio- und Videodaten {#core-audio-and-video-data}
+## Core-Steamingmediendaten {#core-audio-and-video-data}
 
 ### Streamtyp {#stream-type}
 
@@ -187,7 +187,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Media Close </li> <li> **Min. SDK-Version:** 1.5.7 </li> <li> **Beispielwert:**<br/> „js-2.0.1.88-c8c0b1“ </li> <li> **Beschreibung:**<br/> Die für die Tracking-Sitzung verwendete Media SDK-Version. <br/><br/>Kunden müssen eigene Verarbeitungsregeln erstellen, damit der Wert für Berichte zur Verfügung steht.  <br/><br/>[MediaHeartbeat.version();](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html) </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.<br/>vhlVersion) </li> <li> **Heartbeats:**<br/> (s:sp:hb_version) </li> </ul> | <ul> <li> **Verfügbar:**<br/> Verwenden Sie eine anwenderspezifische Verarbeitungsregel. </li> <li> **Reservierte Variable:**<br/> nicht verfügbar </li> <li> **Berichtsname:**<br/> anwenderspezifisch </li> <li> **Kontextdaten:**<br/> (a.media.vhlVersion) </li> <li> **Daten-Feed:**<br/> nicht verfügbar </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.vhlVersion) </li> </ul> |
 
-## Standard-Audio- und Videometadaten {#standard-audio-and-video-metadata}
+## Standard-Metadaten für Streaming-Medien {#standard-audio-and-video-metadata}
 
 ### Show
 
@@ -321,7 +321,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/> </li> <li> **API-Schlüssel:**<br/> media.publisher </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Media Start, Media Close </li> <li> **Min. SDK-Version:** 1.5.7 <br/>Verfügbar in [Überblick über die Mediensammlung](/help/media-collection-api/mc-api-overview.md) oder [SDKs herunterladen - Version 2.2](/help/sdk-implement/download-sdks.md).  </li> <li> **Beispielwert:**<br/> „Random Bauhaus“ </li> <li> **Beschreibung:**<br/> Name des Herausgebers des Audioinhalts.  <br/> **Releasedatum: 13.09.2018** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.publisher) </li> <li> **Heartbeats:**<br/> (s:meta:<br/>a.media.publisher) </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> eVar </li> <li> **Gültigkeit:**<br/> bei HIT </li> <li> **Berichtsname:**<br/> </li> <li> **Kontextdaten:**<br/> (a.media.publisher) </li> <li> **Daten-Feed:**<br/> videoaudiopublisher </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.publisher) </li> </ul> |
 
-## Audio- und Videometriken {#audio-and-video-metrics}
+## Metriken für Streaming-Medien {#audio-and-video-metrics}
 
 ### Medienstarts
 
@@ -423,7 +423,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Typ:**<br/> Zahl </li> <li> **Gesendet mit:**<br/> Media Close </li> <li> **Min. SDK-Version:** 1.5.6 </li> <li> **Beispielwert:**<br/> 2 </li> <li> **Beschreibung:**<br/> Diese Metrik wird als Anzahl der Pausenperioden berechnet, die während einer Wiedergabesitzung aufgetreten sind.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> nicht verfügbar </li> <li> **Heartbeats:**<br/> (s:event:<br/>type=pause) </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtsname:**<br/> Pausierung – Ereignisse </li> <li> **Kontextdaten:**<br/> (a.media.pauseCount) </li> <li> **Daten-Feed:**<br/> nicht verfügbar </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.pauseCount) </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Typ:**<br/> Zahl </li> <li> **Gesendet mit:**<br/> Media Close </li> <li> **Min. SDK-Version:** 1.5.6 </li> <li> **Beispielwert:**<br/> 2 </li> <li> **Beschreibung:**<br/> Diese Metrik wird als Anzahl der Pausenperioden berechnet, die während einer Wiedergabesitzung aufgetreten sind.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> nicht verfügbar </li> <li> **Heartbeats:**<br/> (s:Ereignis:<br/>type=pause) </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtsname:**<br/> Pausierung – Ereignisse </li> <li> **Kontextdaten:**<br/> (a.media.pauseCount) </li> <li> **Daten-Feed:**<br/> nicht verfügbar </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.pauseCount) </li> </ul> |
 
 ### Pausierung – Gesamtdauer
 
