@@ -1,11 +1,11 @@
 ---
 title: Unterstützte Geräte und Plattformen
-description: Adobe Analytics für Audio und Video stellt sicher, dass jeder Medien-Stream auf allen Geräten erfasst und in Berichten aufgeführt wird.
-translation-type: ht
-source-git-commit: 4db4e4281ba9c7af078c18d03f73b6e1e007a0e8
-workflow-type: ht
-source-wordcount: '338'
-ht-degree: 100%
+description: Adobe Analytics for Streaming Media stellt sicher, dass jeder Medienstream auf allen Geräten erfasst und gemeldet wird.
+translation-type: tm+mt
+source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+workflow-type: tm+mt
+source-wordcount: '336'
+ht-degree: 91%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 >
 >Ab dem 31. August 2021, dem Ende der Unterstützung für Mobile-SDKs der Version 4, stellt Adobe auch die Unterstützung für das Media Analytics-SDK für iOS und Android ein.  Weitere Informationen finden Sie unter den [häufig gestellten Fragen zum Ende der Unterstützung für das Media Analytics-SDK](/help/sdk-implement/end-of-support-faqs.md).
 
-Adobe Analytics für Audio und Video unterstützt alle herkömmlichen Geräte, darunter:
+Adobe Analytics for Streaming Media unterstützt alle wichtigen Geräte, darunter:
 
 * iOS- und Android-Smartphones und -Tablets
 * OTT-Geräte für ROKU, AppleTV, FireTV und Android-TV
