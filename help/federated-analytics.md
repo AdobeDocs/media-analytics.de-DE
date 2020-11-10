@@ -1,12 +1,12 @@
 ---
 title: Federated Analytics
-description: Der Federated Analytics-Dienst stellt ein System zur Freigabe von Adobe Media Analytics-Daten (Audio und Video) zwischen zwei Partnern bereit.
+description: Der Federated Analytics-Dienst bietet ein System zur Freigabe von Adobe Analytics für Streaming-Mediendaten zwischen zwei Partnern.
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 88f4479ec072ab2a332ade09a83e9fbff94a98e9
+source-git-commit: 4dad6507966e30accfb4f6c2eb5f1d6a5507d29d
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 97%
+source-wordcount: '552'
+ht-degree: 92%
 
 ---
 
@@ -39,7 +39,8 @@ Federated Analytics sorgt für eine optimierte Audio- und Videomessung mit geste
 
 * **Medien-Stream-Vertrag:** Empfänger und Sender müssen über einen Adobe Analytics-Vertrag für Medien-Streams verfügen, bevor sie auf Audio- und Videodaten in Adobe Analytics zugreifen können. Weitere Informationen erhalten Sie von Ihrem Konto-Team.
 * **Federated-Vertragszusatz:** Jeder Sender und Empfänger muss über einen unterzeichneten Vertragszusatz mit Adobe verfügen, bevor Daten gesendet oder empfangen werden können. Ein Vertragszusatz pro Kunde ist erforderlich, nicht ein Vertragszusatz pro Partnerschaft. Weitere Informationen erhalten Sie von Ihrem Konto-Team.
-* **Implementierung von Media Analytics:** Der Sender muss Media Analytics auf allen Playern implementieren, die Teil des zusammengeführten Datensatzes sein werden. Es können nur Media Analytics-Daten zusammengeführt werden. Siehe die Dokumentation: [Messen von Audio und Video in Adobe Analytics](/help/media-overview.md)
+
+* **Implementierung von Media Analytics:** Der Sender muss Media Analytics auf allen Playern implementieren, die Teil des zusammengeführten Datensatzes sein werden. Es können nur Media Analytics-Daten zusammengeführt werden. Siehe Dokumentation: [Messen von Dampfmedien in Adobe Analytics](/help/media-overview.md)
 
 * **Adobe-Consulting-Vertrag:** Für die Ersteinrichtung der Föderierungsregeln zwischen Empfänger und Sender stehen Ihnen hilfreiche Beratungsservices zur Datenüberprüfung und zur Erstellung der Datenweitergabe-Vereinbarung zur Verfügung.
 
