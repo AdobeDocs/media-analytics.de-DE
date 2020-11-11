@@ -1,9 +1,9 @@
 ---
-title: Messen von Dampfmedien in Adobe Analytics
+title: Messen von Streaming-Medien in Adobe Analytics
 description: Adobe Analytics for Media (auch als Media Analytics bezeichnet) bietet Clients eine robuste Medienmessung für Inhalte, Audio und Werbung.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 85%
@@ -11,7 +11,7 @@ ht-degree: 85%
 ---
 
 
-# Messen von Dampfmedien in Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
+# Messen von Streaming-Medien in Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
 
 ![Banner](./assets/media_analytics_banner.png)
 
@@ -47,7 +47,7 @@ Die Verwendung von Heartbeats Adobe Analytics für Streaming Media bietet folgen
 | Preise | Transparentes Tracking jedes Medien-Streams (einzeln) |
 | Implementierung und Support | Optimierte Konfiguration mit fortlaufenden Aktualisierungen und Verbesserungen<br>Mit einem optimierten Implementierungsprozess können Sie schnell Variablen über Ihre Player-API zuordnen und Implementierungen mit dem Adobe Debug Tool validieren, um sicherzustellen, dass alle erforderlichen Variablen präzise getrackt werden. |
 | Partnerfreigabe | Federated Analytics und Certified Metrics<br>Mit freigegebenen Daten über Federated Analytics können Sie unsere branchenführenden Medien-Sharing-Funktionen nutzen, um die Daten aller Medienverteilungspartner – Betreiber, Programmierer und Distributoren – ganzheitlich zu evaluieren. |
-| Erweitertes Tracking | Verfolgung von heruntergeladenen Inhalten, Fehlerwiederherstellung und gleichzeitige Viewer<br>Sie können Streaming-Medieninhalte verfolgen, die auf ein Gerät heruntergeladen und wiedergegeben werden, unabhängig von dessen Konnektivität. |
+| Erweitertes Tracking | Downloaded Content Tracking, Error Recovery Tracking und Concurrent Viewers<br>Sie können Streaming-Medieninhalte verfolgen, die auf ein Gerät heruntergeladen und wiedergegeben werden, unabhängig von dessen Konnektivität. |
 
 
 
