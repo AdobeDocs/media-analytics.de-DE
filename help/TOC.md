@@ -6,7 +6,7 @@ user-guide-description: Implementieren Sie Analytics in Audio- oder Videoquellen
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: da13db682f859cfd176a5ab379b7a0a947dc0e3a
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 94%
@@ -14,7 +14,7 @@ ht-degree: 94%
 ---
 
 
-# Adobe Analytics für Streaming Media {#using}
+# Adobe Analytics für Streaming-Medien {#using}
 
 + [Messen von Streaming-Medien in Adobe Analytics](media-overview.md)
 + [Unterstützte Geräte und Plattformen](measurement-options/supported-devices.md)
@@ -45,9 +45,9 @@ ht-degree: 94%
          + [Einrichten von JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Chromecast einrichten ](sdk-implement/setup/set-up-chromecast.md)
       + [Roku einrichten ](sdk-implement/setup/set-up-roku.md)
-   + Rückverfolgen der Wiedergabe von Streaming-Medien {#track-av-playback}
+   + Track Streaming Media Play-back {#track-av-playback}
       + [Überblick](sdk-implement/track-av-playback/track-core-overview.md)
-      + Core-Steaming-Media-Wiedergabe verfolgen {#track-core}
+      + Core Streaming Media Play-back{#track-core}
          + [Tracking von Core-Wiedergaben in Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [Tracking von Core-Wiedergaben in iOS](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + Tracking von Core-Wiedergaben in JavaScript {#track-core-javascript}
@@ -199,7 +199,7 @@ ht-degree: 94%
    + [Cookbook](media-analytics-cookbook/media-analytics-cookbook.md)
    + [Medien-Stream-Zuordnung](media-analytics-cookbook/media-dimensions.md)
 + Metriken und Metadaten {#metrics-and-metadata}
-   + [Dampfmedienparameter](metrics-and-metadata/audio-video-parameters.md)
+   + [Streaming-Medienparameter](metrics-and-metadata/audio-video-parameters.md)
    + [Anzeigenparameter](metrics-and-metadata/ad-parameters.md)
    + [Kapitelparameter ](metrics-and-metadata/chapter-parameters.md)
    + [Player-Statusparameter](metrics-and-metadata/player-state-parameters.md)
