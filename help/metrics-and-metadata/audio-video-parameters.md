@@ -3,9 +3,9 @@ title: Audio- und Videoparameter
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 translation-type: tm+mt
-source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
+source-git-commit: c4d48d2ba1bec8afc7cfd8d625c6b654056e5489
 workflow-type: tm+mt
-source-wordcount: '6234'
+source-wordcount: '6235'
 ht-degree: 99%
 
 ---
@@ -53,7 +53,7 @@ Beschreibung der Tabellendaten:
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/> [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **API-Schlüssel:**<br/> media.streamType </li> <li> **Erforderlich:**<br/> ja </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Media Start, Media Close </li> <li> **Min. SDK-Version:** 2.2 <br/><br/>Verfügbar in [Überblick über die Media Collection API](/help/media-collection-api/mc-api-overview.md) oder [SDKs herunterladen - Version 2.2](/help/sdk-implement/download-sdks.md).  </li>  <li> **Probenwert:**<br/> „Video“ </li> <li> **Beschreibung:**<br/> Gibt den Stream-Typ an. Gültige Werte sind „audio“, „video“ und „“.  <br/><br/>[Segmente für das Reporting](/help/metrics-and-metadata/segments.md): <br/><br/>Medien-Streamtyp: All - <br/>Segmentieren aller Daten des Medienstreams; Regel: Content (ID) exists <br/><br/>Medien-Streamtyp: Audio - <br/>Segmentieren aller Daten des Audiostreams; Regel: Content (ID) exists AND Media Stream Type = audio <br/><br/>Medien-Streamtyp: Video - <br/>Segmentieren aller Daten des Videostreams; Regel: Content (ID) exists AND Media Stream Type != audio <br/><br/> **Releasedatum: 13.09.2018** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.streamType) </li> <li> **Heartbeats:**<br/> (s:meta:<br/>a.media.streamType) </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> eVar </li> <li> **Gültigkeit:**<br/> Bei BESUCH </li> <li> **Berichtsname:**<br/> Inhalt </li> <li> **Kontextdaten:**<br/> (a.media.streamType) </li> <li> **Daten-Feed:**<br/> videostreamtype </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.streamType) </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/> [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **API-Schlüssel:**<br/> media.streamType </li> <li> **Erforderlich:**<br/> ja </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Media Start, Media Close </li> <li> **Min. SDK-Version:** 2.2 <br/><br/>Verfügbar in [Überblick über die Media Collection API](/help/media-collection-api/mc-api-overview.md) oder [SDKs herunterladen - Version 2.2](/help/sdk-implement/download-sdks.md).  </li>  <li> **Probenwert:**<br/> „Video“ </li> <li> **Beschreibung:**<br/> Gibt den Stream-Typ an. Gültige Werte sind „audio“, „video“ und „“.  <br/><br/>[Segmente für das Reporting](/help/metrics-and-metadata/segments.md): <br/><br/>Medien-Streamtyp: All - <br/>Segmentieren aller Daten des Medienstreams; Regel: Content (ID) exists <br/><br/>Medien-Streamtyp: Audio - <br/>Segmentieren aller Daten des Audiostreams; Regel: Content (ID) exists AND Media Stream Type = audio <br/><br/>Medien-Streamtyp: Video - <br/>Segmentieren aller Daten des Videostreams; Regel: Content (ID) exists AND Media Stream Type != audio <br/><br/> **Releasedatum: 13.09.2018** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.streamType) </li> <li> **Heartbeats:**<br/> (s:meta:<br/>a.media.streamType) </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> eVar </li> <li> **Gültigkeit:**<br/> bei HIT </li> <li> **Berichtsname:**<br/> Stream-Typ </li> <li> **Kontextdaten:**<br/> (a.media.streamType) </li> <li> **Daten-Feed:**<br/> videostreamtype </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.streamType) </li> </ul> |
 
 ```
 public static MediaObject createMediaObject(java.lang.String name,
