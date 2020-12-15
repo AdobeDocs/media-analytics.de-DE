@@ -6,15 +6,15 @@ user-guide-description: Implementieren Sie Analytics in Audio- oder Videoquellen
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
+source-git-commit: a6f9c93c8c21f261eb5b592d4a2d8c9d2532efee
 workflow-type: tm+mt
 source-wordcount: '830'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
 
-# Adobe Analytics für Streaming-Medien {#using}
+# Adobe Analytics für Streaming Media {#using}
 
 + [Messen von Streaming-Medien in Adobe Analytics](media-overview.md)
 + [Unterstützte Geräte und Plattformen](measurement-options/supported-devices.md)
@@ -220,8 +220,6 @@ ht-degree: 94%
    + [Abrufen gleichzeitiger Viewer-Daten über API](media-reports/media-default-reports/get-concurrent-json20.md)
 + [Tracking heruntergeladener Inhalte](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
-
-<!-- + Basic Streaming Media Measurement for Adobe Analytics Ultimate{#basic-streaming-measurement} -->
 + Player-Status-Tracking {#player-state-tracking}
    + [Überblick](sdk-implement/player-state-tracking/player-state-overview.md)
    + [Standardmäßige und benutzerdefinierte Status](sdk-implement/player-state-tracking/standard-and-custom-states.md)
