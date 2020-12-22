@@ -3,7 +3,7 @@ title: Anzeigenparameter
 description: null
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 translation-type: tm+mt
-source-git-commit: ef237fd0d9e2bcebe011d819224d98d450830d07
+source-git-commit: f59738f48eeb80d3aaead1757abd2ba3785c40da
 workflow-type: tm+mt
 source-wordcount: '1867'
 ht-degree: 100%
@@ -148,7 +148,7 @@ Beschreibung der Tabellendaten:
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/> SITE_ID </li> <li> **API-Schlüssel:**<br/> media.ad.siteId </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Ad Start, Ad Close </li> <li> **Min. SDK-Version:** 1.5.7 </li> <li> **Beispielwert:**<br/>  </li><li> **Beschreibung:**<br/> ID der Anzeigen-Site.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>site) </li> <li> **Heartbeat:**<br/> (s:meta:<br/>a.media.ad.site) </li> </ul> | <ul> <li> **Verfügbar:**<br/> <i>Verwenden Sie eine benutzerdefinierte Verarbeitungsregel </i> </li> <li> **Reservierte Variable:**<br/> eVar </li> <li> **Gültigkeit:**<br/> bei HIT </li> <li> **Berichtsname:**<br/> anwenderspezifisch* </li> <li> **Kontextdaten:**<br/> (a.media.ad.<br/>site) </li> <li> **Daten-Feed:**<br/> nicht verfügbar </li> <li> **Audience Manager:**<br/> (c_contextData)<br/>a.media.ad.site) </li> </ul> <br/>* Verwenden Sie eine benutzerdefinierte Verarbeitungsregel |
+| <ul> <li> **SDK-Schlüssel:**<br/> SITE_ID </li> <li> **API-Schlüssel:**<br/> media.ad.siteId </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Ad Start, Ad Close </li> <li> **Min. SDK-Version:** 1.5.7 </li> <li> **Beispielwert:**<br/>  </li><li> **Beschreibung:**<br/> ID der Anzeigen-Site.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>site) </li> <li> **Heartbeat:**<br/> (s:meta:<br/>a.media.ad.site) </li> </ul> | <ul> <li> **Verfügbar:**<br/> <i>Verwenden Sie eine benutzerdefinierte Verarbeitungsregel </i> </li> <li> **Reservierte Variable:**<br/> eVar </li> <li> **Gültigkeit:**<br/> bei HIT </li> <li> **Berichtsname:**<br/> anwenderspezifisch* </li> <li> **Kontextdaten:**<br/> (a.media.ad.<br/>site) </li> <li> **Daten-Feed:**<br/> nicht verfügbar </li> <li> **Audience Manager:**<br/> (c_contextData)<br/>a.media.ad.site) </li> </ul> * Verwenden Sie eine benutzerdefinierte Verarbeitungsregel |
 
 
 
@@ -156,7 +156,7 @@ Beschreibung der Tabellendaten:
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/> CREATIVE_URL </li> <li> **API-Schlüssel:**<br/> media.ad.creativeURL </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Ad Start, Ad Close </li> <li> **Min. SDK-Version:** 1.5.7 </li> <li> **Beispielwert:**<br/>  </li><li> **Beschreibung:**<br/> URL des Anzeigenmotivs.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **Heartbeat:**<br/> (s:meta:<br/>a.media.ad.creativeURL) </li> </ul> | <ul> <li> **Verfügbar:**<br/> <i>Verwenden Sie eine benutzerdefinierte Verarbeitungsregel </i> </li> <li> **Reservierte Variable:**<br/> eVar </li> <li> **Gültigkeit:**<br/> bei HIT </li> <li> **Berichtsname:**<br/> anwenderspezifisch* </li> <li> **Kontextdaten:**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **Daten-Feed:**<br/> nicht verfügbar </li> <li> **Audience Manager:**<br/> (c_contextData)<br/>a.media.ad.creativeURL) </li> </ul> <br/>* Verwenden Sie eine benutzerdefinierte Verarbeitungsregel |
+| <ul> <li> **SDK-Schlüssel:**<br/> CREATIVE_URL </li> <li> **API-Schlüssel:**<br/> media.ad.creativeURL </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Ad Start, Ad Close </li> <li> **Min. SDK-Version:** 1.5.7 </li> <li> **Beispielwert:**<br/>  </li><li> **Beschreibung:**<br/> URL des Anzeigenmotivs.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **Heartbeat:**<br/> (s:meta:<br/>a.media.ad.creativeURL) </li> </ul> | <ul> <li> **Verfügbar:**<br/> <i>Verwenden Sie eine benutzerdefinierte Verarbeitungsregel </i> </li> <li> **Reservierte Variable:**<br/> eVar </li> <li> **Gültigkeit:**<br/> bei HIT </li> <li> **Berichtsname:**<br/> anwenderspezifisch* </li> <li> **Kontextdaten:**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **Daten-Feed:**<br/> nicht verfügbar </li> <li> **Audience Manager:**<br/> (c_contextData)<br/>a.media.ad.creativeURL) </li> </ul> * Verwenden Sie eine benutzerdefinierte Verarbeitungsregel |
 
 
 
@@ -164,7 +164,7 @@ Beschreibung der Tabellendaten:
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/> PLACEMENT_ID </li> <li> **API-Schlüssel:**<br/> media.ad.placementId </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Ad Start, Ad Close </li> <li> **Min. SDK-Version:** 1.5.7 </li> <li> **Beispielwert:**<br/>  </li><li> **Beschreibung:**<br/> Die Platzierungs-ID der Anzeige.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>placement) </li> <li> **Heartbeat:**<br/> (s:meta:<br/>a.media.ad.placement) </li> </ul> | <ul> <li> **Verfügbar:**<br/> <i>Verwenden Sie eine benutzerdefinierte Verarbeitungsregel </i> </li> <li> **Reservierte Variable:**<br/> eVar </li> <li> **Gültigkeit:**<br/> bei HIT </li> <li> **Berichtsname:**<br/> anwenderspezifisch* </li> <li> **Kontextdaten:**<br/> (a.media.ad.<br/>placement) </li> <li> **Daten-Feed:**<br/> nicht verfügbar </li> <li> **Audience Manager:**<br/> (c_contextData)<br/>a.media.ad.placement) </li> </ul><br/>* Verwenden Sie eine benutzerdefinierte Verarbeitungsregel |
+| <ul> <li> **SDK-Schlüssel:**<br/> PLACEMENT_ID </li> <li> **API-Schlüssel:**<br/> media.ad.placementId </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Ad Start, Ad Close </li> <li> **Min. SDK-Version:** 1.5.7 </li> <li> **Beispielwert:**<br/>  </li><li> **Beschreibung:**<br/> Die Platzierungs-ID der Anzeige.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>placement) </li> <li> **Heartbeat:**<br/> (s:meta:<br/>a.media.ad.placement) </li> </ul> | <ul> <li> **Verfügbar:**<br/> <i>Verwenden Sie eine benutzerdefinierte Verarbeitungsregel </i> </li> <li> **Reservierte Variable:**<br/> eVar </li> <li> **Gültigkeit:**<br/> bei HIT </li> <li> **Berichtsname:**<br/> anwenderspezifisch* </li> <li> **Kontextdaten:**<br/> (a.media.ad.<br/>placement) </li> <li> **Daten-Feed:**<br/> nicht verfügbar </li> <li> **Audience Manager:**<br/> (c_contextData)<br/>a.media.ad.placement) </li> </ul>* Verwenden Sie eine benutzerdefinierte Verarbeitungsregel |
 
 
 
