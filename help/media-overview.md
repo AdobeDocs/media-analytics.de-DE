@@ -2,30 +2,30 @@
 title: Messen von Streaming-Medien in Adobe Analytics
 description: Adobe Analytics for Media (auch als Media Analytics bezeichnet) bietet Clients eine robuste Medienmessung für Inhalte, Audio und Werbung.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '903'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
-# Messen von Streaming-Medien in Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
+# Messen von Streaming-Medien in Adobe Analytics {#measuring-audio-and-video-in-adobe-analytics}
 
 ![Banner](./assets/media_analytics_banner.png)
 
-## Info zu Adobe Analytics für Streaming Media
+## Informationen zu Adobe Analytics für Streaming-Medien
 
-Adobe Analytics for Streaming Media ist ein Add-on zu Adobe Analytics, das leistungsstarke Messwerkzeuge für Audio, Video und Werbung bietet. Adobe Analytics ist Teil der Adobe Experience Platform.
+Adobe Analytics für Streaming-Medien ist ein Add-on zu Adobe Analytics, das leistungsstarke Mess-Tools für Audio, Video und Werbung bietet. Adobe Analytics ist Teil der Adobe Experience Platform.
 
-Mit Adobe Analytics for Streaming Media können Sie die gesamte Customer Journey auf Ihrer Site verfolgen. Die Metriken lassen sich problemlos in Adobe Analytics-Berichte und andere Adobe Experience Cloud-Produkte integrieren. Mit der Medienmessung können Sie Ihre Daten in mehrere Dimensionen und Segmente kategorisieren und alle Metadaten erfassen, die Sie für eine vollständige und detaillierte Analyse benötigen. Anschließend können Sie Daten analysieren und Erfolgskriterien den vollständig genutzten Medien, der durchschnittlich verbrachten Zeit und an abgeschlossenen Anzeigen zuordnen.
+Mit Adobe Analytics für Streaming-Medien können Sie die volle Customer Journey auf Ihrer Site verfolgen. Die Metriken lassen sich problemlos in Adobe Analytics-Berichte und andere Adobe Experience Cloud-Produkte integrieren. Mit der Medienmessung können Sie Ihre Daten in mehrere Dimensionen und Segmente kategorisieren und alle Metadaten erfassen, die Sie für eine vollständige und detaillierte Analyse benötigen. Anschließend können Sie Daten analysieren und Erfolgskriterien den vollständig genutzten Medien, der durchschnittlich verbrachten Zeit und an abgeschlossenen Anzeigen zuordnen.
 
 Sie können wichtige QoS-Metriken messen, wie z. B. Dropped Frames, Pufferung und durchschnittliche Bitrate. Außerdem können die Metriken mit Ihren Website- oder App-Daten kombiniert werden, um den Kundenpfad und die Kundeninteressen zu visualisieren. So können erweiterte Empfehlungen bereitgestellt und Kundenerlebnisse mithilfe der Adobe Experience Cloud personalisiert werden.
 
 ## Funktionen {#features}
 
-Zu den Vorteilen von Adobe Analytics für Streaming Media zählen Echtzeitüberwachung, detaillierte Analyse, umsetzbare Einblicke und Monetarisierungsmöglichkeiten.
+Zu den Vorteilen von Adobe Analytics für Streaming-Medien zählen Echtzeit-Monitoring, detaillierte Analyse, umsetzbare Insights und Möglichkeiten der finanziellen Verwertung.
 * **Echtzeit-Analyse**- Treffen Sie umsetzbare Entscheidungen in Echtzeit, indem Sie wichtige Leistungsmetriken wie „Dauer“, „ex2“ und „ex3“ für mehrere Kanäle verwenden. Hauptinhaltereignisse werden in zehn-Sekunden-Intervallen gemessen, um Aktivitäten zu erfassen, sobald sie auftreten. Anzeigen-Tracking-Ereignisse treten in Intervallen von einer Sekunde auf.
 * **Förderung der Interaktion** - Die Interaktion der Benutzer wird gefördert, indem die Pufferung verringert wird und ermittelt wird, wo und wann Anzeigen in Inhalten abgespielt werden sollten, um ein reibungsloses, weniger störendes Erlebnis zu bieten, das zu Wiederholungsbesuchen führt.
 * **Ganzheitliche Übersicht** - Kombinieren Sie verschiedene Datenpunkte Ihrer Inhaltsdistributoren, um eine umfassende Übersicht aller Medienaktivitäten zu erhalten. Mit Federated Analytics können Sie die Interaktion und Aufrufe auf allen Kanälen messen.
@@ -35,9 +35,9 @@ Zu den Vorteilen von Adobe Analytics für Streaming Media zählen Echtzeitüberw
 
 ## Heartbeat-Messung {#heartbeat}
 
-Adobe Analytics verwendet „Heartbeats“, um Videometriken zu erfassen. Während der Videowiedergabe werden Heartbeats an den Heartbeat-Tracking-Server gesendet, um die Wiedergabedauer zu messen. Die Heartbeat-Aufrufe werden alle zehn Sekunden gesendet. Heartbeats führen zu granularen Videointeraktionsmetriken und präziseren Video-Fallout-Berichten. Adobe Analytics for Streaming Media misst Heartbeats mit Adobe Launch mit der Media Analytics-Erweiterung, dem Media SDK und der Media Collection-API. Die Komponenten `AppMeasurement` und `VisitorID` werden zum Empfangen von Videodaten verwendet.
+Adobe Analytics verwendet „Heartbeats“, um Videometriken zu erfassen. Während der Videowiedergabe werden Heartbeats an den Heartbeat-Tracking-Server gesendet, um die Wiedergabedauer zu messen. Die Heartbeat-Aufrufe werden alle zehn Sekunden gesendet. Heartbeats führen zu granularen Videointeraktionsmetriken und präziseren Video-Fallout-Berichten. Adobe Analytics für Streaming-Medien misst Heartbeats unter Verwendung von Adobe Launch mit der Media Analytics-Erweiterung, dem Medien-SDK und der Mediensammlungs-API. Die Komponenten `AppMeasurement` und `VisitorID` werden zum Empfangen von Videodaten verwendet.
 
-Die Verwendung von Heartbeats Adobe Analytics für Streaming Media bietet folgende Vorteile:
+Die Verwendung von Heartbeats in Adobe Analytics für Streaming-Medien bietet folgende Vorteile:
 
 | Funktion | Beschreibung |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -47,7 +47,7 @@ Die Verwendung von Heartbeats Adobe Analytics für Streaming Media bietet folgen
 | Preise | Transparentes Tracking jedes Medien-Streams (einzeln) |
 | Implementierung und Support | Optimierte Konfiguration mit fortlaufenden Aktualisierungen und Verbesserungen<br>Mit einem optimierten Implementierungsprozess können Sie schnell Variablen über Ihre Player-API zuordnen und Implementierungen mit dem Adobe Debug Tool validieren, um sicherzustellen, dass alle erforderlichen Variablen präzise getrackt werden. |
 | Partnerfreigabe | Federated Analytics und Certified Metrics<br>Mit freigegebenen Daten über Federated Analytics können Sie unsere branchenführenden Medien-Sharing-Funktionen nutzen, um die Daten aller Medienverteilungspartner – Betreiber, Programmierer und Distributoren – ganzheitlich zu evaluieren. |
-| Erweitertes Tracking | Downloaded Content Tracking, Error Recovery Tracking und Concurrent Viewers<br>Sie können Streaming-Medieninhalte verfolgen, die auf ein Gerät heruntergeladen und wiedergegeben werden, unabhängig von dessen Konnektivität. |
+| Erweitertes Tracking | Tracking von heruntergeladenen Inhalten, Tracking von Fehlerbehebungen und gleichzeitigen Viewern<br>Sie können Inhalte von Streaming-Medien verfolgen, die auf ein Gerät heruntergeladen und auf ihm wiedergegeben werden – unabhängig von dessen Konnektivität. |
 
 
 
