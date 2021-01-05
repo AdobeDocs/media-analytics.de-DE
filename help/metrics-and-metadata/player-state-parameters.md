@@ -2,11 +2,11 @@
 title: Player-Statusparameter
 description: In diesem Kapitel werden Player-Status-Tracking-Parameter beschrieben.
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1cf631d7f3d5365a02be99af78655ac3b53fb3cb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2236'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ Die Funktionen für das Player-Status-Tracking können an einen Audio- oder Vide
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt  </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> Zahl </li> <li> **Gesendet mit:**<br/> Media Close </li> <li> **Min. SDK-Version:**<br/> 3.0</li> <li> **Beispielwert:**<br/> TRUE </li><li> **Beschreibung:**<br/> Die Häufigkeit, mit der verdeckte Untertitel angezeigt wurden. Diese Metrik wird auf 1 gesetzt, wenn mindestens ein Status mit verdeckten Untertiteln während einer Wiedergabesitzung aufgetreten ist. <br/> **Wichtig:**<br/> Wenn dieses Ereignis festgelegt ist, entspricht die Anzahl der Anzahl der Videowiedergaben mit verdecktem Untertitel. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe**<br/> Analytics.media.states.closedcaptioning.count<br/></li> <li> **Heartbeat:**<br/> N/A </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Name des Berichts:**<br/> Anzahl der verdeckten Untertitel </li> <li> **Kontextdaten:**<br/> a.media.states.closedcaptioning.count<br/> </li> <li> **Daten-Feed:**<br/> videostateclosedcaptioningcount </li> <li> **Audience Manager:**<br/> c_contextdata.media.states.closedcaptioning.count </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt  </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> Zahl </li> <li> **Gesendet mit:**<br/> Media Close </li> <li> **Min. SDK-Version:**<br/> 3.0</li> <li> **Beispielwert:**<br/> TRUE </li><li> **Beschreibung:**<br/> Die Häufigkeit, mit der verdeckte Untertitel angezeigt wurden. Diese Metrik wird auf 1 gesetzt, wenn mindestens ein Status mit verdeckten Untertiteln während einer Wiedergabesitzung aufgetreten ist. <br/> **Wichtig:**<br/> Wenn dieses Ereignis festgelegt ist, entspricht die Anzahl der Anzahl der Videowiedergaben mit verdecktem Untertitel. Wenn das Ereignis nicht festgelegt wurde, wird kein Wert gesendet.   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> a.media.states.closedcaptioning.count<br/></li> <li> **Heartbeat:**<br/> N/A </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Name des Berichts:**<br/> Anzahl der verdeckten Untertitel </li> <li> **Kontextdaten:**<br/> a.media.states.closedcaptioning.count<br/> </li> <li> **Daten-Feed:**<br/> videostateclosedcaptioningcount </li> <li> **Audience Manager:**<br/> c_contextdata.media.states.closedcaptioning.count </li> </ul> |
 
 
 #### Gesamtdauer der verdeckten Untertitel
