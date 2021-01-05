@@ -2,18 +2,18 @@
 title: Vorlagen für Media Workspace
 description: null
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '187'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 
 # Vorlagen für Media Workspace {#media-workspace-templates}
 
-Adobe Analytics Workspace bietet Ihnen die Möglichkeit, schnell Dashboards zur Analyse Ihrer Tracking-Daten einzurichten. Wenn Sie ein neues Projekt erstellen oder wenn Sie zur Verwaltung eines vorhandenen Projekts in Workspace einsteigen, können Sie aus Standardvorlagen wählen, die allgemeine Verfolgungsszenarien wie Akquise, Streaming-Medienkonsum usw. abdecken. Sie können auch eigene benutzerdefinierte Vorlagen erstellen, ändern und speichern.
+Adobe Analytics Workspace bietet Ihnen die Möglichkeit, schnell Dashboards zur Analyse Ihrer Tracking-Daten einzurichten. Wenn Sie ein neues Projekt erstellen oder wenn Sie in Workspace gehen, um ein bestehendes Projekt zu verwalten, können Sie aus Standardvorlagen wählen, die gängige allgemeine Tracking-Szenarios wie Akquise, Nutzung von Streaming-Medien und mehr abdecken. Sie können auch eigene benutzerdefinierte Vorlagen erstellen, ändern und speichern.
 
 Zum Erstellen oder Verwalten von Projekten verwenden Sie Vorlagen von der Workspace-Registerkarte in Adobe Analytics. Wenn Sie Workspace öffnen, werden Ihnen die Optionen zum Erstellen eines neuen Projekts oder zum Öffnen eines vorhandenen Projekts angezeigt:
 
