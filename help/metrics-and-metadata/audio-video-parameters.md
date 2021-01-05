@@ -47,7 +47,7 @@ Beschreibung der Tabellendaten:
 >Ändern Sie nicht die Classification-Namen für Variablen, die unter Berichterstellung/Reservierte Variable als „Classification“ beschrieben sind.\
 >Die Medienklassifizierungen werden definiert, wenn eine Report Suite für das Medien-Tracking aktiviert ist. Adobe fügt von Zeit zu Zeit neue Eigenschaften hinzu. In diesem Fall müssen Kunden ihre Report Suites erneut aktivieren, um Zugriff auf die neuen Medieneigenschaften zu erhalten. Während des Aktualisierungsvorgangs ermittelt Adobe anhand der Namen der Variablen, ob die Classifications aktiviert sind. Wenn eine fehlt, fügt Adobe die fehlenden erneut hinzu.
 
-## Core Streaming Media Data {#core-audio-and-video-data}
+## Kerndaten der Streaming-Medien {#core-audio-and-video-data}
 
 ### Streamtyp {#stream-type}
 
@@ -187,7 +187,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Media Close </li> <li> **Min. SDK-Version:** 1.5.7 </li> <li> **Beispielwert:**<br/> „js-2.0.1.88-c8c0b1“ </li> <li> **Beschreibung:**<br/> Die für die Tracking-Sitzung verwendete Media SDK-Version. <br/><br/>Kunden müssen eigene Verarbeitungsregeln erstellen, damit der Wert für Berichte zur Verfügung steht.  <br/><br/>[MediaHeartbeat.version();](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html) </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.<br/>vhlVersion) </li> <li> **Heartbeats:**<br/> (s:sp:hb_version) </li> </ul> | <ul> <li> **Verfügbar:**<br/> Verwenden Sie eine anwenderspezifische Verarbeitungsregel. </li> <li> **Reservierte Variable:**<br/> nicht verfügbar </li> <li> **Berichtsname:**<br/> anwenderspezifisch </li> <li> **Kontextdaten:**<br/> (a.media.vhlVersion) </li> <li> **Daten-Feed:**<br/> nicht verfügbar </li> <li> **Audience Manager:**<br/> (c_contextData)<br/>a.media.vhlVersion) </li> </ul> |
 
-## Standard Streaming Media Metadata {#standard-audio-and-video-metadata}
+## Standard-Metadaten für Streaming-Medien {#standard-audio-and-video-metadata}
 
 ### Show
 
@@ -321,7 +321,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **SDK-Schlüssel:**<br/> </li> <li> **API-Schlüssel:**<br/> media.publisher </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Media Start, Media Close </li> <li> **Min. SDK-Version:** 1.5.7 <br/>Verfügbar in [Überblick über die Mediensammlung](/help/media-collection-api/mc-api-overview.md) oder [SDKs herunterladen - Version 2.2](/help/sdk-implement/download-sdks.md).  </li> <li> **Beispielwert:**<br/> „Random Bauhaus“ </li> <li> **Beschreibung:**<br/> Name des Herausgebers des Audioinhalts.  <br/> **Releasedatum: 13.09.2018** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.publisher) </li> <li> **Heartbeats:**<br/> (s:meta:<br/>a.media.publisher) </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> eVar </li> <li> **Gültigkeit:**<br/> bei HIT </li> <li> **Berichtsname:**<br/> anwenderspezifisch </li> <li> **Kontextdaten:**<br/> (a.media.publisher) </li> <li> **Daten-Feed:**<br/> videoaudiopublisher </li> <li> **Audience Manager:**<br/> (c_contextData)<br/>a.media.publisher) </li>  </ul> |
 
-## Streaming-Media-Metriken {#audio-and-video-metrics}
+## Metriken für Streaming-Medien {#audio-and-video-metrics}
 
 ### Medienstarts
 
