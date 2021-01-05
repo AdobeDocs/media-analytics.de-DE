@@ -3,11 +3,11 @@ seo-title: Überblick
 title: Überblick
 description: null
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '331'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 92%
 
 Die Mediensammlungs-API ist die RESTful-Alternative von Adobe zum Client-seitigen Media SDK. Mit der Mediensammlungs-API kann Ihr Player Audio- und Videoereignisse mit RESTful HTTP-Aufrufen tracken.
 
-Die Mediensammlungs-API ist im Wesentlichen ein Adapter, der als Server-seitige Version des Media SDK fungiert. Das bedeutet, dass einige Aspekte der Medien-SDK-Dokumentation auch für die Mediensammlungs-API relevant sind. Beide Lösungen verwenden beispielsweise dieselben [Streaming-Media-Parameter](/help/metrics-and-metadata/audio-video-parameters.md) und die erfassten Streaming-Media-Verfolgungsdaten führen zum selben [Berichte und zur gleichen Analyse.](/help/media-reports/media-reports-enable.md)
+Die Mediensammlungs-API ist im Wesentlichen ein Adapter, der als Server-seitige Version des Media SDK fungiert. Das bedeutet, dass einige Aspekte der Medien-SDK-Dokumentation auch für die Mediensammlungs-API relevant sind. Beispielsweise verwenden beide Lösungen dieselben [Parameter für Streaming-Medien](/help/metrics-and-metadata/audio-video-parameters.md), und die erfassten Tracking-Daten für Streaming-Medien führen zum selben [Reporting und Analyse.](/help/media-reports/media-reports-enable.md)
 
 ## Datenfluss beim Medien-Tracking {#media-tracking-data-flows}
 
@@ -34,13 +34,13 @@ Die über die Mediensammlungs-API erfassten Tracking-Daten werden gesendet und z
 
 ### API-Aufrufe {#mc-api-calls}
 
-* **`sessions`-** : Stellt eine Sitzung mit dem Server her und gibt eine Sitzungs-ID zurück, die in nachfolgenden `events`-Aufrufen verwendet wird. Ihre Anwendung führt diesen Aufruf zu Beginn einer Tracking-Sitzung durch.
+* **`sessions`-** Stellt eine Sitzung mit dem Server her und gibt eine Sitzungs-ID zurück, die in nachfolgenden `events`-Aufrufen verwendet wird. Ihre Anwendung führt diesen Aufruf zu Beginn einer Tracking-Sitzung durch.
 
    ```
    {uri}/api/v1/sessions
    ```
 
-* **`events`-** : Sendet Medien-Tracking-Daten.
+* **`events`-** Sendet Medien-Tracking-Daten.
 
    ```
    {uri}/api/v1/sessions/{session-id}/events
