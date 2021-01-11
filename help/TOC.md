@@ -2,14 +2,14 @@
 audience: end-user
 user-guide-title: Adobe Analytics für Streaming Media
 breadcrumb-title: Medienanalyseleitfaden
-user-guide-description: Implementieren Sie Adobe Analytics für Streaming-Medien. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
+user-guide-description: Implementieren von Adobe Analytics für Streaming-Medien. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
 product: adobe analytics
 sub-product: Media Analytics
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82923f4ad4d6fd2394fe83850edca3ffd6a913ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '829'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 94%
 
 + [Messen von Streaming-Medien in Adobe Analytics](media-overview.md)
 + [Unterstützte Geräte und Plattformen](measurement-options/supported-devices.md)
-+ Einführung in Streaming Media Analytics {#intro-to-ava}
++ Einführung in Analytics für Streaming-Medien {#intro-to-ava}
    + [Voraussetzungen](intro-to-ava/prereqs.md)
    + Implementierungspfade {#implementation-paths}
       + [Überblick](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -45,9 +45,9 @@ ht-degree: 94%
          + [Einrichten von JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Chromecast einrichten ](sdk-implement/setup/set-up-chromecast.md)
       + [Roku einrichten ](sdk-implement/setup/set-up-roku.md)
-   + Track Streaming Media Play-back {#track-av-playback}
+   + Tracking der Wiedergabe von Streaming-Medien {#track-av-playback}
       + [Überblick](sdk-implement/track-av-playback/track-core-overview.md)
-      + Core Streaming Media Play-back{#track-core}
+      + Tracking der Core-Wiedergabe von Streaming-Medien {#track-core}
          + [Tracking von Core-Wiedergaben in Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [Tracking von Core-Wiedergaben in iOS](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + Tracking von Core-Wiedergaben in JavaScript {#track-core-javascript}
@@ -199,7 +199,7 @@ ht-degree: 94%
    + [Cookbook](media-analytics-cookbook/media-analytics-cookbook.md)
    + [Medien-Stream-Zuordnung](media-analytics-cookbook/media-dimensions.md)
 + Metriken und Metadaten {#metrics-and-metadata}
-   + [Streaming-Medienparameter](metrics-and-metadata/audio-video-parameters.md)
+   + [Parameter für Streaming-Medien](metrics-and-metadata/audio-video-parameters.md)
    + [Anzeigenparameter](metrics-and-metadata/ad-parameters.md)
    + [Kapitelparameter ](metrics-and-metadata/chapter-parameters.md)
    + [Player-Statusparameter](metrics-and-metadata/player-state-parameters.md)
@@ -212,12 +212,12 @@ ht-degree: 94%
       + [Übersicht über die Standardberichte](media-reports/media-default-reports/default-reports-overview.md)
       + [Medien-Übersicht](media-reports/media-default-reports/media-reports-overview.md)
       + [Medien-Detail](media-reports/media-default-reports/media-reports-detail.md)
-      + [Bericht &quot;Medientag&quot;](media-reports/media-default-reports/media-reports-daypart.md)
-      + [Bericht &quot;Media Concurrent Viewers&quot;](media-reports/media-default-reports/media-concurrent-viewers.md)
+      + [Bericht über Medientagesabschnitt](media-reports/media-default-reports/media-reports-daypart.md)
+      + [Bericht über gleichzeitige Medienbetrachter](media-reports/media-default-reports/media-concurrent-viewers.md)
    + Media Workspace-Bedienfelder {#media-workspace-panels}
       + [Bedienfeld „Gleichzeitige Medienbetrachter“](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [Vorlagen für Media Workspace](media-reports/media-workspace-templates.md)
-   + [Abrufen gleichzeitiger Viewer-Daten über API](media-reports/media-default-reports/get-concurrent-json20.md)
+   + [Abrufen von Daten zu gleichzeitigem Betrachten über API](media-reports/media-default-reports/get-concurrent-json20.md)
 + [Tracking heruntergeladener Inhalte](media-collection-api/track-downloaded-content.md)
 + Player-Status-Tracking {#player-state-tracking}
    + [Überblick](sdk-implement/player-state-tracking/player-state-overview.md)
