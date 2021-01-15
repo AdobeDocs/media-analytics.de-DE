@@ -2,11 +2,11 @@
 title: Einrichten von iOS
 description: Einrichten der Media SDK-Anwendung für die Implementierung in iOS.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f54733c44e96c517d0c4c624a40742b421a54325
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '748'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -60,14 +60,14 @@ ht-degree: 99%
    1. Fügen Sie die Bibliothek zu Ihrem Projekt hinzu:
 
       1. Starten Sie die XCode IDE und öffnen Sie die App.
-      1. Ziehen Sie im **[!UICONTROL Project Navigator]** (Projektnavigator) das Verzeichnis `libs` per Drag-and-drop in das Projekt.
+      1. Ziehen Sie im **[!UICONTROL Projektnavigator]** das Verzeichnis `libs` per Drag-and-drop in das Projekt.
 
-      1. Stellen Sie sicher, dass das Kontrollkästchen **[!UICONTROL Copy Items if Needed]** (Elemente bei Bedarf kopieren) aktiviert ist, die Option **[!UICONTROL Create Groups]** (Gruppen erstellen) ausgewählt wurde und keines der Kontrollkästchen in **[!UICONTROL Add to Target]** (Zu Ziel hinzufügen) aktiviert ist.
+      1. Stellen Sie sicher, dass das Kontrollkästchen **[!UICONTROL Elemente bei Bedarf kopieren]** aktiviert ist, die Option **[!UICONTROL Gruppen erstellen]** ausgewählt wurde und keines der Kontrollkästchen in **[!UICONTROL Zu Ziel hinzufügen]** aktiviert ist.
 
          ![](assets/choose-options_ios.png)
 
       1. Klicken Sie auf **[!UICONTROL Fertigstellen]**.
-      1. Wählen Sie im **[!UICONTROL Project Navigator]** Ihre App und Ziele aus.
+      1. Wählen Sie im **[!UICONTROL Projektnavigator]** Ihre App und Ziele aus.
       1. Verknüpfen Sie im Bereich **[!UICONTROL Verknüpfte Frameworks]** und **[!UICONTROL Bibliotheken]** im Tab **[!UICONTROL Allgemein]** die erforderlichen Frameworks und Bibliotheken.
 
          **iOS-App-Ziele:**
