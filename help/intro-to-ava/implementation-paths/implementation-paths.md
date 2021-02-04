@@ -1,19 +1,18 @@
 ---
-title: Implementierungspfade
-description: null
-uuid: 8400c938-e77e-4c88-b23b-5f5977a5316c
-translation-type: ht
-source-git-commit: 0bc3928b8e3076feb8e9a16e005cd0415f723408
-workflow-type: ht
-source-wordcount: '489'
-ht-degree: 100%
+title: Welche Pfade zur Implementierung von Streaming-Medien stehen zur Verfügung?
+description: Erfahren Sie mehr über Adobe Streaming Media-Implementierungspfade einschließlich Adobe Launch.
+translation-type: tm+mt
+source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 87%
 
 ---
 
 
 # Implementierungspfade {#implementation-paths}
 
-Für jeden Implementierungspfad müssen sich Kunden an ihren Kundenbetreuer/Account-Manager wenden, um einen neuen Kundenauftrag zu unterzeichnen, da Media Analytics über eine eigene SKU verfügt und sich der Preis hier nicht aus den Server-Aufrufen, sondern aus den Video-Streams ergibt.
+Für jeden Implementierungspfad müssen Kunden sich an ihren Vertriebsmitarbeiter/Kundenbetreuer wenden, um eine neue Bestellung zu unterzeichnen, da Streaming Media Analytics eine eindeutige SKU aufweist und Änderungen von einem Preismodell auf der Grundlage von Serveraufrufen zu einem auf Video-Streams basierenden Modell vorgenommen werden.
 
 * **Adobe Launch mit der Adobe Media Analytics-Erweiterung**
 
@@ -44,6 +43,7 @@ Für jeden Implementierungspfad müssen sich Kunden an ihren Kundenbetreuer/Acco
    * Unterstützung der Messung von Werbeunterbrechungen mit (oder ohne) dynamischer Ad Insertion.
    * Das nahtlose Ad-Insertion-Modell von TVSDK ermöglicht Analysen, die die Anzeigenwiedergabe direkt messen, wodurch die Genauigkeit steigt.
    * Eine große Auswahl an Ereignissen und Metadaten gewährleistet die präzise Aufzeichnung von Problemen mit der QoS-Pufferung oder der mobilen Konnektivität sowie von Endbenutzerinteraktionen auf Mobilgeräten wie dem Suchen, Anhalten und Verschieben von Apps in den Hintergrund.
+
 <!--
    * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
