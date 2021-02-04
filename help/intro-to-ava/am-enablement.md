@@ -1,9 +1,11 @@
 ---
-title: Audience Manager-Aktivierung
-description: null
-uuid: 8a7f9343-ebc3-4087-9d7e-5972640d2455
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+title: Was ist Adobe Audience Manager-Aktivierung?
+description: Erfahren Sie, wie Sie Anwendungsaktionen mit Medienverfolgungsdaten verknüpfen, ohne dass zusätzliche Verarbeitungsregeln und benutzerdefinierte Variablen erforderlich sind.
+translation-type: tm+mt
+source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 93%
 
 ---
 
@@ -109,4 +111,3 @@ Sie können diese Methoden verwenden, um Signale zu senden und Besuchersegmente 
    ```js
    ADBMobile().audienceSubmitSignal()
    ```
-
