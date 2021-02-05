@@ -1,16 +1,18 @@
 ---
-title: Primetime
-description: null
-uuid: 3d5a5ebd-b897-40f6-ba75-bba1bae3a081
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+title: Was ist Adobe Primetime?
+description: Erfahren Sie mehr über die Adobe Primetime-Lösung und wie Sie damit Streaming-Medien zu Geld machen können.
+translation-type: tm+mt
+source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
+workflow-type: tm+mt
+source-wordcount: '255'
+ht-degree: 89%
 
 ---
 
 
 # Primetime {#primetime}
 
-Bei Media Analytics (Heartbeats) handelt es sich um die standardisierte Medien-Tracking-Lösung von Adobe. Sie hat das ältere Meilensteinmodell ersetzt.
+Media Analytics (Heartbeats) ist die standardisierte Medienverfolgungslösung der Adobe, die das Meilensteinmodell der Adobe ersetzt hat.
 
 Adobe Primetime ist eine Adobe Experience Cloud-Lösung, mit der Inhaltsprogrammierer und -distributoren Medien auf allen vernetzten Geräten monetarisieren können.
 
@@ -24,7 +26,7 @@ Primetime bietet eine modulare Plattform für die Medienveröffentlichung, Werbu
 * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
 
-TVSDK ist bereits in das Medien-SDK integriert, was die Implementierung auf allen unterstützen Plattformen deutlich vereinfacht und beschleunigt. <!--Primetime also supports the partnership with Nielsen.--> Befolgen Sie zur Nutzung von Primetime die gleichen Richtlinien und Voraussetzungen wie auf der [Clientseite](/help/intro-to-ava/implementation-paths/client-side-path.md) sowie die folgenden Dokumente für Ihre Plattform(en): [Primetime-Benutzerhandbuch.](https://helpx.adobe.com/de/primetime/user-guide.html)
+TVSDK ist bereits in das Medien-SDK integriert, was die Implementierung auf allen unterstützen Plattformen deutlich vereinfacht und beschleunigt. <!--Primetime also supports the partnership with Nielsen.--> Befolgen Sie zur Nutzung von Primetime die gleichen Richtlinien und Voraussetzungen wie auf der [Clientseite](/help/intro-to-ava/implementation-paths/client-side-path.md) sowie die folgenden Dokumente für Ihre Plattform(en): [Primetime-Benutzerhandbuch.](https://helpx.adobe.com/de/support/primetime.html)
 
 >[!NOTE]
 >
