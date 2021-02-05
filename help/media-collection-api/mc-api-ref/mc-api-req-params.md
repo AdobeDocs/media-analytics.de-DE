@@ -2,8 +2,11 @@
 title: Anfrageparameter
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
+workflow-type: tm+mt
+source-wordcount: '1195'
+ht-degree: 99%
 
 ---
 
@@ -45,6 +48,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | Anforderungsschlüssel  | erforderlich | Eingerichtet auf... |  Beschreibung  |
 | --- | :---: | :---: | --- |
+| `media.streamFormat` | N | `sessionStart` | Stream-Format, z. B. &quot;HD&quot; |
 | `media.show` | N | `sessionStart` | Der Name des Programms oder der Serie |
 | `media.season` | N | `sessionStart` | Die Staffelnummer der Sendung oder Serie |
 | `media.episode` | N | `sessionStart` | Die Folge der Sendung oder Serie |
@@ -123,17 +127,17 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ### appInstallationId
 
-* **Wenn Sie den *-Wert*nicht`appInstallationId`übergeben:** Das MA-Backend generiert keine MCID mehr, sondern überlässt diese Aufgabe Adobe Analytics. Adobe empfiehlt, entweder eine MCID (sofern verfügbar) oder eine `appInstallationId` zu senden (neben der erforderlichen `marketingCloudOrgId`), damit die Mediensammlungs-API die MCID generiert und bei allen Aufrufen sendet.
+* **Wenn Sie den *-Wert*nicht`appInstallationId` übergeben:** Das MA-Backend generiert keine MCID mehr, sondern überlässt diese Aufgabe Adobe Analytics. Adobe empfiehlt, entweder eine MCID (sofern verfügbar) oder eine `appInstallationId` zu senden (neben der erforderlichen `marketingCloudOrgId`), damit die Mediensammlungs-API die MCID generiert und bei allen Aufrufen sendet.
 
-* **Wenn Sie den **-Wert`appInstallationId`übergeben:** Die MCID *kann* vom MA-Backend generiert werden, wenn Sie Werte für die Parameter `appInstallationId` und `marketingCloudOrgId` (erforderlich) übergeben. Wenn Sie `appInstallationId` nicht selbst übergeben, muss der Wert clientseitig persistent sein. Er muss außerdem eindeutig für die Anwendung auf dem Gerät sein und beibehalten werden, bis die Anwendung neu installiert wird.
+* **Wenn Sie den **-Wert `appInstallationId`übergeben:** Die MCID *kann* vom MA-Backend generiert werden, wenn Sie Werte für die Parameter `appInstallationId` und `marketingCloudOrgId` (erforderlich) übergeben. Wenn Sie `appInstallationId` nicht selbst übergeben, muss der Wert clientseitig persistent sein. Er muss außerdem eindeutig für die Anwendung auf dem Gerät sein und beibehalten werden, bis die Anwendung neu installiert wird.
 
 >[!NOTE]
 >
 >`appInstallationId` identifiziert die Anwendung *und das Gerät* eindeutig. Sie muss für jede Anwendung auf jedem Gerät eindeutig sein. Zwei Anwender, die dieselbe Version der Anwendung auf verschiedenen Geräten verwenden, müssen also eine unterschiedliche (eindeutige) `appInstallationId` senden.
 
-<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The . 
-\<ul id="ul_iwc_fqt_pbb"\> 
- \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li> 
+<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The .
+\<ul id="ul_iwc_fqt_pbb"\>
+ \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li>
 </ul> -->
 
 ### visitor.marketingCloudOrgId
@@ -152,7 +156,7 @@ Dieser Parameter ist nicht nur für die MCID-Generierung erforderlich, sondern w
    ```js
    "<<insert your ID name here>>": {  
      "id": " <<insert your id here>>",  
-      "authState": <<insert one of 0, 1, 2>> 
+      "authState": <<insert one of 0, 1, 2>>
    }
    ```
 
