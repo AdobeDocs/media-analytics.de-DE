@@ -1,11 +1,11 @@
 ---
-title: Was ist Adobe Audience Manager-Aktivierung?
-description: Erfahren Sie, wie Sie Anwendungsaktionen mit Medienverfolgungsdaten verknüpfen, ohne dass zusätzliche Verarbeitungsregeln und benutzerdefinierte Variablen erforderlich sind.
-translation-type: tm+mt
+title: Was ist die Adobe Audience Manager-Aktivierung?
+description: Erfahren Sie, wie Sie Programmaktionen mit Medien-Tracking-Daten verknüpfen können, ohne zusätzliche Verarbeitungsregeln und benutzerdefinierte Variablen zu benötigen.
+translation-type: ht
 source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '409'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
