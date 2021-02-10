@@ -1,18 +1,18 @@
 ---
-title: Wie implementiert Adobe Launch die Streaming-Medienverfolgung?
-description: Erfahren Sie mehr über die Adobe Streaming Media Launch Extension für Streaming-Medien.
-translation-type: tm+mt
+title: Wie implementiert Adobe Launch das Tracking bei Streaming-Medien?
+description: Erfahren Sie mehr über die Adobe Streaming Media Launch-Erweiterung für Streaming-Medien.
+translation-type: ht
 source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '132'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 
 # Adobe Experience Platform Launch {#adobe-launch}
 
-Bei Media Analytics (Heartbeats) handelt es sich um die standardisierte Medien-Tracking-Lösung von Adobe. Es hat das Meilensteinmodell der Adobe ersetzt.
+Bei Media Analytics (Heartbeats) handelt es sich um die standardisierte Medien-Tracking-Lösung von Adobe. Sie hat das Milestone-Modell von Adobe ersetzt.
 
 Adobe Experience Platform Launch ist das Nachfolgeprodukt von Dynamic Tag Management und verfügt über eine Launch-Erweiterung, die die Implementierung von Tracking in Ihren Playern erleichtert.
 
