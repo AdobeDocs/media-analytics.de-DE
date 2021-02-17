@@ -1,18 +1,18 @@
 ---
 title: Was ist Adobe Primetime?
-description: Erfahren Sie mehr über die Adobe Primetime-Lösung und wie Sie damit Streaming-Medien zu Geld machen können.
-translation-type: tm+mt
+description: Erfahren Sie mehr über Adobe Primetime und darüber, wie Sie damit durch das Streamen von Medien Geld machen können.
+translation-type: ht
 source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '255'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
 # Primetime {#primetime}
 
-Media Analytics (Heartbeats) ist die standardisierte Medienverfolgungslösung der Adobe, die das Meilensteinmodell der Adobe ersetzt hat.
+Media Analytics (Heartbeats) ist die standardisierte Lösung zur Medienverfolgung von Adobe, die das Meilensteinmodell von Adobe ersetzt hat.
 
 Adobe Primetime ist eine Adobe Experience Cloud-Lösung, mit der Inhaltsprogrammierer und -distributoren Medien auf allen vernetzten Geräten monetarisieren können.
 
