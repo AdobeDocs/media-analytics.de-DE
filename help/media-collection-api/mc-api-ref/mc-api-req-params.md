@@ -2,11 +2,11 @@
 title: Anfrageparameter
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1195'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 99%
 
 | Anforderungsschlüssel  | erforderlich | Eingerichtet auf... |  Beschreibung  |
 | --- | :---: | :---: | --- |
-| `media.streamFormat` | N | `sessionStart` | Stream-Format, z. B. &quot;HD&quot; |
+| `media.streamFormat` | N | `sessionStart` | Stream-Format, z. B. „HD“ |
 | `media.show` | N | `sessionStart` | Der Name des Programms oder der Serie |
 | `media.season` | N | `sessionStart` | Die Staffelnummer der Sendung oder Serie |
 | `media.episode` | N | `sessionStart` | Die Folge der Sendung oder Serie |
