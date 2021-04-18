@@ -1,12 +1,15 @@
 ---
 title: Ereignisanfrage
-description: null
+description: Ereignisanfrage
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 100%
 
 ---
-
 
 # Ereignisanfrage {#events-request}
 
@@ -48,7 +51,7 @@ Eine Liste gültiger Ereignistypen für diese Version finden Sie unter [Ereignis
 
 >[!IMPORTANT]
 >
->***Anzeigen-Tracking –** Sie können Anzeigen nur innerhalb einer`adBreak`*verfolgen.
+>***Anzeigen-Tracking –** Sie können Anzeigen nur innerhalb einer`adBreak`* verfolgen.
 >
 >Wenn Anzeigen nicht durch `adBreakStart` und `adBreakComplete` eingeschlossen sind, werden die Ereignisse `adStart` und `adComplete` einfach ignoriert und die Werbedauer wird der Dauer des Hauptinhalts angerechnet. Das kann deutliche Auswirkungen auf die aggregierten Daten haben, die in Adobe Analytics zur Verfügung stehen.
 
@@ -74,4 +77,3 @@ Access-Control-Expose-Headers Location
 | **404** | **Nicht gefunden.** <br/><br/>Die Sitzungs-ID für die Mediensitzung wurde im Backend-Service nicht gefunden. | Die Client-Anwendung sollte die [Sitzungsanfrage](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API verwenden, um eine weitere Mediensitzung und Berichte dazu zu erstellen. |
 | **410** | **Nicht mehr auffindbar.** <br/><br/>Die Mediensitzung wurde im Backend-Service gefunden, aber der Client kann einen Bericht mehr über die Aktivität bereitstellen. | Die Client-Anwendung sollte die [Sitzungsanfrage](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API verwenden, um eine weitere Mediensitzung und Berichte dazu zu erstellen. |
 | **500** | **Serverfehler** | nicht angegeben |
-
