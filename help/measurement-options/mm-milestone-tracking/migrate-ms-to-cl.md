@@ -1,15 +1,15 @@
 ---
 title: Migration von Milestone zu Custom Link
-description: null
+description: Migration von Milestone zu Custom Link
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
-translation-type: ht
-source-git-commit: e25c4d0add969ad31393f2eeb33b1a12b7205586
-workflow-type: ht
-source-wordcount: '576'
+exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '582'
 ht-degree: 100%
 
 ---
-
 
 # Migration von Milestone zu Custom Link {#migrating-from-milestone-to-custom-link}
 
@@ -42,7 +42,7 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone-Lösung u
 
 ### Optionale Variablen
 
-| Milestone | Milestone-Syntax | Benutzerspezifischer Link | Benutzerspezifischer Link Syntax |
+| Meilenstein | Milestone-Syntax | Benutzerspezifischer Link | Benutzerspezifischer Link Syntax |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | nicht angegeben | Nicht verfügbar. |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | nicht angegeben | Nicht verfügbar. |
@@ -57,7 +57,7 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone-Lösung u
 
 ### Anzeigenverfolgungsvariablen
 
-| Milestone | Milestone-Syntax | Benutzerspezifischer Link | Benutzerspezifischer Link Syntax |
+| Meilenstein | Milestone-Syntax | Benutzerspezifischer Link | Benutzerspezifischer Link Syntax |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | nicht angegeben | Nicht verfügbar. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | nicht angegeben | Nicht verfügbar. |
@@ -67,7 +67,7 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone-Lösung u
 
 ### Medienmodulmethoden
 
-| Milestone | Milestone-Syntax | Benutzerspezifischer Link | Benutzerspezifischer Link Syntax |
+| Meilenstein | Milestone-Syntax | Benutzerspezifischer Link | Benutzerspezifischer Link Syntax |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | `s.tl()` | `s.linkTrackVars` <br> `  = 'events,` <br> `     prop10,` <br> `     eVar10,` <br> `     eVar12,` <br> `     eVar15,` <br> `     contextData.video.name,` <br> `     contextData.video.view';` <br> `s.linkTrackEvents ` <br> `  = 'event2';` <br> `s.prop10` <br> `   = mediaName;` <br> `s.eVar10` <br> `  = mediaName;` <br> `s.eVar12` <br> `  = "video";` <br> `s.eVar15` <br> `  = mediaPlayerName;` <br> `s.events` <br> `  = 'event2';` <br> `s.contextData['video.name']` <br> `  = mediaName;` <br> `s.contextData['video.view']` <br> `  = 'true';` <br> `s.tl(this,'o','Video Start');` |
 | mediaName | `mediaName` (erforderlich): Der Name des Videos, wie er in Videoberichten angezeigt werden soll. | Setzen von eVar- oder Kontextdatenvariablen im Link-Aufruf. | `s.prop10 = mediaName;` <br> `s.eVar10 = mediaName;` <br> `s.contextData['video.name']` <br> `  = mediaName;` |
