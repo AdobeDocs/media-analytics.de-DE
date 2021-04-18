@@ -1,12 +1,15 @@
 ---
 title: Einstellen des HTTP-Anfragetyps in Ihrem Player
-description: null
+description: Einstellen des HTTP-Anfragetyps in Ihrem Player
 uuid: b8fa7233-e654-4acf-a9d7-14158cded13e
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: 9ab3eb07-8f0d-4f9a-8feb-db20c4de3db4
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '58'
+ht-degree: 100%
 
 ---
-
 
 # Einstellen des HTTP-Anforderungstyps {#setting-the-http-request-type}
 
@@ -15,4 +18,3 @@ Der Anfrageinhalt für alle Mediensammlungs-API-Anfragen muss im JSON-Format vor
 ```
 httpRequest.setRequestHeader('Content-Type', 'application/json'); 
 ```
-
