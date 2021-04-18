@@ -1,9 +1,12 @@
 ---
 title: JSON-Daten des Berichts „Gleichzeitige Videozuschauer“ abrufen
-description: null
+description: JSON-Daten des Berichts „Gleichzeitige Videozuschauer“ abrufen
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 translation-type: tm+mt
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 100%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 # JSON-Daten des Berichts „Gleichzeitige Besucher“ abrufen {#get-concurrent-viewers-json-report-data}
 
 Mit der _*Version 1.4*_ der Analytics APIs können Sie Berichtsdaten für gleichzeitige Betrachter abrufen:
-* [Analytics APIs](https://github.com/AdobeDocs/analytics-1.4-apis)
+* [Analytics-APIs](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
 1. Filtern Sie die Daten mit einem beliebigen Segment, das auf der Benutzeroberfläche basiert. Um nach einer bestimmten Inhalts-ID zu filtern, erstellen Sie ein neues Segment.
