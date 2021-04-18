@@ -1,16 +1,18 @@
 ---
 title: Mediendetails
-description: null
+description: Mediendetails
 uuid: 57d7f5b0-41dd-41d7-9a5a-474528839be5
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: 3c707539-95a4-4e16-97f0-f3fe0be4fe74
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '30'
+ht-degree: 100%
 
 ---
-
 
 # Mediendetails {#media-detail}
 
 Im Dashboard „Mediendetails“ werden detaillierte Metriken für alle Inhalte angezeigt, einschließlich gleichzeitiger Besucher, Inhaltsstarts, Abschlussraten, Besuchszeiten und Anzeigenstarts.
 
 ![](assets/media_detail.png)
-
