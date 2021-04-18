@@ -1,15 +1,15 @@
 ---
 title: Migration von Milestone zu Media Analytics
-description: null
+description: Migration von Milestone zu Media Analytics
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
-translation-type: ht
-source-git-commit: e079b90f8fb9197e5ebae0fb6ca31081ba28de1d
-workflow-type: ht
-source-wordcount: '669'
+exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '675'
 ht-degree: 100%
 
 ---
-
 
 # Migration von Milestone zu Media Analytics {#migrating-from-milestone-to-media-analytics}
 
@@ -43,7 +43,7 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone- und der 
 
 ### Optionale Variablen
 
-| Milestone | Milestone-Syntax | Media Analytics | Syntax von Media Analytics |
+| Meilenstein | Milestone-Syntax | Medienanalyse | Syntax von Media Analytics |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | nicht angegeben | Wir bieten keine vordefinierten Player-Zuordnungen mehr an. |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | nicht angegeben | Wir bieten keine vordefinierten Player-Zuordnungen mehr an. |
@@ -58,7 +58,7 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone- und der 
 
 ### Anzeigenverfolgungsvariablen
 
-| Milestone | Milestone-Syntax | Media Analytics | Syntax von Media Analytics |
+| Meilenstein | Milestone-Syntax | Medienanalyse | Syntax von Media Analytics |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | nicht angegeben | Media Analytics ist auf 10 Sekunden für Inhalte und 1 Sekunde für Anzeigen eingestellt. Es sind keine weiteren Optionen verfügbar. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | nicht angegeben | Fortschrittsmarkierungen werden nicht standardmäßig für Anzeigen bereitgestellt. Verwenden Sie berechnete Metriken, um Anzeigenfortschrittsmarken zu erstellen. |
@@ -68,7 +68,7 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone- und der 
 
 ### Medienmodulmethoden
 
-| Milestone | Milestone-Syntax | Media Analytics | Syntax von Media Analytics |
+| Meilenstein | Milestone-Syntax | Medienanalyse | Syntax von Media Analytics |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
 | mediaName | `mediaName` (erforderlich): Der Name des Videos, wie er in Videoberichten angezeigt werden soll. | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
@@ -89,4 +89,3 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone- und der 
 | Media.stop | `s.Media.stop(mediaName, mediaOffset)` | trackPause<br> oder <br>trackEvent | `trackPause()` <br> oder `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  SeekStart)` <br> oder <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  BufferStart);` |
 | Media.monitor | `s.Media.monitor(s, media)` | Verwenden Sie zum Festlegen zusätzlicher Variablen benutzerdefinierte oder standardmäßige Metadaten. | `var customVideoMetadata = ` <br> `{` <br> `  isUserLoggedIn: ` <br> `    "false",` <br> `  tvStation: ` <br> `    "Sample TV station",` <br> `  programmer: ` <br> `    "Sample programmer"` <br> `};` <br> `...` <br> `var standardVideoMetadata ` <br> `  = {};` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   EPISODE] = ` <br> `  "Sample Episode";` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   SHOW] = "Sample Show";` <br> `...` <br> `mediaObject.setValue(` <br> `  MediaHeartbeat.` <br> `  MediaObjectKey.` <br> `  StandardVideoMetadata, ` <br> `  standardVideoMetadata);` |
 | Media.track | `s.Media.track(mediaName)` | nicht angegeben | Die Tracking-Aufrufhäufigkeit wird automatisch festgelegt. |
-
