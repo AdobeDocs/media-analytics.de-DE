@@ -2,11 +2,14 @@
 title: Beschreibungen der Heartbeat-Parameter
 description: Eine Liste der Heartbeat-Parameter, die Adobe erfasst und auf dem Media Analytics (Heartbeat)-Server verarbeitet.
 uuid: e9ddda32-0952-43d0-a702-49f5b1bfd8cf
+exl-id: ffa67b5e-ee54-4a5b-8064-decd108f944b
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '866'
+ht-degree: 100%
 
 ---
-
 
 # Beschreibungen der Media Analytics (Heartbeat)-Parameter {#heartbeat-parameter-descriptions}
 
@@ -19,7 +22,7 @@ Liste der Media Analytics-Parameter, die Adobe erfasst und auf dem Media Analyti
 | s:event:type | Medien-SDK | (Erforderlich)<br/><br/>Der Typ des zu verfolgenden Ereignisses. Ereignistypen: <ul> <li> s:event:type=start </li> <li> s:event:type=complete </li> <li> s:event:type=chapter_start </li> <li> s:event:type=chapter_complete </li> <li> s:event:type=buffer </li> <li> s:event:type=pause </li> <li> s:event:type=resume </li> <li> s:event:type=bitrate_change </li> <li> s:event:type=aa_start </li> <li> s:event:type=stall </li> <li> s:event:type=end </li> </ul> |
 | l:event:prev_ts | Medien-SDK | (Erforderlich)<br/><br/>Der Zeitstempel des letzten Ereignisses mit demselben Typ in dieser Sitzung. Der Wert ist -1. |
 | l:event:ts | Medien-SDK | (Erforderlich)<br/><br/>Der Zeitstempel des Ereignisses. |
-| l:event:duration | Medien-SDK | (Erforderlich)<br/><br/>Der Wert wird intern (in Millisekunden) von dem Media SDK und nicht vom Player festgelegt. Er wird verwendet, um am Backend Metriken zur Besuchszeit zu berechnen. a.media.totalTimePlayed wird beispielsweise aus der Summe aller generierten Wiedergabe-Heartbeats (type=play) berechnet. <br/>*Hinweis:*Dieser Parameter ist bei bestimmten Ereignissen auf 0 gesetzt, da es sich um „Statusänderungsereignisse“ (z. B. type=complete, type=chapter_complete oder type=bitrate_change) handelt. |
+| l:event:duration | Medien-SDK | (Erforderlich)<br/><br/>Der Wert wird intern (in Millisekunden) von dem Media SDK und nicht vom Player festgelegt. Er wird verwendet, um am Backend Metriken zur Besuchszeit zu berechnen. a.media.totalTimePlayed wird beispielsweise aus der Summe aller generierten Wiedergabe-Heartbeats (type=play) berechnet. <br/>*Hinweis:* Dieser Parameter ist bei bestimmten Ereignissen auf 0 gesetzt, da es sich um „Statusänderungsereignisse“ (z. B. type=complete, type=chapter_complete oder type=bitrate_change) handelt. |
 | l:event:playhead | VideoInfo | (Erforderlich)<br/><br/>Die Abspielleiste befindet sich zum Zeitpunkt, zu dem das Ereignis aufgezeichnet wurde, im derzeit aktiven Asset (Hauptinhalt oder Anzeige). |
 | s:event:sid | Medien-SDK | (Erforderlich)<br/><br/>Die Sitzungs-ID (eine zufällig generierte Zeichenfolge). Alle Ereignisse in einer bestimmten Sitzung (Video und Anzeigen) sollten gleich sein. |
 | l:asset:duration / l:asset:length <br/>(Umbenannt von length duration) | VideoInfo | (Erforderlich)<br/><br/>Die Video-Asset-Länge des Haupt-Assets. |
@@ -78,4 +81,3 @@ Liste der Media Analytics-Parameter, die Adobe erfasst und auf dem Media Analyti
 | Name | Datenquelle | Beschreibung   |
 | ---  | --- | --- |
 | s:event:type=end | Medien-SDK | (Erforderlich)<br/><br/> Der Wert `end` `close` |
-
