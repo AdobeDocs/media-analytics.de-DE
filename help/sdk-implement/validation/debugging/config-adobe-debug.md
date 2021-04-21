@@ -2,14 +2,14 @@
 title: Adobe Debug konfigurieren
 description: Hier wird beschrieben, wie Sie Adobe Debug konfigurieren, um Fehler in Media SDK-Implementierungen beheben zu können.
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
+exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
 translation-type: ht
-source-git-commit: f0f04ffab851999becb2b7771eef36ad7477c9f3
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '653'
 ht-degree: 100%
 
 ---
-
 
 # Adobe Debug konfigurieren {#configure-adobe-debug}
 
@@ -120,4 +120,3 @@ So installieren Sie das SSL-Zertifikat auf einem Android-Gerät:
 
 1. Starten Sie auf Ihrem Laptop Ihre Adobe Debug-Sitzung.
 1. Starten Sie Tests auf Ihrem Android-Gerät.
-
