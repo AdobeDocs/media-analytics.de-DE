@@ -1,20 +1,20 @@
 ---
-title: Verfolgung der Suche mit JavaScript 3.x
+title: Tracking des Suchens mit JavaScript 3.x
 description: Hier wird die Implementierung des Suchen-Trackings mit dem Media SDK in Browser-Apps (JS) beschrieben.
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
-workflow-type: tm+mt
+exl-id: b7152436-520e-4f38-a8ad-1027ca3f1f6c
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '126'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
-
-# Verfolgung der Suche mit JavaScript 3.x{#track-seeking-on-javascript}
+# Tracking des Suchens mit JavaScript 3.x {#track-seeking-on-javascript}
 
 >[!IMPORTANT]
 >
->Mit den folgenden Anweisungen können Sie die Implementierung der 3.x-SDKs vornehmen. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>Mit den folgenden Anweisungen können Sie die Implementierung der 3.x-SDKs vornehmen. Wenn Sie vorherige Versionen des SDK implementieren möchten, können Sie hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Suchen-Tracking-Konstanten
 
