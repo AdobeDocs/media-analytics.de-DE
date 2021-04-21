@@ -1,20 +1,20 @@
 ---
-title: Kapitel und Segmente mit JavaScript 3.x verfolgen
+title: Tracking von Kapiteln und Segmenten mit JavaScript 3.x
 description: Hier wird die Implementierung des Kapitel- und Segment-Trackings mit dem Media SDK in Browser-Apps (JS) beschrieben.
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
-workflow-type: tm+mt
+exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '217'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
-
-# Kapitel und Segmente mit JavaScript 3.x verfolgen{#track-chapters-and-segments-on-javascript}
+# Tracking von Kapiteln und Segmenten mit JavaScript 3.x {#track-chapters-and-segments-on-javascript}
 
 >[!IMPORTANT]
 >
->Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung der 3.x-SDKs vornehmen. If you are implementing any previous versions of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung der 3.x-SDKs vornehmen. Wenn Sie vorherige Versionen des SDKs implementieren möchten, können Sie hier das Entwicklerhandbuch herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md).
 
 1. Ermitteln Sie, wann das Kapitel beginnt, und erstellen Sie die `ChapterObject`-Instanz mithilfe dieser Kapitelinformationen.
 
@@ -26,10 +26,10 @@ ht-degree: 71%
 
    | Variablenname | Typ | Beschreibung |
    | --- | --- | --- |
-   | `name` | string | Nicht leere Zeichenfolge mit Kapitelname. |
-   | `position` | Anzahl | Die Position des Kapitels im Inhalt, beginnend mit 1. |
+   | `name` | string | Nicht leere Zeichenfolge, die den Kapitelnamen angibt. |
+   | `position` | Anzahl | Die Positionsnummer des Kapitels innerhalb des Inhalts, beginnend bei 1. |
    | `length` | Anzahl | Positive Zahl, die die Länge des Kapitels angibt. |
-   | `startTime` | Anzahl | Abspielkopfwert am Beginn des Kapitels. |
+   | `startTime` | Anzahl | Wert des Abspielkopfs am Beginn des Kapitels. |
 
    Kapitelobjekt:
 
