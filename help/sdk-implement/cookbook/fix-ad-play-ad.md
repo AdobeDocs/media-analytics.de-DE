@@ -2,11 +2,14 @@
 title: Beheben von „main:play“ zwischen Anzeigen
 description: Vorgehensweise bei unerwarteten „main:play“-Aufrufen zwischen Anzeigen.
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
+exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '448'
+ht-degree: 100%
 
 ---
-
 
 # Beheben von „main:play“ zwischen Anzeigen {#resolving-main-play-appearing-between-ads}
 
@@ -45,7 +48,7 @@ Beseitigen Sie die Lücke innerhalb des Players, indem Sie `trackEvent:AdComplet
 
 **Bei jedem Start eines Anzeigen-Assets:**
 
-* **Rufen Sie`trackEvent(MediaHeartbeat.Event.AdComplete);`** auf
+* **Aufruf`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
    >[!NOTE]
    >
@@ -70,11 +73,10 @@ Beseitigen Sie die Lücke innerhalb des Players, indem Sie `trackEvent:AdComplet
 
 **Beim Abschluss einer Werbeunterbrechung:**
 
-* **Rufen Sie`trackEvent(MediaHeartbeat.Event.AdComplete);`** auf
+* **Aufruf`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
    >[!NOTE]
    >
    >Wenn dieser Schritt bereits weiter oben im Rahmen des letzten `trackEvent:AdComplete`-Aufrufs durchgeführt wurde, können Sie ihn hier überspringen.
 
 * Aufruf `trackEvent(MediaHeartbeat.Event.AdBreakComplete);`.
-
