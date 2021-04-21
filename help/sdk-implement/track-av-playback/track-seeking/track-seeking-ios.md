@@ -2,11 +2,14 @@
 title: Suchen-Tracking in iOS
 description: Hier wird die Implementierung des Suchen-Trackings mit dem Media SDK in iOS beschrieben.
 uuid: 1d31ae99-384f-4b4d-b557-4018db177349
+exl-id: e8cb4962-2a14-4bfe-9a25-2405e503ba0b
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '123'
+ht-degree: 100%
 
 ---
-
 
 # Suchen-Tracking in iOS {#track-seeking-on-ios}
 
