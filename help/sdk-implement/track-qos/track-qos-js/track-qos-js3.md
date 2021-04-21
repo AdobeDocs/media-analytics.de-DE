@@ -1,26 +1,26 @@
 ---
-title: Verfolgen Sie die Qualität der Erfahrung mit JavaScript 3.x.
-description: In diesem Thema wird beschrieben, wie Sie die QoE- und QoS-Verfolgung mithilfe des Media SDK in Browser-Apps mit JavaScript 3x implementieren.
-translation-type: tm+mt
-source-git-commit: fa161e2d41629fdfe77100d87d6a44728e23d77f
-workflow-type: tm+mt
+title: Tracking der Erlebnisqualität mit JavaScript 3.x
+description: Hier wird die Implementierung des Trackings der Erlebnisqualität (QoE, QoS) mit dem Medien-SDK in Browser-Programmen mit JavaScript 3x erläutert.
+exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '223'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
-
-# Verfolgen Sie die Qualität der Erfahrung mit JavaScript 3.x.{#track-quality-of-experience-on-javascript}
+# Tracking der Erlebnisqualität mit JavaScript 3.x {#track-quality-of-experience-on-javascript}
 
 >[!IMPORTANT]
 >
->Mit den folgenden Anweisungen können Sie die Implementierung der 3.x-SDKs vornehmen. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>Mit den folgenden Anweisungen können Sie die Implementierung der 3.x-SDKs vornehmen. Wenn Sie vorherige Versionen des SDK implementieren möchten, können Sie hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Implementieren von QOE
 
-1. Identify when the bitrate changes during media playback and create the `qoeObject` instance using the QoE information.
+1. Ermitteln Sie, wann sich die Bit-Rate während der Medienwiedergabe ändert, und erstellen Sie die `qoeObject`-Instanz mithilfe der QoE-Informationen.
 
-   Objektvariablen:
+   QoEObject-Variablen:
 
    >[!TIP]
    >
@@ -59,9 +59,9 @@ ht-degree: 49%
 
    >[!IMPORTANT]
    >
-   >Aktualisieren Sie das QoE-Objekt und rufen Sie bei jeder Bitratenänderung das Bitratenänderungs-Ereignis auf. Dadurch werden die genauesten QoE-Daten bereitgestellt.
+   >Aktualisieren Sie das QoE-Objekt und rufen Sie bei jeder Bit-Ratenänderung das Ereignis zur Bit-Ratenänderung auf. So erhalten Sie die genauesten QoE-Daten.
 
-1. Achten Sie darauf, die `updateQoEObject()` Methode aufzurufen, um die aktuellsten Servicequalitätsinformationen für das SDK bereitzustellen.
+1. Rufen Sie unbedingt die Methode `updateQoEObject()` auf, um die aktuellsten QoE-Informationen für das SDK bereitzustellen.
 1. Wenn im Medienplayer ein Fehler auftritt und das Fehlerereignis der Player-API zur Verfügung steht, verwenden Sie `trackError()`, um die Fehlerinformationen zu erfassen. (Siehe [Übersicht](/help/sdk-implement/track-errors/track-errors-overview.md).)
 
    >[!TIP]
