@@ -2,11 +2,14 @@
 title: 'Test 1: Standardwiedergabe'
 description: Hier wird der Standardwiedergabetest beschrieben, der bei der Validierung verwendet wird.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
+exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 translation-type: ht
-source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '839'
+ht-degree: 100%
 
 ---
-
 
 # Test 1: Standardwiedergabe {#test-standard-playback}
 
@@ -32,6 +35,7 @@ Führen Sie die folgenden Aktionen aus und zeichnen Sie sie auf (in der angegebe
    * **Adobe Analytics (AppMeasurement)-Server:** Ein RDC-Tracking-Server bzw. ein CNAME, der aufgelöst auf einen RDC-Tracking-Server verweist, ist für den Experience Cloud-Besucher-ID-Dienst erforderlich. Der Adobe Analytics-Tracking-Server sollte mit „`.sc.omtrdc.net`“ enden oder ein CNAME sein.
 
    * **Media Analytics (Heartbeats)-Server:** Dieser Server hat immer das Format „`[namespace].hb.omtrdc.net`“, wobei `[namespace]` Ihren Unternehmensnamen angibt. Dieser Name wird von Adobe bereitgestellt.
+
    Sie müssen bestimmte Schlüsselvariablen validieren, die für alle Tracking-Aufrufe universell sind:
 
    **Adobe-Besucher-ID (`mid`):** Die `mid`-Variable wird verwendet, um den im AMCV-Cookie eingestellten Wert zu erfassen. Die `mid`-Variable ist der primäre Identifikationswert für sowohl Websites als auch mobile Apps und zeigt außerdem an, dass der Experience Cloud-Besucher-ID-Dienst ordnungsgemäß eingerichtet ist. Sie finden sie sowohl in Adobe Analytics (AppMeasurement)- als auch in Media Analytics (Heartbeats)-Aufrufen.
@@ -81,6 +85,7 @@ Führen Sie die folgenden Aktionen aus und zeichnen Sie sie auf (in der angegebe
    1. Adobe Analytics-Server – Start-Aufruf
    1. Media Analytics-Server – Start-Aufruf
    1. Media Analytics-Server – „Start-Aufruf für Adobe Analytics angefordert“
+
    Die ersten beiden Aufrufe oben enthalten zusätzliche Metadaten und Variablen. Informationen zu Aufrufparametern und Metadaten finden Sie unter [Details zum Testaufruf.](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
 
    Der dritte Aufruf oben teilt dem Media Analytics-Server mit, dass das Media SDK angefordert hat, den Start-Aufruf für Adobe Analytics (`pev2=ms_s`) an den Adobe Analytics-Server zu senden.
@@ -88,11 +93,13 @@ Führen Sie die folgenden Aktionen aus und zeichnen Sie sie auf (in der angegebe
 1. **Werbeunterbrechung anzeigen (sofern verfügbar)**
 
    * **Ad Start**
+
    Wenn die Werbeanzeige startet, werden die folgenden Schlüsselaufrufe in folgender Reihenfolge gesendet:
 
    1. Adobe Analytics-Server – Anzeigenstart-Aufruf
    1. Media Analytics-Server – Anzeigenstart-Aufruf
    1. Media Analytics-Server – „Anzeigenstart-Aufruf für Adobe Analytics angefordert“
+
    Die ersten beiden Aufrufe enthalten zusätzliche Metadaten und Variablen. Informationen zu Aufrufparametern und Metadaten finden Sie unter [Details zum Testaufruf](/help/sdk-implement/validation/test-call-details.md#view-ad-playback).
 
    Der dritte Aufruf teilt dem Media Analytics-Server mit, dass das Media SDK angefordert hat, den Start-Aufruf für Adobe Analytics (`pev2=msa_s`) an den Adobe Analytics-Server zu senden.
