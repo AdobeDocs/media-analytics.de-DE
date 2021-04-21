@@ -1,18 +1,18 @@
 ---
 title: Welche Wege stehen zur Implementierung von Streaming-Medien zur Verfügung?
 description: Erfahren Sie mehr über Wege zur Implementierung von Streaming-Medien bei Adobe einschließlich Adobe Launch.
+exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 translation-type: ht
-source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '505'
 ht-degree: 100%
 
 ---
 
-
 # Implementierungspfade {#implementation-paths}
 
-Für jeden Implementierungspfad müssen sich Kunden an ihren Kundenbetreuer/Konto-Manager wenden, um einen neuen Kundenauftrag zu unterzeichnen, da Streaming Media Analytics über eine eigene SKU verfügt und sich der Preis hier nicht aus den Server-Aufrufen, sondern aus den Video-Streams ergibt.
+Für jeden Implementierungspfad müssen sich Kunden an ihren Kundenbetreuer/Konto-Manager wenden, um einen neuen Kundenauftrag zu unterzeichnen, da Streaming Media Analytics über eine eindeutige SKU verfügt und sich der Preis hier nicht aus den Server-Aufrufen, sondern aus den Video-Streams ergibt.
 
 * **Adobe Launch mit der Adobe Media Analytics-Erweiterung**
 
