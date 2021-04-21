@@ -2,11 +2,14 @@
 title: Tracking von Core-Wiedergaben auf Android
 description: Hier wird die Implementierung des Core-Trackings mit dem Media SDK in Android beschrieben.
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
+exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '707'
+ht-degree: 100%
 
 ---
-
 
 # Tracking von Core-Wiedergaben auf Android {#track-core-playback-on-android}
 
@@ -150,10 +153,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    Identifizieren Sie alle Szenarios, in denen der Videoplayer angehalten wird, und stellen Sie sicher, dass `trackPause` korrekt aufgerufen wird. In allen folgenden Szenarios muss Ihre App `trackPause()` () aufrufen:
 
-   * Der Anwender betätigt in der App die Pause-Schaltfläche.
-   * Der Player geht selbstständig in den Pausenstatus über.
-   * (*Mobile Apps*): Der Anwender setzt die App in den Hintergrund, Sie möchten die Sitzung jedoch geöffnet halten.
-   * (*Mobile Apps*): Es tritt eine Systemunterbrechung auf, die dafür sorgt, dass die Anwendung im Hintergrund ausgeführt wird. Wenn der Anwender beispielsweise einen Anruf erhält oder eine Popup-Nachricht einer anderen App angezeigt wird, die Anwendung die Sitzung jedoch aktiv halten soll, damit der Anwender das Medium fortsetzen kann.
+   * Der Benutzer drückt in der App die Pausetaste.
+   * Die Wiedergabe wird vom Player selbst pausiert.
+   * (*Mobile Apps*) - Der Benutzer bewegt die App in den Hintergrund, aber Sie möchten, dass die Sitzung der App geöffnet bleibt.
+   * (*Mobile Apps*) - Eine beliebige Systemunterbrechung tritt ein, die dazu führt, dass eine App im Hintergrund ausgeführt wird. Beispielsweise erhält der Benutzer einen Anruf oder ein Pop-up aus einer anderen App, aber Sie möchten, dass die App-Sitzung fortgeführt wird, damit der Benutzer die Medien ab dem Zeitpunkt der Unterbrechung wieder fortsetzen kann.
 
 1. Identifizieren Sie das Ereignis aus dem Player bei wiedergegebenen und/oder nach einer Pause wiederaufgenommenen Medien und rufen Sie `trackPlay` auf.
 
@@ -170,6 +173,5 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 Im Folgenden finden Sie weitere Informationen zum Tracking der Core-Wiedergabe:
 
-* Tracking-Szenarios: [VOD-Wiedergabe ohne Werbung](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Tracking-Szenarien: [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Der im Android-SDK enthaltene Beispiel-Player zeigt ein komplettes Tracking-Beispiel.
-
