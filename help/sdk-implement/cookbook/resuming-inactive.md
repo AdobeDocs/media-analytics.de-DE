@@ -2,11 +2,14 @@
 title: Wiederaufnehmen von inaktiven Sitzungen
 description: Vorgehensweise zum Wiederaufnehmen einer inaktiven Sitzung.
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
+exl-id: ee4cf7f5-5788-4d35-a04d-4ed714ccd663
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '157'
+ht-degree: 100%
 
 ---
-
 
 # Wiederaufnahme von inaktiven Sitzungen {#resuming-inactive-sessions}
 
@@ -16,7 +19,7 @@ Die Media SDK verfolgt automatisch, wie lange die Medienwiedergabe einen der fol
 
 * angehalten
 * Suche
-* Unterbrochen
+* Angehalten
 * Puffern
 
 Wenn eine Medien-Tracking-Sitzung länger als 30 Minuten inaktiv ist, wird die Sitzung automatisch geschlossen. Wenn der Anwender eine zuvor inaktive Tracking-Sitzung wiederaufnimmt (`trackPlay`), erstellt Media Heartbeat automatisch eine neue Videositzung mit den zuvor verwendeten Videoinformationen und Metadaten und sendet ein Heartbeat-Ereignis zur Wiederaufnahme. Weitere Informationen finden Sie unter [Audio- und Videoparameter.](/help/metrics-and-metadata/audio-video-parameters.md)
@@ -86,4 +89,3 @@ _onmediaLoad = function () {
   this._mediaHeartbeat.trackSessionStart(mediaObject, contextData); 
 };
 ```
-
