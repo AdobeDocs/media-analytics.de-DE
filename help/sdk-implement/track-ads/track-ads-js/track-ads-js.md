@@ -1,17 +1,17 @@
 ---
-title: Anzeigen mit JavaScript 2.x verfolgen
+title: Tracking von Anzeigen mit JavaScript 2.x
 description: Implementieren des Anzeigen-Trackings in Browser-Anwendungen (JS) mit dem Media SDK.
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
-translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
-workflow-type: tm+mt
+exl-id: 4404d3a6-ab98-40f0-9573-ee32f480f650
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '352'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-
-# Anzeigen mit JavaScript 2.x verfolgen{#track-ads-on-javascript}
+# Tracking von Anzeigen mit JavaScript 2.x {#track-ads-on-javascript}
 
 >[!IMPORTANT]
 >
