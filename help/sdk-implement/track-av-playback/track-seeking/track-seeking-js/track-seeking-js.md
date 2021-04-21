@@ -1,17 +1,17 @@
 ---
-title: Verfolgung der Suche mit JavaScript 2.x
+title: Tracking des Suchens mit JavaScript 2.x
 description: Hier wird die Implementierung des Suchen-Trackings mit dem Media SDK in Browser-Apps (JS) beschrieben.
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
-workflow-type: tm+mt
+exl-id: 90f35376-24d8-405d-82b4-d6b737acf7b9
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '127'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-
-# Verfolgung der Suche mit JavaScript 2.x{#track-seeking-on-javascript}
+# Tracking des Suchens mit JavaScript 2.x {#track-seeking-on-javascript}
 
 >[!IMPORTANT]
 >
