@@ -2,14 +2,14 @@
 title: 'Zeitlicher Ablauf 3: Kapitel'
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
+exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
 translation-type: ht
-source-git-commit: 197041df4c985cdc572564652a976bd733448787
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '1219'
 ht-degree: 100%
 
 ---
-
 
 # Zeitlicher Ablauf 3: Kapitel {#timeline-3-chapters}
 
@@ -381,7 +381,7 @@ Verfolgen Sie den Wechsel des zum Status „Buffering“ (Puffern).
 
 **Implementierungsdetails**
 
-Puffern endet nach 3 Sekunden, sodass der Player wieder zum Status „Playing“ (Wiedergabe) wechselt. Sie müssen am Ende des Puffervorgangs ein weiteres Ereignis zum Verfolgen der Wiedergabe senden.  **Der`play`-Aufruf nach einem`bufferStart`stellt für das Backend einen „bufferEnd“-Aufruf dar**. Ein `bufferEnd`-Ereignis ist also nicht erforderlich.
+Puffern endet nach 3 Sekunden, sodass der Player wieder zum Status „Playing“ (Wiedergabe) wechselt. Sie müssen am Ende des Puffervorgangs ein weiteres Ereignis zum Verfolgen der Wiedergabe senden.  **Der `play`-Aufruf nach einem `bufferStart` stellt für das Backend einen „bufferEnd“-Aufruf dar**. Ein `bufferEnd`-Ereignis ist also nicht erforderlich.
 
 **Beispiel-Anfrageinhalt**
 
@@ -664,7 +664,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend. Der Player befindet
 
 **Implementierungsdetails**
 
-Ändern Sie den Wiedergabestatus zu „playing“ (Wiedergabe).  **Der`play`-Aufruf nach einem`pauseStart`stellt für das Backend einen „“-Aufruf dar**. Ein `resume`resume-Ereignis ist also nicht erforderlich.
+Ändern Sie den Wiedergabestatus zu „playing“ (Wiedergabe).  **Der `play`-Aufruf nach einem `pauseStart` stellt für das Backend einen „“-Aufruf dar**. Ein `resume`resume-Ereignis ist also nicht erforderlich.
 
 **Beispiel-Anfrageinhalt**
 
