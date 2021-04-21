@@ -2,14 +2,14 @@
 title: Audio- und Videoparameter
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
+exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 translation-type: ht
-source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '6243'
 ht-degree: 100%
 
 ---
-
 
 # Audio- und Videoparameter {#audio-and-video-parameters}
 
@@ -357,7 +357,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Typ:**<br/> Zahl </li> <li> **Gesendet mit:**<br/> Media Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> **Beispielwert:**<br/> 94 </li> <li> **Beschreibung:**<br/> Der Wert in Sekunden für die einzelnen Segmente des Inhalts, die während einer Sitzung abgespielt werden. Ausgenommen sind Szenarios mit Suchvorgängen, in denen ein Betrachter das gleiche Segment des Inhalts mehrmals betrachtet.  Der Wert wird im Zeitformat (HH:MM:SS) im Analysis Workspace und in Reports &amp; Analytics angezeigt. In Daten-Feeds, Data Warehouse und Reporting APIs werden die Werte in Sekundenschnelle angezeigt.  <br/> **Releasedatum: 13.09.2018** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> nicht verfügbar </li> <li> **Heartbeats:**<br/> nicht verfügbar </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtsname:**<br/> Einmalige Wiedergabedauer </li> <li> **Kontextdaten:**<br/> (a.media.uniqueTimePlayed) </li> <li> **Daten-Feed:**<br/> nicht verfügbar </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.uniqueTimePlayed) </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Typ:**<br/> Zahl </li> <li> **Gesendet mit:**<br/> Media Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> **Beispielwert:**<br/> 94 </li> <li> **Beschreibung:**<br/> Der Wert in Sekunden für die eindeutigen Segmente des Inhalts, die während einer Sitzung abgespielt werden. Ausgenommen sind Szenarios mit Suchvorgängen, in denen ein Betrachter das gleiche Segment des Inhalts mehrmals betrachtet.  Der Wert wird im Zeitformat (HH:MM:SS) im Analysis Workspace und in Reports &amp; Analytics angezeigt. In Daten-Feeds, Data Warehouse und Reporting APIs werden die Werte in Sekundenschnelle angezeigt.  <br/> **Releasedatum: 13.09.2018** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> nicht verfügbar </li> <li> **Heartbeats:**<br/> nicht verfügbar </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtsname:**<br/> Einmalige Wiedergabedauer </li> <li> **Kontextdaten:**<br/> (a.media.uniqueTimePlayed) </li> <li> **Daten-Feed:**<br/> nicht verfügbar </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.uniqueTimePlayed) </li> </ul> |
 
 ### 10 %-Fortschrittsmarkierung
 
