@@ -2,14 +2,14 @@
 title: SDKs herunterladen
 description: Links zu SDK-Downloads für die verfügbaren Plattformen, einschließlich Android, iOS, JavaScript, Chromecast und Roku.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
+exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 translation-type: ht
-source-git-commit: cd3efa68ba0903bc9a616ac41dd5b20346c66870
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '517'
 ht-degree: 100%
 
 ---
-
 
 # SDKs herunterladen {#download-sdks}
 
