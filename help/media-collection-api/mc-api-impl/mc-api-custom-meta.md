@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Unterstützung benutzerspezifischer Metadaten {#custom-metadata-support}
 
-Sie können benutzerdefinierte Schlüssel-Wert-Paare in den Ereignissen `sessionStart``chapterStart` und `adStart` festlegen. Diese Informationen müssen im JSON-Schlüssel `customMetadata` neben dem `params`-Schlüssel bereitgestellt werden.
+Sie können benutzerdefinierte Schlüssel-Wert-Paare in den Ereignissen `sessionStart`, `chapterStart` und `adStart` festlegen. Diese Informationen müssen im JSON-Schlüssel `customMetadata` neben dem `params`-Schlüssel bereitgestellt werden.
 
 Der JSON-Schlüssel `customMetadata` sollte ein Objekt von Schlüssel-Wert-Paaren enthalten. Der Schlüssel darf nur alphanumerische Zeichen, Unterstriche und Punkte enthalten.
 
