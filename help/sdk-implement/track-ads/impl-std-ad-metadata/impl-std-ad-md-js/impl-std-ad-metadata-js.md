@@ -1,17 +1,17 @@
 ---
-title: Implementieren von Standard-Anzeigenmetadaten mit JavaScript 2.x
-description: Verwendung von Standard-Anzeigenmetadaten bei der Anzeigenverfolgung in einem Browser mit JavaScript 2.x-Apps.
+title: Implementieren von Standard-Anzeigenmetadaten mit JavaScript 2.x
+description: So verwenden Sie Standard-Anzeigenmetadaten beim Tracking von Anzeigen in einem Browser mit JavaScript 2.x-Programmen.
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
-workflow-type: tm+mt
+exl-id: b331db87-ab4e-44fa-a97c-9691974cacd4
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '68'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
-
-# Implementieren von Standard-Anzeigenmetadaten mit JavaScript 2.x{#implement-standard-ad-metadata-on-javascript}
+# Implementieren von Standard-Anzeigenmetadaten mit JavaScript 2.x {#implement-standard-ad-metadata-on-javascript}
 
 ## Anzeigenkonstanten
 
