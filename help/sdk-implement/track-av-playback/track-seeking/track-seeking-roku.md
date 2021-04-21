@@ -2,11 +2,14 @@
 title: Suchen-Tracking in Roku
 description: Hier wird die Implementierung des Suchen-Trackings mit dem Media SDK in Roku beschrieben.
 uuid: 0572252b-397f-4aa2-b4b5-c5346b75244a
+exl-id: cb0581f7-3ced-4d46-ac6a-a309a179c21e
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '123'
+ht-degree: 100%
 
 ---
-
 
 # Suchen-Tracking in Roku {#track-seeking-on-roku}
 
