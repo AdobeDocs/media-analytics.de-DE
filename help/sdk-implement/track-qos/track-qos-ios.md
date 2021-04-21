@@ -2,11 +2,14 @@
 title: Tracking der Erlebnisqualität auf iOS
 description: Hier wird die Implementierung des Trackings der Erlebnisqualität (QoE, QoS) mit dem Media SDK in iOS beschrieben.
 uuid: cae2c142-ed39-4234-a711-765dcabc5415
+exl-id: 7f01e6eb-95bd-4e3d-93d0-8a2e68323313
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '154'
+ht-degree: 100%
 
 ---
-
 
 # Tracking der Erlebnisqualität auf iOS {#track-quality-of-experience-on-ios}
 
@@ -54,4 +57,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >[!IMPORTANT]
    >
    >Aktualisieren Sie das QoS-Objekt und rufen Sie das Ereignis zur Bitratenänderung bei jeder Bitratenänderung auf. So erhalten Sie möglichst präzise Daten.
-
