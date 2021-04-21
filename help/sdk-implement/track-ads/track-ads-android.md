@@ -2,11 +2,14 @@
 title: Tracking von Anzeigen in Android
 description: Implementieren des Anzeigen-Trackings in Android-Anwendungen mit dem Media SDK.
 uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
+exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '352'
+ht-degree: 100%
 
 ---
-
 
 # Tracking von Anzeigen in Android {#track-ads-on-android}
 
