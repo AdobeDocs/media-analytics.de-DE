@@ -1,16 +1,16 @@
 ---
 title: Implementieren von Standard-Metadaten mit JavaScript 3.x
 description: Beschreibt das Festlegen von Standard-Video- und Anzeigenmetadaten, die mit Tracking-Aufrufen in Browser-Anwendungen (JS) gesendet werden.
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
-workflow-type: tm+mt
+exl-id: 228ba000-10e2-4906-8417-265a03367a9b
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '43'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
-
-# Implementieren von Standard-Metadaten mit JavaScript 3.x{#implement-standard-metadata-on-javascript}
+# Implementieren von Standard-Metadaten mit JavaScript 3.x {#implement-standard-metadata-on-javascript}
 
 ## Implementierung
 
