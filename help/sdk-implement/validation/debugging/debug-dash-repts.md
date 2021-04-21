@@ -2,11 +2,14 @@
 title: Debug-Dashboard und -Berichte
 description: Hier werden die Adobe-Debug-Dashboards beschrieben.
 uuid: 8e6f6245-d8bd-4329-89e1-4c5595e04ec5
+exl-id: fc5590a5-4d0e-4a2d-8f40-54c53eabc6f0
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '83'
+ht-degree: 100%
 
 ---
-
 
 # Debug-Dashboard und -Berichte {#debug-dashboards-and-reports}
 
@@ -19,4 +22,3 @@ Für die Zertifizierung können Sie diese Berichte weitergeben, indem Sie einfac
 >Es kann immer nur eine Sitzung aktiv sein. Die aktive Sitzung kann über das Dashboard geöffnet werden.
 
 ![](assets/debug-dashboard.png)
-
