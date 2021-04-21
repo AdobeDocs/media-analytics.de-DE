@@ -2,11 +2,14 @@
 title: Überblick
 description: Fehler-Tracking mit dem Media SDK.
 uuid: d71429e6-ef8b-4ea2-8491-ff3cdbf4357f
+exl-id: 61c5f835-d66c-4621-a0af-2e4f47a922ac
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '88'
+ht-degree: 100%
 
 ---
-
 
 # Überblick {#overview}
 
@@ -23,4 +26,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 >[!NOTE]
 >
 >Das Tracking von Fehlern im Medienplayer beendet die Medien-Tracking-Sitzung nicht. Wenn der Medienplayer-Fehler verhindert, dass die Wiedergabe fortgesetzt wird, müssen Sie sicherstellen, dass die Medien-Tracking-Sitzung geschlossen wird. Rufen Sie dazu `trackSessionEnd` nach `trackError` auf.
-
