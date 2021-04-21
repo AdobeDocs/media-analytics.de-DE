@@ -2,11 +2,14 @@
 title: iOS-Metadatenelemente
 description: Hier werden die verfügbaren iOS-Metadatenschlüssel beschrieben.
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
+exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '115'
+ht-degree: 100%
 
 ---
-
 
 # iOS-Metadataschlüssel {#ios-metadata-keys}
 
@@ -31,7 +34,7 @@ Von `ADBStandardMetadataKeys.h`:
 | `ADBVideoMetadataKeySHOW_TYPE` | Serientyp | Video |
 | `ADBVideoMetadataKeyAD_LOAD` | Anzeigenladevorgang | Video |
 | `ADBVideoMetadataKeyMVPD` | mvpd | Video |
-| `ADBVideoMetadataKeyAUTHORIZED` | Genehmigung | Video |
+| `ADBVideoMetadataKeyAUTHORIZED` | Authorization | Video |
 | `ADBVideoMetadataKeyDAY_PART` | Tagesteil | Video |
 | `ADBVideoMetadataKeyFEED` | Feed | Video |
 | `ADBVideoMetadataKeySTREAM_FORMAT` | Stream-Format | Video |
@@ -51,10 +54,9 @@ Von `ADBStandardMetadataKeys.h`:
 
 | Konstantenname | Beschreibung | Typ |
 |---|---|---|
-| `ADBAdMetadataKeyADVERTISER` | Advertiser | Werbung |
-| `ADBAdMetadataKeyCAMPAIGN_ID` | Kampagnen-ID | Werbung |
-| `ADBAdMetadataKeyCREATIVE_ID` | Creative-ID | Werbung |
-| `ADBAdMetadataKeyPLACEMENT_ID` | Platzierungs-ID | Werbung |
-| `ADBAdMetadataKeySITE_ID` | Site-ID | Werbung |
-| `ADBAdMetadataKeyCREATIVE_URL` | Creative-URL | Werbung |
-
+| `ADBAdMetadataKeyADVERTISER` | Advertiser | Anzeige |
+| `ADBAdMetadataKeyCAMPAIGN_ID` | Kampagnen-ID | Anzeige |
+| `ADBAdMetadataKeyCREATIVE_ID` | Creative-ID | Anzeige |
+| `ADBAdMetadataKeyPLACEMENT_ID` | Platzierungs-ID | Anzeige |
+| `ADBAdMetadataKeySITE_ID` | Site-ID | Anzeige |
+| `ADBAdMetadataKeyCREATIVE_URL` | Creative-URL | Anzeige |
