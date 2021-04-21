@@ -2,11 +2,14 @@
 title: 'Test 2: Medienunterbrechung'
 description: Hier wird der Medienunterbrechnungstest beschrieben, der bei der Validierung verwendet wird.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
-translation-type: tm+mt
-source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
+exl-id: 3f22ce2d-4385-4a3b-8d1f-52e25a9b1101
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '244'
+ht-degree: 100%
 
 ---
-
 
 # Test 2: Medienunterbrechung {#test-media-interruption}
 
@@ -23,6 +26,7 @@ Sie müssen diese Aufgaben in folgender Reihenfolge abschließen und aufzeichnen
    1. Start für Adobe Analytics (AppMeasurement)
    1. Start für Media Analytics (Heartbeats)
    1. Start-Aufruf für Adobe Analytics in Media Analytics (Heartbeats) angefordert
+
    Die ersten beiden Aufrufe oben enthalten zusätzliche Metadaten und Variablen. Informationen zu Aufrufparametern und Metadaten finden Sie unter [Details zum Testaufruf.](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
 
    Der dritte Aufruf oben teilt dem Media Analytics-Server mit, dass das Media SDK angefordert hat, den Start-Aufruf für Adobe Analytics (`pev2=ms_s`) an den Adobe Analytics-Server zu senden.
