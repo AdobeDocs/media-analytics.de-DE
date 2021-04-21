@@ -2,11 +2,14 @@
 title: Roku-Metadatenelemente
 description: Hier werden die verfügbaren Roku-Metadatenschlüssel beschrieben.
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
+exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '461'
+ht-degree: 100%
 
 ---
-
 
 # Roku-Metadatenschlüssel {#roku-metadata-keys}
 
@@ -99,4 +102,3 @@ Sie können folgende Konstanten verwenden, um Medienereignisse zu verfolgen:
 | `MEDIA_AD_START` | Ereignistyp für den Start einer Anzeige |
 | `MEDIA_AD_COMPLETE` | Ereignistyp für den Abschluss einer Anzeige |
 | `MEDIA_AD_SKIP` | Ereignistyp für das Überspringen einer Anzeige |
-
