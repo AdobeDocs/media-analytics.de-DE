@@ -2,14 +2,14 @@
 title: Android einrichten
 description: Einrichten der Media SDK-Anwendung für die Implementierung in Android.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
+exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 translation-type: ht
-source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '427'
 ht-degree: 100%
 
 ---
-
 
 # Android einrichten {#set-up-android}
 
@@ -47,6 +47,7 @@ ht-degree: 100%
 
       1. Wählen Sie die Module aus, in denen Sie die Mobile-Bibliothek verwenden möchten.
       1. Klicken Sie auf **[!UICONTROL Anwenden]** und dann auf **[!UICONTROL OK]**, um das Moduleinstellungsfenster zu schließen.
+
       **Eclipse:**
 
       1. Klicken Sie in der Eclipse IDE mit der rechten Maustaste auf den Projektnamen.
