@@ -1,14 +1,14 @@
 ---
 title: Was ist Media Stream Attribution?
 description: Erfahren Sie, wie Sie Programmaktionen mit Medien-Tracking-Daten verknüpfen können, ohne zusätzliche Verarbeitungsregeln und benutzerdefinierte Variablen zu benötigen.
+exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
 translation-type: ht
-source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '231'
 ht-degree: 100%
 
 ---
-
 
 # Medien-Stream-Zuordnung
 
