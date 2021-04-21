@@ -1,20 +1,20 @@
 ---
-title: Anzeigen mit JavaScript 3.x verfolgen
+title: Tracking von Anzeigen mit JavaScript 3.x
 description: Implementieren des Anzeigen-Trackings in Browser-Anwendungen (JS) mit dem Media SDK.
-translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
-workflow-type: tm+mt
+exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '359'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
-
-# Anzeigen mit JavaScript 3.x verfolgen{#track-ads-on-javascript}
+# Tracking von Anzeigen mit JavaScript 3.x {#track-ads-on-javascript}
 
 >[!IMPORTANT]
 >
->Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung der 3.x-SDKs vornehmen. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung der 3.x-SDKs vornehmen. Wenn Sie vorherige Versionen des SDK implementieren möchten, können Sie hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Anzeigen-Tracking-Konstanten
 
@@ -34,7 +34,7 @@ ht-degree: 80%
 
    | Variablenname | Typ | Beschreibung |
    | --- | --- | --- |
-   | `name` | string | Nicht leere Zeichenfolge, die den Namen des Umbruchs angibt (Pre-Roll, Mid-Roll und Post-Roll). |
+   | `name` | string | Nicht leere Zeichenfolge, die den Namen der Werbeunterbrechung angibt (Pre-Roll, Mid-Roll und Post-Roll). |
    | `position` | Anzahl | Positionsnummer der Werbeunterbrechung, beginnend bei 1. |
    | `startTime` | Anzahl | Abspielpositionswert bei Start der Werbeunterbrechung. |
 
@@ -61,7 +61,7 @@ ht-degree: 80%
    | --- | --- | --- |
    | `name` | string | Nicht leere Zeichenfolge, die den Anzeigennamen angibt. |
    | `adId` | string | Nicht leere Zeichenfolge mit Anzeigenkennung. |
-   | `position` | Anzahl | Die Zahlenposition der Anzeige innerhalb der Werbeunterbrechung, beginnend mit 1. |
+   | `position` | Anzahl | Positionsnummer der Anzeige in der Werbeunterbrechung, beginnend bei 1. |
    | `length` | Anzahl | Positive Zahl, die die Länge der Anzeige angibt. |
 
    Erstellung von Anzeigenobjekten:
