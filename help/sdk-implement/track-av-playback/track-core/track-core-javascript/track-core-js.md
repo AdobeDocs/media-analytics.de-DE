@@ -2,16 +2,16 @@
 title: Tracking von Core-Wiedergaben mit JavaScript 2.x
 description: Hier wird die Implementierung des Core-Trackings mit dem Media SDK in einem Browser mit JavaScript 2.x-Anwendungen beschrieben.
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
+exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
 translation-type: ht
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '688'
 ht-degree: 100%
 
 ---
 
-
-# Tracking von Core-Wiedergaben mit JavaScript 2.x{#track-core-playback-on-javascript}
+# Tracking von Core-Wiedergaben mit JavaScript 2.x {#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
 >Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
