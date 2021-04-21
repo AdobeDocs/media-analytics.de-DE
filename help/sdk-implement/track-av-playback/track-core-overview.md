@@ -2,11 +2,14 @@
 title: Tracking-Übersicht
 description: 'Hier wird das Tracking der Core-Wiedergabe beschrieben, einschließlich des Trackings der Medienladung, des Medienstarts, der Medienpause und des Medienabschlusses. '
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
+exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '891'
+ht-degree: 100%
 
 ---
-
 
 # Tracking-Übersicht {#tracking-overview}
 
@@ -67,7 +70,7 @@ Das Tracking der Core-Wiedergabe beinhaltet das Tracking des Ladens des Mediums,
 
    **`MediaObject`-Referenz:**
 
-   | Variablenname | Beschreibung | Erforderlich |
+   | Variablenname | Beschreibung | erforderlich |
    |---|---|---|
    | `name` | Inhaltsname | Ja |
    | `mediaid` | Eindeutige Kennung des Inhalts | Ja |
@@ -235,4 +238,3 @@ if (e.type == “buffered”) {
 ## Überprüfen {#validate}
 
 Informationen zur Validierung Ihrer Implementierung finden Sie unter [Validierung.](/help/sdk-implement/validation/validation-overview.md)
-
