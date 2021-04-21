@@ -1,14 +1,14 @@
 ---
 title: Implementierung und Reporting
 description: In diesem Kapitel wird beschrieben, wie Sie die Player-Status-Tracking-Funktion implementieren, einschließlich .
+exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 translation-type: ht
-source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '333'
 ht-degree: 100%
 
 ---
-
 
 # Implementierung und Reporting
 
