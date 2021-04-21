@@ -1,14 +1,14 @@
 ---
 title: Häufig gestellte Fragen zum Ende der Unterstützung für das Media Analytics-SDK
 description: In diesem Kapitel finden Sie häufig gestellte Fragen zum Ende der Unterstützung für das Media Analytics-SDK.
+exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 translation-type: ht
-source-git-commit: dfffcf1e1d815ca178e0bdba881d973d60fe1631
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '679'
 ht-degree: 100%
 
 ---
-
 
 # Häufig gestellte Fragen zum Ende der Unterstützung für das Media Analytics-SDK
 
