@@ -2,17 +2,20 @@
 title: Tracking der Erlebnisqualität auf Roku
 description: Hier wird die Implementierung des Trackings der Erlebnisqualität (QoE, QoS) mit dem Media SDK in Roku beschrieben.
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
+exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '195'
+ht-degree: 100%
 
 ---
-
 
 # Tracking der Erlebnisqualität auf Roku {#track-quality-of-experience-on-roku}
 
 >[!IMPORTANT]
 >
->Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie hier die 1.x-Entwicklerhandbücher herunterladen.[SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie hier die 1.x-Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Implementierung von QoS
 
@@ -81,4 +84,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >[!TIP]
    >
    >Das Tracking von Fehlern im Medienplayer beendet die Medien-Tracking-Sitzung nicht. Wenn der Medienplayer-Fehler verhindert, dass die Wiedergabe fortgesetzt wird, müssen Sie sicherstellen, dass die Medien-Tracking-Sitzung geschlossen wird. Rufen Sie dazu `trackSessionEnd()` nach `trackError()` auf.
-
