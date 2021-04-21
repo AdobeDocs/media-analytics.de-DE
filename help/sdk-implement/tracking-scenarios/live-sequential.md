@@ -2,11 +2,14 @@
 title: Live-Hauptinhalt mit sequentieller Verfolgung
 description: Ein Beispiel für das Tracking von Live-Inhalten mit sequenzieller Verfolgung mithilfe des Media SDK.
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
+exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '520'
+ht-degree: 100%
 
 ---
-
 
 # Live-Hauptinhalt mit sequentieller Verfolgung {#live-main-content-with-sequential-tracking}
 
@@ -331,4 +334,3 @@ this._mediaHeartbeat.trackSessionEnd();
 
 // Continue tracking further sessions in live stream similarly if required 
 ```
-
