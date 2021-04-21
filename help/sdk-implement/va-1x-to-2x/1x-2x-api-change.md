@@ -2,11 +2,14 @@
 title: API-Konversion von 1.x zu 2.x
 description: In diesem Thema finden Sie API-Referenzen sowie erforderliche und optionale Tracking-APIs für die Versionen 1.x und 2.x des Media SDK.
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
+exl-id: 8d06b7df-f246-49e6-aa58-91a9d6fa889a
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '203'
+ht-degree: 100%
 
 ---
-
 
 # Konvertierung von API 1.x zu 2.x {#one-x-to-two-x-conv}
 
@@ -14,7 +17,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * [Android-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/index.html)
 * [iOS-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/index.html)
-* [JavaScript-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/index.html)
+* [JS-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/index.html)
 * [ Chromecast-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/index.html)
 
 ## Erforderliche Tracking*-APIs:
@@ -50,4 +53,3 @@ Alle optionalen Tracking-APIs, z. B. Anzeigen, Kapitel, Bitratenänderungen, Ä
 | `playerPlugin.trackBufferComplete()` | `trackEvent(Event.BufferComplete)` |
 | `playerPlugin.trackBitrateChange()` | `trackEvent(Event.BitrateChange)` |
 | `playerPlugin.trackTimedMetadata()` | `trackEvent(Event.TimedMetadataUpdate)` |
-
