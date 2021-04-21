@@ -2,11 +2,14 @@
 title: Standard-Metadaten in iOS implementieren
 description: Beschreibt das Festlegen von Standard-Video- und Anzeigenmetadaten, die mit Tracking-Aufrufen in iOS gesendet werden.
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
+exl-id: e0981346-3d3c-4a0c-82a4-19942634fd03
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '95'
+ht-degree: 100%
 
 ---
-
 
 # Standard-Metadaten in iOS implementieren {#implement-standard-metadata-on-ios}
 
@@ -21,7 +24,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. Erstellen Sie mit `ADBStandardMetadataKeys` ein Wörterbuch mit Schlüssel-Wert-Paaren für Standard-Metadaten.
    [iOS-Metadatenschlüssel](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
-1. Legen Sie das Wörterbuch für Standard-Metadaten bei der `MediaInfo``ADBMediaObject`-Instanz mit der Standard-Metadatenkonstante fest.
+1. Legen Sie das Wörterbuch für Standard-Metadaten bei der `MediaInfo` `ADBMediaObject`-Instanz mit der Standard-Metadatenkonstante fest.
 
 1. Geben Sie dieses `MediaInfo`-Objekt an, während Sie die `trackSessionStart`-API aufrufen.
 
@@ -54,4 +57,3 @@ NSMutableDictionary *standardAudioMetadata = [[NSMutableDictionary alloc] init];
  
 [mediaObject setValue:standardAudioMetadata   forKey:ADBMediaObjectKeyStandardMediaMetadata];
 ```
-
