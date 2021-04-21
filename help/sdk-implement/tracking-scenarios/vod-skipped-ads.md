@@ -2,11 +2,14 @@
 title: VOD-Wiedergabe mit übersprungenen Anzeigen
 description: Ein Beispiel für das Tracking von VOD-Inhalten, in denen der Benutzer Anzeigen übersprungen hat, mithilfe des Media SDK.
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
+exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '279'
+ht-degree: 100%
 
 ---
-
 
 # VOD-Wiedergabe mit übersprungenen Anzeigen {#vod-playback-with-skipped-ads}
 
@@ -292,4 +295,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
