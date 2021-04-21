@@ -2,11 +2,14 @@
 title: Tracking von Anzeigen in iOS
 description: Implementieren des Anzeigen-Trackings in iOS-Anwendungen mit dem Media SDK.
 uuid: e979e679-cde5-4c30-8f34-867feceac13a
+exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '352'
+ht-degree: 100%
 
 ---
-
 
 # Tracking von Anzeigen in iOS {#track-ads-on-ios}
 
