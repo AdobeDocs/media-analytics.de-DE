@@ -2,14 +2,14 @@
 title: Einrichten von Chromecast
 description: Einrichten der Media SDK-Anwendung für die Implementierung in Chromecast.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
+exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 translation-type: ht
-source-git-commit: be82be2eb58f89344f2125288599fef461db441e
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '630'
 ht-degree: 100%
 
 ---
-
 
 # Chromecast einrichten {#set-up-chromecast}
 
@@ -138,4 +138,3 @@ Mit Chromecast-SDK 2.x für Experience Cloud-Lösungen können Sie in JavaScrip
 
 
 <!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
-
