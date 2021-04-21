@@ -2,15 +2,18 @@
 title: App-Aktionen verfolgen
 description: App-Aktionen sind die Ereignisse in der App, die Sie messen möchten.
 uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
+exl-id: 88b7d540-67b7-4ec1-8273-02e34853bf60
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '132'
+ht-degree: 100%
 
 ---
 
-
 # App-Aktionen verfolgen {#track-app-actions}
 
-Aktionen sind die Ereignisse in der App, die Sie messen möchten.
+Aktionen sind die Ereignisse in Ihrer App, die Sie messen möchten.
 
 Jede Aktion weist mindestens eine zugehörige Metrik auf, die bei jedem Vorkommen des Ereignisses erhöht wird. So könnten Sie z. B. einen `trackAction`-Aufruf für jedes neue Abonnement, jede Inhaltsbewertung oder jeden Abschluss einer Ebene senden.
 
@@ -49,4 +52,3 @@ Aktionen werden nicht automatisch verfolgt. Rufen Sie also `trackAction` auf, we
       ```
 
 Sie können auch zusätzliche Kontextdaten mit jedem trackAction-Aufruf senden.
-
