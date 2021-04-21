@@ -1,17 +1,17 @@
 ---
-title: Verfolgen von Fehlern mit JavaScript 2.x
+title: Tracking von Fehlern mit JavaScript 2.x
 description: Hier wird die Implementierung des Fehler-Trackings mit dem Media SDK in Browser-Apps (JS) beschrieben.
 uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
-translation-type: tm+mt
-source-git-commit: fa161e2d41629fdfe77100d87d6a44728e23d77f
-workflow-type: tm+mt
+exl-id: b3012bce-4b92-408e-8b7a-57ae9d52e93d
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '96'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-
-# Verfolgen von Fehlern mit JavaScript 2.x{#track-errors-on-javascript}
+# Tracking von Fehlern mit JavaScript 2.x {#track-errors-on-javascript}
 
 >[!IMPORTANT]
 >
