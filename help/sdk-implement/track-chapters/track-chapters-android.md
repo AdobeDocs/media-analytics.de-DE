@@ -2,11 +2,14 @@
 title: Tracking von Kapiteln und Segmenten in Android
 description: Hier wird die Implementierung des Kapitel- und Segment-Trackings mit dem Media SDK in Android beschrieben.
 uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
+exl-id: ada2e2a7-1383-471c-9ce6-c82ea93fa79d
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '196'
+ht-degree: 100%
 
 ---
-
 
 # Tracking von Kapiteln und Segmenten in Android {#track-chapters-and-segments-on-android}
 
@@ -78,4 +81,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ```
 
 1. Wiederholen Sie die Schritte 1 bis 5, wenn es weitere Kapitel gibt.
-
