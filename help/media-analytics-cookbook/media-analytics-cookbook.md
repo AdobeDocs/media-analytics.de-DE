@@ -1,14 +1,14 @@
 ---
 title: Media Analytics-Cookbook
 description: Cookbook-Hauptseite mit allgemeinen MA-Cookbook-Links und SDK-spezifischen Links.
-translation-type: tm+mt
-source-git-commit: 298d17ced7a62cad8e2a45814fbfb80c3f58ce35
-workflow-type: tm+mt
+exl-id: 5f26fbce-d861-4b38-8497-ce010082f3a7
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '32'
 ht-degree: 100%
 
 ---
-
 
 # Media Analytics-Cookbook
 
