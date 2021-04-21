@@ -2,11 +2,14 @@
 title: Tracking von Anzeigen in Chromecast
 description: Implementieren des Anzeigen-Trackings in Chromecast-Anwendungen mit dem Media SDK.
 uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
+exl-id: 57465c42-b349-439d-b8d7-083b299a8c83
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '329'
+ht-degree: 100%
 
 ---
-
 
 # Tracking von Anzeigen in Chromecast {#track-ads-on-chromecast}
 
