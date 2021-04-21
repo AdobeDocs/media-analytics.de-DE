@@ -1,14 +1,14 @@
 ---
 title: Was ist Adobe Primetime?
 description: Erfahren Sie mehr über Adobe Primetime und darüber, wie Sie damit durch das Streamen von Medien Geld machen können.
+exl-id: 756e4e62-35b3-42a2-93f5-81531e1c9cc8
 translation-type: ht
-source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '255'
 ht-degree: 100%
 
 ---
-
 
 # Primetime {#primetime}
 
@@ -30,4 +30,4 @@ TVSDK ist bereits in das Medien-SDK integriert, was die Implementierung auf alle
 
 >[!NOTE]
 >
->Für diesen Implementierungspfad müssen sich Kunden an ihren Kundenbetreuer/Account-Manager wenden, um einen neuen Kundenauftrag zu unterzeichnen, da Media Analytics über eine eigene SKU verfügt und sich der Preis hier nicht aus den Server-Aufrufen, sondern aus den Medien-Streams ergibt. Von Ihrem Support-Mitarbeiter/Account-Manager erhalten Sie Informationen zum Kauf von TVSDK.
+>Für diesen Implementierungspfad müssen sich Kunden an ihren Kundenbetreuer/Account-Manager wenden, um einen neuen Kundenauftrag zu unterzeichnen, da Media Analytics über eine eindeutige SKU verfügt und sich der Preis hier nicht aus den Server-Aufrufen, sondern aus den Medien-Streams ergibt. Von Ihrem Support-Mitarbeiter/Account-Manager erhalten Sie Informationen zum Kauf von TVSDK.
