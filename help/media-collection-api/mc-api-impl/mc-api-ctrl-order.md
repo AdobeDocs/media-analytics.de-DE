@@ -4,7 +4,7 @@ description: Steuern der Ereignisreihenfolge
 uuid: 007fccc6-be72-4b79-826d-588c957ccf15
 exl-id: c0cac319-2bea-42c8-8674-641dfbb44fa2
 translation-type: tm+mt
-source-git-commit: e0da35f364dc057a241fbb05a718a731ffee1e94
+source-git-commit: 27694ec83de89980404df7a7cc77fa42b3d1a751
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 4%
@@ -16,6 +16,7 @@ ht-degree: 4%
 Die Streaming-Videoverfolgung ist in hohem Maße zeitabhängig, und gelegentlich werden die Media Collection-API-Verfolgungsaufrufe im Back-End nicht ordnungsgemäß gesendet. In diesem Fall versucht das Back-End, Ereignis basierend auf dem bereitgestellten Zeitstempel im `playerTime`-Objekt in eine Warteschlange zu stellen und neu anzuordnen.  Dies geschieht mit einigen Einschränkungen. Derzeit kann die Neuanordnung fehlschlagen, wenn die Verzögerungen zwischen nicht sortierten Aufrufen mehr als eine Sekunde betragen. In zukünftigen Updates kann die &quot;akzeptable Zeitverzögerung&quot;optimiert und konfiguriert werden.
 
 ## Beispiel für ein nicht in der Reihenfolge befindliches Ereignis
+
 Ereignis, die nicht in der richtigen Reihenfolge auftreten, treten auf, wenn Ereignis das Netzwerk passieren, was manchmal zu einer Verzögerung führt.
 
 Sie können beispielsweise ein `adBreakStart`-Ereignis gefolgt von einem `adStart`-Ereignis senden. Dies ist ein gängiger Anwendungsfall, da er für eine Anzeige zum Beginn innerhalb einer Werbeunterbrechung erforderlich ist.
