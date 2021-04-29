@@ -4,13 +4,31 @@ description: Steuern der Ereignisreihenfolge
 uuid: 007fccc6-be72-4b79-826d-588c957ccf15
 exl-id: c0cac319-2bea-42c8-8674-641dfbb44fa2
 translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+source-git-commit: e0da35f364dc057a241fbb05a718a731ffee1e94
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 100%
+source-wordcount: '307'
+ht-degree: 4%
 
 ---
 
 # Steuern der Ereignisreihenfolge {#controlling-the-order-of-events}
 
-Da es sich bei der Media Collection API um eine RESTful-API handelt und das Video-Tracking ein äußerst zeitabhängiger Vorgang ist, sollten Sie bei der Implementierung darauf achten, dass die Media Collection API-Tracking-Aufrufe in der richtigen Reihenfolge am Backend eingehen. Das Backend *versucht*, die Ereignisse in eine Warteschlange einzureihen und basierend auf dem Zeitstempel im Objekt `playerTime` neu zu ordnen. Dies funktioniert jedoch nur eingeschränkt. Aktuell kann die Neusortierung fehlschlagen, wenn die Verzögerung zwischen den in falscher Reihenfolge eingehenden Aufrufen mehr als eine Sekunde beträgt. Diese annehmbare Verzögerung wird möglicherweise in künftigen Updates optimiert und/oder kann vom Benutzer angepasst werden.
+Die Streaming-Videoverfolgung ist in hohem Maße zeitabhängig, und gelegentlich werden die Media Collection-API-Verfolgungsaufrufe im Back-End nicht ordnungsgemäß gesendet. In diesem Fall versucht das Back-End, Ereignis basierend auf dem bereitgestellten Zeitstempel im `playerTime`-Objekt in eine Warteschlange zu stellen und neu anzuordnen.  Dies geschieht mit einigen Einschränkungen. Derzeit kann die Neuanordnung fehlschlagen, wenn die Verzögerungen zwischen nicht sortierten Aufrufen mehr als eine Sekunde betragen. In zukünftigen Updates kann die &quot;akzeptable Zeitverzögerung&quot;optimiert und konfiguriert werden.
+
+## Beispiel für ein nicht in der Reihenfolge befindliches Ereignis
+Ereignis, die nicht in der richtigen Reihenfolge auftreten, treten auf, wenn Ereignis das Netzwerk passieren, was manchmal zu einer Verzögerung führt.
+
+Sie können beispielsweise ein `adBreakStart`-Ereignis gefolgt von einem `adStart`-Ereignis senden. Dies ist ein gängiger Anwendungsfall, da er für eine Anzeige zum Beginn innerhalb einer Werbeunterbrechung erforderlich ist.
+
+Wenn die Anzeige fertig ist und kein Puffer erforderlich ist, treten beide Ereignis fast sofort auf und die `playerTime.ts` für beide Ereignis sind sehr nahe beieinander - sie sollten jedoch nie gleich sein.
+
+> &quot;playerTime.ts&quot;von Ereignissen sollte für kein Ereignis gleich sein, da der Sortieralgorithmus nicht wusste, was zuerst passiert ist. Es sollte mindestens eine Millisekunde Zeitstempeldifferenz für alle zwei aufeinander folgenden Ereignis geben.
+
+Da sich beide Ereignis beim Auslösen von Netzwerkaufrufen sehr nahe beieinander befinden, ist es möglich, dass sie nicht in der richtigen Reihenfolge ankommen. In diesem Beispiel wird das Ereignis `adStart` vor dem Ereignis `adBreakStart` angekommen.
+
+
+Es gibt ein Zeitfenster mit Ereignissen: 5 Sekunden oder maximal 10 Ereignis. Die Ereignis werden gepuffert, bevor sie an die Verarbeitungspipeline gesendet werden. Wenn die Bedingungen erfüllt sind - 5 Sekunden vergangen sind oder mehr als 10 Ereignis empfangen werden, werden die Ereignis basierend auf dem `playerTime.ts` neu angeordnet und dann in der neuen Reihenfolge an die Verarbeitungspipeline gesendet.
+
+>[!IMPORTANT]
+>
+>Es gibt ein Ausnahmefehler-Ereignis, das sofort an die Verarbeitungspipeline gesendet wird, und zwar das Ereignis `sessionStart`.
