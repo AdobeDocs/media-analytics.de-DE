@@ -3,9 +3,9 @@ title: Tracking von Core-Wiedergaben auf Roku
 description: Hier wird die Implementierung des Core-Trackings mit dem Media SDK in Roku beschrieben.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d11f68d0967dc27a6866a9b5a39c6b84ac9532e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '681'
 ht-degree: 100%
 
