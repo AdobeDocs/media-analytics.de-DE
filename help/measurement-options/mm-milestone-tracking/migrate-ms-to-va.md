@@ -3,9 +3,9 @@ title: Migration von Milestone zu Media Analytics
 description: Migration von Milestone zu Media Analytics
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '675'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone- und der 
 
 ### Optionale Variablen
 
-| Meilenstein | Milestone-Syntax | Medienanalyse | Syntax von Media Analytics |
+| Milestone | Milestone-Syntax | Media Analytics | Syntax von Media Analytics |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | nicht angegeben | Wir bieten keine vordefinierten Player-Zuordnungen mehr an. |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | nicht angegeben | Wir bieten keine vordefinierten Player-Zuordnungen mehr an. |
@@ -58,7 +58,7 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone- und der 
 
 ### Anzeigenverfolgungsvariablen
 
-| Meilenstein | Milestone-Syntax | Medienanalyse | Syntax von Media Analytics |
+| Milestone | Milestone-Syntax | Media Analytics | Syntax von Media Analytics |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | nicht angegeben | Media Analytics ist auf 10 Sekunden für Inhalte und 1 Sekunde für Anzeigen eingestellt. Es sind keine weiteren Optionen verfügbar. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | nicht angegeben | Fortschrittsmarkierungen werden nicht standardmäßig für Anzeigen bereitgestellt. Verwenden Sie berechnete Metriken, um Anzeigenfortschrittsmarken zu erstellen. |
@@ -68,7 +68,7 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone- und der 
 
 ### Medienmodulmethoden
 
-| Meilenstein | Milestone-Syntax | Medienanalyse | Syntax von Media Analytics |
+| Milestone | Milestone-Syntax | Media Analytics | Syntax von Media Analytics |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
 | mediaName | `mediaName` (erforderlich): Der Name des Videos, wie er in Videoberichten angezeigt werden soll. | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
