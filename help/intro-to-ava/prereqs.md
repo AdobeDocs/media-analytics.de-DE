@@ -3,9 +3,9 @@ title: Voraussetzungen
 description: Voraussetzungen
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '425'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ Für eine Implementierung von *Media Analytics* müssen Sie die folgenden Aufgab
 
    >[!IMPORTANT]
    >
-   >Um an der Adobe Experience Cloud-Gerätekooperation teilzunehmen, ist der Experience Cloud-ID-Dienst erforderlich.
+   >Um an der Adobe Experience Cloud-Gerätekooperation teilzunehmen, ist der Experience Cloud ID-Dienst erforderlich.
 
    Wenn Sie den ID-Dienst nicht implementiert haben, ist es nun an der Zeit, eine Migrationsstrategie in Erwägung zu ziehen. Weitere Informationen über die Bedeutung und die Rolle des ID-Dienstes finden Sie unter [Warum Sie den ID-Dienst im Auge behalten sollten.](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
 
@@ -47,7 +47,7 @@ Für eine Implementierung von *Media Analytics* müssen Sie die folgenden Aufgab
    >
    >Wenn in den medienspezifischen Aufrufen keine Benutzer-ID-Informationen vorhanden sind, gelten die standardmäßigen [Fallback-ID-Methoden](https://docs.adobe.com/content/help/de-DE/analytics/technotes/visitor-identification.translate.html) für die Analyse.
 
-   Weitere Informationen zur Experience Cloud-ID finden Sie unter [Überblick über die Experience Cloud-ID](https://docs.adobe.com/content/help/de-DE/id-service/using/intro/overview.html) und unter [Adobe Experience Platform-ID-Dienst.](https://docs.adobe.com/content/help/de-DE/id-service/using/home.html)
+   Weitere Informationen zur Experience Cloud-ID finden Sie unter [Überblick über die Experience Cloud ID](https://docs.adobe.com/content/help/de-DE/id-service/using/intro/overview.html) und unter [Adobe Experience Platform-ID-Dienst.](https://docs.adobe.com/content/help/de-DE/id-service/using/home.html)
 
 1. **Aktivieren Sie die Adobe Analytics-Berichte.**
 
