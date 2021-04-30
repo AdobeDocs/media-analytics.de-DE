@@ -3,9 +3,9 @@ title: Ereignistypen und -beschreibungen
 description: Ereignistypen und -beschreibungen
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '346'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Wird gesendet, wenn der Player den Status zu „Playing“ (Wiedergabe) ändert 
 
 ## ping
 
-* **Hauptinhalt:** Muss während der Wiedergabe des Hauptinhalts unabhängig von anderen gesendeten API-Ereignissen alle zehn Sekunden gesendet werden. Das erste Ping-Ereignis sollte 10 Sekunden nach Beginn der Wiedergabe des Hauptinhalts ausgelöst werden.
+* **Hauptinhalt -** Muss während der Wiedergabe des Hauptinhalts unabhängig von anderen gesendeten API-Ereignissen alle zehn Sekunden gesendet werden. Das erste Ping-Ereignis sollte 10 Sekunden nach Beginn der Wiedergabe des Hauptinhalts ausgelöst werden.
 * **Anzeigeninhalt -** Muss während dem Anzeigen-Tracking jede Sekunde gesendet werden.
 
 Ping-Ereignisse sollten *nicht* die `params`-Map im Anfrageinhalt enthalten.
