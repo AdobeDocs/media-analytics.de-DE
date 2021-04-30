@@ -3,9 +3,9 @@ title: Medienübersicht
 description: Medienübersicht
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '93'
 ht-degree: 100%
 
@@ -33,9 +33,9 @@ Zeigen Sie Medienmetriken schnell nach Gerät oder Land an:
 
 ## Medienperformance {#media-performance}
 
-Zoomen Sie durch Klicken und Ziehen und zeigen Sie dann mit dem Mauszeiger auf Elemente, um granulare Metriken für bestimmte Medien anzuzeigen. Klicken Sie auf  ![](assets/video-overview-report-revert.png)
+Zoomen Sie durch Klicken und Ziehen und zeigen Sie dann mit dem Mauszeiger auf Elemente, um granulare Metriken für bestimmte Medien anzuzeigen. Klicken Sie auf  ![](assets/video-overview-report-revert.png), 
 
-, um die Ansicht nach dem Zoomen zurückzusetzen.
+um die Ansicht nach dem Zoomen zurückzusetzen.
 
 ![](assets/media_overview_zoom.png)
 
