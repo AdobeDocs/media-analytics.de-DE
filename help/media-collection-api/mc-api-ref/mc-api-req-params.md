@@ -3,11 +3,11 @@ title: Anfrageparameter
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '1195'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 64a91795bd2f9120991be2a67e68c645dc24c8d1
+workflow-type: tm+mt
+source-wordcount: '1205'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | `sessionStart` | Die Experience Cloud-Organisations-ID, die Ihre Organisation innerhalb der Adobe Experience Cloud-Umgebung identifiziert |
 | `visitor.marketingCloudUserId` | N | `sessionStart` | Dies ist die Experience Cloud-Benutzer-ID (ECID). In den meisten Szenarien ist dies die ID, die Sie zur Identifizierung eines Benutzers verwenden sollten. Die `marketingCloudUserId` in Heartbeat entspricht der `MID` in Adobe Analytics. Dieser Parameter ist zwar technisch nicht erforderlich, aber für den Zugriff auf die Apps der Experience Cloud-Familie erforderlich. |
-| `visitor.aamLocationHint` | N | `sessionStart` | Stellt Adobe Audience Manager-Edge-Daten bereit |
+| `visitor.aamLocationHint` | N | `sessionStart` | Stellt Adobe Audience Manager-Edge-Daten bereit — Wenn kein Wert eingegeben wird, ist der Wert null. |
 | `appInstallationId` | N | `sessionStart` | Die appInstallationId identifiziert Anwendung und Gerät eindeutig. |
 
 ## Inhaltsdaten
