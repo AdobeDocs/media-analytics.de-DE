@@ -4,10 +4,10 @@ description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 translation-type: tm+mt
-source-git-commit: 64a91795bd2f9120991be2a67e68c645dc24c8d1
+source-git-commit: 786327371aa1fc8809c8a5827bc9c8991b1ecae1
 workflow-type: tm+mt
 source-wordcount: '1205'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -164,7 +164,7 @@ Beachten Sie, dass der Wert `visitor.customerIDs` über mehrere Objekte im angeg
 
 ### visitor.aamLocationHint
 
-Dieser Parameter gibt an, welcher AAM-Edge (Adobe Audience Manager) angesteuert wird, wenn Adobe Analytics die Kundendaten an Audience Manager sendet. Wenn Sie diesen Parameter nicht übergeben, wird er von Adobe auf 1 fest codiert. Das ist insbesondere dann wichtig, wenn Endanwender ihre Geräte an geografisch weit entfernten Standorten verwenden (z. B. US-Ost- und -Westküste, Europa, Asien). Andernfalls werden die Benutzerdaten über mehrere AAM-Edges verteilt.
+Dieser Parameter gibt an, welcher AAM-Edge (Adobe Audience Manager) angesteuert wird, wenn Adobe Analytics die Kundendaten an Audience Manager sendet. Wenn kein Wert eingegeben wird, ist der Wert null. Das ist insbesondere dann wichtig, wenn Endanwender ihre Geräte an geografisch weit entfernten Standorten verwenden (z. B. US-Ost- und -Westküste, Europa, Asien). Andernfalls werden die Benutzerdaten über mehrere AAM-Edges verteilt.
 
 ### media.resume
 
