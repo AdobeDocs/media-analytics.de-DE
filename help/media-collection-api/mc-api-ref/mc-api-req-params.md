@@ -3,11 +3,10 @@ title: Anfrageparameter
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
-translation-type: tm+mt
 source-git-commit: 786327371aa1fc8809c8a5827bc9c8991b1ecae1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1205'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,8 +16,8 @@ ht-degree: 98%
 
 | Anforderungsschlüssel  | erforderlich | Eingerichtet auf... |  Beschreibung  |
 | --- | :---: | :---: | --- |
-| `analytics.trackingServer` | Y | `sessionStart` | Die URL Ihres Adobe Analytics-Servers |
-| `analytics.reportSuite` | Y | `sessionStart` | Die ID, die Ihre Analytics-Reporting-Daten identifiziert |
+| `analytics.trackingServer` | J | `sessionStart` | Die URL Ihres Adobe Analytics-Servers |
+| `analytics.reportSuite` | J | `sessionStart` | Die ID, die Ihre Analytics-Reporting-Daten identifiziert |
 | `analytics.enableSSL` | N | `sessionStart` | True oder False für die SSL-Aktivierung |
 | `analytics.visitorId` | N | `sessionStart` | Die Adobe-Besucher-ID ist eine benutzerdefinierte ID, die Sie in mehreren Adobe-Anwendungen verwenden können. Die `visitorId` in Heartbeat entspricht der `VID.` in Analytics. |
 
@@ -26,21 +25,21 @@ ht-degree: 98%
 
 | Anforderungsschlüssel  | erforderlich | Eingerichtet auf... |  Beschreibung  |
 | --- | :---: | :---: | --- |
-| `visitor.marketingCloudOrgId` | Y | `sessionStart` | Die Experience Cloud-Organisations-ID, die Ihre Organisation innerhalb der Adobe Experience Cloud-Umgebung identifiziert |
+| `visitor.marketingCloudOrgId` | J | `sessionStart` | Die Experience Cloud-Organisations-ID, die Ihre Organisation innerhalb der Adobe Experience Cloud-Umgebung identifiziert |
 | `visitor.marketingCloudUserId` | N | `sessionStart` | Dies ist die Experience Cloud-Benutzer-ID (ECID). In den meisten Szenarien ist dies die ID, die Sie zur Identifizierung eines Benutzers verwenden sollten. Die `marketingCloudUserId` in Heartbeat entspricht der `MID` in Adobe Analytics. Dieser Parameter ist zwar technisch nicht erforderlich, aber für den Zugriff auf die Apps der Experience Cloud-Familie erforderlich. |
-| `visitor.aamLocationHint` | N | `sessionStart` | Stellt Adobe Audience Manager-Edge-Daten bereit — Wenn kein Wert eingegeben wird, ist der Wert null. |
+| `visitor.aamLocationHint` | N | `sessionStart` | Stellt Adobe Audience Manager-Edge-Daten bereit – Wenn kein Wert eingegeben wird, ist der Wert null. |
 | `appInstallationId` | N | `sessionStart` | Die appInstallationId identifiziert Anwendung und Gerät eindeutig. |
 
 ## Inhaltsdaten
 
 | Anforderungsschlüssel  | erforderlich | Eingerichtet auf... |  Beschreibung  |
 | --- | :---: | :---: | --- |
-| `media.id` | Y | `sessionStart` | Eindeutige Kennung für den Inhalt |
+| `media.id` | J | `sessionStart` | Eindeutige Kennung für den Inhalt |
 | `media.name` | N | `sessionStart` | Lesbarer Name für den Inhalt |
-| `media.length` | Y | `sessionStart` | Inhaltsdauer (in Sekunden) |
-| `media.contentType` | Y | `sessionStart` | Format des Streams (hierbei kann es sich um eine beliebige Zeichenfolge handeln, empfohlen werden jedoch Werte wie „Live“, „VOD“ oder „Linear“) |
-| `media.playerName` | Y | `sessionStart` | Der Name des Players, der für das Rendering des Inhalts verantwortlich ist |
-| `media.channel` | Y | `sessionStart` | Der Verbreitungskanal für den Inhalt. Dabei kann es sich um den Namen einer App, einer Website oder einer Eigenschaft handeln. |
+| `media.length` | J | `sessionStart` | Inhaltsdauer (in Sekunden) |
+| `media.contentType` | J | `sessionStart` | Format des Streams (hierbei kann es sich um eine beliebige Zeichenfolge handeln, empfohlen werden jedoch Werte wie „Live“, „VOD“ oder „Linear“) |
+| `media.playerName` | J | `sessionStart` | Der Name des Players, der für das Rendering des Inhalts verantwortlich ist |
+| `media.channel` | J | `sessionStart` | Der Verbreitungskanal für den Inhalt. Dabei kann es sich um den Namen einer App, einer Website oder einer Eigenschaft handeln. |
 | `media.resume` | N | `sessionStart` | Gibt an, ob ein Benutzer eine vorherige Sitzung fortsetzt (statt eine neue Sitzung zu starten) |
 | `media.sdkVersion` | N | `sessionStart` | Die vom Player verwendete SDK-Version |
 
@@ -71,13 +70,13 @@ ht-degree: 98%
 | Anforderungsschlüssel  | erforderlich | Eingerichtet auf... |  Beschreibung  |
 | --- | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | N | `adBreakStart` | Der Anzeigename der Werbeunterbrechung |
-| `media.ad.podIndex` | Y | `adBreakStart` | Der Index der Anzeigen-Pods im Video |
-| `media.ad.podSecond` | Y | `adBreakStart` | Die Sekunde, in der der Pod gestartet wurde |
-| `media.ad.podPosition` | Y | `adStart` | Der Index der Anzeige innerhalb der Werbegruppe (beginnend bei 1) |
+| `media.ad.podIndex` | J | `adBreakStart` | Der Index der Anzeigen-Pods im Video |
+| `media.ad.podSecond` | J | `adBreakStart` | Die Sekunde, in der der Pod gestartet wurde |
+| `media.ad.podPosition` | J | `adStart` | Der Index der Anzeige innerhalb der Werbegruppe (beginnend bei 1) |
 | `media.ad.name` | N | `adStart` | Der Anzeigename der Werbeanzeige |
-| `media.ad.id` | Y | `adStart` | Der Name der Werbeanzeige |
-| `media.ad.length` | Y | `adStart` | Die Länge der Videoanzeige in Sekunden |
-| `media.ad.playerName` | Y | `adStart` | Der Name des Players, der für das Rendering der Werbeanzeige verantwortlich ist |
+| `media.ad.id` | J | `adStart` | Der Name der Werbeanzeige |
+| `media.ad.length` | J | `adStart` | Die Länge der Videoanzeige in Sekunden |
+| `media.ad.playerName` | J | `adStart` | Der Name des Players, der für das Rendering der Werbeanzeige verantwortlich ist |
 
 ## Standardmäßige Anzeigenmetadaten
 
@@ -94,9 +93,9 @@ ht-degree: 98%
 
 | Anforderungsschlüssel  | erforderlich | Eingerichtet auf... |  Beschreibung  |
 | --- | :---: | :---: | --- |
-| `media.chapter.index` | Y | `chapterStart` | Identifiziert die Position des Kapitels im Inhalt |
-| `media.chapter.offset` | Y | `chapterStart` | Die Sekunde, in der die Wiedergabe des Kapitels beginnt |
-| `media.chapter.length` | Y | `chapterStart` | Die Länge des Kapitels in Sekunden |
+| `media.chapter.index` | J | `chapterStart` | Identifiziert die Position des Kapitels im Inhalt |
+| `media.chapter.offset` | J | `chapterStart` | Die Sekunde, in der die Wiedergabe des Kapitels beginnt |
+| `media.chapter.length` | J | `chapterStart` | Die Länge des Kapitels in Sekunden |
 | `media.chapter.friendlyName` | N | `chapterStart` | Der Anzeigename des Kapitels |
 
 ## Qualitätsdaten
@@ -127,9 +126,9 @@ ht-degree: 98%
 
 ### appInstallationId
 
-* **Wenn Sie den *-Wert*nicht`appInstallationId` übergeben:** Das MA-Backend generiert keine MCID mehr, sondern überlässt diese Aufgabe Adobe Analytics. Adobe empfiehlt, entweder eine MCID (sofern verfügbar) oder eine `appInstallationId` zu senden (neben der erforderlichen `marketingCloudOrgId`), damit die Mediensammlungs-API die MCID generiert und bei allen Aufrufen sendet.
+* **Wenn Sie den `appInstallationId`-Wert *nicht* übergeben:** Das MA-Backend generiert keine MCID mehr, sondern überlässt diese Aufgabe Adobe Analytics. Adobe empfiehlt, entweder eine MCID (sofern verfügbar) oder eine `appInstallationId` zu senden (neben der erforderlichen `marketingCloudOrgId`), damit die Mediensammlungs-API die MCID generiert und bei allen Aufrufen sendet.
 
-* **Wenn Sie den **-Wert `appInstallationId`übergeben:** Die MCID *kann* vom MA-Backend generiert werden, wenn Sie Werte für die Parameter `appInstallationId` und `marketingCloudOrgId` (erforderlich) übergeben. Wenn Sie `appInstallationId` nicht selbst übergeben, muss der Wert clientseitig persistent sein. Er muss außerdem eindeutig für die Anwendung auf dem Gerät sein und beibehalten werden, bis die Anwendung neu installiert wird.
+* **Wenn Sie den `appInstallationId`-Wert ** übergeben:** Die MCID *kann* vom MA-Backend generiert werden, wenn Sie Werte für die Parameter `appInstallationId` und `marketingCloudOrgId` (erforderlich) übergeben. Wenn Sie `appInstallationId` nicht selbst übergeben, muss der Wert clientseitig persistent sein. Er muss außerdem eindeutig für die Anwendung auf dem Gerät sein und beibehalten werden, bis die Anwendung neu installiert wird.
 
 >[!NOTE]
 >
