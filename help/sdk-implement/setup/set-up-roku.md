@@ -4,9 +4,9 @@ description: Einrichten der Media SDK-Anwendung für die Implementierung in Roku
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 source-git-commit: 218c4f6a841a988477eb4509bff8d418e18715f5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '709'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -131,7 +131,7 @@ Mit Roku-SDK 2.x für Experience Cloud-Lösungen können Sie in BrightScript ge
    | `visitorMarketingCloudID` | Ruft die Experience Cloud-Besucher-ID aus dem Besucher-ID-Dienst ab.  <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
    | `visitorSyncIdentifiers` | Mit der Experience Cloud-Besucher-ID können Sie zusätzliche Kunden-IDs festlegen, die jedem Besucher zugeordnet werden können. Die Besucher-API akzeptiert mehrere Kunden-IDs für denselben Besucher sowie eine Kundentypkennung, die den Umfang der einzelnen Kunden-IDs abgrenzt. Diese Methode entspricht `setCustomerIDs`. Beispiel: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
    | `setAdvertisingIdentifier` | Wird verwendet, um die Roku-ID für Werbung (RIDA) im SDK festzulegen. Beispiel: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>Rufen Sie die Roku-ID für Werbung (RIDA) mit der [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic)-API des Roku-SDK ab. |
-   | `getAllIdentifiers` | Gibt eine Liste aller vom SDK gespeicherten Bezeichner zurück, einschließlich Analytics-, Besucher-, Audience Manager- und benutzerdefinierter Bezeichner. <br/><br/> `identifiers = ADBMobile().getAllIdentifiers()` |
+   | `getAllIdentifiers` | Gibt eine Liste aller vom SDK gespeicherten Kennungen zurück, einschließlich Analytics-, Besucher-, Audience Manager- und benutzerdefinierter Kennungen. <br/><br/> `identifiers = ADBMobile().getAllIdentifiers()` |
    <!--
     Roku Api Reference:
     * [Integrating the Roku Advertising Framework](https://sdkdocs.roku.com/display/sdkdoc/Integrating+the+Roku+Advertising+Framework)  
@@ -143,29 +143,35 @@ Mit Roku-SDK 2.x für Experience Cloud-Lösungen können Sie in BrightScript ge
    **Zusätzliche öffentliche APIs**
 
    **DebugLogging**
-| Methode   | Beschreibung | | — | — | |  `setDebugLogging` | Wird verwendet, um die Debug-Protokollierung für das SDK zu aktivieren oder zu deaktivieren.  <br/><br/>`ADBMobile().setDebugLogging(true)` | |  `getDebugLogging` | Gibt TRUE zurück, wenn die Debug-Protokollierung aktiviert ist.   <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
+| Methode | Beschreibung |
+| --- | --- |
+| `setDebugLogging` | Wird zum Aktivieren oder Deaktivieren der Debugging-Protokollierung für das SDK verwendet.  <br/><br/>`ADBMobile().setDebugLogging(true)` |
+| `getDebugLogging` | Gibt „true“ zurück, wenn die Debugging-Protokollierung aktiviert ist.  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
    <br/><br/>
 
    **PrivacyStatus**
-| Konstante   | Beschreibung | | — | — | |  `PRIVACY_STATUS_OPT_IN` | Konstante, die beim Aufruf von setPrivacyStatus an Opt-in weitergegeben wird. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN`| |  `PRIVACY_STATUS_OPT_OUT` | Konstante, die beim Aufruf von setPrivacyStatus an Opt-out weitergegeben wird.  <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
+| Konstante | Beschreibung |
+| --- | --- |
+| `PRIVACY_STATUS_OPT_IN` | Konstante, die beim Aufruf von setPrivacyStatus zum Opt-in übergeben wird. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN`|
+| `PRIVACY_STATUS_OPT_OUT` | Konstante, die beim Aufruf von setPrivacyStatus zum Opt-out übergeben wird. <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
 
    <br/>
 
    |  Methode   | Beschreibung |
    | --- | --- |
-   | `setPrivacyStatus` | Legt den Datenschutzstatus für das SDK fest.  <br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
-   | `getPrivacyStatus` | Ruft den aktuellen Datenschutzstatus des SDK ab.  <br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
+   | `setPrivacyStatus` | Legt den Datenschutzstatus im SDK fest. <br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
+   | `getPrivacyStatus` | Ruft den aktuellen Datenschutzstatus ab, der im SDK festgelegt ist. <br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
 
    <br/><br/>
    >[!IMPORTANT]
    >
-   >Stellen Sie sicher, dass Sie die Funktionen `processMessages` und `processMediaMessages` alle 250 ms in der Haupt-Ereignis-Schleife aufrufen, um sicherzustellen, dass das SDK die Pings ordnungsgemäß sendet.
+   >Rufen Sie alle 250 ms in der Hauptereignisschleife die Funktionen `processMessages` und `processMediaMessages` auf, damit das SDK die Pings ordnungsgemäß sendet.
 
    |  Methode   | Beschreibung |
    | --- | --- |
-   | `processMessages` | Zuständig für die Übergabe der Analytics-Ereignis an das zu verarbeitende SDK.  <br/><br/>`ADBMobile().processMessages()` |
-   | `processMediaMessages` | Verantwortlich für die Weitergabe der Media-Ereignis an das zu verarbeitende SDK. <br/><br/>`ADBMobile().processMediaMessages()` |
+   | `processMessages` | Verantwortlich für die Übergabe der Analytics-Ereignisse an das SDK zur Verarbeitung.  <br/><br/>`ADBMobile().processMessages()` |
+   | `processMediaMessages` | Verantwortlich für die Übergabe der Medienereignisse an das SDK zur Verarbeitung. <br/><br/>`ADBMobile().processMediaMessages()` |
 
 
 <!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
