@@ -2,11 +2,10 @@
 title: Welche Wege stehen zur Implementierung von Streaming-Medien zur Verfügung?
 description: Erfahren Sie mehr über Wege zur Implementierung von Streaming-Medien bei Adobe einschließlich Adobe Launch.
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '505'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 96%
 
 ---
 
@@ -16,15 +15,15 @@ Für jeden Implementierungspfad müssen sich Kunden an ihren Kundenbetreuer/Kont
 
 * **Adobe Launch mit der Adobe Media Analytics-Erweiterung**
 
-   Adobe Launch ist die Adobe-Tag-Management-Lösung der nächsten Generation von Adobe. Launch bietet eine einfache Möglichkeit, alle Analyse-, Marketing- und Werbe-Tags bereitzustellen und zu verwalten, die für relevante Kundenerlebnisse erforderlich sind. Um Ihre eigenen Integrationen mit Launch zu erstellen und zu pflegen, verwenden Sie Erweiterungen. Eine Erweiterung ist ein JavaScript-, HTML- und CSS-Package, das die Launch-Benutzeroberfläche und die Client-Funktionen ausbaut. Weitere Informationen finden Sie im [Benutzerhandbuch zu Experience Platform Launch](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html)
+   Adobe Launch ist die Adobe-Tag-Management-Lösung der nächsten Generation von Adobe. Launch bietet eine einfache Möglichkeit, alle Analyse-, Marketing- und Werbe-Tags bereitzustellen und zu verwalten, die für relevante Kundenerlebnisse erforderlich sind. Um Ihre eigenen Integrationen mit Launch zu erstellen und zu pflegen, verwenden Sie Erweiterungen. Eine Erweiterung ist ein JavaScript-, HTML- und CSS-Package, das die Launch-Benutzeroberfläche und die Client-Funktionen ausbaut. Weitere Informationen finden Sie im [Benutzerhandbuch zu Experience Platform Launch](https://docs.adobe.com/content/help/de-DE/experience-cloud/user-guides/home.translate.html)
 
    Mit der Adobe Media Analytics-Erweiterung (MA) wird das JavaScript Media SDK (Media 2.x SDK) für Audio und Video hinzugefügt. Diese Erweiterung bietet die Funktionalität zum Hinzufügen der `MediaHeartbeat`-Tracker-Instanz zu einer Launch-Site oder einem Projekt.
 
    Adobe Launch mit der Media Analytics-Erweiterung erfordert Folgendes:
    * Sie müssen Adobe Experience Cloud-Kunde sein.
    * Sie müssen den Launch- oder DTM-Einbettungscode auf Ihren Websites bereitstellen.
-   * [Analytics-Erweiterung](https://docs.adobe.com/content/help/de-DE/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
-   * [Experience Cloud ID-Erweiterung](https://docs.adobe.com/content/help/de-DE/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)
+   * [Analytics-Erweiterung](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
+   * [Experience Cloud ID-Erweiterung](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)
 
 
 * **Client-seitig -** Dies sind reine Media Analytics-Integrationen. Sie können das Video Heartbeat SDK und/oder die Media Collection API-Integrationen auswählen. Dieser Pfad kann für alle Video-Player verwendet werden, einschließlich Kunden- und/oder OVP-Player wie Brightcove, Ooyala und thePlatform.
