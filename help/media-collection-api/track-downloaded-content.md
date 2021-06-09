@@ -3,11 +3,10 @@ title: Tracking heruntergeladener Inhalte
 description: null
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '611'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '609'
+ht-degree: 98%
 
 ---
 
@@ -56,7 +55,7 @@ Bei der Funktion für heruntergeladene Inhalte handelt es sich um die Offline-Ve
 
 ## Integration mit Adobe Analytics {#integration-with-adobe-analtyics}
 
-Bei der Berechnung der Analytics-Start-/Schließen-Aufrufe für das Szenario mit heruntergeladenen Inhalten verwendet das Backend ein zusätzliches Analytics-Feld `ts.` Dabei handelt es sich um Zeitstempel für das erste und letzte empfangene Ereignis (Start und Abschluss). Dieses Verfahren ermöglicht es, eine abgeschlossene Mediensitzung am richtigen Zeitpunkt zu platzieren (d. h., selbst wenn der Benutzer mehrere Tage lang nicht online war, erfährt er, dass die Mediensitzung zum Zeitpunkt der tatsächlichen Betrachtung des Inhalts stattgefunden hat). Sie müssen dieses Verfahren auf der Seite von Adobe Analytics aktivieren, indem Sie einen _optionalen Zeitstempel für die Report Suite erstellen._ Informationen zum Aktivieren eines optionalen Zeitstempel für die Report Suite finden Sie unter [Optionale Zeitstempel.](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/timestamp-optional.html)
+Bei der Berechnung der Analytics-Start-/Schließen-Aufrufe für das Szenario mit heruntergeladenen Inhalten verwendet das Backend ein zusätzliches Analytics-Feld `ts.` Dabei handelt es sich um Zeitstempel für das erste und letzte empfangene Ereignis (Start und Abschluss). Dieses Verfahren ermöglicht es, eine abgeschlossene Mediensitzung am richtigen Zeitpunkt zu platzieren (d. h., selbst wenn der Benutzer mehrere Tage lang nicht online war, erfährt er, dass die Mediensitzung zum Zeitpunkt der tatsächlichen Betrachtung des Inhalts stattgefunden hat). Sie müssen dieses Verfahren auf der Seite von Adobe Analytics aktivieren, indem Sie einen _optionalen Zeitstempel für die Report Suite erstellen._ Informationen zum Aktivieren eines optionalen Zeitstempel für die Report Suite finden Sie unter [Optionale Zeitstempel.](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html)
 
 ## Vergleich von Beispielsitzungen {#sample-session-comparison}
 
