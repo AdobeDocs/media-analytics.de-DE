@@ -3,10 +3,10 @@ title: Einrichten von Chromecast
 description: Einrichten der Media SDK-Anwendung für die Implementierung in Chromecast.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
-source-git-commit: 218c4f6a841a988477eb4509bff8d418e18715f5
-workflow-type: ht
-source-wordcount: '630'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '628'
+ht-degree: 99%
 
 ---
 
@@ -27,7 +27,7 @@ Die richtige Antwort lautet „Chromecast“, und zwar aus den folgenden Gründe
    * *Eine API zum Abonnieren von Player-Ereignissen*: Das Media SDK erfordert den Aufruf einer Reihe einfacher APIs, wenn im Player Ereignisse auftreten.
    * *Eine API, die Player-Informationen bereitstellt*: Diese Informationen enthalten Details wie den Mediennamen und die Abspielposition.
 
-Adobe Mobile Services bietet eine neue Anwenderoberfläche, auf der mobile Marketingfunktionen für mobile Anwendungen aus der gesamten Adobe Experience Cloud kombiniert werden. Zunächst bietet der Mobile Service eine nahtlose Integration von App-Analyse- und Targeting-Funktionen für die Lösungen Adobe Analytics und Adobe Target. Weitere Informationen finden Sie in der [Dokumentation zu Adobe Mobile Services.](https://docs.adobe.com/content/help/de-DE/mobile-services/using/home.html)
+Adobe Mobile Services bietet eine neue Anwenderoberfläche, auf der mobile Marketingfunktionen für mobile Anwendungen aus der gesamten Adobe Experience Cloud kombiniert werden. Zunächst bietet der Mobile Service eine nahtlose Integration von App-Analyse- und Targeting-Funktionen für die Lösungen Adobe Analytics und Adobe Target. Weitere Informationen finden Sie in der [Dokumentation zu Adobe Mobile Services.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)
 
 Mit Chromecast-SDK 2.x für Experience Cloud-Lösungen können Sie in JavaScript geschriebene Chromecast-Anwendungen messen, Zielgruppendaten über das Zielgruppen-Management nutzen und erfassen und Videointeraktionen über Video-Heartbeats messen.
 
@@ -136,4 +136,4 @@ Mit Chromecast-SDK 2.x für Experience Cloud-Lösungen können Sie in JavaScrip
 
 
 
-<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
+<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
