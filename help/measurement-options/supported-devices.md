@@ -2,11 +2,10 @@
 title: Unterstützte Geräte und Plattformen
 description: Adobe Analytics für Streaming-Medien stellt sicher, dass jeder Medien-Stream auf allen Geräten erfasst und in Berichten aufgeführt wird.
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '337'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 95%
 
 ---
 
@@ -26,7 +25,7 @@ Die Medien-SDKs werden routinemäßig aktualisiert, wenn neue Versionen von Ger�
 
 Für Geräte oder Plattformen, die derzeit keine SDK-Unterstützung haben, oder in Situationen, in denen Sie kein SDK verwenden möchten, können Sie die Mediensammlungs-API implementieren. Mit der Mediensammlungs-API können Sie RESTful-API-Aufrufe direkt von einem Gerät oder einer Plattform zum Media Analytics-Backend durchführen.
 
-Die folgende Tabelle zeigt die derzeit unterstützten Geräte und Plattformen. Hier können Sie die neueste Version des SDK herunterladen: [SDKs herunterladen](https://docs.adobe.com/content/help/de-DE/media-analytics/using/sdk-implement/download-sdks.html). Wenn ein Gerät nicht aufgeführt ist, wenden Sie sich an die Kundenunterstützung oder einen Berater, um den Status des Geräts zu erfahren.
+Die folgende Tabelle zeigt die derzeit unterstützten Geräte und Plattformen. Hier können Sie die neueste Version des SDK herunterladen: [SDKs herunterladen](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/download-sdks.html). Wenn ein Gerät nicht aufgeführt ist, wenden Sie sich an die Kundenunterstützung oder einen Berater, um den Status des Geräts zu erfahren.
 
 | Streaming-Plattformen und -Geräte |  | Media Launch-Erweiterung mit mobilem SDK für AEP | Medien-SDK | Mediensammlungs-API |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
@@ -50,4 +49,4 @@ Die folgende Tabelle zeigt die derzeit unterstützten Geräte und Plattformen. H
 
 1. Die Unterstützung für diese SDKs endet am 31. August 2021. Weitere Informationen finden Sie unter den [häufig gestellten Fragen zum Ende der Unterstützung für das Media Analytics-SDK](/help/sdk-implement/end-of-support-faqs.md).
 
-Weitere Informationen zu den Mindestanforderungen an die Plattformversionen, die für jedes SDK unterstützt werden, finden Sie unter [Unterstützte Mindestplattformversionen](https://docs.adobe.com/content/help/de-DE/media-analytics/using/sdk-implement/setup/setup-overview.html).
+Weitere Informationen zu den Mindestanforderungen an die Plattformversionen, die für jedes SDK unterstützt werden, finden Sie unter [Unterstützte Mindestplattformversionen](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/setup/setup-overview.html).
