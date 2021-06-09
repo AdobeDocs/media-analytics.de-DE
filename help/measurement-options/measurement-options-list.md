@@ -1,12 +1,11 @@
 ---
-title: Messoptionen
+title: 'Messoptionen '
 description: null
 uuid: null
-translation-type: ht
-source-git-commit: 967a126723ebbbe02097bd07edc2ed967cd35f4c
-workflow-type: ht
-source-wordcount: '293'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '287'
+ht-degree: 93%
 
 ---
 
@@ -17,15 +16,15 @@ Sie können das Audio- und Video-Tracking unter Verwendung von Adobe Launch mit 
 
 ## Adobe Launch mit der Adobe Media Analytics-Erweiterung
 
-Adobe Launch ist die Adobe-Tag-Management-Lösung der nächsten Generation von Adobe. Launch bietet eine einfache Möglichkeit, alle Analyse-, Marketing- und Werbe-Tags bereitzustellen und zu verwalten, die für relevante Kundenerlebnisse erforderlich sind. Um Ihre eigenen Integrationen mit Launch zu erstellen und zu pflegen, verwenden Sie Erweiterungen. Eine Erweiterung ist ein JavaScript-, HTML- und CSS-Package, das die Launch-Benutzeroberfläche und die Client-Funktionen ausbaut. Weitere Informationen finden Sie im [Benutzerhandbuch zu Experience Platform Launch](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html)
+Adobe Launch ist die Adobe-Tag-Management-Lösung der nächsten Generation von Adobe. Launch bietet eine einfache Möglichkeit, alle Analyse-, Marketing- und Werbe-Tags bereitzustellen und zu verwalten, die für relevante Kundenerlebnisse erforderlich sind. Um Ihre eigenen Integrationen mit Launch zu erstellen und zu pflegen, verwenden Sie Erweiterungen. Eine Erweiterung ist ein JavaScript-, HTML- und CSS-Package, das die Launch-Benutzeroberfläche und die Client-Funktionen ausbaut. Weitere Informationen finden Sie im [Benutzerhandbuch zu Experience Platform Launch](https://docs.adobe.com/content/help/de-DE/experience-cloud/user-guides/home.translate.html)
 
 Mit der Adobe Media Analytics-Erweiterung (MA) wird das JavaScript Media SDK (Media 2.x SDK) für Audio und Video hinzugefügt. Diese Erweiterung bietet die Funktionalität zum Hinzufügen der `MediaHeartbeat`-Tracker-Instanz zu einer Launch-Site oder einem Projekt.
 
 Adobe Launch mit der Media Analytics-Erweiterung erfordert Folgendes:
 * Sie müssen Adobe Experience Cloud-Kunde sein.
 * Sie müssen den Launch- oder DTM-Einbettungscode auf Ihren Websites bereitstellen.
-* [Analytics-Erweiterung](https://docs.adobe.com/content/help/de-DE/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
-* [Experience Cloud ID-Erweiterung](https://docs.adobe.com/content/help/de-DE/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)
+* [Analytics-Erweiterung](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
+* [Experience Cloud ID-Erweiterung](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)
 
 ## Medien-SDK
 
