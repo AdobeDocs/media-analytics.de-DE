@@ -2,11 +2,10 @@
 title: Migration vom Standalone Media SDK zu Adobe Launch – Web (JS)
 description: Anleitungen und Code-Beispiele für die Migration vom Media SDK zu Launch
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '409'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +44,7 @@ Zusätzlich zur `MediaHeartbeat`-Konfiguration muss auf der Seite die `AppMeasur
 
    ![](assets/launch_config_js.png)
 
-[Launch-Benutzerhandbuch – Installieren und Konfigurieren der Media-Erweiterung](https://docs.adobe.com/content/help/de-DE/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
+[Launch-Benutzerhandbuch – Installieren und Konfigurieren der Media-Erweiterung](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
 
 ## Unterschiede bei der Tracker-Erstellung
 
@@ -76,7 +75,7 @@ this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurem
 ```
 
 <!--  Dead Link - from 2019 - can't locate where this should go
-[Media SDK - Tracker Creation](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html) -->
+[Media SDK - Tracker Creation](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html) -->
 
 ### Launch
 
@@ -110,7 +109,7 @@ Launch bietet zwei Methoden zum Erstellen der Tracking-Infrastruktur. Beide Meth
 
 ## Verwandte Dokumentation
 
-### Media SDK
+### Medien-SDK
 
 * [Einrichten von JavaScript 2.x](/help/sdk-implement/setup/setup-javascript/set-up-js-2.md)
 * [Einrichten von JavaScript 3.x](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md)
@@ -118,5 +117,5 @@ Launch bietet zwei Methoden zum Erstellen der Tracking-Infrastruktur. Beide Meth
 
 ### Launch
 
-* [Launch-Übersicht](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html)
-* [Media Analytics-Erweiterung](https://docs.adobe.com/content/help/de-DE/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+* [Launch-Übersicht](https://docs.adobe.com/content/help/de-DE/experience-cloud/user-guides/home.translate.html)
+* [Media Analytics-Erweiterung](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
