@@ -4,9 +4,9 @@ description: Unterstützung benutzerspezifischer Metadaten
 uuid: df4109dd-9fca-4c33-a7d5-8e6eec257527
 exl-id: 672fa804-4a4f-4f06-b29b-b0aad27ca2f3
 source-git-commit: 962bb8b6859ca8964efcb2f3ba0dc566a5e24c3e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '115'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ params: { "media.channel": "channel-1" },
   customMetadata: { "a.media.channel": "channel-2" }
 ```
 
-Für die obige Konfiguration werden die Berichtsdaten an Analytics gesendet:
+Für die obige Konfiguration werden die folgenden Berichtsdaten an Analytics gesendet:
 
 `c.a.media.channel=channel-2`
 
