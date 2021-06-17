@@ -3,11 +3,10 @@ title: Messen von Streaming-Medien in Adobe Analytics
 description: Adobe Analytics for Media (auch als Media Analytics bezeichnet) bietet Clients eine robuste Medienmessung für Inhalte, Audio und Werbung.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '903'
-ht-degree: 100%
+source-git-commit: eaae56abd3e549ad57c45852fe0bedb618f80e9e
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +25,7 @@ Sie können wichtige QoS-Metriken messen, wie z. B. Dropped Frames, Pufferung un
 ## Funktionen {#features}
 
 Zu den Vorteilen von Adobe Analytics für Streaming-Medien zählen Echtzeit-Monitoring, detaillierte Analyse, umsetzbare Insights und Möglichkeiten der finanziellen Verwertung.
-* **Echtzeit-Analyse**- Treffen Sie umsetzbare Entscheidungen in Echtzeit, indem Sie wichtige Leistungsmetriken wie „Dauer“, „ex2“ und „ex3“ für mehrere Kanäle verwenden. Hauptinhaltereignisse werden in zehn-Sekunden-Intervallen gemessen, um Aktivitäten zu erfassen, sobald sie auftreten. Anzeigen-Tracking-Ereignisse treten in Intervallen von einer Sekunde auf.
+* **Echtzeitanalyse** - Treffen Sie Entscheidungen anhand von aussagekräftigen Echtzeitmetriken zur Performance, wie z. B. Medienstarts, über mehrere Kanäle hinweg.
 * **Förderung der Interaktion** - Die Interaktion der Benutzer wird gefördert, indem die Pufferung verringert wird und ermittelt wird, wo und wann Anzeigen in Inhalten abgespielt werden sollten, um ein reibungsloses, weniger störendes Erlebnis zu bieten, das zu Wiederholungsbesuchen führt.
 * **Ganzheitliche Übersicht** - Kombinieren Sie verschiedene Datenpunkte Ihrer Inhaltsdistributoren, um eine umfassende Übersicht aller Medienaktivitäten zu erhalten. Mit Federated Analytics können Sie die Interaktion und Aufrufe auf allen Kanälen messen.
 * **Erhöhte Granularität** - Bewerten Sie das Ansichtsverhalten auf einer extrem detaillierten Ebene, einschließlich der Besuchszeit einzelner Benutzer, gleichzeitige Betrachter/Zuhörer nach Minuten und der durchschnittlichen Konsumdauer des Inhalts.
