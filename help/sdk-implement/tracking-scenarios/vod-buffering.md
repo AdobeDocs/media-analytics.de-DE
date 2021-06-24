@@ -1,17 +1,18 @@
 ---
 title: VOD-Wiedergabe mit Pufferung
-description: Ein Beispiel für das Tracking von VOD-Inhalten mit dem Media SDK.
+description: Sehen Sie sich ein Beispiel für das Tracking von VOD-Inhalten mit dem Media SDK an.
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 exl-id: 3a8f913f-cb51-45ae-ac1d-862ea1e7c994
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '228'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 92%
 
 ---
 
-# VOD-Wiedergabe mit Pufferung {#vod-playback-with-buffering}
+# VOD-Wiedergabe mit Pufferung{#vod-playback-with-buffering}
 
 ## Szenario {#scenario}
 
