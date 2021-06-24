@@ -1,17 +1,18 @@
 ---
-title: Tracking von Anzeigen in iOS
+title: Erfahren Sie, wie Sie Anzeigen in iOS verfolgen
 description: Implementieren des Anzeigen-Trackings in iOS-Anwendungen mit dem Media SDK.
 uuid: e979e679-cde5-4c30-8f34-867feceac13a
 exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '352'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 98%
 
 ---
 
-# Tracking von Anzeigen in iOS {#track-ads-on-ios}
+# Tracking von Anzeigen in iOS{#track-ads-on-ios}
 
 >[!IMPORTANT]
 >
