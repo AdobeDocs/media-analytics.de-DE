@@ -1,16 +1,17 @@
 ---
-title: Implementieren von Standard-Anzeigenmetadaten mit JavaScript 3.x
+title: Erfahren Sie, wie Sie Standard-Anzeigenmetadaten mit JavaScript 3.x implementieren.
 description: Verwendung von Standard-Anzeigenmetadaten beim Tracking von Anzeigen in einem Browser mit JavaScript 3.x-Programmen.
 exl-id: ba9abf1d-3778-49ef-a2fc-6c0eafa3b227
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '54'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '58'
+ht-degree: 84%
 
 ---
 
-# Implementieren von Standard-Anzeigenmetadaten mit JavaScript 3.x {#implement-standard-ad-metadata-on-javascript}
+# Implementieren von Standard-Anzeigenmetadaten mit JavaScript 3.x{#implement-standard-ad-metadata-on-javascript}
 
 ## Implementieren der Standard-Anzeigenmetadaten
 
