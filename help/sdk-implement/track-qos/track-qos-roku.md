@@ -1,17 +1,18 @@
 ---
-title: Tracking der Erlebnisqualität auf Roku
-description: Hier wird die Implementierung des Trackings der Erlebnisqualität (QoE, QoS) mit dem Media SDK in Roku beschrieben.
+title: Erfahren Sie, wie Sie die Erlebnisqualität in Roku verfolgen können.
+description: '"Erfahren Sie mehr über die Implementierung des Trackings der Erlebnisqualität (QoE, QoS) mit dem Media SDK in Roku."'
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '195'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '199'
+ht-degree: 87%
 
 ---
 
-# Tracking der Erlebnisqualität auf Roku {#track-quality-of-experience-on-roku}
+# Tracking der Erlebnisqualität auf Roku{#track-quality-of-experience-on-roku}
 
 >[!IMPORTANT]
 >
