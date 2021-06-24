@@ -1,17 +1,18 @@
 ---
-title: Tracking von Fehlern in iOS
-description: Hier wird die Implementierung des Fehler-Trackings mit dem Media SDK in iOS beschrieben.
+title: Erfahren Sie, wie Sie Fehler in iOS verfolgen können.
+description: Erfahren Sie mehr über die Implementierung des Fehler-Trackings mit dem Media SDK in iOS.
 uuid: 18ea93d3-5948-4375-bcdb-72309268e38d
 exl-id: c4ce7092-a102-41da-80a6-a4359f925708
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '92'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '96'
+ht-degree: 81%
 
 ---
 
-# Tracking von Fehlern in iOS {#track-errors-on-ios}
+# Tracking von Fehlern in iOS{#track-errors-on-ios}
 
 >[!IMPORTANT]
 >
