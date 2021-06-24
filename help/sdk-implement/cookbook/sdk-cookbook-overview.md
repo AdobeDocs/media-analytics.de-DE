@@ -1,12 +1,13 @@
 ---
 title: Überblick über das SDK-Cookbook
-description: SDK-spezifische Cookbook-Themen
+description: '"SDK-spezifische Cookbook-Themen erkunden "'
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '66'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '69'
+ht-degree: 94%
 
 ---
 
@@ -17,6 +18,6 @@ Allgemeine Themen des Media Analytics-Cookbooks, die sowohl für das Media SDK a
 Die folgenden Cookbook-Themen beziehen sich auf die Media SDK-Version von Media Analytics:
 
 * [Behandlung von Anwendungsunterbrechungen während der Wiedergabe](/help/sdk-implement/cookbook/app-interrupts.md)
-* [Beheben von „main:play“ zwischen Anzeigen](/help/sdk-implement/cookbook/fix-ad-play-ad.md)
+* [Beheben von „main:play“ zwischen Anzeigen ](/help/sdk-implement/cookbook/fix-ad-play-ad.md)
 * [Wiederaufnahme von inaktiven Sitzungen](/help/sdk-implement/cookbook/resuming-inactive.md)
 * [Tracking in SceneGraph (Roku)](/help/sdk-implement/cookbook/sdk-track-scenegraph.md)
