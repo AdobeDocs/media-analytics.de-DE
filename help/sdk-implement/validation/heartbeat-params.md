@@ -1,13 +1,14 @@
 ---
 title: Beschreibungen der Heartbeat-Parameter
-description: Eine Liste der Heartbeat-Parameter, die Adobe erfasst und auf dem Media Analytics (Heartbeat)-Server verarbeitet.
+description: Erkunden Sie die Heartbeat-Parameter, die Adobe auf dem Media Analytics (Heartbeats)-Server erfasst und verarbeitet.
 uuid: e9ddda32-0952-43d0-a702-49f5b1bfd8cf
 exl-id: ffa67b5e-ee54-4a5b-8064-decd108f944b
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '866'
-ht-degree: 100%
+feature: '"Media Analytics, Variablen"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '813'
+ht-degree: 79%
 
 ---
 
