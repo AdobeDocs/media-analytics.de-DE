@@ -1,17 +1,18 @@
 ---
-title: Suchen-Tracking in Roku
-description: Hier wird die Implementierung des Suchen-Trackings mit dem Media SDK in Roku beschrieben.
+title: Erfahren Sie, wie Sie die Suche in Roku verfolgen
+description: Erfahren Sie, wie Sie mit dem Media SDK in Roku Suchstartereignisse und Suchabschlussereignisse verfolgen.
 uuid: 0572252b-397f-4aa2-b4b5-c5346b75244a
 exl-id: cb0581f7-3ced-4d46-ac6a-a309a179c21e
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '123'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 82%
 
 ---
 
-# Suchen-Tracking in Roku {#track-seeking-on-roku}
+# Suchen-Tracking in Roku{#track-seeking-on-roku}
 
 >[!IMPORTANT]
 >
