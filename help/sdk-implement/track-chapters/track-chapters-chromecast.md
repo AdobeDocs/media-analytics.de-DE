@@ -1,17 +1,18 @@
 ---
-title: Tracking von Kapiteln und Segmenten in Chromecast
-description: Hier wird die Implementierung des Kapitel- und Segment-Trackings mit dem Media SDK in Chromecast beschrieben.
+title: Erfahren Sie, wie Sie Kapitel und Segmente in Chromecast verfolgen.
+description: Erfahren Sie mehr über die Implementierung des Kapitel- und Segment-Trackings mit dem Media SDK in Chromecast.
 uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
 exl-id: 26b71e4d-ced7-49cb-a838-2b1c8d4ee4de
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '218'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 90%
 
 ---
 
-# Tracking von Kapiteln und Segmenten in Chromecast {#track-chapters-and-segments-on-chromecast}
+# Tracking von Kapiteln und Segmenten in Chromecast{#track-chapters-and-segments-on-chromecast}
 
 >[!IMPORTANT]
 >
