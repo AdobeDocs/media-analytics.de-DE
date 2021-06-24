@@ -1,17 +1,18 @@
 ---
 title: Medienübersicht
-description: Medienübersicht
+description: Verwenden Sie das Dashboard Medienübersicht , um aggregierte Messungen anzuzeigen. Erfahren Sie, wie Sie die Medienleistung schnell überwachen können.
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '93'
-ht-degree: 100%
+feature: '"Grundlagen zu Media Analytics, Reports & Analytics"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 81%
 
 ---
 
-# Medienübersicht {#media-overview}
+# Medienübersicht{#media-overview}
 
 Im Dashboard „Medienübersicht“ können Sie die Medien auf Ihrer Site überwachen. Die Anzeige „Medienübersicht“ zeigt mehrere aggregierte Messungen an, so dass Sie schnell erkennen können, ob die Medien wie erwartet funktionieren. In einem Diagramm werden die Inhaltsstarts neben Anzeigenstarts angezeigt, damit Sie diese Metriken schnell für jedes Medium anzeigen können.
 
