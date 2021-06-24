@@ -1,17 +1,18 @@
 ---
 title: Migrationsübersicht
-description: Hier finden Sie einen Überblick über die Migration von Version 1.x auf 2.x des Media SDK.
+description: Erfahren Sie mehr über die Migration von 1.x zu 2.x-Versionen des Media SDK.
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
 exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '213'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 94%
 
 ---
 
-# Migrationsübersicht {#migration-overview}
+# Migrationsübersicht{#migration-overview}
 
 Die Migration von VHL 1.x zu VHL 2.x ist dank vereinfachter APIs für Initialisierung, Konfiguration und Player-Delegates unkompliziert.
 
