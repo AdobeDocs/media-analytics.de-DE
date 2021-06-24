@@ -2,10 +2,11 @@
 title: Beispiele für Player-Status-Tracking
 description: Dieses Kapitel enthält Beispiele für das Player-Status-Tracking.
 exl-id: a77bc882-ac03-40b4-ac64-87f26a09707b
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '119'
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: 8a421ee4ee5d2e61126fc6ac8f10f326427e78a7
+workflow-type: tm+mt
+source-wordcount: '121'
 ht-degree: 100%
 
 ---
@@ -17,8 +18,7 @@ ht-degree: 100%
 
 Wenn eine Videositzung eine Pause hat, die länger als 30 Minuten dauert, fordert die API eine neue Sitzung an. In diesem Fall sollte der Client eine neue Sitzungs-ID generieren. Für beide Videositzungen sollte der Client alle Status beibehalten, in denen sich ein Player befindet, und alle Informationen als ein `stateStart`-Ereignis direkt nach dem `sessionStart`-Aufruf senden.
 
-`sessionStart → stateStart (fullscreen) → stateStart (mute) → pauseStart → (pings for 30 minutes) → sessionEnd
-`
+`sessionStart → stateStart (fullscreen) → stateStart (mute) → pauseStart → (pings for 30 minutes) → sessionEnd`
 
 Nach dem Senden von `sessionEnd` muss eine neue Videositzung gestartet werden, und die ersten API-Ereignisse lauten:
 
