@@ -1,18 +1,19 @@
 ---
 seo-title: Überblick
-title: Überblick
-description: null
+title: Übersicht über die Streaming-Mediensammlungs-API
+description: Erfahren Sie mehr über die Mediensammlungs-API und wie Ihr Player Audio- und Videoereignisse mithilfe von RESTful-HTTP-Aufrufen verfolgen kann.
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '331'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 92%
 
 ---
 
-# Überblick {#overview}
+# Überblick{#overview}
 
 Die Mediensammlungs-API ist die RESTful-Alternative von Adobe zum Client-seitigen Media SDK. Mit der Mediensammlungs-API kann Ihr Player Audio- und Videoereignisse mit RESTful HTTP-Aufrufen tracken.
 
