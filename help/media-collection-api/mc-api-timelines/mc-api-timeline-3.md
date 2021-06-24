@@ -1,13 +1,14 @@
 ---
-title: 'Zeitlicher Ablauf 3: Kapitel'
-description: null
+title: Erfahren Sie mehr über die Zeitpläne für die Medienverfolgung � Kapitel.
+description: Erfahren Sie mehr über die Timeline der Abspielleiste und darüber, wann ein Kapitel beginnt und endet.
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '1219'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '1237'
+ht-degree: 98%
 
 ---
 
