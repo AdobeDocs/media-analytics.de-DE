@@ -1,17 +1,18 @@
 ---
-title: Tracking von Anzeigen in Android
+title: Erfahren Sie, wie Sie Anzeigen in Android verfolgen.
 description: Implementieren des Anzeigen-Trackings in Android-Anwendungen mit dem Media SDK.
 uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
 exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '352'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 98%
 
 ---
 
-# Tracking von Anzeigen in Android {#track-ads-on-android}
+# Tracking von Anzeigen in Android{#track-ads-on-android}
 
 >[!IMPORTANT]
 >
@@ -81,7 +82,7 @@ ht-degree: 100%
 
 1. Optional können Standard- und/oder Anzeigenmetadaten über Kontextdatenvariablen an die Medien-Tracking-Sitzung angehängt werden.
 
-   * [Standard-Anzeigenmetadaten in Android implementieren](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
+   * [Standardmäßige Anzeigenmetadaten in Android implementieren](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
    * **Anwenderspezifische Anzeigenmetadaten:** Erstellen Sie für anwenderdefinierte Metadaten ein variables Objekt für die anwenderspezifischen Datenvariablen und füllen Sie es mit den Daten für aktuelle Anzeigen:
 
       ```java
