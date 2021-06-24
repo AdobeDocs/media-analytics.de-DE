@@ -1,17 +1,18 @@
 ---
-title: Tracking der Erlebnisqualität mit JavaScript 2.x
-description: Hier wird die Implementierung des Trackings der Erlebnisqualität (QoE, QoS) mit dem Medien-SDK in Browser-Programmen mit JavaScript 2.x erläutert.
+title: Erfahren Sie, wie Sie die Erlebnisqualität mit JavaScript 2.x verfolgen können.
+description: '"Erfahren Sie mehr über die Implementierung des Trackings der Erlebnisqualität (QoE, QoS) mit dem Media SDK in Browser-Apps mit JavaScript 2.x."'
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
 exl-id: 5924eba4-15a9-405b-9a05-8a7308ddec47
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '219'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 87%
 
 ---
 
-# Tracking der Erlebnisqualität mit JavaScript 2.x {#track-quality-of-experience-on-javascript}
+# Tracking der Erlebnisqualität mit JavaScript 2.x{#track-quality-of-experience-on-javascript}
 
 >[!IMPORTANT]
 >
