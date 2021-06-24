@@ -1,17 +1,18 @@
 ---
 title: VOD-Wiedergabe mit Suche im Hauptinhalt
-description: Ein Beispiel für das Tracking von VOD-Inhalten, in denen mithilfe des Media SDK gesucht wurde.
+description: Sehen Sie sich ein Beispiel für das Tracking von VOD-Inhalten an, in denen mit dem Media SDK gesucht wurde.
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 exl-id: d77aa717-5dcb-4429-8dce-1914434f2b32
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '274'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '277'
+ht-degree: 90%
 
 ---
 
-# VOD-Wiedergabe mit Suche im Hauptinhalt {#vod-playback-with-seeking-in-the-main-content}
+# VOD-Wiedergabe mit Suche im Hauptinhalt{#vod-playback-with-seeking-in-the-main-content}
 
 ## Szenario {#scenario}
 
