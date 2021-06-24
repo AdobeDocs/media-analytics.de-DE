@@ -1,17 +1,18 @@
 ---
-title: 'Zeitlicher Ablauf 1: Wiedergabe bis zum Ende des Inhalts'
-description: null
+title: Erfahren Sie mehr über die Zeitpläne für die Medienverfolgung � Anzeigen bis zum Ende des Inhalts
+description: Machen Sie sich mit der Timeline der Abspielleiste und den Aktionen � entsprechenden Benutzers vertraut. Erfahren Sie mehr über die Details für jede Aktion und die zugehörigen Anfragen.
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '1164'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '1193'
+ht-degree: 97%
 
 ---
 
-# Zeitlicher Ablauf 1: Wiedergabe bis zum Ende des Inhalts {#timeline-view-to-end-of-content}
+# Zeitlicher Ablauf 1: Wiedergabe bis zum Ende des Inhalts{#timeline-view-to-end-of-content}
 
 ## VOD, Pre-Roll-Anzeigen, Pausen, Puffern, Wiedergabe des Inhalts bis zum Ende
 
