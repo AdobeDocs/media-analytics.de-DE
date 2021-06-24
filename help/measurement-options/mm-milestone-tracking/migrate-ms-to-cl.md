@@ -1,17 +1,18 @@
 ---
-title: Migration von Milestone zu Custom Link
-description: Migration von Milestone zu Custom Link
+title: Erfahren Sie mehr über die Migration von Milestone zu Custom Link
+description: Erfahren Sie, wie Sie Meilensteinvariablen in Methoden des Moduls "Benutzerspezifischer Link"und "Meilenstein"in die Syntax für benutzerspezifische Links ändern.
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '582'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '598'
+ht-degree: 95%
 
 ---
 
-# Migration von Milestone zu Custom Link {#migrating-from-milestone-to-custom-link}
+# Migration von Milestone zu Custom Link{#migrating-from-milestone-to-custom-link}
 
 ## Überblick {#overview}
 
