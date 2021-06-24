@@ -1,17 +1,18 @@
 ---
-title: Überblick
+title: Erklärung zu Anzeigen verfolgen
 description: Überblickt über die Implementierung des Anzeigen-Trackings mit dem Media SDK.
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '504'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 99%
 
 ---
 
-# Überblick {#overview}
+# Überblick{#overview}
 
 >[!IMPORTANT]
 >
