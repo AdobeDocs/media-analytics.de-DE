@@ -1,17 +1,18 @@
 ---
-title: Puffer-Tracking in Chromecast
-description: Beschreibt das Tracking von Pufferereignissen in Chromecast.
+title: Erfahren Sie, wie Sie Puffer-Tracking in Chromecast durchführen.
+description: Erfahren Sie, wie Sie Pufferereignisse in Chromecast verfolgen.
 uuid: f6fa3a1a-d7de-4293-bd11-ebe9e130badd
 exl-id: 26fd1e2a-4103-486f-be12-36b088d28cb6
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '128'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '135'
+ht-degree: 88%
 
 ---
 
-# Puffer-Tracking in Chromecast {#track-buffering-on-chromecast}
+# Puffer-Tracking in Chromecast{#track-buffering-on-chromecast}
 
 >[!IMPORTANT]
 >
