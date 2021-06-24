@@ -1,12 +1,11 @@
 ---
+product: adobe analytics
 audience: end-user
 user-guide-title: Adobe Analytics für Streaming Media
 breadcrumb-title: Medienanalyseleitfaden
 user-guide-description: Implementieren von Adobe Analytics für Streaming-Medien. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
-product: adobe analytics
 sub-product: Media Analytics
-translation-type: tm+mt
-source-git-commit: 82923f4ad4d6fd2394fe83850edca3ffd6a913ea
+source-git-commit: 230488398dc145798e4b12ddb94cd73f4f790f28
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 100%
@@ -19,7 +18,7 @@ ht-degree: 100%
 + [Messen von Streaming-Medien in Adobe Analytics](media-overview.md)
 + [Unterstützte Geräte und Plattformen](measurement-options/supported-devices.md)
 + Einführung in Analytics für Streaming-Medien {#intro-to-ava}
-   + [Voraussetzungen](intro-to-ava/prereqs.md)
+   + [Voraussetzungen ](intro-to-ava/prereqs.md)
    + Implementierungspfade {#implementation-paths}
       + [Überblick](intro-to-ava/implementation-paths/implementation-paths.md)
       + [Client-seitig](intro-to-ava/implementation-paths/client-side-path.md)
@@ -29,7 +28,7 @@ ht-degree: 100%
             + [Migrieren von Meilensteinen zu Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
             + [Migration von Milestone zu Custom Link](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
          + Custom Link in Analytics {#cl-in-aa}
-            + [Implementierungshandbuch für benutzerdefinierte Links](measurement-options/cl-in-aa/cl-impl-guide.md)
+            + [Implementierungshandbuch für benutzerdefinierte Links ](measurement-options/cl-in-aa/cl-impl-guide.md)
          + Primetime {#primetime}
             + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
          + [Audience Manager-Aktivierung](intro-to-ava/am-enablement.md)
@@ -43,8 +42,8 @@ ht-degree: 100%
       + JavaScript einrichten {#setup-javascript}
          + [Einrichten von JavaScript 2.x](sdk-implement/setup/setup-javascript/set-up-js-2.md)
          + [Einrichten von JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
-      + [Chromecast einrichten ](sdk-implement/setup/set-up-chromecast.md)
-      + [Roku einrichten ](sdk-implement/setup/set-up-roku.md)
+      + [Einrichten von Chromecast](sdk-implement/setup/set-up-chromecast.md)
+      + [Roku einrichten](sdk-implement/setup/set-up-roku.md)
    + Tracking der Wiedergabe von Streaming-Medien {#track-av-playback}
       + [Überblick](sdk-implement/track-av-playback/track-core-overview.md)
       + Tracking der Core-Wiedergabe von Streaming-Medien {#track-core}
@@ -92,7 +91,7 @@ ht-degree: 100%
       + [Tracking von Anzeigen in Chromecast](sdk-implement/track-ads/track-ads-chromecast.md)
       + [Tracking von Anzeigen in Roku](sdk-implement/track-ads/track-ads-roku.md)
       + Standard-Anzeigenmetadaten implementieren {#impl-std-ad-metadata}
-         + [Standard-Anzeigenmetadaten in Android implementieren](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
+         + [Standardmäßige Anzeigenmetadaten in Android implementieren](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [Standard-Anzeigenmetadaten in iOS implementieren](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
          + Standard-Anzeigenmetadaten in JavaScript implementieren {#impl-std-ad-md-js}
             + [Standard-Anzeigenmetadaten in JavaScript 2.x implementieren](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
@@ -128,7 +127,7 @@ ht-degree: 100%
    + [Opt-out und Datenschutz](sdk-implement/opt-out-privacy.md)
    + Tracking-Szenarien {#tracking-scenarios}
       + [VOD-Wiedergabe ohne Anzeigen](sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
-      + [VOD-Wiedergabe mit Pre-Roll-Anzeigen](sdk-implement/tracking-scenarios/vod-preroll-ads.md)
+      + [VOD-Wiedergabe mit Pre-roll-Anzeigen](sdk-implement/tracking-scenarios/vod-preroll-ads.md)
       + [VOD-Wiedergabe mit übersprungenen Anzeigen](sdk-implement/tracking-scenarios/vod-skipped-ads.md)
       + [VOD-Wiedergabe mit einem Kapitel](sdk-implement/tracking-scenarios/vod-one-chapter.md)
       + [VOD-Wiedergabe mit einem übersprungenen Kapitel](sdk-implement/tracking-scenarios/vod-skipped-chapter.md)
@@ -158,7 +157,7 @@ ht-degree: 100%
    + Cookbook {#cookbook}
       + [SDK-Cookbook](sdk-implement/cookbook/sdk-cookbook-overview.md)
       + [Behandlung von Anwendungsunterbrechungen während der Wiedergabe](sdk-implement/cookbook/app-interrupts.md)
-      + [Beheben von „main:play“ zwischen Anzeigen](sdk-implement/cookbook/fix-ad-play-ad.md)
+      + [Beheben von „main:play“ zwischen Anzeigen ](sdk-implement/cookbook/fix-ad-play-ad.md)
       + [Wiederaufnahme von inaktiven Sitzungen](sdk-implement/cookbook/resuming-inactive.md)
       + [Tracking in SceneGraph (Roku)](sdk-implement/cookbook/sdk-track-scenegraph.md)
    + Migration von Media Analytics 1.x zu 2.x {#va-1x-to-2x}
