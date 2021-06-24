@@ -1,17 +1,18 @@
 ---
-title: VOD-Wiedergabe mit Pre-roll-Anzeigen
-description: Ein Beispiel für das Tracking von VOD-Inhalten, die Pre-Roll-Anzeigen enthalten, mit dem Media SDK.
+title: '"VOD-Wiedergabe mit Pre-Roll-Anzeigen"'
+description: '"Sehen Sie sich ein Beispiel für das Tracking von VOD-Inhalten an, die Pre-Roll-Anzeigen mit dem Media SDK enthalten."'
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '526'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 95%
 
 ---
 
-# VOD-Wiedergabe mit Pre-Roll-Anzeigen {#vod-playback-with-pre-roll-ads}
+# VOD-Wiedergabe mit Pre-roll-Anzeigen{#vod-playback-with-pre-roll-ads}
 
 In diesem Szenario wurde eine Pre-roll-Anzeige vor dem Hauptinhalt eingefügt. Wenn nichts anderes angegeben ist, sind die Netzwerkaufrufe mit den Aufrufen im Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) identisch. Der Netzwerkaufrufe erfolgen gleichzeitig, aber die Payload ist anders.
 
