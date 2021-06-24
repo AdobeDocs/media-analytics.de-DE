@@ -1,17 +1,18 @@
 ---
 title: Einreihen von Ereignissen in die Warteschlange bei langsamer Sitzungsantwort
-description: Einreihen von Ereignissen in die Warteschlange bei langsamer Sitzungsantwort
+description: 'Erfahren Sie, was zu tun ist, wenn die Sitzungs-ID zurückgegeben wird, nachdem Ihr Player Ereignisse auslöst. '
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
 exl-id: 2c23c378-c104-4256-b6e7-8eb6871f62da
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '197'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 92%
 
 ---
 
-# Einreihen von Ereignissen in die Warteschlange bei langsamer Sitzungsantwort {#queueing-events-when-sessions-response-is-slow}
+# Einreihen von Ereignissen in die Warteschlange bei langsamer Sitzungsantwort{#queueing-events-when-sessions-response-is-slow}
 
 Bei der Mediensammlungs-API handelt es sich um eine RESTful-API. Das heißt, Sie stellen eine HTTP-Anfrage und warten auf die Antwort. Das ist nur wichtig, wenn Sie zu Beginn der Videowiedergabe eine [Sitzungsanforderung](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) stellen, um eine Sitzungs-ID abzurufen. Dies ist wichtig, da die Sitzungs-ID für alle nachfolgenden Tracking-Anrufe erforderlich ist.
 
