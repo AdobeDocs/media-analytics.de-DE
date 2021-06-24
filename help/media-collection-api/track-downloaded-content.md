@@ -1,16 +1,18 @@
 ---
 title: Tracking heruntergeladener Inhalte
-description: null
+description: Erfahren Sie, wie Sie mit der Funktion für heruntergeladene Inhalte den Medienkonsum verfolgen können, wenn ein Benutzer offline ist.
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
-source-wordcount: '609'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '628'
+ht-degree: 97%
 
 ---
 
-# Tracking heruntergeladener Inhalte {#track-downloaded-content}
+# Tracking heruntergeladener Inhalte{#track-downloaded-content}
 
 ## Überblick {#overview}
 
