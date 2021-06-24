@@ -1,17 +1,18 @@
 ---
-title: iOS-Metadatenelemente
-description: Hier werden die verfügbaren iOS-Metadatenschlüssel beschrieben.
+title: iOS-Metadatenschlüssel - Erklärung
+description: Erfahren Sie mehr über die verfügbaren iOS-Metadatenschlüssel.
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '115'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '117'
+ht-degree: 90%
 
 ---
 
-# iOS-Metadataschlüssel {#ios-metadata-keys}
+# iOS-Metadatenelemente{#ios-metadata-keys}
 
 [iOS-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/)
 
@@ -43,10 +44,10 @@ Von `ADBStandardMetadataKeys.h`:
 
 | Konstantenname | Beschreibung | Typ |
 |---|---|---|
-| `ADBAudioMetadataKeyALBUM` | Show | Audio |
+| `ADBAudioMetadataKeyALBUM` | Anzeigen | Audio |
 | `ADBAudioMetadataKeyARTIST` | Staffel | Audio |
 | `ADBAudioMetadataKeyAUTHOR` | Staffel | Audio |
-| `ADBAudioMetadataKeyLABEL` | Episode | Audio |
+| `ADBAudioMetadataKeyLABEL` | Folge | Audio |
 | `ADBAudioMetadataKeyPUBLISHER` | Asset | Audio |
 | `ADBAudioMetadataKeySTATION` | Genre | Audio |
 
