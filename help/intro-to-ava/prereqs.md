@@ -1,12 +1,14 @@
 ---
-title: 'Voraussetzungen '
-description: 'Voraussetzungen '
+title: Informationen zu den Voraussetzungen für Streaming-Medien
+description: Erste Schritte mit Adobe Analytics Streaming Media. Erfahren Sie, was Sie zur Implementierung von Adobe Analytics für Streaming-Medien benötigen.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
-workflow-type: ht
-source-wordcount: '388'
-ht-degree: 100%
+feature: '"Media Analytics, Systemanforderungen"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 93%
 
 ---
 
