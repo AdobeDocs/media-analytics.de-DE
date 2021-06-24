@@ -1,17 +1,18 @@
 ---
-title: Behandlung von Anwendungsunterbrechungen während der Wiedergabe
-description: Handhabung von Unterbrechungen beim Tracking während der Medienwiedergabe.
+title: Umgang mit Anwendungsunterbrechungen während der Wiedergabe
+description: Erfahren Sie, wie Sie Unterbrechungen der Verfolgung während der Wiedergabe von Medien handhaben.
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '366'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '369'
+ht-degree: 95%
 
 ---
 
-# Behandlung von Anwendungsunterbrechungen während der Wiedergabe {#handling-application-interrupts-during-playback}
+# Behandlung von Anwendungsunterbrechungen während der Wiedergabe{#handling-application-interrupts-during-playback}
 
 Die Wiedergabe in einer Medienanwendung kann auf verschiedene Weise unterbrochen werden: Ein Benutzer drückt explizit auf „Anhalten“ oder er stellt die Anwendung in den Hintergrund. Unabhängig davon, was zu einer Unterbrechung der Medienwiedergabe führt, gelten die folgenden Tracking-Anweisungen:
 
