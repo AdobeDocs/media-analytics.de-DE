@@ -1,17 +1,18 @@
 ---
-title: Tracking der Pufferung mit JavaScript 2.x
-description: Beschreibt das Tracking von Pufferereignissen in Browser-Anwendungen (JS).
+title: Erfahren Sie, wie Sie Puffer-Tracking mit JavaScript 2.x durchführen.
+description: Erfahren Sie, wie Sie Pufferereignisse in Browser-Apps (JS) verfolgen.
 uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
 exl-id: 62c1d5b4-2717-42b3-8343-d41e895a9da3
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '116'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 85%
 
 ---
 
-# Tracking der Pufferung mit JavaScript 2.x {#track-buffering-on-javascript}
+# Tracking der Pufferung mit JavaScript 2.x{#track-buffering-on-javascript}
 
 >[!IMPORTANT]
 >
