@@ -1,17 +1,18 @@
 ---
-title: Tracking von Kapiteln und Segmenten in Android
-description: Hier wird die Implementierung des Kapitel- und Segment-Trackings mit dem Media SDK in Android beschrieben.
+title: Erfahren Sie, wie Sie Kapitel und Segmente in Android verfolgen können.
+description: Erfahren Sie mehr über die Implementierung des Kapitel- und Segment-Trackings mit dem Media SDK in Android.
 uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
 exl-id: ada2e2a7-1383-471c-9ce6-c82ea93fa79d
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '196'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 89%
 
 ---
 
-# Tracking von Kapiteln und Segmenten in Android {#track-chapters-and-segments-on-android}
+# Tracking von Kapiteln und Segmenten in Android{#track-chapters-and-segments-on-android}
 
 >[!IMPORTANT]
 >
