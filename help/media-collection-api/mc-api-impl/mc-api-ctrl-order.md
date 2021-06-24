@@ -1,17 +1,18 @@
 ---
 title: Steuern der Ereignisreihenfolge
-description: Steuern der Ereignisreihenfolge
+description: Erfahren Sie, wie Sie die Reihenfolge der Ereignisse steuern und wie in einigen Fällen Ereignisse basierend auf dem bereitgestellten Zeitstempel im playerTime-Objekt neu angeordnet werden.
 uuid: 007fccc6-be72-4b79-826d-588c957ccf15
 exl-id: c0cac319-2bea-42c8-8674-641dfbb44fa2
-translation-type: ht
-source-git-commit: 27694ec83de89980404df7a7cc77fa42b3d1a751
-workflow-type: ht
-source-wordcount: '307'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '328'
+ht-degree: 92%
 
 ---
 
-# Steuern der Ereignisreihenfolge {#controlling-the-order-of-events}
+# Steuern der Ereignisreihenfolge{#controlling-the-order-of-events}
 
 Die Verfolgung von Streaming-Videos ist in hohem Maße zeitabhängig, und gelegentlich werden die Media Collection-API-Verfolgungsaufrufe im Back-End nicht ordnungsgemäß gesendet. Das Back-End versucht in solchen Fällen, die Ereignisse in eine Warteschlange einzureihen und je nach Zeitstempel im Objekt `playerTime` neu zu ordnen.  Dies geschieht mit einigen Einschränkungen. Aktuell kann die Neusortierung fehlschlagen, wenn die Verzögerung zwischen den nicht ordnungsgemäß eingehenden Aufrufen mehr als eine Sekunde beträgt. In zukünftigen Updates wird es eventuell möglich sein, die „akzeptable Zeitverzögerung“ zu optimieren und zu konfigurieren.
 
