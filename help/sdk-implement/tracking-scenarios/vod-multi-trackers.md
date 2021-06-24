@@ -1,17 +1,18 @@
 ---
 title: Mehrere parallele VOD-Tracker
-description: Ein Beispiel für das Tracking von VOD mit mehreren parallelen Trackern.
+description: Sehen Sie sich ein Beispiel für die Verfolgung von VOD mit mehreren parallelen Trackern an.
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 exl-id: 318beba8-bb26-4cec-81d7-c6fc446ec7b4
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '244'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 92%
 
 ---
 
-# Mehrere parallele VOD-Tracker {#vod-multiple-trackers-in-parallel}
+# Mehrere parallele VOD-Tracker{#vod-multiple-trackers-in-parallel}
 
 ## Szenario {#scenario}
 
