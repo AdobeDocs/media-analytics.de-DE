@@ -1,16 +1,17 @@
 ---
-title: Tracking von Anzeigen mit JavaScript 3.x
+title: Erfahren Sie, wie Sie Anzeigen mit JavaScript 3.x verfolgen.
 description: Implementieren des Anzeigen-Trackings in Browser-Anwendungen (JS) mit dem Media SDK.
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '359'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 97%
 
 ---
 
-# Tracking von Anzeigen mit JavaScript 3.x {#track-ads-on-javascript}
+# Tracking von Anzeigen mit JavaScript 3.x{#track-ads-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -59,8 +60,8 @@ ht-degree: 100%
 
    | Variablenname | Typ | Beschreibung |
    | --- | --- | --- |
-   | `name` | string | Nicht leere Zeichenfolge, die den Anzeigennamen angibt. |
-   | `adId` | string | Nicht leere Zeichenfolge mit Anzeigenkennung. |
+   | `name` | Zeichenfolge | Nicht leere Zeichenfolge, die den Anzeigennamen angibt. |
+   | `adId` | Zeichenfolge | Nicht leere Zeichenfolge mit Anzeigenkennung. |
    | `position` | Anzahl | Positionsnummer der Anzeige in der Werbeunterbrechung, beginnend bei 1. |
    | `length` | Anzahl | Positive Zahl, die die Länge der Anzeige angibt. |
 
