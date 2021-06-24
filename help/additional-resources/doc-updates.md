@@ -1,21 +1,23 @@
 ---
 title: Neue Funktionen in Adobe Analytics für Streaming-Medien
-description: Neue Funktionen in Adobe Analytics für Streaming-Medien
+description: Erfahren Sie mehr über die neuen Funktionen in Adobe Analytics für Streaming-Medien.
 uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
 snippet: y
 exl-id: 881a94f4-d248-4668-a2d1-4e50d3f9135a
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '28'
-ht-degree: 39%
+source-wordcount: '30'
+ht-degree: 43%
 
 ---
 
 # Ressourcen {#resources}
 
-## Versionshinweise {#release-notes}
+## Versionshinweise{#release-notes}
 
 * [Versionshinweise](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=de)
 
