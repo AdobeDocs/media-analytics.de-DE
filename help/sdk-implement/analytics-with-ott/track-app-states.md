@@ -1,17 +1,18 @@
 ---
 title: App-Zustände verfolgen
-description: 'App-Status sind die verschiedenen Bildschirme oder Ansichten in Ihrer App, deren Anzeige zu einem trackState-Aufruf führen sollte. '
+description: 'App-Status sind die verschiedenen Bildschirme oder Ansichten in Ihrer Anwendung. Erfahren Sie, wie Sie den App-Status in Ihrer Anwendung mithilfe des trackState-Aufrufs verfolgen. '
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 exl-id: bb1e0eee-7c59-40b4-9359-a7441b9686b8
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '183'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 86%
 
 ---
 
-# App-Zustände verfolgen {#track-app-states}
+# App-Zustände verfolgen{#track-app-states}
 
 Zustände sind die verschiedenen Bildschirme oder Ansichten in der Anwendung. Jedes Mal, wenn in Ihrer App ein neuer Status angezeigt wird, sollten Sie einen `trackState`-Aufruf senden. Wenn ein Benutzer beispielsweise von der Startseite zum Videodetailbildschirm navigiert, senden Sie einen `trackState`-Aufruf. Status werden für gewöhnlich mithilfe eines Pfadsetzungsberichts angezeigt. Auf diese Weise können Sie sehen, wie Anwender in Ihrer App navigieren und welche Status am häufigsten angezeigt werden.
 
