@@ -1,17 +1,18 @@
 ---
-title: Tracking der Erlebnisqualität auf Android
-description: Hier wird die Implementierung des Trackings der Erlebnisqualität (QoE, QoS) mit dem Media SDK in Android beschrieben.
+title: Erfahren Sie, wie Sie die Erlebnisqualität in Android verfolgen können.
+description: '"Erfahren Sie mehr über die Implementierung des Trackings der Erlebnisqualität (QoE, QoS) mit dem Media SDK in Android."'
 uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
 exl-id: cee8b119-bca2-4a5c-8111-2b49f7eede66
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '154'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '158'
+ht-degree: 84%
 
 ---
 
-# Tracking der Erlebnisqualität auf Android {#track-quality-of-experience-on-android}
+# Tracking der Erlebnisqualität auf Android{#track-quality-of-experience-on-android}
 
 >[!IMPORTANT]
 >
