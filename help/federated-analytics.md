@@ -2,23 +2,24 @@
 title: Federated Analytics
 description: Der Federated Analytics-Dienst bietet ein System zur Freigabe von Adobe Analytics für Streaming-Mediendaten zwischen zwei Partnern.
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
-translation-type: tm+mt
-source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
+exl-id: 81970370-663c-49d5-b13c-628d294be178
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '554'
 ht-degree: 92%
 
 ---
 
-
-# Federated Analytics {#federated-analytics}
+# Federated Analytics{#federated-analytics}
 
 Der Federated Analytics-Dienst stellt ein System zur Freigabe von Adobe Media Analytics-Daten (Audio und Video) zwischen zwei Partnern bereit.
 Die von Media Analytics erstellten standardisierten Messdaten sind das Markenzeichen für Federated Analytics, so dass dieselben Daten aus mehreren Quellen in einen einzigen Bericht fließen können.
 Über die Regeln und die Logik von Federated Analytics können die Daten einfach kontrolliert und individualisiert werden, um die Anforderungen der jeweiligen Partnerschaft zu erfüllen.
 Federated Analytics sorgt für eine optimierte Audio- und Videomessung mit gesteigerter Effizienz und aussagekräftigeren Daten.
 
-## Vorteile  {#benefits}
+## Vorteile {#benefits}
 
 * **Transparent:** Die Datenerstellung ist erkennbar. Für alle Firmen wird die gleiche Logik verwendet.
 * **Umfassend:** Sie sind über die volle Reichweite und Auswirkung des Audio- und Videokonsums bei allen Partnerschaften, Plattformen und Geräten informiert.
@@ -30,12 +31,12 @@ Federated Analytics sorgt für eine optimierte Audio- und Videomessung mit geste
 * **Aktuell:** Sie senden und empfangen Daten nahezu in Echtzeit.
 * **Einfach:** Wenn Sie Player einmal mit Adobe-SDKs getaggt haben, können Sie Daten mit vielen Partnern teilen.
 
-## Definitionen  {#definitions}
+## Definitionen {#definitions}
 
 * **Sender:** Kunde, der Audio- und Videoanalysedaten auf eigenen Playern generiert
 * **Empfänger:** Kunde, der Audio- und Videoanalysedaten vom Sender erhält
 
-## Voraussetzungen  {#requirements}
+## Voraussetzungen {#requirements}
 
 * **Medien-Stream-Vertrag:** Empfänger und Sender müssen über einen Adobe Analytics-Vertrag für Medien-Streams verfügen, bevor sie auf Audio- und Videodaten in Adobe Analytics zugreifen können. Weitere Informationen erhalten Sie von Ihrem Konto-Team.
 * **Federated-Vertragszusatz:** Jeder Sender und Empfänger muss über einen unterzeichneten Vertragszusatz mit Adobe verfügen, bevor Daten gesendet oder empfangen werden können. Ein Vertragszusatz pro Kunde ist erforderlich, nicht ein Vertragszusatz pro Partnerschaft. Weitere Informationen erhalten Sie von Ihrem Konto-Team.
@@ -46,10 +47,10 @@ Federated Analytics sorgt für eine optimierte Audio- und Videomessung mit geste
 
 ## Herunterladen des Federated Analytics-Formulars
 
-Um an Federated Analytics teilzunehmen, laden Sie das [Federation Rules Agreement](federated-analytics-form.pdf)-Formular herunter und füllen Sie es aus.
+Um an Federated Analytics teilzunehmen, laden Sie das Formular [Federation Rules Agreement](federated-analytics-form.pdf) herunter und füllen Sie es aus.
 
 
-## Verarbeitung {#process}
+## Prozess {#process}
 
 1. Sender und Empfänger arbeiten zusammen, um das Formular der Vereinbarung zu Föderierungsregeln auszufüllen. Das Formular zur Vereinbarung über die Verknüpfungsregeln enthält spezielle Felder für unser Engineering-Team und sollte NUR mit Adobe Acrobat bearbeitet werden. [Acrobat können Sie hier kostenlos herunterladen.](https://get.adobe.com/de/reader/)
 1. Der Beratungsdienst stellt dem Empfänger eine Beispieldatendatei mit den tatsächlichen Daten von Sender-Playern zur Verfügung, damit korrekte Regeln für die Datenfreigabe definiert werden können, sofern Datendateien verfügbar sind.
