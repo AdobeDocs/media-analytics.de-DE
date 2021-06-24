@@ -1,17 +1,18 @@
 ---
-title: Standard-Anzeigenmetadaten in Roku implementieren
+title: Erfahren Sie, wie Sie Standard-Anzeigenmetadaten in Roku implementieren
 description: Verwendung von Standard-Anzeigenmetadaten beim Anzeigen-Tracking in Roku.
 uuid: 20a437d7-18b8-4099-ac81-9f3628384236
 exl-id: d2c0a1e0-8d40-4f60-a82d-5860550ac152
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '47'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '52'
+ht-degree: 82%
 
 ---
 
-# Standard-Anzeigenmetadaten in Roku implementieren {#implement-standard-ad-metadata-on-roku}
+# Standard-Anzeigenmetadaten in Roku implementieren{#implement-standard-ad-metadata-on-roku}
 
 ## Implementieren der Standard-Anzeigenmetadaten
 
