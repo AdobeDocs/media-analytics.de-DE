@@ -1,11 +1,13 @@
 ---
 title: Audio- und Videoparameter
-description: Erfahren Sie mehr über Audio- und Videoinhaltsdaten und Kontextdatenwerte.
+description: Erfahren Sie mehr über die wichtigsten Datenvariablen für Streaming-Medien, einschließlich Audio- und Videoinhaltsdaten und Kontextdatenwerten.
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
-source-git-commit: 6b3a77d470605047d0d118de379801a3ed645800
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '6180'
+source-wordcount: '6188'
 ht-degree: 96%
 
 ---
