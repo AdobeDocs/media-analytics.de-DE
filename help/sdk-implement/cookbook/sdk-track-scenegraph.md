@@ -1,17 +1,18 @@
 ---
 title: Tracking in SceneGraph (Roku)
-description: Verfolgen von Medien mit dem Roku SceneGraph XML-Programmierframework.
+description: Erfahren Sie, wie Sie Medien mit dem Roku SceneGraph XML-Programmierframework verfolgen können.
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '1171'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '1176'
+ht-degree: 98%
 
 ---
 
-# Tracking in SceneGraph (Roku) {#tracking-in-scenegraph-roku}
+# Tracking in SceneGraph (Roku){#tracking-in-scenegraph-roku}
 
 ## Einführung {#introduction}
 
