@@ -1,12 +1,13 @@
 ---
-title: Tracking von Core-Wiedergaben mit JavaScript 3.x
-description: Hier wird die Implementierung des Core-Trackings mit dem Media SDK in einem Browser mit JavaScript 3.x-Anwendungen beschrieben.
+title: Erfahren Sie, wie Sie die Core-Wiedergabe mit JavaScript v3.x verfolgen.
+description: Erfahren Sie, wie Sie das Core-Tracking mit dem Media SDK mithilfe von JavaScript 3.x-Apps in einem Browser implementieren.
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '643'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '647'
+ht-degree: 95%
 
 ---
 
@@ -24,9 +25,9 @@ ht-degree: 100%
    | Variablenname | Typ | Beschreibung |
    | --- | --- | --- |
    | `name` | string | Nicht leere Zeichenfolge, die den Mediennamen angibt. |
-   | `id` | string | Nicht leere Zeichenfolge, die die eindeutige Medienkennung angibt. |
+   | `id` | Zeichenfolge | Nicht leere Zeichenfolge, die die eindeutige Medienkennung angibt. |
    | `length` | Anzahl | Positive Zahl, die die Länge des Mediums in Sekunden angibt. Verwenden Sie 0, wenn die Länge unbekannt ist. |
-   | `streamType` | string |  |
+   | `streamType` | Zeichenfolge |  |
    | `mediaType` |  | Medientyp (Audio oder Video). |
 
    **`StreamType`-Konstanten:**
