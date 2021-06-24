@@ -1,17 +1,18 @@
 ---
 title: VOD-Wiedergabe ohne Anzeigen
-description: Ein Beispiel für das Tracking der VOD-Wiedergabe ohne Anzeigen.
+description: Sehen Sie sich ein Beispiel für das Tracking der VOD-Wiedergabe an, die keine Anzeigen enthält.
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 exl-id: 9e2240f0-da8d-4dcc-9d44-0f121c60d924
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '364'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '367'
+ht-degree: 95%
 
 ---
 
-# VOD-Wiedergabe ohne Anzeigen {#vod-playback-with-no-ads}
+# VOD-Wiedergabe ohne Anzeigen{#vod-playback-with-no-ads}
 
 ## Szenario {#scenario}
 
