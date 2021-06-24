@@ -1,17 +1,18 @@
 ---
-title: Tracking von Fehlern in Android
-description: Hier wird die Implementierung des Fehler-Trackings mit dem Media SDK in Android beschrieben.
+title: Erfahren Sie, wie Sie Fehler in Android verfolgen können.
+description: Erfahren Sie mehr über die Implementierung des Fehler-Trackings mit dem Media SDK in Android.
 uuid: 7d0c77e5-924c-4619-8e29-3484748ab736
 exl-id: 6c4f693d-45c0-4a9c-bda1-c8721afe31f5
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '89'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '93'
+ht-degree: 80%
 
 ---
 
-# Tracking von Fehlern in Android {#track-errors-on-android}
+# Tracking von Fehlern in Android{#track-errors-on-android}
 
 >[!IMPORTANT]
 >
