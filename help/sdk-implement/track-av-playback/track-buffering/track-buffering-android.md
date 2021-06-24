@@ -1,17 +1,18 @@
 ---
-title: Puffer-Tracking in Android
-description: Beschreibt das Tracking von Pufferereignissen in Android.
+title: Erfahren Sie, wie Sie Puffer-Tracking in Android durchführen.
+description: Erfahren Sie, wie Sie Pufferereignisse in Android verfolgen.
 uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
 exl-id: fcea2ef8-53c5-41fb-8b70-06599c2d9cbf
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '112'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '119'
+ht-degree: 87%
 
 ---
 
-# Puffer-Tracking in Android {#track-buffering-on-android}
+# Puffer-Tracking in Android{#track-buffering-on-android}
 
 >[!IMPORTANT]
 >Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie die 1.x-Entwicklerhandbücher hier herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
