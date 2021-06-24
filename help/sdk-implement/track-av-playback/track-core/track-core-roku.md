@@ -1,17 +1,18 @@
 ---
-title: Tracking von Core-Wiedergaben auf Roku
-description: Hier wird die Implementierung des Core-Trackings mit dem Media SDK in Roku beschrieben.
+title: Erfahren Sie, wie Sie die Core-Wiedergabe in Roku verfolgen
+description: Erfahren Sie, wie Sie das Core-Tracking mit dem Media SDK in Roku implementieren.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
-translation-type: ht
-source-git-commit: d11f68d0967dc27a6866a9b5a39c6b84ac9532e4
-workflow-type: ht
-source-wordcount: '681'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '684'
+ht-degree: 97%
 
 ---
 
-# Tracking von Core-Wiedergaben auf Roku {#track-core-playback-on-roku}
+# Tracking von Core-Wiedergaben auf Roku{#track-core-playback-on-roku}
 
 >[!IMPORTANT]
 >Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
@@ -100,7 +101,7 @@ ht-degree: 100%
 
    * **Standard-Metadaten**
 
-      [Standard-Metadaten in Roku implementieren](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Standard-Metadaten in Roku implementieren](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >Das Anhängen des Standard-Video-Metadatenobjekts an das Medienobjekt ist optional.
