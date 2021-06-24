@@ -1,17 +1,18 @@
 ---
-title: Standard-Metadaten in Chromecast implementieren
-description: Beschreibt das Festlegen von Standard-Video- und Anzeigenmetadaten in Chromecast.
+title: Erfahren Sie, wie Sie Standard-Metadaten in Chromecast implementieren
+description: Erfahren Sie, wie Sie Standard-Video- und Anzeigenmetadaten in Chromecast festlegen.
 uuid: 1560d3e0-29f5-4678-9f01-c672e0ae547b
 exl-id: 052ede4b-ea8a-4ca6-bf02-0aab22a8bcda
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '54'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '61'
+ht-degree: 68%
 
 ---
 
-# Standard-Metadaten in Chromecast implementieren {#implement-standard-metadata-on-chromecast}
+# Standard-Metadaten in Chromecast implementieren{#implement-standard-metadata-on-chromecast}
 
 Instanziieren Sie ein Standard-Metadatenobjekt, füllen Sie die gewünschten Variablen aus und setzen Sie das Metadatenobjekt auf das Media Heartbeat-Objekt. Beispiel:
 
