@@ -1,17 +1,18 @@
 ---
-title: Tracking von Core-Wiedergaben auf iOS
-description: Hier wird die Implementierung des Core-Trackings mit dem Media SDK in iOS beschrieben.
+title: Erfahren Sie, wie Sie die Core-Wiedergabe in iOS verfolgen
+description: Erfahren Sie, wie Sie das Core-Tracking mit dem Media SDK in iOS implementieren.
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '712'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '713'
+ht-degree: 95%
 
 ---
 
-# Tracking von Core-Wiedergaben auf iOS {#track-core-playback-on-ios}
+# Tracking von Core-Wiedergaben auf iOS{#track-core-playback-on-ios}
 
 >[!IMPORTANT]
 >Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
