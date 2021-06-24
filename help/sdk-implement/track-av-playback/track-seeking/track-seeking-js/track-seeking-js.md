@@ -1,17 +1,18 @@
 ---
-title: Tracking des Suchens mit JavaScript 2.x
-description: Hier wird die Implementierung des Suchen-Trackings mit dem Media SDK in Browser-Apps (JS) beschrieben.
+title: Erfahren Sie, wie Sie Suchen mit JavaScript 2.x verfolgen.
+description: Erfahren Sie, wie Sie Suchstart- und Suchabschlussereignisse mithilfe des Media SDK in Browser-Apps (JS 2.x) verfolgen.
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
 exl-id: 90f35376-24d8-405d-82b4-d6b737acf7b9
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '127'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 80%
 
 ---
 
-# Tracking des Suchens mit JavaScript 2.x {#track-seeking-on-javascript}
+# Tracking des Suchens mit JavaScript 2.x{#track-seeking-on-javascript}
 
 >[!IMPORTANT]
 >
