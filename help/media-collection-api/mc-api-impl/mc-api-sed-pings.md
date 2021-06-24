@@ -1,17 +1,18 @@
 ---
 title: Senden von Ping-Ereignissen
-description: Senden von Ping-Ereignissen
+description: Ping-Ereignisse sind der Herzschlag von Streaming Media Analytics. Erfahren Sie, wie Sie einen zeitgesteuerten Ping für Haupt- oder Anzeigen-Tracking senden.
 uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
 exl-id: 0a645363-26d5-41e7-aa16-c775253e2b1d
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '88'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '110'
+ht-degree: 79%
 
 ---
 
-# Senden von Ping-Ereignissen {#sending-ping-events}
+# Senden von Ping-Ereignissen{#sending-ping-events}
 
 **Beim Hauptinhalt müssen Sie alle zehn Sekunden Ping-Ereignisse auslösen, die unabhängig von anderen gesendeten API-Aufrufen zehn Sekunden nach dem Start der Wiedergabe beginnen müssen. Für das Anzeigen-Tracking müssen Sie jede Sekunden Ping-Ereignisse auslösen.**
 
