@@ -1,17 +1,18 @@
 ---
-title: Tracking von Fehlern in Roku
-description: Hier wird die Implementierung des Fehler-Trackings mit dem Media SDK in Roku beschrieben.
+title: Erfahren Sie, wie Sie Fehler in Roku verfolgen können.
+description: Erfahren Sie mehr über die Implementierung des Fehler-Trackings mit dem Media SDK in Roku.
 uuid: 4e0165f9-9169-47ed-9f11-ea8a8778f663
 exl-id: 6a6aae4c-60c3-43ea-9954-0bb31f6456f8
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '92'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '96'
+ht-degree: 81%
 
 ---
 
-# Tracking von Fehlern in Roku {#track-errors-on-roku}
+# Tracking von Fehlern in Roku{#track-errors-on-roku}
 
 >[!IMPORTANT]
 >
