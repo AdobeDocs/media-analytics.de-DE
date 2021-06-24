@@ -1,17 +1,18 @@
 ---
-title: Tracking von Kapiteln und Segmenten mit JavaScript 2.x
-description: Hier wird die Implementierung des Kapitel- und Segment-Trackings mit dem Media SDK in Browser-Apps (JS) beschrieben.
+title: Erfahren Sie, wie Sie Kapitel und Segmente mit JavaScript 2.x verfolgen können.
+description: Erfahren Sie mehr über die Implementierung des Kapitel- und Segment-Trackings mit dem Media SDK in Browser-Apps (JS).
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
 exl-id: 9964ec0c-cce9-4ccc-bd26-a2b3fcdc3e28
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '197'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 88%
 
 ---
 
-# Tracking von Kapiteln und Segmenten mit JavaScript 2.x {#track-chapters-and-segments-on-javascript}
+# Tracking von Kapiteln und Segmenten mit JavaScript 2.x{#track-chapters-and-segments-on-javascript}
 
 >[!IMPORTANT]
 >
