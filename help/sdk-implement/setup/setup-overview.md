@@ -1,17 +1,18 @@
 ---
-title: Setup-Übersicht
-description: Übersicht über die Einrichtung des Media SDK für das Medien-Tracking in Ihren mobilen, OTT- und Browser-Anwendungen (JS).
+title: Erläuterung der Media SDKs implementieren
+description: '"Erfahren Sie, wie Sie das Media SDK für das Medien-Tracking in Ihren mobilen, OTT- und Browser-Anwendungen (JS) einrichten."'
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '734'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 96%
 
 ---
 
-# Setup-Übersicht {#setup-overview}
+# Setup-Übersicht{#setup-overview}
 
 >[!IMPORTANT]
 >
