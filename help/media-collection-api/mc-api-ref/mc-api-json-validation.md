@@ -1,17 +1,18 @@
 ---
-title: JSON-Validierungsschemata
-description: null
+title: Streaming Media Analytics JSON-Validierungsschemas
+description: Was sind JSON-Validierungs-Schemas für Streaming-Medien und wie werden sie verwendet, um die richtigen Parameter für den Anfragetext für jeden Ereignistyp zu ermitteln.
 uuid: 7c9d5ce4-f5d2-4129-900e-4d02800907d1
 exl-id: 2931715d-2e7d-4c15-8569-da63b43d6006
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '55'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '84'
+ht-degree: 64%
 
 ---
 
-# JSON-Validierungsschemata {#json-validation-schemas}
+# JSON-Validierungsschemata{#json-validation-schemas}
 
 Das Media Analytics-Backend validiert die Anforderungsparameter für die verschiedenen Ereignistypen mithilfe von JSON-Validierungsschemas. Diese Schemas sind öffentlich verfügbar und ausschlaggebend für die in der MA-API verwendeten Parametertypen.
 
