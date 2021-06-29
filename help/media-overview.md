@@ -8,11 +8,11 @@ role: Business Practitioner, Administrator, Data Engineer
 source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
 source-wordcount: '880'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
-# Messen von Streaming-Medien in Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
+# Messen von Streaming-Medien in Adobe Analytics {#measuring-audio-and-video-in-adobe-analytics}
 
 ![Banner](./assets/media_analytics_banner.png)
 
@@ -27,7 +27,7 @@ Sie können wichtige QoS-Metriken messen, wie z. B. Dropped Frames, Pufferung un
 ## Funktionen {#features}
 
 Zu den Vorteilen von Adobe Analytics für Streaming-Medien zählen Echtzeit-Monitoring, detaillierte Analyse, umsetzbare Insights und Möglichkeiten der finanziellen Verwertung.
-* **Echtzeitanalyse** - Treffen Sie Entscheidungen anhand von aussagekräftigen Echtzeitmetriken zur Performance, wie z. B. Medienstarts, über mehrere Kanäle hinweg.
+* **Echtzeit-Analyse** – Treffen Sie fundierte Entscheidungen in Echtzeit, indem Sie wichtige Leistungsmetriken wie Medienstarts kanalübergreifend verwenden.
 * **Förderung der Interaktion** - Die Interaktion der Benutzer wird gefördert, indem die Pufferung verringert wird und ermittelt wird, wo und wann Anzeigen in Inhalten abgespielt werden sollten, um ein reibungsloses, weniger störendes Erlebnis zu bieten, das zu Wiederholungsbesuchen führt.
 * **Ganzheitliche Übersicht** - Kombinieren Sie verschiedene Datenpunkte Ihrer Inhaltsdistributoren, um eine umfassende Übersicht aller Medienaktivitäten zu erhalten. Mit Federated Analytics können Sie die Interaktion und Aufrufe auf allen Kanälen messen.
 * **Erhöhte Granularität** - Bewerten Sie das Ansichtsverhalten auf einer extrem detaillierten Ebene, einschließlich der Besuchszeit einzelner Benutzer, gleichzeitige Betrachter/Zuhörer nach Minuten und der durchschnittlichen Konsumdauer des Inhalts.
