@@ -5,10 +5,10 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: a6872703529159ded6f747b6429a9b94b4202abe
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 96%
+source-wordcount: '742'
+ht-degree: 94%
 
 ---
 
@@ -59,7 +59,7 @@ Führen Sie die folgenden Implementierungsschritte aus:
    |  Name der Methode  |  Beschreibung  | erforderlich |
    | --- | --- | :---: |
    | `getQoSObject()` | Gibt die `MediaObject`-Instanz zurück, die die aktuellen Informationen zur Servicequalität enthält. Diese Methode wird mehrmals während einer Wiedergabesitzung aufgerufen. Die Player-Implementierung muss stets die aktuellsten verfügbaren Servicequalitätsdaten zurückgeben. | Ja |
-   | `getCurrentPlaybackTime()` | Gibt die aktuelle Position der Abspielleiste zurück. Bei VOD-Tracking wird der Wert in Sekunden ab Beginn des Medienelements angegeben. Beim Tracking von LINEAR/LIVE-Assets wird der Wert in Sekunden ab Beginn des Programms angegeben. | Ja |
+   | `getCurrentPlaybackTime()` | Gibt die aktuelle Position der Abspielleiste zurück. Bei VOD-Tracking wird der Wert in Sekunden ab Beginn des Medienelements angegeben. Bei LINEAR/LIVE-Tracking wird der Wert als Anzahl der Sekunden seit Mitternacht UTC an diesem Tag angegeben. | Ja |
 
    >[!TIP]
    >
