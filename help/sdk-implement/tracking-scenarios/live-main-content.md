@@ -5,10 +5,10 @@ uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Media Analytics
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: a6872703529159ded6f747b6429a9b94b4202abe
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 96%
+source-wordcount: '549'
+ht-degree: 75%
 
 ---
 
@@ -59,17 +59,17 @@ In diesem Szenario wird kein Abschlussaufruf gesendet, da der Live-Stream nie ab
 
 ## Einstellungen der Abspielleistenwerte
 
-Bei LIVE-Streams müssen Sie die Abspielleiste auf einen Versatz von Beginn der Programmierung einstellen, damit Analytiker in der Berichterstellung innerhalb einer 24-Stunden-Ansicht bestimmen können, an welchem Punkt Benutzer dem LIVE-Stream beitreten und ihn verlassen.
+Bei LIVE-Streams müssen Sie den Wert der Abspielleiste als die Anzahl der Sekunden seit Mitternacht UTC an diesem Tag festlegen, damit Analysten in der Berichterstellung bestimmen können, an welchem Punkt Benutzer innerhalb einer 24-Stunden-Ansicht dem LIVE-Stream beitreten und ihn verlassen.
 
 ### Am Anfang
 
-Bei LIVE-Medien müssen Sie, wenn ein Benutzer mit der Wiedergabe des Streams beginnt, `l:event:playhead` auf den aktuellen Versatz in Sekunden festlegen. Dies ist im Gegensatz zu VOD, wo Sie die Abspielleiste auf „0“ festlegen würden.
+Bei LIVE-Medien müssen Sie, wenn ein Benutzer mit der Wiedergabe des Streams beginnt, `l:event:playhead` auf die Anzahl der Sekunden seit Mitternacht UTC an diesem Tag setzen. Dies ist im Gegensatz zu VOD, wo Sie die Abspielleiste auf „0“ festlegen würden.
 
-Beispiel: Ein LIVE-Streaming-Ereignis beginnt um Mitternacht und dauert 24 Stunden (`a.media.length=86400`; `l:asset:length=86400`). Nehmen wir an, ein Benutzer beginnt um 12:00 Uhr mit der Wiedergabe des LIVE-Streams. In diesem Szenario sollten Sie `l:event:playhead` auf 43200 (12 Stunden bis zum Stream) festlegen.
+Beispiel: Ein LIVE-Streaming-Ereignis beginnt um Mitternacht und dauert 24 Stunden (`a.media.length=86400`; `l:asset:length=86400`). Nehmen wir an, ein Benutzer beginnt um 12:00 Uhr mit der Wiedergabe des LIVE-Streams. In diesem Szenario sollten Sie `l:event:playhead` auf 43200 setzen (12 Stunden seit Mitternacht UTC an diesem Tag in Sekunden).
 
 ### Beim Anhalten
 
-Dieselbe Live-Abspielleistenlogik, die zu Beginn der Wiedergabe angewendet wurde, muss angewendet werden, wenn ein Benutzer die Wiedergabe anhält. Wenn der Benutzer zum Abspielen des LIVE-Streams zurückkehrt, müssen Sie den `l:event:playhead`-Wert auf die neue versetzte Position der Abspielleiste festlegen, _nicht_ auf den Punkt, an dem der Benutzer den LIVE-Stream angehalten hat.
+Dieselbe Live-Abspielleistenlogik, die zu Beginn der Wiedergabe angewendet wurde, muss angewendet werden, wenn ein Benutzer die Wiedergabe anhält. Wenn der Benutzer zum Abspielen des LIVE-Streams zurückkehrt, müssen Sie den Wert `l:event:playhead` gemäß der neuen Anzahl von Sekunden seit Mitternacht UTC festlegen, _nicht_ so, dass der Benutzer den LIVE-Stream angehalten hat.
 
 ## Beispielcode {#sample-code}
 
