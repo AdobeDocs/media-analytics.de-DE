@@ -5,7 +5,7 @@ user-guide-title: Adobe Analytics für Streaming Media
 breadcrumb-title: Medienanalyseleitfaden
 user-guide-description: Implementieren von Adobe Analytics für Streaming-Medien. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
 sub-product: Media Analytics
-source-git-commit: 230488398dc145798e4b12ddb94cd73f4f790f28
+source-git-commit: 42a8e33f03c95c7ad7d1c73387450ef36b3e1560
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 100%
@@ -15,10 +15,10 @@ ht-degree: 100%
 
 # Adobe Analytics für Streaming Media {#using}
 
-+ [Messen von Streaming-Medien in Adobe Analytics](media-overview.md)
++ [Messen von Streaming-Medien in Adobe Analytics ](media-overview.md)
 + [Unterstützte Geräte und Plattformen](measurement-options/supported-devices.md)
 + Einführung in Analytics für Streaming-Medien {#intro-to-ava}
-   + [Voraussetzungen ](intro-to-ava/prereqs.md)
+   + [Voraussetzungen](intro-to-ava/prereqs.md)
    + Implementierungspfade {#implementation-paths}
       + [Überblick](intro-to-ava/implementation-paths/implementation-paths.md)
       + [Client-seitig](intro-to-ava/implementation-paths/client-side-path.md)
@@ -224,10 +224,12 @@ ht-degree: 100%
    + [Implementierung und Reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [Beispiele für Player-Status-Tracking](sdk-implement/player-state-tracking/player-state-examples.md)
 + [Federated Analytics](federated-analytics.md)
++ Zusätzliche Ressourcen {#additional-resources}
+   + [Versionshinweise](additional-resources/doc-updates.md)
+
 <!-- + Player State Tracking {#player-state-tracking}
     + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
     + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
     + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
-    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) -->
-+ Zusätzliche Ressourcen {#additional-resources}
-   + [Versionshinweise](additional-resources/doc-updates.md)
+    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) 
+-->
