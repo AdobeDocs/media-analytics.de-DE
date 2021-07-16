@@ -1,6 +1,6 @@
 ---
-title: Erfahren Sie, wie Sie Standard-Metadaten in iOS implementieren
-description: Erfahren Sie, wie Sie Standard-Video- und Anzeigenmetadaten festlegen, die mit Tracking-Aufrufen in iOS gesendet werden.
+title: Erfahren Sie, wie Sie Standard-Metadaten in iOS implementieren.
+description: Informieren Sie sich über das Festlegen von Standard-Video- und Anzeigenmetadaten, die mit Tracking-Aufrufen in iOS gesendet werden.
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
 exl-id: e0981346-3d3c-4a0c-82a4-19942634fd03
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
