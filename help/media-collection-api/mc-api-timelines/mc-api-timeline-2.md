@@ -1,6 +1,6 @@
 ---
-title: Erfahren Sie mehr über die Zeitpläne für die Medienverfolgung � Verlassen der Sitzung durch Anwender
-description: Erfahren Sie mehr über die Zeitleiste der Abspielleiste und die Aktion der entsprechenden Benutzer �, wenn eine Videositzung abgebrochen wird. Erfahren Sie mehr über die Details für jede Aktion und jede Anfrage.
+title: Erfahren Sie mehr über die Timelines für die Medienverfolgung � Verlassen der Sitzung durch Anwender
+description: Erfahren Sie mehr über die Abspielkopf-Timeline und die entsprechende � Benutzeraktion bei einer abgebrochenen Videositzung. Erfahren Sie mehr über die Details für jede Aktion und jede Anfrage.
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
