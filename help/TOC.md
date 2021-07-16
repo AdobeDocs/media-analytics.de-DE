@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Adobe Analytics für Streaming Media {#using}
 
-+ [Messen von Streaming-Medien in Adobe Analytics ](media-overview.md)
++ [Messen von Streaming-Medien in Adobe Analytics](media-overview.md)
 + [Unterstützte Geräte und Plattformen](measurement-options/supported-devices.md)
 + Einführung in Analytics für Streaming-Medien {#intro-to-ava}
    + [Voraussetzungen](intro-to-ava/prereqs.md)
@@ -24,11 +24,11 @@ ht-degree: 100%
       + [Client-seitig](intro-to-ava/implementation-paths/client-side-path.md)
       + Andere Implementierungspfade {#other-paths}
          + Milestone-Tracking des Medienmoduls {#mm-milestone-tracking}
-            + [Übersicht zu Milestone](measurement-options/mm-milestone-tracking/milestone-overview.md)
+            + [Übersicht zu Milestone ](measurement-options/mm-milestone-tracking/milestone-overview.md)
             + [Migrieren von Meilensteinen zu Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
             + [Migration von Milestone zu Custom Link](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
          + Custom Link in Analytics {#cl-in-aa}
-            + [Implementierungshandbuch für benutzerdefinierte Links ](measurement-options/cl-in-aa/cl-impl-guide.md)
+            + [Implementierungshandbuch für benutzerdefinierte Links](measurement-options/cl-in-aa/cl-impl-guide.md)
          + Primetime {#primetime}
             + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
          + [Audience Manager-Aktivierung](intro-to-ava/am-enablement.md)
@@ -96,7 +96,7 @@ ht-degree: 100%
          + Standard-Anzeigenmetadaten in JavaScript implementieren {#impl-std-ad-md-js}
             + [Standard-Anzeigenmetadaten in JavaScript 2.x implementieren](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
             + [Standard-Anzeigenmetadaten in JavaScript 3.x implementieren](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
-         + [Standard-Anzeigenmetadaten in Roku implementieren](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+         + [Standard-Anzeigenmetadaten in Roku implementieren ](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    + Kapitel und Segmente verfolgen {#track-chapters}
       + [Überblick](sdk-implement/track-chapters/track-chapters-overview.md)
       + [Tracking von Kapiteln und Segmenten in Android](sdk-implement/track-chapters/track-chapters-android.md)
@@ -152,20 +152,20 @@ ht-degree: 100%
       + [App-Zustände verfolgen](sdk-implement/analytics-with-ott/track-app-states.md)
       + [App-Aktionen verfolgen](sdk-implement/analytics-with-ott/track-app-actions.md)
       + [Festlegen von Benutzer-IDs](sdk-implement/analytics-with-ott/set-user-ids.md)
-      + [OTT und Audience Manager](sdk-implement/analytics-with-ott/ott-am.md)
-      + [OTT und Experience Cloud](sdk-implement/analytics-with-ott/ott-experience-cloud.md)
+      + [OTT und Audience Manager ](sdk-implement/analytics-with-ott/ott-am.md)
+      + [OTT und Experience Cloud ](sdk-implement/analytics-with-ott/ott-experience-cloud.md)
    + Cookbook {#cookbook}
       + [SDK-Cookbook](sdk-implement/cookbook/sdk-cookbook-overview.md)
       + [Behandlung von Anwendungsunterbrechungen während der Wiedergabe](sdk-implement/cookbook/app-interrupts.md)
-      + [Beheben von „main:play“ zwischen Anzeigen ](sdk-implement/cookbook/fix-ad-play-ad.md)
-      + [Wiederaufnahme von inaktiven Sitzungen](sdk-implement/cookbook/resuming-inactive.md)
+      + [Beheben von „main:play“ zwischen Anzeigen](sdk-implement/cookbook/fix-ad-play-ad.md)
+      + [Wiederaufnehmen von inaktiven Sitzungen](sdk-implement/cookbook/resuming-inactive.md)
       + [Tracking in SceneGraph (Roku)](sdk-implement/cookbook/sdk-track-scenegraph.md)
    + Migration von Media Analytics 1.x zu 2.x {#va-1x-to-2x}
       + [Migrationsübersicht](sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
       + [Codevergleich: 1.x gegenüber 2.x](sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md)
       + [API-Konversion von 1.x zu 2.x](sdk-implement/va-1x-to-2x/1x-2x-api-change.md)
    + Migration vom Media Analytics SDK zu Launch {#sdk-to-launch}
-      + [Migration vom SDK zu Launch ](sdk-implement/sdk-to-launch/sdk-to-launch-migration.md)
+      + [Migration vom SDK zu Launch](sdk-implement/sdk-to-launch/sdk-to-launch-migration.md)
       + Handbücher zur Migration vom SDK zu Launch {#sdk-to-launch-migration-platforms}
          + [Android](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
@@ -200,9 +200,9 @@ ht-degree: 100%
 + Metriken und Metadaten {#metrics-and-metadata}
    + [Parameter für Streaming-Medien](metrics-and-metadata/audio-video-parameters.md)
    + [Anzeigenparameter](metrics-and-metadata/ad-parameters.md)
-   + [Kapitelparameter ](metrics-and-metadata/chapter-parameters.md)
+   + [Kapitelparameter](metrics-and-metadata/chapter-parameters.md)
    + [Player-Statusparameter](metrics-and-metadata/player-state-parameters.md)
-   + [Qualitätsparameter ](metrics-and-metadata/quality-parameters.md)
+   + [Qualitätsparameter](metrics-and-metadata/quality-parameters.md)
    + [Segmente](metrics-and-metadata/segments.md)
    + [Berechnete Metriken](metrics-and-metadata/calculated-metrics.md)
 + Berichterstattung und Analyse {#media-reports}
