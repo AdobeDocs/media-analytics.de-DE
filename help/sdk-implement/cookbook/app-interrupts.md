@@ -1,6 +1,6 @@
 ---
-title: Umgang mit Anwendungsunterbrechungen während der Wiedergabe
-description: Erfahren Sie, wie Sie Unterbrechungen der Verfolgung während der Wiedergabe von Medien handhaben.
+title: Behandlung von Anwendungsunterbrechungen während der Wiedergabe
+description: Erfahren Sie, wie Sie Unterbrechungen beim Tracking während der Medienwiedergabe behandeln können.
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
