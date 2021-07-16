@@ -1,6 +1,6 @@
 ---
-title: Erfahren Sie, wie Sie die Core-Wiedergabe in Android verfolgen
-description: Erfahren Sie, wie Sie das Core-Tracking mit dem Media SDK in Android implementieren.
+title: Erfahren Sie, wie Sie die Core-Wiedergabe in Android verfolgen.
+description: Erfahren Sie, wie Sie Core Tracking mit dem Media SDK in Android implementieren.
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Media Analytics
@@ -8,11 +8,11 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '710'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Tracking von Core-Wiedergaben auf Android{#track-core-playback-on-android}
+# Tracking von Core-Wiedergaben in Android{#track-core-playback-on-android}
 
 Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
 >[!IMPORTANT]
