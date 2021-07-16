@@ -1,6 +1,6 @@
 ---
 title: Streaming-Mediensammlungs-API � Ereignisanfrage-Endpunkt
-description: '"Was sind die Anforderungsparameter und Antworten der Media Collection API-Ereignisse?"'
+description: „Was sind die Anforderungsparameter und Antworten der Media Collection API-Ereignisse?“
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
