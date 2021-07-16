@@ -1,6 +1,6 @@
 ---
-title: Beheben von Hauptabspielen zwischen Anzeigen
-description: '"Erfahren Sie, wie Sie unerwartete main:play -Aufrufe zwischen Anzeigen verarbeiten."'
+title: Beheben von „main:play“, das zwischen Anzeigen erscheint
+description: „Erfahren Sie, wie Sie unerwartete main:play-Aufrufe zwischen Anzeigen behandeln.“
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 feature: Media Analytics
@@ -8,11 +8,11 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '451'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Beheben von „main:play“ zwischen Anzeigen {#resolving-main-play-appearing-between-ads}
+# Beheben von „main:play“ zwischen Anzeigen{#resolving-main-play-appearing-between-ads}
 
 ## PROBLEM
 
