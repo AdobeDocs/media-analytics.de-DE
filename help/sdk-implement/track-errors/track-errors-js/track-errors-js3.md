@@ -1,13 +1,13 @@
 ---
 title: Erfahren Sie, wie Sie Fehler mit JavaScript 3.x verfolgen können.
-description: Erfahren Sie mehr über die Implementierung des Fehler-Trackings mit dem Media SDK in Browser-Apps (JS).
+description: Erfahren Sie, wie Sie das Fehler-Tracking mit dem Media SDK in Browser-Apps (JS) implementieren.
 exl-id: 3769fc47-fbc4-4498-9d2a-04c88cdd0e83
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '99'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
