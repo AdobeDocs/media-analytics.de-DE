@@ -1,7 +1,7 @@
 ---
 seo-title: Überblick
-title: Übersicht über die Streaming-Mediensammlungs-API
-description: Erfahren Sie mehr über die Mediensammlungs-API und wie Ihr Player Audio- und Videoereignisse mithilfe von RESTful-HTTP-Aufrufen verfolgen kann.
+title: Übersicht über die Streaming Media Collection-API
+description: Erfahren Sie mehr über die Mediensammlungs-API und darüber, wie Ihr Player Audio- und Videoereignisse mit RESTful-HTTP-Aufrufen verfolgen kann.
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
@@ -9,7 +9,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
