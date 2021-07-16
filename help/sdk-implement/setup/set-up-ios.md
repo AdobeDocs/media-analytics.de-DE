@@ -1,5 +1,5 @@
 ---
-title: Einrichten der Media SDK unter iOS
+title: Einrichten des Media SDK unter iOS
 description: Führen Sie diese Schritte aus, um die Media SDK-Anwendung unter iOS einzurichten.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '765'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ Erfahren Sie, wie Sie Streaming Media Analytics für iOS-Geräte einrichten.
 >
 >Ab dem 31. August 2021, dem Ende der Unterstützung für Mobile-SDKs der Version 4, stellt Adobe auch die Unterstützung für das Media Analytics-SDK für iOS und Android ein.  Weitere Informationen finden Sie unter den [häufig gestellten Fragen zum Ende der Unterstützung für das Media Analytics-SDK](/help/sdk-implement/end-of-support-faqs.md).
 
-## Voraussetzungen 
+## Voraussetzungen
 
 * **Gültige Konfigurationsparameter für Media SDK festlegen:** Diese Parameter erhalten Sie nach der Einrichtung Ihres Analytics-Kontos von einem Adobe-Support-Mitarbeiter.
 * **ADBMobile für iOS in Ihre Anwendung implementieren:** Weitere Informationen zur Adobe Mobile-SDK-Dokumentation finden Sie unter [iOS-SDK 4.x für Experience Cloud-Lösungen.](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=de)
