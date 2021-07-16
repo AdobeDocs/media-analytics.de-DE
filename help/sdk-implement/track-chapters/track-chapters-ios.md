@@ -1,6 +1,6 @@
 ---
 title: Erfahren Sie, wie Sie Kapitel und Segmente in iOS verfolgen können.
-description: Erfahren Sie mehr über die Implementierung des Kapitel- und Segment-Trackings mit dem Media SDK in iOS.
+description: Erfahren Sie mehr über die Implementierung der Kapitel- und Segmentverfolgung mit dem Media SDK in iOS.
 uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac9ed
 exl-id: ea8a1dd6-043f-41a4-9cef-845da92bfa32
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
