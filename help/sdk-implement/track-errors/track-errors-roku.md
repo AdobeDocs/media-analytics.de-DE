@@ -5,7 +5,7 @@ uuid: 4e0165f9-9169-47ed-9f11-ea8a8778f663
 exl-id: 6a6aae4c-60c3-43ea-9954-0bb31f6456f8
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 81%
@@ -14,16 +14,18 @@ ht-degree: 81%
 
 # Tracking von Fehlern in Roku{#track-errors-on-roku}
 
+Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen.
+
 >[!IMPORTANT]
 >
->Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie hier die 1.x-Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+> Wenn Sie Version 1.x des SDK implementieren möchten, können Sie hier die 1.x-Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Implementieren des Fehler-Trackings
 
 1. Tracking von Fehlern im Medienplayer:
 
    ```
-   ADBMobile().mediaTrackError(msg.GetMessage(), 
+   ADBMobile().mediaTrackError(msg.GetMessage(),
                                ADBMobile().ERROR_SOURCE_PLAYER)
    ```
 
