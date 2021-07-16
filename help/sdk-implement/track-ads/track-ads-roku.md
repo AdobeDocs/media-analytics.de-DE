@@ -5,7 +5,7 @@ uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 exl-id: aaed828d-1aba-486e-83e3-2ffd092305e2
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 97%
@@ -14,9 +14,11 @@ ht-degree: 97%
 
 # Tracking von Anzeigen auf Roku{#track-ads-on-roku}
 
+Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung der 2.x-SDKs vornehmen.
+
 >[!IMPORTANT]
 >
->Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Anzeigen-Tracking-Konstanten
 
@@ -41,17 +43,17 @@ ht-degree: 97%
    | `startTime` | Abspielpositionswert bei Start der Werbeunterbrechung. | Ja |
 
    ```
-   ‘ Create an adbreak info object 
-   adBreakInfo = adb_media_init_adbreakinfo() 
-   adBreakInfo.name = <ADBREAK_NAME> 
-   adBreakInfo.startTime = <START_TIME> 
+   ‘ Create an adbreak info object
+   adBreakInfo = adb_media_init_adbreakinfo()
+   adBreakInfo.name = <ADBREAK_NAME>
+   adBreakInfo.startTime = <START_TIME>
    adBreakInfo.position = <POSITION>
    ```
 
 1. Rufen Sie `trackEvent()` mit `AdBreakStart` in der `MediaHeartbeat`-Instanz auf, um das Tracking der Werbeunterbrechung zu starten:
 
    ```
-   contextData = {} 
+   contextData = {}
    ADBMobile().mediaTrackEvent(MEDIA_AD_BREAK_START, adBreakInfo, contextData)
    ```
 
@@ -62,7 +64,7 @@ ht-degree: 97%
      adb_media_init_adinfo(ad.title,  
                            ad.id,  
                            ad.position,  
-                           ad.duration) 
+                           ad.duration)
    ```
 
 1. Optional können Standard- und/oder Anzeigenmetadaten über Kontextdatenvariablen an die Medien-Tracking-Sitzung angehängt werden.
@@ -71,8 +73,8 @@ ht-degree: 97%
    * **Anwenderspezifische Anzeigenmetadaten:** Erstellen Sie für anwenderdefinierte Metadaten ein variables Objekt für die anwenderspezifischen Datenvariablen und füllen Sie es mit den Daten für das aktuelle Anzeigen-Asset:
 
       ```
-      contextData = {} 
-      contextData["adinfo1"] = "adinfo2" 
+      contextData = {}
+      contextData["adinfo1"] = "adinfo2"
       contextData["adinfo2"] = "adinfo2"
       ```
 
@@ -85,15 +87,15 @@ ht-degree: 97%
 1. Wenn die Wiedergabe des Anzeigen-Assets das Ende der Anzeige erreicht, rufen Sie `trackEvent()` mit dem `AdComplete`-Ereignis auf.
 
    ```
-   standardAdMetadata = {} 
-   contextData = {} 
+   standardAdMetadata = {}
+   contextData = {}
    ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_AD_COMPLETE, adInfo, contextData)
    ```
 
 1. Wenn die Anzeigenwiedergabe nicht abgeschlossen wurde, weil der Benutzer die Anzeige überspringt, verfolgen Sie das `AdSkip`-Ereignis:
 
    ```
-   contextData = {} 
+   contextData = {}
    ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_AD_SKIP, adInfo, contextData
    ```
 
@@ -101,7 +103,7 @@ ht-degree: 97%
 1. Wenn die Werbeunterbrechung abgeschlossen ist, verwenden Sie zum Tracking das `AdBreakComplete`-Ereignis:
 
    ```
-   contextData = {} 
+   contextData = {}
    ADBMobile().mediaTrackEvent(MEDIA_AD_BREAK_COMPLETE, adBreakInfo, contextData)
    ```
 
