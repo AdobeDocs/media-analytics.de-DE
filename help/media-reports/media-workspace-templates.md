@@ -3,12 +3,12 @@ title: Vorlagen für Media Workspace
 description: Analysieren Sie Ihre Tracking-Daten mithilfe der Vorlagen von Media Workspace. Wählen Sie Standardvorlagen für Akquise oder Streaming-Medien aus oder erstellen Sie eigene benutzerdefinierte Vorlagen.
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
-feature: '"Media Analytics, Workspace Basics"'
+feature: „Media Analytics, Workspace Basics“
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
