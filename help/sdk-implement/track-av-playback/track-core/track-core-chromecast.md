@@ -1,6 +1,6 @@
 ---
-title: Erfahren Sie, wie Sie die Core-Wiedergabe in Chromecast verfolgen
-description: Erfahren Sie, wie Sie das Core-Tracking mit dem Media SDK in Chromecast implementieren.
+title: Erfahren Sie, wie Sie die Core-Wiedergabe in Chromecast verfolgen.
+description: Erfahren Sie, wie Sie Core-Tracking mit dem Media SDK auf Chromecast implementieren.
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
@@ -8,11 +8,11 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Tracking von Core-Wiedergaben auf Chromecast{#track-core-playback-on-chromecast}
+# Tracking von Core-Wiedergaben in Chromecast{#track-core-playback-on-chromecast}
 
 Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
 
