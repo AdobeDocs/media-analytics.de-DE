@@ -1,5 +1,5 @@
 ---
-title: iOS-Metadatenschlüssel - Erklärung
+title: iOS-Metadatenschlüssel – Erklärung
 description: Erfahren Sie mehr über die verfügbaren iOS-Metadatenschlüssel.
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
@@ -8,11 +8,11 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '117'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# iOS-Metadatenelemente{#ios-metadata-keys}
+# iOS-Metadatenschlüssel{#ios-metadata-keys}
 
 [iOS-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/)
 
