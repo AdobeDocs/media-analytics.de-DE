@@ -1,17 +1,17 @@
 ---
 title: Erfahren Sie, wie Sie die Core-Wiedergabe mit JavaScript v3.x verfolgen.
-description: Erfahren Sie, wie Sie das Core-Tracking mit dem Media SDK mithilfe von JavaScript 3.x-Apps in einem Browser implementieren.
+description: Erfahren Sie, wie Sie das Core-Tracking mit dem Media SDK in einem Browser mit JavaScript 3.x-Apps implementieren können.
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '647'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Tracking von Core-Wiedergaben mit JavaScript 3.x {#track-core-playback-on-javascript}
+# Tracking von Core-Wiedergaben mit JavaScript 3.x{#track-core-playback-on-javascript}
 
 Diese Dokumentation behandelt das Tracking in der Version 3.x des SDK.
 
