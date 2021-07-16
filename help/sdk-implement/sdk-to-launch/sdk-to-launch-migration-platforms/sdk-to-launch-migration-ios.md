@@ -1,5 +1,5 @@
 ---
-title: '"Migration vom Standalone Media SDK zu Adobe Launch - iOS"'
+title: „Migration vom Standalone Media SDK zu Adobe Launch – iOS“
 description: Erfahren Sie, wie Sie für iOS vom Media SDK zu Launch migrieren.
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
@@ -7,7 +7,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,8 @@ ADBMediaHeartbeat* tracker =
 
 1. Klicken Sie unter „Experience Platform Launch“ für Ihre mobile Eigenschaft auf die Registerkarte [!UICONTROL Erweiterungen].
 1. Suchen Sie auf der Registerkarte [!UICONTROL Katalog] die Erweiterung „Adobe Media Analytics for Audio and Video“ und klicken Sie auf [!UICONTROL Installieren].
-1. Konfigurieren Sie auf der Seite „Erweiterungseinstellungen“ die Tracking-Parameter. Die Media-Erweiterung verwendet zum Tracking die konfigurierten Parameter.
+1. Konfigurieren Sie auf der Seite „Erweiterungseinstellungen“ die Tracking-Parameter.
+Die Media-Erweiterung verwendet zum Tracking die konfigurierten Parameter.
 
    ![](assets/launch_config_mobile.png)
 
@@ -123,7 +124,8 @@ Der Tracker übernimmt automatisch die Konfiguration der Launch-Eigenschaft.
 
 ### Standalone Media SDK
 
-Im Standalone Media SDK wird ein Delegate-Objekt, das das `ADBMediaHeartbeartDelegate`-Protokoll implementiert, während der Tracker-Erstellung übergeben. Durch die Implementierung werden die aktuellen QoE- und die Abspielleistendaten zurückgegeben, wenn der Tracker die Schnittstellen-Methoden `getQoSObject()` und `getCurrentPlaybackTime()` aufruft.
+Im Standalone Media SDK wird ein Delegate-Objekt, das das `ADBMediaHeartbeartDelegate`-Protokoll implementiert, während der Tracker-Erstellung übergeben.
+Durch die Implementierung werden die aktuellen QoE- und die Abspielleistendaten zurückgegeben, wenn der Tracker die Schnittstellen-Methoden `getQoSObject()` und `getCurrentPlaybackTime()` aufruft.
 
 ### Launch-Erweiterung
 
