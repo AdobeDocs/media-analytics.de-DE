@@ -1,5 +1,5 @@
 ---
-title: Erfahren Sie, wie Sie die Suche in Roku verfolgen
+title: Erfahren Sie, wie Sie die Suche in Roku verfolgen.
 description: Erfahren Sie, wie Sie mit dem Media SDK in Roku Suchstartereignisse und Suchabschlussereignisse verfolgen.
 uuid: 0572252b-397f-4aa2-b4b5-c5346b75244a
 exl-id: cb0581f7-3ced-4d46-ac6a-a309a179c21e
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '132'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
