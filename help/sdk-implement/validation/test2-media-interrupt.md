@@ -8,11 +8,11 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Test 2: Medienunterbrechung {#test-media-interruption}
+# Test 2: Medienunterbrechung{#test-media-interruption}
 
 In diesem Testfall wird das Verhalten von Mobilgeräten bei Unterbrechungen überprüft.
 
