@@ -1,5 +1,5 @@
 ---
-title: Erfahren Sie, wie Sie Anzeigen in Roku verfolgen
+title: Erfahren Sie, wie Sie Anzeigen in Roku verfolgen.
 description: Implementieren des Anzeigen-Trackings in Roku-Anwendungen mit dem Media SDK.
 uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 exl-id: aaed828d-1aba-486e-83e3-2ffd092305e2
@@ -8,11 +8,11 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Tracking von Anzeigen auf Roku{#track-ads-on-roku}
+# Tracking von Anzeigen in Roku{#track-ads-on-roku}
 
 Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung der 2.x-SDKs vornehmen.
 
@@ -69,7 +69,7 @@ Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung d
 
 1. Optional können Standard- und/oder Anzeigenmetadaten über Kontextdatenvariablen an die Medien-Tracking-Sitzung angehängt werden.
 
-   * [Standard-Anzeigenmetadaten in Roku implementieren](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+   * [Standard-Anzeigenmetadaten in Roku implementieren ](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    * **Anwenderspezifische Anzeigenmetadaten:** Erstellen Sie für anwenderdefinierte Metadaten ein variables Objekt für die anwenderspezifischen Datenvariablen und füllen Sie es mit den Daten für das aktuelle Anzeigen-Asset:
 
       ```
