@@ -1,6 +1,6 @@
 ---
 title: Details zum Testaufruf
-description: Erkunden Sie die Aufrufe, die Sie zur Validierung Ihrer Implementierung tätigen müssen.
+description: Erfahren Sie, welche Anrufe Sie zur Validierung Ihrer Implementierung ausführen müssen.
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '616'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 ## Medienplayer starten {#start-the-media-player}
 
-### Start-Aufruf für Adobe Analytics (AppMeasurement)  {#aa-start-call}
+### Start-Aufruf für Adobe Analytics (AppMeasurement) {#aa-start-call}
 
 | Parameter |  Wert (Beispiel)  |
 |---|---|
@@ -35,7 +35,7 @@ ht-degree: 98%
 * Zusätzliche Kontextdatenvariablen sollten vorhanden sein und Metadaten enthalten. Siehe unten zu Details für Metadaten.
 * Die Länge für lineare Streams sollte auf die beste Schätzung für die aktuelle Sendung eingestellt werden.
 
-### Start-Aufruf für Standard-Metadaten in Adobe Analytics (AppMeasurement)  {#std-metadata-aa}
+### Start-Aufruf für Standard-Metadaten in Adobe Analytics (AppMeasurement) {#std-metadata-aa}
 
 | Parameter |  Wert (Beispiel)  |
 |---|---|
@@ -54,14 +54,14 @@ ht-degree: 98%
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Start-Aufruf für benutzerdefinierte Metadaten in Adobe Analytics (AppMeasurement)  {#custom-metadata-aa}
+### Start-Aufruf für benutzerdefinierte Metadaten in Adobe Analytics (AppMeasurement) {#custom-metadata-aa}
 
 | Parameter |  Wert (Beispiel)  |
 |---|---|
 | `custom.metadataA` | value |
 | `custom.metadataB` | value |
 
-### Start-Aufruf für Media Analytics (Heartbeats)  {#ma-start-call}
+### Start-Aufruf für Media Analytics (Heartbeats) {#ma-start-call}
 
 | Parameter |  Wert (Beispiel)  |
 |---|---|
@@ -81,7 +81,7 @@ ht-degree: 98%
 * Zusätzliche Kontextdatenvariablen sollten vorhanden sein und Metadaten enthalten. Siehe unten zu Details für Metadaten.
 * Die Position der Abspielleiste für lineare Streams sollte beim Videostart auf die Sekunden eingestellt werden, die seit Beginn der aktuellen Sendung verstrichen sind, nicht auf 0.
 
-### Start-Aufruf für Standard-Metadaten in Media Analytics (Heartbeats)  {#std-metadata-ma}
+### Start-Aufruf für Standard-Metadaten in Media Analytics (Heartbeats) {#std-metadata-ma}
 
 | Parameter |  Wert (Beispiel)  |
 |---|---|
@@ -100,14 +100,14 @@ ht-degree: 98%
 | `s:meta:a.media.feed` | Kein Feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Start-Aufruf für benutzerdefinierte Metadaten in Media Analytics (Heartbeats)  {#custom-metadata-ma}
+### Start-Aufruf für benutzerdefinierte Metadaten in Media Analytics (Heartbeats) {#custom-metadata-ma}
 
 | Parameter |  Wert (Beispiel)  |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### Start-Aufruf für Adobe Analytics in Media Analytics (Heartbeats)  {#ma-aa-start}
+### Start-Aufruf für Adobe Analytics in Media Analytics (Heartbeats) {#ma-aa-start}
 
 | Parameter |  Wert (Beispiel)  |
 |---|---|
@@ -127,7 +127,7 @@ ht-degree: 98%
 
 ## Werbung wiedergeben {#view-ad-playback}
 
-### Anzeigenstart-Aufruf für Adobe Analytics (AppMeasurement)  {#aa-ad-start-call}
+### Anzeigenstart-Aufruf für Adobe Analytics (AppMeasurement) {#aa-ad-start-call}
 
 | Parameter |  Wert (Beispiel)  |
 |---|---|
@@ -150,7 +150,7 @@ ht-degree: 98%
 * Zusätzliche Kontextdatenvariablen sollten vorhanden sein und Metadaten enthalten. Siehe unten zu Details für Metadaten.
 * Die Anzeigenlänge kann auf -1 gesetzt werden, wenn sie beim Anzeigenstart nicht verfügbar ist.
 
-### Anzeigenstart-Aufruf für Standard-Metadaten in Adobe Analytics (AppMeasurement)  {#std-metadata-aa-ad-start}
+### Anzeigenstart-Aufruf für Standard-Metadaten in Adobe Analytics (AppMeasurement) {#std-metadata-aa-ad-start}
 
 | Parameter |  Wert (Beispiel)  |
 |---|---|
@@ -169,14 +169,14 @@ ht-degree: 98%
 | `a.media.feed` | Kein Feed |
 | `a.media.stream_format` | 0 |
 
-### Anzeigenstart-Aufruf für benutzerdefinierte Metadaten in Adobe Analytics (AppMeasurement)  {#custom-metadata-aa-ad-start}
+### Anzeigenstart-Aufruf für benutzerdefinierte Metadaten in Adobe Analytics (AppMeasurement) {#custom-metadata-aa-ad-start}
 
 | Parameter |  Wert (Beispiel)  |
 |---|---|
 | `custom.metadata` | value |
 | `custom.metadata` | value |
 
-### Anzeigenstart-Aufruf für Media Analytics (Heartbeats)  {#ma-ad-start-call}
+### Anzeigenstart-Aufruf für Media Analytics (Heartbeats) {#ma-ad-start-call}
 
 | Parameter |  Wert (Beispiel)  |
 |---|---|
@@ -195,7 +195,7 @@ ht-degree: 98%
 * Zusätzliche Kontextdatenvariablen sollten vorhanden sein und Metadaten enthalten. Siehe unten zu Details für Metadaten.
 * Die Anzeigenlänge kann auf -1 gesetzt werden, wenn sie beim Anzeigenstart nicht verfügbar ist.
 
-### Anzeigenstart-Aufruf für Standard-Metadaten in Media Analytics (Heartbeats)  {#std-metadata-ma-ad-start}
+### Anzeigenstart-Aufruf für Standard-Metadaten in Media Analytics (Heartbeats) {#std-metadata-ma-ad-start}
 
 | Parameter |  Wert (Beispiel)  |
 |---|---|
@@ -214,14 +214,14 @@ ht-degree: 98%
 | `s:meta:a.media.feed` | Kein Feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Anzeigenstart-Aufruf für benutzerdefinierte Metadaten im Media Analytics (Heartbeats)  {#custom-metadata-ma-ad-start}
+### Anzeigenstart-Aufruf für benutzerdefinierte Metadaten im Media Analytics (Heartbeats) {#custom-metadata-ma-ad-start}
 
 | Parameter |  Wert (Beispiel)  |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### Anzeigenstart-Aufruf für Adobe Analytics in Media Analytics (Heartbeats)  {#ma-aa-ad-start-call}
+### Anzeigenstart-Aufruf für Adobe Analytics in Media Analytics (Heartbeats) {#ma-aa-ad-start-call}
 
 | Parameter |  Wert (Beispiel)  |
 |---|---|
@@ -233,7 +233,7 @@ ht-degree: 98%
 | `s:stream:type` | vod |
 | `s:asset:type` | ad |
 
-### Anzeigenabspielaufruf für Media Analytics (Heartbeats)  {#ma-ad-play-call}
+### Anzeigenabspielaufruf für Media Analytics (Heartbeats) {#ma-ad-play-call}
 
 | Parameter |  Wert (Beispiel)  |
 |---|---|
@@ -245,7 +245,7 @@ ht-degree: 98%
 | `s:stream:type` | vod |
 | _**`s:asset:type`**_ | _**Anzeige**_ |
 
-### Anzeigepause-Aufruf für Media Analytics (Heartbeats)  {#ma-ad-pause-call}
+### Anzeigepause-Aufruf für Media Analytics (Heartbeats) {#ma-ad-pause-call}
 
 | Parameter |  Wert (Beispiel)  |
 |---|---|
@@ -257,7 +257,7 @@ ht-degree: 98%
 | `s:stream:type` | vod |
 | _**`s:asset:type`**_ | _**Anzeige**_ |
 
-### Anzeige abgeschlossen-Aufruf für Adobe Analytics in Media Analytics (Heartbeats)  {#ma-aa-ad-complete-call}
+### Anzeige abgeschlossen-Aufruf für Adobe Analytics in Media Analytics (Heartbeats) {#ma-aa-ad-complete-call}
 
 | Parameter |  Wert (Beispiel)  |
 |---|---|
@@ -271,7 +271,7 @@ ht-degree: 98%
 
 ## Hauptinhalt abspielen {#play-main-content}
 
-### Abspielaufruf für Media Analytics (Heartbeats)  {#ma-play-call}
+### Abspielaufruf für Media Analytics (Heartbeats) {#ma-play-call}
 
 | Parameter |  Wert (Beispiel)  |
 |---|---|
@@ -291,7 +291,7 @@ ht-degree: 98%
 
 ## Hauptinhalt anhalten {#pause-main-content}
 
-### Pause-Aufruf für Media Analytics (Heartbeats)  {#ma-pause-call}
+### Pause-Aufruf für Media Analytics (Heartbeats) {#ma-pause-call}
 
 | Parameter |  Wert (Beispiel)  |
 |---|---|
