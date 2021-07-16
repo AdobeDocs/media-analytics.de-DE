@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Implementierung des Fehler-Trackings mi
 exl-id: 3769fc47-fbc4-4498-9d2a-04c88cdd0e83
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 78%
@@ -13,9 +13,11 @@ ht-degree: 78%
 
 # Tracking von Fehlern mit JavaScript 3.x{#track-errors-on-javascript}
 
+Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen.
+
 >[!IMPORTANT]
 >
->Mit den folgenden Anweisungen können Sie die Implementierung der 3.x-SDKs vornehmen. Wenn Sie vorherige Versionen des SDK implementieren möchten, können Sie hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Wenn Sie vorherige Versionen des SDK implementieren möchten, können Sie hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Implementieren des Fehler-Trackings
 
