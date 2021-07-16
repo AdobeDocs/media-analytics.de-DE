@@ -5,7 +5,7 @@ uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
 exl-id: fcea2ef8-53c5-41fb-8b70-06599c2d9cbf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 87%
@@ -14,8 +14,10 @@ ht-degree: 87%
 
 # Puffer-Tracking in Android{#track-buffering-on-android}
 
+Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen.
+
 >[!IMPORTANT]
->Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie die 1.x-Entwicklerhandbücher hier herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Wenn Sie Version 1.x des SDK implementieren möchten, können Sie die 1.x-Entwicklerhandbücher hier herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Puffer-Tracking-Konstanten
 
@@ -30,7 +32,7 @@ ht-degree: 87%
 
    ```java
    public void onBufferStart(Observable observable, Object data) {  
-       _heartbeat.trackEvent(MediaHeartbeat.Event.BufferStart, null, null); 
+       _heartbeat.trackEvent(MediaHeartbeat.Event.BufferStart, null, null);
    }
    ```
 
@@ -38,7 +40,7 @@ ht-degree: 87%
 
    ```java
    public void onBufferComplete(Observable observable, Object data) {  
-       _heartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete,null, null); 
+       _heartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete,null, null);
    }
    ```
 
