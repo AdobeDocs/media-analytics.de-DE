@@ -1,6 +1,6 @@
 ---
 title: Erläuterung von Tracking-Fehlern
-description: Ausführlichere Informationen zum Fehler-Tracking mit dem Media SDK.
+description: Machen Sie sich mit dem Fehler-Tracking mit dem Media SDK vertraut.
 uuid: d71429e6-ef8b-4ea2-8491-ff3cdbf4357f
 exl-id: 61c5f835-d66c-4621-a0af-2e4f47a922ac
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
