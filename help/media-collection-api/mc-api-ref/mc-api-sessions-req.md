@@ -1,6 +1,6 @@
 ---
 title: Streaming-Mediensammlungs-API � Sitzungsanfrage-Endpunkt
-description: '"Was sind die Anforderungsparameter und Antworten der Media Collection API-Sessions?"'
+description: „Was sind die Anforderungsparameter und Antworten der Media Collection API-Sessions?“
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '97'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
