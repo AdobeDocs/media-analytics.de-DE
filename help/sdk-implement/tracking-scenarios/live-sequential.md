@@ -1,6 +1,6 @@
 ---
-title: Live-Hauptinhalt mit sequenzieller Verfolgung
-description: Sehen Sie sich ein Beispiel für die Verfolgung von Live-Inhalten mit sequenzieller Verfolgung mit dem Media SDK an.
+title: Live-Hauptinhalt mit sequentieller Verfolgung
+description: Sehen Sie sich ein Beispiel für das Tracking von Live-Inhalten mit sequenzieller Verfolgung mithilfe des Media SDK an.
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '522'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Dieses Szenario ist mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/sdk-im
 
 ## Heartbeat Content Play {#heartbeat-content-play}
 
-Dies sollte fast genauso aussehen wie der Heartbeat Content Start-Aufruf, jedoch mit dem Hauptunterschied im Parameter &quot;s:event:type&quot;. Alle Parameter sollten hier weiterhin vorhanden sein.
+Dies sollte fast genauso wie der Heartbeat Content Start-Aufruf aussehen, aber den Hauptunterschied im Parameter „s:event:type“ aufweisen. Alle Parameter sollten hier weiterhin vorhanden sein.
 
 | Parameter | Wert | Hinweise |
 |---|---|---|
