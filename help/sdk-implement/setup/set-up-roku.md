@@ -1,6 +1,6 @@
 ---
-title: Einrichten der Medien-SDK für Roku
-description: Führen Sie diese Schritte aus, um die Media SDK-Anwendung in Roku einzurichten.
+title: Einrichten des Media SDK für Roku
+description: Führen Sie diese Schritte aus, um das Media SDK-Programm in Roku einzurichten.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
@@ -8,13 +8,13 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '718'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Roku einrichten{#set-up-roku}
 
-## Voraussetzungen 
+## Voraussetzungen
 
 * **Gültige Konfigurationsparameter für Heartbeats festlegen:** Diese Parameter erhalten Sie nach der Einrichtung Ihres Media Analytics-Kontos von einem Adobe-Support-Mitarbeiter.
 * **Stellen Sie die folgenden Funktionen in Ihrem Medienplayer bereit:**
