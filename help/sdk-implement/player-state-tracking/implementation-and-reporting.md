@@ -1,13 +1,13 @@
 ---
 title: Implementierung und Reporting
-description: Erfahren Sie, wie Sie die Player-Status-Tracking-Funktion implementieren, einschließlich .
+description: Erfahren Sie, wie Sie die Player-Status-Tracking-Funktion implementieren einschließlich
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
