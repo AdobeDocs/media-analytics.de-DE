@@ -1,13 +1,13 @@
 ---
 title: Über das Player-Status-Tracking
-description: Erfahren Sie mehr über die Player-Status-Tracking-Funktion, einschließlich Anforderungen und Richtlinien für die Implementierung und Berichterstellung von Player-Status.
+description: Erfahren Sie mehr über die Player-Status-Tracking-Funktion einschließlich der Anforderungen und Richtlinien für die Implementierung und die Reporting-Player-Status.
 exl-id: c678e182-74e4-4f46-8596-7be57e645c66
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '405'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
