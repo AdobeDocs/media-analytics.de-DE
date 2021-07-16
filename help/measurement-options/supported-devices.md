@@ -1,13 +1,13 @@
 ---
-title: Informationen zu unterstützten Geräten und Plattformen
-description: '"Erfahren Sie mehr über die wichtigsten Geräte wie iOS, Android, OTT-Geräte und JavaScript-Browser, die Adobe Analytics for Streaming Media unterstützt."'
+title: Erfahren Sie mehr über unterstützte Geräte und Plattformen.
+description: „Erfahren Sie mehr über die wichtigsten Geräte wie iOS, Android, OTT-Geräte und JavaScript-Browser, die Adobe Analytics for Streaming Media unterstützt.“
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '341'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
