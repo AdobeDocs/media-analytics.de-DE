@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '258'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 59%
 
 Berechnete Metriken für Streaming-Medien sind benutzerspezifische Metriken, mit denen Sie zielgerichtete Streaming-Mediendaten wie durchschnittliche Anzeigenbesuchszeit oder durchschnittliche Anzeigen pro Medien-Stream abrufen können.
 
-Weitere Informationen zu berechneten Adobe Analytics-Metriken finden Sie unter [Berechnete und erweiterte berechnete (abgeleitete) Metriken](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=en) im Adobe Analytics-Komponentenleitfaden.
+Weitere Informationen zu berechneten Adobe Analytics-Metriken finden Sie unter [Berechnete und erweiterte berechnete (abgeleitete) Metriken](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=de) im Adobe Analytics-Komponenten-Handbuch.
 
 >[!NOTE]
 >
@@ -27,9 +27,9 @@ Weitere Informationen zu berechneten Adobe Analytics-Metriken finden Sie unter [
 | Durchschnittliche Anzeigen pro Medienstream | Anzeigenstarts pro Medienstart | `Ad Starts / Media Starts` |
 | Durchschnittliche Kapitel pro Medienstream | Kapitelstarts pro Medienstart | `Chapter Start / Media Starts` |
 | Durchschnittl. Besuchszeit für Medien | Gesamtbesuchszeit pro Medienstart (HH:MM:SS) | `Media Time Spent / Media Starts` |
-| Durchschnittl. Inhaltsbesuchszeit | Inhaltsbesuchszeit pro Inhaltsstart (HH:MM:SS) | `Content Time Spent / Content Start` |
-| Durchschnittl. Besuchszeit für Anzeige | Besuchszeit für Anzeigen pro Anzeigenstart (HH:MM:SS) | `Ad Time Spent / Ad Start` |
-| Durchschnittl. Besuchszeit für Kapitel | Kapitelbesuchszeit pro Kapitelstart (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
+| Durchschnittl. Inhaltsbesuchszeit | Besuchszeit für den Inhalt nach gestarteten Inhalten (HH:MM:SS) | `Content Time Spent / Content Start` |
+| Durchschnittl. Besuchszeit für Anzeige | Besuchszeit für die Anzeige pro gestarteter Anzeige (HH:MM:SS) | `Ad Time Spent / Ad Start` |
+| Durchschnittl. Besuchszeit für Kapitel | Besuchszeit für das Kapitel pro gestartetem Kapitel (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
 | Medienabschlussrate | Rate der Inhaltsbeendigung und Medienaufrufe im Vergleich (%) | `Content Completes/ Media Starts` |
 | Inhaltsabschlussrate | Rate der Inhaltsbeendigungen und IInhaltsstarts im Vergleich (%) | `Content Completes / Content Starts` |
 | Anzeigenabschlussrate | Anteil abgeschlossener Anzeigen und gestarteter Anzeigen im Vergleich (%) | `Ad Completes / Ad Starts` |
