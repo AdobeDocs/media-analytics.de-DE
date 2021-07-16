@@ -1,5 +1,5 @@
 ---
-title: Erfahren Sie, wie Sie Standard-Anzeigenmetadaten in iOS implementieren
+title: Erfahren Sie, wie Sie Standard-Anzeigenmetadaten in iOS implementieren.
 description: Verwendung von Standard-Anzeigenmetadaten beim Anzeigen-Tracking in iOS.
 uuid: f15fb727-5a5b-46c5-bf12-93b376c10fd1
 exl-id: 018ae833-51d9-4ff0-80e7-3dbcaefb997c
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '67'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -33,4 +33,4 @@ NSMutableDictionary *standardAdMetadata = [[NSMutableDictionary alloc] init];
 [adObject setValue:standardAdMetadata forKey:ADBMediaObjectKeyStandardAdMetadata];
 ```
 
-[iOS-Metadatenelemente](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+[iOS-Metadatenschlüssel](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
