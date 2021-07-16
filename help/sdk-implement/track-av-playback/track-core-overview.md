@@ -1,6 +1,6 @@
 ---
-title: Erläuterung der Tracking-Inhaltswiedergabe
-description: '"Erfahren Sie mehr über das Tracking der Core-Wiedergabe, einschließlich Tracking des Ladens von Medien, des Medienstarts, der Medienpause und des Medienabschlusses. "'
+title: Tracking-Inhaltswiedergabe – Erklärung
+description: „Erfahren Sie mehr über das Tracking der Core-Wiedergabe, einschließlich des Trackings der Medienladung, des Medienstarts, der Medienpause und des Medienabschlusses.“ "
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '894'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
