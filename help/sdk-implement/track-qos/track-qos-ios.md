@@ -1,6 +1,6 @@
 ---
 title: Erfahren Sie, wie Sie die Erlebnisqualität in iOS verfolgen können.
-description: '"Erfahren Sie mehr über die Implementierung des Trackings der Erlebnisqualität (QoE, QoS) mit dem Media SDK in iOS."'
+description: „Erfahren Sie mehr über die Implementierung des Trackings der Erlebnisqualität (QoE, QoS) mit dem Media SDK in iOS.“
 uuid: cae2c142-ed39-4234-a711-765dcabc5415
 exl-id: 7f01e6eb-95bd-4e3d-93d0-8a2e68323313
 feature: Media Analytics
@@ -8,11 +8,11 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# Tracking der Erlebnisqualität auf iOS{#track-quality-of-experience-on-ios}
+# Tracking der Erlebnisqualität in iOS{#track-quality-of-experience-on-ios}
 
 Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen.
 
