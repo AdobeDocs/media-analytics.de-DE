@@ -1,6 +1,6 @@
 ---
-title: Erfahren Sie mehr über die Zeitpläne für die Medienverfolgung � Kapitel.
-description: Erfahren Sie mehr über die Timeline der Abspielleiste und darüber, wann ein Kapitel beginnt und endet.
+title: Erfahren Sie mehr über die Timelines für die Medienverfolgung � Kapitel.
+description: Erfahren Sie mehr über die Abspielkopf-Timeline und darüber, wann ein Kapitel beginnt und endet.
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '1237'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
