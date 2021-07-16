@@ -1,6 +1,6 @@
 ---
 title: Erläuterung der Schlüssel für Chromecast-Metadaten
-description: Erfahren Sie, wie Sie Standard-Video- und Anzeigenmetadaten festlegen, die mit Tracking-Aufrufen in Chromecast gesendet werden.
+description: Erfahren Sie, wie Sie Standard-Video- und Anzeigenmetadaten festlegen, die mit Tracking-Aufrufen auf Chromecast gesendet werden.
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 exl-id: ccc717ae-d846-4349-8282-5e3511ddeb9b
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '141'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
