@@ -1,13 +1,13 @@
 ---
 title: Reporting über gleichzeitige Medienbetrachter
-description: '"Erfahren Sie, wie Sie mit dem Bedienfeld "Gleichzeitige Medienbetrachter"gleichzeitige Betrachter analysieren und Spitzenzeiten von gleichzeitigen Betrachtern und Abbrüchen verstehen können."'
+description: „Erfahren Sie, wie Sie mit dem Bedienfeld ‚Gleichzeitige Medienbetrachter‘ gleichzeitige Betrachter analysieren und Spitzenzeiten von gleichzeitigen Betrachtern und Abbrüchen verstehen können.“
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
-feature: '"Media Analytics, Workspace Basics"'
+feature: „Media Analytics, Workspace Basics“
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '187'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
