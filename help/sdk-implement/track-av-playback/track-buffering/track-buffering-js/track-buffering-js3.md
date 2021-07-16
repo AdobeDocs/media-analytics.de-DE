@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Pufferereignisse in Browser-Apps (JS) verfolg
 exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 85%
@@ -13,9 +13,11 @@ ht-degree: 85%
 
 # Tracking der Pufferung mit JavaScript 3.x{#track-buffering-on-javascript}
 
+Mit den folgenden Anweisungen können Sie die Implementierung der 3.x-SDKs vornehmen.
+
 >[!IMPORTANT]
 >
->Mit den folgenden Anweisungen können Sie die Implementierung der 3.x-SDKs vornehmen. Wenn Sie vorherige Versionen des SDK implementieren möchten, können Sie hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Wenn Sie vorherige Versionen des SDK implementieren möchten, können Sie hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Puffer-Tracking-Konstanten
 
