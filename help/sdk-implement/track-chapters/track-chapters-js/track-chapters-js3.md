@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Implementierung des Kapitel- und Segmen
 exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 89%
@@ -13,9 +13,11 @@ ht-degree: 89%
 
 # Tracking von Kapiteln und Segmenten mit JavaScript 3.x{#track-chapters-and-segments-on-javascript}
 
+Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung der 3.x-SDKs vornehmen.
+
 >[!IMPORTANT]
 >
->Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung der 3.x-SDKs vornehmen. Wenn Sie vorherige Versionen des SDKs implementieren möchten, können Sie hier das Entwicklerhandbuch herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md).
+> Wenn Sie vorherige Versionen des SDKs implementieren möchten, können Sie hier das Entwicklerhandbuch herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md).
 
 1. Ermitteln Sie, wann das Kapitel beginnt, und erstellen Sie die `ChapterObject`-Instanz mithilfe dieser Kapitelinformationen.
 
