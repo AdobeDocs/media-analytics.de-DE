@@ -1,5 +1,5 @@
 ---
-title: Erfahren Sie, wie Sie Kapitel und Segmente mit JavaScript 3.x verfolgen können.
+title: Lernen Sie, wie Sie Kapitel und Segmente mit JavaScript 3.x verfolgen
 description: Erfahren Sie mehr über die Implementierung des Kapitel- und Segment-Trackings mit dem Media SDK in Browser-Apps (JS).
 exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
 feature: Media Analytics
@@ -7,7 +7,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
