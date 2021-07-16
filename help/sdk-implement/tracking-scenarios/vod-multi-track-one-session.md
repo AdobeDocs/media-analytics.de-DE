@@ -1,6 +1,6 @@
 ---
 title: Ein VOD-Tracker für mehrere Sitzungen
-description: Sehen Sie sich ein Beispiel an, wie Sie mit einem Tracker mehrere Sitzungen mit dem Media SDK verfolgen können.
+description: Sehen Sie sich ein Beispiel für die Verwendung eines Trackers zur Verfolgung mehrerer Sitzungen mit dem Media SDK an.
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 exl-id: 72edb484-0d45-446e-bda3-cda9e2272e7e
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
