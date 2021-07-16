@@ -1,6 +1,6 @@
 ---
 title: Erfahren Sie mehr über die Zeitpläne für die Medienverfolgung � Anzeigen bis zum Ende des Inhalts
-description: Machen Sie sich mit der Timeline der Abspielleiste und den Aktionen � entsprechenden Benutzers vertraut. Erfahren Sie mehr über die Details für jede Aktion und die zugehörigen Anfragen.
+description: Machen Sie sich mit der Timeline des Abspielkopfs und den entsprechenden � Benutzeraktionen vertraut. Erfahren Sie mehr über die Details für jede Aktion und die zugehörigen Anfragen.
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '1192'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
