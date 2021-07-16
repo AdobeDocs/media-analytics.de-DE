@@ -5,17 +5,19 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
 # Tracking von Core-Wiedergaben mit JavaScript 2.x{#track-core-playback-on-javascript}
 
+Die folgenden Anweisungen enthalten Anleitungen für die Implementierung von 2.x-SDKs.
+
 >[!IMPORTANT]
->Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK. Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
+>Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
 
 1. **Tracking-Ersteinrichtung**
 
