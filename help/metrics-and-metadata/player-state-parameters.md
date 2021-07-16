@@ -1,14 +1,14 @@
 ---
 title: Player-Statusparameter
-description: '"Erfahren Sie mehr über Player-Status-Tracking-Parameter für Vollbild, Untertitel, Stummschaltung und Bild in den Bildeigenschaften."'
+description: „Erfahren Sie mehr über Player-Status-Tracking-Parameter für Vollbild, Untertitel, Stummschaltung und Bild in den Bildeigenschaften.“
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
-feature: '"Media Analytics, Variablen"'
+feature: „Media Analytics, Variablen“
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '2249'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
