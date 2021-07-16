@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Suchstart- und Suchabschlussereignisse mithil
 exl-id: b7152436-520e-4f38-a8ad-1027ca3f1f6c
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 80%
@@ -13,9 +13,11 @@ ht-degree: 80%
 
 # Tracking des Suchens mit JavaScript 3.x{#track-seeking-on-javascript}
 
+Mit den folgenden Anweisungen können Sie die Implementierung der 3.x-SDKs vornehmen.
+
 >[!IMPORTANT]
 >
->Mit den folgenden Anweisungen können Sie die Implementierung der 3.x-SDKs vornehmen. Wenn Sie vorherige Versionen des SDK implementieren möchten, können Sie hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Wenn Sie vorherige Versionen des SDK implementieren möchten, können Sie hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Suchen-Tracking-Konstanten
 
