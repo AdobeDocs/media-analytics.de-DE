@@ -1,6 +1,6 @@
 ---
-title: '"VOD-Wiedergabe mit Pre-Roll-Anzeigen"'
-description: '"Sehen Sie sich ein Beispiel für das Tracking von VOD-Inhalten an, die Pre-Roll-Anzeigen mit dem Media SDK enthalten."'
+title: „VOD-Wiedergabe mit Pre-roll-Anzeigen“
+description: „Sehen Sie sich ein Beispiel für das Tracking von VOD-Inhalten, die Pre-roll-Anzeigen enthalten, mit dem Media SDK an.“
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '529'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
