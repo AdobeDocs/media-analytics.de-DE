@@ -1,6 +1,6 @@
 ---
-title: 'Adobe-Streaming-Medien in Adobe Analytics '
-description: '"Machen Sie sich mit der aktuellen Streaming-Medienmessung für Inhalte, Audio und Werbung vertraut. Erfahren Sie mehr über Adobe Analytics für Streaming-Medien."'
+title: 'Adobe Streaming Media in Adobe Analytics '
+description: „Machen Sie sich mit der aktuellen Streaming-Medienmessung für Inhalte, Audio und Werbung vertraut.“ „Erfahren Sie mehr über Adobe Analytics für Streaming-Medien.“
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
@@ -8,11 +8,11 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '880'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Messen von Streaming-Medien in Adobe Analytics {#measuring-audio-and-video-in-adobe-analytics}
+# Messen von Streaming-Medien in Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
 
 ![Banner](./assets/media_analytics_banner.png)
 
