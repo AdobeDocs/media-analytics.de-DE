@@ -1,6 +1,6 @@
 ---
-title: Erläuterung der Media SDKs implementieren
-description: '"Erfahren Sie, wie Sie das Media SDK für das Medien-Tracking in Ihren mobilen, OTT- und Browser-Anwendungen (JS) einrichten."'
+title: Implementieren von Media SDKs – Erklärung
+description: „Erfahren Sie, wie Sie das Media SDK für das Medien-Tracking in Ihren mobilen, OTT- und Browser-Programmen (JS) einrichten.“
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '742'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -125,7 +125,7 @@ Führen Sie die folgenden Implementierungsschritte aus:
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
    ```
 
-## Überprüfen  {#validate}
+## Überprüfen {#validate}
 
 Media Analytics-Tracking-Implementierungen generieren zwei Arten von Tracking-Aufrufen:
 
