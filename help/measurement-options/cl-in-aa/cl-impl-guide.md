@@ -8,11 +8,11 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Implementierungshandbuch für benutzerdefinierte Links {#custom-link-implementation-guide}
+# Implementierungshandbuch für benutzerdefinierte Links{#custom-link-implementation-guide}
 
 Das benutzerdefinierte Video-Tracking verwendet das manuelle Link-Tracking mit benutzerdefiniertem Link-Code im `appMeasurement` in Analytics.
 Meistens wird das anwenderdefinierte Video-Tracking auf Plattformen und Geräten verwendet, bei denen eine minimale Videomessung erforderlich ist.
