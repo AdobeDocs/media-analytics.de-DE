@@ -1,6 +1,6 @@
 ---
 title: App-Zustände verfolgen
-description: 'App-Status sind die verschiedenen Bildschirme oder Ansichten in Ihrer Anwendung. Erfahren Sie, wie Sie den App-Status in Ihrer Anwendung mithilfe des trackState-Aufrufs verfolgen. '
+description: 'Programmstatus sind die verschiedenen Bildschirme oder Ansichten in Ihrem Programm. Erfahren Sie, wie Sie den Programmstatus in Ihrem Programm mithilfe des trackState-Aufrufs verfolgen. '
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 exl-id: bb1e0eee-7c59-40b4-9359-a7441b9686b8
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
