@@ -1,6 +1,6 @@
 ---
 title: Live-Hauptinhalt
-description: Sehen Sie sich ein Beispiel für die Verfolgung von Live-Inhalten mit dem Media SDK an.
+description: Sehen Sie sich ein Beispiel für das Tracking von Live-Inhalten mit dem Media SDK an.
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 75%
+ht-degree: 78%
 
 ---
 
