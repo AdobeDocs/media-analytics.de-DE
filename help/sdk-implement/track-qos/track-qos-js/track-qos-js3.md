@@ -4,7 +4,7 @@ description: '"Erfahren Sie mehr über die Implementierung des Trackings der Erl
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 87%
@@ -13,9 +13,11 @@ ht-degree: 87%
 
 # Tracking der Erlebnisqualität mit JavaScript 3.x{#track-quality-of-experience-on-javascript}
 
+Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen.
+
 >[!IMPORTANT]
 >
->Mit den folgenden Anweisungen können Sie die Implementierung der 3.x-SDKs vornehmen. Wenn Sie vorherige Versionen des SDK implementieren möchten, können Sie hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
+>Wenn Sie vorherige Versionen des SDK implementieren möchten, können Sie hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/sdk-implement/download-sdks.md)
 
 ## Implementieren von QOE
 
