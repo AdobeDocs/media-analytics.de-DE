@@ -1,5 +1,5 @@
 ---
-title: '"Migration vom Standalone Media SDK zu Adobe Launch - Web (JS)"'
+title: „Migration vom Standalone Media SDK zu Adobe Launch – Web (JS)“
 description: Erfahren Sie, wie Sie vom Media SDK zu Launch für JS migrieren.
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
@@ -7,7 +7,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '403'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,8 @@ Zusätzlich zur `MediaHeartbeat`-Konfiguration muss auf der Seite die `AppMeasur
 
 1. Klicken Sie unter „Experience Platform Launch“ für Ihre Web-Eigenschaft auf die Registerkarte [!UICONTROL Erweiterungen].
 1. Suchen Sie auf der Registerkarte [!UICONTROL Katalog] die Erweiterung „Adobe Media Analytics for Audio and Video“ und klicken Sie auf [!UICONTROL Installieren].
-1. Konfigurieren Sie auf der Seite „Erweiterungseinstellungen“ die Tracking-Parameter. Die Media-Erweiterung verwendet zum Tracking die konfigurierten Parameter.
+1. Konfigurieren Sie auf der Seite „Erweiterungseinstellungen“ die Tracking-Parameter.
+Die Media-Erweiterung verwendet zum Tracking die konfigurierten Parameter.
 
    ![](assets/launch_config_js.png)
 
@@ -119,5 +120,5 @@ Launch bietet zwei Methoden zum Erstellen der Tracking-Infrastruktur. Beide Meth
 
 ### Launch
 
-* [Launch-Übersicht](https://docs.adobe.com/content/help/de-DE/experience-cloud/user-guides/home.html)
+* [Launch-Übersicht](https://experienceleague.adobe.com/docs/launch/using/overview.html?lang=de)
 * [Media Analytics-Erweiterung](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html?lang=de)
