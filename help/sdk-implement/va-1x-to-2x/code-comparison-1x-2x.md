@@ -1,5 +1,5 @@
 ---
-title: Codevergleich von v1.x mit v2.x
+title: Code-Vergleich von v1.x mit v2.x
 description: Erfahren Sie mehr über den Unterschied zwischen Code in den Versionen 1.x und 2.x des Media SDK.
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '572'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
