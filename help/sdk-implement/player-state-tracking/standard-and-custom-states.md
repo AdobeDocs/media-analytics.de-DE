@@ -1,13 +1,13 @@
 ---
 title: Über Standard- und benutzerdefinierte Status
-description: Erfahren Sie mehr über die Player-Status-Tracking-Funktion, einschließlich Anforderungen und Richtlinien für die Implementierung und Berichterstellung von Standard- und benutzerdefinierten Player-Status.
+description: Erfahren Sie mehr über die Player-Status-Tracking-Funktion einschließlich Anforderungen und Richtlinien für die Implementierung und das Reporting von Standard- und benutzerdefinierten Player-Status.
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
