@@ -7,8 +7,8 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -130,7 +130,7 @@ ht-degree: 100%
 
 * **Wenn Sie den `appInstallationId`-Wert *nicht* übergeben:** Das MA-Backend generiert keine MCID mehr, sondern überlässt diese Aufgabe Adobe Analytics. Adobe empfiehlt, entweder eine MCID (sofern verfügbar) oder eine `appInstallationId` zu senden (neben der erforderlichen `marketingCloudOrgId`), damit die Mediensammlungs-API die MCID generiert und bei allen Aufrufen sendet.
 
-* **Wenn Sie den **`appInstallationId`-Wertübergeben:** Die MCID *kann* vom MA-Backend generiert werden, wenn Sie Werte für die Parameter `appInstallationId` und `marketingCloudOrgId` (erforderlich) übergeben.  Wenn Sie `appInstallationId` nicht selbst übergeben, muss der Wert clientseitig persistent sein. Er muss außerdem eindeutig für die Anwendung auf dem Gerät sein und beibehalten werden, bis die Anwendung neu installiert wird.
+* **Wenn Sie *den*`appInstallationId`-Wertübergeben:** Die MCID *kann* vom MA-Backend generiert werden, wenn Sie Werte für die Parameter `appInstallationId` und `marketingCloudOrgId` (erforderlich) übergeben.  Wenn Sie `appInstallationId` nicht selbst übergeben, muss der Wert clientseitig persistent sein. Er muss außerdem eindeutig für die Anwendung auf dem Gerät sein und beibehalten werden, bis die Anwendung neu installiert wird.
 
 >[!NOTE]
 >
