@@ -7,12 +7,12 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# JSON-Validierungsschemas{#json-validation-schemas}
+# JSON-Validierungsschemas {#json-validation-schemas}
 
 Das Media Analytics-Backend validiert die Anforderungsparameter für die verschiedenen Ereignistypen mithilfe von JSON-Validierungsschemas. Diese Schemas sind öffentlich verfügbar und ausschlaggebend für die in der MA-API verwendeten Parametertypen.
 
