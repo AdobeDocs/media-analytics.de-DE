@@ -7,8 +7,8 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 78%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -59,7 +59,7 @@ In diesem Szenario wird kein Abschlussaufruf gesendet, da der Live-Stream nie ab
 
 ## Einstellungen der Abspielleistenwerte
 
-Bei LIVE-Streams müssen Sie den Wert der Abspielleiste als die Anzahl der Sekunden seit Mitternacht UTC an diesem Tag festlegen, damit Analysten in der Berichterstellung bestimmen können, an welchem Punkt Benutzer innerhalb einer 24-Stunden-Ansicht dem LIVE-Stream beitreten und ihn verlassen.
+Bei LIVE-Streams müssen Sie den Wert des Abspielkopfs als die Anzahl der Sekunden seit Mitternacht UTC an diesem Tag festlegen, damit Analysten beim Reporting bestimmen können, an welchem Punkt Benutzer innerhalb einer 24-Stunden-Ansicht dem LIVE-Stream beitreten und ihn verlassen.
 
 ### Am Anfang
 
@@ -69,7 +69,7 @@ Beispiel: Ein LIVE-Streaming-Ereignis beginnt um Mitternacht und dauert 24 Stund
 
 ### Beim Anhalten
 
-Dieselbe Live-Abspielleistenlogik, die zu Beginn der Wiedergabe angewendet wurde, muss angewendet werden, wenn ein Benutzer die Wiedergabe anhält. Wenn der Benutzer zum Abspielen des LIVE-Streams zurückkehrt, müssen Sie den Wert `l:event:playhead` gemäß der neuen Anzahl von Sekunden seit Mitternacht UTC festlegen, _nicht_ so, dass der Benutzer den LIVE-Stream angehalten hat.
+Dieselbe Live-Abspielleistenlogik, die zu Beginn der Wiedergabe angewendet wurde, muss angewendet werden, wenn ein Benutzer die Wiedergabe anhält. Wenn der Benutzer zum Abspielen des LIVE-Streams zurückkehrt, müssen Sie den Wert `l:event:playhead` auf die neue Anzahl der Sekunden seit Mitternacht UTC festlegen, _nicht_ auf den Punkt, an dem der Benutzer den LIVE-Stream angehalten hat.
 
 ## Beispielcode {#sample-code}
 
