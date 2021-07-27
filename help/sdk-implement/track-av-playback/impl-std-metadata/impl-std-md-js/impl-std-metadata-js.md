@@ -7,12 +7,12 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Implementieren von Standard-Metadaten mit JavaScript 2.x{#implement-standard-metadata-on-javascript}
+# Implementieren von Standard-Metadaten mit JavaScript 2.x {#implement-standard-metadata-on-javascript}
 
 ## Metadatenkonstante
 
