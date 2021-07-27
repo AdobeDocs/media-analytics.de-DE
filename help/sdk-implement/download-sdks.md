@@ -6,7 +6,7 @@ exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
 ht-degree: 100%
 
@@ -53,5 +53,5 @@ ht-degree: 100%
 | iOS | [SDK für iOS v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [Erste Schritte – Media 1.x für iOS](setup/vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [SDK für JavaScript v1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [Erste Schritte – Media 1.x für JS](setup/vhl-dev-guide-v15_js.pdf) |
 | TVML | [SDK für TVML v1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [Erste Schritte – Media 1.x für TVML](setup/vhl_tvml.pdf) |
-| Apple TV | SDK für Apple TV 1.0.0 (Wenden Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/marketing-cloud/contact-support.html), um das ältere SDK 1.x zu erhalten) | [Erste Schritte – Media 1.x für Apple TV](setup/vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | SDK für Chromecast 1.0.0 (Wenden Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/marketing-cloud/contact-support.html), um das ältere 1.x-SDK zu erhalten) | [Erste Schritte – Media 1.x für Chromecast](setup/chromecast_1.x_sdk.pdf) |
+| Apple TV | SDK für Apple TV 1.0.0 (Wenden Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html), um das ältere SDK 1.x zu erhalten) | [Erste Schritte – Media 1.x für Apple TV](setup/vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | SDK für Chromecast 1.0.0 (Wenden Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html), um das ältere 1.x-SDK zu erhalten) | [Erste Schritte – Media 1.x für Chromecast](setup/chromecast_1.x_sdk.pdf) |
