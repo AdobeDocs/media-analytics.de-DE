@@ -6,13 +6,13 @@ exl-id: 1552b16a-3c2d-4caa-b571-e6628f0b6866
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '65'
 ht-degree: 100%
 
 ---
 
-# Standard-Metadaten in Roku implementieren{#implement-standard-metadata-on-roku}
+# Standard-Metadaten in Roku implementieren {#implement-standard-metadata-on-roku}
 
 Instanziieren Sie ein Standard-Metadatenobjekt, füllen Sie die gewünschten Variablen aus und setzen Sie das Metadatenobjekt auf das Media Heartbeat-Objekt.
 
