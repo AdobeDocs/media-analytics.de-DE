@@ -1,5 +1,5 @@
 ---
-title: Implementieren einer Ereignisanfrage
+title: 'Implementieren einer Ereignisanfrage '
 description: Erfahren Sie, wie Sie den Ereignisanforderungs-Endpunkt für alle nachfolgenden Tracking-Aufrufe verwenden, nachdem Sie eine Sitzungs-ID erhalten haben.
 uuid: 3bfa313c-ff74-4e2e-bbde-6f4a6221d85b
 exl-id: af9a3470-85c7-498e-9bf4-6df3c6aafad9
@@ -7,12 +7,12 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Implementieren einer Ereignisanfrage{#implementing-an-events-request}
+# Implementieren einer Ereignisanfrage {#implementing-an-events-request}
 
 **`{uri}/api/v1/sessions/{sid}/events`**
 
