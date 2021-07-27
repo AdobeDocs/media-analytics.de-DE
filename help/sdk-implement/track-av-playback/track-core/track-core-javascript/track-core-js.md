@@ -6,15 +6,15 @@ exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '691'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Tracking von Core-Wiedergaben mit JavaScript 2.x{#track-core-playback-on-javascript}
 
-Die folgenden Anweisungen enthalten Anleitungen für die Implementierung von 2.x-SDKs.
+Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen.
 
 >[!IMPORTANT]
 >Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/sdk-implement/download-sdks.md)
