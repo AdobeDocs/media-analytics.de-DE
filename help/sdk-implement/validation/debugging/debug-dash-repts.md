@@ -7,12 +7,12 @@ feature: „Media Analytics, Analytics-Dashboards“
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Debug-Dashboard und -Berichte{#debug-dashboards-and-reports}
+# Debug-Dashboard und -Berichte {#debug-dashboards-and-reports}
 
 Adobe Debug bietet Reporting in Echtzeit, damit Sie Hits und Metadaten anzeigen können, die während der Videowiedergabe gesendet werden. Jeder dieser Berichte kann innerhalb von Debug gespeichert werden.
 
