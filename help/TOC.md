@@ -7,8 +7,8 @@ user-guide-description: Implementieren von Adobe Analytics für Streaming-Medien
 sub-product: Media Analytics
 source-git-commit: 42a8e33f03c95c7ad7d1c73387450ef36b3e1560
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 + Einführung in Analytics für Streaming-Medien {#intro-to-ava}
    + [Voraussetzungen](intro-to-ava/prereqs.md)
    + Implementierungspfade {#implementation-paths}
-      + [Überblick](intro-to-ava/implementation-paths/implementation-paths.md)
+      + [Überblick ](intro-to-ava/implementation-paths/implementation-paths.md)
       + [Client-seitig](intro-to-ava/implementation-paths/client-side-path.md)
       + Andere Implementierungspfade {#other-paths}
          + Milestone-Tracking des Medienmoduls {#mm-milestone-tracking}
@@ -36,7 +36,7 @@ ht-degree: 100%
    + [Häufig gestellte Fragen zum Ende der Unterstützung für das Media Analytics-SDK](sdk-implement/end-of-support-faqs.md)
    + [SDKs herunterladen](sdk-implement/download-sdks.md)
    + Einrichtung und Konfiguration {#setup}
-      + [Überblick](sdk-implement/setup/setup-overview.md)
+      + [Überblick ](sdk-implement/setup/setup-overview.md)
       + [Android einrichten](sdk-implement/setup/set-up-android.md)
       + [Einrichten von iOS](sdk-implement/setup/set-up-ios.md)
       + JavaScript einrichten {#setup-javascript}
@@ -45,7 +45,7 @@ ht-degree: 100%
       + [Einrichten von Chromecast](sdk-implement/setup/set-up-chromecast.md)
       + [Roku einrichten](sdk-implement/setup/set-up-roku.md)
    + Tracking der Wiedergabe von Streaming-Medien {#track-av-playback}
-      + [Überblick](sdk-implement/track-av-playback/track-core-overview.md)
+      + [Überblick ](sdk-implement/track-av-playback/track-core-overview.md)
       + Tracking der Core-Wiedergabe von Streaming-Medien {#track-core}
          + [Tracking von Core-Wiedergaben in Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [Tracking von Core-Wiedergaben in iOS](sdk-implement/track-av-playback/track-core/track-core-ios.md)
@@ -79,10 +79,10 @@ ht-degree: 100%
             + [Standard-Metadaten in JavaScript 3.x implementieren](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
          + [Standard-Metadaten in Chromecast implementieren](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
          + [Standard-Metadatenparameter – Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
-         + [Standard-Metadaten in Roku implementieren](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+         + [Standard-Metadaten in Roku implementieren ](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
          + [Standard-Metadatenparameter – Roku](sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md)
    + Anzeigen verfolgen {#track-ads}
-      + [Überblick](sdk-implement/track-ads/track-ads-overview.md)
+      + [Überblick ](sdk-implement/track-ads/track-ads-overview.md)
       + [Tracking von Anzeigen in Android](sdk-implement/track-ads/track-ads-android.md)
       + [Tracking von Anzeigen in iOS](sdk-implement/track-ads/track-ads-ios.md)
       + Tracking von Anzeigen in JavaScript {#track-ads-js}
@@ -91,14 +91,14 @@ ht-degree: 100%
       + [Tracking von Anzeigen in Chromecast](sdk-implement/track-ads/track-ads-chromecast.md)
       + [Tracking von Anzeigen in Roku](sdk-implement/track-ads/track-ads-roku.md)
       + Standard-Anzeigenmetadaten implementieren {#impl-std-ad-metadata}
-         + [Standardmäßige Anzeigenmetadaten in Android implementieren](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
-         + [Standard-Anzeigenmetadaten in iOS implementieren](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
+         + [Standardmäßige Anzeigenmetadaten in Android implementieren ](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
+         + [Standard-Anzeigenmetadaten in iOS implementieren ](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
          + Standard-Anzeigenmetadaten in JavaScript implementieren {#impl-std-ad-md-js}
             + [Standard-Anzeigenmetadaten in JavaScript 2.x implementieren](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
             + [Standard-Anzeigenmetadaten in JavaScript 3.x implementieren](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
          + [Standard-Anzeigenmetadaten in Roku implementieren ](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    + Kapitel und Segmente verfolgen {#track-chapters}
-      + [Überblick](sdk-implement/track-chapters/track-chapters-overview.md)
+      + [Überblick ](sdk-implement/track-chapters/track-chapters-overview.md)
       + [Tracking von Kapiteln und Segmenten in Android](sdk-implement/track-chapters/track-chapters-android.md)
       + [Tracking von Kapiteln und Segmenten in iOS](sdk-implement/track-chapters/track-chapters-ios.md)
       + Tracking von Kapiteln und Segmenten in JavaScript {#track-chapters-js}
@@ -107,7 +107,7 @@ ht-degree: 100%
       + [Tracking von Kapiteln und Segmenten in Chromecast](sdk-implement/track-chapters/track-chapters-chromecast.md)
       + [Tracking von Kapiteln und Segmenten in Roku](sdk-implement/track-chapters/track-chapters-roku.md)
    + Erlebnisqualität verfolgen {#track-qos}
-      + [Überblick](sdk-implement/track-qos/track-qos-overview.md)
+      + [Überblick ](sdk-implement/track-qos/track-qos-overview.md)
       + [Tracking der Erlebnisqualität in Android](sdk-implement/track-qos/track-qos-android.md)
       + [Tracking der Erlebnisqualität in iOS](sdk-implement/track-qos/track-qos-ios.md)
       + Tracking der Erlebnisqualität in JavaScript {#track-qos-js}
@@ -116,9 +116,9 @@ ht-degree: 100%
       + [Tracking der Erlebnisqualität in Chromecast](sdk-implement/track-qos/track-qos-chromecast.md)
       + [Tracking der Erlebnisqualität in Roku](sdk-implement/track-qos/track-qos-roku.md)
    + Fehler-Tracking {#track-errors}
-      + [Überblick](sdk-implement/track-errors/track-errors-overview.md)
+      + [Überblick ](sdk-implement/track-errors/track-errors-overview.md)
       + [Tracking von Fehlern in Android](sdk-implement/track-errors/track-errors-android.md)
-      + [Tracking von Fehlern in iOS](sdk-implement/track-errors/track-errors-ios.md)
+      + [Tracking von Fehlern in iOS ](sdk-implement/track-errors/track-errors-ios.md)
       + Tracking von Fehlern in JavaScript {#track-errors-js}
          + [Tracking von Fehlern in JavaScript 2.x](sdk-implement/track-errors/track-errors-js/track-errors-js.md)
          + [Tracking von Fehlern in JavaScript 3.x](sdk-implement/track-errors/track-errors-js/track-errors-js3.md)
@@ -171,7 +171,7 @@ ht-degree: 100%
          + [iOS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
          + [JS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + Media Collection API (RESTful) {#media-collection-api}
-   + [Überblick](media-collection-api/mc-api-overview.md)
+   + [Überblick ](media-collection-api/mc-api-overview.md)
    + API-Referenz {#mc-api-ref}
       + [Sitzungsanfrage](media-collection-api/mc-api-ref/mc-api-sessions-req.md)
       + [Ereignisanfrage](media-collection-api/mc-api-ref/mc-api-events-req.md)
@@ -182,7 +182,7 @@ ht-degree: 100%
       + [Schnellstart](media-collection-api/mc-api-impl/mc-api-quick-start.md)
       + [Einstellen des HTTP-Anfragetyps in Ihrem Player](media-collection-api/mc-api-impl/mc-api-set-http-req.md)
       + [Beziehen einer Sitzungs-ID](media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
-      + [Implementieren einer Ereignisanfrage](media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
+      + [Implementieren einer Ereignisanfrage ](media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
       + [Validieren von Ereignisanfragen](media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
       + [Senden von Ping-Ereignissen](media-collection-api/mc-api-impl/mc-api-sed-pings.md)
       + [Senden von QoE-Daten](media-collection-api/mc-api-impl/mc-api-sending-qoe.md)
@@ -219,7 +219,7 @@ ht-degree: 100%
    + [Abrufen von Daten zu gleichzeitigem Betrachten über API](media-reports/media-default-reports/get-concurrent-json20.md)
 + [Tracking heruntergeladener Inhalte](media-collection-api/track-downloaded-content.md)
 + Player-Status-Tracking {#player-state-tracking}
-   + [Überblick](sdk-implement/player-state-tracking/player-state-overview.md)
+   + [Überblick ](sdk-implement/player-state-tracking/player-state-overview.md)
    + [Standardmäßige und benutzerdefinierte Status](sdk-implement/player-state-tracking/standard-and-custom-states.md)
    + [Implementierung und Reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [Beispiele für Player-Status-Tracking](sdk-implement/player-state-tracking/player-state-examples.md)
