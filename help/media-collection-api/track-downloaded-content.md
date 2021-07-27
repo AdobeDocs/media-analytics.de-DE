@@ -7,14 +7,14 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Tracking heruntergeladener Inhalte{#track-downloaded-content}
 
-## Überblick {#overview}
+## Überblick  {#overview}
 
 Die Funktion für heruntergeladene Inhalte bietet die Möglichkeit, die Mediennutzung zu verfolgen, während ein Benutzer offline ist. Ein Benutzer lädt beispielsweise eine Mobile App auf ein Mobilgerät herunter und installiert sie, um dann mit der Mobile App Inhalte in die lokale Datenspeicherung auf dem Gerät herunterzuladen. Um das Tracking der heruntergeladenen Daten zu ermöglichen, hat Adobe eine Funktion für heruntergeladene Inhalte entwickelt. Mit dieser Funktion werden Tracking-Daten unabhängig von der Konnektivität des Geräts gespeichert, wenn der Benutzer Inhalte aus dem Speicher des Geräts wiedergibt. Wenn der Benutzer die Wiedergabesitzung beendet hat und das Gerät wieder online ist, werden die gespeicherten Tracking-Informationen in einer einzelnen Payload an das Backend der Media Collection API gesendet. Die gespeicherten Tracking-Informationen werden dann wie gewohnt in der Media Collection API verarbeitet und für Berichte verwendet.
 
