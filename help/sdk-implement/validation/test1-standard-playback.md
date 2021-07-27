@@ -6,9 +6,9 @@ exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -125,7 +125,7 @@ Führen Sie die folgenden Aktionen aus und zeichnen Sie sie auf (in der angegebe
 
    Informationen zu Aufrufparametern und Metadaten finden Sie unter [Details zum Testaufruf.](/help/sdk-implement/validation/test-call-details.md#ma-ad-pause-call)
 
-1. **Hauptinhalt 10 Sekunden lang unterbrechungsfrei wiedergeben.** **Content Play**
+1. **Hauptinhalt für 10 Sekunden unterbrechungsfrei wiedergeben.** **Content Play**
 
    Während der Wiedergabe des Hauptinhalts sendet das Media SDK alle 10 Sekunden Heartbeats (Abspielaufrufe) an den Media Analytics-Server.
 
