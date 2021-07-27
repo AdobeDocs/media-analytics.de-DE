@@ -7,12 +7,12 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Beziehen einer Sitzungs-ID{#obtaining-a-session-id}
+# Beziehen einer Sitzungs-ID {#obtaining-a-session-id}
 
 Dieser Codeausschnitt vom Referenz-Player zeigt eine Möglichkeit, eine [Sitzungsanforderung](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) zu codieren und die Sitzungs-ID (und der Media Collection API-Version) aus dem Location-Header in der Antwort zu extrahieren:
 
