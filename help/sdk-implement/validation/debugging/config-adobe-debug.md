@@ -6,7 +6,7 @@ exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '653'
 ht-degree: 100%
 
@@ -99,7 +99,7 @@ So installieren Sie das SSL-Zertifikat auf einem iOS-Gerät:
    1. Aktivieren Sie auf Ihrem Gerät in den Flugmodus.
    1. Wählen Sie dasselbe WLAN-Signal aus, das auch von Ihrem Laptop verwendet wird.
    1. Geben Sie auf Ihrem Laptop manuell die IP-Adresse und den Port ein, die in der Debug-Proxy-App angezeigt werden.
-   1. Öffnen Sie ein Apple Safari-Browserfenster.
+   1. Öffnen Sie ein Apple Safari-Browser-Fenster.
    1. Gehen Sie zu [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl).
    1. Laden Sie das SSL-Zertifikat herunter und installieren Sie es.
 
@@ -115,7 +115,7 @@ So installieren Sie das SSL-Zertifikat auf einem Android-Gerät:
    1. Wählen Sie auf Ihrem Gerät den Flugmodus aus.
    1. Wählen Sie dasselbe WLAN-Signal aus, das auch von Ihrem Laptop verwendet wird.
    1. Geben Sie auf Ihrem Laptop manuell die IP-Adresse und den Port ein, die in der Debug-Proxy-App angezeigt werden.
-   1. Öffnen Sie ein Browserfenster.
+   1. Öffnen Sie ein Browser-Fenster.
    1. Gehen Sie zu [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl).
    1. Laden Sie das SSL-Zertifikat herunter und installieren Sie es.
 
