@@ -5,10 +5,10 @@ uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 41023be25308092a1b3e7c40bad2d8085429a0bc
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '698'
+ht-degree: 90%
 
 ---
 
@@ -61,13 +61,11 @@ Bei der Berechnung der Analytics-Start-/Schließen-Aufrufe für das Szenario mit
 
 ## Vergleich von Beispielsitzungen {#sample-session-comparison}
 
-```
-[url]/api/v1/sessions
-```
-
 ### Online-Inhalte
 
 ```
+POST /api/v1/sessions HTTP/1.1
+
 {
   eventType: "sessionStart",
   playerTime: {
@@ -82,13 +80,49 @@ Bei der Berechnung der Analytics-Start-/Schließen-Aufrufe für das Szenario mit
 ### Heruntergeladene Inhalte
 
 ```
+POST /api/v1/downloaded HTTP/1.1
+
 [{
     eventType: "sessionStart",
     playerTime:{
       playhead: 0,
-      ts: 1529997923478},  
+      ts: 1529997923478
+    },  
+    params:{...},
+    customMetadata:{},  
+    qoeData:{}
+},
+    {eventType: "play", playerTime:
+        {playhead: 0,  ts: 1529997928174}},
+    {eventType: "ping", playerTime:
+        {playhead: 10, ts: 1529997937503}},
+    {eventType: "ping", playerTime:
+        {playhead: 20, ts: 1529997947533}},
+    {eventType: "ping", playerTime:
+        {playhead: 30, ts: 1529997957545},},
+    {eventType: "sessionComplete", playerTime:
+        {playhead: 35, ts: 1529997960559}
+}]
+```
+
+#### Hinweis zu veralteten Versionen
+
+Heruntergeladene Inhalte konnten zuvor auch an die `/api/v1/sessions`-API gesendet werden. Diese Methode zur Verfolgung heruntergeladener Inhalte ist **veraltet** und wird in Zukunft **entfernt** sein.
+Die `/api/v1/sessions`-API akzeptiert nur Sitzungsinitialisierungs-Ereignisse.
+Bei Verwendung der neuen API ist die zuvor obligatorische `media.downloaded`-Markierung nicht mehr erforderlich.
+Wir empfehlen dringend die Verwendung der `/api/v1/downloaded`-API für neue heruntergeladene Inhaltsimplementierungen sowie die Aktualisierung vorhandener Implementierungen, die auf der alten API basieren.
+
+
+```
+POST /api/v1/sessions HTTP/1.1
+[{
+    eventType: "sessionStart",
+    playerTime:{
+      playhead: 0,
+      ts: 1529997923478
+    },
     params:{
-        "media.downloaded": true
+        "media.downloaded": true,
         ...
     },
     customMetadata:{},  
