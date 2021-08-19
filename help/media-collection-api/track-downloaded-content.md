@@ -6,13 +6,13 @@ exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 8da6889ecb50edd12b7ea4139500c35b923830f2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '698'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Tracking heruntergeladener Inhalte{#track-downloaded-content}
+# Tracking heruntergeladener Inhalte {#track-downloaded-content}
 
 ## Überblick  {#overview}
 
@@ -109,7 +109,7 @@ POST /api/v1/downloaded HTTP/1.1
 
 >[!IMPORTANT]
 >
->Heruntergeladene Inhalte konnten zuvor auch an die `/api/v1/sessions`-API gesendet werden. Diese Methode zur Verfolgung heruntergeladener Inhalte ist **veraltet** und wird in Zukunft **entfernt** sein.
+>Heruntergeladene Inhalte konnten zuvor auch an die `/api/v1/sessions`-API gesendet werden. Diese Methode zum Tracking heruntergeladener Inhalte ist **veraltet** und wird in Zukunft **entfernt**.
 
 
 Die `/api/v1/sessions`-API akzeptiert nur Sitzungsinitialisierungs-Ereignisse.
