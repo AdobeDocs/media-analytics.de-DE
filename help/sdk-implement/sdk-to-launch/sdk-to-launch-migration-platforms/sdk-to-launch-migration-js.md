@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie vom Media SDK zu Launch für JS migrieren.
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '403'
+ht-degree: 93%
 
 ---
 
@@ -47,7 +47,7 @@ Die Media-Erweiterung verwendet zum Tracking die konfigurierten Parameter.
 
    ![](assets/launch_config_js.png)
 
-[Launch-Benutzerhandbuch – Installieren und Konfigurieren der Media-Erweiterung](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html?lang=de#install-and-configure-the-ma-extension)
+[Launch-Benutzerhandbuch – Installieren und Konfigurieren der Media-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html#install-and-configure-the-ma-extension)
 
 ## Unterschiede bei der Tracker-Erstellung
 
@@ -120,5 +120,5 @@ Launch bietet zwei Methoden zum Erstellen der Tracking-Infrastruktur. Beide Meth
 
 ### Launch
 
-* [Launch-Übersicht](https://experienceleague.adobe.com/docs/launch/using/overview.html?lang=de)
-* [Media Analytics-Erweiterung](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html?lang=de)
+* [Launch-Übersicht](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
+* [Media Analytics-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
