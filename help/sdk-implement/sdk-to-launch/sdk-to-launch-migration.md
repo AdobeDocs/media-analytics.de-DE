@@ -6,10 +6,10 @@ description: Erfahren Sie, wie Sie vom Media SDK zu Launch migrieren.
 exl-id: 5350bbe9-c34f-46d9-a4c4-dbccdbed0bb0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '180'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ Erweiterungen stehen Launch-Kunden in einer App-Store-Oberfläche zur Verfügung
 
 Adobe Media Analytics für Audio und Video ist als Launch-Erweiterung für die Bereiche Web und Mobile verfügbar:
 
-* [Dokumentation zu Launch für Web](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html?lang=de)
+* [Dokumentation zu Launch für Web](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
 * [Dokumentation zu Launch für Mobile](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
 ## Plattformen
