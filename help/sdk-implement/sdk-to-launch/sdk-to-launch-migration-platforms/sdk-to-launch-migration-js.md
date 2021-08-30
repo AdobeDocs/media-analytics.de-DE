@@ -5,9 +5,9 @@ exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '403'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Die Media-Erweiterung verwendet zum Tracking die konfigurierten Parameter.
 
    ![](assets/launch_config_js.png)
 
-[Launch-Benutzerhandbuch – Installieren und Konfigurieren der Media-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html#install-and-configure-the-ma-extension)
+[Launch-Benutzerhandbuch – Installieren und Konfigurieren der Media-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=de#install-and-configure-the-ma-extension)
 
 ## Unterschiede bei der Tracker-Erstellung
 
@@ -112,7 +112,7 @@ Launch bietet zwei Methoden zum Erstellen der Tracking-Infrastruktur. Beide Meth
 
 ## Verwandte Dokumentation
 
-### Medien-SDK
+### Media SDK
 
 * [Einrichten von JavaScript 2.x](/help/sdk-implement/setup/setup-javascript/set-up-js-2.md)
 * [Einrichten von JavaScript 3.x](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md)
@@ -120,5 +120,5 @@ Launch bietet zwei Methoden zum Erstellen der Tracking-Infrastruktur. Beide Meth
 
 ### Launch
 
-* [Launch-Übersicht](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-* [Media Analytics-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
+* [Launch-Übersicht](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de)
+* [Media Analytics-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=de)
