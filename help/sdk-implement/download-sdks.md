@@ -6,9 +6,9 @@ exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -41,8 +41,8 @@ ht-degree: 96%
 
 | MA Launch-Komponente   | Dokumentation | Stichproben |
 |---|---|---|
-| **Web-Erweiterung** | [Adobe Media Analytics für Audio und Video – Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html) | [Adobe Media Analytics für Audio und Video – Erweiterung](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/2.x) |
-| **Web-Erweiterung (3.x SDK)** | [Adobe Media Analytics für Audio und Video – Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html) | [Adobe Media Analytics (3.x SDK) für Audio and Video-Erweiterung](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
+| **Web-Erweiterung** | [Adobe Media Analytics für Audio und Video – Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=de) | [Adobe Media Analytics für Audio und Video – Erweiterung](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/2.x) |
+| **Web-Erweiterung (3.x SDK)** | [Adobe Media Analytics für Audio und Video – Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=de) | [Adobe Media Analytics (3.x SDK) für Audio and Video-Erweiterung](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 | **Mobile Erweiterung** | [Adobe Analytics – Media Analytics für Audio und Video](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) | [Adobe Analytics – Media Analytics für Audio und Video – Erweiterung](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile) |
 
 ## 1.x Medien-SDKs herunterladen {#download-the-1.x-media-sDKs}
@@ -53,5 +53,5 @@ ht-degree: 96%
 | iOS | [SDK für iOS v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [Erste Schritte – Media 1.x für iOS](setup/vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [SDK für JavaScript v1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [Erste Schritte – Media 1.x für JS](setup/vhl-dev-guide-v15_js.pdf) |
 | TVML | [SDK für TVML v1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [Erste Schritte – Media 1.x für TVML](setup/vhl_tvml.pdf) |
-| Apple TV | SDK für Apple TV 1.0.0 (Wenden Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/marketing-cloud/contact-support.html), um das ältere SDK 1.x zu erhalten) | [Erste Schritte – Media 1.x für Apple TV](setup/vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | SDK für Chromecast 1.0.0 (Wenden Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/marketing-cloud/contact-support.html), um das ältere 1.x-SDK zu erhalten) | [Erste Schritte – Media 1.x für Chromecast](setup/chromecast_1.x_sdk.pdf) |
+| Apple TV | SDK für Apple TV 1.0.0 (Wenden Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html), um das ältere SDK 1.x zu erhalten) | [Erste Schritte – Media 1.x für Apple TV](setup/vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | SDK für Chromecast 1.0.0 (Wenden Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html), um das ältere 1.x-SDK zu erhalten) | [Erste Schritte – Media 1.x für Chromecast](setup/chromecast_1.x_sdk.pdf) |
