@@ -5,10 +5,10 @@ uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '97'
-ht-degree: 100%
+source-git-commit: ca709046e477bd471e2f55eb6dcf45e5c3c2be17
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 61%
 
 ---
 
@@ -62,8 +62,8 @@ Der Anforderungstext muss im JSON-Format vorliegen und die gleiche Struktur aufw
 ```
 
 * `playerTime` (Obligatorisch)
-   * `playhead`: Muss in Sekunden angegeben werden, es kann sich jedoch um einen Float-Wert handeln.
-   * `ts`: Zeitstempel, der in Millisekunden angegeben werden muss.
+   * `playhead` - Wenn der Inhalt live ist, muss die Abspielleiste die aktuelle Sekunde des Tages sein, 0  &lt;> Wenn der Inhalt aufgezeichnet wird, muss die Abspielleiste die aktuelle Sekunde des Inhalts sein, 0 &lt;= Abspielleiste &lt; Inhaltsdauer. Der Wert kann eine Gleitkommazahl sein.
+   * `ts` - Zeitstempel; muss in Millisekunden angegeben werden; Koordinierte Weltzeit (UTC).
 * `eventType` (Obligatorisch)
 
    **Gültiger Wert:** `sessionStart`
