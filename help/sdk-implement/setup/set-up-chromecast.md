@@ -5,10 +5,10 @@ uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '639'
-ht-degree: 100%
+source-git-commit: 270dc48152dd77d7ceff8ce1ea9fbead0d1ce9be
+workflow-type: tm+mt
+source-wordcount: '643'
+ht-degree: 99%
 
 ---
 
@@ -136,6 +136,22 @@ Mit Chromecast-SDK 2.x für Experience Cloud-Lösungen können Sie in JavaScrip
    | `getMarketingCloudID()` | Ruft die Experience Cloud-Besucher-ID vom Besucher-ID-Dienst ab.  <br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
    | `syncIdentifiers()` | Mit der Experience Cloud-Besucher-ID können Sie zusätzliche Kunden-IDs festlegen, die jedem Besucher zugeordnet werden können. Die Besucher-API akzeptiert mehrere Kunden-IDs für denselben Besucher sowie eine Kundentypkennung, die den Umfang der einzelnen Kunden-IDs abgrenzt. Diese Methode entspricht `setCustomerIDs()` in der JavaScript-Bibliothek.  Beispiel: <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
+1. Implementieren Sie für Tracking-Medien das MediaDelegate-Protokoll.
 
+   ```js
+    var delegate = {
+      // Replace <currentPlaybackTime> with the video player current playback time
+      getCurrentPlaybackTime = function() {
+        return <currentPlaybackTime>;
+      },
+      // Replace <bitrate>, <startuptime>, <fps> and <droppeFrames> with the current playback QoS values.
+      getQoSObject = function() {
+         return ADBMobile.media.createQoSObject(<bitrate>, <startupTime>, <fps>, <droppedFrames>);
+      }
+    }
+   
+    ADBMobile.media.setDelegate(delegate);
+   }
+   ```
 
 <!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
