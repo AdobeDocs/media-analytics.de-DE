@@ -5,10 +5,10 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: d8b10249c542d2875cba4916e4a2c7942c5589c4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1329'
+ht-degree: 99%
 
 ---
 
@@ -104,7 +104,7 @@ ht-degree: 0%
 
 | Anforderungsschlüssel  | erforderlich | Anfragetyp-Schlüssel | Eingerichtet auf... |  Beschreibung  |
 | --- | :---: | :---: | :---: | --- |
-| `media.qoe.bitrate` | N | Ganzzahl | Eines | Die Bitrate des Streams |
+| `media.qoe.bitrate` | N | Ganzzahl | Eines | Die durchschnittliche Bitrate (in bps). Die durchschnittliche Bitrate wird als gewichteter Durchschnitt aller Bitratenwerte im Zusammenhang mit der Wiedergabedauer berechnet, die während einer Wiedergabesitzung aufgetreten sind. |
 | `media.qoe.droppedFrames` | N | Ganzzahl | Eines | Die Anzahl der Dropped Frames im Stream |
 | `media.qoe.framesPerSecond` | N | Ganzzahl | Eines | Die Anzahl der Frames pro Sekunde |
 | `media.qoe.timeToStart` | N | Ganzzahl | Eines | Die Dauer (in Millisekunden) zwischen der Aktivierung der Wiedergabetaste durch den Benutzer und dem Laden und Abspielen des Inhalts |
