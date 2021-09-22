@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: ef881900766be773256e2732953f7b63c5d488fa
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 56%
+ht-degree: 94%
 
 ---
 
@@ -62,8 +62,8 @@ Der Anforderungstext muss im JSON-Format vorliegen und die gleiche Struktur aufw
 ```
 
 * `playerTime` (Obligatorisch)
-   * `playhead` - Wenn der Inhalt live ist, muss die Abspielleiste die aktuelle Sekunde des Tages sein, 0  &lt;> Wenn der Inhalt aufgezeichnet wird, muss die Abspielleiste die aktuelle Sekunde des Inhalts sein, 0 &lt;= Abspielleiste &lt; Inhaltsdauer. Der Wert kann eine Gleitkommazahl sein.
-   * `ts` - Zeitstempel; muss in Millisekunden angegeben werden; Koordinierte Weltzeit (UTC).
+   * `playhead` – Wenn der Inhalt live ist, muss der Abspielkopf sich an der aktuellen Sekunde des Tages befinden, 0 &lt;= Abspielkopf &lt; 86400. Wenn der Inhalt aufgezeichnet wird, muss der Abspielkopf sich an der aktuellen Sekunde des Inhalts befinden, 0 &lt;= Abspielkopf &lt; Inhaltsdauer. Der Wert kann eine Gleitkommazahl sein.
+   * `ts` – Zeitstempel; muss in Millisekunden angegeben werden; Koordinierte Weltzeit (UTC).
 * `eventType` (Obligatorisch)
 
    **Gültiger Wert:** `sessionStart`
