@@ -1,14 +1,14 @@
 ---
-title: Einrichten des Media SDK unter iOS
+title: Einrichten des Media SDK in iOS
 description: Führen Sie diese Schritte aus, um die Media SDK-Anwendung unter iOS einzurichten.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
+source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '763'
+ht-degree: 98%
 
 ---
 
