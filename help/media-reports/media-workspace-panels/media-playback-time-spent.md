@@ -4,16 +4,16 @@ description: '"Erfahren Sie, wie Sie mit dem Bedienfeld "Besuchszeit für Medien
 exl-id: null
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: 55d77d1576236fbc1165a41d7a0775b9ee246d8a
+source-git-commit: 60e222e85c593e331d13e804f520a35a682e66a3
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '218'
 ht-degree: 8%
 
 ---
 
 # Besuchszeit für Medienwiedergabe {#media-playback-time-spent}
 
-Durch die Analyse der Wiedergabedauer können Sie erkennen, wo Spitzenzeiten bei gleichzeitigen Ansichten aufgetreten sind oder wo es zu Abbrüchen gekommen ist. Die Wiedergabedauer für Medien bietet wertvolle Einblicke in die Qualität von Inhalten, die Interaktion mit Betrachtern und die Auswirkungen von Inhalten auf die Überstunden der Zuschauer. Die Funktion zur Besuchszeit für Medienwiedergabe hilft bei der Fehlerbehebung oder Planung von Volumen oder Skalierung.
+Durch die Analyse der Wiedergabedauer können Sie erkennen, wo Spitzenzeiten bei gleichzeitigen Ansichten aufgetreten sind oder wo es zu Abbrüchen gekommen ist. Die Wiedergabedauer für Medien bietet wertvolle Einblicke in die Qualität von Inhalten, die Interaktion mit Betrachtern und die Auswirkungen von Inhalten auf die Zuschauerschaft im Laufe der Zeit. Die Funktion zur Besuchszeit für Medienwiedergabe hilft bei der Fehlerbehebung oder Planung von Volumen oder Skalierung.
 
 ## Bedienfeld &quot;Besuchszeit für Medienwiedergabe&quot;in Analysis Workspace
 
