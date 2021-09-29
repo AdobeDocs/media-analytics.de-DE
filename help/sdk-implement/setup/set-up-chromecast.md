@@ -1,18 +1,18 @@
 ---
-title: Einrichten des Medien-SDK für Chromecast
+title: Einrichten des Media SDK für Chromecast
 description: Führen Sie diese Schritte aus, um die Media SDK-Anwendung in Chromecast einzurichten.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 2cebb3db58e28be3e448fdfa4da5f96c8c37a947
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Einrichten von Chromecast{#set-up-chromecast}
+# Einrichten von Chromecast {#set-up-chromecast}
 
 ## FAQs
 
@@ -136,7 +136,7 @@ Mit Chromecast-SDK 2.x für Experience Cloud-Lösungen können Sie in JavaScrip
    | `getMarketingCloudID()` | Ruft die Experience Cloud-Besucher-ID vom Besucher-ID-Dienst ab.  <br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
    | `syncIdentifiers()` | Mit der Experience Cloud-Besucher-ID können Sie zusätzliche Kunden-IDs festlegen, die jedem Besucher zugeordnet werden können. Die Besucher-API akzeptiert mehrere Kunden-IDs für denselben Besucher sowie eine Kundentypkennung, die den Umfang der einzelnen Kunden-IDs abgrenzt. Diese Methode entspricht `setCustomerIDs()` in der JavaScript-Bibliothek.  Beispiel: <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
-1. Implementieren Sie für Tracking-Medien das MediaDelegate-Protokoll.
+1. Implementieren Sie für Tracking-Medien das MediaDelegate-Protokoll
 
    ```js
     var delegate = {
