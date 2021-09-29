@@ -1,18 +1,18 @@
 ---
-title: Erfahren Sie, wie Sie die Core-Wiedergabe in Roku verfolgen.
+title: 'Erfahren Sie, wie Sie die Core-Wiedergabe in Roku verfolgen '
 description: Erfahren Sie, wie Sie Core-Tracking mit dem Media SDK in Roku implementieren.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: d7cb36c2dd6b35da4531ca975c7fc730e387b750
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '729'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Tracking von Core-Wiedergaben in Roku{#track-core-playback-on-roku}
+# Tracking von Core-Wiedergaben in Roku {#track-core-playback-on-roku}
 
 Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
 
@@ -103,7 +103,7 @@ Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
 
    * **Standard-Metadaten**
 
-   [Standard-Metadaten in Roku implementieren ](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Standard-Metadaten in Roku implementieren ](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >Das Anhängen des Standard-Video-Metadatenobjekts an das Medienobjekt ist optional.
@@ -143,9 +143,9 @@ Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
    ADBMobile().mediaTrackPlay()
    ```
 
-1. **Abspielleistenwert aktualisieren**
+1. **Abspielkopfwert aktualisieren**
 
-   Wenn sich die Abspielleiste ändert, benachrichtigen Sie das SDK durch Aufruf der API `mediaUpdatePlayhead`. Bei Video-On-Demand (VOD) wird der Wert in Sekunden ab Anfang des Medienelements angegeben. Beim Live-Streaming wird der Wert als die Anzahl der Sekunden seit Mitternacht UTC an diesem Tag angegeben.
+   Wenn sich der Abspielkopf des Mediums ändert, informieren Sie das SDK durch Aufruf der API `mediaUpdatePlayhead`. Bei Video-on-demand (VOD) wird der Wert in Sekunden ab Beginn des Medienelements angegeben. Bei Live-Streaming wird der Wert als Anzahl der Sekunden seit Mitternacht UTC an dem Tag angegeben.
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
