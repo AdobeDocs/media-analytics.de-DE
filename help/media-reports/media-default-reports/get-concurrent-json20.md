@@ -3,14 +3,15 @@ title: Abrufen von JSON-Berichtsdaten zu gleichzeitigen Betrachtern mit Analytic
 description: Erfahren Sie, wie Sie mit den Analytics 2.0-APIs Berichtsdaten zu gleichzeitigen Betrachtern abrufen. Beispielanfrage und -antwort anzeigen.
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
-feature: „Grundlagen zu Media Analytics und Reports & Analytics“
+feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-git-commit: 03b274fa0c5580ee2759560efbea45eb308d4278
+workflow-type: ht
+source-wordcount: '185'
+ht-degree: 100%
 
 ---
+
 
 # Abrufen von JSON-Berichtsdaten zu gleichzeitigen Betrachtern mit Analytics 2.0-APIs{#get-concurrent-viewers-json-report-data}
 
