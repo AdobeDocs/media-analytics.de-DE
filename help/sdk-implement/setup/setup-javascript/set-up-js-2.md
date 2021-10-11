@@ -6,9 +6,9 @@ exl-id: 33976096-8b86-4353-906b-e25bf4693471
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '401'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 97%
 ## Voraussetzungen
 
 * **Gültige Konfigurationsparameter festlegen:** Diese Parameter erhalten Sie nach der Einrichtung Ihres Analytics-Kontos von einem Adobe-Support-Mitarbeiter.
-* **`AppMeasurement` für JavaScript in Ihre Medienanwendung implementieren:** Weitere Informationen zur Adobe Mobile-SDK-Dokumentation finden Sie unter [Analytics-Implementierung mit JavaScript.](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)
+* **`AppMeasurement` für JavaScript in Ihre Medienanwendung implementieren:** Weitere Informationen zur Adobe Mobile-SDK-Dokumentation finden Sie unter [Analytics-Implementierung mit JavaScript.](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=de)
 
 * **Stellen Sie die folgenden Funktionen in Ihrem Medienplayer bereit:**
 
    * *Eine API zum Abonnieren von Player-Ereignissen*: Das Media SDK erfordert den Aufruf einer Reihe einfacher APIs, wenn im Player Ereignisse auftreten.
-   * *Eine API, die Player-Informationen* bereitstellt: Diese Informationen enthalten Details wie den Mediennamen und die Abspielposition.
+   * *Eine API, die Player-Informationen bereitstellt*: Diese Informationen enthalten Details wie den Mediennamen und die Abspielposition.
 
 1. Fügen Sie Ihre [heruntergeladene](/help/sdk-implement/download-sdks.md#download-2x-sdks) Bibliothek zu Ihrem Projekt hinzu. Erstellen Sie aus Gründen der Übersichtlichkeit lokale Referenzen auf die Klassen.
 
