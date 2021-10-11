@@ -5,9 +5,9 @@ exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '403'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 * **Gültige Konfigurationsparameter festlegen:** Diese Parameter erhalten Sie nach der Einrichtung Ihres Analytics-Kontos von einem Adobe-Support-Mitarbeiter.
 * **Implementieren Sie `AppMeasurement` und `Experience Cloud Identity Service` für JavaScript in Ihrer Medienanwendung**
-Weitere Informationen finden Sie unter [Analytics-Implementierung mit JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) und [Implementieren des Experience Cloud-Identitätsdiensts](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=de).
+Weitere Informationen finden Sie unter [Analytics-Implementierung mit JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=de) und [Implementieren des Experience Cloud-Identitätsdiensts](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=de).
 
 * **Stellen Sie die folgenden Funktionen in Ihrem Medienplayer bereit:**
 
