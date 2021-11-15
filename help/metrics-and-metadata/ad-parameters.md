@@ -1,18 +1,18 @@
 ---
-title: Anzeigenparameter
+title: 'Anzeigenparameter '
 description: „Erfahren Sie mehr über Anzeigenparameter einschließlich der Implementierungs-, Netzwerk- und Berichtsvariablen für Anzeigenvideodaten.“
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 exl-id: 949e86cb-d265-4836-8825-a06b87203b15
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: f296b2549bb49162d735f29718057b3b1bbec231
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1927'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Anzeigenparameter{#ad-parameters}
+# Anzeigenparameter {#ad-parameters}
 
 In diesem Thema wird eine Liste von Videoanzeigendaten, einschließlich Kontextdatenwerten, vorgestellt, die Adobe über Lösungsvariablen sammelt.
 
