@@ -1,18 +1,18 @@
 ---
-title: Audio- und Videoparameter
+title: 'Audio- und Videoparameter '
 description: Erfahren Sie mehr über die wichtigsten Datenvariablen für Streaming-Medien einschließlich Audio- und Videoinhaltsdaten und Kontextdatenwerten.
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 37c46d493926ab83d9b6ccedafd82b150bbd6e2c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6488'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Audio- und Videoparameter{#audio-and-video-parameters}
+# Audio- und Videoparameter {#audio-and-video-parameters}
 
 Dieses Thema enthält eine Liste von Audio- und Videoinhaltsdaten, einschließlich Kontextdatenwerten, die Adobe über Lösungsvariablen sammelt.
 
@@ -418,7 +418,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Media Close </li> <li> **Min. SDK-Version:** 1.5.6 </li> <li> **Beispielwert:**<br/> TRUE </li> <li> **Beschreibung:**<br/> Dieser Wert ist entweder „true“ oder „false“. Er ist „true“, wenn während der Wiedergabe eines einzelnen Mediums mindestens eine Pause auftritt.  <br/> **Wichtig:** Ist dieser Wert festgelegt, kann er nur „true“ lauten. Ist er nicht festgelegt, wird kein Wert zurückgegeben.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> nicht verfügbar </li> <li> **Heartbeats:**<br/> (s:event:<br/>type=pause) </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtsname:**<br/> Betroffene Streams pausiert </li> <li> **Kontextdaten:**<br/> (a.media.pause) </li> <li> **Datenfeed:**<br/> videopause </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.pause) </li> <li> **XDM-Feldpfad:**<br/> media.mediaTimed.pauseImpactStreams.value > 0 => &quot;TRUE&quot; </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Media Close </li> <li> **Min. SDK-Version:** 1.5.6 </li> <li> **Beispielwert:**<br/> TRUE </li> <li> **Beschreibung:**<br/> Dieser Wert ist entweder „true“ oder „false“. Er ist „true“, wenn während der Wiedergabe eines einzelnen Mediums mindestens eine Pause auftritt.  <br/> **Wichtig:** Ist dieser Wert festgelegt, kann er nur „true“ lauten. Ist er nicht festgelegt, wird kein Wert zurückgegeben.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> nicht verfügbar </li> <li> **Heartbeats:**<br/> (s:event:<br/>type=pause) </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtsname:**<br/> Betroffene Streams pausiert </li> <li> **Kontextdaten:**<br/> (a.media.pause) </li> <li> **Datenfeed:**<br/> videopause </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.pause) </li> <li> **XDM-Feldpfad:**<br/> media.mediaTimed.pauseImpactedStreams.value > 0 => &quot;TRUE&quot; </li> </ul> |
 
 ### Pausierung – Ereignisse
 
