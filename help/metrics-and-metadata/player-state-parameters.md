@@ -1,18 +1,18 @@
 ---
-title: Player-Statusparameter
+title: 'Player-Statusparameter '
 description: „Erfahren Sie mehr über Player-Status-Tracking-Parameter für Vollbild, Untertitel, Stummschaltung und Bild in den Bildeigenschaften.“
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
 feature: Media Analytics, Variables
 role: User, Admin, Data Engineer
 source-git-commit: c53c97ce06a5a6e2e7d7b20ed06b097a29b71fcb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2237'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Player-Statusparameter{#player-state-parameters}
+# Player-Statusparameter {#player-state-parameters}
 
 In diesem Kapitel wird eine Liste mit Player-Statusdaten präsentiert, die Adobe über Lösungsvariablen erfasst.
 
