@@ -1,18 +1,18 @@
 ---
-title: Kapitelparameter
+title: 'Kapitelparameter '
 description: „Erfahren Sie mehr über Kapitelparameter für Implementierung, Netzwerk und Reporting.“
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: 73da3e52-9498-478e-bfd7-8ff6c8e6bfc5
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c61e0bce6338a2fa89dafa29c4f600c5640d2d97
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1101'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Kapitelparameter{#chapter-parameters}
+# Kapitelparameter {#chapter-parameters}
 
 Dieses Thema enthält eine Liste von Kapitel- und/oder Segmentdaten, einschließlich Kontextdatenwerten, die Adobe über Lösungsvariablen sammelt.
 
