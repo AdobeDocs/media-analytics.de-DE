@@ -5,9 +5,9 @@ exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 7afd4d6ff7fd2dd2c4edb7ad2b5d6462eb7eba2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,8 @@ ht-degree: 93%
 
 ### Standalone Media SDK
 
-Im Standalone Media SDK konfigurieren Sie die Tracking-Konfiguration in der App und übergeben sie beim Erstellen des Trackers an das SDK.
+Im eigenständigen Media SDK konfigurieren Sie das Tracking in der App,
+und diese Konfiguration wird beim Erstellen des Trackers an das SDK übergeben.
 
 ```objective-c
 ADBMediaHeartbeatConfig *config =
@@ -120,7 +121,7 @@ Der Tracker übernimmt automatisch die Konfiguration der Launch-Eigenschaft.
 }];
 ```
 
-## Aktualisieren der Abspielleiste und Erlebnisqualität (QoE)
+## Aktualisieren der Abspielleiste und Erlebnisqualität (QoE).
 
 ### Standalone Media SDK
 
