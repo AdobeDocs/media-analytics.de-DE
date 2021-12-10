@@ -1,12 +1,13 @@
 ---
 title: Bei Medienwiedergabe verbrachte Zeit
-description: „Hier erfahren Sie, wie Sie mit dem Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“ die Wiedergabedauer analysieren und die Spitzenzeiten von gleichzeitigen Wiedergaben sowie die aufgetretenen Abbrüche verstehen können.“
+description: Erfahren Sie, wie Sie mit dem Bedienfeld "Besuchszeit für Medienwiedergabe"die Wiedergabedauer analysieren und die Spitzenzeiten von gleichzeitigen Wiedergaben und Abbrüche verstehen können.
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
+exl-id: 958b4968-0f52-464c-81e0-5ab9b84aaa9c
+source-git-commit: 65e3615dc4af1eeaf4b58c9db6896d2ff90f56f6
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 95%
+ht-degree: 89%
 
 ---
 
@@ -19,7 +20,7 @@ Durch die Analyse der Wiedergabedauer können Sie erkennen, wo Spitzenzeiten bei
 In Analysis Workspace bezeichnet die Wiedergabedauer die Zeit, die mit der Anzeige Ihrer Medien-Streams zu einem bestimmten Zeitpunkt verbracht wurde. Sie umfasst Pause, Pufferung und Startzeit. Bei der Funktion „Bei Medienwiedergabe verbrachte Zeit“ können Sie die Wiedergabedauer in verschiedene Zeitintervalle aufteilen, z. B. 5 Minuten, 15 Minuten, 30 Minuten oder 1 Stunde.
 
 
-Die Wiedergabedauer für Medien hilft bei der Analyse der Wiedergabe im Zeitverlauf, mit Details zur maximalen Gleichzeitigkeit und der Möglichkeit, aufzuschlüsseln und zu vergleichen. Um auf das Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“ zuzugreifen, navigieren Sie zu einer Report Suite mit aktivierten Media Analytics-Komponenten. Klicken Sie dann auf das Bedienfeldsymbol ganz links und ziehen Sie das Bedienfeld in Ihr Analysis Workspace-Projekt. [Weitere Informationen...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html)
+Die Wiedergabedauer für Medien hilft bei der Analyse der Wiedergabe im Zeitverlauf, mit Details zur maximalen Gleichzeitigkeit und der Möglichkeit, aufzuschlüsseln und zu vergleichen. Um auf das Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“ zuzugreifen, navigieren Sie zu einer Report Suite mit aktivierten Media Analytics-Komponenten. Klicken Sie dann auf das Bedienfeldsymbol ganz links und ziehen Sie das Bedienfeld in Ihr Analysis Workspace-Projekt. [Weitere Informationen...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=de)
 
 <!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
