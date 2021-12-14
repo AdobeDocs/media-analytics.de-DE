@@ -4,10 +4,10 @@ description: „Erfahren Sie mehr über die wichtigsten Geräte wie iOS, Android
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '338'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Für Geräte oder Plattformen, die derzeit keine SDK-Unterstützung haben, oder 
 
 Die folgende Tabelle zeigt die derzeit unterstützten Geräte und Plattformen. Hier können Sie die neueste Version des SDK herunterladen: [SDKs herunterladen](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/download-sdks.html?lang=de). Wenn ein Gerät nicht aufgeführt ist, wenden Sie sich an die Kundenunterstützung oder einen Berater, um den Status des Geräts zu erfahren.
 
-| Streaming-Plattformen und -Geräte |  | Media Launch-Erweiterung mit mobilem SDK für AEP | Medien-SDK | Mediensammlungs-API |
+| Streaming-Plattformen und -Geräte |  | Datenerfassung mit AEP Mobile SDK | Medien-SDK | Mediensammlungs-API |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | Web/Mobile Web |  |  |  |  |
 |  | JavaScript-Browser | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |

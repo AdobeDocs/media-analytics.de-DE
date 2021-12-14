@@ -1,19 +1,22 @@
 ---
-seo-title: Migration vom Standalone Media SDK zu Adobe Launch
+seo-title: Migrating from the standalone Media SDK to Adobe Launch
 title: Migration vom Standalone Media SDK zu Adobe Launch
-seo-description: Anleitungen und Code-Beispiele für die Migration vom Media SDK zu Launch
+seo-description: Instructions and code samples to assist in migrating from the Media SDK to Launch.
 description: Erfahren Sie, wie Sie vom Media SDK zu Launch migrieren.
 exl-id: 5350bbe9-c34f-46d9-a4c4-dbccdbed0bb0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
-workflow-type: ht
-source-wordcount: '180'
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
+workflow-type: tm+mt
+source-wordcount: '207'
 ht-degree: 100%
 
 ---
 
 # Migration vom Standalone Media SDK zu Adobe Launch
+
+>[!NOTE]
+>Adobe Experience Platform Launch wurde umbenannt und umfasst eine Suite von Datenerfassungstechnologien in Experience Platform. Infolgedessen wurden in der gesamten Produktdokumentation mehrere terminologische Änderungen vorgenommen. Eine Übersicht der terminologischen Änderungen finden Sie im folgenden [Dokument](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=de).
 
 In dieser Dokumentation werden die Unterschiede bei der Implementierung des Standalone Media SDK und der Media Analytics Launch-Erweiterung erläutert.
 

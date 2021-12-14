@@ -5,18 +5,24 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
-workflow-type: ht
-source-wordcount: '520'
-ht-degree: 100%
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
+workflow-type: tm+mt
+source-wordcount: '602'
+ht-degree: 94%
 
 ---
 
 # SDKs herunterladen{#download-sdks}
 
+Die Informationen auf dieser Seite enthalten Links zum Herunterladen der aktuellen Medien-SDKS für 3.x und 2.x. Links sind auch für die älteren Medien-SDKs der Version 1.x und die Media Analytics Launch-Erweiterung enthalten.
+
 >[!IMPORTANT]
 >
 >Ab dem 31. August 2021, dem Ende der Unterstützung für Mobile-SDKs der Version 4, stellt Adobe auch die Unterstützung für das Media Analytics-SDK für iOS und Android ein.  Weitere Informationen finden Sie unter den [häufig gestellten Fragen zum Ende der Unterstützung für das Media Analytics-SDK](/help/sdk-implement/end-of-support-faqs.md).
+
+>[!NOTE]
+>Adobe Experience Platform Launch wurde umbenannt und umfasst eine Suite von Datenerfassungstechnologien in Experience Platform. Infolgedessen wurden in der gesamten Produktdokumentation mehrere terminologische Änderungen vorgenommen. Eine Übersicht der terminologischen Änderungen finden Sie im folgenden [Dokument](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=de).
+
 
 
 ## 3.x Medien-SDKs herunterladen {#download-3x-sdks}
@@ -53,5 +59,5 @@ ht-degree: 100%
 | iOS | [SDK für iOS v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [Erste Schritte – Media 1.x für iOS](setup/vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [SDK für JavaScript v1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [Erste Schritte – Media 1.x für JS](setup/vhl-dev-guide-v15_js.pdf) |
 | TVML | [SDK für TVML v1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [Erste Schritte – Media 1.x für TVML](setup/vhl_tvml.pdf) |
-| Apple TV | SDK für Apple TV 1.0.0 (Wenden Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html), um das ältere SDK 1.x zu erhalten) | [Erste Schritte – Media 1.x für Apple TV](setup/vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | SDK für Chromecast 1.0.0 (Wenden Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html), um das ältere 1.x-SDK zu erhalten) | [Erste Schritte – Media 1.x für Chromecast](setup/chromecast_1.x_sdk.pdf) |
+| Apple TV | SDK für Apple TV 1.0.0 (Wenden Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/marketing-cloud/contact-support.html), um das ältere SDK 1.x zu erhalten) | [Erste Schritte – Media 1.x für Apple TV](setup/vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | SDK für Chromecast 1.0.0 (Wenden Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/marketing-cloud/contact-support.html), um das ältere 1.x-SDK zu erhalten) | [Erste Schritte – Media 1.x für Chromecast](setup/chromecast_1.x_sdk.pdf) |

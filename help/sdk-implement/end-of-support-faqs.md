@@ -4,16 +4,20 @@ description: In diesem Kapitel finden Sie häufig gestellte Fragen zum Ende der 
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '723'
+ht-degree: 100%
 
 ---
 
 # Häufig gestellte Fragen zum Ende der Unterstützung für das Media Analytics-SDK
 
 Ab dem 31. August 2021, dem Ende der Unterstützung für Mobile-SDKs der Version 4, stellt Adobe auch die Unterstützung für das Media Analytics-SDK für iOS und Android ein. Ab dem 31. August 2021 stellt Adobe keine Fehlerbehebungen, betriebssystembezogene Updates oder Unterstützung für das Media Analytics-SDK bereit.  Beachten Sie bei der Migration zu diesen neuen Experience Platform-SDKs, dass die [Media Analytics-Erweiterungen](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) implementiert werden müssen, um Adobe Analytics für Streaming-Medien zu aktivieren.
+
+>[!NOTE]
+>Adobe Experience Platform Launch wurde umbenannt und umfasst eine Suite von Datenerfassungstechnologien in Experience Platform. Infolgedessen wurden in der gesamten Produktdokumentation mehrere terminologische Änderungen vorgenommen. Eine Übersicht der terminologischen Änderungen finden Sie im folgenden [Dokument](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=de).
+
 
 ## Die fünf wichtigsten Dinge
 

@@ -4,14 +4,17 @@ description: Erfahren Sie, wie Sie vom Media SDK zu Launch für JS migrieren.
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
-workflow-type: ht
-source-wordcount: '403'
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
+workflow-type: tm+mt
+source-wordcount: '453'
 ht-degree: 100%
 
 ---
 
 # Migration vom Standalone Media SDK zu Adobe Launch – Web (JS)
+
+>[!NOTE]
+>Adobe Experience Platform Launch wurde umbenannt und umfasst eine Suite von Datenerfassungstechnologien in Experience Platform. Infolgedessen wurden in der gesamten Produktdokumentation mehrere terminologische Änderungen vorgenommen. Eine Übersicht der terminologischen Änderungen finden Sie im folgenden [Dokument](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=de).
 
 ## Funktionsunterschiede
 
@@ -112,7 +115,7 @@ Launch bietet zwei Methoden zum Erstellen der Tracking-Infrastruktur. Beide Meth
 
 ## Verwandte Dokumentation
 
-### Media SDK
+### Medien-SDK
 
 * [Einrichten von JavaScript 2.x](/help/sdk-implement/setup/setup-javascript/set-up-js-2.md)
 * [Einrichten von JavaScript 3.x](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md)

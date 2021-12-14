@@ -1,14 +1,14 @@
 ---
-title: 'Adobe Streaming Media in Adobe Analytics '
+title: Adobe Streaming Media in Adobe Analytics
 description: „Machen Sie sich mit der aktuellen Streaming-Medienmessung für Inhalte, Audio und Werbung vertraut.“ „Erfahren Sie mehr über Adobe Analytics für Streaming-Medien.“
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '930'
+ht-degree: 100%
 
 ---
 
@@ -37,6 +37,10 @@ Zu den Vorteilen von Adobe Analytics für Streaming-Medien zählen Echtzeit-Moni
 ## Heartbeat-Messung {#heartbeat}
 
 Adobe Analytics verwendet „Heartbeats“, um Videometriken zu erfassen. Während der Videowiedergabe werden Heartbeats an den Heartbeat-Tracking-Server gesendet, um die Wiedergabedauer zu messen. Die Heartbeat-Aufrufe werden alle zehn Sekunden gesendet. Heartbeats führen zu granularen Videointeraktionsmetriken und präziseren Video-Fallout-Berichten. Adobe Analytics für Streaming-Medien misst Heartbeats unter Verwendung von Adobe Launch mit der Media Analytics-Erweiterung, dem Medien-SDK und der Mediensammlungs-API. Die Komponenten `AppMeasurement` und `VisitorID` werden zum Empfangen von Videodaten verwendet.
+
+>[!NOTE]
+>Adobe Experience Platform Launch wurde umbenannt und umfasst eine Suite von Datenerfassungstechnologien in Experience Platform. Infolgedessen wurden in der gesamten Produktdokumentation mehrere terminologische Änderungen vorgenommen. Eine Übersicht der terminologischen Änderungen finden Sie im folgenden [Dokument](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=de).
+
 
 Die Verwendung von Heartbeats in Adobe Analytics für Streaming-Medien bietet folgende Vorteile:
 
