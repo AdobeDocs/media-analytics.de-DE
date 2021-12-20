@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: ht
+source-git-commit: 07192eca8bad89d005d88fa084ec891df346f96a
+workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -140,32 +140,27 @@ Mit Roku-SDK 2.x für Experience Cloud-Lösungen können Sie in BrightScript ge
     * [GetRIDA()](https://sdkdocs.roku.com/display/sdkdoc/ifDeviceInfo#ifDeviceInfo-GetRIDA())
     -->
 
-   <br/><br/>
-
    **Zusätzliche öffentliche APIs**
 
    **DebugLogging**
-| Methode | Beschreibung |
-| --- | --- |
-| `setDebugLogging` | Wird zum Aktivieren oder Deaktivieren der Debugging-Protokollierung für das SDK verwendet.  <br/><br/>`ADBMobile().setDebugLogging(true)` |
-| `getDebugLogging` | Gibt „true“ zurück, wenn die Debugging-Protokollierung aktiviert ist.  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
-   <br/><br/>
+   |  Methode   | Beschreibung |
+   | --- | --- |
+   | `setDebugLogging` | Wird zum Aktivieren oder Deaktivieren der Debug-Protokollierung für das SDK verwendet.  <br/><br/>`ADBMobile().setDebugLogging(true)` |
+   | `getDebugLogging` | Gibt „true“ zurück, wenn die Debugging-Protokollierung aktiviert ist.  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
    **PrivacyStatus**
-| Konstante | Beschreibung |
-| --- | --- |
-| `PRIVACY_STATUS_OPT_IN` | Konstante, die beim Aufruf von setPrivacyStatus zum Opt-in übergeben wird. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN`|
-| `PRIVACY_STATUS_OPT_OUT` | Konstante, die beim Aufruf von setPrivacyStatus zum Opt-out übergeben wird. <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
 
-   <br/>
+   |  Konstante   | Beschreibung |
+   | --- | --- |
+   | `PRIVACY_STATUS_OPT_IN` | Konstante, die beim Aufruf von setPrivacyStatus zum Aktivieren übergeben wird. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
+   | `PRIVACY_STATUS_OPT_OUT` | Konstante, die beim Aufruf von setPrivacyStatus zum Opt-out übergeben wird. <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT` |
 
    |  Methode   | Beschreibung |
    | --- | --- |
    | `setPrivacyStatus` | Legt den Datenschutzstatus im SDK fest. <br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
    | `getPrivacyStatus` | Ruft den aktuellen Datenschutzstatus ab, der im SDK festgelegt ist. <br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
 
-   <br/><br/>
    >[!IMPORTANT]
    >
    >Rufen Sie alle 250 ms in der Hauptereignisschleife die Funktionen `processMessages` und `processMediaMessages` auf, damit das SDK die Pings ordnungsgemäß sendet.
