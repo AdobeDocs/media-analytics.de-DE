@@ -1,13 +1,13 @@
 ---
 title: Bei Medienwiedergabe verbrachte Zeit
-description: Erfahren Sie, wie Sie mit dem Bedienfeld "Besuchszeit für Medienwiedergabe"die Wiedergabedauer analysieren und die Spitzenzeiten von gleichzeitigen Wiedergaben und Abbrüche verstehen können.
+description: Hier erfahren Sie, wie Sie mit dem Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“ die Wiedergabedauer analysieren und die Spitzenzeiten von gleichzeitigen Wiedergaben sowie die aufgetretenen Abbrüche verstehen können.
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: 958b4968-0f52-464c-81e0-5ab9b84aaa9c
 source-git-commit: 65e3615dc4af1eeaf4b58c9db6896d2ff90f56f6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
