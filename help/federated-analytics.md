@@ -7,7 +7,7 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '552'
 ht-degree: 92%
 
 ---
@@ -47,7 +47,7 @@ Federated Analytics sorgt für eine optimierte Audio- und Videomessung mit geste
 
 ## Herunterladen des Federated Analytics-Formulars
 
-Um an Federated Analytics teilzunehmen, laden Sie das Formular [Federation Rules Agreement](federated-analytics-form.pdf) herunter und füllen Sie es aus.
+Um an Federated Analytics teilzunehmen, laden Sie die [Vereinbarung über die Föderationsregeln](federated-analytics-form.pdf) Formular.
 
 
 ## Prozess {#process}

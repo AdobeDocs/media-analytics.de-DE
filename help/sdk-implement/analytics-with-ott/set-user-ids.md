@@ -3,12 +3,12 @@ title: Festlegen von Benutzer-IDs
 description: APIs zum Festlegen von Benutzer-IDs, die als Kennungen für Unique Customers dienen.
 uuid: fdd54fec-79cd-4bf8-b17e-4d61d84f6310
 exl-id: 6b451082-47f3-4e65-9fe0-cecb2d20dc2d
-feature: „Media Analytics, API“
+feature: Media Analytics, API
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '53'
+ht-degree: 100%
 
 ---
 

@@ -3,14 +3,14 @@ title: JSON-Daten des Berichts „Gleichzeitige Videozuschauer“ abrufen
 description: JSON-Daten des Berichts „Gleichzeitige Videozuschauer“ abrufen
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 100%
 
 ---
 
 
-# JSON-Daten des Berichts „Gleichzeitige Besucher“ abrufen {#get-concurrent-viewers-json-report-data}
+# JSON-Daten des Berichts „Gleichzeitige Videozuschauer“ abrufen{#get-concurrent-viewers-json-report-data}
 
 Mit der _*Version 1.4*_ der Analytics APIs können Sie Berichtsdaten für gleichzeitige Betrachter abrufen:
 * [Analytics-APIs](https://github.com/AdobeDocs/analytics-1.4-apis)

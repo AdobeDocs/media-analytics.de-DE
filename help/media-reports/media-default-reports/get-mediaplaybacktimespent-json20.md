@@ -3,13 +3,13 @@ title: Abrufen der JSON-Berichtsdaten zur mit Medienwiedergabe verbrachten Zeit 
 description: Hier erfahren Sie, wie Sie mit den Analytics 2.0-APIs Daten zu der mit Medienwiedergabe verbrachten Zeit abrufen können. Beispielanfrage und -antwort anzeigen.
 feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
-source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
+exl-id: 65e5b67a-26fc-433e-b99b-0ebbc24428ac
+source-git-commit: 65e3615dc4af1eeaf4b58c9db6896d2ff90f56f6
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 100%
 
 ---
-
 
 # Abrufen der JSON-Berichtsdaten zur mit Medienwiedergabe verbrachten Zeit mit Analytics 2.0-APIs{#get-media-playback-time-spent-json-report-data}
 

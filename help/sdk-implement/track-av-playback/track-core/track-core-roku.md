@@ -6,7 +6,7 @@ exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: d7cb36c2dd6b35da4531ca975c7fc730e387b750
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 100%
 
@@ -103,7 +103,7 @@ Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
 
    * **Standard-Metadaten**
 
-   [Standard-Metadaten in Roku implementieren ](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Standard-Metadaten in Roku implementieren ](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >Das Anhängen des Standard-Video-Metadatenobjekts an das Medienobjekt ist optional.

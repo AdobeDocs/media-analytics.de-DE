@@ -6,8 +6,8 @@ exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '451'
+workflow-type: tm+mt
+source-wordcount: '449'
 ht-degree: 100%
 
 ---
@@ -32,7 +32,7 @@ Wenn Sie Adobe Debug oder einen Netzwerk-Packet-Sniffer wie Charles verwenden un
 
 * Ad Start: `s:event:type=start` &amp; `s:asset:type=ad`
 * Ad Play: `s:event:type=play` &amp; `s:asset:type=ad`
-* Ad Complete: `s:event:type=complete` &amp; `s:asset:type=ad`
+* Abschluss der Anzeige: `s:event:type=complete` &amp; `s:asset:type=ad`
 * Main Content Play: `s:event:type=play` &amp; `s:asset:type=main` **(erwartet)**
 
 ## LÖSUNG

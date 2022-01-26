@@ -7,8 +7,8 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '470'
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ Sie können folgende Konstanten verwenden, um Medienereignisse zu verfolgen:
 | --- | --- |
 | `MEDIA_STANDARD_MEDIA_METADATA` | Konstante zum Festlegen von Metadaten für `MediaInfo` `trackLoad` |
 | `MEDIA_STANDARD_AD_METADATA` | Konstante zum Festlegen von Anzeigenmetadaten für `EventData` `trackEvent` |
-| `MEDIA_RESUMED` | Konstante für das Senden eines Heartbeats zur Videowiederaufnahme. Um das Video-Tracking zuvor angehaltener Inhalte wiederaufzunehmen, legen Sie die `MEDIA_RESUMED`-Eigenschaft im `mediaInfo`-Objekt fest, wenn Sie `mediaTrackLoad` aufrufen. (`MEDIA_RESUMED` ist nicht immer ein Ereignis, das Sie mit der `mediaTrackEvent`-API verfolgen können.) `MEDIA_RESUMED` sollte auf true festgelegt werden, wenn die Anwendung das Tracking des Inhalts wiederaufnehmen möchte, nachdem ein Anwender die Wiedergabe angehalten hat und sie nun fortsetzen möchte. <br/><br/>Beispiel: Ein Anwender sieht sich 30 % des Inhalts an und schließt dann die App. Hierdurch wird die Sitzung beendet. Wenn dieser Benutzer später zum entsprechenden Inhalt zurückkehrt und die Anwendung ihm die Wiederaufnahme der Wiedergabe ab der vorherigen Abspielposition ermöglicht, muss die Anwendung `MEDIA_RESUMED` auf „true“ festlegen, wenn sie die `mediaTrackLoad`-API aufruft. So lassen sich die beiden unterschiedlichen Mediensitzungen für denselben Videoinhalt verknüpfen. Im Folgenden finden Sie ein Implementierungsbeispiel:  <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>So erstellen Sie eine neue Sitzung für das Medium, jedoch sendet das SDK hierdurch auch eine Heartbeat-Anfrage mit dem Ereignistyp „resume“ (Fortsetzen), die in Berichten verwendet werden kann, um die beiden Mediensitzungen zu verknüpfen. |
+| `MEDIA_RESUMED` | Konstante für das Senden eines Heartbeats zur Videowiederaufnahme. Um das Video-Tracking zuvor angehaltener Inhalte wiederaufzunehmen, legen Sie die `MEDIA_RESUMED`-Eigenschaft im `mediaInfo`-Objekt fest, wenn Sie `mediaTrackLoad` aufrufen. (`MEDIA_RESUMED` ist nicht immer ein Ereignis, das Sie mit der `mediaTrackEvent`-API verfolgen können.) `MEDIA_RESUMED` sollte auf true festgelegt werden, wenn die Anwendung das Tracking des Inhalts wiederaufnehmen möchte, nachdem ein Anwender die Wiedergabe angehalten hat und sie nun fortsetzen möchte. <br/><br/>Beispiel: Ein Anwender sieht sich 30 % des Inhalts an und schließt dann die App. Hierdurch wird die Sitzung beendet. Wenn dieser Benutzer später zum entsprechenden Inhalt zurückkehrt und die Anwendung ihm die Wiederaufnahme der Wiedergabe ab der vorherigen Abspielposition ermöglicht, muss die Anwendung `MEDIA_RESUMED` auf „true“ festlegen, wenn sie die `mediaTrackLoad`-API aufruft. So lassen sich die beiden unterschiedlichen Mediensitzungen für denselben Videoinhalt verknüpfen. Im Folgenden finden Sie ein Implementierungsbeispiel: <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>So erstellen Sie eine neue Sitzung für das Medium, jedoch sendet das SDK hierdurch auch eine Heartbeat-Anfrage mit dem Ereignistyp „resume“ (Fortsetzen), die in Berichten verwendet werden kann, um die beiden Mediensitzungen zu verknüpfen. |
 
 ### Content-Typ-Konstanten
 

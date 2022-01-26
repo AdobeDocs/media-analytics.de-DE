@@ -1,6 +1,8 @@
 ---
 source-git-commit: 28eeca2b665e8e8ff3bb716ad153c3316c091a7d
-translation-type: tm+mt
+workflow-type: tm+mt
+source-wordcount: '431'
+ht-degree: 100%
 
 ---
 # Adobe-Verhaltenskodex
@@ -33,19 +35,20 @@ Projektverantwortliche sind dafür verantwortlich, die Standards für akzeptable
 
 Projektverantwortliche haben das Recht und die Aufgabe, Kommentare, Commits, Code, Wiki-Änderungen, Fehlermeldungen und andere Beiträge zu entfernen, zu bearbeiten oder abzulehnen, die dem Verhaltenscode widersprechen, oder Beitragende temporär oder dauerhaft zu sperren, wenn deren Verhaltensweisen als unangemessen, bedrohlich, beleidigend oder schädlich eingestuft werden.
 
-## Umfang
+## Anwendungsbereich
 
 Dieser Verhaltenskodex findet innerhalb von Projektbereichen und in öffentlichen Bereichen Anwendung, wenn Einzelpersonen das Projekt oder die Community repräsentieren. Beispiele für die Repräsentation eines Projekts oder der Community sind die Verwendung einer offiziellen Projekt-E-Mail-Adresse, die Veröffentlichung über ein offizielles Social-Media-Konto oder das Handeln als ernannter Vertreter bei einer Online- oder Offline-Veranstaltung. Die Repräsentation eines Projekts kann durch die Projektverantwortlichen genauer definiert und erläutert werden.
 
 ## Durchsetzung
 
-Beleidigendes, belästigendes oder anderweitig unakzeptables Verhalten kann an das Projektteam unter Grp-opensourceoffice@adobe.com gemeldet werden. Alle Beschwerden werden geprüft und untersucht und werden entsprechend den jeweiligen Umständen angemessen beantwortet. Das Projektteam ist verpflichtet, die Identität der Person, die ein Vorkommnis meldet, vertraulich zu behandeln. Weitere Details zu spezifischen Durchsetzungsrichtlinien können separat veröffentlicht werden.
+Beleidigendes, belästigendes oder anderweitig unakzeptables Verhalten kann an das Projektteam unter Grp-opensourceoffice@adobe.com gemeldet werden. Alle Beschwerden werden geprüft und untersucht und werden entsprechend den jeweiligen Umständen angemessen beantwortet. Das Projektteam ist verpflichtet, die Identität der Person, die ein Vorkommnis meldet, vertraulich zu behandeln.
+Weitere Details zu spezifischen Durchsetzungsrichtlinien können separat veröffentlicht werden.
 
 Gegen Projektverantwortliche, die den Verhaltenskodex nicht nach Treu und Glauben befolgen oder durchsetzen, können vorübergehende oder dauerhafte Sanktionen verhängt werden, die von anderen Mitgliedern der Projektleitung festgelegt werden.
 
 ## Attribution
 
-Dieser Verhaltenskodex wurde basierend auf dem [Contributor Covenant][homepage], Version 1.4, aufgestellt, siehe [https://contributor-covenant.org/version/1/4][version]
+Dieser Verhaltenskodex wurde basierend auf dem [Contributor Covenant][homepage], Version 1.4, aufgestellt, siehe [https://www.contributor-covenant.org/de/version/1/4/code-of-conduct][version]
 
 [homepage]: https://contributor-covenant.org
-[version]: https://contributor-covenant.org/version/1/4/
+[version]: https://www.contributor-covenant.org/de/version/1/4/code-of-conduct/
