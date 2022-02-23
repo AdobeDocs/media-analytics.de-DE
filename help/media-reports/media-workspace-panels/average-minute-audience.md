@@ -1,12 +1,12 @@
 ---
 title: Zielgruppendurchschnitt pro Minute
-description: Erfahren Sie, wie Sie das Bedienfeld Zielgruppendurchschnitt pro Minute für Medien für ______ verwenden.
+description: Erfahren Sie, wie Sie mit dem Bedienfeld "Zielgruppendurchschnitt pro Minute"die durchschnittliche Minutenzielgruppe für einen bestimmten Inhalt oder für einen benutzerdefinierten Zeitraum analysieren können.
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
-source-git-commit: 45a566dd66b7ace05e3b63fb63df9266a9912b91
+source-git-commit: 806d3e68eb32adef2af8629474fa5c69a280e433
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '264'
 ht-degree: 7%
 
 ---
@@ -22,7 +22,7 @@ In Analysis Workspace bezeichnet die durchschnittliche Minutenzielgruppe die Zei
 
 Das Bedienfeld Zielgruppendurchschnitt pro Minute für Medien bietet eine durchschnittliche Minute für Zielgruppenanalysen nach dem ausgewählten spezifischen Inhalt, wenn die Dauer mithilfe von Klassifizierungen zur Verfügung gestellt wird.
 
-Das Bedienfeld Zielgruppendurchschnitt pro Minute bietet außerdem Analysen über einen ausgewählten Zeitraum, die nach bestimmten Inhalten gefiltert werden können - unabhängig davon, ob die Dauer mit Classifications verfügbar ist oder nicht. Um auf das Bedienfeld Zielgruppendurchschnitt pro Minute für Medien zuzugreifen, navigieren Sie zu einer Report Suite mit aktivierten Media Analytics-Komponenten. Klicken Sie dann auf das Bedienfeldsymbol ganz links und ziehen Sie das Bedienfeld in Ihr Analysis Workspace-Projekt. [Weitere Informationen...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=en
+Das Bedienfeld Zielgruppendurchschnitt pro Minute bietet außerdem Analysen über einen ausgewählten Zeitraum, die nach bestimmten Inhalten gefiltert werden können - unabhängig davon, ob die Dauer mit Classifications verfügbar ist oder nicht. Um auf das Bedienfeld Zielgruppendurchschnitt pro Minute für Medien zuzugreifen, navigieren Sie zu einer Report Suite mit aktivierten Media Analytics-Komponenten. Klicken Sie dann auf das Bedienfeldsymbol ganz links und ziehen Sie das Bedienfeld in Ihr Analysis Workspace-Projekt. [Weitere Informationen...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=en)
 
 <!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
