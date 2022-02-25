@@ -4,14 +4,19 @@ description: Erfahren Sie, wie Sie mit dem Bedienfeld "Zielgruppendurchschnitt p
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
-source-git-commit: 806d3e68eb32adef2af8629474fa5c69a280e433
+source-git-commit: a138edbfd7b5136f038cc9397e53521110446076
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 7%
+source-wordcount: '271'
+ht-degree: 9%
 
 ---
 
 # Zielgruppendurchschnitt pro Minute {#media-average-minute-audience}
+
+>[!NOTE]
+>
+>Diese Funktion wird derzeit eingeschränkt getestet.
+
 
 Media Analytics-Kunden können das durchschnittliche Minutenzielgruppen-Bedienfeld verwenden, um den durchschnittlichen Verbrauch ihrer Inhalte besser zu verstehen. Die Zielgruppe &quot;Durchschnittliche Minute&quot;ermöglicht Vergleiche der Programmierung beliebiger Länge oder Genres. Darüber hinaus können Kunden diese durchschnittliche Minutenzielgruppe für digitale Sendungen mit linearen TV-Durchschnittsminuten-Metriken vergleichen oder anhängen. Dieses Bedienfeld bietet mehr Flexibilität, um die durchschnittliche Zielgruppe für benutzerdefinierte Zeiträume sowie den Zeitpunkt zu messen, zu dem die Classification der Dauer nach der Tatsache aktualisiert wurde. Die Metrik für die aktuelle durchschnittliche Minute-Zielgruppe funktioniert nur, wenn die Dauer zur Verarbeitungszeit verfügbar ist.
 
