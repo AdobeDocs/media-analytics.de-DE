@@ -5,10 +5,10 @@ uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
+source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 100%
+source-wordcount: '750'
+ht-degree: 90%
 
 ---
 
@@ -87,6 +87,14 @@ Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
 
    ```
    ADBMobile.media.trackPlay();
+   ```
+
+1. **Abspielkopfwert aktualisieren**
+
+   Aktualisieren `mediaUpdatePlayhead`&quot; Positionswert mehrmals bei Änderung der Abspielleiste. <br /> Bei Video-on-demand (VOD) wird der Wert in Sekunden ab Beginn des Medienelements angegeben. <br /> Wenn der Player beim Live-Streaming keine Informationen zur Inhaltsdauer bereitstellt, kann der Wert als Anzahl der Sekunden seit Mitternacht-UTC dieses Tages angegeben werden. <br />  Hinweis: Bei Verwendung von Fortschrittsmarken ist die Inhaltsdauer erforderlich und die Abspielleiste muss als Anzahl von Sekunden ab Anfang des Medienelements aktualisiert werden, beginnend mit 0.
+
+   ```
+   ADBMobile().mediaUpdatePlayhead(position)
    ```
 
 1. **Ende der Wiedergabe verfolgen**

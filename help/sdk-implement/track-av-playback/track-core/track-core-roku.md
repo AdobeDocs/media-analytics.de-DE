@@ -5,10 +5,10 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: d7cb36c2dd6b35da4531ca975c7fc730e387b750
+source-git-commit: 14329fab02e88cbad69ceea4ccd719b90f6555a6
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 100%
+source-wordcount: '771'
+ht-degree: 92%
 
 ---
 
@@ -145,7 +145,8 @@ Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
 
 1. **Abspielkopfwert aktualisieren**
 
-   Wenn sich der Abspielkopf des Mediums ändert, informieren Sie das SDK durch Aufruf der API `mediaUpdatePlayhead`. Bei Video-on-demand (VOD) wird der Wert in Sekunden ab Beginn des Medienelements angegeben. Bei Live-Streaming wird der Wert als Anzahl der Sekunden seit Mitternacht UTC an dem Tag angegeben.
+   Wenn sich der Abspielkopf des Mediums ändert, informieren Sie das SDK durch Aufruf der API `mediaUpdatePlayhead`. <br /> Bei Video-on-demand (VOD) wird der Wert in Sekunden ab Beginn des Medienelements angegeben. <br /> Wenn der Player beim Live-Streaming keine Informationen zur Inhaltsdauer bereitstellt, kann der Wert als Anzahl der Sekunden seit Mitternacht-UTC dieses Tages angegeben werden. <br /> Hinweis: Bei Verwendung von Fortschrittsmarken ist die Inhaltsdauer erforderlich und die Abspielleiste muss als Anzahl von Sekunden ab Anfang des Medienelements aktualisiert werden, beginnend mit 0.
+
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
