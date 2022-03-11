@@ -6,9 +6,9 @@ breadcrumb-title: Media Analytics-Anleitung
 user-guide-description: Implementieren von Adobe Analytics für Streaming-Medien. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
 sub-product: media analytics
 source-git-commit: 5465631bf29e746d7d5dc07603f57fd7033935c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '833'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -211,7 +211,7 @@ ht-degree: 99%
       + [Bericht über Medientagesabschnitt](media-reports/media-default-reports/media-reports-daypart.md)
       + [Bericht über gleichzeitige Medienbetrachter](media-reports/media-default-reports/media-concurrent-viewers.md)
    + Media Workspace-Bedienfelder {#media-workspace-panels}
-   + [Bereich &quot;Zielgruppendurchschnitt pro Minute&quot;](media-reports/media-workspace-panels/average-minute-audience.md)
+   + [Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“](media-reports/media-workspace-panels/average-minute-audience.md)
    + [Bedienfeld „Gleichzeitige Medienbetrachter“](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“](media-reports/media-workspace-panels/media-playback-time-spent.md)
    + [Vorlagen für Media Workspace](media-reports/media-workspace-templates.md)
