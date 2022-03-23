@@ -2,17 +2,17 @@
 title: Versionshinweise zu Adobe Analytics für Streaming-Medien
 description: Zeigen Sie die Adobe Analytics-Versionshinweise an.
 feature: Release Notes
-source-git-commit: c9a1007e0d2ae37014faeffebe89a14175c8506f
+exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
+source-git-commit: 232d7ce89e3867527363235f08b492a92193d50e
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 67%
+source-wordcount: '545'
+ht-degree: 68%
 
 ---
 
-
 # Versionshinweise zu Adobe Analytics für Streaming-Medien (März 2022)
 
-**Letzte Aktualisierung**: 3. März 2022
+**Letzte Aktualisierung**: 23. März 2022
 
 ## *Aktuelle Versionshinweise*
 
@@ -20,7 +20,7 @@ ht-degree: 67%
 
 | Funktion | Beschreibung | Geplantes Datum |
 | ----------- | ---------- | ------- |
-| **Zielgruppendurchschnitt pro Minute** | Media Analytics-Kunden können das Bedienfeld Zielgruppendurchschnitt pro Minute verwenden, um den durchschnittlichen Inhaltskonsum besser zu verstehen. <br>Der „Zielgruppendurchschnitt pro Minute“ ermöglicht, Programmierungen beliebiger Längen oder Genres zu vergleichen. Darüber hinaus können Sie die Zielgruppe mit der durchschnittlichen digitalen Minute mit den Metriken mit der durchschnittlichen TV-Minute vergleichen oder anhängen. Dieses Bedienfeld bietet mehr Flexibilität, um die durchschnittliche Zielgruppe für benutzerdefinierte Zeiträume sowie den Zeitpunkt der Aktualisierung der Classification für die Dauer zu messen.  [Weitere Informationen](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | **Limited Release** <br>16. Februar 2022 |
+| **Zielgruppendurchschnitt pro Minute** | Media Analytics-Kunden können das Bedienfeld Zielgruppendurchschnitt pro Minute verwenden, um den durchschnittlichen Inhaltskonsum besser zu verstehen. <br>Der „Zielgruppendurchschnitt pro Minute“ ermöglicht, Programmierungen beliebiger Längen oder Genres zu vergleichen. Darüber hinaus können Sie die Zielgruppe mit der durchschnittlichen digitalen Minute mit den Metriken mit der durchschnittlichen TV-Minute vergleichen oder anhängen. Dieses Bedienfeld bietet mehr Flexibilität, um die durchschnittliche Zielgruppe für benutzerdefinierte Zeiträume sowie den Zeitpunkt der Aktualisierung der Classification für die Dauer zu messen.  [Weitere Informationen](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | 16. März 2022 |
 
 ## Hilfe-Ressourcen für Analytics für Streaming-Medien
 
