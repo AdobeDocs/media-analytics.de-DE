@@ -4,19 +4,14 @@ description: Erfahren Sie, wie Sie mit dem Bedienfeld "Zielgruppendurchschnitt p
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
-source-git-commit: a138edbfd7b5136f038cc9397e53521110446076
+source-git-commit: df950709d5eafd91d9f0958aeb66f09765e9026b
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 86%
+source-wordcount: '264'
+ht-degree: 85%
 
 ---
 
 # Medien-Zielgruppendurchschnitt pro Minute {#media-average-minute-audience}
-
->[!NOTE]
->
->Diese Funktion wird derzeit eingeschränkt getestet.
-
 
 Media Analytics-Kunden können das Bedienfeld „Zielgruppendurchschnitt pro Minute“ verwenden, um die durchschnittliche Nutzung ihrer Inhalte besser zu verstehen. Der „Zielgruppendurchschnitt pro Minute“ ermöglicht, Programmierungen beliebiger Längen oder Genres zu vergleichen. Darüber hinaus können Kunden diesen Medien-Zielgruppendurchschnitt pro Minute für digitale Sendungen mit linearen Metriken für TV-Durchschnittsminuten vergleichen oder ihn anhängen. Dieses Bedienfeld bietet mehr Flexibilität, um die durchschnittliche Zielgruppe für benutzerdefinierte Zeiträume sowie den Zeitpunkt zu messen, zu dem die Klassifizierung der Dauer nachträglich aktualisiert wurde. Die Metrik für den Medien-Zielgruppendurchschnitt pro Minute funktioniert nur, wenn zur Verarbeitungszeit die Dauer verfügbar ist.
 
@@ -28,7 +23,3 @@ In Analysis Workspace bezeichnet der Zielgruppendurchschnitt pro Minute die Zeit
 Das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ bietet Zielgruppenanalysen für eine durchschnittliche Minute nach dem ausgewählten spezifischen Inhalt, wenn die Dauer mithilfe von Classifications zur Verfügung gestellt wird.
 
 Das Bedienfeld „Zielgruppendurchschnitt pro Minute“ bietet außerdem Analysen über einen ausgewählten Zeitraum, die nach bestimmten Inhalten gefiltert werden können – unabhängig davon, ob die Dauer mit Classifications verfügbar ist oder nicht. Um auf das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ zuzugreifen, navigieren Sie zu einer Report Suite, während die Media Analytics-Komponenten aktiviert sind. Klicken Sie dann auf das Bedienfeldsymbol ganz links und ziehen Sie das Bedienfeld in Ihr Analysis Workspace-Projekt. [Weitere Informationen...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=en)
-
-<!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
-
-REVISE You can also get concurrent viewer data for up to 1-month at a time at minute-level granularity using the Analytics Reporting API 2.0.  The reporting API uses the same definition of concurrent viewers as Analysis Workspace.  For more information see [_*Get concurrent viewers JSON report data with Analytics 2.0 APIs*_](/help/media-reports/media-default-reports/get-concurrent-json20.md). -->
