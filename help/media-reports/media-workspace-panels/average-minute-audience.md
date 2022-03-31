@@ -5,9 +5,9 @@ feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
 source-git-commit: df950709d5eafd91d9f0958aeb66f09765e9026b
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '264'
+ht-degree: 100%
 
 ---
 
