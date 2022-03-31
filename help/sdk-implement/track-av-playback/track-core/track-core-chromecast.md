@@ -6,13 +6,13 @@ exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '750'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Tracking von Core-Wiedergaben in Chromecast{#track-core-playback-on-chromecast}
+# Tracking von Core-Wiedergaben in Chromecast {#track-core-playback-on-chromecast}
 
 Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
 
@@ -91,7 +91,7 @@ Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
 
 1. **Abspielkopfwert aktualisieren**
 
-   Aktualisieren `mediaUpdatePlayhead`&quot; Positionswert mehrmals bei Änderung der Abspielleiste. <br /> Bei Video-on-demand (VOD) wird der Wert in Sekunden ab Beginn des Medienelements angegeben. <br /> Wenn der Player beim Live-Streaming keine Informationen zur Inhaltsdauer bereitstellt, kann der Wert als Anzahl der Sekunden seit Mitternacht-UTC dieses Tages angegeben werden. <br />  Hinweis: Bei Verwendung von Fortschrittsmarken ist die Inhaltsdauer erforderlich und die Abspielleiste muss als Anzahl von Sekunden ab Anfang des Medienelements aktualisiert werden, beginnend mit 0.
+   Aktualisieren Sie den Positionswert von `mediaUpdatePlayhead` mehrmals, wenn sich der Abspielkopf ändert. <br /> Bei Video-on-demand (VOD) wird der Wert in Sekunden ab Beginn des Medienelements angegeben. <br /> Wenn der Player beim Livestreaming keine Informationen zur Inhaltsdauer bereitstellt, kann der Wert als Anzahl der Sekunden seit Mitternacht (UTC) des Tages angegeben werden. <br /> Hinweis: Bei Verwendung von Fortschrittsmarken ist die Inhaltsdauer erforderlich und der Abspielkopf muss als Anzahl von Sekunden ab Beginn des Medienelements aktualisiert werden, beginnend mit 0.
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
