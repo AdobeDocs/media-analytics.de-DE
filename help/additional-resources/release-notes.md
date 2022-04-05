@@ -3,9 +3,9 @@ title: Versionshinweise zu Adobe Analytics für Streaming-Medien
 description: Zeigen Sie die Adobe Analytics-Versionshinweise an.
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 232d7ce89e3867527363235f08b492a92193d50e
+source-git-commit: 8ca8416ba3dd8f5d3ef4ba9399e7c84335f3abf1
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '525'
 ht-degree: 68%
 
 ---
@@ -48,7 +48,7 @@ Neue Analytics-Tutorials und -Kurse
 
 | Funktion | Allgemeine Verfügbarkeit | Beschreibung |
 | ----------- | ---------- | -------------- |
-| **Bei Medienwiedergabe verbrachte Zeit** | 28. September 2021 | Mit Adobe Streaming-Medienwiedergabe verbrachte Zeit bietet wertvolle Einblicke in die Interaktion mit Betrachtern und ermöglicht es Medienunternehmen, tiefere, detailliertere Einblicke mit der minütigen Benutzerinteraktion durch erweiterte Zeitanalysen mit Tageszeiteneinteilungs-Funktionen zu gewinnen. Sie können feststellen, wie viel Zeit mit der Anzeige Ihrer Medien-Streams zu einem bestimmten Zeitpunkt verbracht wurde. Sie können die Wiedergabedauer nach verschiedenen Granularitäten unterteilen, einschließlich der neuen Granularitäten von 5, 15 und 30 Minuten. [Weitere Informationen...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=en) |
+| **Bei Medienwiedergabe verbrachte Zeit** | 28. September 2021 | Mit Adobe Streaming-Medienwiedergabe verbrachte Zeit bietet wertvolle Einblicke in die Interaktion mit Betrachtern und ermöglicht es Medienunternehmen, tiefere, detailliertere Einblicke mit der minütigen Benutzerinteraktion durch erweiterte Zeitanalysen mit Tageszeiteneinteilungs-Funktionen zu gewinnen. Sie können feststellen, wie viel Zeit mit der Anzeige Ihrer Medien-Streams zu einem bestimmten Zeitpunkt verbracht wurde. Sie können die Wiedergabedauer nach verschiedenen Granularitäten unterteilen, einschließlich der neuen Granularitäten von 5, 15 und 30 Minuten. [Weitere Informationen...](/help/media-reports/media-workspace-panels/media-playback-time-spent.md) |
 
 ## Januar 2021
 
@@ -65,7 +65,7 @@ Neue Funktionen in Media Analytics
 
 | Funktion | Allgemeine Verfügbarkeit | Beschreibung |
 | -------- | -------------------- | ----------- |
-| Bedienfeld für **gleichzeitige Medienbetrachter in Workspace** | 17. September 2020 | Mit dem Bedienfeld „Gleichzeitige Medienbetrachter“  können Sie erkennen, wo es zu Spitzen bei gleichzeitigen Betrachtern oder zu Abbrüchen kam. Es bietet wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern und hilft bei der Fehlerbehebung oder der Planung in Bezug auf Volumen/Skalierung. [Weitere Informationen…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-concurrent-viewers.html?lang=en) |
+| Bedienfeld für **gleichzeitige Medienbetrachter in Workspace** | 17. September 2020 | Mit dem Bedienfeld „Gleichzeitige Medienbetrachter“  können Sie erkennen, wo es zu Spitzen bei gleichzeitigen Betrachtern oder zu Abbrüchen kam. Es bietet wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern und hilft bei der Fehlerbehebung oder der Planung in Bezug auf Volumen/Skalierung. [Weitere Informationen…](/help/media-reports/media-workspace-panels/media-concurrent-viewers.md) |
 
 
 ## Juli 2020
