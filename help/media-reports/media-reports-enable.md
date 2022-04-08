@@ -5,16 +5,18 @@ uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: d2a6f9648b682079ca858e9025d41dcb9dc6554f
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 100%
+source-wordcount: '954'
+ht-degree: 96%
 
 ---
 
 # Aktivierung von Medienberichten{#media-reports-enablement}
 
 Jede Report Suite, die Medienmetriken erfasst, muss konfiguriert werden, bevor Mediendaten gesendet werden.
+
+Fortgeschrittene Kunden können die Medienbedienfelder in Analysis Workspace erst verwenden, wenn Media Core aktiviert und die Verfolgung für [Erlebnisqualität](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=en).
 
 >[!TIP]
 >
