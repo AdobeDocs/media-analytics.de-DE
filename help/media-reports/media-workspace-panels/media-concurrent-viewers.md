@@ -5,7 +5,7 @@ exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '183'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ Die Analyse gleichzeitiger Betrachter ermöglicht Ihnen zu verstehen, wo Spitzen
 
 ## Bedienfeld für gleichzeitige Medienbetrachter in Analysis Workspace
 
-In Analysis Workspace bezeichnet der Begriff „Gleichzeitige Betrachter“ die Anzahl der Unique Visitors, die sich Ihre Medien-Streams unabhängig von der Anzahl der Sitzungen zu einem bestimmten Zeitpunkt ansehen. Das Bedienfeld „Gleichzeitige Medienbetrachter“ ist verfügbar, um gleichzeitige Betrachter zu visualisieren, aufzuschlüsseln und zu vergleichen. [Weitere Infos...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html?lang=de)
+In Analysis Workspace bezeichnet der Begriff „Gleichzeitige Betrachter“ die Anzahl der Unique Visitors, die sich Ihre Medien-Streams unabhängig von der Anzahl der Sitzungen zu einem bestimmten Zeitpunkt ansehen. Das Bedienfeld „Gleichzeitige Medienbetrachter“ ist verfügbar, um gleichzeitige Betrachter zu visualisieren, aufzuschlüsseln und zu vergleichen. [Weitere Informationen...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html?lang=de)
 
 ## Gleichzeitige Betrachter über die Analytics Reporting-API abrufen
 
