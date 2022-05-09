@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Medien-Zielgruppendurchschnitt pro Minute {#media-average-minute-audience}
 
-Media Analytics-Kunden können das Bedienfeld „Zielgruppendurchschnitt pro Minute“ verwenden, um die durchschnittliche Nutzung ihrer Inhalte besser zu verstehen. Der „Zielgruppendurchschnitt pro Minute“ ermöglicht, Programmierungen beliebiger Längen oder Genres zu vergleichen. Darüber hinaus können Kunden diesen Medien-Zielgruppendurchschnitt pro Minute für digitale Sendungen mit linearen Metriken für TV-Durchschnittsminuten vergleichen oder ihn anhängen. Dieses Bedienfeld bietet mehr Flexibilität, um die durchschnittliche Zielgruppe für benutzerdefinierte Zeiträume sowie den Zeitpunkt zu messen, zu dem die Klassifizierung der Dauer nachträglich aktualisiert wurde. Die Metrik für den Medien-Zielgruppendurchschnitt pro Minute funktioniert nur, wenn zur Verarbeitungszeit die Dauer verfügbar ist.
+Media Analytics-Kunden können das Bedienfeld „Zielgruppendurchschnitt pro Minute“ verwenden, um die durchschnittliche Nutzung ihrer Inhalte besser zu verstehen. Der Zielgruppendurchschnitt pro Minute ermöglicht Vergleiche von Inhalten beliebiger Längen oder Genres. Darüber hinaus können Kunden diesen digitalen Zielgruppendurchschnitt pro Minute mit Metriken zum linearen TV-Durchschnitt pro Minute vergleichen oder ihn anhängen. Dieses Bedienfeld bietet mehr Flexibilität, um den Zielgruppendurchschnitt für benutzerdefinierte Zeiträume zu messen sowie für Fälle, bei denen die Klassifizierung der Dauer nachträglich aktualisiert wurde. Die Metrik für den Medien-Zielgruppendurchschnitt pro Minute funktioniert nur, wenn zur Verarbeitungszeit die Dauer verfügbar ist.
 
 ## Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ in Analysis Workspace
 
