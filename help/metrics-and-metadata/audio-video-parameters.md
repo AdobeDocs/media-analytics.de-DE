@@ -5,10 +5,10 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 37c46d493926ab83d9b6ccedafd82b150bbd6e2c
+source-git-commit: 935fba7f14cd1a5a5839b0a7c8597453d4a79227
 workflow-type: tm+mt
-source-wordcount: '6488'
-ht-degree: 100%
+source-wordcount: '6487'
+ht-degree: 99%
 
 ---
 
@@ -328,13 +328,13 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt</li> <li> **API-Schlüssel:**<br/> nicht verfügbar</li> <li> **Typ:**<br/> Zeichenfolge</li> <li> **Gesendet mit:**<br/> Media Start</li> <li> **Min. SDK-Version:** beliebig</li> <li> **Beispielwert:**<br/> TRUE </li> <li> **Beschreibung:**<br/> Ladeereignis für das Medium. (Tritt auf, wenn der Zuschauer auf die _Play_-Schaltfläche klickt). Gilt auch, wenn Pre-Roll-Anzeigen, Puffern, Fehler usw. auftreten.  <br/>**Wichtig:** Ist dieser Wert festgelegt, kann er nur „true“ lauten. Ist er nicht festgelegt, wird kein Wert zurückgegeben.  <br/> **Releasedatum: 13.09.2018** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.view) </li> <li> **Heartbeats:**<br/> (s:event:<br/>type=start) </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtname:**<br/> Medienstarts </li> <li> **Kontextdaten:**<br/> (a.media.view) </li> <li> **Datenfeed:**<br/> videostart </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.view) </li> <li> **XDM-Feldpfad:**<br/> media.mediaTimed.starts.value, media.mediaTimed.dropBeforeStart.value </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt</li> <li> **API-Schlüssel:**<br/> nicht verfügbar</li> <li> **Typ:**<br/> Zeichenfolge</li> <li> **Gesendet mit:**<br/> Media Start</li> <li> **Min. SDK-Version:** beliebig</li> <li> **Beispielwert:**<br/> TRUE </li> <li> **Beschreibung:**<br/> Ladeereignis für das Medium. (Tritt auf, wenn der Zuschauer auf die _Play_-Schaltfläche klickt). Gilt auch, wenn Pre-Roll-Anzeigen, Puffern, Fehler usw. auftreten.  <br/>**Wichtig:** Ist dieser Wert festgelegt, kann er nur „true“ lauten. Ist er nicht festgelegt, wird kein Wert zurückgegeben.  <br/> **Releasedatum: 13.09.2018** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.view) </li> <li> **Heartbeats:**<br/> (s:event:<br/>type=start) </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtname:**<br/> Medienstarts </li> <li> **Kontextdaten:**<br/> (a.media.view) </li> <li> **Datenfeed:**<br/> videostart </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.view) </li> <li> ****<br/> </li> </ul> |
 
 ### Inhaltsstarts
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Media Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> **Beispielwert:**<br/> TRUE </li> <li> **Beschreibung:**<br/> Der erste Frame des Mediums wird wiedergegeben. Wenn der Anwender den Inhalt während einer Anzeige, eines Puffervorgangs usw. verlässt, tritt kein Content Start-Ereignis auf.  <br/> **Wichtig:** Ist dieser Wert festgelegt, kann er nur „true“ lauten. Ist er nicht festgelegt, wird kein Wert zurückgegeben.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> nicht verfügbar </li> <li> **Heartbeats:**<br/> nicht verfügbar </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtsname:**<br/> Inhaltsstarts </li> <li> **Kontextdaten:**<br/> (a.media.play) </li> <li> **Datenfeed:**<br/> videoplay </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.play) </li> <li> **XDM-Feldpfad:**<br/> media.mediaTimed.dropBeforeStart.value </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Media Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> **Beispielwert:**<br/> TRUE </li> <li> **Beschreibung:**<br/> Der erste Frame des Mediums wird wiedergegeben. Wenn der Anwender den Inhalt während einer Anzeige, eines Puffervorgangs usw. verlässt, tritt kein Content Start-Ereignis auf.  <br/> **Wichtig:** Ist dieser Wert festgelegt, kann er nur „true“ lauten. Ist er nicht festgelegt, wird kein Wert zurückgegeben.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> nicht verfügbar </li> <li> **Heartbeats:**<br/> nicht verfügbar </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtsname:**<br/> Inhaltsstarts </li> <li> **Kontextdaten:**<br/> (a.media.play) </li> <li> **Datenfeed:**<br/> videoplay </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.play) </li> <li> ****<br/> </li> </ul> |
 
 ### Inhaltsbeendigung {#content-complete}
 
@@ -346,7 +346,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- | --- |
-| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Typ:**<br/> Zahl </li> <li> **Gesendet mit:**<br/> Media Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> **Beispielwert:**<br/> 105 </li> <li> **Beschreibung:**<br/> Addiert die Ereignisdauer (in Sekunden) für alle Ereignisse des Typs „PLAY“ im Hauptinhalt.  Der Wert wird im Zeitformat (HH:MM:SS) in Analysis Workspace und in Reports &amp; Analytics angezeigt. In Daten-Feeds, Data Warehouse und Reporting APIs werden die Werte in Sekundenschnelle angezeigt.  <br/> **Releasedatum: 13.09.2018** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> nicht verfügbar </li> <li> **Heartbeats:**<br/> nicht verfügbar </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtsname:**<br/> Besuchszeit für Inhalt </li> <li> **Kontextdaten:**<br/> (a.media.timePlayed) </li> <li> **Datenfeed:**<br/> videotime </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.timePlayed) </li> <li> **XDM-Feldpfad:**<br/> media.mediaTimed.dropBeforeStart.value </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Typ:**<br/> Zahl </li> <li> **Gesendet mit:**<br/> Media Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> **Beispielwert:**<br/> 105 </li> <li> **Beschreibung:**<br/> Addiert die Ereignisdauer (in Sekunden) für alle Ereignisse des Typs „PLAY“ im Hauptinhalt.  Der Wert wird im Zeitformat (HH:MM:SS) in Analysis Workspace und in Reports &amp; Analytics angezeigt. In Daten-Feeds, Data Warehouse und Reporting APIs werden die Werte in Sekundenschnelle angezeigt.  <br/> **Releasedatum: 13.09.2018** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> nicht verfügbar </li> <li> **Heartbeats:**<br/> nicht verfügbar </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtsname:**<br/> Besuchszeit für Inhalt </li> <li> **Kontextdaten:**<br/> (a.media.timePlayed) </li> <li> **Datenfeed:**<br/> videotime </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.timePlayed) </li> <li> ****<br/> </li> </ul> |
 
 ### Besuchszeit für Medien
 
