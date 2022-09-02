@@ -1,19 +1,18 @@
 ---
 title: Mehrere Player-Status gleichzeitig aktualisieren
 description: In diesem Thema wird die Funktion "Mehrfach-Player-Status-Tracking"beschrieben.
-exl-id: a77bc882-ac03-40b4-ac64-87f26a09707b
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 7a28674024739593431a942d5e0a498294bbe793
+source-git-commit: fdbb777547181422b81ff6f7874bec3d317d02e9
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 10%
+source-wordcount: '186'
+ht-degree: 9%
 
 ---
 
 # Verfolgung mehrerer Player-Status
 
-Es gibt Situationen, in denen zwei Player-Status gleichzeitig beginnen und enden oder wenn das Ende eines Status auch der Anfang eines anderen Status ist. Sehen Sie sich folgendes Beispiel an:
+Manchmal beginnen und enden zwei Player-Status gleichzeitig oder das Ende eines Status ist auch der Anfang eines anderen Status, wie in der folgenden Abbildung dargestellt:
 
 ![Mehrere Player-Status](assets/multiple-player-states.svg)
 
@@ -25,18 +24,22 @@ Die aktuelle Implementierung ermöglicht beide Szenarien:
 - `stateStart(fullScreen)` - t1
 - `stateEnd(fullScreen)` - t2
 
-Der Client muss jedoch viele `stateStart` und `stateEnd` -Ereignisse, um mehrere gleichzeitige Statusänderungen zu signalisieren. Um dieses gemeinsame Verhalten zu optimieren, wird ein neuer `statesUpdate` -Ereignistyp implementiert wurde, der eine Liste von Status beendet und eine Liste neuer Status startet.
+Dazu müssen Sie jedoch mehrere `stateStart` und `stateEnd` -Ereignisse, um mehrere gleichzeitige Statusänderungen zu signalisieren. Um dieses gemeinsame Verhalten zu optimieren, wird ein neuer `statesUpdate` -Ereignistyp implementiert wurde, der eine Liste von Status beendet und eine Liste neuer Status startet.
 
 Neue `statesUpdate` -Ereignis, wird die obige Ereignisliste zu:
 - `statesUpdate(statesEnd=[], statesStart=[pictureInPicture, mute])` - t0
 - `statesUpdate(statesEnd=[mute, pictureInPicture], statesStart=[fullScreen])` - t1
 - `statesUpdate(statesEnd=[fullScreen], statesStart=[])` - t2
 
-Die Anzahl der Aufrufe zur Statusaktualisierung wurde für dasselbe Verhalten von 6 auf nur 3 reduziert. Das letzte Ereignis hätte auch eine einfache `stateEnd(fullScreen)`.
+Die Anzahl der Aufrufe zur Statusaktualisierung wurde für dasselbe Verhalten von sechs auf drei reduziert. Das letzte Ereignis hätte auch eine einfache `stateEnd(fullScreen)`.
 
-## Implementierung der Mediensammlungs-API
+## Implementierung der Mediensammlungs-API {#mpst-api}
 
-Beispiele:
+Sie können die Mediensammlungs-API verwenden, um das Tracking mehrerer Player-Status zu implementieren.
+
+### Beispiel
+
+Im Folgenden finden Sie ein Beispiel für die Implementierung der Mediensammlungs-API für das Tracking mehrerer Player-Status.
 
 ```
 // statesUpdate (ex: mute and pictureInPicture are switched on)

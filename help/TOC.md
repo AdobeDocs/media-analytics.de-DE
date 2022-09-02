@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics für Streaming Media
 breadcrumb-title: Media Analytics-Anleitung
 user-guide-description: Implementieren von Adobe Analytics für Streaming-Medien. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
 sub-product: media analytics
-source-git-commit: 534f6f77d69a8fe3574c214cd56d2f77758c1643
-workflow-type: ht
-source-wordcount: '833'
-ht-degree: 100%
+source-git-commit: 6794ba332945047c821628b79e6e796de321fbeb
+workflow-type: tm+mt
+source-wordcount: '837'
+ht-degree: 99%
 
 ---
 
@@ -222,6 +222,7 @@ ht-degree: 100%
    + [Überblick](sdk-implement/player-state-tracking/player-state-overview.md)
    + [Standardmäßige und benutzerdefinierte Status](sdk-implement/player-state-tracking/standard-and-custom-states.md)
    + [Implementierung und Reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+   + [Verfolgung mehrerer Player-Status](sdk-implement/player-state-tracking/multiple-player-states.md)
    + [Beispiele für Player-Status-Tracking](sdk-implement/player-state-tracking/player-state-examples.md)
 + [Federated Analytics](federated-analytics.md)
 + Zusätzliche Ressourcen {#additional-resources}
