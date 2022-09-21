@@ -1,11 +1,11 @@
 ---
-title: 'Audio- und Videoparameter '
+title: Audio- und Videoparameter
 description: Erfahren Sie mehr über die wichtigsten Datenvariablen für Streaming-Medien einschließlich Audio- und Videoinhaltsdaten und Kontextdatenwerten.
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 01afcf648f13af4d47b5fb41b7c9e89c2a89f590
+source-git-commit: 7e5ce452a9c96c4e34150ae0e06d73b0cff98741
 workflow-type: tm+mt
 source-wordcount: '7004'
 ht-degree: 92%
@@ -272,7 +272,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK-Schlüssel:**<br/> AUTHORIZED </li> <li> **API-Schlüssel:**<br/> media.pass.auth </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Media Start, Media Close </li> <li> **Min. SDK-Version:** 1.5.7 </li> <li> **Beispielwert:**<br/> „TRUE“ </li> <li> **Beschreibung:**<br/> Der Benutzer wurde über die Adobe-Authentifizierung autorisiert.  <br/>**Wichtig:** Ist dieser Wert festgelegt, kann er nur „true“ lauten. Ist er nicht festgelegt, wird kein Wert zurückgegeben.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.pass.auth) </li> <li> **Heartbeats:**<br/> (s:meta:<br/>a.media.pass)<br/>auth) </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtsname:**<br/> Autorisiert </li> <li> **Kontextdaten:**<br/> (a.media.pass.auth) </li> <li> **Datenfeed:**<br/> videoauthorized </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.pass.auth) </li> <li> **XDM-Feldpfad:**<br/> media.mediaTimed.mediaAuth </li> <li> **Pfad des Collection XDM-Felds:**<br/> mediaCollection.sessionDetails.<br/>isAuthenticated </li> <li> **XDM-Feldpfad für Berichterstellung:**<br/> mediaReporting.sessionDetails.<br/>isAuthenticated </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/> AUTHORIZED </li> <li> **API-Schlüssel:**<br/> media.pass.auth </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Media Start, Media Close </li> <li> **Min. SDK-Version:** 1.5.7 </li> <li> **Beispielwert:**<br/> „TRUE“ </li> <li> **Beschreibung:**<br/> Der Benutzer wurde über die Adobe-Authentifizierung autorisiert.  <br/>**Wichtig:** Ist dieser Wert festgelegt, kann er nur „true“ lauten. Ist er nicht festgelegt, wird kein Wert zurückgegeben.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.pass.auth) </li> <li> **Heartbeats:**<br/> (s:meta:<br/>a.media.pass)<br/>auth) </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtsname:**<br/> Autorisiert </li> <li> **Kontextdaten:**<br/> (a.media.pass.auth) </li> <li> **Datenfeed:**<br/> videoauthorized </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.pass.auth) </li> <li> **XDM-Feldpfad:**<br/> media.mediaTimed.mediaAuth </li> <li> **Pfad des Collection XDM-Felds:**<br/> mediaCollection.sessionDetails.<br/>isAuthorized </li> <li> **XDM-Feldpfad für Berichterstellung:**<br/> mediaReporting.sessionDetails.<br/>isAuthorized </li> </ul> |
 
 ### Tagesteil
 

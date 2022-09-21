@@ -1,11 +1,11 @@
 ---
-title: 'Player-Statusparameter '
+title: Player-Statusparameter
 description: „Erfahren Sie mehr über Player-Status-Tracking-Parameter für Vollbild, Untertitel, Stummschaltung und Bild in den Bildeigenschaften.“
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
-feature: Media Analytics, Variables
+feature: "Media Analytics, Variables"
 role: User, Admin, Data Engineer
-source-git-commit: 01afcf648f13af4d47b5fb41b7c9e89c2a89f590
+source-git-commit: 7e5ce452a9c96c4e34150ae0e06d73b0cff98741
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 94%
@@ -41,7 +41,7 @@ Beschreibung der Tabellendaten:
 
 ## Player-Statuseigenschaften {#player-state-properties}
 
-Die Funktionen für das Player-Status-Tracking können an einen Audio- oder Videostream angehängt werden. Standardisierte Player-Status-Tracking-Metriken werden als Lösungsvariablen gespeichert. Die Standardstatus sind: „fullScreen“, „mute“, „closeCaption“, „pictureInPicture“ und „inFocus“.
+Die Funktionen für das Player-Status-Tracking können an einen Audio- oder Videostream angehängt werden. Standardisierte Player-Status-Tracking-Metriken werden als Lösungsvariablen gespeichert. Die Standardstatus sind: Vollbild, Stummschaltung, closedCaptioning, pictureInPicture und inFocus.
 
 ### Vollbildeigenschaften
 
