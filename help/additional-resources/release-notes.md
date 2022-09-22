@@ -3,16 +3,16 @@ title: Versionshinweise zu Adobe Analytics für Streaming-Medien
 description: Lesen Sie die Versionshinweise zu Adobe Analytics.
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 24471de7f56212d29001ce23aea155fb56dbad8b
+source-git-commit: 5a7d1725333f9f47fb13469a0877402f4fff506f
 workflow-type: tm+mt
 source-wordcount: '854'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
-# Versionshinweise zu Adobe Analytics für Streaming-Medien (März 2022)
+# Versionshinweise zu Adobe Analytics für Streaming-Medien (September 2022)
 
-**Letzte Aktualisierung**: 23. September 2022
+**Letzte Aktualisierung**: 22. September 2022
 
 ## Verwandte Ressourcen
 
