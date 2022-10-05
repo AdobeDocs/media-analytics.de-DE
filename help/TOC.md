@@ -3,12 +3,12 @@ product: adobe analytics
 audience: end-user
 user-guide-title: Adobe Analytics für Streaming Media
 breadcrumb-title: Media Analytics-Anleitung
-user-guide-description: Implementieren von Adobe Analytics für Streaming-Medien. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
+user-guide-description: Implementieren von Adobe Analytics für Streaming-Medien. Erfahren Sie mehr über das Media SDK und die Mediensammlungs-API.
 sub-product: media analytics
-source-git-commit: 6794ba332945047c821628b79e6e796de321fbeb
+source-git-commit: 212fad8592c9f935869e55d034b17519c8b9de36
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 99%
+source-wordcount: '838'
+ht-degree: 98%
 
 ---
 
