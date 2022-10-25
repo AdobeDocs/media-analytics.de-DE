@@ -1,11 +1,11 @@
 ---
-title: 'Qualitätsparameter '
+title: Qualitätsparameter
 description: Erfahren Sie mehr über die QoE-Parameter (Quality of Experience), mit denen Metadaten erfasst werden.
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 exl-id: aac178dc-5a46-4ce3-80e9-ec82cbfbfff5
-feature: Media Analytics, Variables
+feature: "Media Analytics, Variables"
 role: User, Admin, Data Engineer
-source-git-commit: 01afcf648f13af4d47b5fb41b7c9e89c2a89f590
+source-git-commit: 6c311eea2b748ba5409935208c048c43d7bbe39b
 workflow-type: tm+mt
 source-wordcount: '3320'
 ht-degree: 93%
@@ -184,8 +184,8 @@ Beschreibung der Tabellendaten:
 ### Drops vor Start
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
-| --- | --- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Media Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> **Beispielwert:**<br/> TRUE </li><li> **Beschreibung:**<br/> Gibt an, wie oft ein Benutzer das Video vor dem Start beendet hat. Diese Metrik wird auf 1 gesetzt, wenn kein Inhalt gerendert wurde, unabhängig von Werbeanzeigen.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>dropBeforeStart) </li> <li> **Heartbeat:**<br/> (s:event:<br/>type=aa_start) </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtsname:**<br/> Drops vor Start </li> <li> **Kontextdaten:**<br/> (a.media.qoe.<br/>dropBeforeStart) </li> <li> **Daten-Feed:**<br/> nicht verfügbar </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>dropBeforeStart) </li> <li> **XDM-Feldpfad:**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>qoe.dropBeforeStarts.value >= 1 => &quot;TRUE&quot; </li> <li> **XDM-Feldpfad für Berichterstellung:**<br/> mediaReporting.qoeDataDetails.<br/>hasDroppedBeforeStart </li> </ul> |
+| --- | --- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Media Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> **Beispielwert:**<br/> TRUE </li><li> **Beschreibung:**<br/> Gibt an, wie oft ein Benutzer das Video vor dem Start beendet hat. Diese Metrik wird auf 1 gesetzt, wenn kein Inhalt gerendert wurde, unabhängig von Werbeanzeigen.  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>dropBeforeStart) </li> <li> **Heartbeat:**<br/> (s:event:<br/>type=aa_start) </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtsname:**<br/> Drops vor Start </li> <li> **Kontextdaten:**<br/> (a.media.qoe.<br/>dropBeforeStart) </li> <li> **Daten-Feed:**<br/> nicht verfügbar </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>dropBeforeStart) </li> <li> **XDM-Feldpfad:**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>qoe.dropBeforeStarts.value >= 1 => &quot;TRUE&quot; </li> <li> **XDM-Feldpfad für Berichterstellung:**<br/> mediaReporting.qoeDataDetails.<br/>isDroppedBeforeStart </li> </ul> |
 
 
 
