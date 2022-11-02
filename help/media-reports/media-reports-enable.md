@@ -6,8 +6,8 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 1682a10a1d24e55854a77a8f44b43f92893adaa2
-workflow-type: ht
-source-wordcount: '952'
+workflow-type: tm+mt
+source-wordcount: '950'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ Fortgeschrittene Kunden können die Medien-Bedienfelder in Analysis Workspace nu
 1. Klicken Sie in [Reports &amp; Analytics](https://my.omniture.com/login/) auf **[!UICONTROL Admin > Report Suites].**
 1. Wählen Sie die Report Suites aus, in denen Sie Mediendaten erfassen, und klicken Sie anschließend auf **[!UICONTROL Einstellungen bearbeiten > Medienmanagement > Medienberichte].**
 
-   ![](assets/media-reporting.png){width=&quot;400px&quot;}
+   ![](assets/media-reporting.png){width="400px"}
 
 1. Aktivieren Sie auf der Seite **[!UICONTROL Medienberichte]** die Option **[!UICONTROL Media-Core],** und aktivieren Sie optional **[!UICONTROL Medienanzeigen],** **[!UICONTROL Medienkapitel],** und **[!UICONTROL Medienqualität].**
 
