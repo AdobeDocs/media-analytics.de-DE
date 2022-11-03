@@ -5,17 +5,17 @@ exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 3e996d243d060a6fd07d2ddbabf05e39eca40758
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '402'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Audience Manager-Aktivierung{#audience-manager-enablement}
+# Audience Manager-Aktivierung {#audience-manager-enablement}
 
 Adobe Audience Manager (AAM) ist eine Data Management Platform (DMP), die Ihnen hilft, Ihre Zielgruppen-Assets zu kombinieren. So können Sie ganz einfach geschäftlich relevante Informationen über Site-Besucher sammeln, vermarktbare Segmente erstellen und spezifische Werbung und Inhalte für die richtige Zielgruppe bereitstellen.
 
-Mit AAM sind Sie nicht an eine Datenverkaufs-, Datenaustausch- oder Nachfrage-Plattform gebunden. Darüber hinaus ist AAM vollkommen unabhängig, wenn es um die Datenbestände Ihrer Partner geht. Mit Zugriff auf mehrere Datenquellen bietet AAM digitalen Publishern die Möglichkeit, eine Vielzahl von Drittanbieterdaten zu verwenden. Weitere Informationen zu AAM finden Sie in der AAM-Dokumentation der [Audience Manager-Produktdokumentation](https://docs.adobe.com/content/help/de-DE/experience-cloud/user-guides/home.html).
+Mit AAM sind Sie nicht an eine Datenverkaufs-, Datenaustausch- oder Nachfrage-Plattform gebunden. Darüber hinaus ist AAM vollkommen unabhängig, wenn es um die Datenbestände Ihrer Partner geht. Dank des Zugriffs auf verschiedene Datenquellen bietet AAM digitalen Publishern die Möglichkeit, neben unserer privaten Datenkooperation verschiedenste Drittanbieterdaten zu verwenden. Weitere Informationen zu AAM finden Sie in der AAM-Dokumentation der [Audience Manager-Produktdokumentation](https://docs.adobe.com/content/help/de-DE/experience-cloud/user-guides/home.html).
 
 **VA-Datenübertragung an AAM -** Sowohl bei Videoinhalten als auch bei Videoanzeigen können die Metriken und Metadaten, die mit (reservierten) Lösungsvariablen erfasst werden, automatisch an AAM gesendet werden. Die Datenübertragung ist auf allen Plattformen verfügbar, einschließlich Desktop, Mobile und OTT. Um diese Server-seitige Datenübertragung zu aktivieren, müssen Sie sich an den Adobe-Kundendienst wenden und die Aktivierung dieses Feeds beantragen.
 
