@@ -4,9 +4,9 @@ description: Lesen Sie die Versionshinweise zu Adobe Analytics.
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
 source-git-commit: 5a7d1725333f9f47fb13469a0877402f4fff506f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '854'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 77%
 
 ## Verwandte Ressourcen
 
-Informationen zu neuen Funktionen, Fehlerbehebungen und wichtigen Informationen für Administratoren finden Sie in den folgenden Ressourcen.
+Informationen zu neuen Funktionen, Fehlerbehebungen und wichtige Informationen für Admins finden Sie in den folgenden Ressourcen.
 
-* [Versionshinweise zu Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=de)
+* [Versionshinweise zu Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=de)
 * [Versionshinweise zu Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=de)
 * Die neuesten Versions-Updates für [Adobe Experience Cloud-Produkte](https://business.adobe.com/de/products/adobe-experience-cloud-products.html)
 
@@ -30,11 +30,11 @@ Informationen zu neuen Funktionen, Fehlerbehebungen und wichtigen Informationen 
 
 | Funktion | Beschreibung | Zieldatum |
 | ----------- | ---------- | ------- |
-| Bedienfeld „Gleichzeitige Medienbetrachter“ | Erkennen Sie, wo hohe Auslastungen auftraten oder wo es zu Einbrüchen kam. Erhalten Sie wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern und erhalten Sie Hilfe bei der Fehlerbehebung oder der Planung in Bezug auf Volumen und Skalierung. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=en) | 9. August 2022 |
+| Bedienfeld „Gleichzeitige Medienbetrachter“ | Erkennen Sie, wo hohe Auslastungen auftraten oder wo es zu Einbrüchen kam. Erhalten Sie wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern und erhalten Sie Hilfe bei der Fehlerbehebung oder der Planung in Bezug auf Volumen und Skalierung. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=de) | 9. August 2022 |
 | Panel „Verbrachte Zeit bei der Medienwiedergabe“ | Die mit Medienwiedergabe verbrachte Zeit bietet wertvolle Einblicke in die Interaktion mit Betrachtenden und ermöglicht es Medienunternehmen, tiefere, detailliertere Einblicke mit der minütigen Benutzerinteraktion durch erweiterte Zeitanalysen mit Funktionen zur Tageszeiteneinteilung zu gewinnen. Sie können feststellen, wie viel Zeit zu einem bestimmten Zeitpunkt mit der Anzeige Ihrer Medien-Streams verbracht wurde. Sie können die Wiedergabedauer nach verschiedenen Granularitäten aufteilen, einschließlich der neuen Granularitäten 5 Minuten, 15 Minuten und 30 Minuten. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=de) | 9. August 2022 |
-| Freigeben von Anmerkungen in mobilen Scorecards | Sie können in Workspace erstellte Anmerkungen in mobilen Scorecards anzeigen. Auf diese Weise können Sie kontextbezogene Datennuancen und Erkenntnisse zu Ihrer Organisation und Ihren Kampagnen direkt in Projekten mit mobiler Scorecard, die in der Dashboard-Mobile-App von Analytics angezeigt werden. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/mobile-annotations.html?lang=en) | 15. Juni 2022 |
+| Freigeben von Anmerkungen in mobilen Scorecards | Sie können in Workspace erstellte Anmerkungen in mobilen Scorecards anzeigen. Auf diese Weise können Sie kontextbezogene Datennuancen und Erkenntnisse zu Ihrer Organisation und Ihren Kampagnen direkt in Projekten mit mobiler Scorecard, die in der Dashboard-Mobile-App von Analytics angezeigt werden. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/mobile-annotations.html?lang=de) | 15. Juni 2022 |
 | Aktualisierungen zu Report Builder für CJA | Enthält Funktionen wie Planung und Datenblock-Manager. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=de) | 18. Mai 2022 |
-| Anmerkungen in Analysis Workspace | Mit Anmerkungen in Analysis Workspace können Sie Ihrer Organisation kontextbezogene Informationen und Einblicke zu Daten effektiv übermitteln. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html) | Der schrittweise Rollout beginnt am 23. März 2022 |
+| Anmerkungen in Analysis Workspace | Mit Anmerkungen in Analysis Workspace können Sie Ihrer Organisation kontextbezogene Informationen und Einblicke zu Daten effektiv übermitteln. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html?lang=de) | Der schrittweise Rollout beginnt am 23. März 2022 |
 | Vorschaumodus für Mobile Scorecard-Projekte | Starten Sie direkt im Scorecard-Builder eine Vorschau Ihrer Mobile Scorecard, um zu sehen, wie sie in der Mobile App von Analytics-Dashboards aussehen wird. Im Vorschaumodus können Benutzer auf die gleiche Weise mit Filtern und Diagrammen interagieren wie in der Mobile App, sodass sie eine Vorschau des Erlebnisses erhalten, bevor sie die Scorecard speichern und freigeben. Benutzer können im Vorschaumodus auch die Geräteauswahl verwenden, um zu sehen, wie ihre Scorecard auf verschiedenen Geräten aussieht. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=de#preview) | 16. Februar 2022 |
 
 
@@ -42,12 +42,12 @@ Informationen zu neuen Funktionen, Fehlerbehebungen und wichtigen Informationen 
 
 | Funktion | Beschreibung | Zieldatum |
 | ----------- | ---------- | ------- |
-| Status-Tracking für mehrere Player | Verwenden Sie die Mediensammlungs-API, um das Tracking mehrerer Player-Status zu implementieren. [Weitere Informationen](https://experienceleague.adobe.com/docs/media-analytics/using/player-state-tracking/multiple-player-states.html) | September 2022 |
+| Statusverfolgung für mehrere Player | Verwenden Sie die Mediensammlungs-API, um die Statusverfolgung für mehrere Player zu implementieren. [Weitere Informationen](https://experienceleague.adobe.com/docs/media-analytics/using/player-state-tracking/multiple-player-states.html?lang=de) | September 2022 |
 | Umbenannte XDM-Felder | Umbenannte XDM-Feldnamen für Konsistenz:<br>* Audio- und Videoparameter<br>* Anzeigenparameter<br>* Kapitelparameter<br>* Player-Statusparameter<br>* Qualitätsparameter | September 2022 |
-| Referenz zur Device Co-op | Der Verweis auf die Adobe Experience Cloud-Gerätekooperation und die Anforderung des Experience Cloud-ID-Diensts wurde entfernt. | August 2022 |
-| Aktualisierte Feldnamen und XDM-Pfade für die Erfassung und Berichterstellung | Folgendes wurde aktualisiert:<br>* Audio- und Videoparameter<br>* Anzeigenparameter<br>* Kapitelparameter<br>* Player-Statusparameter<br>* Qualitätsparameter | August 2022 |
+| Verweis auf Geräte-Kooperation | Der Verweis auf die Adobe Experience Cloud-Gerätekooperation und die Erfordernis des ID-Services von Experience Cloud wurde entfernt. | August 2022 |
+| Aktualisierte Feldnamen und XDM-Pfade für die Sammlung und Berichterstellung | Folgendes wurde aktualisiert:<br>* Audio- und Videoparameter<br>* Anzeigenparameter<br>* Kapitelparameter<br>* Player-Statusparameter<br>* Qualitätsparameter | August 2022 |
 | Zielgruppendurchschnitt pro Minute | Media Analytics-Kunden können das Bedienfeld „Zielgruppendurchschnitt pro Minute“ verwenden, um die durchschnittliche Nutzung ihrer Inhalte besser zu verstehen. <br>Der Zielgruppendurchschnitt pro Minute ermöglicht Vergleiche von Inhalten beliebiger Längen oder Genres. Darüber hinaus können Kunden diesen digitalen Zielgruppendurchschnitt pro Minute mit linearen Metriken zum TV-Durchschnitt pro Minute vergleichen oder ihn hinzufügen. Dieses Bedienfeld bietet mehr Flexibilität bei der Messung des Zielgruppendurchschnitts für benutzerdefinierte Zeiträume sowie für Fälle, bei denen die Klassifizierung der Dauer aktualisiert wurde.  [Weitere Informationen](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=de) | 16. März 2022 |
-| Bedienfeld „Mit Medienwiedergabe verbrachte Zeit“ | Erfahren Sie, wie das Bedienfeld „Mit Medienwiedergabe verbrachte Zeit“ es Medienbenutzern ermöglicht, ihre Zuschauerzahlen anhand der während eines Tages in einer gewählten Granularität angesehenen Zeit zu verstehen. <br>[Bedienfeld &quot;Besuchszeit für Medienwiedergabe&quot;(Tutorial)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel.html?lang=de) | Januar 2022 |
+| Bedienfeld „Mit Medienwiedergabe verbrachte Zeit“ | Erfahren Sie, wie das Bedienfeld „Mit Medienwiedergabe verbrachte Zeit“ es Medienbenutzern ermöglicht, ihre Zuschauerzahlen anhand der während eines Tages mit Ansehen verbrachten Zeit in einer gewählten Granularität zu verstehen. <br>[Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“ (Tutorial)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel.html?lang=de) | Januar 2022 |
 
 
 ## *Frühere Versionshinweise*
@@ -55,7 +55,7 @@ Informationen zu neuen Funktionen, Fehlerbehebungen und wichtigen Informationen 
 | Funktion | Beschreibung | Targeting- oder Aktualisierungsdatum |
 | ----------- | ---------- | -------------- |
 | Bei Medienwiedergabe verbrachte Zeit | Die mit Adobe Streaming-Medienwiedergabe verbrachte Zeit bietet wertvolle Einblicke in die Interaktion mit Betrachtern und ermöglicht es Medienunternehmen, durch erweiterte Zeitanalysen mit Tageszeiteneinteilungs-Funktionen tiefere, minutengenaue Einblicke in die Benutzerinteraktion zu gewinnen. Sie können feststellen, wie viel Zeit zu einem bestimmten Zeitpunkt mit der Anzeige Ihrer Medien-Streams verbracht wurde. Sie können die Wiedergabedauer nach verschiedenen Granularitäten unterteilen, einschließlich der neuen Granularitäten von 5, 15 und 30 Minuten. [Weitere Informationen...](/help/media-reports/media-workspace-panels/media-playback-time-spent.md) | September 2021 |
-| Bedienfeld &quot;Gleichzeitige Medienbetrachter&quot;in Analytics Workspace | Erkennen Sie, wo hohe Auslastungen auftraten oder wo es zu Einbrüchen kam. Erhalten Sie wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern und erhalten Sie Hilfe bei der Fehlerbehebung oder der Planung in Bezug auf Volumen und Skalierung. [Weitere Infos...](/help/media-reports/media-workspace-panels/media-concurrent-viewers.md) <br><br>[Bedienfeld &quot;Gleichzeitige Medienbetrachter&quot;in Analytics Workspace (Tutorial)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=de#analysis-workspace) | September 2020 <br><br><br>Januar 2021 |
+| Bedienfeld „Gleichzeitige Medienbetrachter“ in Analytics Workspace | Erkennen Sie, wo hohe Auslastungen auftraten oder wo es zu Einbrüchen kam. Erhalten Sie wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern und erhalten Sie Hilfe bei der Fehlerbehebung oder der Planung in Bezug auf Volumen und Skalierung. [Weitere Informationen...](/help/media-reports/media-workspace-panels/media-concurrent-viewers.md) <br><br>[Bedienfeld „Gleichzeitige Medienbetrachter“ in Analytics Workspace (Tutorial)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=de#analysis-workspace) | September 2020 <br><br><br>Januar 2021 |
 | Unterstützte Geräte und Plattformen | Die Media Launch-Erweiterung mit dem AEP-SDK unterstützt jetzt die folgenden OTT-Geräte: <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (Fire OS)</li><li>Android TV</li></ul></div> | Juni 2020 |
 
 
