@@ -3,12 +3,12 @@ product: adobe analytics
 audience: end-user
 user-guide-title: Adobe Analytics für Streaming Media
 breadcrumb-title: Media Analytics-Anleitung
-user-guide-description: Implementieren von Adobe Analytics für Streaming-Medien. Erfahren Sie mehr über das Media SDK und die Mediensammlungs-API.
+user-guide-description: Implementieren von Adobe Analytics für Streaming-Medien. Erfahren Sie mehr über das Media SDK und die Media Collection-API.
 sub-product: media analytics
 source-git-commit: 212fad8592c9f935869e55d034b17519c8b9de36
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '838'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 + [Messen von Streaming-Medien in Adobe Analytics](media-overview.md)
 + [Unterstützte Geräte und Plattformen](measurement-options/supported-devices.md)
 + Einführung in Analytics für Streaming-Medien {#intro-to-ava}
-   + [Voraussetzungen](intro-to-ava/prereqs.md)
+   + [Voraussetzungen ](intro-to-ava/prereqs.md)
    + Implementierungspfade {#implementation-paths}
       + [Überblick](intro-to-ava/implementation-paths/implementation-paths.md)
       + [Client-seitig](intro-to-ava/implementation-paths/client-side-path.md)
@@ -31,7 +31,7 @@ ht-degree: 98%
             + [Implementierungshandbuch für benutzerdefinierte Links](measurement-options/cl-in-aa/cl-impl-guide.md)
          + Primetime {#primetime}
             + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
-         + [Audience Manager-Aktivierung](intro-to-ava/am-enablement.md)
+         + [Audience Manager-Aktivierung ](intro-to-ava/am-enablement.md)
 + Media Analytics-SDK {#sdk-implement}
    + [Häufig gestellte Fragen zum Ende der Unterstützung für das Media Analytics-SDK](sdk-implement/end-of-support-faqs.md)
    + [SDKs herunterladen](sdk-implement/download-sdks.md)
@@ -200,8 +200,8 @@ ht-degree: 98%
    + [Kapitelparameter](metrics-and-metadata/chapter-parameters.md)
    + [Player-Statusparameter](metrics-and-metadata/player-state-parameters.md)
    + [Qualitätsparameter](metrics-and-metadata/quality-parameters.md)
-   + [Segmente](metrics-and-metadata/segments.md)
-   + [Berechnete Metriken](metrics-and-metadata/calculated-metrics.md)
+   + [Segmente ](metrics-and-metadata/segments.md)
+   + [Berechnete Metriken ](metrics-and-metadata/calculated-metrics.md)
 + Berichterstattung und Analyse {#media-reports}
    + [Aktivierung von Medienberichten](media-reports/media-reports-enable.md)
    + Standard-Medienberichte {#media-default-reports}
@@ -222,7 +222,7 @@ ht-degree: 98%
    + [Überblick](sdk-implement/player-state-tracking/player-state-overview.md)
    + [Standardmäßige und benutzerdefinierte Status](sdk-implement/player-state-tracking/standard-and-custom-states.md)
    + [Implementierung und Reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
-   + [Verfolgung mehrerer Player-Status](sdk-implement/player-state-tracking/multiple-player-states.md)
+   + [Statusverfolgung für mehrere Player](sdk-implement/player-state-tracking/multiple-player-states.md)
    + [Beispiele für Player-Status-Tracking](sdk-implement/player-state-tracking/player-state-examples.md)
 + [Federated Analytics](federated-analytics.md)
 + Zusätzliche Ressourcen {#additional-resources}
