@@ -4,7 +4,7 @@ description: Anwendungsbeispiele zu Streaming-Medien
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 5ea67e55448ccdcfc098c6bead78ba23d0fe8e96
+source-git-commit: c569ea265f6e467b19d58a870ac7b24b8bf355b1
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 48%
@@ -14,7 +14,7 @@ ht-degree: 48%
 # Anwendungsfälle für Streaming-Medien {#media-sdk-use-cases}
 
 * [Player-Status-Tracking](/help/use-cases/player-state-tracking/player-state-overview.md)
-* [Verfolgen von heruntergeladenen Inhalten im Offline-Modus](using/media-use-cases/track-downloaded-content.html)
+* [Verfolgen von heruntergeladenen Inhalten im Offline-Modus](/help/use-cases/track-downloaded-content.md)
 * [Behandlung von Anwendungsunterbrechungen während der Wiedergabe](/help/use-cases/cookbook/app-interrupts.md)
 * [Beheben von Lücken zwischen Anzeigen](/help/use-cases/cookbook/fix-ad-play-ad.md)
 * [Wiederaufnehmen von inaktiven Sitzungen](/help/use-cases/cookbook/resuming-inactive.md)
