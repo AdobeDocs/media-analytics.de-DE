@@ -3,8 +3,8 @@ title: Versionshinweise zu Adobe Analytics für Streaming-Medien
 description: Lesen Sie die Versionshinweise zu Adobe Analytics.
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 5a7d1725333f9f47fb13469a0877402f4fff506f
-workflow-type: ht
+source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 100%
 
@@ -54,8 +54,8 @@ Informationen zu neuen Funktionen, Fehlerbehebungen und wichtige Informationen f
 
 | Funktion | Beschreibung | Targeting- oder Aktualisierungsdatum |
 | ----------- | ---------- | -------------- |
-| Bei Medienwiedergabe verbrachte Zeit | Die mit Adobe Streaming-Medienwiedergabe verbrachte Zeit bietet wertvolle Einblicke in die Interaktion mit Betrachtern und ermöglicht es Medienunternehmen, durch erweiterte Zeitanalysen mit Tageszeiteneinteilungs-Funktionen tiefere, minutengenaue Einblicke in die Benutzerinteraktion zu gewinnen. Sie können feststellen, wie viel Zeit zu einem bestimmten Zeitpunkt mit der Anzeige Ihrer Medien-Streams verbracht wurde. Sie können die Wiedergabedauer nach verschiedenen Granularitäten unterteilen, einschließlich der neuen Granularitäten von 5, 15 und 30 Minuten. [Weitere Informationen...](/help/media-reports/media-workspace-panels/media-playback-time-spent.md) | September 2021 |
-| Bedienfeld „Gleichzeitige Medienbetrachter“ in Analytics Workspace | Erkennen Sie, wo hohe Auslastungen auftraten oder wo es zu Einbrüchen kam. Erhalten Sie wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern und erhalten Sie Hilfe bei der Fehlerbehebung oder der Planung in Bezug auf Volumen und Skalierung. [Weitere Informationen...](/help/media-reports/media-workspace-panels/media-concurrent-viewers.md) <br><br>[Bedienfeld „Gleichzeitige Medienbetrachter“ in Analytics Workspace (Tutorial)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=de#analysis-workspace) | September 2020 <br><br><br>Januar 2021 |
+| Bei Medienwiedergabe verbrachte Zeit | Die mit Adobe Streaming-Medienwiedergabe verbrachte Zeit bietet wertvolle Einblicke in die Interaktion mit Betrachtern und ermöglicht es Medienunternehmen, durch erweiterte Zeitanalysen mit Tageszeiteneinteilungs-Funktionen tiefere, minutengenaue Einblicke in die Benutzerinteraktion zu gewinnen. Sie können feststellen, wie viel Zeit zu einem bestimmten Zeitpunkt mit der Anzeige Ihrer Medien-Streams verbracht wurde. Sie können die Wiedergabedauer nach verschiedenen Granularitäten unterteilen, einschließlich der neuen Granularitäten von 5, 15 und 30 Minuten. [Weitere Informationen...](/help/reporting/workspace/media-playback-time-spent.md) | September 2021 |
+| Bedienfeld „Gleichzeitige Medienbetrachter“ in Analytics Workspace | Erkennen Sie, wo hohe Auslastungen auftraten oder wo es zu Einbrüchen kam. Erhalten Sie wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern und erhalten Sie Hilfe bei der Fehlerbehebung oder der Planung in Bezug auf Volumen und Skalierung. [Weitere Informationen...](/help/reporting/workspace/media-concurrent-viewers-overview.md) <br><br>[Bedienfeld „Gleichzeitige Medienbetrachter“ in Analytics Workspace (Tutorial)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=de#analysis-workspace) | September 2020 <br><br><br>Januar 2021 |
 | Unterstützte Geräte und Plattformen | Die Media Launch-Erweiterung mit dem AEP-SDK unterstützt jetzt die folgenden OTT-Geräte: <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (Fire OS)</li><li>Android TV</li></ul></div> | Juni 2020 |
 
 
