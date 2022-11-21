@@ -4,13 +4,13 @@ description: Erste Schritte mit Adobe Analytics für Streaming-Medien.
 uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: 660aa29a-2a3d-4a4f-acd6-471551d1047b
+source-git-commit: 8b939da2374acb5d573a553c848ba880345e64b5
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '439'
 ht-degree: 6%
 
 ---
-
 
 # Erste Schritte {#getting-started}
 
@@ -47,10 +47,6 @@ Die **Mediensammlungs-APIs** können Sie Ihre Medienanalyseimplementierung anpa
 Informationen zur Verwendung der Mediensammlungs-APIs finden Sie unter [Dokumentation zur Steaming Media-API](/help/implementation/media-collection-api/mc-api-overview.md).
 
 ## Adobe-Erweiterungen {#adobe-extensions}
-
->[!NOTE]
->
->ERWEITERUNGEN MÜSSEN INTRO VERWENDET WERDEN
 
 * Die [**Adobe Medien Analytics für Audio und Video - Erweiterung**](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=en) (Media Analytics-Erweiterung) ist für iOS- und tvOS-Implementierungen erforderlich. Es bietet die Funktionalität zum Hinzufügen der Tracker-Instanz zu einer Tag-Site oder einem Projekt. Für die MA-Erweiterung sind auch die Analytics-Erweiterung und die Experience Cloud-ID-Erweiterung erforderlich.
 
