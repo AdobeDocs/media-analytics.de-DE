@@ -6,9 +6,9 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '950'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -71,4 +71,4 @@ Fortgeschrittene Kunden können die Medien-Bedienfelder in Analysis Workspace nu
 
 >[!IMPORTANT]
 >
->Ändern Sie nicht die Classification-Namen für Variablen, die in den Metrik- und Metadatentabellen aufgeführt sind (z. B. [Audio- und Videoparameter](/help/implementation/variables/audio-video-parameters.md) die dort unter Berichterstellung/Reservierte Variable als &quot;Klassifizierung&quot;beschrieben sind. Die Medienklassifizierungen werden definiert, wenn eine Report Suite für das Medien-Tracking aktiviert ist. Adobe fügt von Zeit zu Zeit neue Eigenschaften hinzu. In diesem Fall müssen Kunden ihre Report Suites erneut aktivieren, um Zugriff auf die neuen Medieneigenschaften zu erhalten. Während des Aktualisierungsvorgangs ermittelt Adobe anhand der Namen der Variablen, ob die Klassifizierungen aktiviert sind. Wenn eine fehlt, fügt Adobe die fehlenden erneut hinzu.
+>Ändern Sie nicht die Klassifizierungsnamen für Variablen, die in den Metriken und Metadatentabellen aufgeführt sind (z. B. [Audio- und Videoparameter](/help/implementation/variables/audio-video-parameters.md)) und dort unter „Berichterstellung/Reservierte Variable“ als „Klassifizierung“ beschrieben sind. Die Medienklassifizierungen werden definiert, wenn eine Report Suite für das Medien-Tracking aktiviert ist. Adobe fügt von Zeit zu Zeit neue Eigenschaften hinzu. In diesem Fall müssen Kunden ihre Report Suites erneut aktivieren, um Zugriff auf die neuen Medieneigenschaften zu erhalten. Während des Aktualisierungsvorgangs ermittelt Adobe anhand der Namen der Variablen, ob die Klassifizierungen aktiviert sind. Wenn eine fehlt, fügt Adobe die fehlenden erneut hinzu.
