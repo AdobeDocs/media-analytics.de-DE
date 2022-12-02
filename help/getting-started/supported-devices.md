@@ -5,9 +5,9 @@ exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '259'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -19,13 +19,13 @@ Adobe Analytics für Streaming-Medien unterstützt alle wichtigen Geräte, darun
 * OTT-Geräte für Roku, Fire TV und Android TV
 * JavaScript-Browser für Desktop und Laptop
 
-Die Medien-SDKs werden routinemäßig aktualisiert, wenn neue Versionen von Geräten veröffentlicht werden. Sie können die SDKs verwenden, um die Integration mit nativen Playern jeder einzelnen Plattform oder eines anderen verfügbaren Medienplayers zu ermöglichen.
+Die Medien-SDKs werden routinemäßig aktualisiert, wenn neue Versionen von Geräten veröffentlicht werden. Sie können die SDKs verwenden, um die Integration mit nativen Playern jeder einzelnen Plattform oder eines anderen verfügbaren Medien-Players zu ermöglichen.
 
-Für Geräte, die derzeit keine SDK-Unterstützung haben, oder in Situationen, in denen Sie Ihre Implementierung anpassen müssen, können Sie die Mediensammlungs-API verwenden. Mit der Mediensammlungs-API können Sie RESTful-API-Aufrufe direkt von einem Gerät zum Media Analytics-Backend durchführen.
+Für Geräte, die derzeit keine SDK-Unterstützung haben, oder in Situationen, in denen Sie Ihre Implementierung anpassen müssen, können Sie die Mediensammlungs-API verwenden. Mit der Mediensammlungs-API können Sie RESTful-API-Aufrufe direkt von einem Gerät oder einer Plattform zum Media Analytics-Backend durchführen.
 
 Die folgende Tabelle zeigt die derzeit unterstützten Geräte. Wenn ein Gerät nicht aufgeführt ist, wenden Sie sich an die Kundenunterstützung oder einen Berater, um den Status des Geräts zu erfahren.
 
-| Streaming-Plattformen und -Geräte |  | Datenerfassung mit/<br></br> Adobe Experience Platform<br></br> Mobile SDK | Medien-SDK | Mediensammlungs-API |
+| Streaming-Plattformen und -Geräte |  | Datenerfassung mit dem<br></br> Adobe Experience Platform<br></br> Mobile SDK | Medien-SDK | Mediensammlungs-API |
 |:---|:---|:---:|:---:|:---:|
 | Web/Mobile Web |  |  |  |  |
 |  | JavaScript-Browser | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) |
