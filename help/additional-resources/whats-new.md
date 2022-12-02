@@ -2,14 +2,14 @@
 title: Neue Funktionen in Media Analytics
 description: Dieser Artikel enthält Informationen zu neuen Funktionen und Benachrichtigungen.
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '607'
 ht-degree: 100%
 
 ---
 
 
-# Neue Funktionen in Media Analytics{#whats-new}
+# Neue Funktionen in Media Analytics {#whats-new}
 
 ![Banner](assets/media_analytics_banner.png)
 
@@ -27,14 +27,14 @@ In den Adobe Experience Cloud-Versionshinweisen werden neue Funktionen, Fehlerbe
 
 | Funktion | [Allgemeine Verfügbarkeit](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html?lang=de) – geplantes Datum | Beschreibung |
 | ----------- | ---------- | ---------- |
-| [Bedienfeld „Gleichzeitige Medienbetrachter“](media-reports/media-workspace-panels/media-concurrent-viewers.md) | 17. Sept. 2020 | Mit dem Bedienfeld „Gleichzeitige Medienbetrachter“ in Workspace können Sie erkennen, wo es zu Spitzen bei gleichzeitigen Betrachtern oder zu Abbrüchen kam. Es bietet wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern und hilft bei der Fehlerbehebung oder der Planung in Bezug auf Volumen/Skalierung. |
+| [Bedienfeld „Gleichzeitige Medienbetrachter“](media-reports/media-workspace-panels/media-concurrent-viewers.md) | 17. September 2020 | Mit dem Bedienfeld „Gleichzeitige Medienbetrachter“ in Workspace können Sie erkennen, wo es zu Spitzen bei gleichzeitigen Betrachtern oder zu Abbrüchen kam. Es bietet wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern und hilft bei der Fehlerbehebung oder der Planung in Bezug auf Volumen/Skalierung. |
 | [Unterstützte Geräte und Plattformen](../getting-started/supported-devices.md) | 18. Juni 2020 | Die [!UICONTROL Media Launch-Erweiterung] mit dem Mobile SDK für Adobe Experience Platform unterstützt jetzt die folgenden OTT-Geräte:<ul><li>Apple TV (tvOS)</li><li>Fire TV (Fire OS)</li><li>Android TV</li></ul> |
 | [Player-Status-Tracking](https://experienceleague.adobe.com/docs/media-analytics/using/player-state-tracking/player-state-overview.html?lang=de) | 29. Mai 2020 | [!UICONTROL Media Analytics]-Kunden können die Interaktion mit dem Besucher während der Wiedergabe mit einem Standardsatz von Lösungsvariablen für Vollbild, verdeckte Untertitel, Stummschaltung, Bild-in-Bild und im Fokus erfassen. Sie haben auch die Möglichkeit, benutzerdefinierte Player-Status zu erstellen. [!UICONTROL Player-Status-Tracking]-Variablen sind jetzt für Berichte in [!UICONTROL Analysis Workspace verfügbar]. Diese Funktion erfordert eine der folgenden Voraussetzungen: <ul><li>Media [!DNL JavaScript] SDK 3.0 oder höher</li><li>Zur Verwendung mit dem [!DNL Adobe Experience Platform] (AEP)-SDK:</li><li>[!UICONTROL Media Analytics-Erweiterung] (für Web): [!UICONTROL Adobe Media Analytics] (3.x SDK) für Audio und Video v1.0 oder höher</li><li>[!UICONTROL Media Analytics-Erweiterung] (für Smartphone und Tablet): [!UICONTROL Adobe Media Analytics für Audio] und Video v2.0 oder höher</li><li>[!UICONTROL Mediensammlung]</li></ul> |
 
 
 ## Wichtige Benachrichtigungen
 
-| Funktion | [Allgemeine Verfügbarkeit](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html) – geplantes Datum | Beschreibung |
+| Funktion | [Allgemeine Verfügbarkeit](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html?lang=de) – geplantes Datum | Beschreibung |
 | ----------- | ---------- | ---------- |
 | [Unterstützte Geräte und Plattformen](../getting-started/supported-devices.md) | 31. August 2021 | Ab dem 31. August 2021, dem Ende der Unterstützung für Mobile-SDKs der Version 4, stellt Adobe auch die Unterstützung für das Media Analytics-SDK für iOS und Android ein. Weitere Informationen finden Sie unter den häufig gestellten Fragen zum Ende der Unterstützung für das Media Analytics-SDK. |
 | [Häufig gestellte Fragen zum Ende der Unterstützung für das Media Analytics-SDK](sdk-implement/end-of-support-faqs.md) | Herbst 2019 | Die Entwicklung von Funktionen wurde für die Media Analytics-SDKs für iOS und Android beendet.  Neue Funktionen, die Anfang Herbst 2019 eingeführt wurden, werden mit den Media Analytics-Erweiterungen und der Mediensammlungs-API aktiviert. |
