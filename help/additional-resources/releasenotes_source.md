@@ -35,7 +35,7 @@ Neue Analytics-Tutorials und -Kurse
 
 | Veröffentlicht | Name | Typ | Beschreibung |
 | ----------- | ---------- | ---------- | --------- |
-| Januar  | <a href="/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel.html?lang=en">Bedienfeld „Mit Medienwiedergabe verbrachte Zeit“</a> | Video | Erfahren Sie, wie das Bedienfeld „Mit Medienwiedergabe verbrachte Zeit“ es Medienbenutzern ermöglicht, ihre Zuschauerzahlen anhand der während eines Tages in einer gewählten Granularität angesehenen Zeit zu verstehen. |
+| Januar  | <a href="/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel.html?lang=en">Bedienfeld „Mit Medienwiedergabe verbrachte Zeit“</a> | Video | Erfahren Sie, wie das Bedienfeld „Mit Medienwiedergabe verbrachte Zeit“ es Medienbenutzern ermöglicht, ihre Zuschauerzahlen anhand der während eines Tages mit Ansehen verbrachten Zeit in einer gewählten Granularität zu verstehen. |
 
 
 
