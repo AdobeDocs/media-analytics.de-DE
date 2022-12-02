@@ -5,13 +5,13 @@ exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '183'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Übersicht über gleichzeitige Medienbetrachter {#media-concurrent-viewers}
+# Gleichzeitige Medienbetrachter – Übersicht {#media-concurrent-viewers}
 
 Die Analyse gleichzeitiger Betrachter ermöglicht Ihnen zu verstehen, wo Spitzenzeiten von gleichzeitigen Ansichten auftraten oder wo es zu Abbrüchen kam. So erhalten Sie wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern, die bei der Fehlerbehebung oder Planung von Volumen und Größe helfen.
 
