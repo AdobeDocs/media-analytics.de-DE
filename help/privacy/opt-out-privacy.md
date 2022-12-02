@@ -1,18 +1,18 @@
 ---
-title: Opt-out und Datenschutz - Erklärung
-description: Erfahren Sie, wie Sie Opt-in, Opt-out und Datenschutz handhaben.
+title: Erklärung zu Opt-out und Datenschutz
+description: Erfahren Sie, wie Sie Opt-in, Opt-out und Datenschutz handhaben können.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '358'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Opt-out und Datenschutz{#opt-out-and-privacy}
+# Opt-out und Datenschutz {#opt-out-and-privacy}
 
 ## Opt-out/Opt-in {#opt-out-opt-in}
 
