@@ -6,9 +6,9 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '915'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Jede Report Suite, die Medienmetriken erfasst, muss konfiguriert werden, bevor M
 >
 >Um neue Funktionen nutzen zu können, sollten Bestandskunden von Media Analytics das Medien-Tracking für ihre RSIDs erneut aktivieren.
 
-1. In [Adobe Analytics](https://experience.adobe.com) click **[!UICONTROL Admin > Report Suites].**
+1. Klicken Sie in [Adobe Analytics](https://experience.adobe.com) auf **[!UICONTROL Admin > Report Suites].**
 1. Wählen Sie die Report Suites aus, in denen Sie Mediendaten erfassen, und klicken Sie anschließend auf **[!UICONTROL Einstellungen bearbeiten > Medienmanagement > Medienberichte].**
 
    ![](assets/media-reporting.png){width="400px"}
@@ -35,7 +35,7 @@ Jede Report Suite, die Medienmetriken erfasst, muss konfiguriert werden, bevor M
 
    * **Medienanzeigen**
 
-      Die Medienanzeigenmessung wird für die Messung von Anzeigen im Medieninhalt verwendet. Dabei werden Lösungs-eVars verwendet, um Anzeige, Name des Anzeigenplayers, Anzeigen-Pod und Anzeigenposition innerhalb der Werbeunterbrechung zu messen. Lösungsereignisse werden für Anzeigenstarts, Anzeigenbeendigungen, Besuchszeit für Anzeigen und Besuchszeit für Videos verwendet.
+      Die Medienanzeigenmessung wird für die Messung von Anzeigen im Medieninhalt verwendet. Dabei werden Lösungs-eVars verwendet, um Anzeige, Name des Anzeigen-Players, Anzeigen-Pod und Anzeigenposition innerhalb der Werbeunterbrechung zu messen. Lösungsereignisse werden für Anzeigenstarts, Anzeigenbeendigungen, Besuchszeit für Anzeigen und Besuchszeit für Videos verwendet.
 
    * **Medienkapitel**
 
