@@ -1,18 +1,18 @@
 ---
-title: Opt-out und Datenschutz - Erklärung
-description: Erfahren Sie, wie Sie Opt-in, Opt-out und Datenschutz handhaben.
+title: Erklärung zu Opt-out und Datenschutz
+description: Erfahren Sie, wie Sie Opt-in, Opt-out und Datenschutz handhaben können.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# Opt-out und Datenschutz{#opt-out-and-privacy}
+# Opt-out und Datenschutz {#opt-out-and-privacy}
 
 ## Opt-out/Opt-in {#opt-out-opt-in}
 
@@ -36,15 +36,15 @@ Sie können steuern, ob die Tracking-Aktivität auf einem bestimmten Gerät zul�
 
          * **Chromecast:**
 
-                &quot;
+                ```
                 ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
-                &quot;
+                ```
             
          * **Roku:**
 
-                &quot;
+                ```
                 ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
-                &quot;
+                ```
             
             >[!IMPORTANT]
             >
@@ -53,29 +53,29 @@ Sie können steuern, ob die Tracking-Aktivität auf einem bestimmten Gerät zul�
 
          * **Chromecast:**
 
-                &quot;
+                ```
                 ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
-                &quot;
+                ```
             
          * **Roku:**
 
-                &quot;
+                ```
                 ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
-                &quot;
+                ```
             * **Die aktuelle Einstellung zurückgeben:**
 
          * **Chromecast:**
 
-                &quot;
+                ```
                 ADBMobile.config.getPrivacyStatus()
-                &quot;
+                ```
             
          * **Roku:**
 
-                &quot;
+                ```
                 ADBMobile().getPrivacyStatus()
-                &quot;
-            Nachdem die Datenschutzeinstellung mit `setPrivacyStatus` geändert wurde, ist die Änderung dauerhaft, bis sie mit dieser Methode erneut geändert wird, es sei denn, die App wird deinstalliert und neu installiert.
+                ```
+            Nachdem die Datenschutzeinstellung mithilfe von `setPrivacyStatus` geändert wurde, ist die Änderung dauerhaft, bis sie mit dieser Methode erneut geändert wird, es sei denn, die App wird deinstalliert und neu installiert.
 
 ## Abrufen von gespeicherten Kennungen (OTT-Apps) {#retrieving-stored-identifiers-ott-apps}
 
