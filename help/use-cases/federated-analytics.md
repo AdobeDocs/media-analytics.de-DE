@@ -1,18 +1,18 @@
 ---
 title: Federated Analytics
-description: Der Federated Analytics-Dienst bietet ein System zur Freigabe von Adobe Analytics für Streaming-Mediendaten zwischen zwei Partnern.
+description: Der Federated Analytics-Service stellt ein System zur Weitergabe von Daten von Adobe Analytics für Streaming-Medien zwischen zwei Partnern bereit.
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '552'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Federated Analytics{#federated-analytics}
+# Federated Analytics {#federated-analytics}
 
 Der Federated Analytics-Dienst stellt ein System zur Freigabe von Adobe Media Analytics-Daten (Audio und Video) zwischen zwei Partnern bereit.
 Die von Media Analytics erstellten standardisierten Messdaten sind das Markenzeichen für Federated Analytics, so dass dieselben Daten aus mehreren Quellen in einen einzigen Bericht fließen können.
@@ -41,13 +41,13 @@ Federated Analytics sorgt für eine optimierte Audio- und Videomessung mit geste
 * **Medien-Stream-Vertrag:** Empfänger und Sender müssen über einen Adobe Analytics-Vertrag für Medien-Streams verfügen, bevor sie auf Audio- und Videodaten in Adobe Analytics zugreifen können. Weitere Informationen erhalten Sie von Ihrem Konto-Team.
 * **Federated-Vertragszusatz:** Jeder Sender und Empfänger muss über einen unterzeichneten Vertragszusatz mit Adobe verfügen, bevor Daten gesendet oder empfangen werden können. Ein Vertragszusatz pro Kunde ist erforderlich, nicht ein Vertragszusatz pro Partnerschaft. Weitere Informationen erhalten Sie von Ihrem Konto-Team.
 
-* **Implementierung von Media Analytics:** Der Sender muss Media Analytics auf allen Playern implementieren, die Teil des zusammengeführten Datensatzes sein werden. Es können nur Media Analytics-Daten zusammengeführt werden. Siehe Dokumentation: [Messen von Streaming-Medien in Adobe Analytics](/help/media-overview.md)
+* **Implementierung von Media Analytics:** Der Sender muss Media Analytics auf allen Playern implementieren, die Teil des zusammengeführten Datensatzes sein werden. Es können nur Media Analytics-Daten zusammengeführt werden. Siehe die Dokumentation [Messen von Streaming-Medien in Adobe Analytics](/help/media-overview.md)
 
 * **Adobe-Consulting-Vertrag:** Für die Ersteinrichtung der Föderierungsregeln zwischen Empfänger und Sender stehen Ihnen hilfreiche Beratungsservices zur Datenüberprüfung und zur Erstellung der Datenweitergabe-Vereinbarung zur Verfügung.
 
 ## Herunterladen des Federated Analytics-Formulars
 
-Um an Federated Analytics teilzunehmen, laden Sie die [Vereinbarung über die Föderationsregeln](assets/federated_analytics_form.pdf) Formular.
+Um an Federated Analytics teilzunehmen, laden Sie das Formular [Vereinbarung über die Föderationsregeln](assets/federated_analytics_form.pdf) herunter und füllen Sie es aus.
 
 ## Prozess {#process}
 
