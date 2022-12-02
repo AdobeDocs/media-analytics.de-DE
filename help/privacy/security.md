@@ -1,25 +1,24 @@
 ---
-title: Über Streaming Media Analytics und Sicherheit
-description: Informationen zur Analyse und Sicherheit von Streaming Media
+title: Über Analytics für Streaming-Medien und Sicherheit
+description: Informationen zu Analytics für Streaming-Medien und Sicherheit
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+exl-id: a301612f-5019-40c3-af40-d608cd320e16
+source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
+workflow-type: ht
 source-wordcount: '223'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
-
-
 # Sicherheit {#security}
 
-Bei der Adobe nehmen wir die Sicherheit und den Datenschutz Ihrer digitalen Assets ernst. Von der konsequenten Integration von Sicherheit in unseren internen Softwareentwicklungsprozess über unsere Tools bis hin zu unseren funktionsübergreifenden Incident Response Teams streben wir danach, proaktiv und agil zu sein. Darüber hinaus hilft uns unsere Zusammenarbeit mit Partnern, Forschern und anderen Branchenverbänden dabei, die neuesten Bedrohungen und Best Practices für die Sicherheit zu verstehen. Unser proaktiver Ansatz ermöglicht es uns, die Sicherheit unserer Produkte und Dienstleistungen kontinuierlich zu erhöhen.
+Wir von Adobe nehmen die Sicherheit und den Datenschutz Ihrer digitalen Assets sehr ernst. Von der konsequenten Integration von Sicherheit in unserem internen Software-Entwicklungsprozess über unsere Tools bis hin zu unseren funktionsübergreifenden Vorfallsreaktions-Teams streben wir danach, proaktiv und agil zu sein. Darüber hinaus hilft uns unsere Zusammenarbeit mit Partnern, Forschern und anderen Branchenorganisationen dabei, die neuesten Bedrohungen und Best Practices für die Sicherheit zu verstehen. Unser proaktiver Ansatz ermöglicht es uns, die Sicherheit der von uns angebotenen Produkte und Services kontinuierlich zu erhöhen.
 
 
 ## Transport Layer Security {#transport-layer-security}
 
-**Mitteilung über die Sicherheit von Transportschichten —** Adobe verfügt über Sicherheitsstandards, die das Ende der Lebensdauer älterer Sicherheitsprotokolle erfordern. Um die sich weiterentwickelnden Standards für Sicherheitsprotokolle weiterhin zu erfüllen, ist die Adobe auf dem Weg zur Verwendung von Transport Layer Security (TLS) 1.2, um über die aktuellste und sicherste Version zu verfügen. Ab dem 20. Februar 2019 unterstützt Adobe nur TLS 1.1 oder höher. Mit dieser Änderung erfasst Adobe keine Daten mehr von Endbenutzern mit älteren Geräten oder Webbrowsern, die TLS 1.0 bereitstellen. Die Migration auf TLS 1.2 bietet eine verbesserte Sicherheit. Für einen reibungslosen Übergang sollten Sie die Details zu diesem Thema genau durchlesen und die Änderungen entsprechend planen.
+**Hinweis zu Transport Layer Security**: Aufgrund der Sicherheitsstandards von Adobe müssen ältere Sicherheitsprotokolle durch neue ersetzt werden. Um die sich weiterentwickelnden Standards für Sicherheitsprotokolle auch weiterhin zu erfüllen, setzt Adobe auf die Verwendung von Transport Layer Security (TLS) 1.2, um die aktuelle und sicherste Version zu verwenden. Ab dem 20. Februar 2019 unterstützt Adobe nur TLS 1.1 oder höher. Mit dieser Änderung erfasst Adobe keine Daten mehr von Endbenutzern mit älteren Geräten oder Webbrowsern, die TLS 1.0 bereitstellen. Die Migration auf TLS 1.2 bietet eine verbesserte Sicherheit. Für einen reibungslosen Übergang sollten Sie die Details zu diesem Thema genau durchlesen und die Änderungen entsprechend planen.
 
 >[!NOTE]
 >
