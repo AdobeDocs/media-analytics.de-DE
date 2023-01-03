@@ -6,7 +6,7 @@ exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7004'
 ht-degree: 100%
 
@@ -272,7 +272,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK-Schlüssel:**<br/> AUTHORIZED </li> <li> **API-Schlüssel:**<br/> media.pass.auth </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Media Start, Media Close </li> <li> **Min. SDK-Version:** 1.5.7 </li> <li> **Beispielwert:**<br/> „TRUE“ </li> <li> **Beschreibung:**<br/> Der Benutzer wurde über die Adobe-Authentifizierung autorisiert.  <br/>**Wichtig:** Ist dieser Wert festgelegt, kann er nur „true“ lauten. Ist er nicht festgelegt, wird kein Wert zurückgegeben.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.pass.auth) </li> <li> **Heartbeats:**<br/> (s:meta:<br/>a.media.pass)<br/>auth) </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtsname:**<br/> Autorisiert </li> <li> **Kontextdaten:**<br/> (a.media.pass.auth) </li> <li> **Datenfeed:**<br/> videoauthorized </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.pass.auth) </li> <li> **XDM-Feldpfad:**<br/> media.mediaTimed.mediaAuth </li> <li> **XDM-Feldpfad für Sammlung:**<br/> mediaCollection.sessionDetails.<br/>authorized </li> <li> **XDM-Feldpfad für Berichterstellung:**<br/> mediaReporting.sessionDetails.<br/>autorisiert </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/> AUTHORIZED </li> <li> **API-Schlüssel:**<br/> media.pass.auth </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Media Start, Media Close </li> <li> **Min. SDK-Version:** 1.5.7 </li> <li> **Beispielwert:**<br/> „TRUE“ </li> <li> **Beschreibung:**<br/> Der Benutzer wurde über die Adobe-Authentifizierung autorisiert.  <br/>**Wichtig:** Ist dieser Wert festgelegt, kann er nur „true“ lauten. Ist er nicht festgelegt, wird kein Wert zurückgegeben.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.pass.auth) </li> <li> **Heartbeats:**<br/> (s:meta:<br/>a.media.pass)<br/>auth) </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtsname:**<br/> Autorisiert </li> <li> **Kontextdaten:**<br/> (a.media.pass.auth) </li> <li> **Datenfeed:**<br/> videoauthorized </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.pass.auth) </li> <li> **XDM-Feldpfad:**<br/> media.mediaTimed.mediaAuth </li> <li> **XDM-Feldpfad für Sammlung:**<br/> mediaCollection.sessionDetails.<br/>authorized </li> <li> **XDM-Feldpfad für Berichterstellung:**<br/> mediaReporting.sessionDetails.<br/>authorized </li> </ul> |
 
 ### Tagesteil
 
