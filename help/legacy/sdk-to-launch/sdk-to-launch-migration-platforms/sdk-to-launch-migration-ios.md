@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie für iOS vom Media SDK zu Launch migrieren.
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -48,7 +48,7 @@ Die Media-Erweiterung verwendet zum Tracking die konfigurierten Parameter.
 
    ![](assets/launch_config_mobile.png)
 
-[Konfigurieren der Media Analytics-Erweiterung](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
+[Konfigurieren der Media Analytics-Erweiterung](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## Erstellen von Trackern
 
@@ -93,7 +93,7 @@ ADBMediaHeartbeat* tracker =
 
 ### Launch-Erweiterung
 
-[Media API-Referenz – Erstellen eines Media-Trackers](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+[Media API-Referenz – Erstellen eines Media-Trackers](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
 
 Bevor Sie den Tracker erstellen, registrieren Sie die Media-Erweiterung und die abhängigen Erweiterungen beim Mobile Core.
 
@@ -135,11 +135,11 @@ Durch die Implementierung werden die aktuellen QoE- und die Abspielleistendaten 
 
 Durch die Implementierung wird die aktuelle Player-Abspielleiste aktualisiert, indem die `updateCurrentPlayhead`-Methode aufgerufen wird, die vom Tracker verfügbar gemacht wird. Für ein exaktes Tracking sollten Sie diese Methode mindestens einmal pro Sekunde aufrufen.
 
-[Media API-Referenz – Aktuelle Abspielleiste aktualisieren](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
+[Media API-Referenz – Aktuelle Abspielleiste aktualisieren](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
 
 Durch die Implementierung wird die QoE-Informationen aktualisiert, indem die vom Tracker verfügbar gemachte `updateQoEObject`-Methode aufgerufen wird. Sie sollten diese Methode bei jeder Änderung der Qualitätsmetriken aufrufen.
 
-[Media API-Referenz – QoE-Objekt aktualisieren](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
+[Media API-Referenz – QoE-Objekt aktualisieren](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
 
 ## Weiterleiten von Standardmedien/Anzeigenmetadaten
 

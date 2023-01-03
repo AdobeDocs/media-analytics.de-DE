@@ -3,13 +3,13 @@ title: Implementieren der Adobe Streaming Media SDKs
 description: Erfahren Sie mehr über die Implementierung von Adobe Analytics für Streaming-Medien mit den Media SDKs.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: dc1b9fe0-6c75-4f93-a558-a3f3186bcf22
+source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
-
 
 # Medien-SDK - Überblick {#implementation-overview}
 
@@ -17,14 +17,14 @@ Implementieren Sie die Streaming-Medien-SDKs in Ihr Video-Player-Framework und I
 
 ## Unterstützte Streaming-Medienplattformen
 
-### Webimplementierung
+### Web-Implementierung
 
 | Plattform | Version  |
 |:----:|:----|
 | <img src="assets/javascript-icon.png"> | [Medien-SDK v3.x für JavaScript](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
 | <img src="assets/javascript-icon.png"> | [Adobe Medien Analytics-Erweiterung mit Tags (Datenerfassung) für JavaScript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
 
-### Mobile Implementierung
+### Mobile-Implementierung
 
 | Plattform | Version  |
 |:----:|:----|
@@ -33,7 +33,7 @@ Implementieren Sie die Streaming-Medien-SDKs in Ihr Video-Player-Framework und I
 
 * Die iOS Media Analytics für Audio und Video-Erweiterung unterstützt iOS, iPadOS und tvOS.
 
-### Umfassende Implementierung
+### Over-The-Top-Implementierung
 
 | Plattform | Version  |
 |:------:|:-----|

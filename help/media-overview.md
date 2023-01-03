@@ -5,10 +5,10 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '529'
-ht-degree: 100%
+source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+workflow-type: tm+mt
+source-wordcount: '531'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Sie können wichtige Bereitstellungsmetriken in Bezug auf die Nutzungsqualität 
 
 ## Funktionsweise
 
-Tracking-Daten zu Streaming-Medien werden von einem Player mit den Medien-SDKs, den Mediensammlungs-APIs oder den Medienerweiterungen (mit Tags) erfasst. Alle granularen Daten (bis zu 10 Sekunden) werden an den Media Analytics Service gesendet, der die Daten für jede einzelne Wiedergabesitzung erfasst und verarbeitet. Sobald eine Wiedergabesitzung beendet ist, werden die berechneten Tracking-Daten zur Speicherung und Berichterstellung an Adobe Analytics gesendet. Bei Implementierungen von Adobe Customer Journey Analytics (CJA) können Daten mithilfe des Analytics Data Connector (ADC) an CJA gesendet werden, damit Kunden CJA als Reporting-Tool verwenden können.
+Tracking-Daten von Streaming-Medien werden von einem Player mithilfe der Media SDKs oder der Adobe Experience Platform Media Extensions und der Media Collection APIs erfasst. Alle granularen Daten (bis zu 10 Sekunden) werden an den Media Analytics Service gesendet, der die Daten für jede einzelne Wiedergabesitzung erfasst und verarbeitet. Sobald eine Wiedergabesitzung beendet ist, werden die berechneten Tracking-Daten zur Speicherung und Berichterstellung an Adobe Analytics gesendet. Bei Implementierungen von Adobe Customer Journey Analytics (CJA) können Daten mithilfe des Analytics Data Connector (ADC) an CJA gesendet werden, damit Kunden CJA als Reporting-Tool verwenden können.
 
 <!-- ![streaming media process](./assets/streaming-process1.png) -->
 
