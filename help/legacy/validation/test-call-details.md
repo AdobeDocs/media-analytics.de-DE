@@ -6,7 +6,7 @@ exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '614'
 ht-degree: 100%
 
@@ -92,12 +92,12 @@ ht-degree: 100%
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 04.07.2018 |
 | `s:meta:a.media.rating` | TV-14 |
-| `s:meta:a.media.originator` | Produktionsgebäude |
+| `s:meta:a.media.originator` | production house |
 | `s:meta:a.media.network` | network |
 | `s:meta:a.media.ad_load` | 1 |
 | `s:meta:a.media.mvpd` | mvpd |
 | `s:meta:a.media.authorized` | unlocked |
-| `s:meta:a.media.feed` | Kein Feed |
+| `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
 ### Start-Aufruf für benutzerdefinierte Metadaten in Media Analytics (Heartbeats) {#custom-metadata-ma}
@@ -154,19 +154,19 @@ ht-degree: 100%
 
 | Parameter |  Wert (Beispiel)  |
 |---|---|
-| `a.media.show` | Titel anzeigen |
+| `a.media.show` | Show Title |
 | `a.media.season` | 6 |
 | `a.media.episode` | Episode Title |
 | `a.media.asset_id` | 123456 |
 | `a.media.genre` | comedy |
-| `a.media.first_air_date` | 04.07.2016 |
+| `a.media.first_air_date` | 2016-07-04 |
 | `a.media.rating` | TV-14 |
-| `a.media.originator` | Produktionsgebäude |
+| `a.media.originator` | production house |
 | `a.media.network` | network |
 | `a.media.ad_load` | 1 |
 | `a.media.mvpd` | mvpd |
 | `a.media.authorized` | unlocked |
-| `a.media.feed` | Kein Feed |
+| `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
 ### Anzeigenstart-Aufruf für benutzerdefinierte Metadaten in Adobe Analytics (AppMeasurement) {#custom-metadata-aa-ad-start}
@@ -199,19 +199,19 @@ ht-degree: 100%
 
 | Parameter |  Wert (Beispiel)  |
 |---|---|
-| `s:meta:a.media.show` | Anzeigen |
+| `s:meta:a.media.show` | Show |
 | `s:meta:a.media.season` | 6 |
 | `s:meta:a.media.episode` | Episode Title |
 | `s:meta:a.media.asset_id` | 123456 |
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 04.07.2018 |
 | `s:meta:a.media.rating` | TV-14 |
-| `s:meta:a.media.originator` | Produktionsgebäude |
+| `s:meta:a.media.originator` | production house |
 | `s:meta:a.media.network` | network |
 | `s:meta:a.media.ad_load` | 1 |
 | `s:meta:a.media.mvpd` | mvpd |
 | `s:meta:a.media.authorized` | unlocked |
-| `s:meta:a.media.feed` | Kein Feed |
+| `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
 ### Anzeigenstart-Aufruf für benutzerdefinierte Metadaten im Media Analytics (Heartbeats) {#custom-metadata-ma-ad-start}
@@ -243,7 +243,7 @@ ht-degree: 100%
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**Anzeige**_ |
+| _**`s:asset:type`**_ | _**ad**_ |
 
 ### Anzeigepause-Aufruf für Media Analytics (Heartbeats) {#ma-ad-pause-call}
 
@@ -255,7 +255,7 @@ ht-degree: 100%
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**Anzeige**_ |
+| _**`s:asset:type`**_ | _**ad**_ |
 
 ### Anzeige abgeschlossen-Aufruf für Adobe Analytics in Media Analytics (Heartbeats) {#ma-aa-ad-complete-call}
 
@@ -267,7 +267,7 @@ ht-degree: 100%
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | vod |
-| _**`s:asset:type`**_ | _**Anzeige**_ |
+| _**`s:asset:type`**_ | _**ad**_ |
 
 ## Hauptinhalt abspielen {#play-main-content}
 
