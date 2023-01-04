@@ -5,10 +5,10 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a9366d5bf590f16b193c7e2905cadca0f7afd636
+source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -32,7 +32,7 @@ Tags in Adobe Experience Platform sind die nächste Generation von Adobe-Verw
 
 | Unterstützte Plattform | Version  |  APIs   |  Dokumentation  |  Beispiel  |
 |:---:|---|---|---|---|
-| ![JavaScript-Symbol](assets/javascript-icon.png) | Web − [Medien-SDK für JavaScript v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Referenz zur JavaScript-API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Analytics mit JavaScript implementieren](/help/implementation/media-sdk/setup/web-implementation.md) | [Beispiel des Medien-SDK für JavaScript v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
+| ![JavaScript-Symbol](assets/javascript-icon.png) | Web − [Medien-SDK für JavaScript v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Referenz zur JavaScript-API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Analytics mit JavaScript installieren](/help/implementation/media-sdk/setup/web-implementation.md) | [Beispiel des Medien-SDK für JavaScript v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![JavaScript-Symbol](assets/javascript-icon.png) | Web − Medienerweiterung |  | [Erweiterung von Adobe Media Analytics (3.x SDK) für Audio und Video − Verwendung von Tags (Datenerfassung)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=de) | [Erweiterung von Adobe Media Analytics (3.x SDK) für Audio und Video – Beispiel](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 
 ### Mobile-Implementierung {#get-mobile-extension}
