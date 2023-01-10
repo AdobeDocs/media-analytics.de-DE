@@ -5,20 +5,18 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
+source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 98%
+source-wordcount: '366'
+ht-degree: 90%
 
 ---
 
 # Abrufen von Medien-SDKs, Erweiterungen mithilfe von Tags und OTT-SDKs {#download-sdks}
 
-Die Informationen auf dieser Seite enthalten Links zum Herunterladen der aktuellen Medien-SDKs und zum Abrufen der Medienerweiterungen.
+Die Informationen auf dieser Seite enthalten Links zum Herunterladen der aktuellen Medien-SDKs und zum Abrufen der Medien-Erweiterungen, die Tags verwenden.
 
-Die Informationen auf dieser Seite enthalten Links zum Herunterladen der aktuellen Medien-SDKs und zum Abrufen der Medienerweiterungen, die Tags verwenden.
-
-Tags in Adobe Experience Platform sind die nächste Generation von Adobe-Verwaltungsfunktionen für Website-Tags und Mobile-SDKs. Tags bieten Kunden eine einfache Möglichkeit, alle Analyse-, Marketing- und Werbelösungen bereitzustellen und zu verwalten, die für relevante Kundenerlebnisse notwendig sind. Weitere Informationen zu Tags finden Sie in der [Übersicht über Tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=de)
+Tags in Adobe Experience Platform sind die nächste Generation von Adobe-Verwaltungsfunktionen für Website-Tags und Mobile-SDKs. Tags bieten Kunden eine einfache Möglichkeit, alle Analyse-, Marketing- und Werbelösungen bereitzustellen und zu verwalten, die für relevante Kundenerlebnisse notwendig sind. Weitere Informationen zu Tags finden Sie unter [Übersicht über Tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=de).
 
 
 >[!NOTE]
