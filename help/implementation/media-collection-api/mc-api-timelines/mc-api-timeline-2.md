@@ -1,14 +1,14 @@
 ---
-title: Erfahren Sie mehr über die Timelines für die Medienverfolgung � Verlassen der Sitzung durch Anwender
-description: Erfahren Sie mehr über die Abspielkopf-Timeline und die entsprechende � Benutzeraktion bei einer abgebrochenen Videositzung. Erfahren Sie mehr über die Details für jede Aktion und jede Anfrage.
+title: Erfahren Sie mehr über die Timelines für die Medienverfolgung ‐ Verlassen der Sitzung durch Anwender
+description: Erfahren Sie mehr über die Abspielkopf-Timeline und die entsprechende Benutzeraktion bei einer abgebrochenen Videositzung. Erfahren Sie mehr über die Details für jede Aktion und jede Anfrage.
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '590'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -179,7 +179,7 @@ Die Werbeunterbrechung ist vorüber. Während der Anzeigenunterbrechung blieb de
 | --- | :---: | :---: | --- |
 | Verfolgen des Wiedergabe-Ereignisses | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Ändern Sie den Status des Players zu „Playing“ (Wiedergabe); beginnen Sie mit dem Tracking des Starts der Inhaltswiedergabe.
+Ändern Sie den Status des Players zu „Playing“ (Wiedergabe) und beginnen Sie mit dem Tracking des Starts der Inhaltswiedergabe.
 
 ```json
 {
@@ -200,7 +200,7 @@ Die Werbeunterbrechung ist vorüber. Während der Anzeigenunterbrechung blieb de
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 20 | 8 | `/api/v1/sessions/{sid}/events` |
 
-Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
+Pingen Sie das Backend alle 10 Sekunden an.
 
 ```json
 {
@@ -218,7 +218,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 30 | 18 | `/api/v1/sessions/{sid}/events` |
 
-Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
+Pingen Sie das Backend alle 10 Sekunden an.
 
 ```json
 {
@@ -271,7 +271,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 40 | 28 | `/api/v1/sessions/{sid}/events` |
 
-Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
+Pingen Sie das Backend alle 10 Sekunden an.
 
 ```json
 {
@@ -342,7 +342,7 @@ Verfolgen Sie die Mid-Roll-Anzeige.
 | --- | :---: | :---: | --- |
 | Anwender schließt Anwendung; Die App stellt fest, dass der Benutzer die Anzeige abgebrochen hat und nicht zu dieser Sitzung zurückkehrt. | 48 | 33 | `/api/v1/sessions/{sid}/events` |
 
-Senden Sie `sessionEnd` an das VA-Backend, um anzugeben, dass die Sitzung umgehend und ohne weitere Verarbeitung geschlossen werden soll.
+Senden Sie `sessionEnd` an das VA-Backend, um anzugeben, dass die Sitzung sofort und ohne weitere Verarbeitung geschlossen werden soll.
 
 ```json
 {
