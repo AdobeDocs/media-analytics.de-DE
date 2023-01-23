@@ -1,14 +1,14 @@
 ---
-title: Informationen zu Zeitleisten für die Medienverfolgung
-description: Machen Sie sich mit der Timeline der Abspielleiste und den Aktionen des entsprechenden Benutzers vertraut. Erfahren Sie mehr über die Details für jede Aktion und die zugehörigen Anfragen.
+title: Informationen über Timelines beim Medien-Tracking
+description: Machen Sie sich mit der Timeline des Abspielkopfs und den entsprechenden Benutzeraktionen vertraut. Erfahren Sie mehr über die Details für jede Aktion und die zugehörigen Anfragen.
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1064'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Die folgenden Diagramme illustrieren die Zeitleiste der Abspielleiste und die zu
 | --- | :---: | :---: | --- |
 | Button zur automatischen Wiedergabe oder zur Wiedergabe gedrückt, Video wird geladen. | 0 | 0 | `/api/v1/sessions` |
 
-Dieser Aufruf signalisiert _die Anwenderintention, ein Video abzuspielen._
+Dieser Aufruf signalisiert _die Anwenderintention, ein Video abzuspielen_.
 
 Er gibt eine Sitzungs-ID (`{sid}`) an den Client zurück, die zur Identifikation aller nachfolgenden Tracking-Aufrufe innerhalb der Sitzung verwendet wird. Der Player-Status lautet noch nicht „Playing“ (Wiedergabe), sondern „Starting“ (Start). 
 
@@ -301,7 +301,7 @@ Die Werbeunterbrechung ist vorüber. Während der Anzeigenunterbrechung blieb de
 | --- | :---: | :---: | --- |
 | Verfolgen des Wiedergabe-Ereignisses | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Versetzen Sie den Player nach dem Ereignis `adBreakComplete` mit dem Ereignis `play`-Ereignis in den Status „Playing“ (Wiedergabe).
+Versetzen Sie den Player nach dem Ereignis `adBreakComplete` mit dem Ereignis `play` in den Status „Playing“ (Wiedergabe).
 
 ```json
 {
@@ -319,7 +319,7 @@ Versetzen Sie den Player nach dem Ereignis `adBreakComplete` mit dem Ereignis `p
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 30 | 8 | `/api/v1/sessions/{sid}/events` |
 
-Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
+Pingen Sie das Backend alle 10 Sekunden an.
 
 ```json
 {
@@ -372,7 +372,7 @@ Puffern endet nach 3 Sekunden, sodass der Player wieder zum Status „Playing�
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 40 | 15 | `/api/v1/sessions/{sid}/events` |
 
-Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
+Pingen Sie das Backend alle 10 Sekunden an.
 
 ```json
 {
@@ -444,7 +444,7 @@ Verfolgen Sie die Mid-Roll-Anzeige.
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 50 | 21 | `/api/v1/sessions/{sid}/events` |
 
-Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
+Pingen Sie das Backend alle 10 Sekunden an.
 
 ```json
 {
@@ -497,7 +497,7 @@ Die Werbeunterbrechung ist abgeschlossen.
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 60 | 27 | `/api/v1/sessions/{sid}/events` |
 
-Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
+Pingen Sie das Backend alle 10 Sekunden an.
 
 ```json
 {
@@ -515,7 +515,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 | --- | :---: | :---: | --- |
 | Benutzer hat Pause gedrückt | 64 | 31 | `/api/v1/sessions/{sid}/events` |
 
-Durch die Anwenderaktion wechselt der Wiedergabestatus zu „Paused“ (Pause).
+Durch die Benutzeraktion wechselt der Wiedergabestatus zu „Paused“ (Pause).
 
 ```json
 {
@@ -533,7 +533,7 @@ Durch die Anwenderaktion wechselt der Wiedergabestatus zu „Paused“ (Pause).
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 70 | 31 | `/api/v1/sessions/{sid}/events` |
 
-Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend. Der Player befindet sich weiterhin im Status „buffering“ (Puffern); der Nutzer hängt bei 20 Sekunden des Inhalts fest und ist würtend.
+Pingen Sie das Backend alle 10 Sekunden an. Der Player befindet sich weiterhin im Status „buffering“ (Puffern); der Nutzer hängt bei 20 Sekunden des Inhalts fest und ist würtend.
 
 ```json
 {
@@ -567,7 +567,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend. Der Player befindet
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 80 | 37 | `/api/v1/sessions/{sid}/events` |
 
-Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
+Pingen Sie das Backend alle 10 Sekunden an.
 
 ```json
 {
@@ -584,7 +584,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 | --- | :---: | :---: | --- |
 | Der Benutzer sieht sich den Inhalt bis zum Ende an. | 88 | 45 | `/api/v1/sessions/{sid}/events` |
 
-Senden Sie `sessionComplete` an das Backend, um anzugeben, dass der Anwender den gesamten Inhalt abgespielt hat.
+Senden Sie `sessionComplete` an das Backend, um anzugeben, dass der Benutzer den gesamten Inhalt abgespielt hat.
 
 ```json
 {
