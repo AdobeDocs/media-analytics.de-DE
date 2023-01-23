@@ -1,14 +1,14 @@
 ---
-title: Test 2 Medienunterbrechung
+title: 'Test 2: Medienunterbrechung'
 description: Erfahren Sie mehr über den Medienunterbrechungstest, der bei der Validierung verwendet wird.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
 exl-id: 3f22ce2d-4385-4a3b-8d1f-52e25a9b1101
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '243'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Sie müssen diese Aufgaben in folgender Reihenfolge abschließen und aufzeichnen
 
    Informationen zu Aufrufparametern und Metadaten finden Sie unter [Details zum Testaufruf.](/help/legacy/validation/test-call-details.md#play-main-content)
 
-   Weitere Informationen finden Sie unter der [Anzeigen verfolgen](/help/use-cases/track-ads/track-ads-overview.md) Anweisungen für zusätzliche Informationen zu diesen Anzeigenaufrufen.
+   Weitere Informationen zu diesen Anzeigenaufrufen finden Sie in den Anleitungen zum [Nachverfolgen von Anzeigen](/help/use-cases/track-ads/track-ads-overview.md) Ihrer Plattform.
 
 1. **App oder Browser im Hintergrund ausführen**
 
