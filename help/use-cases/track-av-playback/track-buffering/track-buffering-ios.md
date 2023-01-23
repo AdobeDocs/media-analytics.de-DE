@@ -1,18 +1,18 @@
 ---
-title: Erfahren Sie, wie Sie Puffer-Tracking in iOS durchführen.
+title: Erfahren Sie, wie Sie Nachverfolgen der Pufferung auf iOS durchführen.
 description: Erfahren Sie, wie Sie Pufferereignisse unter iOS verfolgen.
 uuid: 4f4db23a-489b-4b41-bb6e-393ec64d52a2
 exl-id: 5f0a3c4b-7c9e-499d-98d0-6fcf316c4d9c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '117'
 ht-degree: 100%
 
 ---
 
-# Puffer-Tracking in iOS{#track-buffering-on-ios}
+# Nachverfolgen der Pufferung auf iOS{#track-buffering-on-ios}
 
 Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen.
 
