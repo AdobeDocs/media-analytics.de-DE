@@ -6,13 +6,13 @@ exl-id: 03be8ed3-ae3a-4e9a-b667-0d9280a844a1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '146'
 ht-degree: 100%
 
 ---
 
-# Suchen-Tracking in Chromecast{#track-seeking-on-chromecast}
+# Nachverfolgen von Suchen auf Chromecast{#track-seeking-on-chromecast}
 
 Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen.
 
