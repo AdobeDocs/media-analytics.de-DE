@@ -6,13 +6,13 @@ exl-id: b3012bce-4b92-408e-8b7a-57ae9d52e93d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '98'
 ht-degree: 100%
 
 ---
 
-# Tracking von Fehlern mit JavaScript 2.x{#track-errors-on-javascript}
+# Nachverfolgen von Fehlern mit JavaScript 2.x{#track-errors-on-javascript}
 
 Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen.
 
