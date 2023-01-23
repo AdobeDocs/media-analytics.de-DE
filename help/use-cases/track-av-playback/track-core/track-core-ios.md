@@ -6,13 +6,13 @@ exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '711'
 ht-degree: 100%
 
 ---
 
-# Tracking von Core-Wiedergaben in iOS{#track-core-playback-on-ios}
+# Nachverfolgen der grundlegenden Wiedergabe auf iOS{#track-core-playback-on-ios}
 
 Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
 
