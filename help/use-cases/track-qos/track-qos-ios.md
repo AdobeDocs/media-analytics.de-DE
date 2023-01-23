@@ -6,13 +6,13 @@ exl-id: 7f01e6eb-95bd-4e3d-93d0-8a2e68323313
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '156'
 ht-degree: 100%
 
 ---
 
-# Tracking der Erlebnisqualität in iOS{#track-quality-of-experience-on-ios}
+# Nachverfolgen der Erlebnisqualität auf iOS{#track-quality-of-experience-on-ios}
 
 Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen.
 
@@ -20,7 +20,7 @@ Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vorne
 >
 >Wenn Sie Version 1.x des SDK implementieren möchten, können Sie hier die 1.x-Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/getting-started/download-sdks.md)
 
-## Implementierung von QoS
+## Implementieren von QoS
 
 1. Ermitteln Sie, wann sich die Bitrate während der Medienwiedergabe ändert, und erstellen Sie die `MediaObject`-Instanz mithilfe der QoS-Informationen.
 
