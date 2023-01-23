@@ -6,13 +6,13 @@ exl-id: 908e9de6-9461-4f3d-9d94-5541c5dfeabb
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '60'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Übersicht über die alte Validierung{#validation-overview}
+# Überblick über die Legacy-Validierung{#validation-overview}
 
 Der Abschnitt „Validierung“ beinhaltet eine Liste erforderlicher Testfälle, die Kunden (mit Adobe Debug) durchführen müssen, um anschließend die Protokolle als Nachweis der ordnungsgemäßen Implementierung zu übermitteln.
 Es gibt erwartete Ergebnisse für jeden Ereignis- und Metadatenparameter.
