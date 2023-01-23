@@ -1,35 +1,36 @@
 ---
-title: Einrichten eines mobilen SDK mit Tags für Streaming-Medien
-description: Erfahren Sie, wie Sie Adobe Streaming Media für mobile Apps implementieren.
+title: Einrichten eines Mobile SDK mit Tags für Streaming-Medien
+description: Erfahren Sie, wie Sie Adobe-Streaming-Medien für mobile Apps implementieren.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
+source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
+workflow-type: ht
 source-wordcount: '187'
-ht-degree: 31%
+ht-degree: 100%
 
 ---
 
-# Mobile SDKs installieren {#install-mobile-sdks}
+# Installieren von Mobile SDKs {#install-mobile-sdks}
 
-Installieren und konfigurieren Sie Folgendes, um Streaming-Medien für mobile Apps auf Android oder iOS zu implementieren:
+Installieren und konfigurieren Sie Folgendes, um Streaming-Medien für Mobile Apps unter Android oder iOS zu implementieren:
 
 * **Adobe Experience Platform Mobile SDK**
 
-   Verwenden Sie zum Erfassen von Daten Tags in Adobe Experience Platform. Tags in Adobe Experience Platform ist eine Tag-Management-Lösung, mit der Sie Analytics-Code bereitstellen und weitere Tagging-Vorgaben erfüllen können.
+   Verwenden Sie zum Erfassen von Daten Tags in Adobe Experience Platform. Tags in Adobe Experience Platform ist eine Tag-Management-Lösung, mit der Sie Analytics-Code bereitstellen und weitere Tagging-Anforderungen erfüllen können.
 
-* **Medien-SDK für Android** oder **Medien-SDK für iOS**
+* **Media SDK für Android** oder **Media SDK für iOS**
 
 * **Adobe Media Analytics für Audio und Video – Erweiterung**
 
-Informationen zum Herunterladen der SDK und weitere Dokumentationsressourcen finden Sie unter [Abrufen von Medien-SDKs, Erweiterungen mithilfe von Tags und OTT-SDKs](/help/getting-started/download-sdks.md)
+Informationen zum Herunterladen der SDKs und weitere Dokumentationsressourcen finden Sie unter [Abrufen von Media SDKs, Erweiterungen mithilfe von Tags und OTT-SDKs](/help/getting-started/download-sdks.md).
 
-* **Gültige Konfigurationsparameter abrufen**
+* **Abrufen gültiger Konfigurationsparameter**
 
-   Diese Parameter erhalten Sie nach der Einrichtung Ihres Analysekontos von einem Adobe-Support-Mitarbeiter.
+   Sie können diese Parameter von einem Adobe-Support-Mitarbeiter erhalten, wenn Sie Ihr Analytics-Konto eingerichtet haben.
 
-* **Fügen Sie die folgenden APIs in Ihren Medienplayer ein**
+* **Integrieren der folgenden APIs in Ihren Media Player**
 
    * *Eine API zum Abonnieren von Player-Ereignissen*: Das Media SDK erfordert den Aufruf einer Reihe einfacher APIs, wenn im Player Ereignisse auftreten.
 
-   * *Eine API, die Player-Informationen bereitstellt* - Dazu gehören Informationen über die aktuelle Wiedergabe wie der Medienname, die Abspielposition, Anzeigen oder Kapitel.
+   * *Eine API, die Player-Informationen bereitstellt*: Dazu gehören Informationen über die aktuelle Wiedergabe wie der Medienname, die Abspielposition, Anzeigen oder Kapitel.
