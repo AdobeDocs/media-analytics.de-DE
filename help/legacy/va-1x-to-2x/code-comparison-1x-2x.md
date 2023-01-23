@@ -6,13 +6,13 @@ exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '571'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Vergleich älterer Codes - 1.x mit 2.x {#code-comparison-x-to-x}
+# Legacy-Code-Vergleich – 1.x zu 2.x {#code-comparison-x-to-x}
 
 Alle Konfigurationsparameter und Tracking-APIs wurden in den `MediaHeartbeats`- und `MediaHeartbeatConfig`-Klassen zusammengeführt.
 
@@ -91,7 +91,7 @@ this._mediaHeartbeat = new MediaHeartbeat( new SampleMediaHeartbeatDelegate(this
 
 ### Delegates
 
-| 1.x-API | 2.x-API |
+| 1.x API | 2.x API |
 | --- | --- |
 | `VideoPlayerPluginDelegate()` | `MediaHeartbeatDelegate()` |
 | `VideoPlayerPluginDelegate().getVideoInfo` | `MediaHeartbeatDelegate().getCurrentPlaybackTime` |
@@ -215,7 +215,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 
 ### Standard-Videometadaten
 
-| 1.x-API | 2.x-API |
+| 1.x API | 2.x API |
 | --- | --- |
 | `VideoMetadataKeys()` | `MediaHeartbeat.createMediaObject()` |
 | `AdobeAnalyticsPlugin.setVideoMetadata()` | `MediaHeartbeat.trackSessionStart()` |
@@ -270,7 +270,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 
 ### Anwenderspezifische Video-Metadaten
 
-| 1.x-API | 2.x-API |
+| 1.x API | 2.x API |
 | --- | --- |
 | `VideoMetadataKeys()` | `MediaHeartbeat.createMediaObject()` |
 | `AdobeAnalyticsPlugin.setVideoMetadata()` | `MediaHeartbeat.trackSessionStart()` |
@@ -311,7 +311,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 
 ### Wiedergabe
 
-| 1.x-API | 2.x-API |
+| 1.x API | 2.x API |
 | --- | --- |
 | `VideoPlayerPlugin.trackPlay()` | `MediaHeartbeat.trackPlay()` |
 
@@ -335,7 +335,7 @@ VideoAnalyticsProvider.prototype._onSeekStart = function() {
 
 ### Anhalten
 
-| 1.x-API | 2.x-API |
+| 1.x API | 2.x API |
 | --- | --- |
 | `VideoPlayerPlugin.trackPause()` | `MediaHeartbeat.trackPausel()` |
 
@@ -359,7 +359,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 
 ### Abschluss der Suche
 
-| 1.x-API | 2.x-API |
+| 1.x API | 2.x API |
 | --- | --- |
 | `VideoPlayerPlugin.trackSeekComplete()` | `MediaHeartbeat.`<br/>  `trackEvent(MediaHeartbeat.Event.SeekComplete)` |
 
@@ -383,7 +383,7 @@ VideoAnalyticsProvider.prototype._onSeekComplete = function() {
 
 ### Pufferstart
 
-| 1.x-API | 2.x-API |
+| 1.x API | 2.x API |
 | --- | --- |
 | `VideoPlayerPlugin.trackBufferStart()` | `MediaHeartbeat.trackEvent(`<br/>  `MediaHeartbeat.Event.BufferStart)` |
 
@@ -407,7 +407,7 @@ VideoAnalyticsProvider.prototype._onBufferStart = function() {
 
 ### Buffer Complete
 
-| 1.x-API | 2.x-API |
+| 1.x API | 2.x API |
 | --- | --- |
 | `VideoPlayerPlugin.trackBufferComplete()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.BufferComplete)` |
 
@@ -431,7 +431,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 
 ### Abschluss der Wiedergabe
 
-| 1.x-API | 2.x-API |
+| 1.x API | 2.x API |
 | --- | --- |
 | `VideoPlayerPlugin.trackComplete()` | `MediaHeartbeat.trackComplete()` |
 
@@ -502,7 +502,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 
 ### Standard-Anzeigenmetadaten
 
-| 1.x-API | 2.x-API |
+| 1.x API | 2.x API |
 | --- | --- |
 | `AdMetadataKeys()` | `MediaHeartbeat.createAdObject()` |
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.trackAdStart()` |
@@ -556,7 +556,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 
 ### Anwenderspezifische Anzeigenmetadaten
 
-| 1.x-API | 2.x-API |
+| 1.x API | 2.x API |
 | --- | --- |
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.createAdObject()` |
 |  | `MediaHeartbeat.trackAdStart()` |
@@ -607,7 +607,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 
 ### Ad Skip
 
-| 1.x-API | 2.x-API |
+| 1.x API | 2.x API |
 | --- | --- |
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.createAdObject()` |
 |  | `MediaHeartbeat.trackAdStart()` |
@@ -634,7 +634,7 @@ VideoAnalyticsProvider.prototype._onAdSkip = function() {
 
 ### Werbung beendet
 
-| 1.x-API | 2.x-API |
+| 1.x API | 2.x API |
 | --- | --- |
 | `VideoPlayerPlugin.trackAdComplete()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdComplete)` |
 |  | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakComplete)` |
@@ -698,7 +698,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 
 ### Übersprungenes Kapitel
 
-| 1.x-API | 2.x-API |
+| 1.x API | 2.x API |
 | --- | --- |
 | `VideoPlayerPluginDelegate.getChapterInfo()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.ChapterSkip)` |
 
@@ -723,7 +723,7 @@ VideoAnalyticsProvider.prototype._onChapterSkip = function() {
 
 ### Anwenderspezifische Kapitelmetadaten
 
-| 1.x-API | 2.x-API |
+| 1.x API | 2.x API |
 | --- | --- |
 | `VideoPlayerPlugin.trackChapterStart()` | `MediaHeartbeat.createChapterObject()` |
 | `AdobeAnalyticsPlugin.setChapterMetadata()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.ChapterStart)` |
@@ -758,7 +758,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 
 ### Kapitelbeendigung
 
-| 1.x-API | 2.x-API |
+| 1.x API | 2.x API |
 | --- | --- |
 | `trackChapterComplete()` | `trackEvent(MediaHeartbeat.Event.ChapterComplete)` |
 
@@ -812,7 +812,7 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 
 ### Wiederaufnahme des Videos
 
-| 1.x-API | 2.x-API |
+| 1.x API | 2.x API |
 | --- | --- |
 | `VideoInfo.resumed()` | `MediaObject()` |
 | `VideoPlayerPluginDelegate.getVideoInfo()` | `MediaHeartbeat.trackSessionStart()` |
