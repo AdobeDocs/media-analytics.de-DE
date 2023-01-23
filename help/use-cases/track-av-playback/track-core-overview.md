@@ -6,9 +6,9 @@ exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '896'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Das Tracking der Core-Wiedergabe beinhaltet das Tracking des Ladens des Mediums,
 ### Wenn das Scrubbing endet
 
 * Aufruf `trackEvent(SeekComplete)`
-Änderungen abbrechen
+Änderungen verwerfen
 
 ### Wenn die Pufferung beginnt
 
@@ -242,4 +242,4 @@ if (e.type == "buffered") {
 
 ## Überprüfen {#validate}
 
-Informationen zur Validierung Ihrer *veraltet* Implementierung, siehe [Legacy-Validierung.](/help/legacy/validation/validation-overview.md)
+Informationen zur Validierung Ihrer *alten* Implementierung finden Sie unter [Legacy-Validierung](/help/legacy/validation/validation-overview.md).
