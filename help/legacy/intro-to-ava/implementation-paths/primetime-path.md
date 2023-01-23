@@ -5,7 +5,7 @@ exl-id: 756e4e62-35b3-42a2-93f5-81531e1c9cc8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '256'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Media Analytics (Heartbeats) ist die standardisierte Lösung zur Medienverfolgung von Adobe, die das Meilensteinmodell von Adobe ersetzt hat.
 
-Adobe Primetime ist eine Adobe Experience Cloud-Lösung, mit der Inhaltsprogrammierer und -distributoren Medien auf allen vernetzten Geräten monetarisieren können.
+Adobe Primetime ist eine Adobe Experience Cloud-Lösung, mit der Inhaltsprogrammierer und -distributoren Medien auf allen vernetzten Bildschirmen monetarisieren können.
 
 Primetime bietet eine modulare Plattform für die Medienveröffentlichung, Werbung, Personalisierung und Analyse und vereinfacht dadurch das geräteübergreifende Targeting, Monetarisieren und Aktivieren globaler Audiences. Darüber hinaus bieten Primetime-Lösungen folgende Vorteile:
 
@@ -27,7 +27,7 @@ Primetime bietet eine modulare Plattform für die Medienveröffentlichung, Werbu
 * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
 
-TVSDK ist bereits in das Medien-SDK integriert, was die Implementierung auf allen unterstützen Plattformen deutlich vereinfacht und beschleunigt. <!--Primetime also supports the partnership with Nielsen.--> Befolgen Sie zur Nutzung von Primetime die gleichen Richtlinien und Voraussetzungen wie auf der [Clientseite](/help/legacy/intro-to-ava/implementation-paths/client-side-path.md) sowie die folgenden Dokumente für Ihre Plattform(en): [Benutzerhandbuch zu Primetime.](https://helpx.adobe.com/de/support/primetime.html)
+TVSDK ist bereits in das Medien-SDK integriert, was die Implementierung auf allen unterstützen Plattformen deutlich vereinfacht und beschleunigt. <!--Primetime also supports the partnership with Nielsen.--> Befolgen Sie zur Nutzung von Primetime die gleichen Richtlinien und Voraussetzungen wie auf der [Client-Seite](/help/legacy/intro-to-ava/implementation-paths/client-side-path.md) sowie die folgenden Dokumente für Ihre Plattform(en): [Benutzerhandbuch zu Primetime.](https://helpx.adobe.com/de/support/primetime.html)
 
 >[!NOTE]
 >
