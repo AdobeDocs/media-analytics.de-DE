@@ -6,13 +6,13 @@ exl-id: 62c1d5b4-2717-42b3-8343-d41e895a9da3
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '121'
 ht-degree: 100%
 
 ---
 
-# Tracking der Pufferung mit JavaScript 2.x{#track-buffering-on-javascript}
+# Nachverfolgen der Pufferung mit JavaScript 2.x{#track-buffering-on-javascript}
 
 Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen.
 
