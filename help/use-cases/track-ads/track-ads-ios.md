@@ -6,13 +6,13 @@ exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '355'
 ht-degree: 100%
 
 ---
 
-# Tracking von Anzeigen in iOS{#track-ads-on-ios}
+# Nachverfolgen von Anzeigen auf iOS{#track-ads-on-ios}
 
 Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung der 2.x-SDKs vornehmen.
 
