@@ -1,14 +1,14 @@
 ---
-title: Informationen zu Zeitleisten für die Medienverfolgung - Verlassen der Sitzung durch Anwender
-description: Erfahren Sie mehr über die Abspielkopf-Timeline und die entsprechende � Benutzeraktion bei einer abgebrochenen Videositzung. Erfahren Sie mehr über die Details für jede Aktion und jede Anfrage.
+title: Informationen über Timelines beim Medien-Tracking – Benutzer verlässt der Sitzung
+description: Erfahren Sie mehr über die Abspielkopf-Timeline und die entsprechende Benutzeraktion bei einer abgebrochenen Videositzung. Erfahren Sie mehr über die Details für jede Aktion und jede Anfrage.
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 4c68f5997a9d336e8c3545cdfb7b9cb955602b69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '600'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Die folgenden Diagramme illustrieren die Zeitleiste der Abspielleiste und die zu
 | --- | :---: | :---: | --- |
 | Button zur automatischen Wiedergabe oder zur Wiedergabe gedrückt | 0 | 0 | `/api/v1/sessions` |
 
-Dieser Aufruf signalisiert _die Anwenderintention, ein Video abzuspielen_. Er gibt eine Sitzungs-ID (`{sid}`) an den Client zurück, die zur Identifikation aller nachfolgenden Tracking-Aufrufe innerhalb der Sitzung verwendet wird. Der Player-Status lautet noch nicht „Playing“ (Wiedergabe), sondern „Starting“ (Start).  Erforderliche Sitzungsparameter müssen in der `params`-Map des Anfrageinhalts angegeben werden.  Am Backend generiert dieser Aufruf einen Adobe Analytics-Initiationsaufruf. Informationen zu Sitzungen finden Sie in der Dokumentation zur Mediensammlungs-API .
+Dieser Aufruf signalisiert _die Anwenderintention, ein Video abzuspielen_. Er gibt eine Sitzungs-ID (`{sid}`) an den Client zurück, die zur Identifikation aller nachfolgenden Tracking-Aufrufe innerhalb der Sitzung verwendet wird. Der Player-Status lautet noch nicht „Playing“ (Wiedergabe), sondern „Starting“ (Start).  Erforderliche Sitzungsparameter müssen in der `params`-Map des Anfrageinhalts angegeben werden.  Am Backend generiert dieser Aufruf einen Adobe Analytics-Initiationsaufruf. Informationen zu Sitzungen finden Sie in der Dokumentation zur Mediensammlungs-API.
 
 ```json
 {
@@ -179,7 +179,7 @@ Die Werbeunterbrechung ist vorüber. Während der Anzeigenunterbrechung blieb de
 | --- | :---: | :---: | --- |
 | Verfolgen des Wiedergabe-Ereignisses | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Ändern Sie den Status des Players zu „Playing“ (Wiedergabe); beginnen Sie mit dem Tracking des Starts der Inhaltswiedergabe.
+Ändern Sie den Status des Players zu „Playing“ (Wiedergabe) und beginnen Sie mit dem Tracking des Starts der Inhaltswiedergabe.
 
 ```json
 {
@@ -200,7 +200,7 @@ Die Werbeunterbrechung ist vorüber. Während der Anzeigenunterbrechung blieb de
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 20 | 8 | `/api/v1/sessions/{sid}/events` |
 
-Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
+Pingen Sie das Backend alle 10 Sekunden an.
 
 ```json
 {
@@ -218,7 +218,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 30 | 18 | `/api/v1/sessions/{sid}/events` |
 
-Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
+Pingen Sie das Backend alle 10 Sekunden an.
 
 ```json
 {
@@ -271,7 +271,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 40 | 28 | `/api/v1/sessions/{sid}/events` |
 
-Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
+Pingen Sie das Backend alle 10 Sekunden an.
 
 ```json
 {
@@ -289,7 +289,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 | --- | :---: | :---: | --- |
 | Verfolgen des Starts der Mid-Roll-Anzeigenunterbrechung | 45 | 33 | `/api/v1/sessions/{sid}/events` |
 
-Mid-Roll-Anzeige mit einer Dauer von 8 Sekunden: Senden Sie `adBreakStart` .
+Mid-Roll-Anzeige mit einer Dauer von 8 Sekunden: Senden Sie `adBreakStart`.
 
 ```json
 {
@@ -342,7 +342,7 @@ Verfolgen Sie die Mid-Roll-Anzeige.
 | --- | :---: | :---: | --- |
 | Anwender schließt Anwendung; Die App stellt fest, dass der Benutzer die Anzeige abgebrochen hat und nicht zu dieser Sitzung zurückkehrt. | 48 | 33 | `/api/v1/sessions/{sid}/events` |
 
-Senden Sie `sessionEnd` an das VA-Backend, um anzugeben, dass die Sitzung umgehend und ohne weitere Verarbeitung geschlossen werden soll.
+Senden Sie `sessionEnd` an das VA-Backend, um anzugeben, dass die Sitzung sofort und ohne weitere Verarbeitung geschlossen werden soll.
 
 ```json
 {
