@@ -6,31 +6,31 @@ exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '575'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
-# Mobile SDK v3.x für Chromecast einrichten {#set-up-chromecast}
+# Einrichten des Mobile SDK v3.x für Chromecast {#set-up-chromecast}
 
 In diesem Abschnitt werden die Voraussetzungen für die Einrichtung einer Chromecast-Installation für Streaming-Medien beschrieben.
 
 ## Voraussetzungen 
 
-* **Gültige Konfigurationsparameter abrufen**
+* **Abrufen gültiger Konfigurationsparameter**
 
-   Diese Parameter erhalten Sie nach der Einrichtung Ihres Medienanalysekontos von einem Adobe-Support-Mitarbeiter.
-* **Fügen Sie die folgenden APIs in Ihren Medienplayer ein**
+   Sie können diese Parameter von einem Adobe-Support-Mitarbeiter erhalten, wenn Sie Ihr Media Analytics-Konto eingerichtet haben.
+* **Integrieren der folgenden APIs in Ihren Media Player**
 
    * *Eine API zum Abonnieren von Player-Ereignissen*: Das Media SDK erfordert den Aufruf einer Reihe einfacher APIs, wenn im Player Ereignisse auftreten.
    * *Eine API, die Player-Informationen bereitstellt*: Diese Informationen enthalten Details wie den Mediennamen und die Abspielposition.
 
 Adobe Mobile Services bietet eine neue Anwenderoberfläche, auf der mobile Marketingfunktionen für mobile Anwendungen aus der gesamten Adobe Experience Cloud kombiniert werden. Zunächst bietet der Mobile Service eine nahtlose Integration von App-Analyse- und Targeting-Funktionen für die Lösungen Adobe Analytics und Adobe Target. Weitere Informationen finden Sie in der [Dokumentation zu Adobe Mobile Services.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=de)
 
-Mit der Adobe Mobile Library für Chromecast v3.x für Experience Cloud Solutions können Sie in JavaScript geschriebene Chromecast-Anwendungen messen, Zielgruppendaten über Zielgruppen-Management nutzen und erfassen und Videointeraktionen messen.
+Mit der Adobe Mobile Library für Chromecast v3.x für Experience Cloud-Lösungen können Sie in JavaScript geschriebene Chromecast-Anwendungen messen, Zielgruppendaten durch Zielgruppen-Management nutzen und erfassen sowie Videointeraktionen messen.
 
-## Mobile Library/SDK-Implementierung
+## Mobile Library-/SDK-Implementierung
 
 1. Fügen Sie Ihre heruntergeladene Chromecast-Bibliothek zu Ihrem Projekt hinzu.
 
@@ -43,7 +43,7 @@ Mit der Adobe Mobile Library für Chromecast v3.x für Experience Cloud Solution
       * `ADBMobileConfig`-Konfigurationsdatei
 
          Hierbei handelt es sich um die SDK-Konfigurationsdatei, die für Ihre App angepasst wird. Eine exemplarische `ADBMobileConfig`-Implementierung wird mit dem SDK mitgeliefert (unter `samples/`). Die richtigen Einstellungen erhalten Sie von einem Adobe-Support-Mitarbeiter.
-   1. Fügen Sie die Bibliotheksdatei zu Ihrer `index.html` und erstellen Sie die `ADBMobileConfig` globale Variable wie folgt (die globale Variable, die zur Konfiguration von Adobe Mobile for Media Analytics verwendet wird, hat einen exklusiven Schlüssel namens `mediaHeartbeat`):
+   1. Fügen Sie die Bibliotheksdatei zu Ihrer `index.html`-Datei hinzu und erstellen Sie die globale Variable der `ADBMobileConfig` wie folgt (die globale Variable, mit der Adobe Mobile für Media Analytics konfiguriert wird, hat einen exklusiven Schlüssel namens `mediaHeartbeat`):
 
       ```js
       <script>
@@ -88,7 +88,7 @@ Mit der Adobe Mobile Library für Chromecast v3.x für Experience Cloud Solution
 
       >[!IMPORTANT]
       >
-      >Wenn `mediaHeartbeat` falsch konfiguriert ist, wechselt das Medienmodul in den Fehlerstatus und sendet keine Tracking-Aufrufe mehr.
+      >Wenn `mediaHeartbeat` nicht richtig konfiguriert ist, wechselt das Medienmodul in einen Fehlerstatus und sendet keine Tracking-Aufrufe mehr.
 
       ADBMobile-Konfigurationsparameter für mediaHeartbeat-Schlüssel:
    | Konfigurationsparameter | Beschreibung     |
@@ -104,7 +104,7 @@ Mit der Adobe Mobile Library für Chromecast v3.x für Experience Cloud Solution
 
 1. Konfigurieren der Experience Cloud-Besucher-ID.
 
-   Der Besucher-ID-Dienst für Experience Platform stellt eine universale Besucher-ID für alle Experience Cloud-Lösungen bereit. Der Besucher-ID-Dienst ist für Media Analytics- und andere Marketing Cloud-Integrationen erforderlich.
+   Der Besucher-ID-Dienst für Experience Platform stellt eine universale Besucher-ID für alle Experience Cloud-Lösungen bereit. Der Besucher-ID-Dienst ist für Media Analytics und andere Marketing Cloud-Integrationen erforderlich.
 
    Stellen Sie sicher, dass Ihre `ADBMobileConfig`-Konfiguration Ihre `marketingCloud`-Organisations-ID enthält.
 
