@@ -6,9 +6,9 @@ exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: d2d0f34c64ecb2a900412d5959449c8c36328730
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '362'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 86%
 
 ## Opt-out/Opt-in {#opt-out-opt-in}
 
-Sie können steuern, ob die Tracking-Aktivität auf einem bestimmten Gerät zulässig ist:
+Sie können steuern, ob das Nachverfolgen der Aktivitäten auf einem bestimmten Gerät zulässig ist:
 
-* **Mobile Apps -** Die Media-Erweiterungen berücksichtigen die Datenschutzeinstellungen in der Datenerfassung. Um das Tracking abzuwählen, müssen Sie Datenschutzeinstellungen für [Abgemeldet in Tags](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#create-a-mobile-property) oder [Datenschutzstatus in Mobile SDK aktualisieren](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/#getprivacystatus).
+* **Mobile Apps:** Die Medienerweiterungen berücksichtigen die Datenschutzeinstellungen in der Datenerfassung. Um das Tracking zu deaktivieren, müssen Sie die Datenschutzeinstellungen auf [Abgewählt in Tags](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#create-a-mobile-property) setzen oder den [Datenschutzstatus in Mobile SDK aktualisieren](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/#getprivacystatus).
 * **JavaScript/Browser-Apps:** Die VA-Bibliothek respektiert die Datenschutz- und Optout-Einstellungen der `VisitorAPI`. Um das-Tracking zu deaktivieren, müssen Sie über den Besucher-API-Dienst die entsprechende Einstellung vornehmen. Weitere Informationen zu Opt-out und Datenschutz finden Sie unter [Adobe Experience Platform-ID-Dienst](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=de).
 * **OTT-Apps (Chromecast, Roku):** Die OTT-SDKs bieten APIs, die mit der Datenschutz-Grundverordnung (DSGVO) konform sind und es Ihnen ermöglichen, `opt`-Statuskennzeichen für die Datenerfassung und -übertragung zu setzen und lokal gespeicherte Identitäten abzurufen.
 
