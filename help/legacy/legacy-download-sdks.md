@@ -1,34 +1,34 @@
 ---
-title: Zugriff auf Links zu älteren Medien-SDKs
+title: Zugriff auf Links zu älteren Media SDKs
 description: Links zu älteren SDK-Downloads für verfügbare Plattformen, einschließlich Android, iOS, JavaScript, Chromecast und Roku.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+exl-id: d1066f05-f46f-46fa-897f-039657704d05
+source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
+workflow-type: ht
 source-wordcount: '331'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
+# Legacy − SDKs herunterladen{#legacy-download-sdks}
 
-# Veraltet - SDKs herunterladen{#legacy-download-sdks}
+Die Informationen auf dieser Seite enthalten Links zum Herunterladen **älterer** Media SDKs der Version 2.x und 1.x.
 
-Die Informationen auf dieser Seite enthalten Links zum Herunterladen der **veraltet**  2.x Medien-SDKS und 1.x ältere Medien-SDKs.
+Informationen zum Herunterladen **aktueller** SDKs finden Sie unter [Herunterladen von SDKs](/help/getting-started/download-sdks.md).
 
-Informationen zum Herunterladen **current** SDKs, siehe [SDKs herunterladen](/help/getting-started/download-sdks.md).
-
-Wichtige Informationen zum Ende der Unterstützung finden Sie unter [Häufig gestellte Fragen zum Ende der Unterstützung](/help/additional-resources/end-of-support-faqs.md).
+Wichtige Informationen zum Ende der Unterstützung finden Sie in den [häufig gestellten Fragen zum Ende der Unterstützung](/help/additional-resources/end-of-support-faqs.md).
 
 ## Streaming-Medien und die Adobe Medien Analytics-Erweiterung
 
-Mit der Adobe Medien Analytics-Erweiterung wird das JavaScript Media SDK (Media 2.x SDK) für Audio und Video hinzugefügt. Diese Erweiterung bietet die Funktionalität zum Hinzufügen der `MediaHeartbeat`-Tracker-Instanz zu einer Site oder einem Projekt mit Datenerfassung.
+Mit der Adobe Media Analytics-Erweiterung wird das grundlegende JavaScript Media SDK (Media SDK 2.x) für Audio und Video hinzugefügt. Diese Erweiterung bietet die Funktionalität zum Hinzufügen der `MediaHeartbeat`-Tracker-Instanz zu einer Site oder einem Projekt mit Datenerfassung.
 
-Für die Datenerfassung mit Adobe mit der Media Analytics-Erweiterung gelten folgende Anforderungen:
+Die Adobe-Datenerfassung mit der Media Analytics-Erweiterung erfordert Folgendes:
 * Sie müssen Adobe Experience Cloud-Kunde sein.
 * Sie müssen den Datenerfassungs- oder DTM-Einbettungs-Code auf Ihren Web-Seiten bereitstellen.
-* Sie müssen die [Analytics-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=de).
-* Sie müssen die [Adobe Medien Analytics für Audio und Video - Launch-Erweiterung](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics).
-* Sie müssen die [Experience Cloud-ID-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=de).
+* Sie müssen die [Analytics-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=de) konfigurieren.
+* Sie müssen die [Lauch-Erweiterung für Adobe Medien Analytics für Audio und Video](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) konfigurieren.
+* Sie müssen die [Experience Cloud-ID-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=de) konfigurieren.
 
 ## 2.x Medien-SDKs herunterladen {#download-2x-sdks}
 
