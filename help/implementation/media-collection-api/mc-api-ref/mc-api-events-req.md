@@ -1,14 +1,14 @@
 ---
-title: Streaming-Mediensammlungs-API � Ereignisanfrage-Endpunkt
+title: Streaming-Mediensammlungs-API ‐ Ereignisanfrage-Endpunkt
 description: „Was sind die Anforderungsparameter und Antworten der Media Collection API-Ereignisse?“
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 96%
 
 ## URI-Parameter
 
-`sid`: Die Sitzungs-ID, die von einer [Sitzungsanfrage](mc-api-sessions-req.md).
+`sid`: Die Sitzungs-ID, die von einer [Sitzungsanfrage](mc-api-sessions-req.md) zurückgegeben wird.
 
 ## Anfrageinhalt
 
