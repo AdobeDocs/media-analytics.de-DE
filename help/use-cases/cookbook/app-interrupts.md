@@ -6,15 +6,15 @@ exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # Behandlung von Anwendungsunterbrechungen während der Wiedergabe{#handling-application-interrupts-during-playback}
 
-Die Wiedergabe in einer Medienanwendung kann auf verschiedene Weise unterbrochen werden. Beispielsweise kann ein Benutzer explizit die Pause-Taste betätigen oder die Anwendung in den Hintergrund stellen. Unabhängig davon, was zu einer Unterbrechung der Medienwiedergabe führt, gelten die folgenden Tracking-Anweisungen.
+Die Wiedergabe in einer Medienanwendung kann auf verschiedene Weise unterbrochen werden. Beispielsweise kann explizit die Pause-Taste betätiget oder die Anwendung in den Hintergrund gebracht werden. Unabhängig davon, was zu einer Unterbrechung der Medienwiedergabe führt, gelten die folgenden Tracking-Anweisungen.
 
 1. Rufen Sie **`trackPause`** auf, wenn die Anwendung unterbrochen wird (Hintergrund, Medienpausen usw.).
 1. Rufen Sie **`trackPlay`** auf, wenn die Anwendung in den Vordergrund zurückkehrt und/oder die Medienwiedergabe fortgesetzt wird.
@@ -35,4 +35,4 @@ Die Wiedergabe in einer Medienanwendung kann auf verschiedene Weise unterbrochen
 
 * _Wie sieht es mit einem Neustart der gleichen Sitzung aus?_
 
-   Informationen zum Wiederaufnehmen einer Tracking-Sitzung finden Sie unter [Wiederaufnehmen von inaktiven Sitzungen](resuming-inactive.md).Das SDK sendet ein Fortsetzungs-Ping, um das Backend darüber zu informieren, dass der Benutzer die Sitzung manuell fortsetzt.
+   Informationen zum Wiederaufnehmen einer Tracking-Sitzung finden Sie unter [Wiederaufnehmen von inaktiven Sitzungen](resuming-inactive.md)..Das SDK sendet ein Wiederaufnahme-Ping, um das Backend darüber zu informieren, dass die Sitzung manuell wiederaufgenommen wird.
