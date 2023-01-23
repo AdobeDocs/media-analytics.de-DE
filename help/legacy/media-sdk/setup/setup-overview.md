@@ -6,29 +6,29 @@ exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '618'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# Veraltet - Übersicht über die Media SDK-Einrichtung {#setup-overview}
+# Legacy − Übersicht über das Einrichten von Media SDKs {#setup-overview}
 
-Nachdem Sie das Media SDK für Ihre Video-App oder Ihren Player heruntergeladen haben, befolgen Sie die Informationen in diesem Abschnitt , um das Media SDK einzurichten und zu implementieren.
+Nachdem Sie das Media SDK für Ihre Video-App oder Ihren Player heruntergeladen haben, befolgen Sie die Informationen in diesem Abschnitt, um das Media SDK einzurichten und zu implementieren.
 
 
 ## Allgemeine Implementierungsrichtlinien {#general-implementation-guidelines}
 
-Es gibt drei Hauptkomponenten des SDK, die beim Adobe Streaming Media-Tracking verwendet werden:
-* Media Heartbeat-Konfiguration - die `MediaHeartbeatConfig` enthält die grundlegenden Einstellungen für die Berichterstellung.
-* Media Heartbeat Delegate - die `MediaHeartbeatDelegate` steuert die Wiedergabedauer und das QoS-Objekt.
-* Media Heartbeat - die `MediaHeartbeat` ist die primäre Bibliothek, die Mitglieder und Methoden enthält.
+Es gibt drei Hauptkomponenten des SDK, die beim Tracking von Adobe-Streaming-Medien verwendet werden:
+* Media Heartbeat Config: Die `MediaHeartbeatConfig`-Komponente enthält die grundlegenden Reporting-Einstellungen.
+* Media Heartbeat Delegate: Die `MediaHeartbeatDelegate`-Komponente steuert die Wiedergabedauer und das QoS-Objekt.
+* Media Heartbeat: Die `MediaHeartbeat`-Komponente ist die primäre Bibliothek, die Elemente und Methoden enthält.
 
-## Implementieren des Streaming Media SDK
+## Implementieren des SDK für Streaming-Medien
 
-Um das Streaming Media SDK einzurichten und zu verwenden, führen Sie die folgenden Implementierungsschritte aus:
+Um das SDK für Streaming-Medien einzurichten und zu verwenden, führen Sie die folgenden Implementierungsschritte aus:
 
-1. Erstellen Sie eine `MediaHeartbeatConfig` -Instanz und legen Sie Ihre Konfigurationsparameterwerte fest.
+1. Erstellen Sie eine `MediaHeartbeatConfig`-Instanz und legen Sie Konfigurationsparameterwerte fest.
 
    |  Variablenname  | Beschreibung  | erforderlich |  Standardwert  |
    |---|---|:---:|---|
