@@ -1,13 +1,13 @@
 ---
 title: Einrichten einer Web-Implementierung für Analytics für Streaming-Medien
-description: Erfahren Sie, wie Sie Adobe Streaming Media für Web-Apps implementieren.
+description: Erfahren Sie, wie Sie Adobe-Streaming-Medien für Web-Apps implementieren.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
 source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 69%
+ht-degree: 90%
 
 ---
 
@@ -19,18 +19,18 @@ Alternativ können Sie die Adobe Medien Analytics-Erweiterung verwenden, um Anal
 
 ## Voraussetzungen  {#prerequesites}
 
-* **Gültige Konfigurationsparameter abrufen**
+* **Abrufen gültiger Konfigurationsparameter**
 
-   Diese Parameter erhalten Sie nach der Einrichtung Ihres Analysekontos von einem Adobe-Support-Mitarbeiter.
+   Sie können diese Parameter von einem Adobe-Support-Mitarbeiter erhalten, wenn Sie Ihr Analytics-Konto eingerichtet haben.
 
-* **Implementierung `AppMeasurement` und `Experience Cloud Identity Service` für JavaScript in Ihrer Medienanwendung**
+* **Implementierung von `AppMeasurement` und `Experience Cloud Identity Service` für JavaScript in Ihrer Medienanwendung**
 
-   Weitere Informationen finden Sie unter [Implementieren von Analytics mit JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=de) und [Implementieren des Experience Cloud Identity-Diensts](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=de).
+   Weitere Informationen finden Sie unter [Implementieren von Analytics mit JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=de) und [Implementieren des Identity-Diensts in Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=de).
 
-* **Fügen Sie die folgenden APIs in Ihren Medienplayer ein**
+* **Integrieren der folgenden APIs in Ihren Media Player**
 
    * *Eine API zum Abonnieren von Player-Ereignissen*: Das Media SDK erfordert den Aufruf einer Reihe einfacher APIs, wenn im Player Ereignisse auftreten.
-   * *Eine API, die Player-Informationen bereitstellt* - Dazu gehören Informationen über die aktuelle Wiedergabe von Medien, Anzeigen und Kapiteln.
+   * *Eine API, die Player-Informationen bereitstell*: Dazu gehören Informationen zur aktuellen Wiedergabe von Medien, Anzeigen und Kapiteln.
 
 ## Einrichten von JavaScript 3.x {#set-up-javascript}
 
@@ -106,4 +106,4 @@ Alternativ können Sie die Adobe Medien Analytics-Erweiterung verwenden, um Anal
 
 Ausführliche Informationen zur Migration von 2.x zu 3.x finden Sie unter [Migration von 2.x zu 3.x.](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)
 
-Informationen zu veralteten Inhalten finden Sie unter [Alte Implementierungen](/help/legacy/media-sdk/setup/setup-overview.md)
+Informationen zu älteren Inhalten finden Sie unter [Legacy-Implementierungen](/help/legacy/media-sdk/setup/setup-overview.md)
