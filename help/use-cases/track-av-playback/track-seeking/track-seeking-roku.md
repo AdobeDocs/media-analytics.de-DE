@@ -6,13 +6,13 @@ exl-id: cb0581f7-3ced-4d46-ac6a-a309a179c21e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
 ht-degree: 100%
 
 ---
 
-# Suchen-Tracking in Roku{#track-seeking-on-roku}
+# Nachverfolgen von Suchen auf Roku{#track-seeking-on-roku}
 
 Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen.
 
