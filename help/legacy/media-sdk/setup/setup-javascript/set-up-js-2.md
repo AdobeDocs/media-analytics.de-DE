@@ -6,9 +6,9 @@ exl-id: 33976096-8b86-4353-906b-e25bf4693471
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '399'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -119,4 +119,4 @@ ht-degree: 96%
 
 In Version 2.x sind alle öffentlichen Methoden in der Klasse `ADB.va.MediaHeartbeat` konsolidiert, um die Arbeit der Entwickler zu erleichtern. Außerdem sind alle Konfigurationen nun in der `ADB.va.MediaHeartbeatConfig`-Klasse konsolidiert.
 
-Informationen zur Migration von 1.x auf 2.x finden Sie in der Dokumentation zur älteren Implementierung .
+Informationen über die Migration von 1.x auf 2.x finden Sie in der Dokumentation zur Legacy-Implementierung.
