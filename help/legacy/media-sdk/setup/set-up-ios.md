@@ -6,9 +6,9 @@ exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -159,7 +159,7 @@ Erfahren Sie, wie Sie Streaming Media Analytics für iOS-Geräte einrichten.
 
 In Version 2.x sind alle öffentlichen Methoden in der Klasse `ADBMediaHeartbeat` konsolidiert, um die Arbeit der Entwickler zu erleichtern. Alle Konfigurationen wurden in der Klasse `ADBMediaHeartbeatConfig` zusammengefasst.
 
-Informationen zur Migration von 1.x auf 2.x finden Sie in der Dokumentation zur älteren Implementierung .)
+Informationen zur Migration von 1.x auf 2.x finden Sie in der Dokumentation zur Legacy-Implementierung).
 
 ## Native App für tvOS konfigurieren
 
