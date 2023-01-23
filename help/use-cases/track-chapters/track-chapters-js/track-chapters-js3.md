@@ -5,7 +5,7 @@ exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '218'
 ht-degree: 100%
 
@@ -30,9 +30,9 @@ Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung d
    | Variablenname | Typ | Beschreibung |
    | --- | --- | --- |
    | `name` | string | Nicht leere Zeichenfolge, die den Kapitelnamen angibt. |
-   | `position` | Anzahl | Die Positionsnummer des Kapitels innerhalb des Inhalts, beginnend bei 1. |
-   | `length` | Anzahl | Positive Zahl, die die Länge des Kapitels angibt. |
-   | `startTime` | Anzahl | Wert des Abspielkopfs am Beginn des Kapitels. |
+   | `position` | number | Die Positionsnummer des Kapitels innerhalb des Inhalts, beginnend bei 1. |
+   | `length` | number | Positive Zahl, die die Länge des Kapitels angibt. |
+   | `startTime` | number | Wert des Abspielkopfs am Beginn des Kapitels. |
 
    Kapitelobjekt:
 
