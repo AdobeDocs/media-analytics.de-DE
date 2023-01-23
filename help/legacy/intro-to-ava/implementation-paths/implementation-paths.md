@@ -5,15 +5,15 @@ exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '650'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Implementierungspfade {#implementation-paths}
 
-**DIESER INHALT WURDE IN DIE AKTUELLE IMPLEMENTIERUNGSPFADDATEI VERSCHOBEN.**
+**DIESER INHALT WURDE IN DIE AKTUELLE IMPLEMENTIERUNGSPFADDATEI VERSCHOBEN**
 
 Für jeden Implementierungspfad müssen sich Kunden an ihren Kundenbetreuer/Konto-Manager wenden, um einen neuen Kundenauftrag zu unterzeichnen, da Streaming Media Analytics über eine eindeutige SKU verfügt und sich der Preis hier nicht aus den Server-Aufrufen, sondern aus den Video-Streams ergibt.
 
@@ -35,7 +35,7 @@ Adobe-Datenerfassung mit der Media Analytics-Erweiterung erfordert Folgendes:
 * Sie müssen Adobe Experience Cloud-Kunde sein.
 * Sie müssen den Datenerfassungs- oder DTM-Einbettungs-Code auf Ihren Web-Seiten bereitstellen.
 * [Analytics-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=de)
-* [Experience Cloud ID-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=de)
+* [Experience Cloud-ID-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=de)
 
 
 ## Client-Seite
