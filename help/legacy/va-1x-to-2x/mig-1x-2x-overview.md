@@ -6,15 +6,15 @@ exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '216'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# Überblick über die Migration von VHL 1.x zu VHL 2.x {#migration-overview}
+# Übersicht der Legacy-Migration für VHL 1.x zu VHL 2.x {#migration-overview}
 
-Die Migration von VHL 1.x zu VHL 2.x ist unkompliziert. Die neue Version enthält vereinfachte APIs für die Initialisierung, Konfiguration und Player-Delegates.i
+Die Migration von VHL 1.x zu VHL 2.x ist dank vereinfachter APIs für Initialisierung, Konfiguration und Player-Delegates unkompliziert
 
 Im Folgenden finden Sie die Unterschiede zwischen den Versionen 1.x und 2.x:
 
