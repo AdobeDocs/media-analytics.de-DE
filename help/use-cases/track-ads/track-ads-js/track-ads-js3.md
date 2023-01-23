@@ -5,13 +5,13 @@ exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '362'
 ht-degree: 100%
 
 ---
 
-# Tracking von Anzeigen mit JavaScript 3.x{#track-ads-on-javascript}
+# Nachverfolgen von Anzeigen mit JavaScript 3.x{#track-ads-on-javascript}
 
 Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung der 3.x-SDKs vornehmen.
 
@@ -38,8 +38,8 @@ Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung d
    | Variablenname | Typ | Beschreibung |
    | --- | --- | --- |
    | `name` | string | Nicht leere Zeichenfolge, die den Namen der Werbeunterbrechung angibt (Pre-Roll, Mid-Roll und Post-Roll). |
-   | `position` | Anzahl | Positionsnummer der Werbeunterbrechung, beginnend bei 1. |
-   | `startTime` | Anzahl | Abspielpositionswert bei Start der Werbeunterbrechung. |
+   | `position` | number | Positionsnummer der Werbeunterbrechung, beginnend bei 1. |
+   | `startTime` | number | Abspielpositionswert bei Start der Werbeunterbrechung. |
 
    Erstellung von Werbeunterbrechungsobjekten:
 
@@ -62,10 +62,10 @@ Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung d
 
    | Variablenname | Typ | Beschreibung |
    | --- | --- | --- |
-   | `name` | Zeichenfolge | Nicht leere Zeichenfolge, die den Anzeigennamen angibt. |
-   | `adId` | Zeichenfolge | Nicht leere Zeichenfolge mit Anzeigenkennung. |
-   | `position` | Anzahl | Positionsnummer der Anzeige in der Werbeunterbrechung, beginnend bei 1. |
-   | `length` | Anzahl | Positive Zahl, die die Länge der Anzeige angibt. |
+   | `name` | string | Nicht leere Zeichenfolge, die den Anzeigennamen angibt. |
+   | `adId` | string | Nicht leere Zeichenfolge mit Anzeigenkennung. |
+   | `position` | number | Positionsnummer der Anzeige in der Werbeunterbrechung, beginnend bei 1. |
+   | `length` | number | Positive Zahl, die die Länge der Anzeige angibt. |
 
    Erstellung von Anzeigenobjekten:
 
