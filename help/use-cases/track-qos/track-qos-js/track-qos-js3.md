@@ -5,13 +5,13 @@ exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '224'
 ht-degree: 100%
 
 ---
 
-# Tracking der Erlebnisqualität mit JavaScript 3.x{#track-quality-of-experience-on-javascript}
+# Nachverfolgen der Erlebnisqualität mit JavaScript 3.x{#track-quality-of-experience-on-javascript}
 
 Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vornehmen.
 
@@ -31,10 +31,10 @@ Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vorne
 
    | Variable | Typ | Beschreibung |
    | --- | --- | --- |
-   | `bitrate` | Anzahl | Aktuelle Bitrate |
-   | `startupTime` | Anzahl | Startzeit |
-   | `fps` | Anzahl | FPS-Wert |
-   | `droppedFrames` | Anzahl | Anzahl der Dropped Frames |
+   | `bitrate` | number | Aktuelle Bitrate |
+   | `startupTime` | number | Startzeit |
+   | `fps` | number | FPS-Wert |
+   | `droppedFrames` | number | Anzahl der Dropped Frames |
 
    QoE-Objekterstellung:
 
