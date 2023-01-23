@@ -6,15 +6,15 @@ exl-id: 4a1c4ade-4a5e-4af0-8117-19d718dd8bda
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '61'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
 # Beziehen einer Sitzungs-ID {#obtaining-a-session-id}
 
-Dieses Codefragment aus dem Referenz-Player zeigt eine Möglichkeit, eine [Sitzungsanfrage](../mc-api-ref/mc-api-sessions-req.md), zusammen mit dem Extrahieren der Sitzungs-ID (und der Media Collection API-Version) aus der Location-Kopfzeile in der Antwort:
+Dieser Code-Ausschnitt aus dem Referenz-Player zeigt eine Möglichkeit, eine [Sitzungsanfrage](../mc-api-ref/mc-api-sessions-req.md) zu codieren und die Sitzungs-ID (und die Version der Mediensammlungs-API) aus der Speicherort-Kopfzeile der Antwort zu extrahieren:
 
 ```js
 var  
