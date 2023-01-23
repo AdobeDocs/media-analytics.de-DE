@@ -5,13 +5,13 @@ exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '645'
 ht-degree: 100%
 
 ---
 
-# Tracking von Core-Wiedergaben mit JavaScript 3.x{#track-core-playback-on-javascript}
+# Nachverfolgen der grundlegenden Wiedergabe mit JavaScript 3.x{#track-core-playback-on-javascript}
 
 Diese Dokumentation behandelt das Tracking in der Version 3.x des SDK.
 
@@ -27,9 +27,9 @@ Diese Dokumentation behandelt das Tracking in der Version 3.x des SDK.
    | Variablenname | Typ | Beschreibung |
    | --- | --- | --- |
    | `name` | string | Nicht leere Zeichenfolge, die den Mediennamen angibt. |
-   | `id` | Zeichenfolge | Nicht leere Zeichenfolge, die die eindeutige Medienkennung angibt. |
-   | `length` | Anzahl | Positive Zahl, die die Länge des Mediums in Sekunden angibt. Verwenden Sie 0, wenn die Länge unbekannt ist. |
-   | `streamType` | Zeichenfolge |  |
+   | `id` | string | Nicht leere Zeichenfolge, die die eindeutige Medienkennung angibt. |
+   | `length` | number | Positive Zahl, die die Länge des Mediums in Sekunden angibt. Verwenden Sie 0, wenn die Länge unbekannt ist. |
+   | `streamType` | string |  |
    | `mediaType` |  | Medientyp (Audio oder Video). |
 
    **`StreamType`-Konstanten:**
@@ -115,7 +115,7 @@ Diese Dokumentation behandelt das Tracking in der Version 3.x des SDK.
 
    >[!NOTE]
    >
-   >Wenn Sie keine Kontextdaten verwenden, senden Sie einfach ein leeres Objekt für das `data`-Argument in `trackSessionStart`.
+   >Wenn Sie keine contextData verwenden, senden Sie einfach ein leeres Objekt für das `data`-Argument in `trackSessionStart`.
 
 1. **Tatsächlichen Wiedergabebeginn verfolgen**
 
