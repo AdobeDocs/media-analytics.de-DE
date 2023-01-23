@@ -1,14 +1,14 @@
 ---
-title: Erfahren Sie mehr über die Timelines für die Medienverfolgung � Kapitel.
-description: Erfahren Sie mehr über die Abspielkopf-Timeline und darüber, wann ein Kapitel beginnt und endet.
+title: Erfahren Sie mehr über die Timelines für die Medienverfolgung ‐ Kapitel.
+description: Erfahren Sie mehr über die Timeline des Abspielkopfs und darüber, wann ein Kapitel beginnt und endet.
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1092'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -250,7 +250,7 @@ Die Werbeunterbrechung ist vorüber. Während der Anzeigenunterbrechung blieb de
 | --- | :---: | :---: | --- |
 | Verfolgen des Wiedergabe-Ereignisses | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Versetzen Sie den Player nach dem Ereignis `adBreakComplete` mit dem Ereignis `play`-Ereignis in den Status „Playing“ (Wiedergabe).
+Versetzen Sie den Player nach dem Ereignis `adBreakComplete` mit dem Ereignis `play` in den Status „Playing“ (Wiedergabe).
 
 ```json
 {
@@ -290,7 +290,7 @@ Verfolgen Sie nach dem Wiedergabeereignis den Start des ersten Kapitels.
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 30 | 8 | `/api/v1/sessions/{sid}/events` |
 
-Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
+Pingen Sie das Backend alle 10 Sekunden an.
 
 ```json
 {
@@ -308,7 +308,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
 | --- | :---: | :---: | --- |
 | Pufferstart-Ereignis aufgetreten | 33 | 11 | `/api/v1/sessions/{sid}/events` |
 
-Verfolgen Sie den Wechsel des zum Status „Buffering“ (Puffern).
+Verfolgen Sie den Wechsel zum Status „Buffering“ (Puffern).
 
 ```json
 {
@@ -344,7 +344,7 @@ Puffern endet nach 3 Sekunden, sodass der Player wieder zum Status „Playing�
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 40 | 15 | `/api/v1/sessions/{sid}/events` |
 
-Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
+Pingen Sie das Backend alle 10 Sekunden an.
 
 ```json
 {
@@ -510,7 +510,7 @@ Die Werbeunterbrechung ist abgeschlossen.
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 60 | 27 | `/api/v1/sessions/{sid}/events` |
 
-Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
+Pingen Sie das Backend alle 10 Sekunden an.
 
 ```json
 {
@@ -546,7 +546,7 @@ Durch die Benutzeraktion wechselt der Wiedergabestatus zu „paused“ (angehalt
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 70 | 31 | `/api/v1/sessions/{sid}/events` |
 
-Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend. Der Player befindet sich weiterhin im Status „buffering“ (Puffern); der Nutzer hängt bei 20 Sekunden des Inhalts fest und ist würtend.
+Pingen Sie das Backend alle 10 Sekunden an. Der Player befindet sich weiterhin im Status „buffering“ (Puffern); der Nutzer hängt bei 20 Sekunden des Inhalts fest und ist würtend.
 
 ```json
 {
@@ -582,7 +582,7 @@ Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend. Der Player befindet
 | --- | :---: | :---: | --- |
 | Anwendung sendet Ping-Ereignis. | 80 | 37 | `/api/v1/sessions/{sid}/events` |
 
-Senden Sie alle 10 Sekunden Ping-Ereignisse an das Backend.
+Pingen Sie das Backend alle 10 Sekunden an.
 
 ```json
 {
@@ -618,7 +618,7 @@ Verfolgen Sie das Ende des zweiten und letzten Kapitels.
 | --- | :---: | :---: | --- |
 | Der Benutzer sieht sich den Inhalt bis zum Ende an. | 88 | 45 | `/api/v1/sessions/{sid}/events` |
 
-Senden Sie `sessionComplete` an das Backend, um anzugeben, dass der Anwender den gesamten Inhalt abgespielt hat.
+Senden Sie `sessionComplete` an das Backend, um anzugeben, dass der Benutzer den gesamten Inhalt abgespielt hat.
 
 ```json
 {
