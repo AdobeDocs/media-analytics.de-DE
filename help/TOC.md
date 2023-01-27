@@ -8,7 +8,7 @@ sub-product: media analytics
 source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 97%
    + [Überblick](getting-started/getting-started.md)
    + [Voraussetzungen ](getting-started/prereqs.md)
    + [Unterstützte Geräte](getting-started/supported-devices.md)
-   + [Dokumentation zu Streaming Media](getting-started/implementation-documentation.md)
+   + [Dokumentation zu Streaming-Medien](getting-started/implementation-documentation.md)
    + [SDKs, Bibliotheken und Erweiterungen](getting-started/download-sdks.md)
    + Ende der Unterstützung {#end-of-support}
-      + [Ende der Unterstützung für das Mobile SDK für Media Analytics](additional-resources/end-of-support-faqs.md)
-      + Veraltet - Migration des Standalone Media SDK zu Launch {#sdk-to-launch}
+      + [Ende der Unterstützung für Media Analytics Mobile SDK](additional-resources/end-of-support-faqs.md)
+      + Legacy − Migration vom eigenständigen Media SDK zu Launch {#sdk-to-launch}
          + [Überblick](legacy/sdk-to-launch/sdk-to-launch-migration.md)
          + [Android − Media SDK zu Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS − Media SDK zu Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
@@ -37,7 +37,7 @@ ht-degree: 97%
       + [Media SDK – Übersicht](implementation/media-sdk/media-sdk-overview.md)
       + Installieren und Konfigurieren {#setup}
          + Installieren von Web-SDKs {#install-web-sdk}
-            + [Analytics mit JavaScript installieren](implementation/media-sdk/setup/web-implementation.md)
+            + [Installieren von Analytics mithilfe von JavaScript](implementation/media-sdk/setup/web-implementation.md)
             + [Installieren von Analytics mithilfe der Media Analytics-Erweiterung](implementation/media-sdk/setup/web-implementation-tags.md)
          + [Installieren von Mobile SDKs](implementation/media-sdk/setup/mobile-implementation.md)
          + Installieren von OTT SDKs {#ott-setup}

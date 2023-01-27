@@ -8,15 +8,15 @@ role: User, Admin, Data Engineer
 source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Abrufen von Medien-SDKs, Erweiterungen mithilfe von Tags und OTT-SDKs {#download-sdks}
 
-Die Informationen auf dieser Seite enthalten Links zum Herunterladen der aktuellen Medien-SDKs und zum Abrufen der Medien-Erweiterungen, die Tags verwenden.
+Die Informationen auf dieser Seite enthalten Links zum Herunterladen der aktuellen Medien-SDKs und zum Abrufen der Medienerweiterungen, die Tags verwenden.
 
-Tags in Adobe Experience Platform sind die nächste Generation von Adobe-Verwaltungsfunktionen für Website-Tags und Mobile-SDKs. Tags bieten Kunden eine einfache Möglichkeit, alle Analyse-, Marketing- und Werbelösungen bereitzustellen und zu verwalten, die für relevante Kundenerlebnisse notwendig sind. Weitere Informationen zu Tags finden Sie unter [Übersicht über Tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=de).
+Tags in Adobe Experience Platform sind die nächste Generation von Adobe-Verwaltungsfunktionen für Website-Tags und Mobile-SDKs. Tags bieten Kunden eine einfache Möglichkeit, alle Analyse-, Marketing- und Werbelösungen bereitzustellen und zu verwalten, die für relevante Kundenerlebnisse notwendig sind. Weitere Informationen zu Tags finden Sie in [Übersicht über Tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=de).
 
 
 >[!NOTE]
@@ -30,7 +30,7 @@ Tags in Adobe Experience Platform sind die nächste Generation von Adobe-Verw
 
 | Unterstützte Plattform | Version  |  APIs   |  Dokumentation  |  Beispiel  |
 |:---:|---|---|---|---|
-| ![JavaScript-Symbol](assets/javascript-icon.png) | Web − [Medien-SDK für JavaScript v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Referenz zur JavaScript-API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Analytics mit JavaScript installieren](/help/implementation/media-sdk/setup/web-implementation.md) | [Beispiel des Medien-SDK für JavaScript v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
+| ![JavaScript-Symbol](assets/javascript-icon.png) | Web − [Medien-SDK für JavaScript v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Referenz zur JavaScript-API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Installieren von Analytics mithilfe von JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Beispiel des Medien-SDK für JavaScript v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![JavaScript-Symbol](assets/javascript-icon.png) | Web − Medienerweiterung |  | [Erweiterung von Adobe Media Analytics (3.x SDK) für Audio und Video − Verwendung von Tags (Datenerfassung)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=de) | [Erweiterung von Adobe Media Analytics (3.x SDK) für Audio und Video – Beispiel](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 
 ### Mobile-Implementierung {#get-mobile-extension}

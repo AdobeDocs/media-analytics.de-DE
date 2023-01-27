@@ -7,15 +7,15 @@ exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
 source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Analytics mit JavaScript installieren {#install-web-sdks}
+# Installieren von Analytics mithilfe von JavaScript {#install-web-sdks}
 
 Die Informationen auf dieser Seite beschreiben, wie Sie das eigenständige Web-SDK installieren und JavaScript einrichten.
 
-Alternativ können Sie die Adobe Medien Analytics-Erweiterung verwenden, um Analytics zu implementieren, wie unter [Analytics mithilfe der Media Analytics-Erweiterung implementieren](/help/implementation/media-sdk/setup/web-implementation-tags.md).
+Alternativ können Sie die Adobe Media Analytics-Erweiterung verwenden, um Analytics zu implementieren, wie unter [Implementieren von Analytics mithilfe der Media Analytics-Erweiterung](/help/implementation/media-sdk/setup/web-implementation-tags.md) beschrieben.
 
 ## Voraussetzungen  {#prerequesites}
 
