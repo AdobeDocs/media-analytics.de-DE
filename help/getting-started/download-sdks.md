@@ -5,10 +5,10 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
+source-git-commit: 0c02fec77d6484774ea81e997529accddb19d175
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 100%
+source-wordcount: '405'
+ht-degree: 86%
 
 ---
 
@@ -24,7 +24,7 @@ Tags in Adobe Experience Platform sind die nächste Generation von Adobe-Verw
 >Informationen zum Herunterladen von veralteten SDKs finden Sie unter [Veraltet − SDKs herunterladen](/help/legacy/legacy-download-sdks.md).<br>
 >Wichtige Informationen zum Ende der Unterstützung finden Sie in den [häufig gestellten Fragen zum Ende der Unterstützung](/help/additional-resources/end-of-support-faqs.md).
 
-## Medien-SDKs und Mobile-Bibliotheken {#media-sdks-libraries}
+## Medien-SDKs und mobile Bibliotheken {#media-sdks-libraries}
 
 ### Web-Implementierung {#download-web-sdk}
 
@@ -32,13 +32,16 @@ Tags in Adobe Experience Platform sind die nächste Generation von Adobe-Verw
 |:---:|---|---|---|---|
 | ![JavaScript-Symbol](assets/javascript-icon.png) | Web − [Medien-SDK für JavaScript v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Referenz zur JavaScript-API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Installieren von Analytics mithilfe von JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Beispiel des Medien-SDK für JavaScript v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![JavaScript-Symbol](assets/javascript-icon.png) | Web − Medienerweiterung |  | [Erweiterung von Adobe Media Analytics (3.x SDK) für Audio und Video − Verwendung von Tags (Datenerfassung)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=de) | [Erweiterung von Adobe Media Analytics (3.x SDK) für Audio und Video – Beispiel](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
+| ![JavaScript-Symbol](assets/javascript-icon.png) | Web - Experience Platform Edge (in Kürze verfügbar) |  | [Installieren von Analytics mit Experience Platform Edge](/help/implementation/media-sdk/implementation-edge.md) |  |
 
-### Mobile-Implementierung {#get-mobile-extension}
+### Mobile Implementierung {#get-mobile-extension}
 
 | Unterstützte Plattform | Version  |  Dokumentation   |  Beispieoe  |
 |:---:|---|---|---|
 | ![Android-Symbol](assets/android-icon.png) | Android − Medienerweiterung | [Mobile-SDKs – Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics – Media Analytics für Audio und Video – Beispiel](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
-| ![Apple iOS-Symbol ](assets/ios-icon.png)<br> tvOS-Symbol hinzufügen | iOS/tvOS − Medienerweiterung | [Mobile-SDKs – Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics – Media Analytics für Audio und Video – Beispiel](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
+| ![Symbol &quot;Apple iOS&quot;](assets/ios-icon.png)<br>**tvOS** | iOS/tvOS − Medienerweiterung | [Mobile-SDKs – Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics – Media Analytics für Audio und Video – Beispiel](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
+| ![Android-Symbol](assets/android-icon.png) | Android - Experience Platform Edge | [Installieren von Analytics mit Experience Platform Edge](/help/implementation/media-sdk/implementation-edge.md) |  |
+| ![Symbol &quot;Apple iOS&quot;](assets/ios-icon.png)<br>**tvOS** | iOS/tvOS - Experience Platform Edge | [Installieren von Analytics mit Experience Platform Edge](/help/implementation/media-sdk/implementation-edge.md) |  |
 
 ### Over-The-Top-Implementierung {#download-ott-libraries}
 

@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über die Implementierung von Adobe Analytics fü
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dc1b9fe0-6c75-4f93-a558-a3f3186bcf22
-source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
-workflow-type: ht
-source-wordcount: '202'
-ht-degree: 100%
+source-git-commit: e75eb6ddbcf693cd200159392dd3026ca55fc22d
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 95%
 
 ---
 
@@ -23,6 +23,7 @@ Implementieren Sie die SDKs für Streaming-Medien in Ihr Video-Player-Framework 
 |:----:|:----|
 | <img src="assets/javascript-icon.png"> | [Media SDK für JavaScript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
 | <img src="assets/javascript-icon.png"> | [Adobe Media Analytics-Erweiterung mit Tags (Datenerfassung) für JavaScript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
+| <img src="assets/javascript-icon.png"> | [Experience Platform Edge](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
 
 ### Mobile-Implementierung
 
@@ -30,6 +31,8 @@ Implementieren Sie die SDKs für Streaming-Medien in Ihr Video-Player-Framework 
 |:----:|:----|
 | <img src="assets/android-icon.png"> | [Adobe Experience Platform Media Analytics-Erweiterung mit Tags (Datenerfassung)](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
 | <img src="assets/apple-ios-icon.png"> | [Adobe Experience Platform Media Analytics-Erweiterung mit Tags (Datenerfassung)](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
+| <img src="assets/android-icon.png"> | [Experience Platform Edge](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
+| <img src="assets/apple-ios-icon.png"> | [Experience Platform Edge](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
 
 * Die Erweiterung von iOS Media Analytics für Audio und Video unterstützt iOS, iPadOS und tvOS.
 
