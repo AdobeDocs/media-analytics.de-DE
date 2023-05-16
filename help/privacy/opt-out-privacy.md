@@ -45,6 +45,7 @@ Sie können steuern, ob das Nachverfolgen der Aktivitäten auf einem bestimmten 
             ```
             ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
             ```
+
          >[!IMPORTANT]
          >
          >Wenn ein Benutzer das Tracking deaktiviert, werden alle vorhandenen Gerätedaten und -IDs gelöscht, bis das Tracking erneut aktiviert wird.
@@ -62,6 +63,7 @@ Sie können steuern, ob das Nachverfolgen der Aktivitäten auf einem bestimmten 
             ```
             ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
             ```
+
       * **Die aktuelle Einstellung zurückgeben:**
 
          * **Chromecast:**
@@ -75,6 +77,7 @@ Sie können steuern, ob das Nachverfolgen der Aktivitäten auf einem bestimmten 
             ```
             ADBMobile().getPrivacyStatus()
             ```
+
    Nachdem die Datenschutzeinstellung mithilfe von `setPrivacyStatus` geändert wurde, ist die Änderung dauerhaft, bis sie mit dieser Methode erneut geändert wird, es sei denn, die App wird deinstalliert und neu installiert.
 
 ## Abrufen von gespeicherten Kennungen (OTT-Apps) {#retrieving-stored-identifiers-ott-apps}
