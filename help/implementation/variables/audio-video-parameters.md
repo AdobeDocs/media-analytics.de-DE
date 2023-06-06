@@ -5,9 +5,9 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '7004'
+source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+workflow-type: tm+mt
+source-wordcount: '7002'
 ht-degree: 100%
 
 ---
@@ -130,7 +130,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK-Schlüssel:**<br/> `config.downloadedcontent` </li> <li> **API-Schlüssel:**<br/> vom Backend abgerufen </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> boolean </li> <li> **Gesendet mit:**<br/> Media Start, Media Close </li> <li> **Min. SDK-Version:** <br/>Android- und iOS-Erweiterung für Launch 1.1.0 </li> <li> **Beispielwert:**<br/> true </li> <li> **Beschreibung:**<br/> Wird auf „true“ (wahr) gesetzt, wenn der Treffer aufgrund der Wiedergabe einer Mediensitzung mit heruntergeladenen Inhalten generiert wird. Nicht vorhanden, wenn keine heruntergeladenen Inhalte wiedergegeben werden.<br/><br/>[Launch](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker-with-optional-configuration)  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.downloaded) </li> <li> **Heartbeat:**<br/> (s:meta:a.media.downloaded) </li> </ul> | <ul> <li> **Verfügbar:**<br/> Verwenden Sie eine anwenderspezifische Verarbeitungsregel. </li> <li> **Reservierte Variable:**<br/> nicht verfügbar </li> <li> **Berichtsname:**<br/> anwenderspezifisch </li> <li> **Kontextdaten:**<br/> (a.media.downloaded) </li> <li> **Daten-Feed:**<br/> nicht verfügbar </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.downloaded) </li> <li> **XDM-Feldpfad:**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>downloadedPlayback </li> <li> **XDM-Feldpfad für Berichterstellung:**<br/> mediaReporting.sessionDetails.isDownloaded </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/> `config.downloadedcontent` </li> <li> **API-Schlüssel:**<br/> vom Backend abgerufen </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> boolean </li> <li> **Gesendet mit:**<br/> Media Start, Media Close </li> <li> **Min. SDK-Version:** <br/>Android- und iOS-Erweiterung für Launch 1.1.0 </li> <li> **Beispielwert:**<br/> true </li> <li> **Beschreibung:**<br/> Wird auf „true“ (wahr) gesetzt, wenn der Treffer aufgrund der Wiedergabe einer Mediensitzung mit heruntergeladenen Inhalten generiert wird. Nicht vorhanden, wenn keine heruntergeladenen Inhalte wiedergegeben werden.<br/><br/>[Launch](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.downloaded) </li> <li> **Heartbeat:**<br/> (s:meta:a.media.downloaded) </li> </ul> | <ul> <li> **Verfügbar:**<br/> Verwenden Sie eine anwenderspezifische Verarbeitungsregel. </li> <li> **Reservierte Variable:**<br/> nicht verfügbar </li> <li> **Berichtsname:**<br/> anwenderspezifisch </li> <li> **Kontextdaten:**<br/> (a.media.downloaded) </li> <li> **Daten-Feed:**<br/> nicht verfügbar </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.downloaded) </li> <li> **XDM-Feldpfad:**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>downloadedPlayback </li> <li> **XDM-Feldpfad für Berichterstellung:**<br/> mediaReporting.sessionDetails.isDownloaded </li> </ul> |
 
 ### Inhalts-Player-Name
 

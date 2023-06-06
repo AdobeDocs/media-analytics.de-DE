@@ -4,10 +4,10 @@ description: Links zu älteren SDK-Downloads für verfügbare Plattformen, einsc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
-source-wordcount: '331'
-ht-degree: 100%
+source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 93%
 
 ---
 
@@ -27,7 +27,7 @@ Die Adobe-Datenerfassung mit der Media Analytics-Erweiterung erfordert Folgendes
 * Sie müssen Adobe Experience Cloud-Kunde sein.
 * Sie müssen den Datenerfassungs- oder DTM-Einbettungs-Code auf Ihren Web-Seiten bereitstellen.
 * Sie müssen die [Analytics-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=de) konfigurieren.
-* Sie müssen die [Lauch-Erweiterung für Adobe Medien Analytics für Audio und Video](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) konfigurieren.
+* Sie müssen die [Adobe Medien Analytics für Audio und Video - Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html).
 * Sie müssen die [Experience Cloud-ID-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=de) konfigurieren.
 
 ## 2.x Medien-SDKs herunterladen {#download-2x-sdks}

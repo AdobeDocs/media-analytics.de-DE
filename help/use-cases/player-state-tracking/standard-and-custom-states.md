@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Player-Status-Tracking-Funktion einschl
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '279'
+source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+workflow-type: tm+mt
+source-wordcount: '278'
 ht-degree: 100%
 
 ---
@@ -42,4 +42,4 @@ Die Daten werden für Standard- und benutzerdefinierte Status auf dieselbe Weise
 
 Mit der Möglichkeit, benutzerdefinierte Status zu erstellen, können Sie benutzerdefinierte Aktionen erfassen und benutzerdefinierte Metadaten während einer Wiedergabesitzung aktualisieren.
 
-Weitere Informationen zum Erstellen benutzerdefinierter Status finden Sie im [Leitfaden zur Medien-API-Referenz: `createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
+Weitere Informationen zum Erstellen benutzerdefinierter Status finden Sie im [Leitfaden zur Medien-API-Referenz: `createStateObject`](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)
