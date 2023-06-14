@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Adobe Streaming Media implementieren.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: bcab6a94547b79a565dc2303ab640dc1b8994bd4
+source-git-commit: 1280c0851094234b308e69ba2be3da21dfdc1302
 workflow-type: tm+mt
-source-wordcount: '1883'
+source-wordcount: '1939'
 ht-degree: 11%
 
 ---
@@ -344,7 +344,7 @@ So erstellen und richten Sie ein Schema ein:
 
 ## Senden von Daten an Experience Platform Edge mit dem AEP Mobile SDK
 
-Sie können das mobile Adobe Experience Platform SDK verwenden, um mobile Daten an Experience Platform Edge zu senden. (Alternativ können Sie eine benutzerdefinierte Implementierung der Edge-APIs verwenden.<!-- Waiting for link from John -->)
+Sie können das mobile Adobe Experience Platform SDK verwenden, um mobile Daten an Experience Platform Edge zu senden.
 
 Verwenden Sie die folgenden Dokumentationsressourcen, um die Implementierung für iOS und Android abzuschließen:
 
@@ -354,3 +354,13 @@ Verwenden Sie die folgenden Dokumentationsressourcen, um die Implementierung fü
 
 * [Migration zu Adobe Streaming Media für Edge Network-Erweiterung](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
+
+Alternativ können Sie eine benutzerdefinierte Implementierung der Edge-APIs mit den folgenden Ressourcen verwenden:
+
+* [Übersicht über die Media Edge API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
+
+* [Erste Schritte mit der Media Edge API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
+
+* [Handbuch zur Fehlerbehebung bei der Media Edge-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
+
+* [Verwenden der Open API Specification-Datei für Media Edge-APIs](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/swagger.html)
