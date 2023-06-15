@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Adobe-Streaming-Medien für mobile Apps imple
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
-source-wordcount: '187'
-ht-degree: 100%
+source-git-commit: 1e4babe0df218342fc4836155139d908ba113510
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 95%
 
 ---
 
@@ -17,7 +17,9 @@ Installieren und konfigurieren Sie Folgendes, um Streaming-Medien für Mobile Ap
 
 * **Adobe Experience Platform Mobile SDK**
 
-   Verwenden Sie zum Erfassen von Daten Tags in Adobe Experience Platform. Tags in Adobe Experience Platform ist eine Tag-Management-Lösung, mit der Sie Analytics-Code bereitstellen und weitere Tagging-Anforderungen erfüllen können.
+  Verwenden Sie zum Erfassen von Daten eine der folgenden Methoden:
+   * Tags in Adobe Experience Platform. Tags in Adobe Experience Platform ist eine Tag-Management-Lösung, mit der Sie Analytics-Code bereitstellen und weitere Tagging-Anforderungen erfüllen können.
+   * Adobe Experience Platform Edge
 
 * **Media SDK für Android** oder **Media SDK für iOS**
 
@@ -27,7 +29,7 @@ Informationen zum Herunterladen der SDKs und weitere Dokumentationsressourcen fi
 
 * **Abrufen gültiger Konfigurationsparameter**
 
-   Sie können diese Parameter von einem Adobe-Support-Mitarbeiter erhalten, wenn Sie Ihr Analytics-Konto eingerichtet haben.
+  Sie können diese Parameter von einem Adobe-Support-Mitarbeiter erhalten, wenn Sie Ihr Analytics-Konto eingerichtet haben.
 
 * **Integrieren der folgenden APIs in Ihren Media Player**
 

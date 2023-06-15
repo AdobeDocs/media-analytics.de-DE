@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Adobe Streaming Media implementieren.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: 1280c0851094234b308e69ba2be3da21dfdc1302
+source-git-commit: 547c47b09b2cc18ee155953eaad314599fa8d749
 workflow-type: tm+mt
-source-wordcount: '1939'
+source-wordcount: '1837'
 ht-degree: 11%
 
 ---
@@ -15,45 +15,17 @@ ht-degree: 11%
 
 Mit Adobe Experience Platform Edge können Sie Daten, die für mehrere Produkte bestimmt sind, an einen zentralen Ort senden. Experience Edge leitet die entsprechenden Informationen an die gewünschten Produkte weiter. Mit diesem Konzept können Sie Implementierungsaufgaben zusammenfassen, insbesondere, wenn mehrere Datenlösungen vorhanden sind.
 
-Die folgende Abbildung zeigt eine Media Analytics-Implementierung, die Experience Platform Edge verwendet:
+Die folgende Abbildung zeigt, wie eine Media Analytics-Implementierung Experience Platform Edge verwenden kann, um Daten in Analysis Workspace entweder in Adobe Analytics oder Customer Journey Analytics verfügbar zu machen:
 
-![Edge-Implementierung](assets/media-analytics-implementation-overview.png)
+![CJA-Workflow](assets/cja-implementation.png)
+
+Einen Überblick über alle Implementierungsoptionen, einschließlich Implementierungsmethoden, die nicht Experience Platform Edge verwenden, finden Sie unter [Implementieren von Streaming-Medien für Adobe Analytics oder Customer Journey Analytics](/help/implementation/overview.md).
 
 >[!IMPORTANT]
 >
->Derzeit können Sie Daten nur mit dem Adobe Experience Platform Mobile SDK an Experience Edge senden.
+>Streaming-Medien sind noch nicht in das AEP Web SDK integriert.
 
-
-<!-- Replace the above sentence with this after it web releases: You can send data to Experience Edge using any of the following implementation methods:
-
-* Adobe Experience Platform Web SDK (Coming soon)
-* Adobe Experience Platform Mobile SDK
-* Edge Network Server API
-
-Regardless of which Experience Edge implementation method you use for configuring media tracking, you must first complete the following sections:
-
--->
-
-Führen Sie die folgenden Abschnitte aus, um Media Analytics mit Experience Platform Edge zu implementieren:
-
-* [Report Suite definieren](#define-a-report-suite)
-* [Einrichten des Schemas in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform)
-* [Datensatz in Adobe Experience Platform erstellen](#create-a-dataset-in-adobe-experience-platform)
-* [Konfigurieren eines Datenspeichers in Adobe Experience Platform](#configure-a-datastream-in-adobe-experience-platform)
-* [Erstellen einer Verbindung in Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics)
-* [Datenansicht in Customer Journey Analytics erstellen](#create-a-data-view-in-customer-journey-analytics)
-* [Erstellen und Konfigurieren eines Projekts in Customer Journey Analytics](#create-and-configure-a-project-in-customer-journey-analytics)
-* [Senden von Daten an Experience Platform Edge mit der Edge-Erweiterung](#send-data-to-experience-platform-edge-with-the-edge-extension)
-
-## Report Suite definieren
-
->[!NOTE]
->
->Eine Report Suite ist nur erforderlich, wenn Sie Adobe Analytics verwenden. Eine Report Suite ist nicht erforderlich, wenn Sie Customer Journey Analytics für die Berichterstellung verwenden möchten.
-
-Wenn Sie planen, Adobe Analytics für die Berichterstellung zu verwenden, benötigen Sie eine Report Suite zur Verwendung mit Ihrer Streaming-Medien-Implementierung. Informationen zum Definieren einer Report Suite finden Sie unter [Report Suite Manager](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html?lang=en).
-
-Nachdem eine Report Suite definiert wurde, fahren Sie mit [Einrichten des Schemas in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
+Unabhängig davon, ob Sie das Mobile SDK oder die API verwenden, um Streaming-Medien mit Experience Edge zu implementieren, müssen Sie zunächst die folgenden Abschnitte ausführen:
 
 ## Einrichten des Schemas in Adobe Experience Platform
 
@@ -353,7 +325,6 @@ Verwenden Sie die folgenden Dokumentationsressourcen, um die Implementierung fü
 * [API-Referenz](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
 * [Migration zu Adobe Streaming Media für Edge Network-Erweiterung](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
-
 
 Alternativ können Sie eine benutzerdefinierte Implementierung der Edge-APIs mit den folgenden Ressourcen verwenden:
 
