@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Adobe Streaming Media implementieren.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: 547c47b09b2cc18ee155953eaad314599fa8d749
+source-git-commit: b57db92ae4ce01e259424e3d71e36311af88ccac
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1785'
 ht-degree: 11%
 
 ---
@@ -46,75 +46,58 @@ So erstellen und richten Sie ein Schema ein:
 
    ![Feldergruppen hinzugefügt](assets/schema-field-groups-added.png)
 
-1. Im [!UICONTROL **Struktur**] Bereich, wählen Sie die `endUserIds` > `_experience` Feldergruppe und wählen Sie [!UICONTROL **Zugehörige Felder verwalten**].
 
-   ![Schaltfläche &quot;Zugeordnete Felder verwalten&quot;](assets/manage-related-fields.png)
+Die folgenden Schritte aus diesem Abschnitt sind optional. Anforderungen an die Media Edge-API funktionieren auch dann, wenn die angegebenen Felder in der Benutzeroberfläche des AEP-Schemas nicht ausgeblendet werden.
+Das Ausblenden der Felder erleichtert jedoch das Lesen und Verstehen des Schemas, da die ausgeblendeten Felder von der Media Edge-API nicht verwendet werden.
+Die folgenden Schritte beziehen sich nur auf die Felder im `MediaAnalytics Interaction Details` fieldgroup.
 
-1. Aktualisieren Sie das Schema wie folgt:
+1. Im [!UICONTROL **Struktur**] Bereich, wählen Sie die `Media Collection Details` Feld, wählen Sie [!UICONTROL **Zugehörige Felder verwalten**] und aktualisieren Sie dann das Schema wie folgt:
 
-   * Im `Adobe Analytics ExperienceEvent Template` Feldergruppe, alle Felder außer `EndUserIDs`.
+   ![manage-related-fields](assets/manage-related-fields.png)
 
-   * Im `endUserIds` > `_experience` > `Adobe Advertising Cloud end user IDs` Feldergruppe, alle Felder mit Ausnahme der `Identifier` -Feld.
-
-   * Im `endUserIds` > `_experience` > `Adobe Analytics Cloud Custom end user IDs` Feldergruppe, alle Felder mit Ausnahme der `Identifier` -Feld.
-
-     ![Ausblenden von Feldern](assets/schema-hide-fields.png)
-
-1. Auswählen [!UICONTROL **Bestätigen**] , um Ihre Änderungen zu speichern.
-
-1. Im [!UICONTROL **Struktur**] Bereich, wählen Sie die `Implementation Details` Feldergruppe, wählen Sie [!UICONTROL **Zugehörige Felder verwalten**] und aktualisieren Sie dann das Schema wie folgt:
-
-   * Im `Implementation Details` > `Implementation details` Feldergruppe, alle Felder außer `version`.
-
-     ![Ausblenden von Feldern](assets/schema-hide-fields2.png)
-
-1. Auswählen [!UICONTROL **Bestätigen**] , um Ihre Änderungen zu speichern.
-
-1. Im [!UICONTROL **Struktur**] Bereich, wählen Sie die `Media Collection Details` Feldergruppe, wählen Sie [!UICONTROL **Zugehörige Felder verwalten**] und aktualisieren Sie dann das Schema wie folgt:
-
-   * Im `Media Collection Details` Feldergruppe, die `List Of States` Feldergruppe.
+   * Im `Media Collection Details` -Feld, das `List Of States` -Feld.
 
      ![Anzeigen von Mediensammlungsstatus](assets/schema-hide-media-collection-states.png)
 
-   * Im `Media Collection Details` > `Advertising Details` -Feldergruppe die folgenden Berichtsfelder ausblenden: `Ad Completed`, `Ad Started`und `Ad Time Played`.
+   * Im `Media Collection Details` > `Advertising Details` -Feld die folgenden Berichtsfelder ausblenden: `Ad Completed`, `Ad Started`und `Ad Time Played`.
 
-   * Im `Media Collection Details` > `Advertising Pod Details` Feldergruppe, blenden Sie das folgende Berichtsfeld aus: `Ad Break ID`
+   * Im `Media Collection Details` > `Advertising Pod Details` das folgende Berichtsfeld ausblenden: `Ad Break ID`
 
-   * Im `Media Collection Details` > `Chapter Details` Feldergruppe, blenden Sie die folgenden Berichtsfelder aus: `Chapter ID`, `Chapter Completed`, `Chapter Started`und `Chapter Time Played`.
+   * Im `Media Collection Details` > `Chapter Details` -Feld die folgenden Berichtsfelder ausblenden: `Chapter ID`, `Chapter Completed`, `Chapter Started`und `Chapter Time Played`.
 
-   * Im `Media Collection Details` > `Qoe Data Details` Feldergruppe, blenden Sie die folgenden Berichtsfelder aus: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`und `Total Stalling Duration`.
+   * Im `Media Collection Details` > `Qoe Data Details` -Feld die folgenden Berichtsfelder ausblenden: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`und `Total Stalling Duration`.
 
-   * Im `Media Collection Details` > `Session Details` Feldergruppe, blenden Sie die folgenden Berichtsfelder aus: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`und `Pccr`.
+   * Im `Media Collection Details` > `Session Details` -Feld die folgenden Berichtsfelder ausblenden: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`und `Pccr`.
 
-   * Im `Media Collection Details` > `List Of States End` und `Media Collection Details` > `List Of States Start` Feldergruppen, blenden Sie die folgenden Berichtsfelder aus: `Player State Count`, `Player State Set`und `Player State Time`.
+   * Im `Media Collection Details` > `List Of States End` und `Media Collection Details` > `List Of States Start` -Feld die folgenden Berichtsfelder ausblenden: `Player State Count`, `Player State Set`und `Player State Time`.
 
      ![Ausblenden von Feldern](assets/schema-hide-listofstates.png)
 
 1. Auswählen [!UICONTROL **Bestätigen**] , um Ihre Änderungen zu speichern.
 
-1. Im [!UICONTROL **Struktur**] Bereich, wählen Sie die `List Of Media Collection Downloaded Content Events` Feldergruppe, wählen Sie [!UICONTROL **Zugehörige Felder verwalten**] und aktualisieren Sie dann das Schema wie folgt:
+1. Im [!UICONTROL **Struktur**] Bereich, wählen Sie die `List Of Media Collection Downloaded Content Events` Feld, wählen Sie [!UICONTROL **Zugehörige Felder verwalten**] und aktualisieren Sie dann das Schema wie folgt:
 
-   * Im `List Of Media Collection Downloaded Content Events` > `Media Details` Feldergruppe, die `List Of States` Feldergruppe.
+   * Im `List Of Media Collection Downloaded Content Events` > `Media Details` -Feld, das `List Of States` -Feld.
 
-   * Im `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` -Feldergruppe die folgenden Berichtsfelder ausblenden: `Ad Completed`, `Ad Started`und `Ad Time Played`.
+   * Im `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` -Feld die folgenden Berichtsfelder ausblenden: `Ad Completed`, `Ad Started`und `Ad Time Played`.
 
-   * Im `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` Feldergruppe, blenden Sie das folgende Berichtsfeld aus: `Ad Break ID`
+   * Im `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` das folgende Berichtsfeld ausblenden: `Ad Break ID`
 
-   * Im `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` Feldergruppe, blenden Sie die folgenden Berichtsfelder aus: `Chapter ID`, `Chapter Completed`, `Chapter Started`und `Chapter Time Played`.
+   * Im `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` -Feld die folgenden Berichtsfelder ausblenden: `Chapter ID`, `Chapter Completed`, `Chapter Started`und `Chapter Time Played`.
 
-   * Im `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` Feldergruppe, blenden Sie die folgenden Berichtsfelder aus: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`und `Total Stalling Duration`.
+   * Im `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` -Feld die folgenden Berichtsfelder ausblenden: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`und `Total Stalling Duration`.
 
-   * Im `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` Feldergruppe, blenden Sie die folgenden Berichtsfelder aus: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`und `Pccr`.
+   * Im `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` -Feld die folgenden Berichtsfelder ausblenden: `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`und `Pccr`.
 
-   * Im `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` und `Media Collection Details` > `List Of States Start` Feldergruppen, blenden Sie die folgenden Berichtsfelder aus: `Player State Count`, `Player State Set`und `Player State Time`.
+   * Im `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` und `Media Collection Details` > `List Of States Start` -Feld die folgenden Berichtsfelder ausblenden: `Player State Count`, `Player State Set`und `Player State Time`.
 
-   * Im `List Of Media Collection Downloaded Content Events` > `Media Details`  Feldergruppe, die `Media Session ID` -Feld.
+   * Im `List Of Media Collection Downloaded Content Events` > `Media Details`  -Feld, das `Media Session ID` -Feld.
 
 1. Auswählen [!UICONTROL **Bestätigen**] , um Ihre Änderungen zu speichern.
 
-1. Im [!UICONTROL **Struktur**] Bereich, wählen Sie die `Media Reporting Details` Feldergruppe, wählen Sie [!UICONTROL **Zugehörige Felder verwalten**] und aktualisieren Sie dann das Schema wie folgt:
+1. Im [!UICONTROL **Struktur**] Bereich, wählen Sie die `Media Reporting Details` Feld, wählen Sie [!UICONTROL **Zugehörige Felder verwalten**] und aktualisieren Sie dann das Schema wie folgt:
 
-   * Im `Media Reporting Details` Feldergruppe, blenden Sie die folgenden Feldergruppen aus: `Error Details`, `List Of States End`, `List of States Start`, `Playhead`und `Media Session ID`.
+   * Im `Media Reporting Details` -Feld die folgenden Felder ausblenden: `Error Details`, `List Of States End`, `List of States Start`und `Media Session ID`.
 
 1. Auswählen [!UICONTROL **Bestätigen**] > [!UICONTROL **Speichern**]  , um Ihre Änderungen zu speichern.
 
