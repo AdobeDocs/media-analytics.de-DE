@@ -4,7 +4,7 @@ description: „Erfahren Sie mehr über die wichtigsten Geräte wie iOS, Android
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: deae677d9e8b4dc241765cf5d168fcd71b9c8310
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 58%
@@ -25,7 +25,7 @@ Für Geräte, die derzeit keine SDK-Unterstützung haben, oder in Situationen, i
 
 Die folgende Tabelle zeigt die derzeit unterstützten Geräte. Wenn ein Gerät nicht aufgeführt ist, wenden Sie sich an die Kundenunterstützung oder einen Berater, um den Status des Geräts zu erfahren.
 
-Weitere Informationen zur Implementierung von Medien in Edge finden Sie unter [Installieren von Media Analytics mit Experience Platform Edge](/help/implementation/implementation-edge.md).
+Weitere Informationen zur Implementierung von Medien in Edge finden Sie unter [Installieren von Media Analytics mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
 | Streaming-Plattformen und -Geräte | | Media for Edge Network SDK/Erweiterung | Media Edge-API | Media-Erweiterung mit Tags oder mobilem AEP-SDK | Medien-SDK | Mediensammlungs-API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
