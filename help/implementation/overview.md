@@ -5,10 +5,10 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 13%
+source-wordcount: '471'
+ht-degree: 11%
 
 ---
 
@@ -44,11 +44,13 @@ Zusätzlich zu den Edge-Implementierungsmethoden sind weitere Implementierungsme
 
   Informationen zum Installieren, Konfigurieren und Implementieren der Media-Erweiterung mit Tags finden Sie unter [Übersicht über die Erweiterung &quot;Adobe Medien Analytics (3.x SDK) for Audio and Video&quot;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html).
 
-* **Medien-SDK:**  Daten werden an Adobe Analytics gesendet.
+* **Medien-SDK:**  Mit dem Media SDK können Sie mehrere Medienplattformen messen, darunter Websites, Mobiltelefone, angeschlossene TVs, Tablets, OTT-Geräte, Set-Top-Boxen und Spielekonsolen. (Weitere Informationen finden Sie unter [Unterstützte Geräte und Plattformen](/help/getting-started/supported-devices.md).
+
+  Die Medien-SDKs verwenden die Mediensammlungs-APIs zum Tracking. Daten werden an Adobe Analytics gesendet.
 
   Informationen zum Herunterladen und Installieren von Medien-SDKs und Erweiterungen finden Sie unter [Abrufen von Medien-SDKs, Erweiterungen mithilfe von Tags und OTT-SDKs](/help/getting-started/download-sdks.md).
 
-* **Mediensammlungs-API:** Tracking von Audio- und Videoereignissen mit RESTful-HTTP-Aufrufen. Daten werden an Adobe Analytics gesendet.
+* **Mediensammlungs-APIs:** Da die Mediensammlungs-APIs anpassbar sind, können sie für Anwendungen verwendet werden, die benutzerdefinierte Tracking-Funktionen erfordern, sowie für Geräte, die von den Media SDKs nicht unterstützt werden. Die Mediensammlungs-APIs verfolgen Audio- und Videoereignisse mithilfe von RESTful-HTTP-Aufrufen. Daten werden an Adobe Analytics gesendet.
 
   Informationen zur Verwendung der Mediensammlungs-APIs finden Sie unter [Mediensammlungs-APIs](media-collection-api/mc-api-overview.md).
 
