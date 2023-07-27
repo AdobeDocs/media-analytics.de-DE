@@ -8,7 +8,7 @@ sub-product: media analytics
 source-git-commit: b807359636e17bf36e33ca20e9dc4dee4d7f2a8f
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 + [Handbuch zu Streaming Media Analytics](media-overview.md)
 + Versionshinweise {#release-notes}
-   + [Versionshinweise zu Streaming Media](additional-resources/release-notes.md)
+   + [Versionshinweise zu Streaming-Medien](additional-resources/release-notes.md)
 + Erste Schritte {#getting-started}
    + [Voraussetzungen ](getting-started/prereqs.md)
    + [Unterstützte Geräte](getting-started/supported-devices.md)
@@ -33,16 +33,16 @@ ht-degree: 96%
 + Implementierung {#implementation}
    + [Implementierungsübersicht](implementation/overview.md)
    + Edge-Implementierungen (empfohlen) {#edge-recommended}
-      + Media Edge SDKs/Erweiterung {#media-edge-sdk}
-         + [Media Edge SDKs/Erweiterungs-Setup](/help/implementation/edge/implementation-edge.md)
-         + [Media Edge Mobile SDKs](/help/implementation/edge/edge-mobile-sdk.md)
+      + Media Edge-SDKs/Erweiterung {#media-edge-sdk}
+         + [Setup für Media Edge-SDKs/Erweiterung](/help/implementation/edge/implementation-edge.md)
+         + [Media Edge Mobile-SDKs](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge-API](/help/implementation/edge/implementation-edge-api.md)
    + Nur Adobe Analytics-Implementierungen {#analytics-only}
-      + Medien-SDKs/Erweiterung {#media-sdk}
-         + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
+      + Media-SDKs/Erweiterung {#media-sdk}
+         + [JavaScript Web-SDK](implementation/media-sdk/setup/web-implementation.md)
          + [Media Analytics-Erweiterung](implementation/media-sdk/setup/web-implementation-tags.md)
-         + [Mobile SDKs](implementation/media-sdk/setup/mobile-implementation.md)
-         + OTT SDKs {#ott-setup}
+         + [Mobile-SDKs](implementation/media-sdk/setup/mobile-implementation.md)
+         + OTT-SDKs {#ott-setup}
             + [Installieren des Chromecast SDK](implementation/media-sdk/setup/set-up-chromecast.md)
             + [Installieren des Roku SDK](implementation/media-sdk/setup/set-up-roku.md)
       + Mediensammlungs-APIs − Implementierung {#streaming-media-apis}
