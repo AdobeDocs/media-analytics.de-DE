@@ -6,9 +6,9 @@ exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '405'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Tags in Adobe Experience Platform sind die nächste Generation von Adobe-Verw
 >Informationen zum Herunterladen von veralteten SDKs finden Sie unter [Veraltet − SDKs herunterladen](/help/legacy/legacy-download-sdks.md).<br>
 >Wichtige Informationen zum Ende der Unterstützung finden Sie in den [häufig gestellten Fragen zum Ende der Unterstützung](/help/additional-resources/end-of-support-faqs.md).
 
-## Medien-SDKs und mobile Bibliotheken {#media-sdks-libraries}
+## Medien-SDKs und Mobile-Bibliotheken {#media-sdks-libraries}
 
 ### Web-Implementierung {#download-web-sdk}
 
@@ -32,16 +32,16 @@ Tags in Adobe Experience Platform sind die nächste Generation von Adobe-Verw
 |:---:|---|---|---|---|
 | ![JavaScript-Symbol](assets/javascript-icon.png) | Web − [Medien-SDK für JavaScript v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Referenz zur JavaScript-API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Installieren von Analytics mithilfe von JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Beispiel des Medien-SDK für JavaScript v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![JavaScript-Symbol](assets/javascript-icon.png) | Web − Medienerweiterung |  | [Erweiterung von Adobe Media Analytics (3.x SDK) für Audio und Video − Verwendung von Tags (Datenerfassung)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=de) | [Erweiterung von Adobe Media Analytics (3.x SDK) für Audio und Video – Beispiel](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
-| ![JavaScript-Symbol](assets/javascript-icon.png) | Web - Experience Platform Edge (in Kürze verfügbar) |  | [Installieren von Analytics mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md) | |
+| ![JavaScript-Symbol](assets/javascript-icon.png) | Web – Experience Platform Edge (in Kürze verfügbar) |  | [Installieren von Analytics mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md) | |
 
-### Mobile Implementierung {#get-mobile-extension}
+### Mobile-Implementierung {#get-mobile-extension}
 
 | Unterstützte Plattform | Version  |  Dokumentation   |  Beispieoe  |
 |:---:|---|---|---|
 | ![Android-Symbol](assets/android-icon.png) | Android − Medienerweiterung | [Mobile-SDKs – Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics – Media Analytics für Audio und Video – Beispiel](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
-| ![Symbol &quot;Apple iOS&quot;](assets/ios-icon.png)<br>**tvOS** | iOS/tvOS − Medienerweiterung | [Mobile-SDKs – Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics – Media Analytics für Audio und Video – Beispiel](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
-| ![Android-Symbol](assets/android-icon.png) | Android - Experience Platform Edge | [Installieren von Analytics mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md) | |
-| ![Symbol &quot;Apple iOS&quot;](assets/ios-icon.png)<br>**tvOS** | iOS/tvOS - Experience Platform Edge | [Installieren von Analytics mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md) |  |
+| ![Apple iOS-Symbol ](assets/ios-icon.png)<br>**tvOS** | iOS/tvOS − Medienerweiterung | [Mobile-SDKs – Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics – Media Analytics für Audio und Video – Beispiel](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
+| ![Android-Symbol](assets/android-icon.png) | Android – Experience Platform Edge | [Installieren von Analytics mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md) | |
+| ![Apple iOS-Symbol ](assets/ios-icon.png)<br>**tvOS** | iOS/tvOS – Experience Platform Edge | [Installieren von Analytics mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md) |  |
 
 ### Over-The-Top-Implementierung {#download-ott-libraries}
 
