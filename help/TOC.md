@@ -5,9 +5,9 @@ user-guide-title: Adobe Analytics für Streaming Media
 breadcrumb-title: Media Analytics-Anleitung
 user-guide-description: Implementieren von Adobe Analytics für Streaming-Medien. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
 sub-product: media analytics
-source-git-commit: b807359636e17bf36e33ca20e9dc4dee4d7f2a8f
+source-git-commit: b33a6205d5c6921c4ee0fcfc968593c62461c2a0
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '895'
 ht-degree: 100%
 
 ---
@@ -113,49 +113,48 @@ ht-degree: 100%
       + [OTT und Audience Manager](use-cases/analytics-with-ott/ott-am.md)
       + [OTT und Experience Cloud](use-cases/analytics-with-ott/ott-experience-cloud.md)
 + Tracking {#tracking}
-   + Tracking {#track-av-playback}
-      + [Überblick](use-cases/track-av-playback/track-core-overview.md)
-      + Tracking der Core-Wiedergabe von Streaming-Medien {#track-core}
-         + [Tracking von Core-Wiedergaben in JavaScript 3.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
-         + [Tracking von Core-Wiedergaben in Chromecast](use-cases/track-av-playback/track-core/track-core-chromecast.md)
-         + [Tracking von Core-Wiedergaben in Roku](use-cases/track-av-playback/track-core/track-core-roku.md)
-      + Puffer-Tracking {#track-buffering}
-         + [Puffer-Tracking in JavaScript 3.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
-         + [Nachverfolgen der Pufferung auf Chromecast](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
-         + [Puffer-Tracking in Roku](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
-      + Suchen-Tracking {#track-seeking}
-         + [Suchen-Tracking in JavaScript 3.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
-         + [Nachverfolgen von Suchen auf Chromecast](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
-         + [Nachverfolgen von Suchen auf Roku](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
-      + Standard-Metadaten implementieren {#impl-std-metadata}
-         + [Standard-Metadaten in JavaScript 3.x implementieren](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
-         + [Standard-Metadaten in Chromecast implementieren](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
-         + [Standard-Metadatenparameter – Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
-         + [Standard-Metadaten in Roku implementieren](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
-         + [Standard-Metadatenparameter – Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
-      + Anzeigen verfolgen {#track-ads}
-         + [Überblick](use-cases/track-ads/track-ads-overview.md)
-         + [Tracking von Anzeigen in JavaScript 3.x](use-cases/track-ads/track-ads-js/track-ads-js3.md)
-         + [Nachverfolgen von Anzeigen auf Chromecast](use-cases/track-ads/track-ads-chromecast.md)
-         + [Nachverfolgen von Anzeigen auf Roku](use-cases/track-ads/track-ads-roku.md)
-         + Standard-Anzeigenmetadaten implementieren {#impl-std-ad-metadata}
-            + [Standard-Anzeigenmetadaten in JavaScript 3.x implementieren](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
-            + [Standard-Anzeigenmetadaten in Roku implementieren](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
-      + Kapitel und Segmente verfolgen {#track-chapters}
-         + [Überblick](use-cases/track-chapters/track-chapters-overview.md)
-         + [Tracking von Kapiteln und Segmenten in JavaScript 3.x](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
-         + [Nachverfolgen von Kapiteln und Segmenten auf Chromecast](use-cases/track-chapters/track-chapters-chromecast.md)
-         + [Nachverfolgen von Kapiteln und Segmenten auf Roku](use-cases/track-chapters/track-chapters-roku.md)
-      + Erlebnisqualität verfolgen {#track-qos}
-         + [Überblick](use-cases/track-qos/track-qos-overview.md)
-         + [Tracking der Erlebnisqualität in JavaScript 3.x](use-cases/track-qos/track-qos-js/track-qos-js3.md)
-         + [Tracking der Erlebnisqualität in Chromecast](use-cases/track-qos/track-qos-chromecast.md)
-         + [Nachverfolgen der Erlebnisqualität auf Roku](use-cases/track-qos/track-qos-roku.md)
-      + Fehler-Tracking {#track-errors}
-         + [Überblick](use-cases/track-errors/track-errors-overview.md)
-         + [Tracking von Fehlern in JavaScript 3.x](use-cases/track-errors/track-errors-js/track-errors-js3.md)
-         + [Nachverfolgen von Fehlern auf Chromecast](use-cases/track-errors/track-errors-chromecast.md)
-         + [Tracking von Fehlern in Roku](use-cases/track-errors/track-errors-roku.md)
+   + [Überblick](use-cases/track-av-playback/track-core-overview.md)
+   + Tracking der Core-Wiedergabe von Streaming-Medien {#track-core}
+      + [Tracking von Core-Wiedergaben in JavaScript 3.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
+      + [Tracking von Core-Wiedergaben in Chromecast](use-cases/track-av-playback/track-core/track-core-chromecast.md)
+      + [Tracking von Core-Wiedergaben in Roku](use-cases/track-av-playback/track-core/track-core-roku.md)
+   + Puffer-Tracking {#track-buffering}
+      + [Puffer-Tracking in JavaScript 3.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
+      + [Nachverfolgen der Pufferung auf Chromecast](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
+      + [Puffer-Tracking in Roku](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
+   + Suchen-Tracking {#track-seeking}
+      + [Suchen-Tracking in JavaScript 3.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
+      + [Nachverfolgen von Suchen auf Chromecast](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
+      + [Nachverfolgen von Suchen auf Roku](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
+   + Standard-Metadaten implementieren {#impl-std-metadata}
+      + [Standard-Metadaten in JavaScript 3.x implementieren](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
+      + [Standard-Metadaten in Chromecast implementieren](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
+      + [Standard-Metadatenparameter – Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
+      + [Standard-Metadaten in Roku implementieren](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+      + [Standard-Metadatenparameter – Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
+   + Anzeigen verfolgen {#track-ads}
+      + [Überblick](use-cases/track-ads/track-ads-overview.md)
+      + [Tracking von Anzeigen in JavaScript 3.x](use-cases/track-ads/track-ads-js/track-ads-js3.md)
+      + [Nachverfolgen von Anzeigen auf Chromecast](use-cases/track-ads/track-ads-chromecast.md)
+      + [Nachverfolgen von Anzeigen auf Roku](use-cases/track-ads/track-ads-roku.md)
+      + Standard-Anzeigenmetadaten implementieren {#impl-std-ad-metadata}
+         + [Standard-Anzeigenmetadaten in JavaScript 3.x implementieren](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
+         + [Standard-Anzeigenmetadaten in Roku implementieren](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+   + Kapitel und Segmente verfolgen {#track-chapters}
+      + [Überblick](use-cases/track-chapters/track-chapters-overview.md)
+      + [Tracking von Kapiteln und Segmenten in JavaScript 3.x](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
+      + [Nachverfolgen von Kapiteln und Segmenten auf Chromecast](use-cases/track-chapters/track-chapters-chromecast.md)
+      + [Nachverfolgen von Kapiteln und Segmenten auf Roku](use-cases/track-chapters/track-chapters-roku.md)
+   + Erlebnisqualität verfolgen {#track-qos}
+      + [Überblick](use-cases/track-qos/track-qos-overview.md)
+      + [Tracking der Erlebnisqualität in JavaScript 3.x](use-cases/track-qos/track-qos-js/track-qos-js3.md)
+      + [Tracking der Erlebnisqualität in Chromecast](use-cases/track-qos/track-qos-chromecast.md)
+      + [Nachverfolgen der Erlebnisqualität auf Roku](use-cases/track-qos/track-qos-roku.md)
+   + Fehler-Tracking {#track-errors}
+      + [Überblick](use-cases/track-errors/track-errors-overview.md)
+      + [Tracking von Fehlern in JavaScript 3.x](use-cases/track-errors/track-errors-js/track-errors-js3.md)
+      + [Nachverfolgen von Fehlern auf Chromecast](use-cases/track-errors/track-errors-chromecast.md)
+      + [Tracking von Fehlern in Roku](use-cases/track-errors/track-errors-roku.md)
 + Datenschutz und Sicherheit {#streaming-media-privacy}
    + [Opt-out- und Datenschutz-Einstellungen](privacy/opt-out-privacy.md)
    + [Sicherheit](privacy/security.md)
