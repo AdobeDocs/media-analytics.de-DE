@@ -5,10 +5,10 @@ uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: 60702b2cf466df7a1b328743c5d5f4c1834d9554
+source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 75%
+source-wordcount: '442'
+ht-degree: 74%
 
 ---
 
@@ -20,7 +20,7 @@ Führen Sie vor der Implementierung von Streaming-Medien die folgenden Aufgaben 
 Bevor Sie mit der Implementierung von Streaming-Medien beginnen, lesen Sie die [Übersicht über Streaming-Medien](/help/media-overview.md) , um sicherzustellen, dass die Streaming-Medien Ihren Anforderungen entsprechen.
 
 1. **Bestätigen des Preismodells für Streaming-Medien**<br>
-Das aktuelle Preismodell basiert auf Video-Streams. Wenden Sie sich bei Bedarf an Ihren Kundenbetreuer oder Ihr Adobe Account-Team, um einen neuen Kundenauftrag zu unterzeichnen, da Streaming Media Analytics separat von Adobe Analytics verkauft wird.
+Das aktuelle Preismodell basiert auf Video-Streams. Wenden Sie sich bei Bedarf an Ihren Kundenbetreuer oder an Ihr Adobe Account-Team, da Streaming Media separat als Add-On für Adobe Analytics verkauft wird.<!--update when media SKUs are added to other AEP apps -->
 
 1. **Aktivieren von Adobe Analytics-Berichten**<br>
 Um Berichte in Analytics zu aktivieren und die erfassten Inhalts- und Anzeigendaten anzuzeigen, müssen Sie Berichte in Analytics aktivieren. Siehe [Aktivierung von Medienberichten](/help/reporting/media-reports-enable.md).
@@ -46,3 +46,5 @@ Um Berichte in Analytics zu aktivieren und die erfassten Inhalts- und Anzeigenda
    * [Voraussetzungen für reine Adobe Analytics-Implementierungen](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 
    * [Voraussetzungen für Edge-Implementierungen](/help/implementation/edge/prerequisites-edge.md)
+
+   Verwenden Sie die [Implementierungsübersicht](/help/implementation/overview.md) , um zu bestimmen, welche Implementierungsmethode für Sie geeignet ist.
