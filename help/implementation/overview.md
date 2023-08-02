@@ -6,9 +6,9 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
 source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '471'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -44,13 +44,13 @@ Zusätzlich zu den Edge-Implementierungsmethoden sind weitere Implementierungsme
 
   Informationen zum Installieren, Konfigurieren und Implementieren der Media-Erweiterung mit Tags finden Sie unter [Übersicht über die Erweiterung Adobe Media Analytics (3.x SDK) für Audio und Video](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html?lang=de).
 
-* **Medien-SDK:**  Mit dem Media SDK können Sie mehrere Medienplattformen messen, darunter Websites, Mobiltelefone, angeschlossene TVs, Tablets, OTT-Geräte, Set-Top-Boxen und Spielekonsolen. (Weitere Informationen finden Sie unter [Unterstützte Geräte und Plattformen](/help/getting-started/supported-devices.md).
+* **Medien-SDK:** Mit dem Medien-SDK können Sie mehrere Medienplattformen messen, darunter Websites, Mobiltelefone, vernetzte TVs, Tablets, OTT-Geräte, Set-Top-Boxen und Spielekonsolen. (Weitere Informationen finden Sie unter [Unterstützte Geräte und Plattformen](/help/getting-started/supported-devices.md).)
 
-  Die Medien-SDKs verwenden die Mediensammlungs-APIs zum Tracking. Die Daten werden an Adobe Analytics gesendet.
+  Die Medien-SDKs verwenden die Mediensammlungs-APIs für das Tracking. Die Daten werden an Adobe Analytics gesendet.
 
   Informationen zum Herunterladen und Installieren von Media-SDKs und Erweiterungen finden Sie unter [Abrufen von Media-SDKs, Erweiterungen mithilfe von Tags und OTT-SDKs](/help/getting-started/download-sdks.md).
 
-* **Media Collection APIs:** Da die Mediensammlungs-APIs anpassbar sind, können sie für Anwendungen verwendet werden, die benutzerdefinierte Tracking-Funktionen erfordern, sowie für Geräte, die von den Media SDKs nicht unterstützt werden. Die Mediensammlungs-APIs verfolgen Audio- und Videoereignisse mithilfe von RESTful-HTTP-Aufrufen. Die Daten werden an Adobe Analytics gesendet.
+* **Mediensammlungs-APIs:** Da die Mediensammlungs-APIs anpassbar sind, können sie für Anwendungen verwendet werden, die benutzerdefinierte Tracking-Funktionen erfordern, sowie für Geräte, die von den Medien-SDKs nicht unterstützt werden. Die Mediensammlungs-APIs verfolgen Audio- und Videoereignisse über RESTful HTTP-Aufrufe. Die Daten werden an Adobe Analytics gesendet.
 
   Informationen zur Verwendung der Mediensammlungs-APIs finden Sie unter [Mediensammlungs-APIs](media-collection-api/mc-api-overview.md).
 
