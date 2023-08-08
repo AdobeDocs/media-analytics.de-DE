@@ -6,9 +6,9 @@ exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
 source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '442'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 74%
 
 Führen Sie vor der Implementierung von Streaming-Medien die folgenden Aufgaben aus:
 
-1. **Übersicht über Streaming-Medien**<br>
-Bevor Sie mit der Implementierung von Streaming-Medien beginnen, lesen Sie die [Übersicht über Streaming-Medien](/help/media-overview.md) , um sicherzustellen, dass die Streaming-Medien Ihren Anforderungen entsprechen.
+1. **Überprüfen des Streaming-Medien-Überblicks**<br>
+Bevor Sie mit der Implementierung von Streaming-Medien beginnen, lesen Sie den [Überblick über Streaming-Medien](/help/media-overview.md), um sicherzustellen, dass die Streaming-Medien Ihren Anforderungen entsprechen.
 
 1. **Bestätigen des Preismodells für Streaming-Medien**<br>
-Das aktuelle Preismodell basiert auf Video-Streams. Wenden Sie sich bei Bedarf an Ihren Kundenbetreuer oder an Ihr Adobe Account-Team, da Streaming Media separat als Add-On für Adobe Analytics verkauft wird.<!--update when media SKUs are added to other AEP apps -->
+Das aktuelle Preismodell basiert auf Video-Streams. Wenden Sie sich bei Bedarf an Ihre Kundenbetreuerin bzw. Ihren Kundenbetreuer oder an Ihr Adobe-Accountteam, da Streaming-Medien separat als Add-on für Adobe Analytics verkauft wird.<!--update when media SKUs are added to other AEP apps -->
 
 1. **Aktivieren von Adobe Analytics-Berichten**<br>
 Um Berichte in Analytics zu aktivieren und die erfassten Inhalts- und Anzeigendaten anzuzeigen, müssen Sie Berichte in Analytics aktivieren. Siehe [Aktivierung von Medienberichten](/help/reporting/media-reports-enable.md).
 
-1. **Implementieren des Adobe Experience Platform Identity-Diensts in Experience Cloud**
+1. **Implementieren des Adobe Experience Platform Identity Service in Experience Cloud**
 
    Mit dem **Identity Service** wird das allgemeine Identifizierungs-Framework für die Core Services von Experience Cloud, Lösungen sowie Kundenattribute und Audiences im Coreservice für Personen ermöglicht. Der ID-Dienst funktioniert durch die Zuweisung einer eindeutigen, dauerhaften ID zu einem Site-Besucher. Wenn Ihr Unternehmen den ID-Dienst implementiert, können Sie mit dieser ID denselben Site-Besucher und dessen Daten in unterschiedlichen Experience Cloud-Lösungen identifizieren.
 
@@ -39,7 +39,7 @@ Um Berichte in Analytics zu aktivieren und die erfassten Inhalts- und Anzeigenda
 
    Weitere Informationen zur Experience Cloud-ID finden Sie unter [Überblick über die Experience Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=de) und unter [Adobe Experience Platform-ID-Dienst](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=de).
 
-1. **Zusätzliche Voraussetzungen für Ihre Implementierungsmethode anzeigen**
+1. **Anzeigen von zusätzlichen Voraussetzungen für Ihre Implementierungsmethode**
 
    Je nachdem, wie Sie Streaming-Medien implementieren möchten, sehen Sie sich die Voraussetzungen für eine der folgenden Implementierungsmethoden an:
 
@@ -47,4 +47,4 @@ Um Berichte in Analytics zu aktivieren und die erfassten Inhalts- und Anzeigenda
 
    * [Voraussetzungen für Edge-Implementierungen](/help/implementation/edge/prerequisites-edge.md)
 
-   Verwenden Sie die [Implementierungsübersicht](/help/implementation/overview.md) , um zu bestimmen, welche Implementierungsmethode für Sie geeignet ist.
+   Verwenden Sie den [Implementierungsüberblick](/help/implementation/overview.md), um zu bestimmen, welche Implementierungsmethode für Sie geeignet ist.
