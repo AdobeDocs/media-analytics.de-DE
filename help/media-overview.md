@@ -6,9 +6,9 @@ exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '590'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 71%
 
 Adobe Analytics für Streaming-Medien bietet leistungsstarke Messwerkzeuge für Audio, Video und Werbung. Sie können Metriken von Streaming-Medien mit anderen Adobe Analytics-Funktionen wie Audience Analytics, Mobile oder geräteübergreifenden Analysen kombinieren.
 
-Streaming-Medien können als Add-on zu Adobe Analytics erworben werden<!-- update this when SKUs are available for other AEP products -->und Streaming-Medien-Metriken einfach in die folgenden Adobe Experience Platform-Produkte integrieren:
+Streaming-Medien können als Add-on zu Adobe Analytics erworben werden<!-- update this when SKUs are available for other AEP products --> und Streaming-Medien-Metriken lassen sich einfach in die folgenden Adobe Experience Platform-Produkte integrieren:
 
 * Adobe Analytics
 
@@ -34,19 +34,19 @@ Streaming-Medien können als Add-on zu Adobe Analytics erworben werden<!-- updat
 
 ## Wichtigste Funktionen
 
-Zu den Vorteilen von Adobe Analytics für Streaming-Medien zählen Echtzeitüberwachung, detaillierte Analysen, umsetzbare Einblicke, Monetarisierungsmöglichkeiten und mehr.
+Zu den Vorteilen von Adobe Analytics für Streaming-Medien zählen Echtzeitüberwachung, detaillierte Analysen, umsetzbare Erkenntnisse Monetarisierungsmöglichkeiten und mehr.
 
 * **Echtzeit-Analyse**: Treffen Sie fundierte Entscheidungen in Echtzeit, indem Sie wichtige Leistungsmetriken wie Medienstarts kanalübergreifend verwenden.
 
-  Mit Analytics für Streaming-Medien erhalten Sie nahezu in Echtzeit granulare Details zu Dauer, Stopps und Starts, mit denen Sie Video- und Audiometriken auswerten und kombinieren können. Diese Einblicke ermöglichen es Ihnen, die Seh- und Hörgewohnheiten Ihrer Kunden zu verstehen und mit hochgradig personalisierten Empfehlungen die Interaktion zu steigern.
+  Mit Analytics für Streaming-Medien erhalten Sie nahezu in Echtzeit granulare Details zu Dauer, Stopps und Starts, mit denen Sie Video- und Audiometriken auswerten und kombinieren können. Diese Erkenntnisse ermöglichen es Ihnen, die Seh- und Hörgewohnheiten Ihrer Kundinnen und Kunden zu verstehen und mit hochgradig personalisierten Empfehlungen die Interaktion zu steigern.
 
-* **Förderung der Interaktion**: Die Interaktion der Benutzer wird gefördert, indem die Pufferung verringert wird und ermittelt wird, wo und wann Anzeigen in Inhalten abgespielt werden sollten, um ein reibungsloses, weniger störendes Erlebnis zu bieten, das zu Wiederholungsbesuchen führt.
+* **Förderung der Interaktion**: Die Interaktion der Benutzenden wird gefördert, indem die Pufferung verringert wird und ermittelt wird, wo und wann Anzeigen in Inhalten abgespielt werden sollten, um ein reibungsloses, weniger störendes Erlebnis zu bieten, das zu Wiederholungsbesuchen führt.
 
-* **Ganzheitliches Bild**: Kombinieren Sie mehrere Datenpunkte Ihrer Inhaltsdistributoren, um eine umfassende Übersicht über all Ihre Medienaktivitäten zu erhalten. Messen Sie Interaktionen und Ansichten/Aufrufe über alle Kanäle hinweg.
+* **Ganzheitliche Übersicht:** Kombinieren Sie verschiedene Datenpunkte Ihrer Inhaltsdistributorinnen und -distributoren, um eine umfassende Übersicht all Ihre Medienaktivitäten zu erhalten und die Interaktion und Aufrufe über alle Kanäle hinweg zu messen.
 
-  Mit Adobe Analytics für Streaming-Medien können Sie die vollständige Journey Ihrer Kunden auf Ihrer Site und in Streaming-Apps verfolgen, um den Kundenpfad und die Kundeninteressen zu visualisieren und erweiterte Empfehlungen zu erhalten und Kundenerlebnisse zu personalisieren.  Mit der Medienmessung können Sie Ihre Daten in mehrere Dimensionen und Segmente kategorisieren und alle Metadaten erfassen, die Sie für eine vollständige und detaillierte Analyse benötigen. Anschließend können Sie Daten analysieren und Erfolgskriterien den vollständig genutzten Medien, der durchschnittlich verbrachten Zeit und an abgeschlossenen Anzeigen zuordnen.
+  Mit Adobe Analytics für Streaming-Medien können Sie die vollständige Journey Ihrer Kundinnen und Kunden auf Ihrer Site und Ihren Streaming-Apps verfolgen, um den Pfad und die Interessen von Kundinnen und Kunden visualisieren zu können, erweiterte Empfehlungen zu geben und Kundenerlebnisse zu personalisieren.  Mit der Medienmessung können Sie Ihre Daten in mehrere Dimensionen und Segmente kategorisieren und alle Metadaten erfassen, die Sie für eine vollständige und detaillierte Analyse benötigen. Anschließend können Sie Daten analysieren und Erfolgskriterien den vollständig genutzten Medien, der durchschnittlich verbrachten Zeit und an abgeschlossenen Anzeigen zuordnen.
 
-* **Wichtige Metriken**: Messen Sie wichtige Bereitstellungsmetriken im Zusammenhang mit der Erlebnisqualität (QoE) wie Dropped Frames, Pufferung und durchschnittliche Bitrate.
+* **Wichtige Metriken**: Sie können wichtige Bereitstellungsmetriken in Bezug auf die Erlebnisqualität (Quality of Experience, QoE) messen, z. B. ausgelassene Frames, Pufferzeit und durchschnittliche Bit-Rate.
 
 * **Erhöhte Granularität**: Bewerten Sie das Ansichtsverhalten auf einer extrem detaillierten Ebene, einschließlich der Besuchszeit einzelner Benutzer, gleichzeitige Betrachter/Zuhörer nach Minuten und der durchschnittlichen Konsumdauer des Inhalts.
 
