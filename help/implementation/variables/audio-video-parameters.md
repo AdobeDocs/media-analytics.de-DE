@@ -6,13 +6,13 @@ exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 28fcf03600585e3d6a067eca99560218bfef0e05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7001'
 ht-degree: 100%
 
 ---
 
-# Audio- und Videoparameter{#audio-and-video-parameters}
+# Audio- und Videoparameter {#audio-and-video-parameters}
 
 Dieses Thema enthält eine Liste von Audio- und Videoinhaltsdaten, einschließlich Kontextdatenwerten, die Adobe über Lösungsvariablen sammelt.
 
@@ -372,7 +372,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Media Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> **Beispielwert:**<br/> TRUE </li> <li> **Beschreibung:**<br/> Die Abspielleiste überspringt die 25%-Markierung basierend auf der Inhaltsdauer. Die Markierung wird nur einmal gezählt, selbst wenn der Anwender zu einer früheren Abspielposition springt. Springt er zu einer späteren Abspielposition, werden hierbei übersprungene Markierungen nicht gewertet.  <br/> **Wichtig:** Ist dieser Wert festgelegt, kann er nur „true“ lauten. Ist er nicht festgelegt, wird kein Wert zurückgegeben.  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> nicht verfügbar </li> <li> **Heartbeats:**<br/> nicht verfügbar </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtsname:**<br/> 25 % Fortschrittsmarkierung </li> <li> **Kontextdaten:**<br/> (a.media.progress25) </li> <li> **Datenfeed:**<br/> videoprogress25 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.progress25) </li> <li> **XDM-Feldpfad:**<br/> media.mediaTimed.progress25.value </li> <li> **XDM-Feldpfad für Berichterstellung:**<br/> mediaReporting.sessionDetails.hasProgress25 </li> </ul> |
 
-### 50% Fortschrittsmarkierung
+### 50 % Fortschrittsmarkierung
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
