@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics für Streaming Media
 breadcrumb-title: Media Analytics-Anleitung
 user-guide-description: Implementieren von Adobe Analytics für Streaming-Medien. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
 sub-product: media analytics
-source-git-commit: 8a0f2c0b367b48ee5ac94e7fc6bcd0eadafbc5d8
-workflow-type: ht
+source-git-commit: ee147c2446162257b03f2f0b972e591435d787a9
+workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -74,21 +74,22 @@ ht-degree: 100%
       + [Qualitätsparameter](implementation/variables/quality-parameters.md)
       + [Berechnete Metriken ](implementation/variables/calculated-metrics.md)
 + Berichterstellung  {#media-reports}
-   + [Aktivierung von Medienberichten](reporting/media-reports-enable.md)
-   + [Segmente ](reporting/segments.md)
-   + Standard-Medienberichte {#media-default-reports}
-      + [Übersicht über die Standardberichte](reporting/reports-and-analytics/default-reports-overview.md)
-      + [Medien-Übersicht](reporting/reports-and-analytics/media-reports-overview.md)
-      + [Medien-Detail](reporting/reports-and-analytics/media-reports-detail.md)
-      + [Bericht über Medientagesabschnitt](reporting/reports-and-analytics/media-reports-daypart.md)
-      + [Bericht über gleichzeitige Medienbetrachter](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-   + Media Workspace-Bedienfelder {#media-workspace-panels}
-      + [Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“](reporting/workspace/average-minute-audience.md)
+   + [Aktivierung von Medienberichten ](reporting/media-reports-enable.md)
+   + Medienbedienfelder in Workspace {#media-workspace-panels}
+      + [Bedienfeld „Zielgruppendurchschnitt pro Minute“](reporting/workspace/average-minute-audience.md)
       + [Bedienfeld „Gleichzeitige Medienbetrachter“](reporting/workspace/media-concurrent-viewers-overview.md)
-      + [Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“](reporting/workspace/media-playback-time-spent.md)
-   + [Vorlagen für Media Workspace ](reporting/workspace/media-workspace-templates.md)
-   + [Abrufen von Daten zu gleichzeitigem Betrachten über API](reporting/reports-and-analytics/get-concurrent-json20.md)
-   + [Abrufen der bei der Medienwiedergabe verbrachten Zeit über API](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
+      + [Panel „Verbrachte Zeit bei der Medienwiedergabe“](reporting/workspace/media-playback-time-spent.md)
+   + [Medienberichte in Workspace](reporting/workspace/media-workspace-templates.md)
+   + [Mediensegmente](reporting/segments.md)
+   + Standardmedienberichte {#media-default-reports}
+      + [Übersicht über die Standardberichte](reporting/reports-and-analytics/default-reports-overview.md)
+      + [Medienübersicht ](reporting/reports-and-analytics/media-reports-overview.md)
+      + [Mediendetails ](reporting/reports-and-analytics/media-reports-detail.md)
+      + [Bericht zu Medientagesabschnitt](reporting/reports-and-analytics/media-reports-daypart.md)
+      + [Bericht &quot;Gleichzeitige Medienbetrachter&quot;](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
+   + Media API {#media-api}
+      + [Abrufen von Daten zu gleichzeitigen Betrachtern](reporting/reports-and-analytics/get-concurrent-json20.md)
+      + [Abrufen der Daten zur Besuchszeit für Medienwiedergabe](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + Nutzungsszenarios {#media-use-cases}
    + [Anwendungsfälle für Media SDK](use-cases/cookbook/sdk-cookbook-overview.md)
    + Player-Status-Tracking {#player-state-tracking}
