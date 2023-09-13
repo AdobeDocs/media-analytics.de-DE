@@ -6,9 +6,9 @@ breadcrumb-title: Media Analytics-Anleitung
 user-guide-description: Implementieren von Adobe Analytics für Streaming-Medien. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
 sub-product: media analytics
 source-git-commit: ee147c2446162257b03f2f0b972e591435d787a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '897'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -82,14 +82,14 @@ ht-degree: 96%
    + [Medienberichte in Workspace](reporting/workspace/media-workspace-templates.md)
    + [Mediensegmente](reporting/segments.md)
    + Standardmedienberichte {#media-default-reports}
-      + [Übersicht über die Standardberichte](reporting/reports-and-analytics/default-reports-overview.md)
-      + [Medienübersicht ](reporting/reports-and-analytics/media-reports-overview.md)
-      + [Mediendetails ](reporting/reports-and-analytics/media-reports-detail.md)
-      + [Bericht zu Medientagesabschnitt](reporting/reports-and-analytics/media-reports-daypart.md)
-      + [Bericht &quot;Gleichzeitige Medienbetrachter&quot;](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-   + Media API {#media-api}
-      + [Abrufen von Daten zu gleichzeitigen Betrachtern](reporting/reports-and-analytics/get-concurrent-json20.md)
-      + [Abrufen der Daten zur Besuchszeit für Medienwiedergabe](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
+      + [Überblick über die Standardberichte](reporting/reports-and-analytics/default-reports-overview.md)
+      + [Medienüberblick](reporting/reports-and-analytics/media-reports-overview.md)
+      + [Mediendetails](reporting/reports-and-analytics/media-reports-detail.md)
+      + [Medientagesbericht](reporting/reports-and-analytics/media-reports-daypart.md)
+      + [Bericht über gleichzeitige Medienbetrachtende](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
+   + Medien-API {#media-api}
+      + [Abrufen von Daten über gleichzeitige Betrachtende](reporting/reports-and-analytics/get-concurrent-json20.md)
+      + [Abrufen der Daten zur mit der Medienwiedergabe verbrachten Zeit](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + Nutzungsszenarios {#media-use-cases}
    + [Anwendungsfälle für Media SDK](use-cases/cookbook/sdk-cookbook-overview.md)
    + Player-Status-Tracking {#player-state-tracking}
