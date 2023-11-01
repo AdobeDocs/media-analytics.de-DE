@@ -4,10 +4,10 @@ description: Implementieren des Anzeigen-Trackings in Browser-Anwendungen (JS) m
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '362'
-ht-degree: 100%
+source-git-commit: fd9f0a7f4592c01082bcad015351d9128df2f8c9
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 88%
 
 ---
 
@@ -77,22 +77,22 @@ Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung d
                                    <LENGTH>);
    ```
 
-1. Optional können Standard- und/oder Anzeigenmetadaten über Kontextdatenvariablen an die Medien-Tracking-Sitzung angehängt werden.
+1. (Optional) Fügen Sie Standard- und/oder Anzeigenmetadaten über Kontextdatenvariablen an die Medien-Tracking-Sitzung an.
 
    * [Standard-Anzeigenmetadaten in JavaScript implementieren](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
    * **Anwenderspezifische Anzeigenmetadaten:** Erstellen Sie für anwenderdefinierte Metadaten ein variables Objekt für die anwenderspezifischen Datenvariablen und füllen Sie es mit den Daten für aktuelle Anzeigen:
 
-      ```js
-      /* Set context data */
-      // Standard metadata keys provided by adobe.
-      adMetadata[ADB.Media.AdMetadataKeys]  ="Sample Advertiser";
-      adMetadata[ADB.Media.AdMetadataKeys] = "Sample Campaign";
-      
-      // Custom metadata keys
-      adMetadata["affiliate"] = "Sample affiliate";
-      adMetadata["campaign"] = "Sample ad campaign";
-      adMetadata["creative"] = "Sample creative";
-      ```
+     ```js
+     /* Set context data */
+     // Standard metadata keys provided by adobe.
+     adMetadata[ADB.Media.AdMetadataKeys]  ="Sample Advertiser";
+     adMetadata[ADB.Media.AdMetadataKeys] = "Sample Campaign";
+     
+     // Custom metadata keys
+     adMetadata["affiliate"] = "Sample affiliate";
+     adMetadata["campaign"] = "Sample ad campaign";
+     adMetadata["creative"] = "Sample creative";
+     ```
 
 1. Rufen Sie `trackEvent()` mit dem `AdStart`-Ereignis in der `MediaHeartbeat`-Instanz auf, um das Tracking der Anzeigenwiedergabe zu starten.
 
@@ -130,3 +130,33 @@ Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung d
    ```
 
 Weitere Informationen finden Sie im Tracking-Szenario [VOD-Wiedergabe mit Pre-roll-Anzeigen](/help/use-cases/tracking-scenarios/vod-preroll-ads.md).
+
+## Granulares Anzeigen-Tracking
+
+Sie können eine detaillierte Anzeigenverfolgung einrichten, um `1 second` Anzeigen-Tracking.
+
+Diese Informationen müssen beim Starten einer Tracking-Sitzung angegeben werden.
+
+>[!NOTE]
+>
+>   Das standardmäßige Anzeigen-Ping-Intervall beträgt `10 seconds`.
+
+
+**Syntax**
+
+```javascript
+ADB.Media.MediaObjectKey = {
+   GranularAdTracking: "media.granularadtracking"
+   }
+```
+
+**Beispiel**
+
+```javascript
+var mediaObject = ADB.Media.createMediaObject("media-name", "media-id", 60, ADB.Media.StreamType.VOD, ADB.Media.MediaType.Video);
+
+// Enable granular ad tracking
+mediaObject[ADB.Media.MediaObjectKey.GranularAdTracking] = true;
+
+tracker.trackSessionStart(mediaObject);
+```
