@@ -5,10 +5,10 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '771'
-ht-degree: 100%
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
+source-wordcount: '792'
+ht-degree: 92%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 100%
 Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
 
 >[!IMPORTANT]
+>
 >Wenn Sie Version 1.x des SDK implementieren möchten, können Sie sich hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen](/help/getting-started/download-sdks.md)
 
 1. **Tracking-Ersteinrichtung**
@@ -105,18 +106,19 @@ Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
 
 [Standard-Metadaten in Roku implementieren ](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
-      >[!NOTE]
-      >Das Anhängen des Standard-Video-Metadatenobjekts an das Medienobjekt ist optional.
+     >[!NOTE]
+     >
+     >Das Anhängen des Standard-Video-Metadatenobjekts an das Medienobjekt ist optional.
 
    * **Benutzerspezifische Metadaten**
 
-      Erstellen Sie ein Variablenobjekt für die benutzerdefinierten Variablen und fügen Sie die Daten für dieses Video ein. Beispiel:
+     Erstellen Sie ein Variablenobjekt für die benutzerdefinierten Variablen und fügen Sie die Daten für dieses Video ein. Beispiel:
 
-      ```
-      mediaContextData = {}
-      mediaContextData["cmk1"] = "cmv1"
-      mediaContextData["cmk2"] = "cmv2"
-      ```
+     ```
+     mediaContextData = {}
+     mediaContextData["cmk1"] = "cmv1"
+     mediaContextData["cmk2"] = "cmv2"
+     ```
 
 1. **Absicht, die Wiedergabe zu starten, verfolgen**
 
@@ -127,12 +129,15 @@ Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
    ```
 
    >[!TIP]
+   >
    >Der zweite Wert ist der Name des benutzerdefinierten Video-Metadatenobjekts, den Sie in Schritt 2 erstellt haben.
 
    >[!IMPORTANT]
+   >
    >`trackSessionStart` verfolgt die Absicht des Benutzers, die Wiedergabe zu starten, und nicht den Anfang der Wiedergabe. Mit dieser API können Sie die Videodaten/-Metadaten laden und die QoS-Metrik zur Ladezeit (zeitlicher Abstand zwischen `trackSessionStart` () und `trackPlay`) schätzen.
 
    >[!NOTE]
+   >
    >Wenn Sie keine benutzerdefinierten Video-Metadaten verwenden, senden Sie einfach ein leeres Objekt für das `data`-Argument in `trackSessionStart`, wie in der Kommentarzeile im obigen iOS-Beispiel gezeigt.
 
 1. **Tatsächlichen Wiedergabebeginn verfolgen**
@@ -145,12 +150,18 @@ Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
 
 1. **Abspielkopfwert aktualisieren**
 
-   Wenn sich der Abspielkopf des Mediums ändert, informieren Sie das SDK durch Aufruf der API `mediaUpdatePlayhead`. <br /> Bei Video-on-demand (VOD) wird der Wert in Sekunden ab Beginn des Medienelements angegeben. <br /> Wenn der Player beim Livestreaming keine Informationen zur Inhaltsdauer bereitstellt, kann der Wert als Anzahl der Sekunden seit Mitternacht (UTC) des Tages angegeben werden. <br /> Hinweis: Bei Verwendung von Fortschrittsmarken ist die Inhaltsdauer erforderlich und die Abspielleiste muss als Anzahl von Sekunden ab Anfang des Medienelements aktualisiert werden, beginnend mit 0.
-
+   Wenn sich die Abspielleiste der Medien ändert, benachrichtigen Sie das SDK, indem Sie die `mediaUpdatePlayhead` API. <br /> Bei Video-on-demand (VOD) wird der Wert in Sekunden ab Beginn des Medienelements angegeben. <br /> Wenn der Player beim Livestreaming keine Informationen zur Inhaltsdauer bereitstellt, kann der Wert als Anzahl der Sekunden seit Mitternacht (UTC) des Tages angegeben werden.
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
    ```
+
+   >[!NOTE]
+   >
+   >Beachten Sie Folgendes beim Aufrufen der `mediaUpdatePlayhead` API:
+   >* Bei Verwendung von Fortschrittsmarken ist die Inhaltsdauer erforderlich und die Abspielleiste muss als Anzahl von Sekunden ab Anfang des Medienelements aktualisiert werden, beginnend mit 0.
+   >* Bei Verwendung von Medien-SDKs müssen Sie die `mediaUpdatePlayhead` API mindestens einmal pro Sekunde
+
 
 1. **Ende der Wiedergabe verfolgen**
 
