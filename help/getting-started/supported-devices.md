@@ -3,11 +3,11 @@ title: Erfahren Sie mehr über unterstützte Geräte und Plattformen.
 description: „Erfahren Sie mehr über die wichtigsten Geräte wie iOS, Android, OTT-Geräte und JavaScript-Browser, die Adobe Analytics for Streaming Media unterstützt.“
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
-role: User, Admin, Data Engineer
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+role: User, Admin
+source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
 workflow-type: tm+mt
 source-wordcount: '307'
-ht-degree: 58%
+ht-degree: 59%
 
 ---
 
@@ -30,7 +30,7 @@ Weitere Informationen zur Implementierung von Medien in Edge finden Sie unter [I
 | Streaming-Plattformen und -Geräte | | Media for Edge Network SDK/Erweiterung | Media Edge-API | Media-Erweiterung mit Tags oder mobilem AEP-SDK | Medien-SDK | Mediensammlungs-API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
 | Web/Mobile Web | | | | | |
-| | JavaScript-Browser | (Demnächst) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) |
+| | JavaScript-Browser | (In Kürze verfügbar) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) |
 | Mobile App | | | | | |
 | | iOS-Geräte | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | | ![Unterstützt](/help/assets/icon-blue-check.png) | |
 | | Android-Geräte | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | | ![Unterstützt](/help/assets/icon-blue-check.png) |

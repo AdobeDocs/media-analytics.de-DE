@@ -4,10 +4,10 @@ description: „Erfahren Sie mehr über das Dashboard „Gleichzeitige Medienbet
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
 feature: "Media Analytics, Reports & Analytics Basics"
-role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '291'
+role: User, Admin
+source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
+workflow-type: tm+mt
+source-wordcount: '285'
 ht-degree: 100%
 
 ---
@@ -19,6 +19,7 @@ Im Dashboard „Gleichzeitige Medienbetrachter“ werden gleichzeitige Viewer an
 >[!TIP]
 >
 > Grundlage für diesen Bericht bilden gleichzeitig aktive Mediensitzungen.  Wenn Sie gleichzeitige Betrachtungen für einen Unique Visitor anzeigen und dabei weitere Funktionen, Aufschlüsselung mit Vergleich, auf ein Segment anwenden möchten, nutzen Sie dafür das [Bedienfeld für gleichzeitige Medienbetrachter in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html?lang=de).
+>
 
 ![](assets/video-concurrent-viewers.png)
 
