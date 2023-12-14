@@ -5,9 +5,9 @@ exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
 source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '307'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -19,18 +19,18 @@ Adobe Analytics für Streaming-Medien unterstützt alle wichtigen Geräte, darun
 * OTT-Geräte für Roku, Fire TV und Android TV
 * JavaScript-Browser für Desktop und Laptop
 
-Die SDKs werden routinemäßig aktualisiert, wenn neue Versionen von Geräten veröffentlicht werden. Sie können die SDKs verwenden, um eine Integration mit nativen Playern jeder einzelnen Plattform oder eines anderen verfügbaren Medienplayers zu ermöglichen.
+Die SDKs werden routinemäßig aktualisiert, wenn neue Versionen von Geräten veröffentlicht werden. Sie können die SDKs verwenden, um die Integration mit nativen Playern jeder einzelnen Plattform oder eines anderen verfügbaren Medien-Players zu ermöglichen.
 
-Für Geräte, die derzeit keine SDK-Unterstützung haben, oder in Situationen, in denen Sie Ihre Implementierung anpassen müssen, können Sie die Mediensammlungs-API oder die Media Edge-API verwenden. Mit diesen APIs können Sie RESTful-API-Aufrufe direkt von einem Gerät zum Media Analytics-Backend durchführen.
+Für Geräte, die derzeit keine SDK-Unterstützung haben, oder in Situationen, in denen Sie Ihre Implementierung anpassen müssen, können Sie das Mediensammlungs-API oder das Media Edge-API verwenden. Mit diesen APIs können Sie RESTful-API-Aufrufe direkt von einem Gerät oder einer Plattform zum Media Analytics-Backend durchführen.
 
 Die folgende Tabelle zeigt die derzeit unterstützten Geräte. Wenn ein Gerät nicht aufgeführt ist, wenden Sie sich an die Kundenunterstützung oder einen Berater, um den Status des Geräts zu erfahren.
 
-Weitere Informationen zur Implementierung von Medien in Edge finden Sie unter [Installieren von Media Analytics mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+Weitere Informationen zur Implementierung von Media auf Edge finden Sie unter [Installieren von Media Analytics mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
 | Streaming-Plattformen und -Geräte | | Media for Edge Network SDK/Erweiterung | Media Edge-API | Media-Erweiterung mit Tags oder mobilem AEP-SDK | Medien-SDK | Mediensammlungs-API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
 | Web/Mobile Web | | | | | |
-| | JavaScript-Browser | (In Kürze verfügbar) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) |
+| | JavaScript-Browser | (In Vorbereitung) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) |
 | Mobile App | | | | | |
 | | iOS-Geräte | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | | ![Unterstützt](/help/assets/icon-blue-check.png) | |
 | | Android-Geräte | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | | ![Unterstützt](/help/assets/icon-blue-check.png) |
