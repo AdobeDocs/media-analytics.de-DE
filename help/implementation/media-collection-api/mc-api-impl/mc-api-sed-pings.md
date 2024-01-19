@@ -5,16 +5,16 @@ uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
 exl-id: 0a645363-26d5-41e7-aa16-c775253e2b1d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '108'
-ht-degree: 100%
+source-git-commit: e84864164adf056f47f24d65f0400c89d53d1630
+workflow-type: tm+mt
+source-wordcount: '107'
+ht-degree: 70%
 
 ---
 
 # Senden von Ping-Ereignissen{#sending-ping-events}
 
-**Beim Hauptinhalt müssen Sie alle zehn Sekunden Ping-Ereignisse auslösen, die unabhängig von anderen gesendeten API-Aufrufen zehn Sekunden nach dem Start der Wiedergabe beginnen müssen. Für das Anzeigen-Tracking müssen Sie jede Sekunden Ping-Ereignisse auslösen.**
+**Sie müssen alle zehn Sekunden Ping-Ereignisse auslösen, die unabhängig von anderen gesendeten API-Ereignissen nach 10 Sekunden der Wiedergabe beginnen. Dies gilt sowohl für den Hauptinhalt als auch für das Anzeigen-Tracking.**
 
 Die Ping-Ereignisse sind buchstäblich der „Herzschlag“ von Media Analytics. Die einzigen für einen Ping-Aufruf erforderlichen Parameter sind `eventType: ping` sowie das Objekt `playerTime` (Abspielposition und Zeitstempel).
 
