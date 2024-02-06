@@ -5,10 +5,10 @@ uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '353'
-ht-degree: 100%
+source-git-commit: 06f24e828fb7795d55599ea1fa7913182dd357e6
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 88%
 
 ---
 
@@ -81,7 +81,7 @@ Signalisiert, dass ein Fehler aufgetreten ist.
 
 Dieser Parameter wird verwendet, um das Media Analytics-Backend aufzufordern, die Sitzung umgehend zu schließen, wenn der Benutzer die Wiedergabe verlassen hat und wahrscheinlich nicht zurückkehren wird.
 
-Wenn Sie `sessionEnd` nicht senden, gelten die normalen Timeout-Bedingungen (nachdem zehn Minuten lang keine Ereignisse eingegangen sind oder die Abspielleiste sich 30 Minuten lang nicht verändert hat).
+Wenn eine `sessionEnd` nicht gesendet wird, wird eine abgebrochene Sitzung [Zeitüberschreitung normalerweise](../mc-api-impl/mc-api-timeout.md) (entweder nachdem 10 Minuten lang keine Ereignisse empfangen wurden oder 30 Minuten lang keine Verschiebung der Abspielleiste stattgefunden hat). Darüber hinaus werden alle nachfolgenden Medienaufrufe, die mit dieser Sitzungs-ID durchgeführt werden, verworfen.
 
 ## sessionComplete
 
