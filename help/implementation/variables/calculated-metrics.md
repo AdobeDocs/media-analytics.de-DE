@@ -5,10 +5,10 @@ uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '256'
-ht-degree: 100%
+source-git-commit: 917c87d759a43f124dfb3e3ac7f6a441c65fde94
+workflow-type: tm+mt
+source-wordcount: '241'
+ht-degree: 90%
 
 ---
 
@@ -26,10 +26,10 @@ Weitere Informationen zu berechneten Adobe Analytics-Metriken finden Sie unter [
 |---|---|---|
 | Durchschnittliche Anzeigen pro Medienstream | Anzeigenstarts pro Medienstart | `Ad Starts / Media Starts` |
 | Durchschnittliche Kapitel pro Medienstream | Kapitelstarts pro Medienstart | `Chapter Start / Media Starts` |
-| Durchschnittl. Besuchszeit für Medien | Gesamtbesuchszeit pro Medienstart (HH:MM:SS) | `Media Time Spent / Media Starts` |
-| Durchschnittl. Inhaltsbesuchszeit | Besuchszeit für den Inhalt nach gestarteten Inhalten (HH:MM:SS) | `Content Time Spent / Content Start` |
-| Durchschnittl. Besuchszeit für Anzeige | Besuchszeit für die Anzeige pro gestarteter Anzeige (HH:MM:SS) | `Ad Time Spent / Ad Start` |
-| Durchschnittl. Besuchszeit für Kapitel | Besuchszeit für das Kapitel pro gestartetem Kapitel (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
+| Durchschnittl. Besuchszeit für Medien | Gesamtbesuchszeit pro Medienstart (`HH:MM:SS`) | `Media Time Spent / Media Starts` |
+| Durchschnittl. Inhaltsbesuchszeit | Besuchszeit für Inhalte pro Inhaltsstart (`HH:MM:SS`) | `Content Time Spent / Content Start` |
+| Durchschnittl. Besuchszeit für Anzeige | Besuchszeit für Anzeigen pro Anzeigenstart (`HH:MM:SS`) | `Ad Time Spent / Ad Start` |
+| Durchschnittl. Besuchszeit für Kapitel | Besuchszeit für Kapitel pro Kapitelstart (`HH:MM:SS`) | `Chapter Time Spent / Chapter Start` |
 | Medienabschlussrate | Rate der Inhaltsbeendigung und Medienaufrufe im Vergleich (%) | `Content Completes/ Media Starts` |
 | Inhaltsabschlussrate | Rate der Inhaltsbeendigungen und IInhaltsstarts im Vergleich (%) | `Content Completes / Content Starts` |
 | Anzeigenabschlussrate | Anteil abgeschlossener Anzeigen und gestarteter Anzeigen im Vergleich (%) | `Ad Completes / Ad Starts` |
