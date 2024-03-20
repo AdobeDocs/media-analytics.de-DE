@@ -5,10 +5,10 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 917c87d759a43f124dfb3e3ac7f6a441c65fde94
+source-git-commit: 268b381e6c28f0ebcbb9d31777b6d23a46be70bc
 workflow-type: tm+mt
 source-wordcount: '6995'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -186,7 +186,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Media Close </li> <li> **Min. SDK-Version:** 1.5.7 </li> <li> **Beispielwert:**<br/> „js-2.0.1.88-c8c0b1“ </li> <li> **Beschreibung:**<br/> Die für die Tracking-Sitzung verwendete Media SDK-Version. <br/><br/>Kunden müssen eigene Verarbeitungsregeln erstellen, damit der Wert für Berichte zur Verfügung steht.  <br/><br/>[MediaHeartbeat.version();](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html) </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.<br/>vhlVersion) </li> <li> **Heartbeats:**<br/> (<code>s:sp:hb_version</code>) </li> </ul> | <ul> <li> **Verfügbar:**<br/> Verwenden Sie eine anwenderspezifische Verarbeitungsregel. </li> <li> **Reservierte Variable:**<br/> nicht verfügbar </li> <li> **Berichtsname:**<br/> anwenderspezifisch </li> <li> **Kontextdaten:**<br/> (a.media.vhlVersion) </li> <li> **Daten-Feed:**<br/> nicht verfügbar </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.vhlVersion) </li> <li> **XDM-Feldpfad:**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>vhlVersion </li> <li> **XDM-Feldpfad für Sammlung:**<br/> mediaCollection.implementationDetails.<br/>version </li> <li> **XDM-Feldpfad für Berichterstellung:**<br/> mediaReporting.implementationDetails.<br/>version </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Erforderlich:**<br/> nein </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Media Close </li> <li> **Min. SDK-Version:** 1.5.7 </li> <li> **Beispielwert:**<br/> „js-2.0.1.88-c8c0b1“ </li> <li> **Beschreibung:**<br/> Die für die Tracking-Sitzung verwendete Media SDK-Version. <br/><br/>Kunden müssen eigene Verarbeitungsregeln erstellen, damit der Wert für Berichte zur Verfügung steht.  <br/><br/>[MediaHeartbeat.version();](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html) </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.<br/>vhlVersion) </li> <li> **Heartbeats:**<br/> (<code>s:sp:hb_version</code>) </li> </ul> | <ul> <li> **Verfügbar:**<br/> Verwenden Sie eine anwenderspezifische Verarbeitungsregel. </li> <li> **Reservierte Variable:**<br/> nicht verfügbar </li> <li> **Berichtsname:**<br/> anwenderspezifisch </li> <li> **Kontextdaten:**<br/> (a.media.vhlVersion) </li> <li> **Daten-Feed:**<br/> nicht verfügbar </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.vhlVersion) </li> <li> **XDM-Feldpfad:**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>vhlVersion </li> <li> **Pfad des Collection XDM-Felds:**<br/> implementationDetails.<br/>version </li> <li> **XDM-Feldpfad für Berichterstellung:**<br/> implementationDetails.<br/>version </li> </ul> |
 
 ## Standard-Metadaten für Streaming-Medien {#standard-audio-and-video-metadata}
 
