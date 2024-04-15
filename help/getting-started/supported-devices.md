@@ -4,9 +4,9 @@ description: „Erfahren Sie mehr über die wichtigsten Geräte wie iOS, Android
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
-source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
-workflow-type: ht
-source-wordcount: '307'
+source-git-commit: 1cc995959aa9070f895e0d03be62533bd3a0ca0d
+workflow-type: tm+mt
+source-wordcount: '306'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ Weitere Informationen zur Implementierung von Media auf Edge finden Sie unter [I
 | | Windows-Geräte | | ![Unterstützt](/help/assets/icon-blue-check.png) | | | ![Unterstützt](/help/assets/icon-blue-check.png) |
 | OTT | | | | | | |
 | | Apple TV (tvOS) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | | ![Unterstützt](/help/assets/icon-blue-check.png) |
-| | Roku | (In Planung) | ![Unterstützt](/help/assets/icon-blue-check.png) | | ![Unterstützt](/help/assets/icon-blue-check.png)<br>(BrightScript) | ![Unterstützt](/help/assets/icon-blue-check.png)<br>(nativ) |
+| | Roku | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | | ![Unterstützt](/help/assets/icon-blue-check.png)<br>(BrightScript) | ![Unterstützt](/help/assets/icon-blue-check.png)<br>(nativ) |
 | | Fire TV (Fire OS) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | | ![Unterstützt](/help/assets/icon-blue-check.png) |
 | | Android TV | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) | | ![Unterstützt](/help/assets/icon-blue-check.png) |
 | | Chromecast | | ![Unterstützt](/help/assets/icon-blue-check.png) | | ![Unterstützt](/help/assets/icon-blue-check.png) | ![Unterstützt](/help/assets/icon-blue-check.png) |

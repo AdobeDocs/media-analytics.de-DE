@@ -5,10 +5,10 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8a0f2c0b367b48ee5ac94e7fc6bcd0eadafbc5d8
-workflow-type: ht
-source-wordcount: '472'
-ht-degree: 100%
+source-git-commit: a9c772e77a2b049e6e4bd65877940b0398a23f7f
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 92%
 
 ---
 
@@ -30,22 +30,23 @@ Tags in Adobe Experience Platform sind die nächste Generation von Adobe-Verw
 
 | Unterstützte Plattform | Unterstützte Lösungen | Implementierungsmethode | Version  |  APIs   |  Dokumentation  |  Beispiel  |
 |:---:|---|---|---|---| ---| ---|
-| ![JavaScript-Symbol](assets/javascript-icon.png) | Adobe Analytics | Nur Analytics | Web − [Medien-SDK für JavaScript v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Referenz zur JavaScript-API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Installieren von Media Analytics mithilfe von JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Beispiel des Medien-SDK für JavaScript v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
-| ![JavaScript-Symbol](assets/javascript-icon.png) | Adobe Analytics | Nur Analytics | Web − Medienerweiterung |  | [Erweiterung von Adobe Media Analytics (3.x SDK) für Audio und Video − Verwendung von Tags (Datenerfassung)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=de) | [Erweiterung von Adobe Media Analytics (3.x SDK) für Audio und Video – Beispiel](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
-| ![JavaScript-Symbol](assets/javascript-icon.png) | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Web – Experience Platform Edge (in Kürze verfügbar) |  | [Installieren von Media Analytics mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md) | |
+| ![JavaScript-Symbol ](assets/javascript-icon.png)</br>**JavaScript-API** | Adobe Analytics | Nur Analytics | Web − [Medien-SDK für JavaScript v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Referenz zur JavaScript-API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Installieren von Media Analytics mithilfe von JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Beispiel des Medien-SDK für JavaScript v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
+| ![JavaScript-Symbol ](assets/javascript-icon.png)</br>**JavaScript-API** | Adobe Analytics | Nur Analytics | Web − Medienerweiterung |  | [Erweiterung von Adobe Media Analytics (3.x SDK) für Audio und Video − Verwendung von Tags (Datenerfassung)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=de) | [Erweiterung von Adobe Media Analytics (3.x SDK) für Audio und Video – Beispiel](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
+| ![JavaScript-Symbol ](assets/javascript-icon.png)</br>**JavaScript-API** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Web – Experience Platform Edge (in Kürze verfügbar) |  | [Installieren von Media Analytics mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md) | |
 
 ### Mobile-Implementierung {#get-mobile-extension}
 
 | Unterstützte Plattform | Unterstützte Lösungen | Implementierungsmethode | Version  |  Dokumentation   |  Beispieoe  |
 |:---:|---|---|---|---|---|
-| ![Android-Symbol](assets/android-icon.png) | Adobe Analytics | Nur Analytics | Android − Medienerweiterung | [Mobile-SDKs – Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics – Media Analytics für Audio und Video – Beispiel](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
+| ![Android-Symbol ](assets/android-icon.png)</br>**Android** | Adobe Analytics | Nur Analytics | Android − Medienerweiterung | [Mobile-SDKs – Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics – Media Analytics für Audio und Video – Beispiel](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
 | ![Apple iOS-Symbol ](assets/ios-icon.png)<br>**tvOS** | Adobe Analytics | Nur Analytics | iOS/tvOS − Medienerweiterung | [Mobile-SDKs – Dokumentation](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics – Media Analytics für Audio und Video – Beispiel](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
-| ![Android-Symbol](assets/android-icon.png) | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Android – Experience Platform Edge | [Installieren von Media Analytics mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md) | |
+| ![Android-Symbol ](assets/android-icon.png)</br>**Android** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Android – Experience Platform Edge | [Installieren von Media Analytics mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md) | |
 | ![Apple iOS-Symbol ](assets/ios-icon.png)<br>**tvOS** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | iOS/tvOS – Experience Platform Edge | [Installieren von Media Analytics mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md) |  |
 
 ### Over-The-Top-Implementierung {#download-ott-libraries}
 
 | Unterstützte Plattform | Unterstützte Lösungen | Implementierungsmethode | Version  |  APIs   |  Dokumentation  |
 |:---:|---|---|---|---|---|
-| ![Chromecast-Symbol](assets/chromecast-icon.png) | Adobe Analytics | Nur Analytics | [SDK für Chromecast v3.0.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Chromecast-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Einrichten des Mobile SDK v3.x für Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md) |
-| ![Roku-Symbol](assets/roku-icon.png) | Adobe Analytics | Nur Analytics | [SDK für Roku v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) | [Roku-API-Referenz](/help/implementation/media-sdk/setup/set-up-roku.md) | [Einrichten des Mobile SDK v2.x für Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
+| ![Chromecast-Symbol ](assets/chromecast-icon.png)</br>**Chromecast** | Adobe Analytics | Nur Analytics | [SDK für Chromecast v3.0.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Chromecast-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Einrichten des Mobile SDK v3.x für Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md) |
+| ![Roku-Symbol ](assets/roku-icon.png)</br>**Roku** | Adobe Analytics | Nur Analytics | [SDK für Roku v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) |  | [Einrichten des Mobile SDK v2.x für Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
+| ![Roku-Symbol ](assets/roku-icon.png)</br>**Roku** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku/tree/main) |  | [Installieren von Media Analytics mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md) |
