@@ -5,10 +5,10 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
-source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
-workflow-type: ht
-source-wordcount: '293'
-ht-degree: 100%
+source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+workflow-type: tm+mt
+source-wordcount: '255'
+ht-degree: 67%
 
 ---
 
@@ -22,9 +22,9 @@ Verwenden Sie die Informationen in der folgenden Tabelle, um die Dokumentation f
 
 | Implementierung | Dokumentation |
 |:-----------------------:|----------------|
-| **Web** | * [Web-Implementierung für Streaming-Medien](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [Web-Implementierung mit der Erweiterung von Adobe Media Analytics für Audio und Video ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=de) |
-| **Mobile** | *[Handbuch zum Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/) <br> *[Erweiterung von Adobe Media Analytics für Audio und Video](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[Aktuelle Mobile SDK-Versionen](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[Mobile-Implementierung für Streaming-Medien](/help/implementation/media-sdk/setup/mobile-implementation.md) |  |  |
-| **OTT** | *[Chromecast 3.0 SDK für Adobe Marketing Cloud-Lösungen](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Einrichten von Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> *[Einrichten von Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
+| **Web** | * [Webdaten mit dem Adobe Experience Platform Web SDK an Edge senden](/help/implementation/edge/edge-web-sdk.md) <br> * [Webimplementierung für Streaming-Medien](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [Web-Implementierung mit Adobe Medium Analytics für Audio und Video-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=de) |
+| **Mobile** | * [Mobile Daten mit dem mobilen Adobe Experience Platform-SDK an Edge senden](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Handbuch zum Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobe Medium Analytics für Audio und Video - Erweiterung](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[Aktuelle Mobile SDK-Versionen](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[Mobile Implementierung für Streaming-Medien](/help/implementation/media-sdk/setup/mobile-implementation.md) | |  |
+| **OTT** | *[Chromecast 3.0-SDK für Adobe Marketing Cloud-Lösungen](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Chromecast einrichten](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) <br> *[Roku einrichten](/help/implementation/media-sdk/setup/set-up-roku.md) |
 | **Adobe Experience Platform-APIs** | *[Mediensammlungs-APIs](/help/implementation/media-collection-api/mc-api-overview.md) |
 
 ## Zusätzliche Dokumentation {#additional-documentation}

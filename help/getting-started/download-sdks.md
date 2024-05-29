@@ -5,10 +5,10 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a9c772e77a2b049e6e4bd65877940b0398a23f7f
+source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 92%
+source-wordcount: '426'
+ht-degree: 89%
 
 ---
 
@@ -32,7 +32,7 @@ Tags in Adobe Experience Platform sind die nächste Generation von Adobe-Verw
 |:---:|---|---|---|---| ---| ---|
 | ![JavaScript-Symbol ](assets/javascript-icon.png)</br>**JavaScript-API** | Adobe Analytics | Nur Analytics | Web − [Medien-SDK für JavaScript v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Referenz zur JavaScript-API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Installieren von Media Analytics mithilfe von JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Beispiel des Medien-SDK für JavaScript v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![JavaScript-Symbol ](assets/javascript-icon.png)</br>**JavaScript-API** | Adobe Analytics | Nur Analytics | Web − Medienerweiterung |  | [Erweiterung von Adobe Media Analytics (3.x SDK) für Audio und Video − Verwendung von Tags (Datenerfassung)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=de) | [Erweiterung von Adobe Media Analytics (3.x SDK) für Audio und Video – Beispiel](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
-| ![JavaScript-Symbol ](assets/javascript-icon.png)</br>**JavaScript-API** | <p>Adobe Analytics</p><p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Web – Experience Platform Edge (in Kürze verfügbar) |  | [Installieren von Media Analytics mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md) | |
+| </br>**Web** | Adobe Analytics<p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Web - Experience Platform Edge |  | [Installieren von Media Analytics mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md) <p>und</p><p>[Webdaten mit dem Adobe Experience Platform Web SDK an Edge senden](/help/implementation/edge/edge-web-sdk.md)</p> | |
 
 ### Mobile-Implementierung {#get-mobile-extension}
 

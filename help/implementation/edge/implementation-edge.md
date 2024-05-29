@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Adobe-Streaming-Medien mit Experience Platfor
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 798a2b155742476f0bf648b482c75e0b03449977
+source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 10%
+source-wordcount: '1862'
+ht-degree: 9%
 
 ---
 
@@ -17,15 +17,11 @@ Mit Adobe Experience Platform Edge können Sie Daten, die für mehrere Produkte 
 
 Die folgende Abbildung zeigt, wie eine Media Analytics-Implementierung Experience Platform Edge verwenden kann, um Daten in Analysis Workspace entweder in Adobe Analytics oder Customer Journey Analytics verfügbar zu machen:
 
-![CJA-Workflow](assets/cja-implementation.png)
+![CJA-Workflow](assets/streaming-media-edge.png)
 
 Eine Übersicht über alle Implementierungsoptionen, einschließlich Implementierungsmethoden, die Experience Platform Edge nicht verwenden, finden Sie unter [Streaming-Medien für Adobe Analytics oder Customer Journey Analytics implementieren](/help/implementation/overview.md).
 
->[!IMPORTANT]
->
->Streaming-Medien sind noch nicht in das AEP Web SDK integriert.
-
-Unabhängig davon, ob Sie das Mobile SDK oder die API verwenden, um Streaming-Medien mit Experience Edge zu implementieren, müssen Sie zunächst die folgenden Abschnitte ausführen:
+Unabhängig davon, ob Sie das Adobe Experience Platform Web SDK, das Adobe Experience Platform Mobile SDK, das Adobe Experience Platform Roku SDK oder die API zur Implementierung von Streaming Media mit Experience Edge verwenden, müssen Sie zunächst die folgenden Abschnitte ausführen:
 
 ## Einrichten des Schemas in Adobe Experience Platform
 
@@ -35,7 +31,13 @@ Erstellen und Einrichten eines Schemas:
 
 1. Beginnen Sie in Adobe Experience Platform mit der Erstellung des Schemas, wie unter [Erstellen und Bearbeiten von Schemata in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
 
-   Wählen Sie beim Erstellen des Schemas [!UICONTROL **XDM ExperienceEvent**] aus dem [!UICONTROL **Schema erstellen**] Dropdown-Menü.
+1. Wählen Sie auf der Seite Schemadetails beim Erstellen des Schemas die Option [!UICONTROL **Erlebnisereignis**] bei der Auswahl der Basisklasse für das Schema.
+
+   ![Feldergruppen hinzugefügt](assets/schema-experience-event.png)
+
+1. Klicken Sie auf [!UICONTROL **Weiter**].
+
+1. Geben Sie einen Anzeigenamen und eine Beschreibung für das Schema an und wählen Sie dann [!UICONTROL **Beenden**].
 
 1. Im [!UICONTROL **Komposition**] im [!UICONTROL **Feldergruppen**] Bereich, wählen Sie [!UICONTROL **Hinzufügen**], suchen Sie dann nach den folgenden neuen Feldergruppen und fügen Sie sie zum Schema hinzu:
    * `Adobe Analytics ExperienceEvent Template`
@@ -46,7 +48,7 @@ Erstellen und Einrichten eines Schemas:
 
    ![Feldergruppen hinzugefügt](assets/schema-field-groups-added.png)
 
-1. Auswählen [!UICONTROL **Bestätigen**] , um Ihre Änderungen zu speichern.
+1. Auswählen [!UICONTROL **Speichern**] , um Ihre Änderungen zu speichern.
 
 1. (Optional) Sie können bestimmte Felder ausblenden, die nicht von der Media Edge-API verwendet werden. Das Ausblenden dieser Felder erleichtert das Lesen und Verstehen des Schemas, ist jedoch nicht erforderlich. Diese Felder beziehen sich nur auf die Felder im `MediaAnalytics Interaction Details` fieldgroup.
 
@@ -141,7 +143,7 @@ Erstellen und Einrichten eines Schemas:
 
       * [!UICONTROL **Adobe Analytics**] (bei Verwendung von Adobe Analytics)
 
-        Wenn Sie Adobe Analytics verwenden, stellen Sie sicher, dass Sie eine Report Suite wie im Abschnitt beschrieben definieren [Report Suite definieren](#define-a-report-suite) in diesem Artikel.
+        Wenn Sie Adobe Analytics verwenden, stellen Sie sicher, dass Sie eine Report Suite definieren, wie unter [Erstellen einer Report Suite](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
       * [!UICONTROL **Adobe Experience Platform**] (bei Verwendung von Customer Journey Analytics)
 
@@ -248,7 +250,7 @@ Erstellen und Einrichten eines Schemas:
 
    1. Aktualisieren Sie die Beschriftungen (im [!UICONTROL **Kontextbezeichnungen**] Dropdown-Menü) für die Komponenten in der folgenden Tabelle. Suchen Sie nach Komponenten, die sich noch nicht im Metrikbereich befinden, und ziehen Sie sie in den Bereich.
 
-      | Name der Komponente | Kontextkennzeichnung |
+      | Name der Komponente | Kontext-Label |
       |---------|----------|
       | Zeitüberschreitung des Mediensitzungs-Servers | Medien: Sekunden seit dem letzten Aufruf |
       | Besuchszeit für Medien | Medien: Besuchszeit für Medien |
@@ -311,7 +313,15 @@ Erstellen und Einrichten eines Schemas:
 
 Je nach Datentyp, den Sie an Experience Platform Edge senden möchten, können Sie eine der folgenden Methoden verwenden:
 
-### Mobile: Verwenden des mobilen Adobe Experience Platform-SDK
+### Web: Verwenden des Adobe Experience Platform Web SDK
+
+* [Erste Schritte](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
+
+* [Webdaten mit dem Adobe Experience Platform Web SDK an Edge senden](/help/implementation/edge/edge-web-sdk.md)
+
+* [Migrieren zur Adobe Streaming Media for Edge Network-Erweiterung](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+
+### Mobile: Verwenden des Adobe Experience Platform Mobile SDK
 
 Verwenden Sie die folgenden Dokumentationsressourcen, um die Implementierung für iOS und Android abzuschließen:
 
