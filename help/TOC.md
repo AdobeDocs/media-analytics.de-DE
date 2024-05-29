@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics für Streaming Media
 breadcrumb-title: Media Analytics-Anleitung
 user-guide-description: Implementieren von Adobe Analytics für Streaming-Medien. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
 sub-product: media analytics
-source-git-commit: ee147c2446162257b03f2f0b972e591435d787a9
-workflow-type: ht
-source-wordcount: '897'
-ht-degree: 100%
+source-git-commit: b5a95af55d782a14fc5fd6b8d5b9f206c797212e
+workflow-type: tm+mt
+source-wordcount: '901'
+ht-degree: 99%
 
 ---
 
@@ -36,7 +36,8 @@ ht-degree: 100%
       + [Voraussetzungen ](/help/implementation/edge/prerequisites-edge.md)
       + Media Edge-SDKs/Erweiterung {#media-edge-sdk}
          + [Setup für Media Edge-SDKs/Erweiterung](/help/implementation/edge/implementation-edge.md)
-         + [Media Edge Mobile-SDKs](/help/implementation/edge/edge-mobile-sdk.md)
+         + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
+         + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge-API](/help/implementation/edge/implementation-edge-api.md)
    + Nur Adobe Analytics-Implementierungen {#analytics-only}
       + [Voraussetzungen ](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
@@ -73,7 +74,7 @@ ht-degree: 100%
       + [Player-Statusparameter](implementation/variables/player-state-parameters.md)
       + [Qualitätsparameter](implementation/variables/quality-parameters.md)
       + [Berechnete Metriken ](implementation/variables/calculated-metrics.md)
-+ Berichterstellung  {#media-reports}
++ Reporting {#media-reports}
    + [Aktivierung von Medienberichten ](reporting/media-reports-enable.md)
    + Medienbedienfelder in Workspace {#media-workspace-panels}
       + [Bedienfeld „Zielgruppendurchschnitt pro Minute“](reporting/workspace/average-minute-audience.md)
