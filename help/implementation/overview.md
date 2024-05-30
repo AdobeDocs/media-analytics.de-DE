@@ -5,10 +5,10 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
-workflow-type: ht
-source-wordcount: '471'
-ht-degree: 100%
+source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
+workflow-type: tm+mt
+source-wordcount: '452'
+ht-degree: 81%
 
 ---
 
@@ -20,19 +20,15 @@ Es gibt verschiedene Möglichkeiten, Streaming-Medien zu implementieren. Einen d
 
 Wir empfehlen die Verwendung von Edge bei der Implementierung von Media Analytics für alle neuen Adobe Analytics- oder Customer Journey Analytics-Kundinnen und -Kunden.
 
-* **Media for Edge Network-SDK/Erweiterung:** Erfasst Daten von iOS- und Android-Geräten und sendet sie an Edge. Die Daten können dann entweder an Customer Journey Analytics oder Adobe Analytics gesendet werden.
+* **Media for Edge Network SDK/Erweiterung:** Erfasst Daten von Web-, iOS- und Android-Geräten oder Roku-Geräten und sendet sie an Edge Network. Die Daten können dann entweder an Customer Journey Analytics oder Adobe Analytics gesendet werden.
 
-  Weitere Informationen zur Media for Edge Network-SDK/Erweiterung finden Sie unter [Installieren von Media Analytics mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+  Weitere Informationen zur Media for Edge Network SDK/Erweiterung finden Sie unter [Installieren von Media Analytics mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
-  >[!NOTE]
-  >
-  >Diese Implementierungsmethode unterstützt derzeit weder das Web-SDK noch Roku. Beide werden jedoch bei der Implementierung mit der Media Edge-API unterstützt.
+* **Media Edge-API:** Kann angepasst werden, um Daten von beliebigen Geräten oder Formaten (einschließlich Mobilgeräten, Web- und Over-the-Top-Geräten) zu erfassen und Daten an Edge Network zu senden. Die Daten können dann entweder an Customer Journey Analytics oder Adobe Analytics gesendet werden.
 
-* **Media Edge-API:** Kann so angepasst werden, dass Daten von jedem Gerät oder Format (einschließlich Mobil-, Web- und Over-the-Top-Geräten) erfasst und an Edge gesendet werden. Die Daten können dann entweder an Customer Journey Analytics oder Adobe Analytics gesendet werden.
+  Weitere Informationen zur Media Edge-API finden Sie unter [Übersicht über die Media Edge-API](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
 
-  <!-- For more information about the Media Edge API, see (link to John's docs when they're ready) -->
-
-![CJA-Workflow](assets/cja-implementation.png)
+![CJA-Workflow](assets/streaming-media-edge.png)
 
 ## Implementierungsmethoden nur für Adobe Analytics
 
