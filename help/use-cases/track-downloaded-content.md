@@ -1,14 +1,14 @@
 ---
-title: Tracking von offline heruntergeladenen Inhalte in Adobe Streaming-Medien
+title: Tracking offline heruntergeladener Inhalte im Streaming Media Collection Add-on
 description: Erfahren Sie, wie Sie mit der Funktion für heruntergeladene Inhalte den Medienkonsum verfolgen können, wenn ein Benutzer offline ist.
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
+source-wordcount: '697'
+ht-degree: 98%
 
 ---
 
@@ -22,11 +22,11 @@ Vergleichen Sie die beiden Ansätze:
 
 * Online
 
-   Bei diesem Echtzeit-Ansatz sendet der Medienplayer Tracking-Daten für jedes Player-Ereignis. Außerdem sendet er alle zehn Sekunden (bei Anzeigen jede Sekunde) jeweils einen einzelnen Netzwerk-Ping an das Backend.
+  Bei diesem Echtzeit-Ansatz sendet der Medienplayer Tracking-Daten für jedes Player-Ereignis. Außerdem sendet er alle zehn Sekunden (bei Anzeigen jede Sekunde) jeweils einen einzelnen Netzwerk-Ping an das Backend.
 
 * Offline (Funktion für heruntergeladene Inhalte)
 
-   Bei diesem Ansatz der Stapelverarbeitung müssen dieselben Sitzungsereignisse generiert werden, die jedoch auf dem Gerät gespeichert werden, bis sie als einzelne Sitzung an das Backend gesendet werden (siehe Beispiel unten).
+  Bei diesem Ansatz der Stapelverarbeitung müssen dieselben Sitzungsereignisse generiert werden, die jedoch auf dem Gerät gespeichert werden, bis sie als einzelne Sitzung an das Backend gesendet werden (siehe Beispiel unten).
 
 Jeder Ansatz hat seine Vor- und Nachteile:
 * Das Online-Szenario verfolgt in Echtzeit. Dies erfordert eine Konnektivitätsprüfung vor jedem Netzwerkaufruf.

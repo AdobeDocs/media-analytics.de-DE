@@ -4,14 +4,14 @@ description: Informationen zu Anwendungsfällen für Streaming-Medien
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: c569ea265f6e467b19d58a870ac7b24b8bf355b1
-workflow-type: ht
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
 source-wordcount: '78'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
-# Anwendungsfälle für Streaming-Medien {#media-sdk-use-cases}
+# Anwendungsfälle für das Media SDK {#media-sdk-use-cases}
 
 * [Tracking des Player-Status](/help/use-cases/player-state-tracking/player-state-overview.md)
 * [Offline-Nachverfolgen heruntergeladener Inhalte](/help/use-cases/track-downloaded-content.md)

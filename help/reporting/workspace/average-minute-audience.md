@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit dem Bedienfeld „Medien-Zielgruppendurch
 feature: Media Analytics, Workspace Basics
 role: User, Admin
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
-source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -22,4 +22,4 @@ In Analysis Workspace bezeichnet der Zielgruppendurchschnitt pro Minute die Zeit
 
 Das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ bietet Zielgruppenanalysen für eine durchschnittliche Minute nach dem ausgewählten spezifischen Inhalt, wenn die Dauer mithilfe von Classifications zur Verfügung gestellt wird.
 
-Das Bedienfeld „Zielgruppendurchschnitt pro Minute“ bietet außerdem Analysen über einen ausgewählten Zeitraum, die nach bestimmten Inhalten gefiltert werden können – unabhängig davon, ob die Dauer mit Classifications verfügbar ist oder nicht. Um auf das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ zuzugreifen, navigieren Sie zu einer Report Suite, während die Media Analytics-Komponenten aktiviert sind. Klicken Sie dann auf das Bedienfeldsymbol ganz links und ziehen Sie das Bedienfeld in Ihr Analysis Workspace-Projekt. [Weitere Informationen...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=de)
+Das Bedienfeld „Zielgruppendurchschnitt pro Minute“ bietet außerdem Analysen über einen ausgewählten Zeitraum, die nach bestimmten Inhalten gefiltert werden können – unabhängig davon, ob die Dauer mit Classifications verfügbar ist oder nicht. Um auf das Bedienfeld Zielgruppendurchschnitt pro Minute für Medien zuzugreifen, navigieren Sie zu einer Report Suite mit aktivierten Streaming-Medienkomponenten. Klicken Sie dann auf das Bedienfeldsymbol ganz links und ziehen Sie das Bedienfeld in Ihr Analysis Workspace-Projekt. [Weitere Informationen...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=de)

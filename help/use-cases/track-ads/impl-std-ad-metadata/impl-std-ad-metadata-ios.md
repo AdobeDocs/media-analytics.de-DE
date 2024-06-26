@@ -5,8 +5,8 @@ uuid: f15fb727-5a5b-46c5-bf12-93b376c10fd1
 exl-id: 018ae833-51d9-4ff0-80e7-3dbcaefb997c
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 |---|---|
 | `ADBMediaObjectKeyStandardAdMetadata` | Konstante für das Anhängen von Standard-Anzeigenmetadaten an `AdInfo ADBMediaObject` |
 
-## Implementieren der Standard-Anzeigenmetadaten
+## Standard-Anzeigenmetadaten implementieren
 
 Erstellen Sie für Standard-Anzeigenmetadaten ein Wörterbuch der Schlüssel-Werte-Paare für Standard-Anzeigenmetadaten unter Verwendung der Schlüssel für Ihre Plattform:
 

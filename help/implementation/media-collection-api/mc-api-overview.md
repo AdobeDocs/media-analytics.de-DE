@@ -6,18 +6,18 @@ uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
-# Übersicht über die Mediensammlungs-API{#overview}
+# Übersicht über die Mediensammlungs-API {#overview}
 
 Die Mediensammlungs-API ist die RESTful-Alternative von Adobe zum Client-seitigen Media SDK. Mit der Mediensammlungs-API kann Ihr Player Audio- und Videoereignisse mit RESTful HTTP-Aufrufen tracken.
 
-Die Mediensammlungs-API ist im Wesentlichen ein Adapter, der als Server-seitige Version des Media SDK fungiert. Das bedeutet, dass einige Aspekte der Medien-SDK-Dokumentation auch für die Mediensammlungs-API relevant sind. Beispielsweise verwenden beide Lösungen dieselben [Parameter für Streaming-Medien](../variables/audio-video-parameters.md), und die erfassten Tracking-Daten für Streaming-Medien führen zum selben [Reporting und Analyse.](/help/reporting/media-reports-enable.md)
+Die Mediensammlungs-API ist im Wesentlichen ein Adapter, der als Server-seitige Version des Media SDK fungiert. Das bedeutet, dass einige Aspekte der Medien-SDK-Dokumentation auch für die Mediensammlungs-API relevant sind. Beispielsweise verwenden beide Lösungen dieselbe [Parameter für Streaming-Medien](../variables/audio-video-parameters.md), und die erfassten Streaming-Medien-Tracking-Daten führen zum selben [Reporting und Analyse.](/help/reporting/media-reports-enable.md)
 
 ## Datenfluss beim Medien-Tracking {#media-tracking-data-flows}
 
@@ -37,11 +37,11 @@ Die über die Mediensammlungs-API erfassten Tracking-Daten werden gesendet und z
 
 * **`sessions`-** Stellt eine Sitzung mit dem Server her und gibt eine Sitzungs-ID zurück, die in nachfolgenden `events`-Aufrufen verwendet wird. Ihre Anwendung führt diesen Aufruf zu Beginn einer Tracking-Sitzung durch.
 
-   `{uri}/api/v1/sessions`
+  `{uri}/api/v1/sessions`
 
 * **`events`-** Sendet Medien-Tracking-Daten.
 
-   `{uri}/api/v1/sessions/{session-id}/events`
+  `{uri}/api/v1/sessions/{session-id}/events`
 
 ### Anfrageinhalt {#mc-api-request-body}
 

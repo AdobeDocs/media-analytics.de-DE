@@ -5,16 +5,16 @@ uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '445'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '443'
+ht-degree: 97%
 
 ---
 
 # Android einrichten{#set-up-android}
 
-Erfahren Sie, wie Sie Streaming Media Analytics für Android-Geräte einrichten.
+Erfahren Sie, wie Sie das Streaming Media Collection Add-on für Android-Geräte einrichten.
 
 >[!IMPORTANT]
 >
@@ -61,7 +61,6 @@ Erfahren Sie, wie Sie Streaming Media Analytics für Android-Geräte einrichten.
       1. Klicken Sie auf die Tabs **[!UICONTROL Sortierung]** und **[!UICONTROL Export]**.
 
       1. Stellen Sie sicher, dass die Datei `MediaSDK.jar` ausgewählt ist.
-
 
 1. Importieren Sie die Bibliothek.
 

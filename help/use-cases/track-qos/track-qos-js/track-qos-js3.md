@@ -4,10 +4,10 @@ description: „Erfahren Sie, wie Sie das Tracking der Erlebnisqualität (QoE, Q
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vorne
 >
 >Wenn Sie vorherige Versionen des SDK implementieren möchten, können Sie hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/getting-started/download-sdks.md)
 
-## Implementieren von QOE
+## Implementieren der QOE
 
 1. Ermitteln Sie, wann sich die Bit-Rate während der Medienwiedergabe ändert, und erstellen Sie die `qoeObject`-Instanz mithilfe der QoE-Informationen.
 

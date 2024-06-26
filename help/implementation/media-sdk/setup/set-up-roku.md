@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '668'
-ht-degree: 100%
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 93%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 100%
 
 ## Voraussetzungen  {#roku-prerequisites}
 
-* **Abrufen gültiger Konfigurationsparameter für Media Analytics**
+* **Gültige Konfigurationsparameter für das Streaming Media Collection Add-on abrufen**
 
-   Sie können diese Parameter von einem Adobe-Support-Mitarbeiter erhalten, wenn Sie Ihr Media Analytics-Konto eingerichtet haben.
+  Diese Parameter erhalten Sie nach der Einrichtung Ihres Adobe Streaming Media Collection Add-On-Kontos von einem Adobe-Support-Mitarbeiter.
 * **Integrieren der folgenden APIs in Ihren Media Player**
 
    * _Eine API zum Abonnieren von Player-Ereignissen_: Das Media SDK erfordert den Aufruf einer Reihe einfacher APIs, wenn im Player Ereignisse auftreten.
@@ -35,9 +35,10 @@ Mit Roku SDK 2.x für Experience Cloud-Lösungen können Sie in BrightScript ge
       * `adbmobile.brs`: Diese Bibliothek ist im Quellordner Ihrer Roku-App enthalten.
 
       * `ADBMobileConfig.json`: Hierbei handelt es sich um die SDK-Konfigurationsdatei, die für Ihre App angepasst wird.
+
    1. Fügen Sie die Bibliotheks- und die JSON-Konfigurationsdatei zu Ihrer Projektquelle hinzu.
 
-      Die JSON-Datei, die für die Konfiguration von Adobe Mobile verwendet wird, enthält einen exklusiven Schlüssel für Media Analytics namens `mediaHeartbeat`. Hier müssen Sie die Konfigurationsparameter für Media Analytics hinzufügen.
+      Die JSON-Datei, die für die Konfiguration von Adobe Mobile verwendet wird, enthält einen exklusiven Schlüssel für Media Analytics namens `mediaHeartbeat`. Hier gehören die Konfigurationsparameter für die Medienanalyse an.
 
       >[!TIP]
       >
@@ -99,7 +100,6 @@ Mit Roku SDK 2.x für Experience Cloud-Lösungen können Sie in BrightScript ge
       >[!IMPORTANT]
       >
       >Wenn `mediaHeartbeat` nicht richtig konfiguriert ist, wechselt das Medienmodul (VHL) zu einem Fehlerstatus und sendet keine Tracking-Aufrufe mehr.
-
 
 1. Konfigurieren der Experience Cloud-Besucher-ID.
 

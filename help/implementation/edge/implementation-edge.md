@@ -1,27 +1,27 @@
 ---
-title: Installieren von Media Analytics mit Experience Platform Edge
-description: Erfahren Sie, wie Sie Adobe-Streaming-Medien mit Experience Platform Edge implementieren.
+title: Implementieren des Add-ons für Streaming-Mediensammlung mit dem Edge Network
+description: Erfahren Sie, wie das Streaming Media Collection Add-on mit Experience Platform Edge implementiert werden kann.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1883'
 ht-degree: 9%
 
 ---
 
-# Installieren von Media Analytics mit Experience Platform Edge
+# Implementieren des Add-ons für Streaming-Mediensammlung mit dem Edge Network
 
-Mit Adobe Experience Platform Edge können Sie Daten, die für mehrere Produkte bestimmt sind, an einen zentralen Ort senden. Experience Edge leitet die entsprechenden Informationen an die gewünschten Produkte weiter. Mit diesem Konzept können Sie Implementierungsaufgaben zusammenfassen, insbesondere, wenn mehrere Datenlösungen vorhanden sind.
+Mit Adobe Experience Platform Edge Network können Sie Daten, die für mehrere Produkte bestimmt sind, an einen zentralen Ort senden. Experience Edge leitet die entsprechenden Informationen an die gewünschten Produkte weiter. Mit diesem Konzept können Sie Implementierungsaufgaben zusammenfassen, insbesondere, wenn mehrere Datenlösungen vorhanden sind.
 
-Die folgende Abbildung zeigt, wie eine Media Analytics-Implementierung Experience Platform Edge verwenden kann, um Daten in Analysis Workspace entweder in Adobe Analytics oder Customer Journey Analytics verfügbar zu machen:
+Die folgende Abbildung zeigt, wie das Adobe Streaming-Mediensammlungs-Add-on implementiert werden kann, um Experience Platform Edge zu verwenden und Daten in Analysis Workspace verfügbar zu machen, entweder in Adobe Analytics oder Customer Journey Analytics:
 
 ![CJA-Workflow](assets/streaming-media-edge.png)
 
-Eine Übersicht über alle Implementierungsoptionen, einschließlich Implementierungsmethoden, die Experience Platform Edge nicht verwenden, finden Sie unter [Streaming-Medien für Adobe Analytics oder Customer Journey Analytics implementieren](/help/implementation/overview.md).
+Einen Überblick über alle Implementierungsoptionen, einschließlich Implementierungsmethoden, die Experience Platform Edge nicht verwenden, finden Sie unter [Implementieren des Streaming Media Collection Add-ons](/help/implementation/overview.md).
 
-Unabhängig davon, ob Sie das Adobe Experience Platform Web SDK, das Adobe Experience Platform Mobile SDK, das Adobe Experience Platform Roku SDK oder die API zur Implementierung von Streaming Media mit Experience Edge verwenden, müssen Sie zunächst die folgenden Abschnitte ausführen:
+Unabhängig davon, ob Sie das Adobe Experience Platform Web SDK, das Adobe Experience Platform Mobile SDK, das Adobe Experience Platform Roku SDK oder die API verwenden, um das Streaming Media Collection Add-on mit Experience Edge zu implementieren, müssen Sie zunächst die folgenden Abschnitte ausführen:
 
 ## Einrichten des Schemas in Adobe Experience Platform
 
@@ -170,7 +170,7 @@ Erstellen und Einrichten eines Schemas:
 
 1. Erstellen Sie unter Customer Journey Analytics eine Verbindung, wie unter [Verbindung erstellen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de).
 
-   Beim Erstellen der Verbindung sind für die Implementierung von Streaming-Medien die folgenden Konfigurationsoptionen erforderlich:
+   Beim Erstellen der Verbindung sind für die Implementierung des Add-ons für die Streaming-Mediensammlung die folgenden Konfigurationsoptionen erforderlich:
 
    1. Wählen Sie den zuvor erstellten Datensatz aus, wie unter [Datensatz in Adobe Experience Platform erstellen](#create-a-dataset-in-adobe-experience-platform).
 
@@ -188,7 +188,7 @@ Erstellen und Einrichten eines Schemas:
 
 1. Erstellen Sie in Customer Journey Analytics eine Datenansicht, wie unter [Datenansicht erstellen oder bearbeiten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de).
 
-   Beim Erstellen der Datenansicht sind für die Implementierung von Streaming-Medien die folgenden Konfigurationsoptionen erforderlich:
+   Beim Erstellen der Datenansicht sind für die Implementierung des Streaming-Mediensammlungs-Add-ons die folgenden Konfigurationsoptionen erforderlich:
 
    1. Im [!UICONTROL **Verbindung**] -Feld die zuvor von Ihnen erstellte Verbindung aus, wie in [Erstellen einer Verbindung im Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics).
 
@@ -275,7 +275,7 @@ Erstellen und Einrichten eines Schemas:
 
 1. Stellen Sie sicher, dass Sie eine Datenansicht in Customer Journey Analytics erstellt haben, wie unter [Erstellen einer Datenansicht unter Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics).
 
-1. In Customer Journey Analytics im [!UICONTROL **Arbeitsbereich**] in der [!UICONTROL **Projekte**] Bereich, auswählen [!UICONTROL **Projekt erstellen**].
+1. In Customer Journey Analytics im [!UICONTROL **Workspace**] in der [!UICONTROL **Projekte**] Bereich, auswählen [!UICONTROL **Projekt erstellen**].
 
 1. Auswählen [!UICONTROL **Leeres Projekt**] > [!UICONTROL **Erstellen**].
 
@@ -345,11 +345,11 @@ Die API ist derzeit die einzige unterstützte Methode zum Senden von Webdaten an
 
 Die API ist auch verfügbar, wenn Sie eine benutzerdefinierte Implementierung der Edge-APIs verwenden möchten.
 
-Weitere Informationen zur Medien-Edge-API finden Sie in den folgenden Ressourcen:
+Weitere Informationen zur Media Edge-API finden Sie in den folgenden Ressourcen:
 
-* [Übersicht über die Media Edge-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
+* [Übersicht über die Media Edge API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
 
-* [Erste Schritte mit der Media Edge API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
+* [Erste Schritte mit der Media Edge-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
 
 * [Handbuch zur Fehlerbehebung bei Media Edge API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
 

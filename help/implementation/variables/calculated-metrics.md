@@ -1,20 +1,20 @@
 ---
-title: Berechnete Metriken für Streaming-Medien
-description: Erfahren Sie mehr über berechnete Metriken und Metrikformeln der Adobe-Streaming-Medien.
+title: Berechnete Metriken
+description: Erfahren Sie mehr über berechnete Metriken und Metrik-Formeln im Add-on zur Streaming-Mediensammlung.
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 917c87d759a43f124dfb3e3ac7f6a441c65fde94
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 90%
+source-wordcount: '246'
+ht-degree: 71%
 
 ---
 
 # Berechnete Metriken {#calculated-metrics}
 
-Berechnete Metriken für Streaming-Medien sind benutzerspezifische Metriken, mit denen Sie zielgerichtete Streaming-Mediendaten wie durchschnittliche Anzeigenbesuchszeit oder durchschnittliche Anzeigen pro Medien-Stream abrufen können.
+Berechnete Metriken für das Adobe Streaming Media Collection Add-on sind benutzerdefinierte Metriken, mit denen Sie zielgerichtete Streaming-Mediendaten wie durchschnittliche Anzeigenbesuchszeit oder durchschnittliche Anzeigen pro Medienstream abrufen können.
 
 Weitere Informationen zu berechneten Adobe Analytics-Metriken finden Sie unter [Berechnete und erweiterte berechnete (abgeleitete) Metriken](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=de) im Adobe Analytics-Komponenten-Handbuch.
 

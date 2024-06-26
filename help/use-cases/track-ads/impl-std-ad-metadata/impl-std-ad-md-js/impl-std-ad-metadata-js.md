@@ -5,8 +5,8 @@ uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
 exl-id: b331db87-ab4e-44fa-a97c-9691974cacd4
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 |---|---|
 | `StandardAdMetadata` | Konstante für das Anhängen von Standard-Anzeigenmetadaten an das Anzeigenobjekt |
 
-## Implementieren der Standard-Anzeigenmetadaten
+## Standard-Anzeigenmetadaten implementieren
 
 Erstellen Sie für Standard-Anzeigenmetadaten ein Wörterbuch der Schlüssel-Werte-Paare für Standard-Anzeigenmetadaten unter Verwendung der Schlüssel für Ihre Plattform:
 

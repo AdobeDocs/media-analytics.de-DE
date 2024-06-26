@@ -4,16 +4,16 @@ description: Erfahren Sie, wie Sie Adobe-Streaming-Medien für mobile Apps imple
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: 1e4babe0df218342fc4836155139d908ba113510
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 95%
+source-wordcount: '198'
+ht-degree: 81%
 
 ---
 
 # Installieren von Mobile SDKs {#install-mobile-sdks}
 
-Installieren und konfigurieren Sie Folgendes, um Streaming-Medien für Mobile Apps unter Android oder iOS zu implementieren:
+Installieren und konfigurieren Sie Folgendes, um das Streaming-Mediensammlungs-Add-on für mobile Apps in Android oder iOS zu implementieren:
 
 * **Adobe Experience Platform Mobile SDK**
 

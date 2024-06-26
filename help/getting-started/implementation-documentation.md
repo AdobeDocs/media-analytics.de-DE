@@ -5,31 +5,31 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
-source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 67%
+source-wordcount: '259'
+ht-degree: 45%
 
 ---
 
-# Dokumentation zur Implementierung für Streaming-Medien {#streaming-media-documentation}
+# Dokumentation zur Implementierung des Streaming Media Collection Add-ons {#streaming-media-documentation}
 
-Die Dokumentation zu Adobe Analytics für Streaming-Medien befindet sich auf mehreren Produkt-Websites. Je nachdem, wie Sie Streaming Media Analytics implementieren, müssen Sie sich möglicherweise auf eine oder mehrere Dokumentationsreihen beziehen.
+Die Dokumentation für das Streaming Media Collection Add-on finden Sie auf mehreren Produkt-Websites. Je nachdem, wie Sie die Streaming-Mediensammlung implementieren, müssen Sie möglicherweise einen oder mehrere Dokumentationssätze referenzieren.
 
 Verwenden Sie die Informationen in der folgenden Tabelle, um die Dokumentation für die von Ihnen gewählte Implementierungsmethode zu finden.
 
-## Dokumentation zur Implementierung für Streaming-Medien {#media-documentation}
+## Implementierungsdokumentation {#media-documentation}
 
 | Implementierung | Dokumentation |
 |:-----------------------:|----------------|
 | **Web** | * [Webdaten mit dem Adobe Experience Platform Web SDK an Edge senden](/help/implementation/edge/edge-web-sdk.md) <br> * [Webimplementierung für Streaming-Medien](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [Web-Implementierung mit Adobe Medium Analytics für Audio und Video-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=de) |
-| **Mobile** | * [Mobile Daten mit dem mobilen Adobe Experience Platform-SDK an Edge senden](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Handbuch zum Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobe Medium Analytics für Audio und Video - Erweiterung](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[Aktuelle Mobile SDK-Versionen](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[Mobile Implementierung für Streaming-Medien](/help/implementation/media-sdk/setup/mobile-implementation.md) | |  |
+| **Mobile** | * [Mobile Daten mit dem Adobe Experience Platform Mobile SDK an Edge senden](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Handbuch zum Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobe Medium Analytics für Audio und Video - Erweiterung](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[Aktuelle Mobile SDK-Versionen](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[Mobile Implementierung für Streaming-Medien](/help/implementation/media-sdk/setup/mobile-implementation.md) | |  |
 | **OTT** | *[Chromecast 3.0-SDK für Adobe Marketing Cloud-Lösungen](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Chromecast einrichten](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) <br> *[Roku einrichten](/help/implementation/media-sdk/setup/set-up-roku.md) |
 | **Adobe Experience Platform-APIs** | *[Mediensammlungs-APIs](/help/implementation/media-collection-api/mc-api-overview.md) |
 
 ## Zusätzliche Dokumentation {#additional-documentation}
 
-In der folgenden Tabelle finden Sie eine Dokumentation zu Adobe-Produkten, die mit Streaming Media Analytics verwendet werden.
+In der folgenden Tabelle finden Sie eine Dokumentation zu Adobe-Produkten, die mit dem Streaming Media Collection Add-on verwendet werden.
 
 | Produkt | Dokumentation |
 |:-----------------------:|----------------|
