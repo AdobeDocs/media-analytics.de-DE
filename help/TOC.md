@@ -1,21 +1,21 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Streaming-Mediensammlungs-Add-on
-breadcrumb-title: Anleitung zur Streaming-Mediensammlung
-user-guide-description: Implementieren von Streaming-Medien. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
+user-guide-title: Streaming Media Collection-Add-on
+breadcrumb-title: Streaming Media Collection-Handbuch
+user-guide-description: Implementieren von Streaming Media. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
 sub-product: media analytics
 source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
 
-# Streaming-Mediensammlungs-Add-on {#using}
+# Streaming Media Collection-Add-on {#using}
 
-+ [Anleitung zur Streaming-Mediensammlung](media-overview.md)
++ [Streaming Media Collection-Handbuch](media-overview.md)
 + Versionshinweise {#release-notes}
    + [Versionshinweise zur Streaming-Mediensammlung](additional-resources/release-notes.md)
 + Erste Schritte {#getting-started}
