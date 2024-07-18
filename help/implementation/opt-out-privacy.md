@@ -6,8 +6,8 @@ exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '385'
+workflow-type: tm+mt
+source-wordcount: '374'
 ht-degree: 100%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 100%
 
 ## Opt-out/Opt-in {#opt-out-opt-in}
 
-Sie können steuern, ob die Tracking-Aktivität auf einem bestimmten Gerät zulässig ist:
+Sie können steuern, ob das Nachverfolgen der Aktivitäten auf einem bestimmten Gerät zulässig ist:
 
 * **Mobile Apps:** Die VA-Bibliothek respektiert die Datenschutz- und Opt-out-Einstellungen der `AdobeMobile`-Bibliothek. Zum Abmelden vom Tracking müssen Sie die `AdobeMobile`-Bibliothek verwenden. Weitere Informationen zu den Opt-out- und Datenschutzeinstellungen der `AdobeMobile`-Bibliothek finden Sie unter [Opt-out- und Datenschutzeinstellungen](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=de).
 * **JavaScript/Browser-Apps:** Die VA-Bibliothek respektiert die Datenschutz- und Optout-Einstellungen der `VisitorAPI`. Um das-Tracking zu deaktivieren, müssen Sie über den Besucher-API-Dienst die entsprechende Einstellung vornehmen. Weitere Informationen zu Opt-out und Datenschutz finden Sie unter [Adobe Experience Platform-ID-Dienst](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=de).
 * **OTT-Apps (Chromecast, Roku):** Die OTT-SDKs bieten APIs, die mit der Datenschutz-Grundverordnung (DSGVO) konform sind und es Ihnen ermöglichen, `opt`-Statuskennzeichen für die Datenerfassung und -übertragung zu setzen und lokal gespeicherte Identitäten abzurufen.
 
-   >[!NOTE]
-   >
-   >Media Heartbeat-Tracking-Aufrufe werden ebenfalls deaktiviert, wenn der Datenschutzstatus auf „Opt-out“ festgelegt ist.
+  >[!NOTE]
+  >
+  >Media Heartbeat-Tracking-Aufrufe werden ebenfalls deaktiviert, wenn der Datenschutzstatus auf „Opt-out“ festgelegt ist.
 
-   Sie können wie folgt steuern, ob Analytics-Daten vom jeweiligen Gerät gesendet werden:
+  Sie können wie folgt steuern, ob Analytics-Daten vom jeweiligen Gerät gesendet werden:
 
    * über die `privacyDefault`-Einstellung in der Konfigurationsdatei `ADBMobile.json`. Dies steuert die Grundeinstellung und bleibt bestehen, bis es im Code geändert wird.
 
@@ -36,46 +36,49 @@ Sie können steuern, ob die Tracking-Aktivität auf einem bestimmten Gerät zul�
 
          * **Chromecast:**
 
-                ```
-                ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
-                ```
-            
+               ```
+               ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
+               ```
+           
          * **Roku:**
 
-                ```
-                ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
-                ```
-            
-            >[!IMPORTANT]
-            >
-            >Wenn ein Benutzer das Tracking deaktiviert, werden alle vorhandenen Gerätedaten und -IDs gelöscht, bis das Tracking erneut aktiviert wird.
+               ```
+               ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
+               ```
+           
+           >[!IMPORTANT]
+           >
+           >Wenn ein Benutzer das Tracking deaktiviert, werden alle vorhandenen Gerätedaten und -IDs gelöscht, bis das Tracking erneut aktiviert wird.
+
       * **Wieder aktivieren:**
 
          * **Chromecast:**
 
-                ```
-                ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
-                ```
-            
+               ```
+               ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
+               ```
+           
          * **Roku:**
 
-                ```
-                ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
-                ```
-            * **Die aktuelle Einstellung zurückgeben:**
+               ```
+               ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
+               ```
+           
+      * **Die aktuelle Einstellung zurückgeben:**
 
          * **Chromecast:**
 
-                ```
-                ADBMobile.config.getPrivacyStatus()
-                ```
-            
+               ```
+               ADBMobile.config.getPrivacyStatus()
+               ```
+           
          * **Roku:**
 
-                ```
-                ADBMobile().getPrivacyStatus()
-                ```
-            Nachdem die Datenschutzeinstellung mithilfe von `setPrivacyStatus` geändert wurde, ist die Änderung dauerhaft, bis sie mit dieser Methode erneut geändert wird, es sei denn, die App wird deinstalliert und neu installiert.
+               ```
+               ADBMobile().getPrivacyStatus()
+               ```
+           
+  Nachdem die Datenschutzeinstellung mithilfe von `setPrivacyStatus` geändert wurde, ist die Änderung dauerhaft, bis sie mit dieser Methode erneut geändert wird, es sei denn, die App wird deinstalliert und neu installiert.
 
 ## Abrufen von gespeicherten Kennungen (OTT-Apps) {#retrieving-stored-identifiers-ott-apps}
 
@@ -98,12 +101,12 @@ Beispiel:
 
 * **Chromecast:**
 
-   ```
-   ADBMobile.config.getAllIdentifiersAsync(callback)
-   ```
+  ```
+  ADBMobile.config.getAllIdentifiersAsync(callback)
+  ```
 
 * **Roku:**
 
-   ```
-   vids = ADBMobile().getAllIdentifiers()
-   ```
+  ```
+  vids = ADBMobile().getAllIdentifiers()
+  ```

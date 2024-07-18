@@ -5,9 +5,9 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: d94ede3e-95f8-4591-9833-ef39aff12ba9
 source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
-source-wordcount: '789'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '755'
+ht-degree: 99%
 
 ---
 
@@ -137,11 +137,11 @@ Media Analytics-Tracking-Implementierungen generieren zwei Arten von Tracking-Au
 
 * **Adobe Analytics-Server (AppMeasurement)** Weitere Informationen zu den Optionen für Tracking-Server finden Sie unter [Korrektes Ausfüllen der Variablen trackingServer und trackingServerSecure.](https://helpx.adobe.com/de/analytics/kb/determining-data-center.html)
 
-   >[!IMPORTANT]
-   >
-   >Für den Experience Cloud Visitor ID-Dienst ist ein RDC-Tracking-Server oder CNAME erforderlich, der in einen RDC-Server aufgelöst wird.
+  >[!IMPORTANT]
+  >
+  >Für den Experience Cloud Visitor ID-Dienst ist ein RDC-Tracking-Server oder CNAME erforderlich, der in einen RDC-Server aufgelöst wird.
 
-   Der Analytics-Tracking-Server sollte auf „`.sc.omtrdc.net`“ enden oder ein CNAME sein.
+  Der Analytics-Tracking-Server sollte auf „`.sc.omtrdc.net`“ enden oder ein CNAME sein.
 
 * ** Media Analytics-Server (Heartbeats)**
 Dieser hat immer das Format „`[your_namespace].hb.omtrdc.net`“. Der Wert „`[your_namespace]`“gibt Ihr Unternehmen an und wird von Adobe bereitgestellt.
@@ -152,13 +152,13 @@ Das Medien-Tracking verhält sich auf allen Plattformen – Desktop oder Mobilg
 
 | Video Analytics-SDKs 1.x  |  Entwicklerhandbücher (nur PDFs) |
 | --- | --- |
-| Android | [Android-Konfiguration ](vhl-dev-guide-v15_android.pdf) |
-| Apple TV | [Apple TV-Konfiguration ](vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | [Chromecast-Konfiguration ](chromecast_1.x_sdk.pdf) |
-| iOS | [iOS-Konfiguration ](vhl-dev-guide-v15_ios.pdf) |
-| JavaScript | [JavaScript-Konfiguration ](vhl-dev-guide-v15_js.pdf) |
+| Android | [Android-Konfiguration](vhl-dev-guide-v15_android.pdf) |
+| Apple TV | [Konfigurieren für Apple TV](vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | [Chromecast-Konfiguration](chromecast_1.x_sdk.pdf) |
+| iOS | [iOS-Konfiguration](vhl-dev-guide-v15_ios.pdf) |
+| JavaScript | [JavaScript-Konfiguration](vhl-dev-guide-v15_js.pdf) |
 | Primetime | <ul> <li> Android: [Media Analytics-Konfiguration](https://helpx.adobe.com/de/support/primetime.html) </li> <li> DHLS: [Media Analytics-Konfiguration](https://helpx.adobe.com/de/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS: [Media Analytics-Konfiguration](https://helpx.adobe.com/de/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
-| TVML | [TVML-Konfiguration ](vhl_tvml.pdf) |
+| TVML | [TVML-Konfiguration](vhl_tvml.pdf) |
 
 ## Primetime Medien-SDK-Dokumentation {#primetime-docs}
 

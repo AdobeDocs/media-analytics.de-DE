@@ -21,7 +21,7 @@ Die Wiedergabe in einer Medienanwendung kann auf verschiedene Weise unterbrochen
 
 >[!NOTE]
 >
->Aufruf `trackSessionStart` Wenn die App aus dem Hintergrund zurückkehrt, kann dies dazu führen, dass die Wiedergabe bis zu diesem Zeitpunkt nicht auf die gesamte Wiedergabedauer angerechnet wird und frühere Fortschrittsmarken, Segmente usw. verloren gehen. Rufen Sie stattdessen `trackPlay` auf, wenn die App wieder geöffnet oder die Medienwiedergabe fortgesetzt wird.
+>Der Aufruf von &quot;`trackSessionStart`&quot;, wenn die App aus dem Hintergrund zurückkehrt, kann dazu führen, dass die Wiedergabe bis zu diesem Zeitpunkt nicht auf die gesamte Wiedergabedauer angerechnet wird und frühere Fortschrittsmarken, Segmente usw. verloren gehen. Rufen Sie stattdessen `trackPlay` auf, wenn die App wieder geöffnet oder die Medienwiedergabe fortgesetzt wird.
 
 ## Häufige Fragen zur Behandlung von Anwendungsunterbrechungen: {#faq-about-handling-application-interrupts}
 

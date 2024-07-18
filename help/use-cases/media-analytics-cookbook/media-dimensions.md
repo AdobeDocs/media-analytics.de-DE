@@ -23,7 +23,7 @@ Um diese Funktion für einen bestimmten Bericht zu aktivieren, aktivieren Sie di
 
 >[!NOTE]
 >
->Die Medienmetriken sind _not_ zur Verwendung außerhalb des Medien-Trackings verfügbar sind, da die meisten dieser Werte vom Streaming-Mediensammlungs-Add-on basierend auf Heartbeat-Ereignissen berechnet werden. Außerdem ist es wichtig, dass die Medienmetriken nicht durch verschiedene Implementierungen in die Höhe getrieben werden.
+>Die Medienmetriken sind _nicht_ zur Verwendung außerhalb des Medien-Trackings verfügbar, da die meisten dieser Metriken vom Streaming-Mediensammlungs-Add-on basierend auf Heartbeat-Ereignissen berechnet werden. Außerdem ist es wichtig, dass die Medienmetriken nicht durch verschiedene Implementierungen in die Höhe getrieben werden.
 
 ## Verwenden von Media Stream-Zuordnung
 

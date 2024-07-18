@@ -25,7 +25,7 @@ Für Geräte, die derzeit keine SDK-Unterstützung haben, oder in Situationen, i
 
 Die folgende Tabelle zeigt die derzeit unterstützten Geräte. Wenn ein Gerät nicht aufgeführt ist, wenden Sie sich an die Kundenunterstützung oder einen Berater, um den Status des Geräts zu erfahren.
 
-Weitere Informationen zur Implementierung von Media in Edge finden Sie unter [Installieren des Streaming Media Collection Add-ons mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+Weitere Informationen zur Implementierung von Medien in Edge finden Sie unter [Installieren des Streaming-Mediensammlungs-Add-ons mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
 | Streaming-Plattformen und -Geräte | | Media for Edge Network SDK/Erweiterung | Media Edge-API | Media-Erweiterung mit Tags oder mobilem AEP-SDK | Medien-SDK | Mediensammlungs-API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

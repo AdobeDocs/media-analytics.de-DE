@@ -6,8 +6,8 @@ exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '651'
+workflow-type: tm+mt
+source-wordcount: '618'
 ht-degree: 100%
 
 ---
@@ -73,18 +73,17 @@ Laden Sie das SSL-Zertifikat herunter und installieren Sie es:
    1. Führen Sie einen der folgenden Schritte aus:
 
       * [Hinzufügen von Zertifikaten zum Speicher der vertrauenswürdigen Stammzertifizierungsstellen für einen lokalen Computer](https://technet.microsoft.com/de-de/library/cc754841.aspx#BKMK_addlocal)
+
    1. Führen Sie bei Verwendung von Firefox den Prozess zur [Installation des Stammzertifikats in Mozilla Firefox](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox) aus.
 
       Sie müssen Firefox möglicherweise erneut öffnen, damit die Änderung übernommen wird.
+
    **iOS-Geräte**
    1. Legen Sie auf Ihrem iOS-Gerät Adobe Debug als HTTP-Proxy fest, indem Sie auf **[!UICONTROL Einstellungen]** **>** **[!UICONTROL WLAN-Einstellungen]** klicken.
 
    1. Gehen Sie in Safari zu [Debuggen](https://proxy.debug.adobe.com/ssl).
 
       Safari fordert Sie zur Installation des SSL-Zertifikats auf.
-
-
-
 
 ## SSL-Zertifikat auf Ihrem Mobilgerät installieren {#install-sSL-for-mobile-device}
 

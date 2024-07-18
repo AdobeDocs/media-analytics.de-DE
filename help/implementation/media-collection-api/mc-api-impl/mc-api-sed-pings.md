@@ -14,7 +14,7 @@ ht-degree: 50%
 
 # Senden von Ping-Ereignissen{#sending-ping-events}
 
-**Sie müssen alle zehn Sekunden Ping-Ereignisse auslösen, die unabhängig von anderen gesendeten API-Ereignissen nach 10 Sekunden der Wiedergabe beginnen. Dies gilt sowohl für den Hauptinhalt als auch für das Anzeigen-Tracking.**
+**Sie müssen alle 10 Sekunden Ping-Ereignisse auslösen, die unabhängig von anderen gesendeten API-Ereignissen nach 10 Sekunden der Wiedergabe beginnen. Dies gilt sowohl für den Hauptinhalt als auch für das Anzeigen-Tracking.**
 
 Die Ping-Ereignisse sind der &quot;Heartbeat&quot;des Add-ons für Streaming-Mediensammlung. Die einzigen für einen Ping-Aufruf erforderlichen Parameter sind `eventType: ping` sowie das Objekt `playerTime` (Abspielposition und Zeitstempel).
 

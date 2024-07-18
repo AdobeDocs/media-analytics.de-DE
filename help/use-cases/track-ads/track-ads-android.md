@@ -6,8 +6,8 @@ exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '360'
+workflow-type: tm+mt
+source-wordcount: '364'
 ht-degree: 100%
 
 ---
@@ -90,13 +90,12 @@ Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung d
 
    * **Anwenderspezifische Anzeigenmetadaten:** Erstellen Sie für anwenderdefinierte Metadaten ein variables Objekt für die anwenderspezifischen Datenvariablen und füllen Sie es mit den Daten für aktuelle Anzeigen:
 
-      ```java
-      // Setting Ad Metadata
-      HashMap<String, String> adMetadata = new HashMap<String, String>();
-      adMetadata.put("affiliate", "Sample affiliate");
-      adMetadata.put("campaign", "Sample ad campaign");
-      ```
-
+     ```java
+     // Setting Ad Metadata
+     HashMap<String, String> adMetadata = new HashMap<String, String>();
+     adMetadata.put("affiliate", "Sample affiliate");
+     adMetadata.put("campaign", "Sample ad campaign");
+     ```
 
 1. Rufen Sie `trackEvent()` mit dem `AdStart`-Ereignis in der `MediaHeartbeat`-Instanz auf, um das Tracking der Anzeigenwiedergabe zu starten.
 

@@ -20,13 +20,13 @@ Es gibt verschiedene Möglichkeiten, das Adobe Streaming Media Collection Add-on
 
 Wir empfehlen die Verwendung von Edge bei der Implementierung des Streaming-Mediensammlungs-Add-ons für alle neuen Adobe Analytics- oder Customer Journey Analytics-Kunden.
 
-* **Media for Edge Network SDK/Erweiterung:** Erfasst Daten von Web-, iOS- und Android-Geräten oder Roku-Geräten und sendet sie an Edge Network. Die Daten können dann entweder an Customer Journey Analytics oder Adobe Analytics gesendet werden.
+* **Media for Edge Network SDK/-Erweiterung:** Erfasst Daten von Web-, iOS- und Android-Geräten oder Roku-Geräten und sendet sie an Edge Network. Die Daten können dann entweder an Customer Journey Analytics oder Adobe Analytics gesendet werden.
 
-  Weitere Informationen zur Media for Edge Network SDK/Erweiterung finden Sie unter [Implementieren des Add-ons für Streaming-Mediensammlung mit dem Edge Network](/help/implementation/edge/implementation-edge.md).
+  Weitere Informationen zum Media for Edge Network SDK/zur Erweiterung finden Sie unter [Implementieren des Add-ons für Streaming-Mediensammlung mit dem Edge Network](/help/implementation/edge/implementation-edge.md).
 
-* **Media Edge-API:** Kann angepasst werden, um Daten von beliebigen Geräten oder Formaten (einschließlich Mobilgeräten, Web- und Over-the-Top-Geräten) zu erfassen und Daten an Edge Network zu senden. Die Daten können dann entweder an Customer Journey Analytics oder Adobe Analytics gesendet werden.
+* **Media Edge-API:** Kann angepasst werden, um Daten von jedem Gerät oder Format (einschließlich Mobilgeräten, Web- und Over-the-Top-Geräten) zu erfassen und Daten an Edge Network zu senden. Die Daten können dann entweder an Customer Journey Analytics oder Adobe Analytics gesendet werden.
 
-  Weitere Informationen zur Media Edge-API finden Sie unter [Übersicht über die Media Edge API](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
+  Weitere Informationen zur Media Edge-API finden Sie unter [Übersicht über die Media Edge-API](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
 
 ![CJA-Workflow](assets/streaming-media-edge.png)
 

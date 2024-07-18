@@ -6,8 +6,8 @@ exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '689'
+workflow-type: tm+mt
+source-wordcount: '681'
 ht-degree: 100%
 
 ---
@@ -66,28 +66,28 @@ Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vorne
 
    * **Standard-Metadaten**
 
-      [Standard-Metadaten in JavaScript implementieren](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+     [Standard-Metadaten in JavaScript implementieren](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
 
-      >[!NOTE]
-      >
-      >Das Anhängen des Standard-Metadatenobjekts an das Medienobjekt ist optional.
+     >[!NOTE]
+     >
+     >Das Anhängen des Standard-Metadatenobjekts an das Medienobjekt ist optional.
 
       * Medien-Metadatenschlüssel API-Referenz: [Standard-Metadatenschlüssel - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         Hier sehen Sie den umfassenden Satz der verfügbaren Metadaten: [Audio- und Videoparameter](/help/implementation/variables/audio-video-parameters.md)
+        Hier sehen Sie den umfassenden Satz der verfügbaren Metadaten: [Audio- und Videoparameter](/help/implementation/variables/audio-video-parameters.md)
+
    * **Benutzerspezifische Metadaten**
 
-      Erstellen Sie ein Variablenobjekt für die benutzerdefinierten Variablen und fügen Sie die Daten für dieses Medium ein. Beispiel:
+     Erstellen Sie ein Variablenobjekt für die benutzerdefinierten Variablen und fügen Sie die Daten für dieses Medium ein. Beispiel:
 
-      ```js
-      /* Set custom context data */
-      var customVideoMetadata = {
-          isUserLoggedIn: "false",
-          tvStation: "Sample TV station",
-          programmer: "Sample programmer"
-      };
-      ```
-
+     ```js
+     /* Set custom context data */
+     var customVideoMetadata = {
+         isUserLoggedIn: "false",
+         tvStation: "Sample TV station",
+         programmer: "Sample programmer"
+     };
+     ```
 
 1. **Absicht, die Wiedergabe zu starten, verfolgen**
 

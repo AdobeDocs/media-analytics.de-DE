@@ -6,8 +6,8 @@ exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '1074'
+workflow-type: tm+mt
+source-wordcount: '1130'
 ht-degree: 100%
 
 ---
@@ -65,7 +65,7 @@ Am Backend generiert dieser Aufruf einen Adobe Analytics-Initiationsaufruf.
 
 | Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| App startet Ping-Ereignis-Timer | 0 | 0 | `/api/v1/sessions/{sid}/events` |  |
+| App startet Ping-Ereignis-Timer | 0 | 0 | `/api/v1/sessions/{sid}/events` | |
 
 Starten Sie den Ping-Timer Ihrer App. Das erste Ping-Ereignis sollte dann nach 1 Sekunde ausgelöst werden, wenn Pre-Roll-Anzeigen vorhanden sind, andernfalls nach 10 Sekunden.
 

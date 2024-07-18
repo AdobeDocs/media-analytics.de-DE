@@ -6,9 +6,9 @@ exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -22,7 +22,7 @@ Dies ist dasselbe Szenario wie die [VOD-Wiedergabe mit einem Kapitel](/help/use-
 
 | Auslöser | Heartbeat-Methode | Netzwerkaufrufe   | Hinweise |
 |---|---|---|---|
-| Anwender klickt auf **[!UICONTROL Abspielen]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Diese Netzwerkaufrufe sind noch mit dem Szenario [Wiedergabe ohne Unterbrechungen in iOS](vod-no-intrs-details.md) identisch. |
+| Anwender klickt auf **[!UICONTROL Abspielen]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Diese Netzwerkaufrufe sind weiterhin mit dem Szenario [Wiedergabe ohne Unterbrechungen in iOS](vod-no-intrs-details.md) identisch. |
 | Das Kapitel beginnt. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
 | Der erste Frame des Kapitels wird wiedergegeben. | `trackPlay` | Heartbeat Chapter Play | Wenn Kapitelinhalte vor dem Hauptinhalt wiedergegeben werden, sollten die Heartbeats beim Beginn des Kapitels Beginn werden. |
 | Das Kapitel wird wiedergegeben. |  | Chapter Heartbeats |  |
@@ -35,7 +35,7 @@ Dies ist dasselbe Szenario wie die [VOD-Wiedergabe mit einem Kapitel](/help/use-
 
 ## Parameter {#parameters}
 
-Die Parameter, die bei der Kapitelwiedergabe verwendet werden, sind mit den Parametern im Szenario [VOD-Wiedergabe mit einem Kapitel](/help/use-cases/tracking-scenarios/vod-one-chapter.md) identisch, bis auf die Tatsache, dass kein Kapitelbeendigungsnetzwerkaufruf gesendet wird.
+Die während der Kapitelwiedergabe verwendeten Parameter sind mit den Parametern im Szenario [VOD-Wiedergabe mit einem Kapitel](/help/use-cases/tracking-scenarios/vod-one-chapter.md) identisch, allerdings gibt es keinen Kapitelbeendigungsnetzwerkaufruf.
 
 ## Beispielcode {#sample-code}
 

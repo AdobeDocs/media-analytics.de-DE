@@ -6,8 +6,8 @@ exl-id: aaed828d-1aba-486e-83e3-2ffd092305e2
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '295'
+workflow-type: tm+mt
+source-wordcount: '298'
 ht-degree: 100%
 
 ---
@@ -72,11 +72,11 @@ Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung d
    * [Standard-Anzeigenmetadaten in Roku implementieren ](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    * **Anwenderspezifische Anzeigenmetadaten:** Erstellen Sie für anwenderdefinierte Metadaten ein variables Objekt für die anwenderspezifischen Datenvariablen und füllen Sie es mit den Daten für das aktuelle Anzeigen-Asset:
 
-      ```
-      contextData = {}
-      contextData["adinfo1"] = "adinfo2"
-      contextData["adinfo2"] = "adinfo2"
-      ```
+     ```
+     contextData = {}
+     contextData["adinfo1"] = "adinfo2"
+     contextData["adinfo2"] = "adinfo2"
+     ```
 
 1. Rufen Sie `trackEvent()` mit dem `AdStart`-Ereignis in der `MediaHeartbeat`-Instanz auf, um das Tracking der Anzeigenwiedergabe zu starten:
 

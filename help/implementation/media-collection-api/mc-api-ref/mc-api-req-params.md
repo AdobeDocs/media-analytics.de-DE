@@ -6,9 +6,9 @@ exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '1329'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1337'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 | --- | :---: | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | J | string | `sessionStart` | Die Experience Cloud-Organisations-ID, die Ihre Organisation innerhalb der Adobe Experience Cloud-Umgebung identifiziert |
 | `visitor.marketingCloudUserId` | N | string | `sessionStart` | Dies ist die Experience Cloud-Benutzer-ID (ECID). In den meisten Szenarien ist dies die ID, die Sie zur Identifizierung eines Benutzers verwenden sollten. Die `marketingCloudUserId` in Heartbeat entspricht der `MID` in Adobe Analytics. Dieser Parameter ist zwar technisch nicht erforderlich, aber für den Zugriff auf die Apps der Experience Cloud-Familie erforderlich. |
-| `visitor.aamLocationHint` | N | Ganzzahl | `sessionStart` | Stellt Adobe Audience Manager-Edge-Daten bereit – Wenn kein Wert eingegeben wird, ist der Wert null. |
+| `visitor.aamLocationHint` | N | Ganzzahl | `sessionStart` | Stellt Adobe Audience Manager Edge-Daten bereit - Wenn kein Wert eingegeben wird, ist der Wert null. |
 | `appInstallationId` | N | string | `sessionStart` | Die appInstallationId identifiziert Anwendung und Gerät eindeutig. |
 
 ## Inhaltsdaten
@@ -149,17 +149,17 @@ Dieser Parameter ist nicht nur für die MCID-Generierung erforderlich, sondern w
 
 * **analytics.aid:**
 
-   Der Wert dieses Schlüssels muss eine Zeichenfolge sein, die die veraltete Analytics-Benutzer-ID darstellt
+  Der Wert dieses Schlüssels muss eine Zeichenfolge sein, die die veraltete Analytics-Benutzer-ID darstellt
 * **visitor.customerIDs:**
 
-   Der Wert dieses Schlüssels muss ein Objekt im folgenden Format sein:
+  Der Wert dieses Schlüssels muss ein Objekt im folgenden Format sein:
 
-   ```js
-   "<<insert your ID name here>>": {  
-     "id": " <<insert your id here>>",  
-      "authState": <<insert one of 0, 1, 2>>
-   }
-   ```
+  ```js
+  "<<insert your ID name here>>": {  
+    "id": " <<insert your id here>>",  
+     "authState": <<insert one of 0, 1, 2>>
+  }
+  ```
 
 Beachten Sie, dass der Wert `visitor.customerIDs` über mehrere Objekte im angegebenen Format verfügen kann.
 

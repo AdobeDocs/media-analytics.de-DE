@@ -81,7 +81,7 @@ Signalisiert, dass ein Fehler aufgetreten ist.
 
 Dieser Parameter wird verwendet, um das Media Analytics-Backend aufzufordern, die Sitzung umgehend zu schließen, wenn der Benutzer die Wiedergabe verlassen hat und wahrscheinlich nicht zurückkehren wird.
 
-Wenn eine `sessionEnd` nicht gesendet wird, wird eine abgebrochene Sitzung [Zeitüberschreitung normalerweise](../mc-api-impl/mc-api-timeout.md) (entweder nachdem 10 Minuten lang keine Ereignisse empfangen wurden oder 30 Minuten lang keine Verschiebung der Abspielleiste stattgefunden hat). Darüber hinaus werden alle nachfolgenden Medienaufrufe, die mit dieser Sitzungs-ID durchgeführt werden, verworfen.
+Wenn keine `sessionEnd` gesendet wird, wird eine abgebrochene Sitzung [normal beendet](../mc-api-impl/mc-api-timeout.md) (entweder nachdem 10 Minuten lang keine Ereignisse empfangen wurden oder 30 Minuten lang keine Verschiebung der Abspielleiste erfolgt). Darüber hinaus werden alle nachfolgenden Medienaufrufe, die mit dieser Sitzungs-ID durchgeführt werden, verworfen.
 
 ## sessionComplete
 

@@ -15,10 +15,10 @@ ht-degree: 10%
 
 Die in diesem Abschnitt beschriebenen Voraussetzungen gelten speziell für die Implementierung des Adobe Streaming Media Collection Add-ons mit Edge-Implementierungen.
 
-1. **Allgemeine Voraussetzungen erfüllen**<br>
-Stellen Sie sicher, dass Sie die Variable [Allgemeine Voraussetzungen](/help/getting-started/prereqs.md).
+1. **Die allgemeinen Voraussetzungen erfüllen**<br>
+Stellen Sie sicher, dass Sie die [allgemeinen Voraussetzungen](/help/getting-started/prereqs.md) erfüllen, unabhängig davon, ob Sie das Streaming-Mediensammlungs-Add-on für Implementierungen mit nur Adobe Analytics oder für Implementierungen mit Edge implementieren.
 
-1. **Bestätigen Sie, dass Sie eine mit Edge Network und dem Add-on für die Streaming-Mediensammlung kompatible Adobe-Lösung implementieren.**<br>
+1. **Vergewissern Sie sich, dass Sie eine mit Edge Network und dem Add-on für Streaming-Mediensammlung kompatible Adobe-Lösung implementieren**<br>
 Bei der Implementierung des Streaming-Mediensammlungs-Add-ons mit Edge müssen Sie auch über eine funktionierende Customer Journey Analytics-, Adobe Analytics-, Adobe Journey Optimizer- oder Real-time Customer Data Platform-Implementierung verfügen. Weitere Informationen finden Sie in den folgenden Dokumentationsressourcen:
    * [Handbuch für Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=de)
    * [Implementieren von Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=de)
@@ -26,7 +26,7 @@ Bei der Implementierung des Streaming-Mediensammlungs-Add-ons mit Edge müssen S
    * [Real-time Customer Data Platform-Dokumentation](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=de)
 
 1. **Abrufen der Medien-Tracking-Server-URL**<br>
-Fragen Sie Ihren Customer Journey Analytics-Support-Mitarbeiter nach der URL des Medien-Tracking-Servers. <!-- This is the `collection-api-server` URL for the Mobile SDK, the JavaScript SDK, and the non-collection-api tracking server for Roku. Domain names for API implementation is: `[your_namespace].hb-api.omtrdc.net`. -->
+Fragen Sie Ihren Customer Journey Analytics-Support-Mitarbeiter nach der Medien-Tracking-Server-URL <!-- This is the `collection-api-server` URL for the Mobile SDK, the JavaScript SDK, and the non-collection-api tracking server for Roku. Domain names for API implementation is: `[your_namespace].hb-api.omtrdc.net`. -->.
 
 1. **Implementieren des Add-ons für Streaming-Mediensammlung mit dem Edge Network**<br>
-Führen Sie die Schritte unter [Implementieren des Add-ons für Streaming-Mediensammlung mit dem Edge Network](/help/implementation/edge/implementation-edge.md).
+Führen Sie die Schritte unter [Implementieren des Add-ons für Streaming-Mediensammlung mit dem Edge Network](/help/implementation/edge/implementation-edge.md) aus.

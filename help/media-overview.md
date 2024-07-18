@@ -68,4 +68,4 @@ Nach dem Ende einer Wiedergabesitzung werden die berechneten Tracking-Daten zur 
 >Bei Customer Journey Analytics-Implementierungen können Daten entweder über Experience Edge oder über Analytics Data Connector (ADC) an Customer Journey Analytics gesendet werden.
 
 
-Detaillierte Informationen zu den verschiedenen Implementierungsmethoden finden Sie unter [Implementieren des Streaming Media Collection Add-ons für Adobe Analytics oder Customer Journey Analytics](/help/implementation/overview.md).
+Detaillierte Informationen zu den verschiedenen Implementierungsmethoden finden Sie unter [Implementieren des Streaming-Mediensammlungs-Add-ons für Adobe Analytics oder Customer Journey Analytics](/help/implementation/overview.md).

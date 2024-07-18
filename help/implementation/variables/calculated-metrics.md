@@ -27,7 +27,7 @@ Weitere Informationen zu berechneten Adobe Analytics-Metriken finden Sie unter [
 | Durchschnittliche Anzeigen pro Medienstream | Anzeigenstarts pro Medienstart | `Ad Starts / Media Starts` |
 | Durchschnittliche Kapitel pro Medienstream | Kapitelstarts pro Medienstart | `Chapter Start / Media Starts` |
 | Durchschnittl. Besuchszeit für Medien | Gesamtbesuchszeit pro Medienstart (`HH:MM:SS`) | `Media Time Spent / Media Starts` |
-| Durchschnittl. Inhaltsbesuchszeit | Besuchszeit für Inhalte pro Inhaltsstart (`HH:MM:SS`) | `Content Time Spent / Content Start` |
+| Durchschnittl. Inhaltsbesuchszeit | Inhaltsbesuchszeit pro Inhaltsstart (`HH:MM:SS`) | `Content Time Spent / Content Start` |
 | Durchschnittl. Besuchszeit für Anzeige | Besuchszeit für Anzeigen pro Anzeigenstart (`HH:MM:SS`) | `Ad Time Spent / Ad Start` |
 | Durchschnittl. Besuchszeit für Kapitel | Besuchszeit für Kapitel pro Kapitelstart (`HH:MM:SS`) | `Chapter Time Spent / Chapter Start` |
 | Medienabschlussrate | Rate der Inhaltsbeendigung und Medienaufrufe im Vergleich (%) | `Content Completes/ Media Starts` |

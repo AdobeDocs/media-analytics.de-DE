@@ -6,9 +6,9 @@ exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
-workflow-type: ht
-source-wordcount: '690'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 96%
 
 ---
 
@@ -52,8 +52,8 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone- und der 
 | Media.completeCloseOffsetThreshold | `s.Media.` <br> `  completeCloseOffsetThreshold` <br> `  = 1` | nicht angegeben | Inhaltsbeendigung unterstützt nur eine 100%ige Fortschrittsmarkierung. |
 | Media.playerName | `s.Media.playerName` <br> `  = "Custom Player Name"` | SDK-Schlüssel: playerName;<br> API-Schlüssel: media.playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.trackSeconds | `s.Media.` <br> `  trackSeconds` <br> `  = 15` | nicht angegeben | Media Analytics ist auf 10 Sekunden für Inhalte und 1 Sekunde für Anzeigen eingestellt. Es sind keine weiteren Optionen verfügbar. |
-| Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | nicht angegeben | Media Analytics nimmt das Tracking der Fortschrittsmarkierungen immer bei 10, 25, 50, 75 und 95 % vor. |
-| Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | nicht angegeben | Media Analytics nimmt das Tracking der Fortschrittsmarkierungen immer bei 10, 25, 50, 75 und 95 % vor. |
+| Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | nicht angegeben | Media Analytics verfolgt Fortschrittsmarken immer bei 10 %, 25 %, 50 %, 75 %, 95 %. |
+| Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | nicht angegeben | Media Analytics verfolgt Fortschrittsmarken immer bei 10 %, 25 %, 50 %, 75 %, 95 %. |
 | Media.segmentByMilestones | `s.Media.segmentByMilestones` <br> `  = true;` | nicht angegeben | Das automatische Tracking ist nicht mehr verfügbar. |
 | Media.segmentByOffsetMilestones | `s.Media.` <br> `  segmentByOffsetMilestones` <br> `  = true;` | nicht angegeben | Das automatische Tracking ist nicht mehr verfügbar. |
 

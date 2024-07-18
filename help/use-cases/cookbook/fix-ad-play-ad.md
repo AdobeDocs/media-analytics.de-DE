@@ -6,8 +6,8 @@ exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '448'
+workflow-type: tm+mt
+source-wordcount: '450'
 ht-degree: 100%
 
 ---
@@ -52,9 +52,9 @@ Beseitigen Sie die Lücke innerhalb des Players, indem Sie `trackEvent:AdComplet
 
 * **Aufruf`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
-   >[!NOTE]
-   >
-   >Führen Sie diesen Aufruf nur durch, wenn die vorherige Anzeige nicht abgeschlossen wurde. Erwägen Sie hierzu einen booleschen Wert, um einen `isinAd`-Status für die vorherige Anzeige festzulegen.
+  >[!NOTE]
+  >
+  >Führen Sie diesen Aufruf nur durch, wenn die vorherige Anzeige nicht abgeschlossen wurde. Erwägen Sie hierzu einen booleschen Wert, um einen `isinAd`-Status für die vorherige Anzeige festzulegen.
 
 * Erstellen Sie die Anzeigen-Objektinstanz für das Anzeigen-Asset, z. B. `adObject`.
 * Fügen Sie die Anzeigenmetadaten hinzu: `adCustomMetadata`.
@@ -65,9 +65,9 @@ Beseitigen Sie die Lücke innerhalb des Players, indem Sie `trackEvent:AdComplet
 
 * **Führen Sie keinen Aufruf durch**
 
-   >[!NOTE]
-   >
-   >Wenn die Anwendung weiß, dass es sich um die letzte Anzeige in der Werbeunterbrechung handelt, rufen Sie `trackEvent:AdComplete` hier auf und überspringen Sie `trackEvent:AdComplete` in `trackEvent:AdBreakComplete`.
+  >[!NOTE]
+  >
+  >Wenn die Anwendung weiß, dass es sich um die letzte Anzeige in der Werbeunterbrechung handelt, rufen Sie `trackEvent:AdComplete` hier auf und überspringen Sie `trackEvent:AdComplete` in `trackEvent:AdBreakComplete`.
 
 **Beim Überspringen einer Anzeige:**
 
@@ -77,8 +77,8 @@ Beseitigen Sie die Lücke innerhalb des Players, indem Sie `trackEvent:AdComplet
 
 * **Aufruf`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
-   >[!NOTE]
-   >
-   >Wenn dieser Schritt bereits weiter oben im Rahmen des letzten `trackEvent:AdComplete`-Aufrufs durchgeführt wurde, können Sie ihn hier überspringen.
+  >[!NOTE]
+  >
+  >Wenn dieser Schritt bereits weiter oben im Rahmen des letzten `trackEvent:AdComplete`-Aufrufs durchgeführt wurde, können Sie ihn hier überspringen.
 
 * Aufruf `trackEvent(MediaHeartbeat.Event.AdBreakComplete);`.

@@ -6,8 +6,8 @@ exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '590'
+workflow-type: tm+mt
+source-wordcount: '616'
 ht-degree: 100%
 
 ---
@@ -60,7 +60,7 @@ Dieser Aufruf signalisiert _die Anwenderintention, ein Video abzuspielen_. Er gi
 
 | Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| App startet Ping-Ereignis-Timer | 0 | 0 |  |
+| App startet Ping-Ereignis-Timer | 0 | 0 | |
 
 Starten Sie den Ping-Timer Ihrer App. Das erste Ping-Ereignis sollte dann nach 1 Sekunde ausgelöst werden, wenn Pre-Roll-Anzeigen vorhanden sind, andernfalls nach 10 Sekunden.
 

@@ -16,10 +16,10 @@ ht-degree: 62%
 
 Führen Sie die folgenden Aufgaben aus, bevor Sie mit der Implementierung des Adobe Streaming Media Collection Add-ons beginnen:
 
-1. **Überblick über das Streaming Media Collection Add-on**<br>
-Bevor Sie mit der Implementierung des Add-ons für Streaming-Mediensammlung beginnen, lesen Sie die [Übersicht über das Add-on für Streaming-Mediensammlung](/help/media-overview.md) um sicherzustellen, dass es Ihren Anforderungen entspricht.
+1. **Überprüfen Sie die Übersicht über das Add-on für Streaming-Mediensammlungen**<br>
+Bevor Sie mit der Implementierung des Streaming-Mediensammlungs-Add-ons beginnen, lesen Sie die [Übersicht über das Streaming-Mediensammlungs-Add-on](/help/media-overview.md) , um sicherzustellen, dass es Ihren Anforderungen entspricht.
 
-1. **Preismodell bestätigen**<br>
+1. **Bestätigen Sie Ihr Preismodell**<br>
 Das aktuelle Preismodell für das Adobe Streaming Media Collection Add-on basiert auf Video-Streams. Wenden Sie sich bei Bedarf an Ihren Kundenbetreuer oder das Adobe Account-Team, da das Add-on separat für Adobe Analytics und Adobe Experience Platform verkauft wird.
 
 1. **Aktivieren von Adobe Analytics-Berichten**<br>

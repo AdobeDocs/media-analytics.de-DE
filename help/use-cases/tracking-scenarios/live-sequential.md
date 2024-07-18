@@ -6,9 +6,9 @@ exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '520'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '526'
+ht-degree: 98%
 
 ---
 
@@ -24,11 +24,11 @@ Dieses Szenario ist mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/use-ca
 | --- | --- | --- | --- |
 | Anwender klickt auf [!UICONTROL Abspielen] | trackSessionStart | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Daher sind diese Netzwerkaufrufe mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) identisch. |
 | Das erste Bild des Inhalts wird wiedergegeben. | trackPlay | Heartbeat Content Play | Wenn Kapitelinhalte vor dem Hauptinhalt wiedergegeben werden, starten Heartbeats beim Beginn des Kapitels. |
-| Inhalt wird wiedergegeben |  | Content Heartbeats | Dieser Netzwerkaufruf ist mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) identisch. |
+| Inhalt wird wiedergegeben | | Content Heartbeats | Dieser Netzwerkaufruf ist mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) identisch. |
 | Sitzung 1 beendet (Folge 1 beendet) | trackComplete / trackSessionEnd | Heartbeat Content Complete | „Complete“ bedeutet, dass Sitzung 1 für die erste Folge erreicht und vollständig angesehen wurde. Vor dem Start der Sitzung für die nächste Folge muss diese Sitzung beendet sein. |
-| Folge 2 gestartet (Start von Sitzung 2) | trackSessionStart | Analytics Content Start Heartbeat Content Start | Dies tritt auf, wenn der Anwender die erste Folge geschaut und direkt mit einer weiteren Folge begonnen hat. |
+| Folge 2 gestartet (Start von Sitzung 2) | trackSessionStart | Analytics Content Start Heartbeat Content Start | Dies tritt auf, wenn der Anwender die erste Folge geschaut und direkt mit einer weiteren Folge begonnen hat. |
 | Erstes Medienbild | trackPlay | Heartbeat Content Play | Diese Methode löst den Timer aus. Ab diesem Zeitpunkt werden alle 10 Sekunden Heartbeats gesendet, solange die Wiedergabe läuft. |
-| Inhalt wird wiedergegeben |  | Content Heartbeats |  |
+| Inhalt wird wiedergegeben | | Content Heartbeats | |
 | Sitzung beendet (Folge 2 beendet) | trackComplete / trackSessionEnd | Heartbeat Content Complete | „Complete“ bedeutet, dass Sitzung 2 für die zweite Folge erreicht und vollständig angesehen wurde. Vor dem Start der Sitzung für die nächste Folge muss diese Sitzung beendet sein. |
 
 ## Parameter {#parameters}

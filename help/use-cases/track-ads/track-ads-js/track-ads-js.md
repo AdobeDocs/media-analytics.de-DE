@@ -6,8 +6,8 @@ exl-id: 4404d3a6-ab98-40f0-9573-ee32f480f650
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '355'
+workflow-type: tm+mt
+source-wordcount: '359'
 ht-degree: 100%
 
 ---
@@ -83,14 +83,14 @@ Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung d
    * [Standard-Anzeigenmetadaten in JavaScript implementieren](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
    * **Anwenderspezifische Anzeigenmetadaten:** Erstellen Sie für anwenderdefinierte Metadaten ein variables Objekt für die anwenderspezifischen Datenvariablen und füllen Sie es mit den Daten für aktuelle Anzeigen:
 
-      ```js
-      /* Set custom context data */
-      var adCustomMetadata = {
-          affiliate: "Sample affiliate",
-          campaign: "Sample ad campaign",
-          creative: "Sample creative"
-      };
-      ```
+     ```js
+     /* Set custom context data */
+     var adCustomMetadata = {
+         affiliate: "Sample affiliate",
+         campaign: "Sample ad campaign",
+         creative: "Sample creative"
+     };
+     ```
 
 1. Rufen Sie `trackEvent()` mit dem `AdStart`-Ereignis in der `MediaHeartbeat`-Instanz auf, um das Tracking der Anzeigenwiedergabe zu starten.
 

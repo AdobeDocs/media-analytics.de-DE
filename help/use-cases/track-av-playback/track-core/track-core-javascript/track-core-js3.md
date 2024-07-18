@@ -6,8 +6,8 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 91%
+source-wordcount: '747'
+ht-degree: 87%
 
 ---
 
@@ -128,7 +128,7 @@ Diese Dokumentation behandelt das Tracking in der Version 3.x des SDK.
 
 1. **Abspielkopfwert aktualisieren**
 
-   Wenn sich die Abspielleiste der Medien ändert, benachrichtigen Sie das SDK, indem Sie die `mediaUpdatePlayhead` API. <br /> Bei Video-on-demand (VOD) wird der Wert in Sekunden ab Beginn des Medienelements angegeben. <br /> Wenn der Player beim Livestreaming keine Informationen zur Inhaltsdauer bereitstellt, kann der Wert als Anzahl der Sekunden seit Mitternacht (UTC) des Tages angegeben werden.
+   Wenn sich die Abspielleiste der Medien ändert, benachrichtigen Sie das SDK durch Aufruf der `mediaUpdatePlayhead` -API. <br /> Bei Video-on-demand (VOD) wird der Wert in Sekunden ab Beginn des Medienelements angegeben. <br /> Wenn der Player beim Live-Streaming keine Informationen zur Inhaltsdauer bereitstellt, kann der Wert als Anzahl der Sekunden seit Mitternacht UTC dieses Tages angegeben werden.
 
    ```
    tracker.updatePlayhead(position)
@@ -136,9 +136,9 @@ Diese Dokumentation behandelt das Tracking in der Version 3.x des SDK.
 
    >[!NOTE]
    >
-   >Beachten Sie Folgendes beim Aufrufen der `tracker.updatePlayhead` API:
+   >Beachten Sie beim Aufrufen der `tracker.updatePlayhead`-API Folgendes:
    >* Bei Verwendung von Fortschrittsmarken ist die Inhaltsdauer erforderlich und die Abspielleiste muss als Anzahl von Sekunden ab Anfang des Medienelements aktualisiert werden, beginnend mit 0.
-   >* Bei Verwendung von Medien-SDKs müssen Sie die `tracker.updatePlayhead` API mindestens einmal pro Sekunde
+   >* Bei Verwendung von Medien-SDKs müssen Sie die `tracker.updatePlayhead`-API mindestens einmal pro Sekunde aufrufen.
 
 1. **Ende der Wiedergabe verfolgen**
 

@@ -17,7 +17,7 @@ ht-degree: 93%
 
 Die Mediensammlungs-API ist die RESTful-Alternative von Adobe zum Client-seitigen Media SDK. Mit der Mediensammlungs-API kann Ihr Player Audio- und Videoereignisse mit RESTful HTTP-Aufrufen tracken.
 
-Die Mediensammlungs-API ist im Wesentlichen ein Adapter, der als Server-seitige Version des Media SDK fungiert. Das bedeutet, dass einige Aspekte der Medien-SDK-Dokumentation auch für die Mediensammlungs-API relevant sind. Beispielsweise verwenden beide Lösungen dieselbe [Parameter für Streaming-Medien](../variables/audio-video-parameters.md), und die erfassten Streaming-Medien-Tracking-Daten führen zum selben [Reporting und Analyse.](/help/reporting/media-reports-enable.md)
+Die Mediensammlungs-API ist im Wesentlichen ein Adapter, der als Server-seitige Version des Media SDK fungiert. Das bedeutet, dass einige Aspekte der Medien-SDK-Dokumentation auch für die Mediensammlungs-API relevant sind. Beispielsweise verwenden beide Lösungen dieselben [Streaming-Medien-Parameter](../variables/audio-video-parameters.md) und die erfassten Streaming-Medien-Tracking-Daten führen zu demselben [Reporting und derselben Analyse](/help/reporting/media-reports-enable.md).
 
 ## Datenfluss beim Medien-Tracking {#media-tracking-data-flows}
 

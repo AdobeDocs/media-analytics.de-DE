@@ -6,7 +6,7 @@ exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 100%
 
@@ -27,6 +27,6 @@ Im Folgenden finden Sie die Unterschiede zwischen den Versionen 1.x und 2.x:
 * Alle Konfigurationen sind nun in der Klasse `MediaHeartbeatConfig` konsolidiert.
 * Sie müssen die Konfigurationen für die Analytics-, VideoPlayer- und Heartbeat-Plug-ins nicht mehr instanziieren. Sie müssen die `MediaHeartbeat`-Klasse nur mit den `MediaHeartbeatDelegate`- und `MediaHeartbeatConfig`-Instanzen instanziieren. Dies ist die einzige erforderliche Implementierung zur Initialisierung von Media Analytics.
 
-   Mit der Initialisierung von `MediaHeartbeat` können Sie die gesamte Implementierung für die Analytics-, VideoPlayer- und Heartbeat-Plug-ins löschen. Entfernen Sie außerdem die gesamte vorhandene Implementierung für die Initialisierung, die ein Array von Plug-ins als Eingabe akzeptiert. Unter [Codevergleich: 1.x gegenüber 2.x](./code-comparison-1x-2x.md) finden Sie einen Direktvergleich der 1.x- und 2.x-Implementierungen.
+  Mit der Initialisierung von `MediaHeartbeat` können Sie die gesamte Implementierung für die Analytics-, VideoPlayer- und Heartbeat-Plug-ins löschen. Entfernen Sie außerdem die gesamte vorhandene Implementierung für die Initialisierung, die ein Array von Plug-ins als Eingabe akzeptiert. Unter [Codevergleich: 1.x gegenüber 2.x](./code-comparison-1x-2x.md) finden Sie einen Direktvergleich der 1.x- und 2.x-Implementierungen.
 
 Die neuen APIs in 2.x sind hier detailliert beschrieben: [Konversion von API 1.x zu 2.x](./1x-2x-api-change.md).

@@ -16,9 +16,9 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->*Berichte* in Workspace zuvor als *templates*.
+>*Berichte* in Workspace wurden früher als *Vorlagen* bezeichnet.
 
-Analysis Workspace bietet eine Reihe vordefinierter Berichte, die standardmäßig zur Datenanalyse zur Verfügung stehen. Weitere Informationen zu allen verfügbaren Standardberichten finden Sie unter [Berichte anzeigen](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) in [Adobe Analytics-Landingpage](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=de).
+Analysis Workspace bietet eine Reihe vordefinierter Berichte, die standardmäßig zur Datenanalyse zur Verfügung stehen. Weitere Informationen zu allen verfügbaren Standardberichten finden Sie unter [Berichte anzeigen](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) auf der Landingpage [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=de) .
 
 Einige dieser Berichte sind besonders nützlich für die Analyse von Streaming-Mediendaten, wie in den folgenden Abschnitten beschrieben.
 
@@ -26,20 +26,21 @@ Einige dieser Berichte sind besonders nützlich für die Analyse von Streaming-M
 
 Im Folgenden finden Sie eine Liste von Standardberichten, die bei der Analyse von Streaming-Mediendaten nützlich sind:
 
-* [!UICONTROL **Medieninhaltsverbrauch**]: Erstellt einen Bericht, der anzeigt, welche Inhalte am häufigsten verwendet werden und welche Benutzer ansprechend sind.
+* [!UICONTROL **Verbrauch von Medieninhalten**]: Erstellt einen Bericht, der anzeigt, welche Inhalte am häufigsten genutzt werden und welche Benutzer anregen.
 
-* [!UICONTROL **Nutzung von Streaming-Medien**]: Erstellt einen Bericht mit einem Dashboard, wie im folgenden Beispiel gezeigt.
+* [!UICONTROL **Nutzung der Streaming-Medien**]: Erstellt einen Bericht mit einem Dashboard, wie im folgenden Beispiel gezeigt.
 
-* [!UICONTROL **Medienaktualität, Häufigkeit, Treue**]: Erstellt einen Bericht, der die Neuigkeit (wie viele Tage seit dem letzten Besuch), die Häufigkeit (wie viele Besuche pro Besucher) und die Treue (wie oft die Kohorten von Benutzern zur Site zurückkehren) anzeigt.
+* [!UICONTROL **Medienaktualität, -frequenz, -loyalität**]: Erstellt einen Bericht, der die Neuigkeit (wie viele Tage seit dem letzten Besuch), die Häufigkeit (wie viele Besuche pro Besucher) und die Treue (wie oft Kohorten von Benutzern zur Site zurückkehren) anzeigt.
 
-Wenn Sie beispielsweise die  [!UICONTROL **Nutzung von Streaming-Medien**] -Bericht, wird ein Projekt mit dem folgenden Dashboard angezeigt:
+Wenn Sie beispielsweise den Bericht [!UICONTROL **Streaming-Mediennutzung**] auswählen, wird ein Projekt mit dem folgenden Dashboard angezeigt:
 
 ![](/help/reporting/assets/aa-workspace.png)
 
 ## Standardberichte für Medien verwenden
 
-Sie können standardmäßige Medienberichte wie folgt verwenden: beim Erstellen eines neuen Projekts. Sie können auch oder beim Ändern eines vorhandenen Projekts verwenden.
+Sie können standardmäßige Medienberichte wie folgt verwenden:
+beim Erstellen eines neuen Projekts. Sie können auch oder beim Ändern eines vorhandenen Projekts verwenden.
 
-* **Beim Erstellen eines neuen Projekts:** Informationen zum Erstellen eines neuen Projekts aus einem Standardbericht finden Sie unter [Erstellen eines Projekts aus einem leeren Projekt oder Bericht](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report) in [Erstellen von Projekten in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report).
+* **Beim Erstellen eines neuen Projekts:** Informationen zum Erstellen eines neuen Projekts aus einem Standardbericht finden Sie unter [Erstellen eines Projekts aus einem leeren Projekt oder einem Bericht](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report) in [Erstellen von Projekten in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report).
 
-* **Beim Erstellen eines benutzerdefinierten Unternehmensberichts:** Informationen zum Erstellen eines benutzerspezifischen Unternehmensberichts finden Sie unter [Benutzerdefinierten Unternehmensbericht erstellen](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report) in [Adobe Analytics-Landingpage](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=de).
+* **Beim Erstellen eines benutzerspezifischen Unternehmensberichts:** Informationen zum Erstellen eines benutzerspezifischen Unternehmensberichts finden Sie unter [Erstellen eines benutzerspezifischen Unternehmensberichts](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report) in der Einstiegsseite für Adobe Analytics [5.](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=de)

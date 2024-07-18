@@ -6,8 +6,8 @@ exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '355'
+workflow-type: tm+mt
+source-wordcount: '359'
 ht-degree: 100%
 
 ---
@@ -85,12 +85,12 @@ Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung d
    * [Standard-Anzeigenmetadaten in iOS implementieren ](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
    * **Anwenderspezifische Anzeigenmetadaten:** Erstellen Sie für anwenderdefinierte Metadaten ein variables Objekt für die anwenderspezifischen Datenvariablen und füllen Sie es mit den Daten für aktuelle Anzeigen:
 
-      ```
-      NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
-      [adDictionary setObject:@"Sample affiliate" forKey:@"affiliate"];
-      [adDictionary setObject:@"Sample campaign" forKey:@"campaign"];
-      [adDictionary setObject:@"Sample creative" forKey:@"creative"];
-      ```
+     ```
+     NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
+     [adDictionary setObject:@"Sample affiliate" forKey:@"affiliate"];
+     [adDictionary setObject:@"Sample campaign" forKey:@"campaign"];
+     [adDictionary setObject:@"Sample creative" forKey:@"creative"];
+     ```
 
 1. Rufen Sie `trackEvent()` mit dem `AdStart`-Ereignis in der `MediaHeartbeat`-Instanz auf, um das Tracking der Anzeigenwiedergabe zu starten.
 

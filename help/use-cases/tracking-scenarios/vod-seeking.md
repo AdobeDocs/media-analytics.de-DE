@@ -6,7 +6,7 @@ exl-id: d77aa717-5dcb-4429-8dce-1914434f2b32
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 100%
 
@@ -24,11 +24,11 @@ Dieses Szenario ist mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/use-ca
 | --- | --- | --- | --- |
 | Anwender klickt auf [!UICONTROL Abspielen] | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Daher sind diese Netzwerkaufrufe mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) identisch. |
 | Das erste Bild des Inhalts wird wiedergegeben. | `trackPlay` | Heartbeat Content Play | Wenn Kapitelinhalte vor dem Hauptinhalt wiedergegeben werden, starten Heartbeats beim Beginn des Kapitels. |
-| Inhalt wird wiedergegeben |  | Content Heartbeats | Dieser Netzwerkaufruf ist mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) identisch. |
-| Benutzer beginnt Suchvorgang im Inhalt | `trackSeekStart` |  | Bis zum Abschluss der Suche (z. B. `trackSeekComplete`) werden keine Heartbeats gesendet. |
-| Suchvorgang abgeschlossen | `trackSeekComplete` |  | Heartbeats werden wieder gesendet, da die Suche abgeschlossen ist.  Tipp: Der Wert der Abspielleiste sollte die richtige neue Abspielposition nach der Suche widerspiegeln. |
+| Inhalt wird wiedergegeben | | Content Heartbeats | Dieser Netzwerkaufruf ist mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) identisch. |
+| Benutzer beginnt Suchvorgang im Inhalt | `trackSeekStart` | | Bis zum Abschluss der Suche (z. B. `trackSeekComplete`) werden keine Heartbeats gesendet. |
+| Suchvorgang abgeschlossen | `trackSeekComplete` | | Heartbeats werden wieder gesendet, da die Suche abgeschlossen ist.  Tipp: Der Wert der Abspielleiste sollte die richtige neue Abspielposition nach der Suche widerspiegeln. |
 | Inhalt ist abgeschlossen. | `trackComplete` | Heartbeat Content Complete | Dieser Netzwerkaufruf ist mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) identisch. |
-| Sitzung beendet | `trackSessionEnd` |  | `SessionEnd` |
+| Sitzung beendet | `trackSessionEnd` | | `SessionEnd` |
 
 ## Beispielcode {#sample-code}
 

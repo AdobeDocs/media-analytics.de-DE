@@ -6,9 +6,9 @@ exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -24,14 +24,14 @@ Das ist dasselbe Szenario wie die [VOD-Wiedergabe mit Pre-Roll-Anzeigen](/help/u
 
 | Auslöser   | Heartbeat-Methode  | Netzwerkaufrufe   | Hinweise   |
 | --- | --- | --- | --- |
-| Anwender klickt auf [!UICONTROL Abspielen] | `trackSessionStart()` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Diese Netzwerkaufrufe sind noch mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) identisch. |
-| Die Anzeige beginnt. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start, Heartbeat Ad Start |  |
+| Anwender klickt auf [!UICONTROL Abspielen] | `trackSessionStart()` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Diese Netzwerkaufrufe sind weiterhin mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) identisch. |
+| Die Anzeige beginnt. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start, Heartbeat Ad Start | |
 | Das erste Bild der Anzeige wird wiedergegeben. | `trackPlay()` | Heartbeat Ad Play | Wenn Anzeigeninhalte vor dem Hauptinhalt wiedergegeben werden, starten Heartbeats beim Beginn der Anzeige. |
-| Die Anzeige wird wiedergegeben. |  | Ad Heartbeats |  |
-| Die Anzeige wird übersprungen. | `trackEvent:trackAdSkip` |  | Es wird kein Ad Complete-Netzwerkaufruf gesendet. |
-| Der Inhalt wird wiedergegeben. |  | Content Heartbeats | Diese Netzwerkaufrufe sind mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) identisch. |
+| Die Anzeige wird wiedergegeben. | | Ad Heartbeats | |
+| Die Anzeige wird übersprungen. | `trackEvent:trackAdSkip` | | Es wird kein Ad Complete-Netzwerkaufruf gesendet. |
+| Der Inhalt wird wiedergegeben. | | Content Heartbeats | Diese Netzwerkaufrufe sind mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) identisch. |
 | Die Inhaltswiedergabe ist abgeschlossen. | `trackComplete()` | Heartbeat Content Complete | Dieser Netzwerkaufruf ist mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) identisch. |
-| Die Sitzung ist beendet. | `trackSessionEnd()` |  | `SessionEnd` |
+| Die Sitzung ist beendet. | `trackSessionEnd()` | | `SessionEnd` |
 
 ## Parameter {#parameters}
 

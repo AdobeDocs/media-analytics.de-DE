@@ -6,7 +6,7 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '398'
 ht-degree: 88%
 
 ---
@@ -133,9 +133,9 @@ Weitere Informationen finden Sie im Tracking-Szenario [VOD-Wiedergabe mit Pre-ro
 
 ## Granulares Anzeigen-Tracking
 
-Das standardmäßige Anzeigen-Ping-Intervall beträgt `10 seconds`.
+Das standardmäßige Anzeigen-Ping-Intervall ist `10 seconds`.
 
-Sie können eine detaillierte Anzeigenverfolgung einrichten, um `1 second` Anzeigen-Tracking.
+Sie können ein granulares Anzeigen-Tracking einrichten, um das Anzeigen-Tracking von `1 second` zu aktivieren.
 
 >[!IMPORTANT]
 >

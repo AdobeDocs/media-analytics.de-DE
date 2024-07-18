@@ -6,8 +6,8 @@ exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '838'
+workflow-type: tm+mt
+source-wordcount: '847'
 ht-degree: 100%
 
 ---
@@ -43,41 +43,40 @@ Führen Sie die folgenden Aktionen aus und zeichnen Sie sie auf (in der angegebe
 
    * **Adobe Analytics Start-Aufruf**
 
-      | Parameter | Wert (Beispiel) |
-      |---|---|
-      | `pev2` | ms_s |
-      | `mid` | 30250035503789876473484580554595324209 |
+     | Parameter | Wert (Beispiel) |
+     |---|---|
+     | `pev2` | ms_s |
+     | `mid` | 30250035503789876473484580554595324209 |
 
    * **Website-Seiten-Aufruf**
 
-      | Parameter | Wert (Beispiel) |
-      |---|---|
-      | `mid` | 30250035503789876473484580554595324209 |
+     | Parameter | Wert (Beispiel) |
+     |---|---|
+     | `mid` | 30250035503789876473484580554595324209 |
 
    * **Lebenszyklus-Aufruf**
 
-      | Parameter | Wert (Beispiel) |
-      |---|---|
-      | `pev2` | ADBINTERNAL:Lifecycle |
-      | `mid` | 30250035503789876473484580554595324209 |
+     | Parameter | Wert (Beispiel) |
+     |---|---|
+     | `pev2` | ADBINTERNAL:Lifecycle |
+     | `mid` | 30250035503789876473484580554595324209 |
 
    * **Start-Aufruf für Media Analytics**
 
-      | Parameter | Wert (Beispiel) |
-      |---|---|
-      | `s:event:type` | start |
+     | Parameter | Wert (Beispiel) |
+     |---|---|
+     | `s:event:type` | start |
 
-      >[!NOTE]
-      >
-      >Bei Start-Aufrufen für Media Analytics (`s:event:type=start`) sind die `mid`-Werte möglicherweise nicht vorhanden. Das ist in Ordnung. Sie werden möglicherweise erst mit dem Abspielaufruf für Media Analytics Play (`s:event:type=play`) angezeigt.
+     >[!NOTE]
+     >
+     >Bei Start-Aufrufen für Media Analytics (`s:event:type=start`) sind die `mid`-Werte möglicherweise nicht vorhanden. Das ist in Ordnung. Sie werden möglicherweise erst mit dem Abspielaufruf für Media Analytics Play (`s:event:type=play`) angezeigt.
 
    * **Abspielaufruf für Media Analytics**
 
-      | Parameter | Wert (Beispiel) |
-      |---|---|
-      | `s:event:type` | play |
-      | `s:user:mid` | 30250035503789876473484580554595324209 |
-
+     | Parameter | Wert (Beispiel) |
+     |---|---|
+     | `s:event:type` | play |
+     | `s:user:mid` | 30250035503789876473484580554595324209 |
 
 1. **Medienplayer starten**
 
@@ -107,13 +106,11 @@ Führen Sie die folgenden Aktionen aus und zeichnen Sie sie auf (in der angegebe
 
    * **Ad Play**
 
-      Während der Anzeigenwiedergabe sendet das Media Analytics-SDK jede Sekunde Wiedergabeereignisse des Typs „ad“ (Anzeige) an den Media Analytics-Server.
+     Während der Anzeigenwiedergabe sendet das Media Analytics-SDK jede Sekunde Wiedergabeereignisse des Typs „ad“ (Anzeige) an den Media Analytics-Server.
 
    * **Ad Complete**
 
-      Wenn eine Anzeige vollständig abgespielt wurde, sollte ein Abgeschlossen-Aufruf für Media Analytics gesendet werden.
-
-
+     Wenn eine Anzeige vollständig abgespielt wurde, sollte ein Abgeschlossen-Aufruf für Media Analytics gesendet werden.
 
 1. **Werbewiedergabe mindestens 30 Sekunden lang anhalten, sofern verfügbar.** **Ad Pause**
 
@@ -134,7 +131,7 @@ Führen Sie die folgenden Aktionen aus und zeichnen Sie sie auf (in der angegebe
    * Die Position der Abspielleiste sollte bei jedem Abspielanruf um 10 erhöht werden.
    * Der Wert `l:event:duration` zeigt die Anzahl der Millisekunden seit dem letzten Tracking-Aufruf und sollte bei jedem 10-Sekunden-Aufruf ungefähr gleich bleiben.
 
-      Informationen zu Aufrufparametern und Metadaten finden Sie unter [Details zum Testaufruf.](/help/legacy/validation/test-call-details.md#play-main-content)
+     Informationen zu Aufrufparametern und Metadaten finden Sie unter [Details zum Testaufruf.](/help/legacy/validation/test-call-details.md#play-main-content)
 
 1. **Wiedergabe mindestens 30 Sekunden lang anhalten.** Beim Anhalten des Medienplayers sendet das SDK alle 10 Sekunden Pause-Ereignisaufrufe an den Media Analytics-Server. Wird das Video fortgesetzt, sollten erneut Wiedergabeereignisse gesendet werden.
 

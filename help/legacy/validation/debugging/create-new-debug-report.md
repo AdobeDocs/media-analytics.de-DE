@@ -6,9 +6,9 @@ exl-id: 047acf35-8c1c-4493-9ee7-e2bad47c351e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -27,12 +27,14 @@ So erstellen Sie einen neuen Debug-Bericht:
 
       * [!UICONTROL Benutzername] und [!UICONTROL Gemeinsamer geheimer Schlüssel]: Diese Felder sind optional, Sie können Ihre Webservice-API-Anmeldedaten jedoch zu Adobe Debug hinzufügen, um die Variablennamen und -einstellungen für die Report Suite anzuzeigen.
 
-         Ihnen stehen folgende Zugriffsmöglichkeiten zur Verfügung:
+        Ihnen stehen folgende Zugriffsmöglichkeiten zur Verfügung:
 
          * [!UICONTROL Analytics > Admin > Unternehmenseinstellungen > Webdienste]
-         * [!UICONTROL Analytics > Admin > Anwenderverwaltung > Anwender > Individuelle Anwendereinstellungen] Um Webservice-API-Anmeldedaten für einen neuen Benutzer zu erstellen, fügen Sie den Benutzer unter [!UICONTROL Anwenderverwaltung] zur Benutzergruppe **Zugriff auf Webdienste** hinzu.
+         * [!UICONTROL Analytics > Admin > Benutzerverwaltung > Benutzer > Individuelle Benutzereinstellungen] Um eine Web-Services-API-Berechtigung für einen neuen Benutzer zu erstellen, fügen Sie den Benutzer in [!UICONTROL Benutzerverwaltung] der Benutzergruppe &quot;**Zugriff auf Webdienste**&quot;hinzu.
+
       * [!UICONTROL Standardendpunkt]: Die Daten in diesem Feld werden von Adobe angegeben und können nicht geändert werden.
       * [!UICONTROL Zusätzlicher Endpunkt]: Fügen Sie `CNAMES` (sofern Sie diese verwenden) für Tracking-Server wie `metrics.companyname.com` hinzu.
+
    * **Video-Heartbeats (Media Analytics)**
 
       * [!UICONTROL Standardendpunkt]: Die Daten in diesem Feld werden von Adobe angegeben und können nicht geändert werden.

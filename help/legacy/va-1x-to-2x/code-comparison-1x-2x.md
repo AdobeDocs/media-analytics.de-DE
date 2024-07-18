@@ -6,8 +6,8 @@ exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '571'
+workflow-type: tm+mt
+source-wordcount: '544'
 ht-degree: 100%
 
 ---
@@ -30,8 +30,8 @@ Alle Konfigurationsparameter und Tracking-APIs wurden in den `MediaHeartbeats`- 
 
 **Links zu 1.x- und 2.x-Beispielplayern:**
 
-* [1.x-Beispiel-Player ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
-* [2.x-Beispiel-Player ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
+* [1.x-Beispiel-Player](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
+* [2.x-Beispiel-Player](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
 In den folgenden Abschnitten finden Sie einen Codevergleich zwischen 1.x und 2.x. Dieser Vergleich deckt die Initialisierung, Core-Wiedergabe, Anzeigenwiedergabe, Kapitelwiedergabe und einige zusätzliche Ereignisse ab.
 
@@ -43,8 +43,8 @@ In den folgenden Abschnitten finden Sie einen Codevergleich zwischen 1.x und 2.x
 | --- | --- |
 | `Heartbeat()` | `MediaHeartbeat()` |
 | `VideoPlayerPlugin()` | `MediaHeartbeatConfig()` |
-| `AdobeAnalyticsPlugin()` |  |
-| `HeartbeatPlugin()` |  |
+| `AdobeAnalyticsPlugin()` | |
+| `HeartbeatPlugin()` | |
 
 #### Initialisierung des Videoplayer-Plugins (1.x) {#plugin-init-1.x}
 
@@ -96,11 +96,11 @@ this._mediaHeartbeat = new MediaHeartbeat( new SampleMediaHeartbeatDelegate(this
 | `VideoPlayerPluginDelegate()` | `MediaHeartbeatDelegate()` |
 | `VideoPlayerPluginDelegate().getVideoInfo` | `MediaHeartbeatDelegate().getCurrentPlaybackTime` |
 | `VideoPlayerPluginDelegate().getAdBreakInfo` | `MediaHeartbeatDelegate().getQoSObject` |
-| `VideoPlayerPluginDelegate().getAdInfo` |  |
-| `VideoPlayerPluginDelegate().getChapterInfo` |  |
-| `VideoPlayerPluginDelegate().getQoSInfo` |  |
-| `VideoPlayerPluginDelegate().get.onError` |  |
-| `AdobeAnalyticsPluginDelegate()` |  |
+| `VideoPlayerPluginDelegate().getAdInfo` | |
+| `VideoPlayerPluginDelegate().getChapterInfo` | |
+| `VideoPlayerPluginDelegate().getQoSInfo` | |
+| `VideoPlayerPluginDelegate().get.onError` | |
+| `AdobeAnalyticsPluginDelegate()` | |
 
 #### VideoPlayerPluginDelegate (1.x) {#player-plugin-delegate-1.x}
 
@@ -464,7 +464,7 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 | `VideoPlayerPlugin.trackAdStart()` | `MediaHeartbeat.createAdBreakObject()` |
 | `VideoPlayerPluginDelegate.getAdBreakInfo()` | `MediaHeartbeat.createAdObject()` |
 | `VideoPlayerPluginDelegate.getAdInfo()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakStart)` |
-|  | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdStart)` |
+| | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdStart)` |
 
 #### Start der Anzeige (1.x) {#ad-start-1.x}
 
@@ -559,7 +559,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | 1.x API | 2.x API |
 | --- | --- |
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.createAdObject()` |
-|  | `MediaHeartbeat.trackAdStart()` |
+| | `MediaHeartbeat.trackAdStart()` |
 
 #### Benutzerdefinierte Anzeigenmetadaten (1.x) {#custom-ad-meta-1.x}
 
@@ -610,7 +610,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | 1.x API | 2.x API |
 | --- | --- |
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.createAdObject()` |
-|  | `MediaHeartbeat.trackAdStart()` |
+| | `MediaHeartbeat.trackAdStart()` |
 
 #### Überspringen einer Anzeige (1.x) {#ad-skip-1.x}
 
@@ -637,7 +637,7 @@ VideoAnalyticsProvider.prototype._onAdSkip = function() {
 | 1.x API | 2.x API |
 | --- | --- |
 | `VideoPlayerPlugin.trackAdComplete()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdComplete)` |
-|  | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakComplete)` |
+| | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakComplete)` |
 
 #### Abschluss der Anzeige (1.x) {#ad-complete-1.x}
 
@@ -816,7 +816,7 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 | --- | --- |
 | `VideoInfo.resumed()` | `MediaObject()` |
 | `VideoPlayerPluginDelegate.getVideoInfo()` | `MediaHeartbeat.trackSessionStart()` |
-| `VideoPlayerPlugin.trackVideoLoad()` |  |
+| `VideoPlayerPlugin.trackVideoLoad()` | |
 
 #### Wiederaufnahme des Videos (1.x) {#video-resume-1.x}
 

@@ -6,8 +6,8 @@ exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 4c68f5997a9d336e8c3545cdfb7b9cb955602b69
-workflow-type: ht
-source-wordcount: '600'
+workflow-type: tm+mt
+source-wordcount: '627'
 ht-degree: 100%
 
 ---
@@ -60,7 +60,7 @@ Dieser Aufruf signalisiert _die Anwenderintention, ein Video abzuspielen_. Er gi
 
 | Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| App startet Ping-Ereignis-Timer | 0 | 0 |  |
+| App startet Ping-Ereignis-Timer | 0 | 0 | |
 
 Starten Sie den Ping-Timer Ihrer App. Das erste Ping-Ereignis sollte dann nach 1 Sekunde ausgelöst werden, wenn Pre-Roll-Anzeigen vorhanden sind, andernfalls nach 10 Sekunden.
 
@@ -289,7 +289,7 @@ Pingen Sie das Backend alle 10 Sekunden an.
 | --- | :---: | :---: | --- |
 | Verfolgen des Starts der Mid-Roll-Anzeigenunterbrechung | 45 | 33 | `/api/v1/sessions/{sid}/events` |
 
-Mid-Roll-Anzeige mit einer Dauer von 8 Sekunden: Senden Sie `adBreakStart`.
+Mid-Roll-Anzeige mit einer Dauer von 8 Sekunden: Senden Sie `adBreakStart` .
 
 ```json
 {

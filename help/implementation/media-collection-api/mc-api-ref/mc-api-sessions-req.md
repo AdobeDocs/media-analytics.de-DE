@@ -6,8 +6,8 @@ exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '130'
+workflow-type: tm+mt
+source-wordcount: '133'
 ht-degree: 100%
 
 ---
@@ -66,7 +66,7 @@ Der Anforderungstext muss im JSON-Format vorliegen und die gleiche Struktur aufw
    * `ts` – Zeitstempel; muss in Millisekunden angegeben werden; Koordinierte Weltzeit (UTC).
 * `eventType` (Obligatorisch)
 
-   **Gültiger Wert:** `sessionStart`
+  **Gültiger Wert:** `sessionStart`
 * `params` (Obligatorisch)
 * `customMetadata` (Optional)
 * `qoeData` (Optional)

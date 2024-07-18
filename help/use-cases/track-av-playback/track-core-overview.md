@@ -7,8 +7,8 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 0d53e62069a65b252e004e21943ecdbd011a3658
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 100%
+source-wordcount: '875'
+ht-degree: 99%
 
 ---
 
@@ -54,7 +54,7 @@ Das Tracking der Core-Wiedergabe beinhaltet das Tracking des Ladens des Mediums,
 ### Wenn das Scrubbing endet
 
 * Aufruf `trackEvent(SeekComplete)`
-Änderungen verwerfen
+Änderungen abbrechen
 
 ### Wenn die Pufferung beginnt
 
