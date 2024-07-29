@@ -4,10 +4,10 @@ description: Erfahren Sie, wie das Streaming Media Collection Add-on mit Experie
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 3963cd62b7c190464fe5314198107f273a225503
 workflow-type: tm+mt
-source-wordcount: '1883'
-ht-degree: 9%
+source-wordcount: '2154'
+ht-degree: 8%
 
 ---
 
@@ -111,6 +111,30 @@ Erstellen und Einrichten eines Schemas:
 
    1. Wählen Sie [!UICONTROL **Bestätigen**] > [!UICONTROL **Speichern**] aus, um Ihre Änderungen zu speichern.
 
++++
+
+1. (Optional) Sie können Ihrem Schema benutzerdefinierte Metadaten hinzufügen. Auf diese Weise können Sie zusätzliche, benutzerdefinierte Metadaten einschließen, die für bestimmte Anforderungen oder Kontexte angepasst werden können. Diese Flexibilität ist nützlich in Szenarien, in denen vorhandene Schemas keine gewünschten Datenpunkte abdecken. (Sie können auch mit benutzerdefinierten Metadaten mit Media Edge-APIs arbeiten. Weitere Informationen finden Sie unter [Erstellen benutzerdefinierter Metadaten mit Media Edge-APIs](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/custom-metadata/).)
+
++++ Erweitern Sie hier , um Anweisungen zum Hinzufügen benutzerdefinierter Metadaten zu Ihrem Schema anzuzeigen.
+
+   1. Suchen Sie den Namen des Mandanten der Organisation, indem Sie [!UICONTROL **Kontoinformationen**] > [!UICONTROL **Zugewiesene Organisationen**] > [!UICONTROL _**Organisationsname**_] > [!UICONTROL **Mandant**] auswählen.
+
+      Diese benutzerdefinierten Felder werden über diesen Pfad empfangen. (Beispiel: Name des Mandanten: _dcbl → myCustomField path: _dcbl.myCustomField.)
+
+   1. Fügen Sie Ihrem definierten Medienschema eine benutzerdefinierte Feldergruppe hinzu.
+
+      ![add-custom-metadata](assets/add-custom-metadata-fieldgroup.png)
+
+   1. Fügen Sie der Feldergruppe benutzerdefinierte Felder hinzu, die Sie verfolgen möchten.
+
+      ![add-custom-metadata](assets/add-custom-fields.png)
+
+   1. [Verwenden Sie den generierten Pfad](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) für das benutzerdefinierte Feld in Ihrer Anfrage-Payload.
+
+      ![add-custom-metadata](assets/custom-fields-path.png)
+
++++
+
 1. Fahren Sie mit [Erstellen Sie einen Datensatz in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform) fort.
 
 ## Datensatz in Adobe Experience Platform erstellen
@@ -135,8 +159,8 @@ Erstellen und Einrichten eines Schemas:
 
      >[!IMPORTANT]
      >
-         >     Wählen Sie nicht [!UICONTROL **Speichern und Zuordnung hinzufügen**] aus, da dies zu Zuordnungsfehlern für das Feld &quot;Zeitstempel&quot;führt.
-     
+     >Wählen Sie nicht [!UICONTROL **Speichern und Zuordnung hinzufügen**] aus, da dies zu Zuordnungsfehlern für das Feld &quot;Zeitstempel&quot;führt.
+
      ![Erstellen Sie einen Datastraam und wählen Sie Schema aus](assets/datastream-create-schema.png)
 
    * Fügen Sie je nachdem, ob Sie Adobe Analytics oder Customer Journey Analytics verwenden, einen der folgenden Dienste zum Datastream hinzu:
@@ -151,7 +175,7 @@ Erstellen und Einrichten eines Schemas:
 
      ![Hinzufügen des Adobe Analytics-Dienstes](assets/datastream-add-service.png)
 
-   * Erweitern Sie [!UICONTROL **Erweiterte Optionen**] und aktivieren Sie dann die Option [!UICONTROL **Media Analytics**] .
+      * Erweitern Sie [!UICONTROL **Erweiterte Optionen**] und aktivieren Sie dann die Option [!UICONTROL **Media Analytics**] .
 
      ![Medienanalyseoption](assets/datastream-media-check.png)
 
@@ -164,7 +188,6 @@ Erstellen und Einrichten eines Schemas:
 >[!NOTE]
 >
 >Das folgende Verfahren ist nur erforderlich, wenn Sie Customer Journey Analytics verwenden.
-
 
 1. Stellen Sie sicher, dass Sie einen Datastream erstellt haben, wie in [Konfigurieren eines Datastreams in Customer Journey Analytics](#configure-a-datastream-in-adobe-experience-platform) beschrieben.
 
@@ -301,11 +324,22 @@ Erstellen und Einrichten eines Schemas:
 
    ![Zeitfenster für die Medienwiedergabe](assets/media-playback-time-spent-panels.png)
 
+1. (Bedingt) Wenn Sie Ihrem Schema benutzerdefinierte Metadaten hinzugefügt haben, wie in Schritt 8 von [Einrichten des Schemas in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform) beschrieben, müssen Sie die Persistenz für die benutzerdefinierten Felder festlegen, wie in den Einstellungen der Persistenz-Komponente ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/persistence) im Customer Journey Analytics-Handbuch beschrieben.[
+
+   Wenn Daten in Customer Journey Analytics eingehen, ist die Dimension Benutzerspezifische Benutzer-ID verfügbar.
+
+   ![setup-custom-metadata](assets/custom-metadata-dimension.png)
+
+   >[!NOTE]
+   >
+   >Wenn Sie Adobe Analytics als Upstream für Ihren Datastream einrichten, sind die benutzerdefinierten Metadaten auch in ContextData mit dem Namen vorhanden, den Sie im Schema festgelegt haben (ohne das Mandantenpräfix, z. B. myCustomField). Dadurch können alle für ContextData verfügbaren Adobe Analytics-Funktionen verwendet werden, z. B. [Erstellen einer Verarbeitungsregel](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules).
+
 1. Geben Sie das Projekt wie in [Projekte freigeben](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en) beschrieben frei.
 
    >[!NOTE]
    >
    >   Wenn die Benutzer, für die Sie freigeben möchten, nicht verfügbar sind, stellen Sie sicher, dass die Benutzer über einen Benutzer- und Administratorzugriff auf Customer Journey Analytics in der Adobe Admin Console verfügen.
+
 
 1. Fahren Sie mit [Daten an Experience Platform Edge senden](#send-data-to-experience-platform-edge) fort.
 
