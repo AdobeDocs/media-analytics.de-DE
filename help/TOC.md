@@ -5,10 +5,10 @@ user-guide-title: Streaming Media Collection-Add-on
 breadcrumb-title: Streaming Media Collection-Handbuch
 user-guide-description: Implementieren von Streaming Media. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
 sub-product: media analytics
-source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 97%
 
 + [Streaming Media Collection-Handbuch](media-overview.md)
 + Versionshinweise {#release-notes}
-   + [Versionshinweise zur Streaming-Mediensammlung](additional-resources/release-notes.md)
+   + [Streaming Media-Sammlung Versionshinweise](additional-resources/release-notes.md)
 + Erste Schritte {#getting-started}
    + [Voraussetzungen ](getting-started/prereqs.md)
    + [Unterstützte Geräte](getting-started/supported-devices.md)
-   + [Dokumentation zur Implementierung der Streaming-Mediensammlung](getting-started/implementation-documentation.md)
+   + [Dokumentation zur Sammlung von Streaming-Medien Implementierung](getting-started/implementation-documentation.md)
    + [SDKs, Bibliotheken und Erweiterungen](getting-started/download-sdks.md)
    + Ende der Unterstützung {#end-of-support}
       + [Ende der Unterstützung für Media Analytics Mobile SDK](additional-resources/end-of-support-faqs.md)
@@ -36,7 +36,7 @@ ht-degree: 97%
       + [Voraussetzungen ](/help/implementation/edge/prerequisites-edge.md)
       + Media Edge-SDKs/Erweiterung {#media-edge-sdk}
          + [Setup für Media Edge-SDKs/Erweiterung](/help/implementation/edge/implementation-edge.md)
-         + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
+         + [Media Edge-Web-SDK](/help/implementation/edge/edge-web-sdk.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge-API](/help/implementation/edge/implementation-edge-api.md)
    + Nur Adobe Analytics-Implementierungen {#analytics-only}
@@ -100,12 +100,12 @@ ht-degree: 97%
       + [Statusverfolgung für mehrere Player](use-cases/player-state-tracking/multiple-player-states.md)
       + [Beispiele für Player-Status-Verfolgung](use-cases/player-state-tracking/player-state-examples.md)
    + [Tracking heruntergeladener Inhalte ](use-cases/track-downloaded-content.md)
-   + [Federated Analytics ](use-cases/federated-analytics.md)
+   + [Federated Media](use-cases/federated-media.md)
    + [Behandlung von Anwendungsunterbrechungen während der Wiedergabe](use-cases/cookbook/app-interrupts.md)
    + [Media Stream-Zuordnung](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [Wiederaufnehmen von inaktiven Sitzungen](use-cases/cookbook/resuming-inactive.md)
    + [Roku-Tracking in SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
-   + [Umgang mit Lücken zwischen Anzeigen](use-cases/cookbook/fix-ad-play-ad.md)
+   + [Umgang mit Anzeigenlücken](use-cases/cookbook/fix-ad-play-ad.md)
    + Timelines {#timelines}
       + [Kapitelstart und -ende](use-cases/timelines/chapter-start-end.md)
       + [Anzeigen zum Inhaltsende](use-cases/timelines/view-to-end-of-content.md)

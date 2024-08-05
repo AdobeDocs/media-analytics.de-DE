@@ -5,7 +5,7 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
 source-wordcount: '1337'
 ht-degree: 98%
@@ -29,7 +29,7 @@ ht-degree: 98%
 | --- | :---: | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | J | string | `sessionStart` | Die Experience Cloud-Organisations-ID, die Ihre Organisation innerhalb der Adobe Experience Cloud-Umgebung identifiziert |
 | `visitor.marketingCloudUserId` | N | string | `sessionStart` | Dies ist die Experience Cloud-Benutzer-ID (ECID). In den meisten Szenarien ist dies die ID, die Sie zur Identifizierung eines Benutzers verwenden sollten. Die `marketingCloudUserId` in Heartbeat entspricht der `MID` in Adobe Analytics. Dieser Parameter ist zwar technisch nicht erforderlich, aber für den Zugriff auf die Apps der Experience Cloud-Familie erforderlich. |
-| `visitor.aamLocationHint` | N | Ganzzahl | `sessionStart` | Stellt Adobe Audience Manager Edge-Daten bereit - Wenn kein Wert eingegeben wird, ist der Wert null. |
+| `visitor.aamLocationHint` | N | Ganzzahl | `sessionStart` | Stellt Adobe Audience Manager Edge-Daten bereit: Wenn kein Wert eingegeben wird, ist der Wert Null. |
 | `appInstallationId` | N | string | `sessionStart` | Die appInstallationId identifiziert Anwendung und Gerät eindeutig. |
 
 ## Inhaltsdaten
@@ -143,7 +143,7 @@ ht-degree: 98%
 
 ### visitor.marketingCloudOrgId
 
-Dieser Parameter ist nicht nur für die MCID-Generierung erforderlich, sondern wird auch als Wert für die Herausgeber-ID verwendet (basierend auf der Media Analytics den [Abgleich von Verknüpfungsregeln durchführt](/help/use-cases/federated-analytics.md)).
+Dieser Parameter ist nicht nur für die MCID-Generierung erforderlich, sondern wird auch als Wert für die Herausgeber-ID verwendet (basierend auf der Media Analytics den [Abgleich von Verknüpfungsregeln durchführt](/help/use-cases/federated-media.md)).
 
 ### Analytics-Legacy-Anwender-ID (aid) und deklarierte Anwender-IDs (customerIDs)
 
