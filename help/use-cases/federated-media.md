@@ -5,7 +5,7 @@ uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
+source-git-commit: 05a1335daa8164324c7f33de373d96e14cb9f4f7
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 60%
@@ -18,6 +18,9 @@ Der Federated Media-Dienst bietet ein System zur Freigabe von Streaming-Medienda
 Die vom Streaming-Mediensammlungs-Add-on erstellten standardisierten Messdaten sind das Markenzeichen für Federated Media, sodass dieselben Daten aus mehreren Quellen in einen einzigen Bericht fließen können.
 Über die Regeln und Logik von Federated Media lassen sich Daten einfach kontrollieren und individuell an die Bedürfnisse jeder Partnerschaft anpassen.
 Federated Media sorgt für eine effizientere, optimierte und umsetzbare Audio- und Videomessung.
+
+
+![](assets/media-federated.png)
 
 ## Vorteile {#benefits}
 
