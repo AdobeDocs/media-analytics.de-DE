@@ -4,7 +4,7 @@ description: Erfahren Sie, wie das Streaming Media Collection Add-on mit Experie
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 3963cd62b7c190464fe5314198107f273a225503
+source-git-commit: 380d3ea192162226816d2e269e5cca20f981ac0f
 workflow-type: tm+mt
 source-wordcount: '2154'
 ht-degree: 8%
@@ -387,4 +387,4 @@ Weitere Informationen zur Media Edge-API finden Sie in den folgenden Ressourcen:
 
 * [Handbuch zur Fehlerbehebung bei der Media Edge-API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
 
-* [Verwenden der Open API Specification-Datei für Media Edge-APIs](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/swagger.html)
+* [Verwenden der Open API Specification-Datei für Media Edge-APIs](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)
