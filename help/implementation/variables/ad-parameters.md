@@ -1,6 +1,6 @@
 ---
-title: Anzeigenparameter
-description: „Erfahren Sie mehr über Anzeigenparameter einschließlich der Implementierungs-, Netzwerk- und Berichtsvariablen für Anzeigenvideodaten.“
+title: 'Anzeigenparameter '
+description: Erfahren Sie mehr über Anzeigenparameter, einschließlich der Implementierungs-, Netzwerk- und Berichtsvariablen für Anzeigenvideodaten.
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 exl-id: 949e86cb-d265-4836-8825-a06b87203b15
 feature: Media Analytics

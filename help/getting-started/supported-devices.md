@@ -1,6 +1,6 @@
 ---
 title: Erfahren Sie mehr über unterstützte Geräte und Plattformen.
-description: "Erfahren Sie mehr über die wichtigsten Geräte wie iOS, Android, OTT-Geräte und JavaScript-Browser, die das Streaming-Mediensammlungs-Add-on unterstützt."
+description: Erfahren Sie mehr über die wichtigsten Geräte wie iOS, Android, OTT-Geräte und JavaScript-Browser, die das Streaming-Mediensammlungs-Add-on unterstützt.
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin

@@ -1,6 +1,6 @@
 ---
 title: Streaming-Mediensammlungs-API ‐ Anforderungsparameter
-description: „Was sind die Anforderungsparameter, Anforderungsschlüssel und Beschreibungen der Mediensammlungs-API?“
+description: Was sind die Anforderungsparameter, Anforderungsschlüssel und Beschreibungen der Mediensammlungs-API?
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
 source-wordcount: '1337'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 98%
 | --- | :---: | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | J | string | `sessionStart` | Die Experience Cloud-Organisations-ID, die Ihre Organisation innerhalb der Adobe Experience Cloud-Umgebung identifiziert |
 | `visitor.marketingCloudUserId` | N | string | `sessionStart` | Dies ist die Experience Cloud-Benutzer-ID (ECID). In den meisten Szenarien ist dies die ID, die Sie zur Identifizierung eines Benutzers verwenden sollten. Die `marketingCloudUserId` in Heartbeat entspricht der `MID` in Adobe Analytics. Dieser Parameter ist zwar technisch nicht erforderlich, aber für den Zugriff auf die Apps der Experience Cloud-Familie erforderlich. |
-| `visitor.aamLocationHint` | N | Ganzzahl | `sessionStart` | Stellt Adobe Audience Manager Edge-Daten bereit: Wenn kein Wert eingegeben wird, ist der Wert Null. |
+| `visitor.aamLocationHint` | N | Ganzzahl | `sessionStart` | Stellt Adobe Audience Manager Edge-Daten bereit - Wenn kein Wert eingegeben wird, ist der Wert null. |
 | `appInstallationId` | N | string | `sessionStart` | Die appInstallationId identifiziert Anwendung und Gerät eindeutig. |
 
 ## Inhaltsdaten

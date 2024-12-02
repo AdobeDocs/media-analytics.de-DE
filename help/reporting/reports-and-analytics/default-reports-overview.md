@@ -1,6 +1,6 @@
 ---
-title: Übersicht über die Standardberichte
-description: „Erfahren Sie mehr über Berichtstypen und Metriken, mit denen Medien auf Ihrer Website verfolgt werden. Erkunden Sie die Berichte im Dashboard-Stil, die mit dem Media Core-Modul verfügbar sind.“
+title: Überblick über die Standardberichte
+description: Erfahren Sie mehr über Berichtstypen und Metriken, mit denen Medien auf Ihrer Website verfolgt werden. Erkunden Sie die Dashboard-Berichte, die mit dem Media Core-Modul verfügbar sind.
 uuid: a078aa59-3b2d-45b2-9e66-3d9c29c82f0c
 exl-id: 0040006e-cd59-48a1-b019-1feafc275fa3
 feature: "Media Analytics, Reports & Analytics Basics"
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 

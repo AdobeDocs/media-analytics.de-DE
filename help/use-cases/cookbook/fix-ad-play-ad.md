@@ -1,6 +1,6 @@
 ---
 title: Beheben von „main:play“, das zwischen Anzeigen erscheint
-description: „Erfahren Sie, wie Sie unerwartete main:play-Aufrufe zwischen Anzeigen behandeln.“
+description: Erfahren Sie, wie Sie unerwartete main:play -Aufrufe zwischen Anzeigen verarbeiten.
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 

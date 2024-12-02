@@ -1,5 +1,5 @@
 ---
-title: „Streaming Media Collection API – Schnellstart“
+title: Streaming-Mediensammlungs-API - Schnellstart
 description: Erste Schritte mit der Streaming Media-API. Erfahren Sie, wie Sie Ihre Anfragedaten schnell überprüfen können.
 uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 exl-id: 08bb5873-f69a-4fdd-8f27-69649b4acb17
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 

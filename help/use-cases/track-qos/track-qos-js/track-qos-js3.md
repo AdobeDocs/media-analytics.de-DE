@@ -1,13 +1,13 @@
 ---
 title: Erfahren Sie, wie Sie die Erlebnisqualität mit JavaScript 3.x verfolgen können.
-description: „Erfahren Sie, wie Sie das Tracking der Erlebnisqualität (QoE, QoS) mit dem Medien-SDK in Browser-Programmen mit JavaScript 3x implementieren.“
+description: Erfahren Sie mehr über die Implementierung des Trackings der Erlebnisqualität (QoE, QoS) mit dem Media SDK in Browser-Apps mit JavaScript 3x.
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 99%
+ht-degree: 90%
 
 ---
 
