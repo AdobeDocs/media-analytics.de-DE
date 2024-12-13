@@ -4,18 +4,18 @@ description: Erfahren Sie, wie Heartbeats zur Erfassung von Videometriken verwen
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
-source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '313'
 ht-degree: 75%
 
 ---
 
 # Über Heartbeat-Messungen
 
-Die hinzufügen-On der Adobe Systems Streaming Media Collection verwendet &quot;Heartbeats&quot; zum Erfassen von Videometriken. Während der Videowiedergabe werden Heartbeats an den Heartbeat-Tracking-Server gesendet, um die Wiedergabedauer zu messen. Die Heartbeat-Aufrufe werden alle zehn Sekunden gesendet. Heartbeats führen zu granularen Videointeraktionsmetriken und präziseren Video-Fallout-Berichten. Streaming Media misst Heartbeats mithilfe von Adobe Systems Launch mit der Media Analytics Erweiterung, dem Media SDK und der Media Collection API. Die Komponenten `AppMeasurement` und `VisitorID` werden zum Empfangen von Videodaten verwendet.
+Die Adobe-Streaming-Mediensammlung verwendet „Heartbeats“, um Videometriken zu erfassen. Während der Videowiedergabe werden Heartbeats an den Heartbeat-Tracking-Server gesendet, um die Wiedergabedauer zu messen. Die Heartbeat-Aufrufe werden alle zehn Sekunden gesendet. Heartbeats führen zu granularen Videointeraktionsmetriken und präziseren Video-Fallout-Berichten. Streaming-Medien messen Heartbeats unter Verwendung von Adobe Launch mit der Media Analytics-Erweiterung, der Media SDK und der Mediensammlungs-API. Die Komponenten `AppMeasurement` und `VisitorID` werden zum Empfangen von Videodaten verwendet.
 
-Die Verwendung von Heartbeats in der Streaming Media-Sammlung hinzufügen-on bietet die folgenden Vorteile:
+Die Verwendung von Heartbeats in der Streaming-Mediensammlung bietet die folgenden Vorteile:
 
 | Funktion | Beschreibung |
 |---|---|
@@ -24,5 +24,5 @@ Die Verwendung von Heartbeats in der Streaming Media-Sammlung hinzufügen-on bie
 | Integrationen | Die Experience Cloud-ID ist mit Adobe Experience Cloud verknüpft, um eine übergreifende Analyse zu erleichtern. Dank der automatischen Adobe Experience Cloud-Integration können Sie Ihre Medien-Zielgruppen segmentieren, diese ansprechen und Medienempfehlungen basierend auf den Vorlieben der Benutzenden bereitstellen. |
 | Preise | Transparentes Tracking jedes Medien-Streams (einzeln) |
 | Implementierung und Support | Optimierte Konfiguration mit fortlaufenden Aktualisierungen und Verbesserungen. Mit einem optimierten Implementierungsprozess können Sie schnell Variablen über Ihre Player-API zuordnen und Implementierungen mit dem Adobe Debugging-Tool validieren, um sicherzustellen, dass alle erforderlichen Variablen präzise verfolgt werden. |
-| Partnerfreigabe | Federated Media und zertifizierte Metriken. Mit freigegebenen Daten über Federated Media können Sie von unseren branchenweit ersten Medien-Sharing-Funktionen profitieren, um Daten ganzheitlich über alle Ihre Medien Vertriebspartner hinweg zu bewerten – Betreiber, Programmierer und Distributoren. |
+| Partnerfreigabe | Federated Media und Certified Metrics. Mit gemeinsam genutzten Daten über Federated Media können Sie unsere branchenführenden Medien-Sharing-Funktionen nutzen, um Daten über alle Ihre Medienverteilungspartner - Betreiber, Programmierer und Distributoren - hinweg ganzheitlich auszuwerten. |
 | Erweitertes Tracking | Tracking von heruntergeladenen Inhalten, Tracking von Fehlerbehebungen und gleichzeitigen Betrachtern. Sie können Inhalte von Streaming-Medien nachverfolgen, die auf ein Gerät heruntergeladen und auf diesem wiedergegeben werden – unabhängig von dessen Konnektivität. |

@@ -5,16 +5,16 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '755'
 ht-degree: 94%
 
 ---
 
 # Einrichten von iOS{#set-up-ios}
 
-Erfahren Sie, wie Sie das Streaming Media Collection Add-on für iOS-Geräte einrichten.
+Erfahren Sie, wie Sie die Streaming-Mediensammlung für iOS-Geräte einrichten.
 
 >[!IMPORTANT]
 >
@@ -165,9 +165,9 @@ Mit der Veröffentlichung des neuen Apple TV können Sie jetzt Anwendungen erste
 
 Führen Sie die folgenden Schritte in Ihrem Xcode-Projekt aus. Bei dieser Anleitung wird angenommen, dass Ihr Projekt als Ziel eine Apple TV-App hat, die tvOS auswählt:
 
-1. Ziehen Sie die Bibliotheksdatei `VideoHeartbeat_TV.a` in den Ordner `lib` Ihres Projekts.
+1. Ziehen Sie die `VideoHeartbeat_TV.a`-Bibliotheksdatei in den `lib` Ihres Projekts.
 
-1. Erweitern Sie auf der Registerkarte **[!UICONTROL Build-Phasen]** des Ziels Ihrer tvOS-App den Abschnitt **[!UICONTROL Binärdatei mit Bibliotheken verknüpfen]** und fügen Sie die folgenden Bibliotheken hinzu:
+1. Erweitern Sie auf **[!UICONTROL Registerkarte]** Erstellungsphasen“ des Ziels Ihrer tvOS-App den Abschnitt **[!UICONTROL Binärdatei mit Bibliotheken verknüpfen]** und fügen Sie die folgenden Bibliotheken hinzu:
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`

@@ -1,19 +1,19 @@
 ---
 title: Erfahren Sie mehr über unterstützte Geräte und Plattformen.
-description: Erfahren Sie mehr über die wichtigsten Geräte wie iOS, Android, OTT-Geräte und JavaScript-Browser, die das Streaming-Mediensammlungs-Add-on unterstützt.
+description: Erfahren Sie mehr über die wichtigsten Geräte wie iOS, Android, OTT-Geräte und JavaScript-Browser, die die Streaming Media Collection unterstützt.
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 76%
+source-wordcount: '309'
+ht-degree: 77%
 
 ---
 
 # Unterstützte Geräte und Plattformen {#devices-supported}
 
-Das Adobe Streaming Media Collection Add-on unterstützt alle wichtigen Geräte, darunter:
+Die Adobe-Streaming-Mediensammlung unterstützt alle gängigen Geräte, einschließlich:
 
 * iOS- und Android-Smartphones und -Tablets
 * OTT-Geräte für Roku, Fire TV und Android TV
@@ -21,11 +21,11 @@ Das Adobe Streaming Media Collection Add-on unterstützt alle wichtigen Geräte,
 
 Die SDKs werden routinemäßig aktualisiert, wenn neue Versionen von Geräten veröffentlicht werden. Sie können die SDKs verwenden, um die Integration mit nativen Playern jeder einzelnen Plattform oder eines anderen verfügbaren Medien-Players zu ermöglichen.
 
-Für Geräte, die derzeit keine SDK-Unterstützung haben, oder in Situationen, in denen Sie Ihre Implementierung anpassen müssen, können Sie das Mediensammlungs-API oder das Media Edge-API verwenden. Mit diesen APIs können Sie RESTful-API-Aufrufe direkt von einem Gerät an das Backend des Streaming-Mediensammlungs-Add-ons durchführen.
+Für Geräte, die derzeit keine SDK-Unterstützung haben, oder in Situationen, in denen Sie Ihre Implementierung anpassen müssen, können Sie das Mediensammlungs-API oder das Media Edge-API verwenden. Mit diesen APIs können Sie RESTful-API-Aufrufe direkt von einem Gerät zum Backend der Streaming Media Collection durchführen.
 
 Die folgende Tabelle zeigt die derzeit unterstützten Geräte. Wenn ein Gerät nicht aufgeführt ist, wenden Sie sich an die Kundenunterstützung oder einen Berater, um den Status des Geräts zu erfahren.
 
-Weitere Informationen zur Implementierung von Medien in Edge finden Sie unter [Installieren des Streaming-Mediensammlungs-Add-ons mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+Weitere Informationen zur Implementierung von Medien in Edge finden Sie unter [Installieren der Streaming Media Collection mit Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
 | Streaming-Plattformen und -Geräte | | Media for Edge Network SDK/Erweiterung | Media Edge-API | Media-Erweiterung mit Tags oder mobilem AEP-SDK | Medien-SDK | Mediensammlungs-API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

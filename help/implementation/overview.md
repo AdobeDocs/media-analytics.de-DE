@@ -1,32 +1,32 @@
 ---
-title: Implementieren des Streaming Media Collection Add-ons
-description: Erfahren Sie mehr über die Implementierungspfade für das Streaming Media Collection Add-on.
+title: Implementieren der Streaming-Mediensammlung
+description: Erfahren Sie mehr über die Implementierungspfade für die Streaming-Mediensammlung.
 uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '453'
 ht-degree: 69%
 
 ---
 
-# Implementieren des Streaming Media Collection Add-ons
+# Implementieren der Streaming-Mediensammlung
 
-Es gibt verschiedene Möglichkeiten, das Adobe Streaming Media Collection Add-on zu implementieren. Einen detaillierten Vergleich der unterstützten Geräte und Plattformen für die auf dieser Seite beschriebenen Implementierungsmethoden finden Sie unter [Unterstützte Geräte und Plattformen](/help/getting-started/supported-devices.md).
+Es gibt verschiedene Möglichkeiten, die Adobe-Streaming-Mediensammlung zu implementieren. Einen detaillierten Vergleich der unterstützten Geräte und Plattformen für die auf dieser Seite beschriebenen Implementierungsmethoden finden Sie unter [Unterstützte Geräte und Plattformen](/help/getting-started/supported-devices.md).
 
 ## Edge-Implementierungsmethoden
 
-Wir empfehlen die Verwendung von Edge bei der Implementierung des Streaming-Mediensammlungs-Add-ons für alle neuen Adobe Analytics- oder Customer Journey Analytics-Kunden.
+Es wird empfohlen, Edge bei der Implementierung der Streaming Media Collection für alle neuen Kunden von Adobe Analytics oder Customer Journey Analytics zu verwenden.
 
-* **Media for Edge Network SDK/-Erweiterung:** Erfasst Daten von Web-, iOS- und Android-Geräten oder Roku-Geräten und sendet sie an Edge Network. Die Daten können dann entweder an Customer Journey Analytics oder Adobe Analytics gesendet werden.
+* **Media für Edge Network SDK/Extension:** Sammelt Daten aus dem Web, iOS- und Android-Geräten oder Roku-Geräten und sendet sie an Edge Network. Die Daten können dann entweder an Customer Journey Analytics oder Adobe Analytics gesendet werden.
 
-  Weitere Informationen zum Media for Edge Network SDK/zur Erweiterung finden Sie unter [Implementieren des Add-ons für Streaming-Mediensammlung mit dem Edge Network](/help/implementation/edge/implementation-edge.md).
+  Weitere Informationen zu Media for Edge Network SDK/Extension finden Sie unter [Implementieren der Streaming-Mediensammlung mit dem Edge Network ](/help/implementation/edge/implementation-edge.md).
 
-* **Media Edge-API:** Kann angepasst werden, um Daten von jedem Gerät oder Format (einschließlich Mobilgeräten, Web- und Over-the-Top-Geräten) zu erfassen und Daten an Edge Network zu senden. Die Daten können dann entweder an Customer Journey Analytics oder Adobe Analytics gesendet werden.
+* **Media Edge-API:** Kann angepasst werden, um Daten von jedem Gerät oder Format (einschließlich Mobilgeräten, Web- und Over-the-top-Geräten) zu erfassen und Daten an Edge Networks zu senden. Die Daten können dann entweder an Customer Journey Analytics oder Adobe Analytics gesendet werden.
 
-  Weitere Informationen zur Media Edge-API finden Sie unter [Übersicht über die Media Edge-API](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
+  Weitere Informationen zur Media Edge-API finden Sie unter [Media Edge-API - Übersicht](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
 
 ![CJA-Workflow](assets/streaming-media-edge.png)
 

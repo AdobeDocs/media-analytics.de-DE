@@ -1,27 +1,27 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Streaming Media Collection-Add-on
+user-guide-title: Streaming-Mediensammlung
 breadcrumb-title: Streaming Media Collection-Handbuch
 user-guide-description: Implementieren von Streaming Media. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
 sub-product: media analytics
-source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '893'
 ht-degree: 96%
 
 ---
 
 
-# Streaming Media Collection-Add-on {#using}
+# Streaming-Mediensammlung {#using}
 
 + [Streaming Media Collection-Handbuch](media-overview.md)
 + Versionshinweise {#release-notes}
-   + [Streaming Media-Sammlung Versionshinweise](additional-resources/release-notes.md)
+   + [Versionshinweise zur Streaming-Mediensammlung](additional-resources/release-notes.md)
 + Erste Schritte {#getting-started}
    + [Voraussetzungen ](getting-started/prereqs.md)
    + [Unterstützte Geräte](getting-started/supported-devices.md)
-   + [Dokumentation zur Sammlung von Streaming-Medien Implementierung](getting-started/implementation-documentation.md)
+   + [Dokumentation zur Implementierung der Streaming-Mediensammlung](getting-started/implementation-documentation.md)
    + [SDKs, Bibliotheken und Erweiterungen](getting-started/download-sdks.md)
    + Ende der Unterstützung {#end-of-support}
       + [Ende der Unterstützung für Media Analytics Mobile SDK](additional-resources/end-of-support-faqs.md)
@@ -36,7 +36,7 @@ ht-degree: 96%
       + [Voraussetzungen ](/help/implementation/edge/prerequisites-edge.md)
       + Media Edge-SDKs/Erweiterung {#media-edge-sdk}
          + [Setup für Media Edge-SDKs/Erweiterung](/help/implementation/edge/implementation-edge.md)
-         + [Media Edge-Web-SDK](/help/implementation/edge/edge-web-sdk.md)
+         + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge-API](/help/implementation/edge/implementation-edge-api.md)
    + Nur Adobe Analytics-Implementierungen {#analytics-only}
@@ -105,7 +105,7 @@ ht-degree: 96%
    + [Media Stream-Zuordnung](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [Wiederaufnehmen von inaktiven Sitzungen](use-cases/cookbook/resuming-inactive.md)
    + [Roku-Tracking in SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
-   + [Umgang mit Anzeigenlücken](use-cases/cookbook/fix-ad-play-ad.md)
+   + [Umgang mit Lücken zwischen Anzeigen](use-cases/cookbook/fix-ad-play-ad.md)
    + Timelines {#timelines}
       + [Kapitelstart und -ende](use-cases/timelines/chapter-start-end.md)
       + [Anzeigen zum Inhaltsende](use-cases/timelines/view-to-end-of-content.md)

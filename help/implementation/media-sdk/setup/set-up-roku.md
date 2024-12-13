@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 1375fb3260d5c4ca703827b3d73174f4e475f76d
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 93%
+source-wordcount: '664'
+ht-degree: 94%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 93%
 
 ## Voraussetzungen  {#roku-prerequisites}
 
-* **Gültige Konfigurationsparameter für das Streaming Media Collection Add-on abrufen**
+* **Abrufen gültiger Konfigurationsparameter für die Streaming-Mediensammlung**
 
-  Diese Parameter erhalten Sie nach der Einrichtung Ihres Adobe Streaming Media Collection Add-On-Kontos von einem Adobe-Support-Mitarbeiter.
+  Sie können diese Parameter von einem Adobe-Support-Mitarbeiter erhalten, nachdem Sie Ihr Adobe-Streaming-Mediensammlungskonto eingerichtet haben.
 * **Integrieren der folgenden APIs in Ihren Media Player**
 
    * _Eine API zum Abonnieren von Player-Ereignissen_: Das Media SDK erfordert den Aufruf einer Reihe einfacher APIs, wenn im Player Ereignisse auftreten.
@@ -38,7 +38,7 @@ Mit Roku SDK 2.x für Experience Cloud-Lösungen können Sie in BrightScript ge
 
    1. Fügen Sie die Bibliotheks- und die JSON-Konfigurationsdatei zu Ihrer Projektquelle hinzu.
 
-      Die JSON-Datei, die für die Konfiguration von Adobe Mobile verwendet wird, enthält einen exklusiven Schlüssel für Media Analytics namens `mediaHeartbeat`. Hier gehören die Konfigurationsparameter für die Medienanalyse an.
+      Die JSON-Datei, die für die Konfiguration von Adobe Mobile verwendet wird, enthält einen exklusiven Schlüssel für Media Analytics namens `mediaHeartbeat`. Hier liegen die Konfigurationsparameter für Media Analytics an.
 
       >[!TIP]
       >

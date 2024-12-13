@@ -1,14 +1,14 @@
 ---
 title: Erklärung zur Implementierung benutzerspezifischer Links
-description: Erfahren Sie, wie Sie das Tracking benutzerspezifischer Links im Streaming-Mediensammlungs-Add-on implementieren.
+description: Erfahren Sie, wie Sie das Tracking benutzerdefinierter Links in der Streaming-Mediensammlung implementieren.
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 exl-id: ee6f931a-ef80-4ebe-8ccb-cdbf970516e6
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 92%
+source-wordcount: '177'
+ht-degree: 93%
 
 ---
 

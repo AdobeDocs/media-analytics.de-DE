@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Programmaktionen mit Medien-Tracking-Daten ve
 exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 87%
+source-wordcount: '232'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +23,7 @@ Um diese Funktion für einen bestimmten Bericht zu aktivieren, aktivieren Sie di
 
 >[!NOTE]
 >
->Die Medienmetriken sind _nicht_ zur Verwendung außerhalb des Medien-Trackings verfügbar, da die meisten dieser Metriken vom Streaming-Mediensammlungs-Add-on basierend auf Heartbeat-Ereignissen berechnet werden. Außerdem ist es wichtig, dass die Medienmetriken nicht durch verschiedene Implementierungen in die Höhe getrieben werden.
+>Die Medienmetriken sind _nicht_ für die Verwendung außerhalb des Medien-Trackings verfügbar, da die meisten von ihnen von der Streaming-Mediensammlung auf der Grundlage von Heartbeat-Ereignissen berechnet werden. Außerdem ist es wichtig, dass die Medienmetriken nicht durch verschiedene Implementierungen in die Höhe getrieben werden.
 
 ## Verwenden von Media Stream-Zuordnung
 

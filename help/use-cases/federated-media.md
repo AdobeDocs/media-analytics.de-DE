@@ -1,23 +1,23 @@
 ---
 title: Federated Media
-description: Der Federated Media-Dienst bietet ein System zur Freigabe von Streaming-Mediendaten zwischen zwei Partnern.
+description: Der Federated Media-Service bietet ein System zum Freigeben von Streaming-Mediendaten zwischen zwei Partnern.
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 05a1335daa8164324c7f33de373d96e14cb9f4f7
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 60%
+source-wordcount: '571'
+ht-degree: 61%
 
 ---
 
 # Federated Media{#federated-media}
 
-Der Federated Media-Dienst bietet ein System zur Freigabe von Streaming-Mediendaten (Audio und Video) zwischen zwei Partnern.
-Die vom Streaming-Mediensammlungs-Add-on erstellten standardisierten Messdaten sind das Markenzeichen für Federated Media, sodass dieselben Daten aus mehreren Quellen in einen einzigen Bericht fließen können.
-Über die Regeln und Logik von Federated Media lassen sich Daten einfach kontrollieren und individuell an die Bedürfnisse jeder Partnerschaft anpassen.
-Federated Media sorgt für eine effizientere, optimierte und umsetzbare Audio- und Videomessung.
+Der Federated Media-Service bietet ein System zum Freigeben von Streaming-Mediendaten (Audio und Video) zwischen zwei Partnern.
+Die standardisierten Messdaten, die von der Streaming Media Collection erstellt werden, sind das Markenzeichen für Federated Media, sodass dieselben Daten aus mehreren Quellen in einen einzigen Bericht einfließen können.
+Mithilfe der für Federated Media geltenden Regeln und Logik können Daten einfach gesteuert und individualisiert werden, um die Anforderungen jeder Partnerschaft zu erfüllen.
+Federated Media macht Audio- und Videomessungen effizienter, optimierter und umsetzbarer.
 
 
 ![](assets/media-federated.png)
@@ -44,13 +44,13 @@ Federated Media sorgt für eine effizientere, optimierte und umsetzbare Audio- u
 * **Medien-Stream-Vertrag:** Empfänger und Sender müssen über einen Adobe Analytics-Vertrag für Medien-Streams verfügen, bevor sie auf Audio- und Videodaten in Adobe Analytics zugreifen können. Weitere Informationen erhalten Sie von Ihrem Konto-Team.
 * **Federated-Vertragszusatz:** Jeder Sender und Empfänger muss über einen unterzeichneten Vertragszusatz mit Adobe verfügen, bevor Daten gesendet oder empfangen werden können. Ein Vertragszusatz pro Kunde ist erforderlich, nicht ein Vertragszusatz pro Partnerschaft. Weitere Informationen erhalten Sie von Ihrem Konto-Team.
 
-* **Implementierung des Add-ons für Streaming-Mediensammlung:** Der Sender muss das Add-on für Streaming-Mediensammlung auf allen Playern implementieren, die Teil des zusammengeführten Datensatzes sein werden. Nur Streaming-Mediendaten stehen zum Verknüpfen zur Verfügung. Weitere Informationen finden Sie unter [Übersicht über das Adobe Streaming Media Collection Add-on](/help/media-overview.md).
+* **Implementierung der Streaming-Mediensammlung:** Die Streaming-Mediensammlung muss auf allen Playern implementiert sein, die Teil des zusammengeführten Datensatzes sein werden. Für den Verbund sind nur Streaming-Mediendaten verfügbar. Weitere Informationen finden Sie unter [Übersicht über die Adobe-Streaming-Mediensammlung](/help/media-overview.md).
 
 * **Adobe-Consulting-Vertrag:** Für die Ersteinrichtung der Föderierungsregeln zwischen Empfänger und Sender stehen Ihnen hilfreiche Beratungsservices zur Datenüberprüfung und zur Erstellung der Datenweitergabe-Vereinbarung zur Verfügung.
 
 ## Federated Media-Formular herunterladen
 
-Laden Sie das Formular [Vereinbarung über die Föderierungsregeln](assets/federated_analytics_form.pdf) herunter und füllen Sie es aus, um an Federated Media teilzunehmen.
+Um an Federated Media teilzunehmen, laden Sie das Formular [Vereinbarung über die Föderationsregeln](assets/federated_analytics_form.pdf) herunter und füllen Sie es aus.
 
 ## Prozess {#process}
 
@@ -58,7 +58,7 @@ Laden Sie das Formular [Vereinbarung über die Föderierungsregeln](assets/feder
 1. Der Beratungsdienst stellt dem Empfänger eine Beispieldatendatei mit den tatsächlichen Daten von Sender-Playern zur Verfügung, damit korrekte Regeln für die Datenfreigabe definiert werden können, sofern Datendateien verfügbar sind.
 1. Der Sender und der Empfänger stellen sicher, dass die Datenfreigabe-Vereinbarung alle vertraglichen Bedingungen zwischen den beiden Parteien erfüllt.
 1. Der Beratungsdienst sendet das ausgefüllte Formular an Adobe Engineering, um Regeln für die Datenfreigabe einzurichten.
-1. Die Daten werden für die Entwicklung der Adobe Analytics Report Suite oder des Adobe Experience Platform-Datenspeichers freigegeben, in dem der Empfänger Daten überprüft und validiert.
-1. Sobald der Empfänger bestätigt hat, dass die Daten korrekt sind, aktualisiert Adobe Engineering die Regeln, um auf eine Analytics-Produktions-Report Suite oder einen Adobe Experience Platform-Datastream zu verweisen.
-1. Der Empfänger überprüft und validiert Daten in der Produktions-Analytics Report Suite oder im Adobe Experience Platform-Datastream.
+1. Die Daten werden für die Adobe Analytics Report Suite oder den Adobe Experience Platform-Datenstrom freigegeben, wo Receiver die Daten überprüft und validiert.
+1. Sobald Receiver bestätigt, dass die Daten korrekt sind, aktualisiert Adobe Engineering die Regeln, sodass sie auf eine Produktions-Report Suite oder einen Adobe Experience Platform-Datenstrom verweisen.
+1. Receiver prüft und validiert Daten in der Produktions-Analytics-Report-Suite oder im Adobe Experience Platform-Datenstrom.
 1. Wenn sich in Zukunft Änderungen am Datensatz ergeben, kann der Sender oder Empfänger ein Kundenunterstützungs-Ticket für den Support eröffnen.

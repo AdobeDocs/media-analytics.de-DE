@@ -1,24 +1,24 @@
 ---
-title: Übersicht über das Adobe Streaming Media Collection Add-on
-description: Verwenden Sie das Streaming-Mediensammlungs-Add-on, um leistungsstarke Einblicke in Inhalte, Audio und Werbung zu erhalten.
+title: Übersicht über die Adobe-Streaming-Mediensammlung
+description: Verwenden Sie die Sammlung von Streaming-Medien, um wichtige Einblicke in Inhalte, Audio und Werbung zu erhalten.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 64%
+source-wordcount: '590'
+ht-degree: 65%
 
 ---
 
-# Übersicht über das Adobe Streaming Media Collection Add-on
+# Übersicht über die Adobe-Streaming-Mediensammlung
 
 ![Banner](./assets/media_analytics_banner.png)
 
-Das Adobe Streaming Media Collection Add-on bietet leistungsstarke Sammlungs-, Mess- und Personalisierungswerkzeuge für Streaming-Medieninhalte wie Audio, Video und Werbung für Streaming-Medienanbieter. Sie können Streaming-Medien-Metriken mit Funktionen wie Audience Analytics, Mobile oder geräteübergreifende Analysen kombinieren.
+Die Adobe-Streaming-Mediensammlung bietet leistungsstarke Erfassungs-, Mess- und Personalisierungs-Tools für Streaming-Medieninhalte wie Audio, Video und Werbung für Streaming-Medienanbieter. Sie können Metriken von Streaming-Medien mit Funktionen wie Audience Analytics, Mobile oder geräteübergreifenden Analysen kombinieren.
 
-Streaming-Mediendaten lassen sich einfach in die folgenden Adobe Experience Platform-Produkte integrieren:
+Streaming-Mediendaten lassen sich problemlos in die folgenden Adobe Experience Platform-Produkte integrieren:
 
 * Adobe Analytics
 
@@ -30,21 +30,21 @@ Streaming-Mediendaten lassen sich einfach in die folgenden Adobe Experience Plat
 
 >[!IMPORTANT]
 >
->Wenden Sie sich zur Implementierung der Streaming-Mediensammlung an Ihren Adobe Sales-Support-Mitarbeiter oder Adobe-Account-Team, um sicherzustellen, dass das Streaming Media Collection Add-on Teil Ihres Produktportfolios ist.
+>Wenden Sie sich zur Implementierung der Streaming Media Collection an Ihren Adobe-Kundenbetreuer oder Ihr Adobe-Accountteam, um sicherzustellen, dass das Add-on für die Streaming Media Collection Teil Ihres Produktportfolios ist.
 
 ## Wichtigste Funktionen
 
-Zu den Vorteilen des Streaming Media Collection Add-ons gehören Echtzeitüberwachung, detaillierte Analyse, umsetzbare Einblicke, Monetarisierungsmöglichkeiten und mehr.
+Zu den Vorteilen der Streaming-Mediensammlung gehören Echtzeit-Monitoring, detaillierte Analyse, umsetzbare Einblicke, Monetarisierungsmöglichkeiten und mehr.
 
 * **Echtzeit-Analyse**: Treffen Sie fundierte Entscheidungen in Echtzeit, indem Sie wichtige Leistungsmetriken wie Medienstarts kanalübergreifend verwenden.
 
-  Mit dem Streaming-Mediensammlungs-Add-on erhalten Sie nahezu detaillierte Echtzeitdetails zur Dauer, zu Stopps und Starts, mit denen Sie Video- und Audiometriken auswerten und kombinieren können. Diese Erkenntnisse ermöglichen es Ihnen, die Seh- und Hörgewohnheiten Ihrer Kundinnen und Kunden zu verstehen und mit hochgradig personalisierten Empfehlungen die Interaktion zu steigern.
+  Mit der Streaming-Mediensammlung erhalten Sie nahezu in Echtzeit granulare Details zur Dauer, zu Stopps und Starts, mit denen Sie Video- und Audiometriken auswerten und kombinieren können. Diese Erkenntnisse ermöglichen es Ihnen, die Seh- und Hörgewohnheiten Ihrer Kundinnen und Kunden zu verstehen und mit hochgradig personalisierten Empfehlungen die Interaktion zu steigern.
 
 * **Förderung der Interaktion**: Die Interaktion der Benutzenden wird gefördert, indem die Pufferung verringert wird und ermittelt wird, wo und wann Anzeigen in Inhalten abgespielt werden sollten, um ein reibungsloses, weniger störendes Erlebnis zu bieten, das zu Wiederholungsbesuchen führt.
 
 * **Ganzheitliche Übersicht:** Kombinieren Sie verschiedene Datenpunkte Ihrer Inhaltsdistributorinnen und -distributoren, um eine umfassende Übersicht all Ihre Medienaktivitäten zu erhalten und die Interaktion und Aufrufe über alle Kanäle hinweg zu messen.
 
-  Mit dem Streaming-Mediensammlungs-Add-on können Sie die vollständige Journey Ihrer Kunden auf Ihrer Site und in Streaming-Apps verfolgen, um den Kundenpfad und die Kundeninteressen zu visualisieren und erweiterte Empfehlungen bereitzustellen und Kundenerlebnisse zu personalisieren.  Mit der Medienmessung können Sie Ihre Daten in mehrere Dimensionen und Segmente kategorisieren und alle Metadaten erfassen, die Sie für eine vollständige und detaillierte Analyse benötigen. Anschließend können Sie Daten analysieren und Erfolgskriterien den vollständig genutzten Medien, der durchschnittlich verbrachten Zeit und an abgeschlossenen Anzeigen zuordnen.
+  Die Streaming Media Collection ermöglicht es Ihnen, das vollständige Kunden-Journey auf Ihrer Site und in Streaming-Apps zu verfolgen, um den Kundenpfad und die Kundeninteressen zu visualisieren und erweiterte Empfehlungen bereitzustellen sowie Kundenerlebnisse zu personalisieren.  Mit der Medienmessung können Sie Ihre Daten in mehrere Dimensionen und Segmente kategorisieren und alle Metadaten erfassen, die Sie für eine vollständige und detaillierte Analyse benötigen. Anschließend können Sie Daten analysieren und Erfolgskriterien den vollständig genutzten Medien, der durchschnittlich verbrachten Zeit und an abgeschlossenen Anzeigen zuordnen.
 
 * **Wichtige Metriken**: Sie können wichtige Bereitstellungsmetriken in Bezug auf die Erlebnisqualität (Quality of Experience, QoE) messen, z. B. ausgelassene Frames, Pufferzeit und durchschnittliche Bit-Rate.
 
@@ -68,4 +68,4 @@ Nach dem Ende einer Wiedergabesitzung werden die berechneten Tracking-Daten zur 
 >Bei Customer Journey Analytics-Implementierungen können Daten entweder über Experience Edge oder über Analytics Data Connector (ADC) an Customer Journey Analytics gesendet werden.
 
 
-Detaillierte Informationen zu den verschiedenen Implementierungsmethoden finden Sie unter [Implementieren des Streaming-Mediensammlungs-Add-ons für Adobe Analytics oder Customer Journey Analytics](/help/implementation/overview.md).
+Ausführliche Informationen zu den verschiedenen Implementierungsmethoden finden Sie unter [Implementieren der Streaming Media Collection für Adobe Analytics oder Customer Journey Analytics](/help/implementation/overview.md).
