@@ -32,7 +32,7 @@ Erstellen oder aktualisieren Sie die QoS-Objektinstanz für die Wiedergabe. [QoS
 
 Aufruf `trackEvent(Media.Heartbeat.Event.BitrateChange);`
 
-## Implementieren von QOS
+## Implementieren von QoS
 
 1. Erkennen Sie, wann sich eine der QoS-Metriken während der Medienwiedergabe ändert, erstellen Sie `MediaObject` anhand der QoS-Informationen und aktualisieren Sie die neuen QoS-Informationen.
 

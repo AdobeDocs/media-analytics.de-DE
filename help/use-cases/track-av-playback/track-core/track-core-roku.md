@@ -1,5 +1,5 @@
 ---
-title: Erfahren Sie, wie Sie die Core-Wiedergabe in Roku verfolgen
+title: 'Erfahren Sie, wie Sie die Core-Wiedergabe in Roku verfolgen '
 description: Erfahren Sie, wie Sie Core-Tracking mit dem Media SDK in Roku implementieren.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
@@ -150,7 +150,7 @@ Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
 
 1. **Abspielkopfwert aktualisieren**
 
-   Wenn sich die Abspielleiste der Medien ändert, benachrichtigen Sie das SDK durch Aufruf der `mediaUpdatePlayhead` -API. <br /> Bei Video-on-demand (VOD) wird der Wert in Sekunden ab Beginn des Medienelements angegeben. <br /> Wenn der Player beim Live-Streaming keine Informationen zur Inhaltsdauer bereitstellt, kann der Wert als Anzahl der Sekunden seit Mitternacht UTC dieses Tages angegeben werden.
+   Wenn sich der Abspielkopf des Mediums ändert, informieren Sie die SDK durch Aufruf der `mediaUpdatePlayhead`-API. <br /> Bei Video-on-demand (VOD) wird der Wert in Sekunden ab Beginn des Medienelements angegeben. <br /> Wenn der Player beim Live-Streaming keine Informationen zur Inhaltsdauer bereitstellt, kann der Wert als Anzahl der Sekunden seit Mitternacht (UTC) des Tages angegeben werden.
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
@@ -159,7 +159,7 @@ Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
    >[!NOTE]
    >
    >Beachten Sie beim Aufrufen der `mediaUpdatePlayhead`-API Folgendes:
-   >* Bei Verwendung von Fortschrittsmarken ist die Inhaltsdauer erforderlich und die Abspielleiste muss als Anzahl von Sekunden ab Anfang des Medienelements aktualisiert werden, beginnend mit 0.
+   >* Bei Verwendung von Fortschrittsmarken ist die Inhaltsdauer erforderlich und der Abspielkopf muss als Anzahl von Sekunden ab Beginn des Medienelements aktualisiert werden, beginnend mit 0.
    >* Bei Verwendung von Medien-SDKs müssen Sie die `mediaUpdatePlayhead`-API mindestens einmal pro Sekunde aufrufen.
 
 

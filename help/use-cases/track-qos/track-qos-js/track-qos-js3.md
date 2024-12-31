@@ -1,6 +1,6 @@
 ---
 title: Erfahren Sie, wie Sie die Erlebnisqualität mit JavaScript 3.x verfolgen können.
-description: Erfahren Sie mehr über die Implementierung des Trackings der Erlebnisqualität (QoE, QoS) mit dem Media SDK in Browser-Apps mit JavaScript 3x.
+description: Erfahren Sie mehr über die Implementierung des Trackings der Erlebnisqualität (QoE, QoS) mit Media SDK in Browser-Apps mit JavaScript 3x.
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Media Analytics
 role: User, Admin, Data Engineer
@@ -19,7 +19,7 @@ Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vorne
 >
 >Wenn Sie vorherige Versionen des SDK implementieren möchten, können Sie hier die Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/getting-started/download-sdks.md)
 
-## Implementieren der QOE
+## QOE implementieren
 
 1. Ermitteln Sie, wann sich die Bit-Rate während der Medienwiedergabe ändert, und erstellen Sie die `qoeObject`-Instanz mithilfe der QoE-Informationen.
 

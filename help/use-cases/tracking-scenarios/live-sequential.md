@@ -26,7 +26,7 @@ Dieses Szenario ist mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/use-ca
 | Das erste Bild des Inhalts wird wiedergegeben. | trackPlay | Heartbeat Content Play | Wenn Kapitelinhalte vor dem Hauptinhalt wiedergegeben werden, starten Heartbeats beim Beginn des Kapitels. |
 | Inhalt wird wiedergegeben | | Content Heartbeats | Dieser Netzwerkaufruf ist mit dem Aufruf beim Szenario [VOD-Wiedergabe ohne Anzeigen](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) identisch. |
 | Sitzung 1 beendet (Folge 1 beendet) | trackComplete / trackSessionEnd | Heartbeat Content Complete | „Complete“ bedeutet, dass Sitzung 1 für die erste Folge erreicht und vollständig angesehen wurde. Vor dem Start der Sitzung für die nächste Folge muss diese Sitzung beendet sein. |
-| Folge 2 gestartet (Start von Sitzung 2) | trackSessionStart | Analytics Content Start Heartbeat Content Start | Dies tritt auf, wenn der Anwender die erste Folge geschaut und direkt mit einer weiteren Folge begonnen hat. |
+| Episode2 gestartet (Session2 Start) | trackSessionStart | Inhaltsstart-Heartbeat-Inhaltsstart für Analytics | Dies tritt auf, wenn der Anwender die erste Folge geschaut und direkt mit einer weiteren Folge begonnen hat. |
 | Erstes Medienbild | trackPlay | Heartbeat Content Play | Diese Methode löst den Timer aus. Ab diesem Zeitpunkt werden alle 10 Sekunden Heartbeats gesendet, solange die Wiedergabe läuft. |
 | Inhalt wird wiedergegeben | | Content Heartbeats | |
 | Sitzung beendet (Folge 2 beendet) | trackComplete / trackSessionEnd | Heartbeat Content Complete | „Complete“ bedeutet, dass Sitzung 2 für die zweite Folge erreicht und vollständig angesehen wurde. Vor dem Start der Sitzung für die nächste Folge muss diese Sitzung beendet sein. |

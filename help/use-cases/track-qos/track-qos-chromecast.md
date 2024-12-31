@@ -1,6 +1,6 @@
 ---
 title: Erfahren Sie, wie Sie die Erlebnisqualität in Chromecast verfolgen können.
-description: Erfahren Sie mehr über die Implementierung des Trackings der Erlebnisqualität (QoE, QoS) mit dem Media SDK in Chromecast.
+description: Erfahren Sie mehr über die Implementierung des Trackings der Erlebnisqualität (QoE, QoS) mit Media SDK in Chromecast.
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 exl-id: 04b9b888-2727-4aa6-a934-94a02c85a490
 feature: Media Analytics

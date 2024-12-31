@@ -24,7 +24,7 @@ Das ist dasselbe Szenario wie die [VOD-Wiedergabe mit Pre-Roll-Anzeigen](/help/u
 
 | Auslöser   | Heartbeat-Methode  | Netzwerkaufrufe   | Hinweise   |
 | --- | --- | --- | --- |
-| Anwender klickt auf [!UICONTROL Abspielen] | `trackSessionStart()` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Diese Netzwerkaufrufe sind weiterhin mit dem Szenario [VOD-Wiedergabe ohne Anzeigen](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) identisch. |
+| Anwender klickt auf [!UICONTROL Abspielen] | `trackSessionStart()` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Diese Netzwerkaufrufe sind immer noch genau dasselbe wie das Szenario [VOD-Wiedergabe ohne Anzeigen](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
 | Die Anzeige beginnt. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start, Heartbeat Ad Start | |
 | Das erste Bild der Anzeige wird wiedergegeben. | `trackPlay()` | Heartbeat Ad Play | Wenn Anzeigeninhalte vor dem Hauptinhalt wiedergegeben werden, starten Heartbeats beim Beginn der Anzeige. |
 | Die Anzeige wird wiedergegeben. | | Ad Heartbeats | |

@@ -1,6 +1,6 @@
 ---
 title: Tracking-Inhaltswiedergabe – Erklärung
-description: 'Erfahren Sie mehr über das Tracking der Core-Wiedergabe, einschließlich Tracking des Ladens von Medien, des Medienstarts, der Medienpause und des Medienabschlusses. '
+description: 'Erfahren Sie mehr über das Tracking der Core-Wiedergabe, einschließlich des Trackings der Medienladung, des Medienstarts, der Medienpause und des Medienabschlusses. '
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
@@ -53,8 +53,8 @@ Das Tracking der Core-Wiedergabe beinhaltet das Tracking des Ladens des Mediums,
 
 ### Wenn das Scrubbing endet
 
-* Aufruf `trackEvent(SeekComplete)`
-Änderungen abbrechen
+* `trackEvent(SeekComplete)`
+Änderungen verwerfen
 
 ### Wenn die Pufferung beginnt
 

@@ -14,7 +14,7 @@ ht-degree: 69%
 
 # Standard-Metadaten in Roku implementieren{#implement-standard-metadata-on-roku}
 
-Instanziieren Sie ein Standard-Metadatenobjekt, füllen Sie die gewünschten Variablen aus und legen Sie das Metadatenobjekt auf das Media Heartbeat-Objekt fest.
+Instanziieren Sie ein Standard-Metadatenobjekt, füllen Sie die gewünschten Variablen auf und legen Sie das Metadatenobjekt für das Media Heartbeat-Objekt fest.
 
 **Video:**
 

@@ -11,7 +11,7 @@ ht-degree: 92%
 
 ---
 
-# Medien-SDK-Anwendungsfälle {#media-sdk-use-cases}
+# Anwendungsfälle für Media SDK {#media-sdk-use-cases}
 
 * [Tracking des Player-Status](/help/use-cases/player-state-tracking/player-state-overview.md)
 * [Offline-Nachverfolgen heruntergeladener Inhalte](/help/use-cases/track-downloaded-content.md)

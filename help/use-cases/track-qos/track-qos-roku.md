@@ -1,6 +1,6 @@
 ---
 title: Erfahren Sie, wie Sie die Erlebnisqualität in Roku verfolgen können.
-description: Erfahren Sie mehr über die Implementierung des Trackings der Erlebnisqualität (QoE, QoS) mit dem Media SDK in Roku.
+description: Erfahren Sie mehr über die Implementierung des Trackings der Erlebnisqualität (QoE, QoS) mit Media SDK in Roku.
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
 feature: Media Analytics
@@ -20,7 +20,7 @@ Mit den folgenden Anweisungen können Sie die Implementierung der 2.x-SDKs vorne
 >
 >Wenn Sie Version 1.x des SDK implementieren möchten, können Sie hier die 1.x-Entwicklerhandbücher herunterladen: [SDKs herunterladen.](/help/getting-started/download-sdks.md)
 
-## Implementieren von QOS
+## Implementieren von QoS
 
 1. Ermitteln Sie, wann sich die Bitrate während der Medienwiedergabe ändert, und verwenden Sie die `mediaUpdateQoS`-API, um die QoS-Informationen im Media SDK zu aktualisieren.
 

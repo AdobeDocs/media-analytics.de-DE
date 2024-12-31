@@ -1,5 +1,5 @@
 ---
-title: OTT und Audience Manager
+title: 'OTT und Audience Manager '
 description: Erfahren Sie Details zur Integration von OTT-Apps mit Audience Manager.
 uuid: d228db63-59c2-4624-99c6-6b49dc17f48e
 exl-id: 1cc08ed6-9331-48db-ac0c-cd2b6810ea87

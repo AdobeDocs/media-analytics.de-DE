@@ -77,7 +77,7 @@ Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung d
                                    <LENGTH>);
    ```
 
-1. (Optional) Fügen Sie Standard- und/oder Anzeigenmetadaten über Kontextdatenvariablen an die Medien-Tracking-Sitzung an.
+1. (Optional) Fügen Sie Standard- und/oder Anzeigenmetadaten mithilfe von Kontextdatenvariablen an die Medien-Tracking-Sitzung an.
 
    * [Standard-Anzeigenmetadaten in JavaScript implementieren](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
    * **Anwenderspezifische Anzeigenmetadaten:** Erstellen Sie für anwenderdefinierte Metadaten ein variables Objekt für die anwenderspezifischen Datenvariablen und füllen Sie es mit den Daten für aktuelle Anzeigen:
@@ -133,9 +133,9 @@ Weitere Informationen finden Sie im Tracking-Szenario [VOD-Wiedergabe mit Pre-ro
 
 ## Granulares Anzeigen-Tracking
 
-Das standardmäßige Anzeigen-Ping-Intervall ist `10 seconds`.
+Das Standard-Ping-Intervall für Anzeigen ist `10 seconds`.
 
-Sie können ein granulares Anzeigen-Tracking einrichten, um das Anzeigen-Tracking von `1 second` zu aktivieren.
+Sie können ein granulares Anzeigen-Tracking einrichten, um das Anzeigen-Tracking `1 second` aktivieren.
 
 >[!IMPORTANT]
 >

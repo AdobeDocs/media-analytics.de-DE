@@ -22,7 +22,7 @@ Dies ist dasselbe Szenario wie die [VOD-Wiedergabe mit einem Kapitel](/help/use-
 
 | Auslöser | Heartbeat-Methode | Netzwerkaufrufe   | Hinweise |
 |---|---|---|---|
-| Anwender klickt auf **[!UICONTROL Abspielen]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Diese Netzwerkaufrufe sind weiterhin mit dem Szenario [Wiedergabe ohne Unterbrechungen in iOS](vod-no-intrs-details.md) identisch. |
+| Anwender klickt auf **[!UICONTROL Abspielen]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Der Measurement Library ist nicht bekannt, dass es eine Pre-Roll-Anzeige gibt. Diese Netzwerkaufrufe sind immer noch genau das gleiche wie [Wiedergabe ohne Unterbrechungen im iOS](vod-no-intrs-details.md)-Szenario. |
 | Das Kapitel beginnt. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
 | Der erste Frame des Kapitels wird wiedergegeben. | `trackPlay` | Heartbeat Chapter Play | Wenn Kapitelinhalte vor dem Hauptinhalt wiedergegeben werden, sollten die Heartbeats beim Beginn des Kapitels Beginn werden. |
 | Das Kapitel wird wiedergegeben. |  | Chapter Heartbeats |  |
@@ -35,7 +35,7 @@ Dies ist dasselbe Szenario wie die [VOD-Wiedergabe mit einem Kapitel](/help/use-
 
 ## Parameter {#parameters}
 
-Die während der Kapitelwiedergabe verwendeten Parameter sind mit den Parametern im Szenario [VOD-Wiedergabe mit einem Kapitel](/help/use-cases/tracking-scenarios/vod-one-chapter.md) identisch, allerdings gibt es keinen Kapitelbeendigungsnetzwerkaufruf.
+Die bei der Kapitelwiedergabe verwendeten Parameter sind mit den Parametern in der [VOD-Wiedergabe mit einem Kapitel](/help/use-cases/tracking-scenarios/vod-one-chapter.md) identisch, es sei denn, es gibt keinen vollständigen Kapitelnetzwerkaufruf.
 
 ## Beispielcode {#sample-code}
 

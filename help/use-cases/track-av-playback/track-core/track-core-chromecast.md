@@ -91,7 +91,7 @@ Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
 
 1. **Abspielkopfwert aktualisieren**
 
-   Aktualisieren Sie den Positionswert von `mediaUpdatePlayhead` mehrmals, wenn sich der Abspielkopf ändert. <br /> Bei Video-on-demand (VOD) wird der Wert in Sekunden ab Beginn des Medienelements angegeben. <br /> Wenn der Player beim Live-Streaming keine Informationen zur Inhaltsdauer bereitstellt, kann der Wert als Anzahl der Sekunden seit Mitternacht UTC dieses Tages angegeben werden.
+   Aktualisieren Sie den Positionswert von `mediaUpdatePlayhead` mehrmals, wenn sich der Abspielkopf ändert. <br /> Bei Video-on-demand (VOD) wird der Wert in Sekunden ab Beginn des Medienelements angegeben. <br /> Wenn der Player beim Live-Streaming keine Informationen zur Inhaltsdauer bereitstellt, kann der Wert als Anzahl der Sekunden seit Mitternacht (UTC) des Tages angegeben werden.
 
    ```
    ADBMobile().media.updatePlayhead(position)
@@ -100,7 +100,7 @@ Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
    >[!NOTE]
    >
    >Beachten Sie beim Aufrufen der `media.updatePlayhead`-API Folgendes:
-   >* Bei Verwendung von Fortschrittsmarken ist die Inhaltsdauer erforderlich und die Abspielleiste muss als Anzahl von Sekunden ab Anfang des Medienelements aktualisiert werden, beginnend mit 0.
+   >* Bei Verwendung von Fortschrittsmarken ist die Inhaltsdauer erforderlich und der Abspielkopf muss als Anzahl von Sekunden ab Beginn des Medienelements aktualisiert werden, beginnend mit 0.
    >* Bei Verwendung von Medien-SDKs müssen Sie die `media.updatePlayhead`-API mindestens einmal pro Sekunde aufrufen.
 
 1. **Ende der Wiedergabe verfolgen**

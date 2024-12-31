@@ -1,6 +1,6 @@
 ---
-title: VOD-Wiedergabe mit Pre-Roll-Anzeigen
-description: Sehen Sie sich ein Beispiel für das Tracking von VOD-Inhalten an, die Pre-Roll-Anzeigen mit dem Media SDK enthalten.
+title: VOD-Wiedergabe mit Pre-roll-Anzeigen
+description: Sehen Sie sich ein Beispiel für das Tracking von VOD-Inhalten an, die Pre-roll-Anzeigen enthalten, indem Sie die Media SDK verwenden.
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
 feature: Media Analytics
