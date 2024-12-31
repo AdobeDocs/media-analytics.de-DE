@@ -34,7 +34,7 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone-Lösung u
 
 ### Medienmodulvariablen
 
-| Milestone | Milestone-Syntax | Benutzerspezifischer Link | Syntax benutzerspezifischer Links |
+| Milestone | Milestone-Syntax | Benutzerspezifischer Link | Syntax benutzerdefinierter Links |
 | --- | --- | --- | --- |
 | Media.trackUsingContextData | `s.Media.trackUsingContextData` <br> `  = true;` | linkTrackVars | `s.linkTrackVars` <br> `  = 'events,` <br> `  contextData.video.name’;` <br> `  s.contextData["video.name"]` <br> `  = mediaName;` |
 | Media.contextDataMapping | `s.Media.contextDataMapping = {` <br> `  "a.media.name":"eVar2,prop2",` <br> `  "a.media.segment":"eVar3",` <br> `  "a.contentType":"eVar1",` <br> `  "a.media.timePlayed":"event3",` <br> `  "a.media.view":"event1",` <br> `  "a.media.segmentView":"event2",` <br> `  "a.media.complete":"event7",` <br> `  "a.media.milestones": {` <br> `    25:"event4",` <br> `    50:"event5",` <br> `    75:"event6"` <br> `  }` <br> `};` | nicht angegeben | Die Zuordnung von Kontextdaten zu eVars, Props und Ereignissen erfolgt nun durch Verarbeitungsregeln. |
@@ -43,7 +43,7 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone-Lösung u
 
 ### Optionale Variablen
 
-| Milestone | Milestone-Syntax | Benutzerspezifischer Link | Syntax benutzerspezifischer Links |
+| Milestone | Milestone-Syntax | Benutzerspezifischer Link | Syntax benutzerdefinierter Links |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | nicht angegeben | Nicht verfügbar. |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | nicht angegeben | Nicht verfügbar. |
@@ -58,7 +58,7 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone-Lösung u
 
 ### Anzeigenverfolgungsvariablen
 
-| Milestone | Milestone-Syntax | Benutzerspezifischer Link | Syntax benutzerspezifischer Links |
+| Milestone | Milestone-Syntax | Benutzerspezifischer Link | Syntax benutzerdefinierter Links |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | nicht angegeben | Nicht verfügbar. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | nicht angegeben | Nicht verfügbar. |
@@ -68,7 +68,7 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone-Lösung u
 
 ### Medienmodulmethoden
 
-| Milestone | Milestone-Syntax | Benutzerspezifischer Link | Syntax benutzerspezifischer Links |
+| Milestone | Milestone-Syntax | Benutzerspezifischer Link | Syntax benutzerdefinierter Links |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | `s.tl()` | `s.linkTrackVars` <br> `  = 'events,` <br> `     prop10,` <br> `     eVar10,` <br> `     eVar12,` <br> `     eVar15,` <br> `     contextData.video.name,` <br> `     contextData.video.view';` <br> `s.linkTrackEvents ` <br> `  = 'event2';` <br> `s.prop10` <br> `   = mediaName;` <br> `s.eVar10` <br> `  = mediaName;` <br> `s.eVar12` <br> `  = "video";` <br> `s.eVar15` <br> `  = mediaPlayerName;` <br> `s.events` <br> `  = 'event2';` <br> `s.contextData['video.name']` <br> `  = mediaName;` <br> `s.contextData['video.view']` <br> `  = 'true';` <br> `s.tl(this,'o','Video Start');` |
 | mediaName | `mediaName` (erforderlich): Der Name des Videos, wie er in Videoberichten angezeigt werden soll. | Setzen von eVar- oder Kontextdatenvariablen im Link-Aufruf. | `s.prop10 = mediaName;` <br> `s.eVar10 = mediaName;` <br> `s.contextData['video.name']` <br> `  = mediaName;` |

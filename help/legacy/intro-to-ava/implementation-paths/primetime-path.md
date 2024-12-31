@@ -31,4 +31,4 @@ TVSDK ist bereits in das Medien-SDK integriert, was die Implementierung auf alle
 
 >[!NOTE]
 >
->Für diesen Implementierungspfad müssen sich Kunden an ihren Kundenbetreuer/Adobe-Account-Team wenden, um einen neuen Kundenauftrag zu unterzeichnen, da Media Analytics über eine eigene SKU verfügt und sich der Preis hier nicht aus den Server-Aufrufen, sondern aus den Medien-Streams ergibt. Von Ihrem Support-Mitarbeiter/Account-Manager erhalten Sie Informationen zum Kauf von TVSDK.
+>Für diesen Implementierungspfad müssen sich Kunden an ihren Kundenbetreuer/das Adobe-Account-Team wenden, um einen neuen Kundenauftrag zu unterzeichnen, da Media Analytics über eine eindeutige SKU verfügt und sich von einem Preismodell auf der Grundlage von Server-Aufrufen zu einem Modell auf der Grundlage von Medien-Streams ändert. Von Ihrem Support-Mitarbeiter/Account-Manager erhalten Sie Informationen zum Kauf von TVSDK.

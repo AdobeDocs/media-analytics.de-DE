@@ -1,6 +1,6 @@
 ---
 title: Mediendetails
-description: Zeigen Sie detaillierte Metriken für gleichzeitige Betrachter oder Zuhörer, Inhaltsstarts, Abschlussrate, Besuchszeit und Anzeigenstarts im Dashboard "Mediendetails"an.
+description: Zeigen Sie detaillierte Metriken für gleichzeitige Betrachter oder Zuhörer, Inhaltsstarts, Abschlussrate, Besuchszeit und Anzeigenstarts im Dashboard „Mediendetails“ an.
 uuid: 57d7f5b0-41dd-41d7-9a5a-474528839be5
 exl-id: 3c707539-95a4-4e16-97f0-f3fe0be4fe74
 feature: "Media Analytics, Reports & Analytics Basics"

@@ -1,6 +1,6 @@
 ---
 title: Adobe Debug konfigurieren
-description: Erfahren Sie, wie Sie Adobe Debug konfigurieren, das Sie zur Fehlerbehebung bei Media SDK-Implementierungen verwenden können.
+description: Erfahren Sie, wie Sie Adobe Debug konfigurieren, um Fehler bei Media SDK-Implementierungen beheben zu können.
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
 feature: Media Analytics

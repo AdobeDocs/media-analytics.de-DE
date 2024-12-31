@@ -15,7 +15,7 @@ ht-degree: 92%
 
 **DIESER INHALT WURDE IN DIE AKTUELLE IMPLEMENTIERUNGSPFADDATEI VERSCHOBEN**
 
-Für jeden Implementierungspfad müssen sich Kunden an ihren Kundenbetreuer/Adobe-Account-Team wenden, um einen neuen Kundenauftrag zu unterzeichnen, da Streaming Media Analytics über eine eigene SKU verfügt und sich der Preis hier nicht aus den Server-Aufrufen, sondern aus den Video-Streams ergibt.
+Für jeden Implementierungspfad müssen sich Kunden an ihren Kundenbetreuer/das Adobe-Account-Team wenden, um einen neuen Kundenauftrag zu unterzeichnen, da Streaming Media Analytics über eine eindeutige SKU verfügt und sich ein Preismodell, das auf Server-Aufrufen basiert, in ein Modell ändert, das auf Video-Streams basiert.
 
 ## Datenerfassung in Adobe Experience Platform mit der Adobe Media Analytics-Erweiterung
 

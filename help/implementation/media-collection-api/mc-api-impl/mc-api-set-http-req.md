@@ -1,6 +1,6 @@
 ---
 title: Einstellen des HTTP-Anfragetyps in Ihrem Player
-description: Der Anfrageinhalt für alle Mediensammlungs-API-Anfragen muss im JSON-Format vorliegen. Erfahren Sie, wie Sie den Content-Anfragetyp in Ihrem Player festlegen.
+description: Der Anfragetext für alle Media Collection API-Anfragen muss im JSON-Format vorliegen. Erfahren Sie, wie Sie den Content-Anfragetyp in Ihrem Player festlegen.
 uuid: b8fa7233-e654-4acf-a9d7-14158cded13e
 exl-id: 9ab3eb07-8f0d-4f9a-8feb-db20c4de3db4
 feature: Media Analytics

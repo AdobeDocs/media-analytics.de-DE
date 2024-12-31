@@ -34,7 +34,7 @@ Dieser Aufruf signalisiert _die Anwenderintention, ein Video abzuspielen_.
 
 Er gibt eine Sitzungs-ID (`{sid}`) an den Client zurück, die zur Identifikation aller nachfolgenden Tracking-Aufrufe innerhalb der Sitzung verwendet wird. Der Player-Status lautet noch nicht „Playing“ (Wiedergabe), sondern „Starting“ (Start). 
 
-[ Erforderliche Sitzungsparameter ](../mc-api-ref/mc-api-sessions-req.md) müssen in der `params` -Map des Anfrageinhalts enthalten sein.
+[Erforderliche Sitzungsparameter](../mc-api-ref/mc-api-sessions-req.md) müssen in der `params` Map des Anfrageinhalts angegeben werden.
 
 Am Backend generiert dieser Aufruf einen Adobe Analytics-Initiationsaufruf.
 

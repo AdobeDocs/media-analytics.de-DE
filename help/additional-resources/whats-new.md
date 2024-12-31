@@ -1,5 +1,5 @@
 ---
-title: Neue Funktionen in Media Analytics
+title: 'Neue Funktionen in Media Analytics '
 description: Dieser Artikel enthält Informationen zu neuen Funktionen und Benachrichtigungen.
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
 workflow-type: tm+mt

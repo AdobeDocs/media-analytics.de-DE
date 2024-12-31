@@ -153,7 +153,7 @@ Das Medien-Tracking verhält sich auf allen Plattformen – Desktop oder Mobilg
 | Video Analytics-SDKs 1.x  |  Entwicklerhandbücher (nur PDFs) |
 | --- | --- |
 | Android | [Android-Konfiguration](vhl-dev-guide-v15_android.pdf) |
-| Apple TV | [Konfigurieren für Apple TV](vhl-dev-guide-v1x_appletv.pdf) |
+| Apple TV | [Konfigurieren von für Apple TV](vhl-dev-guide-v1x_appletv.pdf) |
 | Chromecast | [Chromecast-Konfiguration](chromecast_1.x_sdk.pdf) |
 | iOS | [iOS-Konfiguration](vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [JavaScript-Konfiguration](vhl-dev-guide-v15_js.pdf) |

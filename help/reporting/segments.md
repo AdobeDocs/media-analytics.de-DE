@@ -1,6 +1,6 @@
 ---
 title: Medien-Streaming-Segmente – Erklärung
-description: Erfahren Sie mehr über die Berichterstellungssegmente, die mit dem Medien-Streamtyp verknüpft sind, einschließlich Segment, Beschreibung und Regel für den Medien-Streamtyp.
+description: Erfahren Sie mehr über die Berichterstellungssegmente, die mit dem Medien-Stream-Typ verknüpft sind, einschließlich Segment, Beschreibung und Regel für den Medien-Stream-Typ.
 uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
 exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
 feature: "Media Analytics, Segmentation"

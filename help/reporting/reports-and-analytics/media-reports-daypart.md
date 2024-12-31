@@ -1,5 +1,5 @@
 ---
-title: Medientagesabschnitt
+title: 'Medientagesabschnitt '
 description: Verwenden Sie das Dashboard „Medientagesabschnitt“, um Inhaltsstarts nach Tageszeit anzuzeigen und zu analysieren, wann Ihre Zielgruppe aktiv ist.
 uuid: aa545f72-6816-448f-af5d-3c5e18f7b3b7
 exl-id: 5e4a390e-8cc5-4934-8d60-c82ca0daaee1

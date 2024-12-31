@@ -1,5 +1,5 @@
 ---
-title: Aktivierung von Medienberichten
+title: 'Aktivierung von Medienberichten '
 description: Erfahren Sie mehr über die Media Report Suite, die Medienmetriken erfasst.  Führen Sie diese Schritte aus, um Medienberichte zu konfigurieren, bevor Mediendaten gesendet werden.
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
@@ -18,7 +18,7 @@ Jede Report Suite, die Medienmetriken erfasst, muss konfiguriert werden, bevor M
 
 >[!TIP]
 >
->Um neue Funktionen nutzen zu können, sollten Bestandskunden von Streaming-Medien das Medien-Tracking für ihre RSIDs erneut aktivieren.
+>Um neue Funktionen nutzen zu können, sollten Bestandskunden von Streaming-Medien das Medien-Tracking für ihre RSIDs wieder aktivieren.
 
 1. Klicken Sie in [Adobe Analytics](https://experience.adobe.com) auf **[!UICONTROL Admin > Report Suites].**
 1. Wählen Sie die Report Suites aus, in denen Sie Mediendaten erfassen, und klicken Sie anschließend auf **[!UICONTROL Einstellungen bearbeiten > Medienmanagement > Medienberichte].**

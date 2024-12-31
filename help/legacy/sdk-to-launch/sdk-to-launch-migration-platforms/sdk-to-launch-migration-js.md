@@ -1,5 +1,5 @@
 ---
-title: Migration vom Standalone Media SDK zu Adobe Launch - Web (JS)
+title: Migration von der Standalone Media SDK zu Adobe Launch - Web (JS)
 description: Erfahren Sie, wie Sie vom Media SDK zu Launch für JS migrieren.
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics

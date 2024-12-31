@@ -14,8 +14,8 @@ ht-degree: 71%
 
 # Client-seitig{#client-side}
 
-Media Analytics (Heartbeats) ist eine standardisierte Medien-Tracking-Adobe.
+Media Analytics (Heartbeats) ist eine standardisierte Medien-Tracking-Lösung der Adobe.
 
 Client-seitige Integrationen werden nur mit Media Analytics implementiert. Sie können entweder das Media SDK oder die Media Collection API (oder beide APIs) implementieren. Der Client-seitige Pfad kann für alle Player verwendet werden, einschließlich Kunden- und/oder OVP-Player wie Brightcove, Ooyala und thePlatform.
 
-Wenn Sie sich für Media Analytics entschieden haben, lesen Sie die Abschnitte &quot;[Abrufen von Medien-SDKs, Erweiterungen mit Tags&quot;und &quot;OTT-SDKs&quot;](/help/getting-started/download-sdks.md) und &quot;[Mediensammlungs-API](/help/implementation/media-collection-api/mc-api-overview.md)&quot;.
+Wenn Media Analytics Ihr beabsichtigter Pfad ist, finden Sie weitere Informationen unter [Abrufen von Media SDKs, Erweiterungen mithilfe von Tags und OTT-](/help/getting-started/download-sdks.md) und [Mediensammlungs-API.](/help/implementation/media-collection-api/mc-api-overview.md)

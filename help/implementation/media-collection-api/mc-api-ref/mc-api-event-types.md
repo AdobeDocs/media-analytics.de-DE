@@ -1,6 +1,6 @@
 ---
 title: Ereignistypen und -beschreibungen für Streaming-Medien
-description: 'Was sind die Ereignistypen und Beschreibungen der Mediensammlung? '
+description: 'Was sind die Ereignistypen und -beschreibungen der Mediensammlung? '
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
 feature: Media Analytics
@@ -81,7 +81,7 @@ Signalisiert, dass ein Fehler aufgetreten ist.
 
 Dieser Parameter wird verwendet, um das Media Analytics-Backend aufzufordern, die Sitzung umgehend zu schließen, wenn der Benutzer die Wiedergabe verlassen hat und wahrscheinlich nicht zurückkehren wird.
 
-Wenn keine `sessionEnd` gesendet wird, wird eine abgebrochene Sitzung [normal beendet](../mc-api-impl/mc-api-timeout.md) (entweder nachdem 10 Minuten lang keine Ereignisse empfangen wurden oder 30 Minuten lang keine Verschiebung der Abspielleiste erfolgt). Darüber hinaus werden alle nachfolgenden Medienaufrufe, die mit dieser Sitzungs-ID durchgeführt werden, verworfen.
+Wenn kein `sessionEnd` gesendet wird, wird eine abgebrochene Sitzung [Timeout normal](../mc-api-impl/mc-api-timeout.md) (entweder nachdem für 10 Minuten keine Ereignisse empfangen wurden oder wenn für 30 Minuten keine Abspielkopfbewegung stattfindet). Darüber hinaus werden alle nachfolgenden Medienaufrufe, die mit dieser Sitzungs-ID getätigt werden, entfernt.
 
 ## sessionComplete
 

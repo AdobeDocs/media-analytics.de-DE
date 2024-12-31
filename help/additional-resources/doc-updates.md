@@ -1,6 +1,6 @@
 ---
-title: Neue Funktionen bei Streaming-Medien
-description: Erfahren Sie mehr über die neuen Funktionen von Streaming-Medien.
+title: Neue Funktionen in Streaming Media
+description: Erfahren Sie mehr über die neuen Funktionen in Streaming Media.
 uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n

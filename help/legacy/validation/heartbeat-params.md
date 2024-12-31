@@ -26,7 +26,7 @@ Liste der Media Analytics-Parameter, die Adobe erfasst und auf dem Media Analyti
 | `l:event:duration` | Medien-SDK | (Erforderlich)<br/><br/>Der Wert wird intern (in Millisekunden) von dem Media SDK und nicht vom Player festgelegt. Er wird verwendet, um am Backend Metriken zur Besuchszeit zu berechnen. a.media.totalTimePlayed wird beispielsweise aus der Summe aller generierten Wiedergabe-Heartbeats (type=play) berechnet. <br/>*Hinweis:* Dieser Parameter ist bei bestimmten Ereignissen auf 0 gesetzt, da es sich um „Statusänderungsereignisse“ (z. B. type=complete, type=chapter_complete oder type=bitrate_change) handelt. |
 | `l:event:playhead` | VideoInfo | (Erforderlich)<br/><br/>Die Abspielleiste befindet sich zum Zeitpunkt, zu dem das Ereignis aufgezeichnet wurde, im derzeit aktiven Asset (Hauptinhalt oder Anzeige). |
 | `s:event:sid` | Medien-SDK | (Erforderlich)<br/><br/>Die Sitzungs-ID (eine zufällig generierte Zeichenfolge). Alle Ereignisse in einer bestimmten Sitzung (Video und Anzeigen) sollten gleich sein. |
-| `l:asset:duration` / `l:asset:length` <br/> (Umbenannt von Längendauer) | VideoInfo | (Erforderlich)<br/><br/>Die Video-Asset-Länge des Haupt-Assets. |
+| `l:asset:duration` / `l:asset:length` <br/> (von der Dauer in umbenannt) | VideoInfo | (Erforderlich)<br/><br/>Die Video-Asset-Länge des Haupt-Assets. |
 | `s:asset:publisher` | MediaHeartbeatConfig | (Erforderlich)<br/><br/>Der Herausgeber des Assets. |
 | `s:asset:video_id` | VideoInfo | (Erforderlich)<br/><br/>Eine ID, mit der das Video im Katalog des Herausgebers eindeutig identifiziert wird. |
 | `s:asset:type` | Medien-SDK | (Erforderlich)<br/><br/>Der Asset-Typ (Hauptinhalt oder Anzeige). |

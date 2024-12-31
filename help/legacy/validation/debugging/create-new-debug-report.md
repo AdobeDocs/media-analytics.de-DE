@@ -30,7 +30,7 @@ So erstellen Sie einen neuen Debug-Bericht:
         Ihnen stehen folgende Zugriffsmöglichkeiten zur Verfügung:
 
          * [!UICONTROL Analytics > Admin > Unternehmenseinstellungen > Webdienste]
-         * [!UICONTROL Analytics > Admin > Benutzerverwaltung > Benutzer > Individuelle Benutzereinstellungen] Um eine Web-Services-API-Berechtigung für einen neuen Benutzer zu erstellen, fügen Sie den Benutzer in [!UICONTROL Benutzerverwaltung] der Benutzergruppe &quot;**Zugriff auf Webdienste**&quot;hinzu.
+         * [!UICONTROL Analytics > Admin > User Management > Benutzer > Individuelle Benutzereinstellungen] Um Anmeldedaten für eine Web-Services-API für einen neuen Benutzer zu erstellen, fügen Sie den Benutzer in [!UICONTROL User Management] der Benutzergruppe **Web Service Access** hinzu.
 
       * [!UICONTROL Standardendpunkt]: Die Daten in diesem Feld werden von Adobe angegeben und können nicht geändert werden.
       * [!UICONTROL Zusätzlicher Endpunkt]: Fügen Sie `CNAMES` (sofern Sie diese verwenden) für Tracking-Server wie `metrics.companyname.com` hinzu.
