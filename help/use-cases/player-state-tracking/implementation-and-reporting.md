@@ -4,25 +4,25 @@ description: Erfahren Sie, wie Sie die Player-Status-Tracking-Funktion implement
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 15cc123fb44654083b6501042bdd9d4e07128b59
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 100%
+source-wordcount: '328'
+ht-degree: 78%
 
 ---
 
 # Implementierung und Reporting
 
-Während einer Wiedergabesitzung muss jedes Statusereignis (vom Beginn bis zum Ende) einzeln getrackt werden. Das Medien-SDK und die Mediensammlungs-API bieten neue Tracking-Methoden für diese Funktion.
+Während einer Wiedergabesitzung muss jedes Statusereignis (vom Beginn bis zum Ende) einzeln getrackt werden. Die Media SDK und die Mediensammlungs-API stellen Tracking-Methoden für diese Funktion bereit.
 
-Das Medien-SDK beinhaltet zwei neue Methoden zum Tracking benutzerdefinierter Status:
+Media SDK umfasst zwei Methoden zur benutzerdefinierten Statusverfolgung:
 
 `trackStateStart("state_name")`
 
 `trackStateClose("state_name")`
 
 
-Die Mediensammlungs-API enthält zwei neue Ereignisse mit dem erforderlichen Parameter `media.stateName`:
+Die Mediensammlungs-API enthält zwei Ereignisse, die `media.stateName` als erforderlichen Parameter aufweisen:
 
 `stateStart` und `stateEnd`
 
@@ -91,11 +91,11 @@ Die für die einzelnen Status bereitgestellten Metriken werden berechnet, als Ko
 
 ## Berichterstellung
 
-Alle Player-Statusmetriken können für jede in Analysis Workspace verfügbare Visualisierung von Berichten oder für eine Komponente (Segment, berechnete Metriken) verwendet werden, sobald eine Report Suite für das Player-Status-Tracking aktiviert wurde. Die neuen Metriken können in der Admin Console für jeden einzelnen Bericht über die Einrichtung der Medienberichte (Einstellungen bearbeiten > Medienverwaltung > Medienberichte) aktiviert werden.
+Alle Player-Statusmetriken können für jede in Analysis Workspace verfügbare Visualisierung von Berichten oder für eine Komponente (Segment, berechnete Metriken) verwendet werden, sobald eine Report Suite für das Player-Status-Tracking aktiviert wurde. Diese Metriken können in der Admin Console für jeden einzelnen Bericht mithilfe der Einrichtung der Medienberichte (Einstellungen bearbeiten > Medienverwaltung > Medienberichte) aktiviert werden.
 
 ![](assets/report-setup.png)
 
-In Analytics Workspace befinden sich alle neuen Eigenschaften im Metrikbedienfeld. Sie können beispielsweise nach `full screen` suchen, um die Vollbilddaten im Metrikbedienfeld anzuzeigen.
+In Analysis Workspace befinden sich alle neuen Eigenschaften im Bedienfeld Metriken . Sie können beispielsweise nach `full screen` suchen, um die Vollbilddaten im Metrikbedienfeld anzuzeigen.
 
 ![](assets/full-screen-report.png)
 

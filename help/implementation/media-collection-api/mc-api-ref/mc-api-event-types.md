@@ -5,10 +5,10 @@ uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 06f24e828fb7795d55599ea1fa7913182dd357e6
+source-git-commit: 98722998606af3761652e282c31338bb966eb654
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 85%
+source-wordcount: '394'
+ht-degree: 79%
 
 ---
 
@@ -90,3 +90,15 @@ Wird gesendet, wenn das Ende des Hauptinhalts erreicht ist.
 >[!IMPORTANT]
 >
 >In den [JSON-Validierungsschemas](mc-api-json-validation.md) für die jeweiligen Ereignistypen finden Sie Informationen zur Überprüfung der Parametertypen und -anforderungen.
+
+## stateStart
+
+Signalisiert den Beginn der Player-Status-Verfolgung.
+
+Weitere Informationen finden Sie unter [Implementierung und Reporting](/help/use-cases/player-state-tracking/implementation-and-reporting.md).
+
+## stateEnd
+
+Signalisiert das Ende der Statusverfolgung des Players.
+
+Weitere Informationen finden Sie unter [Implementierung und Reporting](/help/use-cases/player-state-tracking/implementation-and-reporting.md).
