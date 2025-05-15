@@ -5,9 +5,9 @@ uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 exl-id: 949e86cb-d265-4836-8825-a06b87203b15
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ebabbe52fe673e3fb6f13da40bbc3c87aef1c7bd
+source-git-commit: e7f17c6e8ea6e54a55f59e4e817fba07a7851496
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2036'
 ht-degree: 89%
 
 ---
@@ -176,7 +176,7 @@ Beschreibung der Tabellendaten:
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Erforderlich:**<br/> ja </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Ad Start </li> <li> **Min. SDK-Version:** beliebig </li> <li> **Beispielwert:**<br/> TRUE </li><li> **Beschreibung:**<br/> Die Anzahl der Videoanzeigenstarts.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>view) </li> <li> **Heartbeat:**<br/> (<code>s:event:type=start</code>)<br/> (<code>s:asset:type=ad<code>) </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtsname:**<br/> Ad Starts </li> <li> **Daten-Feed:**<br/> nicht verfügbar </li> <li> **Kontextdaten:**<br/> (a.media.ad.<br/>view) </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.view) </li> <li> **XDM-Feldpfad:** (veraltet)<br/> advertising.starts.value > 0 => „TRUE“ </li> <li> **XDM-Feldpfad für Berichterstellung:**<br/> mediaReporting.advertisingDetails.isStarted </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Erforderlich:**<br/> ja </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Ad Start </li> <li> **Min. SDK-Version:** beliebig </li> <li> **Beispielwert:**<br/> TRUE </li><li> **Beschreibung:**<br/> Die Anzahl der Videoanzeigenstarts.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>view) </li> <li> **Heartbeat:**<br/> (<code>s:event:type=start</code>)<br/> (<code>s:asset:type=ad<code>) </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtsname:**<br/> Ad Starts </li> <li> **Datenfeed:**<br/> videoadstart </li> <li> **Kontextdaten:**<br/> (a.media.ad.<br/>view) </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.view) </li> <li> **XDM-Feldpfad:** (veraltet)<br/> advertising.impressions.value > 0 => „TRUE“ </li> <li> **XDM-Feldpfad für Berichterstellung:**<br/> mediaReporting.advertisingDetails.isStarted </li> </ul> |
 
 
 
@@ -184,7 +184,7 @@ Beschreibung der Tabellendaten:
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Erforderlich:**<br/> ja </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Ad Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> **Beispielwert:**<br/> TRUE </li><li> **Beschreibung:**<br/> Die Anzahl der Anzeigenbeendigungen.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>complete) </li> <li> **Heartbeat:**<br/> (<code>s:event:type=complete</code>)<br/> (<code>s:asset:type=ad</code>)  </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtsname:**<br/> Ad Closeen </li> <li> **Daten-Feed:**<br/> nicht verfügbar </li> <li> **Kontextdaten:**<br/> (a.media.ad.<br/>complete) </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.complete) </li> <li> **XDM-Feldpfad:** (veraltet)<br/> advertising.completes.value > 0 => „TRUE“ </li> <li> **XDM-Feldpfad für Berichterstellung:**<br/> mediaReporting.advertisingDetails.<br/>isCompleted </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/> automatisch festgelegt </li> <li> **API-Schlüssel:**<br/> nicht verfügbar </li> <li> **Erforderlich:**<br/> ja </li> <li> **Typ:**<br/> Zeichenfolge </li> <li> **Gesendet mit:**<br/> Ad Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> **Beispielwert:**<br/> TRUE </li><li> **Beschreibung:**<br/> Die Anzahl der Anzeigenbeendigungen.   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>complete) </li> <li> **Heartbeat:**<br/> (<code>s:event:type=complete</code>)<br/> (<code>s:asset:type=ad</code>)  </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> Ereignis </li> <li> **Berichtsname:**<br/> Ad Closeen </li> <li> **Datenfeed:**<br/> videoadcomplete </li> <li> **Kontextdaten:**<br/> (a.media.ad.<br/>complete) </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.complete) </li> <li> **XDM-Feldpfad:** (veraltet)<br/> advertising.completes.value > 0 => „TRUE“ </li> <li> **XDM-Feldpfad für Berichterstellung:**<br/> mediaReporting.advertisingDetails.<br/>isCompleted </li> </ul> |
 
 
 
