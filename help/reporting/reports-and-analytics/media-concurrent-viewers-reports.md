@@ -3,9 +3,9 @@ title: Gleichzeitige Medienbetrachter
 description: Erfahren Sie mehr über das Dashboard „Gleichzeitige Medienbetrachter“, mit dem gleichzeitige Betrachter an einem Tag angezeigt werden. Die Daten können nach Inhalt, Gerätetyp oder Land gefiltert werden.
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
-feature: "Media Analytics, Reports & Analytics Basics"
+feature: "Streaming Media, Workspace Basics"
 role: User, Admin
-source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
+source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 91%

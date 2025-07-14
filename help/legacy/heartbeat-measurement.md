@@ -1,10 +1,10 @@
 ---
 title: Über Heartbeat-Messungen
 description: Erfahren Sie, wie Heartbeats zur Erfassung von Videometriken verwendet werden.
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 75%
@@ -13,7 +13,7 @@ ht-degree: 75%
 
 # Über Heartbeat-Messungen
 
-Die Adobe-Streaming-Mediensammlung verwendet „Heartbeats“, um Videometriken zu erfassen. Während der Videowiedergabe werden Heartbeats an den Heartbeat-Tracking-Server gesendet, um die Wiedergabedauer zu messen. Die Heartbeat-Aufrufe werden alle zehn Sekunden gesendet. Heartbeats führen zu granularen Videointeraktionsmetriken und präziseren Video-Fallout-Berichten. Streaming-Medien messen Heartbeats unter Verwendung von Adobe Launch mit der Media Analytics-Erweiterung, der Media SDK und der Mediensammlungs-API. Die Komponenten `AppMeasurement` und `VisitorID` werden zum Empfangen von Videodaten verwendet.
+Die Adobe-Sammlung zu Streaming-Medien verwendet „Heartbeats“, um Videometriken zu erfassen. Während der Videowiedergabe werden Heartbeats an den Heartbeat-Tracking-Server gesendet, um die Wiedergabedauer zu messen. Die Heartbeat-Aufrufe werden alle zehn Sekunden gesendet. Heartbeats führen zu granularen Videointeraktionsmetriken und präziseren Video-Fallout-Berichten. Streaming-Medien messen Heartbeats unter Verwendung von Adobe Launch mit der Media Analytics-Erweiterung, der Media SDK und der Mediensammlungs-API. Die Komponenten `AppMeasurement` und `VisitorID` werden zum Empfangen von Videodaten verwendet.
 
 Die Verwendung von Heartbeats in der Streaming-Mediensammlung bietet die folgenden Vorteile:
 

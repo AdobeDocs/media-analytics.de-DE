@@ -3,9 +3,9 @@ title: 'Vorlagen für Media Workspace '
 description: Analysieren Sie Ihre Tracking-Daten mithilfe der Vorlagen von Media Workspace. Wählen Sie Standardvorlagen für Akquise oder Streaming-Medien aus oder erstellen Sie eigene benutzerdefinierte Vorlagen.
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
-feature: "Media Analytics, Workspace Basics"
+feature: "Streaming Media, Workspace Basics"
 role: User, Admin
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 9%
@@ -18,7 +18,7 @@ ht-degree: 9%
 >
 >*Berichte* in Workspace wurden früher als &quot;*&quot;*.
 
-Analysis Workspace bietet eine Reihe vordefinierter Berichte, die standardmäßig zur Datenanalyse verfügbar sind. Weitere Informationen zu allen verfügbaren Standardberichten finden Sie unter [Berichte anzeigen](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=de#menus) auf der [Adobe Analytics-Landingpage](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=de).
+Analysis Workspace bietet eine Reihe vordefinierter Berichte, die standardmäßig zur Datenanalyse verfügbar sind. Weitere Informationen zu allen verfügbaren Standardberichten finden Sie unter [Berichte anzeigen](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) auf der [Adobe Analytics-Landingpage](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=de).
 
 Einige dieser Berichte sind besonders nützlich für die Analyse von Streaming-Mediendaten, wie in den folgenden Abschnitten beschrieben.
 
@@ -41,6 +41,6 @@ Wenn Sie beispielsweise den Bericht [!UICONTROL **Nutzung von Streaming**] Medie
 Sie können Standard-Medienberichte wie folgt verwenden:
 beim Erstellen eines neuen Projekts. Sie können auch oder ändern, wenn Sie ein vorhandenes Projekt ändern.
 
-* **Beim Erstellen eines neuen Projekts:** Informationen zum Erstellen eines neuen Projekts aus einem Standardbericht finden Sie unter [Erstellen eines Projekts aus einem leeren Projekt oder ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=de#create-a-project-from-a-blank-project-or-a-report)) in [Erstellen von Projekten in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=de#create-a-project-from-a-blank-project-or-a-report).
+* **Beim Erstellen eines neuen Projekts:** Informationen zum Erstellen eines neuen Projekts aus einem Standardbericht finden Sie unter [Erstellen eines Projekts aus einem leeren Projekt oder ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report)) in [Erstellen von Projekten in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report).
 
-* **Beim Erstellen eines benutzerdefinierten Unternehmensberichts:** Informationen zum Erstellen eines benutzerdefinierten Unternehmensberichts finden Sie unter [Erstellen eines benutzerdefinierten Unternehmensberichts](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=de#company-report) in [Adobe Analytics-](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=de).
+* **Beim Erstellen eines benutzerdefinierten Unternehmensberichts:** Informationen zum Erstellen eines benutzerdefinierten Unternehmensberichts finden Sie unter [Erstellen eines benutzerdefinierten Unternehmensberichts](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report) in [Adobe Analytics-](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=de).

@@ -3,9 +3,9 @@ title: Medien-Streaming-Segmente – Erklärung
 description: Erfahren Sie mehr über die Berichterstellungssegmente, die mit dem Medien-Stream-Typ verknüpft sind, einschließlich Segment, Beschreibung und Regel für den Medien-Stream-Typ.
 uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
 exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
-feature: "Media Analytics, Segmentation"
+feature: "Streaming Media, Segmentation"
 role: User, Admin, Data Engineer
-source-git-commit: b15a81dc8f08e94c9b80d66019f3d0fe95ef5a74
+source-git-commit: 70900e305c3ed7a2be4069c6f296d56f1f6e0966
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 89%
@@ -14,7 +14,7 @@ ht-degree: 89%
 
 # Mediensegmente{#segments}
 
-Mit Segmenten können Besucheruntergruppen anhand von Merkmalen oder Website-Interaktionen identifiziert werden. Mit Streaming-Mediensegmenten können Sie den Besucher-Stream-Typ wie Audio-, Live- oder Podcast-Streams identifizieren. Weitere Informationen zu Adobe Analytics-Segmenten finden Sie unter [Informationen zu Segmenten und Containern](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=de) im Adobe Analytics Komponenten-Handbuch.
+Mit Segmenten können Besucherteilmengen anhand von Merkmalen oder Website-Interaktionen identifiziert werden. Mit Streaming-Mediensegmenten können Sie den Besucher-Stream-Typ wie Audio-, Live- oder Podcast-Streams identifizieren. Weitere Informationen zu Adobe Analytics-Segmenten finden Sie unter [Informationen zu Segmenten und Containern](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=de) im Adobe Analytics Komponenten-Handbuch.
 
 >[!NOTE]
 >

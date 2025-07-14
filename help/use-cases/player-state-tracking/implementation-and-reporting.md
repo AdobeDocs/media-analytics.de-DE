@@ -2,9 +2,9 @@
 title: Implementierung und Reporting
 description: Erfahren Sie, wie Sie die Player-Status-Tracking-Funktion implementieren einschließlich
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 15cc123fb44654083b6501042bdd9d4e07128b59
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 78%
@@ -91,7 +91,7 @@ Die für die einzelnen Status bereitgestellten Metriken werden berechnet, als Ko
 
 ## Berichterstellung
 
-Alle Player-Statusmetriken können für jede in Analysis Workspace verfügbare Visualisierung von Berichten oder für eine Komponente (Segment, berechnete Metriken) verwendet werden, sobald eine Report Suite für das Player-Status-Tracking aktiviert wurde. Diese Metriken können in der Admin Console für jeden einzelnen Bericht mithilfe der Einrichtung der Medienberichte (Einstellungen bearbeiten > Medienverwaltung > Medienberichte) aktiviert werden.
+Alle Player-Statusmetriken können für jede in Analysis Workspace verfügbare Visualisierung von Berichten oder für eine Komponente (Segment, berechnete Metriken) verwendet werden, sobald eine Report Suite für das Player-Status-Tracking aktiviert wurde. Diese Metriken können über die Admin Console für jeden einzelnen Bericht mithilfe der Einrichtung der Medienberichte (Einstellungen bearbeiten > Medienverwaltung > Medienberichte) aktiviert werden.
 
 ![](assets/report-setup.png)
 

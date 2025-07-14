@@ -1,10 +1,10 @@
 ---
 title: Voraussetzungen für reine Adobe Analytics-Implementierungen
 description: Erfahren Sie mehr über die Voraussetzungen für die Verwendung der Streaming-Mediensammlung mit Implementierungen, die nur Adobe Analytics betreffen
-feature: Media Analytics, System Requirements
+feature: Streaming Media, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: f94a5339-f777-44ec-ba79-0a1986c52225
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: 0b0b4a373b15191dcb37dc436413f68cdc70768e
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 44%
@@ -13,7 +13,7 @@ ht-degree: 44%
 
 # Voraussetzungen für reine Adobe Analytics-Implementierungen
 
-Die in diesem Abschnitt beschriebenen Voraussetzungen gelten speziell für die Implementierung der Streaming Media Collection mit Implementierungen, die nur auf Adobe-Analytics basieren (wenn Edge nicht verwendet wird).
+Die in diesem Abschnitt beschriebenen Voraussetzungen gelten speziell für die Implementierung der Streaming-Mediensammlung mit Implementierungen, die nur Adobe Analytics betreffen (wenn Edge nicht verwendet wird).
 
 1. **Vervollständigen Sie die allgemeinen Voraussetzungen**<br>
 Unabhängig davon, ob Sie die Streaming-Mediensammlung für Implementierungen auf Adobe Analytics-Basis oder für Edge-Implementierungen implementieren, stellen Sie sicher, dass Sie die [allgemeinen Voraussetzungen](/help/getting-started/prereqs.md) erfüllen.

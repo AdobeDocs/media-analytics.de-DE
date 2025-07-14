@@ -2,9 +2,9 @@
 title: Erfahren Sie mehr über die häufig gestellten Fragen zum Media Analytics SDK End of Support
 description: In diesem Kapitel finden Sie häufig gestellte Fragen zum Ende der Unterstützung für das Media Analytics-SDK.
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 75%
@@ -15,7 +15,7 @@ ht-degree: 75%
 
 Seit dem 31. August 2021, dem Ende der Unterstützung für Mobile SDKs der Version 4, stellt Adobe auch die Unterstützung für die Media Analytics Mobile SDKs für iOS und Android ein. (Dies betrifft nicht die Media Analytics SDK for Web (JS)- und OTT-Plattformen wie Chromecast und Roku, die weiterhin unterstützt werden.)
 
-Das bedeutet, dass Adobe keine Fehlerbehebungen, betriebssystembezogene Updates oder Unterstützung mehr für Media Analytics Mobile SDK bereitstellt. Beachten Sie bei der Migration zu den neuen Experience Platform-SDKs, dass die [Media Analytics-Erweiterungen](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) implementiert werden müssen, um die Adobe-Streaming-Mediensammlung zu aktivieren.
+Dies bedeutet, dass Adobe keine Fehlerbehebungen, betriebssystembezogene Updates oder Unterstützung für Media Analytics Mobile SDK mehr bereitstellt. Beachten Sie bei der Migration zu den neuen Experience Platform SDKs, dass die [Media Analytics-Erweiterungen](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) implementiert werden müssen, um die Adobe Streaming Media Collection zu aktivieren.
 
 
 ## Die fünf wichtigsten Dinge
@@ -28,7 +28,7 @@ Das bedeutet, dass Adobe keine Fehlerbehebungen, betriebssystembezogene Updates 
 
 1. Die Roku- und Chromecast-SDKs bleiben für Kunden von Analytics für Streaming-Medien verfügbar. Die Roku- und Chromecast-SDKs werden weiterhin als eigenständige SDKs verbessert und unterstützt. Wenn Sie das JS-SDK für Media Analytics verwenden, können Sie weiterhin das eigenständige SDK verwenden oder die Media Analytics-Erweiterung mithilfe der Adobe-Datenerfassung (vormals Adobe Launch) aktivieren.
 
-Bei Fragen wenden Sie sich bitte an Ihr Adobe-Account-Team.
+Wenden Sie sich bei Fragen an Ihr Adobe Account Team.
 
 ## Häufig gestellte Fragen (FAQ)
 

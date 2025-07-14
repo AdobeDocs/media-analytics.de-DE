@@ -2,9 +2,9 @@
 title: Erfahren Sie, wie Sie Anzeigen mit JavaScript 3.x verfolgen.
 description: Implementieren des Anzeigen-Trackings in Browser-Anwendungen (JS) mit dem Media SDK.
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 88%

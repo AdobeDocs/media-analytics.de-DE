@@ -3,12 +3,12 @@ title: Code-Vergleich von v1.x mit v2.x
 description: Erfahren Sie mehr über den Unterschied zwischen Code in den Versionen 1.x und 2.x des Media SDK.
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '544'
-ht-degree: 100%
+ht-degree: 74%
 
 ---
 
@@ -46,7 +46,7 @@ In den folgenden Abschnitten finden Sie einen Codevergleich zwischen 1.x und 2.x
 | `AdobeAnalyticsPlugin()` | |
 | `HeartbeatPlugin()` | |
 
-#### Initialisierung des Videoplayer-Plugins (1.x) {#plugin-init-1.x}
+#### Initialisierung des Video-Player-Plug-ins (1.x) {#plugin-init-1.x}
 
 ```js
 this._playerPlugin = new VideoPlayerPlugin( new SampleVideoPlayerPluginDelegate(this._player));
@@ -339,7 +339,7 @@ VideoAnalyticsProvider.prototype._onSeekStart = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackPause()` | `MediaHeartbeat.trackPausel()` |
 
-#### Anhalten (1.x) {#pause-1.x}
+#### Pause (1.x) {#pause-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onPause = function() {
@@ -348,7 +348,7 @@ VideoAnalyticsProvider.prototype._onPause = function() {
 };
 ```
 
-#### Anhalten (2.x) {#pause-2.x}
+#### Pause (2.x) {#pause-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferComplete = function() {
@@ -411,7 +411,7 @@ VideoAnalyticsProvider.prototype._onBufferStart = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackBufferComplete()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.BufferComplete)` |
 
-#### Abschluss der Pufferung (1.x) {#buffer-complete-1.x}
+#### Puffer abgeschlossen (1.x) {#buffer-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferComplete = function() {
@@ -420,7 +420,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 };
 ```
 
-#### Abschluss der Pufferung (2.x) {#buffer-complete-2.x}
+#### Puffer abgeschlossen (2.x) {#buffer-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferComplete = function() {
@@ -435,7 +435,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackComplete()` | `MediaHeartbeat.trackComplete()` |
 
-#### Abschluss der Wiedergabe (1.x) {#playback-complete-1.x}
+#### Wiedergabe abgeschlossen (1.x) {#playback-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onComplete = function() {
@@ -446,7 +446,7 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 };
 ```
 
-#### Abschluss der Wiedergabe (2.x) {#playback-complete-2.x}
+#### Wiedergabe abgeschlossen (2.x) {#playback-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onComplete = function() {
@@ -466,7 +466,7 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 | `VideoPlayerPluginDelegate.getAdInfo()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakStart)` |
 | | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdStart)` |
 
-#### Start der Anzeige (1.x) {#ad-start-1.x}
+#### Anzeigenstart (1.x) {#ad-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() {
@@ -481,7 +481,7 @@ SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() {
 };
 ```
 
-#### Start der Anzeige (2.x) {#ad-start-2.x}
+#### Anzeigenstart (2.x) {#ad-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() {
@@ -612,7 +612,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.createAdObject()` |
 | | `MediaHeartbeat.trackAdStart()` |
 
-#### Überspringen einer Anzeige (1.x) {#ad-skip-1.x}
+#### Anzeigen-Überspringen (1.x) {#ad-skip-1.x}
 
 ```js
 SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() {
@@ -620,7 +620,7 @@ SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() {
 };
 ```
 
-#### Überspringen einer Anzeige (2.x) {#ad-skip-2.x}
+#### Anzeigen-Überspringen (2.x) {#ad-skip-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdSkip = function() {
@@ -639,7 +639,7 @@ VideoAnalyticsProvider.prototype._onAdSkip = function() {
 | `VideoPlayerPlugin.trackAdComplete()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdComplete)` |
 | | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakComplete)` |
 
-#### Abschluss der Anzeige (1.x) {#ad-complete-1.x}
+#### Anzeige abgeschlossen (1.x) {#ad-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdComplete = function() {
@@ -648,7 +648,7 @@ VideoAnalyticsProvider.prototype._onAdComplete = function() {
 };
 ```
 
-#### Abschluss der Anzeige (2.x) {#ad-complete-2.x}
+#### Anzeige abgeschlossen (2.x) {#ad-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdComplete = function() {
@@ -702,7 +702,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 | --- | --- |
 | `VideoPlayerPluginDelegate.getChapterInfo()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.ChapterSkip)` |
 
-#### Überspringen eines Kapitels (1.x) {#chap-skip-1.x}
+#### Kapitelüberspringen (1.x) {#chap-skip-1.x}
 
 ```js
 SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() {
@@ -713,7 +713,7 @@ SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() {
 >[!NOTE]
 >In VHL-1.5.X-APIs muss `getChapterinfo()` null zurückgeben, wenn sich die Abspielposition im Player außerhalb der Kapitelgrenzen befindet.
 
-#### Überspringen eines Kapitels (2.x) {#chap-skip-2.x}
+#### Kapitelüberspringen (2.x) {#chap-skip-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterSkip = function() {
@@ -728,7 +728,7 @@ VideoAnalyticsProvider.prototype._onChapterSkip = function() {
 | `VideoPlayerPlugin.trackChapterStart()` | `MediaHeartbeat.createChapterObject()` |
 | `AdobeAnalyticsPlugin.setChapterMetadata()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.ChapterStart)` |
 
-#### Benutzerdefinierte Kapitelmetadaten (1.x) {#chap-cust-meta-1.x}
+#### Kapitel Benutzerdefinierte Metadaten (1.x) {#chap-cust-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() {
@@ -740,7 +740,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 };
 ```
 
-#### Benutzerdefinierte Kapitelmetadaten (2.x) {#chap-cust-meta-2.x}
+#### Kapitel Benutzerdefinierte Metadaten (2.x) {#chap-cust-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() {
@@ -762,7 +762,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 | --- | --- |
 | `trackChapterComplete()` | `trackEvent(MediaHeartbeat.Event.ChapterComplete)` |
 
-#### Kapitelbeendigung (1.x) {#chap-complete-1.x}
+#### Kapitel abgeschlossen (1.x) {#chap-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterComplete = function() {
@@ -771,7 +771,7 @@ VideoAnalyticsProvider.prototype._onChapterComplete = function() {
 };
 ```
 
-#### Kapitelbeendigung (2.x) {#chap-complete-2.x}
+#### Kapitel abgeschlossen (2.x) {#chap-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterComplete = function() {
@@ -818,7 +818,7 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 | `VideoPlayerPluginDelegate.getVideoInfo()` | `MediaHeartbeat.trackSessionStart()` |
 | `VideoPlayerPlugin.trackVideoLoad()` | |
 
-#### Wiederaufnahme des Videos (1.x) {#video-resume-1.x}
+#### Video-Wiederaufnahme (1.x) {#video-resume-1.x}
 
 ```js
 this._videoInfo.resumed=true;
@@ -831,7 +831,7 @@ VideoPlayer.prototype.getVideoInfo = function() {
 };
 ```
 
-#### Wiederaufnahme des Videos (2.x) {#video-resume-2.x}
+#### Video-Wiederaufnahme (2.x) {#video-resume-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() {

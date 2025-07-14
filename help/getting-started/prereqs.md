@@ -1,11 +1,11 @@
 ---
-title: Informationen zu den Voraussetzungen für die Adobe-Streaming-Mediensammlung
+title: Erfahren Sie mehr über die Voraussetzungen für die Adobe-Streaming-Mediensammlung
 description: Erste Schritte mit der Streaming-Mediensammlung. Erfahren Sie, was Sie für die Implementierung benötigen.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-feature: "Media Analytics, System Requirements"
+feature: "Streaming Media, Workspace Basics"
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: 0b0b4a373b15191dcb37dc436413f68cdc70768e
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 64%
@@ -20,7 +20,7 @@ Führen Sie die folgenden Aufgaben aus, bevor Sie mit der Implementierung der Ad
 Bevor Sie mit der Implementierung der Streaming-Mediensammlung beginnen, überprüfen Sie die [Übersicht über die Streaming](/help/media-overview.md)Mediensammlung), um sicherzustellen, dass sie Ihren Anforderungen entspricht.
 
 1. **Bestätigen Sie Ihr Preismodell**<br>
-Das aktuelle Preismodell für das Add-on Adobe Streaming Media Collection basiert auf Video-Streams. Wenden Sie sich bei Bedarf an Ihren Kundenbetreuer oder Ihr Adobe-Account-Team, da das Add-on für Adobe Analytics und Adobe Experience Platform separat erhältlich ist.
+Das aktuelle Preismodell für das Add-on Adobe Streaming Media Collection basiert auf Video-Streams. Wenden Sie sich bei Bedarf an Ihren Kundenbetreuer oder Ihr Adobe-Account-Team, da das Add-on separat für Adobe Analytics und Adobe Experience Platform erhältlich ist.
 
 1. **Adobe Analytics-Berichte aktivieren**<br>
 Um Berichte in Analytics oder Customer Journey Analytics zu aktivieren und die erfassten Inhalts- und Anzeigendaten anzuzeigen, müssen Sie Berichte aktivieren. Siehe [Aktivierung von Medienberichten](/help/reporting/media-reports-enable.md).

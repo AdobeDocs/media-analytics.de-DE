@@ -3,9 +3,9 @@ title: 'Anzeigenparameter '
 description: Erfahren Sie mehr über Anzeigenparameter einschließlich der Implementierungs-, Netzwerk- und Berichtsvariablen für Anzeigenvideodaten.
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 exl-id: 949e86cb-d265-4836-8825-a06b87203b15
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: e7f17c6e8ea6e54a55f59e4e817fba07a7851496
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '2036'
 ht-degree: 89%
@@ -37,13 +37,13 @@ Beschreibung der Tabellendaten:
 >[!IMPORTANT]
 >
 >Ändern Sie nicht die Klassifizierungsnamen für Variablen, die unter
->Reporting/Reservierte Variable als „Klassifizierung“ beschrieben sind.
->Die Medienklassifizierungen werden definiert, wenn eine Report Suite für das Medien-Tracking
->aktiviert ist. Adobe fügt von Zeit zu Zeit neue Eigenschaften hinzu. In diesem Fall müssen
->Kunden ihre Report Suites erneut aktivieren, um Zugriff auf die neuen Medieneigenschaften
->zu erhalten. Während des Aktualisierungsvorgangs ermittelt Adobe
->anhand der Namen der Variablen, ob die Klassifizierungen aktiviert sind. Wenn eine
->fehlt, fügt Adobe die fehlenden erneut hinzu.
+>>Reporting/Reservierte Variable als „Klassifizierung“ beschrieben sind.
+>>Die Medienklassifizierungen werden definiert, wenn eine Report Suite für das Medien-Tracking
+>>aktiviert ist. Adobe fügt von Zeit zu Zeit neue Eigenschaften hinzu. In diesem Fall müssen
+>>Kunden ihre Report Suites erneut aktivieren, um Zugriff auf die neuen Medieneigenschaften
+>>zu erhalten. Während des Aktualisierungsvorgangs ermittelt Adobe
+>>anhand der Namen der Variablen, ob die Klassifizierungen aktiviert sind. Wenn eine
+>>fehlt, fügt Adobe die fehlenden erneut hinzu.
 
 ## Videoanzeigendaten {#ad-video-data}
 

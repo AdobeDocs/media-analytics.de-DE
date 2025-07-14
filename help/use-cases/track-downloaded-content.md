@@ -3,9 +3,9 @@ title: Tracking von offline heruntergeladenen Inhalten in der Streaming Media-Sa
 description: Erfahren Sie, wie Sie mit der Funktion für heruntergeladene Inhalte den Medienkonsum verfolgen können, wenn ein Benutzer offline ist.
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '696'
 ht-degree: 98%

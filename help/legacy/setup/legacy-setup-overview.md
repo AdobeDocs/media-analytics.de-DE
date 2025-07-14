@@ -1,10 +1,10 @@
 ---
 title: Implementieren von älteren Media SDKs – Erklärung
 description: Erfahren Sie, wie Sie das **ältere** Media SDK der Version 2.x für das Medien-Tracking in Ihren mobilen, OTT- und Browser-Programmen (JS) einrichten.
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: d94ede3e-95f8-4591-9833-ef39aff12ba9
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 99%
@@ -143,7 +143,7 @@ Media Analytics-Tracking-Implementierungen generieren zwei Arten von Tracking-Au
 
   Der Analytics-Tracking-Server sollte auf „`.sc.omtrdc.net`“ enden oder ein CNAME sein.
 
-* **&#x200B; Media Analytics-Server (Heartbeats)**
+* ** Media Analytics-Server (Heartbeats)**
 Dieser hat immer das Format „`[your_namespace].hb.omtrdc.net`“. Der Wert „`[your_namespace]`“gibt Ihr Unternehmen an und wird von Adobe bereitgestellt.
 
 Das Medien-Tracking verhält sich auf allen Plattformen – Desktop oder Mobilgeräte – gleich. Das Audio-Tracking funktioniert derzeit auf mobilen Plattformen. Es gibt einige universelle Variablen, die für alle Tracking-Aufrufe überprüft werden müssen:

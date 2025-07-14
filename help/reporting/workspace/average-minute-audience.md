@@ -1,10 +1,10 @@
 ---
 title: Medien-Zielgruppendurchschnitt pro Minute
 description: Erfahren Sie, wie Sie mit dem Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ den Zielgruppendurchschnitt pro Minute für einen bestimmten Inhalt oder für einen benutzerdefinierten Zeitraum analysieren können.
-feature: Media Analytics, Workspace Basics
+feature: Streaming Media, Workspace Basics
 role: User, Admin
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
-source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 92%

@@ -3,9 +3,9 @@ title: VOD-Wiedergabe mit einem übersprungenen Kapitel
 description: Sehen Sie sich ein Beispiel für das Tracking von VOD-Inhalten an, in denen der Benutzer ein Kapitel übersprungen hat – mithilfe des Media SDK.
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 85%

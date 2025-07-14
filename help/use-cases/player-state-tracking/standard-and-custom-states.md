@@ -2,9 +2,9 @@
 title: Über Standard- und benutzerdefinierte Status
 description: Erfahren Sie mehr über die Player-Status-Tracking-Funktion einschließlich Anforderungen und Richtlinien für die Implementierung und das Reporting von Standard- und benutzerdefinierten Player-Status.
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 99%
@@ -35,7 +35,7 @@ Die Daten werden für Standard- und benutzerdefinierte Status auf dieselbe Weise
 * Jede Statuskombination ist zulässig.
 * Wenn mehrere Player-Status vorhanden sind, werden nur die ersten zehn beibehalten und an die VA-Verarbeitungskomponente (Videoanalyse) weitergeleitet.
 * Die maximale Anzahl von zehn Status wird auf alle Status angewendet, unabhängig davon, ob sie abgeschlossen sind oder nicht.
-* Ein Status kann mehrmals gestartet und beendet werden und wird als ein Status gezählt. `closedCapationing` kann beispielsweise fünfmal gestartet und beendet werden, es wird jedoch als einzelner Status gezählt.
+* Ein Status kann mehrmals gestartet und beendet werden und wird als ein Status gezählt. `closedCapationing` kann beispielsweise fünfmal gestartet und gestoppt werden, es wird jedoch als einzelner Status gezählt.
 * Alle Status, die die maximal zulässige Anzahl von 10 Status überschreiten, werden verworfen.
 
 ## Benutzerdefinierte Status

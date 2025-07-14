@@ -2,9 +2,9 @@
 title: Über das Player-Status-Tracking
 description: Erfahren Sie mehr über die Player-Status-Tracking-Funktion einschließlich der Anforderungen und Richtlinien für die Implementierung und die Reporting-Player-Status.
 exl-id: c678e182-74e4-4f46-8596-7be57e645c66
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 100%
@@ -46,5 +46,5 @@ Beachten Sie vor der Implementierung des Player-Status-Trackings die folgenden R
 * Sie können mehrere Player-Status gleichzeitig messen.
 * Die maximale Anzahl von Player-Status, die während einer Wiedergabe getrackt werden können, beträgt 10.
 * Player-Statusmetriken werden nur beim Media-Close-Aufruf an Analytics zum Reporting gesendet.
-* Die Angabe des Anwendungsstatus wird nach dem Beenden eines Status nicht beibehalten. Nach dem Beenden eines Status muss der Status erneut gestartet werden, um das Tracking fortzusetzen. Der Status des Players muss für jeden neuen Wiedergabestatus erneut gestartet werden.
+* Die Angabe des Anwendungsstatus wird nach dem Stoppen eines Status nicht beibehalten. Nach dem Beenden eines Status muss der Status erneut gestartet werden, um das Tracking fortzusetzen. Der Status des Players muss für jeden neuen Wiedergabestatus erneut gestartet werden.
 * Player-Status werden für jede einzelne Wiedergabesitzung erfasst – der Player-Status wird nicht über mehrere Wiedergaben hinweg berechnet.

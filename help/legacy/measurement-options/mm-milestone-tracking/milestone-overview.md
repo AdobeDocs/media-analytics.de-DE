@@ -3,9 +3,9 @@ title: Informationen zum Meilenstein-Reporting (überholt)
 description: Veraltet ‐ Erfahren Sie, wie Sie Video-Reporting für eine Meilenstein-Implementierung einrichten.
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
 exl-id: 960785e3-f507-4f09-8f85-6eeca57dd2f3
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '3369'
 ht-degree: 98%

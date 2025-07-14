@@ -1,10 +1,10 @@
 ---
 title: Zugriff auf Links zu älteren Media SDKs
 description: Links zu älteren SDK-Downloads für verfügbare Plattformen, einschließlich Android, iOS, JavaScript, Chromecast und Roku.
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: c546a8cf4cf471d47e1ae43661821f3c3a6b4a44
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 73%
@@ -27,7 +27,7 @@ Die Adobe-Datenerfassung mit der Media Analytics-Erweiterung erfordert Folgendes
 * Sie müssen Adobe Experience Cloud-Kunde sein.
 * Sie müssen den Datenerfassungs- oder DTM-Einbettungs-Code auf Ihren Web-Seiten bereitstellen.
 * Sie müssen die [Analytics-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=de) konfigurieren.
-* Sie müssen die Erweiterung [Adobe Medien Analytics for Audio and Video konfigurieren](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=de).
+* Sie müssen die Erweiterung [Adobe Media Analytics for Audio and Video“ ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html).
 * Sie müssen die [Experience Cloud-ID-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=de) konfigurieren.
 
 ## 2.x Medien-SDKs herunterladen {#download-2x-sdks}

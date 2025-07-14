@@ -3,9 +3,9 @@ title: Informationen über Timelines beim Medien-Tracking
 description: Machen Sie sich mit der Timeline des Abspielkopfs und den entsprechenden Benutzeraktionen vertraut. Erfahren Sie mehr über die Details für jede Aktion und die zugehörigen Anfragen.
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a1c3bdbec223ab0141d922dce07ba2128b52e794
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 99%
@@ -179,7 +179,7 @@ Senden Sie innerhalb einer Anzeige jede Sekunde ein Ping-Ereignis an das Backend
 >[!NOTE]
 >
 >Nachfolgende Anzeigen in der Zeitleiste überspringen die Anzeige der Reihe von 1-Sekunden-Ping-Ereignissen.
->im Interesse der Kürze …
+>>im Interesse der Kürze …
 
 ```json
 {
