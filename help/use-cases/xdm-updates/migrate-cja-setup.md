@@ -12,11 +12,11 @@ ht-degree: 1%
 
 # Migrieren von Customer Journey Analytics zur Verwendung der neuen Streaming-Medienfelder
 
-In diesem Dokument wird beschrieben, wie ein Customer Journey Analytics-Setup, das den Datentyp „Media“ der Streaming-Mediensammlung von Adobe verwendet, so aktualisiert werden sollte, dass er den neuen entsprechenden Datentyp namens &quot;[ Media Reporting Details“ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details).
+In diesem Dokument wird beschrieben, wie ein Customer Journey Analytics-Setup, das den Datentyp „Media“ der Streaming-Mediensammlung von Adobe verwendet, so aktualisiert werden sollte, dass er den neuen entsprechenden Datentyp namens &quot;[ Media Reporting Details“ ](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-reporting-details).
 
 ## Migrieren von Customer Journey Analytics
 
-Um ein Customer Journey Analytics-Setup aus dem alten Datentyp „Media“ in den neuen Datentyp &quot;[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot; zu migrieren, müssen Sie die folgenden Setups aktualisieren, die den alten Datentyp verwenden:
+Um ein Customer Journey Analytics-Setup aus dem alten Datentyp „Media“ in den neuen Datentyp &quot;[Media Reporting Details](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-reporting-details)&quot; zu migrieren, müssen Sie die folgenden Setups aktualisieren, die den alten Datentyp verwenden:
 
 * Datenansichten
 
@@ -42,7 +42,7 @@ So migrieren Sie abgeleitete Felder in den neuen Datentyp:
 
 1. Ersetzen Sie alle alten Felder im abgeleiteten Feld durch das neue entsprechende Feld aus „Details zur Medienberichterstattung“.
 
-Siehe den [Content-ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) auf der Seite [Audio- und Videoparameter](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/audio-video-parameters), um die Zuordnung zwischen den alten und den neuen Feldern vorzunehmen. Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, während der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“ zu finden ist.
+Siehe den [Content-ID](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) auf der Seite [Audio- und Videoparameter](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/audio-video-parameters), um die Zuordnung zwischen den alten und den neuen Feldern vorzunehmen. Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, während der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“ zu finden ist.
 
 ![Alte und neue XDM-Feldpfade](assets/field-paths-updated.jpeg)
 
@@ -60,7 +60,7 @@ Sie können eine der folgenden Optionen verwenden, um die Datenansicht zu aktual
 
    ![Alter Feldpfad in Datenansicht](assets/old-field-data-view.jpeg)
 
-1. Aktivieren Sie das entsprechende neue Feld im Abschnitt [Kapitelversatz](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-offset) im Artikel [Kapitelparameter](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/chapter-parameters).
+1. Aktivieren Sie das entsprechende neue Feld im Abschnitt [Kapitelversatz](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-offset) im Artikel [Kapitelparameter](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/chapter-parameters).
 
 1. Suchen Sie das neue entsprechende Feld in der Datenansicht.
 
@@ -80,7 +80,7 @@ Wenn Sie ein abgeleitetes Feld für den „Kapitelnamen“ erstellen möchten, d
 
    ![Passen Sie das neue Feld an, um eine Datenansicht zu erstellen](assets/create-derived-field2.jpeg)
 
-1. Füllen Sie die [!UICONTROL **If**]-Klausel mit dem Wert des **XDM-** für Berichterstellung, wie im Parameter [Kapitelname](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name) auf der Seite [Kapitelparameter](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/chapter-parameters) gezeigt.
+1. Füllen Sie die [!UICONTROL **If**]-Klausel mit dem Wert des **XDM-** für Berichterstellung, wie im Parameter [Kapitelname](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name) auf der Seite [Kapitelparameter](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/chapter-parameters) gezeigt.
 
    ![Kapitelname](assets/chapter-name.jpeg)
 
@@ -110,7 +110,7 @@ Wenn Sie ein abgeleitetes Feld für den „Kapitelnamen“ erstellen möchten, d
 
    ![Suchen eines Felds mit altem Datentyp](assets/locate-fields-with-old-datatype.jpeg)
 
-1. Aktivieren Sie das entsprechende neue Feld im Abschnitt [Inhaltsname (Variable)](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) im Artikel [Streaming-Medienparameter](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) .
+1. Aktivieren Sie das entsprechende neue Feld im Abschnitt [Inhaltsname (Variable)](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) im Artikel [Streaming-Medienparameter](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) .
 
 1. Ersetzen Sie das alte Feld durch das neue Feld.
 
