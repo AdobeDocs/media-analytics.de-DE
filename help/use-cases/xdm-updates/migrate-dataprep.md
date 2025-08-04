@@ -62,7 +62,7 @@ Um die Befolgung der Migrationsrichtlinien zu vereinfachen, sehen Sie sich den f
 
    ![Aktualisierter XDM-Feldpfad](assets/xdm-field-path-old-and-new.jpeg)
 
-1. Ersetzen Sie im **** Source den `media.mediaTimed` durch den `mediaReporting`. Das Zielfeld bleibt unverändert.
+1. Ersetzen Sie im **&#x200B;**&#x200B;Source den `media.mediaTimed` durch den `mediaReporting`. Das Zielfeld bleibt unverändert.
 
    ![AEP-Datenfluss fortgesetzt](assets/aep-dataflow3.jpeg)
 
