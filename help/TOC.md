@@ -5,10 +5,10 @@ user-guide-title: Streaming Media Collection
 breadcrumb-title: Streaming Media Collection-Handbuch
 user-guide-description: Implementieren von Streaming Media. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
 sub-product: media analytics
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a0a357c3fe7e958b0b6491c84f17f26a806ea205
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 96%
+source-wordcount: '922'
+ht-degree: 81%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 # Streaming Media Collection {#using}
 
 + [Streaming Media Collection-Handbuch](media-overview.md)
-+ Versionshinweise {#release-notes}
++ Versionshinweise  {#release-notes}
    + [Versionshinweise zur Streaming-Mediensammlung](additional-resources/release-notes.md)
 + Erste Schritte {#getting-started}
    + [Voraussetzungen ](getting-started/prereqs.md)
@@ -25,7 +25,7 @@ ht-degree: 96%
    + [SDKs, Bibliotheken und Erweiterungen](getting-started/download-sdks.md)
    + Ende der Unterstützung {#end-of-support}
       + [Ende der Unterstützung für Media Analytics Mobile SDK](additional-resources/end-of-support-faqs.md)
-      + Legacy − Migration vom eigenständigen Media SDK zu Launch {#sdk-to-launch}
+      + Legacy - Migration von Standalone Media SDK zu Launch {#sdk-to-launch}
          + [Überblick](legacy/sdk-to-launch/sdk-to-launch-migration.md)
          + [Android − Media SDK zu Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS − Media SDK zu Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
@@ -33,22 +33,22 @@ ht-degree: 96%
 + Implementierung {#implementation}
    + [Implementierungsübersicht](implementation/overview.md)
    + Edge-Implementierungen (empfohlen) {#edge-recommended}
-      + [Voraussetzungen ](/help/implementation/edge/prerequisites-edge.md)
-      + Media Edge-SDKs/Erweiterung {#media-edge-sdk}
+      + [Voraussetzungen](/help/implementation/edge/prerequisites-edge.md)
+      + Media Edge SDKs/Erweiterung {#media-edge-sdk}
          + [Setup für Media Edge-SDKs/Erweiterung](/help/implementation/edge/implementation-edge.md)
          + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge-API](/help/implementation/edge/implementation-edge-api.md)
    + Nur Adobe Analytics-Implementierungen {#analytics-only}
-      + [Voraussetzungen ](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
-      + Media-SDKs/Erweiterung {#media-sdk}
+      + [Voraussetzungen](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
+      + Medien-SDKs/Erweiterung {#media-sdk}
          + [JavaScript Web-SDK](implementation/media-sdk/setup/web-implementation.md)
          + [Media Analytics-Erweiterung](implementation/media-sdk/setup/web-implementation-tags.md)
          + [Mobile-SDKs](implementation/media-sdk/setup/mobile-implementation.md)
          + OTT-SDKs {#ott-setup}
             + [Installieren des Chromecast SDK](implementation/media-sdk/setup/set-up-chromecast.md)
             + [Installieren des Roku SDK](implementation/media-sdk/setup/set-up-roku.md)
-      + Mediensammlungs-APIs − Implementierung {#streaming-media-apis}
+      + Mediensammlungs-APIs - Implementierung {#streaming-media-apis}
          + [Mediensammlung](implementation/media-collection-api/mc-api-overview.md)
          + [API-Schnellstart](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
          + [Sitzungsanfrage](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
@@ -74,26 +74,26 @@ ht-degree: 96%
       + [Player-Statusparameter](implementation/variables/player-state-parameters.md)
       + [Qualitätsparameter](implementation/variables/quality-parameters.md)
       + [Berechnete Metriken ](implementation/variables/calculated-metrics.md)
-+ Reporting {#media-reports}
++ Berichterstellung {#media-reports}
    + [Aktivierung von Medienberichten ](reporting/media-reports-enable.md)
-   + Medienbedienfelder in Workspace {#media-workspace-panels}
+   + Medien-Bedienfelder in Workspace {#media-workspace-panels}
       + [Bedienfeld „Zielgruppendurchschnitt pro Minute“](reporting/workspace/average-minute-audience.md)
       + [Bedienfeld „Gleichzeitige Medienbetrachter“](reporting/workspace/media-concurrent-viewers-overview.md)
       + [Panel „Verbrachte Zeit bei der Medienwiedergabe“](reporting/workspace/media-playback-time-spent.md)
    + [Medienberichte in Workspace](reporting/workspace/media-workspace-templates.md)
    + [Mediensegmente](reporting/segments.md)
-   + Standardmedienberichte {#media-default-reports}
+   + Standard-Medienberichte {#media-default-reports}
       + [Überblick über die Standardberichte](reporting/reports-and-analytics/default-reports-overview.md)
       + [Medienüberblick](reporting/reports-and-analytics/media-reports-overview.md)
       + [Mediendetails](reporting/reports-and-analytics/media-reports-detail.md)
       + [Medientagesbericht](reporting/reports-and-analytics/media-reports-daypart.md)
       + [Bericht über gleichzeitige Medienbetrachtende](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-   + Medien-API {#media-api}
+   + Media-API {#media-api}
       + [Abrufen von Daten über gleichzeitige Betrachtende](reporting/reports-and-analytics/get-concurrent-json20.md)
       + [Abrufen der Daten zur mit der Medienwiedergabe verbrachten Zeit](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + Nutzungsszenarios {#media-use-cases}
    + [Anwendungsfälle für Media SDK](use-cases/cookbook/sdk-cookbook-overview.md)
-   + Player-Status-Tracking {#player-state-tracking}
+   + Tracking des Player-Status {#player-state-tracking}
       + [Überblick](use-cases/player-state-tracking/player-state-overview.md)
       + [Standardmäßige und benutzerdefinierte Status](use-cases/player-state-tracking/standard-and-custom-states.md)
       + [Implementierung und Reporting](use-cases/player-state-tracking/implementation-and-reporting.md)
@@ -103,6 +103,13 @@ ht-degree: 96%
    + [Federated Media](use-cases/federated-media.md)
    + [Behandlung von Anwendungsunterbrechungen während der Wiedergabe](use-cases/cookbook/app-interrupts.md)
    + [Media Stream-Zuordnung](use-cases/media-analytics-cookbook/media-dimensions.md)
+   + Migrieren von XDM-Feldern für den Analytics-Quell-Connector {#xdm-updates}
+      + [Aktualisieren des Quell-Connectors auf neue XDM Streaming Media-Felder](/help/use-cases/xdm-updates/updated-xdm-fields.md)
+      + [Zielgruppen migrieren](/help/use-cases/xdm-updates/migrate-audiences.md)
+      + [CJA-Setup migrieren](/help/use-cases/xdm-updates/migrate-cja-setup.md)
+      + [Datenvorbereitung migrieren](/help/use-cases/xdm-updates/migrate-dataprep.md)
+      + [Profile migrieren](/help/use-cases/xdm-updates/migrate-profiles.md)
+      + [Medienparameter-Zuordnung](/help/use-cases/xdm-updates/parameters-mapping.md)
    + [Wiederaufnehmen von inaktiven Sitzungen](use-cases/cookbook/resuming-inactive.md)
    + [Roku-Tracking in SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
    + [Umgang mit Lücken zwischen Anzeigen](use-cases/cookbook/fix-ad-play-ad.md)
@@ -118,7 +125,7 @@ ht-degree: 96%
       + [OTT und Experience Cloud](use-cases/analytics-with-ott/ott-experience-cloud.md)
 + Tracking {#tracking}
    + [Überblick](use-cases/track-av-playback/track-core-overview.md)
-   + Tracking der Core-Wiedergabe von Streaming-Medien {#track-core}
+   + Tracking von Core-Streaming-Medienwiedergabe {#track-core}
       + [Tracking von Core-Wiedergaben in JavaScript 3.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
       + [Tracking von Core-Wiedergaben in Chromecast](use-cases/track-av-playback/track-core/track-core-chromecast.md)
       + [Tracking von Core-Wiedergaben in Roku](use-cases/track-av-playback/track-core/track-core-roku.md)
@@ -154,7 +161,7 @@ ht-degree: 96%
       + [Tracking der Erlebnisqualität in JavaScript 3.x](use-cases/track-qos/track-qos-js/track-qos-js3.md)
       + [Tracking der Erlebnisqualität in Chromecast](use-cases/track-qos/track-qos-chromecast.md)
       + [Nachverfolgen der Erlebnisqualität auf Roku](use-cases/track-qos/track-qos-roku.md)
-   + Fehler-Tracking {#track-errors}
+   + Fehler nachverfolgen {#track-errors}
       + [Überblick](use-cases/track-errors/track-errors-overview.md)
       + [Tracking von Fehlern in JavaScript 3.x](use-cases/track-errors/track-errors-js/track-errors-js3.md)
       + [Nachverfolgen von Fehlern auf Chromecast](use-cases/track-errors/track-errors-chromecast.md)
@@ -165,7 +172,7 @@ ht-degree: 96%
 + Legacy-Implementierungen {#legacy-implementations}
    + [Legacy − Übersicht](legacy/setup/legacy-setup-overview.md)
    + [Legacy − SDKs herunterladen](legacy/legacy-download-sdks.md)
-   + Legacy − Medien-SDKs {#legacy-media-sdks}
+   + Legacy - Medien-SDKs {#legacy-media-sdks}
       + [Legacy − Media SDK – Übersicht](legacy/media-sdk/setup/setup-overview.md)
       + [Android einrichten](legacy/media-sdk/setup/set-up-android.md)
       + [Einrichten von iOS](legacy/media-sdk/setup/set-up-ios.md)
@@ -210,16 +217,16 @@ ht-degree: 96%
          + [iOS-Metadatenschlüssel](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
          + Standard-Metadaten in JavaScript implementieren {#impl-std-md-js}
             + [Standard-Metadaten in JavaScript 2.x implementieren](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
-      + Anzeigen nachverfolgen {#track-ads}
+      + Anzeigen verfolgen {#track-ads}
          + [Nachverfolgen von Anzeigen auf Android](use-cases/track-ads/track-ads-android.md)
          + [Nachverfolgen von Anzeigen auf iOS](use-cases/track-ads/track-ads-ios.md)
-         + Tracking von Anzeigen in JavaScript {#track-ads-js}
+         + Nachverfolgen von Anzeigen auf JavaScript {#track-ads-js}
             + [Tracking von Anzeigen in JavaScript 2.x](use-cases/track-ads/track-ads-js/track-ads-js.md)
             + [Standardmäßige Anzeigenmetadaten in Android implementieren](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
             + [Standard-Anzeigenmetadaten in iOS implementieren](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
             + Standard-Anzeigenmetadaten in JavaScript implementieren {#impl-std-ad-md-js}
                + [Standard-Anzeigenmetadaten in JavaScript 2.x implementieren](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
-      + Kapitel und Segmente nachverfolgen {#track-chapters}
+      + Kapitel und Segmente verfolgen {#track-chapters}
          + [Tracking von Kapiteln und Segmenten in Android](use-cases/track-chapters/track-chapters-android.md)
          + [Nachverfolgen von Kapiteln und Segmenten auf iOS](use-cases/track-chapters/track-chapters-ios.md)
          + Tracking von Kapiteln und Segmenten in JavaScript {#track-chapters-js}
