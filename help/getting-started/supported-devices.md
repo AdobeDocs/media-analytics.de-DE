@@ -1,19 +1,19 @@
 ---
-title: Erfahren Sie mehr über unterstützte Geräte und Plattformen.
-description: Erfahren Sie mehr über die wichtigsten Geräte wie iOS, Android, OTT-Geräte und JavaScript-Browser, die die Streaming Media Collection unterstützt.
+title: Informationen zu unterstützten Geräten und Plattformen
+description: Erfahren Sie mehr über die wichtigsten Geräte wie iOS, Android, OTT-Geräte und JavaScript-Browser, die von Adobe Streaming Media Services unterstützt werden.
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Streaming Media
 role: User, Admin
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 77%
+source-wordcount: '308'
+ht-degree: 75%
 
 ---
 
 # Unterstützte Geräte und Plattformen {#devices-supported}
 
-Die Adobe Streaming Media Collection unterstützt alle gängigen Geräte, einschließlich:
+Adobe Streaming Media Services unterstützen alle gängigen Geräte, einschließlich:
 
 * iOS- und Android-Smartphones und -Tablets
 * OTT-Geräte für Roku, Fire TV und Android TV
@@ -21,7 +21,7 @@ Die Adobe Streaming Media Collection unterstützt alle gängigen Geräte, einsch
 
 Die SDKs werden routinemäßig aktualisiert, wenn neue Versionen von Geräten veröffentlicht werden. Sie können die SDKs verwenden, um die Integration mit nativen Playern jeder einzelnen Plattform oder eines anderen verfügbaren Medien-Players zu ermöglichen.
 
-Für Geräte, die derzeit keine SDK-Unterstützung haben, oder in Situationen, in denen Sie Ihre Implementierung anpassen müssen, können Sie das Mediensammlungs-API oder das Media Edge-API verwenden. Mit diesen APIs können Sie RESTful-API-Aufrufe direkt von einem Gerät zum Backend der Streaming Media Collection durchführen.
+Für Geräte, die derzeit keine SDK-Unterstützung haben, oder in Situationen, in denen Sie Ihre Implementierung anpassen müssen, können Sie das Mediensammlungs-API oder das Media Edge-API verwenden. Mit diesen APIs können Sie RESTful-API-Aufrufe direkt von einem Gerät zum Backend von Adobe Streaming Media Services durchführen.
 
 Die folgende Tabelle zeigt die derzeit unterstützten Geräte. Wenn ein Gerät nicht aufgeführt ist, wenden Sie sich an die Kundenunterstützung oder einen Berater, um den Status des Geräts zu erfahren.
 

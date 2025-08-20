@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Adobe Streaming Media-Implementierungspfade
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 92%
+source-wordcount: '630'
+ht-degree: 90%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 **DIESER INHALT WURDE IN DIE AKTUELLE IMPLEMENTIERUNGSPFADDATEI VERSCHOBEN**
 
-Für jeden Implementierungspfad müssen sich Kunden an ihren Kundenbetreuer/das Adobe-Account-Team wenden, um einen neuen Kundenauftrag zu unterzeichnen, da Streaming Media Analytics über eine eindeutige SKU verfügt und sich der Preis von einem auf Server-Aufrufen basierenden Preismodell auf ein auf Video-Streams basierendes Modell ändert.
+Für jeden Implementierungspfad müssen sich Kunden an ihren Kundenbetreuer oder ihr Adobe-Account-Team wenden, um einen neuen Kundenauftrag zu unterzeichnen, da die Customer Journey Analytics Streaming Media Collection und Adobe Analytics für Streaming Media über eine eindeutige SKU verfügen und sich von einem auf Server-Aufrufen basierenden Preismodell zu einem auf Video-Streams basierenden Modell ändern.
 
 ## Datenerfassung in Adobe Experience Platform mit der Adobe Media Analytics-Erweiterung
 

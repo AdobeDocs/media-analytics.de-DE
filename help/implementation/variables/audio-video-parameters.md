@@ -5,7 +5,7 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '7067'
 ht-degree: 90%
@@ -48,7 +48,7 @@ Beschreibung der Tabellendaten:
 >Ändern Sie nicht die Classification-Namen für Variablen, die unter Berichterstellung/Reservierte Variable als „Classification“ beschrieben sind.\
 >Die Medienklassifizierungen werden definiert, wenn eine Report Suite für das Medien-Tracking aktiviert ist. Adobe fügt von Zeit zu Zeit neue Eigenschaften hinzu. In diesem Fall müssen Kunden ihre Report Suites erneut aktivieren, um Zugriff auf die neuen Medieneigenschaften zu erhalten. Während des Aktualisierungsvorgangs ermittelt Adobe anhand der Namen der Variablen, ob die Classifications aktiviert sind. Wenn eine fehlt, fügt Adobe die fehlenden erneut hinzu.
 
-## Kerndaten der Streaming-Medien {#core-audio-and-video-data}
+## Zentrale Streaming-Mediendaten {#core-audio-and-video-data}
 
 ### Stream-Typ {#stream-type}
 
@@ -110,7 +110,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Implementierung   | Netzwerkparameter | Berichterstellung |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK-Schlüssel:**<br/>  [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **API-Schlüssel:**<br/> media.contentType </li> <li> **Erforderlich:**<br/> ja </li> <li> **Typ:**<br/> beschränkte Zeichenfolge </li> <li> **Gesendet mit:**<br/> Media Start, Media Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> **Beispielwert:**<br/> „vod“ </li> <li> **Beschreibung:**<br/> Verfügbare Werte pro **Stream-Typ:** <br/> _Audio:_ „song“, „podcast“, „audiobook“, „radio“ <br/> _Video:_ „VoD“, „Live“, „Linear“, „UGC“, „DVoD“ <br/> Kunden können für diesen Parameter benutzerdefinierte Werte bereitstellen. Dies entspricht `s:stream:type.` Wenn dies nicht festgelegt ist, ist dies gleich `missing_content_type.` </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.contentType) </li> <li> **Heartbeats:**<br/> (<code>s:stream:type</code>) </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> eVar </li> <li> **Gültigkeit:**<br/> bei HIT </li> <li> **Berichtsname:**<br/> Content-Typ </li> <li> **Kontextdaten:**<br/> (a.contentType) </li> <li> **Daten-Feed:**<br/> videocontenttype </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.contentType) </li> <li> **XDM-Feldpfad:** (veraltet)<br/>media.mediaTimed.primaryAssetViewDetails.<br/>broadcastContentType</li> <li> **XDM-Feldpfad für Sammlung:**<br/> mediaCollection.sessionDetails.contentType </li> <li> **XDM-Feldpfad für Berichterstellung:**<br/> mediaReporting.sessionDetails.contentType </li> </ul> |
+| <ul> <li> **SDK-Schlüssel:**<br/>  [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **API-Schlüssel:**<br/> media.contentType </li> <li> **Erforderlich:**<br/> ja </li> <li> **Typ:**<br/> beschränkte Zeichenfolge </li> <li> **Gesendet mit:**<br/> Media Start, Media Close </li> <li> **Min. SDK-Version:** beliebig </li> <li> **Beispielwert:**<br/> „vod“ </li> <li> **Beschreibung:**<br/> Verfügbare Werte pro **Stream-Typ**: <br/> _Audio :_„song“, „podcast“, „audiobook“, „radio“ <br/> _video:_ „VoD“, „Live“, „Linear“, „UGC“, „DVoD“ <br/> Kunden können benutzerdefinierte Werte für diesen Parameter angeben. Dies entspricht `s:stream:type.` Wenn dies nicht festgelegt ist, ist dies gleich `missing_content_type.` </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.contentType) </li> <li> **Heartbeats:**<br/> (<code>s:stream:type</code>) </li> </ul> | <ul> <li> **Verfügbar:**<br/> ja </li> <li> **Reservierte Variable:**<br/> eVar </li> <li> **Gültigkeit:**<br/> bei HIT </li> <li> **Berichtsname:**<br/> Content-Typ </li> <li> **Kontextdaten:**<br/> (a.contentType) </li> <li> **Daten-Feed:**<br/> videocontenttype </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.contentType) </li> <li> **XDM-Feldpfad:** (veraltet)<br/>media.mediaTimed.primaryAssetViewDetails.<br/>broadcastContentType</li> <li> **XDM-Feldpfad für Sammlung:**<br/> mediaCollection.sessionDetails.contentType </li> <li> **XDM-Feldpfad für Berichterstellung:**<br/> mediaReporting.sessionDetails.contentType </li> </ul> |
 
 ```
 public static MediaObject createMediaObject(java.lang.String name,

@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 94%
+source-wordcount: '675'
+ht-degree: 92%
 
 ---
 
@@ -16,9 +16,10 @@ ht-degree: 94%
 
 ## Voraussetzungen  {#roku-prerequisites}
 
-* **Abrufen gültiger Konfigurationsparameter für die Streaming-Mediensammlung**
+* **Abrufen gültiger Konfigurationsparameter für Adobe Streaming Media Services**
 
-  Sie können diese Parameter von einem Adobe-Support-Mitarbeiter erhalten, nachdem Sie Ihr Adobe Streaming Media Collection-Konto eingerichtet haben.
+  Sie können diese Parameter von einem Adobe-Support-Mitarbeiter erhalten, nachdem Sie Ihr Konto für das Add-on &quot;Adobe Streaming Media Collection“ oder das Add-on „Adobe Analytics for Streaming Media“ eingerichtet haben.
+
 * **Integrieren der folgenden APIs in Ihren Media Player**
 
    * _Eine API zum Abonnieren von Player-Ereignissen_: Das Media SDK erfordert den Aufruf einer Reihe einfacher APIs, wenn im Player Ereignisse auftreten.
@@ -171,4 +172,4 @@ Mit Roku SDK 2.x für Experience Cloud-Lösungen können Sie in BrightScript ge
    | `processMediaMessages` | Verantwortlich für die Übergabe der Medienereignisse an das SDK zur Verarbeitung. <br/><br/>`ADBMobile().processMediaMessages()` |
 
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=de) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->

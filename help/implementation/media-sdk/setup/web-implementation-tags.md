@@ -4,16 +4,16 @@ description: Erfahren Sie, wie Sie Adobe-Streaming-Medien für Web-Apps implemen
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: 05c68b0a-f387-4bcc-8792-f6b1caa40706
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 78%
+source-wordcount: '115'
+ht-degree: 80%
 
 ---
 
-# Installieren der Streaming Media Collection mithilfe der Media Analytics-Erweiterung
+# Installieren von Streaming-Medien-Services mithilfe der Media Analytics-Erweiterung
 
-Sie können die Adobe Media Analytics-Erweiterung verwenden, um die Adobe-Streaming-Mediensammlung zu implementieren. Die Media Analytics-Erweiterung fügt das zentrale JavaScript-Media-SDK (Media 3.x SDK) hinzu. Diese Erweiterung umfasst die Funktionalität zum Hinzufügen der Medien-Tracker-Instanz zu einer Site oder einem Projekt mit Tag-Aktivierung.
+Sie können die Adobe Media Analytics-Erweiterung verwenden, um Adobe Streaming-Mediendienste zu implementieren. Die Media Analytics-Erweiterung fügt das zentrale JavaScript-Media-SDK (Media 3.x SDK) hinzu. Diese Erweiterung umfasst die Funktionalität zum Hinzufügen der Medien-Tracker-Instanz zu einer Site oder einem Projekt mit Tag-Aktivierung.
 
 Informationen zur Installation und Verwendung der Erweiterung befinden sich unter [Erweiterung von Adobe Media Analytics (3.x SDK) für Audio und Video – Verwendung von Tags (Datenerfassung)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=de).
 

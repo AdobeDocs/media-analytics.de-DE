@@ -4,10 +4,10 @@ description: Links zu älteren SDK-Downloads für verfügbare Plattformen, einsc
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 73%
+ht-degree: 70%
 
 ---
 
@@ -19,7 +19,7 @@ Informationen zum Herunterladen **aktueller** SDKs finden Sie unter [Herunterlad
 
 Wichtige Informationen zum Ende der Unterstützung finden Sie in den [häufig gestellten Fragen zum Ende der Unterstützung](/help/additional-resources/end-of-support-faqs.md).
 
-## Streaming-Medien und die Adobe Medien Analytics-Erweiterung
+## Streaming-Medien und die Adobe Media Analytics-Erweiterung
 
 Mit der Adobe Media Analytics-Erweiterung wird das grundlegende JavaScript Media SDK (Media SDK 2.x) für Audio und Video hinzugefügt. Diese Erweiterung bietet die Funktionalität zum Hinzufügen der `MediaHeartbeat`-Tracker-Instanz zu einer Site oder einem Projekt mit Datenerfassung.
 
@@ -27,7 +27,7 @@ Die Adobe-Datenerfassung mit der Media Analytics-Erweiterung erfordert Folgendes
 * Sie müssen Adobe Experience Cloud-Kunde sein.
 * Sie müssen den Datenerfassungs- oder DTM-Einbettungs-Code auf Ihren Web-Seiten bereitstellen.
 * Sie müssen die [Analytics-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=de) konfigurieren.
-* Sie müssen die Erweiterung [Adobe Media Analytics for Audio and Video“ ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=de).
+* Sie müssen die Erweiterung [Adobe Media Analytics for Audio and Video“ ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html).
 * Sie müssen die [Experience Cloud-ID-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=de) konfigurieren.
 
 ## 2.x Medien-SDKs herunterladen {#download-2x-sdks}

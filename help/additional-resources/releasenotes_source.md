@@ -1,13 +1,13 @@
 ---
-source-git-commit: e534d44f9d03b99153fde23b2c587f8607ceea72
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 100%
+source-wordcount: '613'
+ht-degree: 98%
 
 ---
 # Versionshinweise zu Streaming-Medien – Quelltext
 
-Der folgende Inhalt wurde aus den Experience Cloud-Versionshinweisen kopiert. Dies wird in die neuen Versionshinweise für Streaming-Medien verschoben.
+Der folgende Inhalt wurde aus den Experience Cloud-Versionshinweisen kopiert. Dieser wird in die neuen Versionshinweise für Streaming-Medien-Services verschoben.
 
 
 Erfahren Sie mehr über die neuesten Versions-Updates für [Adobe Experience Cloud-Produkte](https://business.adobe.com/de/products/adobe-experience-cloud-products.html). Hier finden Sie die aktuellen Dokumentationen, Tutorials und Kurse zu Experience League.
@@ -60,7 +60,7 @@ Neue Analytics-Tutorials und -Kurse
 
 | Veröffentlicht | Name | Typ | Beschreibung |
 | ----------- | ---------- | ---------- | --------- |
-| 6. Januar 2021 | [Bedienfeld für gleichzeitige Medienbetrachter in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=de#analysis-workspace) | Video | Erkennen Sie, wo hohe Auslastungen auftraten oder wo es zu Einbrüchen kam. Erhalten Sie wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern und erhalten Sie Hilfe bei der Fehlerbehebung oder der Planung in Bezug auf Volumen und Skalierung. |
+| &#x200B;6. Januar 2021 | [Bedienfeld für gleichzeitige Medienbetrachter in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=de#analysis-workspace) | Video | Erkennen Sie, wo hohe Auslastungen auftraten oder wo es zu Einbrüchen kam. Erhalten Sie wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern und erhalten Sie Hilfe bei der Fehlerbehebung oder der Planung in Bezug auf Volumen und Skalierung. |
 
 
 ## November 2020

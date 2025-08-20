@@ -1,20 +1,21 @@
 ---
-title: Migrieren einer Analytics-Quell-Connector-Implementierung in aktualisierte XDM Streaming Media-Felder
+title: Aktualisieren einer Analytics-Quell-Connector-Implementierung auf neue XDM-Felder für Streaming-Medien-Services
 description: Erfahren Sie mehr über das Migrieren einer Analytics-Quell-Connector-Implementierung in aktualisierte XDM Streaming Media-Felder
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a0a357c3fe7e958b0b6491c84f17f26a806ea205
+exl-id: d239b203-71ce-4307-884f-9d11cc623d04
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
-# Aktualisieren einer Analytics-Quell-Connector-Implementierung auf neue XDM-Felder für Streaming-Medien
+# Aktualisieren einer Analytics-Quell-Connector-Implementierung auf neue XDM-Felder für Streaming-Medien-Services
 
 >[!NOTE]
 >
->Diese Informationen richten sich an Unternehmen, die den [Analytics-Quell-Connector](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) verwenden, um Streaming-Mediendaten von Adobe Analytics in Adobe Experience Platform für die Verwendung mit Customer Journey Analytics-Berichten oder anderen Platform-Services einzubringen.
+>Diese Informationen richten sich an Unternehmen, die den [Analytics-Quell-Connector](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) verwenden, um Streaming-Mediendaten von Adobe Analytics in Adobe Experience Platform zur Verwendung mit Customer Journey Analytics-Berichten oder anderen Platform-Services zu übertragen.
 >
 >Die Änderungen wirken sich nicht auf Adobe Analytics als eigenständige Anwendung aus, einschließlich Datenerfassung, Verarbeitung und Reporting. Tools wie Daten-Feeds und Verarbeitungsregeln sind davon nicht betroffen, sodass keine Aktualisierungen an der Analytics-Implementierung erforderlich sind.
 
@@ -87,4 +88,3 @@ Beachten Sie, dass jeder andere Fluss, der sich auf `media.mediaTimed` Felder st
 Alle Kunden, die die Adobe-Datenerfassung für Streaming-Medien verwenden, müssen ihre Migrationen innerhalb des vorgesehenen Übergangszeitraums abschließen.
 
 Bei Fragen oder Support-Anfragen wenden Sie sich bitte an das Adobe Support-Team.
-

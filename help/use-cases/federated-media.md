@@ -5,18 +5,26 @@ uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 61%
+source-wordcount: '593'
+ht-degree: 58%
 
 ---
 
 # Federated Media{#federated-media}
 
-Der Federated Media-Service bietet ein System zum Freigeben von Streaming-Mediendaten (Audio und Video) zwischen zwei Partnern.
-Die standardisierten Messdaten, die von der Streaming Media Collection erstellt werden, sind das Markenzeichen für Federated Media, sodass dieselben Daten aus mehreren Quellen in einen einzigen Bericht einfließen können.
+>[!AVAILABILITY]
+>
+>Der Federated Analytics-Service ist nur verfügbar, wenn Streaming-Medienfunktionen mit Adobe Analytics verwendet werden. Federated Analytics ist in Customer Journey Analytics nicht verfügbar.
+
+
+Der Federated Analytics-Service bietet ein System zum Freigeben von Streaming-Mediendaten (Audio und Video) zwischen zwei Partnern.
+
+Die standardisierten Messdaten, die von Streaming-Medien-Services erstellt werden, sind das Markenzeichen für Federated Media, sodass dieselben Daten aus mehreren Quellen in einen einzigen Bericht einfließen können.
+
 Mithilfe der für Federated Media geltenden Regeln und Logik können Daten einfach gesteuert und individualisiert werden, um die Anforderungen jeder Partnerschaft zu erfüllen.
+
 Federated Media macht Audio- und Videomessungen effizienter, optimierter und umsetzbarer.
 
 
@@ -44,7 +52,7 @@ Federated Media macht Audio- und Videomessungen effizienter, optimierter und ums
 * **Medien-Stream-Vertrag:** Empfänger und Sender müssen über einen Adobe Analytics-Vertrag für Medien-Streams verfügen, bevor sie auf Audio- und Videodaten in Adobe Analytics zugreifen können. Weitere Informationen erhalten Sie von Ihrem Konto-Team.
 * **Federated-Vertragszusatz:** Jeder Sender und Empfänger muss über einen unterzeichneten Vertragszusatz mit Adobe verfügen, bevor Daten gesendet oder empfangen werden können. Ein Vertragszusatz pro Kunde ist erforderlich, nicht ein Vertragszusatz pro Partnerschaft. Weitere Informationen erhalten Sie von Ihrem Konto-Team.
 
-* **Implementierung der Streaming-Mediensammlung:** Die Streaming-Mediensammlung muss auf allen Playern implementiert sein, die Teil des zusammengeführten Datensatzes sein werden. Für den Verbund sind nur Streaming-Mediendaten verfügbar. Weitere Informationen finden Sie unter [Übersicht über die Adobe-Streaming-Mediensammlung](/help/media-overview.md).
+* **Implementierung der Streaming-Mediensammlung:** Der Absender muss Streaming-Mediendienste auf allen Playern implementieren, die Teil des zusammengeführten Datensatzes sein werden. Für den Verbund sind nur Streaming-Mediendaten verfügbar. Weitere Informationen finden Sie unter [Übersicht über Adobe Streaming Media Services](/help/media-overview.md).
 
 * **Adobe-Consulting-Vertrag:** Für die Ersteinrichtung der Föderierungsregeln zwischen Empfänger und Sender stehen Ihnen hilfreiche Beratungsservices zur Datenüberprüfung und zur Erstellung der Datenweitergabe-Vereinbarung zur Verfügung.
 
