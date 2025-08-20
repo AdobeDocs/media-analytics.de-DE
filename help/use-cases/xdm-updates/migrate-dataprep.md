@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Migrieren der Datenvorbereitung für benutzerdefinierte Felder in die neuen Felder für Streaming-Medien
 
-In diesem Dokument wird der Prozess der Migration des Datenvorbereitungs-Service beschrieben, der zusätzlich zu den Adobe-Datenerfassungsflüssen vorhanden ist, die für Adobe Streaming Media Collection-Daten aktiviert sind. Bei der Migration wird eine Datenvorbereitung-Zuordnung aus dem Datentyp „Medien“ der Streaming-Mediensammlung von Adobe in den neuen entsprechenden Datentyp &quot;[ Media Reporting Details“ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details).
+In diesem Dokument wird der Prozess der Migration des Datenvorbereitungs-Service beschrieben, der zusätzlich zu den Adobe-Datenerfassungsflüssen vorhanden ist, die für Adobe Streaming Media Collection-Daten aktiviert sind. Bei der Migration wird eine Datenvorbereitung-Zuordnung aus dem Datentyp „Medien“ der Streaming-Mediensammlung von Adobe in den neuen entsprechenden Datentyp &quot;[ Media Reporting Details“ ](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-reporting-details).
 
 ## Migrieren der Datenvorbereitung für benutzerdefinierte Felder
 
-Um die Datenvorbereitungs-Zuordnungen vom alten Datentyp namens „Media“ zum neuen Datentyp namens &quot;[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) zu migrieren, müssen Sie die Datenvorbereitungs-Zuordnungen bearbeiten:
+Um die Datenvorbereitungs-Zuordnungen vom alten Datentyp namens „Media“ zum neuen Datentyp namens &quot;[Media Reporting Details](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-reporting-details) zu migrieren, müssen Sie die Datenvorbereitungs-Zuordnungen bearbeiten:
 
 >[!IMPORTANT]
 >
@@ -35,7 +35,7 @@ Um die Datenvorbereitungs-Zuordnungen vom alten Datentyp namens „Media“ zum 
 
 1. Überprüfen Sie, ob die Zuordnungen weiterhin erwartungsgemäß funktionieren.
 
-Siehe den [Content-ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) auf der Seite [Audio- und Videoparameter](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/audio-video-parameters), um die Zuordnung zwischen den alten und den neuen Feldern vorzunehmen. Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, während der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“ zu finden ist.
+Siehe den [Content-ID](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) auf der Seite [Audio- und Videoparameter](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/audio-video-parameters), um die Zuordnung zwischen den alten und den neuen Feldern vorzunehmen. Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, während der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“ zu finden ist.
 
 ## Beispiel
 
@@ -77,7 +77,7 @@ Um die Befolgung der Migrationsrichtlinien zu vereinfachen, sehen Sie sich den f
 
 Im obigen Beispiel waren alle beteiligten Datentypen „String“, sodass die Zuordnungsersetzung direkt erfolgte.
 
-Wenn der Quellfelddatentyp nicht mit dem Zielfelddatentyp übereinstimmt, müssen Sie die Richtlinien im [Handbuch zur Fehlerbehebung bei der Datenvorbereitung](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/troubleshooting-guide), [Umgang mit Datenformaten mit der ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) und [Funktionen zur Datenvorbereitung](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling).
+Wenn der Quellfelddatentyp nicht mit dem Zielfelddatentyp übereinstimmt, müssen Sie die Richtlinien im [Handbuch zur Fehlerbehebung bei der Datenvorbereitung](https://experienceleague.adobe.com/de/docs/experience-platform/data-prep/troubleshooting-guide), [Umgang mit Datenformaten mit der ](https://experienceleague.adobe.com/de/docs/experience-platform/data-prep/data-handling) und [Funktionen zur Datenvorbereitung](https://experienceleague.adobe.com/de/docs/experience-platform/data-prep/data-handling).
 
 Wenn beispielsweise der Quelltyp eine Zeichenfolge und der Zieltyp ein boolescher Wert ist, kann die Datenvorbereitung den Wert automatisch analysieren und den Quellwert in einen booleschen Wert konvertieren.
 
