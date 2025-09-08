@@ -5,9 +5,9 @@ user-guide-title: Handbuch zu Streaming-Mediendiensten
 breadcrumb-title: Handbuch zu Streaming-Mediendiensten
 user-guide-description: Implementieren von Streaming-Mediendiensten. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
 sub-product: media analytics
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: efe4605d59be2629c931e3f0faca839ccb56c495
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '929'
 ht-degree: 81%
 
 ---
@@ -99,6 +99,7 @@ ht-degree: 81%
       + [Implementierung und Reporting](use-cases/player-state-tracking/implementation-and-reporting.md)
       + [Statusverfolgung für mehrere Player](use-cases/player-state-tracking/multiple-player-states.md)
       + [Beispiele für Player-Status-Verfolgung](use-cases/player-state-tracking/player-state-examples.md)
+   + [Verfolgen von Zeitplandaten](/help/use-cases/track-schedule-data.md)
    + [Tracking heruntergeladener Inhalte ](use-cases/track-downloaded-content.md)
    + [Federated Media](use-cases/federated-media.md)
    + [Behandlung von Anwendungsunterbrechungen während der Wiedergabe](use-cases/cookbook/app-interrupts.md)
