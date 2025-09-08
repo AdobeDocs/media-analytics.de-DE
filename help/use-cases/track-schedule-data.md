@@ -140,7 +140,7 @@ Nachdem Sie [Programmzeitplan-Datensatz erstellen](#create-a-program-schedule-da
 
    1. Pushen Sie die JSON-Datei, die die Programmplanungs-Datensätze enthält, unter Verwendung der Batch-ID.
 
-      Verwenden Sie zum Übertragen von Zeitplandaten die Batch-APIs von AEP, wie unter [Übersicht über die Batch-Aufnahme-API](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview) beschrieben.
+      Verwenden Sie zum Übertragen von Zeitplandaten die Batch-APIs von AEP, wie unter [Übersicht über die Batch-Aufnahme-API](https://experienceleague.adobe.com/de/docs/experience-platform/ingestion/batch/overview) beschrieben.
 
       Betrachten wir das folgende Beispiel für die Verwendung von cURL zum Pushen einer Datei mit den Zeitplandatensätzen:
 
@@ -300,9 +300,9 @@ Das folgende Beispiel zeigt eine Datei mit der Zeitplandatei JSON mit zwei Daten
 
    Im Folgenden finden Sie einige Beispiele für Dimensionen, die Sie in Customer Journey Analytics erstellen und über die Sie dann Berichte erstellen können:
 
-   * **[&quot;_Episodenname_&quot;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: Diese Dimension könnte Ihnen dabei helfen zu erfahren, welche Episoden in einer bestimmten Serie am besten funktionieren.
+   * **[&quot;_Episodenname_&quot;](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: Diese Dimension könnte Ihnen dabei helfen zu erfahren, welche Episoden in einer bestimmten Serie am besten funktionieren.
 
-   * **[Asset-ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
+   * **[Asset-ID](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
 
 1. Fahren Sie mit [Analysieren von Daten in Customer Journey Analytics](#analyze-data-in-customer-journey-analytics) fort.
 
