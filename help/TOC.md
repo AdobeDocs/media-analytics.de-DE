@@ -8,7 +8,7 @@ sub-product: media analytics
 source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 79%
+ht-degree: 81%
 
 ---
 
