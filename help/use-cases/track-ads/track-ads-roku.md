@@ -69,7 +69,7 @@ Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung d
 
 1. Optional können Standard- und/oder Anzeigenmetadaten über Kontextdatenvariablen an die Medien-Tracking-Sitzung angehängt werden.
 
-   * [Standard-Anzeigenmetadaten in Roku implementieren ](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+   * [Standard-Anzeigenmetadaten in Roku implementieren &#x200B;](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    * **Anwenderspezifische Anzeigenmetadaten:** Erstellen Sie für anwenderdefinierte Metadaten ein variables Objekt für die anwenderspezifischen Datenvariablen und füllen Sie es mit den Daten für das aktuelle Anzeigen-Asset:
 
      ```

@@ -168,7 +168,7 @@ Nachdem Sie [Programmzeitplan-Datensatz erstellen](#create-a-program-schedule-da
           -H 'Authorization: Bearer <OAUTH_TOKEN>'
       ```
 
-1. Fahren Sie mit dem folgenden Abschnitt fort: [ eines Support-Tickets bei der Adobe-Kundenunterstützung](#log-a-support-ticket-with-adobe-customer-care).
+1. Fahren Sie mit dem folgenden Abschnitt fort: [&#x200B; eines Support-Tickets bei der Adobe-Kundenunterstützung](#log-a-support-ticket-with-adobe-customer-care).
 
 ## Erstellen Sie ein Support-Ticket bei der Adobe-Kundenunterstützung
 

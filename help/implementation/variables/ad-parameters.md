@@ -37,13 +37,13 @@ Beschreibung der Tabellendaten:
 >[!IMPORTANT]
 >
 >Ändern Sie nicht die Klassifizierungsnamen für Variablen, die unter
->>Reporting/Reservierte Variable als „Klassifizierung“ beschrieben sind.
->>Die Medienklassifizierungen werden definiert, wenn eine Report Suite für das Medien-Tracking
->>aktiviert ist. Adobe fügt von Zeit zu Zeit neue Eigenschaften hinzu. In diesem Fall müssen
->>Kunden ihre Report Suites erneut aktivieren, um Zugriff auf die neuen Medieneigenschaften
->>zu erhalten. Während des Aktualisierungsvorgangs ermittelt Adobe
->>anhand der Namen der Variablen, ob die Klassifizierungen aktiviert sind. Wenn eine
->>fehlt, fügt Adobe die fehlenden erneut hinzu.
+>&#x200B;>Reporting/Reservierte Variable als „Klassifizierung“ beschrieben sind.
+>&#x200B;>Die Medienklassifizierungen werden definiert, wenn eine Report Suite für das Medien-Tracking
+>&#x200B;>aktiviert ist. Adobe fügt von Zeit zu Zeit neue Eigenschaften hinzu. In diesem Fall müssen
+>&#x200B;>Kunden ihre Report Suites erneut aktivieren, um Zugriff auf die neuen Medieneigenschaften
+>&#x200B;>zu erhalten. Während des Aktualisierungsvorgangs ermittelt Adobe
+>&#x200B;>anhand der Namen der Variablen, ob die Klassifizierungen aktiviert sind. Wenn eine
+>&#x200B;>fehlt, fügt Adobe die fehlenden erneut hinzu.
 
 ## Videoanzeigendaten {#ad-video-data}
 
