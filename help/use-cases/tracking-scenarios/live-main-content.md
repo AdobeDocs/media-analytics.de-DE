@@ -7,8 +7,8 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 100%
+source-wordcount: '588'
+ht-degree: 98%
 
 ---
 
@@ -65,7 +65,7 @@ Bei LIVE-Streams müssen Sie den Wert des Abspielkopfs als die Anzahl der Sekund
 
 Bei LIVE-Medien müssen Sie, wenn ein Benutzer mit der Wiedergabe des Streams beginnt, `l:event:playhead` auf die Anzahl der Sekunden seit Mitternacht UTC an diesem Tag setzen. Dies ist anders als bei VOD, wo Sie den Abspielkopf auf „0“ festlegen würden. Hinweis: Bei Verwendung von Fortschrittsmarken ist die Inhaltsdauer erforderlich und der Abspielkopf muss als Anzahl von Sekunden ab Beginn des Medienelements aktualisiert werden, beginnend mit 0.
 
-Beispiel: Ein LIVE-Streaming-Ereignis beginnt um Mitternacht und dauert 24 Stunden (`a.media.length=86400`; `l:asset:length=86400`). Nehmen wir an, ein Benutzer beginnt um 12:00 Uhr mit der Wiedergabe des LIVE-Streams. In diesem Szenario sollten Sie `l:event:playhead` auf 43200 setzen (12 Stunden seit Mitternacht UTC an diesem Tag in Sekunden).
+Beispiel: Ein LIVE-Streaming-Ereignis beginnt um Mitternacht und dauert 24 Stunden (`a.media.length=86400`; `l:asset:length=86400`). Angenommen, ein Benutzer beginnt mit der Wiedergabe dieses LIVE-Streams um 12 :00pm. In diesem Szenario sollten Sie `l:event:playhead` auf 43200 setzen (12 Stunden seit Mitternacht UTC an diesem Tag in Sekunden).
 
 ### Beim Anhalten
 

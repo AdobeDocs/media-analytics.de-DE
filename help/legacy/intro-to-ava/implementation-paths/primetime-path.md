@@ -17,7 +17,7 @@ Media Analytics (Heartbeats) ist die standardisierte Medien-Tracking-Lösung von
 
 Adobe Primetime ist eine Adobe Experience Cloud-Lösung, mit der Inhaltsprogrammierer und -distributoren Medien auf allen vernetzten Bildschirmen monetarisieren können.
 
-Primetime bietet eine modulare Plattform für die Medienveröffentlichung, Werbung, Personalisierung und Analyse und vereinfacht dadurch das geräteübergreifende Targeting, Monetarisieren und Aktivieren globaler Audiences. Darüber hinaus bieten Primetime-Lösungen folgende Vorteile:
+Primetime bietet eine modulare Plattform für die Medienveröffentlichung, Werbung, Personalisierung und Analyse und vereinfacht dadurch das geräteübergreifende Targeting, Monetarisieren und Aktivieren globaler Zielgruppen. Darüber hinaus bieten Primetime-Lösungen folgende Vorteile:
 
 * Unterstützung einer präzisen Messung von Linear- und VOD-Content-Typen.
 * Unterstützung der Messung von Werbeunterbrechungen mit (oder ohne) dynamischer Ad Insertion.

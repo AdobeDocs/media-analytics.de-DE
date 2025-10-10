@@ -3,7 +3,8 @@ title: Migrieren von Audiences zum neuen Datentyp Adobe Analytics für Streaming
 description: Erfahren Sie, wie Sie Audiences zum neuen Datentyp Adobe Analytics für Streaming-Medien migrieren.
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 3056a384535b3f5f2a9bc2d950bd5ee3410ec0a5
+exl-id: 79203a2f-8158-44f2-83b2-146179be9180
+source-git-commit: 61e5279e6d53b18955424e76d05d440b83dae07e
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 47%
@@ -12,7 +13,7 @@ ht-degree: 47%
 
 # Zuordnung von Media Analytics-Parametern für Adobe Experience Platform und Customer Journey Analytics
 
-Dieses Dokument enthält eine umfassende Liste aller Medienanalyseparameter, die in Adobe Experience Platform und Customer Journey Analytics verwendet werden. Sie unterstützt die Integration von Daten, die von Adobe Analytics über den [Analytics Source Connector](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) oder den [Analytics Source Connector for Classifications) in Platform importiert ](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/classifications), indem jeder Parameter seinem entsprechenden XDM-Feldpfad zugeordnet wird.
+Dieses Dokument enthält eine umfassende Liste aller Medienanalyseparameter, die in Adobe Experience Platform und Customer Journey Analytics verwendet werden. Sie unterstützt die Integration von Daten, die von Adobe Analytics über den [Analytics Source Connector](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) oder den [Analytics Source Connector for Classifications) in Platform importiert ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications), indem jeder Parameter seinem entsprechenden XDM-Feldpfad zugeordnet wird.
 
 ## In Media Analytics reservierte Variablen
 
@@ -237,9 +238,3 @@ In beiden Fällen entspricht die `<number>` der spezifischen Ereignis- oder eVar
 | Gesamt-Unterbrechungsdauer | `_experience.analytics.event<x>to<y>.event<number>.value` | Metrik |
 
 {style="table-layout:auto"}
-
-
-
-
-
-

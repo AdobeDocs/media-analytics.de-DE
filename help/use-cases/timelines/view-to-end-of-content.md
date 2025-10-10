@@ -179,7 +179,7 @@ Senden Sie innerhalb einer Anzeige jede Sekunde ein Ping-Ereignis an das Backend
 >[!NOTE]
 >
 >Nachfolgende Anzeigen in der Zeitleiste überspringen die Anzeige der Reihe von 1-Sekunden-Ping-Ereignissen.
->&#x200B;>im Interesse der Kürze …
+>>im Interesse der Kürze …
 
 ```json
 {

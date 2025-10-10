@@ -7,22 +7,22 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 88%
+source-wordcount: '124'
+ht-degree: 62%
 
 ---
 
 # Unterstützung benutzerspezifischer Metadaten{#custom-metadata-support}
 
-Sie können benutzerdefinierte Schlüssel-Wert-Paare in den Ereignissen `sessionStart`, `chapterStart` und `adStart` festlegen. Diese Informationen müssen im JSON-Schlüssel `customMetadata` neben dem `params`-Schlüssel bereitgestellt werden.
+Sie können benutzerdefinierte Schlüssel:valuePaare für die `sessionStart`-, `chapterStart`- und `adStart` bereitstellen. Diese Informationen müssen im JSON-Schlüssel `customMetadata` neben dem `params`-Schlüssel bereitgestellt werden.
 
-Der JSON-Schlüssel `customMetadata` sollte ein Objekt von Schlüssel-Wert-Paaren enthalten. Der Schlüssel darf nur alphanumerische Zeichen, Unterstriche und Punkte enthalten.
+Der `customMetadata` JSON-Schlüssel sollte ein Objekt von Schlüssel:valuePaaren enthalten. Der Schlüssel darf nur alphanumerische Zeichen, Unterstriche und Punkte enthalten.
 
 [MA Collection API-Ereignisse](../mc-api-ref/mc-api-events-req.md)
 
 ## Beispiel
 
-Derzeit können Sie ein `sessionStart`-Ereignis mit dem folgenden Schlüssel-Wert-Paar senden:
+Derzeit können Sie ein `sessionStart`-Ereignis mit dem folgenden Schlüssel-:value-Paar senden:
 
 ```
 params: { "media.channel": "channel-1" },

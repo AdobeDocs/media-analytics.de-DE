@@ -22,7 +22,7 @@ Tags in Adobe Experience Platform sind die nächste Generation von Adobe-Verw
 >[!NOTE]
 >
 >Informationen zum Herunterladen von veralteten SDKs finden Sie unter [Veraltet − SDKs herunterladen](/help/legacy/legacy-download-sdks.md).<br>
->&#x200B;>Wichtige Informationen zum Ende der Unterstützung finden Sie in den [häufig gestellten Fragen zum Ende der Unterstützung](/help/additional-resources/end-of-support-faqs.md).
+>>Wichtige Informationen zum Ende der Unterstützung finden Sie in den [häufig gestellten Fragen zum Ende der Unterstützung](/help/additional-resources/end-of-support-faqs.md).
 
 ## Medien-SDKs und Mobile-Bibliotheken {#media-sdks-libraries}
 
