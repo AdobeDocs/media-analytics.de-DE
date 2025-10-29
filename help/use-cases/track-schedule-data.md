@@ -3,17 +3,19 @@ title: Hochladen von Zeitplandaten zur Verfolgung von Live-Inhalten
 description: Erfahren Sie, wie Sie Zeitplandaten hochladen, um Live-Inhalte zu verfolgen.
 feature: Streaming Media
 role: User, Admin, Data Engineer
-hide: true
-hidefromtoc: true
 exl-id: 875c4513-ea4e-4c5f-bfc1-34ea175007ca
-source-git-commit: b947a1d64c7fa58e784712397b0167d4186d00c3
+source-git-commit: 65cd7987acb677b4f4c863b42dc809b5a23c2ed1
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 2%
+source-wordcount: '1381'
+ht-degree: 5%
 
 ---
 
 # Hochladen von Zeitplandaten zur Verfolgung von Live-Inhalten
+
+>[!AVAILABILITY]
+>
+>Die in diesem Artikel beschriebene Funktion befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Funktionsversionen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/releases).
 
 Sie können Daten vergangener Live-Streaming-Medieninhalte planmäßig hochladen, um die Zuschauerzahlen von Live-Inhalten einfacher und genauer zu verfolgen. Sie können die Zuschauerzahlen für einzelne Programme und sogar bestimmte Themen oder Programmsegmente verfolgen.
 
@@ -141,7 +143,7 @@ Nachdem Sie [Programmzeitplan-Datensatz erstellen](#create-a-program-schedule-da
 
    1. Pushen Sie die JSON-Datei, die die Programmplanungs-Datensätze enthält, unter Verwendung der Batch-ID.
 
-      Verwenden Sie zum Übertragen von Zeitplandaten die Batch-APIs von AEP, wie unter [Übersicht über die Batch-Aufnahme-API](https://experienceleague.adobe.com/de/docs/experience-platform/ingestion/batch/overview) beschrieben.
+      Verwenden Sie zum Übertragen von Zeitplandaten die Batch-APIs von AEP, wie unter [Übersicht über die Batch-Aufnahme-API](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview) beschrieben.
 
       Betrachten wir das folgende Beispiel für die Verwendung von cURL zum Pushen einer Datei mit den Zeitplandatensätzen:
 
@@ -168,7 +170,7 @@ Nachdem Sie [Programmzeitplan-Datensatz erstellen](#create-a-program-schedule-da
           -H 'Authorization: Bearer <OAUTH_TOKEN>'
       ```
 
-1. Fahren Sie mit dem folgenden Abschnitt fort: [&#x200B; eines Support-Tickets bei der Adobe-Kundenunterstützung](#log-a-support-ticket-with-adobe-customer-care).
+1. Fahren Sie mit dem folgenden Abschnitt fort: [ eines Support-Tickets bei der Adobe-Kundenunterstützung](#log-a-support-ticket-with-adobe-customer-care).
 
 ## Erstellen Sie ein Support-Ticket bei der Adobe-Kundenunterstützung
 
@@ -301,9 +303,9 @@ Das folgende Beispiel zeigt eine Datei mit der Zeitplandatei JSON mit zwei Daten
 
    Im Folgenden finden Sie einige Beispiele für Dimensionen, die Sie in Customer Journey Analytics erstellen und über die Sie dann Berichte erstellen können:
 
-   * **[&quot;_Episodenname_&quot;](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: Diese Dimension könnte Ihnen dabei helfen zu erfahren, welche Episoden in einer bestimmten Serie am besten funktionieren.
+   * **[&quot;_Episodenname_&quot;](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: Diese Dimension könnte Ihnen dabei helfen zu erfahren, welche Episoden in einer bestimmten Serie am besten funktionieren.
 
-   * **[Asset-ID](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
+   * **[Asset-ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
 
 1. Fahren Sie mit [Analysieren von Daten in Customer Journey Analytics](#analyze-data-in-customer-journey-analytics) fort.
 
