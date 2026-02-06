@@ -68,7 +68,7 @@ alloy("configure", {
 });
 ```
 
-Vollständige Details zur Konfiguration finden Sie in `streamingMedia` Dokumentation [&#x200B; Web SDK-](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia) .
+Vollständige Details zur Konfiguration finden Sie in `streamingMedia` Dokumentation [&#x200B; Web SDK-](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/commands/configure/streamingmedia) .
 
 ### Schritt 3: Abrufen der Media Tracker-Instanz bei der Migration von der Media JS-SDK
 
@@ -76,7 +76,7 @@ Für Kunden, die die Media JS-SDK verwenden, bietet Web SDK einen Migrationspfad
 
 [!DNL Web SDK] enthält einen Befehl zum Abrufen eines Media Analytics-Trackers. Sie können diesen Befehl verwenden, um eine Objektinstanz zu erstellen, und dann mit denselben APIs wie in der [Media JS Library](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html) Medienereignisse verfolgen.
 
-In der [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker)-Dokumentation finden Sie vollständige Details zu den unterstützten Methoden.
+In der [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker)-Dokumentation finden Sie vollständige Details zu den unterstützten Methoden.
 
 Der folgende Ausschnitt zeigt, wie Sie die Medien-Tracker-Instanz in Media JS abrufen würden.
 

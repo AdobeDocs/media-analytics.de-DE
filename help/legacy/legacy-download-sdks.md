@@ -27,7 +27,7 @@ Die Adobe-Datenerfassung mit der Media Analytics-Erweiterung erfordert Folgendes
 * Sie müssen Adobe Experience Cloud-Kunde sein.
 * Sie müssen den Datenerfassungs- oder DTM-Einbettungs-Code auf Ihren Web-Seiten bereitstellen.
 * Sie müssen die [Analytics-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=de) konfigurieren.
-* Sie müssen die Erweiterung [Adobe Media Analytics for Audio and Video“ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html).
+* Sie müssen die Erweiterung [Adobe Media Analytics for Audio and Video“ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=de).
 * Sie müssen die [Experience Cloud-ID-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=de) konfigurieren.
 
 ## 2.x Medien-SDKs herunterladen {#download-2x-sdks}

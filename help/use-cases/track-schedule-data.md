@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!AVAILABILITY]
 >
->Die in diesem Artikel beschriebene Funktion befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Funktionsversionen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/releases).
+>Die in diesem Artikel beschriebene Funktion befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Funktionsversionen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/releases/releases).
 
 Sie können Daten vergangener Live-Streaming-Medieninhalte planmäßig hochladen, um die Zuschauerzahlen von Live-Inhalten einfacher und genauer zu verfolgen. Sie können die Zuschauerzahlen für einzelne Programme und sogar bestimmte Themen oder Programmsegmente verfolgen.
 
@@ -143,7 +143,7 @@ Nachdem Sie [Programmzeitplan-Datensatz erstellen](#create-a-program-schedule-da
 
    1. Pushen Sie die JSON-Datei, die die Programmplanungs-Datensätze enthält, unter Verwendung der Batch-ID.
 
-      Verwenden Sie zum Übertragen von Zeitplandaten die Batch-APIs von AEP, wie unter [Übersicht über die Batch-Aufnahme-API](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview) beschrieben.
+      Verwenden Sie zum Übertragen von Zeitplandaten die Batch-APIs von AEP, wie unter [Übersicht über die Batch-Aufnahme-API](https://experienceleague.adobe.com/de/docs/experience-platform/ingestion/batch/overview) beschrieben.
 
       Betrachten wir das folgende Beispiel für die Verwendung von cURL zum Pushen einer Datei mit den Zeitplandatensätzen:
 
