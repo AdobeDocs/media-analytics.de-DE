@@ -35,7 +35,7 @@ Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung d
    | `length` | Kapitellänge | Ja |
    | `startTime` | Startzeit des Kapitels | Ja |
 
-   Kapitelobjekt:[ createChapterObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createChapterObject)
+   Kapitelobjekt:[&#x200B; createChapterObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createChapterObject)
 
    ```js
    chapterInfo = ADBMobile.media.createChapterObject("First Chapter", 1, CHAPTER1_LENGTH, CHAPTER1_START_POS);

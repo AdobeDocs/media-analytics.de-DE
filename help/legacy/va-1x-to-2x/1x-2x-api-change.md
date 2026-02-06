@@ -19,7 +19,7 @@ ht-degree: 97%
 * [Android-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/index.html)
 * [iOS-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/index.html)
 * [JS-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/index.html)
-* [ Chromecast-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/index.html)
+* [&#x200B; Chromecast-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/index.html)
 
 ## Erforderliche Tracking*-APIs:
 

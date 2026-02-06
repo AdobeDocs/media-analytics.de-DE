@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Migrieren der Datenvorbereitung für benutzerdefinierte Felder in die neuen Felder für Streaming-Medien
 
-In diesem Dokument wird der Prozess der Migration des Datenvorbereitungs-Service beschrieben, der zusätzlich zu den Adobe-Datenerfassungsflüssen vorhanden ist, die für Adobe Streaming Media Collection-Daten aktiviert sind. Bei der Migration wird eine Datenvorbereitung-Zuordnung aus dem Datentyp „Medien“ der Streaming-Mediensammlung von Adobe in den neuen entsprechenden Datentyp &quot;[ Media Reporting Details“ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details).
+In diesem Dokument wird der Prozess der Migration des Datenvorbereitungs-Service beschrieben, der zusätzlich zu den Adobe-Datenerfassungsflüssen vorhanden ist, die für Adobe Streaming Media Collection-Daten aktiviert sind. Bei der Migration wird eine Datenvorbereitung-Zuordnung aus dem Datentyp „Medien“ der Streaming-Mediensammlung von Adobe in den neuen entsprechenden Datentyp &quot;[&#x200B; Media Reporting Details“ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details).
 
 ## Migrieren der Datenvorbereitung für benutzerdefinierte Felder
 
@@ -63,7 +63,7 @@ Um die Befolgung der Migrationsrichtlinien zu vereinfachen, sehen Sie sich den f
 
    ![Aktualisierter XDM-Feldpfad](assets/xdm-field-path-old-and-new.jpeg)
 
-1. Ersetzen Sie im **** Source den `media.mediaTimed` durch den `mediaReporting`. Das Zielfeld bleibt unverändert.
+1. Ersetzen Sie im **&#x200B;**&#x200B;Source den `media.mediaTimed` durch den `mediaReporting`. Das Zielfeld bleibt unverändert.
 
    ![AEP-Datenfluss fortgesetzt](assets/aep-dataflow3.jpeg)
 
@@ -77,7 +77,7 @@ Um die Befolgung der Migrationsrichtlinien zu vereinfachen, sehen Sie sich den f
 
 Im obigen Beispiel waren alle beteiligten Datentypen „String“, sodass die Zuordnungsersetzung direkt erfolgte.
 
-Wenn der Quellfelddatentyp nicht mit dem Zielfelddatentyp übereinstimmt, müssen Sie die Richtlinien im [Handbuch zur Fehlerbehebung bei der Datenvorbereitung](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/troubleshooting-guide), [Umgang mit Datenformaten mit der ](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) und [Funktionen zur Datenvorbereitung](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling).
+Wenn der Quellfelddatentyp nicht mit dem Zielfelddatentyp übereinstimmt, müssen Sie die Richtlinien im [Handbuch zur Fehlerbehebung bei der Datenvorbereitung](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/troubleshooting-guide), [Umgang mit Datenformaten mit der &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) und [Funktionen zur Datenvorbereitung](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling).
 
 Wenn beispielsweise der Quelltyp eine Zeichenfolge und der Zieltyp ein boolescher Wert ist, kann die Datenvorbereitung den Wert automatisch analysieren und den Quellwert in einen booleschen Wert konvertieren.
 

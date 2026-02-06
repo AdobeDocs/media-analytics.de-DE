@@ -48,7 +48,7 @@ Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung d
 
 1. Ermitteln Sie, wann das Anzeigen-Assets beginnt, und erstellen Sie die `AdObject`-Instanz mithilfe dieser Anzeigeninformationen.
 
-   Erstellung von Anzeigenobjekten:[ createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdObject)
+   Erstellung von Anzeigenobjekten:[&#x200B; createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createAdObject)
 
    ```
    adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH);
