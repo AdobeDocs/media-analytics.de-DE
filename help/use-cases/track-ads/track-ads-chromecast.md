@@ -4,11 +4,11 @@ description: Implementieren des Anzeigen-Trackings in Chromecast-Anwendungen mit
 uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 exl-id: 57465c42-b349-439d-b8d7-083b299a8c83
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -56,7 +56,7 @@ Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung d
 
 1. Optional können Standard- und/oder Anzeigenmetadaten über Kontextdatenvariablen an die Medien-Tracking-Sitzung angehängt werden.
 
-   * **Metadaten für Standardanzeigen:** Erstellen Sie für Metadaten für Standardanzeigen ein Wörterbuch der Schlüsselwertepaare für Standardanzeigenmetadaten unter Verwendung der Schlüssel für Ihre Plattform:
+   * **Standard-Anzeigenmetadaten:** Erstellen Sie für Standard-Anzeigenmetadaten ein Wörterbuch der Schlüssel-Wert-Paare für Standard-Anzeigenmetadaten mithilfe der Schlüssel für Ihre Plattform:
    * **Anwenderspezifische Anzeigenmetadaten:** Erstellen Sie für anwenderdefinierte Metadaten ein variables Objekt für die anwenderspezifischen Datenvariablen und füllen Sie es mit den Daten für das aktuelle Anzeigen-Asset:
 
 1. Rufen Sie `trackEvent()` mit dem `AdStart`-Ereignis auf, um das Tracking der Anzeigenwiedergabe zu starten.

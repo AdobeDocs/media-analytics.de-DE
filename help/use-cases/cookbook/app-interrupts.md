@@ -4,11 +4,11 @@ description: Erfahren Sie, wie Sie Unterbrechungen beim Tracking während der Me
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 90%
+ht-degree: 63%
 
 ---
 
@@ -25,14 +25,14 @@ Die Wiedergabe in einer Medienanwendung kann auf verschiedene Weise unterbrochen
 
 ## Häufige Fragen zur Behandlung von Anwendungsunterbrechungen: {#faq-about-handling-application-interrupts}
 
-* _Wie lange sollte eine App im Hintergrund laufen, bevor die Sitzung beendet wird?_
+* _Wie lange sollte eine App im Hintergrund sein, bevor die Sitzung geschlossen wird?_
 
-  Wenn die Anwendung die Hintergrundwiedergabe erlaubt, kann das Tracking mit dem Aufruf unserer APIs fortgesetzt werden. Wir werden dann alle unsere regulären Verfolgungspings senden. Nur wenige Video-Apps erlauben die Wiedergabe im Hintergrund, außer YouTube Red. Dies ist jedoch in allen Audio-Apps möglich. Wenn die Anwendung keine Hintergrundwiedergabe zulässt, ist es ratsam, eine Minute lang im Pausenstatus zu bleiben und dann die Tracking-Sitzung zu beenden. Die Anwendung kann keine Pausen-Pings mehr senden, da in den meisten Fällen nicht festgestellt werden kann, ob der Benutzer zurückkehrt, um die Anzeige des Mediums fortzusetzen, oder wann es beendet wird. Es ist auch ein schlechtes Erlebnis, wenn Pings im Hintergrund versendet werden.
+  Wenn die Anwendung die Hintergrundwiedergabe zulässt, kann sie das Tracking fortsetzen, indem sie unsere APIs aufruft, und wir senden alle unsere regelmäßigen Tracking-Pings. Nur wenige Video-Apps erlauben die Wiedergabe im Hintergrund, außer YouTube Red. Dies ist jedoch in allen Audio-Apps möglich. Wenn die Anwendung keine Hintergrundwiedergabe zulässt, ist es ratsam, eine Minute lang im Pausenstatus zu bleiben und dann die Tracking-Sitzung zu beenden. Die Anwendung kann keine Pausen-Pings mehr senden, da in den meisten Fällen nicht festgestellt werden kann, ob der Benutzer zurückkehrt, um die Anzeige des Mediums fortzusetzen, oder wann es beendet wird. Es ist auch eine schlechte Erfahrung, im Hintergrund weiterhin Pings zu senden.
 
-* _Welches ist der richtige Weg für einen Tracking-Neustart, wenn die App längere Zeit im Hintergrund war?_
+* _Wie kann das Tracking beim Neustart korrekt gehandhabt werden, nachdem die App lange Zeit im Hintergrund war?_
 
-  Die Anwendung sollte `trackSessionEnd` aufrufen, um die Tracking-Sitzung zu beenden. Ab Version 2.1 sendet das SDK ein „Ende“-Ping, um das Backend darüber zu informieren, dass die Tracking-Sitzung geschlossen wurde.
+  Die Anwendung sollte `trackSessionEnd` aufrufen, um die Tracking-Sitzung zu beenden. Ab Version 2.1 sendet der SDK einen „End“-Ping, um das Backend darüber zu informieren, dass die Tracking-Sitzung geschlossen ist.
 
-* _Wie sieht es mit einem Neustart der gleichen Sitzung aus?_
+* _Wie wäre es, dieselbe Sitzung neu zu starten?_
 
   Informationen zum Wiederaufnehmen einer Tracking-Sitzung finden Sie unter [Wiederaufnehmen von inaktiven Sitzungen](resuming-inactive.md)..Das SDK sendet ein Wiederaufnahme-Ping, um das Backend darüber zu informieren, dass die Sitzung manuell wiederaufgenommen wird.

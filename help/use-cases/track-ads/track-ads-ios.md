@@ -4,11 +4,11 @@ description: Implementieren des Anzeigen-Trackings in iOS-Anwendungen mit dem Me
 uuid: e979e679-cde5-4c30-8f34-867feceac13a
 exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '359'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -38,8 +38,8 @@ Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung d
 
    | Variablenname | Beschreibung | erforderlich |
    | --- | --- | :---: |
-   | `name` | Name der Werbeunterbrechung, z. B. Pre-Roll, Mid-Roll oder Post-Roll. | Ja |
-   | `position` | Positionsnummer der Werbeunterbrechung innerhalb des Inhalts, beginnend bei 1. | Ja |
+   | `name` | Name der Anzeigenunterbrechung, z. B. Pre-roll, Mid-roll und Post-roll. | Ja |
+   | `position` | Die Position der Anzeigenunterbrechung im Inhalt, beginnend mit 1. | Ja |
    | `startTime` | Abspielpositionswert bei Start der Werbeunterbrechung. | Ja |
 
    Erstellung von Werbeunterbrechungsobjekten:
@@ -68,7 +68,7 @@ Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung d
    | --- | --- | :---: |
    | `name` | Der Anzeigename der Werbeanzeige. | Ja |
    | `adId` | Eindeutige Kennung für die Anzeige. | Ja |
-   | `position` | Positionsnummer der Anzeige in der Werbeunterbrechung, beginnend bei 1. | Ja |
+   | `position` | Die Positionsnummer der Anzeige innerhalb der Werbeunterbrechung, beginnend mit 1. | Ja |
    | `length` | Anzeigenlänge | Ja |
 
    Erstellung von Anzeigenobjekten:

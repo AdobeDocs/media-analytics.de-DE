@@ -4,11 +4,11 @@ description: Erfahren Sie, welche Anrufe Sie zur Validierung Ihrer Implementieru
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '608'
-ht-degree: 100%
+ht-degree: 80%
 
 ---
 
@@ -32,8 +32,8 @@ ht-degree: 100%
 
 **Hinweise:**
 
-* Zusätzliche Kontextdatenvariablen sollten vorhanden sein und Metadaten enthalten. Siehe unten zu Details für Metadaten.
-* Die Länge für lineare Streams sollte auf die beste Schätzung für die aktuelle Sendung eingestellt werden.
+* Zusätzliche Kontextdatenvariablen sollten vorhanden sein und Metadaten enthalten. Siehe Metadatendetails unten.
+* Die Länge für lineare Streams sollte auf die beste Schätzung für die aktuelle Show eingestellt werden.
 
 ### Start-Aufruf für Standard-Metadaten in Adobe Analytics (AppMeasurement) {#std-metadata-aa}
 
@@ -78,8 +78,8 @@ ht-degree: 100%
 
 **Hinweise:**
 
-* Zusätzliche Kontextdatenvariablen sollten vorhanden sein und Metadaten enthalten. Siehe unten zu Details für Metadaten.
-* Die Position der Abspielleiste für lineare Streams sollte beim Videostart auf die Sekunden eingestellt werden, die seit Beginn der aktuellen Sendung verstrichen sind, nicht auf 0.
+* Zusätzliche Kontextdatenvariablen sollten vorhanden sein und Metadaten enthalten. Siehe Metadatendetails unten.
+* Die Abspielposition für lineare Streams beim Videostart sollte auf die seit Beginn der aktuellen Sendung verstrichenen Sekunden gesetzt werden, nicht auf 0.
 
 ### Start-Aufruf für Standard-Metadaten in Media Analytics (Heartbeats) {#std-metadata-ma}
 
@@ -147,7 +147,7 @@ ht-degree: 100%
 
 **Hinweise:**
 
-* Zusätzliche Kontextdatenvariablen sollten vorhanden sein und Metadaten enthalten. Siehe unten zu Details für Metadaten.
+* Zusätzliche Kontextdatenvariablen sollten vorhanden sein und Metadaten enthalten. Siehe Metadatendetails unten.
 * Die Anzeigenlänge kann auf -1 gesetzt werden, wenn sie beim Anzeigenstart nicht verfügbar ist.
 
 ### Anzeigenstart-Aufruf für Standard-Metadaten in Adobe Analytics (AppMeasurement) {#std-metadata-aa-ad-start}
@@ -192,7 +192,7 @@ ht-degree: 100%
 
 **Hinweise:**
 
-* Zusätzliche Kontextdatenvariablen sollten vorhanden sein und Metadaten enthalten. Siehe unten zu Details für Metadaten.
+* Zusätzliche Kontextdatenvariablen sollten vorhanden sein und Metadaten enthalten. Siehe Metadatendetails unten.
 * Die Anzeigenlänge kann auf -1 gesetzt werden, wenn sie beim Anzeigenstart nicht verfügbar ist.
 
 ### Anzeigenstart-Aufruf für Standard-Metadaten in Media Analytics (Heartbeats) {#std-metadata-ma-ad-start}

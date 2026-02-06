@@ -4,11 +4,11 @@ description: Erfahren Sie, wie Sie Core-Tracking mit dem Media SDK auf Chromecas
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 88%
+ht-degree: 81%
 
 ---
 
@@ -138,7 +138,7 @@ Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
    * Der Benutzer drückt in der App die Pausetaste.
    * Die Wiedergabe wird vom Player selbst pausiert.
    * (*Mobile Apps*) - Der Benutzer bewegt die App in den Hintergrund, aber Sie möchten, dass die Sitzung der App geöffnet bleibt.
-   * (*Mobile Apps*) - Eine beliebige Systemunterbrechung tritt ein, die dazu führt, dass eine App im Hintergrund ausgeführt wird. Wenn der Benutzer beispielsweise einen Anruf erhält oder eine Popup-Nachricht einer anderen App angezeigt wird, die Anwendung die Sitzung jedoch aktiv halten soll, damit der Benutzer das Video fortsetzen kann.
+   * (*Mobile Apps*) - Eine beliebige Systemunterbrechung tritt ein, die dazu führt, dass eine App im Hintergrund ausgeführt wird. Beispielsweise erhält der Benutzer einen Aufruf oder ein Popup-Fenster in einer anderen Anwendung, aber Sie möchten, dass die Anwendung die Sitzung am Leben hält, damit der Benutzer das Video ab dem Zeitpunkt der Unterbrechung fortsetzen kann.
 
 1. Identifizieren Sie das Ereignis aus dem Player bei wiedergegebenen und/oder nach einer Pause wiederaufgenommenen Videos und rufen Sie [trackPlay](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackComplete) auf:
 
@@ -151,4 +151,4 @@ Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
    >Diese Ereignisquelle kann mit der in Schritt 4 verwendeten identisch sein. Stellen Sie sicher, dass jeder `trackPause()`-API-Aufruf mit einem nachfolgenden `trackPlay()`-API-Aufruf gepaart wird, wenn die Videowiedergabe wiederaufgenommen wird.
 
 * Tracking-Szenarien: [VOD-Wiedergabe ohne Anzeigen](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* Der im Chromecast-SDK enthaltene Beispiel-Player zeigt ein komplettes Tracking-Beispiel.
+* Beispiel-Player, der in der Chromecast-SDK enthalten ist, um ein vollständiges Tracking-Beispiel zu erhalten.

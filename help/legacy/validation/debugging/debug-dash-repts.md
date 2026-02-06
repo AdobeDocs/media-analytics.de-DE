@@ -4,19 +4,19 @@ description: Erfahren Sie mehr über die Adobe-Debug-Dashboards.
 uuid: 8e6f6245-d8bd-4329-89e1-4c5595e04ec5
 exl-id: fc5590a5-4d0e-4a2d-8f40-54c53eabc6f0
 feature: "Streaming Media, Analytics Dashboards"
-role: User, Admin, Data Engineer
-source-git-commit: 70900e305c3ed7a2be4069c6f296d56f1f6e0966
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '82'
-ht-degree: 100%
+ht-degree: 39%
 
 ---
 
 # Debug-Dashboard und -Berichte {#debug-dashboards-and-reports}
 
-Adobe Debug bietet Reporting in Echtzeit, damit Sie Hits und Metadaten anzeigen können, die während der Videowiedergabe gesendet werden. Jeder dieser Berichte kann innerhalb von Debug gespeichert werden.
+Adobe Debug bietet Berichte in Echtzeit, sodass Sie Treffer und Metadaten anzeigen können, die während der Videowiedergabe gesendet werden. Jeder dieser Berichte kann in Debug gespeichert werden.
 
-Für die Zertifizierung können Sie diese Berichte weitergeben, indem Sie einfach die URL kopieren und den Link beispielsweise in einem ZenDesk-Ticket senden.
+Zur Zertifizierung können diese Berichte freigegeben werden, indem einfach die URL kopiert und der Link gesendet wird, z. B. innerhalb eines ZenDesk-Tickets.
 
 >[!NOTE]
 >

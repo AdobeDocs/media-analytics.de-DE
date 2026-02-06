@@ -4,11 +4,11 @@ description: Implementieren des Anzeigen-Trackings in Browser-Anwendungen (JS) m
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 exl-id: 4404d3a6-ab98-40f0-9573-ee32f480f650
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '359'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -38,7 +38,7 @@ Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung d
 
    | Variablenname | Beschreibung | erforderlich |
    | --- | --- | :---: |
-   | `name` | Name der Werbeunterbrechung, z. B. Pre-Roll, Mid-Roll oder Post-Roll. | Ja |
+   | `name` | Name der Anzeigenunterbrechung, z. B. Pre-roll, Mid-roll und Post-roll. | Ja |
    | `position` | Positionsnummer der Werbeunterbrechung, beginnend bei 1. | Ja |
    | `startTime` | Abspielpositionswert bei Start der Werbeunterbrechung. | Ja |
 
@@ -65,7 +65,7 @@ Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung d
    | --- | --- | :---: |
    | `name` | Der Anzeigename der Werbeanzeige. | Ja |
    | `adId` | Eindeutige Kennung für die Anzeige. | Ja |
-   | `position` | Positionsnummer der Anzeige in der Werbeunterbrechung, beginnend bei 1. | Ja |
+   | `position` | Die Positionsnummer der Anzeige innerhalb der Werbeunterbrechung, beginnend mit 1. | Ja |
    | `length` | Anzeigenlänge | Ja |
 
    Erstellung von Anzeigenobjekten:

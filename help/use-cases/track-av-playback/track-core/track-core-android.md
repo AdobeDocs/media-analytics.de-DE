@@ -4,11 +4,11 @@ description: Erfahren Sie, wie Sie Core Tracking mit dem Media SDK in Android im
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '689'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -68,8 +68,8 @@ Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
      >
      >Das Anhängen des Standard-Metadatenobjekts an das Medienobjekt ist optional.
 
-      * Medien-Metadatenschlüssel API-Referenz: [Standard-Metadatenschlüssel - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-      * Hier sehen Sie den umfassenden Satz der verfügbaren Video-Metadaten: [Audio- und Videoparameter](/help/implementation/variables/audio-video-parameters.md)
+      * API-Referenz für Medienmetadatenschlüssel - [Standard-Metadatenschlüssel - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+      * Hier finden Sie einen umfassenden Satz verfügbarer Videometadaten: [Audio- und Videoparameter](/help/implementation/variables/audio-video-parameters.md)
 
    * **Benutzerspezifische Metadaten**
 
@@ -174,7 +174,7 @@ Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
    >
    >Diese Ereignisquelle kann mit der in Schritt 4 verwendeten identisch sein. Stellen Sie sicher, dass jeder `trackPause()`API-Aufruf mit einem nachfolgenden `trackPlay()`-API-Aufruf gepaart wird, wenn die Medienwiedergabe fortgesetzt wird.
 
-Im Folgenden finden Sie weitere Informationen zum Tracking der Core-Wiedergabe:
+Weitere Informationen zum Tracking der Core-Wiedergabe finden Sie unten:
 
 * Tracking-Szenarien: [VOD-Wiedergabe ohne Anzeigen](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* Der im Android-SDK enthaltene Beispiel-Player zeigt ein komplettes Tracking-Beispiel.
+* Beispiel-Player, der in Android SDK enthalten ist, um ein vollständiges Tracking-Beispiel zu erhalten.

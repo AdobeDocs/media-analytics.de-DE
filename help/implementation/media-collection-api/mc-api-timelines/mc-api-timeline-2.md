@@ -4,19 +4,19 @@ description: Erfahren Sie mehr über die Abspielkopf-Timeline und die entspreche
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 100%
 
 ---
 
-# Zeitlicher Ablauf 2: Verlassen der Sitzung durch Anwender {#timeline--2-user-abandons-session}
+# Timeline 2: Verlassen der Sitzung durch Anwender {#timeline--2-user-abandons-session}
 
 ## VOD, Pre-Roll-Anzeige, Mid-Roll-Anzeigen, Anwender verlässt Inhalt schnell
 
-Die folgenden Diagramme illustrieren die Zeitleiste der Abspielleiste und die zugehörige Zeitleiste der Aktionen eines Benutzers. Die Details für jede Aktion und die zugehörigen Anforderungen sind unten aufgeführt.
+Die folgenden Diagramme illustrieren die Timeline der Abspielleiste und die zugehörige Timeline der Aktionen eines Benutzers. Die Details für jede Aktion und die zugehörigen Anforderungen sind unten aufgeführt.
 
 ![API-Inhalt](assets/va_api_content_2.png)
 

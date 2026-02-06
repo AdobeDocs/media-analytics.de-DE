@@ -3,8 +3,8 @@ title: Implementierung und Reporting
 description: Erfahren Sie, wie Sie die Player-Status-Tracking-Funktion implementieren einschließlich
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 78%
@@ -89,7 +89,7 @@ Die für die einzelnen Status bereitgestellten Metriken werden berechnet, als Ko
 * `a.media.states.[state.name].count = 4` – Identifiziert die Anzahl der Vorkommnisse eines Status während jeder einzelnen Wiedergabe eines Streams
 * `a.media.states.[state.name].time = 240` – Identifiziert die Gesamtstatusdauer in Sekunden für jede einzelne Wiedergabe eines Streams
 
-## Berichterstellung
+## Reporting
 
 Alle Player-Statusmetriken können für jede in Analysis Workspace verfügbare Visualisierung von Berichten oder für eine Komponente (Segment, berechnete Metriken) verwendet werden, sobald eine Report Suite für das Player-Status-Tracking aktiviert wurde. Diese Metriken können über die Admin Console für jeden einzelnen Bericht mithilfe der Einrichtung der Medienberichte (Einstellungen bearbeiten > Medienverwaltung > Medienberichte) aktiviert werden.
 

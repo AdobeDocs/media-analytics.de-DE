@@ -4,11 +4,11 @@ description: Erfahren Sie, wie Sie Adobe Debug konfigurieren, um Fehler bei Medi
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 97%
+ht-degree: 94%
 
 ---
 
@@ -79,7 +79,7 @@ Laden Sie das SSL-Zertifikat herunter und installieren Sie es:
       Sie müssen Firefox möglicherweise erneut öffnen, damit die Änderung übernommen wird.
 
    **iOS-Geräte**
-   1. Legen Sie auf Ihrem iOS-Gerät Adobe Debug als HTTP-Proxy fest, indem Sie auf **[!UICONTROL Einstellungen]** **>** **[!UICONTROL WLAN-Einstellungen]** klicken.
+   1. Legen Sie Ihr iOS-Gerät auf die Verwendung von Adobe Debug als HTTP-Proxy fest, indem Sie **[!UICONTROL Settings app]** **>** **[!UICONTROL WiFi settings]**.
 
    1. Gehen Sie in Safari zu [Debuggen](https://proxy.debug.adobe.com/ssl).
 

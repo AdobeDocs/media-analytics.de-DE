@@ -3,11 +3,11 @@ title: Welche Wege stehen zur Implementierung von Streaming-Medien zur Verfügun
 description: Erfahren Sie mehr über Adobe Streaming Media-Implementierungspfade, einschließlich Datenerfassung in Adobe Experience Platform.
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 90%
+ht-degree: 88%
 
 ---
 
@@ -49,7 +49,7 @@ Wenn Sie sich für Media Analytics entschieden haben, informieren Sie sich über
 
 ## Adobe Primetime
 
-Adobe Primetime ist eine Adobe Experience Cloud-Lösung, mit der Inhaltsprogrammierer und -distributoren Medien auf allen vernetzten Bildschirmen monetarisieren können.
+Adobe Primetime ist eine Adobe Experience Cloud-Lösung, mit der Inhaltsprogrammierer und -anbieter Medien auf allen vernetzten Bildschirmen monetarisieren können.
 
 Primetime bietet eine modulare Plattform für die Videoveröffentlichung, Werbung, Personalisierung und Analyse und vereinfacht dadurch das geräteübergreifende Targeting, Monetarisieren und Aktivieren globaler Zielgruppen. Darüber hinaus bieten Primetime-Lösungen folgende Vorteile:
 
@@ -57,7 +57,7 @@ Primetime bietet eine modulare Plattform für die Videoveröffentlichung, Werbun
 * Unterstützung der Messung von Werbeunterbrechungen mit (oder ohne) dynamischer Ad Insertion.
 * Das nahtlose Ad-Insertion-Modell von TVSDK ermöglicht Analysen, die die Anzeigenwiedergabe direkt messen, wodurch die Genauigkeit steigt.
 * Eine große Auswahl an Ereignissen und Metadaten gewährleistet die präzise Aufzeichnung von Problemen mit der QoS-Pufferung oder der mobilen Konnektivität sowie von Endbenutzerinteraktionen auf Mobilgeräten wie dem Suchen, Anhalten und Verschieben von Apps in den Hintergrund.
-* Integrierte Unterstützung für Nielsen DTVR (linear) mit ID3- und DCR mit CMS-Metadaten.
+* Integrierte Unterstützung für Nielsen DTVR (linear) mit ID3-Metadaten und DCR mit CMS-Metadaten.
 
 
 TVSDK ist bereits in das Media Analytics-SDK (Heartbeats) integriert, was die Implementierung auf allen unterstützen Plattformen deutlich vereinfacht und beschleunigt. Befolgen Sie zur Nutzung von Primetime die gleichen Richtlinien und Voraussetzungen wie auf der [Client-Seite](/help/legacy/intro-to-ava/implementation-paths/client-side-path.md) sowie die folgenden Dokumente für Ihre Plattform(en): [Benutzerhandbuch zu Primetime](https://helpx.adobe.com/de/support/primetime.html).

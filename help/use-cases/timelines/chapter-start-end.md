@@ -4,8 +4,8 @@ description: Erfahren Sie mehr über die Timeline des Abspielkopfs und darüber,
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '1159'
 ht-degree: 100%
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## VOD, Pre-Roll-Anzeigen, Pausen, Puffern, Wiedergabe des Inhalts bis zum Ende
 
-Die folgenden Diagramme illustrieren die Zeitleiste der Abspielleiste und die zugehörige Zeitleiste der Aktionen eines Benutzers. Die Details für jede Aktion und die zugehörigen Anforderungen sind unten aufgeführt.
+Die folgenden Diagramme illustrieren die Timeline der Abspielleiste und die zugehörige Timeline der Aktionen eines Benutzers. Die Details für jede Aktion und die zugehörigen Anforderungen sind unten aufgeführt.
 
 ![API-Inhalt](assets/va_api_content_3.png)
 

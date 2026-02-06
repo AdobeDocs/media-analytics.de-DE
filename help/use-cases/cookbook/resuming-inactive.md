@@ -4,11 +4,11 @@ description: Erfahren Sie, wie Sie eine inaktive Sitzung wieder aufnehmen könne
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
 exl-id: ee4cf7f5-5788-4d35-a04d-4ed714ccd663
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '159'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -18,10 +18,10 @@ ht-degree: 100%
 
 Die Media SDK verfolgt automatisch, wie lange die Medienwiedergabe einen der folgenden inaktiven Status aufweist:
 
-* angehalten
-* Suche
 * Angehalten
-* Puffern
+* Wird gesucht
+* Angehalten
+* Pufferung
 
 Wenn eine Medien-Tracking-Sitzung länger als 30 Minuten inaktiv ist, wird die Sitzung automatisch geschlossen. Wenn der Anwender eine zuvor inaktive Tracking-Sitzung wiederaufnimmt (`trackPlay`), erstellt Media Heartbeat automatisch eine neue Videositzung mit den zuvor verwendeten Videoinformationen und Metadaten und sendet ein Heartbeat-Ereignis zur Wiederaufnahme. Weitere Informationen finden Sie unter [Audio- und Videoparameter.](/help/implementation/variables/audio-video-parameters.md)
 

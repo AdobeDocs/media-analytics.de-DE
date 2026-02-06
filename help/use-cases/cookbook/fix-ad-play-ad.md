@@ -4,11 +4,11 @@ description: Erfahren Sie, wie Sie unerwartete main:play-Aufrufe zwischen Anzeig
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 97%
+ht-degree: 75%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 
 In einigen Tracking-Szenarios treten möglicherweise zwischen dem Ende der einen und dem Anfang der nächsten Anzeige unerwartete `main:play`-Aufrufe auf. Wenn die Verzögerung zwischen dem Aufruf zum Abschluss der ersten Anzeige und dem Start der nächsten mehr als 250 Millisekunden beträgt, sendet das Medien-SDK `main:play`-Aufrufe. Wenn diese `main:play`-Aufrufe während einer Pre-Roll-Werbeunterbrechung auftreten, wird die Metrik zum Inhaltsstart möglicherweise zu früh festgelegt.
 
-Eine Lücke zwischen Anzeigen wie die oben beschriebene wird vom Medien-SDK als Hauptinhalt interpretiert, da keine Überlappung mit Anzeigeninhalten besteht. Dem Medien-SDK liegen keine Anzeigeninformationen vor und der Player befindet sich im Wiedergabestatus. Wenn keine Anzeigeninformationen vorliegen und der Player im Wiedergabestatus ist, rechnet das Medien-SDK die Dauer der Lücke standardmäßig dem Hauptinhalt zu. Es kann die Wiedergabedauer nicht den fehlenden Anzeigeninformationen zuordnen.
+Eine Lücke zwischen Anzeigen wie oben beschrieben wird von Media SDK als Hauptinhalt interpretiert, da es dort keine Überschneidung mit Anzeigeninhalten gibt. Auf Media SDK sind keine Anzeigeninformationen festgelegt und der Player befindet sich im Wiedergabestatus. Wenn keine Anzeigeninformationen vorhanden sind und der Player-Status wiedergegeben wird, schreibt Media SDK standardmäßig die Dauer der Lücke zum Hauptinhalt zu. Es kann die Wiedergabedauer nicht den fehlenden Anzeigeninformationen zuordnen.
 
 ## ERKENNUNG
 
@@ -40,9 +40,9 @@ Wenn Sie Adobe Debug oder einen Netzwerk-Packet-Sniffer wie Charles verwenden un
 
 ***Verzögern Sie den Ad Complete-Aufruf.***
 
-Beseitigen Sie die Lücke innerhalb des Players, indem Sie `trackEvent:AdComplete` für die erste Anzeige später aufrufen, sodass `trackEvent:AdStart` für die zweite Anzeige umgehend folgt. Die Anwendung sollte das `AdComplete`-Ereignis nicht gleich zum Ende der ersten Anzeige aufrufen. Stellen Sie sicher, dass Sie bei der letzten Anzeige der Werbeunterbrechung `trackEvent:AdComplete` aufrufen. Wenn der Player erkennen kann, dass das aktuelle Anzeigen-Asset das letzte der Werbeunterbrechung ist, rufen Sie umgehend `trackEvent:AdComplete` auf. Durch diese Lösung wird der ersten Anzeigeneinheit eine zusätzliche Sekunde an Besuchszeit angerechnet.
+Beseitigen Sie die Lücke innerhalb des Players, indem Sie `trackEvent:AdComplete` für die erste Anzeige später aufrufen, sodass `trackEvent:AdStart` für die zweite Anzeige umgehend folgt. Die Anwendung sollte das `AdComplete`-Ereignis nicht gleich zum Ende der ersten Anzeige aufrufen. Stellen Sie sicher, dass Sie bei der letzten Anzeige der Werbeunterbrechung `trackEvent:AdComplete` aufrufen. Wenn der Player erkennen kann, dass das aktuelle Anzeigen-Asset das letzte der Werbeunterbrechung ist, rufen Sie umgehend `trackEvent:AdComplete` auf. Diese Auflösung führt zu weniger als einer Sekunde zusätzlicher Anzeigenbesuchszeit, die der vorherigen Anzeigeneinheit zugeordnet wird.
 
-**Beim Start der Werbeunterbrechung, einschließlich Pre-Roll:**
+**Bei Start der Werbeunterbrechung, einschließlich Pre-Roll:**
 
 * Erstellen Sie die `adBreak`-Objektinstanz für die Werbeunterbrechung, z. B. `adBreakObject`.
 

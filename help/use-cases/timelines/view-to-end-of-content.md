@@ -4,19 +4,19 @@ description: Machen Sie sich mit der Timeline des Abspielkopfs und den entsprech
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: 83c64e35a52921532697063d3fdf987e889b2854
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 99%
 
 ---
 
-# Zeitlicher Ablauf 1: Wiedergabe bis zum Ende des Inhalts{#timeline-view-to-end-of-content}
+# Timeline 1: Wiedergabe bis zum Ende des Inhalts{#timeline-view-to-end-of-content}
 
 ## VOD, Pre-Roll-Anzeigen, Pausen, Puffern, Wiedergabe des Inhalts bis zum Ende
 
-Die folgenden Diagramme illustrieren die Zeitleiste der Abspielleiste und die zugehörige Zeitleiste der Aktionen eines Benutzers. Die Details für jede Aktion und die zugehörigen Anforderungen sind unten aufgeführt.
+Die folgenden Diagramme illustrieren die Timeline der Abspielleiste und die zugehörige Timeline der Aktionen eines Benutzers. Die Details für jede Aktion und die zugehörigen Anforderungen sind unten aufgeführt.
 
 ![API-Inhalt](assets/va_api_content.png)
 
@@ -65,7 +65,7 @@ Am Backend generiert dieser Aufruf einen Adobe Analytics-Initiationsaufruf.
 
 | Aktion | Aktions-Timeline (Sekunden) | Abspielleistenposition (Sekunden) | Client-Anfrage |
 | --- | :---: | :---: | --- |
-| App startet Ping-Ereignis-Timer | 0 | 0 | `/api/v1/sessions/{sid}/events` | |
+| App startet Ping-Ereignis-Timer | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 Starten Sie den Ping-Timer Ihrer App. Das erste Ping-Ereignis sollte dann nach 1 Sekunde ausgelöst werden, wenn Pre-Roll-Anzeigen vorhanden sind, andernfalls nach 10 Sekunden.
 
@@ -178,8 +178,8 @@ Senden Sie innerhalb einer Anzeige jede Sekunde ein Ping-Ereignis an das Backend
 
 >[!NOTE]
 >
->Nachfolgende Anzeigen in der Zeitleiste überspringen die Anzeige der Reihe von 1-Sekunden-Ping-Ereignissen.
->&#x200B;>im Interesse der Kürze …
+>Nachfolgende Anzeigen in der Timeline überspringen die Anzeige der Reihe von 1-Sekunden-Ping-Ereignissen.
+>im Interesse der Kürze …
 
 ```json
 {

@@ -4,17 +4,17 @@ description: APIs zum Festlegen von Benutzer-IDs, die als Kennungen für Unique 
 uuid: fdd54fec-79cd-4bf8-b17e-4d61d84f6310
 exl-id: 6b451082-47f3-4e65-9fe0-cecb2d20dc2d
 feature: "Streaming Media, API"
-role: User, Admin, Data Engineer
-source-git-commit: 70900e305c3ed7a2be4069c6f296d56f1f6e0966
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '53'
-ht-degree: 100%
+ht-degree: 69%
 
 ---
 
 # Festlegen von Benutzer-IDs {#set-user-ids}
 
-Die Anwender-ID ist eine eindeutige anwenderspezifische Besucherkennung, die von der Anwendung für einen Anwender definiert wird.
+Die Benutzer-ID ist eine eindeutige benutzerdefinierte Besucherkennung, die von der Anwendung für einen Benutzer definiert wird.
 
 Legen Sie die ID für Unique Visitors im ADBMobile-SDK wie folgt fest und rufen Sie sie ab:
 

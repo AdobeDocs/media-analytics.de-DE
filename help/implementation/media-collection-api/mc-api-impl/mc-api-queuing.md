@@ -4,11 +4,11 @@ description: Erfahren Sie, was zu tun ist, wenn die Sitzungs-ID zurückgegeben w
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
 exl-id: 2c23c378-c104-4256-b6e7-8eb6871f62da
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '205'
-ht-degree: 100%
+ht-degree: 80%
 
 ---
 
@@ -22,7 +22,7 @@ Der Player löst möglicherweise Ereignisse aus, _bevor Sitzungsantwort_ (mit de
 >
 >Die [Ereignisanfrage](../mc-api-ref/mc-api-events-req.md) gibt neben einem HTTP-Antwortcode keine Daten an den Client zurück.
 
-Im Referenz-Player in Ihrer Verteilung finden Sie eine Möglichkeit, Ereignisse vor dem Empfang der Sitzungs-ID zu verarbeiten. Beispiel:
+Überprüfen Sie den Referenz-Player in Ihrer Distribution auf eine Möglichkeit, Ereignisse zu verarbeiten, bevor Sie eine Sitzungs-ID erhalten. Beispiel:
 
 ```js
 var eventData = {};            // JSON payload 
@@ -75,7 +75,7 @@ VideoPlayer.prototype.getPlayerTime = function() {
 };
 ```
 
-**Sämtliche Ereignisse in der Warteschlange verarbeiten:** Der Referenz-Player verarbeitet die Ereignisse in der Warteschlange wie folgt:
+**Alle Ereignisse in der Warteschlange verarbeiten -** Der Referenz-Player verarbeitet Ereignisse in der Warteschlange wie folgt:
 
 ```js
     […] 
@@ -92,4 +92,4 @@ VideoPlayer.prototype._processPendingEvents =
 }
 ```
 
-Fahren Sie mit der Verarbeitung laufender Tracking-Ereignisse fort.
+Fahren Sie mit der Verarbeitung der Tracking-Ereignisse fort, sobald sie auftreten.

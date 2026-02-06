@@ -4,11 +4,11 @@ description: Erfahren Sie mehr über die verfügbaren iOS-Metadatenschlüssel.
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '111'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -27,16 +27,16 @@ Von `ADBStandardMetadataKeys.h`:
 | `ADBVideoMetadataKeyEPISODE` | Episode | Video |
 | `ADBVideoMetadataKeyASSET_ID` | Asset | Video |
 | `ADBVideoMetadataKeyGENRE` | Genre | Video |
-| `ADBVideoMetadataKeyFIRST_AIR_DATE` | Erstes Sendedatum | Video |
-| `ADBVideoMetadataKeyFIRST_DIGITAL_DAT` | Erstes digitales Veröffentlichungsdatum | Video |
+| `ADBVideoMetadataKeyFIRST_AIR_DATE` | Datum der Erstausstrahlung | Video |
+| `ADBVideoMetadataKeyFIRST_DIGITAL_DAT` | Erstes digitales Datum | Video |
 | `ADBVideoMetadataKeyRATING` | Rating | Video |
 | `ADBVideoMetadataKeyORIGINATOR` | Urheber | Video |
 | `ADBVideoMetadataKeyNETWORK` | Netzwerk | Video |
-| `ADBVideoMetadataKeySHOW_TYPE` | Serientyp | Video |
-| `ADBVideoMetadataKeyAD_LOAD` | Anzeigenladevorgang | Video |
+| `ADBVideoMetadataKeySHOW_TYPE` | Sendungstyp | Video |
+| `ADBVideoMetadataKeyAD_LOAD` | Laden der Anzeige | Video |
 | `ADBVideoMetadataKeyMVPD` | mvpd | Video |
 | `ADBVideoMetadataKeyAUTHORIZED` | Authorization | Video |
-| `ADBVideoMetadataKeyDAY_PART` | Tagesteil | Video |
+| `ADBVideoMetadataKeyDAY_PART` | Teil des Tages | Video |
 | `ADBVideoMetadataKeyFEED` | Feed | Video |
 | `ADBVideoMetadataKeySTREAM_FORMAT` | Stream-Format | Video |
 

@@ -3,8 +3,8 @@ title: Migration vom eigenständigen Media SDK zu Adobe Launch - Web (JS)
 description: Erfahren Sie, wie Sie vom Media SDK zu Launch für JS migrieren.
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 97%

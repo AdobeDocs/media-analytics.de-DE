@@ -4,11 +4,11 @@ description: Erfahren Sie, wie Sie Core Tracking mit dem Media SDK unter iOS imp
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '704'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -29,7 +29,7 @@ Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
    | Variablenname | Beschreibung | erforderlich |
    |---|---|---|
    | `name` | Videoname | Ja |
-   | `mediaid` | Eindeutige ID des Videos | Ja |
+   | `mediaid` | Eindeutige Kennung des Videos | Ja |
    | `length` | Videolänge | Ja |
    | `streamType` | Streamtyp (siehe _StreamType-Konstanten_ unten) | Ja |
    | `mediaType` | Medientyp (siehe _MediaType-Konstanten_ unten) | Ja |
@@ -163,7 +163,7 @@ Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
    * Der Benutzer drückt in der App die Pausetaste.
    * Die Wiedergabe wird vom Player selbst pausiert.
    * (*Mobile Apps*) - Der Benutzer bewegt die App in den Hintergrund, aber Sie möchten, dass die Sitzung der App geöffnet bleibt.
-   * (*Mobile Apps*) - Eine beliebige Systemunterbrechung tritt ein, die dazu führt, dass eine App im Hintergrund ausgeführt wird. Wenn der Benutzer beispielsweise einen Anruf erhält oder eine Popup-Nachricht einer anderen App angezeigt wird, die Anwendung die Sitzung jedoch aktiv halten soll, damit der Benutzer das Video fortsetzen kann.
+   * (*Mobile Apps*) - Eine beliebige Systemunterbrechung tritt ein, die dazu führt, dass eine App im Hintergrund ausgeführt wird. Beispielsweise erhält der Benutzer einen Aufruf oder ein Popup-Fenster in einer anderen Anwendung, aber Sie möchten, dass die Anwendung die Sitzung am Leben hält, damit der Benutzer das Video ab dem Zeitpunkt der Unterbrechung fortsetzen kann.
 
 1. Identifizieren Sie das Ereignis aus dem Player bei wiedergegebenen und/oder nach einer Pause wiederaufgenommenen Videos und rufen Sie `trackPlay` auf:
 
@@ -177,7 +177,7 @@ Diese Dokumentation behandelt das Tracking in der Version 2.x des SDK.
    >
    >Diese Ereignisquelle kann mit der in Schritt 4 verwendeten identisch sein. Stellen Sie sicher, dass jeder `trackPause()`-API-Aufruf mit einem nachfolgenden `trackPlay()`-API-Aufruf gepaart wird, wenn die Videowiedergabe wiederaufgenommen wird.
 
-Im Folgenden finden Sie weitere Informationen zum Tracking der Core-Wiedergabe:
+Weitere Informationen zum Tracking der Core-Wiedergabe finden Sie unten:
 
 * Tracking-Szenarien: [VOD-Wiedergabe ohne Anzeigen](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* Der im iOS-SDK enthaltene Beispiel-Player zeigt ein komplettes Tracking-Beispiel.
+* Beispiel-Player, der in iOS SDK enthalten ist, um ein vollständiges Tracking-Beispiel zu erhalten.

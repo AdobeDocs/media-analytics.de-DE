@@ -4,11 +4,11 @@ description: Implementieren des Anzeigen-Trackings in Roku-Anwendungen mit dem M
 uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 exl-id: aaed828d-1aba-486e-83e3-2ffd092305e2
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '298'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +38,7 @@ Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung d
 
    | Variablenname | Beschreibung | erforderlich |
    | --- | --- | :---: |
-   | `name` | Name der Werbeunterbrechung, z. B. Pre-Roll, Mid-Roll oder Post-Roll. | Ja |
+   | `name` | Name der Anzeigenunterbrechung, z. B. Pre-roll, Mid-roll und Post-roll. | Ja |
    | `position` | Positionsnummer der Werbeunterbrechung, beginnend bei 1. | Ja |
    | `startTime` | Abspielpositionswert bei Start der Werbeunterbrechung. | Ja |
 
@@ -69,7 +69,7 @@ Mit den folgenden Anweisungen können Sie die Implementierung unter Verwendung d
 
 1. Optional können Standard- und/oder Anzeigenmetadaten über Kontextdatenvariablen an die Medien-Tracking-Sitzung angehängt werden.
 
-   * [Standard-Anzeigenmetadaten in Roku implementieren &#x200B;](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+   * [Standard-Anzeigenmetadaten in Roku implementieren ](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    * **Anwenderspezifische Anzeigenmetadaten:** Erstellen Sie für anwenderdefinierte Metadaten ein variables Objekt für die anwenderspezifischen Datenvariablen und füllen Sie es mit den Daten für das aktuelle Anzeigen-Asset:
 
      ```

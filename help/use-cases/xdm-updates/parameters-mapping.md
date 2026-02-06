@@ -2,18 +2,18 @@
 title: Migrieren von Audiences zum neuen Datentyp Adobe Analytics für Streaming-Medien
 description: Erfahren Sie, wie Sie Audiences zum neuen Datentyp Adobe Analytics für Streaming-Medien migrieren.
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 79203a2f-8158-44f2-83b2-146179be9180
-source-git-commit: 61e5279e6d53b18955424e76d05d440b83dae07e
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '1346'
-ht-degree: 47%
+ht-degree: 46%
 
 ---
 
 # Zuordnung von Media Analytics-Parametern für Adobe Experience Platform und Customer Journey Analytics
 
-Dieses Dokument enthält eine umfassende Liste aller Medienanalyseparameter, die in Adobe Experience Platform und Customer Journey Analytics verwendet werden. Sie unterstützt die Integration von Daten, die von Adobe Analytics über den [Analytics Source Connector](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) oder den [Analytics Source Connector for Classifications) in Platform importiert &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/classifications), indem jeder Parameter seinem entsprechenden XDM-Feldpfad zugeordnet wird.
+Dieses Dokument enthält eine umfassende Liste aller Medienanalyseparameter, die in Adobe Experience Platform und Customer Journey Analytics verwendet werden. Sie unterstützt die Integration von Daten, die von Adobe Analytics über den [Analytics Source Connector](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) oder den [Analytics Source Connector for Classifications) in Platform importiert ](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/classifications), indem jeder Parameter seinem entsprechenden XDM-Feldpfad zugeordnet wird.
 
 ## In Media Analytics reservierte Variablen
 
@@ -189,8 +189,8 @@ Beim Arbeiten mit den Klassifizierungsdatensätzen während des Reportings müss
 | videoad | Anzeigenname | `<_sandbox>.ad_name` |
 | videoad | Creative-ID | `<_sandbox>.creative_id` |
 | videoadpod | Schlüssel/Werbe-Pod-ID | `<_sandbox>.key` |
-| videoadpod | Position der Werbeunterbrechung | `<_sandbox>.pod_position` |
-| videoadpod | Name der Werbeunterbrechung | `<_sandbox>.pod_name` |
+| videoadpod | Pod-Position | `<_sandbox>.pod_position` |
+| videoadpod | Pod-Name | `<_sandbox>.pod_name` |
 | videochapter | Schlüssel/Kapitel | `<_sandbox>.key` |
 | videochapter | Kapitellänge | `<_sandbox>.chapter_length` |
 | videochapter | Kapiteloffset | `<_sandbox>.chapter_offset` |

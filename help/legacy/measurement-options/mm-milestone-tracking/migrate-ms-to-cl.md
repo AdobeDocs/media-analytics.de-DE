@@ -4,11 +4,11 @@ description: Erfahren Sie, wie Sie Meilenstein-Variablen in Methoden des Moduls 
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '596'
-ht-degree: 97%
+ht-degree: 79%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 ## Überblick  {#overview}
 
-Die grundlegenden Prinzipien der Videomessung sind die gleichen wie beim Milestone- und Custom Link-Tracking, bei denen Videoplayer-Ereignisse aufgenommen und auf Analysemethoden übertragen werden, während gleichzeitig Playermetadaten und -werte erfasst und auf Analysevariablen übertragen werden. Der Custom Link-Ansatz sollte als eine Verschlankung und Vereinfachung sowohl der Implementierung als auch der erfassten Daten betrachtet werden. Bei der Custom Link-Lösung sind keine Variablen oder Methoden für die Videomessung vordefiniert, sondern es ist eine vollständige anwenderdefinierte Einrichtung erforderlich. Es sollte möglich sein, den Player-Ereigniscode zu aktualisieren, um auf die anwenderdefinierten Linktracking-Aufrufe für grundlegende Spielereignisse wie Start und Ende zu verweisen. Weitere Informationen finden Sie im [Implementierungshandbuch für benutzerspezifische Links](/help/legacy/measurement-options/cl-in-aa/cl-impl-guide.md).
+Die Kernkonzepte der Videomessung sind für das Meilenstein- und das Tracking benutzerdefinierter Links identisch, bei denen Video-Player-Ereignisse mit Analysemethoden verknüpft und gleichzeitig Player-Metadaten und -Werte erfasst und Analytics-Variablen zugeordnet werden. Der Ansatz für benutzerspezifische Links sollte als eine Verschlankung und Vereinfachung sowohl der Implementierung als auch der erfassten Daten betrachtet werden. Bei der Lösung „Benutzerspezifischer Link“ sind keine Variablen oder Methoden für die Videomessung vordefiniert, sondern eine vollständige benutzerdefinierte Einrichtung erforderlich. Es sollte möglich sein, den Player-Ereigniscode so zu aktualisieren, dass er auf die benutzerdefinierten Linktracking-Aufrufe für grundlegende Player-Ereignisse wie Start und Abschluss verweist. Weitere Informationen finden Sie im [Implementierungshandbuch für benutzerspezifische Links](/help/legacy/measurement-options/cl-in-aa/cl-impl-guide.md).
 
 Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone-Lösung und der Lösung mit benutzerspezifischen Links.
 

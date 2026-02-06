@@ -2,9 +2,9 @@
 title: Zugriff auf Links zu älteren Media SDKs
 description: Links zu älteren SDK-Downloads für verfügbare Plattformen, einschließlich Android, iOS, JavaScript, Chromecast und Roku.
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 70%
@@ -27,7 +27,7 @@ Die Adobe-Datenerfassung mit der Media Analytics-Erweiterung erfordert Folgendes
 * Sie müssen Adobe Experience Cloud-Kunde sein.
 * Sie müssen den Datenerfassungs- oder DTM-Einbettungs-Code auf Ihren Web-Seiten bereitstellen.
 * Sie müssen die [Analytics-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=de) konfigurieren.
-* Sie müssen die Erweiterung [Adobe Media Analytics for Audio and Video“ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=de).
+* Sie müssen die Erweiterung [Adobe Media Analytics for Audio and Video“ ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html).
 * Sie müssen die [Experience Cloud-ID-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=de) konfigurieren.
 
 ## 2.x Medien-SDKs herunterladen {#download-2x-sdks}
@@ -38,4 +38,4 @@ Die Adobe-Datenerfassung mit der Media Analytics-Erweiterung erfordert Folgendes
 | iOS/Apple TV | [Legacy Media SDK für iOS v2.3.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.3.0) (Wenden Sie sich an [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html), um Legacy 2.0 SDK zu erhalten) | [iOS-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [Einrichten von iOS](/help/legacy/media-sdk/setup/set-up-ios.md) |
 | JavaScript | [Legacy Media SDK für JS v2.2.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.2) | [JS-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [Einrichten von JavaScript 2.x](/help/legacy/media-sdk/setup/setup-javascript/set-up-js-2.md) |
 | Roku | [Legacy Media SDK für Roku v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) | | [Einrichten von Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
-| Chromecast | [Legacy Media SDK für Chromecast v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast einrichten &#x200B;](/help/implementation/media-sdk/setup/set-up-chromecast.md) |
+| Chromecast | [Legacy Media SDK für Chromecast v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast-API-Referenz](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Chromecast einrichten ](/help/implementation/media-sdk/setup/set-up-chromecast.md) |

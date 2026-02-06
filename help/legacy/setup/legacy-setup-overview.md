@@ -2,12 +2,12 @@
 title: Implementieren von älteren Media SDKs – Erklärung
 description: Erfahren Sie, wie Sie das **ältere** Media SDK der Version 2.x für das Medien-Tracking in Ihren mobilen, OTT- und Browser-Programmen (JS) einrichten.
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: d94ede3e-95f8-4591-9833-ef39aff12ba9
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '755'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -143,7 +143,7 @@ Media Analytics-Tracking-Implementierungen generieren zwei Arten von Tracking-Au
 
   Der Analytics-Tracking-Server sollte auf „`.sc.omtrdc.net`“ enden oder ein CNAME sein.
 
-* **&#x200B; Media Analytics-Server (Heartbeats)**
+* ** Media Analytics-Server (Heartbeats)**
 Dieser hat immer das Format „`[your_namespace].hb.omtrdc.net`“. Der Wert „`[your_namespace]`“gibt Ihr Unternehmen an und wird von Adobe bereitgestellt.
 
 Das Medien-Tracking verhält sich auf allen Plattformen – Desktop oder Mobilgeräte – gleich. Das Audio-Tracking funktioniert derzeit auf mobilen Plattformen. Es gibt einige universelle Variablen, die für alle Tracking-Aufrufe überprüft werden müssen:
@@ -152,13 +152,13 @@ Das Medien-Tracking verhält sich auf allen Plattformen – Desktop oder Mobilg
 
 | Video Analytics-SDKs 1.x  |  Entwicklerhandbücher (nur PDFs) |
 | --- | --- |
-| Android | [Android-Konfiguration](vhl-dev-guide-v15_android.pdf) |
+| Android | [Für Android konfigurieren](vhl-dev-guide-v15_android.pdf) |
 | Apple TV | [Konfigurieren von für Apple TV](vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | [Chromecast-Konfiguration](chromecast_1.x_sdk.pdf) |
-| iOS | [iOS-Konfiguration](vhl-dev-guide-v15_ios.pdf) |
-| JavaScript | [JavaScript-Konfiguration](vhl-dev-guide-v15_js.pdf) |
+| Chromecast | [Konfigurieren für Chromecast](chromecast_1.x_sdk.pdf) |
+| iOS | [Für iOS konfigurieren](vhl-dev-guide-v15_ios.pdf) |
+| JavaScript | [Für JavaScript konfigurieren](vhl-dev-guide-v15_js.pdf) |
 | Primetime | <ul> <li> Android: [Media Analytics-Konfiguration](https://helpx.adobe.com/de/support/primetime.html) </li> <li> DHLS: [Media Analytics-Konfiguration](https://helpx.adobe.com/de/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS: [Media Analytics-Konfiguration](https://helpx.adobe.com/de/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
-| TVML | [TVML-Konfiguration](vhl_tvml.pdf) |
+| TVML | [Konfigurieren von für TVML](vhl_tvml.pdf) |
 
 ## Primetime Medien-SDK-Dokumentation {#primetime-docs}
 

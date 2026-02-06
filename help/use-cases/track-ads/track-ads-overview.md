@@ -4,11 +4,11 @@ description: Überblickt über die Implementierung des Anzeigen-Trackings mit de
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '510'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -72,8 +72,8 @@ Die Wiedergabe von Anzeigen beinhaltet das Tracking von Werbeunterbrechungen, An
 
    | Variablenname | Beschreibung | erforderlich |
    | --- | --- | :---: |
-   | `name` | Name der Werbeunterbrechung, z. B. Pre-Roll, Mid-Roll oder Post-Roll. | Ja |
-   | `position` | Positionsnummer der Werbeunterbrechung innerhalb des Inhalts, beginnend bei 1. | Ja |
+   | `name` | Name der Anzeigenunterbrechung, z. B. Pre-roll, Mid-roll und Post-roll. | Ja |
+   | `position` | Die Position der Anzeigenunterbrechung im Inhalt, beginnend mit 1. | Ja |
    | `startTime` | Abspielpositionswert bei Start der Werbeunterbrechung. | Ja |
 
 1. Rufen Sie `trackEvent()` mit `AdBreakStart` in der `MediaHeartbeat`-Instanz auf, um das Tracking der Werbeunterbrechung zu starten.
@@ -86,12 +86,12 @@ Die Wiedergabe von Anzeigen beinhaltet das Tracking von Werbeunterbrechungen, An
    | --- | --- | :---: |
    | `name` | Der Anzeigename der Werbeanzeige. | Ja |
    | `adId` | Eindeutige Kennung für die Anzeige. | Ja |
-   | `position` | Positionsnummer der Anzeige in der Werbeunterbrechung, beginnend bei 1. | Ja |
+   | `position` | Die Positionsnummer der Anzeige innerhalb der Werbeunterbrechung, beginnend mit 1. | Ja |
    | `length` | Anzeigenlänge | Ja |
 
-1. Optional können Standard- und/oder Werbemetadaten über Kontextdatenvariablen an die Tracking-Sitzung angehängt werden.
+1. Fügen Sie optional über Kontextdatenvariablen Standard- und/oder Anzeigenmetadaten an die Tracking-Sitzung an.
 
-   * **Metadaten für Standardanzeigen:** Erstellen Sie für Metadaten für Standardanzeigen ein Wörterbuch der Schlüsselwertepaare für Standardanzeigenmetadaten unter Verwendung der Schlüssel für Ihre Plattform.
+   * **Standard-Anzeigenmetadaten -** Erstellen Sie für Standard-Anzeigenmetadaten ein Wörterbuch der Schlüssel-Wert-Paare für Standard-Anzeigenmetadaten mithilfe der Schlüssel für Ihre Plattform.
    * **Anwenderspezifische Anzeigenmetadaten:** Erstellen Sie für anwenderdefinierte Metadaten ein variables Objekt für die anwenderspezifischen Datenvariablen und füllen Sie es mit den Daten für aktuelle Anzeigen.
 
 1. Rufen Sie `trackEvent()` mit dem `AdStart`-Ereignis in der `MediaHeartbeat`-Instanz auf, um das Tracking der Anzeigenwiedergabe zu starten.
