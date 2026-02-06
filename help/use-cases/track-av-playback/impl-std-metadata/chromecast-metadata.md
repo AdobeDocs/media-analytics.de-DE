@@ -5,20 +5,20 @@ uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 exl-id: ccc717ae-d846-4349-8282-5e3511ddeb9b
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 9b2d64e856af6a975b371d7c794197a5541997f1
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 100%
+ht-degree: 71%
 
 ---
 
 # Chromecast-Metadatenelemente{#chromecast-metadata-keys}
 
-Standardmäßige Video- und Anzeigenmetadaten können in den Medien- bzw. Anzeigen-Informationsobjekten festgelegt werden. Geben Sie mithilfe der Konstantenschlüssel für Video-/Anzeigen-Metadaten das Wörterbuch an, das die Standardmetadaten zum Informationsobjekt enthält, bevor Sie die APIs verfolgen. Eine vollständige Liste der standardmäßigen Metadaten-Konstanten finden Sie unten in den Tabellen mit Beispielen.
+Standard-Video- und Anzeigenmetadaten können für Medien- bzw. Anzeigeninformationsobjekte festgelegt werden. Geben Sie mithilfe der Konstantenschlüssel für Video-/Anzeigen-Metadaten das Wörterbuch an, das die Standardmetadaten zum Informationsobjekt enthält, bevor Sie die APIs verfolgen. In den folgenden Tabellen finden Sie die gesamte Liste der Standard-Metadatenkonstanten, gefolgt von einem Beispiel.
 
 ## Metadaten-Konstanten {#video-metadata-constants}
 
-| Metadatenname | Kontextdatenschlüssel | Konstantenname |
+| Name der Metadaten | Kontextdatenschlüssel | Konstantenname |
 | --- | --- | --- |
 | Show | `a.media.show` | `ADBMobile.media.VideoMetadataKeys.SHOW` |
 | Staffel | `a.media.season` | `ADBMobile.media.VideoMetadataKeys.SEASON` |
@@ -40,7 +40,7 @@ Standardmäßige Video- und Anzeigenmetadaten können in den Medien- bzw. Anzeig
 
 ## Anzeigenmetadaten-Konstanten {#ad-metadata-constants}
 
-| Metadatenname | Kontextdatenschlüssel | Konstantenname |
+| Name der Metadaten | Kontextdatenschlüssel | Konstantenname |
 | --- | --- | --- |
 | Advertiser | `a.media.ad.advertiser` | `ADBMobile.media.AdMetadataKeys.ADVERTISER` |
 | Kampagnen-ID | `a.media.ad.campaign` | `ADBMobile.media.AdMetadataKeys.CAMPAIGN_ID` |

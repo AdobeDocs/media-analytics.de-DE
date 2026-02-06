@@ -5,20 +5,20 @@ uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 9b2d64e856af6a975b371d7c794197a5541997f1
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 91%
+ht-degree: 84%
 
 ---
 
 # Roku-Metadatenelemente{#roku-metadata-keys}
 
-Standardmäßige Video-, Audio- und Anzeigenmetadaten können in den Medien- bzw. Anzeigen-Informationsobjekten festgelegt werden. Geben Sie mithilfe der Konstantenschlüssel für Video-/Anzeigen-Metadaten das Wörterbuch an, das die Standardmetadaten zum Informationsobjekt enthält, bevor Sie die APIs verfolgen. Eine vollständige Liste der standardmäßigen Metadaten-Konstanten finden Sie unten in den Tabellen mit Beispielen.
+Standardmäßige Video-, Audio- und Anzeigenmetadaten können in den Medien- bzw. Anzeigen-Informationsobjekten festgelegt werden. Geben Sie mithilfe der Konstantenschlüssel für Video-/Anzeigen-Metadaten das Wörterbuch an, das die Standardmetadaten zum Informationsobjekt enthält, bevor Sie die APIs verfolgen. In den folgenden Tabellen finden Sie die gesamte Liste der Standard-Metadatenkonstanten, gefolgt von einem Beispiel.
 
 ## Video-Metadaten-Konstanten {#video-metadata-constants}
 
-| Metadatenname | Kontextdatenschlüssel | Konstantenname |
+| Name der Metadaten | Kontextdatenschlüssel | Konstantenname |
 | --- | --- | --- |
 | Show | `a.media.show` | `MEDIA_VideoMetadataKeySHOW` |
 | Staffel | `a.media.season` | `MEDIA_VideoMetadataKeySEASON` |
@@ -40,7 +40,7 @@ Standardmäßige Video-, Audio- und Anzeigenmetadaten können in den Medien- bzw
 
 ## Audio-Metadatenkonstanten {#audio-metadata-constants}
 
-| Metadatenname | Kontextdatenschlüssel | Konstantenname |
+| Name der Metadaten | Kontextdatenschlüssel | Konstantenname |
 | --- | --- | --- |
 | Künstler | `a.media.artist` | `MEDIA_AudioMetadataKeyARTIST` |
 | Album | `a.media.album` | `MEDIA_AudioMetadataKeyALBUM` |
@@ -51,7 +51,7 @@ Standardmäßige Video-, Audio- und Anzeigenmetadaten können in den Medien- bzw
 
 ## Anzeigenmetadaten-Konstanten {#ad-metadata-constants}
 
-| Metadatenname | Kontextdatenschlüssel | Konstantenname |
+| Name der Metadaten | Kontextdatenschlüssel | Konstantenname |
 | --- | --- | --- |
 | Advertiser | `a.media.ad.advertiser` | `MEDIA_AdMetadataKeyADVERTISER` |
 | Kampagnen-ID | `a.media.ad.campaign` | `MEDIA_AdMetadataKeyCAMPAIGN_ID` |
