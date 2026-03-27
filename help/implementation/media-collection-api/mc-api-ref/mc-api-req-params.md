@@ -5,14 +5,14 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+source-git-commit: 528a82a4299370c2ef5a366b1f3fab9fd21b164f
 workflow-type: tm+mt
-source-wordcount: '1337'
-ht-degree: 97%
+source-wordcount: '1344'
+ht-degree: 95%
 
 ---
 
-# Anfrageparameter {#request-parameters}
+# Anfrageparameter{#request-parameters}
 
 ## Analytics-Daten
 
@@ -124,22 +124,24 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->Media Analytics (MA) ist in das Portfolio von Experience Cloud-Anwendungen (Adobe Analytics, Audience Manager, Target usw.) integriert. Sie benötigen eine Experience Cloud ID, um auf diese Anwendungen zuzugreifen. _In den meisten Szenarien sollten Sie die ECID verwenden, um Benutzer zu identifizieren._
+>Media Analytics (MA) ist in das Portfolio von Experience Cloud-Anwendungen (Adobe Analytics, Audience Manager, Target usw.) integriert. Sie benötigen eine Experience Cloud ID, um auf diese Apps zugreifen zu können. _Die ECID sollte verwendet werden, um Benutzende in den meisten Szenarien zu identifizieren._
 
 ### appInstallationId
 
 * **Wenn Sie den `appInstallationId`-Wert *nicht* übergeben:** Das MA-Backend generiert keine MCID mehr, sondern überlässt diese Aufgabe Adobe Analytics. Adobe empfiehlt, entweder eine MCID (sofern verfügbar) oder eine `appInstallationId` zu senden (neben der erforderlichen `marketingCloudOrgId`), damit die Mediensammlungs-API die MCID generiert und bei allen Aufrufen sendet.
 
-* **Wenn Sie *den* `appInstallationId`-Wertübergeben:** Die MCID *kann* vom MA-Backend generiert werden, wenn Sie Werte für die Parameter `appInstallationId` und `marketingCloudOrgId` (erforderlich) übergeben.  Wenn Sie `appInstallationId` nicht selbst übergeben, muss der Wert clientseitig persistent sein. Er muss außerdem eindeutig für die Anwendung auf dem Gerät sein und beibehalten werden, bis die Anwendung neu installiert wird.
+* **Wenn Sie *den* `appInstallationId`-Wertübergeben:** Die MCID *kann* vom MA-Backend generiert werden, wenn Sie Werte für die Parameter `appInstallationId` und `marketingCloudOrgId` (erforderlich) übergeben. Wenn Sie `appInstallationId` nicht selbst übergeben, muss der Wert clientseitig persistent sein. Er muss außerdem eindeutig für die Anwendung auf dem Gerät sein und beibehalten werden, bis die Anwendung neu installiert wird.
 
 >[!NOTE]
 >
 >`appInstallationId` identifiziert die Anwendung *und das Gerät* eindeutig. Sie muss für jede Anwendung auf jedem Gerät eindeutig sein. Zwei Anwender, die dieselbe Version der Anwendung auf verschiedenen Geräten verwenden, müssen also eine unterschiedliche (eindeutige) `appInstallationId` senden.
 
-<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The .
+<!-- 
+Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The .
 \<ul id="ul_iwc_fqt_pbb"\>
  \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li>
-</ul> -->
+</ul> 
+-->
 
 ### visitor.marketingCloudOrgId
 

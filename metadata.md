@@ -2,26 +2,28 @@
 cloud: Experience Cloud
 solution: Analytics
 feature-set: Analytics
-git-repo: https://github.com/AdobeDocs/media-analytics.de-DE
+landing-page-name: analytics
+landing-page-breadcrumb-title: Analytics
+git-repo: https://github.com/AdobeDocs/media-analytics.en
 index: true
-source-git-commit: 10faed698a8c4b0531a032bdfbb24fc8693055ce
+source-git-commit: 528a82a4299370c2ef5a366b1f3fab9fd21b164f
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 100%
+source-wordcount: '128'
+ht-degree: 0%
 
 ---
 
 
 # Metadaten für die interne Verwendung
 
-Die Datei metadata.md enthält Metadaten auf Repo-Ebene, die an die TOC.md-Dateien des Benutzerhandbuchs im Repo weitergegeben werden. Wenn Sie den Inhalt von metadata.md für ein Benutzerhandbuch ändern möchten, tun Sie dies in einer beliebigen TOC.md-Datei.
+Die Datei „metadata.md“ enthält Metadaten auf Repo-Ebene, die an die im Repository enthaltenen TOC.md-Dateien des Benutzerhandbuchs weitergegeben werden. Wenn Sie den Inhalt von „metadata.md“ für ein Benutzerhandbuch ändern möchten, verwenden Sie dazu eine beliebige Inhaltsverzeichnisdatei (.md).
 
-| metadata | was es macht |
+| Metadaten | Funktion |
 |--- |--- |
-| solution-title | Wird in der Artikelüberschrift als Link verwendet. Halten Sie sich kurz. |
-| solution-hub-url | Öffnet die helpx-Hub-Seite |
-| solution-icon | Zeigt Lösungssymbol neben dem Titel der Lösung an. Noch nicht implementiert |
-| getting-started-url | Link zur Startseite Erste Schritte von helpx |
-| tutorials-url | Link zu Video-Übungen – entweder Helpx-Übungen oder KT-Übungen |
-| mini-toc-levels | Legt fest, wie viele Überschriftenebenen in der rechten Leiste angezeigt werden. Standardwert ist „2“ |
-| git-repo | Gibt den Speicherort des Master-Repo für die interne Verwendung an. |
+| solution-title | Wird in der Artikelkopfzeile als Link verwendet. Halte es kurz. |
+| solution-hub-url | Öffnet die Hilfs-Hub-Seite |
+| solution-icon | Zeigt das Lösungssymbol neben dem Lösungstitel an. Noch nicht implementiert |
+| getting-started-url | Link zu Hilfen für die ersten Schritte |
+| tutorials-url | Link zu Video-Tutorials - entweder Hilfs-Tutorials oder KT-Tutorials |
+| Mini-Inhaltsverzeichnisebenen | Bestimmt die Anzahl der Überschriftenebenen, die in der rechten Leiste angezeigt werden. Der Standardwert ist 2 |
+| git-repo | Gibt den Speicherort des primären Repositorys für die interne Verwendung an |

@@ -4,10 +4,10 @@ description: Hier erfahren Sie, wie Sie mit dem Bedienfeld „Bei Medienwiederga
 feature: Streaming Media, Workspace Basics
 role: User, Admin
 exl-id: 958b4968-0f52-464c-81e0-5ab9b84aaa9c
-source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
+source-git-commit: 528a82a4299370c2ef5a366b1f3fab9fd21b164f
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 91%
+source-wordcount: '232'
+ht-degree: 83%
 
 ---
 
@@ -20,8 +20,10 @@ Durch die Analyse der Wiedergabedauer können Sie erkennen, wo Spitzenzeiten bei
 In Analysis Workspace bezeichnet die Wiedergabedauer die Zeit, die mit der Anzeige Ihrer Medien-Streams zu einem bestimmten Zeitpunkt verbracht wurde. Sie umfasst Pause, Pufferung und Startzeit. Bei der Funktion „Bei Medienwiedergabe verbrachte Zeit“ können Sie die Wiedergabedauer in verschiedene Zeitintervalle aufteilen, z. B. 5 Minuten, 15 Minuten, 30 Minuten oder 1 Stunde.
 
 
-Die Wiedergabedauer für Medien hilft bei der Analyse der Wiedergabe im Zeitverlauf, mit Details zur maximalen Gleichzeitigkeit und der Möglichkeit, aufzuschlüsseln und zu vergleichen. Um auf das Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“ zuzugreifen, navigieren Sie zu einer Report Suite mit aktivierten Streaming-Medienkomponenten. Klicken Sie dann auf das Bedienfeldsymbol ganz links und ziehen Sie das Bedienfeld in Ihr Analysis Workspace-Projekt. [Weitere Informationen...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=de)
+Die Wiedergabedauer für Medien hilft bei der Analyse der Wiedergabe im Zeitverlauf, mit Details zur maximalen Gleichzeitigkeit und der Möglichkeit, aufzuschlüsseln und zu vergleichen. Um auf das Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“ zuzugreifen, navigieren Sie zu einer Report Suite mit aktivierten Streaming-Medienkomponenten. Klicken Sie dann auf das Bedienfeldsymbol ganz links und ziehen Sie das Bedienfeld in Ihr Analysis Workspace-Projekt. [Weitere Informationen…](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=de)
 
-<!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
+<!--
+## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
-REVISE You can also get concurrent viewer data for up to 1-month at a time at minute-level granularity using the Analytics Reporting API 2.0.  The reporting API uses the same definition of concurrent viewers as Analysis Workspace.  For more information see [_*Get concurrent viewers JSON report data with Analytics 2.0 APIs*_](/help/reporting/reports-and-analytics/get-concurrent-json20.md). -->
+REVISE You can also get concurrent viewer data for up to 1-month at a time at minute-level granularity using the Analytics Reporting API 2.0.  The reporting API uses the same definition of concurrent viewers as Analysis Workspace.  For more information see [_*Get concurrent viewers JSON report data with Analytics 2.0 APIs*_](/help/reporting/reports-and-analytics/get-concurrent-json20.md). 
+-->
