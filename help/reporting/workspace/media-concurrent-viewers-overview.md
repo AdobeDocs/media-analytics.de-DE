@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit dem Bedienfeld „Gleichzeitige Medienbet
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
 feature: "Streaming Media, Workspace Basics"
 role: User, Admin
-source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
+source-git-commit: 48e78a06bbcea0918bfa7d93dfc44bbcc8bddb22
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 88%
+source-wordcount: '192'
+ht-degree: 69%
 
 ---
 
@@ -21,4 +21,4 @@ In Analysis Workspace bezeichnet der Begriff „Gleichzeitige Betrachter“ die 
 
 ## Gleichzeitige Betrachter über die Analytics Reporting-API abrufen
 
-Mit der Analytics Reporting-API 2.0 können Sie Daten zu gleichzeitigen Betrachtern für bis zu einen Monat auf Minutenebene abrufen. Die Reporting-API verwendet die gleiche Definition für gleichzeitige Betrachter wie Analysis Workspace.  Weitere Informationen finden Sie unter [_*Abrufen von JSON-Berichtsdaten zu gleichzeitigen Betrachtern mit Analytics 2.0-APIs*_](/help/reporting/reports-and-analytics/get-concurrent-json20.md).
+Mit der Analytics Reporting-API 2.0 können Sie auch Daten zu gleichzeitigen Betrachtern für bis zu 1 Monat auf einmal mit einer Granularität auf Minutenebene abrufen.  Die Reporting-API verwendet dieselbe Definition von gleichzeitigen Betrachtern wie Analysis Workspace.  Weitere Informationen finden Sie unter [_*Abrufen von JSON-Berichtsdaten zu gleichzeitigen Betrachtern mit Analytics 2.0-APIs*_](/help/reporting/reports-and-analytics/get-concurrent-json20.md).
