@@ -5,9 +5,9 @@ user-guide-title: Handbuch zu Streaming-Mediendiensten
 breadcrumb-title: Handbuch zu Streaming-Mediendiensten
 user-guide-description: Implementieren von Streaming-Mediendiensten. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
 sub-product: media analytics
-source-git-commit: efe4605d59be2629c931e3f0faca839ccb56c495
+source-git-commit: 847ea3e86c25a4aec3b12ad097d89941a5474aa3
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '958'
 ht-degree: 79%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 79%
 + Versionshinweise {#release-notes}
    + [Versionshinweise zu Streaming Media Services](additional-resources/release-notes.md)
 + Erste Schritte {#getting-started}
-   + [Voraussetzungen &#x200B;](getting-started/prereqs.md)
+   + [Voraussetzungen](getting-started/prereqs.md)
    + [Unterstützte Geräte](getting-started/supported-devices.md)
    + [Dokumentation zur Implementierung von Streaming-Mediendiensten](getting-started/implementation-documentation.md)
    + [SDKs, Bibliotheken und Erweiterungen](getting-started/download-sdks.md)
@@ -39,6 +39,7 @@ ht-degree: 79%
          + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge-API](/help/implementation/edge/implementation-edge-api.md)
+      + [Unterstützung benutzerspezifischer Metadaten](/help/implementation/edge/implementation-edge-custom-metadata.md)
    + Nur Adobe Analytics-Implementierungen {#analytics-only}
       + [Voraussetzungen](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
       + Medien-SDKs/Erweiterung {#media-sdk}
@@ -73,9 +74,9 @@ ht-degree: 79%
       + [Kapitelparameter](implementation/variables/chapter-parameters.md)
       + [Player-Statusparameter](implementation/variables/player-state-parameters.md)
       + [Qualitätsparameter](implementation/variables/quality-parameters.md)
-      + [Berechnete Metriken &#x200B;](implementation/variables/calculated-metrics.md)
-+ Berichterstellung {#media-reports}
-   + [Aktivierung von Medienberichten &#x200B;](reporting/media-reports-enable.md)
+      + [Berechnete Metriken](implementation/variables/calculated-metrics.md)
++ Reporting {#media-reports}
+   + [Aktivierung von Medienberichten](reporting/media-reports-enable.md)
    + Medien-Bedienfelder in Workspace {#media-workspace-panels}
       + [Bedienfeld „Zielgruppendurchschnitt pro Minute“](reporting/workspace/average-minute-audience.md)
       + [Bedienfeld „Gleichzeitige Medienbetrachter“](reporting/workspace/media-concurrent-viewers-overview.md)
@@ -100,7 +101,7 @@ ht-degree: 79%
       + [Statusverfolgung für mehrere Player](use-cases/player-state-tracking/multiple-player-states.md)
       + [Beispiele für Player-Status-Verfolgung](use-cases/player-state-tracking/player-state-examples.md)
    + [Verfolgen von Zeitplandaten](/help/use-cases/track-schedule-data.md)
-   + [Tracking heruntergeladener Inhalte &#x200B;](use-cases/track-downloaded-content.md)
+   + [Tracking heruntergeladener Inhalte](use-cases/track-downloaded-content.md)
    + [Federated Media](use-cases/federated-media.md)
    + [Behandlung von Anwendungsunterbrechungen während der Wiedergabe](use-cases/cookbook/app-interrupts.md)
    + [Media Stream-Zuordnung](use-cases/media-analytics-cookbook/media-dimensions.md)
@@ -251,5 +252,5 @@ ht-degree: 79%
          + [VOD-Wiedergabe mit Pufferung](use-cases/tracking-scenarios/vod-buffering.md)
          + [Mehrere parallele VOD-Tracker](use-cases/tracking-scenarios/vod-multi-trackers.md)
          + [Ein VOD-Tracker für mehrere Sitzungen](use-cases/tracking-scenarios/vod-multi-track-one-session.md)
-         + [Live-Hauptinhalt &#x200B;](use-cases/tracking-scenarios/live-main-content.md)
+         + [Live-Hauptinhalt](use-cases/tracking-scenarios/live-main-content.md)
          + [Live-Hauptinhalt mit sequentieller Verfolgung](use-cases/tracking-scenarios/live-sequential.md)

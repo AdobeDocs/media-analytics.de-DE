@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Adobe Streaming Media Services mit Experience Pla
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+source-git-commit: 847ea3e86c25a4aec3b12ad097d89941a5474aa3
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 9%
+source-wordcount: '2413'
+ht-degree: 10%
 
 ---
 
@@ -76,7 +76,7 @@ So erstellen Sie ein Schema und richten es ein:
 
       * Blenden Sie im Feld `Media Collection Details` > `Qoe Data Details` die folgenden Berichtsfelder aus: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Change Impacted Streams`, `Bitrate Changes`, `Buffer Impacted Streams`, `Buffer Events`, `Dropped Frame Impacted Streams`, `Drops Before Starts`, `Errors`, `External Error IDs`, `Error Impacted Streams`, `Media SDK Error IDs`, `Player SDK Error IDs`,, `Stalling Impacted Streams`, `Stalling Events`, `Total Buffer Duration` und `Total Stalling Duration`.
 
-      * Blenden Sie im Feld `Media Collection Details` > `Session Details` die folgenden Berichtsfelder aus: `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Content Completes`, `Chapter Count`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Segment Views`, `Media Downloaded Flag`, `Media Starts`, `Media Session ID`, `Media Session Server Timeout`, `Media Time Spent`, `Pause Events`, `Pause Impacted Streams`, `Pev3` `Pccr` `Total Pause Duration` `Unique Time Played`, `Video Segment`, und .
+      * Blenden Sie im Feld `Media Collection Details` > `Session Details` die folgenden Berichtsfelder aus: `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Content Completes`, `Estimated Streams`, `Federated Data`, `Media Downloaded Flag`, `Chapter Count`, `Content Time Spent`, `Media Segment Views`, `Media Session ID`, `Media Starts`, `Media Session Server Timeout`, `Media Time Spent`, `Pause Events`, `Pause Impacted Streams`, `Pev3`, `Pccr` `Total Pause Duration` `Unique Time Played` `Video Segment`, `Content Starts`, und .
 
    1. Wählen [!UICONTROL **Bestätigen**], um Ihre Änderungen zu speichern.
 
@@ -97,7 +97,7 @@ So erstellen Sie ein Schema und richten es ein:
 
       * Blenden Sie im Feld `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` die folgenden Berichtsfelder aus: `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Change Impacted Streams`, `Bitrate Changes`, `Buffer Events`, `Buffer Impacted Streams`, `Drops Before Starts`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Errors`, `External Error IDs`, `Media SDK Error IDs`,, `Player SDK Error IDs`, `Stalling Events`, `Stalling Impacted Streams`, `Total Buffer Duration` und `Total Stalling Duration`.
 
-      * Blenden Sie im Feld `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` die folgenden Berichtsfelder aus: `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Content Completes`, `Content Starts`, `Content Time Spent`, `Estimated Streams`, `Federated Data`, `Media Downloaded Flag`, `Media Segment Views`, `Media Session ID`, `Media Session Server Timeout`, `Media Starts`, `Media Time Spent`, `Pause Events`, `Pause Impacted Streams` `Pccr` `Pev3` `Total Pause Duration` `Unique Time Played` `Video Segment`, und .
+      * Blenden Sie im Feld `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` die folgenden Berichtsfelder aus: `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Ad Count`, `Average Minute Audience`, `Content Time Spent`, `Estimated Streams`, `Media Downloaded Flag`, `Chapter Count`, `Content Starts`, `Media Session ID`, `Federated Data`, `Media Segment Views`, `Media Session Server Timeout`, `Media Starts`, `Media Time Spent`, `Content Completes`, `Pause Events`, `Pause Impacted Streams` `Pccr` `Pev3` `Total Pause Duration` `Unique Time Played` `Video Segment`, und .
 
       * Blenden Sie im Feld `List Of Media Collection Downloaded Content Events` > `Media Details` das Feld `Media Session ID` aus.
 
@@ -113,7 +113,7 @@ So erstellen Sie ein Schema und richten es ein:
 
    +++
 
-1. (Optional) Sie können Ihrem Schema benutzerdefinierte Metadaten hinzufügen. Auf diese Weise können Sie zusätzliche, benutzerdefinierte Metadaten einbeziehen, die für bestimmte Anforderungen oder Kontexte angepasst werden können. Diese Flexibilität ist in Szenarien nützlich, in denen vorhandene Schemata die gewünschten Datenpunkte nicht abdecken. (Sie können auch mit benutzerdefinierten Metadaten mit Media Edge-APIs arbeiten. Weitere Informationen finden Sie unter [Erstellen benutzerdefinierter Metadaten mit Media Edge-APIs](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/custom-metadata/).)
+1. (Optional) Sie können Ihrem Schema benutzerdefinierte Metadaten hinzufügen. Auf diese Weise können Sie zusätzliche, benutzerdefinierte Metadaten einbeziehen, die für bestimmte Anforderungen oder Kontexte angepasst werden können. Diese Flexibilität ist in Szenarien nützlich, in denen vorhandene Schemata die gewünschten Datenpunkte nicht abdecken. (Sie können auch mit benutzerdefinierten Metadaten mit Media Edge-APIs arbeiten. Weitere Informationen finden Sie unter [Unterstützung benutzerdefinierter Metadaten - XDM-Format](/help/implementation/edge/implementation-edge-custom-metadata.md).
 
    +++ Erweitern Sie hier , um Anweisungen zum Hinzufügen benutzerdefinierter Metadaten zu Ihrem Schema anzuzeigen.
 
@@ -226,7 +226,7 @@ So erstellen Sie ein Schema und richten es ein:
       | Medienstarts | mediaReporting.sessionDetails.isViewed |
       | Mediensegmentansichten | mediaReporting.sessionDetails.hasSegmentView |
       | Inhaltsstarts | mediaReporting.sessionDetails.isPlayed |
-      | Inhalt abgeschlossen | mediaReporting.sessionDetails.isCompleted |
+      | Inhaltsabschlüsse | mediaReporting.sessionDetails.isCompleted |
       | Inhaltsbesuchszeit | mediaReporting.sessionDetails.timePlayed |
       | Besuchszeit für Medien | mediaReporting.sessionDetails.totalTimePlayed |
       | Eindeutige Spielzeit | mediaReporting.sessionDetails.uniqueTimePlayed |
@@ -353,7 +353,7 @@ Je nach Datentyp, den Sie an Experience Platform Edge senden möchten, können S
 
 * [Senden von Web-Daten an Edge mit Adobe Experience Platform Web SDK](/help/implementation/edge/edge-web-sdk.md)
 
-* [Migrieren zu Adobe Streaming Media for Edge Network-Erweiterung](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [Migrieren zur Erweiterung Adobe Streaming Media for Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### Mobile: Verwenden der Adobe Experience Platform Mobile SDK
 
@@ -363,7 +363,7 @@ Verwenden Sie die folgenden Dokumentationsressourcen, um die Implementierung fü
 
 * [API-Referenz](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [Migrieren zu Adobe Streaming Media for Edge Network-Erweiterung](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [Migrieren zur Erweiterung Adobe Streaming Media for Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### Roku: Adobe Experience Platform Roku SDK
 
