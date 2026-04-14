@@ -3,7 +3,7 @@ title: Unterstützung benutzerdefinierter Metadaten - XDM-Format
 description: Erfahren Sie, wie Sie benutzerdefinierte Metadaten mit Medien-Tracking-Ereignissen im XDM-Format von Experience Edge senden.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 1a6ce0ddca6e52f3ad10bd69210e52e634641272
+source-git-commit: da2fe856a32f9056752b9e2c2e339d43be20372a
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 2%
