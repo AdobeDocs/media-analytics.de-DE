@@ -55,7 +55,7 @@ Benutzerdefinierte Metadaten sind ein **Array von Name/Wert-Objekten** innerhalb
 }
 ```
 
-<InlineAlert variant="warning" slots="text" />
+&lt;InlineAlert variant="warning" slots="text" />
 
 `customMetadata` muss ein **Array** innerhalb von `mediaCollection` sein, nicht auf `xdm` Stammebene.
 
@@ -252,7 +252,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterStart?configId={datastrea
 
 Verwenden Sie das `_data`-Objekt, wenn Sie Metadaten in Adobe Analytics benötigen **die nicht** in AEP-Datensätzen gespeichert werden sollen, z. B. temporäre Flags, Debugging-Variablen oder Analytics-spezifische Verarbeitungshinweise.
 
-<InlineAlert variant="warning" slots="text" />
+&lt;InlineAlert variant="warning" slots="text" />
 
 Daten, die über `_data` gesendet werden, werden nicht in Adobe Experience Platform gespeichert und sind nicht für Real-Time CDP, Journey Orchestration oder andere AEP-Services verfügbar.
 
@@ -308,7 +308,7 @@ In diesem Beispiel:
 
 ## Speicherort nachgelagerter Daten
 
-<InlineAlert variant="info" slots="text" />
+&lt;InlineAlert variant="info" slots="text" />
 
 `xdm.mediaCollection.customMetadata` ist der **eingehende API-Pfad** der zum Senden benutzerdefinierter Metadaten mit Ereignissen verwendet wird. Nach der Verarbeitung werden die Daten als Kontextdatenvariablen an Adobe Analytics weitergeleitet und in Adobe Experience Platform unter `mediaReporting.customMetadata` und als reduzierte Felder der obersten Ebene gespeichert.
 
@@ -316,7 +316,7 @@ In diesem Beispiel:
 
 - Nach der Verarbeitung werden benutzerdefinierte Metadaten als Kontextdatenvariablen an Adobe Analytics weitergeleitet. Das `_tenant` Präfix wird automatisch entfernt, sodass Verarbeitungsregeln nur auf den Feldpfad nach der `_tenant` verweisen (z. B. `_mycompany.contentCategory` wird `contentCategory`)
 - Über `_data` gesendete Daten werden ebenfalls an Adobe Analytics weitergeleitet und stehen über Verarbeitungsregeln zur Verfügung
-- Verwenden Sie Verarbeitungsregeln, um Kontextdatenvariablen eVars, Props oder anderen Analytics-Variablen zuzuordnen. Weitere [ finden Sie unter „Datenvariablenzuordnung für die Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)Edge Network&quot;.
+- Verwenden Sie Verarbeitungsregeln, um Kontextdatenvariablen eVars, Props oder anderen Analytics-Variablen zuzuordnen. Weitere [&#x200B; finden Sie unter „Datenvariablenzuordnung für die Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)Edge Network&quot;.
 
 **Adobe Experience Platform:**
 
