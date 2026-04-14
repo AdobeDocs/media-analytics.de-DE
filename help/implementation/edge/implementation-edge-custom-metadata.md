@@ -3,7 +3,7 @@ title: Unterstützung benutzerdefinierter Metadaten - XDM-Format
 description: Erfahren Sie, wie Sie benutzerdefinierte Metadaten mit Medien-Tracking-Ereignissen im XDM-Format von Experience Edge senden.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: da2fe856a32f9056752b9e2c2e339d43be20372a
+source-git-commit: 80caffab1630b138724b310e3bdcc58f682a2f8b
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 2%
@@ -301,6 +301,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 ```
 
 In diesem Beispiel:
+
 - `_mycompany.league` → an Analytics und AEP gesendet
 - `debugMode` und `testFlag` (unter `_data.__adobe.analytics.contextData`) → nur an Analytics gesendet
 
@@ -312,11 +313,13 @@ In diesem Beispiel:
 `xdm.mediaCollection.customMetadata` ist der **eingehende API-Pfad** der zum Senden benutzerdefinierter Metadaten mit Ereignissen verwendet wird. Nach der Verarbeitung werden die Daten als Kontextdatenvariablen an Adobe Analytics weitergeleitet und in Adobe Experience Platform unter `mediaReporting.customMetadata` und als reduzierte Felder der obersten Ebene gespeichert.
 
 **Adobe Analytics:**
+
 - Nach der Verarbeitung werden benutzerdefinierte Metadaten als Kontextdatenvariablen an Adobe Analytics weitergeleitet. Das `_tenant` Präfix wird automatisch entfernt, sodass Verarbeitungsregeln nur auf den Feldpfad nach der `_tenant` verweisen (z. B. `_mycompany.contentCategory` wird `contentCategory`)
 - Über `_data` gesendete Daten werden ebenfalls an Adobe Analytics weitergeleitet und stehen über Verarbeitungsregeln zur Verfügung
 - Verwenden Sie Verarbeitungsregeln, um Kontextdatenvariablen eVars, Props oder anderen Analytics-Variablen zuzuordnen. Weitere [&#x200B; finden Sie unter „Datenvariablenzuordnung für die Adobe Experience Platform](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/data-var-mapping)Edge Network&quot;.
 
 **Adobe Experience Platform:**
+
 - Benutzerdefinierte Metadatenfelder müssen als benutzerdefinierte Felder in Ihrem XDM-Schema definiert werden (z. B. `_mycompany`) und können in AEP als reduzierte Felder gespeichert und abgefragt werden
 
   ![Benutzerdefinierte Felddefinition im XDM-Schema](assets/custom_metadata.png)
@@ -336,6 +339,7 @@ In diesem Beispiel:
 - [Unterstützung benutzerdefinierter Metadaten](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md). — MC API (JSON-Format)
 - [Datentyp „Media Collection Details](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) — XDM-Schemareferenz
 - [Datenvariablenzuordnung für die Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/data-var-mapping) — Analytics-Kontextdatenzuordnung für XDM-Felder
+
 <!--
 - [Session endpoints](sessions.md) — Session lifecycle management
 - [Ad endpoints](ads.md) — Track advertising impressions

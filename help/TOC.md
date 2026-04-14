@@ -5,7 +5,7 @@ user-guide-title: Handbuch zu Streaming-Mediendiensten
 breadcrumb-title: Handbuch zu Streaming-Mediendiensten
 user-guide-description: Implementieren von Streaming-Mediendiensten. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
 sub-product: media analytics
-source-git-commit: 847ea3e86c25a4aec3b12ad097d89941a5474aa3
+source-git-commit: 80caffab1630b138724b310e3bdcc58f682a2f8b
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 79%
@@ -39,7 +39,7 @@ ht-degree: 79%
          + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge-API](/help/implementation/edge/implementation-edge-api.md)
-      + [Unterstützung benutzerspezifischer Metadaten](/help/implementation/edge/implementation-edge-custom-metadata.md)
+      + [Unterstützung benutzerspezifischer Metadaten](implementation/edge/implementation-edge-custom-metadata.md)
    + Nur Adobe Analytics-Implementierungen {#analytics-only}
       + [Voraussetzungen](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
       + Medien-SDKs/Erweiterung {#media-sdk}
