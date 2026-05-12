@@ -27,9 +27,9 @@ Der Kapitelversatz wird vom Player bei jedem `media.chapterStart` festgelegt.
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics (Verarbeitungsregel) | Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.chapter.offset` einer eVar zuordnet. |
+| Adobe Analytics (Verarbeitungsregel) | Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.chapter.offset` einer eVar zuordnet. |
 | Adobe Analytics (Klassifizierung) | Klassifizierung der Dimension [Chapter](chapter.md) - Adobe erstellt diese Klassifizierung automatisch, wenn **[[!UICONTROL Media Chapters]](/help/reporting/media-reports-enable.md)** für die Report Suite aktiviert ist. Sie sind für das Ausfüllen und Verwalten von Classification-Werten verantwortlich. |
-| Customer Journey Analytics | [`mediaReporting.chapterDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.chapterDetails.offset`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
 | Daten-Feeds (Verarbeitungsregel) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (die eVar, der Ihre Verarbeitungsregel `a.media.chapter.offset` zugeordnet ist) |
 | Daten-Feeds (Klassifizierung) | K. A. - Daten-Feeds unterstützen keine Klassifizierungen. |
 
@@ -45,7 +45,7 @@ Dieser Ansatz bietet eine garantierte 1::1-Beziehung zwischen jeder Kapitel-ID u
 
 ## Ansatz der Verarbeitungsregeln
 
-Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.chapter.offset` einer eVar zuordnet. Dieser Ansatz erfasst den Kapitelversatz als Wert pro Treffer, ohne dass eine Klassifizierungswartung erforderlich ist.
+Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.chapter.offset` einer eVar zuordnet. Dieser Ansatz erfasst den Kapitelversatz als Wert pro Treffer, ohne dass eine Klassifizierungswartung erforderlich ist.
 
 Der Nachteil besteht darin, dass Sie die garantierte 1::1-Beziehung zwischen dem Kapitelversatz und der übergeordneten Dimension [Kapitel](chapter.md) verlieren. Wenn Ihre Implementierung inkonsistente Werte für dieselbe Kapitel-ID über Ereignisse hinweg sendet, können unter demselben Kapitel mehrere Versätze angezeigt werden. Die Aktualisierung eines Werts gilt nur für Daten, die in Zukunft verwendet werden.
 
