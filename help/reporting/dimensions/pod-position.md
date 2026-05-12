@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Pod-Position**behandelt. Informationen [ Erfassen dieser Variablen finden Sie ](/help/implementation/variables/ads/ad-break-start-time.md) „Startzeit der Werbeunterbrechung“*
+*Auf dieser Seite wird die Berichtsdimension **Pod-Position**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden Sie &#x200B;](/help/implementation/variables/ads/ad-break-start-time.md) „Startzeit der Werbeunterbrechung“*
 
 >[!ENDSHADEBOX]
 
@@ -35,7 +35,7 @@ Die Pod-Position wird anhand des Werts [Startzeit der Werbeunterbrechung](/help/
 
 ## Klassifizierungsansatz
 
-Adobe erstellt die Pod-Positionsklassifizierungsstruktur automatisch, wenn **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)** für die Report Suite aktiviert ist. Sie sind dafür verantwortlich, die Klassifizierung mithilfe von „Klassifizierungssätze[ auszufüllen und zu ](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
+Adobe erstellt die Pod-Positionsklassifizierungsstruktur automatisch, wenn **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)** für die Report Suite aktiviert ist. Sie sind dafür verantwortlich, die Klassifizierung mithilfe von „Klassifizierungssätze[&#x200B; auszufüllen und zu &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
 
 Dieser Ansatz bietet eine garantierte 1::1-Beziehung zwischen jeder Anzeigen-Pod-ID und ihrer Position. Klassifizierungsaktualisierungen gelten rückwirkend für alle historischen Daten für diese ID.
 

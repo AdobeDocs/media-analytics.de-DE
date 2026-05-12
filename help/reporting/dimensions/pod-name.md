@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Pod-Name**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/ads/ad-break-name.md) unter „Anzeigenumbruch-Name“*
+*Auf dieser Seite wird die Berichtsdimension **Pod-Name**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/ads/ad-break-name.md) unter „Anzeigenumbruch-Name“*
 
 >[!ENDSHADEBOX]
 
@@ -35,7 +35,7 @@ Der Pod-Name stammt aus dem Wert [Name der Werbeunterbrechung](/help/implementat
 
 ## Klassifizierungsansatz
 
-Adobe erstellt die Pod-Namensklassifizierungsstruktur automatisch, wenn **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)** für die Report Suite aktiviert ist. Sie sind dafür verantwortlich, die Klassifizierung mithilfe von „Klassifizierungssätze[ auszufüllen und zu ](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
+Adobe erstellt die Pod-Namensklassifizierungsstruktur automatisch, wenn **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)** für die Report Suite aktiviert ist. Sie sind dafür verantwortlich, die Klassifizierung mithilfe von „Klassifizierungssätze[&#x200B; auszufüllen und zu &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
 
 Dieser Ansatz bietet eine garantierte 1::1-Beziehung zwischen jeder Pod-ID und ihrem Anzeigenamen. Klassifizierungsaktualisierungen gelten rückwirkend für alle historischen Daten für diese ID.
 

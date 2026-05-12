@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-*Diese Seite deckt die Berichtsdimension **Kapitellänge**ab. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/chapters/chapter-length.md) unter „Kapitellänge“*
+*Diese Seite deckt die Berichtsdimension **Kapitellänge**&#x200B;ab. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/chapters/chapter-length.md) unter „Kapitellänge“*
 
 >[!ENDSHADEBOX]
 
@@ -35,7 +35,7 @@ Die Kapitellänge wird vom Player bei jedem `media.chapterStart` festgelegt.
 
 ## Klassifizierungsansatz
 
-Adobe erstellt die Klassifizierungsstruktur für die Kapitellänge automatisch, wenn **[[!UICONTROL Medienkapitel]](/help/reporting/media-reports-enable.md)** für die Report Suite aktiviert ist. Sie sind dafür verantwortlich, die Klassifizierung mithilfe von „Klassifizierungssätze[ auszufüllen und zu ](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
+Adobe erstellt die Klassifizierungsstruktur für die Kapitellänge automatisch, wenn **[[!UICONTROL Medienkapitel]](/help/reporting/media-reports-enable.md)** für die Report Suite aktiviert ist. Sie sind dafür verantwortlich, die Klassifizierung mithilfe von „Klassifizierungssätze[&#x200B; auszufüllen und zu &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
 
 Dieser Ansatz bietet eine garantierte 1::1-Beziehung zwischen jeder Kapitel-ID und ihrer Länge. Klassifizierungsaktualisierungen gelten rückwirkend für alle historischen Daten für diese ID.
 
