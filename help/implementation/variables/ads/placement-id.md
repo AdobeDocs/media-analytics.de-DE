@@ -24,7 +24,7 @@ Die Platzierungs-ID-Variable identifiziert die Anzeigenplatzierung (normalerweis
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.placement` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.placementID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.placementID`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | Anzeigenstart, Anzeigenschluss |
 

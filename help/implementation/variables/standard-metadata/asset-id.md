@@ -28,7 +28,7 @@ Die Asset-ID-Variable ist die eindeutige Kennung für das zugrunde liegende Medi
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.asset` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | Sitzungsbeginn, Sitzungsabschluss |
 

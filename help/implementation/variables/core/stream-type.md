@@ -26,7 +26,7 @@ Das richtige Festlegen des Stream-Typs ist für die Berichterstellung für Strea
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.streamType` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Erforderlich** | Ja |
 | **Gesendet mit** | Sitzungsbeginn, Sitzungsabschluss |
 

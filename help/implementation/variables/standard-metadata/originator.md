@@ -24,7 +24,7 @@ Die originator-Variable ist der Ersteller oder das Produktionsstudio des Inhalts
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.originator` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.originator`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.originator`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | Sitzungsbeginn, Sitzungsabschluss |
 

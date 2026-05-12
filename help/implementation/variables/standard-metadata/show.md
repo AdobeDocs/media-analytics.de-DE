@@ -24,7 +24,7 @@ Die Variable show ist der Name des Programms oder der Serie (z. B. `"Blinding Li
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.show` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.show`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.show`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | Sitzungsbeginn, Sitzungsabschluss |
 

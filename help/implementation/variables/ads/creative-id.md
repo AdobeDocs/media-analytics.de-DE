@@ -24,7 +24,7 @@ Die Variable „creative ID“ identifiziert die spezifische und kreative ID. Je
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.creative` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.creativeID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.creativeID`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | Anzeigenstart, Anzeigenschluss |
 

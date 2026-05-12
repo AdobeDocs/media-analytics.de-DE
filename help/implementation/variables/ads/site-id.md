@@ -24,7 +24,7 @@ Die Site-ID-Variable identifiziert die Anzeigen-Site. Jeder Zeichenfolgenwert (n
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.site` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.siteID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.siteID`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | Anzeigenstart, Anzeigenschluss |
 

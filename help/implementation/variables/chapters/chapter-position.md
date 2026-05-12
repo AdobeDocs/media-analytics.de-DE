@@ -24,7 +24,7 @@ Die Kapitelpositionsvariable ist der Index des Kapitels innerhalb des Inhalts, b
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.chapter.position` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.chapterDetails.index`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.chapterDetails.index`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Erforderlich** | Nein (Mobile SDK); Ja (Edge, Mediensammlungs-API) |
 | **Gesendet mit** | Kapitelstart, Kapitelschluss |
 

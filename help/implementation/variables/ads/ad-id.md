@@ -24,7 +24,7 @@ Die Variable ad ID identifiziert jede Anzeige eindeutig. Sie ist für jede Anzei
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.name` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Erforderlich** | Ja |
 | **Gesendet mit** | Anzeigenstart, Anzeigenschluss |
 

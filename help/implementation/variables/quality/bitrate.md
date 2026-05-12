@@ -24,7 +24,7 @@ Die Bitratenvariable ist die aktuelle Wiedergabebitrate in Kilobit pro Sekunde. 
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.qoe.bitrateAverageBucket` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | Qualitätsereignisse (Bitratenänderung, Puffer, Fehler), Sitzungsschluss |
 

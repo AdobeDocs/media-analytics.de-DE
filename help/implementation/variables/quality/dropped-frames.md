@@ -24,7 +24,7 @@ Die Variable Abgelegte Frames ist die laufende Anzahl an Frames, die der Player 
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.qoe.droppedFrameCount` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | Qualitätsereignisse, Sitzungsabschluss |
 

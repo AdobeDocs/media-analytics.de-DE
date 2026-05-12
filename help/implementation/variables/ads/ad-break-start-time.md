@@ -24,7 +24,7 @@ Die Startzeitvariable für die Anzeigenunterbrechung ist der Versatz der Anzeige
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.podSecond` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Erforderlich** | Ja |
 | **Gesendet mit** | Anzeigenstart, Anzeigenschluss |
 

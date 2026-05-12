@@ -24,7 +24,7 @@ Die Variable „Name des Inhalts-Players“ gibt an, welcher Player den Inhalt g
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.playerName` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Erforderlich** | Ja |
 | **Gesendet mit** | Sitzungsbeginn, Sitzungsabschluss |
 
