@@ -19,7 +19,7 @@ ht-degree: 7%
 
 >[!ENDSHADEBOX]
 
-Die **Von im Fokus betroffenen Streams** zählt Sitzungen, in denen der Player mindestens einmal im Fokus war. Bei der Metrik handelt es sich um einen booleschen Wert auf Sitzungsebene - mehrere Fokusereignisse innerhalb derselben Sitzungsanzahl wie ein betroffener Stream. Verwenden Sie für das Gesamtereignisvolumen &quot;[&quot; ](in-focus-count.md).
+Die **Von im Fokus betroffenen Streams** zählt Sitzungen, in denen der Player mindestens einmal im Fokus war. Bei der Metrik handelt es sich um einen booleschen Wert auf Sitzungsebene - mehrere Fokusereignisse innerhalb derselben Sitzungsanzahl wie ein betroffener Stream. Verwenden Sie für das Gesamtereignisvolumen &quot;[&quot; &#x200B;](in-focus-count.md).
 
 ## Berechnung dieser Metrik
 

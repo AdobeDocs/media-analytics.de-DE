@@ -15,7 +15,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsmetrik **Autorisiert**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/standard-metadata/authorized.md) unter „Autorisiert“*
+*Auf dieser Seite wird die Berichtsmetrik **Autorisiert**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/standard-metadata/authorized.md) unter „Autorisiert“*
 
 >[!ENDSHADEBOX]
 

@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsmetrik **Streams, die vom Vollbildmodus betroffen sind**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/player-state/full-screen.md) im Vollbildmodus*
+*Auf dieser Seite wird die Berichtsmetrik **Streams, die vom Vollbildmodus betroffen sind**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/player-state/full-screen.md) im Vollbildmodus*
 
 >[!ENDSHADEBOX]
 

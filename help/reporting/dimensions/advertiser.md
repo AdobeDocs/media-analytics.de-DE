@@ -15,7 +15,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Reporting **Dimension**Advertiser) behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/ads/advertiser.md) unter „Advertiser“*
+*Auf dieser Seite wird die Reporting **Dimension**&#x200B;Advertiser) behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/ads/advertiser.md) unter „Advertiser“*
 
 >[!ENDSHADEBOX]
 

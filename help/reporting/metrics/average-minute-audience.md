@@ -27,4 +27,4 @@ Das Medien-Backend berechnet den Zielgruppendurchschnitt pro Minute pro Sitzung 
 
 >[!IMPORTANT]
 >
->Der Zielgruppendurchschnitt pro Minute erfordert eine [ (Inhaltslänge](/help/reporting/dimensions/content-length.md). Wenn die Inhaltslänge auf null oder nicht festgelegt ist, wird diese Metrik für die Sitzung nicht erzeugt.
+>Der Zielgruppendurchschnitt pro Minute erfordert eine [&#x200B; (Inhaltslänge](/help/reporting/dimensions/content-length.md). Wenn die Inhaltslänge auf null oder nicht festgelegt ist, wird diese Metrik für die Sitzung nicht erzeugt.

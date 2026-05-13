@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*Diese Seite behandelt die Dimension **Abgelegte Frames**. Adobe Analytics füllt automatisch eine paarweise [Abgelegte Frames (Metrik](/help/reporting/metrics/dropped-frames.md) aus derselben `a.media.qoe.droppedFrameCount` Kontextdatenvariablen aus. Customer Journey Analytics stellt ein einzelnes `mediaReporting.qoeDataDetails.droppedFrames` bereit, das Sie als Dimension oder Metrik verwenden können. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/quality/dropped-frames.md) unter „Abgelegte Frames“*
+*Diese Seite behandelt die Dimension **Abgelegte Frames**. Adobe Analytics füllt automatisch eine paarweise [Abgelegte Frames (Metrik](/help/reporting/metrics/dropped-frames.md) aus derselben `a.media.qoe.droppedFrameCount` Kontextdatenvariablen aus. Customer Journey Analytics stellt ein einzelnes `mediaReporting.qoeDataDetails.droppedFrames` bereit, das Sie als Dimension oder Metrik verwenden können. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/quality/dropped-frames.md) unter „Abgelegte Frames“*
 
 >[!ENDSHADEBOX]
 

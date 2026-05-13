@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Typ anzeigen**behandelt. Informationen [ Erfassen dieser Variablen finden Sie ](/help/implementation/variables/standard-metadata/show-type.md) „Anzeigen-Typ“*
+*Auf dieser Seite wird die Berichtsdimension **Typ anzeigen**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden Sie &#x200B;](/help/implementation/variables/standard-metadata/show-type.md) „Anzeigen-Typ“*
 
 >[!ENDSHADEBOX]
 

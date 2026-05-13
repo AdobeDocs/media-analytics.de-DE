@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Interpret**behandelt. Unter [Interpret](/help/implementation/variables/standard-metadata/artist.md) finden Sie Informationen zum Erfassen dieser Variablen.*
+*Auf dieser Seite wird die Berichtsdimension **Interpret**&#x200B;behandelt. Unter [Interpret](/help/implementation/variables/standard-metadata/artist.md) finden Sie Informationen zum Erfassen dieser Variablen.*
 
 >[!ENDSHADEBOX]
 

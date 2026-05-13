@@ -15,11 +15,11 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsmetrik **Picture in Picture**) behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/player-state/picture-in-picture.md) unter „Bild in“.*
+*Auf dieser Seite wird die Berichtsmetrik **Picture in Picture**) behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/player-state/picture-in-picture.md) unter „Bild in“.*
 
 >[!ENDSHADEBOX]
 
-Die Metrik **Anzahl der Bilder** gibt an, wie oft der Betrachter während einer Sitzung die Bild-in-Bild-Wiedergabe betreten hat. Jedes Bild-in-Bild-Status-Startereignis erhöht die Anzahl. Kombinieren Sie mit [Von Bild in Bild betroffene Streams](picture-in-picture-streams-impacted.md) für boolesche Rollups auf Sitzungsebene und mit [Gesamtdauer des Bildes in ](picture-in-picture-total-duration.md) für die Gesamtzeit im Status.
+Die Metrik **Anzahl der Bilder** gibt an, wie oft der Betrachter während einer Sitzung die Bild-in-Bild-Wiedergabe betreten hat. Jedes Bild-in-Bild-Status-Startereignis erhöht die Anzahl. Kombinieren Sie mit [Von Bild in Bild betroffene Streams](picture-in-picture-streams-impacted.md) für boolesche Rollups auf Sitzungsebene und mit [Gesamtdauer des Bildes in &#x200B;](picture-in-picture-total-duration.md) für die Gesamtzeit im Status.
 
 ## Berechnung dieser Metrik
 

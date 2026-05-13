@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*Diese Seite behandelt die Berichtsdimension **Creative**URL. Informationen zum Erfassen dieser Variablen finden ](/help/implementation/variables/ads/creative-url.md) unter [Creative-URL*
+*Diese Seite behandelt die Berichtsdimension **Creative**&#x200B;URL. Informationen zum Erfassen dieser Variablen finden [&#128279;](/help/implementation/variables/ads/creative-url.md) unter Creative-URL*
 
 >[!ENDSHADEBOX]
 

@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Ereignismetrik **Durchschnittliche Bitrate**behandelt, die die rohe gewichtete durchschnittliche Bitrate pro Sitzung ausgibt. Siehe [Durchschnittliche Bitrate (Dimension)](/help/reporting/dimensions/average-bitrate.md) für die Dimension mit Buckets. Siehe [Bitrate](/help/implementation/variables/quality/bitrate.md), wie Sie diese Variable erfassen.*
+*Auf dieser Seite wird die Ereignismetrik **Durchschnittliche Bitrate**&#x200B;behandelt, die die rohe gewichtete durchschnittliche Bitrate pro Sitzung ausgibt. Siehe [Durchschnittliche Bitrate (Dimension)](/help/reporting/dimensions/average-bitrate.md) für die Dimension mit Buckets. Siehe [Bitrate](/help/implementation/variables/quality/bitrate.md), wie Sie diese Variable erfassen.*
 
 >[!ENDSHADEBOX]
 

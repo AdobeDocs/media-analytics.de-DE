@@ -13,7 +13,7 @@ ht-degree: 9%
 
 # Von Dropped Frames betroffene Streams
 
-Die Metrik **Abgelegter Frame betrifft Streams** zählt Sitzungen, in denen mindestens ein Frame abgelegt wurde. Bei der Metrik handelt es sich um einen booleschen Wert auf Sitzungsebene - mehrere Drops innerhalb derselben Sitzungsanzahl wie ein betroffener Stream. Verwenden Sie für das gesamte Ablagevolumen &quot;[ Frames](dropped-frames.md).
+Die Metrik **Abgelegter Frame betrifft Streams** zählt Sitzungen, in denen mindestens ein Frame abgelegt wurde. Bei der Metrik handelt es sich um einen booleschen Wert auf Sitzungsebene - mehrere Drops innerhalb derselben Sitzungsanzahl wie ein betroffener Stream. Verwenden Sie für das gesamte Ablagevolumen &quot;[&#x200B; Frames](dropped-frames.md).
 
 ## Berechnung dieser Metrik
 

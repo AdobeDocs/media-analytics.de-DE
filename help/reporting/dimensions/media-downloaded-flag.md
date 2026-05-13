@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Medien heruntergeladen**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/core/media-downloaded-flag.md) unter „Media Downloaded Flag*
+*Auf dieser Seite wird die Berichtsdimension **Medien heruntergeladen**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/core/media-downloaded-flag.md) unter „Media Downloaded Flag*
 
 >[!ENDSHADEBOX]
 

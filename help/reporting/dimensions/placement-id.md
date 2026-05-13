@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Platzierungs-ID**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/ads/placement-id.md) unter „Platzierungs-ID“*
+*Auf dieser Seite wird die Berichtsdimension **Platzierungs-ID**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/ads/placement-id.md) unter „Platzierungs-ID“*
 
 >[!ENDSHADEBOX]
 

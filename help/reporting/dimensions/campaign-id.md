@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Reporting-Dimension **Kampagnen**ID) behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/ads/campaign-id.md) unter „Kampagnen-ID“*
+*Auf dieser Seite wird die Reporting-Dimension **Kampagnen**&#x200B;ID) behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/ads/campaign-id.md) unter „Kampagnen-ID“*
 
 >[!ENDSHADEBOX]
 

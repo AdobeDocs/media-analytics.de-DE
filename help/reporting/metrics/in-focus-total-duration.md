@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsmetrik **Gesamtdauer des Fokus**behandelt. Siehe [Im Fokus](/help/implementation/variables/player-state/in-focus.md), wie Sie diese Variable erfassen.*
+*Auf dieser Seite wird die Berichtsmetrik **Gesamtdauer des Fokus**&#x200B;behandelt. Siehe [Im Fokus](/help/implementation/variables/player-state/in-focus.md), wie Sie diese Variable erfassen.*
 
 >[!ENDSHADEBOX]
 

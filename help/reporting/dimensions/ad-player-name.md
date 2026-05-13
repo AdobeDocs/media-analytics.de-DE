@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Anzeigenplayer-Name**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/ads/ad-player-name.md) unter „Player-Name hinzufügen“*
+*Auf dieser Seite wird die Berichtsdimension **Anzeigenplayer-Name**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/ads/ad-player-name.md) unter „Player-Name hinzufügen“*
 
 >[!ENDSHADEBOX]
 

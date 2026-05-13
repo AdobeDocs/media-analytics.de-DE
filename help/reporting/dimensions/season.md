@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Staffel**behandelt. Siehe [Staffel](/help/implementation/variables/standard-metadata/season.md), wie Sie diese Variable erfassen.*
+*Auf dieser Seite wird die Berichtsdimension **Staffel**&#x200B;behandelt. Siehe [Staffel](/help/implementation/variables/standard-metadata/season.md), wie Sie diese Variable erfassen.*
 
 >[!ENDSHADEBOX]
 

@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsmetrik **Inhaltswiederaufnahmen**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/core/content-resumes.md) unter „Inhaltswiederaufnahmen“*
+*Auf dieser Seite wird die Berichtsmetrik **Inhaltswiederaufnahmen**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/core/content-resumes.md) unter „Inhaltswiederaufnahmen“*
 
 >[!ENDSHADEBOX]
 

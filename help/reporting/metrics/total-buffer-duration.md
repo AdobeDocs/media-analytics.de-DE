@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Metrik **Gesamtdauer des Puffers**behandelt. Adobe Analytics füllt automatisch eine paarweise [Gesamtpufferdauer (Dimension)](/help/reporting/dimensions/total-buffer-duration.md) aus derselben `a.media.qoe.bufferTime` Kontextdatenvariablen aus. Customer Journey Analytics stellt ein einzelnes `mediaReporting.qoeDataDetails.bufferTime` bereit, das Sie als Dimension oder Metrik verwenden können.*
+*Auf dieser Seite wird die Metrik **Gesamtdauer des Puffers**&#x200B;behandelt. Adobe Analytics füllt automatisch eine paarweise [Gesamtpufferdauer (Dimension)](/help/reporting/dimensions/total-buffer-duration.md) aus derselben `a.media.qoe.bufferTime` Kontextdatenvariablen aus. Customer Journey Analytics stellt ein einzelnes `mediaReporting.qoeDataDetails.bufferTime` bereit, das Sie als Dimension oder Metrik verwenden können.*
 
 >[!ENDSHADEBOX]
 

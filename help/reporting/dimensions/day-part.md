@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Day-Teil**behandelt. Siehe [Day-Teil](/help/implementation/variables/standard-metadata/day-part.md), wie Sie diese Variable erfassen.*
+*Auf dieser Seite wird die Berichtsdimension **Day-Teil**&#x200B;behandelt. Siehe [Day-Teil](/help/implementation/variables/standard-metadata/day-part.md), wie Sie diese Variable erfassen.*
 
 >[!ENDSHADEBOX]
 

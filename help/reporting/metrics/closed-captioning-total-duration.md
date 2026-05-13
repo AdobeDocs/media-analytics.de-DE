@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsmetrik **Gesamtdauer für Untertitel**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/player-state/closed-captioning.md) unter „Untertitel“*
+*Auf dieser Seite wird die Berichtsmetrik **Gesamtdauer für Untertitel**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/player-state/closed-captioning.md) unter „Untertitel“*
 
 >[!ENDSHADEBOX]
 

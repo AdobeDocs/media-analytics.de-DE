@@ -15,11 +15,11 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsmetrik **Geschlossene Untertitelanzahl**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/player-state/closed-captioning.md) unter „Untertitel“*
+*Auf dieser Seite wird die Berichtsmetrik **Geschlossene Untertitelanzahl**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/player-state/closed-captioning.md) unter „Untertitel“*
 
 >[!ENDSHADEBOX]
 
-Die Metrik **Geschlossene Untertitel** gibt an, wie oft der Viewer Untertitel während einer Sitzung aktiviert hat. Jedes Startereignis, bei dem der Untertitelstatus aktiviert wird, erhöht die Anzahl. Kombinieren Sie mit [Von geschlossenen Untertiteln betroffene Streams](closed-captioning-streams-impacted.md) für boolesche Rollups auf Sitzungsebene und mit [Gesamtdauer für geschlossene ](closed-captioning-total-duration.md) für die Gesamtzeit im Status .
+Die Metrik **Geschlossene Untertitel** gibt an, wie oft der Viewer Untertitel während einer Sitzung aktiviert hat. Jedes Startereignis, bei dem der Untertitelstatus aktiviert wird, erhöht die Anzahl. Kombinieren Sie mit [Von geschlossenen Untertiteln betroffene Streams](closed-captioning-streams-impacted.md) für boolesche Rollups auf Sitzungsebene und mit [Gesamtdauer für geschlossene &#x200B;](closed-captioning-total-duration.md) für die Gesamtzeit im Status .
 
 ## Berechnung dieser Metrik
 

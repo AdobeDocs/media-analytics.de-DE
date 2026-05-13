@@ -33,4 +33,4 @@ Das Medien-Backend erhöht die Anzahl bei jedem während der Sitzung empfangenen
 
 ## Dimensionselemente
 
-Jedes Element ist der literale Änderungszählungswert, der beim Schließen-Aufruf gemeldet wird. Verwenden Sie für das Reporting über boolesche Werte auf Sitzungsebene (unabhängig davon, ob in der Sitzung überhaupt eine Bitratenänderung aufgetreten ist) [ Streams, die von Bitratenänderungen betroffen ](/help/reporting/metrics/bitrate-change-impacted-streams.md).
+Jedes Element ist der literale Änderungszählungswert, der beim Schließen-Aufruf gemeldet wird. Verwenden Sie für das Reporting über boolesche Werte auf Sitzungsebene (unabhängig davon, ob in der Sitzung überhaupt eine Bitratenänderung aufgetreten ist) [&#x200B; Streams, die von Bitratenänderungen betroffen &#x200B;](/help/reporting/metrics/bitrate-change-impacted-streams.md).
