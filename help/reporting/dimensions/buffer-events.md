@@ -28,7 +28,7 @@ Das Medien-Backend erhöht die Anzahl jedes Mal, wenn der Player in einen `buffe
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.qoe.bufferCount`, wenn [[!UICONTROL Medienqualität]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bufferCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bufferCount`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Daten-Feeds | `videoqoebuffercountevar, post_videoqoebuffercountevar` |
 
 ## Dimensionselemente

@@ -28,7 +28,7 @@ Der Interpret wird vom Player beim Sitzungsstart für Audioinhalte festgelegt.
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.artist`, wenn [[!UICONTROL Audio-]](/help/reporting/media-reports-enable.md)) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.artist`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.artist`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds | `videoaudioartist` |
 
 ## Dimensionselemente

@@ -28,7 +28,7 @@ MVPD wird vom Player beim Sitzungsstart festgelegt, wenn der Inhalt hinter Adobe
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.pass.mvpd`, wenn [[!UICONTROL Videometadaten]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.mvpd`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.mvpd`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds | `videomvpd, post_videomvpd` |
 
 ## Dimensionselemente

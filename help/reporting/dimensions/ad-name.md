@@ -28,7 +28,7 @@ Der Anzeigenname wird vom Player bei jedem `media.adStart` festgelegt.
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.ad.friendlyName`, wenn [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Daten-Feeds | `videoadname, post_videoadname` |
 
 In Adobe Analytics wird diese Dimension auf zwei Arten angezeigt: als **Anzeigename (Variable)** (direkt aus `a.media.ad.friendlyName` erfasst) und als **Anzeigename** (eine Klassifizierung, die von der [Ad](ad.md)-Dimension abgeleitet ist). Wenn Sie die Klassifizierung verwenden, sind Sie dafür verantwortlich, die Werte mithilfe von „Klassifizierungssätze[&#x200B; aufzufüllen und &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html). Die Verwendung von **Anzeigename (Variable)** erfordert keine Klassifizierungs-Pflege, aber Sie verlieren die garantierte 1::1-Beziehung zwischen dem Anzeigenamen und der übergeordneten Dimension [Anzeige](ad.md). Verwenden Sie die Komponente, die Ihr Implementierungs-Workflow am besten unterstützt.

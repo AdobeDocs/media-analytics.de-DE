@@ -28,7 +28,7 @@ Die Anzeige wird vom Player bei jedem `media.adStart` Ereignis als stabile Kennu
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.ad.name`, wenn [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) aktiviert ist. bleibt für die Dauer des Besuchs erhalten. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.advertisingDetails.name`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Daten-Feeds | `videoad, post_videoad` |
 
 >[!IMPORTANT]

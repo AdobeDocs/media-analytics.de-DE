@@ -22,7 +22,7 @@ Der Player übergibt bei `media.error`-Ereignissen Fehler-IDs von Player-SDK an 
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.qoe.playerSdkErrors`, wenn [[!UICONTROL Medienqualität]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.playerSdkErrors`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.playerSdkErrors`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Daten-Feeds | `videoqoeplayersdkerrors, post_videoqoeplayersdkerrors` |
 
 ## Dimensionselemente

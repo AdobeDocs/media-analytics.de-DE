@@ -28,7 +28,7 @@ Das Genre wird vom Player beim Sitzungsstart festgelegt.
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem `a.media.genre` „Kontextdaten“ erfasst (als Listenvariable gespeichert), wenn [[!UICONTROL Videometadaten]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.genreList`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) oder [`mediaReporting.sessionDetails.genre`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) (alt) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.genreList`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) oder [`mediaReporting.sessionDetails.genre`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) (alt) |
 | Daten-Feeds | `videogenre, post_videogenre` |
 
 ## Dimensionselemente
