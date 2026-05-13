@@ -185,4 +185,4 @@ Mit Roku SDK 2.x für Experience Cloud-Lösungen können Sie in BrightScript ge
    | `processMediaMessages` | Verantwortlich für die Übergabe der Medienereignisse an das SDK zur Verarbeitung. <br/><br/>`ADBMobile().processMediaMessages()` |
 
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=de) -->
