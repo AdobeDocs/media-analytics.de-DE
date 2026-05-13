@@ -1,0 +1,36 @@
+---
+title: Album
+description: Gibt das Album an, zu dem die Audiospur gehört.
+feature: Dimensions
+role: User, Admin
+source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 8%
+
+---
+
+
+# Album
+
+>[!BEGINSHADEBOX]
+
+*Auf dieser Seite wird die Berichtsdimension **Album**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/standard-metadata/album.md) unter „Album“*
+
+>[!ENDSHADEBOX]
+
+Die Dimension **Album** gibt das Album an, zu dem die Audiospur gehört (z. B. `"Pinegrove"`). Verwenden Sie diese Option, um die Interaktion auf allen Titeln desselben Albums zu aggregieren.
+
+## So wird diese Dimension ausgefüllt
+
+Das Album wird vom Player beim Sitzungsstart für Audioinhalte festgelegt.
+
+| Meldesystem | Quelle |
+| --- | --- |
+| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.album`, wenn [[!UICONTROL Audio-]](/help/reporting/media-reports-enable.md)) aktiviert ist. |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.album`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Daten-Feeds | `videoaudioalbum` |
+
+## Dimensionselemente
+
+Jedes Element ist der literale Albumtitel, der am Sitzungsbeginn gemeldet wird. Zwei Alben mit demselben Titel von verschiedenen Künstlern reduzieren sich zu einem einzigen Zeileneintrag. Paaren Sie mit der [Künstler](artist.md)-Dimension, um sie zu unterteilen.

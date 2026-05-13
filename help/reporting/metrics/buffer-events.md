@@ -1,0 +1,34 @@
+---
+title: Pufferereignisse (Metrik)
+description: Zählt Pufferereignisse für Summen und Durchschnittswerte über Sitzungen hinweg.
+feature: Metrics
+role: User, Admin
+source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+workflow-type: tm+mt
+source-wordcount: '187'
+ht-degree: 6%
+
+---
+
+
+# Pufferereignisse (Metrik)
+
+>[!BEGINSHADEBOX]
+
+*Auf dieser Seite wird die Metrik **Pufferereignisse**behandelt. Adobe Analytics füllt automatisch eine gepaarte [Pufferereignis (Dimension](/help/reporting/dimensions/buffer-events.md) aus derselben `a.media.qoe.bufferCount` Kontextdatenvariablen aus. Customer Journey Analytics stellt ein einzelnes `mediaReporting.qoeDataDetails.bufferCount` bereit, das Sie als Dimension oder Metrik verwenden können.*
+
+>[!ENDSHADEBOX]
+
+Die Metrik **Pufferereignisse** zählt Pufferereignisse über Sitzungen hinweg und eignet sich für Summen, Durchschnittswerte und Perzentil-Rollups. Verwenden Sie die -Metrik, um das Gesamtpuffervolumen über einen Berichtszeitraum zu berechnen und die Pufferstabilität über Inhalte, Netzwerke oder Player hinweg zu vergleichen.
+
+## Berechnung dieser Metrik
+
+Das Medien-Backend erhöht die Anzahl jedes Mal, wenn der Player in einen `buffer` eintritt. Die Metrik wird beim Schließen-Aufruf gemeldet.
+
+| Meldesystem | Quelle |
+| --- | --- |
+| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.qoe.bufferCount`, wenn [[!UICONTROL Medienqualität]](/help/reporting/media-reports-enable.md) aktiviert ist. |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bufferCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
+
+Verwenden Sie für das boolesche Reporting auf Sitzungsebene (unabhängig davon, ob in der Sitzung überhaupt Puffer aufgetreten sind[ „Vom Puffer betroffene Streams](buffer-impacted-streams.md).
