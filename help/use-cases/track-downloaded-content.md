@@ -5,16 +5,22 @@ uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/rtLBRcyLB8D8HPBj-Qw5LD824Fu8KeUDsLokJCn2Wfc
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 98%
+source-wordcount: 721
+ht-degree: 93%
 
 ---
 
-# Tracking heruntergeladener Inhalte {#track-downloaded-content}
+# Tracking heruntergeladener Inhalte{#track-downloaded-content}
 
-## Überblick  {#overview}
+## Überblick {#overview}
 
 Die Funktion für heruntergeladene Inhalte bietet die Möglichkeit, die Mediennutzung zu verfolgen, während ein Benutzer offline ist. Ein Benutzer lädt beispielsweise eine Mobile App auf ein Mobilgerät herunter und installiert sie, um dann mit der Mobile App Inhalte in die lokale Datenspeicherung auf dem Gerät herunterzuladen. Um das Tracking der heruntergeladenen Daten zu ermöglichen, hat Adobe eine Funktion für heruntergeladene Inhalte entwickelt. Mit dieser Funktion werden Tracking-Daten unabhängig von der Konnektivität des Geräts gespeichert, wenn der Benutzer Inhalte aus dem Speicher des Geräts wiedergibt. Wenn der Benutzer die Wiedergabesitzung beendet hat und das Gerät wieder online ist, werden die gespeicherten Tracking-Informationen in einer einzelnen Payload an das Backend der Media Collection API gesendet. Die gespeicherten Tracking-Informationen werden dann wie gewohnt in der Media Collection API verarbeitet und für Berichte verwendet.
 
@@ -57,7 +63,7 @@ Bei der Funktion für heruntergeladene Inhalte handelt es sich um die Offline-Ve
 
 ## Integration mit Adobe Analytics {#integration-with-adobe-analtyics}
 
-Bei der Berechnung der Analytics-Start-/Schließen-Aufrufe für das Szenario mit heruntergeladenen Inhalten verwendet das Backend ein zusätzliches Analytics-Feld `ts.` Dabei handelt es sich um Zeitstempel für das erste und letzte empfangene Ereignis (Start und Abschluss). Dieses Verfahren ermöglicht es, eine abgeschlossene Mediensitzung am richtigen Zeitpunkt zu platzieren (d. h., selbst wenn der Benutzer mehrere Tage lang nicht online war, erfährt er, dass die Mediensitzung zum Zeitpunkt der tatsächlichen Betrachtung des Inhalts stattgefunden hat). Sie müssen dieses Verfahren auf der Seite von Adobe Analytics aktivieren, indem Sie einen _optionalen Zeitstempel für die Report Suite erstellen._ Informationen zum Aktivieren eines optionalen Zeitstempel für die Report Suite finden Sie unter [Optionale Zeitstempel.](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html?lang=de)
+Bei der Berechnung der Analytics-Start-/Schließen-Aufrufe für das Szenario mit heruntergeladenen Inhalten verwendet das Backend ein zusätzliches Analytics-Feld `ts.` Dabei handelt es sich um Zeitstempel für das erste und letzte empfangene Ereignis (Start und Abschluss). Dieses Verfahren ermöglicht es, eine abgeschlossene Mediensitzung am richtigen Zeitpunkt zu platzieren (d. h., selbst wenn der Benutzer mehrere Tage lang nicht online war, erfährt er, dass die Mediensitzung zum Zeitpunkt der tatsächlichen Betrachtung des Inhalts stattgefunden hat). Sie müssen diesen Mechanismus auf der Adobe Analytics-Seite aktivieren, indem Sie eine _optionale Report Suite mit Zeitstempel“ erstellen_ Informationen zum Aktivieren eines Zeitstempels für eine optionale Report Suite finden Sie unter [Zeitstempel optional.](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html?lang=de)
 
 ## Vergleich von Beispielsitzungen {#sample-session-comparison}
 

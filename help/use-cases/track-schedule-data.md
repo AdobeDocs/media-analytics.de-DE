@@ -4,9 +4,14 @@ description: Erfahren Sie, wie Sie Zeitplandaten hochladen, um Live-Inhalte zu v
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 875c4513-ea4e-4c5f-bfc1-34ea175007ca
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/C1GFDLJp-oTQHWlFiks5oSi2Q5Ok34QxJWfiPIJ3bC4
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: 1425
 ht-degree: 5%
 
 ---
@@ -15,7 +20,7 @@ ht-degree: 5%
 
 >[!AVAILABILITY]
 >
->Die in diesem Artikel beschriebene Funktion befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Funktionsversionen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/releases/releases).
+>Die in diesem Artikel beschriebene Funktion befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Funktionsversionen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/releases).
 
 Sie können Daten vergangener Live-Streaming-Medieninhalte planmäßig hochladen, um die Zuschauerzahlen von Live-Inhalten einfacher und genauer zu verfolgen. Sie können die Zuschauerzahlen für einzelne Programme und sogar bestimmte Themen oder Programmsegmente verfolgen.
 
@@ -143,7 +148,7 @@ Nachdem Sie [Programmzeitplan-Datensatz erstellen](#create-a-program-schedule-da
 
    1. Pushen Sie die JSON-Datei, die die Programmplanungs-Datensätze enthält, unter Verwendung der Batch-ID.
 
-      Verwenden Sie zum Übertragen von Zeitplandaten die Batch-APIs von AEP, wie unter [Übersicht über die Batch-Aufnahme-API](https://experienceleague.adobe.com/de/docs/experience-platform/ingestion/batch/overview) beschrieben.
+      Verwenden Sie zum Übertragen von Zeitplandaten die Batch-APIs von AEP, wie unter [Übersicht über die Batch-Aufnahme-API](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview) beschrieben.
 
       Betrachten wir das folgende Beispiel für die Verwendung von cURL zum Pushen einer Datei mit den Zeitplandatensätzen:
 
@@ -170,7 +175,7 @@ Nachdem Sie [Programmzeitplan-Datensatz erstellen](#create-a-program-schedule-da
           -H 'Authorization: Bearer <OAUTH_TOKEN>'
       ```
 
-1. Fahren Sie mit dem folgenden Abschnitt fort: [&#x200B; eines Support-Tickets bei der Adobe-Kundenunterstützung](#log-a-support-ticket-with-adobe-customer-care).
+1. Fahren Sie mit dem folgenden Abschnitt fort: [ eines Support-Tickets bei der Adobe-Kundenunterstützung](#log-a-support-ticket-with-adobe-customer-care).
 
 ## Erstellen Sie ein Support-Ticket bei der Adobe-Kundenunterstützung
 
@@ -303,9 +308,9 @@ Das folgende Beispiel zeigt eine Datei mit der Zeitplandatei JSON mit zwei Daten
 
    Im Folgenden finden Sie einige Beispiele für Dimensionen, die Sie in Customer Journey Analytics erstellen und über die Sie dann Berichte erstellen können:
 
-   * **[&quot;_Episodenname_&quot;](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**: Diese Dimension könnte Ihnen dabei helfen zu erfahren, welche Episoden in einer bestimmten Serie am besten funktionieren.
+   * **[&quot;_Episodenname_&quot;](/help/reporting/dimensions/episode.md)**: Diese Dimension könnte Ihnen dabei helfen zu erfahren, welche Episoden in einer bestimmten Serie am besten funktionieren.
 
-   * **[Asset-ID](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
+   * **[Asset-ID](/help/reporting/dimensions/asset-id.md)**
 
 1. Fahren Sie mit [Analysieren von Daten in Customer Journey Analytics](#analyze-data-in-customer-journey-analytics) fort.
 

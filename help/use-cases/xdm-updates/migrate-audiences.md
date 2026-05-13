@@ -4,24 +4,29 @@ description: Erfahren Sie, wie Sie Audiences zum neuen Datentyp Adobe Analytics 
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 5664bf56-b228-430a-944c-faaab55fa108
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/TqsfcR2JgxVjDNx3-CBBa9n6pwvuGk9JgQ--DvWeHg0
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 2%
+source-wordcount: 516
+ht-degree: 1%
 
 ---
 
 # Migrieren von Zielgruppen zu den neuen Streaming-Medienfeldern
 
-In diesem Dokument wird beschrieben, wie eine Zielgruppe, die Felder aus dem Datentyp „Medien“ von Adobe Streaming Media Services verwendet, migriert werden sollte, um den neuen entsprechenden Datentyp namens &quot;[&#x200B; Media Reporting Details“ &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-reporting-details) verwenden.
+In diesem Dokument wird beschrieben, wie eine Zielgruppe, die Felder aus dem Datentyp „Medien“ von Adobe Streaming Media Services verwendet, migriert werden sollte, um den neuen entsprechenden Datentyp namens &quot;[ Media Reporting Details“ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) verwenden.
 
 ## Migrieren einer Zielgruppe
 
-Um eine Zielgruppe vom alten Datentyp „Media“ in den neuen Datentyp &quot;[Media Reporting Details](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-reporting-details)&quot; zu migrieren, müssen Sie die Zielgruppe bearbeiten und in jeder Regel das alte Feld vom veralteten Datentyp durch das neue entsprechende Feld vom neuen Datentyp ersetzen:
+Um eine Zielgruppe vom alten Datentyp „Media“ in den neuen Datentyp &quot;[Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)&quot; zu migrieren, müssen Sie die Zielgruppe bearbeiten und in jeder Regel das alte Feld vom veralteten Datentyp durch das neue entsprechende Feld vom neuen Datentyp ersetzen:
 
 1. Suchen Sie Regeln, die Felder aus dem veralteten Datentyp „Medien“ enthalten. Dies sind alle Felder, die `media.mediaTimed` mit dem Pfad beginnen.
 
-1. Duplizieren Sie diese Regeln mithilfe der Felder aus dem neuen Datentyp [Media Reporting Details](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-reporting-details).
+1. Duplizieren Sie diese Regeln mithilfe der Felder aus dem neuen Datentyp [Media Reporting Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details).
 
 1. Behalten Sie beide Regeln bei, bis Sie überprüfen, ob die Zielgruppen erwartungsgemäß funktionieren.
 
@@ -29,7 +34,7 @@ Um eine Zielgruppe vom alten Datentyp „Media“ in den neuen Datentyp &quot;[M
 
 1. Überprüfen Sie, ob die Zielgruppen weiterhin erwartungsgemäß funktionieren.
 
-Siehe den [Content-ID](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) auf der Seite [Audio- und Videoparameter](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/audio-video-parameters), um die Zuordnung zwischen den alten und den neuen Feldern vorzunehmen. Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, während der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“ zu finden ist.
+Informationen zum Zuordnen zwischen den alten [ den neuen Feldern finden Sie unter dem Parameter ](/help/reporting/dimensions/content.md)Content ID](/help/media-overview.md) und unter den übrigen unter [Streaming-Mediendienste dokumentierten Streaming-Medienvariablen . Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, während der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“ zu finden ist.
 
 ![Alte und neue XDM-Feldpfade](assets/field-paths-updated.jpeg)
 
@@ -57,7 +62,7 @@ Um die Befolgung der Migrationsrichtlinien zu vereinfachen, sehen Sie sich das f
 
    ![Zielgruppe bearbeiten](assets/audience-edit5.jpeg)
 
-1. Auf der Seite [Audio- und Videoparameter](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/audio-video-parameters) können Sie die alten Felder zuordnen. Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“. Beispielsweise wird für den Parameter [Medienstarts](https://experienceleague.adobe.com/de/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts) der Korrespondent für `media.mediaTimed.impressions.value` `mediaReporting.sessionDetails.isViewed`.
+1. Informationen zur Zuordnung zwischen den alten Feldern finden Sie in der Dokumentation [Streaming](/help/media-overview.md)Medienvariablen unter „Streaming-Mediendienste . Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“. Beispielsweise wird für den Parameter [Medienstarts](/help/reporting/metrics/media-starts.md) der Korrespondent für `media.mediaTimed.impressions.value` `mediaReporting.sessionDetails.isViewed`.
 
    ![Aktualisierter XDM-Pfad](assets/updated-xdm-path.jpeg)
 

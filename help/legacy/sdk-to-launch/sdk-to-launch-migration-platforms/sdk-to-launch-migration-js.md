@@ -4,10 +4,16 @@ description: Erfahren Sie, wie Sie vom Media SDK zu Launch für JS migrieren.
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/N4Fcbg3R9tT9cjUcaw-kcUm6h-QT8TYwatdCe1IdsaM
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fdid: c069c44e-5426-4c1a-accc-8028662f2fdeid: df312454-73c4-43f6-a90e-18f5043f074c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 97%
+source-wordcount: 466
+ht-degree: 77%
 
 ---
 
@@ -25,7 +31,8 @@ ht-degree: 97%
 
 ### Standalone Media SDK
 
-Im Standalone Media SDK konfigurieren Sie das Tracking in der App und diese Konfiguration wird beim Erstellen des Trackers an das SDK übergeben.
+In der eigenständigen Media SDK konfigurieren Sie die Tracking-Konfiguration in der App
+und beim Erstellen des Trackers an SDK übergeben.
 
 ```javascript
 //Media Heartbeat initialization
@@ -39,18 +46,22 @@ mediaConfig.ssl = true;
 mediaConfig.debugLogging = true;
 ```
 
-Zusätzlich zur `MediaHeartbeat`-Konfiguration muss auf der Seite die `AppMeasurement` und `VisitorAPI` -Instanz für das Medien-Tracking konfiguriert und bereitgestellt werden, damit die Seite ordnungsgemäß funktioniert.
+Zusätzlich zur `MediaHeartbeat` Konfiguration muss die Seite konfigurieren und übergeben
+Die `AppMeasurement` und `VisitorAPI` für das Medien-Tracking in der richtigen Reihenfolge
+um richtig zu arbeiten.
 
 ### Launch-Erweiterung
 
-1. Klicken Sie unter „Experience Platform Launch“ für Ihre Web-Eigenschaft auf die Registerkarte [!UICONTROL Erweiterungen].
-1. Suchen Sie auf der Registerkarte [!UICONTROL Katalog] die Erweiterung „Adobe Media Analytics for Audio and Video“ und klicken Sie auf [!UICONTROL Installieren].
+1. Klicken Sie in Experience Platform Launch auf die Registerkarte [!UICONTROL Erweiterungen] für Ihre
+Web-Eigenschaft.
+1. Suchen Sie auf der [!UICONTROL Katalog] die Registerkarte Adobe Media Analytics for Audio and
+und klicken Sie auf [!UICONTROL Installieren].
 1. Konfigurieren Sie auf der Seite „Erweiterungseinstellungen“ die Tracking-Parameter.
 Die Media-Erweiterung verwendet zum Tracking die konfigurierten Parameter.
 
    ![](assets/launch_config_js.png)
 
-[Launch-Benutzerhandbuch – Installieren und Konfigurieren der Media-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=de#install-and-configure-the-ma-extension)
+[Benutzerhandbuch starten - Installieren und Konfigurieren der Medienerweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=de#install-and-configure-the-ma-extension)
 
 ## Unterschiede bei der Tracker-Erstellung
 
@@ -115,7 +126,7 @@ Launch bietet zwei Methoden zum Erstellen der Tracking-Infrastruktur. Beide Meth
 ### Media SDK
 
 * [Einrichten von JavaScript 2.x](/help/legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
-* [Media SDK JS API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
+* [Media SDK JS-API](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 
 ### Launch
 

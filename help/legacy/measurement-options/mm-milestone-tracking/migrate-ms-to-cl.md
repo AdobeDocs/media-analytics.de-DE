@@ -5,16 +5,22 @@ uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/VrVa44XnAVGI2kNPEFfTB2S840O8jQdvI-PuGX5Y3nM
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fdid: c8add8f2-4250-4fd9-9cde-9707036c567did: e7d92df1-c5ba-4e93-85df-f83171b889beid: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: 598
 ht-degree: 79%
 
 ---
 
 # Migration von Milestone zu Custom Link{#migrating-from-milestone-to-custom-link}
 
-## Überblick  {#overview}
+## Überblick {#overview}
 
 Die Kernkonzepte der Videomessung sind für das Meilenstein- und das Tracking benutzerdefinierter Links identisch, bei denen Video-Player-Ereignisse mit Analysemethoden verknüpft und gleichzeitig Player-Metadaten und -Werte erfasst und Analytics-Variablen zugeordnet werden. Der Ansatz für benutzerspezifische Links sollte als eine Verschlankung und Vereinfachung sowohl der Implementierung als auch der erfassten Daten betrachtet werden. Bei der Lösung „Benutzerspezifischer Link“ sind keine Variablen oder Methoden für die Videomessung vordefiniert, sondern eine vollständige benutzerdefinierte Einrichtung erforderlich. Es sollte möglich sein, den Player-Ereigniscode so zu aktualisieren, dass er auf die benutzerdefinierten Linktracking-Aufrufe für grundlegende Player-Ereignisse wie Start und Abschluss verweist. Weitere Informationen finden Sie im [Implementierungshandbuch für benutzerspezifische Links](/help/legacy/measurement-options/cl-in-aa/cl-impl-guide.md).
 
@@ -77,7 +83,7 @@ Die folgenden Tabellen enthalten Übersetzungen zwischen der Milestone-Lösung u
 | Media.openAd | `s.Media.openAd(` <br> `  name,` <br> `  length,` <br> `  playerName,` <br> `  parentName,` <br> `  parentPod,` <br> `  parentPodPosition,` <br> `  CPM)` | nicht angegeben | Nicht verfügbar. |
 | name | `name` (erforderlich): Name oder ID der Anzeige. | nicht angegeben | Nicht verfügbar. |
 | length | `length` (erforderlich): Länge der Anzeige. | nicht angegeben | Nicht verfügbar. |
-| playerName | `playerName` (erforderlich): Name des Median-Players, mit dem die Anzeige wiedergegeben wird. | nicht angegeben | Nicht verfügbar. |
+| playerName | `playerName` (erforderlich): Name des Medien-Players, mit dem die Anzeige wiedergegeben wird. | nicht angegeben | Nicht verfügbar. |
 | parentName | `parentName`: Name oder ID des Hauptinhalts, in den die Anzeige eingebettet ist. | nicht angegeben | Nicht verfügbar. |
 | parentPod | `parentPod`: Die Position im Hauptinhalt, an der die Anzeige wiedergegeben wurde. | nicht angegeben | Nicht verfügbar. |
 | parentPodPosition | `parentPodPosition`: Die Position in der Werbeunterbrechung, an der die Anzeige wiedergegeben wurde. | nicht angegeben | Nicht verfügbar. |

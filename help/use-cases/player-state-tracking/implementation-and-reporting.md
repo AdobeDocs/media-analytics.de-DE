@@ -4,10 +4,16 @@ description: Erfahren Sie, wie Sie die Player-Status-Tracking-Funktion implement
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/NzekVHZYctiEjAWDpRhIdiw74amAX3wTX-z2nZDgvIw
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b3f03848-ae12-48b2-8aab-cad18567eb32id: c153fd90-23e1-4614-81d3-3cc7571227f7id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: f1f1a2d4-0976-4881-b091-c2bb8de7ffacid: f836f655-eebe-4b76-82bc-697955ec1ce3
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 78%
+source-wordcount: 308
+ht-degree: 76%
 
 ---
 
@@ -101,4 +107,4 @@ In Analysis Workspace befinden sich alle neuen Eigenschaften im Bedienfeld Metri
 
 ## Importieren der vom Player angegebenen Metriken in Adobe Experience Platform
 
-In Analytics gespeicherte Daten können für jeden Zweck verwendet werden. Die Player-Statusmetriken können mithilfe von XDM in Adobe Experience Platform importiert und mit Customer Journey Analytics verwendet werden. Die Standardstatuseigenschaften haben bestimmte Eigenschaften, während die benutzerdefinierten Statuseigenschaften über die benutzerdefinierten Ereignisse verfügbar sind. Zusätzliche Informationen zu den Standardstatuseigenschaften finden Sie im Abschnitt mit der *Eigenschaftenliste für XDM-Identitäten* auf der Seite [Player-Statusparameter](/help/implementation/variables/player-state-parameters.md).
+In Analytics gespeicherte Daten können für jeden Zweck verwendet werden. Die Player-Statusmetriken können mithilfe von XDM in Adobe Experience Platform importiert und mit Customer Journey Analytics verwendet werden. Die Standardstatuseigenschaften haben bestimmte Eigenschaften, während die benutzerdefinierten Statuseigenschaften über die benutzerdefinierten Ereignisse verfügbar sind.
