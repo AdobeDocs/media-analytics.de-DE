@@ -6,11 +6,22 @@ exl-id: 0040006e-cd59-48a1-b019-1feafc275fa3
 feature: Streaming Media, Workspace Basics
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/d-9u-isbIO6PQCPrZtTt-jS2L3Q5ukETFvQubaCOpko
-product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2: id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
 source-wordcount: 355
@@ -28,8 +39,8 @@ Medienberichte werden auf der Registerkarte **[!UICONTROL Berichte]** aufgeliste
 
 | Medienbericht | Beschreibung     | Allgemeine geschäftliche Einblicke       |
 | --- | --- | --- |
-| [Medienübersicht ](media-reports-overview.md) | Zeigt eine Reihe von Aggregat-Messungen an, um schnell überprüfen zu können, ob das Medium die Erwartungen erfüllt. Ein Diagramm zeigt Medienstarts neben Anzeigenimpressionen an, damit Sie diese Metriken schnell anzeigen und vergleichen können. | <ul> <li>Gesamtwerte für Top-Metriken, einschließlich Content-Beginn, Abschlussrate, durchschnittliche Stream-Zeit und durchschnittliche Medienelemente pro Besuch.  </li> <li>Gesamtinhalt und Anzeigenbeginn für Medien, gefiltert nach Gerätetyp oder Land.  </li> </ul> |
-| [Mediendetails ](media-reports-detail.md) | Zeigt detaillierte Metriken für alle Medienelemente an, einschließlich Beginn, gleichzeitige Betrachter, Abschlussrate, Wiedergabeprozentsatz und Anzeigenimpressionen. | <ul> <li>Gesamtwerte für die Top-Metriken einschließlich Medienstarts, Inhalts- und Anzeigenstarts und durchschnittlicher Inhalt pro Besuch.  </li> <li>Gesamtinhalt und Anzeigenbeginn für Medien, gefiltert nach Gerätetyp oder Land.  </li> </ul> |
-| [Medientagesabschnitt ](media-reports-daypart.md) | Zeigt Inhaltsstarts nach Tageszeit an, damit Sie schnell ermitteln können, wann Ihre Zielgruppe interagiert. | <ul> <li>Interaktion der Zielgruppe nach Tageszeit.  </li> <li>Interaktion der Zielgruppe im Vergleich zu früheren Datumsbereichen.  </li> </ul> |
+| [Medienübersicht &#x200B;](media-reports-overview.md) | Zeigt eine Reihe von Aggregat-Messungen an, um schnell überprüfen zu können, ob das Medium die Erwartungen erfüllt. Ein Diagramm zeigt Medienstarts neben Anzeigenimpressionen an, damit Sie diese Metriken schnell anzeigen und vergleichen können. | <ul> <li>Gesamtwerte für Top-Metriken, einschließlich Content-Beginn, Abschlussrate, durchschnittliche Stream-Zeit und durchschnittliche Medienelemente pro Besuch.  </li> <li>Gesamtinhalt und Anzeigenbeginn für Medien, gefiltert nach Gerätetyp oder Land.  </li> </ul> |
+| [Mediendetails &#x200B;](media-reports-detail.md) | Zeigt detaillierte Metriken für alle Medienelemente an, einschließlich Beginn, gleichzeitige Betrachter, Abschlussrate, Wiedergabeprozentsatz und Anzeigenimpressionen. | <ul> <li>Gesamtwerte für die Top-Metriken einschließlich Medienstarts, Inhalts- und Anzeigenstarts und durchschnittlicher Inhalt pro Besuch.  </li> <li>Gesamtinhalt und Anzeigenbeginn für Medien, gefiltert nach Gerätetyp oder Land.  </li> </ul> |
+| [Medientagesabschnitt &#x200B;](media-reports-daypart.md) | Zeigt Inhaltsstarts nach Tageszeit an, damit Sie schnell ermitteln können, wann Ihre Zielgruppe interagiert. | <ul> <li>Interaktion der Zielgruppe nach Tageszeit.  </li> <li>Interaktion der Zielgruppe im Vergleich zu früheren Datumsbereichen.  </li> </ul> |
 | [Gleichzeitige Medienbetrachtende](media-concurrent-viewers-reports.md) | Zeigt gleichzeitige Betrachter während eines Tages an. Die Daten können nach Inhalt, Gerätetyp und Land gefiltert werden. | <ul> <li>Interaktion der Zielgruppe pro Minute über einen Zeitraum von 24 Stunden.  </li> </ul> |
 | Medienereignis und Medienvariablen | Es stehen weitere Berichte zur Verfügung. Die Medienkennzahlen und -dimensionen sind standardmäßige Analytics-Variablen, die direkt gemeldet und anderen Analytics-Berichten hinzugefügt werden können. | <ul> <li>Medienkonvertierung (Ereignisse, die nach dem Anzeigen des Mediums auftreten) durch Erstellung eines Berichts mit Besuchen, die einen Medien-Content-Typ enthalten.  </li> <li>Nächster/vorheriger Medienfluss mit der Mediennamen-Eigenschaft.  </li> </ul> |
