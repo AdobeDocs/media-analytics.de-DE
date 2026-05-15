@@ -3,17 +3,17 @@ title: Ping
 description: Senden Sie einen Heartbeat, um die Mediensitzung am Leben zu erhalten und den Wiedergabegeschritt in regelmäßigen Abständen zu verfolgen.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 6%
+source-wordcount: '218'
+ht-degree: 5%
 
 ---
 
 
 # Ping
 
-Das Ping-Ereignis ist ein Heartbeat, der die Sitzung am Leben erhält und den Wiedergabegeschritt verfolgt. Senden Sie es während der gesamten Wiedergabe auf einem Timer.
+Das Ping-Ereignis ist ein Heartbeat, der die Sitzung am Leben erhält und den Wiedergabegeschritt verfolgt. Senden Sie es während der gesamten Wiedergabe auf einem Timer. Bei Mobile SDKs werden Pings automatisch gesendet. Auf allen anderen Plattformen müssen sie im angegebenen Intervall manuell gesendet werden.
 
 * **Hauptinhalt** zuerst Ping 10 Sekunden nach dem Wiedergabebeginn und danach alle 10 Sekunden
 * **Anzeigeninhalt**: alle 1 Sekunde beim Anzeigen-Tracking

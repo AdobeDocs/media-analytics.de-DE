@@ -3,17 +3,17 @@ title: Sitzungsende
 description: Sofortiges Schließen einer Mediensitzung, wenn der Viewer Inhalte abbricht.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 14%
+source-wordcount: '208'
+ht-degree: 11%
 
 ---
 
 
 # Sitzungsende
 
-Das Sitzungsende-Ereignis schließt eine Medienverfolgungssitzung sofort. Verwenden Sie sie, wenn der Viewer Inhalte abbricht, bevor das Ende erreicht ist, und Sie nicht möchten, dass nachfolgende Ereignisse unter derselben Sitzung verfolgt werden. Wenn der Viewer den Inhalt fertig gestellt hat, rufen Sie stattdessen [Sitzung abgeschlossen](session-complete.md) auf.
+Das Sitzungsende-Ereignis schließt eine Medienverfolgungssitzung sofort und unwiderruflich. Sitzungsende ist ein harter Abschluss. Nach dem Versand wird die Sitzung beendet und es können keine weiteren Ereignisse darunter verfolgt werden. Verwenden Sie Sitzungsende nur, wenn Sie sicher sind, dass keine zusätzlichen Ereignisse folgen werden, z. B. wenn der Player zerstört oder die Seite entladen wird. In den meisten Fällen ist es sicherer, die Sitzung auf natürliche Weise ablaufen zu lassen, anstatt zu riskieren, Ereignisse abzuschneiden, die noch eintreffen könnten. Wenn der Viewer den Inhalt fertig gestellt hat, rufen Sie stattdessen [Sitzung abgeschlossen](session-complete.md) auf.
 
 Ohne explizites Sitzungsende wird eine Sitzung automatisch nach 10 Minuten ohne Ereignisse oder 30 Minuten ohne Abspielkopfbewegung geschlossen.
 

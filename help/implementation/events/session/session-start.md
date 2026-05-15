@@ -3,10 +3,10 @@ title: Sitzungsstart
 description: Signalisieren Sie den Beginn einer Mediensitzung und erhalten Sie die Sitzungs-ID, die für alle nachfolgenden Ereignisse erforderlich ist.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 12%
+source-wordcount: '221'
+ht-degree: 10%
 
 ---
 
@@ -14,6 +14,8 @@ ht-degree: 12%
 # Sitzungsstart
 
 Das Sitzungsstartereignis öffnet eine Medienverfolgungssitzung. Es muss das erste Ereignis sein, das für eine Wiedergabe gesendet wird. Die Antwort gibt eine Sitzungs-ID zurück, die alle nachfolgenden Ereignisse für dieselbe Sitzung enthalten müssen.
+
+Eine Sitzung läuft automatisch ab **wenn für 10 Minuten keine Ereignisse empfangen werden** oder wenn **keine Abspielkopfbewegung für 30 Minuten“**. Wenn eine Sitzung abläuft, müssen Sie den Sitzungsstart erneut aufrufen, um eine neue Sitzungs-ID zu erhalten.
 
 * **Voraussetzungen**: Keine; immer das erste Ereignis
 * **Zugeordnete Metrik**: [Medienstarts](/help/reporting/metrics/media-starts.md)

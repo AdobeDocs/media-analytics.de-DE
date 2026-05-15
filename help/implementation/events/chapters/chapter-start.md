@@ -3,17 +3,17 @@ title: Kapitelstart
 description: Signalisieren Sie den Beginn eines Kapitelsegments im Inhalt.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 17%
+source-wordcount: '149'
+ht-degree: 15%
 
 ---
 
 
 # Kapitelstart
 
-Das Ereignis „Kapitelstart“ signalisiert den Beginn eines Kapitels im Inhalt. Das Kapitel-Tracking ist optional und für das Core-Medien-Tracking nicht erforderlich.
+Das Ereignis „Kapitelstart“ signalisiert den Beginn eines Kapitels im Inhalt. Das Kapitel-Tracking ist optional und für das Core-Medien-Tracking nicht erforderlich. Kapitel dürfen sich nicht überschneiden. Senden Sie [Kapitel abgeschlossen](chapter-complete.md) oder [Kapitelüberspringen](chapter-skip.md), um das aktuelle Kapitel zu schließen, bevor Sie ein neues beginnen.
 
 * **Voraussetzungen**: [Sitzungsstart](../session/session-start.md)
 * **Zugeordnete Metrik**: [Kapitelstarts](/help/reporting/metrics/chapter-starts.md)
