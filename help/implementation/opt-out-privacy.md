@@ -125,4 +125,4 @@ Mit zwei reservierten Parametern können Sie Media Analytics-Daten aus der Serve
 
 >[!NOTE]
 >
->Diese Parameter werden in der Referenz [Mediensammlungs-API-Sitzungen“ ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md). Sie gelten für Implementierungen der Mediensammlungs-API und der Media Edge-API. Die oben beschriebenen Opt-out-Steuerelemente auf SDK-Ebene gelten für Mobile- und OTT-Implementierungen.
+>Diese Parameter werden in der Referenz [Mediensammlungs-API-Sitzungen“ &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md). Sie gelten für Implementierungen der Mediensammlungs-API und der Media Edge-API. Die oben beschriebenen Opt-out-Steuerelemente auf SDK-Ebene gelten für Mobile- und OTT-Implementierungen.

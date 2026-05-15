@@ -15,7 +15,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Ad-Player-Name**behandelt. Siehe [Player-Name hinzufügen](/help/reporting/dimensions/ad-player-name.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Ad-Player-Name**&#x200B;behandelt. Siehe [Player-Name hinzufügen](/help/reporting/dimensions/ad-player-name.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -141,4 +141,4 @@ Fügen Sie `media.ad.playerName` in das `params` Ihrer `adStart` POST-Anfrage ei
 }
 ```
 
-Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .

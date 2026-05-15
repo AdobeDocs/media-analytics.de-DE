@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Name des Content-Players**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/core/content-player-name.md) unter „Name des Inhalts-Players“*
+*Auf dieser Seite wird die Berichtsdimension **Name des Content-Players**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/core/content-player-name.md) unter „Name des Inhalts-Players“*
 
 >[!ENDSHADEBOX]
 

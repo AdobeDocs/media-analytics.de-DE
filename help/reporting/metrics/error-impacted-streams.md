@@ -17,7 +17,7 @@ Die Metrik **Vom Fehler betroffene Streams** zählt Sitzungen, in denen mindeste
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend legt `mediaReporting.qoeDataDetails.hasErrorImpactedStreams = true` das erste Mal fest[ dass während der Sitzung ein ](/help/implementation/events/error.md) empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend legt `mediaReporting.qoeDataDetails.hasErrorImpactedStreams = true` das erste Mal fest[&#x200B; dass während der Sitzung ein &#x200B;](/help/implementation/events/error.md) empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |

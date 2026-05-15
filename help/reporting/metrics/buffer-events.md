@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Metrik **Pufferereignisse**behandelt. Adobe Analytics füllt automatisch eine gepaarte [Pufferereignis (Dimension](/help/reporting/dimensions/buffer-events.md) aus derselben `a.media.qoe.bufferCount` Kontextdatenvariablen aus. Customer Journey Analytics stellt ein einzelnes `mediaReporting.qoeDataDetails.bufferCount` bereit, das Sie als Dimension oder Metrik verwenden können.*
+*Auf dieser Seite wird die Metrik **Pufferereignisse**&#x200B;behandelt. Adobe Analytics füllt automatisch eine gepaarte [Pufferereignis (Dimension](/help/reporting/dimensions/buffer-events.md) aus derselben `a.media.qoe.bufferCount` Kontextdatenvariablen aus. Customer Journey Analytics stellt ein einzelnes `mediaReporting.qoeDataDetails.bufferCount` bereit, das Sie als Dimension oder Metrik verwenden können.*
 
 >[!ENDSHADEBOX]
 
@@ -32,4 +32,4 @@ Das Medien-Backend erhöht die Anzahl jedes Mal, wenn der Player in einen [Puffe
 | Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
 | Audience Manager | `c_contextdata.a.media.qoe.bufferCount` |
 
-Verwenden Sie für das boolesche Reporting auf Sitzungsebene (unabhängig davon, ob in der Sitzung überhaupt Puffer aufgetreten sind[ „Vom Puffer betroffene Streams](buffer-impacted-streams.md).
+Verwenden Sie für das boolesche Reporting auf Sitzungsebene (unabhängig davon, ob in der Sitzung überhaupt Puffer aufgetreten sind[&#x200B; „Vom Puffer betroffene Streams](buffer-impacted-streams.md).

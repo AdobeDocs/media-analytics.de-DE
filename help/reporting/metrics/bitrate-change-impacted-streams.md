@@ -17,7 +17,7 @@ Die Metrik **Bitratenänderung wirkt sich auf Streams aus** zählt Sitzungen, in
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend legt `mediaReporting.qoeDataDetails.hasBitrateChangeImpactedStreams = true` ersten Mal fest, wenn während [ Sitzung ein ](/help/implementation/events/playback/bitrate-change.md)Bitratenänderungsereignis“ empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend legt `mediaReporting.qoeDataDetails.hasBitrateChangeImpactedStreams = true` ersten Mal fest, wenn während [&#x200B; Sitzung ein &#x200B;](/help/implementation/events/playback/bitrate-change.md)Bitratenänderungsereignis“ empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |

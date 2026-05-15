@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Diese Seite behandelt die Berichtsdimension **Anzeigename**. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/ads/ad-name.md) unter „Anzeigename“*
+*Diese Seite behandelt die Berichtsdimension **Anzeigename**. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/ads/ad-name.md) unter „Anzeigename“*
 
 >[!ENDSHADEBOX]
 
@@ -32,8 +32,8 @@ Der Anzeigenname wird vom Player bei jedem [Anzeigenstart](/help/implementation/
 | Daten-Feeds | `videoadname`, `post_videoadname` |
 | Audience Manager | `c_contextdata.a.media.ad.friendlyName` |
 
-In Adobe Analytics wird diese Dimension auf zwei Arten angezeigt: als **Anzeigename (Variable)** (direkt aus `a.media.ad.friendlyName` erfasst) und als **Anzeigename** (eine Klassifizierung, die von der [Ad](ad.md)-Dimension abgeleitet ist). Wenn Sie die Klassifizierung verwenden, sind Sie dafür verantwortlich, die Werte mithilfe von „Klassifizierungssätze[ aufzufüllen und ](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html). Die Verwendung von **Anzeigename (Variable)** erfordert keine Klassifizierungs-Pflege, aber Sie verlieren die garantierte 1::1-Beziehung zwischen dem Anzeigenamen und der übergeordneten Dimension [Anzeige](ad.md). Verwenden Sie die Komponente, die Ihr Implementierungs-Workflow am besten unterstützt.
+In Adobe Analytics wird diese Dimension auf zwei Arten angezeigt: als **Anzeigename (Variable)** (direkt aus `a.media.ad.friendlyName` erfasst) und als **Anzeigename** (eine Klassifizierung, die von der [Ad](ad.md)-Dimension abgeleitet ist). Wenn Sie die Klassifizierung verwenden, sind Sie dafür verantwortlich, die Werte mithilfe von „Klassifizierungssätze[&#x200B; aufzufüllen und &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html). Die Verwendung von **Anzeigename (Variable)** erfordert keine Klassifizierungs-Pflege, aber Sie verlieren die garantierte 1::1-Beziehung zwischen dem Anzeigenamen und der übergeordneten Dimension [Anzeige](ad.md). Verwenden Sie die Komponente, die Ihr Implementierungs-Workflow am besten unterstützt.
 
 ## Dimensionselemente
 
-Jedes Element ist der literale Anzeigentitel, der beim [Anzeigenstart“ angezeigt ](/help/implementation/events/ads/ad-start.md) (z. B. `"Ford F-150"`).
+Jedes Element ist der literale Anzeigentitel, der beim [Anzeigenstart“ angezeigt &#x200B;](/help/implementation/events/ads/ad-start.md) (z. B. `"Ford F-150"`).

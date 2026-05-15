@@ -28,4 +28,4 @@ Das Medien-Backend erhöht die Zählung jedes Mal, wenn für mindestens drei auf
 | Daten-Feeds | `event_list`, `post_event_list` (das benutzerdefinierte Ereignis, dem Ihre Verarbeitungsregel zugeordnet `a.media.qoe.stallCount`; siehe [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.qoe.stallCount` |
 
-Verwenden Sie für das boolesche Reporting auf Sitzungsebene (unabhängig davon, ob es zu einem Verzug gekommen ist) &quot;[ betroffene Streams verzögern](stall-impacted-streams.md).
+Verwenden Sie für das boolesche Reporting auf Sitzungsebene (unabhängig davon, ob es zu einem Verzug gekommen ist) &quot;[&#x200B; betroffene Streams verzögern](stall-impacted-streams.md).

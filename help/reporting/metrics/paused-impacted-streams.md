@@ -17,7 +17,7 @@ Die Metrik **Ausgesetzte betroffene Streams** zählt Sitzungen, in denen der Vie
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend legt `mediaReporting.sessionDetails.hasPauseImpactedStreams = true` das erste Mal fest[ dass während der Sitzung ein ](/help/implementation/events/playback/pause-start.md)-Ereignis empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend legt `mediaReporting.sessionDetails.hasPauseImpactedStreams = true` das erste Mal fest[&#x200B; dass während der Sitzung ein &#x200B;](/help/implementation/events/playback/pause-start.md)-Ereignis empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |

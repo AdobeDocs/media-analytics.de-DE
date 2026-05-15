@@ -17,7 +17,7 @@ Die Metrik **Vom Puffer betroffene Streams** zählt Sitzungen, in denen der Play
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend legt `mediaReporting.qoeDataDetails.hasBufferImpactedStreams = true` das erste Mal fest, [ während der Sitzung ein &quot;](/help/implementation/events/playback/buffer-start.md)&quot; empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend legt `mediaReporting.qoeDataDetails.hasBufferImpactedStreams = true` das erste Mal fest, [&#x200B; während der Sitzung ein &quot;](/help/implementation/events/playback/buffer-start.md)&quot; empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |

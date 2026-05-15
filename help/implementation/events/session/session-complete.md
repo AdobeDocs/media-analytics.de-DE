@@ -13,7 +13,7 @@ ht-degree: 16%
 
 # Sitzung abgeschlossen
 
-Das Ereignis „Session Complete“ signalisiert, dass der Viewer das Ende des Hauptinhalts erreicht hat. Die Sitzung wird nicht sofort geschlossen. Die Sitzung bleibt geöffnet, bis sie von selbst abläuft. Wenn Sie die Sitzung sofort schließen möchten, rufen Sie stattdessen &quot;[&quot; ](session-end.md).
+Das Ereignis „Session Complete“ signalisiert, dass der Viewer das Ende des Hauptinhalts erreicht hat. Die Sitzung wird nicht sofort geschlossen. Die Sitzung bleibt geöffnet, bis sie von selbst abläuft. Wenn Sie die Sitzung sofort schließen möchten, rufen Sie stattdessen &quot;[&quot; &#x200B;](session-end.md).
 
 * **Voraussetzungen**: [Sitzungsstart](session-start.md)
 * **Zugeordnete Metrik**: [Inhalt abgeschlossen](/help/reporting/metrics/content-completes.md)

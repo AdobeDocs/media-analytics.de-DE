@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Kapitelposition**behandelt. Siehe [Kapitelposition](/help/implementation/variables/chapters/chapter-position.md), wie Sie diese Variable erfassen.*
+*Auf dieser Seite wird die Berichtsdimension **Kapitelposition**&#x200B;behandelt. Siehe [Kapitelposition](/help/implementation/variables/chapters/chapter-position.md), wie Sie diese Variable erfassen.*
 
 >[!ENDSHADEBOX]
 
@@ -36,7 +36,7 @@ Die Kapitelposition wird vom Player bei jedem [Kapitelstart](/help/implementatio
 
 ## Klassifizierungsansatz
 
-Adobe erstellt die Klassifizierungsstruktur für die Kapitelposition automatisch, wenn **[[!UICONTROL Medienkapitel]](/help/reporting/media-reports-enable.md)** für die Report Suite aktiviert ist. Sie sind dafür verantwortlich, die Klassifizierung mithilfe von „Klassifizierungssätze[ auszufüllen und zu ](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
+Adobe erstellt die Klassifizierungsstruktur für die Kapitelposition automatisch, wenn **[[!UICONTROL Medienkapitel]](/help/reporting/media-reports-enable.md)** für die Report Suite aktiviert ist. Sie sind dafür verantwortlich, die Klassifizierung mithilfe von „Klassifizierungssätze[&#x200B; auszufüllen und zu &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
 
 Dieser Ansatz bietet eine garantierte 1::1-Beziehung zwischen jeder Kapitel-ID und ihrer Position. Klassifizierungsaktualisierungen gelten rückwirkend für alle historischen Daten für diese ID.
 
@@ -52,4 +52,4 @@ Der Nachteil besteht darin, dass Sie die garantierte 1::1-Beziehung zwischen der
 
 ## Dimensionselemente
 
-Jedes Element ist der ganzzahlige Positionswert, der beim [ (Kapitelstart) ](/help/implementation/events/chapters/chapter-start.md) wird.
+Jedes Element ist der ganzzahlige Positionswert, der beim [&#x200B; (Kapitelstart) &#x200B;](/help/implementation/events/chapters/chapter-start.md) wird.

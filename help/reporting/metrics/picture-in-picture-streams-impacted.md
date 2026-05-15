@@ -15,11 +15,11 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsmetrik **Von Bild in Bild betroffene Streams**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/player-state/picture-in-picture.md) unter „Bild in“.*
+*Auf dieser Seite wird die Berichtsmetrik **Von Bild in Bild betroffene Streams**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/player-state/picture-in-picture.md) unter „Bild in“.*
 
 >[!ENDSHADEBOX]
 
-Die Metrik **Von Bild in Bild betroffene Streams** zählt Sitzungen, in denen der Betrachter mindestens einmal an der Bild-in-Bild-Wiedergabe teilgenommen hat. Bei der Metrik handelt es sich um einen booleschen Wert auf Sitzungsebene - mehrere Bild-in-Bild-Einträge innerhalb derselben Sitzungsanzahl wie ein betroffener Stream. Verwenden Sie für die Gesamteingabemenge „Bild-in-Bild[ „Bild-in-Bild-Anzahl](picture-in-picture-count.md).
+Die Metrik **Von Bild in Bild betroffene Streams** zählt Sitzungen, in denen der Betrachter mindestens einmal an der Bild-in-Bild-Wiedergabe teilgenommen hat. Bei der Metrik handelt es sich um einen booleschen Wert auf Sitzungsebene - mehrere Bild-in-Bild-Einträge innerhalb derselben Sitzungsanzahl wie ein betroffener Stream. Verwenden Sie für die Gesamteingabemenge „Bild-in-Bild[&#x200B; „Bild-in-Bild-Anzahl](picture-in-picture-count.md).
 
 ## Berechnung dieser Metrik
 

@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*Diese Seite behandelt die Berichtsdimension **Creative**URL. Informationen zum Erfassen dieser Variablen finden ](/help/implementation/variables/ads/creative-url.md) unter [Creative-URL*
+*Diese Seite behandelt die Berichtsdimension **Creative**&#x200B;URL. Informationen zum Erfassen dieser Variablen finden [&#128279;](/help/implementation/variables/ads/creative-url.md) unter Creative-URL*
 
 >[!ENDSHADEBOX]
 
@@ -34,4 +34,4 @@ Die Creative-URL wird vom Player bei jedem [Anzeigenstart](/help/implementation/
 
 ## Dimensionselemente
 
-Jedes Element ist die literale URL-Zeichenfolge, die beim [Anzeigenstart“ gemeldet ](/help/implementation/events/ads/ad-start.md).
+Jedes Element ist die literale URL-Zeichenfolge, die beim [Anzeigenstart“ gemeldet &#x200B;](/help/implementation/events/ads/ad-start.md).

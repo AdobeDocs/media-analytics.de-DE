@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Metrik **Zeit bis zum Start**behandelt. Adobe Analytics füllt automatisch eine paarweise [Time to Start (Dimension](/help/reporting/dimensions/time-to-start.md) aus derselben `a.media.qoe.timeToStart` Kontextdatenvariablen aus. Customer Journey Analytics stellt ein einzelnes `mediaReporting.qoeDataDetails.timeToStart` bereit, das Sie als Dimension oder Metrik verwenden können. Informationen [ Erfassen dieser Variablen finden Sie ](/help/implementation/variables/quality/time-to-start.md) „Zeit bis zum Start“*
+*Auf dieser Seite wird die Metrik **Zeit bis zum Start**&#x200B;behandelt. Adobe Analytics füllt automatisch eine paarweise [Time to Start (Dimension](/help/reporting/dimensions/time-to-start.md) aus derselben `a.media.qoe.timeToStart` Kontextdatenvariablen aus. Customer Journey Analytics stellt ein einzelnes `mediaReporting.qoeDataDetails.timeToStart` bereit, das Sie als Dimension oder Metrik verwenden können. Informationen [&#x200B; Erfassen dieser Variablen finden Sie &#x200B;](/help/implementation/variables/quality/time-to-start.md) „Zeit bis zum Start“*
 
 >[!ENDSHADEBOX]
 

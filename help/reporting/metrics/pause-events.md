@@ -17,7 +17,7 @@ Die **Pause-Ereignisse**-Metrik zählt jedes einzelne [Pause-Start](/help/implem
 
 ## Berechnung dieser Metrik
 
-`mediaReporting.sessionDetails.pauseCount` Das Medien-Backend wird bei jedem Start-[-Ereignis ](/help/implementation/events/playback/pause-start.md). Die Metrik wird beim Schließen-Aufruf gemeldet.
+`mediaReporting.sessionDetails.pauseCount` Das Medien-Backend wird bei jedem Start-[-Ereignis &#x200B;](/help/implementation/events/playback/pause-start.md). Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |

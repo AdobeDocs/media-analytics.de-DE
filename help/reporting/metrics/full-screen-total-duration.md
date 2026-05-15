@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*Diese Seite deckt die Berichtsmetrik **Gesamtdauer im Vollbildmodus**ab. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/player-state/full-screen.md) im Vollbildmodus*
+*Diese Seite deckt die Berichtsmetrik **Gesamtdauer im Vollbildmodus**&#x200B;ab. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/player-state/full-screen.md) im Vollbildmodus*
 
 >[!ENDSHADEBOX]
 

@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für den Player-Status **Untertitel**behandelt. Siehe [Von geschlossenen Untertiteln betroffene Streams](/help/reporting/metrics/closed-captioning-streams-impacted.md), [Geschlossene Untertitelanzahl](/help/reporting/metrics/closed-captioning-count.md) und [Geschlossene Untertitelgesamtdauer](/help/reporting/metrics/closed-captioning-total-duration.md) für die entsprechenden Berichtsmetriken.*
+*Auf dieser Seite wird die Datenerfassung für den Player-Status **Untertitel**&#x200B;behandelt. Siehe [Von geschlossenen Untertiteln betroffene Streams](/help/reporting/metrics/closed-captioning-streams-impacted.md), [Geschlossene Untertitelanzahl](/help/reporting/metrics/closed-captioning-count.md) und [Geschlossene Untertitelgesamtdauer](/help/reporting/metrics/closed-captioning-total-duration.md) für die entsprechenden Berichtsmetriken.*
 
 >[!ENDSHADEBOX]
 
@@ -157,4 +157,4 @@ Senden Sie eine `stateStart` POST-Anfrage, wenn Beschriftungen aktiviert sind, u
 }
 ```
 
-Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
