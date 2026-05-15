@@ -3,10 +3,10 @@ title: Creative-ID
 description: Legen Sie die Kreativ-ID für jede Anzeige fest.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 18%
+source-wordcount: '175'
+ht-degree: 17%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 18%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Creative ID**&#x200B;behandelt. Siehe [Creative ID](/help/reporting/dimensions/creative-id.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Creative ID**behandelt. Siehe [Creative ID](/help/reporting/dimensions/creative-id.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ Die Variable „creative ID“ identifiziert die spezifische und kreative ID. Je
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.creative` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.creativeID`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.creativeID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager-Eigenschaft** | `c_contextdata.a.media.ad.creative` |
 | **Erforderlich** | Nein |
-| **Gesendet mit** | Anzeigenstart, Anzeigenschluss |
+| **Gesendet mit** | [Anzeigenstart](/help/implementation/events/ads/ad-start.md), Anzeigenschluss |
 
 ## Web SDK
 
@@ -139,4 +140,4 @@ tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .

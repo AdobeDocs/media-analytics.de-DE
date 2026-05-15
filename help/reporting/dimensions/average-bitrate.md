@@ -3,10 +3,10 @@ title: Durchschnittliche Bitrate (Dimension)
 description: Gibt die gepackte durchschnittliche Bitrate jeder Sitzung in Intervallen von 100 kBit/s an.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 6%
+source-wordcount: '168'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Dimension **Durchschnittliche Bitrate**&#x200B;behandelt, die die Bucket-Bitrate jeder Sitzung angibt. Siehe [Durchschnittliche Bitrate (Metrik)](/help/reporting/metrics/average-bitrate.md) für die Metrik „Roher gewichteter Durchschnitt“. Siehe [Bitrate](/help/implementation/variables/quality/bitrate.md), wie Sie diese Variable erfassen.*
+*Auf dieser Seite wird die Dimension **Durchschnittliche Bitrate**behandelt, die die Bucket-Bitrate jeder Sitzung angibt. Siehe [Durchschnittliche Bitrate (Metrik)](/help/reporting/metrics/average-bitrate.md) für die Metrik „Roher gewichteter Durchschnitt“. Siehe [Bitrate](/help/implementation/variables/quality/bitrate.md), wie Sie diese Variable erfassen.*
 
 >[!ENDSHADEBOX]
 
@@ -26,8 +26,9 @@ Die Dimension **Durchschnittliche Bitrate** zeigt die durchschnittliche Wiederga
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.qoe.bitrateAverageBucket`, wenn [[!UICONTROL Medienqualität]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateAverageBucket`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Daten-Feeds | `videoqoebitrateaverageevar, post_videoqoebitrateaverageevar` |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateAverageBucket`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Daten-Feeds | `videoqoebitrateaverageevar`, `post_videoqoebitrateaverageevar` |
+| Audience Manager | `c_contextdata.a.media.qoe.bitrateAverageBucket` |
 
 ## Dimensionselemente
 

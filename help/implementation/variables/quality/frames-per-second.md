@@ -3,9 +3,9 @@ title: Frames pro Sekunde
 description: Legen Sie die aktuelle Framerate für das QoE-Objekt so fest, dass das Backend über einen Framerate-Kontext für Qualitätsberichte verfügt.
 feature: Streaming Media
 role: Developer
-source-git-commit: 0e6b5a8ef5738191276976ed31125016774c043d
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '225'
 ht-degree: 12%
 
 ---
@@ -18,9 +18,10 @@ Die Variable „Frames pro Sekunde“ ist die aktuelle Framerate des Streams. Le
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | Keine (Adobe Analytics weist keinen reservierten Kontextdatenschlüssel für die Framerate zu) |
-| **XDM-Sammlungsfeld** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Audience Manager-Eigenschaft** | nicht angegeben |
 | **Erforderlich** | Nein |
-| **Gesendet mit** | Qualitätsereignisse, Sitzungsabschluss |
+| **Gesendet mit** | Qualitätsereignisse ([Bitratenänderung](/help/implementation/events/playback/bitrate-change.md), [Pufferstart](/help/implementation/events/playback/buffer-start.md), [Fehler](/help/implementation/events/error.md)), Sitzungsschluss |
 
 ## Web SDK
 
@@ -131,4 +132,4 @@ tracker.updateQoEObject(qoeObject);
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .

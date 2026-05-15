@@ -3,9 +3,9 @@ title: Änderungen der Bitrate (Dimension)
 description: Gibt die Anzahl der Bitratenänderungsereignisse pro Sitzung an.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '203'
 ht-degree: 5%
 
 ---
@@ -23,14 +23,15 @@ Die Dimension **Bitratenänderungen** zeigt die Anzahl der Bitratenänderungsere
 
 ## So wird diese Dimension ausgefüllt
 
-Das Medien-Backend erhöht die Anzahl bei jedem während der Sitzung empfangenen `media.bitrateChange`. Der Wert wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend erhöht die Anzahl bei jedem [Bitratenänderung](/help/implementation/events/playback/bitrate-change.md), das während der Sitzung empfangen wurde. Der Wert wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.qoe.bitrateChangeCount`, wenn [[!UICONTROL Medienqualität]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateChangeCount`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Daten-Feeds | `videoqoebitratechangecountevar, post_videoqoebitratechangecountevar` |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateChangeCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Daten-Feeds | `videoqoebitratechangecountevar`, `post_videoqoebitratechangecountevar` |
+| Audience Manager | `c_contextdata.a.media.qoe.bitrateChangeCount` |
 
 ## Dimensionselemente
 
-Jedes Element ist der literale Änderungszählungswert, der beim Schließen-Aufruf gemeldet wird. Verwenden Sie für das Reporting über boolesche Werte auf Sitzungsebene (unabhängig davon, ob in der Sitzung überhaupt eine Bitratenänderung aufgetreten ist) [&#x200B; Streams, die von Bitratenänderungen betroffen &#x200B;](/help/reporting/metrics/bitrate-change-impacted-streams.md).
+Jedes Element ist der literale Änderungszählungswert, der beim Schließen-Aufruf gemeldet wird. Verwenden Sie für das Reporting über boolesche Werte auf Sitzungsebene (unabhängig davon, ob in der Sitzung überhaupt eine Bitratenänderung aufgetreten ist) [ Streams, die von Bitratenänderungen betroffen ](/help/reporting/metrics/bitrate-change-impacted-streams.md).

@@ -3,10 +3,10 @@ title: Inhaltswiederaufnahmen
 description: Markieren Sie eine Sitzung, bei der eine zuvor unterbrochene Wiedergabe fortgesetzt wird, damit das Backend ein Ereignis zur Wiederaufnahme von Inhalten zählt.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 10%
+source-wordcount: '248'
+ht-degree: 11%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Inhaltswiederaufnahmen**&#x200B;behandelt. Siehe [Inhaltswiederaufnahmen](/help/reporting/metrics/content-resumes.md) für die entsprechende Berichtsmetrik.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Inhaltswiederaufnahmen**behandelt. Siehe [Inhaltswiederaufnahmen](/help/reporting/metrics/content-resumes.md) für die entsprechende Berichtsmetrik.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ Die Variable „Inhalt wird fortgesetzt“ kennzeichnet eine Sitzung, durch die 
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.resume` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager-Eigenschaft** | nicht angegeben |
 | **Erforderlich** | Nein |
-| **Gesendet mit** | Sitzungsstart |
+| **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md) |
 
 ## Web SDK
 
@@ -162,4 +163,4 @@ Fügen Sie `media.resume` in das `params` Ihrer `sessionStart` POST-Anfrage ein:
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).

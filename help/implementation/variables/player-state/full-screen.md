@@ -3,9 +3,9 @@ title: Vollbild
 description: Verfolgen Sie, wann der Viewer die Vollbildwiedergabe betritt und verlässt, damit das Backend Interaktionen im Vollbildmodus melden kann.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '284'
 ht-degree: 10%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für den Player **Status „Vollbild**&#x200B;behandelt. Siehe [Vom Vollbildmodus betroffene Streams](/help/reporting/metrics/full-screen-streams-impacted.md), [Vollbildanzahl](/help/reporting/metrics/full-screen-count.md) und [Gesamtdauer des Vollbildmodus](/help/reporting/metrics/full-screen-total-duration.md) für die entsprechenden Berichtsmetriken.*
+*Auf dieser Seite wird die Datenerfassung für den Player **Status „Vollbild**behandelt. Siehe [Vom Vollbildmodus betroffene Streams](/help/reporting/metrics/full-screen-streams-impacted.md), [Vollbildanzahl](/help/reporting/metrics/full-screen-count.md) und [Gesamtdauer des Vollbildmodus](/help/reporting/metrics/full-screen-total-duration.md) für die entsprechenden Berichtsmetriken.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ Der Status des Vollbild-Players verfolgt, wann der Viewer die Vollbild-Wiedergab
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariablen** | `a.media.states.fullscreen.set`, `a.media.states.fullscreen.count`, `a.media.states.fullscreen.time` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) und [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) (Einträge mit `name: "fullscreen"`) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) und [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) (Einträge mit `name: "fullscreen"`) |
+| **Audience Manager-Eigenschaften** | `c_contextdata.a.media.states.fullscreen.set`, `c_contextdata.a.media.states.fullscreen.count`, `c_contextdata.a.media.states.fullscreen.time` |
 | **Erforderlich** | Nein |
-| **Gesendet mit** | Status Start, Status Ende |
+| **Gesendet mit** | [State start](/help/implementation/events/player-state/state-start.md), [state end](/help/implementation/events/player-state/state-end.md) |
 
 ## Web SDK
 
@@ -169,4 +170,4 @@ Senden Sie eine `stateStart` POST-Anfrage, wenn der Betrachter in den Vollbildmo
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .

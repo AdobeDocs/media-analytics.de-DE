@@ -3,9 +3,9 @@ title: Untertitel
 description: Verfolgen Sie, wann der Viewer geschlossene Untertitel aktiviert und deaktiviert, damit das Backend Untertitelinteraktionen melden kann.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '278'
 ht-degree: 9%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für den Player-Status **Untertitel**&#x200B;behandelt. Siehe [Von geschlossenen Untertiteln betroffene Streams](/help/reporting/metrics/closed-captioning-streams-impacted.md), [Geschlossene Untertitelanzahl](/help/reporting/metrics/closed-captioning-count.md) und [Geschlossene Untertitelgesamtdauer](/help/reporting/metrics/closed-captioning-total-duration.md) für die entsprechenden Berichtsmetriken.*
+*Auf dieser Seite wird die Datenerfassung für den Player-Status **Untertitel**behandelt. Siehe [Von geschlossenen Untertiteln betroffene Streams](/help/reporting/metrics/closed-captioning-streams-impacted.md), [Geschlossene Untertitelanzahl](/help/reporting/metrics/closed-captioning-count.md) und [Geschlossene Untertitelgesamtdauer](/help/reporting/metrics/closed-captioning-total-duration.md) für die entsprechenden Berichtsmetriken.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ Der Player-Status für Untertitel verfolgt, wann der Viewer Untertitel aktiviert
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariablen** | `a.media.states.closedcaptioning.set`, `a.media.states.closedcaptioning.count`, `a.media.states.closedcaptioning.time` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) und [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) (Einträge mit `name: "closedCaptioning"`) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) und [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) (Einträge mit `name: "closedCaptioning"`) |
+| **Audience Manager-Eigenschaften** | `c_contextdata.a.media.states.closedcaptioning.set`, `c_contextdata.a.media.states.closedcaptioning.count`, `c_contextdata.a.media.states.closedcaptioning.time` |
 | **Erforderlich** | Nein |
-| **Gesendet mit** | Status Start, Status Ende |
+| **Gesendet mit** | [State start](/help/implementation/events/player-state/state-start.md), [state end](/help/implementation/events/player-state/state-end.md) |
 
 ## Web SDK
 
@@ -156,4 +157,4 @@ Senden Sie eine `stateStart` POST-Anfrage, wenn Beschriftungen aktiviert sind, u
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .

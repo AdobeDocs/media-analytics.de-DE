@@ -3,9 +3,9 @@ title: Datum der Erstausstrahlung
 description: Stellen Sie das Datum ein, an dem der Inhalt erstmals im Fernsehen ausgestrahlt wurde. Adobe empfiehlt das Format JJJJ-MM-TT.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '200'
 ht-degree: 13%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **First Air Date**&#x200B;behandelt. Siehe [Datum der ersten Ausstrahlung](/help/reporting/dimensions/first-air-date.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **First Air Date**behandelt. Siehe [Datum der ersten Ausstrahlung](/help/reporting/dimensions/first-air-date.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ Die erste Sendedatumsvariable ist das Datum, an dem der Inhalt erstmals im Ferns
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.airDate` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.firstAirDate`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.firstAirDate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager-Eigenschaft** | `c_contextdata.a.media.airDate` |
 | **Erforderlich** | Nein |
-| **Gesendet mit** | Sitzungsbeginn, Sitzungsabschluss |
+| **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |
 
 ## Web SDK
 
@@ -136,4 +137,4 @@ tracker.trackSessionStart(mediaInfo, contextData);
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).

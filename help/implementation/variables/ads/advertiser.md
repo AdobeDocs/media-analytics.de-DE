@@ -3,9 +3,9 @@ title: Advertiser
 description: Legen Sie das Unternehmen oder die Marke fest, die in jeder Anzeige enthalten ist.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '174'
 ht-degree: 16%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 16%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Advertiser**&#x200B;behandelt. Siehe [Advertiser](/help/reporting/dimensions/advertiser.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Advertiser**behandelt. Siehe [Advertiser](/help/reporting/dimensions/advertiser.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ Die Advertiser-Variable ist das Unternehmen oder die Marke, die in der Anzeige a
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.advertiser` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager-Eigenschaft** | `c_contextdata.a.media.ad.advertiser` |
 | **Erforderlich** | Nein |
-| **Gesendet mit** | Anzeigenstart, Anzeigenschluss |
+| **Gesendet mit** | [Anzeigenstart](/help/implementation/events/ads/ad-start.md), Anzeigenschluss |
 
 ## Web SDK
 
@@ -139,4 +140,4 @@ tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .

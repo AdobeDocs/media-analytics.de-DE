@@ -3,10 +3,10 @@ title: Kapitel
 description: Meldet jedes einzelne abgespielte Kapitel basierend auf einer automatisch generierten Kapitel-ID.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 6%
+source-wordcount: '194'
+ht-degree: 8%
 
 ---
 
@@ -17,13 +17,14 @@ Die Dimension **Chapter** zeigt jedes einzelne gespielte Kapitel an, das durch e
 
 ## So wird diese Dimension ausgefüllt
 
-Die Kapitel-ID wird automatisch generiert, wenn `media.chapterStart` ausgelöst wird. Der Wert wird nicht direkt festgelegt, sondern von der Kapitelposition, dem Versatz und der Inhalts-ID abgeleitet.
+Die Kapitel-ID wird automatisch generiert, wenn ein [Kapitelstart](/help/implementation/events/chapters/chapter-start.md)-Ereignis ausgelöst wird. Der Wert wird nicht direkt festgelegt, sondern von der Kapitelposition, dem Versatz und der Inhalts-ID abgeleitet.
 
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.chapter.name`, wenn [[!UICONTROL Medienkapitel]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
-| Daten-Feeds | `videochapter, post_videochapter` |
+| Customer Journey Analytics | [`mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
+| Daten-Feeds | `videochapter`, `post_videochapter` |
+| Audience Manager | nicht angegeben |
 
 ## Dimensionselemente
 

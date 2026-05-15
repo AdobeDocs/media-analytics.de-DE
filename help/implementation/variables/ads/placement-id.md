@@ -3,9 +3,9 @@ title: Platzierungs-ID
 description: Legen Sie die Platzierungs-ID für jede Anzeige fest, um Ausbrüche nach Anzeigenplatzierung zu ermöglichen.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '178'
 ht-degree: 17%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 17%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Platzierungs-ID**&#x200B;behandelt. Siehe [Platzierungs-ID](/help/reporting/dimensions/placement-id.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Platzierungs-ID**behandelt. Siehe [Platzierungs-ID](/help/reporting/dimensions/placement-id.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ Die Platzierungs-ID-Variable identifiziert die Anzeigenplatzierung (normalerweis
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.placement` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.placementID`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.placementID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager-Eigenschaft** | `c_contextdata.a.media.ad.placement` |
 | **Erforderlich** | Nein |
-| **Gesendet mit** | Anzeigenstart, Anzeigenschluss |
+| **Gesendet mit** | [Anzeigenstart](/help/implementation/events/ads/ad-start.md), Anzeigenschluss |
 
 ## Web SDK
 
@@ -139,4 +140,4 @@ tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .

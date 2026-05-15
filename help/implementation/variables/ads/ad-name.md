@@ -3,9 +3,9 @@ title: Anzeigenname
 description: Legen Sie den Anzeigenamen der Anzeige fest.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '178'
 ht-degree: 14%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 14%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Anzeigename**&#x200B;behandelt. Siehe [Anzeigename](/help/reporting/dimensions/ad-name.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Anzeigename**behandelt. Siehe [Anzeigename](/help/reporting/dimensions/ad-name.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ Die Variable ad name ist der für Menschen lesbare Titel der Anzeige (z. B. `"Fo
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.friendlyName` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager-Eigenschaft** | `c_contextdata.a.media.ad.friendlyName` |
 | **Erforderlich** | Nein |
-| **Gesendet mit** | Anzeigenstart, Anzeigenschluss |
+| **Gesendet mit** | [Anzeigenstart](/help/implementation/events/ads/ad-start.md), Anzeigenschluss |
 
 ## Web SDK
 
@@ -150,4 +151,4 @@ Fügen Sie `media.ad.name` in das `params` Ihrer `adStart` POST-Anfrage ein:
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .

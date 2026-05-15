@@ -3,10 +3,10 @@ title: Abgelegte Frames (Dimension)
 description: Gibt die kumulative Anzahl der Dropped Frames pro Sitzung an.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 5%
+source-wordcount: '181'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*Diese Seite behandelt die Dimension **Abgelegte Frames**. Adobe Analytics füllt automatisch eine paarweise [Abgelegte Frames (Metrik](/help/reporting/metrics/dropped-frames.md) aus derselben `a.media.qoe.droppedFrameCount` Kontextdatenvariablen aus. Customer Journey Analytics stellt ein einzelnes `mediaReporting.qoeDataDetails.droppedFrames` bereit, das Sie als Dimension oder Metrik verwenden können. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/quality/dropped-frames.md) unter „Abgelegte Frames“*
+*Diese Seite behandelt die Dimension **Abgelegte Frames**. Adobe Analytics füllt automatisch eine paarweise [Abgelegte Frames (Metrik](/help/reporting/metrics/dropped-frames.md) aus derselben `a.media.qoe.droppedFrameCount` Kontextdatenvariablen aus. Customer Journey Analytics stellt ein einzelnes `mediaReporting.qoeDataDetails.droppedFrames` bereit, das Sie als Dimension oder Metrik verwenden können. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/quality/dropped-frames.md) unter „Abgelegte Frames“*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ Der Player aktualisiert den `droppedFrames` des QoE-Objekts, während es Abfäll
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.qoe.droppedFrameCount`, wenn [[!UICONTROL Medienqualität]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Daten-Feeds | `videoqoedroppedframecountevar, post_videoqoedroppedframecountevar` |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Daten-Feeds | `videoqoedroppedframecountevar`, `post_videoqoedroppedframecountevar` |
+| Audience Manager | `c_contextdata.a.media.qoe.droppedFrameCount` |
 
 ## Dimensionselemente
 

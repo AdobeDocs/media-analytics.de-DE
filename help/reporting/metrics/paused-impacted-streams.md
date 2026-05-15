@@ -3,10 +3,10 @@ title: Betroffene Streams angehalten
 description: Zählt Sitzungen, in denen der Viewer mindestens einmal pausiert hat.
 feature: Metrics
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 9%
+source-wordcount: '150'
+ht-degree: 11%
 
 ---
 
@@ -17,10 +17,11 @@ Die Metrik **Ausgesetzte betroffene Streams** zählt Sitzungen, in denen der Vie
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend legt `mediaReporting.sessionDetails.hasPauseImpactedStreams = true` das erste Mal fest, dass während der Sitzung ein `media.pauseStart` empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend legt `mediaReporting.sessionDetails.hasPauseImpactedStreams = true` das erste Mal fest[ dass während der Sitzung ein ](/help/implementation/events/playback/pause-start.md)-Ereignis empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.pause`, wenn [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasPauseImpactedStreams`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasPauseImpactedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
+| Audience Manager | nicht angegeben |

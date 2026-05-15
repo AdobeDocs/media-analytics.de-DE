@@ -3,9 +3,9 @@ title: Kapitelposition
 description: Legen Sie den Kapitelindex innerhalb des Inhalts fest. Die Kapitelposition ist erforderlich, damit die Kapitel-ID automatisch korrekt generiert wird.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '208'
 ht-degree: 12%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Kapitelposition**&#x200B;behandelt. Siehe [Kapitelposition](/help/reporting/dimensions/chapter-position.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Kapitelposition**behandelt. Siehe [Kapitelposition](/help/reporting/dimensions/chapter-position.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ Die Kapitelpositionsvariable ist der Index des Kapitels innerhalb des Inhalts, b
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.chapter.position` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.chapterDetails.index`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.chapterDetails.index`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Audience Manager-Eigenschaft** | `c_contextdata.a.media.chapter.position` |
 | **Erforderlich** | Nein (Mobile SDK); Ja (Edge, Mediensammlungs-API) |
-| **Gesendet mit** | Kapitelstart, Kapitelschluss |
+| **Gesendet mit** | [Kapitelstart](/help/implementation/events/chapters/chapter-start.md), Kapitelschluss |
 
 ## Web SDK
 
@@ -149,4 +150,4 @@ Fügen Sie `media.chapter.index` in das `params` Ihrer `chapterStart` POST-Anfra
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .

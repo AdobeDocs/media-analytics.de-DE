@@ -3,10 +3,10 @@ title: Anzeigenposition im Pod
 description: Meldet die nullindizierte Position jeder Anzeige innerhalb ihrer übergeordneten Anzeigenunterbrechung.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 6%
+source-wordcount: '154'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Anzeige in Pod-Position**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden Sie &#x200B;](/help/implementation/variables/ads/ad-in-pod-position.md) „Anzeige in Pod-Position“*
+*Auf dieser Seite wird die Berichtsdimension **Anzeige in Pod-Position**behandelt. Informationen [ Erfassen dieser Variablen finden Sie ](/help/implementation/variables/ads/ad-in-pod-position.md) „Anzeige in Pod-Position“*
 
 >[!ENDSHADEBOX]
 
@@ -23,14 +23,15 @@ Die Dimension **Anzeige in Pod** zeigt die nullindizierte Position jeder Anzeige
 
 ## So wird diese Dimension ausgefüllt
 
-Die Position der Anzeige wird vom Player bei jedem `media.adStart` festgelegt.
+Die Position der Anzeige im Pod wird vom Player bei jedem [Anzeigenstart](/help/implementation/events/ads/ad-start.md) festgelegt.
 
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.ad.podPosition`, wenn [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.podPosition`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
-| Daten-Feeds | `videoadinpod, post_videoadinpod` |
+| Customer Journey Analytics | [`mediaReporting.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Daten-Feeds | `videoadinpod`, `post_videoadinpod` |
+| Audience Manager | `c_contextdata.a.media.ad.podPosition` |
 
 ## Dimensionselemente
 
-Jedes Element ist der Ganzzahlpositionswert (`0`, `1`, `2`, …) Meldung am `media.adStart`.
+Jedes Element ist der Ganzzahlpositionswert (`0`, `1`, `2`, …) Meldung zu [Anzeigenstart](/help/implementation/events/ads/ad-start.md).

@@ -3,10 +3,10 @@ title: Content-Typ
 description: Legen Sie den Inhaltstyp fest, um das Format des Streams anzugeben (VOD, Live, Linear, Podcast, Song usw.).
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 10%
+source-wordcount: '261'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Content-Typ**&#x200B;behandelt. Siehe [Inhaltstyp](/help/reporting/dimensions/content-type.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Content-Typ**behandelt. Siehe [Inhaltstyp](/help/reporting/dimensions/content-type.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -29,9 +29,10 @@ Empfohlene Werte:
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.contentType` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.contentType`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.contentType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager-Eigenschaft** | `c_contextdata.a.contentType` |
 | **Erforderlich** | Ja |
-| **Gesendet mit** | Sitzungsbeginn, Sitzungsabschluss |
+| **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |
 
 ## Web SDK
 
@@ -161,4 +162,4 @@ Fügen Sie `media.contentType` in das `params` Ihrer `sessionStart` POST-Anfrage
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).

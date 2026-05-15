@@ -3,10 +3,10 @@ title: Name der Werbeunterbrechung
 description: Legen Sie den Anzeigenamen der übergeordneten Anzeigenunterbrechung fest.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 12%
+source-wordcount: '209'
+ht-degree: 11%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Anzeigenumbruch-Name**&#x200B;behandelt. Siehe [Pod-Name](/help/reporting/dimensions/pod-name.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Anzeigenumbruch-Name**behandelt. Siehe [Pod-Name](/help/reporting/dimensions/pod-name.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ Die Variable Name der Werbeunterbrechung ist der Anzeigename der Werbeunterbrech
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.podFriendlyName` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **Audience Manager-Eigenschaft** | `c_contextdata.a.media.ad.podFriendlyName` |
 | **Erforderlich** | Ja (Mobile SDK); Nein (Edge, Mediensammlungs-API) |
-| **Gesendet mit** | Anzeigenstart, Anzeigenschluss |
+| **Gesendet mit** | [Start der Werbeunterbrechung](/help/implementation/events/ads/ad-break-start.md) und Schließen der Anzeige |
 
 ## Web SDK
 
@@ -144,4 +145,4 @@ Fügen Sie `media.ad.podFriendlyName` in das `params` Ihrer `adBreakStart` POST-
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .

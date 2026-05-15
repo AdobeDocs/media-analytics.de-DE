@@ -3,10 +3,10 @@ title: Inhaltssegment
 description: Gibt den während einer Sitzung angezeigten Abspielkopfbereich in Minuten an.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 5%
+source-wordcount: '200'
+ht-degree: 6%
 
 ---
 
@@ -22,8 +22,9 @@ Das Inhaltssegment wird vom Medien-Backend aus den Abspielkopfwerten berechnet, 
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.segment`, wenn [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.segment`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Daten-Feeds | `videosegment, post_videosegment` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.segment`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Daten-Feeds | `videosegment`, `post_videosegment` |
+| Audience Manager | `c_contextdata.a.media.segment` |
 
 >[!IMPORTANT]
 >

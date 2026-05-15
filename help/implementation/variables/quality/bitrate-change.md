@@ -3,7 +3,7 @@ title: Bitratenänderung
 description: Lösen Sie ein Bitratenänderungsereignis aus, wenn der Player zu einer anderen Bitrate wechselt.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 11%
@@ -25,8 +25,9 @@ Das Bitratenänderungsereignis signalisiert, dass der Player zu einer anderen Bi
 | --- | --- |
 | **Kontextdatenvariable** | (keine — vom Backend gezählt) |
 | **XDM-Ereignistyp** | `media.bitrateChange` |
+| **Audience Manager-Eigenschaft** | `c_contextdata.a.media.qoe.bitrateChangeCount` |
 | **Erforderlich** | Nein |
-| **Gesendet mit** | Wechselt der Player die Bitrate |
+| **Gesendet mit** | [Bitratenänderung](/help/implementation/events/playback/bitrate-change.md) |
 
 ## Web SDK
 
@@ -139,4 +140,4 @@ Senden Sie eine `bitrateChange` POST-Anfrage mit der neuen Bitrate:
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .

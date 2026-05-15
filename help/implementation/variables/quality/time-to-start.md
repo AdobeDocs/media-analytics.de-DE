@@ -3,9 +3,9 @@ title: Zeit bis zum Start
 description: Legen Sie die Startzeit des Players in Millisekunden fest, damit das Backend die Zeit bis zum ersten Bild melden kann.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '216'
 ht-degree: 12%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Time to Start**&#x200B;behandelt. Siehe [Zeit bis zum Start](/help/reporting/dimensions/time-to-start.md) für die entsprechende Reporting-Dimension und -Metrik.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Time to Start**behandelt. Siehe [Zeit bis zum Start](/help/reporting/dimensions/time-to-start.md) für die entsprechende Reporting-Dimension und -Metrik.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ Die Variable time to start gibt die Zeit in Millisekunden an, die zwischen dem P
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.qoe.timeToStart` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Audience Manager-Eigenschaft** | `c_contextdata.a.media.qoe.timeToStart` |
 | **Erforderlich** | Nein |
-| **Gesendet mit** | Sitzungsbeginn, Sitzungsabschluss |
+| **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |
 
 ## Web SDK
 
@@ -156,4 +157,4 @@ tracker.updateQoEObject(qoeObject);
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).

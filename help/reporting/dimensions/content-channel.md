@@ -3,10 +3,10 @@ title: Inhaltskanal
 description: Gibt die Verteilungsstation, das Netzwerk oder die Eigenschaft an, an der die jeweilige Sitzung wiedergegeben wurde.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 6%
+source-wordcount: '161'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Inhaltskanal**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/core/content-channel.md) unter „Inhaltskanal“*
+*Auf dieser Seite wird die Berichtsdimension **Inhaltskanal**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/core/content-channel.md) unter „Inhaltskanal“*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ Der Kanal wird vom Player beim Sitzungsstart festgelegt und bleibt für die Daue
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.channel`, wenn [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.channel`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Daten-Feeds | `videochannel, post_videochannel` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.channel`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Daten-Feeds | `videochannel`, `post_videochannel` |
+| Audience Manager | `c_contextdata.a.media.channel` |
 
 >[!IMPORTANT]
 >

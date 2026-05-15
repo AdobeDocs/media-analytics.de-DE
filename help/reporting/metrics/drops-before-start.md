@@ -3,10 +3,10 @@ title: Drops vor dem Start
 description: Zählt Sitzungen, in denen der Viewer beendet wurde, bevor Hauptinhalte gerendert wurden.
 feature: Metrics
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 8%
+source-wordcount: '158'
+ht-degree: 9%
 
 ---
 
@@ -17,10 +17,11 @@ Die **Drops vor Start** zählt Sitzungen, in denen der Viewer beendet wurde, bev
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend legt `mediaReporting.qoeDataDetails.isDroppedBeforeStart = true` für Sitzungen fest, die geschlossen werden, ohne dass jemals ein `media.play`-Ereignis zum Hauptinhalt erzeugt wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend legt `mediaReporting.qoeDataDetails.isDroppedBeforeStart = true` für Sitzungen fest, die geschlossen werden, ohne dass jemals ein [-](/help/implementation/events/playback/play.md)-Ereignis im Hauptinhalt erzeugt wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.qoe.dropBeforeStart`, wenn [[!UICONTROL Medienqualität]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.isDroppedBeforeStart`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.isDroppedBeforeStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
+| Audience Manager | `c_contextdata.a.media.qoe.dropBeforeStart` |

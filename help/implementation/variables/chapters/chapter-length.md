@@ -3,10 +3,10 @@ title: Kapitellänge
 description: Legen Sie die Länge jedes Kapitels in Sekunden fest.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 14%
+source-wordcount: '179'
+ht-degree: 13%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 14%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Länge des Kapitels**&#x200B;behandelt. Siehe [Kapitellänge](/help/reporting/dimensions/chapter-length.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Länge des Kapitels**behandelt. Siehe [Kapitellänge](/help/reporting/dimensions/chapter-length.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ Die Variable Kapitellänge gibt die Dauer des Kapitels in Sekunden an. Legen Sie
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.chapter.length` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.chapterDetails.length`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.chapterDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Audience Manager-Eigenschaft** | `c_contextdata.a.media.chapter.length` |
 | **Erforderlich** | Nein (Mobile SDK); Ja (Edge, Mediensammlungs-API) |
-| **Gesendet mit** | Kapitelstart, Kapitelschluss |
+| **Gesendet mit** | [Kapitelstart](/help/implementation/events/chapters/chapter-start.md), Kapitelschluss |
 
 ## Web SDK
 
@@ -149,4 +150,4 @@ Fügen Sie `media.chapter.length` in das `params` Ihrer `chapterStart` POST-Anfr
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .

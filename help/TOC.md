@@ -1,18 +1,17 @@
 ---
-source-git-commit: c9c4287b4b330ebc1a1ec8b7197b42ee45f7ff48
-workflow-type: tm+mt
-source-wordcount: '1345'
-ht-degree: 61%
-
----
-﻿---
 product: adobe analytics
 audience: end-user
 user-guide-title: Handbuch zu Streaming-Mediendiensten
 breadcrumb-title: Handbuch zu Streaming-Mediendiensten
 user-guide-description: Implementieren von Streaming-Mediendiensten. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
 sub-product: media analytics
+source-git-commit: 84574afd9d39e0643e7f12f44e8729e947c2ec1b
+workflow-type: tm+mt
+source-wordcount: '1395'
+ht-degree: 59%
+
 ---
+
 
 # Handbuch zu Streaming-Mediendiensten {#using}
 
@@ -33,6 +32,32 @@ sub-product: media analytics
          + [JavaScript − Media SDK zu Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + Implementierung {#implementation}
    + [Implementierungsübersicht](implementation/overview.md)
+   + Ereignisse {#events}
+      + [Übersicht über Ereignisse](implementation/events/overview.md)
+      + Sitzung {#session}
+         + [Sitzungsstart](implementation/events/session/session-start.md)
+         + [Sitzung abgeschlossen](implementation/events/session/session-complete.md)
+         + [Sitzungsende](implementation/events/session/session-end.md)
+      + Wiedergabe {#playback}
+         + [Play](implementation/events/playback/play.md)
+         + [Start anhalten](implementation/events/playback/pause-start.md)
+         + [Start der Pufferung](implementation/events/playback/buffer-start.md)
+         + [Bitratenänderung](implementation/events/playback/bitrate-change.md)
+         + [Ping](implementation/events/playback/ping.md)
+      + Werbeanzeigen {#ads}
+         + [Start der Werbeunterbrechung](implementation/events/ads/ad-break-start.md)
+         + [Anzeigenstart](implementation/events/ads/ad-start.md)
+         + [Hinzufügen abgeschlossen](implementation/events/ads/ad-complete.md)
+         + [Überspringen einer Anzeige](implementation/events/ads/ad-skip.md)
+         + [Werbeunterbrechung abgeschlossen](implementation/events/ads/ad-break-complete.md)
+      + Kapitel {#chapters}
+         + [Kapitelstart](implementation/events/chapters/chapter-start.md)
+         + [Kapitel abgeschlossen](implementation/events/chapters/chapter-complete.md)
+         + [Kapitelübersprung](implementation/events/chapters/chapter-skip.md)
+      + Player-Status {#player-state}
+         + [Zustandsstart](implementation/events/player-state/state-start.md)
+         + [Zustandsende](implementation/events/player-state/state-end.md)
+      + [Fehler](implementation/events/error.md)
    + Variablen {#variables}
       + Kern {#core}
          + [Inhaltskanal](implementation/variables/core/content-channel.md)
@@ -121,7 +146,6 @@ sub-product: media analytics
          + [Sitzungsanfrage](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
          + [Ereignisanfrage](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
          + [Anfrageparameter](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
-         + [Ereignistypen und -beschreibungen](implementation/media-collection-api/mc-api-ref/mc-api-event-types.md)
          + Implementieren der API {#mc-api-impl}
             + [Einstellen des HTTP-Anfragetyps in Ihrem Player](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
             + [Beziehen einer Sitzungs-ID](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
@@ -239,6 +263,8 @@ sub-product: media analytics
       + [Anzahl der Bilder im Bild](reporting/metrics/picture-in-picture-count.md)
       + [Gesamtdauer des Bilds im Bild](reporting/metrics/picture-in-picture-total-duration.md)
       + [Fortschrittsmarken](reporting/metrics/progress-markers.md)
+      + [Anhalte-Ereignisse](reporting/metrics/stall-events.md)
+      + [Betroffene Datenströme verzögern](reporting/metrics/stall-impacted-streams.md)
       + [Von verdeckten Untertiteln betroffene Streams](reporting/metrics/closed-captioning-streams-impacted.md)
       + [Vom Vollbildmodus betroffene Streams](reporting/metrics/full-screen-streams-impacted.md)
       + [Im Fokus befindliche Streams, die von betroffen sind](reporting/metrics/in-focus-streams-impacted.md)
@@ -247,6 +273,7 @@ sub-product: media analytics
       + [Zeit bis zum Start (Metrik)](reporting/metrics/time-to-start.md)
       + [Gesamtdauer des Puffers (Metrik)](reporting/metrics/total-buffer-duration.md)
       + [Gesamte Pausendauer](reporting/metrics/total-pause-duration.md)
+      + [Gesamtdauer der Verzögerung](reporting/metrics/total-stalling-duration.md)
       + [Eindeutige Wiedergabedauer](reporting/metrics/unique-time-played.md)
    + [Berechnete Metriken](reporting/calculated-metrics.md)
    + [Aktivierung von Medienberichten](reporting/media-reports-enable.md)

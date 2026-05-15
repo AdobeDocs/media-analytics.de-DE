@@ -3,9 +3,9 @@ title: Versatz des Kapitels
 description: Legen Sie den Versatz des Kapitels innerhalb des Inhalts in Sekunden ab Beginn fest.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '200'
 ht-degree: 12%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Chapter Offset**&#x200B;behandelt. Siehe [Kapitelversatz](/help/reporting/dimensions/chapter-offset.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Chapter Offset**behandelt. Siehe [Kapitelversatz](/help/reporting/dimensions/chapter-offset.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ Die Variable für den Kapitelversatz ist der Versatz des Kapitels innerhalb des 
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.chapter.offset` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Audience Manager-Eigenschaft** | `c_contextdata.a.media.chapter.offset` |
 | **Erforderlich** | Nein (Mobile SDK); Ja (Edge, Mediensammlungs-API) |
-| **Gesendet mit** | Kapitelstart, Kapitelschluss |
+| **Gesendet mit** | [Kapitelstart](/help/implementation/events/chapters/chapter-start.md), Kapitelschluss |
 
 ## Web SDK
 
@@ -149,4 +150,4 @@ Fügen Sie `media.chapter.offset` in das `params` Ihrer `chapterStart` POST-Anfr
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .

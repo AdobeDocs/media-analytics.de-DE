@@ -3,10 +3,10 @@ title: Anzeigenlänge
 description: Die Länge jeder Anzeige in Sekunden festlegen.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 15%
+source-wordcount: '174'
+ht-degree: 14%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Anzeigenlänge**&#x200B;behandelt. Siehe [Anzeigenlänge](/help/reporting/dimensions/ad-length.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Anzeigenlänge**behandelt. Siehe [Anzeigenlänge](/help/reporting/dimensions/ad-length.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ Die Variable Anzeigenlänge ist die Dauer der Anzeige in Sekunden. Legen Sie sie
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.length` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.length`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager-Eigenschaft** | `c_contextdata.a.media.ad.length` |
 | **Erforderlich** | Ja |
-| **Gesendet mit** | Anzeigenstart, Anzeigenschluss |
+| **Gesendet mit** | [Anzeigenstart](/help/implementation/events/ads/ad-start.md), Anzeigenschluss |
 
 ## Web SDK
 
@@ -148,4 +149,4 @@ Fügen Sie `media.ad.length` in das `params` Ihrer `adStart` POST-Anfrage ein:
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .

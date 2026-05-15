@@ -3,9 +3,9 @@ title: Autorisiert
 description: Kennzeichnet eine Sitzung als über Adobe Pass authentifiziert, sodass sie für das Authorized-Ereignis zählt.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '191'
 ht-degree: 15%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Authorized**&#x200B;beschrieben. Siehe [Autorisiert](/help/reporting/metrics/authorized.md) für die entsprechende Berichtsmetrik.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Authorized**beschrieben. Siehe [Autorisiert](/help/reporting/metrics/authorized.md) für die entsprechende Berichtsmetrik.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ Die Variable „authorized“ kennzeichnet eine Sitzung, deren Benutzer über Ad
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.pass.auth` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.authorized`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.authorized`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager-Eigenschaft** | `c_contextdata.a.media.pass.auth` |
 | **Erforderlich** | Nein |
-| **Gesendet mit** | Sitzungsbeginn, Sitzungsabschluss |
+| **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |
 
 ## Web SDK
 
@@ -136,4 +137,4 @@ tracker.trackSessionStart(mediaInfo, contextData);
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).

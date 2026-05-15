@@ -3,10 +3,10 @@ title: Player SDK-Fehler-IDs
 description: meldet eindeutige Fehler-IDs, die vom Content Player SDK generiert wurden.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 6%
+source-wordcount: '157'
+ht-degree: 7%
 
 ---
 
@@ -17,13 +17,14 @@ Die Dimension **Player-SDK-Fehler** IDs“ zeigt eindeutige Fehlerkennungen an, 
 
 ## So wird diese Dimension ausgefüllt
 
-Der Player übergibt bei `media.error`-Ereignissen Fehler-IDs von Player-SDK an den Tracker. Das Backend erfasst eindeutige IDs über die gesamte Sitzung und meldet sie beim Schließen-Aufruf.
+Der Player übergibt bei [-Ereignissen Fehler-IDs von Player](/help/implementation/events/error.md)SDK an den Tracker. Das Backend erfasst eindeutige IDs über die gesamte Sitzung und meldet sie beim Schließen-Aufruf.
 
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.qoe.playerSdkErrors`, wenn [[!UICONTROL Medienqualität]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.playerSdkErrors`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Daten-Feeds | `videoqoeplayersdkerrors, post_videoqoeplayersdkerrors` |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.playerSdkErrors`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Daten-Feeds | `videoqoeplayersdkerrors`, `post_videoqoeplayersdkerrors` |
+| Audience Manager | `c_contextdata.a.media.qoe.playerSdkErrors` |
 
 ## Dimensionselemente
 

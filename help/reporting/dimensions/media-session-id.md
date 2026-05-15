@@ -3,9 +3,9 @@ title: Mediensitzungs-ID
 description: Identifiziert jede Wiedergabesitzung eindeutig.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '203'
 ht-degree: 5%
 
 ---
@@ -17,13 +17,14 @@ Die Dimension **Mediensitzungs-ID** identifiziert jede Wiedergabesitzung eindeut
 
 ## So wird diese Dimension ausgefüllt
 
-Die Sitzungs-ID wird automatisch generiert, wenn das Backend ein `media.sessionStart`-Ereignis erhält. Implementierungen von Web SDK und Mobile SDK erfassen und speichern die ID für Sie. Bei direkten API-Implementierungen muss die Sitzungs-ID aus der `sessionStart`-Antwort gelesen (der `Location`-Header für die Mediensammlungs-API oder das `media-analytics:new-session`-Handle für die Media Edge-API) und bei nachfolgenden Ereignissen eingeschlossen werden.
+Die Sitzungs-ID wird automatisch generiert, wenn das Backend ein &quot;[&quot;-](/help/implementation/events/session/session-start.md) erhält. Implementierungen von Web SDK und Mobile SDK erfassen und speichern die ID für Sie. Bei direkten API-Implementierungen muss die Sitzungs-ID aus der `sessionStart`-Antwort gelesen (der `Location`-Header für die Mediensammlungs-API oder das `media-analytics:new-session`-Handle für die Media Edge-API) und bei nachfolgenden Ereignissen eingeschlossen werden.
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.vsid` einer eVar zuordnet. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.ID`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Daten-Feeds | `videosessionid, post_videosessionid` |
+| Adobe Analytics | Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.vsid` einer eVar zuordnet. |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Daten-Feeds | `videosessionid`, `post_videosessionid` |
+| Audience Manager | `c_contextdata.a.media.vsid` |
 
 ## Dimensionselemente
 

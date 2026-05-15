@@ -3,9 +3,9 @@ title: Stream-Typ
 description: Legen Sie den Stream-Typ fest, um festzustellen, ob es sich bei einem Medien-Stream um Audio- oder Videoinhalte handelt.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '276'
 ht-degree: 10%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Stream type**&#x200B;behandelt. Siehe [Stream-Typ](/help/reporting/dimensions/stream-type.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Stream type**behandelt. Siehe [Stream-Typ](/help/reporting/dimensions/stream-type.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -26,9 +26,10 @@ Das richtige Festlegen des Stream-Typs ist für die Berichterstellung für Strea
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.streamType` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager-Eigenschaft** | `c_contextdata.a.media.streamType` |
 | **Erforderlich** | Ja |
-| **Gesendet mit** | Sitzungsbeginn, Sitzungsabschluss |
+| **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |
 
 ## Web SDK
 
@@ -161,4 +162,4 @@ Fügen Sie `media.streamType` in das `params` Ihrer `sessionStart` POST-Anfrage 
 }
 ```
 
-Die [&#x200B; Anfragestruktur und alle erforderlichen Felder finden Sie &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) der Referenz zur Mediensammlungs-API-Sitzungen .
+Die [ Anfragestruktur und alle erforderlichen Felder finden Sie ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) der Referenz zur Mediensammlungs-API-Sitzungen .

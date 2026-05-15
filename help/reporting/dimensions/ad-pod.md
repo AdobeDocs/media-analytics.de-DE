@@ -3,10 +3,10 @@ title: Anzeigen-Pod
 description: Meldet jede einzelne Werbeunterbrechung, verschlüsselt durch eine automatisch generierte Pod-ID.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 5%
+source-wordcount: '195'
+ht-degree: 7%
 
 ---
 
@@ -17,13 +17,14 @@ Die Dimension **Anzeigen-Pod** zeigt jede einzelne Werbeunterbrechung an, die du
 
 ## So wird diese Dimension ausgefüllt
 
-Die ID des Anzeigen-Pods wird automatisch vom SDK generiert, wenn `media.adBreakStart` ausgelöst wird. Bei direkten API-Implementierungen wird der Index aus dem Unterbrechungsindex und der Startzeit erstellt oder eine benutzerdefinierte Pod-ID bereitgestellt.
+Die ID des Anzeigen-Pods wird automatisch von SDK generiert, wenn ein [Start der Werbeunterbrechung](/help/implementation/events/ads/ad-break-start.md) ausgelöst wird. Bei direkten API-Implementierungen wird der Index aus dem Unterbrechungsindex und der Startzeit erstellt oder eine benutzerdefinierte Pod-ID bereitgestellt.
 
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.ad.pod`, wenn [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
-| Daten-Feeds | `videoadpod, post_videoadpod` |
+| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| Daten-Feeds | `videoadpod`, `post_videoadpod` |
+| Audience Manager | nicht angegeben |
 
 ## Dimensionselemente
 
