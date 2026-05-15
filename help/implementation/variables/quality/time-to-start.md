@@ -24,7 +24,7 @@ Die Variable time to start gibt die Zeit in Millisekunden an, die zwischen dem P
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.qoe.timeToStart` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.qoe.timeToStart` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |

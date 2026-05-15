@@ -24,7 +24,7 @@ Der Player-Status im Fokus verfolgt, wann der Player die Aufmerksamkeit des View
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariablen** | `a.media.states.infocus.set`, `a.media.states.infocus.count`, `a.media.states.infocus.time` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) und [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) (Einträge mit `name: "inFocus"`) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) und [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) (Einträge mit `name: "inFocus"`) |
 | **Audience Manager-Eigenschaften** | `c_contextdata.a.media.states.infocus.set`, `c_contextdata.a.media.states.infocus.count`, `c_contextdata.a.media.states.infocus.time` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [State start](/help/implementation/events/player-state/state-start.md), [state end](/help/implementation/events/player-state/state-end.md) |

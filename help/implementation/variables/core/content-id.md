@@ -24,7 +24,7 @@ Die Variable „content id“ identifiziert jedes Medieninhalt eindeutig. Sie is
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.name` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.name`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.name` |
 | **Erforderlich** | Ja |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |

@@ -24,7 +24,7 @@ Die Variable label ist der Name der Plattenfirma, die den Audioinhalt veröffent
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.label` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.label`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.label`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.label` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |

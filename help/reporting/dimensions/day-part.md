@@ -28,7 +28,7 @@ Der Tagesabschnitt wird vom Player beim Sitzungsbeginn festgelegt.
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.dayPart`, wenn [[!UICONTROL Videometadaten]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.dayPart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.dayPart`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds | `videodaypart`, `post_videodaypart` |
 | Audience Manager | `c_contextdata.a.media.dayPart` |
 

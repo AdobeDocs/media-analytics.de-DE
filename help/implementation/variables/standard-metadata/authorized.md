@@ -24,7 +24,7 @@ Die Variable „authorized“ kennzeichnet eine Sitzung, deren Benutzer über Ad
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.pass.auth` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.authorized`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.authorized`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.pass.auth` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |

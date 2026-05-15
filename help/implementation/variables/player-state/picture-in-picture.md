@@ -24,7 +24,7 @@ Der Status des Bild-in-Bild-Players verfolgt, wann der Viewer die Bild-in-Bild-W
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariablen** | `a.media.states.pictureinpicture.set`, `a.media.states.pictureinpicture.count`, `a.media.states.pictureinpicture.time` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) und [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) (Einträge mit `name: "pictureInPicture"`) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) und [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) (Einträge mit `name: "pictureInPicture"`) |
 | **Audience Manager-Eigenschaften** | `c_contextdata.a.media.states.pictureinpicture.set`, `c_contextdata.a.media.states.pictureinpicture.count`, `c_contextdata.a.media.states.pictureinpicture.time` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [State start](/help/implementation/events/player-state/state-start.md), [state end](/help/implementation/events/player-state/state-end.md) |

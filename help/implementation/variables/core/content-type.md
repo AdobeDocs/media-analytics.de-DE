@@ -29,7 +29,7 @@ Empfohlene Werte:
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.contentType` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.contentType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.contentType`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.contentType` |
 | **Erforderlich** | Ja |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |

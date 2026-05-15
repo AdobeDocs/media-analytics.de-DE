@@ -24,7 +24,7 @@ Die Variable „Anzeigenplayer-Name“ gibt an, welcher Player jede Anzeige gere
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.playerName` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.ad.playerName` |
 | **Erforderlich** | Ja |
 | **Gesendet mit** | [Anzeigenstart](/help/implementation/events/ads/ad-start.md), Anzeigenschluss |

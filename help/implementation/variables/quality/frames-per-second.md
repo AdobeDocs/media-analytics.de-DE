@@ -18,7 +18,7 @@ Die Variable „Frames pro Sekunde“ ist die aktuelle Framerate des Streams. Le
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | Keine (Adobe Analytics weist keinen reservierten Kontextdatenschlüssel für die Framerate zu) |
-| **XDM-Sammlungsfeld** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager-Eigenschaft** | nicht angegeben |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | Qualitätsereignisse ([Bitratenänderung](/help/implementation/events/playback/bitrate-change.md), [Pufferstart](/help/implementation/events/playback/buffer-start.md), [Fehler](/help/implementation/events/error.md)), Sitzungsschluss |
