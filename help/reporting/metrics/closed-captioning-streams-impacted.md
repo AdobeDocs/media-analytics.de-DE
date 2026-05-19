@@ -3,7 +3,7 @@ title: Von verdeckten Untertiteln betroffene Streams
 description: Zählt Sitzungen, in denen der Viewer Untertitel mindestens einmal aktiviert hat.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 8%
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsmetrik **Von verdeckten Untertiteln betroffene**) behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/player-state/closed-captioning.md) unter „Untertitel“*
+*Auf dieser Seite wird die Berichtsmetrik **Von verdeckten Untertiteln betroffene**) behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/player-state/closed-captioning.md) unter „Untertitel“*
 
 >[!ENDSHADEBOX]
 
@@ -23,11 +23,11 @@ Die Metrik **Von Untertiteln betroffene Streams** zählt Sitzungen, in denen der
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend setzt das `isSet`-Flag in `mediaReporting.states[]`, damit der `closedCaptioning`-Eintrag `true`, wenn zum ersten Mal ein `media.statesUpdate` mit `closedCaptioning` in `statesStart` empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend legt dieses Flag fest, wenn während der Sitzung zum ersten Mal ein Ereignis zum Aktivieren des Untertitelstatus empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell erfasst`a.media.states.closedcaptioning.set` wenn [[!UICONTROL Player State Tracking]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.states[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-reporting-details) Eintrag, bei dem `name = "closedCaptioning"`, Feld `isSet` |
-| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
+| Customer Journey Analytics | [`mediaReporting.states[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) Eintrag, bei dem `name = "closedCaptioning"`, Feld `isSet` |
+| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
 | Audience Manager | `c_contextdata.a.media.states.closedcaptioning.set` |

@@ -3,10 +3,10 @@ title: Ereignisse anhalten
 description: Zählt jede einzelne Pause, die während einer Sitzung aufgetreten ist.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 12%
+source-wordcount: '170'
+ht-degree: 10%
 
 ---
 
@@ -17,11 +17,11 @@ Die **Pause-Ereignisse**-Metrik zählt jedes einzelne [Pause-Start](/help/implem
 
 ## Berechnung dieser Metrik
 
-`mediaReporting.sessionDetails.pauseCount` Das Medien-Backend wird bei jedem Start-[-Ereignis &#x200B;](/help/implementation/events/playback/pause-start.md). Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend erhöht diese Anzahl bei jedem [-Start-](/help/implementation/events/playback/pause-start.md). Eine einzelne kontinuierliche Pause generiert unabhängig von ihrer Dauer ein Inkrement. Heartbeat [pings](/help/implementation/events/playback/ping.md) gesendet, während der Player angehalten bleibt, gehören alle zur selben Pausenzeit und erhöhen die Anzahl nicht erneut. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.pauseCount`, wenn [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.pauseCount`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.pauseCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
 | Audience Manager | nicht angegeben |

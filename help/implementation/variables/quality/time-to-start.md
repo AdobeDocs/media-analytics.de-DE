@@ -3,10 +3,10 @@ title: Zeit bis zum Start
 description: Legen Sie die Startzeit des Players in Millisekunden fest, damit das Backend die Zeit bis zum ersten Bild melden kann.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 12%
+source-wordcount: '265'
+ht-degree: 9%
 
 ---
 
@@ -15,16 +15,20 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Time to Start**&#x200B;behandelt. Siehe [Zeit bis zum Start](/help/reporting/dimensions/time-to-start.md) für die entsprechende Reporting-Dimension und -Metrik.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Time to Start**behandelt. Siehe [Zeit bis zum Start](/help/reporting/dimensions/time-to-start.md) für die entsprechende Reporting-Dimension und -Metrik.*
 
 >[!ENDSHADEBOX]
 
 Die Variable time to start gibt die Zeit in Millisekunden an, die zwischen dem Player, der die Wiedergabe startet, und dem ersten Frame-Rendering verstrichen ist. Legen Sie sie für das QoE-Objekt fest, bevor das Sitzungsstartereignis ausgelöst wird. Adobe speichert und meldet den Wert in Sekunden. Die Millisekunden vergehen und Adobe konvertiert bei der Aufnahme.
 
+>[!IMPORTANT]
+>
+>Sobald der Player mit dem Rendern von Inhaltsrahmen beginnt, beenden Sie die Aktualisierung von `timeToStart`. Der Wert kann während der anfänglichen Puffer- oder Ladephase ansteigen, sollte jedoch ab dem Zeitpunkt, zu dem die Wiedergabe beginnt, als festgelegt behandelt werden. Wenn Sie die Metrik nach dem Rendern des ersten Frames weiterhin aktualisieren, wird eine überhöhte oder falsche [Time to Start](/help/reporting/metrics/time-to-start.md) erzeugt.
+
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.qoe.timeToStart` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.qoe.timeToStart` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |
@@ -157,4 +161,4 @@ tracker.updateQoEObject(qoeObject);
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).

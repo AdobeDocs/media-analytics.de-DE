@@ -3,10 +3,10 @@ title: Abgelegte Frames
 description: Legen Sie die Anzahl der Dropped Frames im QoE-Objekt fest, damit das Backend die Frame-Drop-Qualität melden kann.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 12%
+source-wordcount: '265'
+ht-degree: 9%
 
 ---
 
@@ -15,16 +15,20 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Dropped Frames**&#x200B;behandelt. Siehe [Abgelegte Frames](/help/reporting/dimensions/dropped-frames.md) für die entsprechende Reporting-Dimension und -Metrik.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Dropped Frames**behandelt. Siehe [Abgelegte Frames](/help/reporting/dimensions/dropped-frames.md) für die entsprechende Reporting-Dimension und -Metrik.*
 
 >[!ENDSHADEBOX]
 
 Die Variable Abgelegte Frames ist die laufende Anzahl an Frames, die der Player während der Sitzung abgelegt hat. Legen Sie ihn auf das QoE-Objekt fest und aktualisieren Sie den Wert, wenn der Player neue Abbrüche meldet. Das Backend meldet den neuesten Wert zum Sitzungsende.
 
+>[!NOTE]
+>
+>Übergeben Sie immer die **kumulative Summe** der ausgelassenen Frames für die gesamte Sitzung bis zu diesem Punkt, nicht pro Intervall-Delta. Wenn Sie den Wert zwischen Aktualisierungen auf `0` zurücksetzen, erhält das Backend `0` als endgültigen Wert und meldet null abgelegte Frames für die Sitzung, unabhängig davon, was zuvor tatsächlich abgelegt wurde.
+
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.qoe.droppedFrameCount` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.qoe.droppedFrameCount` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | Qualitätsereignisse ([Bitratenänderung](/help/implementation/events/playback/bitrate-change.md), [Pufferstart](/help/implementation/events/playback/buffer-start.md), [Fehler](/help/implementation/events/error.md)), Sitzungsschluss |
@@ -138,4 +142,4 @@ tracker.updateQoEObject(qoeObject);
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .

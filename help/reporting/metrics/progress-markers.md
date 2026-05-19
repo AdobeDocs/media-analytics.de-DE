@@ -3,9 +3,9 @@ title: Fortschrittsmarken
 description: Zählen Sie Sitzungen, deren Abspielkopf jeden von fünf festen Schwellenwerten überschritten hat (10 %, 25 %, 50 %, 75 % und 95 %).
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '542'
 ht-degree: 9%
 
 ---
@@ -19,7 +19,11 @@ Jeder Marker wird einmal pro Sitzung ausgelöst und wird beim Seek-Back nicht er
 
 ## Wie jeder Marker berechnet wird
 
-Das Medien-Backend wertet den gemeldeten Abspielkopf nach jedem Ereignis gegen `Content length` aus. Wenn der Abspielkopf zum ersten Mal einen Schwellenwert überschreitet, wird der entsprechende `mediaReporting.sessionDetails.hasProgress*` boolesche Wert für den Rest der Sitzung auf `true` gesetzt. Alle fünf Markierungen werden beim Schließen-Aufruf gemeldet.
+Das Medien-Backend wertet den gemeldeten Abspielkopf nach jedem Ereignis [Inhaltslänge](../dimensions/content-length.md) aus. Wenn der Abspielkopf zum ersten Mal einen Schwellenwert überschreitet, wird das entsprechende Flag für den Rest der Sitzung gesetzt. Alle fünf Markierungen werden beim Schließen-Aufruf gemeldet. Bei Sitzungen, bei denen nie ein Wiedergabeereignis für Hauptinhalte erzeugt wird (z. B[ „Drops vor Start](/help/reporting/metrics/drops-before-start.md)), wird der Abspielkopf nie über einen Schwellenwert hinaus weitergeschaltet, sodass keine Markierungen festgelegt werden.
+
+>[!IMPORTANT]
+>
+>Fortschrittsmarken erfordern ein Reporting über Abspielköpfe, die ungleich null [Inhaltslänge](/help/reporting/dimensions/content-length.md) sind und präzise sind. Wenn die Inhaltslänge nicht festgelegt, null oder falsch ist, können Markierungen zum falschen Zeitpunkt oder überhaupt nicht ausgelöst werden.
 
 ### 10%-Fortschrittsmarkierung {#progress-10}
 
@@ -28,8 +32,8 @@ Wird ausgelöst, wenn der Abspielkopf zum ersten Mal 10 % der Inhaltslänge erre
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.progress10`, wenn [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasProgress10`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasProgress10`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
 | Audience Manager | `c_contextdata.a.media.progress10` |
 
 ### 25%-Fortschrittsmarkierung {#progress-25}
@@ -39,8 +43,8 @@ Wird ausgelöst, wenn der Abspielkopf zum ersten Mal 25 % der Inhaltslänge erre
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.progress25`, wenn [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasProgress25`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasProgress25`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
 | Audience Manager | `c_contextdata.a.media.progress25` |
 
 ### 50%-Fortschrittsmarkierung {#progress-50}
@@ -50,8 +54,8 @@ Wird ausgelöst, wenn der Abspielkopf zum ersten Mal 50 % der Inhaltslänge erre
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.progress50`, wenn [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasProgress50`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasProgress50`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
 | Audience Manager | `c_contextdata.a.media.progress50` |
 
 ### 75%-Fortschrittsmarkierung {#progress-75}
@@ -61,8 +65,8 @@ Wird ausgelöst, wenn der Abspielkopf zum ersten Mal 75 % der Inhaltslänge erre
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.progress75`, wenn [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasProgress75`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasProgress75`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
 | Audience Manager | `c_contextdata.a.media.progress75` |
 
 ### 95%-Fortschrittsmarkierung {#progress-95}
@@ -72,10 +76,6 @@ Wird ausgelöst, wenn der Abspielkopf zum ersten Mal 95 % der Inhaltslänge erre
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.progress95`, wenn [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasProgress95`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasProgress95`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
 | Audience Manager | `c_contextdata.a.media.progress95` |
-
->[!IMPORTANT]
->
->Fortschrittsmarken erfordern ein Reporting über Abspielköpfe, die ungleich null [Inhaltslänge](/help/reporting/dimensions/content-length.md) sind und präzise sind. Wenn die Inhaltslänge nicht festgelegt, null oder falsch ist, können Markierungen zum falschen Zeitpunkt oder überhaupt nicht ausgelöst werden.

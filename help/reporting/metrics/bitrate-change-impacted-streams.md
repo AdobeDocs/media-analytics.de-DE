@@ -3,9 +3,9 @@ title: Von Bitratenänderung betroffene Streams
 description: Zählt Sitzungen, in denen mindestens eine Bitratenänderung aufgetreten ist.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '145'
 ht-degree: 10%
 
 ---
@@ -17,11 +17,11 @@ Die Metrik **Bitratenänderung wirkt sich auf Streams aus** zählt Sitzungen, in
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend legt `mediaReporting.qoeDataDetails.hasBitrateChangeImpactedStreams = true` ersten Mal fest, wenn während [&#x200B; Sitzung ein &#x200B;](/help/implementation/events/playback/bitrate-change.md)Bitratenänderungsereignis“ empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend setzt dieses Flag, wenn während der Sitzung zum ersten [ eine ](/help/implementation/events/playback/bitrate-change.md) (Bitratenänderung) empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.qoe.bitrateChange`, wenn [[!UICONTROL Medienqualität]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.hasBitrateChangeImpactedStreams`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.hasBitrateChangeImpactedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
 | Audience Manager | `c_contextdata.a.media.qoe.bitrateChange` |

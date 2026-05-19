@@ -3,9 +3,9 @@ title: Anzahl der Anzeigen
 description: Gibt die Anzahl der Anzeigen an, die während einer Sitzung gestartet wurden.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '176'
 ht-degree: 9%
 
 ---
@@ -17,11 +17,11 @@ Die Metrik **Anzeigenanzahl** gibt die Anzahl der Anzeigen an, die während eine
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend inkrementiert die `mediaReporting.sessionDetails.adCount` bei jedem [Anzeigenstart](/help/implementation/events/ads/ad-start.md)-Ereignis, das während der Sitzung empfangen wurde. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend erhöht diese Anzahl bei jedem [Anzeigenstart](/help/implementation/events/ads/ad-start.md)-Ereignis, das während der Sitzung empfangen wurde. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.adCount` einem benutzerdefinierten Ereignis zuordnet. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.adCount`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Daten-Feeds | `event_list`, `post_event_list` (das benutzerdefinierte Ereignis, dem Ihre Verarbeitungsregel zugeordnet `a.media.adCount`; siehe [`event.tsv`](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Adobe Analytics | Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.adCount` einem benutzerdefinierten Ereignis zuordnet. |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.adCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Daten-Feeds | `event_list`, `post_event_list` (das benutzerdefinierte Ereignis, dem Ihre Verarbeitungsregel zugeordnet `a.media.adCount`; siehe [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | nicht angegeben |

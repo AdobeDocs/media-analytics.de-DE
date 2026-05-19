@@ -3,10 +3,10 @@ title: Anzahl der Fokussierungen
 description: Gibt an, wie oft der Player während einer Sitzung den Fokus erhalten hat.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 8%
+source-wordcount: '165'
+ht-degree: 9%
 
 ---
 
@@ -23,11 +23,11 @@ Die Metrik **Anzahl der Fokussierungen** gibt an, wie oft der Player während ei
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend erhöht das Feld `count` in der `inFocus` Eingabe von `mediaReporting.states[]` bei jedem Fokusstatus-Startereignis. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend erhöht diese Anzahl bei jedem Fokusstatus-Startereignis. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell erfasst`a.media.states.infocus.count` wenn [[!UICONTROL Player State Tracking]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.states[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-reporting-details) Eintrag, bei dem `name = "inFocus"`, Feld `count` |
-| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
+| Customer Journey Analytics | [`mediaReporting.states[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) Eintrag, bei dem `name = "inFocus"`, Feld `count` |
+| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
 | Audience Manager | `c_contextdata.a.media.states.infocus.count` |

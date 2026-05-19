@@ -6,18 +6,13 @@ exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/BlL-c1rf5d3juDKHybex9vrPvQsBIiNXVO2ug9LKl0g
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 358
-ht-degree: 55%
+source-wordcount: 473
+ht-degree: 41%
 
 ---
 
@@ -45,3 +40,11 @@ Die Wiedergabe in einer Medienanwendung kann auf verschiedene Weise unterbrochen
 * _Wie wäre es, dieselbe Sitzung neu zu starten?_
 
   Informationen zum Wiederaufnehmen einer Tracking-Sitzung finden Sie unter [Wiederaufnehmen von inaktiven Sitzungen](resuming-inactive.md).SDK sendet ein Wiederaufnahme-Ping, um das Backend darüber zu informieren, dass die Sitzung manuell wieder aufgenommen wird.
+
+* _Was passiert, wenn `trackSessionEnd` für dieselbe Sitzung zweimal aufgerufen wird?_
+
+  `trackSessionEnd` mehrmals für dieselbe Sitzung aufzurufen ist sicher. Das Backend schließt die Sitzung beim ersten Ereignis und löscht alle nachfolgenden Ereignisse für diese Sitzungs-ID, einschließlich eines zweiten `trackSessionEnd`, im Hintergrund. Dies bedeutet, dass die Race-Bedingungen - z. B. die 30-minütige Inaktivitäts-Zeitüberschreitung, die in dem Moment ausgelöst wird, in dem der Viewer den Player schließt - keine doppelten Daten erzeugen.
+
+* _Was passiert, wenn `trackSessionStart` aufgerufen wird, während eine Sitzung bereits aktiv ist?_
+
+  SDK ignoriert den zweiten `trackSessionStart`, wenn die Sitzung noch nicht geschlossen wurde. Wenn Sie eine neue Sitzung starten müssen, rufen Sie zuerst `trackSessionEnd` auf, um die aktuelle Sitzung explizit zu schließen, und rufen Sie dann `trackSessionStart` für die neue Sitzung auf.

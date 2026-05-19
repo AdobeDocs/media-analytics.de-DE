@@ -6,24 +6,15 @@ exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/PguxKIzAL95WbMl5c0yJq9rYSqZgOGbbAYtxOI4eVOs
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 522
-ht-degree: 81%
+source-wordcount: 641
+ht-degree: 62%
 
 ---
 
@@ -110,7 +101,7 @@ Die Wiedergabe von Anzeigen beinhaltet das Tracking von Werbeunterbrechungen, An
 
 1. Rufen Sie `trackEvent()` mit dem `AdStart`-Ereignis in der `MediaHeartbeat`-Instanz auf, um das Tracking der Anzeigenwiedergabe zu starten.
 
-   Fügen Sie als dritten Parameter im Ereignisaufruf eine Referenz auf Ihre anwenderdefinierte Metadatenvariable (oder ein leeres Objekt) ein.
+   Fügen Sie als dritten Parameter im Ereignisaufruf eine Referenz auf Ihre anwenderdefinierte Metadatenvariable (oder ein leeres Objekt) ein. Halten Sie während der Wiedergabe der Anzeige den Abspielkopf für den Inhalt (`l:event:playhead`) an der Position, an der die Anzeigenunterbrechung begann, fest. Wird er während der Anzeigenwiedergabe vorgezogen, wird [Besuchszeit für den Inhalt](/help/reporting/metrics/content-time-spent.md) überbewertet.
 
 1. Wenn die Wiedergabe der Anzeige das Ende der Anzeige erreicht, rufen Sie `trackEvent()` mit dem `AdComplete`-Ereignis auf.
 
@@ -120,7 +111,11 @@ Die Wiedergabe von Anzeigen beinhaltet das Tracking von Werbeunterbrechungen, An
 
 >[!IMPORTANT]
 >
->Stellen Sie sicher, dass Sie die Abspielleiste (`l:event:playhead`) des Inhaltsplayers während der Wiedergabe der Anzeige NICHT erhöhen (`s:asset:type=ad`). In diesem Fall werden die Metriken zur Besuchszeit für Inhalte negativ beeinflusst.
+>**Pre-Roll-Anzeigen: Rufen Sie `trackPlay` nicht vor dem `AdBreakStart` und `AdStart` auf.** Das erste `play`-Ping für Hauptinhaltsinkremente [Inhaltsstarts](/help/reporting/metrics/content-starts.md). Wenn `trackPlay` aufgerufen wird, bevor die Pre-Roll-Anzeigenereignisse ausgelöst werden, und der Viewer während der Anzeige ausfällt, wird der Inhalt gestartet erhöht, obwohl nie Hauptinhalt wiedergegeben wurde. Verzögern Sie bei Pre-Roll-Szenarien `trackPlay`, bis `AdBreakStart` und `AdStart` gesendet wurden.
+
+>[!NOTE]
+>
+>Der während der Anzeigenwiedergabe angezeigte Abspielkopfwert stellt die Position des Viewers innerhalb des **Hauptinhalts** und nicht innerhalb der Anzeige dar. Bei einer Pre-Roll-Anzeige, die einem 10-minütigen Video vorausgeht, wird der Abspielkopf während der gesamten Anzeige `0`. Bei einer Mid-Roll-Anzeige, die mit der 5-Minuten-Markierung beginnt, bleibt der Abspielkopf für die Dauer der Anzeige bei `300` (Sekunden).
 
 Der folgende Beispielcode nutzt das JavaScript 2.x-SDK für einen HTML5-Medienplayer.
 
