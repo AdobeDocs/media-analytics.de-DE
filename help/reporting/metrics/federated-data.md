@@ -19,7 +19,7 @@ ht-degree: 6%
 
 Die **Federated Data**-Metrik zählt Sitzungen, die über eine Federated Data Share und nicht von Ihrer eigenen Implementierung empfangen wurden. Verwenden Sie diese Option, um das Volumen der von Partnern freigegebenen Sitzungen zu messen und Interaktion, Abschluss oder Qualität mit Erstanbieter-Sitzungen zu vergleichen.
 
-Weitere Informationen finden Sie [ Anwendungsfall ](/help/use-cases/federated-media.md)Federated Media) .
+Weitere Informationen finden Sie [&#x200B; Anwendungsfall &#x200B;](/help/use-cases/federated-media.md)Federated Media) .
 
 >[!TIP]
 >
