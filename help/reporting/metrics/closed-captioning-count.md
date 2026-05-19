@@ -3,9 +3,9 @@ title: Anzahl der verdeckten Untertitel
 description: Gibt an, wie oft der Viewer Untertitel während einer Sitzung aktiviert hat.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '167'
 ht-degree: 8%
 
 ---
@@ -23,7 +23,7 @@ Die Metrik **Geschlossene Untertitel** gibt an, wie oft der Viewer Untertitel w�
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend erhöht das Feld `count` in der `closedCaptioning` von `mediaReporting.states[]` bei jedem Start-Ereignis für den Status „Untertitel aktivieren“. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend erhöht diese Anzahl bei jedem Startereignis für den Untertitelaktivierungsstatus. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |

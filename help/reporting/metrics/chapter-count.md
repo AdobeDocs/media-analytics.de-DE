@@ -3,10 +3,10 @@ title: Anzahl der Kapitel
 description: Gibt die Anzahl der Kapitel an, die während einer Sitzung begonnen haben.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 10%
+source-wordcount: '172'
+ht-degree: 9%
 
 ---
 
@@ -17,7 +17,7 @@ Die Metrik **Kapitelanzahl** gibt die Anzahl der Kapitel an, die während einer 
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend erhöht `mediaReporting.sessionDetails.chapterCount` bei jedem [Kapitelstart](/help/implementation/events/chapters/chapter-start.md)-Ereignis, das während der Sitzung empfangen wurde. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend erhöht diese Anzahl bei jedem [Kapitelstart](/help/implementation/events/chapters/chapter-start.md)-Ereignis, das während der Sitzung empfangen wurde. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |

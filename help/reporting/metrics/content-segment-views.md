@@ -3,9 +3,9 @@ title: Ansichten des Inhaltssegments
 description: Zählt Segmente, in denen die aktive Wiedergabe des Hauptinhalts stattgefunden hat.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '185'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ Die Metrik **Inhaltssegmentansichten** zählt fünfminütige Inhaltssegmente, in
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend legt `mediaReporting.sessionDetails.hasSegmentView = true` für jeden Close-Aufruf fest, der ein Segment abdeckt, in dem mindestens ein [play](/help/implementation/events/playback/play.md)-Ereignis für den Hauptinhalt empfangen wurde. Die Metrik wird beim Schließen-Aufruf gemeldet. Im Pfad der Media Edge-API werden Segmentansichten unter derselben Bedingung ausgelöst, wie Inhalte beginnen. Beide erfordern ein [-](/help/implementation/events/playback/play.md)-Ereignis für Hauptinhalte.
+Das Medien-Backend setzt diese Markierung für jeden Schließen-Aufruf, der ein Segment abdeckt, in dem mindestens ein [play](/help/implementation/events/playback/play.md)-Ereignis für den Hauptinhalt empfangen wurde. Die Metrik wird beim Schließen-Aufruf gemeldet. Im Pfad der Media Edge-API werden Segmentansichten unter derselben Bedingung ausgelöst, wie Inhalte beginnen. Beide erfordern ein [-](/help/implementation/events/playback/play.md)-Ereignis für Hauptinhalte.
 
 | Meldesystem | Quelle |
 | --- | --- |

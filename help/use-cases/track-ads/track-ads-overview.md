@@ -20,10 +20,10 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 522
-ht-degree: 81%
+source-wordcount: 641
+ht-degree: 62%
 
 ---
 
@@ -110,7 +110,7 @@ Die Wiedergabe von Anzeigen beinhaltet das Tracking von Werbeunterbrechungen, An
 
 1. Rufen Sie `trackEvent()` mit dem `AdStart`-Ereignis in der `MediaHeartbeat`-Instanz auf, um das Tracking der Anzeigenwiedergabe zu starten.
 
-   Fügen Sie als dritten Parameter im Ereignisaufruf eine Referenz auf Ihre anwenderdefinierte Metadatenvariable (oder ein leeres Objekt) ein.
+   Fügen Sie als dritten Parameter im Ereignisaufruf eine Referenz auf Ihre anwenderdefinierte Metadatenvariable (oder ein leeres Objekt) ein. Halten Sie während der Wiedergabe der Anzeige den Abspielkopf für den Inhalt (`l:event:playhead`) an der Position, an der die Anzeigenunterbrechung begann, fest. Wird er während der Anzeigenwiedergabe vorgezogen, wird [Besuchszeit für den Inhalt](/help/reporting/metrics/content-time-spent.md) überbewertet.
 
 1. Wenn die Wiedergabe der Anzeige das Ende der Anzeige erreicht, rufen Sie `trackEvent()` mit dem `AdComplete`-Ereignis auf.
 
@@ -120,7 +120,11 @@ Die Wiedergabe von Anzeigen beinhaltet das Tracking von Werbeunterbrechungen, An
 
 >[!IMPORTANT]
 >
->Stellen Sie sicher, dass Sie die Abspielleiste (`l:event:playhead`) des Inhaltsplayers während der Wiedergabe der Anzeige NICHT erhöhen (`s:asset:type=ad`). In diesem Fall werden die Metriken zur Besuchszeit für Inhalte negativ beeinflusst.
+>**Pre-Roll-Anzeigen: Rufen Sie `trackPlay` nicht vor dem `AdBreakStart` und `AdStart` auf.** Das erste `play`-Ping für Hauptinhaltsinkremente [Inhaltsstarts](/help/reporting/metrics/content-starts.md). Wenn `trackPlay` aufgerufen wird, bevor die Pre-Roll-Anzeigenereignisse ausgelöst werden, und der Viewer während der Anzeige ausfällt, wird der Inhalt gestartet erhöht, obwohl nie Hauptinhalt wiedergegeben wurde. Verzögern Sie bei Pre-Roll-Szenarien `trackPlay`, bis `AdBreakStart` und `AdStart` gesendet wurden.
+
+>[!NOTE]
+>
+>Der während der Anzeigenwiedergabe angezeigte Abspielkopfwert stellt die Position des Viewers innerhalb des **Hauptinhalts** und nicht innerhalb der Anzeige dar. Bei einer Pre-Roll-Anzeige, die einem 10-minütigen Video vorausgeht, wird der Abspielkopf während der gesamten Anzeige `0`. Bei einer Mid-Roll-Anzeige, die mit der 5-Minuten-Markierung beginnt, bleibt der Abspielkopf für die Dauer der Anzeige bei `300` (Sekunden).
 
 Der folgende Beispielcode nutzt das JavaScript 2.x-SDK für einen HTML5-Medienplayer.
 

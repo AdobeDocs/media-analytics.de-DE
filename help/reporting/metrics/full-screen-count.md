@@ -3,9 +3,9 @@ title: Anzahl der Vollbilder
 description: Gibt an, wie oft der Viewer während einer Sitzung im Vollbildmodus angezeigt wurde.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '169'
 ht-degree: 8%
 
 ---
@@ -23,7 +23,7 @@ Die Metrik **Anzahl des Vollbilds** gibt an, wie oft der Betrachter während ein
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend erhöht das Feld `count` im `fullscreen` Eintrag von `mediaReporting.states[]` bei jedem Start-Ereignis im Vollbildmodus. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend erhöht diese Anzahl bei jedem Status-Startereignis im Vollbildmodus. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |

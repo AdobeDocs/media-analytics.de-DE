@@ -3,9 +3,9 @@ title: Inhalt abgeschlossen
 description: Zählt Sitzungen, deren Abspielkopf das Ende des Inhalts erreicht hat.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '142'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ Die **Inhalt abgeschlossen** zählt Sitzungen, deren Abspielkopf das Ende des In
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend wird `mediaReporting.sessionDetails.isCompleted = true`, wenn ein [Sitzungs-](/help/implementation/events/session/session-complete.md)&quot; empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet. Eine Sitzung, bei der eine Zeitüberschreitung ohne explizite `sessionComplete` auftritt, wird nicht als Abschluss gezählt.
+Das Medien-Backend setzt dieses Flag, wenn ein [Session Complete](/help/implementation/events/session/session-complete.md)-Ereignis empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet. Eine Sitzung, bei der eine Zeitüberschreitung ohne explizite `sessionComplete` auftritt, wird nicht als Abschluss gezählt.
 
 | Meldesystem | Quelle |
 | --- | --- |

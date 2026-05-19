@@ -3,9 +3,9 @@ title: Federated Data
 description: Zählt Sitzungen, die über eine Federated Data Share statt über die eigene Implementierung eines Kunden empfangen wurden.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '220'
 ht-degree: 6%
 
 ---
@@ -27,7 +27,7 @@ Weitere Informationen finden Sie [&#x200B; Anwendungsfall &#x200B;](/help/use-ca
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend legt `mediaReporting.sessionDetails.isFederated = true` fest, wenn die Sitzung über einen Federated Channel eingeht. Die Metrik wird einmal pro qualifizierter Sitzung inkrementiert und beim Schließen-Aufruf gemeldet.
+Das Medien-Backend setzt dieses Flag, wenn die Sitzung über einen Federated Channel eingeht. Die Metrik wird einmal pro qualifizierter Sitzung inkrementiert und beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |

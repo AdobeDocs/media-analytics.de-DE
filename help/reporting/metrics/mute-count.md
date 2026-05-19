@@ -3,9 +3,9 @@ title: Anzahl stummschalten
 description: Gibt an, wie oft der Viewer Audio während einer Sitzung stummgeschaltet hat.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '158'
 ht-degree: 9%
 
 ---
@@ -23,7 +23,7 @@ Die Metrik **Zählung der Stummschaltung** gibt an, wie oft der Viewer Audio wä
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend erhöht das Feld `count` im `mute` von `mediaReporting.states[]` bei jedem Startereignis mit stummgeschaltetem Zustand. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend erhöht diese Anzahl bei jedem Startereignis mit stummgeschaltetem Zustand. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |

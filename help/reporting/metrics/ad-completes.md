@@ -3,9 +3,9 @@ title: Anzeige abgeschlossen
 description: Zählt alle Anzeigen, die bis zum Abschluss gespielt wurden.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '123'
 ht-degree: 12%
 
 ---
@@ -17,7 +17,7 @@ Die Metrik **Anzeige abgeschlossen** zählt jede Anzeige, die bis zum Abschluss 
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend legt `mediaReporting.advertisingDetails.isCompleted = true` fest, wenn ein [ad complete](/help/implementation/events/ads/ad-complete.md)-Ereignis empfangen wird. Die Metrik wird beim Aufruf zum Schließen der Anzeige gemeldet. Übersprungene oder abgebrochene Anzeigen werden nicht als Abschlüsse gezählt.
+Das Medien-Backend setzt dieses Flag, wenn ein [ad complete](/help/implementation/events/ads/ad-complete.md)-Ereignis empfangen wird. Die Metrik wird beim Aufruf zum Schließen der Anzeige gemeldet. Übersprungene oder abgebrochene Anzeigen werden nicht als Abschlüsse gezählt.
 
 | Meldesystem | Quelle |
 | --- | --- |

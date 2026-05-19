@@ -3,9 +3,9 @@ title: Betroffene Datenströme verzögern
 description: Zählt Sitzungen, in denen die Wiedergabe mindestens einmal angehalten wurde.
 feature: Metrics
 role: User, Admin
-source-git-commit: 1278355e0bfc67c635250c426edaf865fb658c37
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '178'
 ht-degree: 8%
 
 ---
@@ -17,7 +17,7 @@ Die Metrik **Vom Verzug betroffene Streams** zählt Sitzungen, bei denen währen
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend wird `mediaReporting.qoeDataDetails.hasStallImpactedStreams = true`, wenn für mindestens drei aufeinander folgende Ereignisse während der Sitzung keine Abspielkopfbewegung auf dem Hauptinhalt aufgezeichnet wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend setzt dieses Flag, wenn während der Sitzung für mindestens drei aufeinander folgende Ereignisse keine Abspielkopfbewegung auf dem Hauptinhalt aufgezeichnet wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |

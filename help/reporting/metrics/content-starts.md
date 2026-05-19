@@ -3,9 +3,9 @@ title: Inhaltsstarts
 description: Zählt Sitzungen, in denen der Hauptinhalt tatsächlich zu spielen begann.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '148'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ Die **Inhaltsstartmetrik** zählt Sitzungen, in denen die Wiedergabe des Hauptin
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend legt `mediaReporting.sessionDetails.isPlayed = true` ersten Mal ein [Play](/help/implementation/events/playback/play.md)-Ereignis für den Hauptinhalt fest. Die Metrik wird bei diesem Wiedergabeereignis ausgelöst, aber beim Schließen-Aufruf gemeldet. Verwenden Sie `(Media starts − Content starts) / Media starts`, um die Abwurfrate vor der Walze zu berechnen.
+Das Medien-Backend setzt dieses Flag beim ersten [&#x200B; eines &#x200B;](/help/implementation/events/playback/play.md)-Ereignisses für den Hauptinhalt. Die Metrik wird bei diesem Wiedergabeereignis ausgelöst, aber beim Schließen-Aufruf gemeldet. Verwenden Sie `(Media starts − Content starts) / Media starts`, um die Abwurfrate vor der Walze zu berechnen.
 
 | Meldesystem | Quelle |
 | --- | --- |

@@ -22,10 +22,10 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 590
-ht-degree: 98%
+source-wordcount: 749
+ht-degree: 77%
 
 ---
 
@@ -87,6 +87,17 @@ Beispiel: Ein LIVE-Streaming-Ereignis beginnt um Mitternacht und dauert 24 Stund
 ### Beim Anhalten
 
 Dieselbe Live-Abspielleistenlogik, die zu Beginn der Wiedergabe angewendet wurde, muss angewendet werden, wenn ein Benutzer die Wiedergabe anhält. Wenn der Benutzer zum Abspielen des LIVE-Streams zurückkehrt, müssen Sie den Wert `l:event:playhead` auf die neue Anzahl der Sekunden seit Mitternacht UTC festlegen, _nicht_ auf den Punkt, an dem der Benutzer den LIVE-Stream angehalten hat.
+
+## Verfolgen von Programmänderungen in einem Live-Stream {#live-program-changes}
+
+Wenn ein Live-Stream von einem Programm oder einer Sendung zu einem anderen wechselt - ein gemeinsames Muster für Broadcast- und Kabel-Eigenschaften - sollte jedes Programm als separate Sitzung verfolgt werden. Auf diese Weise können Interaktionen und die Besuchszeit pro individuellem Titel gemeldet werden, anstatt alle Ansichten einem einzigen fortlaufenden Stream zuzuordnen.
+
+**Empfohlener Ansatz:**
+
+1. Wenn das aktuelle Programm beendet wird (oder wenn der Player ein Programmänderungsereignis signalisiert), rufen Sie `trackSessionEnd` auf, um die aktuelle Sitzung zu schließen.
+2. Wenn das neue Programm beginnt, rufen Sie `trackSessionStart` mit den Metadaten des neuen Programms auf (Name, ID, Inhaltstyp usw.).
+
+Wenn Sie jedes Programm als eigene Sitzung verfolgen, [&#x200B; die für das jeweilige Programm geltende &#x200B;](/help/reporting/metrics/content-time-spent.md), [Fortschrittsmarken](/help/reporting/metrics/progress-markers.md) und Abschlussmetriken und ermöglichen Sie ein genaues Reporting für die einzelnen Zielgruppen pro Titel. Verwenden Sie `trackSessionEnd` statt `trackComplete` für den Übergang - `trackComplete` signalisiert dem Betrachter, dass er absichtlich bis zum Ende eines diskreten Inhalts angesehen wird, während `trackSessionEnd` hier korrekt ist, da der Stream mit unterschiedlicher Programmierung fortgesetzt wird, anstatt zu enden.
 
 ## Beispielcode {#sample-code}
 

@@ -3,9 +3,9 @@ title: Von Dropped Frames betroffene Streams
 description: Zählt Sitzungen, in denen mindestens ein Frame gelöscht wurde.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '135'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ Die Metrik **Abgelegter Frame betrifft Streams** zählt Sitzungen, in denen mind
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend legt `mediaReporting.qoeDataDetails.hasDroppedFrameImpactedStreams = true` fest, wenn der `droppedFrames` des QoE-Objekts beim Schließen der Sitzung größer als null ist.
+Das Medien-Backend setzt dieses Flag, wenn der `droppedFrames` des QoE-Objekts beim Schließen der Sitzung größer als null ist.
 
 | Meldesystem | Quelle |
 | --- | --- |

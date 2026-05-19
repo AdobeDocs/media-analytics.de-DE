@@ -3,10 +3,10 @@ title: Besuchszeit für die Anzeige
 description: Gibt die Gesamtzahl der Sekunden der aktiven Anzeigenwiedergabe pro Sitzung an.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 9%
+source-wordcount: '174'
+ht-degree: 8%
 
 ---
 
@@ -17,7 +17,7 @@ Die Metrik **Besuchszeit für Anzeigen** gibt die Gesamtzahl der Sekunden der ak
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend addiert die verstrichene Wanduhrzeit zwischen den Ereignissen, während sich der Player im `play` einer Anzeige befindet. Die Zeit während der Pausen und Pufferung ist ausgeschlossen. Die Metrik wird beim Aufruf zum Schließen der Anzeige gemeldet. Der Wert wird in Analysis Workspace als `HH:MM:SS` und in Sekunden in Daten-Feeds, Data Warehouse und Reporting-APIs angezeigt.
+Das Medien-Backend addiert die verstrichene Wanduhrzeit zwischen den Ereignissen, während sich der Player im `play` einer Anzeige befindet. Die Zeit während Pausen, Pufferung und Suchen wird ausgeschlossen, entsprechend der Berechnung [Besuchszeit für Inhalt](/help/reporting/metrics/content-time-spent.md) für den Hauptinhalt. Die Metrik wird beim Aufruf zum Schließen der Anzeige gemeldet. Der Wert wird in Analysis Workspace als `HH:MM:SS` und in Sekunden in Daten-Feeds, Data Warehouse und Reporting-APIs angezeigt.
 
 | Meldesystem | Quelle |
 | --- | --- |

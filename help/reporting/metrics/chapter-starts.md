@@ -3,10 +3,10 @@ title: Kapitelstarts
 description: Zählt jedes Kapitel, das während einer Sitzung zu spielen begann.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 13%
+source-wordcount: '116'
+ht-degree: 12%
 
 ---
 
@@ -17,7 +17,7 @@ Die Metrik **Kapitel beginnt** zählt jedes Kapitel, das während einer Sitzung 
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend legt `mediaReporting.chapterDetails.isStarted = true` fest, wenn ein [Kapitelstart](/help/implementation/events/chapters/chapter-start.md)-Ereignis empfangen wird. Die Metrik wird beim Kapitelabschlussaufruf gemeldet.
+Das Medien-Backend setzt diese Markierung, wenn ein [Kapitelstart](/help/implementation/events/chapters/chapter-start.md)-Ereignis empfangen wird. Die Metrik wird beim Kapitelabschlussaufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |

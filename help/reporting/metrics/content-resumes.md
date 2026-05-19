@@ -3,10 +3,10 @@ title: Inhaltswiederaufnahmen
 description: Zählt Sitzungen, mit denen eine zuvor unterbrochene Wiedergabe fortgesetzt wurde.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 10%
+source-wordcount: '171'
+ht-degree: 9%
 
 ---
 
@@ -23,7 +23,7 @@ Die Metrik **Inhaltswiederaufnahme** zählt Sitzungen, die eine zuvor unterbroch
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend legt `mediaReporting.sessionDetails.hasResume = true` fest, wenn `mediaCollection.sessionDetails.hasResume` beim Ereignis [Sitzungsstart](/help/implementation/events/session/session-start.md) `true` wird. Der Player muss die Sitzung explizit als Wiederaufnahme kennzeichnen. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend setzt dieses Flag, wenn `mediaCollection.sessionDetails.hasResume` beim [Sitzungsstart](/help/implementation/events/session/session-start.md)-Ereignis `true` wird. Der Player muss die Sitzung explizit als Wiederaufnahme kennzeichnen. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |

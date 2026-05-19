@@ -3,10 +3,10 @@ title: Anzeigenstarts
 description: Zählt jede Anzeige, die während einer Sitzung zu spielen begann.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 12%
+source-wordcount: '126'
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ Die Metrik **Anzeigenstart** zählt jede Anzeige, die während einer Sitzung zu 
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend legt `mediaReporting.advertisingDetails.isStarted = true` fest, wenn ein [Anzeigenstart](/help/implementation/events/ads/ad-start.md)-Ereignis empfangen wird. Die Metrik wird beim Anzeigenstart-Aufruf gemeldet.
+Das Medien-Backend setzt dieses Flag, wenn ein [Anzeigenstart](/help/implementation/events/ads/ad-start.md)-Ereignis empfangen wird. Die Metrik wird beim Anzeigenstart-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |

@@ -3,9 +3,9 @@ title: Vom Puffer betroffene Streams
 description: Zählt Sitzungen, in denen der Player mindestens einmal in einen Pufferstatus übergegangen ist.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '147'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ Die Metrik **Vom Puffer betroffene Streams** zählt Sitzungen, in denen der Play
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend legt `mediaReporting.qoeDataDetails.hasBufferImpactedStreams = true` das erste Mal fest, [&#x200B; während der Sitzung ein &quot;](/help/implementation/events/playback/buffer-start.md)&quot; empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend setzt dieses Flag beim ersten [&#x200B; eines &#x200B;](/help/implementation/events/playback/buffer-start.md)-Ereignisses während der Sitzung. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |

@@ -3,7 +3,7 @@ title: Von verdeckten Untertiteln betroffene Streams
 description: Zählt Sitzungen, in denen der Viewer Untertitel mindestens einmal aktiviert hat.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 8%
@@ -23,7 +23,7 @@ Die Metrik **Von Untertiteln betroffene Streams** zählt Sitzungen, in denen der
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend setzt das `isSet`-Flag in `mediaReporting.states[]`, damit der `closedCaptioning`-Eintrag `true`, wenn zum ersten Mal ein `media.statesUpdate` mit `closedCaptioning` in `statesStart` empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend legt dieses Flag fest, wenn während der Sitzung zum ersten Mal ein Ereignis zum Aktivieren des Untertitelstatus empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |

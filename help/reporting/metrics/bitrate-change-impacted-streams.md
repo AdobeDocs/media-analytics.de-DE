@@ -3,9 +3,9 @@ title: Von Bitratenänderung betroffene Streams
 description: Zählt Sitzungen, in denen mindestens eine Bitratenänderung aufgetreten ist.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '145'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ Die Metrik **Bitratenänderung wirkt sich auf Streams aus** zählt Sitzungen, in
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend legt `mediaReporting.qoeDataDetails.hasBitrateChangeImpactedStreams = true` ersten Mal fest, wenn während [&#x200B; Sitzung ein &#x200B;](/help/implementation/events/playback/bitrate-change.md)Bitratenänderungsereignis“ empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend setzt dieses Flag, wenn während der Sitzung zum ersten [&#x200B; eine &#x200B;](/help/implementation/events/playback/bitrate-change.md) (Bitratenänderung) empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |

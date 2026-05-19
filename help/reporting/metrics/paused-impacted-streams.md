@@ -3,9 +3,9 @@ title: Betroffene Streams angehalten
 description: Zählt Sitzungen, in denen der Viewer mindestens einmal pausiert hat.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '152'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ Die Metrik **Ausgesetzte betroffene Streams** zählt Sitzungen, in denen der Vie
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend legt `mediaReporting.sessionDetails.hasPauseImpactedStreams = true` das erste Mal fest[&#x200B; dass während der Sitzung ein &#x200B;](/help/implementation/events/playback/pause-start.md)-Ereignis empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend setzt dieses Flag, wenn während der Sitzung zum ersten Mal ein [Pause Start](/help/implementation/events/playback/pause-start.md)-Ereignis empfangen wird. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |

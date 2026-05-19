@@ -3,9 +3,9 @@ title: Geschätzte Streams
 description: Ermittelt die Anzahl der Audio- oder Videostreams pro Sitzung.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '190'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ Die Metrik **Geschätzte Streams** schätzt die Anzahl der Audio- oder Video-Str
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend berechnet `mediaReporting.sessionDetails.estimatedStreams = FLOOR(totalTimePlayed / 1800) + 1`, wobei `totalTimePlayed` [Besuchszeit für Medien](media-time-spent.md) in Sekunden ist. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend berechnet diese Metrik als `FLOOR(totalTimePlayed / 1800) + 1`, wobei `totalTimePlayed` [Besuchszeit für Medien](media-time-spent.md) in Sekunden ist. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Besuchszeit für Medien | Geschätzte Streams |
 | --- | --- |
