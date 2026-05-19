@@ -1,22 +1,21 @@
 ---
-source-git-commit: c06ecd16f417c9584fb87181074d1c2bee487e0b
+title: Berechnete Metriken
+description: Benutzerdefinierte berechnete Metriken für Berichte zu Streaming-Medien in Adobe Analytics und Customer Journey Analytics.
+feature: Metrics
+role: User, Admin
+source-git-commit: ea740a32bbd5e640cd437cd8c5c4f48071a0d02c
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 5%
 
 ---
-﻿---
-title: Berechnete Metriken
-description: Benutzerdefinierte berechnete Metriken für Berichte zu Streaming-Medien in Adobe Analytics und Customer Journey Analytics.
-feature: Metrics
-role: User, Admin
----
+
 
 # Berechnete Metriken
 
 Berechnete Metriken für Adobe-Streaming-Mediendienste sind benutzerdefinierte Metriken, die auf der Grundlage der standardmäßigen Streaming-Medienmetriken erstellt werden. So können Sie Verhältnisse wie durchschnittliche Anzeigenbesuchszeit oder Medienabschlussrate ableiten, ohne die Implementierung zu ändern.
 
-Informationen zum Erstellen dieser berechneten Metriken in Analysis Workspace finden Sie in der entsprechenden Übersicht über berechnete Metriken in [Adobe Analytics](https://experienceleague.adobe.com/de/docs/analytics/components/calculated-metrics/cm-overview) oder [Customer Journey Analytics](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview).
+Informationen zum Erstellen dieser berechneten Metriken in Analysis Workspace finden Sie in der entsprechenden Übersicht über berechnete Metriken in [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/cm-overview) oder [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview).
 
 | Berechnete Metrik | Beschreibung | Formel |
 | --- | --- | --- |
