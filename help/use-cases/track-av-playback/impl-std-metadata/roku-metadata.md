@@ -5,9 +5,22 @@ uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/nWQiQkx66U5JL19U4yV8o4dvm0nLivpyKq29uNlIXTc
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: 472
 ht-degree: 84%
 
 ---
@@ -22,7 +35,7 @@ Standardmäßige Video-, Audio- und Anzeigenmetadaten können in den Medien- bzw
 | --- | --- | --- |
 | Show | `a.media.show` | `MEDIA_VideoMetadataKeySHOW` |
 | Staffel | `a.media.season` | `MEDIA_VideoMetadataKeySEASON` |
-| Episode | `a.media.episode` | `MEDIA_VideoMetadataKeyEPISODE` |
+| Folge | `a.media.episode` | `MEDIA_VideoMetadataKeyEPISODE` |
 | Asset | `a.media.asset` | `MEDIA_VideoMetadataKeyASSET_ID` |
 | Genre | `a.media.genre` | `MEDIA_VideoMetadataKeyGENRE` |
 | Erstes Sendedatum | `a.media.airDate` | `MEDIA_VideoMetadataKeyFIRST_AIR_DATE` |
@@ -76,7 +89,7 @@ Sie können folgende Konstanten verwenden, um Medienereignisse zu verfolgen:
 | --- | --- |
 | `MEDIA_STANDARD_MEDIA_METADATA` | Konstante zum Festlegen von Metadaten für `MediaInfo` `trackLoad` |
 | `MEDIA_STANDARD_AD_METADATA` | Konstante zum Festlegen von Anzeigenmetadaten für `EventData` `trackEvent` |
-| `MEDIA_RESUMED` | Konstante für das Senden eines Heartbeats zur Videowiederaufnahme. Um das Video-Tracking zuvor angehaltener Inhalte wiederaufzunehmen, legen Sie die `MEDIA_RESUMED`-Eigenschaft im `mediaInfo`-Objekt fest, wenn Sie `mediaTrackLoad` aufrufen. (`MEDIA_RESUMED` ist kein Ereignis, das Sie mit der `mediaTrackEvent`-API verfolgen können.) `MEDIA_RESUMED` sollte auf „true“ gesetzt werden, wenn eine Anwendung weiterhin Inhalte verfolgen möchte, die ein Benutzer nicht mehr beobachtet, sondern nun wieder beobachtet. <br/><br/>Beispiel: Ein Anwender sieht sich 30 % des Inhalts an und schließt dann die App. Hierdurch wird die Sitzung beendet. Wenn dieser Benutzer später zum entsprechenden Inhalt zurückkehrt und die Anwendung ihm die Wiederaufnahme der Wiedergabe ab der vorherigen Abspielposition ermöglicht, muss die Anwendung `MEDIA_RESUMED` auf „true“ festlegen, wenn sie die `mediaTrackLoad`-API aufruft. So lassen sich die beiden unterschiedlichen Mediensitzungen für denselben Videoinhalt verknüpfen. Im Folgenden finden Sie ein Implementierungsbeispiel: <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>So erstellen Sie eine neue Sitzung für das Medium, jedoch sendet das SDK hierdurch auch eine Heartbeat-Anfrage mit dem Ereignistyp „resume“ (Fortsetzen), die in Berichten verwendet werden kann, um die beiden Mediensitzungen zu verknüpfen. |
+| `MEDIA_RESUMED` | Konstante für das Senden eines Heartbeats zur Videowiederaufnahme. Um das Video-Tracking zuvor angehaltener Inhalte wiederaufzunehmen, legen Sie die `MEDIA_RESUMED`-Eigenschaft im `mediaInfo`-Objekt fest, wenn Sie `mediaTrackLoad` aufrufen. (`MEDIA_RESUMED` ist kein Ereignis, das Sie mit der `mediaTrackEvent`-API verfolgen können.) `MEDIA_RESUMED` sollte auf „true“ gesetzt werden, wenn eine Anwendung weiterhin Inhalte verfolgen möchte, die ein Benutzer nicht mehr beobachtet, sondern jetzt wieder sehen möchte. <br/><br/>Beispiel: Ein Anwender sieht sich 30 % des Inhalts an und schließt dann die App. Hierdurch wird die Sitzung beendet. Wenn dieser Benutzer später zum entsprechenden Inhalt zurückkehrt und die Anwendung ihm die Wiederaufnahme der Wiedergabe ab der vorherigen Abspielposition ermöglicht, muss die Anwendung `MEDIA_RESUMED` auf „true“ festlegen, wenn sie die `mediaTrackLoad`-API aufruft. So lassen sich die beiden unterschiedlichen Mediensitzungen für denselben Videoinhalt verknüpfen. Im Folgenden finden Sie ein Implementierungsbeispiel: <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>So erstellen Sie eine neue Sitzung für das Medium, jedoch sendet das SDK hierdurch auch eine Heartbeat-Anfrage mit dem Ereignistyp „resume“ (Fortsetzen), die in Berichten verwendet werden kann, um die beiden Mediensitzungen zu verknüpfen. |
 
 ### Content-Typ-Konstanten
 

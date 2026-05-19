@@ -4,10 +4,23 @@ description: Hier erfahren Sie, wie Sie mit den Analytics 2.0-APIs Daten zu der 
 feature: Streaming Media, Workspace Basics
 role: User, Admin, Developer
 exl-id: 65e5b67a-26fc-433e-b99b-0ebbc24428ac
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/WYVf65R-G8v-x23nNMM4q14ZrBNZhrr8gls3HfO3XO8
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 100%
+source-wordcount: 210
+ht-degree: 90%
 
 ---
 
@@ -20,7 +33,7 @@ Sie können Berichtsdaten zur Besuchszeit für Medienwiedergabe mit den [_*Analy
 1. Fordern Sie eine ausreichende Datenmenge an.
 
    * In dem von Ihnen im Bericht angegebenen Datenbereich werden die Daten aller gleichzeitigen Betrachter _zum Zeitpunkt des Endes der Videositzung erfasst._
-Es gilt, Sitzungen zu berücksichtigen, die an einem Tag beginnen und nach Mitternacht enden, also am nächsten Tag.
+Sie müssen die Sitzungen berücksichtigen, die an einem Tag beginnen und nach Mitternacht enden, d. h. am nächsten Tag.
 
    * Geben Sie bei Ihrer Anfrage für den vorgesehenen Zeitraum einen weiteren Tag für die Daten an, nutzen Sie aber in Ihrer Analyse _*nur die vorgesehenen Daten.*_
 

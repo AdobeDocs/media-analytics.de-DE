@@ -1,18 +1,41 @@
 ---
-title: 'Aktivierung von Medienberichten '
+title: Aktivierung von Medienberichten
 description: Erfahren Sie mehr über die Media Report Suite, die Medienmetriken erfasst.  Führen Sie diese Schritte aus, um Medienberichte zu konfigurieren, bevor Mediendaten gesendet werden.
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/2nLLlF-rFJUR3t-OMbcy5iqF42l-O7oLybXFGhdPyhU
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+  - id: e38cbddc-1633-4cd5-bed5-9f289f2a6029
+  - id: ef60b66e-5984-4336-ba72-6d978b1b6f87
+  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+  - id: f836f655-eebe-4b76-82bc-697955ec1ce3
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 98%
+source-wordcount: 945
+ht-degree: 81%
 
 ---
 
-# Aktivierung von Medienberichten {#media-reports-enablement}
+# Aktivierung von Medienberichten{#media-reports-enablement}
 
 Jede Report Suite, die Medienmetriken erfasst, muss konfiguriert werden, bevor Mediendaten gesendet werden.
 
@@ -33,7 +56,7 @@ Fortgeschrittene Kunden können die Medien-Bedienfelder in Analysis Workspace nu
 
    * **Medien-Core**
 
-     Die Core-Medienmessung wird für Medieninhalte verwendet. Dabei werden Lösungs- (oder benutzerdefinierte) eVars verwendet, um Inhalt, Content-Typ, Inhalts-Player-Name und Inhaltskanal nachzuverfolgen. Lösungs- (oder benutzerdefinierte) Ereignisse werden für Medienstarts, Inhaltsstarts, Inhaltsbeendigungen und Besuchszeit für Inhalt verwendet.
+     Die Core-Medienmessung wird für Medieninhalte verwendet. Dabei werden Lösungs- (oder benutzerdefinierte) eVars verwendet, um Inhalt, Inhaltstyp, Inhalts-Player-Name und Inhaltskanal zu verfolgen. Lösungs- (oder benutzerdefinierte) Ereignisse werden für Medienstarts, Inhaltsstarts, Inhaltsbeendigungen und Besuchszeit für Inhalt verwendet.
 
    * **Medienanzeigen**
 
@@ -53,7 +76,7 @@ Fortgeschrittene Kunden können die Medien-Bedienfelder in Analysis Workspace nu
 
    * **Audio und Audio-Anzeigemetadaten**
 
-     Sie können einer Audiodatei und/oder einer Anzeige Metadaten hinzufügen, um die Audiodatei/die Anzeige näher zu beschreiben und zu kategorisieren. Standardisierte Audio- und Anzeigenmetadaten werden über Lösungsvariablen und Klassifizierungen gesammelt. Einzuschließende Werte: Künstler, Album, Bezeichnung, Autor, Herausgeber, Station, Sendung, Staffel, Episode, Asset-ID, Genre, Erstes Sendedatum, Erstes digitales Veröffentlichungsdatum, Inhaltsbewertung, Urheber, Sendungstyp, Anzeige-Ladevorgänge, Tagesteil, Mediensitzungs-ID, Advertiser, Kampagnen-ID und Creative-ID.
+     Metadaten können an Audio- und/oder Werbeanzeigen angehängt werden, um diese Audio-/Werbeanzeigen näher zu beschreiben und zu kategorisieren. Standardisierte Audio- und Anzeigenmetadaten werden über Lösungsvariablen und Klassifizierungen erfasst. Zu verwendende Werte: Interpret, Album, Label, Autor, Verleger, Sender, Sendung, Staffel, Folge, Asset-ID, Genre, Erstes Sendedatum, Erstes Digitaldatum, Inhaltsbewertung, Urheber, Sendungstyp, Anzeigenladevorgänge, Tagesteil, Mediensitzungs-ID, Werbekunde, Kampagnen-ID und Creative-ID.
 
    Durch die Aktivierung jedes Moduls wird ein Variablensatz reserviert und ein neuer Satz von Berichten erstellt. Mit Ausnahme der Qualitätsberichte enthalten Berichte keine Daten, es sei denn, die entsprechende Implementierung wurde durchgeführt. Bei Implementierung des Kernmoduls wird auch das Qualitätsmodul implementiert, wenn Sie es aktivieren.
 
@@ -68,8 +91,8 @@ Fortgeschrittene Kunden können die Medien-Bedienfelder in Analysis Workspace nu
    | Option | Hinweise |
    | --- | --- |
    | Weiterhin benutzerspezifische Variablen verwenden | Vorteile und Nachteile:<ul> <li> **Vorteile**: Die Inhaltstrend-Erstellung funktioniert auch nach der Migration. </li> <li> **Nachteile:** Erfordert die Beibehaltung von zwei benutzerdefinierten eVars und drei benutzerdefinierten Ereignissen für Medien. Sie können ein einziges benutzerspezifisches eVar und ein einziges benutzerspezifisches Ereignis erneut verwenden. </li> </ul> Wenn Sie weiterhin benutzerspezifische Variablen verwenden möchten: <ol> <li>Wählen Sie **[!UICONTROL Benutzerdefinierte Variablen verwenden]** aus und klicken Sie auf **[!UICONTROL Speichern.]** </li> <li>Wenn Sie dazu aufgefordert werden, ordnen Sie die aktuellen benutzerdefinierten eVars und Ereignisse zu und klicken Sie auf **[!UICONTROL Speichern:]** </li> </ol> |
-   | Zu Lösungsvariablen migrieren | Vorteile und Nachteile:<ul> <li> **Vorteile:** Sie können drei benutzerspezifische eVars und vier benutzerspezifische Ereignisse erneut verwenden. </li> <li> **Nachteile:** Sie verlieren **alle** historischen Trends und Vergleiche für Medienberichte. Das bedeutet, dass Sie keine Trendansicht für Inhaltsdaten oder Inhaltszeiten erstellen können, die vor der Migration zu Heartbeats wiedergegeben wurden. </li> </ul> **Einschränkung:** Migrieren Sie nur dann zu Lösungsvariablen, wenn Sie sicher sind, dass Sie diese Trends nicht beibehalten möchten. Alle Kunden sollten nur dann Lösungsvariablen verwenden und Mediendaten anhand von Verarbeitungsregeln an vorhandene Props und eVars übergeben, wenn sie den Verlauf beibehalten müssen. Migrieren der Lösungsvariablen: Wählen Sie **[!UICONTROL Lösungsvariablen verwenden]** aus und klicken Sie auf **[!UICONTROL Speichern].** <br><br> WICHTIG: Bei der Migration zu Lösungsvariablen gehen **alle** Verlaufstrends und -vergleiche für Medienberichte verloren. |
+   | Zu Lösungsvariablen migrieren | Vorteile und Nachteile:<ul> <li> **Vorteile:** Sie können drei benutzerspezifische eVars und vier benutzerspezifische Ereignisse erneut verwenden. </li> <li> **Nachteile:** Sie verlieren **alle** historischen Trends und Vergleiche für Medienberichte. Das bedeutet, dass Sie keine Trendansicht für Inhaltsdaten oder Inhaltszeiten erstellen können, die vor der Migration zu Heartbeats wiedergegeben wurden. </li> </ul> **Einschränkung:** Migrieren Sie nur dann zu Lösungsvariablen, wenn Sie sicher sind, dass Sie diese Trends nicht beibehalten möchten. Alle Kunden sollten nur dann Lösungsvariablen verwenden und Mediendaten anhand von Verarbeitungsregeln an vorhandene Props und eVars übergeben, wenn sie den Verlauf beibehalten müssen. Um zu Lösungsvariablen zu migrieren, wählen Sie **[!UICONTROL Lösungsvariablen verwenden]** und klicken Sie auf **[!UICONTROL Speichern].** <br><br> WICHTIG: Bei der Migration zu Lösungsvariablen verlieren Sie **alle** historischen Trends und Vergleiche für Medienberichte. |
 
 >[!IMPORTANT]
 >
->Ändern Sie nicht die Klassifizierungsnamen für Variablen, die in den Metriken und Metadatentabellen aufgeführt sind (z. B. [Audio- und Videoparameter](/help/implementation/variables/audio-video-parameters.md)) und dort unter „Berichterstellung/Reservierte Variable“ als „Klassifizierung“ beschrieben sind. Die Medienklassifizierungen werden definiert, wenn eine Report Suite für das Medien-Tracking aktiviert ist. Adobe fügt von Zeit zu Zeit neue Eigenschaften hinzu. In diesem Fall müssen Kunden ihre Report Suites erneut aktivieren, um Zugriff auf die neuen Medieneigenschaften zu erhalten. Während des Aktualisierungsvorgangs ermittelt Adobe anhand der Namen der Variablen, ob die Klassifizierungen aktiviert sind. Wenn eine fehlt, fügt Adobe die fehlenden erneut hinzu.
+>Ändern Sie nicht die Klassifizierungsnamen für Variablen, die in der Dokumentation zu den Variablen für Streaming-Medien (über den Link [Übersicht über Streaming-Medien-Services](/help/media-overview.md)) aufgeführt sind und dort unter „Berichterstellung/Reservierte Variable“ als „Klassifizierung“ beschrieben sind. Die Medienklassifizierungen werden definiert, wenn eine Report Suite für das Medien-Tracking aktiviert ist. Adobe fügt von Zeit zu Zeit neue Eigenschaften hinzu. In diesem Fall müssen Kunden ihre Report Suites erneut aktivieren, um Zugriff auf die neuen Medieneigenschaften zu erhalten. Während des Aktualisierungsvorgangs ermittelt Adobe anhand der Namen der Variablen, ob die Klassifizierungen aktiviert sind. Wenn eine fehlt, fügt Adobe die fehlenden erneut hinzu.

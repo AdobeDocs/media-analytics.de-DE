@@ -5,14 +5,14 @@ uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 92%
+source-wordcount: '496'
+ht-degree: 69%
 
 ---
 
-# Opt-out und Datenschutz {#opt-out-and-privacy}
+# Opt-out und Datenschutz{#opt-out-and-privacy}
 
 ## Opt-out/Opt-in {#opt-out-opt-in}
 
@@ -110,3 +110,19 @@ Beispiel:
   ```
   vids = ADBMobile().getAllIdentifiers()
   ```
+
+## Opt-out-Parameter in Analytics {#analytics-opt-out}
+
+Mit zwei reservierten Parametern können Sie Media Analytics-Daten aus der Server-seitigen Weiterleitung an Audience Manager und aus der Datenfreigabe mit Dritten unterdrücken. Diese werden zusammen mit Sitzungsparametern auf API-Ebene übergeben, die nicht im SDK-Konfigurationsobjekt festgelegt sind.
+
+| Parameter | API-Schlüssel | Kontextdaten |
+| --- | --- | --- |
+| Deaktivieren der Server-seitigen Weiterleitung | `analytics.optOutServerSideForwarding` | `cm.dmp` |
+| Opt-out von der Datenfreigabe | `analytics.optOutSellToThirdParty` | `cm.sell` |
+
+* **`analytics.optOutServerSideForwarding`**: Unterdrückt bei der `true` die Server-seitige Weiterleitung dieses Treffers an Audience Manager und andere Adobe-Ziele.
+* **`analytics.optOutSellToThirdParty`**: Wenn `true`, unterdrückt die Freigabe dieser Trefferdaten für Drittanbieterpartner.
+
+>[!NOTE]
+>
+>Diese Parameter werden in der Referenz [Mediensammlungs-API-Sitzungen“ &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md). Sie gelten für Implementierungen der Mediensammlungs-API und der Media Edge-API. Die oben beschriebenen Opt-out-Steuerelemente auf SDK-Ebene gelten für Mobile- und OTT-Implementierungen.

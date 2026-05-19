@@ -4,10 +4,22 @@ description: Erfahren Sie, wie Sie Audiences zum neuen Datentyp Adobe Analytics 
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 79203a2f-8158-44f2-83b2-146179be9180
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/ct8mDbIpg15Jzvf1MRaG4XFtuxbq-EUKPe106zyO7zQ
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '1346'
-ht-degree: 46%
+source-wordcount: 1376
+ht-degree: 45%
 
 ---
 
@@ -26,27 +38,27 @@ Da die Media Analytics- und ADC-Teams derzeit an der vollständigen Migration zu
 | Feldname | Aktueller XDM-Feldpfad (veraltet) | XDM-Feldpfad für Berichterstellung | Datentyp | Abgeleitetes Feld | Hinweise |
 |--------------------|---------------------------------------------------------------------------|---------------------------------------------------|-----------|-------------------|-----------------------------------------------------------------------|
 | Stream-Typ | media.mediaTimed.primaryAssetReference.streamType | mediaReporting.sessionDetails.streamType | Dimension | Stream-Typ |                                                                       |
-| Inhalts-ID | media.mediaTimed.primaryAssetReference._id | mediaReporting.sessionDetails.name | Dimension | Inhalts-ID |                                                                       |
-| Länge des Inhalts | media.mediaTimed.primaryAssetReference._xmpDM.duration | mediaReporting.sessionDetails.length | Dimension | Länge des Inhalts |                                                                       |
+| Inhalts-ID | media.mediaTimed.primaryAssetReference.id | mediaReporting.sessionDetails.name | Dimension | Inhalts-ID |                                                                       |
+| Länge des Inhalts | media.mediaTimed.primaryAssetReference.xmpDM.duration | mediaReporting.sessionDetails.length | Dimension | Länge des Inhalts |                                                                       |
 | Content-Typ | media.mediaTimed.primaryAssetViewDetails.broadcastContentType | mediaReporting.sessionDetails.contentType | Dimension | Content-Typ |                                                                       |
-| Mediensitzungs-ID | media.mediaTimed.primaryAssetViewDetails._id | mediaReporting.sessionDetails.ID | Dimension | Mediensitzungs-ID |                                                                       |
+| Mediensitzungs-ID | media.mediaTimed.primaryAssetViewDetails.id | mediaReporting.sessionDetails.ID | Dimension | Mediensitzungs-ID |                                                                       |
 | Inhalts-Player-Name | media.mediaTimed.primaryAssetViewDetails.playerName | mediaReporting.sessionDetails.playerName | Dimension | Inhalts-Player-Name |                                                                       |
 | Inhaltskanal | media.mediaTimed.primaryAssetViewDetails.broadcastChannel | mediaReporting.sessionDetails.channel | Dimension | Inhaltskanal |                                                                       |
 | Inhaltssegment | media.mediaTimed.primaryAssetViewDetails.videoSegment | mediaReporting.sessionDetails.segment | Dimension | Inhaltssegment |                                                                       |
-| Inhaltsname | media.mediaTimed.primaryAssetReference._dc.title | mediaReporting.sessionDetails.friendlyName | Dimension | Inhaltsname |                                                                       |
+| Inhaltsname | media.mediaTimed.primaryAssetReference.dc.title | mediaReporting.sessionDetails.friendlyName | Dimension | Inhaltsname |                                                                       |
 | Videopfad | *Wird in AEP/CJA nicht verwendet* |                                                   |           |                   | Adobe Analytics-spezifische Eigenschaft |
-| Serie | media.mediaTimed.primaryAssetReference._iptc4xmpExt.Series._iptc4xmpExt.Name | mediaReporting.sessionDetails.show | Dimension | Serie |                                                                       |
-| Staffel | media.mediaTimed.primaryAssetReference._iptc4xmpExt.Season._iptc4xmpExt.Name | mediaReporting.sessionDetails.season | Dimension | Staffel |                                                                       |
-| Folge | media.mediaTimed.primaryAssetReference._iptc4xmpExt.Episode._iptc4xmpExt.Name | mediaReporting.sessionDetails.episode | Dimension | Folge |                                                                       |
-| Genre | media.mediaTimed.primaryAssetReference._iptc4xmpExt.Genre | mediaReporting.sessionDetails.genreList | Dimension | Nicht unterstützt | MediaReporting-Feld verwenden |
+| Serie | media.mediaTimed.primaryAssetReference.iptc4xmpExt.Series.iptc4xmpExt.Name | mediaReporting.sessionDetails.show | Dimension | Serie |                                                                       |
+| Staffel | media.mediaTimed.primaryAssetReference.iptc4xmpExt.Season.iptc4xmpExt.Name | mediaReporting.sessionDetails.season | Dimension | Staffel |                                                                       |
+| Folge | media.mediaTimed.primaryAssetReference.iptc4xmpExt.Episode.iptc4xmpExt.Name | mediaReporting.sessionDetails.episode | Dimension | Folge |                                                                       |
+| Genre | media.mediaTimed.primaryAssetReference.iptc4xmpExt.Genre | mediaReporting.sessionDetails.genreList | Dimension | Nicht unterstützt | MediaReporting-Feld verwenden |
 | Netzwerk | media.mediaTimed.primaryAssetViewDetails.broadcastNetwork | mediaReporting.sessionDetails.network | Dimension | Netzwerk |                                                                       |
 | Sendungstyp | media.mediaTimed.primaryAssetReference.showType | mediaReporting.sessionDetails.showType | Dimension | Sendungstyp |                                                                       |
 | MVPD | media.mediaTimed.idp | mediaReporting.sessionDetails.mvpd | Dimension | MVPD |                                                                       |
 | Autorisiert | Nicht unterstützt | mediaReporting.sessionDetails.authorized | Dimension | Autorisiert |                                                                       |
 | Tagesteil | Nicht unterstützt | mediaReporting.sessionDetails.dayPart | Dimension | Tagesteil |                                                                       |
 | Medien-Feed-Typ | media.mediaTimed.primaryAssetViewDetails.sourceFeed | mediaReporting.sessionDetails.feed | Dimension | Medien-Feed-Typ |                                                                       |
-| Künstler | media.mediaTimed.primaryAssetReference._xmpDM.artist | mediaReporting.sessionDetails.artist | Dimension | Künstler |                                                                       |
-| Album | media.mediaTimed.primaryAssetReference._xmpDM.album | mediaReporting.sessionDetails.album | Dimension | Album |                                                                       |
+| Künstler | media.mediaTimed.primaryAssetReference.xmpDM.artist | mediaReporting.sessionDetails.artist | Dimension | Künstler |                                                                       |
+| Album | media.mediaTimed.primaryAssetReference.xmpDM.album | mediaReporting.sessionDetails.album | Dimension | Album |                                                                       |
 | Beschriftung | Nicht unterstützt | mediaReporting.sessionDetails.label | Dimension | Beschriftung |                                                                       |
 | Autor | Nicht unterstützt | mediaReporting.sessionDetails.author | Dimension | Autor |                                                                       |
 | Station | media.mediaTimed.primaryAssetReference._id3.Audio._id3.TRSN | mediaReporting.sessionDetails.station | Dimension | Station |                                                                       |
@@ -83,27 +95,27 @@ Da die Media Analytics- und ADC-Teams derzeit an der vollständigen Migration zu
 
 {style="table-layout:auto"}
 
-## Kapitelparameter 
+## Kapitelparameter
 
 | Feldname | Aktueller XDM-Feldpfad (veraltet) | XDM-Feldpfad für Berichterstellung | Datentyp | Abgeleitetes Feld | Hinweise |
 |------------------|--------------------------------------------------------------|-------------------------------------------|-----------|----------------|-----------|
-| Kapitel | media.mediaTimed.mediaChapter.chapterAssetReference._id | mediaReporting.chapterDetails.ID | Dimension | Kapitel |           |
+| Kapitel | media.mediaTimed.mediaChapter.chapterAssetReference.id | mediaReporting.chapterDetails.ID | Dimension | Kapitel |           |
 | Chapter Start | media.mediaTimed.mediaChapter.impressions.value | mediaReporting.chapterDetails.isStarted | Metrik | Chapter Start |           |
 | Kapitelbeendigung | media.mediaTimed.mediaChapter.completes.value | mediaReporting.chapterDetails.isCompleted | Metrik | Kapitelbeendigung |          |
 | Besuchszeit für Kapitel | media.mediaTimed.mediaChapter.timePlayed.value | mediaReporting.chapterDetails.timePlayed | Metrik | Besuchszeit für Kapitel |        |
 
 {style="table-layout:auto"}
 
-## Anzeigenparameter 
+## Anzeigenparameter
 
 | Feldname | Aktueller XDM-Feldpfad (veraltet) | XDM-Feldpfad für Berichterstellung | Datentyp | Abgeleitetes Feld | Hinweise |
 |------------------|--------------------------------------------------------------|------------------------------------------------|-----------|----------------|-----------|
-| Anzeigen-ID | advertising.adAssetReference._id | mediaReporting.advertisingDetails.name | Dimension | Anzeigen-ID |           |
+| Anzeigen-ID | advertising.adAssetReference.id | mediaReporting.advertisingDetails.name | Dimension | Anzeigen-ID |           |
 | Anzeigenposition innerhalb der Werbeunterbrechung | advertising.adAssetViewDetails.index | mediaReporting.advertisingDetails.podPosition | Dimension | Anzeigenposition innerhalb der Werbeunterbrechung |     |
-| Anzeigenlänge | advertising.adAssetReference._xmpDM.duration | mediaReporting.advertisingDetails.length | Metrik | Anzeigenlänge |           |
+| Anzeigenlänge | advertising.adAssetReference.xmpDM.duration | mediaReporting.advertisingDetails.length | Metrik | Anzeigenlänge |           |
 | Name des Anzeigen-Players | advertising.adAssetViewDetails.playerName | mediaReporting.advertisingDetails.playerName | Dimension | Name des Anzeigen-Players |           |
-| ID der Werbeunterbrechung | advertising.adAssetViewDetails.adBreak._id | mediaReporting.advertisingPodDetails.ID | Dimension | ID der Werbeunterbrechung |           |
-| Anzeigenname | advertising.adAssetReference._dc.title | mediaReporting.advertisingDetails.friendlyName | Dimension | Anzeigenname |           |
+| ID der Werbeunterbrechung | advertising.adAssetViewDetails.adBreak.id | mediaReporting.advertisingPodDetails.ID | Dimension | ID der Werbeunterbrechung |           |
+| Anzeigenname | advertising.adAssetReference.dc.title | mediaReporting.advertisingDetails.friendlyName | Dimension | Anzeigenname |           |
 | Advertiser | advertising.adAssetReference.advertiser | mediaReporting.advertisingDetails.advertiser | Dimension | Advertiser |           |
 | Kampagnen-ID | advertising.adAssetReference.campaign | mediaReporting.advertisingDetails.campaignID | Dimension | Kampagnen-ID |           |
 | Werbung gestartet | advertising.impressions.value | mediaReporting.advertisingDetails.isStarted | Metrik | Werbung gestartet |           |
@@ -112,7 +124,7 @@ Da die Media Analytics- und ADC-Teams derzeit an der vollständigen Migration zu
 
 {style="table-layout:auto"}
 
-## Qualitätsparameter 
+## Qualitätsparameter
 
 | Feldname | Aktueller XDM-Feldpfad (veraltet) | XDM-Feldpfad für Berichterstellung | Datentyp | Abgeleitete Felder | Hinweise |
 |------------------------|--------------------------------------------------------------|------------------------------------------------|-----------|----------------|-----------|
@@ -189,8 +201,8 @@ Beim Arbeiten mit den Klassifizierungsdatensätzen während des Reportings müss
 | videoad | Anzeigenname | `<_sandbox>.ad_name` |
 | videoad | Creative-ID | `<_sandbox>.creative_id` |
 | videoadpod | Schlüssel/Werbe-Pod-ID | `<_sandbox>.key` |
-| videoadpod | Pod-Position | `<_sandbox>.pod_position` |
-| videoadpod | Pod-Name | `<_sandbox>.pod_name` |
+| videoadpod | Position der Werbeunterbrechung | `<_sandbox>.pod_position` |
+| videoadpod | Name der Werbeunterbrechung | `<_sandbox>.pod_name` |
 | videochapter | Schlüssel/Kapitel | `<_sandbox>.key` |
 | videochapter | Kapitellänge | `<_sandbox>.chapter_length` |
 | videochapter | Kapiteloffset | `<_sandbox>.chapter_offset` |

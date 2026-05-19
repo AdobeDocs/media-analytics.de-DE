@@ -3,12 +3,27 @@ title: Informationen zu den Voraussetzungen für Adobe Streaming Media Services
 description: Erste Schritte mit den Services für Streaming-Medien. Erfahren Sie, was Sie für die Implementierung benötigen.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-feature: "Streaming Media, Workspace Basics"
+feature: Streaming Media, Workspace Basics
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/e9iYwDwT-zSSZ3hV20U1w7p-MtKaK4Q8-vGMCrnenpc
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: c8add8f2-4250-4fd9-9cde-9707036c567d
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 62%
+source-wordcount: 491
+ht-degree: 66%
 
 ---
 
@@ -19,7 +34,7 @@ Bevor Sie mit der Implementierung von Adobe Streaming Media Services beginnen, f
 1. **Überblick über Adobe Streaming Media Services**<br>
 Bevor Sie mit der Implementierung von Streaming Media Services beginnen, lesen Sie die [Übersicht über Adobe Streaming Media Services](/help/media-overview.md), um sicherzustellen, dass sie Ihren Anforderungen entspricht.
 
-1. **Bestätigen Sie Ihr Preismodell**<br>
+1. **Bestätigen des Preismodells**<br>
 Das aktuelle Preismodell für das Add-on Customer Journey Analytics Streaming Media Collection und das Add-on Adobe Analytics for Streaming Media basiert auf Video-Streams. Wenden Sie sich bei Bedarf an Ihren Kundenbetreuer oder Ihr Adobe-Account-Team, da das Add-on separat für Adobe Analytics und Adobe Experience Platform erhältlich ist.
 
 1. **Adobe Analytics-Berichte aktivieren**<br>

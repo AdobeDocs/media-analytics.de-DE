@@ -5,10 +5,28 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/DsVDPsePWd123v5D8OdC2zUn52IWAOwh6QxcpvB1FIs
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: c8add8f2-4250-4fd9-9cde-9707036c567d
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 94%
+source-wordcount: 626
+ht-degree: 81%
 
 ---
 
@@ -45,7 +63,7 @@ Um das SDK für Streaming-Medien einzurichten und zu verwenden, führen Sie die 
    |  Name der Methode  |  Beschreibung  | erforderlich |
    | --- | --- | :---: |
    | `getQoSObject()` | Gibt die `MediaObject`-Instanz zurück, die die aktuellen Informationen zur Servicequalität enthält. Diese Methode wird mehrmals während einer Wiedergabesitzung aufgerufen. Die Player-Implementierung muss stets die aktuellsten verfügbaren Servicequalitätsdaten zurückgeben. | Ja |
-   | `getCurrentPlaybackTime()` | Gibt die aktuelle Position der Abspielleiste zurück. <br /> Bei VOD-Tracking wird der Wert in Sekunden ab Beginn des Medienelements angegeben. <br /> Wenn der Player beim Livestreaming keine Informationen zur Inhaltsdauer bereitstellt, kann der Wert als Anzahl der Sekunden seit Mitternacht (UTC) des Tages angegeben werden. <br /> Hinweis: Bei Verwendung von Fortschrittsmarken ist die Inhaltsdauer erforderlich und der Abspielkopf muss als Anzahl von Sekunden ab Beginn des Medienelements aktualisiert werden, beginnend mit 0. | Ja |
+   | `getCurrentPlaybackTime()` | Gibt die aktuelle Position des Abspielkopfs zurück. <br /> Für das VOD-Tracking wird der Wert in Sekunden ab Beginn des Medienelements angegeben. <br /> Wenn der Player beim Live-Streaming keine Informationen zur Inhaltsdauer bereitstellt, kann der Wert als Anzahl der Sekunden seit Mitternacht (UTC) des Tages angegeben werden. <br /> Hinweis: Bei Verwendung von Fortschrittsmarken ist die Inhaltsdauer erforderlich und der Abspielkopf muss als Anzahl von Sekunden ab Beginn des Medienelements aktualisiert werden, beginnend mit 0. | Ja |
 
    >[!TIP]
    >
@@ -117,7 +135,8 @@ Media Analytics-Tracking-Implementierungen generieren zwei Arten von Tracking-Au
 * Medien- und Anzeigenstartaufrufe werden direkt an den Adobe Analytics-Server (AppMeasurement) gesendet.
 * Heartbeat-Aufrufe werden an den Media Analytics-Tracking-Server (Heartbeats) gesendet, dort verarbeitet und an den Adobe Analytics-Server weitergeleitet.
 
-* **Adobe Analytics-Server (AppMeasurement)** Weitere Informationen zu den Optionen für Tracking-Server finden Sie unter [Korrektes Ausfüllen der Variablen trackingServer und trackingServerSecure.](https://helpx.adobe.com/de/analytics/kb/determining-data-center.html)
+* **Adobe Analytics-Server (AppMeasurement)**
+Weitere Informationen zu Tracking-Server-Optionen finden Sie unter [Füllen Sie die Variablen „trackingServer“ und „trackingServerSecure“ ordnungsgemäß aus.](https://helpx.adobe.com/de/analytics/kb/determining-data-center.html)
 
   >[!IMPORTANT]
   >
@@ -126,6 +145,6 @@ Media Analytics-Tracking-Implementierungen generieren zwei Arten von Tracking-Au
   Der Analytics-Tracking-Server sollte auf „`.sc.omtrdc.net`“ enden oder ein CNAME sein.
 
 * **&#x200B; Media Analytics-Server (Heartbeats)**
-Dieser hat immer das Format „`[your_namespace].hb.omtrdc.net`“. Der Wert „`[your_namespace]`“gibt Ihr Unternehmen an und wird von Adobe bereitgestellt.
+Dieses hat immer das Format &quot;`[your_namespace].hb.omtrdc.net`&quot;. Der Wert „`[your_namespace]`“gibt Ihr Unternehmen an und wird von Adobe bereitgestellt.
 
 Das Medien-Tracking verhält sich auf allen Plattformen – Desktop oder Mobilgeräte – gleich. Das Audio-Tracking funktioniert derzeit auf mobilen Plattformen. Es gibt einige universelle Variablen, die für alle Tracking-Aufrufe überprüft werden müssen:

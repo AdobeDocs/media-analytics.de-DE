@@ -4,10 +4,24 @@ description: Erfahren Sie, wie Sie für iOS vom Media SDK zu Launch migrieren.
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/drdnQd83UXJkMKj-isUKPeIHe9xGetwY31HzHf37IEo
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 97%
+source-wordcount: 429
+ht-degree: 60%
 
 ---
 
@@ -20,8 +34,8 @@ ht-degree: 97%
 
 ### Standalone Media SDK
 
-Im eigenständigen Media SDK konfigurieren Sie das Tracking in der App,
-und diese Konfiguration wird beim Erstellen des Trackers an das SDK übergeben.
+In der eigenständigen Media SDK konfigurieren Sie die Tracking-Konfiguration in der App,
+und beim Erstellen des Trackers an SDK übergeben.
 
 ```objective-c
 ADBMediaHeartbeatConfig *config =
@@ -54,7 +68,9 @@ Die Media-Erweiterung verwendet zum Tracking die konfigurierten Parameter.
 
 ### Standalone Media SDK
 
-Im Standalone Media SDK erstellen Sie das Objekt `ADBMediaHeartbeatConfig` manuell und konfigurieren die Tracking-Parameter. Implementieren Sie die Delegate-Schnittstelle, die die `getQoSObject()` und `getCurrentPlaybackTime()functions.` verfügbar machen.
+In der eigenständigen Media SDK erstellen Sie das `ADBMediaHeartbeatConfig` manuell
+und konfigurieren Sie die Tracking-Parameter. Implementieren der Delegaten-Schnittstelle, die die
+`getQoSObject()` und `getCurrentPlaybackTime()functions.`
 
 Erstellen Sie eine MediaHeartbeat-Instanz zum Tracking:
 
@@ -93,7 +109,7 @@ ADBMediaHeartbeat* tracker =
 
 ### Launch-Erweiterung
 
-[Media API-Referenz – Erstellen eines Media-Trackers](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
+[Media API-Referenz - Medien-Tracker erstellen](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
 
 Bevor Sie den Tracker erstellen, registrieren Sie die Media-Erweiterung und die abhängigen Erweiterungen beim Mobile Core.
 
@@ -128,18 +144,25 @@ Der Tracker übernimmt automatisch die Konfiguration der Launch-Eigenschaft.
 
 ### Standalone Media SDK
 
-Im Standalone Media SDK wird ein Delegate-Objekt, das das `ADBMediaHeartbeartDelegate`-Protokoll implementiert, während der Tracker-Erstellung übergeben.
-Durch die Implementierung werden die aktuellen QoE- und die Abspielleistendaten zurückgegeben, wenn der Tracker die Schnittstellen-Methoden `getQoSObject()` und `getCurrentPlaybackTime()` aufruft.
+In der eigenständigen Media SDK ein Delegate-Objekt, das
+`ADBMediaHeartbeartDelegate` Protokoll wird während der Tracker-Erstellung übergeben.
+Die Implementierung sollte die neueste QoE und den neuesten Abspielkopf zurückgeben, wenn die
+Tracker ruft die Schnittstelle `getQoSObject()` und `getCurrentPlaybackTime()` auf
+Methoden.
 
 ### Launch-Erweiterung
 
-Durch die Implementierung wird die aktuelle Player-Abspielleiste aktualisiert, indem die `updateCurrentPlayhead`-Methode aufgerufen wird, die vom Tracker verfügbar gemacht wird. Für ein exaktes Tracking sollten Sie diese Methode mindestens einmal pro Sekunde aufrufen.
+Die Implementierung sollte den aktuellen Player-Abspielkopf aktualisieren, indem sie die Variable
+`updateCurrentPlayhead` vom Tracker offen gelegte Methode. Für genaues Tracking
+Sie sollten diese Methode mindestens einmal pro Sekunde aufrufen.
 
-[Media API-Referenz – Aktuelle Abspielleiste aktualisieren](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
+[Media API-Referenz - Aktuellen Abspielkopf aktualisieren](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
 
-Durch die Implementierung wird die QoE-Informationen aktualisiert, indem die vom Tracker verfügbar gemachte `updateQoEObject`-Methode aufgerufen wird. Sie sollten diese Methode bei jeder Änderung der Qualitätsmetriken aufrufen.
+Die -Implementierung sollte die QoE-Informationen aktualisieren, indem sie die
+`updateQoEObject` vom Tracker offen gelegte Methode. Sie sollten diese Methode aufrufen
+wann immer sich die Qualitätsmetriken ändern.
 
-[Media API-Referenz – QoE-Objekt aktualisieren](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
+[Media API-Referenz - QoE-Objekt aktualisieren](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
 
 ## Weiterleiten von Standardmedien/Anzeigenmetadaten
 

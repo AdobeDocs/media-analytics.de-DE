@@ -5,10 +5,28 @@ uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/ChiE4jNDe-8GnbzNp8f9epCCFi6Hq9FkwrLzZEbcxcU
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+  - id: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 99%
+source-wordcount: 854
+ht-degree: 84%
 
 ---
 
@@ -133,14 +151,14 @@ Führen Sie die folgenden Aktionen aus und zeichnen Sie sie auf (in der angegebe
 
      Informationen zu Aufrufparametern und Metadaten finden Sie unter [Details zum Testaufruf.](/help/legacy/validation/test-call-details.md#play-main-content)
 
-1. **Wiedergabe mindestens 30 Sekunden lang anhalten.** Beim Anhalten des Medienplayers sendet das SDK alle 10 Sekunden Pause-Ereignisaufrufe an den Media Analytics-Server. Wird das Video fortgesetzt, sollten erneut Wiedergabeereignisse gesendet werden.
+1. **Halten Sie die Wiedergabe mindestens 30 Sekunden lang an.** Beim Anhalten des Media Players sendet SDK alle 10 Sekunden Ereignisaufrufe an den Media Analytics-Server. Wird das Video fortgesetzt, sollten erneut Wiedergabeereignisse gesendet werden.
 
    Informationen zu Aufrufparametern und Metadaten finden Sie unter [Details zum Testaufruf](/help/legacy/validation/test-call-details.md#pause-main-content).
 
-1. **Medien suchen/scrubben.** Beim Scrubbing der Medienabspielleiste werden keine speziellen Tracking-Aufrufe gesendet. Wenn die Wiedergabe jedoch nach dem Scrubbing fortgesetzt wird, sollte der Abspielleistenwert jedoch die neue Position innerhalb des Hauptinhalts widerspiegeln.
+1. **Medien suchen/bereinigen.** Beim Bereinigen des Medien-Abspielkopfs werden keine speziellen Tracking-Aufrufe gesendet. Wenn die Medienwiedergabe nach dem Bereinigen jedoch fortgesetzt wird, sollte der Wert des Abspielkopfs die neue Position innerhalb des Hauptinhalts widerspiegeln.
 
-1. **Medien wiedergeben (nur VOD).** Wenn Medien wiedergegeben werden, sollte eine neue Reihe von Medienstart-Aufrufen gesendet werden (als wäre dies ein Neustart).
+1. **Medien wiedergeben (nur VOD).** Wenn Medien wiederholt werden, sollte ein neuer Satz von Medienstart-Aufrufen gesendet werden (als ob es sich um einen Neustart handeln würde).
 
-1. **Nächstes Medium in der Wiedergabeliste anzeigen.** Wird das nächste Medium in der Wiedergabeliste gestartet, sollte eine neue Reihe von Medienstart-Aufrufen gesendet werden.
+1. **Nächste Medien in der Wiedergabeliste anzeigen.** Beim Medienstart des nächsten Mediums in einer Wiedergabeliste sollte ein neuer Satz von Medienstart-Aufrufen gesendet werden.
 
-1. **Zwischen Medien oder Streams wechseln.** Beim Wechseln von Live-Streams sollte für den ersten Stream kein Abgeschlossen-Aufruf für Media Analytics gesendet werden. Die Medienstart- und Abspielaufrufe sollten mit dem neuen Sendungs- und Stream-Namen sowie mit den richtigen Werten für Abspielleiste und Dauer für die neue Sendung beginnen.
+1. **Wechseln von Medien oder Stream.** Beim Wechseln zwischen Live-Streams sollte kein abgeschlossener Aufruf von Media Analytics für den ersten Stream gesendet werden. Die Medienstart- und Abspielaufrufe sollten mit dem neuen Sendungs- und Stream-Namen sowie mit den richtigen Werten für Abspielleiste und Dauer für die neue Sendung beginnen.

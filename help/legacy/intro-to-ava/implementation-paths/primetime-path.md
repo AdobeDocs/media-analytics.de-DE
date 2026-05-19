@@ -4,10 +4,27 @@ description: Erfahren Sie mehr über die Adobe Primetime-Lösung und wie Sie dam
 exl-id: 756e4e62-35b3-42a2-93f5-81531e1c9cc8
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/36gsYE5aeWDJpOBILcHjkBWHonwPQaoMbepvXGQyeHc
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 71%
+source-wordcount: 261
+ht-degree: 64%
 
 ---
 
@@ -27,7 +44,7 @@ Primetime bietet eine modulare Plattform für die Medienveröffentlichung, Werbu
 * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
 
-TVSDK ist bereits in das Medien-SDK integriert, was die Implementierung auf allen unterstützen Plattformen deutlich vereinfacht und beschleunigt. <!--Primetime also supports the partnership with Nielsen.--> Befolgen Sie zur Nutzung von Primetime die gleichen Richtlinien und Voraussetzungen wie auf der [Client-Seite](/help/legacy/intro-to-ava/implementation-paths/client-side-path.md) sowie die folgenden Dokumente für Ihre Plattform(en): [Benutzerhandbuch zu Primetime.](https://helpx.adobe.com/de/support/primetime.html)
+TVSDK ist bereits in Media SDK integriert, was die Implementierung auf allen unterstützten Plattformen erheblich vereinfacht und beschleunigt. <!--Primetime also supports the partnership with Nielsen.--> Befolgen Sie zur Nutzung von Primetime die gleichen Richtlinien und Voraussetzungen wie auf der [Client-Seite](/help/legacy/intro-to-ava/implementation-paths/client-side-path.md) sowie die folgenden Dokumente für Ihre Plattform(en): [Benutzerhandbuch zu Primetime](https://helpx.adobe.com/de/support/primetime.html).
 
 >[!NOTE]
 >
