@@ -3,13 +3,12 @@ title: Berechnete Metriken
 description: Benutzerdefinierte berechnete Metriken für Berichte zu Streaming-Medien in Adobe Analytics und Customer Journey Analytics.
 feature: Metrics
 role: User, Admin
-source-git-commit: ea740a32bbd5e640cd437cd8c5c4f48071a0d02c
+source-git-commit: 1251b66173158b8fea92516197b3b9f444bfaaf7
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 5%
 
 ---
-
 
 # Berechnete Metriken
 
@@ -34,3 +33,4 @@ Informationen zum Erstellen dieser berechneten Metriken in Analysis Workspace fi
 | Dauer des Inhaltspuffers | Rate der Puffergesamtdauer im Vergleich zur Besuchszeit für den Inhalt | [`Total Buffer Duration`](/help/reporting/metrics/total-buffer-duration.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
 | Rate der Zeit bis zum Start des Inhalts | Rate der zu startenden Zeit im Vergleich zur Besuchszeit für den Inhalt | [`Time to Start`](/help/reporting/metrics/time-to-start.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
 | Besuchsrate für Anzeige | Rate der Besuchszeit für Anzeigen und der Besuchszeit für Inhalte im Vergleich | [`Ad Time Spent`](/help/reporting/metrics/ad-time-spent.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
+
