@@ -7,12 +7,12 @@ feature: Streaming Media
 role: User, Admin, Developer
 source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 94%
+source-wordcount: '656'
+ht-degree: 92%
 
 ---
 
-# Adobe Debug konfigurieren {#configure-adobe-debug}
+# Adobe Debug konfigurieren{#configure-adobe-debug}
 
 ## Zugriff auf Adobe Debug {#accessing-adobe-debug}
 
@@ -72,7 +72,7 @@ Laden Sie das SSL-Zertifikat herunter und installieren Sie es:
    **Windows**
    1. Führen Sie einen der folgenden Schritte aus:
 
-      * [Hinzufügen von Zertifikaten zum Speicher der vertrauenswürdigen Stammzertifizierungsstellen für einen lokalen Computer](https://technet.microsoft.com/de-de/library/cc754841.aspx#BKMK_addlocal)
+      * [Hinzufügen von Zertifikaten zum Speicher vertrauenswürdiger Stammzertifizierungsstellen für einen lokalen Computer](https://technet.microsoft.com/de-de/library/cc754841.aspx#BKMK_addlocal)
 
    1. Führen Sie bei Verwendung von Firefox den Prozess zur [Installation des Stammzertifikats in Mozilla Firefox](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox) aus.
 
