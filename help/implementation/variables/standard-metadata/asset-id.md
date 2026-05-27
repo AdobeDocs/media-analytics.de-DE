@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Asset-ID**&#x200B;behandelt. Siehe [Asset-ID](/help/reporting/dimensions/asset-id.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Asset-ID**behandelt. Siehe [Asset-ID](/help/reporting/dimensions/asset-id.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ Die Asset-ID-Variable ist die eindeutige Kennung für das zugrunde liegende Medi
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.asset` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.asset` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |
@@ -141,4 +141,4 @@ tracker.trackSessionStart(mediaInfo, contextData);
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).

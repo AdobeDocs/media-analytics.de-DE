@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Reporting **Dimension „Inhalt**&#x200B;behandelt. Unter [Inhalts-ID](/help/implementation/variables/core/content-id.md) finden Sie Informationen zum Erfassen dieser Variablen.*
+*Auf dieser Seite wird die Reporting **Dimension „Inhalt**behandelt. Unter [Inhalts-ID](/help/implementation/variables/core/content-id.md) finden Sie Informationen zum Erfassen dieser Variablen.*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ Inhalte werden vom Player beim Sitzungsstart als stabile Kennung für das Asset 
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.name`, wenn [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) aktiviert ist. bleibt für die Dauer des Besuchs erhalten. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.name`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds | `video`, `post_video` |
 | Audience Manager | `c_contextdata.a.media.name` |
 

@@ -21,8 +21,8 @@ Die Sitzungs-ID wird automatisch generiert, wenn das Backend ein &quot;[&quot;-]
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.vsid` einer eVar zuordnet. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.ID`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.vsid` einer eVar zuordnet. |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds | `videosessionid`, `post_videosessionid` |
 | Audience Manager | `c_contextdata.a.media.vsid` |
 

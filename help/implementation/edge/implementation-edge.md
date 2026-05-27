@@ -5,28 +5,11 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
 TQID: https://experienceleague.adobe.com/l80tlPp4rXSJCoZP1FM6oQdjkqokzbMt-NetZ2vTXBc
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b0ca67c6-0a35-482c-ad91-baac1bcb26d6
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: b0a1f9d5-5795-42a3-a6d0-bd0e2748fd06
-  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
-  - id: e38cbddc-1633-4cd5-bed5-9f289f2a6029
-  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b0ca67c6-0a35-482c-ad91-baac1bcb26d6id: b3f03848-ae12-48b2-8aab-cad18567eb32id: c153fd90-23e1-4614-81d3-3cc7571227f7id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: b0a1f9d5-5795-42a3-a6d0-bd0e2748fd06id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559id: e38cbddc-1633-4cd5-bed5-9f289f2a6029id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
 source-wordcount: 2413
@@ -52,7 +35,7 @@ Um die Datenerfassung für die Verwendung in allen Anwendungen zu standardisiere
 
 So erstellen Sie ein Schema und richten es ein:
 
-1. Beginnen Sie in Adobe Experience Platform mit der Erstellung des Schemas, wie unter [Erstellen und Bearbeiten von Schemas in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=de) beschrieben.
+1. Beginnen Sie in Adobe Experience Platform mit der Erstellung des Schemas, wie unter [Erstellen und Bearbeiten von Schemas in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en) beschrieben.
 
 1. Wählen Sie auf der Seite mit den Schemadetails beim Erstellen des Schemas [!UICONTROL **Erlebnisereignis**] aus, wenn Sie die Basisklasse für das Schema auswählen.
 
@@ -152,7 +135,7 @@ So erstellen Sie ein Schema und richten es ein:
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. [Verwenden Sie den generierten &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) für das benutzerdefinierte Feld in Ihrer Anfrage-Payload.
+   1. [Verwenden Sie den generierten ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) für das benutzerdefinierte Feld in Ihrer Anfrage-Payload.
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
@@ -168,7 +151,7 @@ So erstellen Sie ein Schema und richten es ein:
 
    Wählen Sie bei der Auswahl eines Schemas für Ihren Datensatz das zuvor erstellte Schema aus, wie unter [Einrichten des Schemas in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform) beschrieben.
 
-1. Fahren Sie mit [Konfigurieren eines Datenstroms in Customer Journey Analytics &#x200B;](#configure-a-datastream-in-adobe-experience-platform).
+1. Fahren Sie mit [Konfigurieren eines Datenstroms in Customer Journey Analytics ](#configure-a-datastream-in-adobe-experience-platform).
 
 ## Konfigurieren eines Datenstroms in Adobe Experience Platform
 
@@ -190,11 +173,11 @@ So erstellen Sie ein Schema und richten es ein:
 
       * [!UICONTROL **Adobe Analytics**] (bei Verwendung von Adobe Analytics)
 
-        Wenn Sie Adobe Analytics verwenden, stellen Sie sicher, dass Sie eine Report Suite definieren, wie in [Erstellen einer Report Suite](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite) beschrieben.
+        Wenn Sie Adobe Analytics verwenden, stellen Sie sicher, dass Sie eine Report Suite definieren, wie in [Erstellen einer Report Suite](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite) beschrieben.
 
       * [!UICONTROL **Adobe Experience Platform**] (bei Verwendung von Customer Journey Analytics)
 
-     Informationen zum Hinzufügen eines Services zu einem Datenstrom finden Sie im Abschnitt „Hinzufügen von Services zu einem Datenstrom“ in [Konfigurieren eines &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=de#view-details)&quot;.
+     Informationen zum Hinzufügen eines Services zu einem Datenstrom finden Sie im Abschnitt „Hinzufügen von Services zu einem Datenstrom“ in [Konfigurieren eines ](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details)&quot;.
 
      ![Fügen Sie den Adobe Analytics-Service hinzu](assets/datastream-add-service.png)
 
@@ -222,7 +205,7 @@ So erstellen Sie ein Schema und richten es ein:
 
    1. Stellen Sie sicher [!UICONTROL **dass die Einstellung „Alle neuen**] importieren“ aktiviert ist.
 
-1. Fahren Sie mit [Datenansicht in Customer Journey Analytics erstellen“ &#x200B;](#create-a-new-data-view-in-customer-journey-analytics).
+1. Fahren Sie mit [Datenansicht in Customer Journey Analytics erstellen“ ](#create-a-new-data-view-in-customer-journey-analytics).
 
 ## Erstellen einer Datenansicht in Customer Journey Analytics
 
@@ -315,7 +298,7 @@ So erstellen Sie ein Schema und richten es ein:
 
 1. Wählen Sie [!UICONTROL **Speichern und fortfahren**] > [!UICONTROL **Speichern und beenden**] um Ihre Änderungen zu speichern.
 
-1. Fahren Sie mit [Erstellen und Konfigurieren eines Projekts in Customer Journey Analytics &#x200B;](#create-and-configure-a-project-in-customer-journey-analytics).
+1. Fahren Sie mit [Erstellen und Konfigurieren eines Projekts in Customer Journey Analytics ](#create-and-configure-a-project-in-customer-journey-analytics).
 
 ## Erstellen und Konfigurieren eines Projekts in Customer Journey Analytics
 
@@ -355,9 +338,9 @@ So erstellen Sie ein Schema und richten es ein:
 
    >[!NOTE]
    >
-   >Wenn Sie Adobe Analytics als Upstream für Ihren Datenstrom einrichten, sind die benutzerdefinierten Metadaten auch in ContextData mit dem Namen vorhanden, den Sie im Schema festgelegt haben (ohne das Mandantenpräfix, z. B. myCustomField). Dadurch können alle für ContextData verfügbaren Adobe Analytics-Funktionen verwendet werden, z. B[&#x200B; „Erstellen einer Verarbeitungsregel](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules).
+   >Wenn Sie Adobe Analytics als Upstream für Ihren Datenstrom einrichten, sind die benutzerdefinierten Metadaten auch in ContextData mit dem Namen vorhanden, den Sie im Schema festgelegt haben (ohne das Mandantenpräfix, z. B. myCustomField). Dadurch können alle für ContextData verfügbaren Adobe Analytics-Funktionen verwendet werden, z. B[ „Erstellen einer Verarbeitungsregel](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules).
 
-1. Geben Sie das Projekt frei, wie unter [Freigeben von Projekten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=de) beschrieben.
+1. Geben Sie das Projekt frei, wie unter [Freigeben von Projekten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en) beschrieben.
 
    >[!NOTE]
    >
