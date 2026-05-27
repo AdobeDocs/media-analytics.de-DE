@@ -24,7 +24,7 @@ Die Variable Name der Werbeunterbrechung ist der Anzeigename der Werbeunterbrech
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.podFriendlyName` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.ad.podFriendlyName` |
 | **Erforderlich** | Ja (Mobile SDK); Nein (Edge, Mediensammlungs-API) |
 | **Gesendet mit** | [Start der Werbeunterbrechung](/help/implementation/events/ads/ad-break-start.md) und Schließen der Anzeige |

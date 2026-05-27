@@ -24,7 +24,7 @@ Die Variable „Anzeige im Pod“ ist die nullindizierte Position der Anzeige in
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.podPosition` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM-Sammlungsfeld** | [`mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.ad.podPosition` |
 | **Erforderlich** | Ja |
 | **Gesendet mit** | [Anzeigenstart](/help/implementation/events/ads/ad-start.md), Anzeigenschluss |
