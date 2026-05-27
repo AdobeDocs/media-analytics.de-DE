@@ -36,7 +36,7 @@ Das erste digitale Datum wird vom Player beim Sitzungsstart festgelegt.
 
 ## Klassifizierungsansatz
 
-Adobe erstellt die erste digitale Datumsklassifizierungsstruktur automatisch, wenn **[[!UICONTROL Videometadaten]](/help/reporting/media-reports-enable.md)** für die Report Suite aktiviert ist. Sie sind dafür verantwortlich, die Klassifizierung mithilfe von „Klassifizierungssätze[ auszufüllen und zu ](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
+Adobe erstellt die erste digitale Datumsklassifizierungsstruktur automatisch, wenn **[[!UICONTROL Videometadaten]](/help/reporting/media-reports-enable.md)** für die Report Suite aktiviert ist. Sie sind dafür verantwortlich, die Klassifizierung mithilfe von „Klassifizierungssätze[&#x200B; auszufüllen und zu &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
 
 Dieser Ansatz bietet eine garantierte 1::1-Beziehung zwischen jeder Inhalts-ID und dem ersten digitalen Datum. Klassifizierungsaktualisierungen gelten rückwirkend für alle historischen Daten für diese ID.
 

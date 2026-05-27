@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Kapitelname**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/chapters/chapter-name.md) unter „Kapitelname“*
+*Auf dieser Seite wird die Berichtsdimension **Kapitelname**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/chapters/chapter-name.md) unter „Kapitelname“*
 
 >[!ENDSHADEBOX]
 
@@ -36,7 +36,7 @@ Der Name des Kapitels wird vom Player bei jedem [Kapitelstart](/help/implementat
 
 ## Klassifizierungsansatz
 
-Adobe erstellt die Klassifizierungsstruktur für Kapitelnamen automatisch, wenn **[[!UICONTROL Medienkapitel]](/help/reporting/media-reports-enable.md)** für die Report Suite aktiviert ist. Sie sind dafür verantwortlich, die Klassifizierung mithilfe von „Klassifizierungssätze[ auszufüllen und zu ](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
+Adobe erstellt die Klassifizierungsstruktur für Kapitelnamen automatisch, wenn **[[!UICONTROL Medienkapitel]](/help/reporting/media-reports-enable.md)** für die Report Suite aktiviert ist. Sie sind dafür verantwortlich, die Klassifizierung mithilfe von „Klassifizierungssätze[&#x200B; auszufüllen und zu &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
 
 Dieser Ansatz bietet eine garantierte 1::1-Beziehung zwischen jeder Kapitel-ID und ihrem Anzeigenamen. Klassifizierungsaktualisierungen gelten rückwirkend für alle historischen Daten für diese ID.
 
@@ -52,4 +52,4 @@ Der Nachteil besteht darin, dass Sie die garantierte 1::1-Beziehung zwischen dem
 
 ## Dimensionselemente
 
-Jedes Element ist der literale Kapiteltitel, der am [Kapitelstart“ gemeldet ](/help/implementation/events/chapters/chapter-start.md).
+Jedes Element ist der literale Kapiteltitel, der am [Kapitelstart“ gemeldet &#x200B;](/help/implementation/events/chapters/chapter-start.md).
