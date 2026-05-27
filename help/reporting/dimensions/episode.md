@@ -15,11 +15,11 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Reporting **Dimension &quot;**&quot; behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/standard-metadata/episode.md) unter „Episode“*
+*Auf dieser Seite wird die Reporting **Dimension &quot;**&quot; behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/standard-metadata/episode.md) unter „Episode“*
 
 >[!ENDSHADEBOX]
 
-Die Dimension **Folge** zeigt die Nummer der Folge innerhalb einer Staffel an. Verwenden Sie sie zusammen mit [](show.md) und [Staffel](season.md), um die Interaktion auf der Ebene der einzelnen Episoden zu unterbrechen.
+Die Dimension **Folge** zeigt die Nummer der Folge innerhalb einer Staffel an. Verwenden Sie sie zusammen mit [&#128279;](show.md) und [Staffel](season.md), um die Interaktion auf der Ebene der einzelnen Episoden zu unterbrechen.
 
 ## So wird diese Dimension ausgefüllt
 
