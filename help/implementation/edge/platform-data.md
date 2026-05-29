@@ -1,5 +1,5 @@
 ---
-title: Media Edge-API-Datenzuordnung und Platform-Validierung
+title: XDM-Berichtsschema
 description: Erfahren Sie, welche Media Edge-API-Ereignisse Erlebnisereignisse in Adobe Experience Platform generieren und wie Sie Ihre Implementierung mithilfe des MediaReporting-XDM-Schemas validieren.
 feature: Streaming Media
 role: User, Admin, Developer
@@ -15,26 +15,26 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 267532dfbe6dc3f7bcff0991536ae3baf6eff053
 workflow-type: tm+mt
-source-wordcount: 764
+source-wordcount: 763
 ht-degree: 4%
 
 ---
 
 
-# Media Edge-API-Datenzuordnung und Platform-Validierung
+# XDM-Berichtsschema
 
-Wenn Sie Medien-Tracking-Ereignisse mit der Media Edge-API oder einer Media Edge-SDK senden, verarbeitet das Media Analytics-Backend diese Ereignisse und schreibt berechnete Erlebnisereignisse in Adobe Experience Platform-Datensätze. Wenn Sie verstehen, welche Ereignisse Platform erreichen und was das Backend für Sie berechnet, können Sie Ihre Implementierung validieren und präzise Berichte in Customer Journey Analytics oder Adobe Analytics erstellen.
+Wenn Sie Medien-Tracking-Ereignisse mit der Adobe Experience Platform Edge Network senden, verarbeitet das Media Analytics-Backend diese Ereignisse und schreibt berechnete Erlebnisereignisse in Platform-Datensätze. Wenn Sie verstehen, welche Ereignisse Platform erreichen und was das Backend für Sie berechnet, können Sie Ihre Implementierung validieren und präzise Berichte in Customer Journey Analytics oder Adobe Analytics erstellen.
 
-Media Edge verwendet zwei verschiedene XDM-Schemata:
+In verschiedenen Teilen der Erfassungs- und Reporting-Pipeline werden zwei verschiedene XDM-Schemata verwendet:
 
 | Schema | Namespace | Richtung | Zweck |
 |---|---|---|---|
-| Mediensammlung | `xdm.mediaCollection` | Client → Adobe | Was Ihr Player für jedes Tracking-Ereignis sendet |
-| Medienberichte | `xdm.mediaReporting` | Adobe → Platform | Was das Backend nach der Verarbeitung in Datensätze schreibt |
+| Mediensammlung | `xdm.mediaCollection` | Client → Adobe | Was Ihr Player für jedes Tracking-Ereignis sendet. Verwendet von [Variablen](/help/implementation/variables/). |
+| Medienberichte | `xdm.mediaReporting` | Adobe → Platform | Was das Backend nach der Verarbeitung in Datensätze schreibt. Wird von [Dimensionen](/help/reporting/dimensions/overview.md) und [Metriken](/help/reporting/metrics/overview.md) verwendet. |
 
-Felder, die in `mediaReporting` vorhanden sind, aber in Ihrer `mediaCollection`-Payload fehlen, werden **Backend-berechnet** - abgeleitet von der vollständigen Sequenz der Ereignisse in einer Sitzung. Diese Felder werden nie gesendet, sondern von Adobe generiert.
+Felder, die in `mediaReporting` vorhanden sind, aber in der `mediaCollection`-Payload nicht vorhanden sind, werden aus der vollständigen Ereignissequenz einer Sitzung abgeleitet. Diese Felder werden nie gesendet, sondern von Adobe generiert.
 
 ## Ereignisse, die in Platform-Datensätze schreiben
 
