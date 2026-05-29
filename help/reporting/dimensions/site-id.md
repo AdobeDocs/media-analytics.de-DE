@@ -3,7 +3,7 @@ title: Site-ID
 description: Gibt für jede Anzeige die Kennung der Anzeigenseite aus.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 10%
@@ -28,7 +28,7 @@ Die Site-ID wird vom Player bei jedem [Anzeigenstart](/help/implementation/event
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.ad.site` einer eVar zuordnet. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.siteID`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.siteID`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Daten-Feeds | `evar1`-`evar250`, `post_evar1`-`post_evar250` (die eVar, der Ihre Verarbeitungsregel `a.media.ad.site` zugeordnet ist) |
 | Audience Manager | `c_contextdata.a.media.ad.site` |
 

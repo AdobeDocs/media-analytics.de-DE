@@ -18,7 +18,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 109
 ht-degree: 51%
@@ -27,7 +27,7 @@ ht-degree: 51%
 
 # Medienübersicht{#media-overview}
 
-Das Dashboard „Medienübersicht“ ermöglicht die Überwachung von Medien auf Ihrer gesamten Site. Die Anzeige Medienübersicht zeigt mehrere aggregierte Messungen an, sodass Sie schnell überwachen können, dass Medien die erwartete Leistung zeigen. Ein Diagramm zeigt die Inhaltsstarts neben Anzeigenstarts an, damit Sie diese Metriken für jedes Medienelement schnell anzeigen können.
+Das Dashboard „Medienübersicht“ ermöglicht die Überwachung von Medien auf Ihrer gesamten Site. Die Anzeige Medienübersicht zeigt mehrere aggregierte Messungen an, sodass Sie schnell überwachen können, dass Medien die erwartete Leistung zeigen. Ein Diagramm zeigt [[!UICONTROL Inhaltsstarts]](/help/reporting/metrics/content-starts.md) [[!UICONTROL &#x200B; neben „Anzeigenstarts]](/help/reporting/metrics/ad-starts.md) an, damit Sie diese Metriken für jedes Medienelement schnell anzeigen können.
 
 ![](assets/media_overview.png)
 

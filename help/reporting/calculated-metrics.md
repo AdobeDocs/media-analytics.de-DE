@@ -3,7 +3,7 @@ title: Berechnete Metriken
 description: Benutzerdefinierte berechnete Metriken für Berichte zu Streaming-Medien in Adobe Analytics und Customer Journey Analytics.
 feature: Metrics
 role: User, Admin
-source-git-commit: 1251b66173158b8fea92516197b3b9f444bfaaf7
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 5%
@@ -18,19 +18,19 @@ Informationen zum Erstellen dieser berechneten Metriken in Analysis Workspace fi
 
 | Berechnete Metrik | Beschreibung | Formel |
 | --- | --- | --- |
-| Durchschnittl. Anzeigen pro Medien-Stream | Anzeigenstarts pro Medienstart | [`Ad Starts`](/help/reporting/metrics/ad-starts.md) / [`Media Starts`](/help/reporting/metrics/media-starts.md) |
-| Durchschnittl. Kapitel pro Medien-Stream | Kapitelstarts pro Medienstart | [`Chapter Starts`](/help/reporting/metrics/chapter-starts.md) / [`Media Starts`](/help/reporting/metrics/media-starts.md) |
-| Durchschnittl. Besuchszeit für Medien | Gesamtbesuchszeit pro Medienstart (`HH:MM:SS`) | [`Media Time Spent`](/help/reporting/metrics/media-time-spent.md) / [`Media Starts`](/help/reporting/metrics/media-starts.md) |
-| Durchschnittl. Besuchszeit für Inhalt | Besuchszeit für den Inhalt nach gestarteten Inhalten (`HH:MM:SS`) | [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) / [`Content Starts`](/help/reporting/metrics/content-starts.md) |
-| Durchschnittl. Besuchszeit für die Anzeige | Besuchszeit für die Anzeige pro gestarteter Anzeige (`HH:MM:SS`) | [`Ad Time Spent`](/help/reporting/metrics/ad-time-spent.md) / [`Ad Starts`](/help/reporting/metrics/ad-starts.md) |
-| Durchschnittl. Besuchszeit für das Kapitel | Besuchszeit für das Kapitel pro gestartetem Kapitel (`HH:MM:SS`) | [`Chapter Time Spent`](/help/reporting/metrics/chapter-time-spent.md) / [`Chapter Starts`](/help/reporting/metrics/chapter-starts.md) |
-| Abschlussrate der Medien | Anteil abgeschlossener Inhalte und initiierter Medien im Vergleich | [`Content Completes`](/help/reporting/metrics/content-completes.md) / [`Media Starts`](/help/reporting/metrics/media-starts.md) |
-| Abschlussrate des Inhalts | Anteil abgeschlossener Inhalte und gestarteter Inhalte im Vergleich | [`Content Completes`](/help/reporting/metrics/content-completes.md) / [`Content Starts`](/help/reporting/metrics/content-starts.md) |
-| Abschlussrate der Anzeige | Anteil abgeschlossener Anzeigen und gestarteter Anzeigen im Vergleich | [`Ad Completes`](/help/reporting/metrics/ad-completes.md) / [`Ad Starts`](/help/reporting/metrics/ad-starts.md) |
-| Abschlussrate des Kapitels | Anteil abgeschlossener Kapitel und gestarteter Kapitel im Vergleich | [`Chapter Completes`](/help/reporting/metrics/chapter-completes.md) / [`Chapter Starts`](/help/reporting/metrics/chapter-starts.md) |
-| Vor Start ablegen | Drop-Rate vor Start und Medienstart im Vergleich | [`Drops Before Start`](/help/reporting/metrics/drops-before-start.md) / [`Media Starts`](/help/reporting/metrics/media-starts.md) |
-| Rate der Inhaltspausen | Rate der Pausengesamtdauer im Vergleich zur Besuchszeit für den Inhalt | [`Total Pause Duration`](/help/reporting/metrics/total-pause-duration.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
-| Dauer des Inhaltspuffers | Rate der Puffergesamtdauer im Vergleich zur Besuchszeit für den Inhalt | [`Total Buffer Duration`](/help/reporting/metrics/total-buffer-duration.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
-| Rate der Zeit bis zum Start des Inhalts | Rate der zu startenden Zeit im Vergleich zur Besuchszeit für den Inhalt | [`Time to Start`](/help/reporting/metrics/time-to-start.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
-| Besuchsrate für Anzeige | Rate der Besuchszeit für Anzeigen und der Besuchszeit für Inhalte im Vergleich | [`Ad Time Spent`](/help/reporting/metrics/ad-time-spent.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
+| Durchschnittl. Anzeigen pro Medien-Stream | [[!UICONTROL Anzeigenstarts]](/help/reporting/metrics/ad-starts.md) pro [[!UICONTROL Medienstarts]](/help/reporting/metrics/media-starts.md) | `[Ad starts] / [Media starts]` |
+| Durchschnittl. Kapitel pro Medien-Stream | [[!UICONTROL Kapitelstarts]](/help/reporting/metrics/chapter-starts.md) pro [[!UICONTROL Medienstarts]](/help/reporting/metrics/media-starts.md) | `[Chapter starts] / [Media starts]` |
+| Durchschnittl. Besuchszeit für Medien | [[!UICONTROL Besuchszeit für Medien]](/help/reporting/metrics/media-time-spent.md) pro [[!UICONTROL Medienstarts]](/help/reporting/metrics/media-starts.md) (`HH:MM:SS`) | `[Media time spent] / [Media starts]` |
+| Durchschnittl. Besuchszeit für Inhalt | [[!UICONTROL Besuchszeit für Inhalt]](/help/reporting/metrics/content-time-spent.md) pro [[!UICONTROL Inhaltsstarts]](/help/reporting/metrics/content-starts.md) (`HH:MM:SS`) | `[Content time spent] / [Content starts]` |
+| Durchschnittl. Besuchszeit für die Anzeige | [[!UICONTROL Besuchszeit für die Anzeige]](/help/reporting/metrics/ad-time-spent.md) pro [[!UICONTROL Anzeigenstart]](/help/reporting/metrics/ad-starts.md) (`HH:MM:SS`) | `[Ad time spent] / [Ad starts]` |
+| Durchschnittl. Besuchszeit für das Kapitel | [[!UICONTROL Besuchszeit für Kapitel]](/help/reporting/metrics/chapter-time-spent.md) pro [[!UICONTROL Kapitelstart]](/help/reporting/metrics/chapter-starts.md) (`HH:MM:SS`) | `[Chapter time spent] / [Chapter starts]` |
+| Abschlussrate der Medien | Rate [[!UICONTROL Abgeschlossene Inhalte]](/help/reporting/metrics/content-completes.md) vs. [[!UICONTROL Medienstarts]](/help/reporting/metrics/media-starts.md) | `[Content completes] / [Media starts]` |
+| Abschlussrate des Inhalts | Rate [[!UICONTROL Abgeschlossene Inhalte]](/help/reporting/metrics/content-completes.md) vs. [[!UICONTROL Inhaltsstarts]](/help/reporting/metrics/content-starts.md) | `[Content completes] / [Content starts]` |
+| Abschlussrate der Anzeige | Rate von [[!UICONTROL Abgeschlossene Anzeige]](/help/reporting/metrics/ad-completes.md) im Vergleich zu [[!UICONTROL gestarteten Anzeige]](/help/reporting/metrics/ad-starts.md) | `[Ad completes] / [Ad starts]` |
+| Abschlussrate des Kapitels | Rate von [[!UICONTROL Kapitelabschlüsse]](/help/reporting/metrics/chapter-completes.md) vs. [[!UICONTROL Kapitelstarts]](/help/reporting/metrics/chapter-starts.md) | `[Chapter completes] / [Chapter starts]` |
+| Vor Start ablegen | Rate der [[!UICONTROL Drops vor dem Start]](/help/reporting/metrics/drops-before-start.md) im Vergleich zu [[!UICONTROL Medienstarts]](/help/reporting/metrics/media-starts.md) | `[Drops before start] / [Media starts]` |
+| Rate der Inhaltspausen | Rate der [[!UICONTROL Pausierung insgesamt]](/help/reporting/metrics/total-pause-duration.md) im Vergleich zu [[!UICONTROL Besuchszeit für Inhalte]](/help/reporting/metrics/content-time-spent.md) | `[Total pause duration] / [Content time spent]` |
+| Dauer des Inhaltspuffers | Rate [[!UICONTROL Puffergesamtdauer]](/help/reporting/metrics/total-buffer-duration.md) vs. [[!UICONTROL Besuchszeit für Inhalt]](/help/reporting/metrics/content-time-spent.md) | `[Total buffer duration] / [Content time spent]` |
+| Rate der Zeit bis zum Start des Inhalts | Rate [[!UICONTROL Zeit bis zum Start]](/help/reporting/metrics/time-to-start.md) vs. [[!UICONTROL Besuchszeit für Inhalt]](/help/reporting/metrics/content-time-spent.md) | `[Time to start] / [Content time spent]` |
+| Besuchsrate für Anzeige | Rate der [[!UICONTROL Besuchszeit für Anzeigen]](/help/reporting/metrics/ad-time-spent.md) im Vergleich zu [[!UICONTROL Besuchszeit für Inhalte]](/help/reporting/metrics/content-time-spent.md) | `[Ad time spent] / [Content time spent]` |
 

@@ -2,10 +2,10 @@
 title: JSON-Daten des Berichts „Gleichzeitige Videozuschauer“ abrufen
 description: JSON-Daten des Berichts „Gleichzeitige Videozuschauer“ abrufen
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 100%
+source-wordcount: '150'
+ht-degree: 84%
 
 ---
 
@@ -20,8 +20,8 @@ Mit der _*Version 1.4*_ der Analytics APIs können Sie Berichtsdaten für gleich
 1. Setzen Sie `elements` -> `id` im Anforderungstext auf `videoconcurrentviewers`.
 1. Fordern Sie eine ausreichende Datenmenge an. Adobe empfiehlt 3200 Datenpunkte, um sicherzustellen, dass keine Datenlücken bestehen.
 
-   * In dem von Ihnen im Bericht angegebenen Datenbereich werden die Daten aller gleichzeitigen Betrachter _zum Zeitpunkt des Endes der Videositzung erfasst._
-Sie müssen also Sitzungen berücksichtigen, die an einem Tag beginnen und nach Mitternacht enden (d.h. am nächsten Tag).
+   * Der von Ihnen im Bericht angegebene Datenbereich erfasst alle Daten von gleichzeitigen Betrachtern _zum Zeitpunkt des Abschlusses der Videositzung._
+Daher müssen Sie Sitzungen berücksichtigen, die an einem Tag beginnen und nach Mitternacht (d. h. am nächsten Tag) enden.
 
    * Fordern Sie mehr als einen Tag Daten an, aber verwenden Sie in Ihrer Analyse _*nur den ersten Tag der Daten.*_
 
@@ -56,7 +56,7 @@ Eine beispielhafte Anforderungsnutzlast für dieses Szenario würde wie folgt au
 ```
 
 <!--
-You can extract the concurrent viewers report data using the Experience Cloud API Explorer as follows. 
+You can extract the concurrent viewers report data using the API Explorer as follows. 
 
 1. Navigate to: [https://www.adobe.io.](https://www.adobe.io)
 1. Select and enter the following information in the API Explorer form:

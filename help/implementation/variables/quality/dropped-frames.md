@@ -3,10 +3,10 @@ title: Abgelegte Frames
 description: Legen Sie die Anzahl der Dropped Frames im QoE-Objekt fest, damit das Backend die Frame-Drop-Qualität melden kann.
 feature: Streaming Media
 role: Developer
-source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 9%
+source-wordcount: '303'
+ht-degree: 5%
 
 ---
 
@@ -28,14 +28,18 @@ Die Variable Abgelegte Frames ist die laufende Anzahl an Frames, die der Player 
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.qoe.droppedFrameCount` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.qoe.droppedFrameCount` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | Qualitätsereignisse ([Bitratenänderung](/help/implementation/events/playback/bitrate-change.md), [Pufferstart](/help/implementation/events/playback/buffer-start.md), [Fehler](/help/implementation/events/error.md)), Sitzungsschluss |
 
-## Web SDK
+## Empfohlene Implementierungsarten
 
-`droppedFrames` in `mediaCollection.qoeDataDetails` festlegen, wenn [`sendEvent`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/sendevent/overview) aufgerufen wird:
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+`droppedFrames` in `xdm.mediaCollection.qoeDataDetails` festlegen, wenn [`sendEvent`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/sendevent/overview) aufgerufen wird:
 
 ```javascript
 alloy("sendEvent", {
@@ -53,11 +57,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Übergeben Sie abgelegte Frames als viertes Argument an `createQoEObject`. Aktualisieren Sie den Tracker, bevor ein Qualitätsereignis ausgelöst wird.
-
-**iOS (SWIFT)**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
@@ -68,7 +70,9 @@ let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
 tracker.updateQoEObject(qoe: qoeObject)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Übergeben Sie abgelegte Frames als viertes Argument an `createQoEObject`. Aktualisieren Sie den Tracker, bevor ein Qualitätsereignis ausgelöst wird.
 
 ```kotlin
 val qoeObject = Media.createQoEObject(3200L,
@@ -79,9 +83,9 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-`droppedFrames` in `mediaCollection.qoeDataDetails` festlegen, wenn `sendMediaEvent` aufgerufen wird:
+`droppedFrames` in `xdm.mediaCollection.qoeDataDetails` festlegen, wenn `sendMediaEvent` aufgerufen wird:
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -98,9 +102,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge-API
+>[!TAB Media Edge-API]
 
-Rufen Sie den [bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange)-Endpunkt mit `droppedFrames` in `mediaCollection.qoeDataDetails` auf:
+Rufen Sie den [bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange)-Endpunkt mit `droppedFrames` in `xdm.mediaCollection.qoeDataDetails` auf:
 
 ```json
 {
@@ -119,7 +123,13 @@ Rufen Sie den [bitrateChange](https://developer.adobe.com/data-collection-apis/d
 }
 ```
 
-## Medien-SDK
+>[!ENDTABS]
+
+## Legacy-Implementierungstypen (nur Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Übergeben Sie abgelegte Frames als viertes Argument an `ADB.Media.createQoEObject`:
 
@@ -128,7 +138,21 @@ var qoeObject = ADB.Media.createQoEObject(3200, 0, 24, 3);
 tracker.updateQoEObject(qoeObject);
 ```
 
-## Mediensammlungs-API
+>[!TAB Chromecast]
+
+Übergeben Sie die kumulative Dropped-Frame-Anzahl als viertes Argument, um den Tracker zu `ADBMobile.media.createQoSObject` und zu aktualisieren:
+
+```javascript
+var qosInfo = ADBMobile.media.createQoSObject(
+  3200,  // bitrate
+  0,     // startupTime
+  24,    // fps
+  0      // droppedFrames (cumulative total)
+);
+ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Media Collection API]
 
 `media.qoe.droppedFrames` in das `params` einschließen:
 
@@ -143,3 +167,5 @@ tracker.updateQoEObject(qoeObject);
 ```
 
 Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+
+>[!ENDTABS]

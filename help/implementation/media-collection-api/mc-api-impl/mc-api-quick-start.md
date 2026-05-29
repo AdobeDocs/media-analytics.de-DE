@@ -17,10 +17,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 294
-ht-degree: 90%
+ht-degree: 82%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 90%
 >
 >Erfassen Sie die Anforderungsdaten, die zum Abschluss einer erfolgreichen [Sitzungsanforderung](../mc-api-ref/mc-api-sessions-req.md) beim Backend-Server der Media Analytics (MA) Collection API erforderlich sind. Sie können Ihre Anfragedaten schnell überprüfen, indem Sie Anfragen manuell senden (mit `curl`, Postman usw.). Auf diese Weise erhalten Sie sofort Rückmeldungen darüber, ob Ihre Anfrage Probleme mit falschen Datentypen oder falschen Informationen enthält. Überprüfen Sie mithilfe der [JSON-Validierungs-Schemata](../mc-api-ref/mc-api-json-validation.md), ob Sie die richtigen Anfragedaten bereitstellen.
 
-1. Erfassen Sie die standardmäßig erforderlichen Adobe Analytics- und Besucherdaten, die Sie zur Ausführung einer Experience Cloud-Anwendung bereitstellen müssen:
+1. Sammeln Sie die standardmäßigen, erforderlichen Adobe Analytics- und Besucherdaten, die Sie für die Ausführung einer der CX Enterprise-Anwendungen bereitstellen müssen:
 
    * Experience Cloud-Org-ID des Besuchers
    * Experience Cloud-Benutzer-ID des Besuchers

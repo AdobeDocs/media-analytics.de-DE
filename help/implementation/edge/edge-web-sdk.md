@@ -18,10 +18,10 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 584
-ht-degree: 8%
+source-wordcount: 563
+ht-degree: 6%
 
 ---
 
@@ -88,9 +88,7 @@ Vollständige Details zur Konfiguration finden Sie in [&#x200B; Dokumentation &#
 
 Für Kunden, die die Media JS-SDK verwenden, bietet Web SDK einen Migrationspfad, um von Media JS-SDK zu Web SDK zu wechseln, wobei bestehende Media JS-Funktionen, z. B. die Verarbeitung von Medienereignissen, unterstützt werden.
 
-[!DNL Web SDK] enthält einen Befehl zum Abrufen eines Media Analytics-Trackers. Sie können diesen Befehl verwenden, um eine Objektinstanz zu erstellen, und dann mit denselben APIs wie in der [Media JS Library](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html) Medienereignisse verfolgen.
-
-In der [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker)-Dokumentation finden Sie vollständige Details zu den unterstützten Methoden.
+Die Web-SDK enthält einen [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker), mit dem Sie eine Objektinstanz erstellen können. Sie können dann Medienereignisse mit denselben APIs verfolgen, die von Media SDK [3.x bereitgestellt &#x200B;](/help/implementation/media-sdk/setup/js-3x-api-reference.md).
 
 Der folgende Ausschnitt zeigt, wie Sie die Medien-Tracker-Instanz in Media JS abrufen würden.
 

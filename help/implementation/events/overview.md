@@ -3,9 +3,9 @@ title: Übersicht über Streaming-Medienereignisse
 description: Erfahren Sie mehr über Medienereignistypen und die Reihenfolge, in der sie gesendet werden müssen.
 feature: Streaming Media
 role: Developer
-source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -69,10 +69,3 @@ Die fünf nachverfolgbaren Status sind: `fullscreen`, `mute`, `closedCaptioning`
 ## Fehlerereignisse
 
 Das [Fehler](error.md)-Ereignis zeichnet einen Wiedergabefehler während einer Sitzung auf - eine fehlgeschlagene Stream-Anfrage, einen Codec-Fehler oder einen externen Versandfehler. Senden Sie ihn, wenn ein bedeutender Fehler auftritt. Ein Fehlerereignis schließt die Sitzung nicht. Die Wiedergabe kann fortgesetzt werden, und nachfolgende Ereignisse werden in derselben Sitzung verfolgt. Wenn der Fehler nicht behebbar ist, folgen Sie ihm mit Sitzungsende , um die Sitzung explizit zu schließen.
-
->[!MORELIKETHIS]
->
->* [JSON-Validierungsschemata](/help/implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md): Überprüfen der Payload-Struktur der Anfrage für jeden Ereignistyp
->* [Ereignisanforderungs-Endpunkt](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md): Endpunkt-Referenz zur Mediensammlungs-API
->* [Sitzungsanfrage-Endpunkt](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md): Erstellen einer Sitzung vor dem Senden von Ereignissen
->* [Player-Statusverfolgung](/help/use-cases/player-state-tracking/implementation-and-reporting.md): Details zum Status der Implementierung von Start und Ende

@@ -3,10 +3,10 @@ title: Versatz des Kapitels
 description: Legen Sie den Versatz des Kapitels innerhalb des Inhalts in Sekunden ab Beginn fest.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 12%
+source-wordcount: '228'
+ht-degree: 7%
 
 ---
 
@@ -24,14 +24,18 @@ Die Variable für den Kapitelversatz ist der Versatz des Kapitels innerhalb des 
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.chapter.offset` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.chapter.offset` |
 | **Erforderlich** | Nein (Mobile SDK); Ja (Edge, Mediensammlungs-API) |
 | **Gesendet mit** | [Kapitelstart](/help/implementation/events/chapters/chapter-start.md), Kapitelschluss |
 
-## Web SDK
+## Empfohlene Implementierungsarten
 
-`offset` in `mediaCollection.chapterDetails` festlegen, wenn [`sendEvent`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/sendevent/overview) aufgerufen wird:
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+`offset` in `xdm.mediaCollection.chapterDetails` festlegen, wenn [`sendEvent`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/sendevent/overview) aufgerufen wird:
 
 ```javascript
 alloy("sendEvent", {
@@ -51,11 +55,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Übergeben Sie den Versatz in Sekunden als viertes Argument (`startTime`) an `createChapterObject`.
-
-**iOS (SWIFT)**
 
 ```swift
 let chapterObject = Media.createChapterObjectWith(name: "Act II",
@@ -66,7 +68,9 @@ let chapterObject = Media.createChapterObjectWith(name: "Act II",
 tracker.trackEvent(event: MediaEvent.ChapterStart, info: chapterObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Übergeben Sie den Versatz in Sekunden als viertes Argument (`startTime`) an `createChapterObject`.
 
 ```kotlin
 val chapterObject = Media.createChapterObject("Act II",
@@ -77,9 +81,9 @@ val chapterObject = Media.createChapterObject("Act II",
 tracker.trackEvent(Media.Event.ChapterStart, chapterObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Legen Sie `offset` in `mediaCollection.chapterDetails` fest, wenn Sie `sendMediaEvent` für `media.chapterStart` aufrufen:
+Legen Sie `offset` in `xdm.mediaCollection.chapterDetails` fest, wenn Sie `sendMediaEvent` für `media.chapterStart` aufrufen:
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -98,9 +102,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge-API
+>[!TAB Media Edge-API]
 
-Rufen Sie den [chapterStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/chapters/#chapterstart)-Endpunkt mit `offset` in `mediaCollection.chapterDetails` auf:
+Rufen Sie den [chapterStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/chapters/#chapterstart)-Endpunkt mit `offset` in `xdm.mediaCollection.chapterDetails` auf:
 
 ```json
 {
@@ -121,7 +125,13 @@ Rufen Sie den [chapterStart](https://developer.adobe.com/data-collection-apis/do
 }
 ```
 
-## Medien-SDK
+>[!ENDTABS]
+
+## Legacy-Implementierungstypen (nur Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Übergeben Sie den Versatz als viertes Argument an `ADB.Media.createChapterObject`:
 
@@ -136,7 +146,21 @@ var chapterInfo = ADB.Media.createChapterObject(
 tracker.trackEvent(ADB.Media.Event.ChapterStart, chapterInfo, contextData);
 ```
 
-## Mediensammlungs-API
+>[!TAB Chromecast]
+
+Übergeben Sie den Kapitelversatz in Sekunden als viertes Argument (`startTime`) an `ADBMobile.media.createChapterObject`:
+
+```javascript
+var chapterInfo = ADBMobile.media.createChapterObject(
+  "Pilot Episode - Opening",  // name
+  1,                          // position
+  240,                        // length
+  0                           // startTime (seconds from content start)
+);
+ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, chapterInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 Fügen Sie `media.chapter.offset` in das `params` Ihrer `chapterStart` POST-Anfrage ein:
 
@@ -151,3 +175,5 @@ Fügen Sie `media.chapter.offset` in das `params` Ihrer `chapterStart` POST-Anfr
 ```
 
 Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+
+>[!ENDTABS]

@@ -3,10 +3,10 @@ title: Stummschaltung
 description: Verfolgen Sie, wann der Viewer Audio stumm schaltet und die Stummschaltung aufhebt, damit das Backend Interaktionen melden kann.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 10%
+source-wordcount: '288'
+ht-degree: 6%
 
 ---
 
@@ -24,12 +24,16 @@ Der Status des Stummschaltungs-Players verfolgt, wann der Viewer Audio stummscha
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariablen** | `a.media.states.mute.set`, `a.media.states.mute.count`, `a.media.states.mute.time` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) und [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) (Einträge mit `name: "mute"`) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) und [`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) (Einträge mit `name: "mute"`) |
 | **Audience Manager-Eigenschaften** | `c_contextdata.a.media.states.mute.set`, `c_contextdata.a.media.states.mute.count`, `c_contextdata.a.media.states.mute.time` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [State start](/help/implementation/events/player-state/state-start.md), [state end](/help/implementation/events/player-state/state-end.md) |
 
-## Web SDK
+## Empfohlene Implementierungsarten
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Verwenden Sie [`sendEvent`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/sendevent/overview) , um ein `media.statesUpdate`-Ereignis mit dem Status zu senden, der `statesStart` hinzugefügt wurde:
 
@@ -61,11 +65,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Verwenden Sie `tracker.trackPlayerStateStart()` und `tracker.trackPlayerStateEnd()` mit der `MediaConstants.PlayerState.MUTE`.
-
-**iOS (SWIFT)**
 
 ```swift
 let stateObject = Media.createStateObjectWith(stateName: MediaConstants.PlayerState.MUTE)
@@ -74,7 +76,9 @@ tracker.trackPlayerStateStart(info: stateObject)
 tracker.trackPlayerStateEnd(info: stateObject)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Verwenden Sie `tracker.trackPlayerStateStart()` und `tracker.trackPlayerStateEnd()` mit der `MediaConstants.PlayerState.MUTE`.
 
 ```kotlin
 val stateObject = Media.createStateObject(MediaConstants.PlayerState.MUTE)
@@ -83,7 +87,7 @@ tracker.trackPlayerStateStart(stateObject)
 tracker.trackPlayerStateEnd(stateObject)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Verwenden Sie `sendMediaEvent` , um ein `media.statesUpdate`-Ereignis mit dem Status zu senden, der `statesStart` hinzugefügt wurde:
 
@@ -113,7 +117,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge-API
+>[!TAB Media Edge-API]
 
 Rufen Sie den Endpunkt [statesUpdate](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/statesupdate/) mit `mute` in `statesStart` auf (oder `statesEnd`, wenn die Stummschaltung des Viewers aufgehoben wird):
 
@@ -132,7 +136,13 @@ Rufen Sie den Endpunkt [statesUpdate](https://developer.adobe.com/data-collectio
 }
 ```
 
-## Medien-SDK
+>[!ENDTABS]
+
+## Legacy-Implementierungstypen (nur Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Verwenden Sie `ADB.Media.createStateObject` und die `ADB.Media.PlayerState.Mute` Konstante:
 
@@ -143,7 +153,18 @@ tracker.trackPlayerStateStart(stateObject);
 tracker.trackPlayerStateEnd(stateObject);
 ```
 
-## Mediensammlungs-API
+>[!TAB Chromecast]
+
+Verwenden Sie `ADBMobile.media.createStateObject` direkt mit der `"mute"` Zeichenfolge, da Chromecast keine benannten `PlayerState` enthält:
+
+```javascript
+var stateObject = ADBMobile.media.createStateObject("mute");
+ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
+// When the viewer unmutes:
+ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
+```
+
+>[!TAB Media Collection API]
 
 Senden Sie eine `stateStart` POST-Anfrage, wenn der Viewer stummgeschaltet wird, und eine `stateEnd` POST, wenn die Stummschaltung aufgehoben wird:
 
@@ -158,3 +179,5 @@ Senden Sie eine `stateStart` POST-Anfrage, wenn der Viewer stummgeschaltet wird,
 ```
 
 Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+
+>[!ENDTABS]

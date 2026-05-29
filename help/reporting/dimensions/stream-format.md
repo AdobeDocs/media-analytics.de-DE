@@ -3,7 +3,7 @@ title: Stream-Format
 description: Gibt die Qualitätsstufe jeder Sitzung an (normalerweise HD oder SD).
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 7%
@@ -28,7 +28,7 @@ Das Stream-Format wird vom Player beim Sitzungsstart festgelegt.
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.format` einer eVar zuordnet. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.streamFormat`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.streamFormat`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds | `evar1`-`evar250`, `post_evar1`-`post_evar250` (die eVar, der Ihre Verarbeitungsregel `a.media.format` zugeordnet ist) |
 | Audience Manager | `c_contextdata.a.media.format` |
 

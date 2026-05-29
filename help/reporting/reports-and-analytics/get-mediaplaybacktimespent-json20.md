@@ -17,10 +17,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 210
-ht-degree: 90%
+source-wordcount: 191
+ht-degree: 89%
 
 ---
 
@@ -32,7 +32,7 @@ Sie können Berichtsdaten zur Besuchszeit für Medienwiedergabe mit den [_*Analy
 1. Stellen Sie die `elements` -> `id` im Anfragetext auf `metrics/playback_time_spent_seconds` oder `metrics/playback_time_spent_minutes` ein, je nachdem, ob Sie die Ausgabe in Sekunden oder Minuten erhalten möchten.
 1. Fordern Sie eine ausreichende Datenmenge an.
 
-   * In dem von Ihnen im Bericht angegebenen Datenbereich werden die Daten aller gleichzeitigen Betrachter _zum Zeitpunkt des Endes der Videositzung erfasst._
+   * Der von Ihnen im Bericht angegebene Datenbereich erfasst alle Daten von gleichzeitigen Betrachtern _zum Zeitpunkt des Abschlusses der Videositzung._
 Sie müssen die Sitzungen berücksichtigen, die an einem Tag beginnen und nach Mitternacht enden, d. h. am nächsten Tag.
 
    * Geben Sie bei Ihrer Anfrage für den vorgesehenen Zeitraum einen weiteren Tag für die Daten an, nutzen Sie aber in Ihrer Analyse _*nur die vorgesehenen Daten.*_
@@ -132,7 +132,7 @@ Die Beispielanforderung für einen Datentag würde wie im folgenden Beispiel aus
 
 
 <!--
-You can extract the Media Playback Time Spent report data using the Experience Cloud API Explorer as follows.
+You can extract the Media Playback Time Spent report data using the API Explorer as follows.
 
 1. Navigate to: [https://www.adobe.io.](https://www.adobe.io)
 1. Select and enter the following information in the API Explorer form:

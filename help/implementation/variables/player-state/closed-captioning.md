@@ -3,10 +3,10 @@ title: Untertitel
 description: Verfolgen Sie, wann der Viewer geschlossene Untertitel aktiviert und deaktiviert, damit das Backend Untertitelinteraktionen melden kann.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 9%
+source-wordcount: '302'
+ht-degree: 5%
 
 ---
 
@@ -24,12 +24,16 @@ Der Player-Status für Untertitel verfolgt, wann der Viewer Untertitel aktiviert
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariablen** | `a.media.states.closedcaptioning.set`, `a.media.states.closedcaptioning.count`, `a.media.states.closedcaptioning.time` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) und [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) (Einträge mit `name: "closedCaptioning"`) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) und [`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) (Einträge mit `name: "closedCaptioning"`) |
 | **Audience Manager-Eigenschaften** | `c_contextdata.a.media.states.closedcaptioning.set`, `c_contextdata.a.media.states.closedcaptioning.count`, `c_contextdata.a.media.states.closedcaptioning.time` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [State start](/help/implementation/events/player-state/state-start.md), [state end](/help/implementation/events/player-state/state-end.md) |
 
-## Web SDK
+## Empfohlene Implementierungsarten
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Verwenden Sie [`sendEvent`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/sendevent/overview) , um ein `media.statesUpdate`-Ereignis mit dem Status zu senden, der `statesStart` hinzugefügt wurde:
 
@@ -61,11 +65,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Verwenden Sie `tracker.trackPlayerStateStart()` und `tracker.trackPlayerStateEnd()` mit der `MediaConstants.PlayerState.CLOSED_CAPTION`.
-
-**iOS (SWIFT)**
 
 ```swift
 let stateObject = Media.createStateObjectWith(stateName: MediaConstants.PlayerState.CLOSED_CAPTION)
@@ -74,7 +76,9 @@ tracker.trackPlayerStateStart(info: stateObject)
 tracker.trackPlayerStateEnd(info: stateObject)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Verwenden Sie `tracker.trackPlayerStateStart()` und `tracker.trackPlayerStateEnd()` mit der `MediaConstants.PlayerState.CLOSED_CAPTION`.
 
 ```kotlin
 val stateObject = Media.createStateObject(MediaConstants.PlayerState.CLOSED_CAPTION)
@@ -83,7 +87,7 @@ tracker.trackPlayerStateStart(stateObject)
 tracker.trackPlayerStateEnd(stateObject)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Verwenden Sie `sendMediaEvent` , um ein `media.statesUpdate`-Ereignis mit dem Status zu senden, der `statesStart` hinzugefügt wurde:
 
@@ -113,7 +117,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge-API
+>[!TAB Media Edge-API]
 
 Rufen Sie den [statesUpdate](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/statesupdate/)-Endpunkt mit `closedCaptioning` in `statesStart` auf (oder `statesEnd`, wenn der Viewer Untertitel deaktiviert):
 
@@ -132,7 +136,13 @@ Rufen Sie den [statesUpdate](https://developer.adobe.com/data-collection-apis/do
 }
 ```
 
-## Medien-SDK
+>[!ENDTABS]
+
+## Legacy-Implementierungstypen (nur Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Verwenden Sie `ADB.Media.createStateObject` und die `ADB.Media.PlayerState.ClosedCaptioning` Konstante:
 
@@ -143,7 +153,18 @@ tracker.trackPlayerStateStart(stateObject);
 tracker.trackPlayerStateEnd(stateObject);
 ```
 
-## Mediensammlungs-API
+>[!TAB Chromecast]
+
+Verwenden Sie `ADBMobile.media.createStateObject` direkt mit der `"closedCaptioning"` Zeichenfolge, da Chromecast keine benannten `PlayerState` enthält:
+
+```javascript
+var stateObject = ADBMobile.media.createStateObject("closedCaptioning");
+ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
+// When the viewer disables captions:
+ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
+```
+
+>[!TAB Media Collection API]
 
 Senden Sie eine `stateStart` POST-Anfrage, wenn Beschriftungen aktiviert sind, und einen `stateEnd` POST, wenn sie deaktiviert sind:
 
@@ -158,3 +179,5 @@ Senden Sie eine `stateStart` POST-Anfrage, wenn Beschriftungen aktiviert sind, u
 ```
 
 Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+
+>[!ENDTABS]

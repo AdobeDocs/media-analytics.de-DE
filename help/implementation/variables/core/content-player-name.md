@@ -3,10 +3,10 @@ title: Name des Inhalts-Players
 description: Legen Sie den Player-Namen fest, um zu identifizieren, welcher Player den Inhalt gerendert hat.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 11%
+source-wordcount: '264'
+ht-degree: 6%
 
 ---
 
@@ -24,14 +24,18 @@ Die Variable „Name des Inhalts-Players“ gibt an, welcher Player den Inhalt g
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.playerName` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.playerName` |
 | **Erforderlich** | Ja |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |
 
-## Web SDK
+## Empfohlene Implementierungsarten
 
-`playerName` in `mediaCollection.sessionDetails` festlegen, wenn [`sendEvent`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/sendevent/overview) aufgerufen wird:
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+`playerName` in `xdm.mediaCollection.sessionDetails` festlegen, wenn [`sendEvent`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/sendevent/overview) aufgerufen wird:
 
 ```javascript
 alloy("sendEvent", {
@@ -52,11 +56,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Legen Sie den Player-Namen über die Tracker-Konfiguration fest, wenn Sie den Tracker mithilfe von `MediaConstants.TrackerConfig.PLAYER_NAME` erstellen. Der Player-Name ist nicht Teil des Medienobjekts.
-
-**iOS (SWIFT)**
 
 ```swift
 var config: [String: Any] = [:]
@@ -68,7 +70,9 @@ Media.createTrackerWith(config: config) { tracker in
 }
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Legen Sie den Player-Namen über die Tracker-Konfiguration fest, wenn Sie den Tracker mithilfe von `MediaConstants.TrackerConfig.PLAYER_NAME` erstellen. Der Player-Name ist nicht Teil des Medienobjekts.
 
 ```kotlin
 val config = HashMap<String, Any>()
@@ -78,9 +82,9 @@ config[MediaConstants.TrackerConfig.CHANNEL] = "Sports"
 val tracker = Media.createTracker(config)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-`playerName` in `mediaCollection.sessionDetails` festlegen, wenn `createMediaSession` aufgerufen wird:
+`playerName` in `xdm.mediaCollection.sessionDetails` festlegen, wenn `createMediaSession` aufgerufen wird:
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -101,9 +105,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge-API
+>[!TAB Media Edge-API]
 
-Rufen Sie den [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart)-Endpunkt mit `playerName` in `mediaCollection.sessionDetails` auf:
+Rufen Sie den [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart)-Endpunkt mit `playerName` in `xdm.mediaCollection.sessionDetails` auf:
 
 ```json
 {
@@ -125,7 +129,13 @@ Rufen Sie den [sessionStart](https://developer.adobe.com/data-collection-apis/do
 }
 ```
 
-## Medien-SDK
+>[!ENDTABS]
+
+## Legacy-Implementierungstypen (nur Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Legen Sie den Player-Namen auf `ADB.MediaConfig` fest, bevor Sie den Tracker erstellen:
 
@@ -138,7 +148,18 @@ mediaConfig.channel = "Sports";
 var tracker = ADB.Media.getInstance(mediaConfig);
 ```
 
-## Mediensammlungs-API
+>[!TAB Chromecast]
+
+Übergeben Sie den Player-Namen als Standard-Metadatenschlüssel beim Aufruf von `trackSessionStart`:
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
+  ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
+var metadata = { "a.media.playerName": "Chromecast Player" };
+ADBMobile.media.trackSessionStart(mediaInfo, metadata);
+```
+
+>[!TAB Media Collection API]
 
 Fügen Sie `media.playerName` in das `params` Ihrer `sessionStart` POST-Anfrage ein:
 
@@ -153,3 +174,5 @@ Fügen Sie `media.playerName` in das `params` Ihrer `sessionStart` POST-Anfrage 
 ```
 
 Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+
+>[!ENDTABS]

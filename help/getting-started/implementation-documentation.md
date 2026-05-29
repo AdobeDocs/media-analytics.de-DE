@@ -19,10 +19,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 362
-ht-degree: 52%
+source-wordcount: 356
+ht-degree: 48%
 
 ---
 
@@ -38,7 +38,7 @@ Verwenden Sie die Informationen in der folgenden Tabelle, um die Dokumentation f
 |:-----------------------:|----------------|
 | **Web** | * [Senden von Web-Daten an Edge mit der Adobe Experience Platform Web SDK](/help/implementation/edge/edge-web-sdk.md) <br> * [Web-Implementierung für Streaming-](/help/implementation/media-sdk/setup/web-implementation.md)<br>* [Web-Implementierung mit der Erweiterung von Adobe Media Analytics für Audio und Video](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=de) |
 | **Mobile** | * [Senden von Mobile-Daten an Edge mit der Adobe Experience Platform Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Handbuch zu Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/) <br> *[Erweiterung von Adobe Media Analytics für Audio und Video](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[Aktuelle Versionen von Mobile SDK](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[Mobile-Implementierung für Streaming-Medien-Services](/help/implementation/media-sdk/setup/mobile-implementation.md) |
-| **OTT** | *[Chromecast 3.0 SDK für Adobe Marketing Cloud-Lösungen](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Einrichten von Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) <br> *[Einrichten von Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
+| **OTT** | *[Chromecast 3.0 SDK für Adobe Marketing Cloud-Lösungen](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) |
 | **Adobe Experience Platform-APIs** | *[Mediensammlungs-APIs](/help/implementation/media-collection-api/mc-api-overview.md) |
 
 ## Zusätzliche Dokumentation {#additional-documentation}
@@ -52,4 +52,4 @@ In der folgenden Tabelle finden Sie Dokumentationen zu Adobe-Produkten, die mit 
 
 ## Adobe Enterprise-Tutorials {#adobe-tutorials}
 
-Verwenden Sie diese [Adobe Enterprise-Tutorials](https://experienceleague.adobe.com/docs/home-tutorials.html?lang=de), um Adobe Enterprise-Anwendungen für Ihre Geschäftsanforderungen zu nutzen. Sie finden hier hilfreiche Tutorials und Schulungen zu Adobe Experience Cloud, Adobe Experience Platform und Adobe Analytics.
+Verwenden Sie diese [Adobe Enterprise-Tutorials](https://experienceleague.adobe.com/docs/home-tutorials.html?lang=de), um Adobe Enterprise-Anwendungen für Ihre Geschäftsanforderungen zu nutzen. Hier finden Sie hilfreiche Tutorials und Schulungen zu Adobe CX Enterprise, Adobe Experience Platform und Adobe Analytics.

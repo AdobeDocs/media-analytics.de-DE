@@ -3,10 +3,10 @@ title: Markierung für heruntergeladene Medien
 description: Markieren Sie eine Sitzung als heruntergeladene Offline-Wiedergabe, damit sie getrennt von gestreamten Sitzungen gemeldet wird.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 10%
+source-wordcount: '273'
+ht-degree: 6%
 
 ---
 
@@ -24,14 +24,18 @@ Die Markierung für heruntergeladene Medien gibt an, dass eine Sitzung die Wiede
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.downloaded` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.downloaded` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |
 
-## Web SDK
+## Empfohlene Implementierungsarten
 
-Legen Sie `isDownloaded` beim Aufrufen von [`sendEvent`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/sendevent/overview) auf `true` in `mediaCollection.sessionDetails` fest:
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Legen Sie `isDownloaded` beim Aufrufen von [`sendEvent`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/sendevent/overview) auf `true` in `xdm.mediaCollection.sessionDetails` fest:
 
 ```javascript
 alloy("sendEvent", {
@@ -53,11 +57,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Setzen Sie beim Erstellen des Trackers mithilfe von `MediaConstants.TrackerConfig.DOWNLOADED_CONTENT` das Flag für heruntergeladene Inhalte in der Tracker-Konfiguration.
-
-**iOS (SWIFT)**
 
 ```swift
 var config: [String: Any] = [:]
@@ -70,7 +72,9 @@ Media.createTrackerWith(config: config) { tracker in
 }
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Setzen Sie beim Erstellen des Trackers mithilfe von `MediaConstants.TrackerConfig.DOWNLOADED_CONTENT` das Flag für heruntergeladene Inhalte in der Tracker-Konfiguration.
 
 ```kotlin
 val config = HashMap<String, Any>()
@@ -81,9 +85,9 @@ config[MediaConstants.TrackerConfig.DOWNLOADED_CONTENT] = true
 val tracker = Media.createTracker(config)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Legen Sie `isDownloaded` beim Aufrufen von `createMediaSession` auf `true` in `mediaCollection.sessionDetails` fest:
+Legen Sie `isDownloaded` beim Aufrufen von `createMediaSession` auf `true` in `xdm.mediaCollection.sessionDetails` fest:
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -105,7 +109,7 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge-API
+>[!TAB Media Edge-API]
 
 Rufen Sie den Endpunkt [HERUNTERGELADEN](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/downloaded/#downloaded) auf, nachdem das Gerät online zurückgekehrt ist, und stapeln Sie die vollständige Offline-Sitzung in `mediaDownloadedEvents`. Adobe setzt `isDownloaded` automatisch auf `true` und weist eine Sitzungs-ID zu. Sie dürfen keines von beiden in die Payload einschließen.
 
@@ -142,7 +146,13 @@ Rufen Sie den Endpunkt [HERUNTERGELADEN](https://developer.adobe.com/data-collec
 }
 ```
 
-## Medien-SDK
+>[!ENDTABS]
+
+## Legacy-Implementierungstypen (nur Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Legen Sie `downloadedContent` auf `ADB.MediaConfig` fest, bevor Sie den Tracker erstellen:
 
@@ -156,7 +166,18 @@ mediaConfig.downloadedContent = true;
 var tracker = ADB.Media.getInstance(mediaConfig);
 ```
 
-## Mediensammlungs-API
+>[!TAB Chromecast]
+
+Legen Sie `MediaDownloaded` für das Medieninformationsobjekt fest, bevor Sie `trackSessionStart` aufrufen:
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
+  ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
+mediaInfo[ADBMobile.media.MediaObjectKey.MediaDownloaded] = true;
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 Fügen Sie `media.downloaded` in das `params` Ihrer `sessionStart` POST-Anfrage ein:
 
@@ -171,3 +192,5 @@ Fügen Sie `media.downloaded` in das `params` Ihrer `sessionStart` POST-Anfrage 
 ```
 
 Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+
+>[!ENDTABS]

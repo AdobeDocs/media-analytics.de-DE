@@ -3,7 +3,7 @@ title: Beschriftung
 description: Meldet das Plattenlabel, unter dem der Audioinhalt freigegeben wurde.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 10%
@@ -28,9 +28,9 @@ Die Beschriftung wird vom Player beim Sitzungsstart für Audioinhalte festgelegt
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.label`, wenn [[!UICONTROL Audio-]](/help/reporting/media-reports-enable.md)) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.label`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.label`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds | `videoaudiolabel` |
-| Audience Manager | `c_contextdata.a.media.label` |
+| Audience Manager | `c_contextdata.a.media.label` |
 
 ## Dimensionselemente
 

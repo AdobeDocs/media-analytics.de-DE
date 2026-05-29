@@ -15,14 +15,18 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 199
-ht-degree: 70%
+source-wordcount: 220
+ht-degree: 63%
 
 ---
 
 # Installieren von Mobile SDKs {#install-mobile-sdks}
+
+>[!IMPORTANT]
+>
+>Auf dieser Seite wird die reine Analytics-Implementierung von Mobile SDK beschrieben. Die empfohlene Implementierung finden Sie unter [Implementieren von Streaming-Medien mit der Edge Network](/help/implementation/edge/edge-mobile-sdk.md).
 
 Installieren und konfigurieren Sie Folgendes, um Adobe Streaming Media Services für mobile Apps auf Android oder iOS zu implementieren:
 

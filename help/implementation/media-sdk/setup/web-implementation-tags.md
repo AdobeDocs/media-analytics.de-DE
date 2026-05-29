@@ -16,14 +16,18 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 131
-ht-degree: 82%
+source-wordcount: 153
+ht-degree: 70%
 
 ---
 
 # Installieren von Streaming-Medien-Services mithilfe der Media Analytics-Erweiterung
+
+>[!IMPORTANT]
+>
+>Auf dieser Seite wird die Implementierung der Nur-Analytics-Media-Analytics-Erweiterung beschrieben. Die empfohlene Implementierung finden Sie unter [Implementieren von Streaming-Medien mit der Edge Network](/help/implementation/edge/edge-web-sdk.md).
 
 Sie können die Adobe Media Analytics-Erweiterung verwenden, um Adobe Streaming-Mediendienste zu implementieren. Die Media Analytics-Erweiterung fügt das zentrale JavaScript-Media-SDK (Media 3.x SDK) hinzu. Diese Erweiterung umfasst die Funktionalität zum Hinzufügen der Medien-Tracker-Instanz zu einer Site oder einem Projekt mit Tag-Aktivierung.
 

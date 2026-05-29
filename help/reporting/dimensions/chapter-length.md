@@ -3,7 +3,7 @@ title: Kapitellänge
 description: Gibt die Dauer jedes Kapitels an.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 2%
@@ -29,7 +29,7 @@ Die Kapitellänge wird vom Player bei jedem [Kapitelstart](/help/implementation/
 | --- | --- |
 | Adobe Analytics (Verarbeitungsregel) | Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.chapter.length` einer eVar zuordnet. |
 | Adobe Analytics (Klassifizierung) | Klassifizierung der Dimension [Chapter](chapter.md) - Adobe erstellt diese Klassifizierung automatisch, wenn **[[!UICONTROL Media Chapters]](/help/reporting/media-reports-enable.md)** für die Report Suite aktiviert ist. Sie sind für das Ausfüllen und Verwalten von Classification-Werten verantwortlich. |
-| Customer Journey Analytics | [`mediaReporting.chapterDetails.length`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.chapterDetails.length`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
 | Daten-Feeds (Verarbeitungsregel) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (die eVar, der Ihre Verarbeitungsregel `a.media.chapter.length` zugeordnet ist) |
 | Daten-Feeds (Klassifizierung) | K. A. - Daten-Feeds unterstützen keine Klassifizierungen. |
 | Audience Manager | `c_contextdata.a.media.chapter.length` |

@@ -20,10 +20,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 1344
-ht-degree: 97%
+source-wordcount: 1337
+ht-degree: 85%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 97%
 
 ## Analytics-Daten
 
-| Anforderungsschlüssel  | erforderlich | Anfragetyp-Schlüssel | Eingerichtet auf... |  Beschreibung  |
+| Anforderungsschlüssel | erforderlich | Anfragetyp-Schlüssel | Wird eingestellt auf… | Beschreibung |
 | --- | :---: | :---: | :---: | --- |
 | `analytics.trackingServer` | J | string | `sessionStart` | Die URL Ihres Adobe Analytics-Servers |
 | `analytics.reportSuite` | J | string | `sessionStart` | Die ID, die Ihre Analytics-Reporting-Daten identifiziert |
@@ -40,16 +40,16 @@ ht-degree: 97%
 
 ## Besucherdaten
 
-| Anforderungsschlüssel  | erforderlich | Anfragetyp-Schlüssel | Eingerichtet auf... |  Beschreibung  |
+| Anforderungsschlüssel | erforderlich | Anfragetyp-Schlüssel | Wird eingestellt auf… | Beschreibung |
 | --- | :---: | :---: | :---: | --- |
-| `visitor.marketingCloudOrgId` | J | string | `sessionStart` | Die Experience Cloud-Organisations-ID, die Ihre Organisation innerhalb der Adobe Experience Cloud-Umgebung identifiziert |
-| `visitor.marketingCloudUserId` | N | string | `sessionStart` | Dies ist die Experience Cloud-Benutzer-ID (ECID). In den meisten Szenarien ist dies die ID, die Sie zur Identifizierung eines Benutzers verwenden sollten. Die `marketingCloudUserId` in Heartbeat entspricht der `MID` in Adobe Analytics. Dieser Parameter ist zwar technisch nicht erforderlich, aber für den Zugriff auf die Apps der Experience Cloud-Familie erforderlich. |
+| `visitor.marketingCloudOrgId` | J | string | `sessionStart` | Die IMS-Organisations-ID; identifiziert Ihre Organisation innerhalb von Adobe CX Enterprise |
+| `visitor.marketingCloudUserId` | N | string | `sessionStart` | Die Experience Cloud-Benutzer-ID (ECID). In den meisten Szenarien ist dies die ID, die Sie zur Identifizierung eines Benutzers verwenden sollten. Die `marketingCloudUserId` in Heartbeat entspricht der `MID` in Adobe Analytics. Dieser Parameter ist zwar technisch nicht erforderlich, wird aber für den Zugriff auf CX Enterprise-Anwendungen und -Services benötigt. |
 | `visitor.aamLocationHint` | N | Ganzzahl | `sessionStart` | Stellt Adobe Audience Manager Edge-Daten bereit - Wenn kein Wert eingegeben wird, ist der Wert null. |
 | `appInstallationId` | N | string | `sessionStart` | Die appInstallationId identifiziert Anwendung und Gerät eindeutig. |
 
 ## Inhaltsdaten
 
-| Anforderungsschlüssel  | erforderlich | Anfragetyp-Schlüssel | Eingerichtet auf... |  Beschreibung  |
+| Anforderungsschlüssel | erforderlich | Anfragetyp-Schlüssel | Wird eingestellt auf… | Beschreibung |
 | --- | :---: | :---: | :---: | --- |
 | `media.id` | J | string | `sessionStart` | Eindeutige Kennung für den Inhalt |
 | `media.name` | N | string | `sessionStart` | Lesbarer Name für den Inhalt |
@@ -62,7 +62,7 @@ ht-degree: 97%
 
 ## Standardmäßige Inhaltsmetadaten
 
-| Anforderungsschlüssel  | erforderlich | Anfragetyp-Schlüssel | Eingerichtet auf... |  Beschreibung  |
+| Anforderungsschlüssel | erforderlich | Anfragetyp-Schlüssel | Wird eingestellt auf… | Beschreibung |
 | --- | :---: | :---: | :---: | --- |
 | `media.streamFormat` | N | string | `sessionStart` | Stream-Format, z. B. „HD“ |
 | `media.show` | N | string | `sessionStart` | Der Name des Programms oder der Serie |
@@ -84,7 +84,7 @@ ht-degree: 97%
 
 ## Anzeigedaten
 
-| Anforderungsschlüssel  | erforderlich | Anfragetyp-Schlüssel | Eingerichtet auf... |  Beschreibung  |
+| Anforderungsschlüssel | erforderlich | Anfragetyp-Schlüssel | Wird eingestellt auf… | Beschreibung |
 | --- | :---: | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | N | string | `adBreakStart` | Der Anzeigename der Werbeunterbrechung |
 | `media.ad.podIndex` | J | Ganzzahl | `adBreakStart` | Der Index der Anzeigen-Pods im Video |
@@ -97,7 +97,7 @@ ht-degree: 97%
 
 ## Standardmäßige Anzeigenmetadaten
 
-| Anforderungsschlüssel  | erforderlich | Anfragetyp-Schlüssel | Eingerichtet auf... |  Beschreibung  |
+| Anforderungsschlüssel | erforderlich | Anfragetyp-Schlüssel | Wird eingestellt auf… | Beschreibung |
 | --- | :---: | :---: | :---: | --- |
 | `media.ad.advertiser` | N | string | `adStart` | Das Unternehmen oder die Marke des Produkts, das in der Anzeige vorgestellt wird |
 | `media.ad.campaignId` | N | string | `adStart` | Die ID der Anzeigenkampagne |
@@ -108,7 +108,7 @@ ht-degree: 97%
 
 ## Kapiteldaten
 
-| Anforderungsschlüssel  | erforderlich | Anfragetyp-Schlüssel | Eingerichtet auf... |  Beschreibung  |
+| Anforderungsschlüssel | erforderlich | Anfragetyp-Schlüssel | Wird eingestellt auf… | Beschreibung |
 | --- | :---: | :---: | :---: | --- |
 | `media.chapter.index` | J | Ganzzahl | `chapterStart` | Identifiziert die Position des Kapitels im Inhalt |
 | `media.chapter.offset` | J | number | `chapterStart` | Die Sekunde, in der die Wiedergabe des Kapitels beginnt |
@@ -117,7 +117,7 @@ ht-degree: 97%
 
 ## Qualitätsdaten
 
-| Anforderungsschlüssel  | erforderlich | Anfragetyp-Schlüssel | Eingerichtet auf... |  Beschreibung  |
+| Anforderungsschlüssel | erforderlich | Anfragetyp-Schlüssel | Wird eingestellt auf… | Beschreibung |
 | --- | :---: | :---: | :---: | --- |
 | `media.qoe.bitrate` | N | Ganzzahl | Eines | Die durchschnittliche Bitrate (in Bit/s). Die durchschnittliche Bitrate wird als gewichteter Durchschnitt aller Bitratenwerte im Zusammenhang mit der Wiedergabedauer berechnet, die während einer Wiedergabesitzung aufgetreten sind. |
 | `media.qoe.droppedFrames` | N | Ganzzahl | Eines | Die Anzahl der Dropped Frames im Stream |
@@ -126,20 +126,20 @@ ht-degree: 97%
 
 ## Parameter des California Consumer Privacy Act (CCPA) {#ccpa-params}
 
-| Anforderungsschlüssel  | erforderlich | Anfragetyp-Schlüssel | Eingerichtet auf... |  Beschreibung  |
+| Anforderungsschlüssel | erforderlich | Anfragetyp-Schlüssel | Wird eingestellt auf… | Beschreibung |
 | --- | :---: | :---: | :---: | --- |
-| `analytics.optOutServerSideForwarding` | N | boolean | `sessionStart` | Auf „true“ (wahr) setzen, wenn der Endbenutzer die Freigabe seiner Daten für Adobe Analytics und andere Experience Cloud-Lösungen (z. B. Audience Manager) abgelehnt hat. |
+| `analytics.optOutServerSideForwarding` | N | boolean | `sessionStart` | Auf „true“ gesetzt, wenn der Endbenutzer die Freigabe seiner Daten zwischen Adobe Analytics und anderen CX Enterprise-Lösungen (z. B. Audience Manager) abgelehnt hat |
 | `analytics.optOutShare` | N | boolean | `sessionStart` | Auf „true“ (wahr) setzen, wenn der Endbenutzer die Verknüpfung seiner Daten (z. B. mit anderen Adobe Analytics-Clients) abgelehnt hat. |
 
 ## Zusätzliche Details {#additional-details}
 
 ### visitor.marketingCloudUserId
 
-Übergeben Sie die Experience Cloud-Benutzer-ID (auch als `MID` oder `MCID` bezeichnet) im `sessionStart`-Aufruf, indem Sie sie mit folgendem Schlüssel in der `params`-Map angeben: **visitor.marketingCloudUserId**. Diese Funktion ist hilfreich, wenn Sie schon andere Experience Cloud-Produkte integriert haben und bereits über eine MCID verfügen.
+Übergeben Sie die Experience Cloud-Benutzer-ID (auch als `MID` oder `MCID` bezeichnet) im `sessionStart`-Aufruf, indem Sie sie mit folgendem Schlüssel in der `params`-Map angeben: **visitor.marketingCloudUserId**. Dies ist nützlich, wenn Sie bereits mit anderen CX Enterprise-Produkten integriert sind und die MCID bereits erhalten haben.
 
 >[!NOTE]
 >
->Media Analytics (MA) ist in das Portfolio von Experience Cloud-Anwendungen (Adobe Analytics, Audience Manager, Target usw.) integriert. Sie benötigen eine Experience Cloud ID, um auf diese Anwendungen zuzugreifen. _In den meisten Szenarien sollten Sie die ECID verwenden, um Benutzer zu identifizieren._
+>Media Analytics (MA) ist in die Apps der CX Enterprise-Reihe (Adobe Analytics, Audience Manager, Target usw.) integriert. Sie benötigen eine Experience Cloud ID, um auf diese Anwendungen zuzugreifen. _In den meisten Szenarien sollten Sie die ECID verwenden, um Benutzer zu identifizieren._
 
 ### appInstallationId
 

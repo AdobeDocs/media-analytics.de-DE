@@ -3,7 +3,7 @@ title: Unterstützung benutzerdefinierter Metadaten - XDM-Format
 description: Erfahren Sie, wie Sie benutzerdefinierte Metadaten mit Medien-Tracking-Ereignissen im XDM-Format von Experience Edge senden.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 80caffab1630b138724b310e3bdcc58f682a2f8b
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 2%
@@ -310,7 +310,7 @@ In diesem Beispiel:
 
 &lt;InlineAlert variant="info" slots="text" />
 
-`xdm.mediaCollection.customMetadata` ist der **eingehende API-Pfad** der zum Senden benutzerdefinierter Metadaten mit Ereignissen verwendet wird. Nach der Verarbeitung werden die Daten als Kontextdatenvariablen an Adobe Analytics weitergeleitet und in Adobe Experience Platform unter `mediaReporting.customMetadata` und als reduzierte Felder der obersten Ebene gespeichert.
+`xdm.mediaCollection.customMetadata` ist der **eingehende API-Pfad** der zum Senden benutzerdefinierter Metadaten mit Ereignissen verwendet wird. Nach der Verarbeitung werden die Daten als Kontextdatenvariablen an Adobe Analytics weitergeleitet und in Adobe Experience Platform unter `xdm.mediaReporting.customMetadata` und als reduzierte Felder der obersten Ebene gespeichert.
 
 **Adobe Analytics:**
 
@@ -323,7 +323,7 @@ In diesem Beispiel:
 - Benutzerdefinierte Metadatenfelder müssen als benutzerdefinierte Felder in Ihrem XDM-Schema definiert werden (z. B. `_mycompany`) und können in AEP als reduzierte Felder gespeichert und abgefragt werden
 
   ![Benutzerdefinierte Felddefinition im XDM-Schema](assets/custom_metadata.png)
-- Für Berichte und Abfragen sind benutzerdefinierte Metadaten unter `mediaReporting.customMetadata` sowie als reduzierte Felder der obersten Ebene verfügbar. Verwenden Sie je nachdem, was für Ihren Anwendungsfall am besten geeignet ist.
+- Für Berichte und Abfragen sind benutzerdefinierte Metadaten unter `xdm.mediaReporting.customMetadata` sowie als reduzierte Felder der obersten Ebene verfügbar. Verwenden Sie je nachdem, was für Ihren Anwendungsfall am besten geeignet ist.
 - Abrufbar für Segmentierung, Journey Orchestration- und Real-Time CDP-Aktivierung
 
 ## Verhalten

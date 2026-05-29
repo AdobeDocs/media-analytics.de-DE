@@ -3,7 +3,7 @@ title: Content-Typ
 description: Gibt das Format des Streams an (VOD, Live, Linear, Podcast, Song usw.).
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 9%
@@ -28,7 +28,7 @@ Der Inhaltstyp wird vom Player beim Sitzungsstart festgelegt und bei jedem Ereig
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.contentType`, wenn [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.contentType`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.contentType`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds | `videocontenttype`, `post_videocontenttype` |
 | Audience Manager | `c_contextdata.a.contentType` |
 

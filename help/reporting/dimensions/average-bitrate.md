@@ -3,7 +3,7 @@ title: Durchschnittliche Bitrate (Dimension)
 description: Gibt die gepackte durchschnittliche Bitrate jeder Sitzung in Intervallen von 100 kBit/s an.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 7%
@@ -26,7 +26,7 @@ Die Dimension **Durchschnittliche Bitrate** zeigt die durchschnittliche Wiederga
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.qoe.bitrateAverageBucket`, wenn [[!UICONTROL Medienqualität]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateAverageBucket`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bitrateAverageBucket`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Daten-Feeds | `videoqoebitrateaverageevar`, `post_videoqoebitrateaverageevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.bitrateAverageBucket` |
 

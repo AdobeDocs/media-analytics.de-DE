@@ -20,14 +20,18 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 472
-ht-degree: 93%
+source-wordcount: 449
+ht-degree: 78%
 
 ---
 
 # Installieren von Media SDK mithilfe von JavaScript {#install-web-sdks}
+
+>[!IMPORTANT]
+>
+>Auf dieser Seite wird die reine Analytics-Implementierung von JavaScript Web SDK beschrieben. Die empfohlene Implementierung finden Sie unter [Implementieren von Streaming-Medien mit der Edge Network](/help/implementation/edge/edge-web-sdk.md).
 
 Die Informationen auf dieser Seite beschreiben, wie Sie das eigenständige Web-SDK installieren und JavaScript einrichten.
 
@@ -41,7 +45,7 @@ Alternativ können Sie die Adobe Media Analytics-Erweiterung verwenden, um Strea
 
 * **Implementierung von `AppMeasurement` und `Experience Cloud Identity Service` für JavaScript in Ihrer Medienanwendung**
 
-  Weitere Informationen finden Sie unter [Implementieren von Analytics mit JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=de) und [Implementieren des Identity-Diensts in Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=de).
+  Weitere Informationen finden Sie unter [Analytics mit JavaScript implementieren](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=de) und [Besucheridentifizierung mit AppMeasurement](https://experienceleague.adobe.com/de/docs/analytics/implementation/id/appmeasurement).
 
 * **Integrieren der folgenden APIs in Ihren Media Player**
 
@@ -87,10 +91,6 @@ Alternativ können Sie die Adobe Media Analytics-Erweiterung verwenden, um Strea
 
    Media SDK sollte einmal pro Webseite konfiguriert werden und die Konfiguration gilt für alle erstellten Trackerinstanzen.
 
-   >[!IMPORTANT]
-   >
-   > Media SDK (3.x) verwendet für das Tracking von Medien die Mediensammlungs-API, die sich vom HB-Endpunkt unterscheidet, der in 2.x-SDKs verwendet wird. Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, um weitere Informationen zu erhalten.
-
    Hier finden Sie eine Beispielinitialisierung für `MediaConfig`:
 
    ```js
@@ -120,6 +120,4 @@ Alternativ können Sie die Adobe Media Analytics-Erweiterung verwenden, um Strea
 
 ## Migrieren von JavaScript 2.x zu 3.x
 
-Ausführliche Informationen zur Migration von 2.x zu 3.x finden Sie unter [Migration von 2.x zu 3.x.](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)
-
-Informationen zu älteren Inhalten finden Sie unter [Legacy-Implementierungen](/help/legacy/media-sdk/setup/setup-overview.md)
+Ausführliche Informationen zur Migration von 2.x zu 3.x finden Sie unter [Migration von JS SDK 2.x zu 3.x](/help/implementation/media-sdk/setup/migrate-js-2x-to-3x.md).

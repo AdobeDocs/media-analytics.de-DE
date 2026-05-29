@@ -16,13 +16,13 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 45
-ht-degree: 100%
+ht-degree: 53%
 
 ---
 
 # Medientagesabschnitt{#media-daypart}
 
-Das Dashboard „Medientagesabschnitt“ zeigt Inhaltsstarts nach Tageszeit an, damit Sie schnell ermitteln können, wann Ihre Zielgruppe interagiert. ![](assets/video-daypart-report.png)
+Das Dashboard „Medientagesabschnitt[[!UICONTROL &#x200B; zeigt &#x200B;]](/help/reporting/metrics/content-starts.md)Inhaltsstarts“ nach Tageszeit an, damit Sie schnell ermitteln können, wann Ihre Zielgruppe interagiert.  ![](assets/video-daypart-report.png)

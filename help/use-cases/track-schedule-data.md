@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 1425
+source-wordcount: 1424
 ht-degree: 5%
 
 ---
@@ -81,7 +81,7 @@ Die Funktion zum Planen von Daten für Streaming-Medien funktioniert wie folgt:
 
 Um Daten vergangener Live-Inhalte hochzuladen, muss Ihre Streaming Media-Umgebung die folgenden Voraussetzungen erfüllen:
 
-* Die Streaming-Mediensammlung muss für das Tracking des Inhalts aktiviert sein, für den Sie Zeitplandaten hochladen möchten, wie in [Tracking-Übersicht](/help/use-cases/track-av-playback/track-core-overview.md) beschrieben<!--specifics??? -->
+* Die Streaming-Mediensammlung muss für das Tracking des Inhalts aktiviert sein, für den Sie Zeitplandaten hochladen möchten, wie in [Tracking-Übersicht](/help/implementation/events/session/overview.md) beschrieben<!--specifics??? -->
 
 * Verwenden der Streaming Media Collection mit Customer Journey Analytics. Das Hochladen von Zeitplandaten ist in Adobe Analytics nicht verfügbar.
 
@@ -317,9 +317,9 @@ Das folgende Beispiel zeigt eine Datei mit der Zeitplandatei JSON mit zwei Daten
 
    Im Folgenden finden Sie einige Beispiele für Dimensionen, die Sie in Customer Journey Analytics erstellen und über die Sie dann Berichte erstellen können:
 
-   * **[&quot;_Episodenname_&quot;](/help/reporting/dimensions/episode.md)**: Diese Dimension könnte Ihnen dabei helfen zu erfahren, welche Episoden in einer bestimmten Serie am besten funktionieren.
+   * **[[!UICONTROL Episode]](/help/reporting/dimensions/episode.md)**: Diese Dimension könnte Ihnen dabei helfen zu erfahren, welche Episoden in einer bestimmten Serie am besten funktionieren.
 
-   * **[Asset-ID](/help/reporting/dimensions/asset-id.md)**
+   * **[[!UICONTROL Asset-ID]](/help/reporting/dimensions/asset-id.md)**
 
 1. Fahren Sie mit [Analysieren von Daten in Customer Journey Analytics](#analyze-data-in-customer-journey-analytics) fort.
 

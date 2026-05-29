@@ -20,7 +20,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
 workflow-type: tm+mt
 source-wordcount: 243
 ht-degree: 14%
@@ -44,4 +44,4 @@ Fragen Sie den Adobe Analytics-Support nach der URL des Medien-Tracking-Servers.
 Abhängig vom Implementierungspfad [Laden Sie die aktuelle SDK herunter](/help/getting-started/download-sdks.md) für Web-, Mobil- oder Over-the-top-Plattformen. Die erforderlichen Erweiterungen müssen implementiert werden, um das Add-on Adobe Analytics for Streaming Media zu aktivieren.
 
 1. **Adobe Analytics-Berichte aktivieren**<br>
-Um Berichte in Analytics zu aktivieren und die erfassten Inhalts- und Anzeigendaten anzuzeigen, müssen Sie Berichte in Analytics aktivieren. Siehe [Aktivierung von Medienberichten](/help/reporting/media-reports-enable.md).
+Um Berichte in Analytics zu aktivieren und die erfassten Inhalts- und Anzeigendaten anzuzeigen, müssen Sie Berichte in Analytics aktivieren. Siehe [Aktivierung von Medienberichten](/help/implementation/media-sdk/setup/media-reports-enable.md).

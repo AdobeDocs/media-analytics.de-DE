@@ -3,7 +3,7 @@ title: Pod-Position
 description: Meldet den Versatz jeder Anzeigenunterbrechung im Inhalt.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Die Pod-Position wird anhand des Werts [Startzeit der Werbeunterbrechung](/help/
 | --- | --- |
 | Adobe Analytics (Verarbeitungsregel) | Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.ad.podSecond` einer eVar zuordnet. |
 | Adobe Analytics (Klassifizierung) | Klassifizierung der Dimension [Ad Pod](ad-pod.md) - Adobe erstellt diese Klassifizierung automatisch, wenn **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)** für die Report Suite aktiviert ist. Sie sind für das Ausfüllen und Verwalten von Classification-Werten verantwortlich. |
-| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.offset`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.offset`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | Daten-Feeds (Verarbeitungsregel) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (die eVar, der Ihre Verarbeitungsregel `a.media.ad.podSecond` zugeordnet ist) |
 | Daten-Feeds (Klassifizierung) | K. A. - Daten-Feeds unterstützen keine Klassifizierungen. |
 | Audience Manager | `c_contextdata.a.media.ad.podSecond` |
