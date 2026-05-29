@@ -24,7 +24,7 @@ Die Variable Kampagnen-ID identifiziert die Anzeigenkampagne, zu der das Kreativ
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.campaign` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.advertisingDetails.campaignID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.advertisingDetails.campaignID`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.ad.campaign` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Anzeigenstart](/help/implementation/events/ads/ad-start.md), Anzeigenschluss |

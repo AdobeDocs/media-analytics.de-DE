@@ -45,7 +45,7 @@ Alternativ können Sie die Adobe Media Analytics-Erweiterung verwenden, um Strea
 
 * **Implementierung von `AppMeasurement` und `Experience Cloud Identity Service` für JavaScript in Ihrer Medienanwendung**
 
-  Weitere Informationen finden Sie unter [Analytics mit JavaScript implementieren](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=de) und [Besucheridentifizierung mit AppMeasurement](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/appmeasurement).
+  Weitere Informationen finden Sie unter [Analytics mit JavaScript implementieren](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=de) und [Besucheridentifizierung mit AppMeasurement](https://experienceleague.adobe.com/de/docs/analytics/implementation/id/appmeasurement).
 
 * **Integrieren der folgenden APIs in Ihren Media Player**
 

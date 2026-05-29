@@ -24,7 +24,7 @@ Die Advertiser-Variable ist das Unternehmen oder die Marke, die in der Anzeige a
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.advertiser` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.ad.advertiser` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Anzeigenstart](/help/implementation/events/ads/ad-start.md), Anzeigenschluss |

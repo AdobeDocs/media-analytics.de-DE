@@ -24,7 +24,7 @@ Die Variable für den Kapitelversatz ist der Versatz des Kapitels innerhalb des 
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.chapter.offset` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.chapter.offset` |
 | **Erforderlich** | Nein (Mobile SDK); Ja (Edge, Mediensammlungs-API) |
 | **Gesendet mit** | [Kapitelstart](/help/implementation/events/chapters/chapter-start.md), Kapitelschluss |

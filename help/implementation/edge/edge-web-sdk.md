@@ -82,13 +82,13 @@ alloy("configure", {
 });
 ```
 
-Vollständige Details zur Konfiguration finden Sie in [&#x200B; Dokumentation &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia) Web SDK-`streamingMedia` .
+Vollständige Details zur Konfiguration finden Sie in [&#x200B; Dokumentation &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/commands/configure/streamingmedia) Web SDK-`streamingMedia` .
 
 ### Schritt 3: Abrufen der Media Tracker-Instanz bei der Migration von der Media JS-SDK
 
 Für Kunden, die die Media JS-SDK verwenden, bietet Web SDK einen Migrationspfad, um von Media JS-SDK zu Web SDK zu wechseln, wobei bestehende Media JS-Funktionen, z. B. die Verarbeitung von Medienereignissen, unterstützt werden.
 
-Die Web-SDK enthält einen [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker), mit dem Sie eine Objektinstanz erstellen können. Sie können dann Medienereignisse mit denselben APIs verfolgen, die von Media SDK [3.x bereitgestellt &#x200B;](/help/implementation/media-sdk/setup/js-3x-api-reference.md).
+Die Web-SDK enthält einen [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker), mit dem Sie eine Objektinstanz erstellen können. Sie können dann Medienereignisse mit denselben APIs verfolgen, die von Media SDK [3.x bereitgestellt &#x200B;](/help/implementation/media-sdk/setup/js-3x-api-reference.md).
 
 Der folgende Ausschnitt zeigt, wie Sie die Medien-Tracker-Instanz in Media JS abrufen würden.
 
