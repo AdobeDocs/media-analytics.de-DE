@@ -3,7 +3,7 @@ title: Übersicht über Streaming-Mediendimensionen
 description: Erfahren Sie, wie Streaming-Mediendimensionen in Adobe Analytics und Customer Journey Analytics gefüllt und organisiert werden.
 feature: Dimensions
 role: User, Admin
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 6%
@@ -36,6 +36,6 @@ Streaming-Mediendimensionen folgen drei Hauptpopulationsmustern:
 
 >[!MORELIKETHIS]
 >
->* [Metriken - Übersicht](../metrics/overview.md): Referenz zu Metriken von Streaming-Medien
->* [Parameterzuordnung](/help/implementation/parameters-mapping.md): Vollständiger Verweis von Variable zu Spalte zu XDM
->* [Mediensegmente](/help/reporting/segments.md): Integrierte Segmente, die Streaming-Mediendimensionen verwenden
+>* [Ereignisübersicht](/help/implementation/events/overview.md): Die Player-Ereignisse, die Dimensionen befüllen
+>* [Variablenübersicht](/help/implementation/variables/overview.md): Die Daten, die Ereignisse an Adobe übertragen
+>* [Metriken - Übersicht](/help/reporting/metrics/overview.md): Die Berichtsmetriken, mit denen Variablen gefüllt werden

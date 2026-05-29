@@ -3,9 +3,9 @@ title: Übersicht über Metriken für Streaming-Medien
 description: Erfahren Sie, wie Streaming-Medienmetriken in Adobe Analytics und Customer Journey Analytics berechnet und organisiert werden.
 feature: Metrics
 role: User, Admin
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '458'
 ht-degree: 3%
 
 ---
@@ -37,7 +37,6 @@ Metriken für Streaming-Medien folgen vier Hauptberechnungsmustern:
 
 >[!MORELIKETHIS]
 >
->* [Dimensionsübersicht](../dimensions/overview.md): Referenz zu Streaming-Mediendimensionen
->* [Berechnete Metriken](/help/reporting/calculated-metrics.md): Verhältnisse und abgeleitete Metriken, die aus den oben genannten Basismetriken erstellt wurden
->* [Parameterzuordnung](/help/implementation/parameters-mapping.md): Vollständiger Verweis von Ereignis zu Spalte zu XDM
->* [Ereignisübersicht](/help/implementation/events/overview.md): Die Player-Ereignisse, die die Metrikberechnung steuern
+>* [Ereignisübersicht](/help/implementation/events/overview.md): Die Player-Ereignisse, die Metriken befüllen
+>* [Variablenübersicht](/help/implementation/variables/overview.md): Die Daten, die Ereignisse an Adobe übertragen
+>* [Dimensions-Übersicht](/help/reporting/dimensions/overview.md): Die Berichtsdimensionen, mit denen Variablen gefüllt werden

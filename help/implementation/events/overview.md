@@ -3,9 +3,9 @@ title: Übersicht über Streaming-Medienereignisse
 description: Erfahren Sie mehr über Medienereignistypen und die Reihenfolge, in der sie gesendet werden müssen.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
@@ -69,3 +69,9 @@ Die fünf nachverfolgbaren Status sind: `fullscreen`, `mute`, `closedCaptioning`
 ## Fehlerereignisse
 
 Das [Fehler](error.md)-Ereignis zeichnet einen Wiedergabefehler während einer Sitzung auf - eine fehlgeschlagene Stream-Anfrage, einen Codec-Fehler oder einen externen Versandfehler. Senden Sie ihn, wenn ein bedeutender Fehler auftritt. Ein Fehlerereignis schließt die Sitzung nicht. Die Wiedergabe kann fortgesetzt werden, und nachfolgende Ereignisse werden in derselben Sitzung verfolgt. Wenn der Fehler nicht behebbar ist, folgen Sie ihm mit Sitzungsende , um die Sitzung explizit zu schließen.
+
+>[!MORELIKETHIS]
+>
+>* [Variablenübersicht](/help/implementation/variables/overview.md): Die Daten, die Ereignisse an Adobe übertragen
+>* [Dimensions-Übersicht](/help/reporting/dimensions/overview.md): Die Berichtsdimensionen, mit denen Ereignisse gefüllt werden
+>* [Metriken - Übersicht](/help/reporting/metrics/overview.md): Die Berichtsmetriken, mit denen Ereignisse gefüllt werden
