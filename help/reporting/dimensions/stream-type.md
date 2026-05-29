@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Stream-Typ**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/core/stream-type.md) unter „Stream-Typ“*
+*Auf dieser Seite wird die Berichtsdimension **Stream-Typ**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/core/stream-type.md) unter „Stream-Typ“*
 
 >[!ENDSHADEBOX]
 

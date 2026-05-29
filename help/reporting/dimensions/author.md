@@ -15,7 +15,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Autor**behandelt. Unter [Autor](/help/implementation/variables/standard-metadata/author.md) finden Sie Informationen zum Erfassen dieser Variablen.*
+*Auf dieser Seite wird die Berichtsdimension **Autor**&#x200B;behandelt. Unter [Autor](/help/implementation/variables/standard-metadata/author.md) finden Sie Informationen zum Erfassen dieser Variablen.*
 
 >[!ENDSHADEBOX]
 

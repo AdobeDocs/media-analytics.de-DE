@@ -4,10 +4,17 @@ description: Erfahren Sie, welche Media Edge-API-Ereignisse Erlebnisereignisse i
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: c3a4d31b-8f9e-4d7a-9b2e-1a5f0e8c7d39
-product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85eid: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 764
@@ -103,7 +110,7 @@ Die folgenden Felder werden in `mediaReporting` Payloads angezeigt, sind jedoch 
 
 Bei Sitzungen, die mit dem [heruntergeladenen Endpunkt](/help/use-cases/track-downloaded-content.md) verfolgt werden, setzt das Backend `xdm.mediaReporting.sessionDetails.isDownloaded` automatisch auf `true` im `sessionStart`. Alle anderen Berichterstellungsereignisse für heruntergeladene Sitzungen folgen demselben Schema wie Live-Sitzungen. Verwenden Sie dieses Feld in CJA oder Adobe Analytics, um die heruntergeladene Wiedergabe zu filtern oder zu segmentieren.
 
-Weitere Informationen zur [ finden Sie ](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/downloaded/)Downloaded Endpoint) in der Media Edge-API-Referenz.
+Weitere Informationen zur [&#x200B; finden Sie &#x200B;](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/downloaded/)Downloaded Endpoint) in der Media Edge-API-Referenz.
 
 ## Validieren der Implementierung
 

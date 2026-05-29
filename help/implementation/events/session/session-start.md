@@ -184,7 +184,7 @@ Senden Sie einen `sessionStart` POST an den [sessions-Endpunkt](/help/implementa
 
 ## Wiederaufnehmen einer Sitzung
 
-Wenn Sie eine zuvor geschlossene Sitzung fortsetzen - z. B. nach einer geräteübergreifenden Übergabe oder nachdem die Anwendung den gespeicherten Wiedergabestatus wiederhergestellt hat -, setzen Sie das Resume-Flag beim Sitzungsstart. Dadurch wird Analytics [[!UICONTROL Inhaltswiederaufnahmen]](/help/reporting/metrics/content-resumes.md) anstelle von „Medienstarts[[!UICONTROL  erhöht]](/help/reporting/metrics/media-starts.md).
+Wenn Sie eine zuvor geschlossene Sitzung fortsetzen - z. B. nach einer geräteübergreifenden Übergabe oder nachdem die Anwendung den gespeicherten Wiedergabestatus wiederhergestellt hat -, setzen Sie das Resume-Flag beim Sitzungsstart. Dadurch wird Analytics [[!UICONTROL Inhaltswiederaufnahmen]](/help/reporting/metrics/content-resumes.md) anstelle von „Medienstarts[[!UICONTROL &#x200B; erhöht]](/help/reporting/metrics/media-starts.md).
 
 ## Empfohlene Implementierungsarten
 

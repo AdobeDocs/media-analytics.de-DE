@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Diese Seite deckt die Berichtsdimension **Inhaltslänge**ab. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/core/content-length.md) unter „Inhaltslänge“*
+*Diese Seite deckt die Berichtsdimension **Inhaltslänge**&#x200B;ab. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/core/content-length.md) unter „Inhaltslänge“*
 
 >[!ENDSHADEBOX]
 
@@ -34,7 +34,7 @@ Die Inhaltslänge wird vom Player beim Sitzungsstart festgelegt. Der gemeldete W
 
 >[!NOTE]
 >
->In Adobe Analytics entspricht dieser Wert auch einer Klassifizierung **Videolänge** in der Dimension [Inhalt](content.md). Sie sind dafür verantwortlich, diese Klassifizierung separat auszufüllen und zu pflegen. Customer Journey Analytics verwendet diese Dimension direkt. Sie können bei [ Wert-](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/value-bucketing) verwenden.
+>In Adobe Analytics entspricht dieser Wert auch einer Klassifizierung **Videolänge** in der Dimension [Inhalt](content.md). Sie sind dafür verantwortlich, diese Klassifizierung separat auszufüllen und zu pflegen. Customer Journey Analytics verwendet diese Dimension direkt. Sie können bei [&#x200B; Wert-](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/value-bucketing) verwenden.
 
 >[!IMPORTANT]
 >

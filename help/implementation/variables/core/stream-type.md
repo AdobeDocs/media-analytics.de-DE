@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Stream type**behandelt. Siehe [Stream-Typ](/help/reporting/dimensions/stream-type.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Stream type**&#x200B;behandelt. Siehe [Stream-Typ](/help/reporting/dimensions/stream-type.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -187,6 +187,6 @@ Fügen Sie `media.streamType` in das `params` Ihrer `sessionStart` POST-Anfrage 
 }
 ```
 
-Die [ Anfragestruktur und alle erforderlichen Felder finden Sie ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) der Referenz zur Mediensammlungs-API-Sitzungen .
+Die [&#x200B; Anfragestruktur und alle erforderlichen Felder finden Sie &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) der Referenz zur Mediensammlungs-API-Sitzungen .
 
 >[!ENDTABS]

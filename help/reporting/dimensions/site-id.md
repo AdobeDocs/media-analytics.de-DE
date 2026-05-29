@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Site-ID**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/ads/site-id.md) unter „Site-ID“*
+*Auf dieser Seite wird die Berichtsdimension **Site-ID**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/ads/site-id.md) unter „Site-ID“*
 
 >[!ENDSHADEBOX]
 
@@ -34,4 +34,4 @@ Die Site-ID wird vom Player bei jedem [Anzeigenstart](/help/implementation/event
 
 ## Dimensionselemente
 
-Jedes Element ist der literale Site-ID-Wert, der beim Anzeigen-Start [ wird](/help/implementation/events/ads/ad-start.md).
+Jedes Element ist der literale Site-ID-Wert, der beim Anzeigen-Start [&#x200B; wird](/help/implementation/events/ads/ad-start.md).

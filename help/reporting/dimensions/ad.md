@@ -15,11 +15,11 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Anzeige**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/ads/ad-id.md) unter „Anzeigen-ID“*
+*Auf dieser Seite wird die Berichtsdimension **Anzeige**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/ads/ad-id.md) unter „Anzeigen-ID“*
 
 >[!ENDSHADEBOX]
 
-Die Dimension **Anzeige** zeigt jede abgespielte eindeutige Anzeige an, die durch die beim Anzeigenstart festgelegte [-ID ](/help/implementation/events/ads/ad-start.md) wird. Die Dimension ist die primäre Aufschlüsselung für das Anzeigen-Reporting und der Join-Schlüssel für Klassifizierungen auf Anzeigenebene wie Anzeigename, Anzeigenlänge und Creative-ID.
+Die Dimension **Anzeige** zeigt jede abgespielte eindeutige Anzeige an, die durch die beim Anzeigenstart festgelegte [-ID &#x200B;](/help/implementation/events/ads/ad-start.md) wird. Die Dimension ist die primäre Aufschlüsselung für das Anzeigen-Reporting und der Join-Schlüssel für Klassifizierungen auf Anzeigenebene wie Anzeigename, Anzeigenlänge und Creative-ID.
 
 ## So wird diese Dimension ausgefüllt
 

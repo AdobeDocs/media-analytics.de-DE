@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für den Player **Status „Bild in Bild**behandelt. Siehe [Von Bild in Bild betroffene Streams](/help/reporting/metrics/picture-in-picture-streams-impacted.md), [Anzahl der Bilder in Bild](/help/reporting/metrics/picture-in-picture-count.md) und [Gesamtdauer des Bildes](/help/reporting/metrics/picture-in-picture-total-duration.md) für die entsprechenden Berichtsmetriken.*
+*Auf dieser Seite wird die Datenerfassung für den Player **Status „Bild in Bild**&#x200B;behandelt. Siehe [Von Bild in Bild betroffene Streams](/help/reporting/metrics/picture-in-picture-streams-impacted.md), [Anzahl der Bilder in Bild](/help/reporting/metrics/picture-in-picture-count.md) und [Gesamtdauer des Bildes](/help/reporting/metrics/picture-in-picture-total-duration.md) für die entsprechenden Berichtsmetriken.*
 
 >[!ENDSHADEBOX]
 
@@ -178,6 +178,6 @@ Senden Sie eine `stateStart` POST-Anfrage, wenn das Bild-in-Bild beginnt, und ei
 }
 ```
 
-Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]

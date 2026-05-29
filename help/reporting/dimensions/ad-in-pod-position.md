@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Anzeige in Pod-Position**behandelt. Informationen [ Erfassen dieser Variablen finden Sie ](/help/implementation/variables/ads/ad-in-pod-position.md) „Anzeige in Pod-Position“*
+*Auf dieser Seite wird die Berichtsdimension **Anzeige in Pod-Position**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden Sie &#x200B;](/help/implementation/variables/ads/ad-in-pod-position.md) „Anzeige in Pod-Position“*
 
 >[!ENDSHADEBOX]
 

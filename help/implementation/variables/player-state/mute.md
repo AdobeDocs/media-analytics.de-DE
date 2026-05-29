@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für den Player **Status „Stumm**behandelt. Siehe [Von Stummschaltung betroffene Streams](/help/reporting/metrics/mute-streams-impacted.md), [Stummschaltungsanzahl](/help/reporting/metrics/mute-count.md) und [Stummschaltungsgesamtdauer](/help/reporting/metrics/mute-total-duration.md) für die entsprechenden Berichtsmetriken.*
+*Auf dieser Seite wird die Datenerfassung für den Player **Status „Stumm**&#x200B;behandelt. Siehe [Von Stummschaltung betroffene Streams](/help/reporting/metrics/mute-streams-impacted.md), [Stummschaltungsanzahl](/help/reporting/metrics/mute-count.md) und [Stummschaltungsgesamtdauer](/help/reporting/metrics/mute-total-duration.md) für die entsprechenden Berichtsmetriken.*
 
 >[!ENDSHADEBOX]
 
@@ -178,6 +178,6 @@ Senden Sie eine `stateStart` POST-Anfrage, wenn der Viewer stummgeschaltet wird,
 }
 ```
 
-Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]
