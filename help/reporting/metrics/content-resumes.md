@@ -3,7 +3,7 @@ title: Inhaltswiederaufnahmen
 description: Zählt Sitzungen, mit denen eine zuvor unterbrochene Wiedergabe fortgesetzt wurde.
 feature: Metrics
 role: User, Admin
-source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 9%
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsmetrik **Inhaltswiederaufnahmen**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/core/content-resumes.md) unter „Inhaltswiederaufnahmen“*
+*Auf dieser Seite wird die Berichtsmetrik **Inhaltswiederaufnahmen**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/core/content-resumes.md) unter „Inhaltswiederaufnahmen“*
 
 >[!ENDSHADEBOX]
 
@@ -23,11 +23,11 @@ Die Metrik **Inhaltswiederaufnahme** zählt Sitzungen, die eine zuvor unterbroch
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend setzt dieses Flag, wenn `mediaCollection.sessionDetails.hasResume` beim [Sitzungsstart](/help/implementation/events/session/session-start.md)-Ereignis `true` wird. Der Player muss die Sitzung explizit als Wiederaufnahme kennzeichnen. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend setzt dieses Flag, wenn `xdm.mediaCollection.sessionDetails.hasResume` beim [Sitzungsstart](/help/implementation/events/session/session-start.md)-Ereignis `true` wird. Der Player muss die Sitzung explizit als Wiederaufnahme kennzeichnen. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.resume`, wenn [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasResume`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
 | Audience Manager | nicht angegeben |

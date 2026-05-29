@@ -3,7 +3,7 @@ title: Länge des Inhalts
 description: Gibt die Gesamtdauer jeder Mediensitzung in Sekunden an, wie bei Sitzungsbeginn festgelegt.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Diese Seite deckt die Berichtsdimension **Inhaltslänge**&#x200B;ab. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/core/content-length.md) unter „Inhaltslänge“*
+*Diese Seite deckt die Berichtsdimension **Inhaltslänge**ab. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/core/content-length.md) unter „Inhaltslänge“*
 
 >[!ENDSHADEBOX]
 
@@ -28,13 +28,13 @@ Die Inhaltslänge wird vom Player beim Sitzungsstart festgelegt. Der gemeldete W
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.length`, wenn [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds | `videolength`, `post_videolength` |
 | Audience Manager | `c_contextdata.a.media.length` |
 
 >[!NOTE]
 >
->In Adobe Analytics entspricht dieser Wert auch einer Klassifizierung **Videolänge** in der Dimension [Inhalt](content.md). Sie sind dafür verantwortlich, diese Klassifizierung separat auszufüllen und zu pflegen. Customer Journey Analytics verwendet diese Dimension direkt. Sie können bei [&#x200B; Wert-](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-settings/value-bucketing) verwenden.
+>In Adobe Analytics entspricht dieser Wert auch einer Klassifizierung **Videolänge** in der Dimension [Inhalt](content.md). Sie sind dafür verantwortlich, diese Klassifizierung separat auszufüllen und zu pflegen. Customer Journey Analytics verwendet diese Dimension direkt. Sie können bei [ Wert-](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/value-bucketing) verwenden.
 
 >[!IMPORTANT]
 >

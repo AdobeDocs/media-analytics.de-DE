@@ -3,10 +3,10 @@ title: Anzeigenstart
 description: Signal, dass die Wiedergabe einer einzelnen Anzeige begonnen hat.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 14%
+source-wordcount: '187'
+ht-degree: 8%
 
 ---
 
@@ -16,13 +16,17 @@ ht-degree: 14%
 Das Anzeigenstartereignis signalisiert, dass die Wiedergabe einer einzelnen Anzeige begonnen hat. Sie muss innerhalb eines [Anzeigenunterbrechungsstart](ad-break-start.md)/[Anzeigenunterbrechung abgeschlossen](ad-break-complete.md)-Paars erfolgen.
 
 * **Voraussetzungen**: [Sitzungsstart](../session/session-start.md), [Start der Werbeunterbrechung](ad-break-start.md)
-* **Zugeordnete Metrik**: [Anzeigenstarts](/help/reporting/metrics/ad-starts.md)
+* **Zugeordnete Metrik**: [[!UICONTROL Anzeigenstarts]](/help/reporting/metrics/ad-starts.md)
 
 >[!IMPORTANT]
 >
 >Dieses Ereignis muss von `adBreakStart` und `adBreakComplete` Buchstützen umgeben sein, selbst wenn eine einzige Anzeige abgespielt wird. Ohne diese Buchstützen werden Anzeigenereignisse ignoriert und die Anzeigendauer wird als Hauptinhaltsdauer gezählt.
 
-## Web SDK
+## Empfohlene Implementierungsarten
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Rufen Sie [`sendEvent`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/sendevent/overview) mit `eventType: "media.adStart"` und den erforderlichen `advertisingDetails` auf:
 
@@ -45,11 +49,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Übergeben Sie den Anzeigenamen, die ID, die Pod-Position und die Länge an `createAdObject` und rufen Sie dann `trackEvent` auf.
-
-**iOS (SWIFT)**
 
 ```swift
 let adObject = Media.createAdObjectWith(name: "Ford F-150",
@@ -60,7 +62,9 @@ let adObject = Media.createAdObjectWith(name: "Ford F-150",
 tracker.trackEvent(event: MediaEvent.AdStart, info: adObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Übergeben Sie den Anzeigenamen, die ID, die Pod-Position und die Länge an `createAdObject` und rufen Sie dann `trackEvent` auf.
 
 ```kotlin
 val adObject = Media.createAdObject("Ford F-150",
@@ -71,7 +75,7 @@ val adObject = Media.createAdObject("Ford F-150",
 tracker.trackEvent(Media.Event.AdStart, adObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Rufen Sie `sendMediaEvent` mit `eventType: "media.adStart"` und den erforderlichen `advertisingDetails` auf:
 
@@ -93,7 +97,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge-API
+>[!TAB Media Edge-API]
 
 Rufen Sie den [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart)-Endpunkt mit dem erforderlichen `advertisingDetails` auf:
 
@@ -120,7 +124,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adStart?configId={datastreamID}"
 }'
 ```
 
-## Medien-SDK
+>[!ENDTABS]
+
+## Legacy-Implementierungstypen (nur Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Übergeben Sie Anzeigenamen, ID, Position und Länge an `ADB.Media.createAdObject`:
 
@@ -135,7 +145,22 @@ var adInfo = ADB.Media.createAdObject(
 tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, null);
 ```
 
-## Mediensammlungs-API
+>[!TAB Chromecast]
+
+Übergeben Sie Anzeigenamen, ID, Position und Länge an `ADBMobile.media.createAdObject`:
+
+```javascript
+var adInfo = ADBMobile.media.createAdObject(
+  "Ford F-150",  // name (friendly name)
+  "ad-2125",     // ad ID
+  0,             // position in pod
+  15             // length (seconds)
+);
+
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 Senden eines `adStart` POST an den [events-Endpunkt](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
 
@@ -151,3 +176,5 @@ Senden eines `adStart` POST an den [events-Endpunkt](/help/implementation/media-
   }
 }
 ```
+
+>[!ENDTABS]

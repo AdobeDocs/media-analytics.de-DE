@@ -3,10 +3,10 @@ title: Content-Typ
 description: Legen Sie den Inhaltstyp fest, um das Format des Streams anzugeben (VOD, Live, Linear, Podcast, Song usw.).
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 9%
+source-wordcount: '310'
+ht-degree: 5%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Content-Typ**&#x200B;behandelt. Siehe [Inhaltstyp](/help/reporting/dimensions/content-type.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Content-Typ**behandelt. Siehe [Inhaltstyp](/help/reporting/dimensions/content-type.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -29,14 +29,18 @@ Empfohlene Werte:
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.contentType` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.contentType`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.contentType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.contentType` |
 | **Erforderlich** | Ja |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |
 
-## Web SDK
+## Empfohlene Implementierungsarten
 
-`contentType` in `mediaCollection.sessionDetails` festlegen, wenn [`sendEvent`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/sendevent/overview) aufgerufen wird:
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+`contentType` in `xdm.mediaCollection.sessionDetails` festlegen, wenn [`sendEvent`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/sendevent/overview) aufgerufen wird:
 
 ```javascript
 alloy("sendEvent", {
@@ -57,11 +61,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Übergeben Sie die Konstante des Inhaltstyps als `streamType` Argument an `createMediaObject`. Verwenden Sie `MediaConstants.StreamType.*` Werte wie `VOD`, `LIVE`, `LINEAR`, `AOD`, `PODCAST`. Hinweis: In der Mobile SDK steuert das `streamType`-Argument den Inhaltstyp. Die Variable Stream-Typ (Audio vs. Video) ist das separate `mediaType`.
-
-**iOS (SWIFT)**
 
 ```swift
 let mediaObject = Media.createMediaObjectWith(name: "My Video",
@@ -73,7 +75,9 @@ let mediaObject = Media.createMediaObjectWith(name: "My Video",
 tracker.trackSessionStart(info: mediaObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Übergeben Sie die Konstante des Inhaltstyps als `streamType` Argument an `createMediaObject`. Verwenden Sie `MediaConstants.StreamType.*` Werte wie `VOD`, `LIVE`, `LINEAR`, `AOD`, `PODCAST`. Hinweis: In der Mobile SDK steuert das `streamType`-Argument den Inhaltstyp. Die Variable Stream-Typ (Audio vs. Video) ist das separate `mediaType`.
 
 ```kotlin
 var mediaInfo = Media.createMediaObject("My Video",
@@ -85,9 +89,9 @@ var mediaInfo = Media.createMediaObject("My Video",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-`contentType` in `mediaCollection.sessionDetails` festlegen, wenn `createMediaSession` aufgerufen wird:
+`contentType` in `xdm.mediaCollection.sessionDetails` festlegen, wenn `createMediaSession` aufgerufen wird:
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -108,9 +112,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge-API
+>[!TAB Media Edge-API]
 
-Rufen Sie den [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart)-Endpunkt mit `contentType` in `mediaCollection.sessionDetails` auf:
+Rufen Sie den [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart)-Endpunkt mit `contentType` in `xdm.mediaCollection.sessionDetails` auf:
 
 ```json
 {
@@ -132,7 +136,13 @@ Rufen Sie den [sessionStart](https://developer.adobe.com/data-collection-apis/do
 }
 ```
 
-## Medien-SDK
+>[!ENDTABS]
+
+## Legacy-Implementierungstypen (nur Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Übergeben Sie eine `ADB.Media.StreamType.*` Konstante als viertes Argument an `ADB.Media.createMediaObject`:
 
@@ -148,7 +158,22 @@ var mediaInfo = ADB.Media.createMediaObject(
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## Mediensammlungs-API
+>[!TAB Chromecast]
+
+Übergeben Sie eine `ADBMobile.media.StreamType.*` Konstante als viertes Argument an `ADBMobile.media.createMediaObject`:
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject(
+  "My Video",
+  "video-123",
+  128,
+  ADBMobile.media.StreamType.VOD,
+  ADBMobile.media.MediaType.Video
+);
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 Fügen Sie `media.contentType` in das `params` Ihrer `sessionStart` POST-Anfrage ein:
 
@@ -162,4 +187,6 @@ Fügen Sie `media.contentType` in das `params` Ihrer `sessionStart` POST-Anfrage
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+
+>[!ENDTABS]

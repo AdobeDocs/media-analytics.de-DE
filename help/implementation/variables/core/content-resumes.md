@@ -3,10 +3,10 @@ title: Inhaltswiederaufnahmen
 description: Markieren Sie eine Sitzung, bei der eine zuvor unterbrochene Wiedergabe fortgesetzt wird, damit das Backend ein Ereignis zur Wiederaufnahme von Inhalten zählt.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 11%
+source-wordcount: '280'
+ht-degree: 7%
 
 ---
 
@@ -15,23 +15,27 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Inhaltswiederaufnahmen**&#x200B;behandelt. Siehe [Inhaltswiederaufnahmen](/help/reporting/metrics/content-resumes.md) für die entsprechende Berichtsmetrik.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Inhaltswiederaufnahmen**behandelt. Siehe [[!UICONTROL Inhaltswiederaufnahmen]](/help/reporting/metrics/content-resumes.md) für die entsprechende Berichtsmetrik.*
 
 >[!ENDSHADEBOX]
 
-Die Variable „Inhalt wird fortgesetzt“ kennzeichnet eine Sitzung, durch die eine zuvor unterbrochene Wiedergabe fortgesetzt wird. Legen Sie sie auf `media.sessionStart` fest, damit das Backend ein Content Resume-Ereignis für die Sitzung zählt und es aus den Zählungen für neue Streams ausschließt. Bei direkten API- und Edge-API-Implementierungen ist der Client dafür verantwortlich, wiederaufgenommene Sitzungen zu erkennen (z. B. nach einem Puffer, einer Pause oder einem Anhalten von mehr als 30 Minuten) und dieses Flag entsprechend festzulegen.
+Die Variable „Inhalt wird fortgesetzt“ kennzeichnet eine Sitzung, durch die eine zuvor unterbrochene Wiedergabe fortgesetzt wird. Legen Sie sie auf `media.sessionStart` fest, damit das Backend ein Ereignis [[!UICONTROL Inhalt wird fortgesetzt]](/help/reporting/metrics/content-resumes.md) für die Sitzung zählt und es aus den Zählungen für neue Streams ausschließt. Bei direkten API- und Edge-API-Implementierungen ist der Client dafür verantwortlich, wiederaufgenommene Sitzungen zu erkennen (z. B. nach einem Puffer, einer Pause oder einem Anhalten von mehr als 30 Minuten) und dieses Flag entsprechend festzulegen.
 
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.resume` |
-| **XDM-Sammlungsfeld** | [`mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager-Eigenschaft** | nicht angegeben |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md) |
 
-## Web SDK
+## Empfohlene Implementierungsarten
 
-Setzen Sie `hasResume` auf `true` in `mediaCollection.sessionDetails`, wenn Sie [`sendEvent`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/sendevent/overview) für die wiederaufgenommene Sitzung aufrufen:
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+Setzen Sie `hasResume` auf `true` in `xdm.mediaCollection.sessionDetails`, wenn Sie [`sendEvent`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/sendevent/overview) für die wiederaufgenommene Sitzung aufrufen:
 
 ```javascript
 alloy("sendEvent", {
@@ -53,11 +57,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Übergeben Sie das Wiederaufnahme-Flag als Teil des optionalen Konfigurations-Bundles des Medienobjekts auf `trackSessionStart`. Verwenden Sie die `MediaConstants.MediaObjectKey.RESUMED`.
-
-**iOS (SWIFT)**
 
 ```swift
 var mediaObject = Media.createMediaObjectWith(name: "My Video",
@@ -70,7 +72,9 @@ mediaObject?[MediaConstants.MediaObjectKey.RESUMED] = true
 tracker.trackSessionStart(info: mediaObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Übergeben Sie das Wiederaufnahme-Flag als Teil des optionalen Konfigurations-Bundles des Medienobjekts auf `trackSessionStart`. Verwenden Sie die `MediaConstants.MediaObjectKey.RESUMED`.
 
 ```kotlin
 val mediaInfo = Media.createMediaObject("My Video",
@@ -83,9 +87,9 @@ mediaInfo[MediaConstants.MediaObjectKey.RESUMED] = true
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Setzen Sie `hasResume` auf `true` in `mediaCollection.sessionDetails`, wenn Sie `createMediaSession` für die wiederaufgenommene Sitzung aufrufen:
+Setzen Sie `hasResume` auf `true` in `xdm.mediaCollection.sessionDetails`, wenn Sie `createMediaSession` für die wiederaufgenommene Sitzung aufrufen:
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -107,9 +111,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge-API
+>[!TAB Media Edge-API]
 
-Rufen Sie den [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart)-Endpunkt auf, wobei `hasResume` auf `true` in `mediaCollection.sessionDetails` festgelegt ist:
+Rufen Sie den [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart)-Endpunkt auf, wobei `hasResume` auf `true` in `xdm.mediaCollection.sessionDetails` festgelegt ist:
 
 ```json
 {
@@ -132,7 +136,13 @@ Rufen Sie den [sessionStart](https://developer.adobe.com/data-collection-apis/do
 }
 ```
 
-## Medien-SDK
+>[!ENDTABS]
+
+## Legacy-Implementierungstypen (nur Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Legen Sie den `RESUMED` Schlüssel für das Medieninformationsobjekt fest, bevor Sie `trackSessionStart` aufrufen:
 
@@ -149,7 +159,18 @@ mediaInfo[ADB.Media.MediaObjectKey.Resumed] = true;
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## Mediensammlungs-API
+>[!TAB Chromecast]
+
+Legen Sie `MediaResumed` für das Medieninformationsobjekt fest, bevor Sie `trackSessionStart` aufrufen:
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
+  ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
+mediaInfo[ADBMobile.media.MediaObjectKey.MediaResumed] = true;
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Media Collection API]
 
 Fügen Sie `media.resume` in das `params` Ihrer `sessionStart` POST-Anfrage ein:
 
@@ -163,4 +184,6 @@ Fügen Sie `media.resume` in das `params` Ihrer `sessionStart` POST-Anfrage ein:
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+
+>[!ENDTABS]

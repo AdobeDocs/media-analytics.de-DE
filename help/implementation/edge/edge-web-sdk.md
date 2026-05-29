@@ -5,23 +5,14 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: de40ebd9-46be-4a52-866f-7bb2589fce28
 TQID: https://experienceleague.adobe.com/yr1qlonZDoevoT-vFo-WknObsb-CegTihWEFZN5TdAE
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 584
-ht-degree: 8%
+source-wordcount: 563
+ht-degree: 6%
 
 ---
 
@@ -40,7 +31,7 @@ Um die `streamingMedia` von Web SDK verwenden zu können, müssen Sie die folgen
 * Bevor Sie Streaming-Mediendaten an Edge senden können, führen Sie zunächst die Schritte unter [Implementieren von Adobe-Streaming-Mediendiensten mit Edge Network](/help/implementation/edge/implementation-edge.md) aus.
 * Stellen Sie sicher, dass Sie Zugriff auf Adobe Experience Platform und/oder Adobe Analytics haben.
 * Sie müssen Web SDK Version 2.20.0 oder höher verwenden. Siehe [Web SDK-Installation - Übersicht](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/overview), um zu erfahren, wie Sie die neueste Version installieren.
-* Aktivieren Sie **[[!UICONTROL Option &#x200B;]](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)** Media Analytics) für den verwendeten Datenstrom.
+* Aktivieren Sie **[[!UICONTROL Option ]](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)** Media Analytics) für den verwendeten Datenstrom.
 * Stellen Sie sicher, dass das von Ihrem Datenstrom verwendete Schema die Schemafelder der Mediensammlung enthält.
 * Konfigurieren Sie Streaming-Mediendienste in der Web-SDK-Konfiguration, wie auf dieser Seite gezeigt, entweder über die [Tag-Erweiterung](#tag-extension) oder über die [JavaScript-Bibliothek](#library).
 
@@ -82,15 +73,13 @@ alloy("configure", {
 });
 ```
 
-Vollständige Details zur Konfiguration finden Sie in [&#x200B; Dokumentation &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/commands/configure/streamingmedia) Web SDK-`streamingMedia` .
+Vollständige Details zur Konfiguration finden Sie in [ Dokumentation ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia) Web SDK-`streamingMedia` .
 
 ### Schritt 3: Abrufen der Media Tracker-Instanz bei der Migration von der Media JS-SDK
 
 Für Kunden, die die Media JS-SDK verwenden, bietet Web SDK einen Migrationspfad, um von Media JS-SDK zu Web SDK zu wechseln, wobei bestehende Media JS-Funktionen, z. B. die Verarbeitung von Medienereignissen, unterstützt werden.
 
-[!DNL Web SDK] enthält einen Befehl zum Abrufen eines Media Analytics-Trackers. Sie können diesen Befehl verwenden, um eine Objektinstanz zu erstellen, und dann mit denselben APIs wie in der [Media JS Library](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html) Medienereignisse verfolgen.
-
-In der [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker)-Dokumentation finden Sie vollständige Details zu den unterstützten Methoden.
+Die Web-SDK enthält einen [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker), mit dem Sie eine Objektinstanz erstellen können. Sie können dann Medienereignisse mit denselben APIs verfolgen, die von Media SDK [3.x bereitgestellt ](/help/implementation/media-sdk/setup/js-3x-api-reference.md).
 
 Der folgende Ausschnitt zeigt, wie Sie die Medien-Tracker-Instanz in Media JS abrufen würden.
 

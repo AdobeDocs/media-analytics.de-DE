@@ -3,7 +3,7 @@ title: Medien heruntergeladen
 description: Kennzeichnet Sitzungen, in denen heruntergeladene Offline-Inhalte wiedergegeben werden.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Medien heruntergeladen**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/core/media-downloaded-flag.md) unter „Media Downloaded Flag*
+*Auf dieser Seite wird die Berichtsdimension **Medien heruntergeladen**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/core/media-downloaded-flag.md) unter „Media Downloaded Flag*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ Das Flag für den Download wird vom Player auf eine von drei Arten festgelegt. I
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.downloaded` einer eVar zuordnet. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.downloaded` einer eVar zuordnet. |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds | `evar1`-`evar250`, `post_evar1`-`post_evar250` (die eVar, der Ihre Verarbeitungsregel `a.media.downloaded` zugeordnet ist) |
 | Audience Manager | `c_contextdata.a.media.downloaded` |
 

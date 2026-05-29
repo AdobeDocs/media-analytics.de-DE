@@ -3,7 +3,7 @@ title: Platzierungs-ID
 description: Gibt die Platzierungskennung für jede Anzeige an.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Platzierungs-ID**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/ads/placement-id.md) unter „Platzierungs-ID“*
+*Auf dieser Seite wird die Berichtsdimension **Platzierungs-ID**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/ads/placement-id.md) unter „Platzierungs-ID“*
 
 >[!ENDSHADEBOX]
 
@@ -27,11 +27,11 @@ Die Platzierungs-ID wird vom Player bei jedem [Anzeigenstart](/help/implementati
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.ad.placement` einer eVar zuordnet. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.placementID`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Adobe Analytics | Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.ad.placement` einer eVar zuordnet. |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.placementID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Daten-Feeds | `evar1`-`evar250`, `post_evar1`-`post_evar250` (die eVar, der Ihre Verarbeitungsregel `a.media.ad.placement` zugeordnet ist) |
 | Audience Manager | `c_contextdata.a.media.ad.placement` |
 
 ## Dimensionselemente
 
-Jedes Element ist der literale Platzierungswert, der für „Anzeigenstart[&#x200B; gemeldet &#x200B;](/help/implementation/events/ads/ad-start.md).
+Jedes Element ist der literale Platzierungswert, der für „Anzeigenstart[ gemeldet ](/help/implementation/events/ads/ad-start.md).

@@ -3,7 +3,7 @@ title: Kampagnen-ID
 description: Gibt die Kampagne an, zu der jede Anzeige gehört.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 13%
@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Reporting-Dimension **Kampagnen**&#x200B;ID) behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/ads/campaign-id.md) unter „Kampagnen-ID“*
+*Auf dieser Seite wird die Reporting-Dimension **Kampagnen**ID) behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/ads/campaign-id.md) unter „Kampagnen-ID“*
 
 >[!ENDSHADEBOX]
 
@@ -28,10 +28,10 @@ Die Kampagnen-ID wird vom Player bei jedem [Anzeigenstart](/help/implementation/
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.ad.campaign`, wenn [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.campaignID`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.campaignID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Daten-Feeds | `videocampaign`, `post_videocampaign` |
 | Audience Manager | `c_contextdata.a.media.ad.campaign` |
 
 ## Dimensionselemente
 
-Jedes Element ist der literale Kampagnenwert, der beim Anzeigen-Start [&#x200B; wird](/help/implementation/events/ads/ad-start.md).
+Jedes Element ist der literale Kampagnenwert, der beim Anzeigen-Start [ wird](/help/implementation/events/ads/ad-start.md).

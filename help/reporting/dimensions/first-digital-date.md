@@ -3,7 +3,7 @@ title: Erstes digitales Datum
 description: Gibt das Datum an, an dem der Inhalt zum ersten Mal auf einer digitalen Plattform angezeigt wurde.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 1%
@@ -27,16 +27,16 @@ Das erste digitale Datum wird vom Player beim Sitzungsstart festgelegt.
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics (Verarbeitungsregel) | Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.digitalDate` einer eVar zuordnet. |
+| Adobe Analytics (Verarbeitungsregel) | Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.digitalDate` einer eVar zuordnet. |
 | Adobe Analytics (Klassifizierung) | Klassifizierung der Dimension [Inhalt (ID)](content.md) - Adobe erstellt diese Klassifizierung automatisch, wenn **[[!UICONTROL Videometadaten]](/help/reporting/media-reports-enable.md)** für die Report Suite aktiviert ist. Sie sind für das Ausfüllen und Verwalten von Classification-Werten verantwortlich. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.firstDigitalDate`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.firstDigitalDate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds (Verarbeitungsregel) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (die eVar, der Ihre Verarbeitungsregel `a.media.digitalDate` zugeordnet ist) |
 | Daten-Feeds (Klassifizierung) | K. A. - Daten-Feeds unterstützen keine Klassifizierungen. |
 | Audience Manager | `c_contextdata.a.media.digitalDate` |
 
 ## Klassifizierungsansatz
 
-Adobe erstellt die erste digitale Datumsklassifizierungsstruktur automatisch, wenn **[[!UICONTROL Videometadaten]](/help/reporting/media-reports-enable.md)** für die Report Suite aktiviert ist. Sie sind dafür verantwortlich, die Klassifizierung mithilfe von „Klassifizierungssätze[&#x200B; auszufüllen und zu &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
+Adobe erstellt die erste digitale Datumsklassifizierungsstruktur automatisch, wenn **[[!UICONTROL Videometadaten]](/help/reporting/media-reports-enable.md)** für die Report Suite aktiviert ist. Sie sind dafür verantwortlich, die Klassifizierung mithilfe von „Klassifizierungssätze[ auszufüllen und zu ](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
 
 Dieser Ansatz bietet eine garantierte 1::1-Beziehung zwischen jeder Inhalts-ID und dem ersten digitalen Datum. Klassifizierungsaktualisierungen gelten rückwirkend für alle historischen Daten für diese ID.
 
@@ -46,7 +46,7 @@ Dieser Ansatz bietet eine garantierte 1::1-Beziehung zwischen jeder Inhalts-ID u
 
 ## Ansatz der Verarbeitungsregeln
 
-Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.digitalDate` einer eVar zuordnet. Dieser Ansatz erfasst das erste digitale Datum als Wert pro Treffer, ohne dass eine Klassifizierungswartung erforderlich ist.
+Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.digitalDate` einer eVar zuordnet. Dieser Ansatz erfasst das erste digitale Datum als Wert pro Treffer, ohne dass eine Klassifizierungswartung erforderlich ist.
 
 Der Nachteil besteht darin, dass Sie die garantierte 1::1-Beziehung zwischen dem ersten digitalen Datum und der übergeordneten Dimension [Content (ID)](content.md) verlieren. Wenn Ihre Implementierung inkonsistente Werte für dieselbe Inhalts-ID über Ereignisse hinweg sendet, können mehrere erste digitale Datumsangaben unter demselben Inhalt angezeigt werden. Die Aktualisierung eines Werts gilt nur für Daten, die in Zukunft verwendet werden.
 

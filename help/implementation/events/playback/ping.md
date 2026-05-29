@@ -3,10 +3,10 @@ title: Ping
 description: Senden Sie einen Heartbeat, um die Mediensitzung am Leben zu erhalten und den Wiedergabegeschritt in regelmäßigen Abständen zu verfolgen.
 feature: Streaming Media
 role: Developer
-source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 5%
+source-wordcount: '253'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,11 @@ Fügen Sie kein `params` Objekt in den Textkörper der Ping-Anfrage ein.
 * **Voraussetzungen**: [Sitzungsstart](../session/session-start.md)
 * **Zugeordnete Metrik**: Keine
 
-## Web SDK
+## Empfohlene Implementierungsarten
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 Planen Sie einen wiederkehrenden `sendEvent` mit `eventType: "media.ping"`. Aktualisieren Sie bei jedem Aufruf `playhead` auf die aktuelle Wiedergabeposition:
 
@@ -39,11 +43,15 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 Mobile SDK sendet automatisch Ping-Ereignisse. Es ist kein expliziter Aufruf erforderlich.
 
-## Roku (BrightScript)
+>[!TAB Android]
+
+Mobile SDK sendet automatisch Ping-Ereignisse. Es ist kein expliziter Aufruf erforderlich.
+
+>[!TAB Roku]
 
 Planen Sie einen wiederkehrenden `sendMediaEvent` mit `eventType: "media.ping"`. Aktualisieren Sie bei jedem Aufruf `playhead` auf die aktuelle Wiedergabeposition:
 
@@ -58,7 +66,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge-API
+>[!TAB Media Edge-API]
 
 Rufen Sie den [ping](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ping/)-Endpunkt in einem Timer auf. Adobe empfiehlt das erste Ping 10 Sekunden nach dem Beginn der Hauptwiedergabe, danach alle 10 Sekunden und danach alle 1 Sekunde während des Anzeigen-Trackings:
 
@@ -79,11 +87,21 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/ping?configId={datastreamID}" \
 }'
 ```
 
-## Medien-SDK
+>[!ENDTABS]
+
+## Legacy-Implementierungstypen (nur Analytics)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Media SDK sendet automatisch Ping-Ereignisse. Es ist kein expliziter Aufruf erforderlich.
 
-## Mediensammlungs-API
+>[!TAB Chromecast]
+
+Die Chromecast-SDK sendet automatisch Ping-Ereignisse. Es ist kein expliziter Aufruf erforderlich.
+
+>[!TAB Media Collection API]
 
 Senden Sie einen `ping` POST an den [events-Endpunkt](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) auf einem Timer. `params` Objekt nicht einschließen:
 
@@ -93,3 +111,5 @@ Senden Sie einen `ping` POST an den [events-Endpunkt](/help/implementation/media
   "eventType": "ping"
 }
 ```
+
+>[!ENDTABS]

@@ -6,21 +6,14 @@ exl-id: 08bb5873-f69a-4fdd-8f27-69649b4acb17
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/F7NHDQkJVwVc-Th-blxBP8gifT7V55xLqlI1YT-pswc
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 294
-ht-degree: 90%
+ht-degree: 82%
 
 ---
 
@@ -30,7 +23,7 @@ ht-degree: 90%
 >
 >Erfassen Sie die Anforderungsdaten, die zum Abschluss einer erfolgreichen [Sitzungsanforderung](../mc-api-ref/mc-api-sessions-req.md) beim Backend-Server der Media Analytics (MA) Collection API erforderlich sind. Sie können Ihre Anfragedaten schnell überprüfen, indem Sie Anfragen manuell senden (mit `curl`, Postman usw.). Auf diese Weise erhalten Sie sofort Rückmeldungen darüber, ob Ihre Anfrage Probleme mit falschen Datentypen oder falschen Informationen enthält. Überprüfen Sie mithilfe der [JSON-Validierungs-Schemata](../mc-api-ref/mc-api-json-validation.md), ob Sie die richtigen Anfragedaten bereitstellen.
 
-1. Erfassen Sie die standardmäßig erforderlichen Adobe Analytics- und Besucherdaten, die Sie zur Ausführung einer Experience Cloud-Anwendung bereitstellen müssen:
+1. Sammeln Sie die standardmäßigen, erforderlichen Adobe Analytics- und Besucherdaten, die Sie für die Ausführung einer der CX Enterprise-Anwendungen bereitstellen müssen:
 
    * Experience Cloud-Org-ID des Besuchers
    * Experience Cloud-Benutzer-ID des Besuchers
@@ -65,7 +58,7 @@ ht-degree: 90%
 
    >[!NOTE]
    >
-   >Sie müssen die richtigen Datentypen im JSON-Anforderungstext verwenden. `analytics.enableSSL` erfordert beispielsweise einen booleschen Wert, `media.length` numerisch ist, usw. Sie können Parametertypen und obligatorische bzw. optionale Anforderungen überprüfen, indem Sie die Option [JSON-Validierungsschemas“ &#x200B;](mc-api-validate-reqs.md).
+   >Sie müssen die richtigen Datentypen im JSON-Anforderungstext verwenden. `analytics.enableSSL` erfordert beispielsweise einen booleschen Wert, `media.length` numerisch ist, usw. Sie können Parametertypen und obligatorische bzw. optionale Anforderungen überprüfen, indem Sie die Option [JSON-Validierungsschemas“ ](mc-api-validate-reqs.md).
 
 1. Senden Sie Sitzungsanforderungen an den MA Collection API-Endpunkt. Wenn die Anfrage-Payload ungültig ist, ermitteln Sie das Problem und versuchen es erneut, bis Sie eine `201 Created`-Antwort erhalten. In diesem `curl`-Beispiel befindet sich der JSON-Anforderungstext in einer Datei namens `sample_data_session`:
 

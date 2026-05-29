@@ -3,7 +3,7 @@ title: Gesamtdauer des Puffers (Dimension)
 description: Gibt die kumulierten Pufferzeiten pro Sitzung an.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Diese Seite deckt die Dimension **Gesamtdauer des Puffers**&#x200B;ab. Adobe Analytics füllt automatisch eine gepaarte [Gesamtpufferdauer (Metrik)](/help/reporting/metrics/total-buffer-duration.md) aus derselben `a.media.qoe.bufferTime` Kontextdatenvariablen. Customer Journey Analytics stellt ein einzelnes `mediaReporting.qoeDataDetails.bufferTime` bereit, das Sie als Dimension oder Metrik verwenden können.*
+*Diese Seite deckt die Dimension **Gesamtdauer des Puffers**ab. Adobe Analytics füllt automatisch eine gepaarte [Gesamtpufferdauer (Metrik)](/help/reporting/metrics/total-buffer-duration.md) aus derselben `a.media.qoe.bufferTime` Kontextdatenvariablen. Customer Journey Analytics stellt ein einzelnes `xdm.mediaReporting.qoeDataDetails.bufferTime` bereit, das Sie als Dimension oder Metrik verwenden können.*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ Das Medien-Backend addiert die Dauer jedes Pufferintervalls (von [Pufferstart](/
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.qoe.bufferTime`, wenn [[!UICONTROL Medienqualität]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bufferTime`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bufferTime`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Daten-Feeds | `videoqoebuffertimeevar`, `post_videoqoebuffertimeevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.bufferTime` |
 
