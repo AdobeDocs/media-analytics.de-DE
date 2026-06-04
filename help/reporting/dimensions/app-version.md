@@ -31,8 +31,8 @@ Die Anwendungsversion wird bei der Initialisierung von SDK einmal festgelegt und
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Wird bei Verwendung von Edge-Implementierungen automatisch über die XDM-Feldzuordnung erfasst. Bei Implementierungen, die nur die Analytics betreffen, ordnen Sie `media.sdkVersion` mithilfe einer [Verarbeitungsregel“ einer benutzerdefinierten eVar &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.md). |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | Wird bei Verwendung von Edge-Implementierungen automatisch über die XDM-Feldzuordnung erfasst. Bei Implementierungen, die nur die Analytics betreffen, ordnen Sie `media.sdkVersion` mithilfe einer [Verarbeitungsregel“ einer benutzerdefinierten eVar &#x200B;](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.md). |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.appVersion`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds | Keine spezielle Daten-Feed-Spalte. Bei Implementierungen, die nur die Analytics betreffen, verwenden Sie die Daten-Feed-Spalte der benutzerdefinierten eVar, die über die Verarbeitungsregel konfiguriert wurde. |
 | Audience Manager | `c_contextdata.media.sdkVersion` (Nur Analytics-Implementierungen) |
 

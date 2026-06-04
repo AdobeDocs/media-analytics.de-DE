@@ -65,7 +65,7 @@ Einverständniswerte:
 
 Um das Tracking wiederherzustellen, rufen Sie `setConsent` erneut mit `"y"` als `collect.val` auf.
 
-Weitere Informationen [&#x200B; anderen Formaten, einschließlich IAB TCF 2.0, finden Sie &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/setconsent) Befehl „setConsent“ in der Web SDK-Dokumentation.
+Weitere Informationen [&#x200B; anderen Formaten, einschließlich IAB TCF 2.0, finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/commands/setconsent) Befehl „setConsent“ in der Web SDK-Dokumentation.
 
 >[!TAB iOS]
 

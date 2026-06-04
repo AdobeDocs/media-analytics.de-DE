@@ -16,7 +16,7 @@ Media SDK für JavaScript (3.x) sendet Streaming-Mediendaten direkt an Adobe Ana
 
 * **Voraussetzungen**:
    * Schließen Sie die [Nur Analytics-Implementierung - Übersicht](overview.md) ab.
-   * Implementieren Sie [AppMeasurement](https://experienceleague.adobe.com/de/docs/analytics/implementation/js/overview) und den [Besucher-ID-Service](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/appmeasurement).
+   * Implementieren Sie [AppMeasurement](https://experienceleague.adobe.com/de/docs/analytics/implementation/js/overview) und den [Besucher-ID-Service](https://experienceleague.adobe.com/de/docs/analytics/implementation/id/appmeasurement).
    * [Laden Sie die Media SDK für JavaScript herunter](/help/getting-started/download-sdks.md).
 
 ## Installieren und Konfigurieren von SDK

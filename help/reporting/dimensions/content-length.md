@@ -28,13 +28,13 @@ Die Inhaltslänge wird vom Player beim Sitzungsstart festgelegt. Der gemeldete W
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.length`, wenn [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) aktiviert ist. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds | `videolength`, `post_videolength` |
 | Audience Manager | `c_contextdata.a.media.length` |
 
 >[!NOTE]
 >
->In Adobe Analytics entspricht dieser Wert auch einer Klassifizierung **Videolänge** in der Dimension [Inhalt](content.md). Sie sind dafür verantwortlich, diese Klassifizierung separat auszufüllen und zu pflegen. Customer Journey Analytics verwendet diese Dimension direkt. Sie können bei [&#x200B; Wert-](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/value-bucketing) verwenden.
+>In Adobe Analytics entspricht dieser Wert auch einer Klassifizierung **Videolänge** in der Dimension [Inhalt](content.md). Sie sind dafür verantwortlich, diese Klassifizierung separat auszufüllen und zu pflegen. Customer Journey Analytics verwendet diese Dimension direkt. Sie können bei [&#x200B; Wert-](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-settings/value-bucketing) verwenden.
 
 >[!IMPORTANT]
 >

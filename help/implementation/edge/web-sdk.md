@@ -12,11 +12,11 @@ ht-degree: 5%
 
 # Einrichten der Web-SDK für Streaming-Medien
 
-Die `streamingMedia` der Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview) (`alloy.js`, Version 2.20.0 oder höher) erfasst Mediensessionsdaten auf Ihrer Website und sendet sie an die Edge Network. Auf dieser Seite wird die In-Code-Konfiguration (`alloy.js`) beschrieben. Informationen zum Konfigurieren von Web SDK über Tags finden Sie unter [Einrichten der Tag-Erweiterung für Web SDK für Streaming-Medien](web-sdk-tags.md).
+Die `streamingMedia` der Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/js-overview) (`alloy.js`, Version 2.20.0 oder höher) erfasst Mediensessionsdaten auf Ihrer Website und sendet sie an die Edge Network. Auf dieser Seite wird die In-Code-Konfiguration (`alloy.js`) beschrieben. Informationen zum Konfigurieren von Web SDK über Tags finden Sie unter [Einrichten der Tag-Erweiterung für Web SDK für Streaming-Medien](web-sdk-tags.md).
 
 * **Voraussetzungen**:
    * Abschließen der [Edge-Implementierungsübersicht](overview.md) (Schema, Datensatz, Datenstrom mit aktiviertem [!UICONTROL Media Analytics]).
-   * Installieren Sie Web SDK 2.20.0 oder höher. Siehe [Installieren der Web-SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/overview).
+   * Installieren Sie Web SDK 2.20.0 oder höher. Siehe [Installieren der Web-SDK](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/install/overview).
 
 ## Konfigurieren der Streaming-Medienkomponente
 
@@ -35,11 +35,11 @@ alloy("configure", {
 });
 ```
 
-Ausführliche Informationen zur Konfiguration finden Sie unter dem [`streamingMedia`-Befehl](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia).
+Ausführliche Informationen zur Konfiguration finden Sie unter dem [`streamingMedia`-Befehl](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/configure/streamingmedia).
 
 ### Migration von Media JS SDK
 
-Wenn Sie von der Media JS (3.x)-SDK wechseln, gibt der Befehl Web SDK [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/getmediaanalyticstracker) eine Tracker-Instanz zurück, die dieselben APIs wie [3.x Media SDK](/help/implementation/analytics-only/javascript.md) bereitstellt, sodass Ihre bestehenden Tracking-Aufrufe weiterhin funktionieren.
+Wenn Sie von der Media JS (3.x)-SDK wechseln, gibt der Befehl Web SDK [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/getmediaanalyticstracker) eine Tracker-Instanz zurück, die dieselben APIs wie [3.x Media SDK](/help/implementation/analytics-only/javascript.md) bereitstellt, sodass Ihre bestehenden Tracking-Aufrufe weiterhin funktionieren.
 
 ## Medien-Events tracken
 
@@ -51,6 +51,6 @@ Sobald Ihre Implementierung abgeschlossen ist, können Sie [Berichte für Edge-I
 
 >[!MORELIKETHIS]
 >
->* [Web SDK – Übersicht](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)
+>* [Web SDK – Übersicht](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/js-overview)
 >* [Übersicht über Ereignisse](/help/implementation/events/overview.md)
 >* [Variablen - Übersicht](/help/implementation/variables/overview.md)

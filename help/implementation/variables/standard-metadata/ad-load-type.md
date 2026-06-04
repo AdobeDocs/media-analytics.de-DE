@@ -24,7 +24,7 @@ Die Variable Anzeigenladetyp gibt den Typ der Anzeige an, die zu Beginn der Sitz
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.adLoad` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.adLoad` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |
@@ -35,7 +35,7 @@ Die Variable Anzeigenladetyp gibt den Typ der Anzeige an, die zu Beginn der Sitz
 
 >[!TAB Web SDK]
 
-`adLoad` in `xdm.mediaCollection.sessionDetails` festlegen, wenn [`createMediaSession`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/createmediasession) aufgerufen wird:
+`adLoad` in `xdm.mediaCollection.sessionDetails` festlegen, wenn [`createMediaSession`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/createmediasession) aufgerufen wird:
 
 ```javascript
 alloy("createMediaSession", {

@@ -30,7 +30,7 @@ Unabhängig davon, welche Codebasis Sie verwenden - die Web-SDK, die Mobile SDK 
 
 Um die Datenerfassung in allen Anwendungen zu standardisieren, die Adobe Experience Platform verwenden, hat Adobe den offenen, öffentlich dokumentierten Experience-Datenmodell (XDM)-Standard erstellt.
 
-1. Beginnen Sie in Adobe Experience Platform mit der Erstellung des Schemas, wie unter [Erstellen und Bearbeiten von Schemas in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en) beschrieben.
+1. Beginnen Sie in Adobe Experience Platform mit der Erstellung des Schemas, wie unter [Erstellen und Bearbeiten von Schemas in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=de) beschrieben.
 
 1. Wählen Sie auf der Seite mit den **[!UICONTROL „Erlebnisereignis]** als Basisklasse für das Schema aus.
 
@@ -129,7 +129,7 @@ Um die Datenerfassung in allen Anwendungen zu standardisieren, die Adobe Experie
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. [Verwenden Sie den generierten &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) für das benutzerdefinierte Feld in Ihrer Anfrage-Payload.
+   1. [Verwenden Sie den generierten &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) für das benutzerdefinierte Feld in Ihrer Anfrage-Payload.
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
@@ -167,11 +167,11 @@ Um die Datenerfassung in allen Anwendungen zu standardisieren, die Adobe Experie
 
       * **[!UICONTROL Adobe Analytics]** (bei Verwendung von Adobe Analytics)
 
-        Wenn Sie Adobe Analytics verwenden, definieren Sie eine Report Suite wie in [Erstellen einer Report Suite](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite) beschrieben.
+        Wenn Sie Adobe Analytics verwenden, definieren Sie eine Report Suite wie in [Erstellen einer Report Suite](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite) beschrieben.
 
       * **[!UICONTROL Adobe Experience Platform]** (bei Verwendung von Customer Journey Analytics)
 
-     Informationen zum Hinzufügen eines Services zu einem Datenstrom finden Sie unter „Hinzufügen von Services zu einem Datenstrom“ in [Konfigurieren eines Datenstroms](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
+     Informationen zum Hinzufügen eines Services zu einem Datenstrom finden Sie unter „Hinzufügen von Services zu einem Datenstrom“ in [Konfigurieren eines Datenstroms](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=de#view-details).
 
      ![Fügen Sie den Adobe Analytics-Service hinzu](assets/datastream-add-service.png)
 
