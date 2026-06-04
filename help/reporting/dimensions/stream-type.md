@@ -3,7 +3,7 @@ title: Stream-Typ
 description: Erfasst, ob es sich bei jeder Mediensitzung um Audio- oder Videoinhalte handelte.
 feature: Dimensions
 role: User, Admin
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 6%
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 >[!ENDSHADEBOX]
 
-Die Dimension **Stream-**) erfasst, ob es sich bei jeder Mediensitzung um Audio- oder Videoinhalte handelte. Sie ist in Adobe Analytics verfügbar, sobald [Media Core aktiviert](/help/implementation/media-sdk/setup/media-reports-enable.md) für die Report Suite und in Customer Journey Analytics für jeden Datensatz, der Streaming-Mediendaten enthält.
+Die Dimension **Stream-**) erfasst, ob es sich bei jeder Mediensitzung um Audio- oder Videoinhalte handelte. Sie ist in Adobe Analytics verfügbar, sobald [Media Core aktiviert](/help/reporting/setup/analytics-reporting.md) für die Report Suite und in Customer Journey Analytics für jeden Datensatz, der Streaming-Mediendaten enthält.
 
 ## So wird diese Dimension ausgefüllt
 
@@ -27,7 +27,7 @@ Der Stream-Typ wird vom Player beim Sitzungsstart festgelegt und an den Sitzungs
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.streamType`, wenn [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) aktiviert ist. |
+| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.streamType`, wenn [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) aktiviert ist. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds | `videostreamtype` |
 | Audience Manager | `c_contextdata.a.media.streamType` |

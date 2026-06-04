@@ -3,7 +3,7 @@ title: Inhaltsname
 description: Gibt den für Menschen lesbaren Titel jeder Mediensitzung an.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 10%
@@ -27,7 +27,7 @@ Der Anzeigename wird vom Player beim Sitzungsstart festgelegt. Der gemeldete Wer
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.friendlyName`, wenn [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) aktiviert ist. |
+| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.friendlyName`, wenn [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) aktiviert ist. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.friendlyName`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds | `videoname`, `post_videoname` |
 | Audience Manager | `c_contextdata.a.media.friendlyName` |

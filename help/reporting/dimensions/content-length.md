@@ -3,7 +3,7 @@ title: Länge des Inhalts
 description: Gibt die Gesamtdauer jeder Mediensitzung in Sekunden an, wie bei Sitzungsbeginn festgelegt.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 6%
@@ -27,7 +27,7 @@ Die Inhaltslänge wird vom Player beim Sitzungsstart festgelegt. Der gemeldete W
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.length`, wenn [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) aktiviert ist. |
+| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.length`, wenn [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) aktiviert ist. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds | `videolength`, `post_videolength` |
 | Audience Manager | `c_contextdata.a.media.length` |

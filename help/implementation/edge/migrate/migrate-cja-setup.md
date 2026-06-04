@@ -17,7 +17,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 759
 ht-degree: 1%
@@ -58,7 +58,7 @@ So migrieren Sie abgeleitete Felder in den neuen Datentyp:
 
 Informationen zum Zuordnen zwischen den alten [&#x200B; den neuen Feldern finden Sie unter dem Parameter &#x200B;](/help/reporting/dimensions/content.md)Content ID[&#128279;](/help/media-overview.md) und unter den übrigen unter Streaming-Mediendienste dokumentierten Streaming-Medienvariablen . Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, während der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“ zu finden ist.
 
-![Alte und neue XDM-Feldpfade](assets/field-paths-updated.jpeg)
+![Alte und neue XDM-Feldpfade](../../assets/field-paths-updated.jpeg)
 
 ## Beispiel
 
@@ -72,13 +72,13 @@ Sie können eine der folgenden Optionen verwenden, um die Datenansicht zu aktual
 
 1. Suchen Sie eine Metrik oder Dimension, die das alte Feld aus dem veralteten Datentyp verwendet.
 
-   ![Alter Feldpfad in Datenansicht](assets/old-field-data-view.jpeg)
+   ![Alter Feldpfad in Datenansicht](../../assets/old-field-data-view.jpeg)
 
 1. Aktivieren Sie das entsprechende neue Feld im Artikel [Kapitelversatz](/help/reporting/dimensions/chapter-offset.md) .
 
 1. Suchen Sie das neue entsprechende Feld in der Datenansicht.
 
-   ![Neuer Feldpfad in der Datenansicht](assets/new-field-data-view.jpeg)
+   ![Neuer Feldpfad in der Datenansicht](../../assets/new-field-data-view.jpeg)
 
 1. Ziehen Sie das neue Feld auf die Metrik oder Dimension.
 
@@ -92,43 +92,43 @@ Wenn Sie ein abgeleitetes Feld für den „Kapitelnamen“ erstellen möchten, d
 
 1. Ziehen Sie eine „Wenn-Fall“-Klausel in die abgeleiteten Felder.
 
-   ![Passen Sie das neue Feld an, um eine Datenansicht zu erstellen](assets/create-derived-field2.jpeg)
+   ![Passen Sie das neue Feld an, um eine Datenansicht zu erstellen](../../assets/create-derived-field2.jpeg)
 
-1. Füllen Sie die [!UICONTROL **If**]-Klausel mit dem Wert der **XDM-Feldpfad für Berichterstellung**, wie auf der Seite [Kapitelname](/help/reporting/dimensions/chapter-name.md) dargestellt.
+1. Füllen Sie die **[!UICONTROL If]**-Klausel mit dem Wert der **XDM-Feldpfad für Berichterstellung**, wie auf der Seite [Kapitelname](/help/reporting/dimensions/chapter-name.md) dargestellt.
 
-   ![Kapitelname](assets/chapter-name.jpeg)
+   ![Kapitelname](../../assets/chapter-name.jpeg)
 
-   ![Kapitelname](assets/chapter-name2.jpeg)
+   ![Kapitelname](../../assets/chapter-name2.jpeg)
 
-   ![Abgeleitete Feldbedingung](assets/derived-field-condition.jpeg)
+   ![Abgeleitete Feldbedingung](../../assets/derived-field-condition.jpeg)
 
-   ![Abgeleitetes Feld: Kapitelname](assets/derived-field-chapter-name.jpeg)
+   ![Abgeleitetes Feld: Kapitelname](../../assets/derived-field-chapter-name.jpeg)
 
 1. Füllen Sie den Fallback-Wert mit dem alten Feld aus dem veralteten Datentyp „Media“.
 
-   ![Fallback-Wert](assets/fallback-value.jpeg)
+   ![Fallback-Wert](../../assets/fallback-value.jpeg)
 
-   ![Fallback-Wert](assets/fallback-value2.jpeg)
+   ![Fallback-Wert](../../assets/fallback-value2.jpeg)
 
    Dies ist die endgültige Definition des abgeleiteten Feldes.
 
-   ![Abgeleitetes Feld abgeschlossen](assets/derived-field-complete.jpeg)
+   ![Abgeleitetes Feld abgeschlossen](../../assets/derived-field-complete.jpeg)
 
 1. Um die abgeleiteten Felder zu aktualisieren, suchen Sie ein abgeleitetes Feld, das die alten verworfenen Felder verwendet (Pfad, der mit `media.mediaTimed` beginnt).
 
-   ![abgeleitetes Feld](assets/old-derived-field.jpeg)
+   ![abgeleitetes Feld](../../assets/old-derived-field.jpeg)
 
-1. Bewegen Sie den Mauszeiger über das abgeleitete Feld, das Sie aktualisieren möchten, und wählen Sie dann das Symbol [!UICONTROL **Bearbeiten**] aus.
+1. Bewegen Sie den Mauszeiger über das abgeleitete Feld, das Sie aktualisieren möchten, und wählen Sie dann das Symbol **[!UICONTROL Bearbeiten]** aus.
 
 1. Suchen Sie alle Felder aus dem alten Datentyp (Pfad, der mit `media.mediaTimed` beginnt) und ersetzen Sie sie durch das neue entsprechende Feld.
 
-   ![Suchen eines Felds mit altem Datentyp](assets/locate-fields-with-old-datatype.jpeg)
+   ![Suchen eines Felds mit altem Datentyp](../../assets/locate-fields-with-old-datatype.jpeg)
 
 1. Aktivieren Sie das entsprechende neue Feld im Artikel [Inhaltsname](/help/reporting/dimensions/content-name.md) .
 
 1. Ersetzen Sie das alte Feld durch das neue Feld.
 
-   ![Neues Feld](assets/derived-field-new.jpeg)
+   ![Neues Feld](../../assets/derived-field-new.jpeg)
 
 1. Wiederholen Sie diesen Vorgang für alle abgeleiteten Felder, die Felder aus dem alten, veralteten Datentyp „Medien“ verwenden.
 

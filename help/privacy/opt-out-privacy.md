@@ -18,7 +18,7 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 750
 ht-degree: 4%
@@ -41,7 +41,7 @@ Opt-out-Steuerelemente werden pro Gerät oder Browser ausgeführt. Für die Einh
 
 Web SDK berücksichtigt die mit dem Befehl `setConsent` festgelegten Einverständnisvoreinstellungen. Wenn das Einverständnis auf `"out"` festgelegt ist, stoppt die Web-SDK die Weiterleitung aller Ereignisse, einschließlich Streaming-Medien-Tracking-Aufrufen, an die Edge Network. Der Einverständnisstatus bleibt zwischen Sitzungen im Browser-Speicher erhalten.
 
-Stellen Sie vor der Implementierung des Opt-outs sicher, dass Ihre Web-SDK mit der Streaming-Medienkomponente konfiguriert ist. Weitere Informationen finden Sie unter [Einrichten von Web SDK](../implementation/edge/edge-web-sdk.md).
+Stellen Sie vor der Implementierung des Opt-outs sicher, dass Ihre Web-SDK mit der Streaming-Medienkomponente konfiguriert ist. Weitere Informationen finden Sie unter [Einrichten von Web SDK](../implementation/edge/web-sdk.md).
 
 Legen Sie das Einverständnis für das Opt-out mit dem Einverständnisstandard für Adobe 2.0 fest:
 

@@ -3,7 +3,7 @@ title: Pufferereignisse (Dimension)
 description: Gibt die Anzahl der Pufferereignisse pro Sitzung an.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 6%
@@ -27,7 +27,7 @@ Das Medien-Backend erhöht die Anzahl jedes Mal, wenn der Player in einen `buffe
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.qoe.bufferCount`, wenn [[!UICONTROL Medienqualität]](/help/reporting/media-reports-enable.md) aktiviert ist. |
+| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.qoe.bufferCount`, wenn [[!UICONTROL Medienqualität]](/help/reporting/setup/analytics-reporting.md) aktiviert ist. |
 | Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bufferCount`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Daten-Feeds | `videoqoebuffercountevar`, `post_videoqoebuffercountevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.bufferCount` |

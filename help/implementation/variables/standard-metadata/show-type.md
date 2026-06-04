@@ -3,7 +3,7 @@ title: Sendungstyp
 description: Identifizieren Sie das Inhaltsformat (vollständige Folge, Vorschau, Clip oder andere) mithilfe eines Zeichenfolgen-Ganzzahlcodes.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 8%
@@ -21,10 +21,10 @@ ht-degree: 8%
 
 Die Variable vom Typ „show“ identifiziert das Inhaltsformat mithilfe eines Zeichenfolgen-Ganzzahlcodes:
 
-- `"0"`: Full Episode
-- `"1"`: Vorschau oder Trailer
-- `"2"`: Clip
-- `"3"`: Sonstiges
+* `"0"`: Full Episode
+* `"1"`: Vorschau oder Trailer
+* `"2"`: Clip
+* `"3"`: Sonstiges
 
 Verwenden Sie diese Option, um bei der Messung der Interaktion die Anzeige eines vollständigen Programms von kurzen Inhalten wie Trailern und Clips zu trennen.
 

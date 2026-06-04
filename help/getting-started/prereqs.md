@@ -20,10 +20,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 489
-ht-degree: 46%
+source-wordcount: 490
+ht-degree: 43%
 
 ---
 
@@ -38,7 +38,7 @@ Bevor Sie mit der Implementierung von Streaming Media Services beginnen, lesen S
 Das aktuelle Preismodell für das Add-on Customer Journey Analytics Streaming Media Collection und das Add-on Adobe Analytics for Streaming Media basiert auf Video-Streams. Wenden Sie sich bei Bedarf an Ihren Kundenbetreuer oder Ihr Adobe-Account-Team, da das Add-on separat für Adobe Analytics und Adobe Experience Platform erhältlich ist.
 
 1. **Adobe Analytics-Berichte aktivieren**<br>
-Um Berichte in Analytics oder Customer Journey Analytics zu aktivieren und die erfassten Inhalts- und Anzeigendaten anzuzeigen, müssen Sie Berichte aktivieren. Siehe [Aktivierung von Medienberichten](/help/implementation/media-sdk/setup/media-reports-enable.md).
+Um Berichte in Analytics oder Customer Journey Analytics zu aktivieren und die erfassten Inhalts- und Anzeigendaten anzuzeigen, müssen Sie Berichte aktivieren. Siehe [Einrichten von Berichten für reine Analytics-Implementierungen](/help/reporting/setup/analytics-reporting.md).
 
 1. **Implementieren des Adobe Experience Platform Identity Services in CX Enterprise**
 
@@ -58,8 +58,8 @@ Um Berichte in Analytics oder Customer Journey Analytics zu aktivieren und die e
 
    Je nachdem, wie Sie Streaming-Medien-Services implementieren möchten, sehen Sie sich die Voraussetzungen für eine der folgenden Implementierungsmethoden an:
 
-   * [Voraussetzungen für reine Adobe Analytics-Implementierungen](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
+   * [Nur Analytics-Implementierung - Übersicht](/help/implementation/analytics-only/overview.md)
 
-   * [Voraussetzungen für Edge-Implementierungen](/help/implementation/edge/prerequisites-edge.md)
+   * [Übersicht über die Edge-Implementierung](/help/implementation/edge/overview.md)
 
    Verwenden Sie den [Implementierungsüberblick](/help/implementation/overview.md), um zu bestimmen, welche Implementierungsmethode für Sie geeignet ist.

@@ -3,7 +3,7 @@ title: Creative-ID
 description: Meldet die Kennung der Werbeanzeige.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 3%
@@ -26,7 +26,7 @@ Die Dimension **Creative ID** zeigt die ID der Kreativität der Anzeige an. Verw
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics (Verarbeitungsregel) | Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.ad.creative` einer eVar zuordnet. |
-| Adobe Analytics (Klassifizierung) | Klassifizierung der Dimension [Ad](ad.md) - Adobe erstellt diese Klassifizierung automatisch, wenn **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)** für die Report Suite aktiviert ist. Sie sind für das Ausfüllen und Verwalten von Classification-Werten verantwortlich. |
+| Adobe Analytics (Klassifizierung) | Klassifizierung der Dimension [Ad](ad.md) - Adobe erstellt diese Klassifizierung automatisch, wenn **[[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md)** für die Report Suite aktiviert ist. Sie sind für das Ausfüllen und Verwalten von Classification-Werten verantwortlich. |
 | Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.creativeID`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Daten-Feeds (Verarbeitungsregel) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (die eVar, der Ihre Verarbeitungsregel `a.media.ad.creative` zugeordnet ist) |
 | Daten-Feeds (Klassifizierung) | K. A. - Daten-Feeds unterstützen keine Klassifizierungen. |
@@ -34,7 +34,7 @@ Die Dimension **Creative ID** zeigt die ID der Kreativität der Anzeige an. Verw
 
 ## Klassifizierungsansatz
 
-Adobe erstellt die Creative ID-Klassifizierungsstruktur automatisch, wenn **[[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md)** für die Report Suite aktiviert ist. Sie sind dafür verantwortlich, die Klassifizierung mithilfe von „Klassifizierungssätze[&#x200B; auszufüllen und zu &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
+Adobe erstellt die Creative ID-Klassifizierungsstruktur automatisch, wenn **[[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md)** für die Report Suite aktiviert ist. Sie sind dafür verantwortlich, die Klassifizierung mithilfe von „Klassifizierungssätze[&#x200B; auszufüllen und zu &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
 
 Dieser Ansatz bietet eine garantierte 1::1-Beziehung zwischen jeder Werbe-ID und ihrer Kreativ-ID. Klassifizierungsaktualisierungen gelten rückwirkend für alle historischen Daten für diese ID.
 

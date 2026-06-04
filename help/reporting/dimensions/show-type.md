@@ -3,7 +3,7 @@ title: Sendungstyp
 description: Gibt das Inhaltsformat an (vollständige Folge, Vorschau, Clip oder andere).
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 10%
@@ -27,7 +27,7 @@ Der Sendungstyp wird vom Player beim Sitzungsstart festgelegt.
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.type`, wenn [[!UICONTROL Videometadaten]](/help/reporting/media-reports-enable.md) aktiviert ist. |
+| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.type`, wenn [[!UICONTROL Videometadaten]](/help/reporting/setup/analytics-reporting.md) aktiviert ist. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.showType`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds | `videoshowtype`, `post_videoshowtype` |
 | Audience Manager | `c_contextdata.a.media.type` |

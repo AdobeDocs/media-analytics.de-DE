@@ -18,7 +18,7 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 449
 ht-degree: 7%
@@ -31,7 +31,7 @@ Mit der Mediensammlungs-API können Sie benutzerdefinierte Schlüssel-Wert-Paare
 
 Um diese Daten in Analysis Workspace verfügbar zu machen, müssen Kunden benutzerdefinierte eVars definieren und Verarbeitungsregeln konfigurieren, um sie entsprechend ihrem Anwendungsfall auszufüllen. Nach der Zuordnung zu eVars oder Props werden die Daten auch in Adobe Experience Platform über die entsprechenden eVar-Pfade verfügbar, sofern der [Analytics-Quell-Connector](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) konfiguriert ist.
 
-Informationen zu XDM-basierten Implementierungen mit Experience Edge finden Sie unter [Unterstützung benutzerdefinierter Metadaten - XDM-Format](/help/implementation/edge/implementation-edge-custom-metadata.md).
+Informationen zu XDM-basierten Implementierungen mit Experience Edge finden Sie unter [Unterstützung benutzerdefinierter Metadaten - XDM-Format](/help/implementation/edge/custom-metadata.md).
 
 ## Überblick
 
@@ -80,8 +80,8 @@ Benutzerdefinierte Metadaten sind ein flaches **Objekt** (Schlüssel-Wert-Paare)
 
 ### Wichtige Benennungsanforderungen
 
-- Verwenden Sie das `media.`-Präfix nicht in benutzerdefinierten Metadatenschlüsseln. Es werden Standard-Medienfeldern zugeordnet und können diese in Analytics-Berichten überschreiben
-- Das `a.`-Präfix ist für Adobe-Standardmetadaten reserviert und darf nicht verwendet werden
+* Verwenden Sie das `media.`-Präfix nicht in benutzerdefinierten Metadatenschlüsseln. Es werden Standard-Medienfeldern zugeordnet und können diese in Analytics-Berichten überschreiben
+* Das `a.`-Präfix ist für Adobe-Standardmetadaten reserviert und darf nicht verwendet werden
 
 ## Benutzerdefinierte Metadaten für Hauptinhalte
 
@@ -173,19 +173,19 @@ curl -X POST "https://{uri}/api/v1/sessions/{sid}/events" \
 
 ## Verhalten
 
-- Alle benutzerdefinierten Metadatenwerte müssen &quot;**&quot;**. Konvertieren Sie Zahlen und boolesche Werte vor dem Versand.
-- Benutzerdefinierte Metadaten werden in Analytics mit einem `c.` Präfix angezeigt (z. B. `contentCategory` → `c.contentCategory`)
-- Zuordnen benutzerdefinierter Metadaten zu eVars, Props oder Kontextdatenvariablen über Analytics-Verarbeitungsregeln
-- `sessionStart` Metadaten bleiben für die gesamte Sitzung erhalten. Für Aktualisierungen ist eine neue Sitzung erforderlich
-- Jedes `adStart`- und `chapterStart`-Ereignis kann unterschiedliche benutzerdefinierte Metadaten enthalten
+* Alle benutzerdefinierten Metadatenwerte müssen &quot;**&quot;**. Konvertieren Sie Zahlen und boolesche Werte vor dem Versand.
+* Benutzerdefinierte Metadaten werden in Analytics mit einem `c.` Präfix angezeigt (z. B. `contentCategory` → `c.contentCategory`)
+* Zuordnen benutzerdefinierter Metadaten zu eVars, Props oder Kontextdatenvariablen über Analytics-Verarbeitungsregeln
+* `sessionStart` Metadaten bleiben für die gesamte Sitzung erhalten. Für Aktualisierungen ist eine neue Sitzung erforderlich
+* Jedes `adStart`- und `chapterStart`-Ereignis kann unterschiedliche benutzerdefinierte Metadaten enthalten
 
 ## Verwandte Dokumentation
 
-- [Unterstützung benutzerdefinierter Metadaten - XDM-Format](/help/implementation/edge/implementation-edge-custom-metadata.md) - Senden benutzerdefinierter Metadaten über Experience Edge sowohl an Analytics als auch an AEP
-- [Adobe Analytics-Quell-Connector für Report Suite-Daten](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) — Importieren von Analytics-Daten in Adobe Experience Platform
+* [Unterstützung benutzerdefinierter Metadaten - XDM-Format](/help/implementation/edge/custom-metadata.md) - Senden benutzerdefinierter Metadaten über Experience Edge sowohl an Analytics als auch an AEP
+* [Adobe Analytics-Quell-Connector für Report Suite-Daten](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) — Importieren von Analytics-Daten in Adobe Experience Platform
 
 <!--
-- [Session endpoints](sessions.md) — Session lifecycle management
-- [Ad endpoints](ads.md) — Track advertising impressions
-- [Chapter endpoints](chapters.md) — Segment content into chapters
+* [Session endpoints](sessions.md) — Session lifecycle management
+* [Ad endpoints](ads.md) — Track advertising impressions
+* [Chapter endpoints](chapters.md) — Segment content into chapters
 -->

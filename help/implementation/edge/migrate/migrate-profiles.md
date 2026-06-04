@@ -17,7 +17,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 533
 ht-degree: 0%
@@ -32,11 +32,11 @@ In diesem Dokument wird der Prozess der Migration des Profilfilterdienstes besch
 
 Um die Profilfilterung vom alten Datentyp namens „Media“ zum neuen Datentyp namens &quot;[Media Reporting Details“ &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-reporting-details), müssen Sie die vorhandenen Profilfilterregeln bearbeiten:
 
-1. Wechseln Sie in Adobe Experience Platform [!UICONTROL **Abschnitt**] Quellen“ zur Registerkarte [!UICONTROL **Datenflüsse**].
+1. Wechseln Sie in Adobe Experience Platform **[!UICONTROL Abschnitt]** Quellen“ zur Registerkarte **[!UICONTROL Datenflüsse]**.
 
 1. Suchen Sie den Datenfluss, der für den Import von Streaming-Mediendaten von Adobe Analytics nach Adobe Experience Platform über die Adobe-Datenerfassung verantwortlich ist.
 
-1. Wählen Sie [!UICONTROL **Datenfluss aktualisieren**], um die Einrichtung der Profilfilterung zu ändern, indem Sie jede benutzerdefinierte Regel, die ein verworfenes Feld enthält, durch das neue entsprechende Feld aus dem neuen XDM-Objekt ersetzen.
+1. Wählen Sie **[!UICONTROL Datenfluss aktualisieren]**, um die Einrichtung der Profilfilterung zu ändern, indem Sie jede benutzerdefinierte Regel, die ein verworfenes Feld enthält, durch das neue entsprechende Feld aus dem neuen XDM-Objekt ersetzen.
 
 1. Suchen Sie die Filter, die Felder aus dem veralteten Objekt „Medien“ enthalten.
 
@@ -52,29 +52,29 @@ Informationen zum Zuordnen zwischen den alten [&#x200B; den neuen Feldern finden
 
 Um die Befolgung der Migrationsrichtlinien zu vereinfachen, sehen Sie sich den folgenden Beispiel-Datenfluss an, der eine einzelne Profilfilterregel enthält. Da es in diesem Fall nur eine einzige Regel gibt, müssen Sie die Migrationsrichtlinien nur einmal anwenden.
 
-1. Wechseln Sie in Adobe Experience Platform [!UICONTROL **Abschnitt**] Quellen“ zur Registerkarte [!UICONTROL **Datenflüsse**].
+1. Wechseln Sie in Adobe Experience Platform **[!UICONTROL Abschnitt]** Quellen“ zur Registerkarte **[!UICONTROL Datenflüsse]**.
 
 &#x200B;1. Suchen Sie den Datenfluss, der für den Import von Streaming-Mediendaten von Adobe Analytics nach Adobe Experience Platform über Adobe Analytics verantwortlich ist.
 
 1. Wählen **[!UICONTROL Datenfluss aktualisieren]**, um in die Bearbeitungsbenutzeroberfläche zu gelangen, wie in der folgenden Abbildung dargestellt.
 
-   ![AEP-Datenflussprofil](assets/aep-dataflow-profile.jpeg)
+   ![AEP-Datenflussprofil](../../assets/aep-dataflow-profile.jpeg)
 
 1. Wählen Sie **[!UICONTROL Weiter]**, um zur Registerkarte Filterung zu wechseln.
 
-   ![Registerkarte &quot;AEP-Datenflussfilter“](assets/aep-dataflow-filtering-profile.jpeg)
+   ![Registerkarte &quot;AEP-Datenflussfilter“](../../assets/aep-dataflow-filtering-profile.jpeg)
 
 1. Identifizieren Sie auf **[!UICONTROL Registerkarte]** die Filterregeln, die auf `media.mediaTimed` Feldern basieren.
 
-   ![AEP-Datenflussfilterregeln](assets/dataflow-filtering-rules-profile.jpeg)
+   ![AEP-Datenflussfilterregeln](../../assets/dataflow-filtering-rules-profile.jpeg)
 
 
    Suchen Sie für jeden Filter, der das media.mediaTimed-Objekt verwendet, mithilfe der unter „Streaming-Mediendienste“ dokumentierten Streaming[Medienvariablen im `mediaReporting`-Objekt &#x200B;](/help/media-overview.md) Zuordnung zwischen den alten und den neuen Feldern. Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, während der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“ zu finden ist. Beispielsweise wird für [Medienstarts](/help/reporting/metrics/media-starts.md) der Korrespondent für `media.mediaTimed.impressions.value` `xdm.mediaReporting.sessionDetails.isViewed`.
 
-   ![Neue und alte XDM-Felder](assets/xdm-fields-new-and-old.jpeg)
+   ![Neue und alte XDM-Felder](../../assets/xdm-fields-new-and-old.jpeg)
 
 1. Ziehen Sie das entsprechende `mediaReporting` in die Filterregel und verwenden Sie zwischen den beiden Regeln den OR-Operator. Fügen Sie bei Verwendung des neuen Felds dieselbe Regel wie die vorhandene hinzu.
 
-   ![Filterregeln hinzufügen](assets/add-filter-rules.jpeg)
+   ![Filterregeln hinzufügen](../../assets/add-filter-rules.jpeg)
 
 1. Klicken Sie **[!UICONTROL Weiter]**, um Ihre Änderungen zu speichern.

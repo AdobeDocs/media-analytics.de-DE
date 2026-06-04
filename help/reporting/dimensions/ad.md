@@ -3,7 +3,7 @@ title: Anzeige
 description: Meldet jede abgespielte eindeutige Anzeige, verschlüsselt durch die Werbe-ID.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 7%
@@ -27,7 +27,7 @@ Die Anzeige wird vom Player bei jedem [Anzeigenstart](/help/implementation/event
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.ad.name`, wenn [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) aktiviert ist. bleibt für die Dauer des Besuchs erhalten. |
+| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.ad.name`, wenn [[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md) aktiviert ist. bleibt für die Dauer des Besuchs erhalten. |
 | Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.name`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Daten-Feeds | `videoad`, `post_videoad` |
 | Audience Manager | `c_contextdata.a.media.ad.name` |

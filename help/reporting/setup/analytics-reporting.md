@@ -1,41 +1,22 @@
 ---
-title: Aktivierung von Medienberichten
-description: Erfahren Sie mehr über die Media Report Suite, die Medienmetriken erfasst.  Führen Sie diese Schritte aus, um Medienberichte zu konfigurieren, bevor Mediendaten gesendet werden.
-uuid: d306068d-a308-4b6e-8a72-742dda0de428
-exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
+title: Einrichten des Reportings für reine Analytics-Implementierungen
+description: Aktivieren Sie die Media Report Suite-Module in Adobe Analytics, damit Streaming-Mediendaten erfasst und gemeldet werden können.
 feature: Streaming Media
-role: User, Admin, Developer
-TQID: https://experienceleague.adobe.com/2nLLlF-rFJUR3t-OMbcy5iqF42l-O7oLybXFGhdPyhU
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
-  - id: e38cbddc-1633-4cd5-bed5-9f289f2a6029
-  - id: ef60b66e-5984-4336-ba72-6d978b1b6f87
-  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
-  - id: f836f655-eebe-4b76-82bc-697955ec1ce3
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+role: User, Admin
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 503
-ht-degree: 20%
+source-wordcount: '580'
+ht-degree: 9%
 
 ---
 
-# Aktivierung von Medienberichten
+# Einrichten des Reportings für reine Analytics-Implementierungen
+
+Bevor eine reine Analytics-Implementierung Streaming-Mediendaten erfassen kann, muss jede Report Suite, die diese Daten erhält, so konfiguriert werden, dass die entsprechenden Medienmodule aktiviert werden. Auf dieser Seite wird beschrieben, wie Sie diese Module aktivieren und wo Sie die resultierenden Berichte finden.
+
+* **Voraussetzungen**: Eine Adobe Analytics-Implementierung. Siehe [Nur Analytics-Implementierung - Übersicht](/help/implementation/analytics-only/overview.md) und die ausgewählte Implementierungsmethode.
+
+## Aktivieren von Medienberichten für eine Report Suite
 
 Jede Report Suite, die Medienmetriken erfasst, muss konfiguriert werden, bevor Mediendaten gesendet werden.
 
@@ -44,11 +25,11 @@ Jede Report Suite, die Medienmetriken erfasst, muss konfiguriert werden, bevor M
 
    ![Screenshot des Report Suite Manager-Menüs](assets/media-reporting.png)
 
-1. Aktivieren Sie auf **[!UICONTROL Seite]** Medienberichte“ die gewünschten Komponenten für Streaming-Medien (siehe unten).
+1. Aktivieren Sie auf **[!UICONTROL Seite]** Medienberichte“ die gewünschten Streaming-Medienmodule (siehe unten).
 
 1. Wählen Sie **[!UICONTROL Speichern] aus**
 
-   Wenn diese Report Suite bereits zur Erfassung von Mediendaten konfiguriert ist, wird eine zusätzliche Konfigurationsseite angezeigt, nachdem Sie auf **[!UICONTROL Speichern]** klicken. Wenn die Seite **[!UICONTROL Media-Core-Messung]** angezeigt wird, fahren Sie mit dem nächsten Schritt fort.
+   Wenn diese Report Suite bereits für die Erfassung von Mediendaten konfiguriert ist, wird nach Auswahl von **[!UICONTROL Speichern]** eine zusätzliche Konfigurationsseite angezeigt. Wenn die Seite **[!UICONTROL Media-Core-Messung]** angezeigt wird, fahren Sie mit dem nächsten Schritt fort.
 
 ## Verfügbare Streaming-Medienmodule
 
@@ -141,7 +122,7 @@ Die Medienmessung enthält folgende Module:
       * [[!UICONTROL Gesamtdauer des Puffers]](/help/reporting/metrics/total-buffer-duration.md)
 * **[!UICONTROL Videometadaten]**: Ermöglicht das Tracking von Standard-Videoinhaltsattributen wie Sendung, Staffel und Genre.
    * **Dimensionen:**
-      * [!UICONTROL Anzeigenladevorgänge]
+      * [[!UICONTROL Anzeigenladevorgänge]](/help/reporting/dimensions/ad-load-type.md)
       * [[!UICONTROL Teil des Tages]](/help/reporting/dimensions/day-part.md)
       * [[!UICONTROL Folge]](/help/reporting/dimensions/episode.md)
       * [[!UICONTROL Genre]](/help/reporting/dimensions/genre.md)
@@ -178,3 +159,9 @@ Die Medienmessung enthält folgende Module:
       * [[!UICONTROL Von im Fokus betroffene Streams]](/help/reporting/metrics/in-focus-streams-impacted.md)
       * [[!UICONTROL Von Stummschaltung betroffene Streams]](/help/reporting/metrics/mute-streams-impacted.md)
       * [[!UICONTROL Vom Bild betroffene Ströme in Bild]](/help/reporting/metrics/picture-in-picture-streams-impacted.md)
+
+>[!MORELIKETHIS]
+>
+>* [Medienberichte in Workspace](/help/reporting/workspace/media-workspace-templates.md)
+>* [Dimensions-Übersicht](/help/reporting/dimensions/overview.md)
+>* [Metriken - Übersicht](/help/reporting/metrics/overview.md)

@@ -20,7 +20,7 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 513
 ht-degree: 3%
@@ -72,8 +72,8 @@ Wenn `main:play` Aufrufe zwischen aufeinander folgenden Anzeigen auftreten, best
 
 **Lösung:** den AdComplete-Aufruf für jede Anzeige (mit Ausnahme der letzten) verzögern, anstatt ihn sofort nach dem Ende der Anzeige aufzurufen. Batch-Aufrufe werden wie folgt durchgeführt:
 
-- Bei jedem **Anzeigenstart**: Wenn eine frühere Anzeige existiert und noch nicht als abgeschlossen markiert wurde, rufen Sie AdComplete *vor)* AdStart für die neue Anzeige auf.
-- Bei jedem **Ende eines Anzeigen-Assets**: AdComplete nicht sofort aufrufen - Verzögern Sie die Ausführung.
-- Bei **Abschluss der Werbeunterbrechung**: Rufen Sie „AdComplete“ für die letzte Anzeige auf (falls noch nicht aufgerufen) und rufen Sie dann „AdBreakComplete“ auf.
+* Bei jedem **Anzeigenstart**: Wenn eine frühere Anzeige existiert und noch nicht als abgeschlossen markiert wurde, rufen Sie AdComplete *vor)* AdStart für die neue Anzeige auf.
+* Bei jedem **Ende eines Anzeigen-Assets**: AdComplete nicht sofort aufrufen - Verzögern Sie die Ausführung.
+* Bei **Abschluss der Werbeunterbrechung**: Rufen Sie „AdComplete“ für die letzte Anzeige auf (falls noch nicht aufgerufen) und rufen Sie dann „AdBreakComplete“ auf.
 
 Dieses Muster stellt sicher, dass AdComplete und der nächste AdStart aufeinander folgen, sodass keine Lücken entstehen.

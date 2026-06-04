@@ -19,7 +19,7 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 369
 ht-degree: 10%
@@ -40,13 +40,13 @@ Einige dieser Berichte sind besonders nützlich für die Analyse von Streaming-M
 
 Im Folgenden finden Sie eine Liste von Standardberichten, die bei der Analyse von Streaming-Mediendaten nützlich sind:
 
-* [!UICONTROL **Nutzung von Medieninhalten**]: Erstellt einen Bericht, der anzeigt, welche Inhalte am häufigsten genutzt werden und für Benutzer interessant sind.
+* **[!UICONTROL Nutzung von Medieninhalten]**: Erstellt einen Bericht, der anzeigt, welche Inhalte am häufigsten genutzt werden und für Benutzer interessant sind.
 
-* [!UICONTROL **Nutzung von Streaming**] Medien: Erstellt einen Bericht mit einem Dashboard, wie im folgenden Beispiel gezeigt.
+* **[!UICONTROL Nutzung von Streaming]** Medien: Erstellt einen Bericht mit einem Dashboard, wie im folgenden Beispiel gezeigt.
 
-* [!UICONTROL **Medien-Neuigkeit, -Häufigkeit, -**]: Erstellt einen Bericht, der die Neuigkeit (wie viele Tage seit dem letzten Besuch), -Häufigkeit (wie viele Besuche pro Besucher) und -Treue (wie oft Kohorten von Benutzern zur Website zurückkehren) ausgibt
+* **[!UICONTROL Medien-Neuigkeit, -Häufigkeit, -]**: Erstellt einen Bericht, der die Neuigkeit (wie viele Tage seit dem letzten Besuch), -Häufigkeit (wie viele Besuche pro Besucher) und -Treue (wie oft Kohorten von Benutzern zur Website zurückkehren) ausgibt
 
-Wenn Sie beispielsweise den Bericht [!UICONTROL **Nutzung von Streaming**] Medien) auswählen, wird ein Projekt mit dem folgenden Dashboard angezeigt:
+Wenn Sie beispielsweise den Bericht **[!UICONTROL Nutzung von Streaming]** Medien) auswählen, wird ein Projekt mit dem folgenden Dashboard angezeigt:
 
 ![](/help/reporting/assets/aa-workspace.png)
 

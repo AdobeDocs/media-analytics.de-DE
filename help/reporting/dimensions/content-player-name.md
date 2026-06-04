@@ -3,7 +3,7 @@ title: Name des Inhalts-Players
 description: Gibt an, welcher Player jede Mediensitzung gerendert hat.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 6%
@@ -27,7 +27,7 @@ Der Player-Name wird vom Player beim Sitzungsstart festgelegt und bleibt für di
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.playerName`, wenn [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) aktiviert ist. |
+| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.playerName`, wenn [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) aktiviert ist. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.playerName`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds | `videoplayername`, `post_videoplayername` |
 | Audience Manager | `c_contextdata.a.media.playerName` |

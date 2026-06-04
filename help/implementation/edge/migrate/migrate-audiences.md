@@ -16,7 +16,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 516
 ht-degree: 1%
@@ -43,49 +43,49 @@ Um eine Zielgruppe vom alten Datentyp „Media“ in den neuen Datentyp &quot;[M
 
 Informationen zum Zuordnen zwischen den alten [&#x200B; den neuen Feldern finden Sie unter dem Parameter &#x200B;](/help/reporting/dimensions/content.md)Content ID[&#128279;](/help/media-overview.md) und unter den übrigen unter Streaming-Mediendienste dokumentierten Streaming-Medienvariablen . Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, während der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“ zu finden ist.
 
-![Alte und neue XDM-Feldpfade](assets/field-paths-updated.jpeg)
+![Alte und neue XDM-Feldpfade](../../assets/field-paths-updated.jpeg)
 
 ## Beispiel
 
 Um die Befolgung der Migrationsrichtlinien zu vereinfachen, sehen Sie sich das folgende Beispiel an, das eine Zielgruppe mit einer einzigen Regel enthält. Da die Zielgruppe über eine einzige Regel verfügt, müssen Sie die Migrationsrichtlinien nur einmal anwenden.
 
-1. Klicken Sie auf [!UICONTROL **Schaltfläche**] Zielgruppe bearbeiten“ in der oberen rechten Ecke.
+1. Klicken Sie auf **[!UICONTROL Schaltfläche]** Zielgruppe bearbeiten“ in der oberen rechten Ecke.
 
 1. Suchen Sie die für die Zielgruppe konfigurierten Regeln.
 
-   ![Zielgruppe bearbeiten](assets/audience-edit.jpeg)
+   ![Zielgruppe bearbeiten](../../assets/audience-edit.jpeg)
 
-   ![Zielgruppe bearbeiten](assets/audience-edit2.jpeg)
+   ![Zielgruppe bearbeiten](../../assets/audience-edit2.jpeg)
 
 1. Wählen Sie die Regel aus, um ihre Konfiguration zu öffnen.
 
-   ![Zielgruppe bearbeiten](assets/audience-edit3.jpeg)
+   ![Zielgruppe bearbeiten](../../assets/audience-edit3.jpeg)
 
 1. (Optional) Um den Pfad des in der Regel verwendeten Felds anzuzeigen, klicken Sie auf die Informationsschaltfläche neben dem Feldnamen.
 
-   ![Zielgruppe bearbeiten](assets/audience-edit4.jpeg)
+   ![Zielgruppe bearbeiten](../../assets/audience-edit4.jpeg)
 
 1. Identifizieren Sie den Feldnamen (in diesem Fall „Medienstarts„).
 
-   ![Zielgruppe bearbeiten](assets/audience-edit5.jpeg)
+   ![Zielgruppe bearbeiten](../../assets/audience-edit5.jpeg)
 
 1. Informationen zur Zuordnung zwischen den alten Feldern finden Sie in der Dokumentation [Streaming](/help/media-overview.md)Medienvariablen unter „Streaming-Mediendienste . Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“. Beispielsweise wird für den Parameter [Medienstarts](/help/reporting/metrics/media-starts.md) der Korrespondent für `media.mediaTimed.impressions.value` `xdm.mediaReporting.sessionDetails.isViewed`.
 
-   ![Aktualisierter XDM-Pfad](assets/updated-xdm-path.jpeg)
+   ![Aktualisierter XDM-Pfad](../../assets/updated-xdm-path.jpeg)
 
 1. Fügen Sie dieselbe Regel wie bei der vorhandenen hinzu, indem Sie das neue Feld verwenden.
 
-   ![Regel hinzufügen](assets/add-rule.jpeg)
+   ![Regel hinzufügen](../../assets/add-rule.jpeg)
 
-   ![Regel hinzufügen](assets/add-rule2.jpeg)
+   ![Regel hinzufügen](../../assets/add-rule2.jpeg)
 
-   ![Regel hinzufügen](assets/add-rule3.jpeg)
+   ![Regel hinzufügen](../../assets/add-rule3.jpeg)
 
-1. Klicken Sie [!UICONTROL **Speichern**], um die Zielgruppe zu speichern. Sie können diese Einrichtung so lange beibehalten, wie Sie überprüfen müssen, ob die Zielgruppe weiterhin wie erwartet funktioniert.
+1. Klicken Sie **[!UICONTROL Speichern]**, um die Zielgruppe zu speichern. Sie können diese Einrichtung so lange beibehalten, wie Sie überprüfen müssen, ob die Zielgruppe weiterhin wie erwartet funktioniert.
 
-1. Entfernen Sie nach Abschluss der Validierung das alte Feld und klicken Sie auf [!UICONTROL **Speichern**] um die Audience zu speichern.
+1. Entfernen Sie nach Abschluss der Validierung das alte Feld und klicken Sie auf **[!UICONTROL Speichern]** um die Audience zu speichern.
 
-   ![Regel hinzufügen](assets/add-rule4.jpeg)
+   ![Regel hinzufügen](../../assets/add-rule4.jpeg)
 
 1. Validieren Sie die Zielgruppe erneut.
 
