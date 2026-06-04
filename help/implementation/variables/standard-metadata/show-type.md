@@ -3,7 +3,7 @@ title: Sendungstyp
 description: Identifizieren Sie das Inhaltsformat (vollständige Folge, Vorschau, Clip oder andere) mithilfe eines Zeichenfolgen-Ganzzahlcodes.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 8%
@@ -15,23 +15,23 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Typ anzeigen**&#x200B;behandelt. Siehe [Sendungstyp](/help/reporting/dimensions/show-type.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Typ anzeigen**behandelt. Siehe [Sendungstyp](/help/reporting/dimensions/show-type.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
 Die Variable vom Typ „show“ identifiziert das Inhaltsformat mithilfe eines Zeichenfolgen-Ganzzahlcodes:
 
-- `"0"`: Full Episode
-- `"1"`: Vorschau oder Trailer
-- `"2"`: Clip
-- `"3"`: Sonstiges
+* `"0"`: Full Episode
+* `"1"`: Vorschau oder Trailer
+* `"2"`: Clip
+* `"3"`: Sonstiges
 
 Verwenden Sie diese Option, um bei der Messung der Interaktion die Anzeige eines vollständigen Programms von kurzen Inhalten wie Trailern und Clips zu trennen.
 
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.type` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.type` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |
@@ -167,6 +167,6 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
 
 >[!ENDTABS]

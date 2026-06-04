@@ -6,19 +6,11 @@ exl-id: 672fa804-4a4f-4f06-b29b-b0aad27ca2f3
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/sEVJa-FPqZiSc4Hdr7lQfNbECS2lxckBmqAYhGHmx2w
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 449
 ht-degree: 7%
@@ -31,7 +23,7 @@ Mit der Mediensammlungs-API können Sie benutzerdefinierte Schlüssel-Wert-Paare
 
 Um diese Daten in Analysis Workspace verfügbar zu machen, müssen Kunden benutzerdefinierte eVars definieren und Verarbeitungsregeln konfigurieren, um sie entsprechend ihrem Anwendungsfall auszufüllen. Nach der Zuordnung zu eVars oder Props werden die Daten auch in Adobe Experience Platform über die entsprechenden eVar-Pfade verfügbar, sofern der [Analytics-Quell-Connector](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) konfiguriert ist.
 
-Informationen zu XDM-basierten Implementierungen mit Experience Edge finden Sie unter [Unterstützung benutzerdefinierter Metadaten - XDM-Format](/help/implementation/edge/implementation-edge-custom-metadata.md).
+Informationen zu XDM-basierten Implementierungen mit Experience Edge finden Sie unter [Unterstützung benutzerdefinierter Metadaten - XDM-Format](/help/implementation/edge/custom-metadata.md).
 
 ## Überblick
 
@@ -80,8 +72,8 @@ Benutzerdefinierte Metadaten sind ein flaches **Objekt** (Schlüssel-Wert-Paare)
 
 ### Wichtige Benennungsanforderungen
 
-- Verwenden Sie das `media.`-Präfix nicht in benutzerdefinierten Metadatenschlüsseln. Es werden Standard-Medienfeldern zugeordnet und können diese in Analytics-Berichten überschreiben
-- Das `a.`-Präfix ist für Adobe-Standardmetadaten reserviert und darf nicht verwendet werden
+* Verwenden Sie das `media.`-Präfix nicht in benutzerdefinierten Metadatenschlüsseln. Es werden Standard-Medienfeldern zugeordnet und können diese in Analytics-Berichten überschreiben
+* Das `a.`-Präfix ist für Adobe-Standardmetadaten reserviert und darf nicht verwendet werden
 
 ## Benutzerdefinierte Metadaten für Hauptinhalte
 
@@ -173,19 +165,19 @@ curl -X POST "https://{uri}/api/v1/sessions/{sid}/events" \
 
 ## Verhalten
 
-- Alle benutzerdefinierten Metadatenwerte müssen &quot;**&quot;**. Konvertieren Sie Zahlen und boolesche Werte vor dem Versand.
-- Benutzerdefinierte Metadaten werden in Analytics mit einem `c.` Präfix angezeigt (z. B. `contentCategory` → `c.contentCategory`)
-- Zuordnen benutzerdefinierter Metadaten zu eVars, Props oder Kontextdatenvariablen über Analytics-Verarbeitungsregeln
-- `sessionStart` Metadaten bleiben für die gesamte Sitzung erhalten. Für Aktualisierungen ist eine neue Sitzung erforderlich
-- Jedes `adStart`- und `chapterStart`-Ereignis kann unterschiedliche benutzerdefinierte Metadaten enthalten
+* Alle benutzerdefinierten Metadatenwerte müssen &quot;**&quot;**. Konvertieren Sie Zahlen und boolesche Werte vor dem Versand.
+* Benutzerdefinierte Metadaten werden in Analytics mit einem `c.` Präfix angezeigt (z. B. `contentCategory` → `c.contentCategory`)
+* Zuordnen benutzerdefinierter Metadaten zu eVars, Props oder Kontextdatenvariablen über Analytics-Verarbeitungsregeln
+* `sessionStart` Metadaten bleiben für die gesamte Sitzung erhalten. Für Aktualisierungen ist eine neue Sitzung erforderlich
+* Jedes `adStart`- und `chapterStart`-Ereignis kann unterschiedliche benutzerdefinierte Metadaten enthalten
 
 ## Verwandte Dokumentation
 
-- [Unterstützung benutzerdefinierter Metadaten - XDM-Format](/help/implementation/edge/implementation-edge-custom-metadata.md) - Senden benutzerdefinierter Metadaten über Experience Edge sowohl an Analytics als auch an AEP
-- [Adobe Analytics-Quell-Connector für Report Suite-Daten](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) — Importieren von Analytics-Daten in Adobe Experience Platform
+* [Unterstützung benutzerdefinierter Metadaten - XDM-Format](/help/implementation/edge/custom-metadata.md) - Senden benutzerdefinierter Metadaten über Experience Edge sowohl an Analytics als auch an AEP
+* [Adobe Analytics-Quell-Connector für Report Suite-Daten](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) — Importieren von Analytics-Daten in Adobe Experience Platform
 
 <!--
-- [Session endpoints](sessions.md) — Session lifecycle management
-- [Ad endpoints](ads.md) — Track advertising impressions
-- [Chapter endpoints](chapters.md) — Segment content into chapters
+* [Session endpoints](sessions.md) — Session lifecycle management
+* [Ad endpoints](ads.md) — Track advertising impressions
+* [Chapter endpoints](chapters.md) — Segment content into chapters
 -->

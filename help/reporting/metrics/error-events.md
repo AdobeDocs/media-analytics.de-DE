@@ -3,7 +3,7 @@ title: Fehlerereignisse
 description: Zählt Fehlerereignisse für Summen und Durchschnittswerte über Sitzungen hinweg.
 feature: Metrics
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 8%
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Metrik **Fehlerereignisse**&#x200B;behandelt. Adobe Analytics füllt automatisch eine gepaarte [Fehlerdimension](/help/reporting/dimensions/errors.md) aus derselben `a.media.qoe.errorCount` Kontextdatenvariablen. Customer Journey Analytics stellt ein einzelnes `xdm.mediaReporting.qoeDataDetails.errorCount` bereit, das Sie als Dimension oder Metrik verwenden können.*
+*Auf dieser Seite wird die Metrik **Fehlerereignisse**behandelt. Adobe Analytics füllt automatisch eine gepaarte [Fehlerdimension](/help/reporting/dimensions/errors.md) aus derselben `a.media.qoe.errorCount` Kontextdatenvariablen. Customer Journey Analytics stellt ein einzelnes `xdm.mediaReporting.qoeDataDetails.errorCount` bereit, das Sie als Dimension oder Metrik verwenden können.*
 
 >[!ENDSHADEBOX]
 
@@ -27,9 +27,9 @@ Das Medien-Backend erhöht die Anzahl bei jedem vom Player gemeldeten Fehler. Di
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.qoe.errorCount`, wenn [[!UICONTROL Medienqualität]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.errorCount`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
+| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.qoe.errorCount`, wenn [[!UICONTROL Medienqualität]](/help/reporting/setup/analytics-reporting.md) aktiviert ist. |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.errorCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
 | Audience Manager | `c_contextdata.a.media.qoe.errorCount` |
 
 Verwenden Sie für das boolesche Reporting auf Sitzungsebene (ob überhaupt ein Fehler aufgetreten ist) [Streams mit Auswirkung auf Fehler](error-impacted-streams.md).

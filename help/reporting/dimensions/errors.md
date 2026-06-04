@@ -3,7 +3,7 @@ title: Fehler
 description: Gibt die Anzahl der Fehlerereignisse pro Sitzung an.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Dimension **Fehler**&#x200B;behandelt. Adobe Analytics füllt automatisch eine gepaarte [Fehlerereignismetrik](/help/reporting/metrics/error-events.md) aus derselben `a.media.qoe.errorCount` Kontextdatenvariablen. Customer Journey Analytics stellt ein einzelnes `xdm.mediaReporting.qoeDataDetails.errorCount` bereit, das Sie als Dimension oder Metrik verwenden können.*
+*Auf dieser Seite wird die Dimension **Fehler**behandelt. Adobe Analytics füllt automatisch eine gepaarte [Fehlerereignismetrik](/help/reporting/metrics/error-events.md) aus derselben `a.media.qoe.errorCount` Kontextdatenvariablen. Customer Journey Analytics stellt ein einzelnes `xdm.mediaReporting.qoeDataDetails.errorCount` bereit, das Sie als Dimension oder Metrik verwenden können.*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ Das Medien-Backend erhöht die Anzahl bei jedem vom Player gemeldeten Fehler. De
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.qoe.errorCount`, wenn [[!UICONTROL Medienqualität]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.errorCount`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.qoe.errorCount`, wenn [[!UICONTROL Medienqualität]](/help/reporting/setup/analytics-reporting.md) aktiviert ist. |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.errorCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Daten-Feeds | `videoqoeerrorcountevar`, `post_videoqoeerrorcountevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.errorCount` |
 

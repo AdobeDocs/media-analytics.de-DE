@@ -3,7 +3,7 @@ title: Anzeigenposition im Pod
 description: Meldet die nullindizierte Position jeder Anzeige innerhalb ihrer übergeordneten Anzeigenunterbrechung.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Anzeige in Pod-Position**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden Sie &#x200B;](/help/implementation/variables/ads/ad-in-pod-position.md) „Anzeige in Pod-Position“*
+*Auf dieser Seite wird die Berichtsdimension **Anzeige in Pod-Position**behandelt. Informationen [ Erfassen dieser Variablen finden Sie ](/help/implementation/variables/ads/ad-in-pod-position.md) „Anzeige in Pod-Position“*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ Die Position der Anzeige im Pod wird vom Player bei jedem [Anzeigenstart](/help/
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.ad.podPosition`, wenn [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.podPosition`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.ad.podPosition`, wenn [[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md) aktiviert ist. |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Daten-Feeds | `videoadinpod`, `post_videoadinpod` |
 | Audience Manager | `c_contextdata.a.media.ad.podPosition` |
 

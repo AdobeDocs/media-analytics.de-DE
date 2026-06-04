@@ -3,7 +3,7 @@ title: Änderungen der Bitrate (Dimension)
 description: Gibt die Anzahl der Bitratenänderungsereignisse pro Sitzung an.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 5%
@@ -27,11 +27,11 @@ Das Medien-Backend erhöht die Anzahl bei jedem [Bitratenänderung](/help/implem
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.qoe.bitrateChangeCount`, wenn [[!UICONTROL Medienqualität]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bitrateChangeCount`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.qoe.bitrateChangeCount`, wenn [[!UICONTROL Medienqualität]](/help/reporting/setup/analytics-reporting.md) aktiviert ist. |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bitrateChangeCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Daten-Feeds | `videoqoebitratechangecountevar`, `post_videoqoebitratechangecountevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.bitrateChangeCount` |
 
 ## Dimensionselemente
 
-Jedes Element ist der literale Änderungszählungswert, der beim Schließen-Aufruf gemeldet wird. Verwenden Sie für das Reporting über boolesche Werte auf Sitzungsebene (unabhängig davon, ob in der Sitzung überhaupt eine Bitratenänderung aufgetreten ist) [&#x200B; Streams, die von Bitratenänderungen betroffen &#x200B;](/help/reporting/metrics/bitrate-change-impacted-streams.md).
+Jedes Element ist der literale Änderungszählungswert, der beim Schließen-Aufruf gemeldet wird. Verwenden Sie für das Reporting über boolesche Werte auf Sitzungsebene (unabhängig davon, ob in der Sitzung überhaupt eine Bitratenänderung aufgetreten ist) [ Streams, die von Bitratenänderungen betroffen ](/help/reporting/metrics/bitrate-change-impacted-streams.md).

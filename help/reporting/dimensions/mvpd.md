@@ -3,7 +3,7 @@ title: MVPD
 description: Gibt den Kabel-, Satelliten- oder virtuellen Provider an, über den sich der Benutzer authentifiziert hat.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 9%
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **MVPD**&#x200B;behandelt. Informationen [&#128279;](/help/implementation/variables/standard-metadata/mvpd.md) Erfassen dieser Variablen finden Sie unter MVPD*
+*Auf dieser Seite wird die Berichtsdimension **MVPD**behandelt. Informationen ](/help/implementation/variables/standard-metadata/mvpd.md) Erfassen dieser Variablen finden Sie unter [MVPD*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ MVPD wird vom Player beim Sitzungsstart festgelegt, wenn der Inhalt hinter Adobe
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.pass.mvpd`, wenn [[!UICONTROL Videometadaten]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.mvpd`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.pass.mvpd`, wenn [[!UICONTROL Videometadaten]](/help/reporting/setup/analytics-reporting.md) aktiviert ist. |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.mvpd`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds | `videomvpd`, `post_videomvpd` |
 | Audience Manager | `c_contextdata.a.media.pass.mvpd` |
 

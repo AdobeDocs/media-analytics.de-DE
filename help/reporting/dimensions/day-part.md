@@ -3,7 +3,7 @@ title: Teil des Tages
 description: Gibt die Tageszeit (Morgen, Nachmittag, Primetime, Late Night) an, zu der der Inhalt gesendet oder wiedergegeben wurde.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 8%
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Day-Teil**&#x200B;behandelt. Siehe [Day-Teil](/help/implementation/variables/standard-metadata/day-part.md), wie Sie diese Variable erfassen.*
+*Auf dieser Seite wird die Berichtsdimension **Day-Teil**behandelt. Siehe [Day-Teil](/help/implementation/variables/standard-metadata/day-part.md), wie Sie diese Variable erfassen.*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ Der Tagesabschnitt wird vom Player beim Sitzungsbeginn festgelegt.
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.dayPart`, wenn [[!UICONTROL Videometadaten]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.dayPart`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.dayPart`, wenn [[!UICONTROL Videometadaten]](/help/reporting/setup/analytics-reporting.md) aktiviert ist. |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.dayPart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds | `videodaypart`, `post_videodaypart` |
 | Audience Manager | `c_contextdata.a.media.dayPart` |
 

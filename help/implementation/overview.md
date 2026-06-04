@@ -6,25 +6,15 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
 TQID: https://experienceleague.adobe.com/aFrxbzBLlf1ngetaM-GsNFXz6TUXi6Pic3quLVI297c
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
-  - id: c8add8f2-4250-4fd9-9cde-9707036c567d
-  - id: df312454-73c4-43f6-a90e-18f5043f074c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fdid: c8add8f2-4250-4fd9-9cde-9707036c567did: df312454-73c4-43f6-a90e-18f5043f074c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 522
-ht-degree: 65%
+source-wordcount: 518
+ht-degree: 66%
 
 ---
 
@@ -34,13 +24,11 @@ Es gibt verschiedene Möglichkeiten, Adobe-Streaming-Mediendienste zu implementi
 
 ## Edge-Implementierungsmethoden
 
-Es wird empfohlen, Edge bei der Implementierung von Streaming-Mediendiensten für alle neuen Kundinnen und Kunden von Adobe Analytics oder Customer Journey Analytics zu verwenden.
-
-Edge-Implementierungsmethoden verwenden das Add-on für die Streaming-Mediensammlung .
+Adobe empfiehlt für alle neuen Adobe Analytics- oder Customer Journey Analytics-Kunden die Verwendung von Edge Network-Implementierungsmethoden.
 
 * **Medien für Edge Network SDK/Erweiterung:** Sammelt Daten aus dem Web, iOS- und Android-Geräten oder Roku-Geräten und sendet sie an Edge Network. Die Daten können dann entweder an Customer Journey Analytics oder Adobe Analytics gesendet werden.
 
-  Weitere Informationen zu den Medien für Edge Network SDK/Extension finden Sie unter [Implementieren der Streaming-Mediensammlung mit Edge Network](/help/implementation/edge/implementation-edge.md).
+  Weitere Informationen zu Media for Edge Network SDK/Extension finden Sie in der [Edge-Implementierungsübersicht](/help/implementation/edge/overview.md).
 
 * **Media Edge-API** Kann angepasst werden, um Daten von jedem Gerät oder Format (einschließlich Mobilgeräten, Web- und Over-the-top-Geräten) zu erfassen und Daten an Edge Network zu senden. Die Daten können dann entweder an Customer Journey Analytics oder Adobe Analytics gesendet werden.
 
@@ -54,7 +42,7 @@ Die oben beschriebenen Edge-Implementierungsmethoden werden sowohl für Customer
 
 Zusätzlich zu den Edge-Implementierungsmethoden sind weitere Implementierungsmethoden verfügbar. Diese Implementierungsmethoden wurden für die Verwendung mit Adobe Analytics entwickelt. Bestehende Kundinnen und Kunden mit einer der folgenden Implementierungsmethoden können jedoch weiterhin Daten in Customer Journey Analytics zur Verfügung stellen, indem sie eine [Analytics-Quellverbindung](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) erstellen.
 
-Nur Adobe Analytics-Implementierungsmethoden verwenden das Add-on Adobe Analytics for Streaming Media .
+Nur Adobe Analytics-Implementierungsmethoden verwenden das Add-on Adobe Analytics for Streaming Media . Voraussetzungen und eine Liste von Methoden finden Sie unter [Nur Analytics-Implementierung - Übersicht](/help/implementation/analytics-only/overview.md).
 
 * **Media-Erweiterung mit Tags:** Die Erweiterung „Adobe Media Analytics für Audio und Video“ bietet die Funktionalität zum Hinzufügen der Media-Tracker-Instanz zu einer Site oder einem Projekt, für die bzw. das Tags aktiviert sind. Die Daten werden an Adobe Analytics gesendet.
 
@@ -72,10 +60,3 @@ Nur Adobe Analytics-Implementierungsmethoden verwenden das Add-on Adobe Analytic
 
 
 ![Analytics-Workflow](assets/analytics-implementation.png)
-
-<!--
-(Not sure if we need the following paragraph and graphic. Paragraph is somewhat redundant with the intro paragraph of this article)
-Choose the implementation method depending on the supported platforms. Some players are not supported by the Media SDKs or the Adobe Experience Platform Media Extensions. The Media Collection APIs provide a way to support those players. For information on supported devices, see [Supported devices and platforms](/help/getting-started/supported-devices.md).
-
-![Media Flow](media-sdk/assets/choose-media-flow2.png)
--->

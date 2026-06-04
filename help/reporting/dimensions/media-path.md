@@ -3,7 +3,7 @@ title: Medienpfad
 description: Erfasst die Inhalts-ID als Traffic-Variable für die Pfadanalyse.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 5%
@@ -21,7 +21,7 @@ Der Medienpfad wird automatisch aus der Inhalts-ID abgeleitet, die beim Sitzungs
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Wird automatisch aus Kontextdaten erfasst, die als Traffic-Variable (Prop) `a.media.name` werden, wenn [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) aktiviert ist. |
+| Adobe Analytics | Wird automatisch aus Kontextdaten erfasst, die als Traffic-Variable (Prop) `a.media.name` werden, wenn [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) aktiviert ist. |
 | Customer Journey Analytics | K. A. - [Inhalt](content.md) für Pfadanalyse verwenden |
 | Daten-Feeds | `videopath`, `post_videopath` |
 | Audience Manager | `c_contextdata.a.media.name` |

@@ -3,7 +3,7 @@ title: Beschriftung
 description: Meldet das Plattenlabel, unter dem der Audioinhalt freigegeben wurde.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Beschriftung**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/standard-metadata/label.md) unter „Bezeichnung“*
+*Auf dieser Seite wird die Berichtsdimension **Beschriftung**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/standard-metadata/label.md) unter „Bezeichnung“*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ Die Beschriftung wird vom Player beim Sitzungsstart für Audioinhalte festgelegt
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.label`, wenn [[!UICONTROL Audio-]](/help/reporting/media-reports-enable.md)) aktiviert ist. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.label`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.label`, wenn [[!UICONTROL Audio-]](/help/reporting/setup/analytics-reporting.md)) aktiviert ist. |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.label`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds | `videoaudiolabel` |
 | Audience Manager | `c_contextdata.a.media.label` |
 

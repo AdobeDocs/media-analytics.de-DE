@@ -3,7 +3,7 @@ title: Autorisiert
 description: Zählt Sitzungen, deren Benutzer über Adobe Pass autorisiert wurden.
 feature: Metrics
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 12%
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsmetrik **Autorisiert**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/standard-metadata/authorized.md) unter „Autorisiert“*
+*Auf dieser Seite wird die Berichtsmetrik **Autorisiert**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/standard-metadata/authorized.md) unter „Autorisiert“*
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +27,7 @@ Das Medien-Backend erhöht die Anzahl, wenn der Player die Sitzung beim Sitzungs
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.pass.auth`, wenn [[!UICONTROL Videometadaten]](/help/reporting/media-reports-enable.md) aktiviert ist. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.authorized`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
+| Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.pass.auth`, wenn [[!UICONTROL Videometadaten]](/help/reporting/setup/analytics-reporting.md) aktiviert ist. |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.authorized`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Daten-Feeds | `event_list`, `post_event_list` (siehe [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files) Suche) |
 | Audience Manager | `c_contextdata.a.media.pass.auth` |
