@@ -43,7 +43,7 @@ Wenn Sie von der Media JS (3.x)-SDK wechseln, gibt der Befehl Web SDK [`getMedia
 
 ## Medien-Events tracken
 
-Senden Sie bei konfiguriertem SDK jedes Medienereignis, indem Sie [`sendEvent`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/sendevent/overview) aufrufen. Die **Payloads finden Sie auf der Registerkarte** Web[ auf jeder ](/help/implementation/events/overview.md)- und [](/help/implementation/variables/overview.md).
+Senden Sie bei konfiguriertem SDK jedes Medienereignis, indem Sie [`sendEvent`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/sendevent/overview) aufrufen. Die **Payloads finden Sie auf der Registerkarte** Web[&#x200B; auf jeder &#x200B;](/help/implementation/events/overview.md)- und [&#128279;](/help/implementation/variables/overview.md).
 
 ## Nächster Schritt
 

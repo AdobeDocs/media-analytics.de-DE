@@ -52,7 +52,7 @@ Media SDK für JavaScript (3.x) sendet Streaming-Mediendaten direkt an Adobe Ana
 
 ## Medien-Events tracken
 
-Verfolgen Sie bei erstelltem Tracker jedes Medienereignis mit der entsprechenden Tracker-Methode. Die **Aufrufe finden Sie auf der Registerkarte** Media SDK JS 3.x[ auf jeder Seite mit ](/help/implementation/events/overview.md) Ereignissen und [Variablen](/help/implementation/variables/overview.md) .
+Verfolgen Sie bei erstelltem Tracker jedes Medienereignis mit der entsprechenden Tracker-Methode. Die **Aufrufe finden Sie auf der Registerkarte** Media SDK JS 3.x[&#x200B; auf jeder Seite mit &#x200B;](/help/implementation/events/overview.md) Ereignissen und [Variablen](/help/implementation/variables/overview.md) .
 
 ## Nächster Schritt
 

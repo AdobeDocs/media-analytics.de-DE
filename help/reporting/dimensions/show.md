@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Anzeigen**behandelt. Siehe [Anzeigen](/help/implementation/variables/standard-metadata/show.md), wie Sie diese Variable erfassen.*
+*Auf dieser Seite wird die Berichtsdimension **Anzeigen**&#x200B;behandelt. Siehe [Anzeigen](/help/implementation/variables/standard-metadata/show.md), wie Sie diese Variable erfassen.*
 
 >[!ENDSHADEBOX]
 

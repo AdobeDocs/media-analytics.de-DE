@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Medien-Feed-Typ**behandelt. Informationen [ Erfassen dieser Variablen finden Sie ](/help/implementation/variables/standard-metadata/media-feed-type.md)Medien-Feed-Typ)*
+*Auf dieser Seite wird die Berichtsdimension **Medien-Feed-Typ**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden Sie &#x200B;](/help/implementation/variables/standard-metadata/media-feed-type.md)Medien-Feed-Typ)*
 
 >[!ENDSHADEBOX]
 

@@ -22,7 +22,7 @@ Fügen Sie die Media Tracker-Instanz einer für Tags aktivierten Site hinzu, ind
 
 ## Medien-Events tracken
 
-Wenn die Erweiterung konfiguriert ist, verfolgen Sie jedes Medienereignis mit der zugehörigen Tracker-Methode. Die **Aufrufe finden Sie auf der Registerkarte** Media SDK JS 3.x[ auf jeder Seite mit ](/help/implementation/events/overview.md) Ereignissen und [Variablen](/help/implementation/variables/overview.md) .
+Wenn die Erweiterung konfiguriert ist, verfolgen Sie jedes Medienereignis mit der zugehörigen Tracker-Methode. Die **Aufrufe finden Sie auf der Registerkarte** Media SDK JS 3.x[&#x200B; auf jeder Seite mit &#x200B;](/help/implementation/events/overview.md) Ereignissen und [Variablen](/help/implementation/variables/overview.md) .
 
 ## Nächster Schritt
 

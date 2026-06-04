@@ -31,7 +31,7 @@ Mit der Tag-Erweiterung &quot;Adobe Experience Platform Web SDK&quot; können Si
 
 ## Medien-Events tracken
 
-Senden Sie bei konfigurierter Erweiterung jedes Medienereignis mit der Aktion **[!UICONTROL Ereignis senden]** (oder dem `sendEvent`). Die **Payloads finden Sie auf der Registerkarte** Web[ auf jeder ](/help/implementation/events/overview.md)- und [](/help/implementation/variables/overview.md).
+Senden Sie bei konfigurierter Erweiterung jedes Medienereignis mit der Aktion **[!UICONTROL Ereignis senden]** (oder dem `sendEvent`). Die **Payloads finden Sie auf der Registerkarte** Web[&#x200B; auf jeder &#x200B;](/help/implementation/events/overview.md)- und [&#128279;](/help/implementation/variables/overview.md).
 
 ## Nächster Schritt
 

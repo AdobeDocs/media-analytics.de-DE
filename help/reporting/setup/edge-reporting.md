@@ -18,7 +18,7 @@ Nachdem Sie die Streaming Media-Sammlung über die Edge Network implementiert ha
 >
 >Auf dieser Seite wird das Reporting in Customer Journey Analytics beschrieben, dem empfohlenen Ziel für Edge-Implementierungen. Wenn Ihr Datenstrom stattdessen Streaming-Mediendaten an Adobe Analytics sendet, finden Sie weitere Informationen unter [Einrichten von Berichten für reine Analytics-Implementierungen](analytics-reporting.md).
 
-* **Voraussetzungen**: Schließen Sie eine Edge-Implementierung ab und erfassen Sie einige Daten. Siehe die Übersicht über die Edge-Implementierung ](/help/implementation/edge/overview.md)0) und die von Ihnen gewählte Implementierungsmethode.[
+* **Voraussetzungen**: Schließen Sie eine Edge-Implementierung ab und erfassen Sie einige Daten. Siehe die Übersicht über die Edge-Implementierung [&#128279;](/help/implementation/edge/overview.md)0) und die von Ihnen gewählte Implementierungsmethode.
 
 ## Erstellen einer Verbindung in Customer Journey Analytics
 
@@ -30,7 +30,7 @@ Nachdem Sie die Streaming Media-Sammlung über die Edge Network implementiert ha
 
    1. Stellen Sie sicher **[!UICONTROL dass die Einstellung „Alle neuen]** importieren“ aktiviert ist.
 
-1. Fahren Sie mit [Datenansicht in Customer Journey Analytics erstellen“ ](#create-a-data-view-in-customer-journey-analytics).
+1. Fahren Sie mit [Datenansicht in Customer Journey Analytics erstellen“ &#x200B;](#create-a-data-view-in-customer-journey-analytics).
 
 ## Erstellen einer Datenansicht in Customer Journey Analytics
 
@@ -111,7 +111,7 @@ Nachdem Sie die Streaming Media-Sammlung über die Edge Network implementiert ha
 
 1. Wählen Sie **[!UICONTROL Speichern und fortfahren]** > **[!UICONTROL Speichern und beenden]** um Ihre Änderungen zu speichern.
 
-1. Fahren Sie mit [Erstellen und Konfigurieren eines Projekts in Customer Journey Analytics ](#create-and-configure-a-project-in-customer-journey-analytics).
+1. Fahren Sie mit [Erstellen und Konfigurieren eines Projekts in Customer Journey Analytics &#x200B;](#create-and-configure-a-project-in-customer-journey-analytics).
 
 ## Erstellen und Konfigurieren eines Projekts in Customer Journey Analytics
 

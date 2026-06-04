@@ -17,7 +17,7 @@ Die **Inhaltsstartmetrik** zählt Sitzungen, in denen die Wiedergabe des Hauptin
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend setzt dieses Flag beim ersten [ eines ](/help/implementation/events/playback/play.md)-Ereignisses für den Hauptinhalt. Die Metrik wird bei diesem Wiedergabeereignis ausgelöst, aber beim Schließen-Aufruf gemeldet. Verwenden Sie `(Media starts − Content starts) / Media starts`, um die Abwurfrate vor der Walze zu berechnen.
+Das Medien-Backend setzt dieses Flag beim ersten [&#x200B; eines &#x200B;](/help/implementation/events/playback/play.md)-Ereignisses für den Hauptinhalt. Die Metrik wird bei diesem Wiedergabeereignis ausgelöst, aber beim Schließen-Aufruf gemeldet. Verwenden Sie `(Media starts − Content starts) / Media starts`, um die Abwurfrate vor der Walze zu berechnen.
 
 | Meldesystem | Quelle |
 | --- | --- |

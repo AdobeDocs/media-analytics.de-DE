@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **MVPD**behandelt. Informationen ](/help/implementation/variables/standard-metadata/mvpd.md) Erfassen dieser Variablen finden Sie unter [MVPD*
+*Auf dieser Seite wird die Berichtsdimension **MVPD**&#x200B;behandelt. Informationen [&#128279;](/help/implementation/variables/standard-metadata/mvpd.md) Erfassen dieser Variablen finden Sie unter MVPD*
 
 >[!ENDSHADEBOX]
 

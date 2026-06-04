@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsmetrik **Gesamtdauer des Bildes**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/player-state/picture-in-picture.md) unter „Bild in“.*
+*Auf dieser Seite wird die Berichtsmetrik **Gesamtdauer des Bildes**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/player-state/picture-in-picture.md) unter „Bild in“.*
 
 >[!ENDSHADEBOX]
 

@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Reporting-Dimension **Kampagnen**ID) behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/ads/campaign-id.md) unter „Kampagnen-ID“*
+*Auf dieser Seite wird die Reporting-Dimension **Kampagnen**&#x200B;ID) behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/ads/campaign-id.md) unter „Kampagnen-ID“*
 
 >[!ENDSHADEBOX]
 
@@ -34,4 +34,4 @@ Die Kampagnen-ID wird vom Player bei jedem [Anzeigenstart](/help/implementation/
 
 ## Dimensionselemente
 
-Jedes Element ist der literale Kampagnenwert, der beim Anzeigen-Start [ wird](/help/implementation/events/ads/ad-start.md).
+Jedes Element ist der literale Kampagnenwert, der beim Anzeigen-Start [&#x200B; wird](/help/implementation/events/ads/ad-start.md).

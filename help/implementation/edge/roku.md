@@ -16,7 +16,7 @@ ht-degree: 0%
 
 * **Voraussetzungen**:
    * Abschließen der [Edge-Implementierungsübersicht](overview.md) (Schema, Datensatz, Datenstrom mit aktiviertem [!UICONTROL Media Analytics]).
-   * Laden Sie die SDK von [GitHub-Versionen](https://github.com/adobe/aepsdk-roku/releases) herunter und fügen Sie sie Ihrem Kanal hinzu, wie in [Erste Schritte“ ](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/getting-started.md).
+   * Laden Sie die SDK von [GitHub-Versionen](https://github.com/adobe/aepsdk-roku/releases) herunter und fügen Sie sie Ihrem Kanal hinzu, wie in [Erste Schritte“ &#x200B;](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/getting-started.md).
 
 ## Konfigurieren von AEP Roku SDK für Media
 

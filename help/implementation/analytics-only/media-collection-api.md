@@ -22,7 +22,7 @@ Die Mediensammlungs-API sendet Streaming-Mediendaten mithilfe von RESTful-HTTP-A
 
 ## Medien-Events tracken
 
-Die genauen Payloads finden Sie auf **Registerkarte** Mediensammlungs-API[ auf jeder ](/help/implementation/events/overview.md)- und [](/help/implementation/variables/overview.md)-Seite.
+Die genauen Payloads finden Sie auf **Registerkarte** Mediensammlungs-API[&#x200B; auf jeder &#x200B;](/help/implementation/events/overview.md)- und [&#128279;](/help/implementation/variables/overview.md)-Seite.
 
 ## Nächster Schritt
 

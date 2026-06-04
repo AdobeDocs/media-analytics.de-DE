@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Inhaltsname**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/core/content-name.md) unter „Inhaltsname“*
+*Auf dieser Seite wird die Berichtsdimension **Inhaltsname**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/core/content-name.md) unter „Inhaltsname“*
 
 >[!ENDSHADEBOX]
 

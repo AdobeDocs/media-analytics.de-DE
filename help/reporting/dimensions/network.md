@@ -15,7 +15,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Netzwerk**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/standard-metadata/network.md) unter „Netzwerk“*
+*Auf dieser Seite wird die Berichtsdimension **Netzwerk**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/standard-metadata/network.md) unter „Netzwerk“*
 
 >[!ENDSHADEBOX]
 

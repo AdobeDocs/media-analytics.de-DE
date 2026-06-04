@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Beschriftung**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/standard-metadata/label.md) unter „Bezeichnung“*
+*Auf dieser Seite wird die Berichtsdimension **Beschriftung**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/standard-metadata/label.md) unter „Bezeichnung“*
 
 >[!ENDSHADEBOX]
 

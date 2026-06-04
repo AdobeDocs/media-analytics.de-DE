@@ -16,7 +16,7 @@ Die Erweiterung Adobe Streaming Media for Edge Network (`EdgeMedia`) erfasst Med
 
 * **Voraussetzungen**:
    * Abschließen der [Edge-Implementierungsübersicht](overview.md) (Schema, Datensatz, Datenstrom mit aktiviertem [!UICONTROL Media Analytics]).
-   * Fügen Sie die `Core`-, `Edge`-, `EdgeIdentity`- und `EdgeMedia`-Erweiterungen zu Ihrer App hinzu. Installation und Registrierung finden Sie unter [Adobe Streaming Media ](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/) Edge Network.
+   * Fügen Sie die `Core`-, `Edge`-, `EdgeIdentity`- und `EdgeMedia`-Erweiterungen zu Ihrer App hinzu. Installation und Registrierung finden Sie unter [Adobe Streaming Media &#x200B;](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/) Edge Network.
 
 ## Konfigurieren von Medien für Android
 
@@ -41,7 +41,7 @@ Konfigurationsschlüssel und die vollständige Tracker-API finden Sie in der [Me
 
 ## Medien-Events tracken
 
-Verfolgen Sie bei erstelltem Tracker jedes Medienereignis mit der entsprechenden Tracker-Methode. Die genauen Aufrufe finden Sie auf der Registerkarte **0[ auf jeder Seite ](/help/implementation/events/overview.md)Ereignis[ und ](/help/implementation/variables/overview.md)Variable .**
+Verfolgen Sie bei erstelltem Tracker jedes Medienereignis mit der entsprechenden Tracker-Methode. Die genauen Aufrufe finden Sie auf der Registerkarte **0[&#x200B; auf jeder Seite &#x200B;](/help/implementation/events/overview.md)Ereignis[&#x200B; und &#x200B;](/help/implementation/variables/overview.md)Variable .**
 
 ## Nächster Schritt
 

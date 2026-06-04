@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Anzeigenladevorgänge**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/standard-metadata/ad-load-type.md) unter „Anzeigenladungstyp“*
+*Auf dieser Seite wird die Berichtsdimension **Anzeigenladevorgänge**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/standard-metadata/ad-load-type.md) unter „Anzeigenladungstyp“*
 
 >[!ENDSHADEBOX]
 

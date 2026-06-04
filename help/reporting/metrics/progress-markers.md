@@ -19,7 +19,7 @@ Jeder Marker wird einmal pro Sitzung ausgelöst und wird beim Seek-Back nicht er
 
 ## Wie jeder Marker berechnet wird
 
-Das Medien-Backend wertet den gemeldeten Abspielkopf nach jedem Ereignis [Inhaltslänge](../dimensions/content-length.md) aus. Wenn der Abspielkopf zum ersten Mal einen Schwellenwert überschreitet, wird das entsprechende Flag für den Rest der Sitzung gesetzt. Alle fünf Markierungen werden beim Schließen-Aufruf gemeldet. Bei Sitzungen, bei denen nie ein Wiedergabeereignis für Hauptinhalte erzeugt wird (z. B[ „Drops vor Start](/help/reporting/metrics/drops-before-start.md)), wird der Abspielkopf nie über einen Schwellenwert hinaus weitergeschaltet, sodass keine Markierungen festgelegt werden.
+Das Medien-Backend wertet den gemeldeten Abspielkopf nach jedem Ereignis [Inhaltslänge](../dimensions/content-length.md) aus. Wenn der Abspielkopf zum ersten Mal einen Schwellenwert überschreitet, wird das entsprechende Flag für den Rest der Sitzung gesetzt. Alle fünf Markierungen werden beim Schließen-Aufruf gemeldet. Bei Sitzungen, bei denen nie ein Wiedergabeereignis für Hauptinhalte erzeugt wird (z. B[&#x200B; „Drops vor Start](/help/reporting/metrics/drops-before-start.md)), wird der Abspielkopf nie über einen Schwellenwert hinaus weitergeschaltet, sodass keine Markierungen festgelegt werden.
 
 >[!IMPORTANT]
 >

@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Inhaltskanal**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/core/content-channel.md) unter „Inhaltskanal“*
+*Auf dieser Seite wird die Berichtsdimension **Inhaltskanal**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/core/content-channel.md) unter „Inhaltskanal“*
 
 >[!ENDSHADEBOX]
 

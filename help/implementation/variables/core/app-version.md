@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **App-Version**behandelt. Siehe [App-Version](/help/reporting/dimensions/app-version.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **App-Version**&#x200B;behandelt. Siehe [App-Version](/help/reporting/dimensions/app-version.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -167,6 +167,6 @@ Fügen Sie `media.sdkVersion` in das `params` Ihrer `sessionStart` POST-Anfrage 
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
 
 >[!ENDTABS]

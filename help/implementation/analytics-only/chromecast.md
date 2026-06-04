@@ -16,7 +16,7 @@ Der Media SDK für Chromecast sendet Streaming-Mediendaten von Chromecast-Receiv
 
 * **Voraussetzungen**:
    * Schließen Sie die [Nur Analytics-Implementierung - Übersicht](overview.md) ab.
-   * [Laden Sie die Media SDK für Chromecast ](/help/getting-started/download-sdks.md).
+   * [Laden Sie die Media SDK für Chromecast &#x200B;](/help/getting-started/download-sdks.md).
 
 ## Installieren und Konfigurieren von SDK
 

@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Dimension **Durchschnittliche Bitrate**behandelt, die die Bucket-Bitrate jeder Sitzung angibt. Siehe [Durchschnittliche Bitrate (Metrik)](/help/reporting/metrics/average-bitrate.md) für die Metrik „Roher gewichteter Durchschnitt“. Siehe [Bitrate](/help/implementation/variables/quality/bitrate.md), wie Sie diese Variable erfassen.*
+*Auf dieser Seite wird die Dimension **Durchschnittliche Bitrate**&#x200B;behandelt, die die Bucket-Bitrate jeder Sitzung angibt. Siehe [Durchschnittliche Bitrate (Metrik)](/help/reporting/metrics/average-bitrate.md) für die Metrik „Roher gewichteter Durchschnitt“. Siehe [Bitrate](/help/implementation/variables/quality/bitrate.md), wie Sie diese Variable erfassen.*
 
 >[!ENDSHADEBOX]
 
