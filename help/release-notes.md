@@ -26,9 +26,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+source-git-commit: f1339bc993b0df14a6fe0b80168c5333e580a1bb
 workflow-type: tm+mt
-source-wordcount: 789
+source-wordcount: 793
 ht-degree: 60%
 
 ---
@@ -37,12 +37,17 @@ ht-degree: 60%
 
 **Letzte Aktualisierung**: 4. Juni 2026
 
-## 2025
+## 2026
 
 | Funktion | Beschreibung | Datum |
 | --- | --- | --- |
 | **Support-Zeitplandaten** | Hochladen geplanter Daten für vergangene Live-Inhalte, um die Zuschauerzahlen nach Programm oder Segment zu verfolgen. Zu den unterstützten Inhaltstypen gehören:<ul><li>FAST-Plattformen (Free Ad Supported TV)</li><li>Lokale Datenströme</li><li>Live-Sportübertragungen</li></ul>Weitere Informationen finden Sie [&#x200B; Anwendungsfall &#x200B;](/help/use-cases/track-schedule-data.md) Hochladen von Zeitplandaten zur Verfolgung von Live-Inhalten . | Rollout-Beginn: 29. Oktober 2025<p>Allgemeine Verfügbarkeit: Oktober 2026</p> |
-| Veraltete XDM-Felder `mediaTimed` | Das `mediaTimed` XDM-Objekt wird zugunsten von `mediaReporting` Feldpfaden nicht mehr unterstützt. Kunden, die den Analytics-Quell-Connector vor dem 9. Mai 2025 implementiert haben, müssen ihre Konfigurationen migrieren. Weitere Informationen finden Sie in den folgenden Migrationshandbüchern:<ul><li>[Migrieren von Zielgruppen zu den neuen Streaming-Medienfeldern](/help/implementation/edge/migrate/migrate-audiences.md)</li><li>[Migrieren Sie Customer Journey Analytics, um die neuen Streaming-Medienfelder zu verwenden](/help/implementation/edge/migrate/migrate-cja-setup.md)</li><li>[Migrieren der Datenvorbereitung für benutzerdefinierte Felder in die neuen Felder für Streaming-Medien](/help/implementation/edge/migrate/migrate-dataprep.md)</li><li>[Migrieren von Profilen in die neuen Streaming-Medienfelder](/help/implementation/edge/migrate/migrate-profiles.md)</li></ul> | Oktober 2025 |
+
+## 2025
+
+| Funktion | Beschreibung | Datum |
+| --- | --- | --- |
+| **`mediaTimed`veraltete XDM-Felder** | Das `mediaTimed` XDM-Objekt wird zugunsten von `mediaReporting` Feldpfaden nicht mehr unterstützt. Kunden, die den Analytics-Quell-Connector vor dem 9. Mai 2025 implementiert haben, müssen ihre Konfigurationen migrieren. Weitere Informationen finden Sie in den folgenden Migrationshandbüchern:<ul><li>[Migrieren von Zielgruppen zu den neuen Streaming-Medienfeldern](/help/implementation/edge/migrate/migrate-audiences.md)</li><li>[Migrieren Sie Customer Journey Analytics, um die neuen Streaming-Medienfelder zu verwenden](/help/implementation/edge/migrate/migrate-cja-setup.md)</li><li>[Migrieren der Datenvorbereitung für benutzerdefinierte Felder in die neuen Felder für Streaming-Medien](/help/implementation/edge/migrate/migrate-dataprep.md)</li><li>[Migrieren von Profilen in die neuen Streaming-Medienfelder](/help/implementation/edge/migrate/migrate-profiles.md)</li></ul> | Oktober 2025 |
 
 ## 2024
 
