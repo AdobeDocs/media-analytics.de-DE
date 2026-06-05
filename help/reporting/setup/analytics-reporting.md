@@ -20,7 +20,7 @@ Bevor eine reine Analytics-Implementierung Streaming-Mediendaten erfassen kann, 
 
 Jede Report Suite, die Medienmetriken erfasst, muss konfiguriert werden, bevor Mediendaten gesendet werden.
 
-1. Navigieren Sie in [](https://experience.adobe.com/analytics) zu **[!UICONTROL Admin]** → **[!UICONTROL Report Suites]**.
+1. Navigieren Sie in [&#128279;](https://experience.adobe.com/analytics) zu **[!UICONTROL Admin]** → **[!UICONTROL Report Suites]**.
 1. Wählen Sie die Report Suites aus, die Mediendaten erfassen. Wählen Sie **[!UICONTROL Einstellungen bearbeiten]** → **[!UICONTROL Medienverwaltung]** → **[!UICONTROL Medienberichte]**.
 
    ![Screenshot des Report Suite Manager-Menüs](assets/media-reporting.png)

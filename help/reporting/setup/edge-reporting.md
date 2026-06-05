@@ -18,7 +18,7 @@ Nachdem Sie die Streaming Media-Sammlung über die Edge Network implementiert ha
 >
 >Auf dieser Seite wird das Reporting in Customer Journey Analytics beschrieben, dem empfohlenen Ziel für Edge-Implementierungen. Wenn Ihr Datenstrom stattdessen Streaming-Mediendaten an Adobe Analytics sendet, finden Sie weitere Informationen unter [Einrichten von Berichten für reine Analytics-Implementierungen](analytics-reporting.md).
 
-* **Voraussetzungen**: Schließen Sie eine Edge-Implementierung ab und erfassen Sie einige Daten. Siehe die Übersicht über die Edge-Implementierung ](/help/implementation/edge/overview.md)0) und die von Ihnen gewählte Implementierungsmethode.[
+* **Voraussetzungen**: Schließen Sie eine Edge-Implementierung ab und erfassen Sie einige Daten. Siehe die Übersicht über die Edge-Implementierung [&#128279;](/help/implementation/edge/overview.md)0) und die von Ihnen gewählte Implementierungsmethode.
 
 ## Erstellen einer Verbindung in Customer Journey Analytics
 
@@ -52,7 +52,7 @@ Nachdem Sie die Streaming Media-Sammlung über die Edge Network implementiert ha
       >
       >Die Kontextbeschriftungen in dieser Tabelle sind erforderlich, damit die Bedienfelder für Streaming-Medien funktionieren. Customer Journey Analytics verwendet diese Metriken zur automatischen Berechnung der **gleichzeitige Viewer** und **Wiedergabedauer** abgeleiteten Metriken (verwendet von den Bedienfeldern [Gleichzeitige Medienbetrachter](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers) und [Mit Medienwiedergabe verbrachte Zeit](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)) und zum Ausfüllen der Berichtsoptionen im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel).
 
-      An dieser Stelle können Sie Ihrer [ beliebige andere ](/help/reporting/dimensions/overview.md)Dimensionen[ oder ](/help/reporting/metrics/overview.md) hinzufügen. Jede Seite listet den XDM-Pfad für diese Komponente auf.
+      An dieser Stelle können Sie Ihrer [&#x200B; beliebige andere &#x200B;](/help/reporting/dimensions/overview.md)Dimensionen[&#x200B; oder &#x200B;](/help/reporting/metrics/overview.md) hinzufügen. Jede Seite listet den XDM-Pfad für diese Komponente auf.
 
 1. Wählen Sie **[!UICONTROL Speichern und fortfahren]** → **[!UICONTROL Speichern und]**) aus, um Ihre Änderungen zu speichern.
 

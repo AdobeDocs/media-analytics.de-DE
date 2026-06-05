@@ -118,7 +118,7 @@ Um die Datenerfassung in allen Anwendungen zu standardisieren, die Adobe Experie
 
    +++ Erweitern Sie , um Anweisungen zum Hinzufügen benutzerdefinierter Metadaten zu Ihrem Schema anzuzeigen.
 
-   1. Suchen Sie den Mandantennamen der Organisation, indem Sie **[!UICONTROL Kontoinformationen]** > **[!UICONTROL Zugewiesene]** > [!UICONTROL _**Organisationsname**_] > **[!UICONTROL Mandant]**.
+   1. Suchen Sie den Mandantennamen der Organisation, indem Sie **[!UICONTROL Kontoinformationen]** > **[!UICONTROL Zugewiesene]** > [!UICONTROL _&#x200B;**Organisationsname**&#x200B;_] > **[!UICONTROL Mandant]**.
 
       Benutzerdefinierte Felder werden über diesen Pfad empfangen. (Beispiel: Mandantenname: _dcbl → myCustomField-Pfad: _dcbl.myCustomField.)
 
@@ -130,7 +130,7 @@ Um die Datenerfassung in allen Anwendungen zu standardisieren, die Adobe Experie
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. [Verwenden Sie den generierten ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) für das benutzerdefinierte Feld in Ihrer Anfrage-Payload.
+   1. [Verwenden Sie den generierten &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) für das benutzerdefinierte Feld in Ihrer Anfrage-Payload.
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
@@ -148,7 +148,7 @@ Um die Datenerfassung in allen Anwendungen zu standardisieren, die Adobe Experie
 
    Wählen Sie beim Erstellen des Datenstroms die folgenden Optionen aus:
 
-   * Wählen Sie im Feld **[!UICONTROL Ereignisschema]** das Schema aus, das Sie in erstellt haben ([ des Schemas in Adobe Experience Platform ](#set-up-the-schema-in-adobe-experience-platform).
+   * Wählen Sie im Feld **[!UICONTROL Ereignisschema]** das Schema aus, das Sie in erstellt haben ([&#x200B; des Schemas in Adobe Experience Platform &#x200B;](#set-up-the-schema-in-adobe-experience-platform).
 
      >[!IMPORTANT]
      >
@@ -170,7 +170,7 @@ Um die Datenerfassung in allen Anwendungen zu standardisieren, die Adobe Experie
 
 ## Wählen Sie Ihre Implementierungsmethode
 
-Wenn das Schema, der Datensatz und der Datenstrom eingerichtet sind, implementieren Sie eine der folgenden Code-Basen, um mit dem Senden von Streaming-Mediendaten an die Edge Network zu beginnen. Jede Seite behandelt die für Streaming-Medien spezifische Einrichtung. Der Code pro Ereignis und pro Variable wird in „Ereignisse[ und „Variablen](/help/implementation/events/overview.md) [ ](/help/implementation/variables/overview.md).
+Wenn das Schema, der Datensatz und der Datenstrom eingerichtet sind, implementieren Sie eine der folgenden Code-Basen, um mit dem Senden von Streaming-Mediendaten an die Edge Network zu beginnen. Jede Seite behandelt die für Streaming-Medien spezifische Einrichtung. Der Code pro Ereignis und pro Variable wird in „Ereignisse[&#x200B; und „Variablen](/help/implementation/events/overview.md) [&#x200B; &#x200B;](/help/implementation/variables/overview.md).
 
 **In-Code**-Implementierungen schreiben SDK-Aufrufe direkt in den Quellcode Ihrer Anwendung. **Verwenden von Tags** -Implementierungen verwenden [Adobe Experience Platform-Tags](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home) mit denen Sie Tracking-Regeln konfigurieren und bereitstellen können, ohne den Anwendungs-Code zu ändern. Wählen Sie den Ansatz aus, der zu Ihrem Bereitstellungs-Workflow passt.
 
