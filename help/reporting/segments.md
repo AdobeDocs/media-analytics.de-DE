@@ -26,7 +26,7 @@ ht-degree: 76%
 
 # Mediensegmente{#segments}
 
-Mit Segmenten können Besucherteilmengen anhand von Merkmalen oder Website-Interaktionen identifiziert werden. Mit Streaming-Mediensegmenten können Sie den Besucher-Stream-Typ wie Audio-, Live- oder Podcast-Streams identifizieren. Weitere Informationen zu Adobe Analytics-Segmenten finden Sie [Informationen zu Segmenten](https://experienceleague.adobe.com/en/docs/analytics/components/segmentation/seg-overview) im Adobe Analytics-Komponentenhandbuch.
+Mit Segmenten können Besucherteilmengen anhand von Merkmalen oder Website-Interaktionen identifiziert werden. Mit Streaming-Mediensegmenten können Sie den Besucher-Stream-Typ wie Audio-, Live- oder Podcast-Streams identifizieren. Weitere Informationen zu Adobe Analytics-Segmenten finden Sie [Informationen zu Segmenten](https://experienceleague.adobe.com/de/docs/analytics/components/segmentation/seg-overview) im Adobe Analytics-Komponentenhandbuch.
 
 | Segment | Beschreibung | Regel |
 |---|---|---|

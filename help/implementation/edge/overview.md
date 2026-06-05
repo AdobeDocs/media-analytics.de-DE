@@ -31,7 +31,7 @@ Unabhängig davon, welche Codebasis Sie verwenden - die Web-SDK, die Mobile SDK 
 
 Um die Datenerfassung in allen Anwendungen zu standardisieren, die Adobe Experience Platform verwenden, hat Adobe den offenen, öffentlich dokumentierten Experience-Datenmodell (XDM)-Standard erstellt.
 
-1. Beginnen Sie in Adobe Experience Platform mit der Erstellung des Schemas, wie unter [Erstellen und Bearbeiten von Schemas in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en) beschrieben.
+1. Beginnen Sie in Adobe Experience Platform mit der Erstellung des Schemas, wie unter [Erstellen und Bearbeiten von Schemas in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=de) beschrieben.
 
 1. Wählen Sie auf der Seite mit den **[!UICONTROL „Erlebnisereignis]** als Basisklasse für das Schema aus.
 
@@ -130,7 +130,7 @@ Um die Datenerfassung in allen Anwendungen zu standardisieren, die Adobe Experie
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. [Verwenden Sie den generierten &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) für das benutzerdefinierte Feld in Ihrer Anfrage-Payload.
+   1. [Verwenden Sie den generierten &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) für das benutzerdefinierte Feld in Ihrer Anfrage-Payload.
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
@@ -156,9 +156,9 @@ Um die Datenerfassung in allen Anwendungen zu standardisieren, die Adobe Experie
 
      ![Erstellen eines Datenstroms und Auswählen eines Schemas](assets/datastream-create-schema.png)
 
-   * Fügen Sie die entsprechenden Services basierend auf Ihrer Adobe-Lösung zum Datenstrom hinzu. Informationen zum Hinzufügen eines Services finden Sie unter „Hinzufügen von Services zu einem Datenstrom“ in [Konfigurieren eines Datenstroms](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
+   * Fügen Sie die entsprechenden Services basierend auf Ihrer Adobe-Lösung zum Datenstrom hinzu. Informationen zum Hinzufügen eines Services finden Sie unter „Hinzufügen von Services zu einem Datenstrom“ in [Konfigurieren eines Datenstroms](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=de#view-details).
 
-      * **[!UICONTROL Adobe Analytics]** (bei Verwendung von Adobe Analytics) - Definieren Sie eine Report Suite wie in [Erstellen einer Report Suite](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite) beschrieben.
+      * **[!UICONTROL Adobe Analytics]** (bei Verwendung von Adobe Analytics) - Definieren Sie eine Report Suite wie in [Erstellen einer Report Suite](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite) beschrieben.
 
       * **[!UICONTROL Adobe Experience Platform]** (bei Verwendung von Customer Journey Analytics, Adobe Journey Optimizer oder Real-Time Customer Data Platform)
 
@@ -172,7 +172,7 @@ Um die Datenerfassung in allen Anwendungen zu standardisieren, die Adobe Experie
 
 Wenn das Schema, der Datensatz und der Datenstrom eingerichtet sind, implementieren Sie eine der folgenden Code-Basen, um mit dem Senden von Streaming-Mediendaten an die Edge Network zu beginnen. Jede Seite behandelt die für Streaming-Medien spezifische Einrichtung. Der Code pro Ereignis und pro Variable wird in „Ereignisse[&#x200B; und „Variablen](/help/implementation/events/overview.md) [&#x200B; &#x200B;](/help/implementation/variables/overview.md).
 
-**In-Code**-Implementierungen schreiben SDK-Aufrufe direkt in den Quellcode Ihrer Anwendung. **Verwenden von Tags** -Implementierungen verwenden [Adobe Experience Platform-Tags](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home) mit denen Sie Tracking-Regeln konfigurieren und bereitstellen können, ohne den Anwendungs-Code zu ändern. Wählen Sie den Ansatz aus, der zu Ihrem Bereitstellungs-Workflow passt.
+**In-Code**-Implementierungen schreiben SDK-Aufrufe direkt in den Quellcode Ihrer Anwendung. **Verwenden von Tags** -Implementierungen verwenden [Adobe Experience Platform-Tags](https://experienceleague.adobe.com/de/docs/experience-platform/tags/home) mit denen Sie Tracking-Regeln konfigurieren und bereitstellen können, ohne den Anwendungs-Code zu ändern. Wählen Sie den Ansatz aus, der zu Ihrem Bereitstellungs-Workflow passt.
 
 | Codebase | In-Code | Verwenden von Tags |
 |---|---|---|

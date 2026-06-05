@@ -50,7 +50,7 @@ Nachdem Sie die Streaming Media-Sammlung über die Edge Network implementiert ha
 
       >[!IMPORTANT]
       >
-      >Die Kontextbeschriftungen in dieser Tabelle sind erforderlich, damit die Bedienfelder für Streaming-Medien funktionieren. Customer Journey Analytics verwendet diese Metriken zur automatischen Berechnung der **gleichzeitige Viewer** und **Wiedergabedauer** abgeleiteten Metriken (verwendet von den Bedienfeldern [Gleichzeitige Medienbetrachter](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers) und [Mit Medienwiedergabe verbrachte Zeit](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)) und zum Ausfüllen der Berichtsoptionen im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel).
+      >Die Kontextbeschriftungen in dieser Tabelle sind erforderlich, damit die Bedienfelder für Streaming-Medien funktionieren. Customer Journey Analytics verwendet diese Metriken zur automatischen Berechnung der **gleichzeitige Viewer** und **Wiedergabedauer** abgeleiteten Metriken (verwendet von den Bedienfeldern [Gleichzeitige Medienbetrachter](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers) und [Mit Medienwiedergabe verbrachte Zeit](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)) und zum Ausfüllen der Berichtsoptionen im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel).
 
       An dieser Stelle können Sie Ihrer [&#x200B; beliebige andere &#x200B;](/help/reporting/dimensions/overview.md)Dimensionen[&#x200B; oder &#x200B;](/help/reporting/metrics/overview.md) hinzufügen. Jede Seite listet den XDM-Pfad für diese Komponente auf.
 
@@ -70,7 +70,7 @@ Nachdem Sie die Streaming Media-Sammlung über die Edge Network implementiert ha
 
 1. (Bedingt) Wenn Sie benutzerdefinierte Metadaten zu Ihrem Schema hinzugefügt haben, legen Sie die Persistenz für die benutzerdefinierten Felder fest, wie in [Persistenzkomponenteneinstellungen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-settings/persistence) im Customer Journey Analytics-Handbuch beschrieben.
 
-1. Geben Sie das Projekt frei, wie unter [Freigeben von Projekten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en) beschrieben.
+1. Geben Sie das Projekt frei, wie unter [Freigeben von Projekten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=de) beschrieben.
 
    >[!NOTE]
    >
@@ -80,9 +80,9 @@ Nachdem Sie die Streaming Media-Sammlung über die Edge Network implementiert ha
 
 Analysis Workspace in Customer Journey Analytics umfasst drei dedizierte Medienbedienfelder für Kunden mit dem Add-on „Streaming Media Collection“. Diese Bedienfelder bieten vorgefertigte Visualisierungen für die gängigsten Reporting-Anforderungen für Streaming-Medien.
 
-* **[Medien-Zielgruppendurchschnitt pro Minute](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)**: Vergleicht die durchschnittliche Nutzung von Inhalten in Programmen beliebiger Länge oder Genres. Unterstützt sowohl bestimmte Inhaltsmodi (dauerbasiert) als auch benutzerdefinierte Zeitraummodi und ermöglicht die nachträgliche Aktualisierung von Klassifizierungen der Dauer.
-* **[Gleichzeitige Medienbetrachter](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)**: Analysiert gleichzeitige Betrachter im Zeitverlauf, um Spitzen bei gleichzeitigen Betrachtern und Abfallpunkten zu ermitteln. Unterstützt eine konfigurierbare Granularität und Serienaufschlüsselung nach Segmenten, Dimensionen oder Datumsbereichen.
-* **[Bei Medienwiedergabe verbrachte Zeit](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)**: Analysiert die Wiedergabedauer im Zeitverlauf mit Details zu Spitzen- und Tiefstzeiten. Unterstützt konfigurierbare Granularität und Ausgabeformat (Stunden oder Minuten).
+* **[Medien-Zielgruppendurchschnitt pro Minute](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)**: Vergleicht die durchschnittliche Nutzung von Inhalten in Programmen beliebiger Länge oder Genres. Unterstützt sowohl bestimmte Inhaltsmodi (dauerbasiert) als auch benutzerdefinierte Zeitraummodi und ermöglicht die nachträgliche Aktualisierung von Klassifizierungen der Dauer.
+* **[Gleichzeitige Medienbetrachter](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)**: Analysiert gleichzeitige Betrachter im Zeitverlauf, um Spitzen bei gleichzeitigen Betrachtern und Abfallpunkten zu ermitteln. Unterstützt eine konfigurierbare Granularität und Serienaufschlüsselung nach Segmenten, Dimensionen oder Datumsbereichen.
+* **[Bei Medienwiedergabe verbrachte Zeit](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)**: Analysiert die Wiedergabedauer im Zeitverlauf mit Details zu Spitzen- und Tiefstzeiten. Unterstützt konfigurierbare Granularität und Ausgabeformat (Stunden oder Minuten).
 
 >[!MORELIKETHIS]
 >
