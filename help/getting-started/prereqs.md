@@ -20,10 +20,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
-source-wordcount: 490
-ht-degree: 43%
+source-wordcount: 274
+ht-degree: 10%
 
 ---
 
@@ -31,28 +31,21 @@ ht-degree: 43%
 
 Bevor Sie mit der Implementierung von Adobe Streaming Media Services beginnen, führen Sie die folgenden Aufgaben aus:
 
-1. **Überblick über Adobe Streaming Media Services**<br>
-Bevor Sie mit der Implementierung von Streaming Media Services beginnen, lesen Sie die [Übersicht über Adobe Streaming Media Services](/help/media-overview.md), um sicherzustellen, dass sie Ihren Anforderungen entspricht.
-
 1. **Bestätigen des Preismodells**<br>
 Das aktuelle Preismodell für das Add-on Customer Journey Analytics Streaming Media Collection und das Add-on Adobe Analytics for Streaming Media basiert auf Video-Streams. Wenden Sie sich bei Bedarf an Ihren Kundenbetreuer oder Ihr Adobe-Account-Team, da das Add-on separat für Adobe Analytics und Adobe Experience Platform erhältlich ist.
 
-1. **Adobe Analytics-Berichte aktivieren**<br>
-Um Berichte in Analytics oder Customer Journey Analytics zu aktivieren und die erfassten Inhalts- und Anzeigendaten anzuzeigen, müssen Sie Berichte aktivieren. Siehe [Einrichten von Berichten für reine Analytics-Implementierungen](/help/reporting/setup/analytics-reporting.md).
+1. **Adobe Analytics-Berichte aktivieren** *(Nur-Analytics-Implementierungen)*<br>
+Um Berichte in Analytics zu aktivieren und die erfassten Inhalts- und Anzeigendaten anzuzeigen, müssen Sie Berichte aktivieren. Siehe [Einrichten von Berichten für reine Analytics-Implementierungen](/help/reporting/setup/analytics-reporting.md).
 
-1. **Implementieren des Adobe Experience Platform Identity Services in CX Enterprise**
+1. **Identität konfigurieren**<br>
 
-   Der **Identity Service** ermöglicht das allgemeine Identifizierungs-Framework für CX Enterprise Core Services, Lösungen sowie Kundenattribute und Zielgruppen im People Core Service. Der ID-Dienst funktioniert durch die Zuweisung einer eindeutigen, dauerhaften ID zu einem Site-Besucher. Wenn Ihr Unternehmen den ID-Service implementiert, können Sie mit dieser ID denselben Site-Besucher und dessen Daten in verschiedenen CX Enterprise-Lösungen identifizieren.
+   Die Anforderungen an die Identitätskonfiguration hängen von Ihrer Implementierungsmethode ab:
 
-   ![Grafik des ID-Services](assets/mc_id_service_graphic.png)
+   * **Edge-Implementierungen**: Die Identität wird über die Adobe Experience Platform Identity-Namespace-Konfiguration gehandhabt. Es ist keine separate Identity Service-Einrichtung erforderlich. Detaillierte Informationen finden Sie unter Übersicht über [&#128279;](/help/implementation/edge/overview.md) Implementierung von Edge .
 
-   Der ID-Dienst kann auch die verschiedenen lösungsspezifischen IDs ersetzen (z. B. Analytics AID). Mit der Funktion [Kunden-IDs und Authentifizierungsstatus](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=de) können Sie mit dem ID-Service Ihre eigenen Kunden-IDs an CX Enterprise übergeben. Beachten Sie jedoch, dass der ID-Dienst nur mit den Lösungen funktioniert, für die Sie bereits ein Abonnement abgeschlossen haben. Wenn Sie nicht für den Zugriff auf andere Produkte angemeldet sind, bietet der ID-Dienst keinen Zugriff.
+   * **Nur Analytics-Implementierungen**: Der Adobe Experience Platform Identity Service muss aktiviert sein, damit Besuchende konsistent über CX Enterprise-Lösungen hinweg identifiziert werden können. Der Identity Service weist jedem Site-Besucher eine eindeutige, beständige ID zu und ermöglicht die Freigabe dieser ID für alle abonnierten CX Enterprise-Lösungen.
 
-   Der ID-Service ist eine integrale Komponente vieler CX Enterprise-Funktionen, -Erweiterungen und -Services. Der ID-Service unterstützt derzeit [Analytics](https://www.adobe.com/de/marketing-cloud/web-analytics.html), [Audience Manager](https://www.adobe.com/de/marketing-cloud/data-management-platform.html) und [Target](https://www.adobe.com/de/marketing-cloud/testing-targeting.html).
-
-   Wenn Sie den ID-Dienst nicht implementiert haben, ist es nun an der Zeit, eine Migrationsstrategie in Erwägung zu ziehen. Weitere Informationen über die Bedeutung und die Rolle des ID-Dienstes finden Sie unter [Warum Sie den ID-Dienst im Auge behalten sollten.](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
-
-   Weitere Informationen zur Experience Cloud-ID finden Sie unter [Überblick über die Experience Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=de) und unter [Adobe Experience Platform-ID-Dienst](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=de).
+     Weitere Informationen finden Sie in der Dokumentation zum [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=de).
 
 1. **Anzeigen von zusätzlichen Voraussetzungen für Ihre Implementierungsmethode**
 

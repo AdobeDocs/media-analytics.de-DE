@@ -5,10 +5,10 @@ user-guide-title: Handbuch zu Streaming-Mediendiensten
 breadcrumb-title: Handbuch zu Streaming-Mediendiensten
 user-guide-description: Implementieren von Streaming-Mediendiensten. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
 sub-product: media analytics
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 36%
+source-wordcount: '749'
+ht-degree: 35%
 
 ---
 
@@ -16,13 +16,11 @@ ht-degree: 36%
 # Handbuch zu Streaming-Mediendiensten {#using}
 
 + [Handbuch zu Adobe Streaming Media Services](media-overview.md)
-+ Versionshinweise {#release-notes}
-   + [Versionshinweise zu Streaming Media Services](additional-resources/release-notes.md)
++ [Versionshinweise zu Streaming Media Services](release-notes.md)
 + Erste Schritte {#getting-started}
    + [Voraussetzungen](getting-started/prereqs.md)
    + [Unterstützte Geräte](getting-started/supported-devices.md)
-   + [Dokumentation zur Implementierung von Streaming-Mediendiensten](getting-started/implementation-documentation.md)
-   + [SDKs, Bibliotheken und Erweiterungen](getting-started/download-sdks.md)
+   + [Abrufen von Media SDKs, Erweiterungen und APIs](getting-started/download-sdks.md)
 + Implementierung {#implementation}
    + [Implementierungsübersicht](implementation/overview.md)
    + Ereignisse {#events}

@@ -22,7 +22,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
 source-wordcount: 358
 ht-degree: 50%
@@ -37,7 +37,7 @@ Zusätzlich zu den Metriken und Dimensionen, die verfügbar sind, wenn Sie jedes
 
 Medienberichte werden auf der Registerkarte **[!UICONTROL Berichte]** aufgelistet. Gehen Sie zu > **[!UICONTROL Medien]** > **[!UICONTROL Medieninteraktion]** und wählen Sie aus folgenden Optionen aus:
 
-| Medienbericht | Beschreibung     | Allgemeine geschäftliche Einblicke       |
+| Medienbericht | Beschreibung | Allgemeine geschäftliche Einblicke |
 | --- | --- | --- |
 | [Medienübersicht &#x200B;](media-reports-overview.md) | Zeigt eine Reihe von Aggregat-Messungen an, um schnell überprüfen zu können, ob das Medium die Erwartungen erfüllt. Neben den Anzeigenimpressionen wird ein Diagramm [[!UICONTROL Medienstarts]](/help/reporting/metrics/media-starts.md) angezeigt, damit Sie diese Metriken schnell anzeigen und vergleichen können. | <ul> <li>Gesamtwerte für die wichtigsten Metriken einschließlich [[!UICONTROL Inhaltsstarts]](/help/reporting/metrics/content-starts.md), Abschlussrate, durchschnittliche Streaming-Zeit und durchschnittliche Medienelemente pro Besuch.  </li> <li>Gesamtzahl [[!UICONTROL Inhaltsstarts]](/help/reporting/metrics/content-starts.md) und [[!UICONTROL Anzeigenstarts]](/help/reporting/metrics/ad-starts.md) für Medien, die nach Gerätetyp oder Land gefiltert wurden.  </li> </ul> |
 | [Mediendetails &#x200B;](media-reports-detail.md) | Zeigt detaillierte Metriken für alle Medienelemente an, einschließlich Beginn, gleichzeitige Betrachter, Abschlussrate, Wiedergabeprozentsatz und Anzeigenimpressionen. | <ul> <li>Gesamtwerte für die wichtigsten Metriken einschließlich [[!UICONTROL Medienstarts]](/help/reporting/metrics/media-starts.md), [[!UICONTROL Inhaltsstarts]](/help/reporting/metrics/content-starts.md) und [[!UICONTROL Anzeigenstarts]](/help/reporting/metrics/ad-starts.md) und durchschnittlicher Inhalt pro Besuch.  </li> <li>Gesamtzahl [[!UICONTROL Inhaltsstarts]](/help/reporting/metrics/content-starts.md) und [[!UICONTROL Anzeigenstarts]](/help/reporting/metrics/ad-starts.md) für Medien, die nach Gerätetyp oder Land gefiltert wurden.  </li> </ul> |
