@@ -5,20 +5,11 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 875c4513-ea4e-4c5f-bfc1-34ea175007ca
 TQID: https://experienceleague.adobe.com/C1GFDLJp-oTQHWlFiks5oSi2Q5Ok34QxJWfiPIJ3bC4
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
 source-wordcount: 1424
 ht-degree: 5%
@@ -29,7 +20,7 @@ ht-degree: 5%
 
 >[!AVAILABILITY]
 >
->Die in diesem Artikel beschriebene Funktion befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Funktionsversionen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/releases/releases).
+>Die in diesem Artikel beschriebene Funktion befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Funktionsversionen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/releases).
 
 Sie können Daten vergangener Live-Streaming-Medieninhalte planmäßig hochladen, um die Zuschauerzahlen von Live-Inhalten einfacher und genauer zu verfolgen. Sie können die Zuschauerzahlen für einzelne Programme und sogar bestimmte Themen oder Programmsegmente verfolgen.
 
@@ -157,7 +148,7 @@ Nachdem Sie [Programmzeitplan-Datensatz erstellen](#create-a-program-schedule-da
 
    1. Pushen Sie die JSON-Datei, die die Programmplanungs-Datensätze enthält, unter Verwendung der Batch-ID.
 
-      Verwenden Sie zum Übertragen von Zeitplandaten die Batch-APIs von AEP, wie unter [Übersicht über die Batch-Aufnahme-API](https://experienceleague.adobe.com/de/docs/experience-platform/ingestion/batch/overview) beschrieben.
+      Verwenden Sie zum Übertragen von Zeitplandaten die Batch-APIs von AEP, wie unter [Übersicht über die Batch-Aufnahme-API](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview) beschrieben.
 
       Betrachten wir das folgende Beispiel für die Verwendung von cURL zum Pushen einer Datei mit den Zeitplandatensätzen:
 
@@ -184,7 +175,7 @@ Nachdem Sie [Programmzeitplan-Datensatz erstellen](#create-a-program-schedule-da
           -H 'Authorization: Bearer <OAUTH_TOKEN>'
       ```
 
-1. Fahren Sie mit dem folgenden Abschnitt fort: [&#x200B; eines Support-Tickets bei der Adobe-Kundenunterstützung](#log-a-support-ticket-with-adobe-customer-care).
+1. Fahren Sie mit dem folgenden Abschnitt fort: [ eines Support-Tickets bei der Adobe-Kundenunterstützung](#log-a-support-ticket-with-adobe-customer-care).
 
 ## Erstellen Sie ein Support-Ticket bei der Adobe-Kundenunterstützung
 
@@ -334,36 +325,3 @@ So erstellen Sie einen Bericht zu Ihren früheren Live-Streaming-Mediendaten in 
 1. Erstellen Sie das Projekt, indem Sie alle Tabellen oder Visualisierungen erstellen, die Sie für die Analyse Ihrer früheren Live-Streaming-Mediendaten benötigen.
 
    Verwenden Sie beim Erstellen des Projekts die Informationen, die Sie in die Datendatei für den Zeitplan aufgenommen und an die Adobe-Kundenunterstützung gesendet haben. Dazu gehören der übereinstimmende Schlüssel, Dimensionen und alle zusätzlichen Metadaten. Weitere Informationen finden Sie unter [Plandatendatei anfordern und hochladen](#request-and-upload-the-schedule-data-file).
-
-
-
-
-<!-- 
-
-Extra
-
-Things they need to upload:
-Everything on that slide + other metadata
-You can't overlap 2 schedules.
-You can build a journey in AJO for the people who watch Mike, Mike, and Mike. e.g. 
-This is recurring.
-Available to all SKUs? "Increases cost for updated data by 22%, but included in the new higher tier Streaming Media SKU."
-
-You can now upload schedule data of past live content to more easily and accurately track viewership. Live content includes content from FAST (Free Ad Supported TV) platforms or local streams.
-You can track which programs a person viewed in a given session, or even which topics or program segments they viewed. These capabilities are available regardless of how you implemented Streaming Media Collection.
-Previously, it was difficult to accurately tie a given session to specific programs when analyzing live content, and it wasn't possible to tie a given session to individual topics or program segments.
-Schedule data uploads of live content in Streaming Media Collection includes the following capabilities:
-Upload schedules for past live content, regardless of your Streaming Media Collection implementation.
-Identify the start and end times of each individual program in the live stream for the period of time that you want to analyze. With accurate start and end times, the precise running time is accurately reflected and can be analyzed against each viewer session.
-For example, precise beginning and end times are not always known for a live sporting event until the event is over. Schedule data uploads allow you to get accurate reporting by updating the start and end times after the program finishes.
-Create new time-based dimensions for specific topics or program segments (time slots) within a given program. These time-based dimensions allow you to analyze viewership of a program at a more specific level, helping to gather insights about which topics or program segments resonated best.
-For example, when analyzing a live sporting event, such as a soccer match, you can create separate dimensions for the first half, half time, and second half. This allows for more detailed breakdowns of viewer behavior for specific segments of a program.
-These capabilities allow you to:
-Analyze show viewership to understand performance.
-Target users based on program viewership.
-Analyze viewership based on metadata like topic, sports league, sponsorship, and so forth.
-Target based on metadata viewership.
-Correct media metrics for show dimensions of live sports/events for easier analysis at scale.
-Increased ease of use for live sports
-
--->
