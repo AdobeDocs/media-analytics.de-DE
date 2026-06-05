@@ -26,10 +26,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: f1339bc993b0df14a6fe0b80168c5333e580a1bb
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: 793
-ht-degree: 60%
+source-wordcount: 720
+ht-degree: 36%
 
 ---
 
@@ -66,21 +66,20 @@ ht-degree: 60%
 
 | Funktion | Beschreibung | Datum |
 | --- | --- | --- |
-| **Statusverfolgung für mehrere Player** | Verwenden Sie die Mediensammlungs-API, um die Statusverfolgung für mehrere Player zu implementieren. [Weitere Informationen](/help/implementation/events/player-state/overview.md) | September 2022 |
+| **Statusverfolgung für mehrere Player** | Verwenden Sie die Mediensammlungs-API, um die Statusverfolgung für mehrere [&#x200B; zu &#x200B;](/help/implementation/events/player-state/overview.md). | September 2022 |
 | Umbenannte XDM-Felder | Umbenannte XDM-Feldnamen für Konsistenz:<ul><li>Audio- und Videoparameter</li><li>Anzeigenparameter</li><li>Kapitelparameter</li><li>Player-Statusparameter</li><li>Qualitätsparameter</li></ul> | September 2022 |
-| **Bedienfeld „Gleichzeitige Medienbetrachter“** | Erkennen Sie, wo hohe Auslastungen auftraten oder wo es zu Einbrüchen kam. Erhalten Sie wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern und erhalten Sie Hilfe bei der Fehlerbehebung oder der Planung in Bezug auf Volumen und Skalierung. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=de) | &#x200B;9. August 2022 |
-| **Panel „Verbrachte Zeit bei der Medienwiedergabe“** | Die mit Medienwiedergabe verbrachte Zeit bietet wertvolle Einblicke in die Interaktion mit Betrachtenden und ermöglicht es Medienunternehmen, tiefere, detailliertere Einblicke mit der minütigen Benutzerinteraktion durch erweiterte Zeitanalysen mit Funktionen zur Tageszeiteneinteilung zu gewinnen. Sie können feststellen, wie viel Zeit zu einem bestimmten Zeitpunkt mit der Anzeige Ihrer Medien-Streams verbracht wurde. Sie können die Wiedergabedauer nach verschiedenen Granularitäten aufteilen, einschließlich der neuen Granularitäten 5 Minuten, 15 Minuten und 30 Minuten. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=de) | &#x200B;9. August 2022 |
-| **Zielgruppendurchschnitt pro Minute** | Media Analytics-Kunden können das Bedienfeld „Zielgruppendurchschnitt pro Minute“ verwenden, um die durchschnittliche Nutzung ihrer Inhalte besser zu verstehen. <br>Der Zielgruppendurchschnitt pro Minute ermöglicht Vergleiche von Inhalten beliebiger Längen oder Genres. Darüber hinaus können Kunden diesen digitalen Zielgruppendurchschnitt pro Minute mit linearen Metriken zum TV-Durchschnitt pro Minute vergleichen oder ihn hinzufügen. Dieses Bedienfeld bietet mehr Flexibilität bei der Messung des Zielgruppendurchschnitts für benutzerdefinierte Zeiträume sowie für Fälle, bei denen die Klassifizierung der Dauer aktualisiert wurde.  [Weitere Informationen](/help/reporting/workspace/average-minute-audience.md) | &#x200B;16. März 2022 |
+| **Zu Customer Journey Analytics hinzugefügte Bedienfelder** | Das Bedienfeld [Gleichzeitige Medienbetrachter](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers) und [Bedienfeld „Mit Medienwiedergabe verbrachte Zeit“ wurde &#x200B;](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent) Customer Journey Analytics hinzugefügt. | &#x200B;9. August 2022 |
+| **Zielgruppendurchschnitt pro Minute** | Sie können das Bedienfeld [Zielgruppendurchschnitt pro Minute](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) verwenden, um die durchschnittliche Nutzung von Inhalten besser zu verstehen. <br>Der Zielgruppendurchschnitt pro Minute ermöglicht Vergleiche von Inhalten beliebiger Längen oder Genres. Darüber hinaus können Kunden diesen digitalen Zielgruppendurchschnitt pro Minute mit linearen Metriken zum TV-Durchschnitt pro Minute vergleichen oder ihn hinzufügen. Dieses Bedienfeld bietet mehr Flexibilität bei der Messung des Zielgruppendurchschnitts für benutzerdefinierte Zeiträume sowie für Fälle, bei denen die Klassifizierung der Dauer aktualisiert wurde. | &#x200B;16. März 2022 |
 
 ## 2021
 
 | Funktion | Beschreibung | Datum |
 | --- | --- | --- |
-| **Bei Medienwiedergabe verbrachte Zeit** | Die mit Adobe Streaming-Medienwiedergabe verbrachte Zeit bietet wertvolle Einblicke in die Interaktion mit Betrachtern und ermöglicht es Medienunternehmen, durch erweiterte Zeitanalysen mit Tageszeiteneinteilungs-Funktionen tiefere, minutengenaue Einblicke in die Benutzerinteraktion zu gewinnen. Sie können feststellen, wie viel Zeit zu einem bestimmten Zeitpunkt mit der Anzeige Ihrer Medien-Streams verbracht wurde. Sie können die Wiedergabedauer nach verschiedenen Granularitäten unterteilen, einschließlich der neuen Granularitäten von 5, 15 und 30 Minuten. [Weitere Informationen...](/help/reporting/workspace/media-playback-time-spent.md) | September 2021 |
+| **Bei Medienwiedergabe verbrachte Zeit** | Das [Panel „Wiedergabedauer](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent) bietet wertvolle Informationen zur Interaktion mit Betrachtern und ermöglicht es Medienunternehmen, tiefere, detailliertere Einblicke mit der minütigen Benutzerinteraktion durch erweiterte Zeitanalysen mit Tageszeiteneinteilungs-Funktionen zu gewinnen. Sie können feststellen, wie viel Zeit zu einem bestimmten Zeitpunkt mit der Anzeige Ihrer Medien-Streams verbracht wurde. Sie können die Wiedergabedauer nach verschiedenen Granularitäten unterteilen, einschließlich der neuen Granularitäten von 5, 15 und 30 Minuten. | September 2021 |
 
 ## 2020
 
 | Funktion | Beschreibung | Datum |
 | --- | --- | --- |
-| **Bedienfeld „Gleichzeitige Medienbetrachter“** | Erkennen Sie, wo hohe Auslastungen auftraten oder wo es zu Einbrüchen kam. Erhalten Sie wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern und erhalten Sie Hilfe bei der Fehlerbehebung oder der Planung in Bezug auf Volumen und Skalierung. [Weitere Informationen...](/help/reporting/workspace/media-concurrent-viewers-overview.md) <br><br>[Bedienfeld „Gleichzeitige Medienbetrachter“ in Analytics Workspace (Tutorial)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=de#analysis-workspace) | September 2020; Januar 2021 |
+| **Bedienfeld „Gleichzeitige Medienbetrachter“** | Das [Bedienfeld „Gleichzeitige Betrachter](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) hilft Ihnen zu verstehen, wo Spitzenzeiten von gleichzeitigen Ansichten auftraten oder wo es zu Abbrüchen kam. Erhalten Sie wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern und erhalten Sie Hilfe bei der Fehlerbehebung oder der Planung in Bezug auf Volumen und Skalierung.<br><br>[Bedienfeld „Gleichzeitige Medienbetrachter“ (Tutorial)](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace) | September 2020; Januar 2021 |
 | **Unterstützte Geräte und Plattformen** | Die Media Launch-Erweiterung mit dem AEP-SDK unterstützt jetzt die folgenden OTT-Geräte: <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (Fire OS)</li><li>Android TV</li></ul></div> | Juni 2020 |

@@ -3,16 +3,18 @@ title: Übersicht über die Edge-Implementierung
 description: Richten Sie das Adobe Experience Platform-Schema, den Datensatz und den Datenstrom ein, die erforderlich sind, um Streaming-Mediendaten über die Edge Network zu erfassen.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: '1179'
-ht-degree: 6%
+source-wordcount: '1298'
+ht-degree: 5%
 
 ---
 
 # Übersicht über die Edge-Implementierung
 
-Mit Adobe Experience Platform Edge Network können Sie Daten, die für mehrere Produkte bestimmt sind, an einen einzelnen Endpunkt senden, der dann die entsprechenden Informationen an jedes Produkt weiterleitet. Dies konsolidiert den Implementierungsaufwand für mehrere Datenlösungen und ist die empfohlene Methode zur Implementierung der Streaming Media Collection für Adobe Analytics und Customer Journey Analytics.
+Mit Adobe Experience Platform Edge Network können Sie Daten, die für mehrere Produkte bestimmt sind, an einen einzelnen Endpunkt senden, der dann die entsprechenden Informationen an jedes Produkt weiterleitet. Dies ist die empfohlene Methode zur Implementierung der Streaming Media Collection - und ist der einzige Ansatz, der sowohl Adobe Analytics als auch Customer Journey Analytics von einer einzigen Instrumentierung aus unterstützt.
+
+Im Gegensatz zum älteren Media SDK-Ansatz, der für jede Adobe-Lösung eine produktspezifische Instrumentierung erforderte, verwendet eine Edge-Implementierung ein gemeinsames XDM-Datenmodell und einen einzigen Datenstrom. Daten fließen von Ihrer SDK oder API zu Edge Network, das sie dann an die im Datenstrom konfigurierten Adobe-Produkte weiterleitet (Analytics, CJA, AJO oder RTCDP). Das bedeutet, dass das Wechseln oder Hinzufügen nachgelagerter Produkte zu einem späteren Zeitpunkt keine erneute Instrumentierung Ihrer Medienereignisse erfordert.
 
 Unabhängig davon, welche Codebasis Sie verwenden - die Web-SDK, die Mobile SDK (iOS oder Android), die Roku SDK oder die Media Edge-API - müssen Sie zunächst die auf dieser Seite beschriebene Plattformeinrichtung abschließen: Erstellen eines Schemas, Erstellen eines Datensatzes und Konfigurieren eines Datenstroms.
 
@@ -20,11 +22,10 @@ Unabhängig davon, welche Codebasis Sie verwenden - die Web-SDK, die Mobile SDK 
 
 1. **Vervollständigen Sie die allgemeinen Voraussetzungen.** Siehe [Allgemeine Voraussetzungen](/help/getting-started/prereqs.md).
 
-1. **Bestätigen einer kompatiblen Adobe-Lösung.** Sie müssen über eine funktionierende Implementierung von Customer Journey Analytics, Adobe Analytics, Adobe Journey Optimizer oder Real-Time Customer Data Platform verfügen:
-   * [Handbuch zu Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=de)
-   * [Implementieren von Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=de)
-   * [Dokumentation zu Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=de)
-   * [Dokumentation zu Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=de)
+1. **Bestätigen einer kompatiblen Adobe-Lösung.** Es muss eine funktionierende Implementierung aus mindestens einem der folgenden Elemente vorhanden sein:
+   * [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=de) - das primäre Berichtsziel für Edge-basierte Mediendaten
+   * [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=de) - wird zusammen mit oder anstelle von CJA über denselben Datenstrom unterstützt
+   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=de) oder [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=de) - Fügen Sie den **[!UICONTROL Adobe Experience Platform]**-Service zu Ihrem Datenstrom hinzu, wenn Sie eine dieser Konfigurationen durchführen
 
 ## Einrichten des Schemas in Adobe Experience Platform
 
@@ -51,7 +52,7 @@ Um die Datenerfassung in allen Anwendungen zu standardisieren, die Adobe Experie
 
 1. Klicken Sie **[!UICONTROL Speichern]**, um Ihre Änderungen zu speichern.
 
-1. (Optional) Sie können bestimmte Felder ausblenden, die nicht von der Media Edge-API verwendet werden. Das Ausblenden dieser Felder erleichtert die Lesbarkeit des Schemas, ist aber nicht erforderlich. Diese Felder beziehen sich nur auf die Felder in der `MediaAnalytics Interaction Details` Feldergruppe.
+1. (Optional) Sie können bestimmte Felder in der Schema-Benutzeroberfläche ausblenden. Diese Felder sind Server-berechnete Berichtsfelder, die Adobe im Backend ausfüllt - sie werden nicht von Ihrer SDK oder API gesendet und wirken sich nicht auf die Datenerfassung aus. Das Ausblenden hat keine funktionalen Auswirkungen, sondern reduziert nur das visuelle Rauschen beim Durchsuchen des Schemas in der AEP-Benutzeroberfläche. Diese Felder beziehen sich nur auf die Felder in der `MediaAnalytics Interaction Details` Feldergruppe.
 
    +++ Erweitern Sie , um Anweisungen zu Feldern anzuzeigen, die Sie ausblenden können.
 
@@ -135,43 +136,31 @@ Um die Datenerfassung in allen Anwendungen zu standardisieren, die Adobe Experie
 
    +++
 
-1. Fahren Sie mit [Erstellen eines Datensatzes in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform) fort.
-
 ## Datensatz in Adobe Experience Platform erstellen
-
-1. Stellen Sie sicher, dass Sie ein Schema wie in [Einrichten des Schemas in Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform) beschrieben einrichten.
 
 1. Beginnen Sie in Adobe Experience Platform mit der Erstellung des Datensatzes, wie im [Handbuch zur Benutzeroberfläche von Datensätzen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=de#create) beschrieben.
 
    Wählen Sie bei der Auswahl eines Schemas für Ihren Datensatz das zuvor erstellte Schema aus.
 
-1. Fahren Sie mit [Konfigurieren eines Datenstroms in Adobe Experience Platform &#x200B;](#configure-a-datastream-in-adobe-experience-platform).
-
 ## Konfigurieren eines Datenstroms in Adobe Experience Platform
-
-1. Stellen Sie sicher, dass Sie einen Datensatz wie in [Erstellen eines Datensatzes in Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform) beschrieben erstellt haben.
 
 1. Erstellen Sie einen neuen Datenstrom, wie in [Konfigurieren eines Datenstroms](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=de) beschrieben.
 
    Wählen Sie beim Erstellen des Datenstroms die folgenden Optionen aus:
 
-   * Wählen Sie im Feld **[!UICONTROL Ereignisschema]** das Schema aus, das Sie in erstellt haben ([&#x200B; des Schemas in Adobe Experience Platform &#x200B;](#set-up-the-schema-in-adobe-experience-platform). Wählen Sie **[!UICONTROL Speichern]** aus.
+   * Wählen Sie im Feld **[!UICONTROL Ereignisschema]** das Schema aus, das Sie in erstellt haben ([&#x200B; des Schemas in Adobe Experience Platform &#x200B;](#set-up-the-schema-in-adobe-experience-platform).
 
      >[!IMPORTANT]
      >
-     >Wählen Sie nicht **[!UICONTROL Speichern und Zuordnung hinzufügen]**, da dies zu Zuordnungsfehlern für das Zeitstempelfeld führt.
+     >Wählen Sie **[!UICONTROL Speichern]** aus, wählen Sie nicht **[!UICONTROL Speichern und Zuordnung hinzufügen]**. Die Auswahl **[!UICONTROL Speichern und Zuordnung hinzufügen]** verursacht Zuordnungsfehler für das Zeitstempelfeld.
 
      ![Erstellen eines Datenstroms und Auswählen eines Schemas](assets/datastream-create-schema.png)
 
-   * Fügen Sie dem Datenstrom einen der folgenden Services hinzu, je nachdem, ob Sie Adobe Analytics oder Customer Journey Analytics verwenden:
+   * Fügen Sie die entsprechenden Services basierend auf Ihrer Adobe-Lösung zum Datenstrom hinzu. Informationen zum Hinzufügen eines Services finden Sie unter „Hinzufügen von Services zu einem Datenstrom“ in [Konfigurieren eines Datenstroms](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=de#view-details).
 
-      * **[!UICONTROL Adobe Analytics]** (bei Verwendung von Adobe Analytics)
+      * **[!UICONTROL Adobe Analytics]** (bei Verwendung von Adobe Analytics) - Definieren Sie eine Report Suite wie in [Erstellen einer Report Suite](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite) beschrieben.
 
-        Wenn Sie Adobe Analytics verwenden, definieren Sie eine Report Suite wie in [Erstellen einer Report Suite](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite) beschrieben.
-
-      * **[!UICONTROL Adobe Experience Platform]** (bei Verwendung von Customer Journey Analytics)
-
-     Informationen zum Hinzufügen eines Services zu einem Datenstrom finden Sie unter „Hinzufügen von Services zu einem Datenstrom“ in [Konfigurieren eines Datenstroms](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=de#view-details).
+      * **[!UICONTROL Adobe Experience Platform]** (bei Verwendung von Customer Journey Analytics, Adobe Journey Optimizer oder Real-Time Customer Data Platform)
 
      ![Fügen Sie den Adobe Analytics-Service hinzu](assets/datastream-add-service.png)
 
@@ -183,7 +172,9 @@ Um die Datenerfassung in allen Anwendungen zu standardisieren, die Adobe Experie
 
 Wenn das Schema, der Datensatz und der Datenstrom eingerichtet sind, implementieren Sie eine der folgenden Code-Basen, um mit dem Senden von Streaming-Mediendaten an die Edge Network zu beginnen. Jede Seite behandelt die für Streaming-Medien spezifische Einrichtung. Der Code pro Ereignis und pro Variable wird in „Ereignisse[&#x200B; und „Variablen](/help/implementation/events/overview.md) [&#x200B; &#x200B;](/help/implementation/variables/overview.md).
 
-| Codebase | In-Code | Über Tags |
+**In-Code**-Implementierungen schreiben SDK-Aufrufe direkt in den Quellcode Ihrer Anwendung. **Verwenden von Tags** -Implementierungen verwenden [Adobe Experience Platform-Tags](https://experienceleague.adobe.com/de/docs/experience-platform/tags/home) mit denen Sie Tracking-Regeln konfigurieren und bereitstellen können, ohne den Anwendungs-Code zu ändern. Wählen Sie den Ansatz aus, der zu Ihrem Bereitstellungs-Workflow passt.
+
+| Codebase | In-Code | Verwenden von Tags |
 |---|---|---|
 | Web | [Web SDK](web-sdk.md) | [Web SDK-Tag-Erweiterung](web-sdk-tags.md) |
 | iOS | [iOS](ios.md) | [iOS (Tags)](ios-tags.md) |

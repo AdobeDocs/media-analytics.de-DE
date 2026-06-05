@@ -5,10 +5,10 @@ user-guide-title: Handbuch zu Streaming-Mediendiensten
 breadcrumb-title: Handbuch zu Streaming-Mediendiensten
 user-guide-description: Implementieren von Streaming-Mediendiensten. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
 sub-product: media analytics
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 35%
+source-wordcount: '698'
+ht-degree: 33%
 
 ---
 
@@ -289,21 +289,7 @@ ht-degree: 35%
       + [Gesamtdauer der Verzögerung](reporting/metrics/total-stalling-duration.md)
       + [Eindeutige Wiedergabedauer](reporting/metrics/unique-time-played.md)
    + [Berechnete Metriken](reporting/calculated-metrics.md)
-   + Medien-Bedienfelder in Workspace {#media-workspace-panels}
-      + [Bedienfeld „Zielgruppendurchschnitt pro Minute“](reporting/workspace/average-minute-audience.md)
-      + [Bedienfeld „Gleichzeitige Medienbetrachter“](reporting/workspace/media-concurrent-viewers-overview.md)
-      + [Panel „Verbrachte Zeit bei der Medienwiedergabe“](reporting/workspace/media-playback-time-spent.md)
-   + [Medienberichte in Workspace](reporting/workspace/media-workspace-templates.md)
    + [Mediensegmente](reporting/segments.md)
-   + Standard-Medienberichte {#media-default-reports}
-      + [Überblick über die Standardberichte](reporting/reports-and-analytics/default-reports-overview.md)
-      + [Medienüberblick](reporting/reports-and-analytics/media-reports-overview.md)
-      + [Mediendetails](reporting/reports-and-analytics/media-reports-detail.md)
-      + [Medientagesbericht](reporting/reports-and-analytics/media-reports-daypart.md)
-      + [Bericht über gleichzeitige Medienbetrachtende](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-   + Media-API {#media-api}
-      + [Abrufen von Daten über gleichzeitige Betrachtende](reporting/reports-and-analytics/get-concurrent-json20.md)
-      + [Abrufen von Daten zur mit Medienwiedergabe verbrachten Zeit](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + Nutzungsszenarios {#media-use-cases}
    + [Verfolgen von Zeitplandaten](/help/use-cases/track-schedule-data.md)
    + [Tracking heruntergeladener Inhalte](use-cases/track-downloaded-content.md)

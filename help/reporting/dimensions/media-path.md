@@ -3,9 +3,9 @@ title: Medienpfad
 description: Erfasst die Inhalts-ID als Traffic-Variable für die Pfadanalyse.
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '217'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ Der Medienpfad wird automatisch aus der Inhalts-ID abgeleitet, die beim Sitzungs
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus Kontextdaten erfasst, die als Traffic-Variable (Prop) `a.media.name` werden, wenn [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) aktiviert ist. |
-| Customer Journey Analytics | K. A. - [Inhalt](content.md) für Pfadanalyse verwenden |
+| Customer Journey Analytics | Nicht zutreffend - Verwenden Sie [Inhalt](content.md) für die Pfadanalyse. |
 | Daten-Feeds | `videopath`, `post_videopath` |
 | Audience Manager | `c_contextdata.a.media.name` |
 
@@ -36,4 +36,4 @@ Der Medienpfad wird automatisch aus der Inhalts-ID abgeleitet, die beim Sitzungs
 
 ## Dimensionselemente
 
-Jedes Element ist eine Inhalts-ID, die während eines Besuchs gemeldet wird. Verwenden Sie die Berichte Nächster Seitenfluss und Vorheriger Seitenfluss unter Inhalt > Medienpfad in Adobe Analytics, um Navigationspfade zwischen Inhalten und Inhalten anzuzeigen.
+Jedes Element ist eine Inhalts-ID, die während eines Besuchs gemeldet wird. Sie können Fluss-Bedienfelder verwenden, um Navigationspfade zwischen Inhalten anzuzeigen.
