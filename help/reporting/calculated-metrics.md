@@ -3,14 +3,14 @@ title: Berechnete Metriken
 description: Benutzerdefinierte berechnete Metriken für Berichte zu Streaming-Medien in Adobe Analytics und Customer Journey Analytics.
 feature: Metrics
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: cb3770abd06eb8debe4ff92641835f04f62471f7
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 5%
+source-wordcount: '269'
+ht-degree: 4%
 
 ---
 
-# Berechnete Metriken
+# Berechnete Metriken für Streaming-Medien
 
 Berechnete Metriken für Adobe-Streaming-Mediendienste sind benutzerdefinierte Metriken, die auf der Grundlage der standardmäßigen Streaming-Medienmetriken erstellt werden. So können Sie Verhältnisse wie durchschnittliche Anzeigenbesuchszeit oder Medienabschlussrate ableiten, ohne die Implementierung zu ändern.
 

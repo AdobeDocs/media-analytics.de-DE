@@ -17,14 +17,14 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+source-git-commit: cb3770abd06eb8debe4ff92641835f04f62471f7
 workflow-type: tm+mt
-source-wordcount: 188
-ht-degree: 76%
+source-wordcount: 189
+ht-degree: 75%
 
 ---
 
-# Mediensegmente{#segments}
+# Streaming-Mediensegmente
 
 Mit Segmenten können Besucherteilmengen anhand von Merkmalen oder Website-Interaktionen identifiziert werden. Mit Streaming-Mediensegmenten können Sie den Besucher-Stream-Typ wie Audio-, Live- oder Podcast-Streams identifizieren. Weitere Informationen zu Adobe Analytics-Segmenten finden Sie [Informationen zu Segmenten](https://experienceleague.adobe.com/de/docs/analytics/components/segmentation/seg-overview) im Adobe Analytics-Komponentenhandbuch.
 
