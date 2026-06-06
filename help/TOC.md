@@ -5,10 +5,10 @@ user-guide-title: Handbuch zu Streaming-Mediendiensten
 breadcrumb-title: Handbuch zu Streaming-Mediendiensten
 user-guide-description: Implementieren von Streaming-Mediendiensten. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
 sub-product: media analytics
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+source-git-commit: c25d3cd6248f547e5a32a080eb89c5ad8f58c474
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 33%
+source-wordcount: '694'
+ht-degree: 32%
 
 ---
 
@@ -164,6 +164,7 @@ ht-degree: 33%
             + [Timeout-Bedingungen](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
             + [Steuern der Ereignisreihenfolge](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
             + [Einreihen von Ereignissen in die Warteschlange bei langsamer Sitzungsantwort](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
+   + [Opt-out- und Datenschutzeinstellungen](implementation/opt-out-privacy.md)
 + Reporting {#reporting}
    + Einrichten von Berichten {#reporting-setup}
       + [Edge-Implementierungen](reporting/setup/edge-reporting.md)
@@ -298,6 +299,3 @@ ht-degree: 33%
       + [Timeline: Kapitel](use-cases/scenarios/chapter-start-end.md)
       + [Zeitleiste: Ansicht bis Ende](use-cases/scenarios/view-to-end-of-content.md)
       + [Zeitlicher Ablauf: Benutzer bricht Sitzung ab](use-cases/scenarios/user-abandons-session.md)
-+ Datenschutz und Sicherheit {#streaming-media-privacy}
-   + [Opt-out- und Datenschutz-Einstellungen](privacy/opt-out-privacy.md)
-   + [Sicherheit](privacy/security.md)
