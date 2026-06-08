@@ -3,7 +3,7 @@ title: Übersicht über Streaming-Medienereignisse
 description: Erfahren Sie mehr über Medienereignistypen und die Reihenfolge, in der sie gesendet werden müssen.
 feature: Streaming Media
 role: Developer
-source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 0%
@@ -21,9 +21,9 @@ Ereignisse werden in sechs Kategorien gruppiert (Sitzung, Wiedergabe, Anzeigen, 
 
 Sitzungsereignisse gelten für jede Art von Medien-Tracking, einschließlich Video-on-Demand, Live-Streams, Podcasts und Hörbüchern. Sie definieren die Grenzen der Tracking-Sitzung selbst. Das wichtigste Sitzungsereignis ist [Sitzungsstart](session/session-start.md) da fast jeder andere Ereignistyp von der generierten Sitzungs-ID abhängt. Senden Sie es als erstes Ereignis, wenn ein Benutzer eine Sitzung einleitet, z. B. wenn er die Wiedergabetaste drückt oder wenn der Player mit der automatischen Wiedergabe beginnt.
 
-Sobald eine Sitzung geöffnet ist, verwenden Sie [Sitzung abgeschlossen](session/session-complete.md) oder [Sitzungsende](session/session-end.md) um anzugeben, wie das Anzeigeerlebnis beendet wurde. Die Sendesitzung ist abgeschlossen, wenn der Betrachter das natürliche Ende des Inhalts erreicht - das Video ist beendet, die Podcast-Folge endet oder das letzte Kapitel eines Hörbuchs endet. Sitzung abgeschlossen schließt die Sitzung nicht. Sie bleibt offen, bis sie automatisch abläuft, sodass alle nachfolgenden Ereignisse, wie z. B. ein endgültiges Ping, weiterhin erfasst werden.
+Sobald eine Sitzung geöffnet ist, verwenden Sie [Sitzung abgeschlossen](session/session-complete.md) oder [Sitzungsende](session/session-end.md) um anzugeben, wie das Anzeigeerlebnis beendet wurde. Die Sendesitzung ist abgeschlossen, wenn der Betrachter das natürliche Ende des Inhalts erreicht (das Video ist beendet, die Podcast-Folge endet oder das letzte Kapitel eines Hörbuchs endet). Sitzung abgeschlossen schließt die Sitzung nicht. Sie bleibt offen, bis sie automatisch abläuft, sodass alle nachfolgenden Ereignisse, wie z. B. ein endgültiges Ping, weiterhin erfasst werden.
 
-Wenn der Betrachter die Sitzung verlässt, bevor er das Ende erreicht[&#x200B; senden Sie „Sitzungsende](session/session-end.md), um die Sitzung sofort zu schließen. Senden Sie die Sitzung nur, wenn keine weiteren Ereignisse folgen, z. B. wenn der Player zerstört oder die Seite entladen wurde. Das Ende der Sitzung ist ein harter Abschluss: Nach dem Versand wird die Sitzung beendet und es können keine weiteren Ereignisse darunter verfolgt werden. In den meisten Fällen ist es sicherer, die Sitzung auf natürliche Weise ablaufen zu lassen. Beispiele sind das Pausieren des Viewers auf unbestimmte Zeit, das Wechseln der App in den Hintergrund oder das Nichtladen des Inhalts.
+Wenn der Betrachter die Sitzung verlässt, bevor er das Ende erreicht[&#x200B; senden Sie „Sitzungsende](session/session-end.md), um die Sitzung sofort zu schließen. Senden Sie die Sitzung nur, wenn keine weiteren Ereignisse folgen (z. B. wenn der Player zerstört oder die Seite entladen wurde). Das Ende der Sitzung ist ein harter Abschluss: Nach dem Versand wird die Sitzung beendet und es können keine weiteren Ereignisse darunter verfolgt werden. In den meisten Fällen ist es sicherer, die Sitzung auf natürliche Weise ablaufen zu lassen. Beispiele sind das Pausieren des Viewers auf unbestimmte Zeit, das Wechseln der App in den Hintergrund oder das Nichtladen des Inhalts.
 
 Eine Sitzung läuft automatisch ab, wenn für 10 Minuten keine Ereignisse empfangen werden oder wenn für 30 Minuten keine Abspielkopfbewegung erkannt wird. Wenn eine der Bedingungen erfüllt ist und der Viewer zum Inhalt zurückkehrt, müssen Sie Sitzungsstart erneut aufrufen, um eine neue Sitzung zu öffnen, bevor Sie weitere Ereignisse senden.
 
@@ -31,7 +31,7 @@ Eine Sitzung läuft automatisch ab, wenn für 10 Minuten keine Ereignisse empfan
 
 Wiedergabeereignisse verfolgen Statusübergänge im Media Player während einer Sitzung. Sie bilden den Kern des Ereignis-Streams und gelten für jeden Inhaltstyp.
 
-Das primäre Wiedergabeereignis ist [Play](playback/play.md). Nach dem Aufruf von Sitzungsstart gibt Play an, dass die Wiedergabe des Inhalts begonnen hat - ob es sich um den ersten Start, einen Trigger für die automatische Wiedergabe oder eine Rückkehr zum Wiedergabestatus handelt. [Start anhalten](playback/pause-start.md) gibt an, dass die Wiedergabe angehalten wurde. Es gibt kein dediziertes Wiederaufnahmeereignis. Senden Sie die Wiedergabe erneut, wenn der Viewer sie wiederaufnimmt. Die Wiedergabe funktioniert nach einem Pufferüberhang genauso: Senden Sie [Pufferstart](playback/buffer-start.md), wenn der Player auf Daten wartet, und folgen Sie dann mit Wiedergabe, wenn die Pufferung aufgelöst wird.
+Das primäre Wiedergabeereignis ist [Play](playback/play.md). Nach dem Aufruf von Sitzungsstart gibt Play an, dass die Wiedergabe des Inhalts begonnen hat - ob es sich um den ersten Start, einen Trigger für die automatische Wiedergabe oder eine Rückkehr zum Wiedergabestatus handelt. [Start anhalten](playback/pause-start.md) gibt an, dass die Wiedergabe angehalten wurde. Es gibt kein dediziertes Wiederaufnahmeereignis. Senden Sie die Wiedergabe erneut, wenn der Viewer sie wiederaufnimmt. Die Wiedergabe funktioniert nach einem Puffer-Stopp genauso: Senden Sie [Puffer-Start](playback/buffer-start.md), wenn der Player auf Daten wartet, und folgen Sie dann mit Play, wenn die Pufferung aufgelöst wird.
 
 Senden Sie [Ping](playback/ping.md) alle 10 Sekunden während der Wiedergabe des Hauptinhalts und alle 1 Sekunde während der Anzeigenwiedergabe. Ping hält die Sitzung am Leben und zeichnet Abspielkopfbewegungen auf. Bei Mobile SDKs werden Pings automatisch gesendet. Bei allen anderen Plattformen müssen sie manuell gesendet werden.
 

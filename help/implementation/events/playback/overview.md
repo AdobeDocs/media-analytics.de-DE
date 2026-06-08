@@ -21,9 +21,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 230
+source-wordcount: 231
 ht-degree: 2%
 
 ---
@@ -50,4 +50,4 @@ Wiedergabeereignisse verfolgen Statusübergänge im Media Player während einer 
 1. **Aufruf [Start anhalten](pause-start.md)** wenn der Benutzer die Wiedergabe anhält. Wiedergabe senden, wenn Wiedergabe fortgesetzt wird.
 1. **Rufen Sie [Pufferstart](buffer-start.md)** auf, wenn der Player auf Daten wartet. Bei XDM-basierten APIs wird auf ein Pufferende geschlossen, wenn Sie das nächste Play-Ereignis senden. Rufen Sie auf der mobilen SDK `BufferComplete` auch explizit auf, wenn die Pufferung aufgelöst wird.
 1. **Rufen Sie [Ping](ping.md)** alle 10 Sekunden während der Wiedergabe des Hauptinhalts und alle 1 Sekunde während der Anzeigenwiedergabe auf. Ping hält die Sitzung am Leben und zeichnet Abspielkopfbewegungen auf. Mobile SDKs senden Pings automatisch. Alle anderen Plattformen müssen sie manuell senden.
-1. **Rufen Sie [Bitratenänderung“ auf](bitrate-change.md)** wenn der Player eine neue Bitrate aushandelt. Schließen Sie die aktuellen QoE-Daten - Bitrate, Frames pro Sekunde, ausgelassene Frames - ein, damit das Backend [durchschnittliche Bitrate](/help/reporting/metrics/average-bitrate.md) und zugehörige Qualitätsmetriken berechnen kann.
+1. **Rufen Sie [Bitratenänderung“ auf](bitrate-change.md)** wenn der Player eine neue Bitrate aushandelt. Schließen Sie die aktuellen QoE-Daten (Bitrate, Frames pro Sekunde, ausgelassene Frames) ein, damit das Backend [durchschnittliche Bitrate](/help/reporting/metrics/average-bitrate.md) und zugehörige Qualitätsmetriken berechnen kann.

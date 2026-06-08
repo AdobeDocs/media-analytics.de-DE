@@ -3,10 +3,10 @@ title: Bitratenänderung
 description: Signal zur Änderung der Wiedergabebitrate.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 7%
+source-wordcount: '226'
+ht-degree: 6%
 
 ---
 
@@ -69,7 +69,7 @@ tracker.updateQoEObject(qoeObject)
 tracker.trackEvent(Media.Event.BitrateChange, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `sendMediaEvent` mit `eventType: "media.bitrateChange"` und der neuen Bitrate in `qoeDataDetails`:
 
@@ -150,6 +150,18 @@ this._qosInfo = ADBMobile.media.createQoSObject(
 );
 
 ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
+```
+
+>[!TAB Roku 2.x]
+
+Erstellen Sie mit `adb_media_init_qosinfo` ein QoS-Objekt mit der neuen Bitrate, aktualisieren Sie den Tracker mit `mediaUpdateQoS` und verfolgen Sie dann das Ereignis. Beachten Sie die Roku-Parameter-Reihenfolge: `bitrate, startupTime, fps, droppedFrames`.
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
+adb.mediaTrackEvent(adb.MEDIA_BITRATE_CHANGE)
 ```
 
 >[!TAB Media Collection API]

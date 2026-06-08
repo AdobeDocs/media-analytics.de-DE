@@ -3,9 +3,9 @@ title: Bitratenänderung
 description: Lösen Sie ein Bitratenänderungsereignis aus, wenn der Player zu einer anderen Bitrate wechselt.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '278'
 ht-degree: 6%
 
 ---
@@ -78,7 +78,7 @@ tracker.updateQoEObject(qoeObject)
 tracker.trackEvent(Media.Event.BitrateChange, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Verwenden Sie `sendMediaEvent` mit `media.bitrateChange`, um eine Bitratenänderung zu signalisieren. Neue Bitrate in `qoeDataDetails` einschließen:
 
@@ -149,6 +149,18 @@ var qosInfo = ADBMobile.media.createQoSObject(
 );
 ADBMobile.media.updateQoSObject(qosInfo);
 ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
+```
+
+>[!TAB Roku 2.x]
+
+Aktualisieren Sie das QoS-Objekt mit der neuen Bitrate und lösen Sie dann das Bitratenänderungsereignis aus:
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(4500.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
+adb.mediaTrackEvent(adb.MEDIA_BITRATE_CHANGE)
 ```
 
 >[!TAB Media Collection API]

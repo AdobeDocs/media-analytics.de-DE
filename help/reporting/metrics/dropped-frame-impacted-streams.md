@@ -3,7 +3,7 @@ title: Von Dropped Frames betroffene Streams
 description: Zählt Sitzungen, in denen mindestens ein Frame gelöscht wurde.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 11%
@@ -13,7 +13,7 @@ ht-degree: 11%
 
 # Von Dropped Frames betroffene Streams
 
-Die Metrik **Abgelegter Frame betrifft Streams** zählt Sitzungen, in denen mindestens ein Frame abgelegt wurde. Bei der Metrik handelt es sich um einen booleschen Wert auf Sitzungsebene - mehrere Drops innerhalb derselben Sitzungsanzahl wie ein betroffener Stream. Verwenden Sie für das gesamte Ablagevolumen &quot;[&#x200B; Frames](dropped-frames.md).
+Die Metrik **Abgelegter Frame betrifft Streams** zählt Sitzungen, in denen mindestens ein Frame abgelegt wurde. Bei der Metrik handelt es sich um einen booleschen Wert auf Sitzungsebene. Mehrere Drops innerhalb derselben Sitzung zählen als ein betroffener Stream. Verwenden Sie für das gesamte Ablagevolumen &quot;[&#x200B; Frames](dropped-frames.md).
 
 ## Berechnung dieser Metrik
 

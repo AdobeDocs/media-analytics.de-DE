@@ -3,7 +3,7 @@ title: Vom Vollbildmodus betroffene Streams
 description: Zählt Sitzungen, in denen der Viewer mindestens einmal im Vollbildmodus angezeigt wurde.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!ENDSHADEBOX]
 
-Die Metrik **Vom Vollbildmodus betroffene Streams** zählt Sitzungen, in denen der Betrachter mindestens einmal in den Vollbildmodus eingetreten ist. Bei der Metrik handelt es sich um einen booleschen Wert auf Sitzungsebene - mehrere Vollbildeinträge innerhalb derselben Sitzungsanzahl wie ein betroffener Stream. Verwenden Sie für die gesamte Vollbild-Eingabeanzahl [Vollbildanzahl](full-screen-count.md).
+Die Metrik **Vom Vollbildmodus betroffene Streams** zählt Sitzungen, in denen der Betrachter mindestens einmal in den Vollbildmodus eingetreten ist. Bei der Metrik handelt es sich um einen booleschen Wert auf Sitzungsebene. Es werden mehrere Vollbildeinträge innerhalb derselben Sitzung gezählt, wie ein betroffener Stream. Verwenden Sie für die gesamte Vollbild-Eingabeanzahl [Vollbildanzahl](full-screen-count.md).
 
 ## Berechnung dieser Metrik
 

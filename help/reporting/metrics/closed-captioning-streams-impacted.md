@@ -3,7 +3,7 @@ title: Von verdeckten Untertiteln betroffene Streams
 description: Zählt Sitzungen, in denen der Viewer Untertitel mindestens einmal aktiviert hat.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!ENDSHADEBOX]
 
-Die Metrik **Von Untertiteln betroffene Streams** zählt Sitzungen, in denen der Viewer Untertitel mindestens einmal aktiviert hat. Bei der Metrik handelt es sich um einen booleschen Wert auf Sitzungsebene - mehrere Untertitel werden in derselben Sitzungsanzahl umgeschaltet wie ein betroffener Stream. Verwenden Sie für das Gesamtvolumen der aktivierten Untertitel [Geschlossene Untertitelanzahl](closed-captioning-count.md).
+Die Metrik **Von Untertiteln betroffene Streams** zählt Sitzungen, in denen der Viewer Untertitel mindestens einmal aktiviert hat. Bei der Metrik handelt es sich um einen booleschen Wert auf Sitzungsebene. Bei der Anzahl mehrerer Untertitel wird dieselbe Sitzung umgeschaltet wie bei einem betroffenen Stream. Verwenden Sie für das Gesamtvolumen der aktivierten Untertitel [Geschlossene Untertitelanzahl](closed-captioning-count.md).
 
 ## Berechnung dieser Metrik
 

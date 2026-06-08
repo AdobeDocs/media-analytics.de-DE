@@ -3,7 +3,7 @@ title: Von Stummschaltung betroffene Streams
 description: Zählt Sitzungen, in denen der Viewer Audio mindestens einmal stumm geschaltet hat.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!ENDSHADEBOX]
 
-Die Metrik **Von Stummschaltung betroffene Streams** zählt Sitzungen, bei denen der Viewer Audio mindestens einmal stummgeschaltet hat. Bei der Metrik handelt es sich um einen booleschen Wert auf Sitzungsebene - mehrere Stummschaltflächen innerhalb derselben Sitzungsanzahl wie ein betroffener Stream. Verwenden Sie für das Gesamtstummschaltungsvolumen [Anzahl Stummschaltungen](mute-count.md).
+Die Metrik **Von Stummschaltung betroffene Streams** zählt Sitzungen, bei denen der Viewer Audio mindestens einmal stummgeschaltet hat. Bei der Metrik handelt es sich um einen booleschen Wert auf Sitzungsebene. In derselben Sitzungsanzahl können mehrere Stummschaltungen ausgeführt werden, während ein betroffener Stream gezählt wird. Verwenden Sie für das Gesamtstummschaltungsvolumen [Anzahl Stummschaltungen](mute-count.md).
 
 ## Berechnung dieser Metrik
 

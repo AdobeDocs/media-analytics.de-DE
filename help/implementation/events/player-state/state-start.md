@@ -3,10 +3,10 @@ title: Zustandsstart
 description: Signal, dass der Medienplayer in den Status „Getrackter Player“ übergegangen ist.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 7%
+source-wordcount: '217'
+ht-degree: 6%
 
 ---
 
@@ -79,7 +79,7 @@ val stateObject = Media.createStateObject(MediaConstants.PlayerState.FULLSCREEN)
 tracker.trackEvent(Media.Event.StateStart, stateObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Rufen Sie `sendMediaEvent` mit `eventType: "media.statesUpdate"` und dem Statusnamen in `statesStart` auf:
 
@@ -142,6 +142,10 @@ var stateObject = ADBMobile.media.createStateObject(ADBMobile.media.PlayerState.
 
 ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
 ```
+
+>[!TAB Roku 2.x]
+
+Player-Status-Tracking ist in der Roku 2.x-SDK nicht verfügbar. Verwenden Sie zum Nachverfolgen der Player-Status [Roku Edge SDK](/help/implementation/edge/roku.md).
 
 >[!TAB Media Collection API]
 

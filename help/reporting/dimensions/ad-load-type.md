@@ -3,7 +3,7 @@ title: Anzeigenladevorgänge
 description: Gibt die Art der Anzeigenauslastung an, die für jede Streaming-Mediensitzung verwendet wird.
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 7%
@@ -34,4 +34,4 @@ Der Anzeigenladungstyp wird vom Player beim Sitzungsstart festgelegt.
 
 ## Dimensionselemente
 
-Jedes Element ist die Zeichenfolge des Literal- und Ladetyps, die beim Sitzungsstart festgelegt wird. Die Werte sind nicht auf eine standardmäßige Auflistung beschränkt. Definieren Sie eine Taxonomie, die über Ihre Implementierungen hinweg konsistent ist, sodass Werte in Berichten vorhersehbar aggregiert werden können.
+Jedes Element ist die Zeichenfolge des Literal- und Ladetyps, die beim Sitzungsstart festgelegt wird. Die Werte sind nicht auf eine standardmäßige Auflistung beschränkt. Definieren Sie eine Taxonomie, die über Ihre Implementierungen hinweg konsistent ist, sodass sich Werte in Berichten vorhersehbar entwickeln.

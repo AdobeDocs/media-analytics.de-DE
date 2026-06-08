@@ -1,5 +1,5 @@
 ---
-title: Unterstützung benutzerspezifischer Metadaten
+title: Unterstützung benutzerdefinierter Metadaten der Mediensammlungs-API
 description: Erfahren Sie, wie Sie benutzerdefinierte Schlüssel-Wert-Paare für die Ereignisse sessionStart, chapterStart und adStart bereitstellen.
 uuid: df4109dd-9fca-4c33-a7d5-8e6eec257527
 exl-id: 672fa804-4a4f-4f06-b29b-b0aad27ca2f3
@@ -18,14 +18,14 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 449
-ht-degree: 7%
+source-wordcount: 435
+ht-degree: 5%
 
 ---
 
-# Unterstützung benutzerspezifischer Metadaten{#custom-metadata-support}
+# Unterstützung benutzerdefinierter Metadaten der Mediensammlungs-API
 
 Mit der Mediensammlungs-API können Sie benutzerdefinierte Schlüssel-Wert-Paare zusammen mit Standardparametern in `sessionStart`-, `adStart`- und `chapterStart` senden. Benutzerdefinierte Metadaten werden an **Adobe Analytics** weitergeleitet, wobei die entsprechenden Medienereignisse geschlossen werden.
 
@@ -80,7 +80,7 @@ Benutzerdefinierte Metadaten sind ein flaches **Objekt** (Schlüssel-Wert-Paare)
 
 ### Wichtige Benennungsanforderungen
 
-* Verwenden Sie das `media.`-Präfix nicht in benutzerdefinierten Metadatenschlüsseln. Es werden Standard-Medienfeldern zugeordnet und können diese in Analytics-Berichten überschreiben
+* Vermeiden Sie die Verwendung des `media.`-Präfixes in benutzerdefinierten Metadatenschlüsseln. Er wird Standardmedienfeldern zugeordnet und kann diese in Analytics-Berichten überschreiben
 * Das `a.`-Präfix ist für Adobe-Standardmetadaten reserviert und darf nicht verwendet werden
 
 ## Benutzerdefinierte Metadaten für Hauptinhalte
@@ -179,13 +179,6 @@ curl -X POST "https://{uri}/api/v1/sessions/{sid}/events" \
 * `sessionStart` Metadaten bleiben für die gesamte Sitzung erhalten. Für Aktualisierungen ist eine neue Sitzung erforderlich
 * Jedes `adStart`- und `chapterStart`-Ereignis kann unterschiedliche benutzerdefinierte Metadaten enthalten
 
-## Verwandte Dokumentation
-
-* [Unterstützung benutzerdefinierter Metadaten - XDM-Format](/help/implementation/edge/custom-metadata.md) - Senden benutzerdefinierter Metadaten über Experience Edge sowohl an Analytics als auch an AEP
-* [Adobe Analytics-Quell-Connector für Report Suite-Daten](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) — Importieren von Analytics-Daten in Adobe Experience Platform
-
-<!--
-* [Session endpoints](sessions.md) — Session lifecycle management
-* [Ad endpoints](ads.md) — Track advertising impressions
-* [Chapter endpoints](chapters.md) — Segment content into chapters
--->
+>[!MORELIKETHIS]
+>* [Unterstützung benutzerdefinierter Metadaten - XDM-Format](/help/implementation/edge/custom-metadata.md)
+>* [Adobe Analytics-Quell-Connector für Report Suite-Daten](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics)

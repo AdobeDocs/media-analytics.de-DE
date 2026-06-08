@@ -3,7 +3,7 @@ title: Einrichten von iOS für Streaming-Medien mit Tags
 description: Konfigurieren Sie die Streaming-Mediensammlung für iOS mit der Tag-Erweiterung "Adobe Streaming Media for Edge Network".
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 1%
@@ -23,9 +23,9 @@ Sie können die Streaming-Mediensammlung für Ihre iOS- oder tvOS-App über eine
 1. Öffnen Sie in der Datenerfassungs-UI Ihre Mobile-Eigenschaft und wählen Sie **[!UICONTROL Erweiterungen]** aus.
 1. Suchen Sie auf der **[!UICONTROL Katalog]** die Erweiterung **Adobe Streaming Media for Edge Network** und wählen Sie **[!UICONTROL Installieren]** aus.
 1. Legen Sie Folgendes fest und speichern Sie dann:
-   * **[!UICONTROL channel]** - der bei jeder Sitzung gemeldete Kanalname.
-   * **[!UICONTROL Player-Name]** - Der Name des verwendeten Medien-Players.
-   * **[!UICONTROL Anwendungsversion]** - die Version Ihrer Player-Anwendung.
+   * **[!UICONTROL channel]**: der bei jeder Sitzung gemeldete Kanalname.
+   * **[!UICONTROL Player-Name]**: Der Name des verwendeten Medien-Players.
+   * **[!UICONTROL Anwendungsversion]**: die Version Ihrer Player-Anwendung.
 1. Veröffentlichen Sie Ihre Änderungen, fügen Sie dann die `AEPCore`-, `AEPEdge`-, `AEPEdgeIdentity`- und `AEPEdgeMedia` zu Ihrer App hinzu und registrieren Sie sie bei Mobile Core.
 
 ## Medien-Events tracken

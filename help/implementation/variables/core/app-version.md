@@ -3,9 +3,9 @@ title: Anwendungsversion
 description: Konfigurieren Sie die Versionszeichenfolge Ihrer Media Player-Anwendung.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '288'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ val config: Map<String, Any> = mapOf(
 MobileCore.updateConfiguration(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Legen Sie die App-Version in der SDK-Konfiguration mithilfe von `ADB_CONSTANTS.CONFIGURATION.MEDIA_APP_VERSION` fest:
 
@@ -149,6 +149,16 @@ var ADBMobileConfig = {
     "sdkVersion": "2.1.0"
   }
 };
+```
+
+>[!TAB Roku 2.x]
+
+`sdkVersion` Sie im `mediaHeartbeat` Abschnitt von `ADBMobileConfig.json`. In diesem Feld wird die Version der Player-Anwendung erfasst, nicht die SDK-Bibliotheksversion von Roku 2.x:
+
+```json
+"mediaHeartbeat": {
+  "sdkVersion": "2.1.0"
+}
 ```
 
 >[!TAB Media Collection API]

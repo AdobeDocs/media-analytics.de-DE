@@ -3,10 +3,10 @@ title: Start der Pufferung
 description: Signal, dass der Medienplayer einen Pufferzustand erreicht hat.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 8%
+source-wordcount: '196'
+ht-degree: 7%
 
 ---
 
@@ -68,7 +68,7 @@ tracker.trackEvent(Media.Event.BufferStart, null, null)
 tracker.trackEvent(Media.Event.BufferComplete, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `sendMediaEvent` mit `eventType: "media.bufferStart"`:
 
@@ -128,6 +128,20 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferStart);
 
 // Buffer ends
 ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferComplete);
+```
+
+>[!TAB Roku 2.x]
+
+Rufen Sie `mediaTrackEvent` mit `MEDIA_BUFFER_START` auf, wenn der Player in einen Pufferzustand wechselt, und `MEDIA_BUFFER_COMPLETE`, wenn er beendet wird:
+
+```brightscript
+adb = ADBMobile()
+
+' Buffer starts
+adb.mediaTrackEvent(adb.MEDIA_BUFFER_START)
+
+' Buffer ends
+adb.mediaTrackEvent(adb.MEDIA_BUFFER_COMPLETE)
 ```
 
 >[!TAB Media Collection API]

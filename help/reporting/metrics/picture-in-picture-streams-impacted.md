@@ -3,7 +3,7 @@ title: Von Bild in Bild betroffene Ströme
 description: Zählt Sitzungen, in denen der Betrachter mindestens einmal Bild-in-Bild eingegeben hat.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 7%
@@ -19,7 +19,7 @@ ht-degree: 7%
 
 >[!ENDSHADEBOX]
 
-Die Metrik **Von Bild in Bild betroffene Streams** zählt Sitzungen, in denen der Betrachter mindestens einmal an der Bild-in-Bild-Wiedergabe teilgenommen hat. Bei der Metrik handelt es sich um einen booleschen Wert auf Sitzungsebene - mehrere Bild-in-Bild-Einträge innerhalb derselben Sitzungsanzahl wie ein betroffener Stream. Verwenden Sie für die Gesamteingabemenge „Bild-in-Bild[&#x200B; „Bild-in-Bild-Anzahl](picture-in-picture-count.md).
+Die Metrik **Von Bild in Bild betroffene Streams** zählt Sitzungen, in denen der Betrachter mindestens einmal an der Bild-in-Bild-Wiedergabe teilgenommen hat. Bei der Metrik handelt es sich um einen booleschen Wert auf Sitzungsebene. Es werden mehrere Bild-in-Bild-Einträge innerhalb derselben Sitzung gezählt, wie ein betroffener Stream. Verwenden Sie für die Gesamteingabemenge „Bild-in-Bild[&#x200B; „Bild-in-Bild-Anzahl](picture-in-picture-count.md).
 
 ## Berechnung dieser Metrik
 

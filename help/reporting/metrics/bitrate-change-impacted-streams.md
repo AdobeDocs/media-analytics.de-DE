@@ -3,7 +3,7 @@ title: Von Bitratenänderung betroffene Streams
 description: Zählt Sitzungen, in denen mindestens eine Bitratenänderung aufgetreten ist.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # Von Bitratenänderung betroffene Streams
 
-Die Metrik **Bitratenänderung wirkt sich auf Streams aus** zählt Sitzungen, in denen mindestens eine Bitratenänderung aufgetreten ist. Bei der Metrik handelt es sich um einen booleschen Wert auf Sitzungsebene - mehrere Bitratenänderungen innerhalb derselben Sitzungsanzahl wie ein betroffener Stream. Verwenden Sie für das gesamte Bitratenänderungsvolumen [Bitratenänderungen](/help/reporting/dimensions/bitrate-changes.md).
+Die Metrik **Bitratenänderung wirkt sich auf Streams aus** zählt Sitzungen, in denen mindestens eine Bitratenänderung aufgetreten ist. Bei der Metrik handelt es sich um einen booleschen Wert auf Sitzungsebene. Mehrere Bitratenänderungen innerhalb derselben Sitzung zählen als ein betroffener Stream. Verwenden Sie für das gesamte Bitratenänderungsvolumen [Bitratenänderungen](/help/reporting/dimensions/bitrate-changes.md).
 
 ## Berechnung dieser Metrik
 

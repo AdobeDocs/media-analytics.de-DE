@@ -3,7 +3,7 @@ title: Einrichten der Tag-Erweiterung „Web SDK" für Streaming-Medien
 description: Konfigurieren Sie die Streaming-Mediensammlung in der Tag-Erweiterung "Adobe Experience Platform Web SDK".
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -23,10 +23,10 @@ Mit der Tag-Erweiterung &quot;Adobe Experience Platform Web SDK&quot; können Si
 1. Öffnen Sie in der Datenerfassungs-UI Ihre Web-Eigenschaft und wählen Sie **[!UICONTROL Erweiterungen]** aus.
 1. Wählen Sie in der installierten Erweiterung **Adobe Experience Platform Web SDK** die Option **[!UICONTROL Konfigurieren]**.
 1. Erweitern Sie den **[!UICONTROL Streaming Media]** und legen Sie Folgendes fest:
-   * **[!UICONTROL channel]** - der bei jeder Sitzung gemeldete Kanalname.
-   * **[!UICONTROL Player-Name]** - Der Name des verwendeten Medien-Players.
-   * **[!UICONTROL Anwendungsversion]** - die Version Ihrer Player-Anwendung.
-   * **[!UICONTROL Haupt-Ping]** Intervall und **[!UICONTROL Anzeigen-Ping-Intervall]** - die Ping-Kadenz (in Sekunden) für Hauptinhalte und Anzeigen.
+   * **[!UICONTROL channel]**: Der bei jeder Sitzung gemeldete Kanalname.
+   * **[!UICONTROL Player-Name]**: Der Name des verwendeten Medien-Players.
+   * **[!UICONTROL Anwendungsversion]**: Die Version Ihrer Player-Anwendung.
+   * **[!UICONTROL Haupt-Ping]** Intervall und **[!UICONTROL Anzeigen-Ping-Intervall]**: Die Ping-Kadenz (in Sekunden) für Hauptinhalte und Anzeigen.
 1. Speichern Sie die Erweiterungskonfiguration und veröffentlichen Sie Ihre Änderungen.
 
 ## Medien-Events tracken

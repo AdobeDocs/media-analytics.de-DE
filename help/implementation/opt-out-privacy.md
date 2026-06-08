@@ -18,9 +18,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: c25d3cd6248f547e5a32a080eb89c5ad8f58c474
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 751
+source-wordcount: 798
 ht-degree: 3%
 
 ---
@@ -99,15 +99,15 @@ MobileCore.setPrivacyStatus(MobilePrivacyStatus.OPT_IN)
 
 Weitere Informationen finden Sie unter [Datenschutz und DSGVO](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#setprivacystatus) in der Dokumentation zu AEP Mobile SDK.
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
-Die AEP Roku-SDK verwendet `setConsent()` mit dem Einverständnisstandard Adobe 2.0. Wenn Sie `collect.val` auf `"n"` setzen, wird die Erfassung aller Daten, einschließlich Streaming-Medienereignissen, sofort gestoppt.
+Roku Edge SDK verwendet `setConsent()` mit dem Einverständnisstandard Adobe 2.0. Wenn Sie `collect.val` auf `"n"` setzen, wird die Erfassung aller Daten, einschließlich Streaming-Medienereignissen, sofort gestoppt.
 
 Einverständniswerte:
 
-* `"y"` — Opt-in (Datenerfassung zulässig)
-* `"n"` — Opt-out (Datenerfassung unterdrückt)
-* `"p"` — Ausstehend (wartet auf Benutzerentscheidung; bis zur Lösung werden keine Daten erfasst)
+* `"y"`: Opt-in (Datenerfassung zulässig)
+* `"n"`: Opt-out (Datenerfassung unterdrückt)
+* `"p"`: Ausstehend (wartet auf Benutzerentscheidung; bis zur Lösung werden keine Daten erfasst)
 
 ```brightscript
 currentDate = CreateObject("roDateTime")
@@ -129,7 +129,7 @@ m.aepSdk.setConsent(collectConsentNo)
 
 Um das Tracking wiederherzustellen, setzen Sie `collect.val` auf `"y"` und rufen Sie `setConsent()` erneut auf.
 
-Sie können bei der SDK-Initialisierung auch einen standardmäßigen Einverständniswert festlegen, indem Sie `updateConfiguration()` mit dem `ADB_CONSTANTS.CONFIGURATION.CONSENT_DEFAULT` Schlüssel verwenden. Weitere Informationen finden Sie in der Dokumentation zu [AEP Roku SDK](https://github.com/adobe/aepsdk-roku).
+Sie können bei der SDK-Initialisierung auch einen standardmäßigen Einverständniswert festlegen, indem Sie `updateConfiguration()` mit dem `ADB_CONSTANTS.CONFIGURATION.CONSENT_DEFAULT` Schlüssel verwenden. Weitere Informationen finden Sie in der [Dokumentation zu Edge SDK](https://github.com/adobe/aepsdk-roku).
 
 >[!TAB Media Edge-API]
 
@@ -196,6 +196,30 @@ var ADBMobileConfig = {
     "privacyDefault": "optedout"
   }
 };
+```
+
+>[!TAB Roku 2.x]
+
+Roku 2.x SDK respektiert den Datenschutzstatus, der mithilfe von `setPrivacyStatus` festgelegt wurde. Wenn Sie den Status auf `PRIVACY_STATUS_OPT_OUT` setzen, wird die gesamte Datenerfassung unterdrückt.
+
+```brightscript
+adb = ADBMobile()
+adb.setPrivacyStatus(adb.PRIVACY_STATUS_OPT_OUT)
+```
+
+Um das Tracking wiederherzustellen, setzen Sie den Status zurück auf „Angemeldet“:
+
+```brightscript
+adb = ADBMobile()
+adb.setPrivacyStatus(adb.PRIVACY_STATUS_OPT_IN)
+```
+
+Sie können auch den standardmäßigen Datenschutzstatus bei der SDK-Initialisierung in Ihrer `ADBMobileConfig.json` festlegen:
+
+```json
+"analytics": {
+  "privacyDefault": "optedout"
+}
 ```
 
 >[!TAB Media Collection API]

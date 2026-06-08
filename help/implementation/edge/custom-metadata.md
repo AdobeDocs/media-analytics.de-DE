@@ -3,9 +3,9 @@ title: Unterstützung benutzerdefinierter Metadaten - XDM-Format
 description: Erfahren Sie, wie Sie benutzerdefinierte Metadaten mit Medien-Tracking-Ereignissen im XDM-Format von Experience Edge senden.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '754'
 ht-degree: 2%
 
 ---
@@ -113,7 +113,7 @@ Im Gegensatz zu `xdm.mediaCollection.customMetadata`, das ein **Array von Name-W
 ### Benennungskonventionen
 
 * **XDM-Format** Präfix mit Mandanten-Namespace unter Verwendung eines Unterstrichs. Sie können auch Strukturen in Ihrer benutzerdefinierten Feldergruppe des Mandanten erstellen, z. B. `_<tenant>.<struct_name>.<field_name>`.
-* **`_data`:** Felder werden unter `_data.__adobe.analytics.contextData` platziert. Für den Feldnamen ist kein Unterstrichpräfix erforderlich (z. B. `debugFlag`)
+* **`_data`:** Felder werden unter `_data.__adobe.analytics.contextData` platziert. Für den Feldnamen ist kein Unterstrichpräfix erforderlich (z. B. `debugFlag`).
 
 ## Benutzerdefinierte Metadaten für Hauptinhalte
 
@@ -250,7 +250,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterStart?configId={datastrea
 
 ## Verwenden des `_data`-Objekts (nur Analytics-Metadaten)
 
-Verwenden Sie das `_data`-Objekt, wenn Sie Metadaten in Adobe Analytics benötigen **die nicht** in AEP-Datensätzen gespeichert werden sollen, z. B. temporäre Flags, Debugging-Variablen oder Analytics-spezifische Verarbeitungshinweise.
+Verwenden Sie das `_data`-Objekt, wenn Sie Metadaten in Adobe Analytics benötigen, **nicht** AEP-Datensatz gespeichert werden sollen. Beispiele sind temporäre Flags, Debugging-Variablen oder Analytics-spezifische Verarbeitungshinweise.
 
 &lt;InlineAlert variant="warning" slots="text" />
 
@@ -335,12 +335,6 @@ In diesem Beispiel:
 
 >[!MORELIKETHIS]
 >
->* [Unterstützung benutzerdefinierter Metadaten](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md). — MC API (JSON-Format)
->* [Datentyp „Media Collection Details](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) — XDM-Schemareferenz
->* [Datenvariablenzuordnung für die Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/data-var-mapping) — Analytics-Kontextdatenzuordnung für XDM-Felder
-
-<!--
-* [Session endpoints](sessions.md) — Session lifecycle management
-* [Ad endpoints](ads.md) — Track advertising impressions
-* [Chapter endpoints](chapters.md) — Segment content into chapters
--->
+>* [Unterstützung benutzerdefinierter Metadaten für die Mediensammlungs-API](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
+>* [Datentyp „Media Collection Details“](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details)
+>* [Datenvariablenzuordnung für die Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/data-var-mapping)

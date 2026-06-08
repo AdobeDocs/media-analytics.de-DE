@@ -3,9 +3,9 @@ title: Element-ID
 description: Legen Sie die Asset-ID fest, eine stabile Branchenkennung für das Medien-Asset, wie z. B. eine EIDR- oder TMS/Gracenote-ID.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '295'
 ht-degree: 8%
 
 ---
@@ -77,7 +77,7 @@ metadata[MediaConstants.VideoMetadataKeys.ASSET_ID] = "89745363"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Verwenden Sie `createMediaSession`, um `assetID` in `sessionDetails` festzulegen:
 
@@ -148,6 +148,21 @@ var standardMetadata = {};
 standardMetadata[ADBMobile.media.VideoMetadataKeys.ASSET_ID] = "89745363";
 mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Verwenden Sie `MEDIA_VideoMetadataKeyASSET_ID` , um die Asset-ID in den Standard-Metadaten des Medienobjekts festzulegen, bevor Sie `mediaTrackSessionStart` aufrufen:
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_VideoMetadataKeyASSET_ID] = "89745363"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB Media Collection API]

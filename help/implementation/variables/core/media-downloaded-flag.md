@@ -3,10 +3,10 @@ title: Markierung für heruntergeladene Medien
 description: Markieren Sie eine Sitzung als heruntergeladene Offline-Wiedergabe, damit sie getrennt von gestreamten Sitzungen gemeldet wird.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 6%
+source-wordcount: '304'
+ht-degree: 5%
 
 ---
 
@@ -85,7 +85,7 @@ config[MediaConstants.TrackerConfig.DOWNLOADED_CONTENT] = true
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Legen Sie `isDownloaded` beim Aufrufen von `createMediaSession` auf `true` in `xdm.mediaCollection.sessionDetails` fest:
 
@@ -176,6 +176,10 @@ var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
 mediaInfo[ADBMobile.media.MediaObjectKey.MediaDownloaded] = true;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
 ```
+
+>[!TAB Roku 2.x]
+
+Das Tracking heruntergeladener Inhalte ist in der Roku 2.x-SDK nicht verfügbar. Verwenden Sie zum Melden heruntergeladener Medienwiedergaben die [Roku Edge SDK](/help/implementation/edge/roku.md) oder die [Mediensammlungs-API](/help/implementation/analytics-only/media-collection-api.md).
 
 >[!TAB Media Collection API]
 

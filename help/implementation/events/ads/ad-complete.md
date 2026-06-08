@@ -3,10 +3,10 @@ title: Hinzufügen abgeschlossen
 description: Signal, dass die Wiedergabe einer einzelnen Anzeige abgeschlossen ist.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 9%
+source-wordcount: '173'
+ht-degree: 8%
 
 ---
 
@@ -58,7 +58,7 @@ Rufen Sie `trackEvent` mit dem `AdComplete` Ereignistyp auf.
 tracker.trackEvent(Media.Event.AdComplete, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `sendMediaEvent` mit `eventType: "media.adComplete"`:
 
@@ -114,6 +114,15 @@ Rufen Sie `trackEvent` mit dem `AdComplete` Ereignistyp auf:
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdComplete);
+```
+
+>[!TAB Roku 2.x]
+
+Rufen Sie `mediaTrackEvent` mit dem `MEDIA_AD_COMPLETE` Ereignistyp auf:
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_AD_COMPLETE)
 ```
 
 >[!TAB Media Collection API]
