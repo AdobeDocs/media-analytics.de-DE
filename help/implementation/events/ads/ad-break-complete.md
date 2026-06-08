@@ -3,9 +3,9 @@ title: Werbeunterbrechung abgeschlossen
 description: Signal, dass alle Anzeigen in einer Werbeunterbrechung beendet sind.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '165'
 ht-degree: 9%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 9%
 
 # Werbeunterbrechung abgeschlossen
 
-Das Ereignis „Anzeigenunterbrechung abgeschlossen“ signalisiert, dass alle Anzeigen in einer Anzeigenunterbrechung abgeschlossen (entweder abgeschlossen oder übersprungen) sind. Dadurch wird die durch „Start der Werbeunterbrechung[&#x200B; geöffnete Werbeunterbrechung &#x200B;](ad-break-start.md).
+Das Ereignis „Anzeigenunterbrechung abgeschlossen“ signalisiert, dass alle Anzeigen in einer Anzeigenunterbrechung abgeschlossen (entweder abgeschlossen oder übersprungen) sind. Dadurch wird die durch „Start der Werbeunterbrechung[ geöffnete Werbeunterbrechung ](ad-break-start.md).
 
 * **Voraussetzungen**: [Sitzungsstart](../session/session-start.md), [Start der Werbeunterbrechung](ad-break-start.md)
 * **Zugeordnete Metrik**: Keine
@@ -58,7 +58,7 @@ Rufen Sie `trackEvent` mit dem `AdBreakComplete` Ereignistyp auf.
 tracker.trackEvent(Media.Event.AdBreakComplete, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `sendMediaEvent` mit `eventType: "media.adBreakComplete"`:
 
@@ -114,6 +114,15 @@ Rufen Sie `trackEvent` mit dem `AdBreakComplete` Ereignistyp auf:
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakComplete);
+```
+
+>[!TAB Roku 2.x]
+
+Rufen Sie `mediaTrackEvent` mit dem `MEDIA_AD_BREAK_COMPLETE` Ereignistyp auf:
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_COMPLETE)
 ```
 
 >[!TAB Media Collection API]

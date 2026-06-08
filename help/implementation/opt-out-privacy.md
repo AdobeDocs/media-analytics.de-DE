@@ -6,21 +6,13 @@ exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/eF09wxu2mIUoFph5EdHz5y0XtcpXHHLINqSGLQEMoHU
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: c25d3cd6248f547e5a32a080eb89c5ad8f58c474
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 751
+source-wordcount: 798
 ht-degree: 3%
 
 ---
@@ -65,7 +57,7 @@ Einverständniswerte:
 
 Um das Tracking wiederherzustellen, rufen Sie `setConsent` erneut mit `"y"` als `collect.val` auf.
 
-Weitere Informationen [&#x200B; anderen Formaten, einschließlich IAB TCF 2.0, finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/commands/setconsent) Befehl „setConsent“ in der Web SDK-Dokumentation.
+Weitere Informationen [ anderen Formaten, einschließlich IAB TCF 2.0, finden Sie ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/setconsent) Befehl „setConsent“ in der Web SDK-Dokumentation.
 
 >[!TAB iOS]
 
@@ -99,15 +91,15 @@ MobileCore.setPrivacyStatus(MobilePrivacyStatus.OPT_IN)
 
 Weitere Informationen finden Sie unter [Datenschutz und DSGVO](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#setprivacystatus) in der Dokumentation zu AEP Mobile SDK.
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
-Die AEP Roku-SDK verwendet `setConsent()` mit dem Einverständnisstandard Adobe 2.0. Wenn Sie `collect.val` auf `"n"` setzen, wird die Erfassung aller Daten, einschließlich Streaming-Medienereignissen, sofort gestoppt.
+Roku Edge SDK verwendet `setConsent()` mit dem Einverständnisstandard Adobe 2.0. Wenn Sie `collect.val` auf `"n"` setzen, wird die Erfassung aller Daten, einschließlich Streaming-Medienereignissen, sofort gestoppt.
 
 Einverständniswerte:
 
-* `"y"` — Opt-in (Datenerfassung zulässig)
-* `"n"` — Opt-out (Datenerfassung unterdrückt)
-* `"p"` — Ausstehend (wartet auf Benutzerentscheidung; bis zur Lösung werden keine Daten erfasst)
+* `"y"`: Opt-in (Datenerfassung zulässig)
+* `"n"`: Opt-out (Datenerfassung unterdrückt)
+* `"p"`: Ausstehend (wartet auf Benutzerentscheidung; bis zur Lösung werden keine Daten erfasst)
 
 ```brightscript
 currentDate = CreateObject("roDateTime")
@@ -129,7 +121,7 @@ m.aepSdk.setConsent(collectConsentNo)
 
 Um das Tracking wiederherzustellen, setzen Sie `collect.val` auf `"y"` und rufen Sie `setConsent()` erneut auf.
 
-Sie können bei der SDK-Initialisierung auch einen standardmäßigen Einverständniswert festlegen, indem Sie `updateConfiguration()` mit dem `ADB_CONSTANTS.CONFIGURATION.CONSENT_DEFAULT` Schlüssel verwenden. Weitere Informationen finden Sie in der Dokumentation zu [AEP Roku SDK](https://github.com/adobe/aepsdk-roku).
+Sie können bei der SDK-Initialisierung auch einen standardmäßigen Einverständniswert festlegen, indem Sie `updateConfiguration()` mit dem `ADB_CONSTANTS.CONFIGURATION.CONSENT_DEFAULT` Schlüssel verwenden. Weitere Informationen finden Sie in der [Dokumentation zu Edge SDK](https://github.com/adobe/aepsdk-roku).
 
 >[!TAB Media Edge-API]
 
@@ -196,6 +188,30 @@ var ADBMobileConfig = {
     "privacyDefault": "optedout"
   }
 };
+```
+
+>[!TAB Roku 2.x]
+
+Roku 2.x SDK respektiert den Datenschutzstatus, der mithilfe von `setPrivacyStatus` festgelegt wurde. Wenn Sie den Status auf `PRIVACY_STATUS_OPT_OUT` setzen, wird die gesamte Datenerfassung unterdrückt.
+
+```brightscript
+adb = ADBMobile()
+adb.setPrivacyStatus(adb.PRIVACY_STATUS_OPT_OUT)
+```
+
+Um das Tracking wiederherzustellen, setzen Sie den Status zurück auf „Angemeldet“:
+
+```brightscript
+adb = ADBMobile()
+adb.setPrivacyStatus(adb.PRIVACY_STATUS_OPT_IN)
+```
+
+Sie können auch den standardmäßigen Datenschutzstatus bei der SDK-Initialisierung in Ihrer `ADBMobileConfig.json` festlegen:
+
+```json
+"analytics": {
+  "privacyDefault": "optedout"
+}
 ```
 
 >[!TAB Media Collection API]

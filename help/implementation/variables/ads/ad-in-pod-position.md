@@ -3,9 +3,9 @@ title: Anzeigenposition im Pod
 description: Legen Sie die Indexposition der Anzeige innerhalb der übergeordneten Anzeigenunterbrechung fest. Die erste Anzeige hat den Index 0.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '257'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Anzeige in Pod-Position**&#x200B;behandelt. Siehe [Anzeige in Pod-Position](/help/reporting/dimensions/ad-in-pod-position.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Anzeige in Pod-Position**behandelt. Siehe [Anzeige in Pod-Position](/help/reporting/dimensions/ad-in-pod-position.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ Die Variable „Anzeige im Pod“ ist die nullindizierte Position der Anzeige in
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.podPosition` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.ad.podPosition` |
 | **Erforderlich** | Ja |
 | **Gesendet mit** | [Anzeigenstart](/help/implementation/events/ads/ad-start.md), Anzeigenschluss |
@@ -79,7 +79,7 @@ val adObject = Media.createAdObject("Ford F-150",
 tracker.trackEvent(Media.Event.AdStart, adObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Legen Sie `podPosition` in `xdm.mediaCollection.advertisingDetails` fest, wenn Sie `sendMediaEvent` für `media.adStart` aufrufen:
 
@@ -159,6 +159,17 @@ var adInfo = ADBMobile.media.createAdObject(
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
 ```
 
+>[!TAB Roku 2.x]
+
+Übergeben Sie die Position als drittes Argument an `adb_media_init_adinfo`. Die Anzeigenposition innerhalb des Pods ist 1-basiert:
+
+```brightscript
+adb = ADBMobile()
+adInfo = adb_media_init_adinfo("Ford F-150", "ad-2125", 1, 30.0)  ' name, id, position, length
+
+adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
+```
+
 >[!TAB Media Collection API]
 
 `media.ad.podPosition` in das `params` einschließen:
@@ -173,6 +184,6 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]

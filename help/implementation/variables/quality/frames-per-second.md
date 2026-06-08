@@ -3,9 +3,9 @@ title: Frames pro Sekunde
 description: Legen Sie die aktuelle Framerate für das QoE-Objekt so fest, dass das Backend über einen Framerate-Kontext für Qualitätsberichte verfügt.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '272'
 ht-degree: 7%
 
 ---
@@ -18,7 +18,7 @@ Die Variable „Frames pro Sekunde“ ist die aktuelle Framerate des Streams. Le
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | Keine (Adobe Analytics weist keinen reservierten Kontextdatenschlüssel für die Framerate zu) |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager-Eigenschaft** | nicht angegeben |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | Qualitätsereignisse ([Bitratenänderung](/help/implementation/events/playback/bitrate-change.md), [Pufferstart](/help/implementation/events/playback/buffer-start.md), [Fehler](/help/implementation/events/error.md)), Sitzungsschluss |
@@ -73,7 +73,7 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `framesPerSecond` in `xdm.mediaCollection.qoeDataDetails` festlegen, wenn `sendMediaEvent` aufgerufen wird:
 
@@ -142,6 +142,17 @@ var qosInfo = ADBMobile.media.createQoSObject(
 ADBMobile.media.updateQoSObject(qosInfo);
 ```
 
+>[!TAB Roku 2.x]
+
+Übergeben Sie die Framerate als drittes Argument (`fps`), um den Tracker mit `mediaUpdateQoS` zu `adb_media_init_qosinfo` und zu aktualisieren:
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
+```
+
 >[!TAB Media Collection API]
 
 `media.qoe.framesPerSecond` in das `params` einschließen:
@@ -156,6 +167,6 @@ ADBMobile.media.updateQoSObject(qosInfo);
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]

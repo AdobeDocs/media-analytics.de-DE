@@ -3,17 +3,17 @@ title: Sitzung abgeschlossen
 description: Signal, dass der Betrachter das Ende des Hauptinhalts erreicht hat.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 9%
+source-wordcount: '179'
+ht-degree: 8%
 
 ---
 
 
 # Sitzung abgeschlossen
 
-Das Ereignis „Session Complete“ signalisiert, dass der Viewer das Ende des Hauptinhalts erreicht hat. Die Sitzung wird nicht sofort geschlossen. Die Sitzung bleibt geöffnet, bis sie von selbst abläuft. Wenn Sie die Sitzung sofort schließen möchten, rufen Sie stattdessen &quot;[&quot; &#x200B;](session-end.md).
+Das Ereignis „Session Complete“ signalisiert, dass der Viewer das Ende des Hauptinhalts erreicht hat. Die Sitzung wird nicht sofort geschlossen. Die Sitzung bleibt geöffnet, bis sie von selbst abläuft. Wenn Sie die Sitzung sofort schließen möchten, rufen Sie stattdessen &quot;[&quot; ](session-end.md).
 
 * **Voraussetzungen**: [Sitzungsstart](session-start.md)
 * **Zugeordnete Metrik**: [[!UICONTROL Inhalt abgeschlossen]](/help/reporting/metrics/content-completes.md)
@@ -54,7 +54,7 @@ Rufen Sie `trackComplete` auf, wenn der Medien-Player das Ende des Inhalts errei
 tracker.trackComplete()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `sendMediaEvent` mit `eventType: "media.sessionComplete"`:
 
@@ -110,6 +110,14 @@ Rufen Sie `trackComplete` auf, wenn der Medien-Player das Ende des Inhalts errei
 
 ```javascript
 ADBMobile.media.trackComplete();
+```
+
+>[!TAB Roku 2.x]
+
+Rufen Sie `mediaTrackComplete` auf, wenn der Medien-Player das Ende des Inhalts erreicht:
+
+```brightscript
+ADBMobile().mediaTrackComplete()
 ```
 
 >[!TAB Media Collection API]

@@ -3,10 +3,10 @@ title: Medien-Feed-Typ
 description: Identifizieren Sie die Art des Broadcast-Feeds (z. B. East-HD oder West-SD) für Inhalte, die je nach Region oder Qualität variieren.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 8%
+source-wordcount: '261'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Medien-Feed-Typ**&#x200B;behandelt. Siehe [Medien-Feed-](/help/reporting/dimensions/media-feed-type.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Medien-Feed-Typ**behandelt. Siehe [Medien-Feed-](/help/reporting/dimensions/media-feed-type.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ Die Variable vom Typ Medien-Feed identifiziert den Broadcast-Feed (z. B. `"East-
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.feed` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.feed`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.feed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.feed` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |
@@ -73,7 +73,7 @@ metadata[MediaConstants.VideoMetadataKeys.MEDIA_FEED] = "East-HD"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Verwenden Sie `createMediaSession`, um `feed` in `sessionDetails` festzulegen:
 
@@ -146,6 +146,21 @@ mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetada
 ADBMobile.media.trackSessionStart(mediaInfo, null);
 ```
 
+>[!TAB Roku 2.x]
+
+Verwenden Sie `MEDIA_VideoMetadataKeyFEED`, um den Medien-Feed-Typ in den Standardmetadaten des Medienobjekts festzulegen, bevor Sie `mediaTrackSessionStart` aufrufen:
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_VideoMetadataKeyFEED] = "East-HD"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
+```
+
 >[!TAB Media Collection API]
 
 `media.feed` in das `params` einschließen:
@@ -160,6 +175,6 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
 
 >[!ENDTABS]

@@ -3,9 +3,9 @@ title: Kapitelübersprung
 description: Signal, dass der Betrachter ein Kapitel übersprungen hat.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '148'
 ht-degree: 10%
 
 ---
@@ -54,7 +54,7 @@ Rufen Sie `trackEvent` mit dem `ChapterSkip` Ereignistyp auf.
 tracker.trackEvent(Media.Event.ChapterSkip, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `sendMediaEvent` mit `eventType: "media.chapterSkip"`:
 
@@ -110,6 +110,15 @@ Rufen Sie `trackEvent` mit dem `ChapterSkip` Ereignistyp auf:
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterSkip);
+```
+
+>[!TAB Roku 2.x]
+
+Rufen Sie `mediaTrackEvent` mit dem `MEDIA_CHAPTER_SKIP` Ereignistyp auf:
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_CHAPTER_SKIP)
 ```
 
 >[!TAB Media Collection API]

@@ -3,10 +3,10 @@ title: Kapitel abgeschlossen
 description: Signal, dass die Wiedergabe eines Kapitelsegments abgeschlossen ist.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 11%
+source-wordcount: '141'
+ht-degree: 10%
 
 ---
 
@@ -54,7 +54,7 @@ Rufen Sie `trackEvent` mit dem `ChapterComplete` Ereignistyp auf.
 tracker.trackEvent(Media.Event.ChapterComplete, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `sendMediaEvent` mit `eventType: "media.chapterComplete"`:
 
@@ -110,6 +110,15 @@ Rufen Sie `trackEvent` mit dem `ChapterComplete` Ereignistyp auf:
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterComplete);
+```
+
+>[!TAB Roku 2.x]
+
+Rufen Sie `mediaTrackEvent` mit dem `MEDIA_CHAPTER_COMPLETE` Ereignistyp auf:
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_CHAPTER_COMPLETE)
 ```
 
 >[!TAB Media Collection API]

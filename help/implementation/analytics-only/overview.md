@@ -3,9 +3,9 @@ title: Nur Analytics-Implementierung - Übersicht
 description: Voraussetzungen und Implementierungsmethoden für das Add-on Adobe Analytics for Streaming Media, das für reine Analytics-Implementierungen verwendet wird.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '234'
 ht-degree: 5%
 
 ---
@@ -32,6 +32,7 @@ Jede Seite behandelt die für Streaming-Medien spezifische Einrichtung. Der Code
 |---|---|---|
 | Web (JavaScript) | [JavaScript](javascript.md) | [Media Analytics-Tag-Erweiterung](javascript-tags.md) |
 | Chromecast | [Chromecast](chromecast.md) | — |
+| Roku | [Roku 2.x](roku-2x.md) | — |
 | API | [Media Collection API](media-collection-api.md) | — |
 
 ## Nächster Schritt

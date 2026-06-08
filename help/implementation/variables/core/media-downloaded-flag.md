@@ -3,10 +3,10 @@ title: Markierung für heruntergeladene Medien
 description: Markieren Sie eine Sitzung als heruntergeladene Offline-Wiedergabe, damit sie getrennt von gestreamten Sitzungen gemeldet wird.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 6%
+source-wordcount: '304'
+ht-degree: 5%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Media Downloaded Flag**&#x200B;behandelt. Siehe [Medien heruntergeladen](/help/reporting/dimensions/media-downloaded-flag.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Media Downloaded Flag**behandelt. Siehe [Medien heruntergeladen](/help/reporting/dimensions/media-downloaded-flag.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ Die Markierung für heruntergeladene Medien gibt an, dass eine Sitzung die Wiede
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.downloaded` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.downloaded` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |
@@ -85,7 +85,7 @@ config[MediaConstants.TrackerConfig.DOWNLOADED_CONTENT] = true
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Legen Sie `isDownloaded` beim Aufrufen von `createMediaSession` auf `true` in `xdm.mediaCollection.sessionDetails` fest:
 
@@ -177,6 +177,10 @@ mediaInfo[ADBMobile.media.MediaObjectKey.MediaDownloaded] = true;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
 ```
 
+>[!TAB Roku 2.x]
+
+Das Tracking heruntergeladener Inhalte ist in der Roku 2.x-SDK nicht verfügbar. Verwenden Sie zum Melden heruntergeladener Medienwiedergaben die [Roku Edge SDK](/help/implementation/edge/roku.md) oder die [Mediensammlungs-API](/help/implementation/analytics-only/media-collection-api.md).
+
 >[!TAB Media Collection API]
 
 Fügen Sie `media.downloaded` in das `params` Ihrer `sessionStart` POST-Anfrage ein:
@@ -191,6 +195,6 @@ Fügen Sie `media.downloaded` in das `params` Ihrer `sessionStart` POST-Anfrage 
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
 
 >[!ENDTABS]

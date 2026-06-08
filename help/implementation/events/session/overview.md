@@ -6,25 +6,15 @@ exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/cHrkCe0mQm8GlHwLVgf4cjF0VM8B1r3CRt39I2LB6kk
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
-  - id: e992d880-33bc-4949-a648-aa7d410276cd
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: e7d92df1-c5ba-4e93-85df-f83171b889beid: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 803
-ht-degree: 2%
+source-wordcount: 807
+ht-degree: 3%
 
 ---
 
@@ -51,7 +41,7 @@ Core-Wiedergabe-Tracking umfasst das Laden, Starten, Pause, Fortsetzen, Abschlie
 ## Implementierungsschritte
 
 1. **Ermitteln Sie, wann der Benutzer die Wiedergabe** hat (der Benutzer klickt auf Wiedergabe oder die automatische Wiedergabe löst aus). Erstellen Sie ein Medienobjekt mit Inhaltsname, ID, Länge, Stream-Typ und Medientyp. Siehe [Inhaltsname](/help/implementation/variables/core/content-name.md), [Inhalts-ID](/help/implementation/variables/core/content-id.md), [Inhaltslänge](/help/implementation/variables/core/content-length.md), [Stream-Typ](/help/implementation/variables/core/stream-type.md) und [Content-Typ](/help/implementation/variables/core/content-type.md) für Felddefinitionen.
-1. **Optional Metadaten anhängen** - Standard-Metadaten (Sendung, Staffel, Folge usw.) und benutzerdefinierte Kontextdatenvariablen. Siehe [Anzeigen](/help/implementation/variables/standard-metadata/show.md), [Staffel](/help/implementation/variables/standard-metadata/season.md), [Folge](/help/implementation/variables/standard-metadata/episode.md), [Genre](/help/implementation/variables/standard-metadata/genre.md) und [Netzwerk](/help/implementation/variables/standard-metadata/network.md) für Standard-Metadatenschlüsselverweise.
+1. **Optional Metadaten anhängen**: Standardmetadaten (Sendung, Staffel, Folge usw.) und benutzerdefinierte Kontextdatenvariablen. Siehe [Anzeigen](/help/implementation/variables/standard-metadata/show.md), [Staffel](/help/implementation/variables/standard-metadata/season.md), [Folge](/help/implementation/variables/standard-metadata/episode.md), [Genre](/help/implementation/variables/standard-metadata/genre.md) und [Netzwerk](/help/implementation/variables/standard-metadata/network.md) für Standard-Metadatenschlüsselverweise.
 1. **Rufen Sie [Sitzungsstart](/help/implementation/events/session/session-start.md)** auf, um mit dem Tracking der Sitzung zu beginnen. Dadurch werden die Daten und Metadaten geladen und die QoS-Messung mit der Zeit bis zum Start gestartet. SessionStart verfolgt die *Absicht*, die wiedergegeben werden soll, nicht den ersten Frame.
 1. **Rufen Sie [Play](/help/implementation/events/playback/play.md)** auf, wenn der erste Frame mit Inhalten auf dem Bildschirm gerendert wird.
 1. **Rufen Sie [Start anhalten](/help/implementation/events/playback/pause-start.md)** auf, wenn der Player pausiert. Die Wiedergabe wird erneut aufgerufen, wenn die Wiedergabe fortgesetzt wird. Es gibt kein separates Wiederaufnahmeereignis.
@@ -64,7 +54,7 @@ Core-Wiedergabe-Tracking umfasst das Laden, Starten, Pause, Fortsetzen, Abschlie
 
 ## Core-Wiedergabe
 
-Die folgenden Beispiele zeigen einen vollständigen Sitzungsfluss - vom Sitzungsbeginn bis zum Abschluss des Inhalts und zum Sitzungsende.
+Die folgenden Beispiele zeigen einen vollständigen Sitzungsfluss vom Sitzungsbeginn bis zum Abschluss des Inhalts und zum Sitzungsende.
 
 Implementierungsdetails nach Plattform finden Sie unter [Sitzungsstart](/help/implementation/events/session/session-start.md), [Play](/help/implementation/events/playback/play.md), [Start anhalten](/help/implementation/events/playback/pause-start.md), [Sitzung abgeschlossen](/help/implementation/events/session/session-complete.md) und [Sitzung beendet](/help/implementation/events/session/session-end.md).
 
@@ -82,7 +72,7 @@ Weitere Informationen zur Implementierung finden Sie unter [Start anhalten](/hel
 
 ## Behandeln von App-Interrupts
 
-Die Wiedergabe in einer Medienanwendung kann auf verschiedene Weise unterbrochen werden: Der Benutzer klickt auf Pause, die App wechselt in den Hintergrund, ein Telefonanruf kommt an. Unabhängig von der Ursache sind die Tracking-Anweisungen dieselben:
+Die Wiedergabe in einer Medienanwendung kann auf verschiedene Weise unterbrochen werden. Beispiele sind das Drücken der Pause-Taste durch den Benutzer, das Wechseln der App in den Hintergrund oder ein Telefonanruf. Unabhängig von der Ursache sind die Tracking-Anweisungen dieselben:
 
 1. Rufen Sie **PauseStart** auf, wenn die Anwendung unterbrochen wird (geht in den Hintergrund, Medienpausen usw.).
 1. Rufen Sie **Play** auf, wenn die Anwendung in den Vordergrund zurückkehrt und/oder die Medienwiedergabe fortgesetzt wird.
@@ -104,6 +94,6 @@ Eine Sitzung läuft automatisch ab, wenn für 10 Minuten keine Ereignisse empfan
 1. Rufen Sie auf dem **Quellgerät** SessionEnd auf, wenn der Viewer die Umwandlung initiiert. SessionComplete nicht aufrufen - der Inhalt ist nicht abgeschlossen.
 1. Rufen Sie auf dem **Zielgerät** „SessionStart“ auf, wobei das Fortsetzungs-Flag auf &quot;`true`&quot; gesetzt ist, und übergeben Sie dieselben Inhaltsmetadaten und die Abspielposition vom Quellgerät.
 
-Durch Festlegen des Fortsetzungs-Flags erhöht [&#x200B; Analytics für den zweiten Abschnitt der Übergabe &#x200B;](/help/reporting/metrics/content-resumes.md)Inhaltswiederaufnahmen[&#x200B; anstatt &#x200B;](/help/reporting/metrics/media-starts.md)Medienstarts“.
+Durch Festlegen des Fortsetzungs-Flags erhöht [ Analytics für den zweiten Abschnitt der Übergabe ](/help/reporting/metrics/content-resumes.md)Inhaltswiederaufnahmen[ anstatt ](/help/reporting/metrics/media-starts.md)Medienstarts“.
 
 **Manuelles Wiederaufnehmen einer zuvor geschlossenen Sitzung:** Wenn die Anwendung Benutzerdaten speichert und eine zuvor geschlossene Sitzung fortsetzen kann, setzen Sie das Wiederaufnahme-Flag beim Sitzungsstart. Siehe [Sitzungsstart](/help/implementation/events/session/session-start.md#resuming-a-session) für Implementierungsdetails auf allen Plattformen.

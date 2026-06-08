@@ -3,17 +3,17 @@ title: Zustandsende
 description: Signal, dass der Medien-Player den Status getrackter Player verlassen hat.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 7%
+source-wordcount: '220'
+ht-degree: 6%
 
 ---
 
 
 # Zustandsende
 
-Das Status-End-Ereignis signalisiert, dass der Medien-Player einen verfolgten Status wie Vollbild, Stummschaltung oder Untertitel verlassen hat. Senden Sie ihn, um einen durch „State Start[&#x200B; geöffneten Status zu &#x200B;](state-start.md). Status können im selben Ereignisaufruf gestartet und beendet werden. Ein Player kann mehrere Status gleichzeitig verlassen.
+Das Status-End-Ereignis signalisiert, dass der Medien-Player einen verfolgten Status wie Vollbild, Stummschaltung oder Untertitel verlassen hat. Senden Sie ihn, um einen durch „State Start[ geöffneten Status zu ](state-start.md). Status können im selben Ereignisaufruf gestartet und beendet werden. Ein Player kann mehrere Status gleichzeitig verlassen.
 
 Gültige Statusnamen: `fullscreen`, `mute`, `closedCaptioning`, `pictureInPicture`, `inFocus`
 
@@ -77,7 +77,7 @@ val stateObject = Media.createStateObject(MediaConstants.PlayerState.FULLSCREEN)
 tracker.trackEvent(Media.Event.StateEnd, stateObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Rufen Sie `sendMediaEvent` mit `eventType: "media.statesUpdate"` und dem Statusnamen in `statesEnd` auf:
 
@@ -140,6 +140,10 @@ var stateObject = ADBMobile.media.createStateObject(ADBMobile.media.PlayerState.
 
 ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 ```
+
+>[!TAB Roku 2.x]
+
+Player-Status-Tracking ist in der Roku 2.x-SDK nicht verfügbar. Verwenden Sie zum Nachverfolgen der Player-Status [Roku Edge SDK](/help/implementation/edge/roku.md).
 
 >[!TAB Media Collection API]
 

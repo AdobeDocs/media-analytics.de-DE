@@ -3,9 +3,9 @@ title: Creative-URL
 description: Legen Sie die URL der kreativen Anzeige für jede Anzeige fest.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '240'
 ht-degree: 10%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Creative URL**&#x200B;behandelt. Siehe [Creative URL](/help/reporting/dimensions/creative-url.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Creative URL**behandelt. Siehe [Creative URL](/help/reporting/dimensions/creative-url.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ Die kreative URL-Variable ist die URL des Kreativinhalts der Anzeige. Verwenden 
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.creativeURL` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.ad.creativeURL` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Anzeigenstart](/help/implementation/events/ads/ad-start.md), Anzeigenschluss |
@@ -75,7 +75,7 @@ metadata[MediaConstants.AdMetadataKeys.CREATIVE_URL] = "https://cdn.example.com/
 tracker.trackEvent(Media.Event.AdStart, adObject, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Legen Sie `creativeURL` in `xdm.mediaCollection.advertisingDetails` fest, wenn Sie `sendMediaEvent` für `media.adStart` aufrufen:
 
@@ -148,6 +148,21 @@ adInfo[ADBMobile.media.MediaObjectKey.StandardAdMetadata] = standardAdMetadata;
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
 ```
 
+>[!TAB Roku 2.x]
+
+Legen Sie die Kreativ-URL mithilfe von `MEDIA_AdMetadataKeyCREATIVE_URL` im Standard-Anzeigenmetadaten-Objekt fest:
+
+```brightscript
+adb = ADBMobile()
+adInfo = adb_media_init_adinfo("Ford F-150", "ad-2125", 1, 30.0)
+
+standardAdMetadata = {}
+standardAdMetadata[adb.MEDIA_AdMetadataKeyCREATIVE_URL] = "https://cdn.example.com/ads/creative-987.mp4"
+adInfo[adb.MEDIA_STANDARD_AD_METADATA] = standardAdMetadata
+
+adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
+```
+
 >[!TAB Media Collection API]
 
 `media.ad.creativeURL` in das `params` einschließen:
@@ -162,6 +177,6 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]

@@ -3,10 +3,10 @@ title: Play
 description: Signal, dass der Medien-Player in den Wiedergabestatus gewechselt ist.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 10%
+source-wordcount: '178'
+ht-degree: 9%
 
 ---
 
@@ -54,7 +54,7 @@ Rufen Sie `trackPlay` auf, wenn der Medien-Player beginnt oder die Wiedergabe fo
 tracker.trackPlay()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `sendMediaEvent` mit `eventType: "media.play"`:
 
@@ -110,6 +110,14 @@ Rufen Sie `trackPlay` auf, wenn der Medien-Player beginnt oder die Wiedergabe fo
 
 ```javascript
 ADBMobile.media.trackPlay();
+```
+
+>[!TAB Roku 2.x]
+
+Rufen Sie `mediaTrackPlay` auf, wenn der Medien-Player beginnt oder die Wiedergabe fortsetzt:
+
+```brightscript
+ADBMobile().mediaTrackPlay()
 ```
 
 >[!TAB Media Collection API]

@@ -3,16 +3,16 @@ title: Einrichten der Media Edge-API für Streaming-Medien
 description: Senden Sie Streaming-Mediendaten mithilfe der Media Edge-API direkt an Edge Network.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '211'
 ht-degree: 0%
 
 ---
 
 # Einrichten der Media Edge-API für Streaming-Medien
 
-Wenn Sie Web SDK, Mobile SDK oder Roku SDK nicht verwenden können - beispielsweise nicht zu einer benutzerdefinierten oder nicht unterstützten Laufzeit - können Sie Streaming-Mediendaten mit der Media Edge-API direkt an Edge Network senden. Die API verwendet RESTful-HTTP-Aufrufe und kann vollständig angepasst werden.
+Wenn Sie Web SDK, Mobile SDK oder Roku Edge SDK nicht verwenden können (z. B. auf einer benutzerdefinierten oder nicht unterstützten Laufzeit), können Sie Streaming-Mediendaten mit der Media Edge-API direkt an Edge Network senden. Die API verwendet RESTful-HTTP-Aufrufe und kann vollständig angepasst werden.
 
 * **Voraussetzungen**: Abschließen der [Übersicht über die Edge](overview.md)Implementierung (Schema, Datensatz, Datenstrom mit aktiviertem [!UICONTROL Media Analytics]).
 
@@ -40,7 +40,7 @@ Die Antwort gibt die Sitzungs-ID zurück, die alle nachfolgenden Ereignisse enth
 
 ## Medien-Events tracken
 
-Die genauen Payloads finden Sie auf **Registerkarte** Media Edge[&#x200B; auf jeder &#x200B;](/help/implementation/events/overview.md)- und [&#128279;](/help/implementation/variables/overview.md).
+Die genauen Payloads finden Sie auf **Registerkarte** Media Edge[ auf jeder ](/help/implementation/events/overview.md)- und [](/help/implementation/variables/overview.md).
 
 ## Nächster Schritt
 

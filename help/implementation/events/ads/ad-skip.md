@@ -3,9 +3,9 @@ title: Überspringen einer Anzeige
 description: Signal, dass der Betrachter eine Anzeige übersprungen hat.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '176'
 ht-degree: 8%
 
 ---
@@ -58,7 +58,7 @@ Rufen Sie `trackEvent` mit dem `AdSkip` Ereignistyp auf.
 tracker.trackEvent(Media.Event.AdSkip, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `sendMediaEvent` mit `eventType: "media.adSkip"`:
 
@@ -114,6 +114,15 @@ Rufen Sie `trackEvent` mit dem `AdSkip` Ereignistyp auf:
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdSkip);
+```
+
+>[!TAB Roku 2.x]
+
+Rufen Sie `mediaTrackEvent` mit dem `MEDIA_AD_SKIP` Ereignistyp auf:
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_AD_SKIP)
 ```
 
 >[!TAB Media Collection API]

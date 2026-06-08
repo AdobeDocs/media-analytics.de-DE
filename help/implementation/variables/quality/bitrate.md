@@ -3,10 +3,10 @@ title: Bitrate
 description: Legen Sie die aktuelle Wiedergabebitrate (in kbps) für das QoE-Objekt fest, damit das Backend Bitratenmetriken berechnen kann.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 6%
+source-wordcount: '307'
+ht-degree: 5%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Bitrate**&#x200B;behandelt. Siehe [[!UICONTROL Durchschnittliche Bitrate] (Dimension)](/help/reporting/dimensions/average-bitrate.md) und [[!UICONTROL Durchschnittliche Bitrate] (Metrik)](/help/reporting/metrics/average-bitrate.md) für die entsprechenden Berichtsvariablen.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Bitrate**behandelt. Siehe [[!UICONTROL Durchschnittliche Bitrate] (Dimension)](/help/reporting/dimensions/average-bitrate.md) und [[!UICONTROL Durchschnittliche Bitrate] (Metrik)](/help/reporting/metrics/average-bitrate.md) für die entsprechenden Berichtsvariablen.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ Die Bitratenvariable ist die aktuelle Wiedergabebitrate in Kilobit pro Sekunde. 
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.qoe.bitrateAverageBucket` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.qoe.bitrateAverageBucket` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | Qualitätsereignisse ([Bitratenänderung](/help/implementation/events/playback/bitrate-change.md), [Pufferstart](/help/implementation/events/playback/buffer-start.md), [Fehler](/help/implementation/events/error.md)), Sitzungsschluss |
@@ -81,7 +81,7 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Legen Sie `bitrate` innerhalb von `xdm.mediaCollection.qoeDataDetails` fest, wenn Sie `sendMediaEvent` für Qualitätsereignisse wie `media.bitrateChange` aufrufen:
 
@@ -158,6 +158,17 @@ var qosInfo = ADBMobile.media.createQoSObject(
 ADBMobile.media.updateQoSObject(qosInfo);
 ```
 
+>[!TAB Roku 2.x]
+
+Übergeben Sie die Bitrate in kbps als erstes Argument für die `adb_media_init_qosinfo` und aktualisieren Sie den Tracker mit `mediaUpdateQoS`:
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
+```
+
 >[!TAB Media Collection API]
 
 Fügen Sie `media.qoe.bitrate` in das `params` Ihrer `bitrateChange` POST-Anfrage ein:
@@ -172,6 +183,6 @@ Fügen Sie `media.qoe.bitrate` in das `params` Ihrer `bitrateChange` POST-Anfrag
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]

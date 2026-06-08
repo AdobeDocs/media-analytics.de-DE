@@ -3,7 +3,7 @@ title: Anzeigenladevorgänge
 description: Gibt die Art der Anzeigenauslastung an, die für jede Streaming-Mediensitzung verwendet wird.
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Anzeigenladevorgänge**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/standard-metadata/ad-load-type.md) unter „Anzeigenladungstyp“*
+*Auf dieser Seite wird die Berichtsdimension **Anzeigenladevorgänge**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/standard-metadata/ad-load-type.md) unter „Anzeigenladungstyp“*
 
 >[!ENDSHADEBOX]
 
@@ -28,10 +28,10 @@ Der Anzeigenladungstyp wird vom Player beim Sitzungsstart festgelegt.
 | Meldesystem | Quelle |
 | --- | --- |
 | Adobe Analytics | Wird automatisch aus dem Kontextdatenmodell `a.media.adLoad`, wenn [[!UICONTROL Streaming-]](/help/reporting/setup/analytics-reporting.md)) konfiguriert ist. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.adLoad`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.adLoad`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Daten-Feeds | `videoadload`, `post_videoadload` |
 | Audience Manager | `c_contextdata.a.media.adLoad` |
 
 ## Dimensionselemente
 
-Jedes Element ist die Zeichenfolge des Literal- und Ladetyps, die beim Sitzungsstart festgelegt wird. Die Werte sind nicht auf eine standardmäßige Auflistung beschränkt. Definieren Sie eine Taxonomie, die über Ihre Implementierungen hinweg konsistent ist, sodass Werte in Berichten vorhersehbar aggregiert werden können.
+Jedes Element ist die Zeichenfolge des Literal- und Ladetyps, die beim Sitzungsstart festgelegt wird. Die Werte sind nicht auf eine standardmäßige Auflistung beschränkt. Definieren Sie eine Taxonomie, die über Ihre Implementierungen hinweg konsistent ist, sodass sich Werte in Berichten vorhersehbar entwickeln.

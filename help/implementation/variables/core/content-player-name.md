@@ -3,9 +3,9 @@ title: Name des Inhalts-Players
 description: Legen Sie den Player-Namen fest, um zu identifizieren, welcher Player den Inhalt gerendert hat.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '285'
 ht-degree: 6%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Content Player Name**&#x200B;behandelt. Siehe [Name des Content](/help/reporting/dimensions/content-player-name.md)Players“ für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Content Player Name**behandelt. Siehe [Name des Content](/help/reporting/dimensions/content-player-name.md)Players“ für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ Die Variable „Name des Inhalts-Players“ gibt an, welcher Player den Inhalt g
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.playerName` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.playerName` |
 | **Erforderlich** | Ja |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |
@@ -82,7 +82,7 @@ config[MediaConstants.TrackerConfig.CHANNEL] = "Sports"
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `playerName` in `xdm.mediaCollection.sessionDetails` festlegen, wenn `createMediaSession` aufgerufen wird:
 
@@ -159,6 +159,16 @@ var metadata = { "a.media.playerName": "Chromecast Player" };
 ADBMobile.media.trackSessionStart(mediaInfo, metadata);
 ```
 
+>[!TAB Roku 2.x]
+
+`playerName` Sie im `mediaHeartbeat` Abschnitt von `ADBMobileConfig.json`. Der Player-Name ist ein Konfigurationswert, kein Wert pro Sitzung:
+
+```json
+"mediaHeartbeat": {
+  "playerName": "Roku Player"
+}
+```
+
 >[!TAB Media Collection API]
 
 Fügen Sie `media.playerName` in das `params` Ihrer `sessionStart` POST-Anfrage ein:
@@ -173,6 +183,6 @@ Fügen Sie `media.playerName` in das `params` Ihrer `sessionStart` POST-Anfrage 
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
 
 >[!ENDTABS]

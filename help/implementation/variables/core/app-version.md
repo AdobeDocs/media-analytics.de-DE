@@ -3,9 +3,9 @@ title: Anwendungsversion
 description: Konfigurieren Sie die Versionszeichenfolge Ihrer Media Player-Anwendung.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '288'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **App-Version**&#x200B;behandelt. Siehe [App-Version](/help/reporting/dimensions/app-version.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **App-Version**behandelt. Siehe [App-Version](/help/reporting/dimensions/app-version.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +27,7 @@ Die Anwendungsversionsvariable identifiziert die Version Ihrer Media Player-Anwe
 
 | Eigenschaft | Wert |
 | --- | --- |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Mediensammlungs-API-Parameter** | `media.sdkVersion` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md) |
@@ -38,7 +38,7 @@ Die Anwendungsversionsvariable identifiziert die Version Ihrer Media Player-Anwe
 
 >[!TAB Web SDK]
 
-Legen Sie beim Aufrufen von [`configure`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/configure/streamingmedia) `appVersion` im `streamingMedia`-Konfigurationsobjekt fest:
+Legen Sie beim Aufrufen von [`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia) `appVersion` im `streamingMedia`-Konfigurationsobjekt fest:
 
 ```javascript
 alloy("configure", {
@@ -77,7 +77,7 @@ val config: Map<String, Any> = mapOf(
 MobileCore.updateConfiguration(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Legen Sie die App-Version in der SDK-Konfiguration mithilfe von `ADB_CONSTANTS.CONFIGURATION.MEDIA_APP_VERSION` fest:
 
@@ -151,6 +151,16 @@ var ADBMobileConfig = {
 };
 ```
 
+>[!TAB Roku 2.x]
+
+`sdkVersion` Sie im `mediaHeartbeat` Abschnitt von `ADBMobileConfig.json`. In diesem Feld wird die Version der Player-Anwendung erfasst, nicht die SDK-Bibliotheksversion von Roku 2.x:
+
+```json
+"mediaHeartbeat": {
+  "sdkVersion": "2.1.0"
+}
+```
+
 >[!TAB Media Collection API]
 
 Fügen Sie `media.sdkVersion` in das `params` Ihrer `sessionStart` POST-Anfrage ein:
@@ -167,6 +177,6 @@ Fügen Sie `media.sdkVersion` in das `params` Ihrer `sessionStart` POST-Anfrage 
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
 
 >[!ENDTABS]

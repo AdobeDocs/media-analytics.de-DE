@@ -3,17 +3,17 @@ title: Fehler
 description: Signal, dass der Medienplayer auf einen Fehler gestoßen ist.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 10%
+source-wordcount: '187'
+ht-degree: 9%
 
 ---
 
 
 # Fehler
 
-Das Fehlerereignis signalisiert, dass der Media Player auf einen Fehler gestoßen ist. Beim Verfolgen eines Fehlers wird die Sitzung nicht geschlossen. Wenn der Fehler verhindert, dass die Wiedergabe fortgesetzt wird, rufen [&#x200B; nach dem &#x200B;](session/session-end.md) „Sitzungsende“ auf.
+Das Fehlerereignis signalisiert, dass der Media Player auf einen Fehler gestoßen ist. Beim Verfolgen eines Fehlers wird die Sitzung nicht geschlossen. Wenn der Fehler verhindert, dass die Wiedergabe fortgesetzt wird, rufen [ nach dem ](session/session-end.md) „Sitzungsende“ auf.
 
 * **Voraussetzungen**: [Sitzungsstart](session/session-start.md)
 * **Zugeordnete Metrik**: [[!UICONTROL Von Fehlern betroffene Streams]](/help/reporting/metrics/error-impacted-streams.md)
@@ -60,7 +60,7 @@ tracker.trackError(errorId: "media-error-001")
 tracker.trackError("media-error-001")
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Rufen Sie `sendMediaEvent` mit `eventType: "media.error"` und den erforderlichen `errorDetails` auf:
 
@@ -124,6 +124,15 @@ tracker.trackError("media-error-001");
 
 ```javascript
 ADBMobile.media.trackError("media-error-001");
+```
+
+>[!TAB Roku 2.x]
+
+Rufen Sie `mediaTrackError` mit einer Fehler-ID und der Fehlerquelle auf. Verwenden Sie die `ERROR_SOURCE_PLAYER` für Player-Fehler:
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackError("media-error-001", adb.ERROR_SOURCE_PLAYER)
 ```
 
 >[!TAB Media Collection API]

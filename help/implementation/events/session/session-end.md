@@ -3,10 +3,10 @@ title: Sitzungsende
 description: Sofortiges Schließen einer Mediensitzung, wenn der Viewer Inhalte abbricht.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 5%
+source-wordcount: '314'
+ht-degree: 4%
 
 ---
 
@@ -60,7 +60,7 @@ Rufen Sie `trackSessionEnd` auf, wenn der Viewer den Player schließt oder wegna
 tracker.trackSessionEnd()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `sendMediaEvent` mit `eventType: "media.sessionEnd"`:
 
@@ -116,6 +116,14 @@ Rufen Sie `trackSessionEnd` auf, wenn der Viewer den Player schließt oder wegna
 
 ```javascript
 ADBMobile.media.trackSessionEnd();
+```
+
+>[!TAB Roku 2.x]
+
+Rufen Sie `mediaTrackSessionEnd` auf, wenn der Viewer den Player schließt oder wegnavigiert:
+
+```brightscript
+ADBMobile().mediaTrackSessionEnd()
 ```
 
 >[!TAB Media Collection API]

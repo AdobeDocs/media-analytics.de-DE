@@ -3,10 +3,10 @@ title: Sitzungsstart
 description: Signalisieren Sie den Beginn einer Mediensitzung und erhalten Sie die Sitzungs-ID, die für alle nachfolgenden Ereignisse erforderlich ist.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 5%
+source-wordcount: '388'
+ht-degree: 4%
 
 ---
 
@@ -75,7 +75,7 @@ val mediaObject = Media.createMediaObject("video-123",
 tracker.trackSessionStart(mediaObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Rufen Sie `createMediaSession` mit den erforderlichen Sitzungsdetails an:
 
@@ -162,6 +162,17 @@ var mediaInfo = ADBMobile.media.createMediaObject(
 ADBMobile.media.trackSessionStart(mediaInfo, null);
 ```
 
+>[!TAB Roku 2.x]
+
+Erstellen Sie ein Medienobjekt mit `adb_media_init_mediainfo` und rufen Sie `mediaTrackSessionStart` auf. Das optionale zweite Argument akzeptiert ein assoziatives Array von `a.media.*` Metadatenschlüsseln, oder `invalid`:
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("video-123", "video-id-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
+```
+
 >[!TAB Media Collection API]
 
 Senden Sie einen `sessionStart` POST an den [sessions-Endpunkt](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md). Die Kopfzeile der `Location` enthält die Sitzungs-ID, die in allen nachfolgenden Ereignisanfragen verwendet werden soll.
@@ -184,7 +195,7 @@ Senden Sie einen `sessionStart` POST an den [sessions-Endpunkt](/help/implementa
 
 ## Wiederaufnehmen einer Sitzung
 
-Wenn Sie eine zuvor geschlossene Sitzung fortsetzen - z. B. nach einer geräteübergreifenden Übergabe oder nachdem die Anwendung den gespeicherten Wiedergabestatus wiederhergestellt hat -, setzen Sie das Resume-Flag beim Sitzungsstart. Dadurch wird Analytics [[!UICONTROL Inhaltswiederaufnahmen]](/help/reporting/metrics/content-resumes.md) anstelle von „Medienstarts[[!UICONTROL &#x200B; erhöht]](/help/reporting/metrics/media-starts.md).
+Setzen Sie beim Wiederaufnehmen einer zuvor geschlossenen Sitzung (z. B. nach einer geräteübergreifenden Übergabe oder nachdem die Anwendung den gespeicherten Wiedergabestatus wiederhergestellt hat) das Wiederaufnahme-Flag beim Sitzungsstart. Dadurch wird Analytics [[!UICONTROL Inhaltswiederaufnahmen]](/help/reporting/metrics/content-resumes.md) anstelle von „Medienstarts[[!UICONTROL  erhöht]](/help/reporting/metrics/media-starts.md).
 
 ## Empfohlene Implementierungsarten
 
@@ -242,7 +253,7 @@ mediaObject[Media.MediaObjectKey.RESUMED] = true
 tracker.trackSessionStart(mediaObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `"hasResume": true` zu `sessionDetails` hinzufügen:
 
@@ -325,6 +336,18 @@ var mediaObject = ADBMobile.media.createMediaObject(
 
 mediaObject[ADBMobile.media.MediaObjectKey.MediaResumed] = true;
 ADBMobile.media.trackSessionStart(mediaObject, null);
+```
+
+>[!TAB Roku 2.x]
+
+Legen Sie den `resumed` Schlüssel des Medienobjekts fest, bevor Sie `mediaTrackSessionStart` aufrufen:
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("video-123", "video-id-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+mediaInfo.resumed = true
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB Media Collection API]

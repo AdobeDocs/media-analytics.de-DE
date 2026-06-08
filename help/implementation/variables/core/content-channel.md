@@ -3,10 +3,10 @@ title: Inhaltskanal
 description: Legen Sie den Kanal fest, um die Verteilungs-Station, das Netzwerk oder die Eigenschaft zu identifizieren, an der bzw. der der Inhalt abgespielt wird.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 7%
+source-wordcount: '270'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Inhaltskanal**&#x200B;behandelt. Siehe [Inhaltskanal](/help/reporting/dimensions/content-channel.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Inhaltskanal**behandelt. Siehe [Inhaltskanal](/help/reporting/dimensions/content-channel.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ Die Inhaltskanalvariable identifiziert die Verteilungs-Station, das Netzwerk ode
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.channel` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.channel` |
 | **Erforderlich** | Ja |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |
@@ -82,7 +82,7 @@ config[MediaConstants.TrackerConfig.CHANNEL] = "Sports"
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `channel` in `xdm.mediaCollection.sessionDetails` festlegen, wenn `createMediaSession` aufgerufen wird:
 
@@ -159,6 +159,16 @@ var metadata = { "a.media.channel": "Sports" };
 ADBMobile.media.trackSessionStart(mediaInfo, metadata);
 ```
 
+>[!TAB Roku 2.x]
+
+`channel` Sie im `mediaHeartbeat` Abschnitt von `ADBMobileConfig.json`. Der Kanal ist ein Konfigurationswert, kein Wert pro Sitzung:
+
+```json
+"mediaHeartbeat": {
+  "channel": "Sports"
+}
+```
+
 >[!TAB Media Collection API]
 
 Fügen Sie `media.channel` in das `params` Ihrer `sessionStart` POST-Anfrage ein:
@@ -173,6 +183,6 @@ Fügen Sie `media.channel` in das `params` Ihrer `sessionStart` POST-Anfrage ein
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
 
 >[!ENDTABS]

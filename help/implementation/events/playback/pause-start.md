@@ -3,9 +3,9 @@ title: Start anhalten
 description: Signal, dass die Medienwiedergabe angehalten wurde.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '150'
 ht-degree: 10%
 
 ---
@@ -58,7 +58,7 @@ Ruft `trackPause` auf, wenn der Benutzer die Wiedergabe pausiert.
 tracker.trackPause()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `sendMediaEvent` mit `eventType: "media.pauseStart"`:
 
@@ -114,6 +114,14 @@ tracker.trackPause();
 
 ```javascript
 ADBMobile.media.trackPause();
+```
+
+>[!TAB Roku 2.x]
+
+`mediaTrackPause` aufrufen, wenn der Benutzer die Wiedergabe pausiert:
+
+```brightscript
+ADBMobile().mediaTrackPause()
 ```
 
 >[!TAB Media Collection API]
