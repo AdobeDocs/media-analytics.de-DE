@@ -13,7 +13,7 @@ ht-degree: 9%
 
 # Fehler
 
-Das Fehlerereignis signalisiert, dass der Media Player auf einen Fehler gestoßen ist. Beim Verfolgen eines Fehlers wird die Sitzung nicht geschlossen. Wenn der Fehler verhindert, dass die Wiedergabe fortgesetzt wird, rufen [ nach dem ](session/session-end.md) „Sitzungsende“ auf.
+Das Fehlerereignis signalisiert, dass der Media Player auf einen Fehler gestoßen ist. Beim Verfolgen eines Fehlers wird die Sitzung nicht geschlossen. Wenn der Fehler verhindert, dass die Wiedergabe fortgesetzt wird, rufen [&#x200B; nach dem &#x200B;](session/session-end.md) „Sitzungsende“ auf.
 
 * **Voraussetzungen**: [Sitzungsstart](session/session-start.md)
 * **Zugeordnete Metrik**: [[!UICONTROL Von Fehlern betroffene Streams]](/help/reporting/metrics/error-impacted-streams.md)

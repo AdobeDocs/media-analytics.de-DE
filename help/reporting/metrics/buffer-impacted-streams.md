@@ -17,7 +17,7 @@ Die Metrik **Vom Puffer betroffene Streams** zählt Sitzungen, in denen der Play
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend setzt dieses Flag beim ersten [ eines ](/help/implementation/events/playback/buffer-start.md)-Ereignisses während der Sitzung. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend setzt dieses Flag beim ersten [&#x200B; eines &#x200B;](/help/implementation/events/playback/buffer-start.md)-Ereignisses während der Sitzung. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |

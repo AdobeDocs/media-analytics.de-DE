@@ -61,11 +61,11 @@ Das Konfigurations-JSON verfügt über einen exklusiven `mediaHeartbeat` für St
 | --- | --- |
 | `server` | URL des Medien-Tracking-Endpunkts. Siehe [Nur Analytics-Implementierung - Übersicht](overview.md). |
 | `publisher` | Eindeutige Kennung des Inhaltsherausgebers. |
-| `channel` | Name des Inhaltsverteilungskanals. Wird als [Inhaltskanal“ ](/help/implementation/variables/core/content-channel.md). |
+| `channel` | Name des Inhaltsverteilungskanals. Wird als [Inhaltskanal“ &#x200B;](/help/implementation/variables/core/content-channel.md). |
 | `ssl` | Ob SSL für Tracking-Aufrufe verwendet wird. |
 | `ovp` | Name des Anbieters der Online-Videoplattform. |
 | `sdkVersion` | Aktuelle Version Ihrer App oder SDK. |
-| `playerName` | Name des Players. Wird als [Content-Player-Name“ ](/help/implementation/variables/core/content-player-name.md). |
+| `playerName` | Name des Players. Wird als [Content-Player-Name“ &#x200B;](/help/implementation/variables/core/content-player-name.md). |
 
 >[!IMPORTANT]
 >

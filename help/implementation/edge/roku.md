@@ -16,7 +16,7 @@ ht-degree: 0%
 
 * **Voraussetzungen**:
    * Abschließen der [Edge-Implementierungsübersicht](overview.md) (Schema, Datensatz, Datenstrom mit aktiviertem [!UICONTROL Media Analytics]).
-   * Laden Sie die SDK von [GitHub-Versionen](https://github.com/adobe/aepsdk-roku/releases) herunter und fügen Sie sie Ihrem Kanal hinzu, wie in [Erste Schritte“ ](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/getting-started.md).
+   * Laden Sie die SDK von [GitHub-Versionen](https://github.com/adobe/aepsdk-roku/releases) herunter und fügen Sie sie Ihrem Kanal hinzu, wie in [Erste Schritte“ &#x200B;](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/getting-started.md).
 
 ## Konfigurieren von Roku Edge SDK für Media
 
@@ -55,7 +55,7 @@ Konfigurationsschlüssel und die vollständige API finden Sie in der [Roku Edge 
 
 ## Medien-Events tracken
 
-Nachdem die Sitzung geöffnet ist, senden Sie jedes Medienereignis mit `sendMediaEvent`. Die **Payloads finden Sie auf der Registerkarte** Roku[ auf jeder ](/help/implementation/events/overview.md)- und [](/help/implementation/variables/overview.md)-Seite.
+Nachdem die Sitzung geöffnet ist, senden Sie jedes Medienereignis mit `sendMediaEvent`. Die **Payloads finden Sie auf der Registerkarte** Roku[&#x200B; auf jeder &#x200B;](/help/implementation/events/overview.md)- und [&#128279;](/help/implementation/variables/overview.md)-Seite.
 
 ## Nächster Schritt
 

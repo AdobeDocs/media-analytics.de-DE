@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Berichtsdimension **Erstes Sendedatum**behandelt. Informationen [ Erfassen dieser Variablen finden ](/help/implementation/variables/standard-metadata/first-air-date.md) unter „Erstes Sendedatum“*
+*Auf dieser Seite wird die Berichtsdimension **Erstes Sendedatum**&#x200B;behandelt. Informationen [&#x200B; Erfassen dieser Variablen finden &#x200B;](/help/implementation/variables/standard-metadata/first-air-date.md) unter „Erstes Sendedatum“*
 
 >[!ENDSHADEBOX]
 
@@ -36,7 +36,7 @@ Das Datum der ersten Ausstrahlung wird vom Player beim Sitzungsstart festgelegt.
 
 ## Klassifizierungsansatz
 
-Adobe erstellt die Klassifizierungsstruktur für das erste Sendedatum automatisch, wenn **[[!UICONTROL Videometadaten]](/help/reporting/setup/analytics-reporting.md)** für die Report Suite aktiviert ist. Sie sind dafür verantwortlich, die Klassifizierung mithilfe von „Klassifizierungssätze[ auszufüllen und zu ](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
+Adobe erstellt die Klassifizierungsstruktur für das erste Sendedatum automatisch, wenn **[[!UICONTROL Videometadaten]](/help/reporting/setup/analytics-reporting.md)** für die Report Suite aktiviert ist. Sie sind dafür verantwortlich, die Klassifizierung mithilfe von „Klassifizierungssätze[&#x200B; auszufüllen und zu &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
 
 Dieser Ansatz bietet eine garantierte 1:1-Beziehung zwischen jeder Inhalts-ID und ihrem ersten Sendedatum. Klassifizierungsaktualisierungen gelten rückwirkend für alle historischen Daten für diese ID.
 

@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für den Player **Status „Im Fokus**behandelt. Siehe [Von im Fokus betroffene Streams](/help/reporting/metrics/in-focus-streams-impacted.md), [Anzahl der Fokussierungen](/help/reporting/metrics/in-focus-count.md) und [Gesamtdauer des Fokus](/help/reporting/metrics/in-focus-total-duration.md) für die entsprechenden Berichtsmetriken.*
+*Auf dieser Seite wird die Datenerfassung für den Player **Status „Im Fokus**&#x200B;behandelt. Siehe [Von im Fokus betroffene Streams](/help/reporting/metrics/in-focus-streams-impacted.md), [Anzahl der Fokussierungen](/help/reporting/metrics/in-focus-count.md) und [Gesamtdauer des Fokus](/help/reporting/metrics/in-focus-total-duration.md) für die entsprechenden Berichtsmetriken.*
 
 >[!ENDSHADEBOX]
 
@@ -182,6 +182,6 @@ Senden Sie eine `stateStart` POST-Anfrage, wenn der Player den Fokus erhält, un
 }
 ```
 
-Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]

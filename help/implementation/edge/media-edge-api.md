@@ -40,7 +40,7 @@ Die Antwort gibt die Sitzungs-ID zurück, die alle nachfolgenden Ereignisse enth
 
 ## Medien-Events tracken
 
-Die genauen Payloads finden Sie auf **Registerkarte** Media Edge[ auf jeder ](/help/implementation/events/overview.md)- und [](/help/implementation/variables/overview.md).
+Die genauen Payloads finden Sie auf **Registerkarte** Media Edge[&#x200B; auf jeder &#x200B;](/help/implementation/events/overview.md)- und [&#128279;](/help/implementation/variables/overview.md).
 
 ## Nächster Schritt
 

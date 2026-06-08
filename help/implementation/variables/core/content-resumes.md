@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Inhaltswiederaufnahmen**behandelt. Siehe [[!UICONTROL Inhaltswiederaufnahmen]](/help/reporting/metrics/content-resumes.md) für die entsprechende Berichtsmetrik.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Inhaltswiederaufnahmen**&#x200B;behandelt. Siehe [[!UICONTROL Inhaltswiederaufnahmen]](/help/reporting/metrics/content-resumes.md) für die entsprechende Berichtsmetrik.*
 
 >[!ENDSHADEBOX]
 
@@ -196,6 +196,6 @@ Fügen Sie `media.resume` in das `params` Ihrer `sessionStart` POST-Anfrage ein:
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur ](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
 
 >[!ENDTABS]

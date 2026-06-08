@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für den Player **Status „Vollbild**behandelt. Siehe [Vom Vollbildmodus betroffene Streams](/help/reporting/metrics/full-screen-streams-impacted.md), [Vollbildanzahl](/help/reporting/metrics/full-screen-count.md) und [Gesamtdauer des Vollbildmodus](/help/reporting/metrics/full-screen-total-duration.md) für die entsprechenden Berichtsmetriken.*
+*Auf dieser Seite wird die Datenerfassung für den Player **Status „Vollbild**&#x200B;behandelt. Siehe [Vom Vollbildmodus betroffene Streams](/help/reporting/metrics/full-screen-streams-impacted.md), [Vollbildanzahl](/help/reporting/metrics/full-screen-count.md) und [Gesamtdauer des Vollbildmodus](/help/reporting/metrics/full-screen-total-duration.md) für die entsprechenden Berichtsmetriken.*
 
 >[!ENDSHADEBOX]
 
@@ -195,6 +195,6 @@ Senden Sie eine `stateStart` POST-Anfrage, wenn der Betrachter in den Vollbildmo
 }
 ```
 
-Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]

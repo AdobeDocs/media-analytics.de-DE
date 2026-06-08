@@ -13,7 +13,7 @@ ht-degree: 6%
 
 # Zustandsende
 
-Das Status-End-Ereignis signalisiert, dass der Medien-Player einen verfolgten Status wie Vollbild, Stummschaltung oder Untertitel verlassen hat. Senden Sie ihn, um einen durch „State Start[ geöffneten Status zu ](state-start.md). Status können im selben Ereignisaufruf gestartet und beendet werden. Ein Player kann mehrere Status gleichzeitig verlassen.
+Das Status-End-Ereignis signalisiert, dass der Medien-Player einen verfolgten Status wie Vollbild, Stummschaltung oder Untertitel verlassen hat. Senden Sie ihn, um einen durch „State Start[&#x200B; geöffneten Status zu &#x200B;](state-start.md). Status können im selben Ereignisaufruf gestartet und beendet werden. Ein Player kann mehrere Status gleichzeitig verlassen.
 
 Gültige Statusnamen: `fullscreen`, `mute`, `closedCaptioning`, `pictureInPicture`, `inFocus`
 

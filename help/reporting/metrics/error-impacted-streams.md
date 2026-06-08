@@ -17,7 +17,7 @@ Die Metrik **Vom Fehler betroffene Streams** zählt Sitzungen, in denen mindeste
 
 ## Berechnung dieser Metrik
 
-Das Medien-Backend setzt dieses Flag beim ersten [ (Fehler](/help/implementation/events/error.md)-Ereignis während der Sitzung. Die Metrik wird beim Schließen-Aufruf gemeldet.
+Das Medien-Backend setzt dieses Flag beim ersten [&#x200B; (Fehler](/help/implementation/events/error.md)-Ereignis während der Sitzung. Die Metrik wird beim Schließen-Aufruf gemeldet.
 
 | Meldesystem | Quelle |
 | --- | --- |

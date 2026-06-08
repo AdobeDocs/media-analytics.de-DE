@@ -30,7 +30,7 @@ Sie können die Streaming-Mediensammlung für Ihre iOS- oder tvOS-App über eine
 
 ## Medien-Events tracken
 
-Nachdem die Eigenschaft veröffentlicht und der Tracker erstellt wurde, verfolgen Sie jedes Medienereignis mit der Tracker-Methode. Die genauen Aufrufe finden Sie auf der Registerkarte **0[ auf jeder Seite ](/help/implementation/events/overview.md)Ereignis[ und ](/help/implementation/variables/overview.md)Variable .**
+Nachdem die Eigenschaft veröffentlicht und der Tracker erstellt wurde, verfolgen Sie jedes Medienereignis mit der Tracker-Methode. Die genauen Aufrufe finden Sie auf der Registerkarte **0[&#x200B; auf jeder Seite &#x200B;](/help/implementation/events/overview.md)Ereignis[&#x200B; und &#x200B;](/help/implementation/variables/overview.md)Variable .**
 
 ## Nächster Schritt
 

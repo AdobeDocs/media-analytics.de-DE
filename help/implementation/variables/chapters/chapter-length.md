@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Länge des Kapitels**behandelt. Siehe [Kapitellänge](/help/reporting/dimensions/chapter-length.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Länge des Kapitels**&#x200B;behandelt. Siehe [Kapitellänge](/help/reporting/dimensions/chapter-length.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -185,6 +185,6 @@ Fügen Sie `media.chapter.length` in das `params` Ihrer `chapterStart` POST-Anfr
 }
 ```
 
-Die vollständige Anfragestruktur [ Sie in der ](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]
