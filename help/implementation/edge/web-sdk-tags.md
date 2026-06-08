@@ -16,7 +16,7 @@ Mit der Tag-Erweiterung &quot;Adobe Experience Platform Web SDK&quot; können Si
 
 * **Voraussetzungen**:
    * Abschließen der [Edge-Implementierungsübersicht](overview.md) (Schema, Datensatz, Datenstrom mit aktiviertem [!UICONTROL Media Analytics]).
-   * Installieren und konfigurieren Sie die Tag-Erweiterung „Web SDK&quot;. Siehe [Übersicht über die Tag-Erweiterung „Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/overview).
+   * Installieren und konfigurieren Sie die Tag-Erweiterung „Web SDK&quot;. Siehe [Übersicht über die Tag-Erweiterung „Web SDK](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/web-sdk/overview).
 
 ## Konfigurieren von Streaming-Medien in der Erweiterung
 
@@ -39,6 +39,6 @@ Sobald Ihre Implementierung abgeschlossen ist, können Sie [Berichte für Edge-I
 
 >[!MORELIKETHIS]
 >
->* [Übersicht über die Tag-Erweiterung „Web SDK&quot;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/overview)
+>* [Übersicht über die Tag-Erweiterung „Web SDK&quot;](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/web-sdk/overview)
 >* [Einrichten der Web-SDK für Streaming-Medien (im Code)](web-sdk.md)
 >* [Übersicht über Ereignisse](/help/implementation/events/overview.md)

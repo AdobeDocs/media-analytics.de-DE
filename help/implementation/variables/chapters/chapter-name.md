@@ -24,7 +24,7 @@ Die Variable „Kapitelname“ ist der für Menschen lesbare Titel eines Kapitel
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.chapter.friendlyName` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.chapter.friendlyName` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Kapitelstart](/help/implementation/events/chapters/chapter-start.md), Kapitelschluss |

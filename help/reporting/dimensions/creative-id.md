@@ -25,9 +25,9 @@ Die Dimension **Creative ID** zeigt die ID der Kreativität der Anzeige an. Verw
 
 | Meldesystem | Quelle |
 | --- | --- |
-| Adobe Analytics (Verarbeitungsregel) | Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.ad.creative` einer eVar zuordnet. |
+| Adobe Analytics (Verarbeitungsregel) | Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.ad.creative` einer eVar zuordnet. |
 | Adobe Analytics (Klassifizierung) | Klassifizierung der Dimension [Anzeige](ad.md). Adobe erstellt diese Klassifizierung automatisch, wenn **[[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md)** für die Report Suite aktiviert ist. Sie sind für das Ausfüllen und Verwalten von Classification-Werten verantwortlich. |
-| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.creativeID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.creativeID`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Daten-Feeds (Verarbeitungsregel) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (die eVar, der Ihre Verarbeitungsregel `a.media.ad.creative` zugeordnet ist) |
 | Daten-Feeds (Klassifizierung) | K. A. - Daten-Feeds unterstützen keine Klassifizierungen. |
 | Audience Manager | `c_contextdata.a.media.ad.creative` |
@@ -44,7 +44,7 @@ Dieser Ansatz bietet eine garantierte 1::1-Beziehung zwischen jeder Werbe-ID und
 
 ## Ansatz der Verarbeitungsregeln
 
-Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.ad.creative` einer eVar zuordnet. Dieser Ansatz erfasst die Kreativ-ID als Wert pro Treffer, ohne dass eine Klassifizierungswartung erforderlich ist.
+Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.ad.creative` einer eVar zuordnet. Dieser Ansatz erfasst die Kreativ-ID als Wert pro Treffer, ohne dass eine Klassifizierungswartung erforderlich ist.
 
 Der Nachteil besteht darin, dass Sie die garantierte 1::1-Beziehung zwischen der Kreativ-ID und der übergeordneten [Ad) &#x200B;](ad.md). Wenn Ihre Implementierung inkonsistente Werte für dieselbe Anzeigen-ID über Ereignisse hinweg sendet, können unter derselben Anzeige mehrere kreative IDs angezeigt werden. Die Aktualisierung eines Werts gilt nur für Daten, die in Zukunft verwendet werden.
 

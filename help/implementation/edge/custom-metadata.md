@@ -316,7 +316,7 @@ In diesem Beispiel:
 
 * Nach der Verarbeitung werden benutzerdefinierte Metadaten als Kontextdatenvariablen an Adobe Analytics weitergeleitet. Das `_tenant` Präfix wird automatisch entfernt, sodass Verarbeitungsregeln nur auf den Feldpfad nach der `_tenant` verweisen (z. B. `_mycompany.contentCategory` wird `contentCategory`)
 * Über `_data` gesendete Daten werden ebenfalls an Adobe Analytics weitergeleitet und stehen über Verarbeitungsregeln zur Verfügung
-* Verwenden Sie Verarbeitungsregeln, um Kontextdatenvariablen eVars, Props oder anderen Analytics-Variablen zuzuordnen. Weitere [&#x200B; finden Sie unter „Datenvariablenzuordnung für die Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)Edge Network&quot;.
+* Verwenden Sie Verarbeitungsregeln, um Kontextdatenvariablen eVars, Props oder anderen Analytics-Variablen zuzuordnen. Weitere [&#x200B; finden Sie unter „Datenvariablenzuordnung für die Adobe Experience Platform](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/data-var-mapping)Edge Network&quot;.
 
 **Adobe Experience Platform:**
 
@@ -336,5 +336,5 @@ In diesem Beispiel:
 >[!MORELIKETHIS]
 >
 >* [Unterstützung benutzerdefinierter Metadaten für die Mediensammlungs-API](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
->* [Datentyp „Media Collection Details“](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)
->* [Datenvariablenzuordnung für die Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)
+>* [Datentyp „Media Collection Details“](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details)
+>* [Datenvariablenzuordnung für die Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/data-var-mapping)

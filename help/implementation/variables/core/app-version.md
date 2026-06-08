@@ -27,7 +27,7 @@ Die Anwendungsversionsvariable identifiziert die Version Ihrer Media Player-Anwe
 
 | Eigenschaft | Wert |
 | --- | --- |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Mediensammlungs-API-Parameter** | `media.sdkVersion` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md) |
@@ -38,7 +38,7 @@ Die Anwendungsversionsvariable identifiziert die Version Ihrer Media Player-Anwe
 
 >[!TAB Web SDK]
 
-Legen Sie beim Aufrufen von [`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia) `appVersion` im `streamingMedia`-Konfigurationsobjekt fest:
+Legen Sie beim Aufrufen von [`configure`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/configure/streamingmedia) `appVersion` im `streamingMedia`-Konfigurationsobjekt fest:
 
 ```javascript
 alloy("configure", {
