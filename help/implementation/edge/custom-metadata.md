@@ -55,7 +55,7 @@ Benutzerdefinierte Metadaten sind ein **Array von Name/Wert-Objekten** innerhalb
 }
 ```
 
-&lt;InlineAlert variant="warning" slots="text" />
+<InlineAlert variant="warning" slots="text" />
 
 `customMetadata` muss ein **Array** innerhalb von `mediaCollection` sein, nicht auf `xdm` Stammebene.
 
@@ -252,7 +252,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterStart?configId={datastrea
 
 Verwenden Sie das `_data`-Objekt, wenn Sie Metadaten in Adobe Analytics benötigen, **nicht** AEP-Datensatz gespeichert werden sollen. Beispiele sind temporäre Flags, Debugging-Variablen oder Analytics-spezifische Verarbeitungshinweise.
 
-&lt;InlineAlert variant="warning" slots="text" />
+<InlineAlert variant="warning" slots="text" />
 
 Daten, die über `_data` gesendet werden, werden nicht in Adobe Experience Platform gespeichert und sind nicht für Real-Time CDP, Journey Orchestration oder andere AEP-Services verfügbar.
 
@@ -308,7 +308,7 @@ In diesem Beispiel:
 
 ## Speicherort nachgelagerter Daten
 
-&lt;InlineAlert variant="info" slots="text" />
+<InlineAlert variant="info" slots="text" />
 
 `xdm.mediaCollection.customMetadata` ist der **eingehende API-Pfad** der zum Senden benutzerdefinierter Metadaten mit Ereignissen verwendet wird. Nach der Verarbeitung werden die Daten als Kontextdatenvariablen an Adobe Analytics weitergeleitet und in Adobe Experience Platform unter `xdm.mediaReporting.customMetadata` und als reduzierte Felder der obersten Ebene gespeichert.
 
