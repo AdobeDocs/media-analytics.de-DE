@@ -5,10 +5,10 @@ user-guide-title: Handbuch zu Streaming-Mediendiensten
 breadcrumb-title: Handbuch zu Streaming-Mediendiensten
 user-guide-description: Implementieren von Streaming-Mediendiensten. Beinhaltet auch Informationen zum Media SDK und zur Media Collection API.
 sub-product: media analytics
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: caf61bd76e2911ae5be31c4b1d8265b1df002acf
 workflow-type: tm+mt
-source-wordcount: '697'
-ht-degree: 31%
+source-wordcount: '692'
+ht-degree: 32%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 31%
 # Handbuch zu Streaming-Mediendiensten {#using}
 
 + [Handbuch zu Adobe Streaming Media Services](media-overview.md)
-+ [Versionshinweise zu Streaming Media Services](release-notes.md)
++ [Versionshinweise zu Streaming-Mediendiensten](release-notes.md)
 + Erste Schritte {#getting-started}
    + [Voraussetzungen](getting-started/prereqs.md)
    + [Unterstützte Geräte](getting-started/supported-devices.md)
@@ -165,7 +165,6 @@ ht-degree: 31%
             + [Timeout-Bedingungen](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
             + [Steuern der Ereignisreihenfolge](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
             + [Einreihen von Ereignissen in die Warteschlange bei langsamer Sitzungsantwort](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
-   + [Opt-out- und Datenschutzeinstellungen](implementation/opt-out-privacy.md)
 + Reporting {#reporting}
    + Einrichten von Berichten {#reporting-setup}
       + [Edge-Implementierungen](reporting/setup/edge-reporting.md)
@@ -300,3 +299,8 @@ ht-degree: 31%
       + [Timeline: Kapitel](use-cases/scenarios/chapter-start-end.md)
       + [Zeitleiste: Ansicht bis Ende](use-cases/scenarios/view-to-end-of-content.md)
       + [Zeitlicher Ablauf: Benutzer bricht Sitzung ab](use-cases/scenarios/user-abandons-session.md)
+
+<!--
+Removed from before the Reporting section:
+  + [Opt-out and privacy settings](implementation/opt-out-privacy.md)
+-->
