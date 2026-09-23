@@ -13,7 +13,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Content Player Name**behandelt. Siehe [Name des Content](/help/reporting/dimensions/content-player-name.md)Players“ für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Content Player Name**&#x200B;behandelt. Siehe [Name des Content](/help/reporting/dimensions/content-player-name.md)Players“ für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -181,6 +181,6 @@ Fügen Sie `media.playerName` in das `params` Ihrer `sessionStart` POST-Anfrage 
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)-API für Mediensammlungs-Sitzungen).
 
 >[!ENDTABS]

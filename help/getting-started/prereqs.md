@@ -48,11 +48,11 @@ Um Berichte in Analytics zu aktivieren und die erfassten Inhalts- und Anzeigenda
 
    Die Anforderungen an die Identitätskonfiguration hängen von Ihrer Implementierungsmethode ab:
 
-   * **Edge-Implementierungen**: Die Identität wird über die Adobe Experience Platform Identity-Namespace-Konfiguration gehandhabt. Es ist keine separate Einrichtung des Besucher-ID-Diensts erforderlich. Detaillierte Informationen finden Sie unter Übersicht über ](/help/implementation/edge/overview.md) Implementierung von [Edge .
+   * **Edge-Implementierungen**: Die Identität wird über die Adobe Experience Platform Identity-Namespace-Konfiguration gehandhabt. Es ist keine separate Einrichtung des Besucher-ID-Diensts erforderlich. Detaillierte Informationen finden Sie unter Übersicht über [&#128279;](/help/implementation/edge/overview.md) Implementierung von Edge .
 
    * **Nur Analytics-Implementierungen**: Der Besucher-ID-Dienst von Adobe muss aktiviert sein, damit Besuchende in allen CX Enterprise-Lösungen konsistent identifiziert werden können. Der Besucher-ID-Dienst weist jedem Site-Besucher eine eindeutige, persistente ID zu und ermöglicht die Freigabe dieser ID für alle CX Enterprise-Lösungen, die Sie abonnieren.
 
-     Weitere Informationen finden Sie in der Dokumentation zum Adobe-Besucher-ID-Service [](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=de).
+     Weitere Informationen finden Sie in der Dokumentation zum Adobe-Besucher-ID-Service [&#128279;](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=de).
 
 1. **Anzeigen von zusätzlichen Voraussetzungen für Ihre Implementierungsmethode**
 

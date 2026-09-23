@@ -13,7 +13,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Media Downloaded Flag**behandelt. Siehe [Medien heruntergeladen](/help/reporting/dimensions/media-downloaded-flag.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Media Downloaded Flag**&#x200B;behandelt. Siehe [Medien heruntergeladen](/help/reporting/dimensions/media-downloaded-flag.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -193,6 +193,6 @@ Fügen Sie `media.downloaded` in das `params` Ihrer `sessionStart` POST-Anfrage 
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)-API für Mediensammlungs-Sitzungen).
 
 >[!ENDTABS]

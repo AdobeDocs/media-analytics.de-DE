@@ -13,7 +13,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Kapitelposition**behandelt. Siehe [Kapitelposition](/help/reporting/dimensions/chapter-position.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Kapitelposition**&#x200B;behandelt. Siehe [Kapitelposition](/help/reporting/dimensions/chapter-position.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -183,6 +183,6 @@ Fügen Sie `media.chapter.index` in das `params` Ihrer `chapterStart` POST-Anfra
 }
 ```
 
-Die vollständige Anfragestruktur [ Sie in der ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]
