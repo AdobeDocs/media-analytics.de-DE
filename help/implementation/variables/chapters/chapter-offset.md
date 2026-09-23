@@ -3,19 +3,17 @@ title: Versatz des Kapitels
 description: Legen Sie den Versatz des Kapitels innerhalb des Inhalts in Sekunden ab Beginn fest.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '252'
 ht-degree: 6%
-
 ---
-
 
 # Versatz des Kapitels
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Chapter Offset**&#x200B;behandelt. Siehe [Kapitelversatz](/help/reporting/dimensions/chapter-offset.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Chapter Offset**behandelt. Siehe [Kapitelversatz](/help/reporting/dimensions/chapter-offset.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ Die Variable für den Kapitelversatz ist der Versatz des Kapitels innerhalb des 
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.chapter.offset` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.chapter.offset` |
 | **Erforderlich** | Nein (Mobile SDK); Ja (Edge, Mediensammlungs-API) |
 | **Gesendet mit** | [Kapitelstart](/help/implementation/events/chapters/chapter-start.md), Kapitelschluss |
@@ -185,6 +183,6 @@ Fügen Sie `media.chapter.offset` in das `params` Ihrer `chapterStart` POST-Anfr
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]

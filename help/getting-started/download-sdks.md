@@ -8,28 +8,38 @@ role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/-L2tSDNue-GheYE-krKkpnOh05s5GKZZBz5sFXsBJ3I
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+    internal-label: Implementations
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
 subfeature_v2:
   - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+    internal-label: Media Analytics
   - id: c77ba355-6681-41fe-b719-563d3f507fdb
+    internal-label: Mobile SDK
   - id: df312454-73c4-43f6-a90e-18f5043f074c
+    internal-label: Tags
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+    internal-label: Data collection
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: 625
-ht-degree: 30%
-
+source-wordcount: '650'
+ht-degree: 29%
 ---
-
 # Abrufen von Media SDKs, Erweiterungen und APIs
 
 ## Edge-Implementierungen (empfohlen) {#edge-sdks}
@@ -39,7 +49,7 @@ Edge-Implementierungen erfassen Daten einmal und stellen sie über Adobe Experie
 | | Dokumentation | Beispiel |
 |:---:|---|---|
 | [![JavaScript-Symbol](assets/javascript-icon.png)](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/overview)<br>[Web-SDK](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/install/overview) | [Einrichten der Web-SDK für Streaming-Medien](/help/implementation/edge/web-sdk.md) | [Beispiel](https://github.com/adobe/alloy-samples/blob/main/media-collection/STANDALONE.md) |
-| [![Erweiterungssymbol](assets/plug.svg)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/overview.html?lang=de)<br>[Web SDK-Tag-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/overview.html?lang=de) | [Einrichten der Tag-Erweiterung „Web SDK&quot; für Streaming-Medien](/help/implementation/edge/web-sdk-tags.md) | [Beispiel](https://github.com/adobe/alloy-samples/blob/main/media-collection/TAGS_IMPL.md) |
+| [![Erweiterungssymbol](assets/plug.svg)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/overview.html)<br>[Web SDK-Tag-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/overview.html) | [Einrichten der Tag-Erweiterung „Web SDK&quot; für Streaming-Medien](/help/implementation/edge/web-sdk-tags.md) | [Beispiel](https://github.com/adobe/alloy-samples/blob/main/media-collection/TAGS_IMPL.md) |
 | [![Android-Symbol](assets/android.png)](https://github.com/adobe/aepsdk-media-android)<br>[Android SDK](https://github.com/adobe/aepsdk-media-android) | [Einrichten von Android für Streaming-Medien](/help/implementation/edge/android.md) | [Beispiel](https://github.com/adobe/aepsdk-media-android/tree/main/code/testapp) |
 | [![Apple iOS-Symbol](assets/apple.png)](https://github.com/adobe/aepsdk-media-ios)<br>[iOS / tvOS SDK](https://github.com/adobe/aepsdk-media-ios) | [Einrichten von iOS für Streaming-Medien](/help/implementation/edge/ios.md) | [Beispiel](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
 | [![Erweiterungssymbol](assets/plug.svg)](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br>[Android-Tag-Erweiterung](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Einrichten der Tag-Erweiterung &quot;Android&quot; für Streaming-Medien](/help/implementation/edge/android-tags.md) | |
@@ -57,4 +67,4 @@ Diese SDKs und Erweiterungen senden Daten direkt an Adobe Analytics. Verwenden S
 | [![Erweiterungssymbol](assets/plug.svg)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=de)<br>[Medienerweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=de) | [Richten Sie JavaScript mithilfe von Tags für Streaming-Medien ein](/help/implementation/analytics-only/javascript-tags.md) | [Beispiel](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 | [![Chromecast icon](assets/chromecast-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3)<br>[Chromecast SDK 3.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Einrichten von Chromecast für Streaming-Medien](/help/implementation/analytics-only/chromecast.md) | [Beispiel](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/chromecast/samples/BasicPlayerSample) |
 | [![Roku icon](assets/roku-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.7)<br>[Roku SDK 2.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.7) | [Roku 2.x für Streaming-Medien einrichten](/help/implementation/analytics-only/roku-2x.md) | [Beispiel](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/roku/samples) |
-| [![API-Symbol](assets/api.png)](/help/implementation/media-collection-api/mc-api-overview.md)<br>[Media Collection API](/help/implementation/media-collection-api/mc-api-overview.md) | [Einrichten der Media Collection-API](/help/implementation/analytics-only/media-collection-api.md) | |
+| [![API-Symbol](assets/api.png)](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/)<br>[Media Collection API](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/) | [Einrichten der Media Collection-API](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/implementation) | |

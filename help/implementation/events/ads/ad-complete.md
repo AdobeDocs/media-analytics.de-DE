@@ -3,13 +3,11 @@ title: Hinzufügen abgeschlossen
 description: Signal, dass die Wiedergabe einer einzelnen Anzeige abgeschlossen ist.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '182'
 ht-degree: 8%
-
 ---
-
 
 # Hinzufügen abgeschlossen
 
@@ -127,7 +125,7 @@ adb.mediaTrackEvent(adb.MEDIA_AD_COMPLETE)
 
 >[!TAB Media Collection API]
 
-Senden eines `adComplete` POST an den [events-Endpunkt](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
+Senden eines `adComplete` POST an den [events-Endpunkt](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events):
 
 ```json
 {

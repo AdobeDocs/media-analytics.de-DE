@@ -3,19 +3,17 @@ title: Stream-Format
 description: Legen Sie das Stream-Format fest, um die Qualitätsstufe (HD, SD oder eine andere Bezeichnung, die Ihre Bereitstellungs-Pipeline verwendet) festzulegen.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '265'
 ht-degree: 7%
-
 ---
-
 
 # Stream-Format
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Stream-Format**&#x200B;behandelt. Siehe [Stream-Format](/help/reporting/dimensions/stream-format.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Stream-Format**behandelt. Siehe [Stream-Format](/help/reporting/dimensions/stream-format.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ Die Variable „stream format“ identifiziert die Qualitätsstufe des Streams (
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.format` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.streamFormat`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.streamFormat`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.format` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |
@@ -175,6 +173,6 @@ Fügen Sie `media.streamFormat` in das `params` Ihrer `sessionStart` POST-Anfrag
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)-API für Mediensammlungs-Sitzungen).
 
 >[!ENDTABS]

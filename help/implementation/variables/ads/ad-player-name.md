@@ -3,19 +3,17 @@ title: Player-Namen hinzufügen
 description: Den Namen des Players festlegen, der Anzeigen rendert. Der Anzeigen-Player kann sich vom Hauptinhalt-Player unterscheiden.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '286'
 ht-degree: 6%
-
 ---
-
 
 # Player-Namen hinzufügen
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Ad-Player-Name**&#x200B;behandelt. Siehe [Player-Name hinzufügen](/help/reporting/dimensions/ad-player-name.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Ad-Player-Name**behandelt. Siehe [Player-Name hinzufügen](/help/reporting/dimensions/ad-player-name.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ Die Variable „Anzeigenplayer-Name“ gibt an, welcher Player jede Anzeige gere
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.playerName` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.ad.playerName` |
 | **Erforderlich** | Ja |
 | **Gesendet mit** | [Anzeigenstart](/help/implementation/events/ads/ad-start.md), Anzeigenschluss |
@@ -173,6 +171,6 @@ Fügen Sie `media.ad.playerName` in das `params` Ihrer `adStart` POST-Anfrage ei
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]

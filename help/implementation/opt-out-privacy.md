@@ -8,23 +8,29 @@ role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/eF09wxu2mIUoFph5EdHz5y0XtcpXHHLINqSGLQEMoHU
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 3fd9ffcb997e1570abb983107e69d183b1c8b311
+    internal-label: Privacy
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: 798
+source-wordcount: '806'
 ht-degree: 3%
-
 ---
-
 # Opt-out- und Datenschutzeinstellungen
 
 Wenn ein Benutzer das Tracking abwählt, stoppt die Streaming-Medienbibliothek sofort alle Datenerfassungsaktivitäten. Für diesen Benutzer werden keine Sitzungsstart-Aufrufe, keine Heartbeat-Pings und keine Ereignisverfolgungsdaten an die Datenerfassungs-Server von Adobe gesendet.
@@ -65,7 +71,7 @@ Einverständniswerte:
 
 Um das Tracking wiederherzustellen, rufen Sie `setConsent` erneut mit `"y"` als `collect.val` auf.
 
-Weitere Informationen [&#x200B; anderen Formaten, einschließlich IAB TCF 2.0, finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/web-sdk/commands/setconsent) Befehl „setConsent“ in der Web SDK-Dokumentation.
+Weitere Informationen [ anderen Formaten, einschließlich IAB TCF 2.0, finden Sie ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/setconsent) Befehl „setConsent“ in der Web SDK-Dokumentation.
 
 >[!TAB iOS]
 
@@ -161,7 +167,7 @@ Weitere Informationen finden Sie in der [Media Edge-API-Referenz](https://develo
 
 >[!TAB Media SDK JS 3.x]
 
-Die Media SDK JS 3.x-Bibliothek bezieht sich auf den Opt-out-Status der Adobe-Besucher-API (Identity Service). Wenn Benutzende die Verwendung der Besucher-API abmelden, unterdrückt Media SDK automatisch alle Tracking-Aufrufe.
+Die Media SDK JS 3.x-Bibliothek bezieht sich auf den Opt-out-Status des Adobe-Besucher-ID-Service. Wenn Benutzende die Verwendung des ID-Diensts deaktivieren, unterdrückt Media SDK automatisch alle Tracking-Aufrufe.
 
 ```javascript
 var visitor = Visitor.getInstance("YOUR_ORG_ID@AdobeOrg");
@@ -172,7 +178,7 @@ Ersetzen Sie `YOUR_ORG_ID@AdobeOrg` durch Ihre Organisations-ID aus Adobe Admin 
 
 Um das Tracking wiederherzustellen, übergeben Sie `false` an `setOptOut()`.
 
-Weitere Informationen finden Sie unter [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=de).
+Weitere Informationen finden Sie unter [Adobe-Besucher-ID-Service](https://experienceleague.adobe.com/de/docs/id-service/using/home).
 
 >[!TAB Chromecast]
 
@@ -244,7 +250,7 @@ Fügen Sie für partielle Opt-outs im Rahmen des CCPA Opt-out-Flags in das `para
 * `analytics.optOutServerSideForwarding`: Legen Sie die Einstellung auf `true` fest, um die Freigabe von Daten durch Adobe Analytics und andere Experience Cloud-Lösungen (wie Audience Manager) zu verhindern.
 * `analytics.optOutShare`: Legen Sie die Einstellung auf `true` fest, um die gemeinsame Nutzung von Daten durch andere Adobe Analytics-Clients zu deaktivieren.
 
-Eine vollständige Liste der verfügbaren Parameter finden Sie in der [Referenz zu Media Collection API-Anforderungsparametern](../implementation/media-collection-api/mc-api-ref/mc-api-req-params.md).
+Eine vollständige Liste der verfügbaren Parameter finden Sie in der [Referenz zu Media Collection API-Anforderungsparametern](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/parameters).
 
 >[!ENDTABS]
 

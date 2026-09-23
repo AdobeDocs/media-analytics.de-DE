@@ -3,19 +3,17 @@ title: Im Fokus
 description: Verfolgen Sie, wann der Player im Fokus auf dem Bildschirm des Viewers ist, damit das Backend Fokusinteraktionen melden kann.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 5%
-
+source-wordcount: '354'
+ht-degree: 6%
 ---
-
 
 # Im Fokus
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für den Player **Status „Im Fokus**&#x200B;behandelt. Siehe [Von im Fokus betroffene Streams](/help/reporting/metrics/in-focus-streams-impacted.md), [Anzahl der Fokussierungen](/help/reporting/metrics/in-focus-count.md) und [Gesamtdauer des Fokus](/help/reporting/metrics/in-focus-total-duration.md) für die entsprechenden Berichtsmetriken.*
+*Auf dieser Seite wird die Datenerfassung für den Player **Status „Im Fokus**behandelt. Siehe [Von im Fokus betroffene Streams](/help/reporting/metrics/in-focus-streams-impacted.md), [Anzahl der Fokussierungen](/help/reporting/metrics/in-focus-count.md) und [Gesamtdauer des Fokus](/help/reporting/metrics/in-focus-total-duration.md) für die entsprechenden Berichtsmetriken.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ Der Player-Status im Fokus verfolgt, wann der Player die Aufmerksamkeit des View
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariablen** | `a.media.states.infocus.set`, `a.media.states.infocus.count`, `a.media.states.infocus.time` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) und [`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) (Einträge mit `name: "inFocus"`) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) und [`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) (Einträge mit `name: "inFocus"`) |
 | **Audience Manager-Eigenschaften** | `c_contextdata.a.media.states.infocus.set`, `c_contextdata.a.media.states.infocus.count`, `c_contextdata.a.media.states.infocus.time` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [State start](/help/implementation/events/player-state/state-start.md), [state end](/help/implementation/events/player-state/state-end.md) |
@@ -182,6 +180,6 @@ Senden Sie eine `stateStart` POST-Anfrage, wenn der Player den Fokus erhält, un
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]

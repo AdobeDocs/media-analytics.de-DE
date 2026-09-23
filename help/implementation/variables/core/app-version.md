@@ -3,19 +3,17 @@ title: Anwendungsversion
 description: Konfigurieren Sie die Versionszeichenfolge Ihrer Media Player-Anwendung.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '297'
 ht-degree: 2%
-
 ---
-
 
 # Anwendungsversion
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **App-Version**&#x200B;behandelt. Siehe [App-Version](/help/reporting/dimensions/app-version.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **App-Version**behandelt. Siehe [App-Version](/help/reporting/dimensions/app-version.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +25,7 @@ Die Anwendungsversionsvariable identifiziert die Version Ihrer Media Player-Anwe
 
 | Eigenschaft | Wert |
 | --- | --- |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Mediensammlungs-API-Parameter** | `media.sdkVersion` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md) |
@@ -38,7 +36,7 @@ Die Anwendungsversionsvariable identifiziert die Version Ihrer Media Player-Anwe
 
 >[!TAB Web SDK]
 
-Legen Sie beim Aufrufen von [`configure`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/configure/streamingmedia) `appVersion` im `streamingMedia`-Konfigurationsobjekt fest:
+Legen Sie beim Aufrufen von [`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia) `appVersion` im `streamingMedia`-Konfigurationsobjekt fest:
 
 ```javascript
 alloy("configure", {
@@ -177,6 +175,6 @@ Fügen Sie `media.sdkVersion` in das `params` Ihrer `sessionStart` POST-Anfrage 
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)-API für Mediensammlungs-Sitzungen).
 
 >[!ENDTABS]

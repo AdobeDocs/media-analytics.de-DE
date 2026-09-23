@@ -3,19 +3,17 @@ title: Name der Werbeunterbrechung
 description: Legen Sie den Anzeigenamen der übergeordneten Anzeigenunterbrechung fest.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '276'
 ht-degree: 6%
-
 ---
-
 
 # Name der Werbeunterbrechung
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Anzeigenumbruch-Name**&#x200B;behandelt. Siehe [Pod-Name](/help/reporting/dimensions/pod-name.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Anzeigenumbruch-Name**behandelt. Siehe [Pod-Name](/help/reporting/dimensions/pod-name.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ Die Variable Name der Werbeunterbrechung ist der Anzeigename der Werbeunterbrech
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.podFriendlyName` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.ad.podFriendlyName` |
 | **Erforderlich** | Ja (Mobile SDK); Nein (Edge, Mediensammlungs-API) |
 | **Gesendet mit** | [Start der Werbeunterbrechung](/help/implementation/events/ads/ad-break-start.md) und Schließen der Anzeige |
@@ -179,6 +177,6 @@ Fügen Sie `media.ad.podFriendlyName` in das `params` Ihrer `adBreakStart` POST-
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]

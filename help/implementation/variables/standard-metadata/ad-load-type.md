@@ -3,19 +3,17 @@ title: Anzeigenladungstyp
 description: Legen Sie den Typ des Anzeigenladevorgangs für die Streaming-Sitzung fest.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '278'
 ht-degree: 3%
-
 ---
-
 
 # Anzeigenladungstyp
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Anzeigenladungstyp**&#x200B;behandelt. Siehe [Anzeigenladevorgänge](/help/reporting/dimensions/ad-load-type.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Anzeigenladungstyp**behandelt. Siehe [Anzeigenladevorgänge](/help/reporting/dimensions/ad-load-type.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ Die Variable Anzeigenladetyp gibt den Typ der Anzeige an, die zu Beginn der Sitz
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.adLoad` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.adLoad` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |
@@ -35,7 +33,7 @@ Die Variable Anzeigenladetyp gibt den Typ der Anzeige an, die zu Beginn der Sitz
 
 >[!TAB Web SDK]
 
-`adLoad` in `xdm.mediaCollection.sessionDetails` festlegen, wenn [`createMediaSession`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/createmediasession) aufgerufen wird:
+`adLoad` in `xdm.mediaCollection.sessionDetails` festlegen, wenn [`createMediaSession`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/createmediasession) aufgerufen wird:
 
 ```javascript
 alloy("createMediaSession", {
@@ -181,6 +179,6 @@ Fügen Sie `media.adLoad` in das `params` Ihrer `sessionStart` POST-Anfrage ein:
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)-API für Mediensammlungs-Sitzungen).
 
 >[!ENDTABS]

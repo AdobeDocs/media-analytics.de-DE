@@ -3,17 +3,15 @@ title: Fehler
 description: Signal, dass der Medienplayer auf einen Fehler gestoßen ist.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 9%
-
+source-wordcount: '196'
+ht-degree: 8%
 ---
-
 
 # Fehler
 
-Das Fehlerereignis signalisiert, dass der Media Player auf einen Fehler gestoßen ist. Beim Verfolgen eines Fehlers wird die Sitzung nicht geschlossen. Wenn der Fehler verhindert, dass die Wiedergabe fortgesetzt wird, rufen [&#x200B; nach dem &#x200B;](session/session-end.md) „Sitzungsende“ auf.
+Das Fehlerereignis signalisiert, dass der Media Player auf einen Fehler gestoßen ist. Beim Verfolgen eines Fehlers wird die Sitzung nicht geschlossen. Wenn der Fehler verhindert, dass die Wiedergabe fortgesetzt wird, rufen [ nach dem ](session/session-end.md) „Sitzungsende“ auf.
 
 * **Voraussetzungen**: [Sitzungsstart](session/session-start.md)
 * **Zugeordnete Metrik**: [[!UICONTROL Von Fehlern betroffene Streams]](/help/reporting/metrics/error-impacted-streams.md)
@@ -137,7 +135,7 @@ adb.mediaTrackError("media-error-001", adb.ERROR_SOURCE_PLAYER)
 
 >[!TAB Media Collection API]
 
-Senden eines `error` POST an den [events-Endpunkt](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
+Senden eines `error` POST an den [events-Endpunkt](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events):
 
 ```json
 {

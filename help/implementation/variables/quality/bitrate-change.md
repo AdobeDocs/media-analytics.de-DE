@@ -3,13 +3,11 @@ title: Bitratenänderung
 description: Lösen Sie ein Bitratenänderungsereignis aus, wenn der Player zu einer anderen Bitrate wechselt.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '287'
 ht-degree: 6%
-
 ---
-
 
 # Bitratenänderung
 
@@ -177,6 +175,6 @@ Senden Sie eine `bitrateChange` POST-Anfrage mit der neuen Bitrate:
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]

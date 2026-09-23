@@ -3,19 +3,17 @@ title: Autorisiert
 description: Kennzeichnet eine Sitzung als über Adobe Pass authentifiziert, sodass sie für das Authorized-Ereignis zählt.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '256'
 ht-degree: 8%
-
 ---
-
 
 # Autorisiert
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Authorized**&#x200B;beschrieben. Siehe [Autorisiert](/help/reporting/metrics/authorized.md) für die entsprechende Berichtsmetrik.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Authorized**beschrieben. Siehe [Autorisiert](/help/reporting/metrics/authorized.md) für die entsprechende Berichtsmetrik.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ Die Variable „authorized“ kennzeichnet eine Sitzung, deren Benutzer über Ad
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.pass.auth` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.authorized`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.sessionDetails.authorized`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.pass.auth` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |
@@ -175,6 +173,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)-API für Mediensammlungs-Sitzungen).
 
 >[!ENDTABS]

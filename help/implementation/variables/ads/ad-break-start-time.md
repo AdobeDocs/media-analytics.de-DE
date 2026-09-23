@@ -3,19 +3,17 @@ title: Startzeit der Werbeunterbrechung
 description: Legen Sie die Startzeit (Offset) der Anzeigenunterbrechung innerhalb des Inhalts in Sekunden fest.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '268'
 ht-degree: 6%
-
 ---
-
 
 # Startzeit der Werbeunterbrechung
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Startzeit der Werbeunterbrechung**&#x200B;behandelt. Siehe [Pod-Position](/help/reporting/dimensions/pod-position.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Startzeit der Werbeunterbrechung**behandelt. Siehe [Pod-Position](/help/reporting/dimensions/pod-position.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ Die Startzeitvariable für die Anzeigenunterbrechung ist der Versatz der Anzeige
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.podSecond` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.ad.podSecond` |
 | **Erforderlich** | Ja |
 | **Gesendet mit** | [Start der Werbeunterbrechung](/help/implementation/events/ads/ad-break-start.md) und Schließen der Anzeige |
@@ -178,6 +176,6 @@ Fügen Sie `media.ad.podSecond` in das `params` Ihrer `adBreakStart` POST-Anfrag
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]

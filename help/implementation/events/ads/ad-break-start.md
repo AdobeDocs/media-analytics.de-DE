@@ -3,13 +3,11 @@ title: Start der Werbeunterbrechung
 description: Signalisieren Sie den Beginn einer Werbeunterbrechung (eine Sequenz aus einer oder mehreren Anzeigen).
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '229'
 ht-degree: 6%
-
 ---
-
 
 # Start der Werbeunterbrechung
 
@@ -163,7 +161,7 @@ adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
 
 >[!TAB Media Collection API]
 
-Senden eines `adBreakStart` POST an den [events-Endpunkt](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
+Senden eines `adBreakStart` POST an den [events-Endpunkt](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events):
 
 ```json
 {

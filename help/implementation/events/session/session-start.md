@@ -3,13 +3,11 @@ title: Sitzungsstart
 description: Signalisieren Sie den Beginn einer Mediensitzung und erhalten Sie die Sitzungs-ID, die für alle nachfolgenden Ereignisse erforderlich ist.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 4%
-
+source-wordcount: '397'
+ht-degree: 5%
 ---
-
 
 # Sitzungsstart
 
@@ -175,7 +173,7 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 
 >[!TAB Media Collection API]
 
-Senden Sie einen `sessionStart` POST an den [sessions-Endpunkt](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md). Die Kopfzeile der `Location` enthält die Sitzungs-ID, die in allen nachfolgenden Ereignisanfragen verwendet werden soll.
+Senden Sie einen `sessionStart` POST an den [sessions-Endpunkt](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions). Die Kopfzeile der `Location` enthält die Sitzungs-ID, die in allen nachfolgenden Ereignisanfragen verwendet werden soll.
 
 ```json
 {
@@ -195,7 +193,7 @@ Senden Sie einen `sessionStart` POST an den [sessions-Endpunkt](/help/implementa
 
 ## Wiederaufnehmen einer Sitzung
 
-Setzen Sie beim Wiederaufnehmen einer zuvor geschlossenen Sitzung (z. B. nach einer geräteübergreifenden Übergabe oder nachdem die Anwendung den gespeicherten Wiedergabestatus wiederhergestellt hat) das Wiederaufnahme-Flag beim Sitzungsstart. Dadurch wird Analytics [[!UICONTROL Inhaltswiederaufnahmen]](/help/reporting/metrics/content-resumes.md) anstelle von „Medienstarts[[!UICONTROL &#x200B; erhöht]](/help/reporting/metrics/media-starts.md).
+Setzen Sie beim Wiederaufnehmen einer zuvor geschlossenen Sitzung (z. B. nach einer geräteübergreifenden Übergabe oder nachdem die Anwendung den gespeicherten Wiedergabestatus wiederhergestellt hat) das Wiederaufnahme-Flag beim Sitzungsstart. Dadurch wird Analytics [[!UICONTROL Inhaltswiederaufnahmen]](/help/reporting/metrics/content-resumes.md) anstelle von „Medienstarts[[!UICONTROL  erhöht]](/help/reporting/metrics/media-starts.md).
 
 ## Empfohlene Implementierungsarten
 

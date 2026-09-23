@@ -3,13 +3,11 @@ title: Bitratenänderung
 description: Signal zur Änderung der Wiedergabebitrate.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '235'
 ht-degree: 6%
-
 ---
-
 
 # Bitratenänderung
 
@@ -166,7 +164,7 @@ adb.mediaTrackEvent(adb.MEDIA_BITRATE_CHANGE)
 
 >[!TAB Media Collection API]
 
-Senden Sie eine `bitrateChange`-POST-Anfrage an [events-Endpunkt](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) mit der neuen Bitrate in `qoeData`:
+Senden Sie eine `bitrateChange`-POST-Anfrage an [events-Endpunkt](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) mit der neuen Bitrate in `qoeData`:
 
 ```json
 {
