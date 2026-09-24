@@ -3,13 +3,11 @@ title: Sitzung abgeschlossen
 description: Signal, dass der Betrachter das Ende des Hauptinhalts erreicht hat.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 8%
-
+source-wordcount: '188'
+ht-degree: 7%
 ---
-
 
 # Sitzung abgeschlossen
 
@@ -122,7 +120,7 @@ ADBMobile().mediaTrackComplete()
 
 >[!TAB Media Collection API]
 
-Senden Sie einen `sessionComplete` POST an den [events-Endpunkt](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
+Senden Sie einen `sessionComplete` POST an den [events-Endpunkt](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events):
 
 ```json
 {

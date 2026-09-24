@@ -3,13 +3,11 @@ title: Kapitelstart
 description: Signalisieren Sie den Beginn eines Kapitelsegments im Inhalt.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '200'
 ht-degree: 7%
-
 ---
-
 
 # Kapitelstart
 
@@ -166,7 +164,7 @@ adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
 
 >[!TAB Media Collection API]
 
-Senden Sie einen `chapterStart` POST an den [events-Endpunkt](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
+Senden Sie einen `chapterStart` POST an den [events-Endpunkt](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events):
 
 ```json
 {

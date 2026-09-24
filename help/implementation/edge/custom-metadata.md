@@ -3,19 +3,17 @@ title: Unterstützung benutzerdefinierter Metadaten - XDM-Format
 description: Erfahren Sie, wie Sie benutzerdefinierte Metadaten mit Medien-Tracking-Ereignissen im XDM-Format von Experience Edge senden.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '774'
 ht-degree: 2%
-
 ---
-
 
 # Unterstützung benutzerdefinierter Metadaten - XDM-Format
 
 Mit der Experience Edge-API können Sie benutzerdefinierte Medienmetadaten zusammen mit standardmäßigen XDM-Feldern in `sessionStart`-, `adStart`- und `chapterStart`-API-Ereignissen senden. Benutzerdefinierte Medienmetadaten, die über das XDM-Format gesendet werden, können sowohl an **Adobe Analytics** als auch an **Adobe Experience Platform weitergeleitet**.
 
-Informationen zu Implementierungen der Mediensammlungs-API finden Sie unter [Unterstützung benutzerdefinierter Metadaten](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md).
+Informationen zu Implementierungen der Mediensammlungs-API finden Sie unter [Unterstützung benutzerdefinierter Metadaten](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/custom-metadata).
 
 ## Überblick
 
@@ -335,6 +333,6 @@ In diesem Beispiel:
 
 >[!MORELIKETHIS]
 >
->* [Unterstützung benutzerdefinierter Metadaten für die Mediensammlungs-API](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
+>* [Unterstützung benutzerdefinierter Metadaten für die Mediensammlungs-API](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/custom-metadata)
 >* [Datentyp „Media Collection Details“](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details)
 >* [Datenvariablenzuordnung für die Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/data-var-mapping)

@@ -3,13 +3,11 @@ title: Stummschaltung
 description: Verfolgen Sie, wann der Viewer Audio stumm schaltet und die Stummschaltung aufhebt, damit das Backend Interaktionen melden kann.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 6%
-
+source-wordcount: '328'
+ht-degree: 7%
 ---
-
 
 # Stummschaltung
 
@@ -182,6 +180,6 @@ Senden Sie eine `stateStart` POST-Anfrage, wenn der Viewer stummgeschaltet wird,
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]

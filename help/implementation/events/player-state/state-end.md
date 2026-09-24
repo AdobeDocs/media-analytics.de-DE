@@ -3,13 +3,11 @@ title: Zustandsende
 description: Signal, dass der Medien-Player den Status getrackter Player verlassen hat.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '229'
 ht-degree: 6%
-
 ---
-
 
 # Zustandsende
 
@@ -147,7 +145,7 @@ Player-Status-Tracking ist in der Roku 2.x-SDK nicht verfügbar. Verwenden Sie z
 
 >[!TAB Media Collection API]
 
-Senden Sie einen `stateEnd` POST an den [events-Endpunkt](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md):
+Senden Sie einen `stateEnd` POST an den [events-Endpunkt](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events):
 
 ```json
 {

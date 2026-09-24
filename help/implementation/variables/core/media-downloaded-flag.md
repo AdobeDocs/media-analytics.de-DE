@@ -3,13 +3,11 @@ title: Markierung für heruntergeladene Medien
 description: Markieren Sie eine Sitzung als heruntergeladene Offline-Wiedergabe, damit sie getrennt von gestreamten Sitzungen gemeldet wird.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '322'
 ht-degree: 5%
-
 ---
-
 
 # Markierung für heruntergeladene Medien
 
@@ -179,7 +177,7 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 
 >[!TAB Roku 2.x]
 
-Das Tracking heruntergeladener Inhalte ist in der Roku 2.x-SDK nicht verfügbar. Verwenden Sie zum Melden heruntergeladener Medienwiedergaben die [Roku Edge SDK](/help/implementation/edge/roku.md) oder die [Mediensammlungs-API](/help/implementation/analytics-only/media-collection-api.md).
+Das Tracking heruntergeladener Inhalte ist in der Roku 2.x-SDK nicht verfügbar. Verwenden Sie zum Melden heruntergeladener Medienwiedergaben die [Roku Edge SDK](/help/implementation/edge/roku.md) oder die [Mediensammlungs-API](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/implementation).
 
 >[!TAB Media Collection API]
 
@@ -195,6 +193,6 @@ Fügen Sie `media.downloaded` in das `params` Ihrer `sessionStart` POST-Anfrage 
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)-API für Mediensammlungs-Sitzungen).
 
 >[!ENDTABS]

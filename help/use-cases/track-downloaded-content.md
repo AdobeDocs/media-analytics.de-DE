@@ -8,30 +8,37 @@ role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/rtLBRcyLB8D8HPBj-Qw5LD824Fu8KeUDsLokJCn2Wfc
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+    internal-label: Implementations
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
 subfeature_v2:
   - id: e992d880-33bc-4949-a648-aa7d410276cd
+    internal-label: Validation
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+    internal-label: Implementation
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: 721
-ht-degree: 93%
-
+source-wordcount: '729'
+ht-degree: 91%
 ---
-
 # Tracking heruntergeladener Inhalte{#track-downloaded-content}
 
 ## Überblick {#overview}
 
-Die Funktion für heruntergeladene Inhalte bietet die Möglichkeit, die Mediennutzung zu verfolgen, während ein Benutzer offline ist. Ein Benutzer lädt beispielsweise eine Mobile App auf ein Mobilgerät herunter und installiert sie, um dann mit der Mobile App Inhalte in die lokale Datenspeicherung auf dem Gerät herunterzuladen. Um das Tracking der heruntergeladenen Daten zu ermöglichen, hat Adobe eine Funktion für heruntergeladene Inhalte entwickelt. Mit dieser Funktion werden Tracking-Daten unabhängig von der Konnektivität des Geräts gespeichert, wenn der Benutzer Inhalte aus dem Speicher des Geräts wiedergibt. Wenn der Benutzer die Wiedergabesitzung beendet hat und das Gerät wieder online ist, werden die gespeicherten Tracking-Informationen in einer einzelnen Payload an das Backend der Media Collection API gesendet. Die gespeicherten Tracking-Informationen werden dann wie gewohnt in der Media Collection API verarbeitet und für Berichte verwendet.
+Die Funktion für heruntergeladene Inhalte bietet die Möglichkeit, die Mediennutzung zu verfolgen, während ein Benutzer offline ist. Ein Benutzer lädt beispielsweise eine Mobile App auf ein Mobilgerät herunter und installiert sie, um dann mit der Mobile App Inhalte in die lokale Datenspeicherung auf dem Gerät herunterzuladen. Um das Tracking der heruntergeladenen Daten zu ermöglichen, hat Adobe die Funktion „Heruntergeladener Inhalt“ entwickelt. Mit dieser Funktion werden Tracking-Daten unabhängig von der Konnektivität des Geräts gespeichert, wenn der Benutzer Inhalte aus dem Speicher des Geräts wiedergibt. Wenn der Benutzer die Wiedergabesitzung beendet hat und das Gerät wieder online ist, werden die gespeicherten Tracking-Informationen in einer einzelnen Payload an das Backend der Media Collection API gesendet. Die gespeicherten Tracking-Informationen werden dann wie gewohnt in der Media Collection API verarbeitet und für Berichte verwendet.
 
 Vergleichen Sie die beiden Ansätze:
 
@@ -39,7 +46,7 @@ Vergleichen Sie die beiden Ansätze:
 
   Bei diesem Echtzeit-Ansatz sendet der Medienplayer Tracking-Daten für jedes Player-Ereignis. Außerdem sendet er alle zehn Sekunden (bei Anzeigen jede Sekunde) jeweils einen einzelnen Netzwerk-Ping an das Backend.
 
-* Offline (Funktion für heruntergeladene Inhalte)
+* Offline (Funktion „Heruntergeladener Inhalt“)
 
   Bei diesem Ansatz der Stapelverarbeitung müssen dieselben Sitzungsereignisse generiert werden, die jedoch auf dem Gerät gespeichert werden, bis sie als einzelne Sitzung an das Backend gesendet werden (siehe Beispiel unten).
 
@@ -51,24 +58,24 @@ Jeder Ansatz hat seine Vor- und Nachteile:
 
 ### Unterstützte Plattformen
 
-Das Inhalts-Tracking wird auf mobilen iOS- und Android-Geräten unterstützt.
+Das Inhalts-Tracking wird auf iOS- und Android-Mobilgeräten unterstützt.
 
 ### Ereignisschemas
 
-Bei der Funktion für heruntergeladene Inhalte handelt es sich um die Offline-Version der (standardmäßigen) Online-Media Collection API. Daher müssen die Ereignisdaten, die Ihr Player stapelt und an das Backend sendet, dieselben Ereignisschemas verwenden, die Sie auch bei Online-Aufrufen verwenden. Informationen zu diesen Schemas finden Sie unter:
-* [Überblick;](/help/implementation/media-collection-api/mc-api-overview.md)
-* [Validieren von Ereignisanfragen](/help/implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+Die Funktion für heruntergeladenen Inhalt ist die Offline-Version der (standardmäßigen) Online-Media-Collection-API. Daher müssen die Ereignisdaten, die Ihr Player bündelt und an das Backend sendet, dieselben Ereignis-Schemata verwenden, die Sie auch bei Online-Aufrufen verwenden. Informationen zu diesen Schemas finden Sie unter:
+* [Überblick;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/)
+* [Validieren von Ereignisanfragen](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/implementation)
 
 ### Reihenfolge der Ereignisse
 
 * Das erste Ereignis in der Stapel-Nutzlast muss wie bei der Media Collection API üblich `sessionStart` sein.
-* **Sie müssen `media.downloaded: true`** in die Standard-Metadatenparameter (`params`-Schlüssel) für das Ereignis `sessionStart` einschließen, um dem Backend anzuzeigen, dass Sie heruntergeladene Inhalte senden. Wenn dieser Parameter nicht vorhanden ist oder auf „false“ (falsch) gesetzt ist, wenn Sie heruntergeladene Daten senden, antwortet die API mit dem Antwortcode 400 („Bad Request“ (ungültige Anforderung)). Dieser Parameter unterscheidet zwischen heruntergeladenen und Live-Inhalten im Backend. Wenn `media.downloaded: true` auf eine Live-Sitzung eingestellt ist, wird dies ebenfalls zu einer Antwort mit dem Code 400 von der API führen.
+* **Sie müssen `media.downloaded: true`** in die Standard-Metadatenparameter (`params`-Schlüssel) für das Ereignis `sessionStart` einschließen, um dem Backend anzuzeigen, dass Sie heruntergeladene Inhalte senden. Wenn dieser Parameter nicht vorhanden ist oder auf „false“ (falsch) gesetzt ist, wenn Sie heruntergeladene Daten senden, antwortet die API mit dem Antwortcode 400 („Bad Request“ (ungültige Anforderung)). Dieser Parameter unterscheidet zwischen heruntergeladenem und Live Content im Backend. Wenn `media.downloaded: true` auf eine Live-Sitzung eingestellt ist, wird dies ebenfalls zu einer Antwort mit dem Code 400 von der API führen.
 * Es liegt an einer korrekten Implementierung, Abspielereignisse in der Reihenfolge ihres Auftretens richtig zu speichern.
 
 ### Antwortcodes
 
-* 201 - Erstellt: die Anfrage ist erfolgreich; die Daten sind gültig und die Sitzung wurde erstellt wurde und wird verarbeitet.
-* 400 - Ungültige Anfrage; die Validierung des Schemas ist fehlgeschlagen, alle Daten werden verworfen, keine Sitzungsdaten werden verarbeitet.
+* 201 – Erstellt: Die Anfrage war erfolgreich; die Daten sind gültig und die Sitzung wurde erstellt und wird verarbeitet.
+* 400 – Ungültige Anfrage; die Schemavalidierung ist fehlgeschlagen, alle Daten werden verworfen, keine Sitzungsdaten werden verarbeitet.
 
 ## Integration mit Adobe Analytics {#integration-with-adobe-analtyics}
 
@@ -160,6 +167,6 @@ POST /api/v1/sessions HTTP/1.1
 }]
 ```
 
-## Media-Tracker-API-Referenz
+## Medien-Tracker-API-Referenz
 
 Informationen zum Konfigurieren von heruntergeladenen Inhalten finden Sie in der [Media Tracker API-Referenz](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/).

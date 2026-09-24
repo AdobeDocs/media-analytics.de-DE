@@ -3,13 +3,11 @@ title: Name des Inhalts-Players
 description: Legen Sie den Player-Namen fest, um zu identifizieren, welcher Player den Inhalt gerendert hat.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '294'
 ht-degree: 6%
-
 ---
-
 
 # Name des Inhalts-Players
 
@@ -183,6 +181,6 @@ Fügen Sie `media.playerName` in das `params` Ihrer `sessionStart` POST-Anfrage 
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)-API für Mediensammlungs-Sitzungen).
 
 >[!ENDTABS]

@@ -3,13 +3,11 @@ title: Stream-Typ
 description: Legen Sie den Stream-Typ fest, um festzustellen, ob es sich bei einem Medien-Stream um Audio- oder Videoinhalte handelt.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '332'
 ht-degree: 6%
-
 ---
-
 
 # Stream-Typ
 
@@ -198,6 +196,6 @@ Fügen Sie `media.streamType` in das `params` Ihrer `sessionStart` POST-Anfrage 
 }
 ```
 
-Die [&#x200B; Anfragestruktur und alle erforderlichen Felder finden Sie &#x200B;](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) der Referenz zur Mediensammlungs-API-Sitzungen .
+Die [&#x200B; Anfragestruktur und alle erforderlichen Felder finden Sie &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions) der Referenz zur Mediensammlungs-API-Sitzungen .
 
 >[!ENDTABS]
