@@ -25,7 +25,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Anzeigenlänge**behandelt. Siehe [Anzeigenlänge](/help/reporting/dimensions/ad-length.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Anzeigenlänge**&#x200B;behandelt. Siehe [Anzeigenlänge](/help/reporting/dimensions/ad-length.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -194,6 +194,6 @@ Fügen Sie `media.ad.length` in das `params` Ihrer `adStart` POST-Anfrage ein:
 }
 ```
 
-Die vollständige Anfragestruktur [ Sie in der ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]

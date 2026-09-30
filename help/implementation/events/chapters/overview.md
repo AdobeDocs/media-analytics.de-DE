@@ -58,6 +58,6 @@ Das Kapitel-Tracking beinhaltet Kapitelstarts, -beendigungen und übersprungene 
 1. Ermitteln Sie, wann das Kapitelstartereignis auftritt, und erstellen Sie das Kapitelobjekt. Siehe [Kapitelname](/help/implementation/variables/chapters/chapter-name.md), [Kapitelposition](/help/implementation/variables/chapters/chapter-position.md), [Kapitellänge](/help/implementation/variables/chapters/chapter-length.md) und [Kapitelversatz](/help/implementation/variables/chapters/chapter-offset.md) für Felddefinitionen.
 1. Erstellen Sie optional Kontextdatenvariablen für benutzerdefinierte Kapitelmetadaten.
 1. Rufen Sie [Kapitelstart](/help/implementation/events/chapters/chapter-start.md) auf, um mit der Verfolgung des Kapitels zu beginnen.
-1. Wenn die Wiedergabe die Kapitelendgrenze erreicht, rufen Sie &quot;[ abgeschlossen“ ](/help/implementation/events/chapters/chapter-complete.md).
+1. Wenn die Wiedergabe die Kapitelendgrenze erreicht, rufen Sie &quot;[&#x200B; abgeschlossen“ &#x200B;](/help/implementation/events/chapters/chapter-complete.md).
 1. Wenn der Benutzer das Kapitel vor Abschluss überspringt, rufen Sie [Kapitelüberspringen](/help/implementation/events/chapters/chapter-skip.md) auf.
 1. Für weitere Kapitel wiederholen Sie die Schritte 1 bis 5.

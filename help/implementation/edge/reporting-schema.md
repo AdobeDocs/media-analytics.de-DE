@@ -120,7 +120,7 @@ Die folgenden Felder werden in `mediaReporting` Payloads angezeigt, sind jedoch 
 
 Bei Sitzungen, die mit dem [heruntergeladenen Endpunkt](/help/use-cases/track-downloaded-content.md) verfolgt werden, setzt das Backend `xdm.mediaReporting.sessionDetails.isDownloaded` automatisch auf `true` im `sessionStart`. Alle anderen Berichterstellungsereignisse für heruntergeladene Sitzungen folgen demselben Schema wie Live-Sitzungen. Verwenden Sie dieses Feld in CJA oder Adobe Analytics, um die heruntergeladene Wiedergabe zu filtern oder zu segmentieren.
 
-Weitere Informationen zur [ finden Sie ](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/downloaded/)Downloaded Endpoint) in der Media Edge-API-Referenz.
+Weitere Informationen zur [&#x200B; finden Sie &#x200B;](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/downloaded/)Downloaded Endpoint) in der Media Edge-API-Referenz.
 
 ## Validieren der Implementierung
 
@@ -128,7 +128,7 @@ Nachdem Sie über die Media Edge-API Ereignisse gesendet haben, überprüfen Sie
 
 **Vorschau des Adobe Experience Platform-Datensatzes**
 
-1. Navigieren Sie in [](https://experience.adobe.com) zu **[!UICONTROL Datensätze]** und wählen Sie Ihren Streaming-Medien-Datensatz aus.
+1. Navigieren Sie in [&#128279;](https://experience.adobe.com) zu **[!UICONTROL Datensätze]** und wählen Sie Ihren Streaming-Medien-Datensatz aus.
 2. Wählen Sie **[!UICONTROL Vorschau des Datensatzes]** aus, um die zuletzt aufgenommenen Erlebnisereignisse anzuzeigen.
 3. Vergewissern Sie sich, dass `eventType` Werte wie `media.sessionStart` und `media.sessionComplete` mit ausgefüllten `mediaReporting` angezeigt werden.
 

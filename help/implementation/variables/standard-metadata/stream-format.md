@@ -25,7 +25,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Stream-Format**behandelt. Siehe [Stream-Format](/help/reporting/dimensions/stream-format.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Stream-Format**&#x200B;behandelt. Siehe [Stream-Format](/help/reporting/dimensions/stream-format.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -185,6 +185,6 @@ Fügen Sie `media.streamFormat` in das `params` Ihrer `sessionStart` POST-Anfrag
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)-API für Mediensammlungs-Sitzungen).
 
 >[!ENDTABS]

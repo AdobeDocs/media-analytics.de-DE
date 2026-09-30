@@ -116,6 +116,6 @@ Eine Sitzung läuft automatisch ab, wenn für 10 Minuten keine Ereignisse empfan
 1. Rufen Sie auf dem **Quellgerät** SessionEnd auf, wenn der Viewer die Umwandlung initiiert. SessionComplete nicht aufrufen - der Inhalt ist nicht abgeschlossen.
 1. Rufen Sie auf dem **Zielgerät** „SessionStart“ auf, wobei das Fortsetzungs-Flag auf &quot;`true`&quot; gesetzt ist, und übergeben Sie dieselben Inhaltsmetadaten und die Abspielposition vom Quellgerät.
 
-Durch Festlegen des Fortsetzungs-Flags erhöht [ Analytics für den zweiten Abschnitt der Übergabe ](/help/reporting/metrics/content-resumes.md)Inhaltswiederaufnahmen[ anstatt ](/help/reporting/metrics/media-starts.md)Medienstarts“.
+Durch Festlegen des Fortsetzungs-Flags erhöht [&#x200B; Analytics für den zweiten Abschnitt der Übergabe &#x200B;](/help/reporting/metrics/content-resumes.md)Inhaltswiederaufnahmen[&#x200B; anstatt &#x200B;](/help/reporting/metrics/media-starts.md)Medienstarts“.
 
 **Manuelles Wiederaufnehmen einer zuvor geschlossenen Sitzung:** Wenn die Anwendung Benutzerdaten speichert und eine zuvor geschlossene Sitzung fortsetzen kann, setzen Sie das Wiederaufnahme-Flag beim Sitzungsstart. Siehe [Sitzungsstart](/help/implementation/events/session/session-start.md#resuming-a-session) für Implementierungsdetails auf allen Plattformen.

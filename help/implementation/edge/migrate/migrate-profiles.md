@@ -37,11 +37,11 @@ ht-degree: 0%
 ---
 # Migrieren von Profilen in die neuen Streaming-Medienfelder
 
-In diesem Dokument wird der Prozess der Migration des Profilfilterdienstes beschrieben, der zusätzlich zu den Adobe-Datenerfassungsflüssen vorhanden ist, die für Adobe Analytics für Streaming-Mediendaten aktiviert sind. Bei der Migration wird der Profilfilterdienst von mithilfe des Datentyps „Media“ für Adobe-Streaming-Mediendienste in den neuen Datentyp &quot;[ Media Reporting Details“ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details).
+In diesem Dokument wird der Prozess der Migration des Profilfilterdienstes beschrieben, der zusätzlich zu den Adobe-Datenerfassungsflüssen vorhanden ist, die für Adobe Analytics für Streaming-Mediendaten aktiviert sind. Bei der Migration wird der Profilfilterdienst von mithilfe des Datentyps „Media“ für Adobe-Streaming-Mediendienste in den neuen Datentyp &quot;[&#x200B; Media Reporting Details“ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details).
 
 ## Profile migrieren
 
-Um die Profilfilterung vom alten Datentyp namens „Media“ zum neuen Datentyp namens &quot;[Media Reporting Details“ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details), müssen Sie die vorhandenen Profilfilterregeln bearbeiten:
+Um die Profilfilterung vom alten Datentyp namens „Media“ zum neuen Datentyp namens &quot;[Media Reporting Details“ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details), müssen Sie die vorhandenen Profilfilterregeln bearbeiten:
 
 1. Wechseln Sie in Adobe Experience Platform **[!UICONTROL Abschnitt]** Quellen“ zur Registerkarte **[!UICONTROL Datenflüsse]**.
 
@@ -57,7 +57,7 @@ Um die Profilfilterung vom alten Datentyp namens „Media“ zum neuen Datentyp 
 
 1. Überprüfen Sie, ob die Profile weiterhin erwartungsgemäß funktionieren.
 
-Informationen zum Zuordnen zwischen den alten [ den neuen Feldern finden Sie unter dem Parameter ](/help/reporting/dimensions/content.md)Content ID](/help/media-overview.md) und unter den übrigen unter [Streaming-Mediendienste dokumentierten Streaming-Medienvariablen . Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“.
+Informationen zum Zuordnen zwischen den alten [&#x200B; den neuen Feldern finden Sie unter dem Parameter &#x200B;](/help/reporting/dimensions/content.md)Content ID[&#128279;](/help/media-overview.md) und unter den übrigen unter Streaming-Mediendienste dokumentierten Streaming-Medienvariablen . Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“.
 
 ## Beispiel
 
@@ -80,7 +80,7 @@ Um die Befolgung der Migrationsrichtlinien zu vereinfachen, sehen Sie sich den f
    ![AEP-Datenflussfilterregeln](../../assets/dataflow-filtering-rules-profile.jpeg)
 
 
-   Suchen Sie für jeden Filter, der das media.mediaTimed-Objekt verwendet, mithilfe der unter „Streaming-Mediendienste“ dokumentierten Streaming[Medienvariablen im `mediaReporting`-Objekt ](/help/media-overview.md) Zuordnung zwischen den alten und den neuen Feldern. Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, während der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“ zu finden ist. Beispielsweise wird für [Medienstarts](/help/reporting/metrics/media-starts.md) der Korrespondent für `media.mediaTimed.impressions.value` `xdm.mediaReporting.sessionDetails.isViewed`.
+   Suchen Sie für jeden Filter, der das media.mediaTimed-Objekt verwendet, mithilfe der unter „Streaming-Mediendienste“ dokumentierten Streaming[Medienvariablen im `mediaReporting`-Objekt &#x200B;](/help/media-overview.md) Zuordnung zwischen den alten und den neuen Feldern. Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, während der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“ zu finden ist. Beispielsweise wird für [Medienstarts](/help/reporting/metrics/media-starts.md) der Korrespondent für `media.mediaTimed.impressions.value` `xdm.mediaReporting.sessionDetails.isViewed`.
 
    ![Neue und alte XDM-Felder](../../assets/xdm-fields-new-and-old.jpeg)
 

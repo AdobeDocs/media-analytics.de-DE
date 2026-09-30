@@ -25,7 +25,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Bitrate**behandelt. Siehe [[!UICONTROL Durchschnittliche Bitrate] (Dimension)](/help/reporting/dimensions/average-bitrate.md) und [[!UICONTROL Durchschnittliche Bitrate] (Metrik)](/help/reporting/metrics/average-bitrate.md) für die entsprechenden Berichtsvariablen.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Bitrate**&#x200B;behandelt. Siehe [[!UICONTROL Durchschnittliche Bitrate] (Dimension)](/help/reporting/dimensions/average-bitrate.md) und [[!UICONTROL Durchschnittliche Bitrate] (Metrik)](/help/reporting/metrics/average-bitrate.md) für die entsprechenden Berichtsvariablen.*
 
 >[!ENDSHADEBOX]
 
@@ -193,6 +193,6 @@ Fügen Sie `media.qoe.bitrate` in das `params` Ihrer `bitrateChange` POST-Anfrag
 }
 ```
 
-Die vollständige Anfragestruktur [ Sie in der ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]

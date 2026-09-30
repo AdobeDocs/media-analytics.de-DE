@@ -25,7 +25,7 @@ ht-degree: 3%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Anzeigenladungstyp**behandelt. Siehe [Anzeigenladevorgänge](/help/reporting/dimensions/ad-load-type.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Anzeigenladungstyp**&#x200B;behandelt. Siehe [Anzeigenladevorgänge](/help/reporting/dimensions/ad-load-type.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -191,6 +191,6 @@ Fügen Sie `media.adLoad` in das `params` Ihrer `sessionStart` POST-Anfrage ein:
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)-API für Mediensammlungs-Sitzungen).
 
 >[!ENDTABS]

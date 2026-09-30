@@ -35,7 +35,7 @@ ht-degree: 20%
 ---
 # Zuordnung von Media Analytics-Parametern für Adobe Experience Platform und Customer Journey Analytics
 
-Dieses Dokument enthält eine umfassende Liste aller Medienanalyseparameter, die in Adobe Experience Platform und Customer Journey Analytics verwendet werden. Sie unterstützt die Integration von Daten, die von Adobe Analytics über den [Analytics Source Connector](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) oder den [Analytics Source Connector for Classifications) in Platform importiert ](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/classifications), indem jeder Parameter seinem entsprechenden XDM-Feldpfad zugeordnet wird.
+Dieses Dokument enthält eine umfassende Liste aller Medienanalyseparameter, die in Adobe Experience Platform und Customer Journey Analytics verwendet werden. Sie unterstützt die Integration von Daten, die von Adobe Analytics über den [Analytics Source Connector](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) oder den [Analytics Source Connector for Classifications) in Platform importiert &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/classifications), indem jeder Parameter seinem entsprechenden XDM-Feldpfad zugeordnet wird.
 
 >[!NOTE]
 >
@@ -254,5 +254,5 @@ In beiden Fällen entspricht die `<number>` der spezifischen Ereignis- oder eVar
 | Frames pro Sekunde | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>`<br>und<br>`xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | Beide |
 | Medien-SDK-Fehler-IDs | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | Metrik |
 | [[!UICONTROL Betroffene Streams verzögern]](/help/reporting/metrics/stall-impacted-streams.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | Metrik |
-| [[!UICONTROL Verzögerte ]](/help/reporting/metrics/stall-events.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | Metrik |
+| [[!UICONTROL Verzögerte &#x200B;]](/help/reporting/metrics/stall-events.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | Metrik |
 | [[!UICONTROL Gesamtdauer der Verzögerung]](/help/reporting/metrics/total-stalling-duration.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | Metrik |

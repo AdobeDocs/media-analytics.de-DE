@@ -25,7 +25,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Typ anzeigen**behandelt. Siehe [Sendungstyp](/help/reporting/dimensions/show-type.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Typ anzeigen**&#x200B;behandelt. Siehe [Sendungstyp](/help/reporting/dimensions/show-type.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -192,6 +192,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)-API für Mediensammlungs-Sitzungen).
 
 >[!ENDTABS]

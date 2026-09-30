@@ -59,7 +59,7 @@ ht-degree: 37%
 
 | Funktion | Beschreibung | Datum |
 | --- | --- | --- |
-| **Support-Zeitplandaten** | Hochladen geplanter Daten für vergangene Live-Inhalte, um die Zuschauerzahlen nach Programm oder Segment zu verfolgen. Zu den unterstützten Inhaltstypen gehören:<ul><li>FAST-Plattformen (Free Ad Supported TV)</li><li>Lokale Datenströme</li><li>Live-Sportübertragungen</li></ul>Weitere Informationen finden Sie [ Anwendungsfall ](/help/use-cases/track-schedule-data.md) Hochladen von Zeitplandaten zur Verfolgung von Live-Inhalten . | Rollout-Beginn: 29. Oktober 2025<p>Allgemeine Verfügbarkeit: Oktober 2026</p> |
+| **Support-Zeitplandaten** | Hochladen geplanter Daten für vergangene Live-Inhalte, um die Zuschauerzahlen nach Programm oder Segment zu verfolgen. Zu den unterstützten Inhaltstypen gehören:<ul><li>FAST-Plattformen (Free Ad Supported TV)</li><li>Lokale Datenströme</li><li>Live-Sportübertragungen</li></ul>Weitere Informationen finden Sie [&#x200B; Anwendungsfall &#x200B;](/help/use-cases/track-schedule-data.md) Hochladen von Zeitplandaten zur Verfolgung von Live-Inhalten . | Rollout-Beginn: 29. Oktober 2025<p>Allgemeine Verfügbarkeit: Oktober 2026</p> |
 
 ## 2025
 
@@ -71,8 +71,8 @@ ht-degree: 37%
 
 | Funktion | Beschreibung | Datum |
 | --- | --- | --- |
-| **Web SDK-Unterstützung** | Senden Sie Web-Daten von Streaming-Medien mit der Tag-Erweiterung Web SDK oder Web SDK an Adobe Experience Platform Edge Network und ermöglichen Sie so eine einheitliche Erfassungsmethode für alle Platform-Lösungen wie Customer Journey Analytics, Real-Time CDP, Journey Optimizer und Ereignisweiterleitung. Weitere Informationen [ Sie unter „Einrichten der Web-SDK für Streaming](/help/implementation/edge/web-sdk.md)Medien“ oder [Einrichten der Tag-Erweiterung „Web](/help/implementation/edge/web-sdk-tags.md)SDK&quot; für Streaming-Medien. | &#x200B;29. Mai 2024 |
-| **Roku-Unterstützung** | Senden Sie Streaming-Mediendaten mit dem Roku Edge SDK an Adobe Experience Platform. Weitere [ finden Sie unter „Einrichten von Roku Edge für ](/help/implementation/edge/roku.md) Media“. | &#x200B;12. April 2024 |
+| **Web SDK-Unterstützung** | Senden Sie Web-Daten von Streaming-Medien mit der Tag-Erweiterung Web SDK oder Web SDK an Adobe Experience Platform Edge Network und ermöglichen Sie so eine einheitliche Erfassungsmethode für alle Platform-Lösungen wie Customer Journey Analytics, Real-Time CDP, Journey Optimizer und Ereignisweiterleitung. Weitere Informationen [&#x200B; Sie unter „Einrichten der Web-SDK für Streaming](/help/implementation/edge/web-sdk.md)Medien“ oder [Einrichten der Tag-Erweiterung „Web](/help/implementation/edge/web-sdk-tags.md)SDK&quot; für Streaming-Medien. | &#x200B;29. Mai 2024 |
+| **Roku-Unterstützung** | Senden Sie Streaming-Mediendaten mit dem Roku Edge SDK an Adobe Experience Platform. Weitere [&#x200B; finden Sie unter „Einrichten von Roku Edge für &#x200B;](/help/implementation/edge/roku.md) Media“. | &#x200B;12. April 2024 |
 
 ## 2023
 
@@ -84,9 +84,9 @@ ht-degree: 37%
 
 | Funktion | Beschreibung | Datum |
 | --- | --- | --- |
-| **Statusverfolgung für mehrere Player** | Verwenden Sie die Mediensammlungs-API, um die Statusverfolgung für mehrere [ zu ](/help/implementation/events/player-state/overview.md). | September 2022 |
+| **Statusverfolgung für mehrere Player** | Verwenden Sie die Mediensammlungs-API, um die Statusverfolgung für mehrere [&#x200B; zu &#x200B;](/help/implementation/events/player-state/overview.md). | September 2022 |
 | Umbenannte XDM-Felder | Umbenannte XDM-Feldnamen für Konsistenz:<ul><li>Audio- und Videoparameter</li><li>Anzeigenparameter</li><li>Kapitelparameter</li><li>Player-Statusparameter</li><li>Qualitätsparameter</li></ul> | September 2022 |
-| **Zu Customer Journey Analytics hinzugefügte Bedienfelder** | Das Bedienfeld [Gleichzeitige Medienbetrachter](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers) und [Bedienfeld „Mit Medienwiedergabe verbrachte Zeit“ wurde ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent) Customer Journey Analytics hinzugefügt. | &#x200B;9. August 2022 |
+| **Zu Customer Journey Analytics hinzugefügte Bedienfelder** | Das Bedienfeld [Gleichzeitige Medienbetrachter](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers) und [Bedienfeld „Mit Medienwiedergabe verbrachte Zeit“ wurde &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent) Customer Journey Analytics hinzugefügt. | &#x200B;9. August 2022 |
 | **Zielgruppendurchschnitt pro Minute** | Sie können das Bedienfeld [Zielgruppendurchschnitt pro Minute](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) verwenden, um die durchschnittliche Nutzung von Inhalten besser zu verstehen. <br>Der Zielgruppendurchschnitt pro Minute ermöglicht Vergleiche von Inhalten beliebiger Längen oder Genres. Darüber hinaus können Kunden diesen digitalen Zielgruppendurchschnitt pro Minute mit linearen Metriken zum TV-Durchschnitt pro Minute vergleichen oder ihn hinzufügen. Dieses Panel bietet mehr Flexibilität, um die durchschnittliche Zielgruppe für benutzerdefinierte Zeiträume zu messen, ebenso wie für Fälle, in denen die Klassifizierung der Dauer aktualisiert wurde. | &#x200B;16. März 2022 |
 
 ## 2021

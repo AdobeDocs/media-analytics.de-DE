@@ -35,7 +35,7 @@ ht-degree: 1%
 ---
 # Migrieren von Zielgruppen zu den neuen Streaming-Medienfeldern
 
-In diesem Dokument wird beschrieben, wie eine Zielgruppe, die Felder aus dem Datentyp „Medien“ von Adobe Streaming Media Services verwendet, migriert werden sollte, um den neuen entsprechenden Datentyp namens &quot;[ Media Reporting Details“ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) verwenden.
+In diesem Dokument wird beschrieben, wie eine Zielgruppe, die Felder aus dem Datentyp „Medien“ von Adobe Streaming Media Services verwendet, migriert werden sollte, um den neuen entsprechenden Datentyp namens &quot;[&#x200B; Media Reporting Details“ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) verwenden.
 
 ## Migrieren einer Zielgruppe
 
@@ -51,7 +51,7 @@ Um eine Zielgruppe vom alten Datentyp „Media“ in den neuen Datentyp &quot;[M
 
 1. Überprüfen Sie, ob die Zielgruppen weiterhin erwartungsgemäß funktionieren.
 
-Informationen zum Zuordnen zwischen den alten [ den neuen Feldern finden Sie unter dem Parameter ](/help/reporting/dimensions/content.md)Content ID](/help/media-overview.md) und unter den übrigen unter [Streaming-Mediendienste dokumentierten Streaming-Medienvariablen . Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, während der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“ zu finden ist.
+Informationen zum Zuordnen zwischen den alten [&#x200B; den neuen Feldern finden Sie unter dem Parameter &#x200B;](/help/reporting/dimensions/content.md)Content ID[&#128279;](/help/media-overview.md) und unter den übrigen unter Streaming-Mediendienste dokumentierten Streaming-Medienvariablen . Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, während der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“ zu finden ist.
 
 ![Alte und neue XDM-Feldpfade](../../assets/field-paths-updated.jpeg)
 

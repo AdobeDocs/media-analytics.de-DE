@@ -37,7 +37,7 @@ ht-degree: 1%
 ---
 # Migrieren von Customer Journey Analytics zur Verwendung der neuen Streaming-Medienfelder
 
-In diesem Dokument wird beschrieben, wie ein Customer Journey Analytics-Setup, das den Datentyp Adobe Streaming Media Services namens „Media“ verwendet, so aktualisiert werden sollte, dass er den neuen entsprechenden Datentyp namens &quot;[ Media Reporting Details“ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details).
+In diesem Dokument wird beschrieben, wie ein Customer Journey Analytics-Setup, das den Datentyp Adobe Streaming Media Services namens „Media“ verwendet, so aktualisiert werden sollte, dass er den neuen entsprechenden Datentyp namens &quot;[&#x200B; Media Reporting Details“ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details).
 
 ## Migrieren von Customer Journey Analytics
 
@@ -67,7 +67,7 @@ So migrieren Sie abgeleitete Felder in den neuen Datentyp:
 
 1. Ersetzen Sie alle alten Felder im abgeleiteten Feld durch das neue entsprechende Feld aus „Details zur Medienberichterstattung“.
 
-Informationen zum Zuordnen zwischen den alten [ den neuen Feldern finden Sie unter dem Parameter ](/help/reporting/dimensions/content.md)Content ID](/help/media-overview.md) und unter den übrigen unter [Streaming-Mediendienste dokumentierten Streaming-Medienvariablen . Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, während der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“ zu finden ist.
+Informationen zum Zuordnen zwischen den alten [&#x200B; den neuen Feldern finden Sie unter dem Parameter &#x200B;](/help/reporting/dimensions/content.md)Content ID[&#128279;](/help/media-overview.md) und unter den übrigen unter Streaming-Mediendienste dokumentierten Streaming-Medienvariablen . Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, während der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“ zu finden ist.
 
 ![Alte und neue XDM-Feldpfade](../../assets/field-paths-updated.jpeg)
 

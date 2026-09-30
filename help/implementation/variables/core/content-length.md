@@ -25,7 +25,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Content length**behandelt. Siehe [Inhaltslänge](/help/reporting/dimensions/content-length.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Content length**&#x200B;behandelt. Siehe [Inhaltslänge](/help/reporting/dimensions/content-length.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -204,6 +204,6 @@ Fügen Sie `media.length` in das `params` Ihrer `sessionStart` POST-Anfrage ein:
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)-API für Mediensammlungs-Sitzungen).
 
 >[!ENDTABS]

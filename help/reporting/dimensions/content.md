@@ -27,7 +27,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Reporting **Dimension „Inhalt**behandelt. Unter [Inhalts-ID](/help/implementation/variables/core/content-id.md) finden Sie Informationen zum Erfassen dieser Variablen.*
+*Auf dieser Seite wird die Reporting **Dimension „Inhalt**&#x200B;behandelt. Unter [Inhalts-ID](/help/implementation/variables/core/content-id.md) finden Sie Informationen zum Erfassen dieser Variablen.*
 
 >[!ENDSHADEBOX]
 
