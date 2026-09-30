@@ -3,13 +3,23 @@ title: Einrichten von Roku 2.x für Streaming-Medien
 description: Installieren und konfigurieren Sie Adobe Media SDK 2.x für Roku für reine Analytics-Streaming-Medienimplementierungen, einschließlich SceneGraph-Kanälen.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 3%
-
 ---
-
 # Einrichten von Roku 2.x für Streaming-Medien
 
 Adobe Media SDK 2.x für Roku (`adbmobile.brs`) sendet Streaming-Mediendaten aus Roku-Kanälen, die in BrightScript geschrieben sind, direkt an Adobe Analytics. Es erfasst Zielgruppendaten über Audience Manager und misst die Interaktion durch Medienereignisse.
@@ -19,9 +29,9 @@ Adobe Media SDK 2.x für Roku (`adbmobile.brs`) sendet Streaming-Mediendaten aus
 >Auf dieser Seite wird die reine Analytics Media SDK 2.x für Roku behandelt. Für neue Implementierungen empfiehlt Adobe die [Roku Edge SDK](/help/implementation/edge/roku.md), die Daten zusätzlich zu Adobe Analytics für Customer Journey Analytics, Adobe Journey Optimizer und Real-Time CDP verfügbar macht.
 
 * **Voraussetzungen**:
-   * Schließen Sie die [Nur Analytics-Implementierung - Übersicht](overview.md) ab.
-   * [Laden Sie die Media SDK für Roku herunter](/help/getting-started/download-sdks.md).
-   * Fügen Sie eine API in Ihren Medien-Player ein, um Player-Ereignisse zu abonnieren, und eine API, die Player-Informationen wie den Mediennamen und die Abspielposition bereitstellt.
+  * Schließen Sie die [Nur Analytics-Implementierung - Übersicht](overview.md) ab.
+  * [Laden Sie die Media SDK für Roku herunter](/help/getting-started/download-sdks.md).
+  * Fügen Sie eine API in Ihren Medien-Player ein, um Player-Ereignisse zu abonnieren, und eine API, die Player-Informationen wie den Mediennamen und die Abspielposition bereitstellt.
 
 ## Installieren des SDK
 

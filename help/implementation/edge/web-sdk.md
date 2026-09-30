@@ -3,20 +3,30 @@ title: Einrichten der Web-SDK für Streaming-Medien
 description: Konfigurieren Sie Adobe Experience Platform Web SDK (alloy.js), um Streaming-Mediendaten an die Edge Network zu senden.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 5%
-
 ---
-
 # Einrichten der Web-SDK für Streaming-Medien
 
 Die `streamingMedia` der Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/js-overview) (`alloy.js`, Version 2.20.0 oder höher) erfasst Mediensessionsdaten auf Ihrer Website und sendet sie an die Edge Network. Auf dieser Seite wird die In-Code-Konfiguration (`alloy.js`) beschrieben. Informationen zum Konfigurieren von Web SDK über Tags finden Sie unter [Einrichten der Tag-Erweiterung für Web SDK für Streaming-Medien](web-sdk-tags.md).
 
 * **Voraussetzungen**:
-   * Abschließen der [Edge-Implementierungsübersicht](overview.md) (Schema, Datensatz, Datenstrom mit aktiviertem [!UICONTROL Media Analytics]).
-   * Installieren Sie Web SDK 2.20.0 oder höher. Siehe [Installieren der Web-SDK](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/install/overview).
+  * Abschließen der [Edge-Implementierungsübersicht](overview.md) (Schema, Datensatz, Datenstrom mit aktiviertem [!UICONTROL Media Analytics]).
+  * Installieren Sie Web SDK 2.20.0 oder höher. Siehe [Installieren der Web-SDK](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/install/overview).
 
 ## Konfigurieren der Streaming-Medienkomponente
 
@@ -51,6 +61,6 @@ Sobald Ihre Implementierung abgeschlossen ist, können Sie [Berichte für Edge-I
 
 >[!MORELIKETHIS]
 >
->* [Web SDK – Übersicht](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/js-overview)
+>* [Web SDK – Überblick](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/js-overview)
 >* [Übersicht über Ereignisse](/help/implementation/events/overview.md)
 >* [Variablen - Übersicht](/help/implementation/variables/overview.md)

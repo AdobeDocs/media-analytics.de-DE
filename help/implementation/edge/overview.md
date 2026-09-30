@@ -3,13 +3,27 @@ title: Übersicht über die Edge-Implementierung
 description: Richten Sie das Adobe Experience Platform-Schema, den Datensatz und den Datenstrom ein, die erforderlich sind, um Streaming-Mediendaten über die Edge Network zu erfassen.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '1282'
-ht-degree: 5%
-
+ht-degree: 6%
 ---
-
 # Übersicht über die Edge-Implementierung
 
 Mit Adobe Experience Platform Edge Network können Sie Daten, die für mehrere Produkte bestimmt sind, an einen einzelnen Endpunkt senden, der dann die entsprechenden Informationen an jedes Produkt weiterleitet. Dies ist die empfohlene Methode zur Implementierung der Streaming Media Collection und der einzige Ansatz, der sowohl Adobe Analytics als auch Customer Journey Analytics von einer einzigen Implementierung aus unterstützt.
@@ -158,9 +172,9 @@ Um die Datenerfassung in allen Anwendungen zu standardisieren, die Adobe Experie
 
    * Fügen Sie die entsprechenden Services basierend auf Ihrer Adobe-Lösung zum Datenstrom hinzu. Informationen zum Hinzufügen eines Services finden Sie unter „Hinzufügen von Services zu einem Datenstrom“ in [Konfigurieren eines Datenstroms](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=de#view-details).
 
-      * **[!UICONTROL Adobe Analytics]** (bei Verwendung von Adobe Analytics): Definieren Sie eine Report Suite wie in [Erstellen einer Report Suite](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite) beschrieben.
+     * **[!UICONTROL Adobe Analytics]** (bei Verwendung von Adobe Analytics): Definieren Sie eine Report Suite wie in [Erstellen einer Report Suite](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite) beschrieben.
 
-      * **[!UICONTROL Adobe Experience Platform]** (bei Verwendung von Customer Journey Analytics, Adobe Journey Optimizer oder Real-Time Customer Data Platform)
+     * **[!UICONTROL Adobe Experience Platform]** (bei Verwendung von Customer Journey Analytics, Adobe Journey Optimizer oder Real-Time Customer Data Platform)
 
      ![Fügen Sie den Adobe Analytics-Service hinzu](assets/datastream-add-service.png)
 

@@ -3,13 +3,25 @@ title: Einrichten von Berichten für Edge-Implementierungen
 description: Konfigurieren Sie Customer Journey Analytics für Berichte zu Streaming-Mediendaten, die über Edge Network erfasst wurden.
 feature: Streaming Media
 role: User, Admin
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 8%
-
 ---
-
 # Einrichten von Berichten für Edge-Implementierungen
 
 Nachdem Sie die Streaming Media-Sammlung über die Edge Network implementiert haben, konfigurieren Sie Customer Journey Analytics so, dass Berichte zu den erfassten Daten erstellt werden.
@@ -87,4 +99,4 @@ Analysis Workspace in Customer Journey Analytics umfasst drei dedizierte Medienb
 >[!MORELIKETHIS]
 >
 >* [Dimensions-Übersicht](/help/reporting/dimensions/overview.md)
->* [Metriken - Übersicht](/help/reporting/metrics/overview.md)
+>* [Metriken – Überblick](/help/reporting/metrics/overview.md)

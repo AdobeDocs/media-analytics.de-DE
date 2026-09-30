@@ -3,13 +3,25 @@ title: Pod-Name
 description: Gibt den Anzeigenamen jeder Werbeunterbrechung an. Sie können sie in Adobe Analytics mithilfe einer Klassifizierung oder einer benutzerdefinierten Verarbeitungsregel erfassen.
 feature: Dimensions
 role: User, Admin
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b8734a57-d5fb-44a8-8ee1-65225cecaeae
+    internal-label: Data configuration and collection
+subfeature_v2:
+  - id: b22bc0f7-b089-4966-95a1-31e7b3b69b79
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '433'
 ht-degree: 1%
-
 ---
-
 
 # Pod-Name
 
@@ -38,7 +50,7 @@ Der Pod-Name stammt aus dem Wert [Name der Werbeunterbrechung](/help/implementat
 
 Adobe erstellt die Pod-Namensklassifizierungsstruktur automatisch, wenn **[[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md)** für die Report Suite aktiviert ist. Sie sind dafür verantwortlich, die Klassifizierung mithilfe von „Klassifizierungssätze[&#x200B; auszufüllen und zu &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
 
-Dieser Ansatz bietet eine garantierte 1::1-Beziehung zwischen jeder Pod-ID und ihrem Anzeigenamen. Klassifizierungsaktualisierungen gelten rückwirkend für alle historischen Daten für diese ID.
+Dieser Ansatz bietet eine garantierte 1:1-Beziehung zwischen jeder Pod-ID und ihrem Anzeigenamen. Klassifizierungsaktualisierungen gelten rückwirkend für alle historischen Daten für diese ID.
 
 >[!IMPORTANT]
 >
@@ -48,7 +60,7 @@ Dieser Ansatz bietet eine garantierte 1::1-Beziehung zwischen jeder Pod-ID und i
 
 Erstellen Sie [Verarbeitungsregel](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) die `a.media.ad.podFriendlyName` einer eVar zuordnet. Dieser Ansatz erfasst den Anzeigenamen als Wert pro Treffer, ohne dass eine Klassifizierungswartung erforderlich ist.
 
-Der Nachteil besteht darin, dass Sie die garantierte 1::1-Beziehung zwischen dem Pod-Namen und der übergeordneten Dimension [Ad Pod](ad-pod.md) verlieren. Wenn Ihre Implementierung inkonsistente Werte für dieselbe Pod-ID über Ereignisse hinweg sendet, können mehrere Namen unter demselben Anzeigen-Pod angezeigt werden. Die Aktualisierung eines Werts gilt nur für Daten, die in Zukunft verwendet werden.
+Der Nachteil besteht darin, dass Sie die garantierte 1:1-Beziehung zwischen dem Pod-Namen und der übergeordneten Dimension [Ad Pod](ad-pod.md) verlieren. Wenn Ihre Implementierung inkonsistente Werte für dieselbe Pod-ID über Ereignisse hinweg sendet, können mehrere Namen unter demselben Anzeigen-Pod angezeigt werden. Die Aktualisierung eines Werts gilt nur für Daten, die in Zukunft verwendet werden.
 
 ## Dimensionselemente
 

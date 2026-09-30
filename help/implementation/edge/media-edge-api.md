@@ -3,13 +3,23 @@ title: Einrichten der Media Edge-API für Streaming-Medien
 description: Senden Sie Streaming-Mediendaten mithilfe der Media Edge-API direkt an Edge Network.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
-
 ---
-
 # Einrichten der Media Edge-API für Streaming-Medien
 
 Wenn Sie Web SDK, Mobile SDK oder Roku Edge SDK nicht verwenden können (z. B. auf einer benutzerdefinierten oder nicht unterstützten Laufzeit), können Sie Streaming-Mediendaten mit der Media Edge-API direkt an Edge Network senden. Die API verwendet RESTful-HTTP-Aufrufe und kann vollständig angepasst werden.

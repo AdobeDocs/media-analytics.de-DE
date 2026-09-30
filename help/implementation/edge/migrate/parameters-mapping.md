@@ -4,25 +4,35 @@ description: XDM-Feldpfad-Zuordnung für Media Analytics-Parameter, die mit dem 
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 79203a2f-8158-44f2-83b2-146179be9180
-TQID: https://experienceleague.adobe.com/ct8mDbIpg15Jzvf1MRaG4XFtuxbq-EUKPe106zyO7zQ
+TQID: 'https://experienceleague.adobe.com/ct8mDbIpg15Jzvf1MRaG4XFtuxbq-EUKPe106zyO7zQ'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+    internal-label: Implementation
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 1331
+source-wordcount: '1331'
 ht-degree: 20%
-
 ---
-
 # Zuordnung von Media Analytics-Parametern für Adobe Experience Platform und Customer Journey Analytics
 
 Dieses Dokument enthält eine umfassende Liste aller Medienanalyseparameter, die in Adobe Experience Platform und Customer Journey Analytics verwendet werden. Sie unterstützt die Integration von Daten, die von Adobe Analytics über den [Analytics Source Connector](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics) oder den [Analytics Source Connector for Classifications) in Platform importiert &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/classifications), indem jeder Parameter seinem entsprechenden XDM-Feldpfad zugeordnet wird.
@@ -161,24 +171,24 @@ So richten Sie die Verbindung in Customer Journey Analytics ein:
 Konfigurieren Sie für jeden Lookup-Datensatz (Klassifizierungsdatensatz) Folgendes:
 
 * **Videodatensatz**:
-   * Schlüssel: `_sandbox.key`
-   * Passender Schlüssel: `Asset ID (media.mediaTimed.primaryAssetReference._id)`
-   * Datenquellentyp: `Web Data`
+  * Schlüssel: `_sandbox.key`
+  * Passender Schlüssel: `Asset ID (media.mediaTimed.primaryAssetReference._id)`
+  * Datenquellentyp: `Web Data`
 
 * **Videoad-Datensatz**:
-   * Schlüssel: `_sandbox.key`
-   * Passender Schlüssel: `Ad ID (advertising.adAssetReference._id)`
-   * Datenquellentyp: `Web Data`
+  * Schlüssel: `_sandbox.key`
+  * Passender Schlüssel: `Ad ID (advertising.adAssetReference._id)`
+  * Datenquellentyp: `Web Data`
 
 * **videoadpod-Datensatz**:
-   * Schlüssel: `_sandbox.key`
-   * Passender Schlüssel: `Ad Pod ID (advertising.adAssetViewDetails.adBreak._id)`
-   * Datenquellentyp: `Web Data`
+  * Schlüssel: `_sandbox.key`
+  * Passender Schlüssel: `Ad Pod ID (advertising.adAssetViewDetails.adBreak._id)`
+  * Datenquellentyp: `Web Data`
 
 * **VideoChapter-Datensatz**:
-   * Schlüssel: `_sandbox.key`
-   * Passender Schlüssel: `Chapter identity (media.mediaTimed.mediaChapter.chapterAssetReference._id)`
-   * Datenquellentyp: `Web Data`
+  * Schlüssel: `_sandbox.key`
+  * Passender Schlüssel: `Chapter identity (media.mediaTimed.mediaChapter.chapterAssetReference._id)`
+  * Datenquellentyp: `Web Data`
 
 ### Überlegungen zum Reporting
 
@@ -242,7 +252,7 @@ In beiden Fällen entspricht die `<number>` der spezifischen Ereignis- oder eVar
 | [[!UICONTROL Creative-URL]](/help/reporting/dimensions/creative-url.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | Dimension |
 | [[!UICONTROL Platzierungs-ID]](/help/reporting/dimensions/placement-id.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | Dimension |
 | Frames pro Sekunde | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>`<br>und<br>`xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | Beide |
-| Medien-SDK Fehler-IDs | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | Metrik |
+| Medien-SDK-Fehler-IDs | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | Metrik |
 | [[!UICONTROL Betroffene Streams verzögern]](/help/reporting/metrics/stall-impacted-streams.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | Metrik |
 | [[!UICONTROL Verzögerte &#x200B;]](/help/reporting/metrics/stall-events.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | Metrik |
 | [[!UICONTROL Gesamtdauer der Verzögerung]](/help/reporting/metrics/total-stalling-duration.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | Metrik |
