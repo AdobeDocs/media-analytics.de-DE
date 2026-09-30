@@ -3,7 +3,19 @@ title: Zeit bis zum Start
 description: Legen Sie die Startzeit des Players in Millisekunden fest, damit das Backend die Zeit bis zum ersten Bild melden kann.
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 5%
@@ -13,7 +25,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Time to Start**&#x200B;behandelt. Siehe [[!UICONTROL Zeit bis zum Start]](/help/reporting/dimensions/time-to-start.md) für die entsprechende Reporting-Dimension und -Metrik.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Time to Start**behandelt. Siehe [[!UICONTROL Zeit bis zum Start]](/help/reporting/dimensions/time-to-start.md) für die entsprechende Reporting-Dimension und -Metrik.*
 
 >[!ENDSHADEBOX]
 
@@ -26,7 +38,7 @@ Die Variable time to start gibt die Zeit in Millisekunden an, die zwischen dem P
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.qoe.timeToStart` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.qoe.timeToStart` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [Sitzungsstart](/help/implementation/events/session/session-start.md), Sitzung schließen |
@@ -194,6 +206,6 @@ adb.mediaUpdateQoS(qosInfo)
 }
 ```
 
-Die vollständige Anfragestruktur finden Sie [Referenz zur &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)-API für Mediensammlungs-Sitzungen).
+Die vollständige Anfragestruktur finden Sie [Referenz zur ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)-API für Mediensammlungs-Sitzungen).
 
 >[!ENDTABS]

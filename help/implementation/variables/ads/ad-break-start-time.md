@@ -3,7 +3,19 @@ title: Startzeit der Werbeunterbrechung
 description: Legen Sie die Startzeit (Offset) der Anzeigenunterbrechung innerhalb des Inhalts in Sekunden fest.
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 6%
@@ -13,7 +25,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Startzeit der Werbeunterbrechung**&#x200B;behandelt. Siehe [Pod-Position](/help/reporting/dimensions/pod-position.md) für die entsprechende Reporting-Dimension.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Startzeit der Werbeunterbrechung**behandelt. Siehe [Pod-Position](/help/reporting/dimensions/pod-position.md) für die entsprechende Reporting-Dimension.*
 
 >[!ENDSHADEBOX]
 
@@ -22,7 +34,7 @@ Die Startzeitvariable für die Anzeigenunterbrechung ist der Versatz der Anzeige
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.ad.podSecond` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.ad.podSecond` |
 | **Erforderlich** | Ja |
 | **Gesendet mit** | [Start der Werbeunterbrechung](/help/implementation/events/ads/ad-break-start.md) und Schließen der Anzeige |
@@ -176,6 +188,6 @@ Fügen Sie `media.ad.podSecond` in das `params` Ihrer `adBreakStart` POST-Anfrag
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]

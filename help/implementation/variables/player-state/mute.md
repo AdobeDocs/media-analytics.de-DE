@@ -3,7 +3,19 @@ title: Stummschaltung
 description: Verfolgen Sie, wann der Viewer Audio stumm schaltet und die Stummschaltung aufhebt, damit das Backend Interaktionen melden kann.
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 7%
@@ -13,7 +25,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für den Player **Status „Stumm**&#x200B;behandelt. Siehe [Von Stummschaltung betroffene Streams](/help/reporting/metrics/mute-streams-impacted.md), [Stummschaltungsanzahl](/help/reporting/metrics/mute-count.md) und [Stummschaltungsgesamtdauer](/help/reporting/metrics/mute-total-duration.md) für die entsprechenden Berichtsmetriken.*
+*Auf dieser Seite wird die Datenerfassung für den Player **Status „Stumm**behandelt. Siehe [Von Stummschaltung betroffene Streams](/help/reporting/metrics/mute-streams-impacted.md), [Stummschaltungsanzahl](/help/reporting/metrics/mute-count.md) und [Stummschaltungsgesamtdauer](/help/reporting/metrics/mute-total-duration.md) für die entsprechenden Berichtsmetriken.*
 
 >[!ENDSHADEBOX]
 
@@ -22,7 +34,7 @@ Der Status des Stummschaltungs-Players verfolgt, wann der Viewer Audio stummscha
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariablen** | `a.media.states.mute.set`, `a.media.states.mute.count`, `a.media.states.mute.time` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) und [`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details) (Einträge mit `name: "mute"`) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) und [`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) (Einträge mit `name: "mute"`) |
 | **Audience Manager-Eigenschaften** | `c_contextdata.a.media.states.mute.set`, `c_contextdata.a.media.states.mute.count`, `c_contextdata.a.media.states.mute.time` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | [State start](/help/implementation/events/player-state/state-start.md), [state end](/help/implementation/events/player-state/state-end.md) |
@@ -180,6 +192,6 @@ Senden Sie eine `stateStart` POST-Anfrage, wenn der Viewer stummgeschaltet wird,
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]

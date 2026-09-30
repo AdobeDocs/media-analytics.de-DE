@@ -3,13 +3,23 @@ title: Übersicht über Streaming-Medienereignisse
 description: Erfahren Sie mehr über Medienereignistypen und die Reihenfolge, in der sie gesendet werden müssen.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 0%
-
 ---
-
 
 # Streaming-Medienereignisse
 
@@ -23,7 +33,7 @@ Sitzungsereignisse gelten für jede Art von Medien-Tracking, einschließlich Vid
 
 Sobald eine Sitzung geöffnet ist, verwenden Sie [Sitzung abgeschlossen](session/session-complete.md) oder [Sitzungsende](session/session-end.md) um anzugeben, wie das Anzeigeerlebnis beendet wurde. Die Sendesitzung ist abgeschlossen, wenn der Betrachter das natürliche Ende des Inhalts erreicht (das Video ist beendet, die Podcast-Folge endet oder das letzte Kapitel eines Hörbuchs endet). Sitzung abgeschlossen schließt die Sitzung nicht. Sie bleibt offen, bis sie automatisch abläuft, sodass alle nachfolgenden Ereignisse, wie z. B. ein endgültiges Ping, weiterhin erfasst werden.
 
-Wenn der Betrachter die Sitzung verlässt, bevor er das Ende erreicht[&#x200B; senden Sie „Sitzungsende](session/session-end.md), um die Sitzung sofort zu schließen. Senden Sie die Sitzung nur, wenn keine weiteren Ereignisse folgen (z. B. wenn der Player zerstört oder die Seite entladen wurde). Das Ende der Sitzung ist ein harter Abschluss: Nach dem Versand wird die Sitzung beendet und es können keine weiteren Ereignisse darunter verfolgt werden. In den meisten Fällen ist es sicherer, die Sitzung auf natürliche Weise ablaufen zu lassen. Beispiele sind das Pausieren des Viewers auf unbestimmte Zeit, das Wechseln der App in den Hintergrund oder das Nichtladen des Inhalts.
+Wenn der Betrachter die Sitzung verlässt, bevor er das Ende erreicht[ senden Sie „Sitzungsende](session/session-end.md), um die Sitzung sofort zu schließen. Senden Sie die Sitzung nur, wenn keine weiteren Ereignisse folgen (z. B. wenn der Player zerstört oder die Seite entladen wurde). Das Ende der Sitzung ist ein harter Abschluss: Nach dem Versand wird die Sitzung beendet und es können keine weiteren Ereignisse darunter verfolgt werden. In den meisten Fällen ist es sicherer, die Sitzung auf natürliche Weise ablaufen zu lassen. Beispiele sind das Pausieren des Viewers auf unbestimmte Zeit, das Wechseln der App in den Hintergrund oder das Nichtladen des Inhalts.
 
 Eine Sitzung läuft automatisch ab, wenn für 10 Minuten keine Ereignisse empfangen werden oder wenn für 30 Minuten keine Abspielkopfbewegung erkannt wird. Wenn eine der Bedingungen erfüllt ist und der Viewer zum Inhalt zurückkehrt, müssen Sie Sitzungsstart erneut aufrufen, um eine neue Sitzung zu öffnen, bevor Sie weitere Ereignisse senden.
 

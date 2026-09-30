@@ -3,7 +3,23 @@ title: Unterstützung benutzerdefinierter Metadaten - XDM-Format
 description: Erfahren Sie, wie Sie benutzerdefinierte Metadaten mit Medien-Tracking-Ereignissen im XDM-Format von Experience Edge senden.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 2%
@@ -314,7 +330,7 @@ In diesem Beispiel:
 
 * Nach der Verarbeitung werden benutzerdefinierte Metadaten als Kontextdatenvariablen an Adobe Analytics weitergeleitet. Das `_tenant` Präfix wird automatisch entfernt, sodass Verarbeitungsregeln nur auf den Feldpfad nach der `_tenant` verweisen (z. B. `_mycompany.contentCategory` wird `contentCategory`)
 * Über `_data` gesendete Daten werden ebenfalls an Adobe Analytics weitergeleitet und stehen über Verarbeitungsregeln zur Verfügung
-* Verwenden Sie Verarbeitungsregeln, um Kontextdatenvariablen eVars, Props oder anderen Analytics-Variablen zuzuordnen. Weitere [&#x200B; finden Sie unter „Datenvariablenzuordnung für die Adobe Experience Platform](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/data-var-mapping)Edge Network&quot;.
+* Verwenden Sie Verarbeitungsregeln, um Kontextdatenvariablen eVars, Props oder anderen Analytics-Variablen zuzuordnen. Weitere [ finden Sie unter „Datenvariablenzuordnung für die Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)Edge Network&quot;.
 
 **Adobe Experience Platform:**
 
@@ -334,5 +350,5 @@ In diesem Beispiel:
 >[!MORELIKETHIS]
 >
 >* [Unterstützung benutzerdefinierter Metadaten für die Mediensammlungs-API](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/custom-metadata)
->* [Datentyp „Media Collection Details“](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-collection-details)
->* [Datenvariablenzuordnung für die Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/data-var-mapping)
+>* [Datentyp „Media Collection Details“](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)
+>* [Datenvariablenzuordnung für die Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)

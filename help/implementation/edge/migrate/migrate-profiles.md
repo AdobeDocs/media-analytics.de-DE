@@ -4,33 +4,44 @@ description: Erfahren Sie, wie Sie Profile zu den neuen Streaming Media-Feldern 
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 0f75e594-5216-4ac1-91bd-fa89ab4b2110
-TQID: https://experienceleague.adobe.com/c1WHnEeZnI3PP6aO40pDHpJCi2Z0ERiNY8lCj4wyMiU
+TQID: 'https://experienceleague.adobe.com/c1WHnEeZnI3PP6aO40pDHpJCi2Z0ERiNY8lCj4wyMiU'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
+    internal-label: Data collection
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 533
+source-wordcount: '533'
 ht-degree: 0%
-
 ---
-
 # Migrieren von Profilen in die neuen Streaming-Medienfelder
 
-In diesem Dokument wird der Prozess der Migration des Profilfilterdienstes beschrieben, der zusätzlich zu den Adobe-Datenerfassungsflüssen vorhanden ist, die für Adobe Analytics für Streaming-Mediendaten aktiviert sind. Bei der Migration wird der Profilfilterdienst von mithilfe des Datentyps „Media“ für Adobe-Streaming-Mediendienste in den neuen Datentyp &quot;[&#x200B; Media Reporting Details“ &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-reporting-details).
+In diesem Dokument wird der Prozess der Migration des Profilfilterdienstes beschrieben, der zusätzlich zu den Adobe-Datenerfassungsflüssen vorhanden ist, die für Adobe Analytics für Streaming-Mediendaten aktiviert sind. Bei der Migration wird der Profilfilterdienst von mithilfe des Datentyps „Media“ für Adobe-Streaming-Mediendienste in den neuen Datentyp &quot;[ Media Reporting Details“ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details).
 
 ## Profile migrieren
 
-Um die Profilfilterung vom alten Datentyp namens „Media“ zum neuen Datentyp namens &quot;[Media Reporting Details“ &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/media-reporting-details), müssen Sie die vorhandenen Profilfilterregeln bearbeiten:
+Um die Profilfilterung vom alten Datentyp namens „Media“ zum neuen Datentyp namens &quot;[Media Reporting Details“ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details), müssen Sie die vorhandenen Profilfilterregeln bearbeiten:
 
 1. Wechseln Sie in Adobe Experience Platform **[!UICONTROL Abschnitt]** Quellen“ zur Registerkarte **[!UICONTROL Datenflüsse]**.
 
@@ -46,7 +57,7 @@ Um die Profilfilterung vom alten Datentyp namens „Media“ zum neuen Datentyp 
 
 1. Überprüfen Sie, ob die Profile weiterhin erwartungsgemäß funktionieren.
 
-Informationen zum Zuordnen zwischen den alten [&#x200B; den neuen Feldern finden Sie unter dem Parameter &#x200B;](/help/reporting/dimensions/content.md)Content ID[&#128279;](/help/media-overview.md) und unter den übrigen unter Streaming-Mediendienste dokumentierten Streaming-Medienvariablen . Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“.
+Informationen zum Zuordnen zwischen den alten [ den neuen Feldern finden Sie unter dem Parameter ](/help/reporting/dimensions/content.md)Content ID](/help/media-overview.md) und unter den übrigen unter [Streaming-Mediendienste dokumentierten Streaming-Medienvariablen . Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“.
 
 ## Beispiel
 
@@ -69,7 +80,7 @@ Um die Befolgung der Migrationsrichtlinien zu vereinfachen, sehen Sie sich den f
    ![AEP-Datenflussfilterregeln](../../assets/dataflow-filtering-rules-profile.jpeg)
 
 
-   Suchen Sie für jeden Filter, der das media.mediaTimed-Objekt verwendet, mithilfe der unter „Streaming-Mediendienste“ dokumentierten Streaming[Medienvariablen im `mediaReporting`-Objekt &#x200B;](/help/media-overview.md) Zuordnung zwischen den alten und den neuen Feldern. Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, während der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“ zu finden ist. Beispielsweise wird für [Medienstarts](/help/reporting/metrics/media-starts.md) der Korrespondent für `media.mediaTimed.impressions.value` `xdm.mediaReporting.sessionDetails.isViewed`.
+   Suchen Sie für jeden Filter, der das media.mediaTimed-Objekt verwendet, mithilfe der unter „Streaming-Mediendienste“ dokumentierten Streaming[Medienvariablen im `mediaReporting`-Objekt ](/help/media-overview.md) Zuordnung zwischen den alten und den neuen Feldern. Der alte Feldpfad befindet sich unter der Eigenschaft „XDM-Feldpfad“, während der neue Feldpfad unter der Eigenschaft „XDM-Feldpfad für Berichterstellung“ zu finden ist. Beispielsweise wird für [Medienstarts](/help/reporting/metrics/media-starts.md) der Korrespondent für `media.mediaTimed.impressions.value` `xdm.mediaReporting.sessionDetails.isViewed`.
 
    ![Neue und alte XDM-Felder](../../assets/xdm-fields-new-and-old.jpeg)
 

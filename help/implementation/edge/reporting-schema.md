@@ -6,22 +6,32 @@ role: User, Admin, Developer
 exl-id: c3a4d31b-8f9e-4d7a-9b2e-1a5f0e8c7d39
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
   - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+    internal-label: Implementations
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+    internal-label: Implementation
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 763
-ht-degree: 4%
-
+source-wordcount: '769'
+ht-degree: 5%
 ---
-
 
 # XDM-Berichtsschema
 
@@ -110,7 +120,7 @@ Die folgenden Felder werden in `mediaReporting` Payloads angezeigt, sind jedoch 
 
 Bei Sitzungen, die mit dem [heruntergeladenen Endpunkt](/help/use-cases/track-downloaded-content.md) verfolgt werden, setzt das Backend `xdm.mediaReporting.sessionDetails.isDownloaded` automatisch auf `true` im `sessionStart`. Alle anderen Berichterstellungsereignisse für heruntergeladene Sitzungen folgen demselben Schema wie Live-Sitzungen. Verwenden Sie dieses Feld in CJA oder Adobe Analytics, um die heruntergeladene Wiedergabe zu filtern oder zu segmentieren.
 
-Weitere Informationen zur [&#x200B; finden Sie &#x200B;](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/downloaded/)Downloaded Endpoint) in der Media Edge-API-Referenz.
+Weitere Informationen zur [ finden Sie ](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/downloaded/)Downloaded Endpoint) in der Media Edge-API-Referenz.
 
 ## Validieren der Implementierung
 
@@ -118,7 +128,7 @@ Nachdem Sie über die Media Edge-API Ereignisse gesendet haben, überprüfen Sie
 
 **Vorschau des Adobe Experience Platform-Datensatzes**
 
-1. Navigieren [CX Enterprise](https://experience.adobe.com) zu **[!UICONTROL Datensätze]** und wählen Sie Ihren Streaming-Medien-Datensatz aus.
+1. Navigieren Sie in [](https://experience.adobe.com) zu **[!UICONTROL Datensätze]** und wählen Sie Ihren Streaming-Medien-Datensatz aus.
 2. Wählen Sie **[!UICONTROL Vorschau des Datensatzes]** aus, um die zuletzt aufgenommenen Erlebnisereignisse anzuzeigen.
 3. Vergewissern Sie sich, dass `eventType` Werte wie `media.sessionStart` und `media.sessionComplete` mit ausgefüllten `mediaReporting` angezeigt werden.
 

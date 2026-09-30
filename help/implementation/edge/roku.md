@@ -3,20 +3,30 @@ title: Roku Edge für Streaming-Medien einrichten
 description: Konfigurieren Sie Adobe Experience Platform Roku SDK, um Streaming-Mediendaten an Edge Network zu senden.
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
-
 ---
-
 # Roku Edge für Streaming-Medien einrichten
 
 [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku) (BrightScript) erfasst Mediensessions-Daten in Ihrem Roku-Kanal und sendet sie an Edge Network. Roku ist im Code konfiguriert; es verwendet keine Tags.
 
 * **Voraussetzungen**:
-   * Abschließen der [Edge-Implementierungsübersicht](overview.md) (Schema, Datensatz, Datenstrom mit aktiviertem [!UICONTROL Media Analytics]).
-   * Laden Sie die SDK von [GitHub-Versionen](https://github.com/adobe/aepsdk-roku/releases) herunter und fügen Sie sie Ihrem Kanal hinzu, wie in [Erste Schritte“ &#x200B;](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/getting-started.md).
+  * Abschließen der [Edge-Implementierungsübersicht](overview.md) (Schema, Datensatz, Datenstrom mit aktiviertem [!UICONTROL Media Analytics]).
+  * Laden Sie die SDK von [GitHub-Versionen](https://github.com/adobe/aepsdk-roku/releases) herunter und fügen Sie sie Ihrem Kanal hinzu, wie in [Erste Schritte“ ](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/getting-started.md).
 
 ## Konfigurieren von Roku Edge SDK für Media
 
@@ -55,7 +65,7 @@ Konfigurationsschlüssel und die vollständige API finden Sie in der [Roku Edge 
 
 ## Medien-Events tracken
 
-Nachdem die Sitzung geöffnet ist, senden Sie jedes Medienereignis mit `sendMediaEvent`. Die **Payloads finden Sie auf der Registerkarte** Roku[&#x200B; auf jeder &#x200B;](/help/implementation/events/overview.md)- und [&#128279;](/help/implementation/variables/overview.md)-Seite.
+Nachdem die Sitzung geöffnet ist, senden Sie jedes Medienereignis mit `sendMediaEvent`. Die **Payloads finden Sie auf der Registerkarte** Roku[ auf jeder ](/help/implementation/events/overview.md)- und [](/help/implementation/variables/overview.md)-Seite.
 
 ## Nächster Schritt
 

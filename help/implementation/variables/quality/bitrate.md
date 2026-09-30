@@ -3,7 +3,19 @@ title: Bitrate
 description: Legen Sie die aktuelle Wiedergabebitrate (in kbps) für das QoE-Objekt fest, damit das Backend Bitratenmetriken berechnen kann.
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 5%
@@ -13,7 +25,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*Auf dieser Seite wird die Datenerfassung für die Variable **Bitrate**&#x200B;behandelt. Siehe [[!UICONTROL Durchschnittliche Bitrate] (Dimension)](/help/reporting/dimensions/average-bitrate.md) und [[!UICONTROL Durchschnittliche Bitrate] (Metrik)](/help/reporting/metrics/average-bitrate.md) für die entsprechenden Berichtsvariablen.*
+*Auf dieser Seite wird die Datenerfassung für die Variable **Bitrate**behandelt. Siehe [[!UICONTROL Durchschnittliche Bitrate] (Dimension)](/help/reporting/dimensions/average-bitrate.md) und [[!UICONTROL Durchschnittliche Bitrate] (Metrik)](/help/reporting/metrics/average-bitrate.md) für die entsprechenden Berichtsvariablen.*
 
 >[!ENDSHADEBOX]
 
@@ -22,7 +34,7 @@ Die Bitratenvariable ist die aktuelle Wiedergabebitrate in Kilobit pro Sekunde. 
 | Eigenschaft | Wert |
 | --- | --- |
 | **Kontextdatenvariable** | `a.media.qoe.bitrateAverageBucket` |
-| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM-Sammlungsfeld** | [`xdm.mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager-Eigenschaft** | `c_contextdata.a.media.qoe.bitrateAverageBucket` |
 | **Erforderlich** | Nein |
 | **Gesendet mit** | Qualitätsereignisse ([Bitratenänderung](/help/implementation/events/playback/bitrate-change.md), [Pufferstart](/help/implementation/events/playback/buffer-start.md), [Fehler](/help/implementation/events/error.md)), Sitzungsschluss |
@@ -181,6 +193,6 @@ Fügen Sie `media.qoe.bitrate` in das `params` Ihrer `bitrateChange` POST-Anfrag
 }
 ```
 
-Die vollständige Anfragestruktur [&#x200B; Sie in der &#x200B;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) zur Mediensammlungs-API-Ereignisreferenz .
+Die vollständige Anfragestruktur [ Sie in der ](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events) zur Mediensammlungs-API-Ereignisreferenz .
 
 >[!ENDTABS]

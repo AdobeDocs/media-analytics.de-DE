@@ -3,13 +3,25 @@ title: Einrichten von Berichten für Edge-Implementierungen
 description: Konfigurieren Sie Customer Journey Analytics für Berichte zu Streaming-Mediendaten, die über Edge Network erfasst wurden.
 feature: Streaming Media
 role: User, Admin
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 8%
-
 ---
-
 # Einrichten von Berichten für Edge-Implementierungen
 
 Nachdem Sie die Streaming Media-Sammlung über die Edge Network implementiert haben, konfigurieren Sie Customer Journey Analytics so, dass Berichte zu den erfassten Daten erstellt werden.
@@ -18,7 +30,7 @@ Nachdem Sie die Streaming Media-Sammlung über die Edge Network implementiert ha
 >
 >Auf dieser Seite wird das Reporting in Customer Journey Analytics beschrieben, dem empfohlenen Ziel für Edge-Implementierungen. Wenn Ihr Datenstrom stattdessen Streaming-Mediendaten an Adobe Analytics sendet, finden Sie weitere Informationen unter [Einrichten von Berichten für reine Analytics-Implementierungen](analytics-reporting.md).
 
-* **Voraussetzungen**: Schließen Sie eine Edge-Implementierung ab und erfassen Sie einige Daten. Siehe die Übersicht über die Edge-Implementierung [&#128279;](/help/implementation/edge/overview.md)0) und die von Ihnen gewählte Implementierungsmethode.
+* **Voraussetzungen**: Schließen Sie eine Edge-Implementierung ab und erfassen Sie einige Daten. Siehe die Übersicht über die Edge-Implementierung ](/help/implementation/edge/overview.md)0) und die von Ihnen gewählte Implementierungsmethode.[
 
 ## Erstellen einer Verbindung in Customer Journey Analytics
 
@@ -50,9 +62,9 @@ Nachdem Sie die Streaming Media-Sammlung über die Edge Network implementiert ha
 
       >[!IMPORTANT]
       >
-      >Die Kontextbeschriftungen in dieser Tabelle sind erforderlich, damit die Bedienfelder für Streaming-Medien funktionieren. Customer Journey Analytics verwendet diese Metriken zur automatischen Berechnung der **gleichzeitige Viewer** und **Wiedergabedauer** abgeleiteten Metriken (verwendet von den Bedienfeldern [Gleichzeitige Medienbetrachter](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers) und [Mit Medienwiedergabe verbrachte Zeit](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)) und zum Ausfüllen der Berichtsoptionen im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel).
+      >Die Kontextbeschriftungen in dieser Tabelle sind erforderlich, damit die Bedienfelder für Streaming-Medien funktionieren. Customer Journey Analytics verwendet diese Metriken zur automatischen Berechnung der **gleichzeitige Viewer** und **Wiedergabedauer** abgeleiteten Metriken (verwendet von den Bedienfeldern [Gleichzeitige Medienbetrachter](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers) und [Mit Medienwiedergabe verbrachte Zeit](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)) und zum Ausfüllen der Berichtsoptionen im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel).
 
-      An dieser Stelle können Sie Ihrer [&#x200B; beliebige andere &#x200B;](/help/reporting/dimensions/overview.md)Dimensionen[&#x200B; oder &#x200B;](/help/reporting/metrics/overview.md) hinzufügen. Jede Seite listet den XDM-Pfad für diese Komponente auf.
+      An dieser Stelle können Sie Ihrer [ beliebige andere ](/help/reporting/dimensions/overview.md)Dimensionen[ oder ](/help/reporting/metrics/overview.md) hinzufügen. Jede Seite listet den XDM-Pfad für diese Komponente auf.
 
 1. Wählen Sie **[!UICONTROL Speichern und fortfahren]** → **[!UICONTROL Speichern und]**) aus, um Ihre Änderungen zu speichern.
 
@@ -70,7 +82,7 @@ Nachdem Sie die Streaming Media-Sammlung über die Edge Network implementiert ha
 
 1. (Bedingt) Wenn Sie benutzerdefinierte Metadaten zu Ihrem Schema hinzugefügt haben, legen Sie die Persistenz für die benutzerdefinierten Felder fest, wie in [Persistenzkomponenteneinstellungen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-settings/persistence) im Customer Journey Analytics-Handbuch beschrieben.
 
-1. Geben Sie das Projekt frei, wie unter [Freigeben von Projekten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=de) beschrieben.
+1. Geben Sie das Projekt frei, wie unter [Freigeben von Projekten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en) beschrieben.
 
    >[!NOTE]
    >
@@ -80,11 +92,11 @@ Nachdem Sie die Streaming Media-Sammlung über die Edge Network implementiert ha
 
 Analysis Workspace in Customer Journey Analytics umfasst drei dedizierte Medienbedienfelder für Kunden mit dem Add-on „Streaming Media Collection“. Diese Bedienfelder bieten vorgefertigte Visualisierungen für die gängigsten Reporting-Anforderungen für Streaming-Medien.
 
-* **[Medien-Zielgruppendurchschnitt pro Minute](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)**: Vergleicht die durchschnittliche Nutzung von Inhalten in Programmen beliebiger Länge oder Genres. Unterstützt sowohl bestimmte Inhaltsmodi (dauerbasiert) als auch benutzerdefinierte Zeitraummodi und ermöglicht die nachträgliche Aktualisierung von Klassifizierungen der Dauer.
-* **[Gleichzeitige Medienbetrachter](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)**: Analysiert gleichzeitige Betrachter im Zeitverlauf, um Spitzen bei gleichzeitigen Betrachtern und Abfallpunkten zu ermitteln. Unterstützt eine konfigurierbare Granularität und Serienaufschlüsselung nach Segmenten, Dimensionen oder Datumsbereichen.
-* **[Bei Medienwiedergabe verbrachte Zeit](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)**: Analysiert die Wiedergabedauer im Zeitverlauf mit Details zu Spitzen- und Tiefstzeiten. Unterstützt konfigurierbare Granularität und Ausgabeformat (Stunden oder Minuten).
+* **[Medien-Zielgruppendurchschnitt pro Minute](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)**: Vergleicht die durchschnittliche Nutzung von Inhalten in Programmen beliebiger Länge oder Genres. Unterstützt sowohl bestimmte Inhaltsmodi (dauerbasiert) als auch benutzerdefinierte Zeitraummodi und ermöglicht die nachträgliche Aktualisierung von Klassifizierungen der Dauer.
+* **[Gleichzeitige Medienbetrachter](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)**: Analysiert gleichzeitige Betrachter im Zeitverlauf, um Spitzen bei gleichzeitigen Betrachtern und Abfallpunkten zu ermitteln. Unterstützt eine konfigurierbare Granularität und Serienaufschlüsselung nach Segmenten, Dimensionen oder Datumsbereichen.
+* **[Bei Medienwiedergabe verbrachte Zeit](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)**: Analysiert die Wiedergabedauer im Zeitverlauf mit Details zu Spitzen- und Tiefstzeiten. Unterstützt konfigurierbare Granularität und Ausgabeformat (Stunden oder Minuten).
 
 >[!MORELIKETHIS]
 >
 >* [Dimensions-Übersicht](/help/reporting/dimensions/overview.md)
->* [Metriken - Übersicht](/help/reporting/metrics/overview.md)
+>* [Metriken – Überblick](/help/reporting/metrics/overview.md)
